@@ -3,12 +3,17 @@
 The game i want to make, under Godot 3.5 Win32; GLES3 sort of.
 
 Code was taken from GDQuest's platformer tutorial series (In which i did finish from the 3 videos, so in a way i still wrote that code), Gonkee's "Jared AI" project and the Cubio demo. I plan to soon try and do my own code and improve on skills when using Godot's tools.
+
 Both main actors share an "actor" script. Both have gravity but only one is playable by moving left/right and jumping, while the other can follow you around at a certain distance. The test level is very basic.
+
 All art is placeholder and was made on MSPaint (As of writing this, i'm working on the main characters' sprites and may even show them on other sites that i use).
+
 So far, i want to try and do things on my own, even if i take stuff from somewhere else. I may end up asking for help and assistance, even if that should be done later. Honestly, any help is appreciated and i'm trying to take this in a fun/hobby route as opposed to professionalism. I plan to make this game free.
 
 # What exactly IS Project Nortubel?
-A game where the player controls a character, who has to watch out for their younger sibling as they traverse through levels that should be fun and interesting. The actual story revolves around a group of 6 friends that get lost in some strange places and as they try to escape or even explore them, they encounter other people.
+A game where the player controls a character, who has to watch out for their younger sibling as they traverse through levels that should be fun and interesting. 
+
+The actual story revolves around a group of 6 friends that get lost in some strange places and as they try to escape or even explore them, they encounter other people.
 
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are:
 * Make the Playable character have more health than the Companion character.
