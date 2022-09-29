@@ -6,9 +6,9 @@ extends actor
 
 #The following comments are not my own, if that isn't clear enough
 
-const WALK_FORCE = 600
+const WALK_FORCE = 1600
 const WALK_MAX_SPEED = 700
-const STOP_FORCE = 1600
+const STOP_FORCE = 900
 const JUMP_SPEED = 1500
 
 func _physics_process(delta):
