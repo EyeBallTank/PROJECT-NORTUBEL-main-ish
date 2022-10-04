@@ -35,5 +35,34 @@ The actual story revolves around a group of 6 friends that get lost in some stra
 * The option to change the game's language (While the default setting will be English, a second language in mind is Portuguese due its influences to the game's main setting)
 
 I may end up changing this goal list as well.
+
+# Credits and shout outs:
+
+Because i either have help from others or take stuff from somewhere, i don't do this alone.
+
+Even if someone isn't directly involved with this or any project, they still had an impact somewhere.
+
+From tutorials and assets or software related to Godot, to stuff around other programs and art tutorial/practice methods.
+
+* Godot demo projects like Kinematic Character 2D/Cubio
+* GDQuest (Made a platform tutorial series, in which i made the practice game and took some stuff from it; Did a lot of other tutorial videos and applications)
+* HeartBeast (Similar to above)
+* GameDev With Drew (Godot tutorial videos).
+* Samsface (Same as above)
+* Jon Topielski (Same as above)
+* Gonkee (Again, but also because of the Jared AI project that i took code from)
+* TebyTheCat (Suggesting the use of a Finite State Machine in the code)
+* TheDex (Mod from Godot’s Discord)
+* MakeHuman (References/resources for art)
+* Posemaniacs (References/resources for art)
+* Taco1704 (Art tutorials)
+* Start_yuji (Same as above)
+* Mikeymegamega (Art tutorial videos)
+* Marc Brunet (Again, art tutorial videos)
+* ProkoTV (Same as above)
+* Akihito Yoshitomi (Did some videos teaching art drawing methods)
+* TutsByKai (Software tutorials)
+* Kenney.nl (Made free assets that were used as reference)
+
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
