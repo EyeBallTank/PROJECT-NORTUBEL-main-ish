@@ -1,8 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/play_actors/Companion.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/npc_actors/npc placeholder.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/menusandui/healthbar.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -46,3 +52,24 @@ position = Vector2( 302, 375 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 173, 147 )
 gravity = 2100.0
+
+[node name="Healthbar" parent="Player" instance=ExtResource( 9 )]
+margin_left = -143.0
+margin_top = -360.0
+margin_right = 141.0
+margin_bottom = -268.0
+
+[node name="NPC test" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1232, 487 )
+
+[node name="Coin" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1956, 405 )
+
+[node name="Gong" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2381, 568 )
+
+[node name="Gecko enemy" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2719, 562 )
+
+[node name="Manowar" parent="." instance=ExtResource( 8 )]
+position = Vector2( 3200, 559 )

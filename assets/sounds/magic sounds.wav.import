@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/magic sounds.wav-1b7e94fb7ef3143d25f0c5e8ab3d4266.sample"
+
+[deps]
+
+source_file="res://assets/sounds/magic sounds.wav"
+dest_files=[ "res://.import/magic sounds.wav-1b7e94fb7ef3143d25f0c5e8ab3d4266.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
