@@ -63,6 +63,8 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Akihito Yoshitomi (Did some videos teaching art drawing methods)
 * TutsByKai (Software tutorials)
 * Kenney.nl (Made free assets that were used as reference)
+* FreeSound (Good resource for sounds)
+* ChipTone by SFBGames (Used to make sounds)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
