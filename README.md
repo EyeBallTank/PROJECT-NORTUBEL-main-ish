@@ -32,6 +32,7 @@ The actual story revolves around a group of 6 friends that get lost in some stra
 * A third command based on special interacts should be done later.
 * Maybe some unimportant interactions between siblings that aren't gameplay-relevant, like reading a book or playing a game.
 * Sound design and music in general (Though this might as well be a last priority; At least i don't want voice acting at all).
+* Some behind-the-scenes organization or methods to make the game's inner workings more flexible and supportive of some stuff (For example: When i thing of scene changes such as changing levels, i think a scene manager could be useful because i heard some code used for scene change can be limiting)
 * The option to change the game's language (While the default setting will be English, a second language in mind is Portuguese due its influences to the game's main setting)
 
 I may end up changing this goal list as well.
