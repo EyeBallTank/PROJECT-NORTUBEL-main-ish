@@ -2,6 +2,14 @@ extends actor
 
 #This is supposed to be the companion character that chases and follows the player
 #The intelligence should still be basic enough behind the scenes
+#But i tried to implement a simple enough state pattern, based on TebyTheCat's suggestion
+
+enum {
+	FOLLOWME,
+	STANDSTILL
+}
+
+var state = FOLLOWME
 
 # Vertical movement code. Apply gravity.
 func _physics_process(delta):
@@ -66,33 +74,36 @@ func sees_player():
 	return false
 
 func _process(delta):
+	match state:
+		FOLLOWME:
+			if Player.position.x < position.x - target_player_dist and sees_player():
+				set_dir(-1)
+			elif Player.position.x > position.x + target_player_dist and sees_player():
+				set_dir(1)
+			else:
+				set_dir(0)
 
-	if Player.position.x < position.x - target_player_dist and sees_player():
-		set_dir(-1)
-	elif Player.position.x > position.x + target_player_dist and sees_player():
-		set_dir(1)
-	else:
-		set_dir(0)
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
 
-	if OS.get_ticks_msec() > next_dir_time:
-		dir = next_dir
+			if OS.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
+				if Player.position.y < position.y - 64 and sees_player():
+					vel.y = -1500
+				next_jump_time = -1
 
-	if OS.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
-		if Player.position.y < position.y - 64 and sees_player():
-			vel.y = -1500
-		next_jump_time = -1
+			vel.x = dir * 500
 
-	vel.x = dir * 500
+			if Player.position.y < position.y - 64 and next_jump_time == -1 and sees_player():
+				next_jump_time = OS.get_ticks_msec() + react_time
 
-	if Player.position.y < position.y - 64 and next_jump_time == -1 and sees_player():
-		next_jump_time = OS.get_ticks_msec() + react_time
+			vel.y += gravity * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
 
-	vel.y += gravity * delta;
-	if vel.y > max_grav:
-		vel.y = max_grav
+			if is_on_floor() and vel.y > 0:
+				vel.y = 0
 
-	if is_on_floor() and vel.y > 0:
-		vel.y = 0
-
-	vel = move_and_slide(vel, Vector2(0, -1))
+			vel = move_and_slide(vel, Vector2(0, -1))
+		STANDSTILL:
+			pass
 
