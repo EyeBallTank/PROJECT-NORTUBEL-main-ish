@@ -55,16 +55,17 @@ func _process(delta):
 	
 			if Player.position.y < position.y - 64 and next_jump_time == -1:
 				next_jump_time = OS.get_ticks_msec() + react_time
-
-			vel.y += grav * delta;
-			if vel.y > max_grav:
-				vel.y = max_grav
-
-			if is_on_floor() and vel.y > 0:
-				vel.y = 0
-		
-			vel.x = dir * 500
-
-			vel = move_and_slide(vel, Vector2(0, -1))
 		STANDSTILL:
 			pass
+
+	vel.y += grav * delta;
+	if vel.y > max_grav:
+		vel.y = max_grav
+
+	if is_on_floor() and vel.y > 0:
+		vel.y = 0
+		
+	vel.x = dir * 500
+
+	vel = move_and_slide(vel, Vector2(0, -1))
+		
