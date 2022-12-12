@@ -12,6 +12,8 @@ var dir = 0
 var next_dir = 0
 var next_dir_time = 0
 
+var next_jump_time = -1
+
 var target_player_distance = 100
 
 func _ready():
@@ -34,8 +36,12 @@ func _process(delta):
 	if OS.get_ticks_msec() > next_dir_time:
 		dir = next_dir
 	
-	if Player.position.y < position.y - 64 and is_on_floor():
+	if OS.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
 		vel.y = -800
+		next_jump_time = -1
+	
+	if Player.position.y < position.y - 64 and next_jump_time == -1:
+		next_jump_time = OS.get_ticks_msec() + react_time
 
 	vel.y += grav * delta;
 	if vel.y > max_grav:
