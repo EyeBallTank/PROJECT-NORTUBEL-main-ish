@@ -25,10 +25,7 @@ var target_player_distance = 90
 
 func _ready():
 	set_process(true)
-	if Input.is_action_just_pressed("followme"):
-		state = FOLLOWME
-	elif Input.is_action_just_pressed("standstill"):
-		state = STANDSTILL
+
 
 func set_dir(target_dir):
 	if next_dir != target_dir:
@@ -69,3 +66,7 @@ func _process(delta):
 
 	vel = move_and_slide(vel, Vector2(0, -1))
 		
+	if Input.is_action_pressed("followme"):
+		state = FOLLOWME
+	elif Input.is_action_pressed("standstill"):
+		state = STANDSTILL
