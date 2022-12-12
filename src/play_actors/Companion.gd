@@ -14,7 +14,7 @@ var next_dir_time = 0
 
 var next_jump_time = -1
 
-var target_player_distance = 100
+var target_player_distance = 90
 
 func _ready():
 	set_process(true)
@@ -37,7 +37,8 @@ func _process(delta):
 		dir = next_dir
 	
 	if OS.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
-		vel.y = -800
+		if Player.position.y < position.y - 64:
+			vel.y = -800
 		next_jump_time = -1
 	
 	if Player.position.y < position.y - 64 and next_jump_time == -1:
