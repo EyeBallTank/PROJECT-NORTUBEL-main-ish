@@ -53,7 +53,12 @@ func _process(delta):
 			if Player.position.y < position.y - 64 and next_jump_time == -1:
 				next_jump_time = OS.get_ticks_msec() + react_time
 		STANDSTILL:
-			pass
+			set_dir(0)
+			vel.x = 0
+			target_player_distance = 0
+			next_dir = 0
+			next_dir_time = 0
+			dir = 0
 
 	vel.y += grav * delta;
 	if vel.y > max_grav:
