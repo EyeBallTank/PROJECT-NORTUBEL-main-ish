@@ -1,5 +1,8 @@
 extends actor
 
+#I took Gonkee's Jared AI code and tried to change it to my preferences.
+#And the state machine was based on a suggestion by TebyTheCat on Newgrounds.
+
 enum {
 	FOLLOWME,
 	STANDSTILL
