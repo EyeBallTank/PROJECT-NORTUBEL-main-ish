@@ -11,9 +11,9 @@ script = ExtResource( 1 )
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -148.0
-margin_top = 320.0
+margin_top = 319.0
 margin_right = 148.0
-margin_bottom = 420.0
+margin_bottom = 419.0
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 margin_right = 296.0
