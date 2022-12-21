@@ -69,3 +69,4 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
+Let's hope 2023 will be a more productive year.
