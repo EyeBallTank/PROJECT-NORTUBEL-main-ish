@@ -6,6 +6,19 @@ extends actor
 
 #The following comments are not my own, if that isn't clear enough
 
+#THESE ARE PREPERATIONS FOR FUTURE PLAYER SATES
+#enum {
+#	MAINSTATE,
+#	CLIMB,
+#	PUSH,
+#	SWIM,
+#	SWING,
+#	KICK,
+#	KNIFE
+#}
+
+#var state = MAINSTATE
+
 const WALK_FORCE = 1600
 const WALK_MAX_SPEED = 700
 const STOP_FORCE = 900
