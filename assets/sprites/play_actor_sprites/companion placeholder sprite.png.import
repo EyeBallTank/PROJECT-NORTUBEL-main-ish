@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gecko test.png-cbf68a8561940f1591db81bc39c1f004.stex"
+path="res://.import/companion placeholder sprite.png-932964c9b752207583af5b2253f8fa3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/gecko test.png"
-dest_files=[ "res://.import/gecko test.png-cbf68a8561940f1591db81bc39c1f004.stex" ]
+source_file="res://assets/sprites/play_actor_sprites/companion placeholder sprite.png"
+dest_files=[ "res://.import/companion placeholder sprite.png-932964c9b752207583af5b2253f8fa3c.stex" ]
 
 [params]
 

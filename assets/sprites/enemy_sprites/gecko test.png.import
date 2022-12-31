@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player placeholder sprite.png-e9e62c0818d6160c390d38eb323b074e.stex"
+path="res://.import/gecko test.png-a6b064fd06314de8397ea12985ee4460.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player placeholder sprite.png"
-dest_files=[ "res://.import/player placeholder sprite.png-e9e62c0818d6160c390d38eb323b074e.stex" ]
+source_file="res://assets/sprites/enemy_sprites/gecko test.png"
+dest_files=[ "res://.import/gecko test.png-a6b064fd06314de8397ea12985ee4460.stex" ]
 
 [params]
 

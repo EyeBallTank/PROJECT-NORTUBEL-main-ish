@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/companion placeholder sprite.png-b91a121a56ec6771b37908136aa9179c.stex"
+path="res://.import/manowar test.png-6ec805265c25cfb0ed8b84fa126bed5d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/companion placeholder sprite.png"
-dest_files=[ "res://.import/companion placeholder sprite.png-b91a121a56ec6771b37908136aa9179c.stex" ]
+source_file="res://assets/sprites/level_hazard_sprites/manowar test.png"
+dest_files=[ "res://.import/manowar test.png-6ec805265c25cfb0ed8b84fa126bed5d.stex" ]
 
 [params]
 

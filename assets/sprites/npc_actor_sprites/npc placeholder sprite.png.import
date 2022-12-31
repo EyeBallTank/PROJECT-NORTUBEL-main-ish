@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/npc placeholder sprite.png-bc03c071bc5da99e8f398d6bbca0be45.stex"
+path="res://.import/npc placeholder sprite.png-15c4806791b23aa14f4d67a1f58a4268.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc placeholder sprite.png"
-dest_files=[ "res://.import/npc placeholder sprite.png-bc03c071bc5da99e8f398d6bbca0be45.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/npc placeholder sprite.png"
+dest_files=[ "res://.import/npc placeholder sprite.png-15c4806791b23aa14f4d67a1f58a4268.stex" ]
 
 [params]
 

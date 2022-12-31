@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door test.PNG-b1820bffb4240c7629c5ec42cabbc51f.stex"
+path="res://.import/player placeholder sprite.png-443926c1cceeb65e4f0a352e8f452089.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/door test.PNG"
-dest_files=[ "res://.import/door test.PNG-b1820bffb4240c7629c5ec42cabbc51f.stex" ]
+source_file="res://assets/sprites/play_actor_sprites/player placeholder sprite.png"
+dest_files=[ "res://.import/player placeholder sprite.png-443926c1cceeb65e4f0a352e8f452089.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shield coin.png-4382d0c3c9fa2d578e4f1260f7fa064a.stex"
+path="res://.import/gong checkpoint.png-ba073062a5a69b5c160fa6d3348660d9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/shield coin.png"
-dest_files=[ "res://.import/shield coin.png-4382d0c3c9fa2d578e4f1260f7fa064a.stex" ]
+source_file="res://assets/sprites/level_object_sprites/gong checkpoint.png"
+dest_files=[ "res://.import/gong checkpoint.png-ba073062a5a69b5c160fa6d3348660d9.stex" ]
 
 [params]
 

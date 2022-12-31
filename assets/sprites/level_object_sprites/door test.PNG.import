@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/manowar test.png-bc86a30edb7bb66c1bdd767c0831dc08.stex"
+path="res://.import/door test.PNG-7eb6b30576a1c82b8397f905ded000ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/manowar test.png"
-dest_files=[ "res://.import/manowar test.png-bc86a30edb7bb66c1bdd767c0831dc08.stex" ]
+source_file="res://assets/sprites/level_object_sprites/door test.PNG"
+dest_files=[ "res://.import/door test.PNG-7eb6b30576a1c82b8397f905ded000ab.stex" ]
 
 [params]
 
