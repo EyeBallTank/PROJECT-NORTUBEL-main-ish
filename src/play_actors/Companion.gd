@@ -6,6 +6,9 @@ extends actor
 enum {
 	FOLLOWME,
 	STANDSTILL
+#	CRAWL,
+#	CLIMB,
+#	PUSH
 }
 
 var state = STANDSTILL
