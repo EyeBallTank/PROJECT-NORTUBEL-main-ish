@@ -3,7 +3,7 @@ extends Control
 
 
 func _on_StartButton_pressed():
-	get_tree().change_scene("res://src/levels/LevelTemplate.tscn")
+	SceneManager.change_scene("res://src/levels/LevelTemplate.tscn" , "level_transition_effect")
 
 
 func _on_QuitButton_pressed():

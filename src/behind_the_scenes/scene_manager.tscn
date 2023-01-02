@@ -56,7 +56,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 600 ), Vector2( 1031, 600 ), Vector2( 0, 600 ) ]
 }
 
-[node name="Scene Manager" type="Node"]
+[node name="SceneManager" type="Node"]
 script = ExtResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
