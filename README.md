@@ -52,6 +52,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Samsface (Same as above)
 * Jon Topielski (Same as above)
 * Gonkee (Again, but also because of the Jared AI project that i took code from)
+* Israel Ruiz (Copied code from scene changing tutorial)
 * TebyTheCat (Suggesting the use of a Finite State Machine in the code)
 * TheDex (Mod from Godot’s Discord)
 * MakeHuman (References/resources for art)
