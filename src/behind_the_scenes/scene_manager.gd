@@ -6,12 +6,9 @@ extends Node
 onready var animation = $CanvasLayer/AnimationPlayer
 var scene : String
 
-func change_scene(anim, new_scene, anim2):
-	animation.play(anim)
-	yield(get_tree().create_timer(1.0), "timeout")
+func change_scene(anim, new_scene):
 	scene = new_scene
-	yield(get_tree().create_timer(1.0), "timeout")
-	animation.play_backwards(anim2)
+	animation.play(anim)
 
 func _new_scene():
 		get_tree().change_scene(scene)
