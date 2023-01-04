@@ -2,11 +2,12 @@
 
 [ext_resource path="res://assets/sprites/enemy_sprites/gecko test.png" type="Texture" id=1]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 141, 214.25 )
 
 [node name="Gecko enemy" type="KinematicBody2D"]
+collision_layer = 32
+collision_mask = 3
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1, -215 )
