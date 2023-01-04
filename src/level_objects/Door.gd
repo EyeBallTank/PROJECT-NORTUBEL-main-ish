@@ -12,4 +12,4 @@ func _ready():
 func _on_Door_body_entered(body):
 	player = body
 	player = true
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate2.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate3.tscn")
