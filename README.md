@@ -67,6 +67,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Kenney.nl (Made free assets that were used as reference)
 * FreeSound (Good resource for sounds)
 * ChipTone by SFBGames (Used to make sounds)
+* Gluk, font designer from Fontspace (Used the Mikodacs font from there)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
