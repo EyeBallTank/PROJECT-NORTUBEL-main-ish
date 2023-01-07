@@ -33,7 +33,6 @@ config/icon="res://nortubel icon.png"
 [autoload]
 
 SceneManager="*res://src/behind_the_scenes/scene_manager.tscn"
-PauseMenu="*res://screens/PauseMenu.tscn"
 
 [display]
 

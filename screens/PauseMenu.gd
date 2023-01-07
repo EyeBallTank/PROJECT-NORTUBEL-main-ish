@@ -1,7 +1,7 @@
 extends Control
 
-onready var menu = $MenuMain
-onready var options = $OptionsMenu
+onready var pausemenu = $MenuMain
+onready var optionsmenu = $OptionsMenu
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -16,6 +16,7 @@ func _ready():
 
 func _on_UnpauseButton_pressed():
 	hide()
+	get_tree().paused = false
 
 func _on_QuitButton_pressed():
 	get_tree().quit()
@@ -25,11 +26,10 @@ func show_and_hide(first, second):
 	second.hide()
 
 func _on_OptionsButton_pressed():
-	show_and_hide(options, menu)
-
+	show_and_hide(optionsmenu, pausemenu)
 
 func _on_BackFromOptions_pressed():
-	show_and_hide(menu, options)
+	show_and_hide(pausemenu, optionsmenu)
 
 
 func _on_Music_value_changed(value):
