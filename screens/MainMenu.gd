@@ -3,7 +3,15 @@ extends Control
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
 
+#func _process(_delta):
+#	if Input.is_action_just_pressed("ui_cancel"):
+#		toggle()
 
+#func toggle():
+#	visible = !visible
+#	get_tree().paused = visible
+
+#I might as well create a Pause Menu scene that is seperate from the MainMenu
 
 func _on_StartButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate.tscn")
@@ -26,8 +34,6 @@ func _on_BackFromOptions_pressed():
 	show_and_hide(menu, options)
 
 
-
-
 func _on_Music_value_changed(value):
 	volume(1,value)
 
@@ -36,7 +42,6 @@ func _on_Sound_value_changed(value):
 
 func volume(bus_index, value):
 	AudioServer.set_bus_volume_db(bus_index, linear2db(value)-30)
-
 
 func _on_Fullscreen_toggled(button_pressed):
 	OS.window_fullscreen = button_pressed
