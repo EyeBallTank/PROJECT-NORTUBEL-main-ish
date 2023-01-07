@@ -3,15 +3,7 @@ extends Control
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
 
-#func _process(_delta):
-#	if Input.is_action_just_pressed("ui_cancel"):
-#		toggle()
 
-#func toggle():
-#	visible = !visible
-#	get_tree().paused = visible
-
-#I might as well create a Pause Menu scene that is seperate from the MainMenu
 
 func _on_StartButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate.tscn")
