@@ -31,6 +31,7 @@ font_data = ExtResource( 2 )
 font_data = ExtResource( 2 )
 
 [node name="MainMenu" type="Control"]
+pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -180,5 +181,6 @@ text = "Menu"
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
+[connection signal="toggled" from="OptionsMenu/VideoSettings/Checks/Fullscreen" to="." method="_on_Fullscreen_toggled"]
 [connection signal="toggled" from="OptionsMenu/VideoSettings/Checks/Borderless" to="." method="_on_Borderless_toggled"]
 [connection signal="pressed" from="OptionsMenu/BackFromOptions" to="." method="_on_BackFromOptions_pressed"]

@@ -3,6 +3,8 @@ extends Control
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
 
+
+
 func _on_StartButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate.tscn")
 
@@ -36,3 +38,7 @@ func _on_Sound_value_changed(value):
 
 func volume(bus_index, value):
 	AudioServer.set_bus_volume_db(bus_index, linear2db(value)-30)
+
+
+func _on_Fullscreen_toggled(button_pressed):
+	OS.window_fullscreen = button_pressed
