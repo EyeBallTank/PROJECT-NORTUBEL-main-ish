@@ -26,8 +26,6 @@ func _on_BackFromOptions_pressed():
 	show_and_hide(menu, options)
 
 
-func _on_Borderless_toggled(button_pressed):
-	OS.window_borderless = button_pressed
 
 
 func _on_Music_value_changed(value):
