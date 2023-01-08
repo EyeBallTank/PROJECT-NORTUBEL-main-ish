@@ -82,6 +82,5 @@ position = Vector2( 3200, 559 )
 position = Vector2( 6648, 964 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 100
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 12 )]
