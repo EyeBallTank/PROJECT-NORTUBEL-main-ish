@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "Pushable",
+"language": "GDScript",
+"path": "res://src/level_objects/pushable.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "actor",
 "language": "GDScript",
@@ -20,6 +25,7 @@ _global_script_classes=[ {
 "path": "res://src/behind_the_scenes/main_level_script.gd"
 } ]
 _global_script_class_icons={
+"Pushable": "",
 "actor": "",
 "main_level_script": ""
 }

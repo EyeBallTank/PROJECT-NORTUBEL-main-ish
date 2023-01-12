@@ -13,7 +13,7 @@
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/anchorhook.tscn" type="PackedScene" id=13]
-[ext_resource path="res://src/level_objects/pushable.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_objects/Pushable.tscn" type="PackedScene" id=14]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -91,4 +91,4 @@ position = Vector2( 6648, 964 )
 position = Vector2( 4243, -214 )
 
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3580, 434 )
+position = Vector2( 3516, -607 )
