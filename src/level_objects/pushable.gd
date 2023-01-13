@@ -6,4 +6,8 @@ func _integrate_forces(state: Physics2DDirectBodyState) -> void:
 	rotation_degrees = 0
 
 func _ready():
-	pass
+	#pass
+	add_central_force(Vector2(0, 1000))
+
+func _process(delta):
+	apply_central_impulse(Vector2(0, 75))
