@@ -7,7 +7,8 @@ enum {
 	FOLLOWME,
 	STANDSTILL
 #	CRAWL,
-#	CLIMB,
+#	CLIMBIDLE,
+#	CLIMBMOVE
 #	PUSH
 }
 
