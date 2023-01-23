@@ -6,7 +6,7 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 
 var velocity: = Vector2.ZERO
-
+var walk
 
 
 #The following comments are not my own, if that isn't clear enough
@@ -31,15 +31,22 @@ const JUMP_SPEED = 1500
 
 func _physics_process(delta):
 	# Horizontal movement code. First, get the player's input.
-	var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
+	#walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
 	# Slow down the player if they're not trying to move.
-	if abs(walk) < WALK_FORCE * 0.1:
+	if Input.get_action_strength("right"):
+		velocity.x = WALK_MAX_SPEED
+		$Sprite.flip_h = false
+	elif Input.get_action_strength("left"):
+		velocity.x = -WALK_MAX_SPEED
+		$Sprite.flip_h = true
+	
+	#if velocity.x < WALK_FORCE * 0.1:
 		# The velocity, slowed down a bit, and then reassigned.
-		velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
-	else:
-		velocity.x += walk * delta
+	#	velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+	#else:
+	#	velocity.x += walk * delta
 	# Clamp to the maximum horizontal movement speed.
-	velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
+	#velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 
 	# Vertical movement code. Apply gravity.
 	velocity.y += gravity * delta
