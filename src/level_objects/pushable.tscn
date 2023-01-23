@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 108, 140 )
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="RigidBody2D" type="RigidBody2D" groups=["pushable"]]
 collision_layer = 4
 collision_mask = 7
 linear_velocity = Vector2( 0, 1000 )

@@ -8,9 +8,6 @@ export var gravity: = 3000.0
 var velocity: = Vector2.ZERO
 
 
-# EyeBall here, as you can see i copied code from the Cubio demo
-# My IRL schedule is a bit of a mess, so don't expect professionalism that much
-# Credit to the Godot team and anyone for making resources that i keep Frankensteining into my projects
 
 #The following comments are not my own, if that isn't clear enough
 
