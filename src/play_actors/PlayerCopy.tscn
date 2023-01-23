@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/sprites/play_actor_sprites/player placeholder sprite.png" type="Texture" id=1]
-[ext_resource path="res://src/play_actors/Player.gd" type="Script" id=2]
+[ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25.5, 122 )
@@ -9,8 +9,6 @@ extents = Vector2( 25.5, 122 )
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 4
 script = ExtResource( 2 )
-speed = Vector2( 1000, 3000 )
-gravity = 2000.0
 
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
