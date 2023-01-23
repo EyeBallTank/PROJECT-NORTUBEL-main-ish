@@ -6,7 +6,6 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 
 var velocity: = Vector2.ZERO
-var walk
 
 
 #The following comments are not my own, if that isn't clear enough
@@ -39,6 +38,8 @@ func _physics_process(delta):
 	elif Input.get_action_strength("left"):
 		velocity.x = -WALK_MAX_SPEED
 		$Sprite.flip_h = true
+	else:
+		velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 	
 	#if velocity.x < WALK_FORCE * 0.1:
 		# The velocity, slowed down a bit, and then reassigned.
