@@ -94,7 +94,7 @@ position = Vector2( 6648, 964 )
 position = Vector2( 4243, -214 )
 
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2723, -534 )
+position = Vector2( 2652, -666 )
 
 [node name="Area2D2" parent="." instance=ExtResource( 15 )]
 position = Vector2( -345, 413 )

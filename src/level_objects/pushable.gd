@@ -13,3 +13,7 @@ func _ready():
 
 func _process(delta):
 	apply_central_impulse(Vector2(0, 75))
+
+#	if body.name == "Player":
+#		body.velocity.y = -500
+#		body.move_and_slide(body.velocity)

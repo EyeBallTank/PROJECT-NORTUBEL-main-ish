@@ -4,7 +4,7 @@
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/levels/LevelTemplate3.gd" type="Script" id=4]
-[ext_resource path="res://src/level_objects/Pushable.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -49,5 +49,5 @@ position = Vector2( 465, 480 )
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 702, 498 )
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1780, 426 )
+[node name="Pushable" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1235, -105 )

@@ -59,3 +59,7 @@ func _physics_process(delta):
 	if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 		velocity.y = -JUMP_SPEED
 
+#	for index in get_slide_count():
+#		var collision = get_slide_collision(index)
+#		if collision.collider.is_in_group("pushable"):
+
