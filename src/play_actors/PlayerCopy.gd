@@ -23,10 +23,10 @@ var velocity: = Vector2.ZERO
 
 #var state = MAINSTATE
 
-const WALK_FORCE = 1600
-const WALK_MAX_SPEED = 700
-const STOP_FORCE = 900
-const JUMP_SPEED = 1500
+var WALK_FORCE = 1600
+var WALK_MAX_SPEED = 700
+var STOP_FORCE = 900
+var JUMP_SPEED = 1500
 
 func _physics_process(delta):
 	# Horizontal movement code. First, get the player's input.
@@ -59,7 +59,10 @@ func _physics_process(delta):
 	if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 		velocity.y = -JUMP_SPEED
 
-#	for index in get_slide_count():
-#		var collision = get_slide_collision(index)
-#		if collision.collider.is_in_group("pushable"):
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("pushable"):
+			WALK_MAX_SPEED = 350
 
+# MIGHT NEED A STATE MACHINE FOR THIS
+# AT LEAST I FIGURED OUT A SPEED NERD "POWER DOWN" I GUESS
