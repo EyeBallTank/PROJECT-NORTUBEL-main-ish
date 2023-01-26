@@ -29,10 +29,10 @@ shape = SubResource( 1 )
 position = Vector2( 0, 138 )
 shape = SubResource( 2 )
 
-[node name="leftside" type="CollisionShape2D" parent="."]
+[node name="leftside" type="CollisionShape2D" parent="." groups=["pushableside"]]
 position = Vector2( -106.5, 2 )
 shape = SubResource( 3 )
 
-[node name="rightside" type="CollisionShape2D" parent="."]
+[node name="rightside" type="CollisionShape2D" parent="." groups=["pushableside"]]
 position = Vector2( 106.514, 2 )
 shape = SubResource( 3 )

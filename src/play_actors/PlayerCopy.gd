@@ -51,6 +51,21 @@ func _physics_process(delta):
 				if Input.is_action_just_pressed("jumpup"):
 					state = MAINSTATE
 					velocity.y = -JUMP_SPEED
+			#Copied code from below to the PUSH state
+			if Input.is_action_just_pressed("jumpup"):
+				jump_buffer_counter = jump_buffer_time
+			
+			if Input.is_action_just_released("jumpup"):
+				if velocity.y < 0:
+					velocity.y += 500
+				
+			if jump_buffer_counter > 0:
+				jump_buffer_counter -= 1
+
+			
+			if jump_buffer_counter > 0 and is_on_floor():
+				velocity.y = -JUMP_SPEED
+				jump_buffer_counter = 0
 		
 		MAINSTATE:
 			WALK_MAX_SPEED = 700
@@ -97,7 +112,7 @@ func _physics_process(delta):
 		
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("pushable"):
+		if collision.collider.is_in_group("pushableside"):
 			state = PUSH
 		else:
 			state = MAINSTATE
