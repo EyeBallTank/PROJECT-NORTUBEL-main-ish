@@ -27,3 +27,6 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+		
+		#PUSHED:
+
