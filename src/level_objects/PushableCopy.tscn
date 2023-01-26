@@ -10,7 +10,7 @@ extents = Vector2( 108, 2 )
 extents = Vector2( 105, 2 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 1.5, 138 )
+extents = Vector2( 108, 138 )
 
 [node name="Pushable" type="KinematicBody2D" groups=["pushable"]]
 collision_layer = 4
@@ -29,10 +29,6 @@ shape = SubResource( 1 )
 position = Vector2( 0, 138 )
 shape = SubResource( 2 )
 
-[node name="leftside" type="CollisionShape2D" parent="." groups=["pushableside"]]
-position = Vector2( -106.5, 2 )
-shape = SubResource( 3 )
-
-[node name="rightside" type="CollisionShape2D" parent="." groups=["pushableside"]]
-position = Vector2( 106.514, 2 )
+[node name="leftandrightside" type="CollisionShape2D" parent="." groups=["pushableside"]]
+position = Vector2( 0, 2 )
 shape = SubResource( 3 )

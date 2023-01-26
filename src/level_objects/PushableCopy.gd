@@ -19,6 +19,8 @@ var WALK_MAX_SPEED = 700
 var STOP_FORCE = 900
 var JUMP_SPEED = 1500
 
+onready var pushableside = $leftandrightside
+
 func _physics_process(delta):
 	match state:
 		FROZEN:
