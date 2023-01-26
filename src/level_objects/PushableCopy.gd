@@ -30,5 +30,14 @@ func _physics_process(delta):
 
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 		
-		#PUSHED:
+		PUSHED:
+			WALK_MAX_SPEED = 150
+			if Input.get_action_strength("right"):
+				velocity.x = WALK_MAX_SPEED
+				$Sprite.flip_h = false
+			elif Input.get_action_strength("left"):
+				velocity.x = -WALK_MAX_SPEED
+				$Sprite.flip_h = true
+			else:
+				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 
