@@ -4,8 +4,10 @@ const FLOOR_NORMAL: = Vector2.UP
 
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
+export var jump_buffer_time : int  = 15
 
 var velocity: = Vector2.ZERO
+var jump_buffer_counter : int = 0
 
 
 #The following comments are not my own, if that isn't clear enough
@@ -45,9 +47,10 @@ func _physics_process(delta):
 
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
-			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
-				velocity.y = -JUMP_SPEED
-				state = MAINSTATE
+			if is_on_floor():
+				if Input.is_action_just_pressed("jumpup"):
+					state = MAINSTATE
+					velocity.y = -JUMP_SPEED
 		
 		MAINSTATE:
 			WALK_MAX_SPEED = 700
@@ -77,7 +80,21 @@ func _physics_process(delta):
 	# Check for jumping. is_on_floor() must be called after movement code.
 			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
+			#This is where i copy code from a video/page by Dicode1q
+			if Input.is_action_just_pressed("jumpup"):
+				jump_buffer_counter = jump_buffer_time
+			
+			if Input.is_action_just_released("jumpup"):
+				if velocity.y < 0:
+					velocity.y += 500
 				
+			if jump_buffer_counter > 0:
+				jump_buffer_counter -= 1
+			
+			if jump_buffer_counter > 0 and is_on_floor():
+				velocity.y = -JUMP_SPEED
+				jump_buffer_counter = 0
+		
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider.is_in_group("pushable"):
