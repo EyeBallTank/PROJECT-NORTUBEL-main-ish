@@ -70,6 +70,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Gluk, font designer from Fontspace (Used the Mikodacs font from there)
 * 16BitDev (Used the Main Menu tutorial video as reference, hence the options menu)
 * hellofellowjell-0186 (Used a tutorial video to make the jump pad work)
+* Dicode1q (Used video and article to improvise player jump physics)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
