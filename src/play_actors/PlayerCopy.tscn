@@ -31,4 +31,3 @@ scale = Vector2( 0.3, 173 )
 enabled = true
 cast_to = Vector2( 90, 0 )
 collision_mask = 4
-collide_with_areas = true
