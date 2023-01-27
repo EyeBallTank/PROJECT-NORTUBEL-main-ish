@@ -111,12 +111,19 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
 		
-	for index in get_slide_count():
-		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("pushableside"):
-			state = PUSH
-		else:
-			state = MAINSTATE
+#	for index in get_slide_count():
+#		var collision = get_slide_collision(index)
+#		if collision.collider.is_in_group("pushableside"):
+#			state = PUSH
+#		else:
+#			state = MAINSTATE
+
+	if raycastdetector.is_colliding():
+		var object = raycastdetector.get_collider()
+		object.move_and_slide(Vector2(raycastdetector.scale.x, 0) * speed)
+		state = PUSH
+	else:
+		state = MAINSTATE
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERD "POWER DOWN" I GUESS

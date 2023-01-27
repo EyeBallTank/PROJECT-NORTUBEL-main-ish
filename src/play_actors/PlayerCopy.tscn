@@ -27,6 +27,8 @@ smoothing_enabled = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( -1.19209e-07, -124 )
-scale = Vector2( 0.3, 45 )
+scale = Vector2( 0.3, 171 )
 enabled = true
 cast_to = Vector2( 90, 0 )
+collision_mask = 4
+collide_with_areas = true
