@@ -8,7 +8,7 @@ export var jump_buffer_time : int  = 15
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
-onready var pushdetection = $PushDetection
+
 
 #The following comments are not my own, if that isn't clear enough
 
@@ -30,8 +30,9 @@ var WALK_MAX_SPEED = 700
 var STOP_FORCE = 900
 var JUMP_SPEED = 1500
 
+
 func _physics_process(delta):
-	# Still using frankensteined code to do this
+	# Still using frankensteined code to do this		
 	match state:
 		PUSH:
 			WALK_MAX_SPEED = 150
@@ -73,9 +74,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
 				$Sprite.flip_h = false
+#				pushdetection.global_rotation = 0
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				$Sprite.flip_h = true
+#				pushdetection.global_rotation = -600
 			else:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 	
@@ -118,12 +121,12 @@ func _physics_process(delta):
 #		else:
 #			state = MAINSTATE
 
-	if pushdetection.is_colliding():
-		var object = pushdetection.get_collider()
-		object.move_and_slide(Vector2(pushdetection.scale.x, 0) * speed)
-		state = PUSH
-	else:
-		state = MAINSTATE
+#	if pushdetection.is_colliding():
+#		var object = pushdetection.get_collider()
+#		object.move_and_slide(Vector2(pushdetection.scale.x, 0) * speed)
+#		state = PUSH
+#	else:
+#		state = MAINSTATE
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERD "POWER DOWN" I GUESS
