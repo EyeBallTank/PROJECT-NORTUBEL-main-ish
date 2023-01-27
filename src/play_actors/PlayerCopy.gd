@@ -8,7 +8,7 @@ export var jump_buffer_time : int  = 15
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
-onready var raycastdetector = $RayCast2D
+onready var pushdetection = $PushDetection
 
 #The following comments are not my own, if that isn't clear enough
 
@@ -118,9 +118,9 @@ func _physics_process(delta):
 #		else:
 #			state = MAINSTATE
 
-	if raycastdetector.is_colliding():
-		var object = raycastdetector.get_collider()
-		object.move_and_slide(Vector2(raycastdetector.scale.x, 0) * speed)
+	if pushdetection.is_colliding():
+		var object = pushdetection.get_collider()
+		object.move_and_slide(Vector2(pushdetection.scale.x, 0) * speed)
 		state = PUSH
 	else:
 		state = MAINSTATE
