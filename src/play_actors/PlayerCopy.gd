@@ -8,7 +8,7 @@ export var jump_buffer_time : int  = 15
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
-
+onready var raycastdetector = $RayCast2D
 
 #The following comments are not my own, if that isn't clear enough
 
