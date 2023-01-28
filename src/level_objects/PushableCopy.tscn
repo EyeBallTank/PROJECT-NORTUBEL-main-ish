@@ -11,9 +11,9 @@ collision_layer = 4
 collision_mask = 7
 script = ExtResource( 2 )
 
+[node name="leftandrightside" type="CollisionShape2D" parent="." groups=["pushableside"]]
+shape = SubResource( 3 )
+
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 0, 1, 0.0392157, 1 )
 texture = ExtResource( 1 )
-
-[node name="leftandrightside" type="CollisionShape2D" parent="." groups=["pushableside"]]
-shape = SubResource( 3 )

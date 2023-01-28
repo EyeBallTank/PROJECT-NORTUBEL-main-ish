@@ -27,6 +27,7 @@ var state = MAINSTATE
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
+var PUSH_SPEED = 150
 var STOP_FORCE = 900
 var JUMP_SPEED = 1500
 
@@ -35,16 +36,15 @@ func _physics_process(delta):
 	# Still using frankensteined code to do this		
 	match state:
 		PUSH:
-			WALK_MAX_SPEED = 150
 			if Input.get_action_strength("right"):
-				velocity.x = WALK_MAX_SPEED
+				velocity.x = PUSH_SPEED
 				$Sprite.flip_h = false
 			elif Input.get_action_strength("left"):
-				velocity.x = -WALK_MAX_SPEED
+				velocity.x = -PUSH_SPEED
 				$Sprite.flip_h = true
 			else:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
-				
+
 			velocity.y += gravity * delta
 
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
@@ -56,19 +56,19 @@ func _physics_process(delta):
 			#Copied code from below to the PUSH state
 			if Input.is_action_just_pressed("jumpup"):
 				jump_buffer_counter = jump_buffer_time
-			
+
 			if Input.is_action_just_released("jumpup"):
 				if velocity.y < 0:
 					velocity.y += 500
-				
+
 			if jump_buffer_counter > 0:
 				jump_buffer_counter -= 1
 
-			
+
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
-		
+#
 		MAINSTATE:
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -127,6 +127,14 @@ func _physics_process(delta):
 #		state = PUSH
 #	else:
 #		state = MAINSTATE
+
+#	if get_slide_count() > 0:
+#		check_pushable_collision(velocity)
+#
+#func check_pushable_collision(velocity) -> void:
+#	var pushthing : = get_slide_collision(0).collider as PushableCopy
+#	if pushthing:
+#			pushthing.push(PUSH_SPEED * velocity)
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERD "POWER DOWN" I GUESS
