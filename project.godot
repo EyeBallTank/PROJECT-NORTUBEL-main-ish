@@ -96,6 +96,7 @@ standstill={
 2d_physics/layer_6="ENEMIES"
 2d_physics/layer_7="NPCS"
 2d_physics/layer_8="FINISHLINE"
+2d_physics/layer_9="PUSHABLE"
 
 [physics]
 
