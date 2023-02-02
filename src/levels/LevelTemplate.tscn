@@ -8,7 +8,7 @@
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/menusandui/healthbar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/menusandui/healthbarPlayer.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=12]

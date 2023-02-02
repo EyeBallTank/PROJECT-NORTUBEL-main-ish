@@ -5,7 +5,7 @@
 [ext_resource path="res://src/play_actors/Companion.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/levels/LevelTemplate2.gd" type="Script" id=5]
-[ext_resource path="res://src/menusandui/healthbar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/menusandui/healthbarPlayer.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )

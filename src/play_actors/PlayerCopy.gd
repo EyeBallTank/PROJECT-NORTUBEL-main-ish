@@ -5,6 +5,7 @@ const FLOOR_NORMAL: = Vector2.UP
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var jump_buffer_time : int  = 15
+export var health : int = 100
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
@@ -31,8 +32,13 @@ var PUSH_SPEED = 150
 var STOP_FORCE = 900
 var JUMP_SPEED = 1500
 
+onready var healthBar = $HealthbarPlayer
+
+func _ready():
+	healthBar.max_value = health
 
 func _physics_process(delta):
+	healthBar.value = health
 	# Still using frankensteined code to do this		
 	match state:
 		PUSH:
