@@ -52,8 +52,8 @@ func set_dir(target_dir):
 		next_dir = target_dir
 		next_dir_time = OS.get_ticks_msec() + react_time
 
-#changed _process to _physics_process in this part. is it a good idea?
-func _physics_process(delta):
+
+func _process(delta):
 #	healthBar.value = health
 #for some reason, these 2 healthBar related code lines break the game, even though they seem exactly like the Player's version which works
 	match state:
