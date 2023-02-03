@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 228.5, 290 )
 
-[node name="Manowar" type="KinematicBody2D"]
+[node name="Manowar" type="KinematicBody2D" groups=["hazards"]]
 collision_layer = 32
 collision_mask = 3
 

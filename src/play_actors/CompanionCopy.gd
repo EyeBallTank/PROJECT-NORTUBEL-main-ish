@@ -7,9 +7,7 @@ const FLOOR_NORMAL: = Vector2.UP
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var health : int = 50
-
 var velocity: = Vector2.ZERO
-
 
 #I took Gonkee's Jared AI code and tried to change it to my preferences.
 #And the state machine was based on a suggestion by TebyTheCat on Newgrounds.
@@ -26,7 +24,7 @@ enum {
 var state = STANDSTILL
 
 onready var Player = get_parent().get_node("Player")
-onready var healthBar = $HealthBarCompanion
+onready var healthBar = $HealthbarCompanion
 
 var vel = Vector2(0, 0)
 
@@ -44,7 +42,7 @@ var target_player_distance = 90
 
 func _ready():
 	set_process(true)
-#	healthBar.max_value = health
+	healthBar.max_value = health
 
 
 func set_dir(target_dir):
@@ -54,8 +52,7 @@ func set_dir(target_dir):
 
 
 func _process(delta):
-#	healthBar.value = health
-#for some reason, these 2 healthBar related code lines break the game, even though they seem exactly like the Player's version which works
+	healthBar.value = health
 	match state:
 		FOLLOWME:
 			if Player.position.x < position.x - target_player_distance:
