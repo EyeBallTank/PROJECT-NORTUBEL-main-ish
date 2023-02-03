@@ -22,6 +22,7 @@ enum {
 #	SWING,
 #	KICK,
 #	KNIFE
+#	DEATH
 }
 
 var state = MAINSTATE
@@ -39,6 +40,8 @@ func _ready():
 
 func _physics_process(delta):
 	healthBar.value = health
+	if health <= 0:
+		die()
 	# Still using frankensteined code to do this		
 	match state:
 		PUSH:
@@ -119,6 +122,11 @@ func _physics_process(delta):
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
+
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("enemies"):
+			health -= 10
 		
 #	for index in get_slide_count():
 #		var collision = get_slide_collision(index)
@@ -143,4 +151,7 @@ func _physics_process(delta):
 #			pushthing.push(PUSH_SPEED * velocity)
 
 # MIGHT NEED A STATE MACHINE FOR THIS
-# AT LEAST I FIGURED OUT A SPEED NERD "POWER DOWN" I GUESS
+# AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
+
+func die():
+	get_tree().reload_current_scene()

@@ -13,3 +13,4 @@ func _physics_process(delta):
 		#if i give the Gecko proper sprites, this will change
 	velocity = direction * 290
 	move_and_slide(velocity, Vector2.UP)
+

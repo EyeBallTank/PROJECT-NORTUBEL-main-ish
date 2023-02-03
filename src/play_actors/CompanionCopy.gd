@@ -19,6 +19,7 @@ enum {
 #	CLIMBIDLE,
 #	CLIMBMOVE
 #	PUSH
+#	DEATH
 }
 
 var state = STANDSTILL
@@ -43,6 +44,8 @@ var target_player_distance = 90
 func _ready():
 	set_process(true)
 	healthBar.max_value = health
+	if health <= 0:
+		queue_free()
 
 
 func set_dir(target_dir):
@@ -95,3 +98,9 @@ func _process(delta):
 		state = FOLLOWME
 	elif Input.is_action_pressed("standstill"):
 		state = STANDSTILL
+
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("enemies"):
+			health -= 10
+
