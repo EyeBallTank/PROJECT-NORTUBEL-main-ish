@@ -37,6 +37,13 @@ The actual story revolves around a group of 6 friends that get lost in some stra
 
 I may end up changing this goal list as well.
 
+# Definitely need to change/improve:
+* The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under the first template level, so i need to make this as an actual recurring game scene.
+* The Scene Changing method is still not "universal" enough: Look at the endlevel Doors and how they have specific code changes in each level, meaning a better method is needed.
+* The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
+* The concept of a Pushable object in levels is still not done the way i wanted to (Since both Player and Companion should be able to interact with it).
+* Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
+
 # Credits and shout outs:
 
 Because i either have help from others or take stuff from somewhere, i don't do this alone.
