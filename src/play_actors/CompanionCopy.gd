@@ -104,4 +104,6 @@ func _process(delta):
 	elif Input.is_action_pressed("standstill"):
 		state = STANDSTILL
 
-
+func get_hurted():
+	health -= 10
+	velocity.y -= 500
