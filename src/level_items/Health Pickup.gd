@@ -1,11 +1,7 @@
 extends Area2D
 
-
 func _ready():
 	pass 
-
-
-
 
 func _on_Health_Pickup_body_entered(body):
 	if body.name == "Player":
@@ -23,4 +19,3 @@ func _on_Health_Pickup_body_entered(body):
 			pass
 
 #Wanted to make sure one character touching the Health Pickup heals BOTH
-#But it seems the Companion cannot obtain the Health Pickup to heal

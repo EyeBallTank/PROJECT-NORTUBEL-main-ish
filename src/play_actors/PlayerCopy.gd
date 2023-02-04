@@ -42,6 +42,12 @@ func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
 		die()
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("enemies"):
+			health -= 10
+			velocity.y -= 500
+
 	# Still using frankensteined code to do this		
 	match state:
 		PUSH:
@@ -123,10 +129,7 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
 
-	for index in get_slide_count():
-		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("enemies"):
-			health -= 10
+
 		
 #	for index in get_slide_count():
 #		var collision = get_slide_collision(index)
