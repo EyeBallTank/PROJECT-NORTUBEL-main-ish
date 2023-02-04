@@ -44,8 +44,6 @@ var target_player_distance = 90
 func _ready():
 	set_process(true)
 	healthBar.max_value = health
-	if health <= 0:
-		queue_free()
 
 
 func set_dir(target_dir):
@@ -56,6 +54,13 @@ func set_dir(target_dir):
 
 func _process(delta):
 	healthBar.value = health
+	if health <= 0:
+		queue_free()
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("enemies"):
+			health -= 10
+
 	match state:
 		FOLLOWME:
 			if Player.position.x < position.x - target_player_distance:
@@ -99,8 +104,4 @@ func _process(delta):
 	elif Input.is_action_pressed("standstill"):
 		state = STANDSTILL
 
-	for index in get_slide_count():
-		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("enemies"):
-			health -= 10
 
