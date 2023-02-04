@@ -10,7 +10,6 @@ export var health : int = 100
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
 
-
 #The following comments are not my own, if that isn't clear enough
 
 #THESE ARE PREPERATIONS FOR FUTURE PLAYER SATES
@@ -32,7 +31,6 @@ var WALK_MAX_SPEED = 700
 var PUSH_SPEED = 150
 var STOP_FORCE = 900
 var JUMP_SPEED = 1500
-var KNOCKBACKDIR = 5
 
 onready var healthBar = $HealthbarPlayer
 
@@ -43,12 +41,11 @@ func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
 		die()
-	for index in get_slide_count():
-		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("enemies"):
-			health -= 10
-			velocity.y -= 500
-#			velocity.x -= global_position.x * KNOCKBACKDIR
+#	for index in get_slide_count():
+#		var collision = get_slide_collision(index)
+#		if collision.collider.is_in_group("enemies"):
+#			get_hurt()
+
 
 	# Still using frankensteined code to do this		
 	match state:
@@ -157,6 +154,10 @@ func _physics_process(delta):
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
+
+func get_hurt():
+	health -= 10
+	velocity.y -= 500
 
 func die():
 	get_tree().reload_current_scene()
