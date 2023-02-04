@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
+var knockback_dir = 1
 onready var sprite: = $Sprite
 
 func _physics_process(delta):
@@ -13,4 +14,3 @@ func _physics_process(delta):
 		#if i give the Gecko proper sprites, this will change
 	velocity = direction * 290
 	move_and_slide(velocity, Vector2.UP)
-

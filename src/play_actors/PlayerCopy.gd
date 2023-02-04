@@ -32,6 +32,7 @@ var WALK_MAX_SPEED = 700
 var PUSH_SPEED = 150
 var STOP_FORCE = 900
 var JUMP_SPEED = 1500
+var KNOCKBACKDIR = 5
 
 onready var healthBar = $HealthbarPlayer
 
@@ -47,6 +48,7 @@ func _physics_process(delta):
 		if collision.collider.is_in_group("enemies"):
 			health -= 10
 			velocity.y -= 500
+#			velocity.x -= global_position.x * KNOCKBACKDIR
 
 	# Still using frankensteined code to do this		
 	match state:
