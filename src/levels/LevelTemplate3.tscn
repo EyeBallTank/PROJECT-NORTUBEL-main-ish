@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
@@ -16,6 +16,9 @@
 [ext_resource path="res://src/npc_actors/npc placeholder.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=15]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=19]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -96,3 +99,12 @@ position = Vector2( -150, 207 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
+
+[node name="Blue key" parent="." instance=ExtResource( 19 )]
+position = Vector2( 1160, -166 )
+
+[node name="Red key" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1272, -169 )
+
+[node name="Yellow key" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1389, -165 )
