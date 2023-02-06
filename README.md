@@ -79,6 +79,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * hellofellowjell-0186 (Used a tutorial video to make the jump pad work)
 * Dicode1q (Used video and article to improvise player jump physics)
 * gamedevwithdrew (Used tutorial videos on adding the health bars)
+* strangehorizon on Freesound dot org (Source of Gong sound effect)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
