@@ -31,3 +31,5 @@ margin_left = -126.0
 margin_top = -318.0
 margin_right = 125.0
 margin_bottom = -258.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
