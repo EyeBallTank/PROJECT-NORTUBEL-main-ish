@@ -60,6 +60,7 @@ func _process(delta):
 		var collision = get_slide_collision(index)
 		if collision.collider.is_in_group("enemies"):
 			health -= 10
+			$AnimationPlayer.play("companionhurt")
 
 	match state:
 		FOLLOWME:
