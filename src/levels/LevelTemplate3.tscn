@@ -61,13 +61,13 @@ tile_data = PoolIntArray( -393201, 0, 0, -393184, 0, 0, -327665, 0, 0, -327648, 
 position = Vector2( 465, 480 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 702, 498 )
+position = Vector2( 668, 464 )
 
 [node name="Pushable" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2745, 225 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1719, 632 )
+position = Vector2( 1734, 647 )
 
 [node name="Manowar" parent="." instance=ExtResource( 15 )]
 position = Vector2( -729, 398 )
