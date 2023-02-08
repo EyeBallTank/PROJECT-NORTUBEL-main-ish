@@ -51,16 +51,20 @@ func set_dir(target_dir):
 		next_dir = target_dir
 		next_dir_time = OS.get_ticks_msec() + react_time
 
+func get_hurted():
+	health -= 10
+	velocity.y -= 500
+	$AnimationPlayer.play("companionhurt")
 
 func _process(delta):
 	healthBar.value = health
 	if health <= 0:
 		queue_free()
-	for index in get_slide_count():
-		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("enemies"):
-			health -= 10
-			$AnimationPlayer.play("companionhurt")
+#	for index in get_slide_count():
+#		var collision = get_slide_collision(index)
+#		if collision.collider.is_in_group("enemies"):
+#			health -= 10
+			
 
 	match state:
 		FOLLOWME:
@@ -104,7 +108,3 @@ func _process(delta):
 		state = FOLLOWME
 	elif Input.is_action_pressed("standstill"):
 		state = STANDSTILL
-
-func get_hurted():
-	health -= 10
-	velocity.y -= 500
