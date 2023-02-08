@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
@@ -19,6 +19,9 @@
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/Green switch.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -108,3 +111,12 @@ position = Vector2( 1272, -169 )
 
 [node name="Yellow key" parent="." instance=ExtResource( 17 )]
 position = Vector2( 1389, -165 )
+
+[node name="Blue switch" parent="." instance=ExtResource( 21 )]
+position = Vector2( 1503, -152 )
+
+[node name="Green switch" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1596, -148 )
+
+[node name="Yellow switch" parent="." instance=ExtResource( 22 )]
+position = Vector2( 1700, -152 )
