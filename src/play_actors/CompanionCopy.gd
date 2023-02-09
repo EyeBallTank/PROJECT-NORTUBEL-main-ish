@@ -53,7 +53,7 @@ func set_dir(target_dir):
 
 func get_hurted():
 	health -= 10
-	velocity.y -= 500
+	vel.y -= 500
 	$AnimationPlayer.play("companionhurt")
 
 func _process(delta):

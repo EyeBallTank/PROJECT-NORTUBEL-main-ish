@@ -66,3 +66,12 @@ margin_bottom = -258.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/playerhurt = SubResource( 3 )
+
+[node name="LadderCheck" type="RayCast2D" parent="."]
+position = Vector2( 0, -243 )
+scale = Vector2( 4, 4 )
+enabled = true
+cast_to = Vector2( 0, 67 )
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false

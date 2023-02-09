@@ -15,7 +15,7 @@ var jump_buffer_counter : int = 0
 #THESE ARE PREPERATIONS FOR FUTURE PLAYER SATES
 enum {
 	MAINSTATE,
-#	CLIMB,
+	CLIMB,
 	PUSH
 #	SWIM,
 #	SWING,
@@ -33,11 +33,14 @@ var STOP_FORCE = 900
 var JUMP_SPEED = 1500
 
 onready var healthBar = $HealthbarPlayer
+onready var ladderCheck = $LadderCheck
 
 func _ready():
 	healthBar.max_value = health
 
 func _physics_process(delta):
+	
+	
 	healthBar.value = health
 	if health <= 0:
 		die()
@@ -95,7 +98,7 @@ func _physics_process(delta):
 #				pushdetection.global_rotation = -600
 			else:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
-	
+
 	#if velocity.x < WALK_FORCE * 0.1:
 		# The velocity, slowed down a bit, and then reassigned.
 	#	velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
@@ -127,7 +130,26 @@ func _physics_process(delta):
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
+			if is_on_ladder():
+				state = CLIMB
 
+		CLIMB:
+			PUSH_SPEED = 150
+			if Input.get_action_strength("right"):
+				velocity.x = PUSH_SPEED
+			elif Input.get_action_strength("left"):
+				velocity.x = -PUSH_SPEED
+			elif Input.get_action_strength("jumpup"):
+				velocity.y = -PUSH_SPEED
+			elif Input.get_action_strength("down"):
+				velocity.y = PUSH_SPEED
+			else:
+				velocity.x = 0
+				velocity.y = 0
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			
+			if not is_on_ladder():
+				state = MAINSTATE
 
 		
 #	for index in get_slide_count():
@@ -162,3 +184,9 @@ func get_hurt():
 
 func die():
 	get_tree().reload_current_scene()
+
+func is_on_ladder():
+	if not ladderCheck.is_colliding(): return false
+	var collider = ladderCheck.get_collider()
+	if not collider is Ladder: return false
+	return true

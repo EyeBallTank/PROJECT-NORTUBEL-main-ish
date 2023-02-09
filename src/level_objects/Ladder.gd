@@ -1,4 +1,5 @@
 extends Area2D
+class_name Ladder
 
 #NOT NOW
 #Will make it actually work
