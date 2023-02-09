@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 184, 95 )
 
-[node name="Area2D" type="Area2D"]
+[node name="Jumppad" type="Area2D"]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource( 2 )

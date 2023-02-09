@@ -134,7 +134,7 @@ func _physics_process(delta):
 				state = CLIMB
 
 		CLIMB:
-			PUSH_SPEED = 150
+			PUSH_SPEED = 250
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 			elif Input.get_action_strength("left"):

@@ -88,12 +88,6 @@ position = Vector2( -1398, 173 )
 [node name="Gong" parent="." instance=ExtResource( 9 )]
 position = Vector2( -1701, 434 )
 
-[node name="Area2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( -2018, 332 )
-
-[node name="Area2D2" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2369, 305 )
-
 [node name="RigidBody2D2" parent="." instance=ExtResource( 12 )]
 position = Vector2( -2941, 365 )
 
@@ -132,3 +126,9 @@ position = Vector2( 2739, 43 )
 position = Vector2( 3, 2 )
 shape = SubResource( 3 )
 one_way_collision = true
+
+[node name="Ladder" parent="." instance=ExtResource( 7 )]
+position = Vector2( -2302, 304 )
+
+[node name="Jumppad" parent="." instance=ExtResource( 10 )]
+position = Vector2( -1983, 347 )
