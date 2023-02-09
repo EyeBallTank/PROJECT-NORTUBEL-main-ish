@@ -150,7 +150,7 @@ func _physics_process(delta):
 			
 			if not is_on_ladder():
 				state = MAINSTATE
-
+#		SWIM:
 		
 #	for index in get_slide_count():
 #		var collision = get_slide_collision(index)

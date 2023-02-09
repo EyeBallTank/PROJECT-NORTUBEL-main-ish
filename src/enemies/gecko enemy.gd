@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+export var gravity: = 29600
+
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
 var knockback_dir = 1
@@ -13,4 +15,5 @@ func _physics_process(delta):
 		#using flip V instead of H because of the angle of the placeholder sprite
 		#if i give the Gecko proper sprites, this will change
 	velocity = direction * 290
+	velocity.y += gravity * delta
 	move_and_slide(velocity, Vector2.UP)
