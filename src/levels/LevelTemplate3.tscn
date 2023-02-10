@@ -135,3 +135,4 @@ position = Vector2( -2302, 304 )
 position = Vector2( -1983, 347 )
 
 [node name="Water" parent="." instance=ExtResource( 24 )]
+position = Vector2( -2505, 144 )
