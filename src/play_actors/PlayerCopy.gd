@@ -131,7 +131,8 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
 			if is_on_ladder():
-				state = CLIMB
+				if Input.get_action_strength("jumpup"):
+					state = CLIMB
 
 		CLIMB:
 			PUSH_SPEED = 250
