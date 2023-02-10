@@ -1,5 +1,5 @@
 extends Area2D
-class_name Ladder
+class_name Water
 
 # Declare member variables here. Examples:
 # var a = 2

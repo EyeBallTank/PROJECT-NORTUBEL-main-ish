@@ -75,3 +75,12 @@ cast_to = Vector2( 0, 67 )
 collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
+
+[node name="SwimCheck" type="RayCast2D" parent="."]
+position = Vector2( 0, -243 )
+scale = Vector2( 4, 4 )
+enabled = true
+cast_to = Vector2( 0, 67 )
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false

@@ -17,7 +17,7 @@ enum {
 	MAINSTATE,
 	CLIMB,
 	PUSH
-#	SWIM,
+	SWIM,
 #	SWING,
 #	KICK,
 #	KNIFE
@@ -34,6 +34,7 @@ var JUMP_SPEED = 1500
 
 onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
+onready var swimCheck = $SwimCheck
 
 func _ready():
 	healthBar.max_value = health
@@ -133,9 +134,11 @@ func _physics_process(delta):
 			if is_on_ladder():
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
+			if is_on_water():
+				state = SWIM
 
 		CLIMB:
-			PUSH_SPEED = 250
+			PUSH_SPEED = 350
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 			elif Input.get_action_strength("left"):
@@ -148,10 +151,30 @@ func _physics_process(delta):
 				velocity.x = 0
 				velocity.y = 0
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-			
+
 			if not is_on_ladder():
 				state = MAINSTATE
-#		SWIM:
+		SWIM:
+			PUSH_SPEED = 350
+			if Input.get_action_strength("right"):
+				velocity.x = PUSH_SPEED
+				velocity.y = 0
+				$Sprite.flip_h = false
+			elif Input.get_action_strength("left"):
+				velocity.x = -PUSH_SPEED
+				velocity.y = 0
+				$Sprite.flip_h = true
+			elif Input.get_action_strength("jumpup"):
+				velocity.y = -PUSH_SPEED
+			elif Input.get_action_strength("down"):
+				velocity.y = PUSH_SPEED
+			else:
+				velocity.x = 0
+				velocity.y = 100
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			
+			if not is_on_water():
+				state = MAINSTATE
 		
 #	for index in get_slide_count():
 #		var collision = get_slide_collision(index)
@@ -190,4 +213,10 @@ func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
 	var collider = ladderCheck.get_collider()
 	if not collider is Ladder: return false
+	return true
+
+func is_on_water():
+	if not swimCheck.is_colliding(): return false
+	var collider = swimCheck.get_collider()
+	if not collider is Water: return false
 	return true
