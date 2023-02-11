@@ -95,6 +95,10 @@ func _process(delta):
 			next_dir_time = 0
 			dir = 0
 
+#		SWIMMING:
+
+#		SWIMIDLE:
+
 	vel.y += grav * delta;
 	if vel.y > max_grav:
 		vel.y = max_grav
