@@ -3,9 +3,9 @@ extends Area2D
 var hitbox_timer : float = 0.5
 
 func _on_Area2D_body_entered(body):
-	if body.name == "Player":
-		body.get_hurt()
-#		hide()
+#	if body.name == "Player":
+#		body.get_hurt()
+##		hide()
 #		yield(get_tree().create_timer(1), "timeout")
 #		show()
 	if body.name == "Companion":

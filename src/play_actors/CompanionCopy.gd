@@ -20,6 +20,8 @@ enum {
 #	CLIMBMOVE
 #	PUSH
 #	DEATH
+#	SWIMIDLE
+#	SWIMMING
 }
 
 var state = STANDSTILL
