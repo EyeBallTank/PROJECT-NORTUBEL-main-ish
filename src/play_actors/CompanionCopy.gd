@@ -93,6 +93,9 @@ func _process(delta):
 			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
 
+#			if is_on_water():
+#				state = SWIMMING
+
 		STANDSTILL:
 			set_dir(0)
 			vel.x = 0
@@ -104,9 +107,17 @@ func _process(delta):
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
 
+#			if is_on_water():
+#				state = SWIMIDLE
+
 #		SWIMMING:
+#			if not is_on_water():
+#				state = FOLLOWME
+#
 
 #		SWIMIDLE:
+#			if not is_on_water():
+#				state = STANDSTILL
 
 	vel.y += grav * delta;
 	if vel.y > max_grav:
