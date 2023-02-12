@@ -20,8 +20,8 @@ enum {
 #	CLIMBMOVE
 #	PUSH
 #	DEATH
-#	SWIMIDLE
-#	SWIMMING
+	SWIMIDLE
+	SWIMMING
 }
 
 var state = STANDSTILL
@@ -93,8 +93,8 @@ func _process(delta):
 			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
 
-#			if is_on_water():
-#				state = SWIMMING
+			if is_on_water():
+				state = SWIMMING
 
 		STANDSTILL:
 			set_dir(0)
@@ -107,17 +107,48 @@ func _process(delta):
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
 
-#			if is_on_water():
-#				state = SWIMIDLE
+			if is_on_water():
+				state = SWIMIDLE
 
-#		SWIMMING:
-#			if not is_on_water():
-#				state = FOLLOWME
-#
+		SWIMMING:
+			if Player.position.x < position.x - target_player_distance:
+				set_dir(-1)
+				vel.y = 0
+			elif Player.position.x > position.x + target_player_distance:
+				set_dir(1)
+				vel.y = 0
+			if Player.position.y < position.y - target_player_distance:
+				vel.y = -800
+			elif Player.position.y > position.y + target_player_distance:
+				vel.y = 800
+			
+			else:
+				set_dir(0)
+				vel.y = 100
+				
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
 
-#		SWIMIDLE:
-#			if not is_on_water():
-#				state = STANDSTILL
+			if Input.is_action_pressed("standstill"):
+				state = SWIMIDLE
+				
+			if not is_on_water():
+				state = FOLLOWME
+
+		SWIMIDLE:
+			set_dir(0)
+			vel.x = 0
+			target_player_distance = 0
+			next_dir = 0
+			next_dir_time = 0
+			dir = 0
+			vel.y = 100
+			
+			if Input.is_action_pressed("followme"):
+				state = SWIMMING
+			
+			if not is_on_water():
+				state = STANDSTILL
 
 	vel.y += grav * delta;
 	if vel.y > max_grav:
