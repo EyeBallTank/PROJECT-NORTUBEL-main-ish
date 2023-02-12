@@ -43,6 +43,8 @@ var next_jump_time = -1
 
 var target_player_distance = 90
 
+onready var swimCheck = $swimCheck
+
 func _ready():
 	set_process(true)
 	healthBar.max_value = health

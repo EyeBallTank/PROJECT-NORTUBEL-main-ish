@@ -61,3 +61,12 @@ margin_bottom = -175.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/companionhurt = SubResource( 3 )
+
+[node name="swimCheck" type="RayCast2D" parent="."]
+position = Vector2( 0, -161 )
+scale = Vector2( 4, 4 )
+enabled = true
+cast_to = Vector2( 0, 46 )
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false
