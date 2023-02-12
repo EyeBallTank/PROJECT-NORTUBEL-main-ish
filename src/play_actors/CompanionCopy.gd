@@ -89,6 +89,10 @@ func _process(delta):
 	
 			if Player.position.y < position.y - 64 and next_jump_time == -1:
 				next_jump_time = OS.get_ticks_msec() + react_time
+			
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+
 		STANDSTILL:
 			set_dir(0)
 			vel.x = 0
@@ -96,6 +100,9 @@ func _process(delta):
 			next_dir = 0
 			next_dir_time = 0
 			dir = 0
+			
+			if Input.is_action_pressed("followme"):
+				state = FOLLOWME
 
 #		SWIMMING:
 
@@ -112,10 +119,8 @@ func _process(delta):
 
 	vel = move_and_slide(vel, Vector2(0, -1))
 		
-	if Input.is_action_pressed("followme"):
-		state = FOLLOWME
-	elif Input.is_action_pressed("standstill"):
-		state = STANDSTILL
+	
+
 
 func is_on_water():
 	if not swimCheck.is_colliding(): return false
