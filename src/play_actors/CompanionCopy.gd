@@ -116,3 +116,9 @@ func _process(delta):
 		state = FOLLOWME
 	elif Input.is_action_pressed("standstill"):
 		state = STANDSTILL
+
+func is_on_water():
+	if not swimCheck.is_colliding(): return false
+	var collider = swimCheck.get_collider()
+	if not collider is Water: return false
+	return true
