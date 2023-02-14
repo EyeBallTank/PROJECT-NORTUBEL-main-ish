@@ -132,7 +132,7 @@ shape = SubResource( 3 )
 one_way_collision = true
 
 [node name="Ladder" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2302, 304 )
+position = Vector2( -2300, 308 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1983, 347 )
