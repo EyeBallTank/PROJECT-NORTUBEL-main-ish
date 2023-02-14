@@ -35,7 +35,6 @@ var JUMP_SPEED = 1500
 onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
-onready var hurtbox = $Hurtbox
 
 func _ready():
 	healthBar.max_value = health
@@ -221,8 +220,3 @@ func is_on_water():
 	var collider = swimCheck.get_collider()
 	if not collider is Water: return false
 	return true
-
-
-func _on_Hurtbox_area_entered(area):
-	if area.name == "Enemy Hitbox":
-		get_hurt()
