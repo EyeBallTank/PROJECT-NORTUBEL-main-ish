@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
@@ -24,6 +24,9 @@
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=27]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -136,3 +139,12 @@ position = Vector2( -2300, 308 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1983, 347 )
+
+[node name="YellowDoor" parent="." instance=ExtResource( 25 )]
+position = Vector2( 3650, 544 )
+
+[node name="BlueDoor" parent="." instance=ExtResource( 26 )]
+position = Vector2( 4362, 543 )
+
+[node name="RedDoor" parent="." instance=ExtResource( 27 )]
+position = Vector2( 4006, 543 )
