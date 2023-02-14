@@ -28,6 +28,7 @@ var state = MAINSTATE
 var hasyellowkey = false
 var hasbluekey = false
 var hasredkey = false
+var hasfishhook = false
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
