@@ -1,11 +1,16 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
-[ext_resource path="res://src/play_actors/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/play_actors/Companion.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/levels/LevelTemplate2.gd" type="Script" id=5]
-[ext_resource path="res://src/menusandui/healthbarPlayer.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -60,21 +65,32 @@ tile_set = SubResource( 2 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 65562, 0, 0, 65563, 0, 0, 65564, 0, 0, 65565, 0, 0, 65566, 0, 0, 65567, 0, 0, 65568, 0, 0, 65569, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589861, 0, 0, 589862, 0, 0, 589863, 0, 0, 589864, 0, 0, 589865, 0, 0, 589866, 0, 0, 589867, 0, 0, 589868, 0, 0, 589869, 0, 0, 589870, 0, 0, 589871, 0, 0, 589872, 0, 0, 589873, 0, 0 )
-
-[node name="Companion" parent="." instance=ExtResource( 3 )]
-position = Vector2( 401, 552 )
-
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 552, 541 )
-gravity = 2100.0
-
-[node name="Healthbar" parent="Player" instance=ExtResource( 9 )]
-margin_left = -143.0
-margin_top = -360.0
-margin_right = 141.0
-margin_bottom = -268.0
+tile_data = PoolIntArray( 65562, 0, 0, 65563, 0, 0, 65564, 0, 0, 65565, 0, 0, 65566, 0, 0, 65567, 0, 0, 65568, 0, 0, 65569, 0, 0, 131097, 0, 0, 196632, 0, 0, 524274, 0, 0, 524275, 0, 0, 589810, 0, 0, 589811, 0, 0, 589812, 0, 0, 589813, 0, 0, 589814, 0, 0, 589815, 0, 0, 589816, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 655346, 0, 0, 655347, 0, 0, 655348, 0, 0, 655349, 0, 0, 655350, 0, 0, 655351, 0, 0, 655352, 0, 0, 655353, 0, 0, 655354, 0, 0, 655355, 0, 0, 655356, 0, 0, 655357, 0, 0, 655358, 0, 0, 655359, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589861, 0, 0, 589862, 0, 0, 589863, 0, 0, 589864, 0, 0, 589865, 0, 0, 589866, 0, 0, 589867, 0, 0, 589868, 0, 0, 589869, 0, 0, 589870, 0, 0, 589871, 0, 0, 589872, 0, 0, 589873, 0, 0 )
 
 [node name="Door" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2895, 576 )
 script = SubResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 10 )]
+position = Vector2( 518, 495 )
+
+[node name="Companion" parent="." instance=ExtResource( 11 )]
+position = Vector2( 412, 487 )
+
+[node name="BlueDoor" parent="." instance=ExtResource( 3 )]
+position = Vector2( 107, 347 )
+
+[node name="RedDoor" parent="." instance=ExtResource( 9 )]
+position = Vector2( -275, 364 )
+
+[node name="YellowDoor" parent="." instance=ExtResource( 6 )]
+position = Vector2( -618, 339 )
+
+[node name="Blue key" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1776, -39 )
+
+[node name="Red key" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1870, -51 )
+
+[node name="Yellow key" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1976, -51 )
