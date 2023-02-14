@@ -20,8 +20,9 @@ enum {
 #	CLIMBMOVE
 #	PUSH
 #	DEATH
-	SWIMIDLE
-	SWIMMING
+	SWIMIDLE,
+	SWIMMING,
+	RUNAWAY
 }
 
 var state = STANDSTILL
@@ -110,6 +111,9 @@ func _process(delta):
 			if is_on_water():
 				state = SWIMIDLE
 
+			if Input.is_action_pressed("runaway"):
+				state = RUNAWAY
+
 		SWIMMING:
 			if Player.position.x < position.x - target_player_distance:
 				if Player.position.y < position.y - target_player_distance:
@@ -155,6 +159,20 @@ func _process(delta):
 				state = SWIMMING
 			
 			if not is_on_water():
+				state = STANDSTILL
+
+		RUNAWAY:
+			if Player.position.x < position.x - target_player_distance:
+				set_dir(1)
+			elif Player.position.x > position.x + target_player_distance:
+				set_dir(-1)
+			else:
+				set_dir(0)
+
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
+
+			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
 
 	vel.y += grav * delta;
