@@ -71,12 +71,6 @@ tile_data = PoolIntArray( -524252, 0, 0, -524251, 0, 0, -524250, 0, 0, -524249, 
 [node name="Water" parent="." instance=ExtResource( 24 )]
 position = Vector2( -2725, 87 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 465, 480 )
-
-[node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 668, 464 )
-
 [node name="Pushable" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2745, 225 )
 
@@ -139,6 +133,12 @@ position = Vector2( -2300, 308 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1983, 347 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 465, 480 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 668, 464 )
 
 [node name="YellowDoor" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3650, 544 )
