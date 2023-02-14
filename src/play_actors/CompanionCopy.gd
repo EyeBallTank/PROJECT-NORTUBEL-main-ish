@@ -112,15 +112,22 @@ func _process(delta):
 
 		SWIMMING:
 			if Player.position.x < position.x - target_player_distance:
-				set_dir(-1)
-				vel.y = 0
+				if Player.position.y < position.y - target_player_distance:
+						set_dir(-1)
+						vel.y = -800
+						
+				elif Player.position.y > position.y + target_player_distance:
+						set_dir(1)
+						vel.y = 800
+
 			elif Player.position.x > position.x + target_player_distance:
-				set_dir(1)
-				vel.y = 0
-			if Player.position.y < position.y - target_player_distance:
-				vel.y = -800
-			elif Player.position.y > position.y + target_player_distance:
-				vel.y = 800
+				if Player.position.y < position.y - target_player_distance:
+						set_dir(1)
+						vel.y = -800
+						
+				elif Player.position.y > position.y + target_player_distance:
+						set_dir(1)
+						vel.y = 800
 			
 			else:
 				set_dir(0)
