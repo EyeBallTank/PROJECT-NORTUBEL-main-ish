@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Area2D",
+"class": "EnemyHitbox",
+"language": "GDScript",
+"path": "res://src/behind_the_scenes/Enemy Hitbox.gd"
+}, {
+"base": "Area2D",
 "class": "Ladder",
 "language": "GDScript",
 "path": "res://src/level_objects/Ladder.gd"
@@ -40,6 +45,7 @@ _global_script_classes=[ {
 "path": "res://src/behind_the_scenes/main_level_script.gd"
 } ]
 _global_script_class_icons={
+"EnemyHitbox": "",
 "Ladder": "",
 "Pushable": "",
 "PushableCopy": "",

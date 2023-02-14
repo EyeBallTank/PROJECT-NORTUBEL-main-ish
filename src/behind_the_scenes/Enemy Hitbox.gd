@@ -1,4 +1,5 @@
 extends Area2D
+class_name EnemyHitbox
 
 var hitbox_timer : float = 0.5
 
