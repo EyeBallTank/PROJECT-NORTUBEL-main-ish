@@ -81,6 +81,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * gamedevwithdrew (Used tutorial videos on adding the health bars)
 * strangehorizon on Freesound dot org (Source of Gong sound effect)
 * decipher8996 (Used tutorial video to make jump-through-platform)
+* DevWorm (Used tutorial video on working key system, even if my version is different from that on the video)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
