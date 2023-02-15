@@ -124,7 +124,7 @@ func _process(delta):
 						vel.y = -800
 						
 				elif Player.position.y > position.y + target_player_distance:
-						set_dir(1)
+						set_dir(-1)
 						vel.y = 800
 
 			elif Player.position.x > position.x + target_player_distance:
@@ -135,7 +135,7 @@ func _process(delta):
 				elif Player.position.y > position.y + target_player_distance:
 						set_dir(1)
 						vel.y = 800
-			
+
 			else:
 				set_dir(0)
 				vel.y = 100
