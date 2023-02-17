@@ -45,6 +45,7 @@ var next_jump_time = -1
 var target_player_distance = 90
 
 onready var swimCheck = $swimCheck
+onready var hurtbox = $HurtboxComp
 
 func _ready():
 	set_process(true)
@@ -57,9 +58,10 @@ func set_dir(target_dir):
 		next_dir_time = OS.get_ticks_msec() + react_time
 
 func get_hurted():
+	$AnimationPlayer.play("companionhurt")
 	health -= 10
 	vel.y -= 500
-	$AnimationPlayer.play("companionhurt")
+
 
 func _process(delta):
 	healthBar.value = health
@@ -192,11 +194,13 @@ func _process(delta):
 
 	vel = move_and_slide(vel, Vector2(0, -1))
 		
-	
-
 
 func is_on_water():
 	if not swimCheck.is_colliding(): return false
 	var collider = swimCheck.get_collider()
 	if not collider is Water: return false
 	return true
+
+func _on_Hurtbox_area_entered(area):
+	if area.name == "EnemyHitbox":
+		get_hurted()
