@@ -40,6 +40,7 @@ var JUMP_SPEED = 1500
 onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
+onready var hurtbox = $Hurtbox
 #onready var pushCheck = $PushCheckers
 
 func _ready():
@@ -210,9 +211,9 @@ func _physics_process(delta):
 # AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
 
 func get_hurt():
+	$AnimationPlayer.play("playerhurt")
 	health -= 10
 	velocity.y -= 500
-	$AnimationPlayer.play("playerhurt")
 
 func die():
 	get_tree().reload_current_scene()
@@ -239,3 +240,8 @@ func is_on_water():
 #			collider.move_and_slide(Vector2(pushCheck.scale.x, 0) * speed)
 #			is_pushing = true
 #
+
+
+func _on_Hurtbox_area_entered(area):
+	if area.name == "EnemyHitbox":
+		get_hurt()
