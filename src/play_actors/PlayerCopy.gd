@@ -29,6 +29,7 @@ var hasyellowkey = false
 var hasbluekey = false
 var hasredkey = false
 var hasfishhook = false
+#var is_pushing = false
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
@@ -39,6 +40,7 @@ var JUMP_SPEED = 1500
 onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
+#onready var pushCheck = $PushCheckers
 
 func _ready():
 	healthBar.max_value = health
@@ -140,6 +142,8 @@ func _physics_process(delta):
 					state = CLIMB
 			if is_on_water():
 				state = SWIM
+#			if is_on_pushmode():
+#				is_pushing = true
 
 		CLIMB:
 			PUSH_SPEED = 350
@@ -224,3 +228,14 @@ func is_on_water():
 	var collider = swimCheck.get_collider()
 	if not collider is Water: return false
 	return true
+#
+#func is_on_pushmode():
+#	if not pushCheck.is_colliding(): return false
+#	var collider = pushCheck.get_collider()
+#	if not collider is PushableCopy: return false
+#	return true
+#	if pushCheck.is_colliding():
+#		if collider is PushableCopy:
+#			collider.move_and_slide(Vector2(pushCheck.scale.x, 0) * speed)
+#			is_pushing = true
+#
