@@ -53,11 +53,6 @@ func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
 		die()
-#	for index in get_slide_count():
-#		var collision = get_slide_collision(index)
-#		if collision.collider.is_in_group("enemies"):
-#			get_hurt()
-
 
 	# Still using frankensteined code to do this		
 	match state:
@@ -98,7 +93,7 @@ func _physics_process(delta):
 		MAINSTATE:
 			
 			if Input.is_action_just_pressed("attack"):
-				$AnimationPlayer.play("knifeattack")
+				knife_attack()
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -223,6 +218,9 @@ func get_hurt():
 func die():
 	get_tree().reload_current_scene()
 
+func knife_attack():
+	$AnimationPlayer.play("knifeattack")
+
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
 	var collider = ladderCheck.get_collider()
@@ -234,17 +232,7 @@ func is_on_water():
 	var collider = swimCheck.get_collider()
 	if not collider is Water: return false
 	return true
-#
-#func is_on_pushmode():
-#	if not pushCheck.is_colliding(): return false
-#	var collider = pushCheck.get_collider()
-#	if not collider is PushableCopy: return false
-#	return true
-#	if pushCheck.is_colliding():
-#		if collider is PushableCopy:
-#			collider.move_and_slide(Vector2(pushCheck.scale.x, 0) * speed)
-#			is_pushing = true
-#
+
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
 		get_hurt()

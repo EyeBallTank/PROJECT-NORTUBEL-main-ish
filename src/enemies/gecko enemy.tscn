@@ -5,7 +5,7 @@
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 205, 73 )
+extents = Vector2( 206.5, 74 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 208.5, 76 )
@@ -25,7 +25,7 @@ texture = ExtResource( 1 )
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 3, -156 )
+position = Vector2( 2.5, -156 )
 shape = SubResource( 1 )
 
 [node name="EnemyHitbox" parent="." instance=ExtResource( 3 )]
