@@ -48,10 +48,7 @@ func _ready():
 
 func _physics_process(delta):
 	
-	if Input.is_action_just_released("attack"):
-		$AnimationPlayer.play("knifeattack")
-	
-	
+
 	healthBar.value = health
 	if health <= 0:
 		die()
@@ -98,6 +95,10 @@ func _physics_process(delta):
 				jump_buffer_counter = 0
 #
 		MAINSTATE:
+			
+			if Input.is_action_just_released("attack"):
+				$AnimationPlayer.play("knifeattack")
+
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
@@ -243,8 +244,6 @@ func is_on_water():
 #			collider.move_and_slide(Vector2(pushCheck.scale.x, 0) * speed)
 #			is_pushing = true
 #
-
-
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
 		get_hurt()

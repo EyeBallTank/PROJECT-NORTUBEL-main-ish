@@ -153,6 +153,7 @@ position = Vector2( -2, -123 )
 shape = SubResource( 4 )
 
 [node name="PlayerHitbox" type="Area2D" parent="."]
+collision_mask = 32
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHitbox"]
