@@ -48,6 +48,9 @@ func _ready():
 
 func _physics_process(delta):
 	
+	if Input.is_action_just_released("attack"):
+		$AnimationPlayer.play("knifeattack")
+	
 	
 	healthBar.value = health
 	if health <= 0:

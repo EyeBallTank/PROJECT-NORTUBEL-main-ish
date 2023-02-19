@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/play_actor_sprites/player placeholder sprite.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
@@ -33,6 +33,34 @@ tracks/1/keys = {
 "update": 0,
 "values": [ false ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("PlayerHitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "knifeattack"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayerHitbox/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "playerhurt"
@@ -66,7 +94,7 @@ tracks/1/keys = {
 extents = Vector2( 27, 123 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 38, 39 )
+extents = Vector2( 36, 39 )
 
 [node name="Player" type="KinematicBody2D" groups=["protagonists"]]
 collision_mask = 292
@@ -95,6 +123,7 @@ margin_bottom = -258.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
+anims/knifeattack = SubResource( 6 )
 anims/playerhurt = SubResource( 3 )
 
 [node name="LadderCheck" type="RayCast2D" parent="."]
@@ -127,7 +156,8 @@ shape = SubResource( 4 )
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHitbox"]
-position = Vector2( 63, -150 )
+position = Vector2( 65, -150 )
 shape = SubResource( 5 )
+disabled = true
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
