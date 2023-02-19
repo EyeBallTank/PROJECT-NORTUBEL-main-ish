@@ -41,6 +41,7 @@ onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
 onready var hurtbox = $Hurtbox
+onready var playerhitbox = $PlayerHitbox
 #onready var pushCheck = $PushCheckers
 
 func _ready():
@@ -96,7 +97,7 @@ func _physics_process(delta):
 #
 		MAINSTATE:
 			
-			if Input.is_action_just_released("attack"):
+			if Input.is_action_just_pressed("attack"):
 				$AnimationPlayer.play("knifeattack")
 
 			WALK_MAX_SPEED = 700

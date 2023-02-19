@@ -35,6 +35,7 @@ position = Vector2( 2.5, -156 )
 shape = SubResource( 2 )
 
 [node name="GeckoHurtbox" type="Area2D" parent="."]
+collision_layer = 32
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GeckoHurtbox"]
