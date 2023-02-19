@@ -17,3 +17,8 @@ func _physics_process(delta):
 	velocity = direction * 290
 	velocity.y += gravity * delta
 	move_and_slide(velocity, Vector2.UP)
+
+
+func _on_GeckoHurtbox_area_entered(area):
+	if area.name == "PlayerHitbox":
+		queue_free()
