@@ -94,16 +94,18 @@ func _physics_process(delta):
 		MAINSTATE:
 			
 			if Input.is_action_just_pressed("attack"):
-				$PlayerHitbox/HitboxPlayer.disabled = false
+				knife_attack()
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
 				$Sprite.flip_h = false
+				$PlayerHitbox/HitboxPlayer.position = Vector2(65, 2)
 #				pushdetection.global_rotation = 0
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				$Sprite.flip_h = true
+				$PlayerHitbox/HitboxPlayer.position = Vector2(-67, 2)
 #				pushdetection.global_rotation = -600
 			else:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
@@ -219,7 +221,8 @@ func get_hurt():
 func die():
 	get_tree().reload_current_scene()
 
-#func knife_attack():
+func knife_attack():
+	$PlayerHitbox/HitboxPlayer.disabled = false
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
