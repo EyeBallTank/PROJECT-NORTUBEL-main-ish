@@ -222,6 +222,8 @@ func die():
 	get_tree().reload_current_scene()
 
 func knife_attack():
+	$PlayerHitbox/HitboxPlayer.disabled = true
+	yield(get_tree().create_timer(0.1), "timeout")
 	$PlayerHitbox/HitboxPlayer.disabled = false
 	yield(get_tree().create_timer(0.3), "timeout")
 	$PlayerHitbox/HitboxPlayer.disabled = true
