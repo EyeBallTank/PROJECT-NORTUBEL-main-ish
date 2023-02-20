@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/sprites/play_actor_sprites/player placeholder sprite.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
@@ -44,22 +44,6 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ true ]
-}
-
-[sub_resource type="Animation" id=6]
-resource_name = "knifeattack"
-length = 0.4
-tracks/0/type = "value"
-tracks/0/path = NodePath("PlayerHitbox/HitboxPlayer:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ true, false, true ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -123,7 +107,6 @@ margin_bottom = -258.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
-anims/knifeattack = SubResource( 6 )
 anims/playerhurt = SubResource( 3 )
 
 [node name="LadderCheck" type="RayCast2D" parent="."]

@@ -45,6 +45,7 @@ onready var playerhitbox = $PlayerHitbox
 #onready var pushCheck = $PushCheckers
 
 func _ready():
+	$PlayerHitbox/HitboxPlayer.disabled = true
 	healthBar.max_value = health
 
 func _physics_process(delta):
@@ -93,7 +94,7 @@ func _physics_process(delta):
 		MAINSTATE:
 			
 			if Input.is_action_just_pressed("attack"):
-				knife_attack()
+				$PlayerHitbox/HitboxPlayer.disabled = false
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -218,8 +219,7 @@ func get_hurt():
 func die():
 	get_tree().reload_current_scene()
 
-func knife_attack():
-	$AnimationPlayer.play("knifeattack")
+#func knife_attack():
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
