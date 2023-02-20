@@ -223,6 +223,8 @@ func die():
 
 func knife_attack():
 	$PlayerHitbox/HitboxPlayer.disabled = false
+	yield(get_tree().create_timer(0.3), "timeout")
+	$PlayerHitbox/HitboxPlayer.disabled = true
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
