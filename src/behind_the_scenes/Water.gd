@@ -1,6 +1,8 @@
 extends Area2D
 class_name Water
 
+onready var collisionshape = $CollisionShape2D
+
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"

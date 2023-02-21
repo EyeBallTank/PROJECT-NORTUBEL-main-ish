@@ -108,7 +108,8 @@ func _physics_process(delta):
 				$PlayerHitbox/HitboxPlayer.position = Vector2(-67, 2)
 #				pushdetection.global_rotation = -600
 			else:
-				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+#				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+				velocity.x = 0
 
 	#if velocity.x < WALK_FORCE * 0.1:
 		# The velocity, slowed down a bit, and then reassigned.
