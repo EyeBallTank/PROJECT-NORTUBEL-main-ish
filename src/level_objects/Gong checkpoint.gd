@@ -7,5 +7,5 @@ func _ready():
 
 
 func _on_Gong_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("protagonists"):
 		audioPlayer.play()
