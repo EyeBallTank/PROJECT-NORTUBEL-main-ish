@@ -91,8 +91,8 @@ position = Vector2( 32, 410 )
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1155, 417 )
 
-[node name="MovingPlatHoriz" parent="Companion" instance=ExtResource( 9 )]
-position = Vector2( -1484, -195 )
-
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1237, 428 )
+
+[node name="MovingPlatHoriz" parent="." instance=ExtResource( 9 )]
+position = Vector2( -329, 222 )
