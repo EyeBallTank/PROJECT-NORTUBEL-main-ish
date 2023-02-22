@@ -130,6 +130,7 @@ attack={
 2d_physics/layer_7="NPCS"
 2d_physics/layer_8="FINISHLINE"
 2d_physics/layer_9="PUSHABLE"
+2d_physics/layer_10="SWITCHES AND BUTTONS"
 
 [physics]
 
