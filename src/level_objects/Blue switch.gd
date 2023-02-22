@@ -10,6 +10,7 @@ func _ready():
 func _on_Blue_switch_body_entered(body):
 	if body.name == "Player":
 		if Input.get_action_strength("attack"):
+			is_pressed = true
 			print("BLUE IS PRESSED")
 		else:
 			pass
