@@ -1,4 +1,6 @@
-extends KinematicBody2D
+extends Node2D
+
+onready var animationplayer = $AnimationPlayer
 
 enum {
 	FROZENPLAT,
@@ -8,14 +10,17 @@ enum {
 var state = FROZENPLAT
 
 func _ready():
-	pass # Replace with function body.
+	animationplayer.play("IdlePlat")
+	pass
 
-func _physics_process(delta):
+func _process(delta):
 	match state:
 		FROZENPLAT:
 			pass
 		ACTIVEPLAT:
-			print("IS ACTIVE")
+			animationplayer.play("HorizontalPlat")
 
 func is_active():
+	print("IS ACTIVE")
 	state = ACTIVEPLAT
+	
