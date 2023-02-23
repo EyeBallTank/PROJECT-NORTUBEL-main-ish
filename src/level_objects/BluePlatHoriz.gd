@@ -11,7 +11,7 @@ var state = FROZENPLAT
 
 func _ready():
 	animationplayer.play("IdlePlat")
-	pass
+	Signals.connect("blue_switch_pressed", self, "_on_BlueSwitch_pressed")
 
 func _process(delta):
 	match state:
@@ -20,7 +20,8 @@ func _process(delta):
 		ACTIVEPLAT:
 			animationplayer.play("HorizontalPlat")
 
-func is_active():
+func _on_BlueSwitch_pressed():
 	print("IS ACTIVE")
+#	Signals.emit_signal("blue_plat_horiz_active", blueactivation)
 	state = ACTIVEPLAT
 	
