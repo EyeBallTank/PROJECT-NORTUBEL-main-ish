@@ -22,6 +22,6 @@ func _process(delta):
 
 func _on_BlueSwitch_pressed():
 	print("IS ACTIVE")
-#	Signals.emit_signal("blue_plat_horiz_active", blueactivation)
+	Signals.emit_signal("blue_plat_horiz_active")
 	state = ACTIVEPLAT
 	
