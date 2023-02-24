@@ -147,12 +147,6 @@ position = Vector2( 641, -830 )
 [node name="Jumppad" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1983, 347 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 465, 480 )
-
-[node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 668, 464 )
-
 [node name="YellowDoor" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3650, 544 )
 
@@ -167,5 +161,11 @@ position = Vector2( 6706, 318 )
 
 [node name="BluePlatHoriz" parent="." instance=ExtResource( 29 )]
 position = Vector2( 2166, -667 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 465, 480 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 668, 464 )
 
 [editable path="Water"]
