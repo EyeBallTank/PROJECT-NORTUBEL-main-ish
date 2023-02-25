@@ -23,7 +23,7 @@ func _ready():
 #
 func _on_YellowSwitch_pressed():
 	print("YELPLAT IS ACTIVE")
-	Signals.emit_signal("yellow_plat_horiz_active")
+	Signals.emit_signal("yellow_plat_verti_active")
 	animationplayer.play("VerticalPlat")
 	yield(get_tree().create_timer(3), "timeout")
 	animationplayer.play_backwards("VerticalPlat")
