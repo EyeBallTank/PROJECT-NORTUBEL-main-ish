@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_objects/BluePlatHoriz.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=30]
+[ext_resource path="res://src/level_objects/YellowPlatVerti.tscn" type="PackedScene" id=31]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -147,6 +148,9 @@ position = Vector2( 641, -830 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1983, 235 )
+
+[node name="YellowPlatVerti" parent="Jumppad" instance=ExtResource( 31 )]
+position = Vector2( 2501, -1606 )
 
 [node name="YellowDoor" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3650, 544 )

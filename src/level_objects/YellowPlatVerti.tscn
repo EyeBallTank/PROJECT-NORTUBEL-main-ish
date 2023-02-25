@@ -28,8 +28,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "VerticalPlat"
-length = 5.0
-loop = true
+length = 2.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
 tracks/0/interp = 1
@@ -40,14 +39,14 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, 0.9 ]
+"values": [ 0.9, 0.0 ]
 }
 
 [node name="YellowPlatVerti" type="Node2D" groups=["actionables"]]
 script = ExtResource( 2 )
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( -2, -1 )
+position = Vector2( -2, -360.993 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
@@ -64,14 +63,14 @@ one_way_collision = true
 curve = SubResource( 2 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -2, -1 )
+position = Vector2( -2, -360.993 )
+offset = 359.827
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../../Platform")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "VerticalPlat"
 playback_process_mode = 0
 anims/RESET = SubResource( 4 )
 anims/VerticalPlat = SubResource( 5 )
