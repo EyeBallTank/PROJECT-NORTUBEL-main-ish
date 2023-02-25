@@ -146,7 +146,7 @@ one_way_collision = true
 position = Vector2( 641, -830 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 10 )]
-position = Vector2( -1983, 347 )
+position = Vector2( -1983, 235 )
 
 [node name="YellowDoor" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3650, 544 )
