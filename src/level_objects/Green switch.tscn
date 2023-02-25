@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Green Switch.PNG" type="Texture" id=1]
+[ext_resource path="res://src/level_objects/Green switch.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 38.5, 69 )
 
-[node name="Green switch" type="Area2D"]
+[node name="GreenSwitch" type="Area2D" groups=["levelswitches"]]
 collision_layer = 512
 collision_mask = 3
+script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

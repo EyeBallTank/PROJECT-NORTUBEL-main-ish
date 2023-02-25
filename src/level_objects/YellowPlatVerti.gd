@@ -2,10 +2,7 @@ extends Node2D
 
 #Might have to change the animation to make it work with yellow switch
 
-func _ready():
-	pass 
-
-#onready var animationplayer = $AnimationPlayer
+onready var animationplayer = $AnimationPlayer
 
 #enum {
 #	FROZENPLAT,
@@ -14,8 +11,8 @@ func _ready():
 
 #var state = FROZENPLAT
 
-#func _ready():
-#	Signals.connect("yellow_switch_pressed", self, "_on_YellowSwitch_pressed")
+func _ready():
+	Signals.connect("yellow_switch_pressed", self, "_on_YellowSwitch_pressed")
 #
 #func _process(delta):
 #	match state:
@@ -24,8 +21,11 @@ func _ready():
 #		ACTIVEPLAT:
 #			animationplayer.play("HorizontalPlat")
 #
-#func _on_YellowSwitch_pressed():
-#	print("YELPLAT IS ACTIVE")
-#	Signals.emit_signal("yellow_plat_horiz_active")
+func _on_YellowSwitch_pressed():
+	print("YELPLAT IS ACTIVE")
+	Signals.emit_signal("yellow_plat_horiz_active")
+	animationplayer.play("VerticalPlat")
+	yield(get_tree().create_timer(3), "timeout")
+	animationplayer.play_backwards("VerticalPlat")
 #	state = ACTIVEPLAT
 #
