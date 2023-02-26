@@ -2,7 +2,7 @@ extends Area2D
 
 var is_pressed = false
 
-onready var BluePlatHoriz = get_parent().get_node("BluePlatHoriz")
+#onready var BluePlatHoriz = get_parent().get_node("BluePlatHoriz")
 onready var animationplayer = $AnimationPlayer
 
 func _ready():
