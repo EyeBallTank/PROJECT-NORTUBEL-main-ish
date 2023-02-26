@@ -165,12 +165,6 @@ position = Vector2( 2166, -667 )
 [node name="YellowPlatVerti" parent="." instance=ExtResource( 31 )]
 position = Vector2( 518, -1371 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 465, 480 )
-
-[node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 668, 464 )
-
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 30 )]
 position = Vector2( -1626, 101 )
 
@@ -179,5 +173,11 @@ position = Vector2( 442, -1055 )
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 32 )]
 position = Vector2( 794, -1063 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 465, 480 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 668, 464 )
 
 [editable path="Water"]
