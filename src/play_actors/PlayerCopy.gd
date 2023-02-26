@@ -22,6 +22,8 @@ enum {
 #	KICK,
 #	KNIFE
 #	DEATH
+#	SLOW
+#	ICE
 }
 
 var state = MAINSTATE
