@@ -1,6 +1,8 @@
 extends Area2D
 
+var is_pressed = false
 
+onready var animationplayer = $AnimationPlayer
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
