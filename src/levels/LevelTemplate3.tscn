@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://src/level_objects/BluePlatHoriz.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/level_objects/YellowPlatVerti.tscn" type="PackedScene" id=31]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=32]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -118,9 +119,6 @@ position = Vector2( 1272, -169 )
 [node name="Yellow key" parent="." instance=ExtResource( 17 )]
 position = Vector2( 1389, -165 )
 
-[node name="Green switch" parent="." instance=ExtResource( 20 )]
-position = Vector2( 422, -1046 )
-
 [node name="Yellow switch" parent="." instance=ExtResource( 22 )]
 position = Vector2( 153, -1368 )
 
@@ -175,5 +173,11 @@ position = Vector2( 668, 464 )
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 30 )]
 position = Vector2( -1626, 101 )
+
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
+position = Vector2( 442, -1055 )
+
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 32 )]
+position = Vector2( 794, -1063 )
 
 [editable path="Water"]
