@@ -21,4 +21,14 @@ func _process(delta):
 
 func _on_GreenSwitch_body_entered(body):
 	if body.name == "Player":
-		is_pressed = true
+		if state == PRESSONE:
+			is_pressed = true
+			print("GREEN WAS PRESSED ONCE")
+			state = PRESSTWO
+		if state == PRESSTWO:
+			is_pressed = false
+			print("GREEN WAS PRESSED TWICE")
+			state = PRESSONE
+
+#print("GREEN PRESSONE")
+#print("GREEN PRESSTWO")

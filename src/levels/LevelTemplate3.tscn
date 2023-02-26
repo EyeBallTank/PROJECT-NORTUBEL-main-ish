@@ -19,7 +19,7 @@
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=19]
-[ext_resource path="res://src/level_objects/Green switch.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
