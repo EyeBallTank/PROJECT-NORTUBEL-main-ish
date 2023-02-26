@@ -3,16 +3,16 @@ extends Area2D
 var is_pressed = false
 
 onready var animationplayer = $AnimationPlayer
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	Signals.connect("green_switch_one_pressed", self, "_on_GreenSwitchOne_pressed")
 
+func _on_GreenSwitchTwo_body_entered(body):
+		if body.name == "Player":
+			is_pressed = true
+			animationplayer.play("PRESSED")
+			Signals.emit_signal("green_switch_two_pressed")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_GreenSwitchOne_pressed():
+	animationplayer.play("UNPRESSED")
+	is_pressed = false

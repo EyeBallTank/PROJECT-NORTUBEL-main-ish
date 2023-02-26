@@ -71,3 +71,5 @@ autoplay = "PRESSED"
 anims/PRESSED = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 anims/UNPRESSED = SubResource( 4 )
+
+[connection signal="body_entered" from="." to="." method="_on_GreenSwitchTwo_body_entered"]
