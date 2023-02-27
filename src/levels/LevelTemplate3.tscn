@@ -169,10 +169,10 @@ position = Vector2( 518, -1371 )
 position = Vector2( -1626, 101 )
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
-position = Vector2( 442, -1055 )
+position = Vector2( 426, -703 )
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 32 )]
-position = Vector2( 794, -1063 )
+position = Vector2( 194, -1055 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 465, 480 )
