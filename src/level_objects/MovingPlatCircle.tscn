@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/MovingPlatCircle.PNG" type="Texture" id=1]
+[ext_resource path="res://src/level_objects/MovingPlatCircle.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 117.5, 45.5 )
@@ -54,9 +55,10 @@ tracks/1/keys = {
 }
 
 [node name="MovingPlatCircle" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( -1.82153, -15.4231 )
+position = Vector2( -1137, -56 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
