@@ -99,10 +99,10 @@ position = Vector2( 2370, 466 )
 position = Vector2( -1016, 156 )
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1246, -754 )
+position = Vector2( 416, -784 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
 position = Vector2( 975, -722 )
 
 [node name="Companion" parent="." instance=ExtResource( 11 )]
-position = Vector2( 858, -743 )
+position = Vector2( 870, -716 )
