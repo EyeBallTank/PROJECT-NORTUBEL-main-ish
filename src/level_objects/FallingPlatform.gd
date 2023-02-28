@@ -1,16 +1,34 @@
 extends KinematicBody2D
 
+onready var animationplayer = $AnimationPlayer
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var is_fall
+var motion = Vector2()
+onready var positionorigin = global_position
 
+func _physics_process(delta):
+	if is_fall == false:
+		motion.y += 20
+	elif is_fall == true:
+		position = positionorigin
+		motion.y = 0
+	motion = move_and_slide(motion, Vector2.UP)
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass 
+
+func _on_Area2D_body_entered(body):
+	if body.is_in_group("protagonists"):
+		animationplayer.play("shake")
+
+func fall():
+	is_fall = false
+	print("fall")
+
+func _on_Area2D_body_exited(body):
+	$Timer.wait_time = 2
+	$Timer.start()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_Timer_timeout():
+	is_fall = true
