@@ -94,7 +94,7 @@ func _physics_process(delta):
 				jump_buffer_counter = 0
 #
 		MAINSTATE:
-			
+			pushcheck()
 			if Input.is_action_just_pressed("attack"):
 				knife_attack()
 
@@ -246,3 +246,12 @@ func is_on_water():
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
 		get_hurt()
+
+func pushcheck():
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider is PushableCopy:
+			collision.collider.slide(-collision.normal * (WALK_MAX_SPEED / 2) )
+		else:
+			return false
+	return true

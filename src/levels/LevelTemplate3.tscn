@@ -81,10 +81,10 @@ position = Vector2( -2704, 112 )
 position = Vector2( 0, 1.5 )
 
 [node name="Pushable" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2745, 225 )
+position = Vector2( 2753, 229 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1035, 343 )
+position = Vector2( 1575, 615 )
 
 [node name="Manowar" parent="." instance=ExtResource( 15 )]
 position = Vector2( -729, 398 )

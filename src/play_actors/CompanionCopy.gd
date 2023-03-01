@@ -78,6 +78,7 @@ func _process(delta):
 
 	match state:
 		FOLLOWME:
+			pushcheck()
 			if Player.position.x < position.x - target_player_distance:
 				set_dir(-1)
 			elif Player.position.x > position.x + target_player_distance:
@@ -170,6 +171,7 @@ func _process(delta):
 				state = STANDSTILL
 
 		RUNAWAY:
+			pushcheck()
 			if Player.position.x < position.x - target_player_distance:
 				set_dir(1)
 			elif Player.position.x > position.x + target_player_distance:
@@ -207,3 +209,13 @@ func is_on_water():
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
 		get_hurted()
+
+
+func pushcheck():
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider is PushableCopy:
+			collision.collider.slide(-collision.normal * (speed / 2) )
+		else:
+			return false
+	return true

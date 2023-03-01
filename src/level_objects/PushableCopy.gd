@@ -42,6 +42,8 @@ func _physics_process(delta):
 			else:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 				state = FROZEN
+func slide(vector):
+	velocity.x = vector.x
 
 #func push(velocity: Vector2) -> void:
 #	move_and_slide(velocity, Vector2())
