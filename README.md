@@ -42,8 +42,8 @@ I may end up changing this goal list as well.
 * The Scene Changing method is still not "universal" enough: Look at the endlevel Doors and how they have specific code changes in each level, meaning a better method is needed.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * While the Companion can follow the Player underwater, it has a jittery movement: This is because it lacks diagonal movement in the SWIMMING state which i need to find a way how.
-* The concept of a Pushable object in levels is still not done the way i wanted to (Since both Player and Companion should be able to interact with it, even if not at the same time; I also want to make sure that any pushable object or RigidBody does not clip through solid objects like the levels).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
+* Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 
 # Credits and shout outs:
 
@@ -85,6 +85,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * DevWorm (Used tutorial video on working key system, even if my version is different from that on the video)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
 * Pigdev (Used tutorial video on moving platform)
+* mjbolt (Used tutorial video on Pushable object)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
