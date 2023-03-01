@@ -208,7 +208,7 @@ extents = Vector2( 188.5, 38 )
 script = ExtResource( 2 )
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( -2.00005, -0.940066 )
+position = Vector2( -2.00005, -0.940067 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
@@ -225,7 +225,7 @@ shape = SubResource( 1 )
 curve = SubResource( 2 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -2.00005, -0.940066 )
+position = Vector2( -2.00005, -0.940067 )
 offset = 0.114385
 rotate = false
 
