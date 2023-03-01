@@ -32,16 +32,16 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-#
-		PUSHED:
-			WALK_MAX_SPEED = 150
-			if Input.get_action_strength("right"):
-				velocity.x = WALK_MAX_SPEED
-			elif Input.get_action_strength("left"):
-				velocity.x = -WALK_MAX_SPEED
-			else:
-				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
-				state = FROZEN
+##
+#		PUSHED:
+#			WALK_MAX_SPEED = 150
+#			if Input.get_action_strength("right"):
+#				velocity.x = WALK_MAX_SPEED
+#			elif Input.get_action_strength("left"):
+#				velocity.x = -WALK_MAX_SPEED
+#			else:
+#				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+#				state = FROZEN
 func slide(vector):
 	velocity.x = vector.x
 

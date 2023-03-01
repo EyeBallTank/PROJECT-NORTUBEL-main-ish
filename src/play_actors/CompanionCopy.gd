@@ -215,7 +215,7 @@ func pushcheck():
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
-			collision.collider.slide(-collision.normal * (speed / 2) )
+			collision.collider.slide(-collision.normal * (speed / 2.5) )
 		else:
 			return false
 	return true
