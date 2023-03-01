@@ -81,7 +81,7 @@ position = Vector2( -2704, 112 )
 position = Vector2( 0, 1.5 )
 
 [node name="Pushable" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2753, 229 )
+position = Vector2( 2749, 237 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1575, 615 )
@@ -182,6 +182,6 @@ position = Vector2( -1538, -592 )
 position = Vector2( 465, 480 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 668, 464 )
+position = Vector2( 564, 476 )
 
 [editable path="Water"]

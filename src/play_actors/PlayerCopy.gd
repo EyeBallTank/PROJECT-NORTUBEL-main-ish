@@ -16,13 +16,12 @@ var jump_buffer_counter : int = 0
 enum {
 	MAINSTATE,
 	CLIMB,
-	PUSH
 	SWIM,
 #	SWING,
 #	KICK,
 #	KNIFE
 #	DEATH
-#	SLOW
+	SLOW
 #	ICE
 }
 
@@ -59,7 +58,7 @@ func _physics_process(delta):
 
 	# Still using frankensteined code to do this		
 	match state:
-		PUSH:
+		SLOW:
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 				$Sprite.flip_h = false
