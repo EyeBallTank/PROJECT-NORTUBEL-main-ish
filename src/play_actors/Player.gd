@@ -21,7 +21,7 @@ extends actor
 
 const WALK_FORCE = 1600
 const WALK_MAX_SPEED = 700
-const STOP_FORCE = 900
+const STOP_FORCE = 450
 const JUMP_SPEED = 1500
 
 func _physics_process(delta):

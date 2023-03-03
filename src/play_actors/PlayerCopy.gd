@@ -22,7 +22,7 @@ enum {
 #	KNIFE
 #	DEATH
 	SLOW
-#	ICE
+	ICE
 }
 
 var state = MAINSTATE
@@ -35,12 +35,13 @@ var hasfishhook = false
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
 var PUSH_SPEED = 150
-var STOP_FORCE = 900
+var STOP_FORCE = 450
 var JUMP_SPEED = 1500
 
 onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
+onready var iceCheck = $IceCheck
 onready var hurtbox = $Hurtbox
 onready var playerhitbox = $PlayerHitbox
 #onready var pushCheck = $PushCheckers
@@ -66,7 +67,7 @@ func _physics_process(delta):
 				velocity.x = -PUSH_SPEED
 				$Sprite.flip_h = true
 			else:
-				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+				velocity.x = 0
 
 			velocity.y += gravity * delta
 
@@ -92,6 +93,52 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
 #
+		ICE:
+			pushcheck()
+			if Input.is_action_just_pressed("attack"):
+				knife_attack()
+			var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
+			WALK_MAX_SPEED = 700
+			if Input.get_action_strength("right"):
+				$Sprite.flip_h = false
+				$PlayerHitbox/HitboxPlayer.position = Vector2(65, 2)
+			elif Input.get_action_strength("left"):
+				$Sprite.flip_h = true
+				$PlayerHitbox/HitboxPlayer.position = Vector2(-67, 2)
+			if abs(walk) < WALK_FORCE * 0.1:
+				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+			else:
+				velocity.x += walk * delta
+			velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
+			
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
+				velocity.y = -JUMP_SPEED
+
+			if Input.is_action_just_pressed("jumpup"):
+				jump_buffer_counter = jump_buffer_time
+			
+			if Input.is_action_just_released("jumpup"):
+				if velocity.y < 0:
+					velocity.y += 500
+				
+			if jump_buffer_counter > 0:
+				jump_buffer_counter -= 1
+			
+			if jump_buffer_counter > 0 and is_on_floor():
+				velocity.y = -JUMP_SPEED
+				jump_buffer_counter = 0
+			if is_on_ladder():
+				if Input.get_action_strength("jumpup"):
+					state = CLIMB
+			if is_on_water():
+				state = SWIM
+			if not is_on_ice():
+				state = MAINSTATE
+			
+			
 		MAINSTATE:
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
@@ -102,12 +149,10 @@ func _physics_process(delta):
 				velocity.x = WALK_MAX_SPEED
 				$Sprite.flip_h = false
 				$PlayerHitbox/HitboxPlayer.position = Vector2(65, 2)
-#				pushdetection.global_rotation = 0
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				$Sprite.flip_h = true
 				$PlayerHitbox/HitboxPlayer.position = Vector2(-67, 2)
-#				pushdetection.global_rotation = -600
 			else:
 #				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 				velocity.x = 0
@@ -148,8 +193,8 @@ func _physics_process(delta):
 					state = CLIMB
 			if is_on_water():
 				state = SWIM
-#			if is_on_pushmode():
-#				is_pushing = true
+			if is_on_ice():
+				state = ICE
 
 		CLIMB:
 			PUSH_SPEED = 350
@@ -240,6 +285,12 @@ func is_on_water():
 	if not swimCheck.is_colliding(): return false
 	var collider = swimCheck.get_collider()
 	if not collider is Water: return false
+	return true
+
+func is_on_ice():
+	if not iceCheck.is_colliding(): return false
+	var collider = iceCheck.get_collider()
+	if not collider is IceFloor: return false
 	return true
 
 func _on_Hurtbox_area_entered(area):
