@@ -103,10 +103,10 @@ position = Vector2( -1016, 156 )
 position = Vector2( 458, -688 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
-position = Vector2( 843, -764 )
+position = Vector2( -1623, 429 )
 
 [node name="Companion" parent="." instance=ExtResource( 11 )]
 position = Vector2( 966, -740 )
 
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
-position = Vector2( -2058, 504 )
+position = Vector2( -2058, 516 )

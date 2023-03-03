@@ -136,7 +136,10 @@ func _physics_process(delta):
 			if is_on_water():
 				state = SWIM
 			if not is_on_ice():
-				state = MAINSTATE
+				if is_on_floor():
+					state = MAINSTATE
+				else:
+					pass
 			
 			
 		MAINSTATE:

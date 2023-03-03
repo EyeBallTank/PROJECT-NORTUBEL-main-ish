@@ -34,6 +34,7 @@ onready var Player = get_parent().get_node("Player")
 onready var healthBar = $HealthbarCompanion
 
 var vel = Vector2(0, 0)
+var STOP_FORCE = 450
 
 var grav = 1800
 var max_grav = 3000
