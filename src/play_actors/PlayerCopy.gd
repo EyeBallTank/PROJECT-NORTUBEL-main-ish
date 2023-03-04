@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 const FLOOR_NORMAL: = Vector2.UP
 
-const BALL_VELOCITY = 500.0
+var BALL_VELOCITY = 1500.0
 const Ball = preload("res://src/level_objects/SoccerBall.tscn")
 
 export var speed: = Vector2(300.0, 1000.0)
@@ -278,9 +278,13 @@ func die():
 
 func shoot(direction = 1):
 	var soccerball = Ball.instance()
-	soccerball.global_position = global_position
+	soccerball.global_position = $PlayerHitbox/HitboxPlayer.global_position
 	soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
-	add_child(soccerball)
+	get_tree().get_root().add_child(soccerball)
+	if Input.get_action_strength("right"):
+		direction = 1
+	elif Input.get_action_strength("left"):
+		direction = -1
 
 func knife_attack():
 	$PlayerHitbox/HitboxPlayer.disabled = true
