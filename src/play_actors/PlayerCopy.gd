@@ -47,10 +47,11 @@ onready var swimCheck = $SwimCheck
 onready var iceCheck = $IceCheck
 onready var hurtbox = $Hurtbox
 onready var playerhitbox = $PlayerHitbox
+onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 #onready var pushCheck = $PushCheckers
 
 func _ready():
-	$PlayerHitbox/HitboxPlayer.disabled = true
+	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
 
 func _physics_process(delta):
@@ -104,10 +105,10 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
 				$Sprite.flip_h = false
-				$PlayerHitbox/HitboxPlayer.position = Vector2(65, 2)
+				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				$Sprite.flip_h = true
-				$PlayerHitbox/HitboxPlayer.position = Vector2(-67, 2)
+				playerhitboxcollision.position = Vector2(-67, 2)
 			if abs(walk) < WALK_FORCE * 0.1:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 			else:
@@ -156,11 +157,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
 				$Sprite.flip_h = false
-				$PlayerHitbox/HitboxPlayer.position = Vector2(65, 2)
+				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				$Sprite.flip_h = true
-				$PlayerHitbox/HitboxPlayer.position = Vector2(-67, 2)
+				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
 #				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 				velocity.x = 0
@@ -276,9 +277,10 @@ func get_hurt():
 func die():
 	get_tree().reload_current_scene()
 
-func shoot(direction = 1):
+func shoot():
+	var direction = Input.get_axis("left", "right")
 	var soccerball = Ball.instance()
-	soccerball.global_position = $PlayerHitbox/HitboxPlayer.global_position
+	soccerball.global_position = playerhitboxcollision.global_position
 	soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 	get_tree().get_root().add_child(soccerball)
 	if Input.get_action_strength("right"):
@@ -287,11 +289,11 @@ func shoot(direction = 1):
 		direction = -1
 
 func knife_attack():
-	$PlayerHitbox/HitboxPlayer.disabled = true
+	playerhitboxcollision.disabled = true
 	yield(get_tree().create_timer(0.1), "timeout")
-	$PlayerHitbox/HitboxPlayer.disabled = false
+	playerhitboxcollision.disabled = false
 	yield(get_tree().create_timer(0.3), "timeout")
-	$PlayerHitbox/HitboxPlayer.disabled = true
+	playerhitboxcollision.disabled = true
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false

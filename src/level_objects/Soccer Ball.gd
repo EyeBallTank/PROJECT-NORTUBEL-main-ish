@@ -4,9 +4,10 @@ class_name SoccerBall
 onready var animationplayer = $AnimationPlayer
 
 func _ready():
-	pass
+	ball_disappear()
 
 func ball_disappear():
+	yield(get_tree().create_timer(2), "timeout")
 	animationplayer.play("Ballvanish")
 	yield(get_node("AnimationPlayer"), "animation_finished")
 	queue_free()

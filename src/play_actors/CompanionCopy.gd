@@ -7,6 +7,8 @@ const FLOOR_NORMAL: = Vector2.UP
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var health : int = 50
+var acceleration = 0.25
+var friction = 0.1
 var velocity: = Vector2.ZERO
 
 #I took Gonkee's Jared AI code and tried to change it to my preferences.
@@ -85,8 +87,10 @@ func _process(delta):
 			pushcheck()
 			if Player.position.x < position.x - target_player_distance:
 				set_dir(-1)
+				
 			elif Player.position.x > position.x + target_player_distance:
 				set_dir(1)
+				
 			else:
 				set_dir(0)
 
@@ -117,6 +121,7 @@ func _process(delta):
 			next_dir = 0
 			next_dir_time = 0
 			dir = 0
+			
 			
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
@@ -220,6 +225,15 @@ func pushcheck():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
 			collision.collider.slide(-collision.normal * (speed / 2.5) )
+		else:
+			return false
+	return true
+
+func ice_check():
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider is IceFloor:
+			pass
 		else:
 			return false
 	return true

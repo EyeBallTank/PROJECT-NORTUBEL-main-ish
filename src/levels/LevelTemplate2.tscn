@@ -64,6 +64,9 @@ func _on_Door_body_entered(body):
 [node name="LevelTemplate2" type="Node2D"]
 light_mask = 4
 script = ExtResource( 5 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
@@ -104,13 +107,19 @@ position = Vector2( -1016, 156 )
 position = Vector2( 458, -688 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
-position = Vector2( -2837, 414 )
+position = Vector2( 1777, -718 )
 
 [node name="Companion" parent="." instance=ExtResource( 11 )]
 position = Vector2( 966, -740 )
 
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
-position = Vector2( -2058, 516 )
+position = Vector2( 1397, -626 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2128, -629 )
+
+[node name="Area2D3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2691, -629 )
 
 [node name="SoccerBall" parent="." instance=ExtResource( 16 )]
 position = Vector2( -3784, 251 )
