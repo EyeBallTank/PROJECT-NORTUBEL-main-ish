@@ -15,7 +15,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=15]
-[ext_resource path="res://src/level_objects/Soccer Ball.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/SoccerBall.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -112,5 +112,5 @@ position = Vector2( 966, -740 )
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
 position = Vector2( -2058, 516 )
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 16 )]
-position = Vector2( -3721, 242 )
+[node name="SoccerBall" parent="." instance=ExtResource( 16 )]
+position = Vector2( -3784, 251 )

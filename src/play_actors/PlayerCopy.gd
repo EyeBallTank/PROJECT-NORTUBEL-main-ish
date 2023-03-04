@@ -2,6 +2,9 @@ extends KinematicBody2D
 
 const FLOOR_NORMAL: = Vector2.UP
 
+const BALL_VELOCITY = 500.0
+const Ball = preload("res://src/level_objects/SoccerBall.tscn")
+
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var jump_buffer_time : int  = 15
@@ -140,12 +143,14 @@ func _physics_process(delta):
 					state = MAINSTATE
 				else:
 					pass
-			
-			
+
 		MAINSTATE:
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
 				knife_attack()
+
+			if Input.is_action_just_pressed("kickball"):
+				shoot()
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -270,6 +275,12 @@ func get_hurt():
 
 func die():
 	get_tree().reload_current_scene()
+
+func shoot(direction = 1):
+	var soccerball = Ball.instance()
+	soccerball.global_position = global_position
+	soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+	add_child(soccerball)
 
 func knife_attack():
 	$PlayerHitbox/HitboxPlayer.disabled = true

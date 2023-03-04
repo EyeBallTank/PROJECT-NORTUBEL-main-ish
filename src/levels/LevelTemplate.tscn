@@ -14,7 +14,7 @@
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/anchorhook.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=15]
-[ext_resource path="res://src/level_objects/Soccer Ball.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/SoccerBall.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]

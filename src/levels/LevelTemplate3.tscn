@@ -11,7 +11,7 @@
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/level_objects/Soccer Ball.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/SoccerBall.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/npc placeholder.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=15]
