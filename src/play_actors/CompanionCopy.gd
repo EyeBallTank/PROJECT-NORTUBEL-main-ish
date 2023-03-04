@@ -7,8 +7,9 @@ const FLOOR_NORMAL: = Vector2.UP
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var health : int = 50
-var acceleration = 0.25
-var friction = 0.1
+export (float, 0, 1.0) var friction = 0.1
+export (float, 0, 1.0) var acceleration = 0.25
+
 var velocity: = Vector2.ZERO
 
 #I took Gonkee's Jared AI code and tried to change it to my preferences.
