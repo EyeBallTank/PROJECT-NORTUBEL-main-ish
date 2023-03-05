@@ -53,7 +53,7 @@ Even if someone isn't directly involved with this or any project, they still had
 
 From tutorials and assets or software related to Godot, to stuff around other programs and art tutorial/practice methods.
 
-* Godot demo projects like Kinematic Character 2D/Cubio
+* Godot demo projects like the "2D Platformer Demo (KinematicBody)" one and the now gone "Cubio" project (One was the source for the Soccer Ball attack and the other was the source for player physics, some used in the ICE state).
 * GDQuest (Made a platform tutorial series, in which i made the practice game and took some stuff from it; Did a lot of other tutorial videos and applications)
 * HeartBeast (Similar to above)
 * GameDev With Drew (Godot tutorial videos).
