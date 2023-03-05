@@ -21,7 +21,7 @@ enum {
 	CLIMB,
 	SWIM,
 #	SWING,
-#	KICK,
+	KICKBALL,
 #	KNIFE
 #	DEATH
 	SLOW
@@ -151,7 +151,7 @@ func _physics_process(delta):
 				knife_attack()
 
 			if Input.is_action_just_pressed("kickball"):
-				shoot()
+				state = KICKBALL
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -243,28 +243,34 @@ func _physics_process(delta):
 			
 			if not is_on_water():
 				state = MAINSTATE
-		
-#	for index in get_slide_count():
-#		var collision = get_slide_collision(index)
-#		if collision.collider.is_in_group("pushableside"):
-#			state = PUSH
-#		else:
-#			state = MAINSTATE
-
-#	if pushdetection.is_colliding():
-#		var object = pushdetection.get_collider()
-#		object.move_and_slide(Vector2(pushdetection.scale.x, 0) * speed)
-#		state = PUSH
-#	else:
-#		state = MAINSTATE
-
-#	if get_slide_count() > 0:
-#		check_pushable_collision(velocity)
-#
-#func check_pushable_collision(velocity) -> void:
-#	var pushthing : = get_slide_collision(0).collider as PushableCopy
-#	if pushthing:
-#			pushthing.push(PUSH_SPEED * velocity)
+		KICKBALL:
+			velocity.x = 0
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			
+			var direction = Input.get_axis("left", "right")
+			if Input.is_action_just_pressed("right"):
+				$Sprite.flip_h = false
+				playerhitboxcollision.position = Vector2(65, 2)
+				direction = 1
+				var soccerball = Ball.instance()
+				soccerball.global_position = playerhitboxcollision.global_position
+				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+				get_tree().get_root().add_child(soccerball)
+				yield(get_tree().create_timer(0.5), "timeout")
+				state = MAINSTATE
+			elif Input.is_action_just_pressed("left"):
+				$Sprite.flip_h = true
+				playerhitboxcollision.position = Vector2(-67, 2)
+				direction = -1
+				var soccerball = Ball.instance()
+				soccerball.global_position = playerhitboxcollision.global_position
+				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+				get_tree().get_root().add_child(soccerball)
+				yield(get_tree().create_timer(0.5), "timeout")
+				state = MAINSTATE
+			if Input.get_action_strength("down"):
+				state = MAINSTATE
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
@@ -277,16 +283,16 @@ func get_hurt():
 func die():
 	get_tree().reload_current_scene()
 
-func shoot():
-	var direction = Input.get_axis("left", "right")
-	var soccerball = Ball.instance()
-	soccerball.global_position = playerhitboxcollision.global_position
-	soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
-	get_tree().get_root().add_child(soccerball)
-	if Input.get_action_strength("right"):
-		direction = 1
-	elif Input.get_action_strength("left"):
-		direction = -1
+#func shoot():
+#	var direction = Input.get_axis("left", "right")
+#	var soccerball = Ball.instance()
+#	soccerball.global_position = playerhitboxcollision.global_position
+#	soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+#	get_tree().get_root().add_child(soccerball)
+#	if Input.get_action_strength("right"):
+#		direction = 1
+#	elif Input.get_action_strength("left"):
+#		direction = -1
 
 func knife_attack():
 	playerhitboxcollision.disabled = true
