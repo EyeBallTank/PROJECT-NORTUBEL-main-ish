@@ -43,3 +43,4 @@ position = Vector2( 2.5, -156 )
 shape = SubResource( 3 )
 
 [connection signal="area_entered" from="GeckoHurtbox" to="." method="_on_GeckoHurtbox_area_entered"]
+[connection signal="body_entered" from="GeckoHurtbox" to="." method="_on_GeckoHurtbox_body_entered"]
