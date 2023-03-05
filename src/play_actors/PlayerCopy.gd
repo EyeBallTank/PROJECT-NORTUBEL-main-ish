@@ -64,6 +64,12 @@ func _physics_process(delta):
 	# Still using frankensteined code to do this		
 	match state:
 		SLOW:
+			pushcheck()
+			if Input.is_action_just_pressed("attack"):
+				knife_attack()
+			if Input.is_action_just_pressed("kickball"):
+				state = KICKBALL
+
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 				$Sprite.flip_h = false
@@ -101,6 +107,9 @@ func _physics_process(delta):
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
 				knife_attack()
+			if Input.is_action_just_pressed("kickball"):
+				state = KICKBALL
+
 			var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -257,7 +266,7 @@ func _physics_process(delta):
 				soccerball.global_position = playerhitboxcollision.global_position
 				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 				get_tree().get_root().add_child(soccerball)
-				yield(get_tree().create_timer(0.5), "timeout")
+#				yield(get_tree().create_timer(0.5), "timeout")
 				state = MAINSTATE
 			elif Input.is_action_just_pressed("left"):
 				$Sprite.flip_h = true
@@ -267,7 +276,7 @@ func _physics_process(delta):
 				soccerball.global_position = playerhitboxcollision.global_position
 				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 				get_tree().get_root().add_child(soccerball)
-				yield(get_tree().create_timer(0.5), "timeout")
+#				yield(get_tree().create_timer(0.5), "timeout")
 				state = MAINSTATE
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
