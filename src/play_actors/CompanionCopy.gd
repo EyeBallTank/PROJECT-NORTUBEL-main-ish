@@ -30,7 +30,7 @@ enum {
 #	ICERUN
 	SWIMIDLE,
 	SWIMMING,
-#	SWIMRUN
+	SWIMRUN,
 	RUNAWAY
 }
 
@@ -165,6 +165,9 @@ func _process(delta):
 			if Input.is_action_pressed("standstill"):
 				state = SWIMIDLE
 				
+			if Input.is_action_pressed("runaway"):
+				state = SWIMRUN
+
 			if not is_on_water():
 				state = FOLLOWME
 
@@ -179,7 +182,9 @@ func _process(delta):
 			
 			if Input.is_action_pressed("followme"):
 				state = SWIMMING
-			
+			if Input.is_action_pressed("runaway"):
+				state = SWIMRUN
+
 			if not is_on_water():
 				state = STANDSTILL
 
@@ -200,6 +205,48 @@ func _process(delta):
 
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
+
+			if is_on_water():
+				state = SWIMRUN
+
+		SWIMRUN:
+			if Player.position.x < position.x - target_player_distance:
+				if Player.position.y < position.y - target_player_distance:
+						set_dir(1)
+#						vel.y = -800
+						vel = position.direction_to(Player.position) * speed
+						
+				elif Player.position.y > position.y + target_player_distance:
+						set_dir(1)
+#						vel.y = 800
+						vel = position.direction_to(Player.position) * speed
+
+			elif Player.position.x > position.x + target_player_distance:
+				if Player.position.y < position.y - target_player_distance:
+						set_dir(-1)
+#						vel.y = -800
+						vel = position.direction_to(Player.position) * speed
+				elif Player.position.y > position.y + target_player_distance:
+						set_dir(-1)
+#						vel.y = 800
+						vel = position.direction_to(Player.position) * speed
+
+			else:
+				set_dir(0)
+				vel.y = 100
+				
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
+
+			if Input.is_action_pressed("standstill"):
+				state = SWIMIDLE
+				
+			if Input.is_action_pressed("followme"):
+				state = SWIMMING
+				
+			if not is_on_water():
+				state = RUNAWAY
+
 
 	vel.y += grav * delta;
 	if vel.y > max_grav:
