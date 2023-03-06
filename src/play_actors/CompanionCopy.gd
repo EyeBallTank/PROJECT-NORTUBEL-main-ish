@@ -137,20 +137,23 @@ func _process(delta):
 			if Player.position.x < position.x - target_player_distance:
 				if Player.position.y < position.y - target_player_distance:
 						set_dir(-1)
-						vel.y = -800
+#						vel.y = -800
+						vel = position.direction_to(Player.position) * speed
 						
 				elif Player.position.y > position.y + target_player_distance:
 						set_dir(-1)
-						vel.y = 800
+#						vel.y = 800
+						vel = position.direction_to(Player.position) * speed
 
 			elif Player.position.x > position.x + target_player_distance:
 				if Player.position.y < position.y - target_player_distance:
 						set_dir(1)
-						vel.y = -800
-						
+#						vel.y = -800
+						vel = position.direction_to(Player.position) * speed
 				elif Player.position.y > position.y + target_player_distance:
 						set_dir(1)
-						vel.y = 800
+#						vel.y = 800
+						vel = position.direction_to(Player.position) * speed
 
 			else:
 				set_dir(0)
