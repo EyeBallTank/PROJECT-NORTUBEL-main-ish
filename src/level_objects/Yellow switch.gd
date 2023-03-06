@@ -9,7 +9,7 @@ func _ready():
 	pass
 
 func _on_YellowSwitch_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("protagonists"):
 		is_pressed = true
 		print("YELLOW IS PRESSED")
 		animationplayer.play("PRESSED")

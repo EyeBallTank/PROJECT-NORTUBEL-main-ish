@@ -9,7 +9,7 @@ func _ready():
 	pass
 
 func _on_Blue_switch_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("protagonists"):
 #		if Input.get_action_strength("attack"):
 		is_pressed = true
 		animationplayer.play("PRESSED")
