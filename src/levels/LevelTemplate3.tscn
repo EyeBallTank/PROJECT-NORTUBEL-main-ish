@@ -179,9 +179,9 @@ position = Vector2( -1682, -935 )
 position = Vector2( -1538, -592 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -87, -1304 )
+position = Vector2( 893, 540 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( -208, -1316 )
+position = Vector2( 784, 532 )
 
 [editable path="Water"]

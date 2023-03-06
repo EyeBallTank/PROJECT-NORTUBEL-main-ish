@@ -33,6 +33,7 @@ var hasyellowkey = false
 var hasbluekey = false
 var hasredkey = false
 var hasfishhook = false
+var hasball = true
 #var is_pushing = false
 
 var WALK_FORCE = 1600
@@ -67,8 +68,12 @@ func _physics_process(delta):
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
 				knife_attack()
+
 			if Input.is_action_just_pressed("kickball"):
-				state = KICKBALL
+				if hasball == true:
+					state = KICKBALL
+				else:
+					pass
 
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
@@ -107,8 +112,12 @@ func _physics_process(delta):
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
 				knife_attack()
+
 			if Input.is_action_just_pressed("kickball"):
-				state = KICKBALL
+				if hasball == true:
+					state = KICKBALL
+				else:
+					pass
 
 			var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
 			WALK_MAX_SPEED = 700
@@ -160,7 +169,10 @@ func _physics_process(delta):
 				knife_attack()
 
 			if Input.is_action_just_pressed("kickball"):
-				state = KICKBALL
+				if hasball == true:
+					state = KICKBALL
+				else:
+					pass
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
@@ -266,6 +278,7 @@ func _physics_process(delta):
 				soccerball.global_position = playerhitboxcollision.global_position
 				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 				get_tree().get_root().add_child(soccerball)
+				hasball = false
 #				yield(get_tree().create_timer(0.5), "timeout")
 				state = MAINSTATE
 			elif Input.is_action_just_pressed("left"):
@@ -276,6 +289,7 @@ func _physics_process(delta):
 				soccerball.global_position = playerhitboxcollision.global_position
 				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 				get_tree().get_root().add_child(soccerball)
+				hasball = false
 #				yield(get_tree().create_timer(0.5), "timeout")
 				state = MAINSTATE
 			if Input.get_action_strength("down"):
