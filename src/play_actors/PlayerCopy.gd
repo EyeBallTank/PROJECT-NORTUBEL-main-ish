@@ -271,27 +271,33 @@ func _physics_process(delta):
 			
 			var direction = Input.get_axis("left", "right")
 			if Input.is_action_just_pressed("right"):
-				$Sprite.flip_h = false
-				playerhitboxcollision.position = Vector2(65, 2)
-				direction = 1
-				var soccerball = Ball.instance()
-				soccerball.global_position = playerhitboxcollision.global_position
-				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
-				get_tree().get_root().add_child(soccerball)
-				hasball = false
-#				yield(get_tree().create_timer(0.5), "timeout")
-				state = MAINSTATE
+				if hasball == true:
+					$Sprite.flip_h = false
+					playerhitboxcollision.position = Vector2(65, 2)
+					direction = 1
+					var soccerball = Ball.instance()
+					soccerball.global_position = playerhitboxcollision.global_position
+					soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+					get_tree().get_root().add_child(soccerball)
+					hasball = false
+					yield(get_tree().create_timer(0.5), "timeout")
+					state = MAINSTATE
+				else:
+					pass
 			elif Input.is_action_just_pressed("left"):
-				$Sprite.flip_h = true
-				playerhitboxcollision.position = Vector2(-67, 2)
-				direction = -1
-				var soccerball = Ball.instance()
-				soccerball.global_position = playerhitboxcollision.global_position
-				soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
-				get_tree().get_root().add_child(soccerball)
-				hasball = false
-#				yield(get_tree().create_timer(0.5), "timeout")
-				state = MAINSTATE
+				if hasball == true:
+					$Sprite.flip_h = true
+					playerhitboxcollision.position = Vector2(-67, 2)
+					direction = -1
+					var soccerball = Ball.instance()
+					soccerball.global_position = playerhitboxcollision.global_position
+					soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+					get_tree().get_root().add_child(soccerball)
+					hasball = false
+					yield(get_tree().create_timer(0.5), "timeout")
+					state = MAINSTATE
+				else:
+					pass
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
 
