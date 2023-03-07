@@ -9,6 +9,7 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var jump_buffer_time : int  = 15
 export var health : int = 100
+#export var oxygen : int = 100
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
