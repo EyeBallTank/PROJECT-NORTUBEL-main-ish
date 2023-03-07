@@ -105,10 +105,10 @@ position = Vector2( 1976, -51 )
 position = Vector2( 2370, 466 )
 
 [node name="Water" parent="." instance=ExtResource( 13 )]
-position = Vector2( -1436, 180 )
+position = Vector2( -2341, 180 )
 
 [node name="Water2" parent="." instance=ExtResource( 13 )]
-position = Vector2( -1957, 183 )
+position = Vector2( -2862, 183 )
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 15 )]
 position = Vector2( 458, -688 )
@@ -123,10 +123,10 @@ position = Vector2( 2128, -629 )
 position = Vector2( 2691, -629 )
 
 [node name="ConveyorRight" parent="." instance=ExtResource( 17 )]
-position = Vector2( 1778, -1121 )
+position = Vector2( 936, -1118 )
 
 [node name="SoccerBall" parent="." instance=ExtResource( 16 )]
-position = Vector2( -3784, 251 )
+position = Vector2( -1896, 814 )
 
 [node name="Soccer Goal" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4104, -899 )
@@ -136,13 +136,13 @@ position = Vector2( 4104, -899 )
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 19 )]
 
 [node name="Ladder" parent="." instance=ExtResource( 20 )]
-position = Vector2( 3206, -918 )
+position = Vector2( -3618, 227 )
 
 [node name="Ladder2" parent="." instance=ExtResource( 20 )]
-position = Vector2( 2879, -1065 )
+position = Vector2( -3945, 80 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3500, -725 )
+position = Vector2( -3324, 420 )
 
 [node name="Companion" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3411, -738 )
+position = Vector2( -3413, 407 )

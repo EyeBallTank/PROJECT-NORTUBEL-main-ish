@@ -89,6 +89,12 @@ func _process(delta):
 
 	match state:
 		FOLLOWME:
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
+			
 			pushcheck()
 
 			if is_on_ladder():
@@ -126,6 +132,12 @@ func _process(delta):
 
 
 		STANDSTILL:
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
+			
 			pushcheck()
 			if is_on_ladder():
 				if Input.get_action_strength("interactcomp"):
@@ -185,7 +197,10 @@ func _process(delta):
 
 			if not is_on_water():
 				state = FOLLOWME
-
+				
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
 			
 		SWIMIDLE:
 			set_dir(0)
@@ -203,9 +218,16 @@ func _process(delta):
 
 			if not is_on_water():
 				state = STANDSTILL
-
-			
+				
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
 		RUNAWAY:
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
 			pushcheck()
 			if is_on_ladder():
 				if Input.get_action_strength("interactcomp"):
@@ -268,7 +290,10 @@ func _process(delta):
 				
 			if not is_on_water():
 				state = RUNAWAY
-
+				
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
 		CLIMBIDLE:
 			set_dir(0)
 			vel.x = 0
@@ -289,6 +314,8 @@ func _process(delta):
 
 			if not is_on_ladder():
 				state = STANDSTILL
+			grav = 0
+			max_grav = 0
 
 		CLIMBMOVE:
 			if Player.position.y < position.y - target_player_distance:
@@ -297,7 +324,10 @@ func _process(delta):
 			elif Player.position.y > position.y + target_player_distance:
 					set_dir(1)
 					vel = position.direction_to(Player.position) * speed
-					
+			else:
+				set_dir(0)
+				vel.y = 0
+				
 			if Input.is_action_pressed("standstill"):
 				state = CLIMBIDLE
 			if Input.is_action_pressed("runaway"):
@@ -306,6 +336,9 @@ func _process(delta):
 				state = STANDSTILL
 			if not is_on_ladder():
 				state = STANDSTILL
+
+			grav = 0
+			max_grav = 0
 		CLIMBRUN:
 			if Player.position.y < position.y - target_player_distance:
 				set_dir(1)
@@ -313,6 +346,9 @@ func _process(delta):
 			elif Player.position.y > position.y + target_player_distance:
 				set_dir(1)
 				vel = position.direction_to(Player.position) * -speed
+			else:
+				set_dir(0)
+				vel.y = 0
 				
 			if Input.is_action_pressed("standstill"):
 				state = CLIMBIDLE
@@ -322,10 +358,10 @@ func _process(delta):
 				state = STANDSTILL
 			if not is_on_ladder():
 				state = STANDSTILL
+				
+			grav = 0
+			max_grav = 0
 
-	vel.y += grav * delta;
-	if vel.y > max_grav:
-		vel.y = max_grav
 
 	if is_on_floor() and vel.y > 0:
 		vel.y = 0
