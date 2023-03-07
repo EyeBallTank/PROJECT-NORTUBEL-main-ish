@@ -18,9 +18,12 @@ var velocity: = Vector2.ZERO
 enum {
 	FOLLOWME,
 	STANDSTILL
-#	CRAWL,
+#	CRAWLIDLE,
+#	CRAWLFOLLOW
+#	CRAWLRUN
 #	CLIMBIDLE,
-#	CLIMBMOVE
+#	CLIMBMOVE,
+#	CLIMBRUN,
 #	PUSHFOLLOW
 #	PUSHRUN
 #	DEATH
@@ -55,6 +58,7 @@ var next_jump_time = -1
 var target_player_distance = 90
 
 onready var swimCheck = $swimCheck
+onready var ladderCheck = $ladderCheck
 onready var hurtbox = $HurtboxComp
 
 func _ready():
@@ -264,6 +268,12 @@ func is_on_water():
 	if not swimCheck.is_colliding(): return false
 	var collider = swimCheck.get_collider()
 	if not collider is Water: return false
+	return true
+
+func is_on_ladder():
+	if not ladderCheck.is_colliding(): return false
+	var collider = ladderCheck.get_collider()
+	if not collider is Ladder: return false
 	return true
 
 func _on_Hurtbox_area_entered(area):
