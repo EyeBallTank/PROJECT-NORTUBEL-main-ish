@@ -14,5 +14,6 @@ func _on_GreenSwitchTwo_body_entered(body):
 			Signals.emit_signal("green_switch_two_pressed")
 
 func _on_GreenSwitchOne_pressed():
+	yield(get_tree().create_timer(1), "timeout")
 	animationplayer.play("UNPRESSED")
 	is_pressed = false

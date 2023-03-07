@@ -157,7 +157,7 @@ func _process(delta):
 
 			else:
 				set_dir(0)
-				vel.y = 100
+				vel.y = 0
 				
 			if OS.get_ticks_msec() > next_dir_time:
 				dir = next_dir
@@ -178,7 +178,7 @@ func _process(delta):
 			next_dir = 0
 			next_dir_time = 0
 			dir = 0
-			vel.y = 100
+			vel.y = 0
 			
 			if Input.is_action_pressed("followme"):
 				state = SWIMMING
@@ -233,7 +233,7 @@ func _process(delta):
 
 			else:
 				set_dir(0)
-				vel.y = 100
+				vel.y = 0
 				
 			if OS.get_ticks_msec() > next_dir_time:
 				dir = next_dir
