@@ -99,7 +99,7 @@ func _process(delta):
 			pushcheck()
 
 			if is_on_ladder():
-				if Input.get_action_strength("interactcomp"):
+				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBMOVE
 
 			if Player.position.x < position.x - target_player_distance:
@@ -141,7 +141,7 @@ func _process(delta):
 			
 			pushcheck()
 			if is_on_ladder():
-				if Input.get_action_strength("interactcomp"):
+				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBIDLE
 			set_dir(0)
 			vel.x = 0
@@ -231,7 +231,7 @@ func _process(delta):
 			max_grav = 3000
 			pushcheck()
 			if is_on_ladder():
-				if Input.get_action_strength("interactcomp"):
+				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBRUN
 			pushcheck()
 			if Player.position.x < position.x - target_player_distance:
@@ -310,7 +310,7 @@ func _process(delta):
 			if Input.is_action_pressed("runaway"):
 				state = CLIMBRUN
 
-			if Input.get_action_strength("interactcomp"):
+			if Input.is_action_just_pressed("interactcomp"):
 				state = STANDSTILL
 
 			if not is_on_ladder():
@@ -333,7 +333,7 @@ func _process(delta):
 				state = CLIMBIDLE
 			if Input.is_action_pressed("runaway"):
 				state = CLIMBRUN
-			if Input.get_action_strength("interactcomp"):
+			if Input.is_action_just_pressed("interactcomp"):
 				state = FOLLOWME
 			if not is_on_ladder():
 				state = FOLLOWME
@@ -355,7 +355,7 @@ func _process(delta):
 				state = CLIMBIDLE
 			if Input.is_action_pressed("followme"):
 				state = CLIMBMOVE
-			if Input.get_action_strength("interactcomp"):
+			if Input.is_action_just_pressed("interactcomp"):
 				state = RUNAWAY
 			if not is_on_ladder():
 				state = RUNAWAY
