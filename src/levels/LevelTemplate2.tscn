@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://src/level_objects/ConveyorRight.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=18]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=20]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -112,12 +113,6 @@ position = Vector2( -1957, 183 )
 [node name="FallingPlatNew" parent="." instance=ExtResource( 15 )]
 position = Vector2( 458, -688 )
 
-[node name="Player" parent="." instance=ExtResource( 10 )]
-position = Vector2( -1627, 333 )
-
-[node name="Companion" parent="." instance=ExtResource( 11 )]
-position = Vector2( -1764, 407 )
-
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1397, -626 )
 
@@ -127,8 +122,8 @@ position = Vector2( 2128, -629 )
 [node name="Area2D3" parent="." instance=ExtResource( 14 )]
 position = Vector2( 2691, -629 )
 
-[node name="ConveyorRight" parent="Area2D3" instance=ExtResource( 17 )]
-position = Vector2( -913, -492 )
+[node name="ConveyorRight" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1778, -1121 )
 
 [node name="SoccerBall" parent="." instance=ExtResource( 16 )]
 position = Vector2( -3784, 251 )
@@ -139,3 +134,15 @@ position = Vector2( 4104, -899 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 19 )]
+
+[node name="Ladder" parent="." instance=ExtResource( 20 )]
+position = Vector2( 3206, -918 )
+
+[node name="Ladder2" parent="." instance=ExtResource( 20 )]
+position = Vector2( 2879, -1065 )
+
+[node name="Player" parent="." instance=ExtResource( 10 )]
+position = Vector2( 3500, -725 )
+
+[node name="Companion" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3411, -738 )
