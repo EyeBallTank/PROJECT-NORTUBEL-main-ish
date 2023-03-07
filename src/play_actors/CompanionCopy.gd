@@ -21,9 +21,9 @@ enum {
 #	CRAWLIDLE,
 #	CRAWLFOLLOW
 #	CRAWLRUN
-#	CLIMBIDLE,
-#	CLIMBMOVE,
-#	CLIMBRUN,
+	CLIMBIDLE,
+	CLIMBMOVE,
+	CLIMBRUN,
 #	PUSHFOLLOW
 #	PUSHRUN
 #	DEATH
@@ -251,6 +251,15 @@ func _process(delta):
 			if not is_on_water():
 				state = RUNAWAY
 
+		CLIMBIDLE:
+			pass
+			
+		CLIMBMOVE:
+			pass
+			
+		CLIMBRUN:
+			pass
+			
 
 	vel.y += grav * delta;
 	if vel.y > max_grav:
