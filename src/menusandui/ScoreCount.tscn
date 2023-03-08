@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/menusandui/ScoreCount.gd" type="Script" id=2]
+
+[node name="ScoreCount" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 182.0
+margin_top = 9.0
+margin_right = 273.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 1 )
+text = "Ezcudos: 0"

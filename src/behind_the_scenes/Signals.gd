@@ -11,6 +11,8 @@ signal green_switch_two_pressed
 signal halfcircle_plat_active_one
 signal halfcircle_plat_active_two
 
+
+
 func _ready():
 	pass
 
