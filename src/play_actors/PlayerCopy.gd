@@ -121,7 +121,7 @@ func _physics_process(delta):
 					pass
 
 			var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
-			WALK_MAX_SPEED = 700
+			WALK_MAX_SPEED = 850
 			if Input.get_action_strength("right"):
 				$Sprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
