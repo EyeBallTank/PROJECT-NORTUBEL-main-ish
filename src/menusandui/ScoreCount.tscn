@@ -8,7 +8,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="."]
+[node name="ScoreLabel" type="Label" parent="."]
 margin_left = 182.0
 margin_top = 9.0
 margin_right = 273.0

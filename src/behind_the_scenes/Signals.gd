@@ -11,7 +11,8 @@ signal green_switch_two_pressed
 signal halfcircle_plat_active_one
 signal halfcircle_plat_active_two
 
-
+signal coin_was_captured
+signal score_was_updated
 
 func _ready():
 	pass

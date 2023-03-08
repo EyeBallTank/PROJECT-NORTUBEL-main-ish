@@ -91,7 +91,7 @@ position = Vector2( 1575, 615 )
 position = Vector2( -729, 398 )
 
 [node name="Coin" parent="." instance=ExtResource( 8 )]
-position = Vector2( -1062, 380 )
+position = Vector2( -290, -1336 )
 
 [node name="Node2D" parent="." instance=ExtResource( 6 )]
 position = Vector2( -1398, 173 )
@@ -107,9 +107,9 @@ position = Vector2( -3546, 442 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
-
 [node name="ScoreCount" parent="CanvasLayer" instance=ExtResource( 34 )]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="Blue key" parent="." instance=ExtResource( 19 )]
 position = Vector2( 1160, -166 )
@@ -179,10 +179,10 @@ position = Vector2( -1682, -935 )
 position = Vector2( -1538, -592 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -1935, -912 )
+position = Vector2( -27, -1328 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( -2044, -920 )
+position = Vector2( -136, -1336 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 11 )]
 position = Vector2( -150, 207 )
