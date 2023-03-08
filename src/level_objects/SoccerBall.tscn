@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/level_objects/Soccer Ball.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_object_sprites/soccerball.PNG" type="Texture" id=2]
@@ -60,6 +60,9 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
+[sub_resource type="CircleShape2D" id=4]
+radius = 56.0
+
 [node name="SoccerBall" type="RigidBody2D"]
 collision_layer = 1024
 collision_mask = 2084
@@ -77,3 +80,9 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Ballvanish = SubResource( 2 )
 anims/RESET = SubResource( 3 )
+
+[node name="GoalDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GoalDetector"]
+position = Vector2( -2, 0 )
+shape = SubResource( 4 )
