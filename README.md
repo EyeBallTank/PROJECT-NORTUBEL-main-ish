@@ -16,24 +16,26 @@ A game where the player controls a character, who has to watch out for their you
 The actual story revolves around a group of 6 friends that get lost in some strange places and as they try to escape or even explore them, they encounter other people.
 
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are:
-* Make the Playable character have more health than the Companion character.
-* Make the Companion character's moving speed a bit faster than the Playable character's moving speed.
-* Add 2 basic commands ("Followme" and "Standstill") to allow the Playable character affect the Companion character's following activation (I'm considering trying a Finite State Machine).
-* When the Companion character is not on camera, there should be some visual feedback indicating their place, like an arrow.
-* Give the characters actual sprites (The game has 6 characters; 3 older siblings and 3 younger siblings; Each time a level presents 2 characters; Ideally, the player sprites change depending on the levels because each of the 3 sibling duos share the same gameplay mechanisms regardless of sprites).
-* Add basic level design features like jump pads, keys and locked doors, switches, climbable ladders or pushable blocks.
-* Add health pickups, score pickups, enemies, some sort of simple combat system and a bit of a stretch but something like a grappling hook-like feature.
-* Add swimming (Which could also warrant an oxygen limit mechanic).
-* Add NPC's and some sort of dialogue system (Even if i end up using the Dialogic addon by coppolaemilio).
-* Work around menus and UI system, like a nice style that adds personality.
-* With UI/HUD stuff in mind, some sort of ingame texts the player can read, whether they're helpful gameplay tips or lore/story stuff.
-* A ingame gallery menu that the player can optionally visit, to see stuff like concept art and other types of illustrations.
-* Some nice visuals, nothing too fancy or demanding (Specially depending on the art style).
-* A third command based on special interacts should be done later.
-* Maybe some unimportant interactions between siblings that aren't gameplay-relevant, like reading a book or playing a game.
-* Sound design and music in general (Though this might as well be a last priority; At least i don't want voice acting at all).
-* Some behind-the-scenes organization or methods to make the game's inner workings more flexible and supportive of some stuff (For example: When i thing of scene changes such as changing levels, i think a scene manager could be useful because i heard some code used for scene change can be limiting)
-* The option to change the game's language (While the default setting will be English, a second language in mind is Portuguese due its influences to the game's main setting)
+* Make the Playable character have more health than the Companion character (DONE).
+* Make the Companion character's moving speed a bit faster than the Playable character's moving speed (NOT DONE YET).
+* Add 2 basic commands ("Followme" and "Standstill") to allow the Playable character affect the Companion character's following activation (Somewhat done and uses a Finite State Machine).
+* When the Companion character is not on camera, there should be some visual feedback indicating their place, like an arrow (NOT DONE).
+* Give the characters actual sprites (The game has 6 characters; 3 older siblings and 3 younger siblings; Each time a level presents 2 characters; Ideally, the player sprites change depending on the levels because each of the 3 sibling duos share the same gameplay mechanisms regardless of sprites) (NOT DONE).
+* Add basic level design features like jump pads, keys and locked doors, switches, climbable ladders or pushable blocks (DONE BUT COULD STILL USE TWEAKS).
+* Add health pickups, score pickups, enemies, some sort of simple combat system and a bit of a stretch but something like a grappling hook-like feature (MOST EXCEPT THE LAST ARE DONE BUT STILL NEED TWEAKS).
+* Add swimming (Which could also warrant an oxygen limit mechanic) (DONE EXCEPT THE OXYGEN PART).
+* Add NPC's and some sort of dialogue system (Even if i end up using the Dialogic addon by coppolaemilio) (NOT DONE).
+* Work around menus and UI system, like a nice style that adds personality (NOT DONE).
+* With UI/HUD stuff in mind, some sort of ingame texts the player can read, whether they're helpful gameplay tips or lore/story stuff (NOT DONE).
+* A ingame gallery menu that the player can optionally visit, to see stuff like concept art and other types of illustrations (NOT DONE).
+* Some nice visuals, nothing too fancy or demanding (Specially depending on the art style) (NOT DONE).
+* A third command based on special interacts should be done later (STILL WIP).
+* Maybe some unimportant interactions between siblings that aren't gameplay-relevant, like reading a book or playing a game (NOT DONE).
+* Sound design and music in general (Though this might as well be a last priority; At least i don't want voice acting at all) (NOT DONE).
+* Some behind-the-scenes organization or methods to make the game's inner workings more flexible and supportive of some stuff (For example: When i thing of scene changes such as changing levels, i think a scene manager could be useful because i heard some code used for scene change can be limiting).
+* The option to change the game's language (While the default setting will be English, a second language in mind is Portuguese due its influences to the game's main setting).
+* Bonus stages: Inspired by the NES game Binary Land, i'm thinking of a top down minigame where 2 characters are controlled by the player but both have opposite horizontal movement and must reach the end goal; This could be a timed/optional minigame and shouldn't be too hard even if i'd like to add elements inspired by Chip's Challenge.
+* Most ambitious idea yet: "Rivals" for the 6 characters; Think of these characters as "alternate dimension" versions of the 6 protagonists and i want to make sure their presence and role has a place in gameplay, even if the idea of "rivals" in a 2D puzzle game based around escort missions might be strange.
 
 I may end up changing this goal list as well.
 
@@ -43,6 +45,20 @@ I may end up changing this goal list as well.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
+
+# Current controls/Inputs:
+This is an area that needs to be improved:
+* ESC for the Pause Menu.
+* Left movement: Left arrow key/A.
+* Right movement: Right arrow key/D.
+* Jumping and Climbing/Swimming upwards: Up arrow key/W.
+* Climbing/Swimming downwards: Down arrow key.
+* "Follow me": F.
+* "Stand still": S.
+* "Run away" which is almost opposite to FOLLOWME: R.
+* Companion "interactions" like attaching to the Ladder: Z.
+* Melee attack: E.
+* Ball kick attack: Q.
 
 # Credits and shout outs:
 
