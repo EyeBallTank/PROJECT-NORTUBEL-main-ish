@@ -15,7 +15,7 @@
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/npc placeholder.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=15]
-[ext_resource path="res://screens/PauseCanvas.tscn" type="PackedScene" id=16]
+[ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=19]
@@ -109,6 +109,8 @@ position = Vector2( -3546, 442 )
 
 [node name="ScoreCount" parent="CanvasLayer" instance=ExtResource( 34 )]
 
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
+
 [node name="Blue key" parent="." instance=ExtResource( 19 )]
 position = Vector2( 1160, -166 )
 
@@ -177,14 +179,12 @@ position = Vector2( -1682, -935 )
 position = Vector2( -1538, -592 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -27, -1328 )
+position = Vector2( 6469, 276 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( -136, -1336 )
+position = Vector2( 6360, 268 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 11 )]
 position = Vector2( -150, 207 )
-
-[node name="PauseCanvas" parent="." instance=ExtResource( 16 )]
 
 [editable path="Water"]

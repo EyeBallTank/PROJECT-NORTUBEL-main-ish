@@ -18,7 +18,7 @@
 [ext_resource path="res://src/level_objects/SoccerBall.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/ConveyorRight.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=18]
-[ext_resource path="res://screens/PauseCanvas.tscn" type="PackedScene" id=19]
+[ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/menusandui/ScoreCount.tscn" type="PackedScene" id=21]
 
@@ -136,6 +136,8 @@ position = Vector2( 4104, -899 )
 
 [node name="ScoreCount" parent="CanvasLayer" instance=ExtResource( 21 )]
 
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 19 )]
+
 [node name="Ladder" parent="." instance=ExtResource( 20 )]
 position = Vector2( -3618, 227 )
 
@@ -147,5 +149,3 @@ position = Vector2( 3138, -730 )
 
 [node name="Companion" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3049, -743 )
-
-[node name="PauseCanvas" parent="." instance=ExtResource( 19 )]
