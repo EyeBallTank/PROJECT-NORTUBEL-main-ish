@@ -104,9 +104,6 @@ position = Vector2( -3447, 380 )
 [node name="NPC test" parent="." instance=ExtResource( 14 )]
 position = Vector2( -3546, 442 )
 
-[node name="Health Pickup" parent="." instance=ExtResource( 11 )]
-position = Vector2( -150, 207 )
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
@@ -183,5 +180,8 @@ position = Vector2( -1935, -912 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( -2044, -920 )
+
+[node name="Health Pickup" parent="." instance=ExtResource( 11 )]
+position = Vector2( -150, 207 )
 
 [editable path="Water"]

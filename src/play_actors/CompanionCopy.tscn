@@ -66,6 +66,7 @@ tracks/1/keys = {
 extents = Vector2( 24, 82 )
 
 [node name="Companion" type="KinematicBody2D" groups=["protagonists"]]
+z_index = 11
 collision_layer = 2
 collision_mask = 292
 script = ExtResource( 1 )
