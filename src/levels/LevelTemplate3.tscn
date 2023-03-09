@@ -68,6 +68,12 @@ extents = Vector2( 160.75, 35.5 )
 light_mask = 4
 script = ExtResource( 4 )
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreCount" parent="CanvasLayer" instance=ExtResource( 34 )]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 collision_layer = 4
@@ -104,12 +110,6 @@ position = Vector2( -3447, 380 )
 
 [node name="NPC test" parent="." instance=ExtResource( 14 )]
 position = Vector2( -3546, 442 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ScoreCount" parent="CanvasLayer" instance=ExtResource( 34 )]
-
-[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="Blue key" parent="." instance=ExtResource( 19 )]
 position = Vector2( 1160, -166 )
