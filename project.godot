@@ -162,6 +162,7 @@ interactcomp={
 2d_physics/layer_10="SWITCHES AND BUTTONS"
 2d_physics/layer_11="SOCCERBALL"
 2d_physics/layer_12="SOCCERGOAL"
+2d_physics/layer_13="FISHHOOK"
 
 [physics]
 
