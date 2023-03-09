@@ -100,7 +100,7 @@ position = Vector2( -729, 398 )
 position = Vector2( -290, -1336 )
 
 [node name="Node2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1398, 173 )
+position = Vector2( 5498, -971 )
 
 [node name="Gong" parent="." instance=ExtResource( 9 )]
 position = Vector2( -1701, 434 )
