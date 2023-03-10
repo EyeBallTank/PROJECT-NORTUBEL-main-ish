@@ -224,7 +224,7 @@ func _physics_process(delta):
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
 			if is_on_rope():
-				if Input.get_action_strength("jumpup"):
+				if Input.is_action_just_pressed("jumpup"):
 					state = ROPE
 
 			if is_on_water():
@@ -253,7 +253,9 @@ func _physics_process(delta):
 			pass
 			if not is_on_rope():
 				state = MAINSTATE
-
+			if Input.is_action_just_pressed("jumpup"):
+				velocity.y = -JUMP_SPEED
+				state = MAINSTATE
 		SWIM:
 			PUSH_SPEED = 350
 			if Input.get_action_strength("right"):
