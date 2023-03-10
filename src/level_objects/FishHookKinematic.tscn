@@ -26,17 +26,15 @@ tracks/0/keys = {
 resource_name = "RopeSwing"
 length = 4.0
 loop = true
-tracks/0/type = "value"
+tracks/0/type = "bezier"
 tracks/0/path = NodePath("FishHookWithWire:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2, 4 ),
-"transitions": PoolRealArray( 5, 5, 5 ),
-"update": 0,
-"values": [ 55.4, -55.4, 55.4 ]
+"points": PoolRealArray( -63.5, -0.25, 0, 1, 1, 59.5, -0.99, 0, 1.01, 0, -63.5, -1, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
 }
 
 [node name="FishHookKinematic" type="Node2D" groups=["FishHook"]]
