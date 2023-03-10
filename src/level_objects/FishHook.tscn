@@ -33,3 +33,6 @@ script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectableRope"]
 shape = SubResource( 2 )
+
+[connection signal="body_entered" from="DetectableRope" to="." method="_on_DetectableRope_body_entered"]
+[connection signal="body_exited" from="DetectableRope" to="." method="_on_DetectableRope_body_exited"]
