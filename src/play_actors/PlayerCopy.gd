@@ -387,9 +387,8 @@ func pushcheck():
 			return false
 	return true
 
-
 func _on_RopeCheck_area_entered(area):
-	if area.is_in_group("hook"):
-		if Input.is_action_just_pressed("jumpup"):
-			rope_part = area
-			state = ROPE
+	if area.is_in_group("Hook"):
+#		if Input.is_action_just_pressed("jumpup"):
+		rope_part = area
+		state = ROPE
