@@ -15,19 +15,9 @@ _global_script_classes=[ {
 "path": "res://src/level_objects/ConveyorRight.gd"
 }, {
 "base": "Area2D",
-"class": "DetectableRope",
-"language": "GDScript",
-"path": "res://src/level_objects/DetectableRope.gd"
-}, {
-"base": "Area2D",
 "class": "EnemyHitbox",
 "language": "GDScript",
 "path": "res://src/behind_the_scenes/Enemy Hitbox.gd"
-}, {
-"base": "RigidBody2D",
-"class": "FishHook",
-"language": "GDScript",
-"path": "res://src/level_objects/FishHook.gd"
 }, {
 "base": "Area2D",
 "class": "IceFloor",
@@ -71,9 +61,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "ConveyorRight": "",
-"DetectableRope": "",
 "EnemyHitbox": "",
-"FishHook": "",
 "IceFloor": "",
 "Ladder": "",
 "Pushable": "",

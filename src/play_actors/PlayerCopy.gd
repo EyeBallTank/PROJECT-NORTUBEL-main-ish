@@ -35,7 +35,8 @@ var hasbluekey = false
 var hasredkey = false
 var hasfishhook = false
 var hasball = true
-var attachedtorope = null
+
+var rope_part = null
 #var is_pushing = false
 
 var WALK_FORCE = 1600
@@ -224,9 +225,9 @@ func _physics_process(delta):
 			if is_on_ladder():
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
-			if is_on_rope():
-				if Input.is_action_just_pressed("jumpup"):
-					state = ROPE
+#			if is_on_rope():
+#				if Input.is_action_just_pressed("jumpup"):
+#					state = ROPE
 
 			if is_on_water():
 				state = SWIM
@@ -252,10 +253,12 @@ func _physics_process(delta):
 				state = MAINSTATE
 		ROPE:
 #			global_position = DetectableRope.global_position
-			if not is_on_rope():
-				state = MAINSTATE
-			if Input.is_action_just_pressed("jumpup"):
+#			if not is_on_rope():
+#				state = MAINSTATE
+			global_position = rope_part.global_position
+			if Input.is_action_just_pressed("down"):
 				velocity.y = -JUMP_SPEED
+				rope_part = null
 				state = MAINSTATE
 		SWIM:
 			PUSH_SPEED = 350
@@ -362,14 +365,14 @@ func is_on_ice():
 	if not collider is IceFloor: return false
 	return true
 
-func is_on_rope():
-	if not ropeCheck.is_colliding(): return false
-	var collider = ropeCheck.get_collider()
-	if not collider is DetectableRope: return false
-	return true
+#func is_on_rope():
+#	if not ropeCheck.is_colliding(): return false
+#	var collider = ropeCheck.get_collider()
+#	if not collider is DetectableRope: return false
+#	return true
 #	if collider.is_in_group("grabbablerope"):
 #		attachedtorope = DetectableRope
-#
+	
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
@@ -383,3 +386,10 @@ func pushcheck():
 		else:
 			return false
 	return true
+
+
+func _on_RopeCheck_area_entered(area):
+	if area.is_in_group("hook"):
+		if Input.is_action_just_pressed("jumpup"):
+			rope_part = area
+			state = ROPE
