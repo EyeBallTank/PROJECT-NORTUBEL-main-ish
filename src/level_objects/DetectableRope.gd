@@ -1,6 +1,7 @@
 extends Area2D
 class_name DetectableRope
 
+var velocity: = Vector2.ZERO
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"

@@ -21,7 +21,7 @@ func _on_DetectableRope_body_entered(body):
 	if body.name == "Player":
 		hasplayer = true
 		body.attachedtorope = $DetectableRope
-		body.position.direction_to($DetectableRope.global_position)
+		body.global_position.direction_to($DetectableRope.global_position)
 		body.speed.direction_to($DetectableRope.global_position)
 		body.velocity.direction_to($DetectableRope.global_position)
 
