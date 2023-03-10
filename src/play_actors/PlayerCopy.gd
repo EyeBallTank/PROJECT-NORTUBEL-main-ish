@@ -21,7 +21,7 @@ enum {
 	MAINSTATE,
 	CLIMB,
 	SWIM,
-#	SWING,
+	ROPE,
 	KICKBALL,
 #	KNIFE
 #	DEATH
@@ -47,6 +47,7 @@ onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
 onready var iceCheck = $IceCheck
+onready var ropeCheck = $RopeCheck
 onready var hurtbox = $Hurtbox
 onready var playerhitbox = $PlayerHitbox
 onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
@@ -222,6 +223,10 @@ func _physics_process(delta):
 			if is_on_ladder():
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
+			if is_on_rope():
+				if Input.get_action_strength("jumpup"):
+					state = ROPE
+
 			if is_on_water():
 				state = SWIM
 			if is_on_ice():
@@ -244,6 +249,11 @@ func _physics_process(delta):
 
 			if not is_on_ladder():
 				state = MAINSTATE
+		ROPE:
+			pass
+			if not is_on_rope():
+				state = MAINSTATE
+
 		SWIM:
 			PUSH_SPEED = 350
 			if Input.get_action_strength("right"):
@@ -347,6 +357,12 @@ func is_on_ice():
 	if not iceCheck.is_colliding(): return false
 	var collider = iceCheck.get_collider()
 	if not collider is IceFloor: return false
+	return true
+
+func is_on_rope():
+	if not ropeCheck.is_colliding(): return false
+	var collider = ropeCheck.get_collider()
+	if not collider is DetectableRope: return false
 	return true
 
 func _on_Hurtbox_area_entered(area):
