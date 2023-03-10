@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionCopy.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/level_objects/MovingPlatCircle.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/menusandui/ScoreCount.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/level_objects/AnchorHookNew.tscn" type="PackedScene" id=35]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -186,5 +187,8 @@ position = Vector2( 6360, 268 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 11 )]
 position = Vector2( -150, 207 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 35 )]
+position = Vector2( 4148, -760 )
 
 [editable path="Water"]

@@ -1,5 +1,5 @@
-extends KinematicBody2D
+extends Node2D
 
 
 func _ready():
-	pass
+	pass 
