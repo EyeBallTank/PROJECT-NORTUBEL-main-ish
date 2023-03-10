@@ -250,7 +250,6 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = MAINSTATE
 		ROPE:
-			pass
 			if not is_on_rope():
 				state = MAINSTATE
 			if Input.is_action_just_pressed("jumpup"):
