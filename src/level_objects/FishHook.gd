@@ -9,11 +9,11 @@ func _ready():
 
 func _physics_process(delta):
 	if hasplayer == true:
-		if Input.is_action_pressed("right"):
+		if Input.is_action_just_pressed("right"):
 			apply_central_impulse(Vector2(800, 0))
 			
 	if hasplayer == true:
-		if Input.is_action_pressed("left"):
+		if Input.is_action_just_pressed("left"):
 			apply_central_impulse(Vector2(-800, 0))
 
 

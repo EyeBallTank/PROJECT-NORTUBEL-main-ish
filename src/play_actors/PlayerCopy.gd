@@ -35,6 +35,7 @@ var hasbluekey = false
 var hasredkey = false
 var hasfishhook = false
 var hasball = true
+var attachedtorope = null
 #var is_pushing = false
 
 var WALK_FORCE = 1600
@@ -250,6 +251,7 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = MAINSTATE
 		ROPE:
+#			global_position = DetectableRope.global_position
 			if not is_on_rope():
 				state = MAINSTATE
 			if Input.is_action_just_pressed("jumpup"):
@@ -365,6 +367,9 @@ func is_on_rope():
 	var collider = ropeCheck.get_collider()
 	if not collider is DetectableRope: return false
 	return true
+#	if collider.is_in_group("grabbablerope"):
+#		attachedtorope = DetectableRope
+#
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
