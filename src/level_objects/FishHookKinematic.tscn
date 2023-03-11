@@ -47,8 +47,8 @@ position = Vector2( 1, -560 )
 script = ExtResource( 2 )
 
 [node name="FishHookWithWire" type="KinematicBody2D" parent="."]
-position = Vector2( 0, 16 )
-collision_layer = 4096
+position = Vector2( 0.5, 4 )
+collision_layer = 0
 collision_mask = 0
 
 [node name="Sprite" type="Sprite" parent="FishHookWithWire"]
@@ -60,10 +60,11 @@ position = Vector2( 11, 710 )
 shape = SubResource( 1 )
 
 [node name="MainHookArea" type="Area2D" parent="FishHookWithWire" groups=["Hook"]]
+position = Vector2( 7.5, 711 )
 collision_layer = 4096
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishHookWithWire/MainHookArea"]
-position = Vector2( 11, 709 )
+position = Vector2( 3, 1 )
 shape = SubResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -72,5 +73,6 @@ anims/RESET = SubResource( 2 )
 anims/RopeSwing = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -202 )
+position = Vector2( 11, 709 )
 texture = ExtResource( 3 )
+offset = Vector2( -10.5, -923 )

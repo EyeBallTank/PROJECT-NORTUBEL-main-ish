@@ -60,8 +60,6 @@ func _ready():
 	healthBar.max_value = health
 
 func _physics_process(delta):
-	
-
 	healthBar.value = health
 	if health <= 0:
 		die()

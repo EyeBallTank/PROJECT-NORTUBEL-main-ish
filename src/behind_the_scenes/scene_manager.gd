@@ -12,7 +12,7 @@ func change_scene(anim, new_scene):
 	
 
 func _new_scene():
-		get_tree().change_scene(scene)
+	get_tree().change_scene(scene)
 
 func pause_the_game():
 	get_tree().paused = true

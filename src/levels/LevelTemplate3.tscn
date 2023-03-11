@@ -185,6 +185,6 @@ position = Vector2( 6360, 268 )
 position = Vector2( -150, 207 )
 
 [node name="FishHookKinematic" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4289, -688 )
+position = Vector2( 4337, -608 )
 
 [editable path="Water"]
