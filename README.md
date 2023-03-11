@@ -101,6 +101,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
 * Pigdev (Used tutorial video on moving platform)
 * mjbolt (Used tutorial video on Pushable object)
+* luke_rs (Used tutorial video on the Swingable Rope)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
