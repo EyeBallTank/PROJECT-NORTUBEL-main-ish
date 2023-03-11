@@ -60,11 +60,11 @@ position = Vector2( 11, 710 )
 shape = SubResource( 1 )
 
 [node name="MainHookArea" type="Area2D" parent="FishHookWithWire" groups=["Hook"]]
-position = Vector2( 7.5, 711 )
+position = Vector2( 11.5, 767 )
 collision_layer = 4096
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishHookWithWire/MainHookArea"]
-position = Vector2( 3, 1 )
+position = Vector2( -1, -57 )
 shape = SubResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
