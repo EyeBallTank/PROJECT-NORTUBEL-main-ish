@@ -254,9 +254,11 @@ func _physics_process(delta):
 #			if not is_on_rope():
 #				state = MAINSTATE
 			global_position = rope_part.global_position
+			global_rotation = rope_part.global_rotation
 			if Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
 				rope_part = null
+				global_rotation = 0
 				state = MAINSTATE
 		SWIM:
 			PUSH_SPEED = 350
