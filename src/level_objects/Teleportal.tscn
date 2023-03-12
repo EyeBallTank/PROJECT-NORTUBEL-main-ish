@@ -7,6 +7,8 @@
 extents = Vector2( 68, 67 )
 
 [node name="Teleportal" type="Area2D" groups=["Teleportal"]]
+collision_layer = 4
+collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
