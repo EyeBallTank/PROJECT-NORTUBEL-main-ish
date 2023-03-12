@@ -1,5 +1,5 @@
 [gd_scene format=2]
 
-[node name="jump thru" type="StaticBody2D"]
+[node name="fall thru" type="StaticBody2D"]
 collision_layer = 4
 collision_mask = 3
