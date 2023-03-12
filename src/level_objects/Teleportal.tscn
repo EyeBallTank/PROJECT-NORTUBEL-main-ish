@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Teleportal.PNG" type="Texture" id=1]
+[ext_resource path="res://src/level_objects/Teleportal.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 68, 67 )
 
-[node name="Teleportal" type="Area2D" groups=["teleportal"]]
+[node name="Teleportal" type="Area2D" groups=["Teleportal"]]
+script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.388252, 0.388252 )

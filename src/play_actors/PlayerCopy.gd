@@ -37,6 +37,7 @@ var hasfishhook = false
 var hasball = true
 
 var rope_part = null
+var portal_id = 0
 #var is_pushing = false
 
 var WALK_FORCE = 1600
@@ -392,3 +393,16 @@ func _on_RopeCheck_area_entered(area):
 #		if Input.is_action_just_pressed("jumpup"):
 		rope_part = area
 		state = ROPE
+
+func Teleport(area):
+	for Teleportal in get_tree().get_nodes_in_group("Teleportal"):
+		if Teleportal != area:
+			if(Teleportal.id == area.id):
+				if(!Teleportal.lockPortal):
+					area.LockedPortal()
+					global_position = Teleportal.global_position
+
+func _on_PortalCheck_area_entered(area):
+	if(area.is_in_group("Teleportal")):
+		if(!area.lockPortal):
+			Teleport(area)
