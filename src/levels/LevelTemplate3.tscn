@@ -189,9 +189,9 @@ position = Vector2( -150, 207 )
 position = Vector2( 4337, -608 )
 
 [node name="Teleportal" parent="." instance=ExtResource( 35 )]
-position = Vector2( 5244, 200 )
+position = Vector2( -1400, -104 )
 
 [node name="Teleportal2" parent="." instance=ExtResource( 35 )]
-position = Vector2( 5604, -84 )
+position = Vector2( 1724, -900 )
 
 [editable path="Water"]
