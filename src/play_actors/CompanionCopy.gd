@@ -61,6 +61,7 @@ var target_player_distance = 90
 onready var swimCheck = $swimCheck
 onready var ladderCheck = $ladderCheck
 onready var hurtbox = $HurtboxComp
+var portal_id = 0
 
 func _ready():
 	set_process(true)
@@ -397,6 +398,19 @@ func pushcheck():
 		else:
 			return false
 	return true
+
+func Teleport(area):
+	for Teleportal in get_tree().get_nodes_in_group("Teleportal"):
+		if Teleportal != area:
+			if(Teleportal.id == area.id):
+				if(!Teleportal.lockPortal):
+					area.LockedPortal()
+					global_position = Teleportal.global_position
+
+func _on_PortalCheck_area_entered(area):
+	if(area.is_in_group("Teleportal")):
+		if(!area.lockPortal):
+			Teleport(area)
 
 func ice_check():
 	for index in get_slide_count():
