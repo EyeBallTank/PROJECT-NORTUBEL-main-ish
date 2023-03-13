@@ -18,10 +18,10 @@ var velocity: = Vector2.ZERO
 
 enum {
 	FOLLOWME,
-	STANDSTILL
-#	CRAWLIDLE,
-#	CRAWLFOLLOW
-#	CRAWLRUN
+	STANDSTILL,
+	CRAWLIDLE,
+	CRAWLFOLLOW,
+	CRAWLRUN,
 	CLIMBIDLE,
 	CLIMBMOVE,
 	CLIMBRUN,
@@ -363,6 +363,13 @@ func _process(delta):
 				
 			grav = 0
 			max_grav = 0
+
+		CRAWLIDLE:
+			pass
+		CRAWLFOLLOW:
+			pass
+		CRAWLRUN:
+			pass
 
 
 	if is_on_floor() and vel.y > 0:
