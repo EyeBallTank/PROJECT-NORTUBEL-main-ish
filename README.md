@@ -19,7 +19,10 @@ In general, it's based on a personal project where i thought of a bunch of chara
 
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
 * MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
+* SAVE/LOAD: Not a thing; Need to understand clearly how it can work and avoid the least amount of problems.
+* CHECKPOINT SYSTEM: Not a thing; I got a basic object that should fill this role, even if i need to make this work and avoid issues.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens.
+* LEVEL SELECT/HUB: Not a thing; Not sure exactly how level selection would work.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
 * COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement and only jump if they're under the Player's Y axis; If they're close enough to the Player, they run around left and right; Need to make their movement faster than the Player's if it's a good idea.
 * COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
@@ -46,6 +49,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * HEALTH PICKUP: Can heal the Player and Companion but both at the same time.
 * SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen.
 * ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them.
+* BOSS FIGHTS: Not a thing; Will probably be a very complex inclusion.
 * LEVEL HAZARDS: Not a thing yet
 * COMBAT: Player has a basic melee knife attack and the ability to kick a soccer ball that acts as a projectile with physics (And after a while it disappears; This ball also has a limit of uses).
 * SOCCER GOAL NET: If the soccer ball enters the net, the net disappears; It's a level object that could have special roles in level design.
@@ -54,6 +58,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * CUTSCENES: Not a thing; I don't want anything too complex, maybe some "slideshow" style presentation is good enough, i guess?
 * INGAME TEXTS: Not a thing yet; Like story segments, instructions/tips, "lore" etc.
 * INGAME GALLERY: Not a thing yet; Because if i figure out basic cutscenes, maybe an art gallery would be neat.
+* COLLECTABLES: Not a real thing; Special objects to be collected for fun is something i'd like to try, like "lore texts" or art gallery stuff.
 * NICE VISUALS: Not a thing; It's not just about pretty visuals for the sake of it, things like feedback could be important.
 * UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: Not a thing; One of those nice little touches like getting the siblings to play a game or read a book etc.
 * SOUND/MUSIC: Nothing except for a basic sound for an object in the game; I do not want voice acting at all, at least.
