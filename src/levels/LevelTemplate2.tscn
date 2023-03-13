@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/ConveyorRight.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=18]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=19]
@@ -145,3 +146,6 @@ position = Vector2( 3138, -730 )
 
 [node name="Companion" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3049, -743 )
+
+[node name="SoccerBallBag" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2643, -879 )
