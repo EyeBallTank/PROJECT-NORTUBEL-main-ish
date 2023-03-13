@@ -4,7 +4,7 @@ The game i want to make, under Godot 3.5 Win32; GLES3 sort of.
 
 Code was taken from GDQuest's platformer tutorial series (In which i did finish from the 3 videos, so in a way i still wrote that code), Gonkee's "Jared AI" project and the Cubio demo. I plan to soon try and do my own code and improve on skills when using Godot's tools.
 
-Both main actors share an "actor" script. Both have gravity but only one is playable by moving left/right and jumping, while the other can follow you around at a certain distance. The test level is very basic.
+Both main actors have gravity but only one is playable by moving left/right and jumping, while the other can follow you around at a certain distance. The test level is very basic.
 
 All art is placeholder and was made on MSPaint (As of writing this, i'm working on the main characters' sprites and may even show them on other sites that i use).
 
@@ -15,32 +15,59 @@ A game where the player controls a character, who has to watch out for their you
 
 The actual story revolves around a group of 6 friends that get lost in some strange places and as they try to escape or even explore them, they encounter other people.
 
-# A few current goals (Or rather wishes, to be honest; Will definitely need help) are:
-* Make the Playable character have more health than the Companion character (DONE).
-* Make the Companion character's moving speed a bit faster than the Playable character's moving speed (NOT DONE YET).
-* Add 2 basic commands ("Followme" and "Standstill") to allow the Playable character affect the Companion character's following activation (Somewhat done and uses a Finite State Machine).
-* When the Companion character is not on camera, there should be some visual feedback indicating their place, like an arrow (NOT DONE).
-* Give the characters actual sprites (The game has 6 characters; 3 older siblings and 3 younger siblings; Each time a level presents 2 characters; Ideally, the player sprites change depending on the levels because each of the 3 sibling duos share the same gameplay mechanisms regardless of sprites) (NOT DONE).
-* Add basic level design features like jump pads, keys and locked doors, switches, climbable ladders or pushable blocks (DONE BUT COULD STILL USE TWEAKS).
-* Add health pickups, score pickups, enemies, some sort of simple combat system and a bit of a stretch but something like a grappling hook-like feature (MOST EXCEPT THE LAST ARE DONE BUT STILL NEED TWEAKS).
-* Add swimming (Which could also warrant an oxygen limit mechanic) (DONE EXCEPT THE OXYGEN PART).
-* Add NPC's and some sort of dialogue system (Even if i end up using the Dialogic addon by coppolaemilio) (NOT DONE).
-* Work around menus and UI system, like a nice style that adds personality (NOT DONE).
-* With UI/HUD stuff in mind, some sort of ingame texts the player can read, whether they're helpful gameplay tips or lore/story stuff (NOT DONE).
-* A ingame gallery menu that the player can optionally visit, to see stuff like concept art and other types of illustrations (NOT DONE).
-* Some nice visuals, nothing too fancy or demanding (Specially depending on the art style) (NOT DONE).
-* A third command based on special interacts should be done later (STILL WIP).
-* Maybe some unimportant interactions between siblings that aren't gameplay-relevant, like reading a book or playing a game (NOT DONE).
-* Sound design and music in general (Though this might as well be a last priority; At least i don't want voice acting at all) (NOT DONE).
-* Some behind-the-scenes organization or methods to make the game's inner workings more flexible and supportive of some stuff (For example: When i thing of scene changes such as changing levels, i think a scene manager could be useful because i heard some code used for scene change can be limiting).
-* The option to change the game's language (While the default setting will be English, a second language in mind is Portuguese due its influences to the game's main setting).
-* Bonus stages: Inspired by the NES game Binary Land, i'm thinking of a top down minigame where 2 characters are controlled by the player but both have opposite horizontal movement and must reach the end goal; This could be a timed/optional minigame and shouldn't be too hard even if i'd like to add elements inspired by Chip's Challenge.
-* Most ambitious idea yet: "Rivals" for the 6 characters; Think of these characters as "alternate dimension" versions of the 6 protagonists and i want to make sure their presence and role has a place in gameplay, even if the idea of "rivals" in a 2D puzzle game based around escort missions might be strange.
+In general, it's based on a personal project where i thought of a bunch of characters and ideas, so this game will be centered around elements from the project. Whether or not this becomes a series based around that project and how far it'll grow depends.
+
+# A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
+* MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
+* SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens.
+* BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
+* COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement and only jump if they're under the Player's Y axis; If they're close enough to the Player, they run around left and right; Need to make their movement faster than the Player's if it's a good idea.
+* COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
+* COMPANION "RUN AWAY" STATE: Opposite of "Followme" where the Companion runs at the opposite directions; So far, no jumping.
+* COMPANION "INTERACT" COMMAND: A command where the Companion can have special interactions with certain things; So far, you can make them attach to ladders.
+* COMPANION CRAWL STATES: Not yet; The idea is that the Companion would crawl and go to places that the Player can't go to; It could be useful for some scenarios where both characters cooperate while seperate.
+* HEALTH: Both characters have Health, can lose health/die and gain health from a pickup (NOT at the same time); Player has more health than Companion; Both have basic "pain/iframe" animations.
+* HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style; A main idea was a "Companion notifier" for when the Companion is off-screen like an arrow on-screen pointing at their direction so the Player gets an idea of their location.
+* SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so they should get actual character sprites for them (And the characters have the same gameplay); Each level has 2 characters, so i need to figure a method of when/which characters show up etc.
+* JUMP PADS: Work on both characters.
+* KEYS AND LOCKED DOORS: 3 colored key/door system; Player picks up a key and can make the responding solid door disappear; When changing scene, the Player doesn't carry the key from previous level which should be good news; Companion can't interact with these yet.
+* SWITCHES: Blue for temporary effects, Green for "binary" effects and Yellow for "timed" effects; Both characters can interact with switches because they're simply activated by being touched upon.
+* LADDERS: Player can climb ladders as you'd expect; Companion needs to be in "STANDSTILL" state and then require a "special interaction" command to attach onto ladders; Companion can also follow/avoid the Player when climbing on ladder, meaning their climbing states have equivalents to the main ones.
+* SWIMMING: Basic swimming controls for Player; Companion can swim and even has idle/follow/avoid states under water; Would like to add oxygen system for the characters.
+* PUSHABLE OBJECT: An object that both characters can push with their movement; It also has gravity, so it falls.
+* SWINGABLE ROPE: The feature technically works; Originally i wanted to add a grappling hook but dropped the idea for something more simple.
+* MOVING PLATFORMS: Basic element that works; Some are related to the switches.
+* FALLING PLATFORM: It works as you'd expect, even with the use of AnimationPlayer; Only the Player can make it fall, meaning the Companion is not as heavy.
+* CONVEYOR FLOOR: As you'd expect, it drags the characters to a direction.
+* JUMP-THROUGH PLATFORM: A basic platform concept that exists.
+* PORTALS: You go through one and teleport to another.
+* ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion still lacks ice physics
+* SLOW FLOOR: Not yet; Like a reverse to ice floors kinda.
+* HEALTH PICKUP: Can heal the Player and Companion but both at the same time.
+* SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen.
+* ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them.
+* LEVEL HAZARDS: Not a thing yet
+* COMBAT: Player has a basic melee knife attack and the ability to kick a soccer ball that acts as a projectile with physics (And after a while it disappears; This ball also has a limit of uses).
+* SOCCER GOAL NET: If the soccer ball enters the net, the net disappears; It's a level object that could have special roles in level design.
+* NPC'S AND SIDE CHARACTERS: Not a thing yet.
+* DIALOGUE SYSTEM: Not a thing yet; Will i use the Dialogic addon? Not sure.
+* CUTSCENES: Not a thing; I don't want anything too complex, maybe some "slideshow" style presentation is good enough, i guess?
+* INGAME TEXTS: Not a thing yet; Like story segments, instructions/tips, "lore" etc.
+* INGAME GALLERY: Not a thing yet; Because if i figure out basic cutscenes, maybe an art gallery would be neat.
+* NICE VISUALS: Not a thing; It's not just about pretty visuals for the sake of it, things like feedback could be important.
+* UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: Not a thing; One of those nice little touches like getting the siblings to play a game or read a book etc.
+* SOUND/MUSIC: Nothing except for a basic sound for an object in the game; I do not want voice acting at all, at least.
+* BETTER ORGANIZATION BEHIND THE SCENES: Like methods to make the game's inner workings more flexible or supportive of some stuff; It depends if certain stuff is that mandatory and if i can get away with some other methods.
+* MULTIPLE LANGUAGES: In case language options would be too difficult, i might as well have both English and Portuguese coexist in some way.
+* ALTERNATE/SECRET LEVELS: Not yet; Ideally, these levels could be an excuse for me to show characters and settings from different worlds.
+* BONUS STATES: Not a thing yet but i'd also make them timed/optional; An idea i had was top down minigame levels inspired by Binary Land and Chip's Challenge where the player controls 2 characters (With opposite horizontal movement) and face some level design challenges/features but the implementation shouldn't be overly complex; Maybe some fishing minigame could work.
+* RIVAL CHARACTERS: Not yet; Most ambitious idea, because "rivals" in videogames are special ideas that need to be done well and in what is essentially a 2D puzzle game based around escort missions, it might be something really hard; In terms of story, these characters are "alternate dimension" versions of the protagonists.
 
 I may end up changing this goal list as well.
 
 # Definitely need to change/improve:
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under the first template level, so i need to make this as an actual recurring game scene.
+* The Pause Menu shows up ABOVE the SceneManager's animation but it doesn't pause the animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Scene Changing method is still not "universal" enough: Look at the endlevel Doors and how they have specific code changes in each level, meaning a better method is needed.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
