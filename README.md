@@ -46,8 +46,10 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * PORTALS: You go through one and teleport to another.
 * ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion still lacks ice physics
 * SLOW FLOOR: Not yet; Like a reverse to ice floors kinda.
+* SPACE/GRAVITY ELEMENTS: Not a thing; Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * HEALTH PICKUP: Can heal the Player and Companion but both at the same time.
 * SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen.
+* POWER UPS: Not a thing; It has to be something that works and fits the type of game it's on.
 * ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them.
 * BOSS FIGHTS: Not a thing; Will probably be a very complex inclusion.
 * LEVEL HAZARDS: Not a thing yet
