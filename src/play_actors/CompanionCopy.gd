@@ -436,10 +436,16 @@ func _on_CrawlCheck_area_entered(area):
 	if area.is_in_group("CrawlzoneEnter"):
 		if state == FOLLOWME:
 			state = CRAWLFOLLOW
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
 		if state == RUNAWAY:
 			state = CRAWLRUN
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
 		if state == STANDSTILL:
 			state = CRAWLIDLE
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
 
 	if area.is_in_group("CrawlzoneExit"):
 		if state == CRAWLFOLLOW:

@@ -119,6 +119,7 @@ collision_layer = 2
 collision_mask = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComp"]
+visible = false
 position = Vector2( -1, -82 )
 shape = SubResource( 4 )
 
@@ -127,6 +128,7 @@ collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortalCheck"]
+visible = false
 position = Vector2( -1, -82 )
 shape = SubResource( 5 )
 
@@ -135,6 +137,7 @@ collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CrawlCheck"]
+visible = false
 modulate = Color( 0.290196, 0, 1, 1 )
 position = Vector2( -1, -82 )
 shape = SubResource( 6 )
