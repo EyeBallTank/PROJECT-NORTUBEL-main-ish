@@ -498,28 +498,57 @@ func _on_CrawlCheck_area_entered(area):
 			state = CRAWLFOLLOW
 			$CollisionShape2D.shape.extents = Vector2(68, 35)
 			$CollisionShape2D.position = Vector2(0, -40)
+			$HurtboxComp/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$HurtboxComp/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
+
 		if state == RUNAWAY:
 			state = CRAWLRUN
 			$CollisionShape2D.shape.extents = Vector2(68, 35)
 			$CollisionShape2D.position = Vector2(0, -40)
+			$HurtboxComp/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$HurtboxComp/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
+
 		if state == STANDSTILL:
 			state = CRAWLIDLE
+			$HurtboxComp/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$HurtboxComp/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
 			$CollisionShape2D.shape.extents = Vector2(68, 35)
 			$CollisionShape2D.position = Vector2(0, -40)
+
 
 	if area.is_in_group("CrawlzoneExit"):
 		if state == CRAWLFOLLOW:
 			state = FOLLOWME
-			print("FOLLOW ME")
+			$HurtboxComp/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$HurtboxComp/CollisionShape2D.position = Vector2(-1, -82)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
 			$CollisionShape2D.shape.extents = Vector2(23, 81)
 			$CollisionShape2D.position = Vector2(-1, -82)
+
+
 		if state == CRAWLRUN:
 			state = RUNAWAY
-			print("RUN AWAY")
+			$HurtboxComp/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$HurtboxComp/CollisionShape2D.position = Vector2(-1, -82)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
 			$CollisionShape2D.shape.extents = Vector2(23, 81)
 			$CollisionShape2D.position = Vector2(-1, -82)
+
+
 		if state == CRAWLIDLE:
 			state = STANDSTILL
-			print("STAND STILL")
+			$HurtboxComp/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$HurtboxComp/CollisionShape2D.position = Vector2(-1, -82)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
 			$CollisionShape2D.shape.extents = Vector2(23, 81)
 			$CollisionShape2D.position = Vector2(-1, -82)
+
