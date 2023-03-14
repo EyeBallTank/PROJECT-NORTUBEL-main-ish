@@ -123,12 +123,16 @@ position = Vector2( -1, -82 )
 shape = SubResource( 4 )
 
 [node name="PortalCheck" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortalCheck"]
 position = Vector2( -1, -82 )
 shape = SubResource( 5 )
 
 [node name="CrawlCheck" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CrawlCheck"]
 modulate = Color( 0.290196, 0, 1, 1 )
@@ -137,3 +141,4 @@ shape = SubResource( 6 )
 
 [connection signal="area_entered" from="HurtboxComp" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]
+[connection signal="area_entered" from="CrawlCheck" to="." method="_on_CrawlCheck_area_entered"]

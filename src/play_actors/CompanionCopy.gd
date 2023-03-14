@@ -365,10 +365,13 @@ func _process(delta):
 			max_grav = 0
 
 		CRAWLIDLE:
+			print("CRAWL IDLE")
 			pass
 		CRAWLFOLLOW:
+			print("CRAWL FOLLOW")
 			pass
 		CRAWLRUN:
+			print("CRAWL RUN")
 			pass
 
 
@@ -427,3 +430,24 @@ func ice_check():
 		else:
 			return false
 	return true
+
+
+func _on_CrawlCheck_area_entered(area):
+	if area.name == "CrawlzoneEnter":
+		if state == FOLLOWME:
+			state = CRAWLFOLLOW
+		if state == RUNAWAY:
+			state = CRAWLRUN
+		if state == STANDSTILL:
+			state = CRAWLIDLE
+
+	if area.name == "CrawlzoneExit":
+		if state == CRAWLFOLLOW:
+			state = FOLLOWME
+			print("FOLLOW ME")
+		if state == CRAWLRUN:
+			state = RUNAWAY
+			print("RUN AWAY")
+		if state == CRAWLIDLE:
+			state = STANDSTILL
+			print("STAND STILL")
