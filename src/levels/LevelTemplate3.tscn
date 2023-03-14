@@ -187,7 +187,7 @@ position = Vector2( -1538, -592 )
 position = Vector2( 6469, 276 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5640, -514.862 )
+position = Vector2( 5380, 238.012 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 11 )]
 position = Vector2( -150, 207 )
@@ -211,9 +211,12 @@ shape = SubResource( 4 )
 one_way_collision = true
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 37 )]
-position = Vector2( 5640, -282.825 )
+position = Vector2( 5590, 207.14 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 38 )]
-position = Vector2( 5656, 55.7684 )
+position = Vector2( 5208, 203.156 )
+
+[node name="CrawlzoneExit2" parent="." instance=ExtResource( 38 )]
+position = Vector2( 5964, 205.148 )
 
 [editable path="Water"]

@@ -433,7 +433,7 @@ func ice_check():
 
 
 func _on_CrawlCheck_area_entered(area):
-	if area.name == "CrawlzoneEnter":
+	if area.is_in_group("CrawlzoneEnter"):
 		if state == FOLLOWME:
 			state = CRAWLFOLLOW
 		if state == RUNAWAY:
@@ -441,7 +441,7 @@ func _on_CrawlCheck_area_entered(area):
 		if state == STANDSTILL:
 			state = CRAWLIDLE
 
-	if area.name == "CrawlzoneExit":
+	if area.is_in_group("CrawlzoneExit"):
 		if state == CRAWLFOLLOW:
 			state = FOLLOWME
 			print("FOLLOW ME")
