@@ -63,13 +63,13 @@ tracks/1/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 24, 82 )
+extents = Vector2( 23, 81 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 24, 82 )
+extents = Vector2( 23, 81 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 24, 82 )
+extents = Vector2( 23, 81 )
 
 [node name="Companion" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 11
