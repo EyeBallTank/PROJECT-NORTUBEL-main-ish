@@ -365,15 +365,75 @@ func _process(delta):
 			max_grav = 0
 
 		CRAWLIDLE:
-			print("CRAWL IDLE")
-			pass
-		CRAWLFOLLOW:
-			print("CRAWL FOLLOW")
-			pass
-		CRAWLRUN:
-			print("CRAWL RUN")
-			pass
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
 
+
+			set_dir(0)
+			vel.x = 0
+			target_player_distance = 0
+			next_dir = 0
+			next_dir_time = 0
+			dir = 0
+
+			if Input.is_action_pressed("runaway"):
+				state = CRAWLRUN
+
+			if Input.is_action_pressed("followme"):
+				state = CRAWLFOLLOW
+
+		CRAWLFOLLOW:
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
+
+			if Player.position.x < position.x - target_player_distance:
+				set_dir(-1)
+				
+			elif Player.position.x > position.x + target_player_distance:
+				set_dir(1)
+				
+			else:
+				set_dir(0)
+
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
+
+			if Input.is_action_pressed("standstill"):
+				state = CRAWLIDLE
+				
+			if Input.is_action_pressed("runaway"):
+				state = CRAWLRUN
+
+		CRAWLRUN:
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
+
+			if Player.position.x < position.x - target_player_distance:
+				set_dir(1)
+				
+			elif Player.position.x > position.x + target_player_distance:
+				set_dir(-1)
+				
+			else:
+				set_dir(0)
+
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
+
+			if Input.is_action_pressed("standstill"):
+				state = CRAWLIDLE
+
+			if Input.is_action_pressed("followme"):
+				state = CRAWLFOLLOW
 
 	if is_on_floor() and vel.y > 0:
 		vel.y = 0

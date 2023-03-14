@@ -211,12 +211,15 @@ shape = SubResource( 4 )
 one_way_collision = true
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 37 )]
-position = Vector2( 5590, 207.14 )
+position = Vector2( 4977, 541.75 )
+
+[node name="CrawlzoneEnter2" parent="." instance=ExtResource( 37 )]
+position = Vector2( 6295, 544.738 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 38 )]
-position = Vector2( 5208, 203.156 )
+position = Vector2( 4865, 535.775 )
 
 [node name="CrawlzoneExit2" parent="." instance=ExtResource( 38 )]
-position = Vector2( 5964, 205.148 )
+position = Vector2( 6408, 540.754 )
 
 [editable path="Water"]
