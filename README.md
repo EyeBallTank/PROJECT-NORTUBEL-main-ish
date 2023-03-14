@@ -28,7 +28,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
 * COMPANION "RUN AWAY" STATE: Opposite of "Followme" where the Companion runs at the opposite directions; So far, no jumping.
 * COMPANION "INTERACT" COMMAND: A command where the Companion can have special interactions with certain things; So far, you can make them attach to ladders.
-* COMPANION CRAWL STATES: Not yet; The idea is that the Companion would crawl and go to places that the Player can't go to; It could be useful for some scenarios where both characters cooperate while seperate.
+* COMPANION CRAWL STATES: The idea is that the Companion would crawl and go to places that the Player can't go to; It could be useful for some scenarios where both characters cooperate while seperate.
 * HEALTH: Both characters have Health, can lose health/die and gain health from a pickup (NOT at the same time); Player has more health than Companion; Both have basic "pain/iframe" animations.
 * HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style; A main idea was a "Companion notifier" for when the Companion is off-screen like an arrow on-screen pointing at their direction so the Player gets an idea of their location.
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so they should get actual character sprites for them (And the characters have the same gameplay); Each level has 2 characters, so i need to figure a method of when/which characters show up etc.
