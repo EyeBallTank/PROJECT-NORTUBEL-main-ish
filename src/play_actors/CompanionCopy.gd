@@ -445,9 +445,15 @@ func _on_CrawlCheck_area_entered(area):
 		if state == CRAWLFOLLOW:
 			state = FOLLOWME
 			print("FOLLOW ME")
+			$CollisionShape2D.shape.extents = Vector2(1, 1)
+			$CollisionShape2D.position = Vector2(-1, -82)
 		if state == CRAWLRUN:
 			state = RUNAWAY
 			print("RUN AWAY")
+			$CollisionShape2D.shape.extents = Vector2(1, 1)
+			$CollisionShape2D.position = Vector2(-1, -82)
 		if state == CRAWLIDLE:
 			state = STANDSTILL
 			print("STAND STILL")
+			$CollisionShape2D.shape.extents = Vector2(1, 1)
+			$CollisionShape2D.position = Vector2(-1, -82)
