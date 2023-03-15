@@ -224,9 +224,7 @@ func _physics_process(delta):
 			if is_on_ladder():
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
-#			if is_on_rope():
-#				if Input.is_action_just_pressed("jumpup"):
-#					state = ROPE
+
 
 			if is_on_water():
 				state = SWIM
@@ -251,9 +249,6 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = MAINSTATE
 		ROPE:
-#			global_position = DetectableRope.global_position
-#			if not is_on_rope():
-#				state = MAINSTATE
 			global_position = rope_part.global_position
 			global_rotation = rope_part.global_rotation
 			if Input.is_action_just_pressed("jumpup"):
@@ -330,16 +325,6 @@ func get_hurt():
 func die():
 	get_tree().reload_current_scene()
 
-#func shoot():
-#	var direction = Input.get_axis("left", "right")
-#	var soccerball = Ball.instance()
-#	soccerball.global_position = playerhitboxcollision.global_position
-#	soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
-#	get_tree().get_root().add_child(soccerball)
-#	if Input.get_action_strength("right"):
-#		direction = 1
-#	elif Input.get_action_strength("left"):
-#		direction = -1
 
 func knife_attack():
 	playerhitboxcollision.disabled = true
@@ -366,13 +351,6 @@ func is_on_ice():
 	if not collider is IceFloor: return false
 	return true
 
-#func is_on_rope():
-#	if not ropeCheck.is_colliding(): return false
-#	var collider = ropeCheck.get_collider()
-#	if not collider is DetectableRope: return false
-#	return true
-#	if collider.is_in_group("grabbablerope"):
-#		attachedtorope = DetectableRope
 	
 
 func _on_Hurtbox_area_entered(area):
