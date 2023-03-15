@@ -78,13 +78,13 @@ func _physics_process(delta):
 					state = KICKBALL
 				else:
 					pass
-
+			WALK_MAX_SPEED = 150
 			if Input.get_action_strength("right"):
-				velocity.x = PUSH_SPEED
+				velocity.x = WALK_MAX_SPEED
 				$Sprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
-				velocity.x = -PUSH_SPEED
+				velocity.x = -WALK_MAX_SPEED
 				$Sprite.flip_h = true
 				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
@@ -113,6 +113,12 @@ func _physics_process(delta):
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
+
+			if is_on_ladder():
+				if Input.get_action_strength("jumpup"):
+					state = CLIMB
+			if is_on_water():
+				state = SWIM
 
 			if not is_on_slow():
 				if is_on_floor():
