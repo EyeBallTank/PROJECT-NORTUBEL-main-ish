@@ -39,6 +39,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/level_objects/PushableCopy.gd"
 }, {
+"base": "Area2D",
+"class": "SlowFloor",
+"language": "GDScript",
+"path": "res://src/level_objects/SlowFloor.gd"
+}, {
 "base": "RigidBody2D",
 "class": "SoccerBall",
 "language": "GDScript",
@@ -66,6 +71,7 @@ _global_script_class_icons={
 "Ladder": "",
 "Pushable": "",
 "PushableCopy": "",
+"SlowFloor": "",
 "SoccerBall": "",
 "Water": "",
 "actor": "",
