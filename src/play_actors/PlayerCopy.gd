@@ -50,6 +50,7 @@ onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
 onready var iceCheck = $IceCheck
+onready var slowCheck = $SlowCheck
 onready var ropeCheck = $RopeCheck
 onready var hurtbox = $Hurtbox
 onready var playerhitbox = $PlayerHitbox
@@ -81,9 +82,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 				$Sprite.flip_h = false
+				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -PUSH_SPEED
 				$Sprite.flip_h = true
+				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
 				velocity.x = 0
 
@@ -110,7 +113,12 @@ func _physics_process(delta):
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
-#
+
+			if not is_on_slow():
+				if is_on_floor():
+					state = MAINSTATE
+				else:
+					pass
 		ICE:
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
@@ -228,6 +236,8 @@ func _physics_process(delta):
 
 			if is_on_water():
 				state = SWIM
+			if is_on_slow():
+				state = SLOW
 			if is_on_ice():
 				state = ICE
 
@@ -351,7 +361,11 @@ func is_on_ice():
 	if not collider is IceFloor: return false
 	return true
 
-	
+func is_on_slow():
+	if not slowCheck.is_colliding(): return false
+	var collider = slowCheck.get_collider()
+	if not collider is SlowFloor: return false
+	return true
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
