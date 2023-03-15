@@ -224,6 +224,6 @@ position = Vector2( 4847, 533.783 )
 position = Vector2( 6502, 542.746 )
 
 [node name="SlowFloor" parent="." instance=ExtResource( 39 )]
-position = Vector2( 5442, 402.33 )
+position = Vector2( 5452, 385.401 )
 
 [editable path="Water"]
