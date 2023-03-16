@@ -28,7 +28,9 @@ enum {
 #	PUSHFOLLOW
 #	PUSHRUN
 #	DEATH
-#	SLOW
+#	SLOWIDLE
+#	SLOWRUN
+#	SLOWFOLLOW
 #	ICE
 #	ICEFOLLOW
 #	ICERUN
@@ -61,6 +63,7 @@ var target_player_distance = 90
 onready var swimCheck = $swimCheck
 onready var ladderCheck = $ladderCheck
 onready var hurtbox = $HurtboxComp
+onready var slowCheck = $SlowCheck
 var portal_id = 0
 
 func _ready():
@@ -491,6 +494,11 @@ func ice_check():
 			return false
 	return true
 
+func is_on_slow():
+	if not slowCheck.is_colliding(): return false
+	var collider = slowCheck.get_collider()
+	if not collider is SlowFloor: return false
+	return true
 
 func _on_CrawlCheck_area_entered(area):
 	if area.is_in_group("CrawlzoneEnter"):
