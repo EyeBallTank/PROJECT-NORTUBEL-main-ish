@@ -28,9 +28,9 @@ enum {
 #	PUSHFOLLOW
 #	PUSHRUN
 #	DEATH
-#	SLOWIDLE
-#	SLOWRUN
-#	SLOWFOLLOW
+	SLOWIDLE,
+	SLOWRUN,
+	SLOWFOLLOW,
 #	ICE
 #	ICEFOLLOW
 #	ICERUN
@@ -437,6 +437,13 @@ func _process(delta):
 
 			if Input.is_action_pressed("followme"):
 				state = CRAWLFOLLOW
+				
+		SLOWIDLE:
+			pass
+		SLOWRUN:
+			pass
+		SLOWFOLLOW:
+			pass
 
 	if is_on_floor() and vel.y > 0:
 		vel.y = 0
