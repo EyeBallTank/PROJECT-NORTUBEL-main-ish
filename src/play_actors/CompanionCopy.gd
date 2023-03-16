@@ -107,11 +107,16 @@ func _process(delta):
 					state = CLIMBMOVE
 
 			if Player.position.x < position.x - target_player_distance:
-				set_dir(-1)
-				
+				if is_on_slow():
+					set_dir(-0.4)
+				else:
+					set_dir(-1)
 			elif Player.position.x > position.x + target_player_distance:
-				set_dir(1)
-				
+
+				if is_on_slow():
+					set_dir(0.4)
+				else:
+					set_dir(1)
 			else:
 				set_dir(0)
 
@@ -237,7 +242,7 @@ func _process(delta):
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBRUN
-			pushcheck()
+
 			if Player.position.x < position.x - target_player_distance:
 				set_dir(1)
 			elif Player.position.x > position.x + target_player_distance:
