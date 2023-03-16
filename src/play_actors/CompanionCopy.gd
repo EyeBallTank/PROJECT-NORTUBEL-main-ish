@@ -107,16 +107,9 @@ func _process(delta):
 					state = CLIMBMOVE
 
 			if Player.position.x < position.x - target_player_distance:
-				if is_on_slow():
-					set_dir(-0.4)
-				else:
-					set_dir(-1)
+				set_dir(-1)
 			elif Player.position.x > position.x + target_player_distance:
-
-				if is_on_slow():
-					set_dir(0.4)
-				else:
-					set_dir(1)
+				set_dir(1)
 			else:
 				set_dir(0)
 
@@ -139,6 +132,9 @@ func _process(delta):
 
 			if is_on_water():
 				state = SWIMMING
+			
+			if is_on_slow():
+				state = SLOWFOLLOW
 
 
 		STANDSTILL:
@@ -262,7 +258,9 @@ func _process(delta):
 			if is_on_water():
 				state = SWIMRUN
 
-			
+			if is_on_slow():
+				state = SLOWRUN
+
 		SWIMRUN:
 			if Player.position.x < position.x - target_player_distance:
 				if Player.position.y < position.y - target_player_distance:
@@ -446,9 +444,76 @@ func _process(delta):
 		SLOWIDLE:
 			pass
 		SLOWRUN:
-			pass
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
+			pushcheck()
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBMOVE
+
+			if Player.position.x < position.x - target_player_distance:
+				set_dir(0.3)
+			elif Player.position.x > position.x + target_player_distance:
+				set_dir(-0.3)
+			else:
+				set_dir(0)
+
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
+
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+
+			if Input.is_action_pressed("followme"):
+				state = SLOWFOLLOW
+
+			if is_on_water():
+				state = SWIMMING
+
+			if not is_on_slow():
+				if is_on_floor():
+					state = RUNAWAY
+				else:
+					pass
+
 		SLOWFOLLOW:
-			pass
+			vel.y += grav * delta;
+			if vel.y > max_grav:
+				vel.y = max_grav
+			grav = 1800
+			max_grav = 3000
+			pushcheck()
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBRUN
+
+			if Player.position.x < position.x - target_player_distance:
+				set_dir(-0.3)
+			elif Player.position.x > position.x + target_player_distance:
+				set_dir(0.3)
+			else:
+				set_dir(0)
+
+			if OS.get_ticks_msec() > next_dir_time:
+				dir = next_dir
+
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+
+			if Input.is_action_pressed("runaway"):
+				state = SLOWRUN
+
+			if is_on_water():
+				state = SWIMMING
+
+			if not is_on_slow():
+				if is_on_floor():
+					state = FOLLOWME
+				else:
+					pass
 
 	if is_on_floor() and vel.y > 0:
 		vel.y = 0
