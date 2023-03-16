@@ -28,7 +28,6 @@ enum {
 #	PUSHFOLLOW
 #	PUSHRUN
 #	DEATH
-	SLOWIDLE,
 	SLOWRUN,
 	SLOWFOLLOW,
 #	ICE
@@ -441,8 +440,6 @@ func _process(delta):
 			if Input.is_action_pressed("followme"):
 				state = CRAWLFOLLOW
 				
-		SLOWIDLE:
-			pass
 		SLOWRUN:
 			vel.y += grav * delta;
 			if vel.y > max_grav:
@@ -474,10 +471,9 @@ func _process(delta):
 				state = SWIMMING
 
 			if not is_on_slow():
-				if is_on_floor():
-					state = RUNAWAY
-				else:
-					pass
+				state = RUNAWAY
+			else:
+				pass
 
 		SLOWFOLLOW:
 			vel.y += grav * delta;
@@ -510,10 +506,9 @@ func _process(delta):
 				state = SWIMMING
 
 			if not is_on_slow():
-				if is_on_floor():
-					state = FOLLOWME
-				else:
-					pass
+				state = FOLLOWME
+			else:
+				pass
 
 	if is_on_floor() and vel.y > 0:
 		vel.y = 0
