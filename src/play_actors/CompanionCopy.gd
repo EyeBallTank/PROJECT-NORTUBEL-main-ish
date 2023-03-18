@@ -1,4 +1,5 @@
 extends KinematicBody2D
+class_name Companion
 
 
 const FLOOR_NORMAL: = Vector2.UP
@@ -50,7 +51,7 @@ var STOP_FORCE = 450
 var grav = 1800
 var max_grav = 3000
 
-var react_time = 1
+var react_time = 400
 var dir = 0
 var next_dir = 0
 var next_dir_time = 0
@@ -93,6 +94,7 @@ func _process(delta):
 
 	match state:
 		FOLLOWME:
+			react_time = 400
 			vel.y += grav * delta;
 			if vel.y > max_grav:
 				vel.y = max_grav
@@ -104,10 +106,10 @@ func _process(delta):
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBMOVE
-
-			if Player.position.x < position.x - target_player_distance:
+			
+			if Player.position.x < position.x - target_player_distance and sees_player():
 				set_dir(-1)
-			elif Player.position.x > position.x + target_player_distance:
+			elif Player.position.x > position.x + target_player_distance and sees_player():
 				set_dir(1)
 			else:
 				set_dir(0)
@@ -166,6 +168,7 @@ func _process(delta):
 
 			
 		SWIMMING:
+			
 			if Player.position.x < position.x - target_player_distance:
 				if Player.position.y < position.y - target_player_distance:
 						set_dir(-1)
@@ -228,6 +231,7 @@ func _process(delta):
 			if vel.y > max_grav:
 				vel.y = max_grav
 		RUNAWAY:
+			react_time = 250
 			vel.y += grav * delta;
 			if vel.y > max_grav:
 				vel.y = max_grav
@@ -391,6 +395,7 @@ func _process(delta):
 				state = CRAWLFOLLOW
 
 		CRAWLFOLLOW:
+			
 			vel.y += grav * delta;
 			if vel.y > max_grav:
 				vel.y = max_grav
@@ -476,6 +481,7 @@ func _process(delta):
 				pass
 
 		SLOWFOLLOW:
+			react_time = 10
 			vel.y += grav * delta;
 			if vel.y > max_grav:
 				vel.y = max_grav
@@ -533,7 +539,6 @@ func is_on_ladder():
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
 		get_hurted()
-
 
 func pushcheck():
 	for index in get_slide_count():
@@ -632,3 +637,29 @@ func _on_CrawlCheck_area_entered(area):
 			$CollisionShape2D.shape.extents = Vector2(23, 81)
 			$CollisionShape2D.position = Vector2(-1, -82)
 
+
+func sees_player():
+	var eye_reach = 10
+	var vision = 10
+	var eye_center = get_global_position()
+	var eye_top = eye_center + Vector2(0, -eye_reach)
+	var eye_left = eye_center + Vector2(-eye_reach, 0)
+	var eye_right = eye_center + Vector2(eye_reach, 0)
+
+	var player_pos = Player.get_global_position()
+	var player_extents = Player.get_node("CollisionShape2D").shape.extents - Vector2(1, 1)
+	var top_left = player_pos + Vector2(-player_extents.x, -player_extents.y)
+	var top_right = player_pos + Vector2(player_extents.x, -player_extents.y)
+	var bottom_left = player_pos + Vector2(-player_extents.x, player_extents.y)
+	var bottom_right = player_pos + Vector2(player_extents.x, player_extents.y)
+
+	var space_state = get_world_2d().direct_space_state
+
+	for eye in [eye_center, eye_top, eye_left, eye_right]:
+		for corner in [top_left, top_right, bottom_left, bottom_right]:
+			if (corner - eye).length() > vision:
+				continue
+			var collision = space_state.intersect_ray(eye, corner, [], 1) # collision mask = sum of 2^(collision layers) - e.g 2^0 + 2^3 = 9
+			if collision and collision.collider.name == "Player":
+				return false
+	return true

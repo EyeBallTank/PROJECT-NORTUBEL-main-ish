@@ -1,4 +1,5 @@
 extends KinematicBody2D
+class_name PlayerMain
 
 const FLOOR_NORMAL: = Vector2.UP
 
