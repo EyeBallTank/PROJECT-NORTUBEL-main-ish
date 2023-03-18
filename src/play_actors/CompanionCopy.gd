@@ -60,6 +60,8 @@ var next_jump_time = -1
 
 var target_player_distance = 90
 
+
+
 onready var swimCheck = $swimCheck
 onready var ladderCheck = $ladderCheck
 onready var hurtbox = $HurtboxComp

@@ -79,25 +79,26 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( -1, -82 )
+position = Vector2( -1, -81 )
+scale = Vector2( 0.978723, 0.987805 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1, -82 )
+position = Vector2( -1, -81 )
 shape = SubResource( 1 )
 
 [node name="HealthbarCompanion" parent="." instance=ExtResource( 3 )]
 margin_left = -78.0
-margin_top = -235.0
+margin_top = -234.0
 margin_right = 78.0
-margin_bottom = -175.0
+margin_bottom = -174.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/companionhurt = SubResource( 3 )
 
 [node name="swimCheck" type="RayCast2D" parent="."]
-position = Vector2( 0, -161 )
+position = Vector2( 0, -160 )
 scale = Vector2( 4, 4 )
 enabled = true
 cast_to = Vector2( 0, 46 )
@@ -106,7 +107,7 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="ladderCheck" type="RayCast2D" parent="."]
-position = Vector2( 0, -161 )
+position = Vector2( 0, -160 )
 scale = Vector2( 4, 4 )
 enabled = true
 cast_to = Vector2( 0, 46 )
@@ -115,7 +116,7 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="SlowCheck" type="RayCast2D" parent="."]
-position = Vector2( 0, -161 )
+position = Vector2( 0, -160 )
 scale = Vector2( 4, 4 )
 enabled = true
 cast_to = Vector2( 0, 46 )
@@ -124,6 +125,7 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="HurtboxComp" type="Area2D" parent="."]
+position = Vector2( 0, 1 )
 collision_layer = 2
 collision_mask = 32
 
@@ -132,6 +134,7 @@ position = Vector2( -1, -82 )
 shape = SubResource( 4 )
 
 [node name="PortalCheck" type="Area2D" parent="."]
+position = Vector2( 0, 1 )
 collision_layer = 2
 collision_mask = 4
 
@@ -140,6 +143,7 @@ position = Vector2( -1, -82 )
 shape = SubResource( 5 )
 
 [node name="CrawlCheck" type="Area2D" parent="."]
+position = Vector2( 0, 1 )
 collision_layer = 2
 collision_mask = 4
 
