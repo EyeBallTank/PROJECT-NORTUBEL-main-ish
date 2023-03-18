@@ -50,7 +50,7 @@ var STOP_FORCE = 450
 var grav = 1800
 var max_grav = 3000
 
-var react_time = 400
+var react_time = 1
 var dir = 0
 var next_dir = 0
 var next_dir_time = 0
