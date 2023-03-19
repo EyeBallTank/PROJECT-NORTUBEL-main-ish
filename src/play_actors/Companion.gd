@@ -9,16 +9,40 @@ var velocity: = Vector2.ZERO
 
 onready var Player = get_parent().get_node("Player")
 
-var direction = Vector2.RIGHT
+var direction = Vector2.ZERO
+var JUMP_SPEED = 1500
+
+var grav = 1800
+var max_grav = 3000
 
 #func get_direction():
 func _physics_process(delta):
-	if Player.global_position.x < global_position.x - 1:
+	velocity.y += grav * delta;
+	if velocity.y > max_grav:
+		velocity.y = max_grav
+
+	if Player.global_position.x < global_position.x - 10:
 		direction.x = -1
-	elif Player.global_position.x > global_position.x + 1:
+	elif Player.global_position.x > global_position.x + 10:
 		direction.x = 1
 	else:
 		direction.x = 0
-	velocity = direction * 290
+	velocity = direction * 490
 	velocity.y += gravity * delta
 	move_and_slide(velocity, Vector2.UP)
+
+	var new_vel = velocity
+	
+	if !is_on_floor():
+		new_vel.y += gravity * delta
+	if is_on_floor():
+		new_vel.x - direction.x * speed.x
+		
+	if Player.global_position.y < global_position.y - 10:
+		if is_on_floor():
+			velocity.y = -JUMP_SPEED
+
+	elif direction.x == 0:
+		new_vel.x = 0
+
+	return new_vel

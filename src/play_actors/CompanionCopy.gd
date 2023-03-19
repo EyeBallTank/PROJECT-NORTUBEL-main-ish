@@ -13,6 +13,7 @@ export (float, 0, 1.0) var friction = 0.1
 export (float, 0, 1.0) var acceleration = 0.25
 
 var velocity: = Vector2.ZERO
+var direction = Vector2.ZERO
 
 #I took Gonkee's Jared AI code and tried to change it to my preferences.
 #And the state machine was based on a suggestion by TebyTheCat on Newgrounds.
@@ -76,7 +77,7 @@ func _ready():
 func set_dir(target_dir):
 	if next_dir != target_dir:
 		next_dir = target_dir
-		next_dir_time = OS.get_ticks_msec() + react_time
+		next_dir_time = direction + react_time
 
 func get_hurted():
 	$AnimationPlayer.play("companionhurt")
@@ -108,24 +109,24 @@ func _process(delta):
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBMOVE
-			
+			velocity = direction * 290
 			if Player.position.x < position.x - target_player_distance and sees_player():
-				set_dir(-1)
+				direction.x = -1
 			elif Player.position.x > position.x + target_player_distance and sees_player():
-				set_dir(1)
+				direction.x = 1
 			else:
-				set_dir(0)
+				direction.x = 0
 
-			if OS.get_ticks_msec() > next_dir_time:
-				dir = next_dir
-	
+#			if OS.get_ticks_msec() > next_dir_time:
+#				dir = next_dir
+#
 			if OS.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
 				if Player.position.y < position.y - 64:
 					vel.y = -800
 				next_jump_time = -1
 	
 			if Player.position.y < position.y - 64 and next_jump_time == -1:
-				next_jump_time = OS.get_ticks_msec() + react_time
+				next_jump_time = react_time
 			
 			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
@@ -524,7 +525,6 @@ func _process(delta):
 	vel.x = dir * 500
 
 	vel = move_and_slide(vel, Vector2(0, -1))
-		
 
 func is_on_water():
 	if not swimCheck.is_colliding(): return false
