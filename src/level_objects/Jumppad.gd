@@ -16,6 +16,6 @@ func _on_Area2D_body_entered(body):
 		body.move_and_slide(body.velocity)
 
 	if body.name == "Companion":
-		body.vel.y = -2000
-		body.move_and_slide(body.vel)
+		body.velocity.y = -200
+		body.move_and_slide(body.velocity)
 #CODE COPIED FROM hellofellowjell-0186 ON YOUTUBE
