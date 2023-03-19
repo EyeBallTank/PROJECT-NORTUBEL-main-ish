@@ -67,10 +67,10 @@ func _physics_process(delta):
 		FOLLOWME:
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
-				vel.x = WALK_MAX_SPEED
+				vel.x = -WALK_MAX_SPEED
 				direction.x = -1
 			elif Player.global_position.x > global_position.x + 10:
-				vel.x = -WALK_MAX_SPEED
+				vel.x = WALK_MAX_SPEED
 				direction.x = 1
 			else:
 				vel.x = 0
@@ -271,7 +271,38 @@ func _physics_process(delta):
 				if is_on_floor():
 					state = FOLLOWME
 		SLOWRUN:
-			pass
+			pushcheck()
+			if Player.global_position.x < global_position.x - 10:
+				vel.x = PUSH_SPEED
+				direction.x = 1
+			elif Player.global_position.x > global_position.x + 10:
+				vel.x = -PUSH_SPEED
+				direction.x = -1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 130
+
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			if Input.is_action_pressed("followme"):
+				state = SLOWFOLLOW
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+			if is_on_water():
+				state = SWIMRUN
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if not is_on_slow():
+				if is_on_floor():
+					state = RUNAWAY
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
