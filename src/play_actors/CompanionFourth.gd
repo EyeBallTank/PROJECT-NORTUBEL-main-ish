@@ -44,6 +44,7 @@ onready var Player = get_parent().get_node("Player")
 onready var healthBar = $HealthbarCompanion
 export var health : int = 50
 onready var CompanionHurtbox = $CompanionHurtbox
+var portal_id = 0
 
 func _ready():
 	healthBar.max_value = health
@@ -140,3 +141,17 @@ func pushcheck():
 		else:
 			return false
 	return true
+
+func Teleport(area):
+	for Teleportal in get_tree().get_nodes_in_group("Teleportal"):
+		if Teleportal != area:
+			if(Teleportal.id == area.id):
+				if(!Teleportal.lockPortal):
+					area.LockedPortal()
+					global_position = Teleportal.global_position
+
+
+func _on_PortalCheck_area_entered(area):
+	if(area.is_in_group("Teleportal")):
+		if(!area.lockPortal):
+			Teleport(area)

@@ -8,7 +8,7 @@
 [ext_resource path="res://src/play_actors/Companion.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=9]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -62,13 +62,18 @@ position = Vector2( 295, 314 )
 position = Vector2( 137, 286 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3755, 553 )
+position = Vector2( 4157, 463 )
 
 [node name="Companion4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3934, 544 )
+position = Vector2( 4336, 454 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2766, 157 )
 
-[node name="Pushable" parent="." instance=ExtResource( 9 )]
-position = Vector2( 4197, 394 )
+[node name="Teleportal" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3903, 434 )
+id = 3
+
+[node name="Teleportal2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4678, 332 )
+id = 3
