@@ -4,7 +4,7 @@ var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 70
 var PUSH_SPEED = 150
 var STOP_FORCE = 450
-var JUMP_SPEED = 1500
+var JUMP_SPEED = 1990
 
 export var gravity: = 30000.0
 
@@ -25,7 +25,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0
 		direction.x = 0
-	velocity = direction * 280
+	velocity.x = direction.x * 280
 	
 	
 	velocity.y += gravity * delta
@@ -34,4 +34,4 @@ func _physics_process(delta):
 	if is_on_floor() and Player.global_position.y < global_position.y - 10:
 		velocity.y = -JUMP_SPEED
 		if velocity.y < 0:
-			velocity.y = -gravity
+			velocity.y += 500
