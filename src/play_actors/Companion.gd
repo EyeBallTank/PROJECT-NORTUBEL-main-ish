@@ -3,7 +3,7 @@ extends KinematicBody2D
 const FLOOR_NORMAL: = Vector2.UP
 
 export var speed: = Vector2(300.0, 1000.0)
-export var gravity: = 3000.0
+export var gravity: = 29600
 
 var velocity: = Vector2.ZERO
 
@@ -29,7 +29,7 @@ func _physics_process(delta):
 		direction.x = 0
 	velocity = direction * 490
 	velocity.y += gravity * delta
-	move_and_slide(velocity, Vector2.UP)
+	move_and_slide_with_snap(velocity, Vector2.UP)
 
 	var new_vel = velocity
 	
@@ -39,8 +39,8 @@ func _physics_process(delta):
 		new_vel.x - direction.x * speed.x
 		
 	if Player.global_position.y < global_position.y - 10:
-		if is_on_floor():
-			velocity.y = -JUMP_SPEED
+		if is_on_floor() and velocity.y < 0:
+			velocity.y += 500
 
 	elif direction.x == 0:
 		new_vel.x = 0
