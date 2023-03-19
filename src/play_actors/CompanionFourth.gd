@@ -65,6 +65,22 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("runaway"):
 				state = RUNAWAY
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+
+		STANDSTILL:
+			velocity.x = 0
+			direction.x = 0
+			velocity.x = direction.x * 0
+			
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			
+			if Input.is_action_pressed("followme"):
+				state = FOLLOWME
+
+			if Input.is_action_pressed("runaway"):
+				state = RUNAWAY
 
 		RUNAWAY:
 			if Player.global_position.x < global_position.x - 10:
@@ -89,3 +105,5 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
