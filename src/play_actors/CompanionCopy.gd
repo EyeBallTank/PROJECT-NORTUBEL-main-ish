@@ -89,11 +89,6 @@ func _process(delta):
 	healthBar.value = health
 	if health <= 0:
 		queue_free()
-#	for index in get_slide_count():
-#		var collision = get_slide_collision(index)
-#		if collision.collider.is_in_group("enemies"):
-#			health -= 10
-			
 
 	match state:
 		FOLLOWME:
@@ -109,13 +104,13 @@ func _process(delta):
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBMOVE
-			velocity = direction * 290
+
 			if Player.position.x < position.x - target_player_distance and sees_player():
 				set_dir(-1)
 			elif Player.position.x > position.x + target_player_distance and sees_player():
 				set_dir(1)
 			else:
-				direction.x = 0
+				set_dir(0)
 
 			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
