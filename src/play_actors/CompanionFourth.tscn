@@ -128,5 +128,14 @@ collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 
+[node name="SlowCheck" type="RayCast2D" parent="."]
+position = Vector2( 0, -162 )
+scale = Vector2( 4, 4 )
+enabled = true
+cast_to = Vector2( 0, 47 )
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false
+
 [connection signal="area_entered" from="CompanionHurtbox" to="." method="_on_CompanionHurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]

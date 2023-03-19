@@ -28,7 +28,7 @@ var state = STANDSTILL
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 70
-var PUSH_SPEED = 150
+var PUSH_SPEED = 25
 var STOP_FORCE = 450
 var JUMP_SPEED = 1450
 
@@ -47,6 +47,7 @@ export var health : int = 50
 onready var CompanionHurtbox = $CompanionHurtbox
 onready var swimCheck = $SwimCheck
 onready var ladderCheck = $LadderCheck
+onready var slowCheck = $SlowCheck
 var portal_id = 0
 
 func _ready():
@@ -92,7 +93,9 @@ func _physics_process(delta):
 				state = SWIMMING
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
-					state = CLIMBMOVE
+					state = CLIMBIDLE
+			if is_on_slow():
+				state = SLOWFOLLOW
 
 		STANDSTILL:
 			pushcheck()
@@ -143,7 +146,9 @@ func _physics_process(delta):
 				state = SWIMRUN
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
-					state = CLIMBRUN
+					state = CLIMBIDLE
+			if is_on_slow():
+				state = SLOWRUN
 
 		SWIMMING:
 #			if Player:
@@ -195,10 +200,77 @@ func _physics_process(delta):
 			pass
 
 		CLIMBIDLE:
-			pass
+			vel.x = 0
+			direction.x = 0
+			vel.y = 0
+			direction.y = 0
+
+			if Input.is_action_pressed("followme"):
+				state = CLIMBMOVE
+			if Input.is_action_pressed("runaway"):
+				state = CLIMBRUN
+			if Input.is_action_just_pressed("interactcomp"):
+				state = STANDSTILL
+			if not is_on_ladder():
+				state = STANDSTILL
+
 		CLIMBMOVE:
-			pass
+			if Player.global_position.y < global_position.y - 10:
+				vel = position.direction_to(Player.position) * speed
+			elif Player.global_position.y > global_position.y + 10:
+				vel = position.direction_to(Player.position) * speed
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 550
+
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("standstill"):
+				state = CLIMBIDLE
+			if Input.is_action_pressed("runaway"):
+				state = CLIMBRUN
+			if Input.is_action_just_pressed("interactcomp"):
+				state = FOLLOWME
+			if not is_on_ladder():
+				state = FOLLOWME
 		CLIMBRUN:
+			pass
+
+		SLOWFOLLOW:
+			pushcheck()
+			if Player.global_position.x < global_position.x - 10:
+				vel.x = PUSH_SPEED
+				direction.x = -1
+			elif Player.global_position.x > global_position.x + 10:
+				vel.x = -PUSH_SPEED
+				direction.x = 1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 130
+
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			if Input.is_action_pressed("runaway"):
+				state = SLOWRUN
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+			if is_on_water():
+				state = SWIMMING
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if not is_on_slow():
+				if is_on_floor():
+					state = FOLLOWME
+		SLOWRUN:
 			pass
 
 func _on_CompanionHurtbox_area_entered(Area2D):
@@ -217,6 +289,11 @@ func is_on_ladder():
 	if not collider is Ladder: return false
 	return true
 
+func is_on_slow():
+	if not slowCheck.is_colliding(): return false
+	var collider = slowCheck.get_collider()
+	if not collider is SlowFloor: return false
+	return true
 
 func pushcheck():
 	for index in get_slide_count():

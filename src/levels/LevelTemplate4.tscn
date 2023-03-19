@@ -1,14 +1,16 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/menusandui/ScoreCount.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/levels/LevelTemplate3.gd" type="Script" id=4]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=11]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -55,10 +57,15 @@ tile_data = PoolIntArray( -65506, 0, 0, -65483, 0, 0, 30, 0, 0, 53, 0, 0, 65566,
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4757, 508 )
+position = Vector2( 5781, 502 )
 
 [node name="Companion4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4868, 482 )
+position = Vector2( 5904, 487 )
+speed = Vector2( 300, 1000 )
+gravity = 1450.0
+friction = 0.1
+acceleration = 0.25
+health = 50
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2766, 157 )
@@ -70,7 +77,16 @@ position = Vector2( 4462, 456 )
 position = Vector2( 4028, 479 )
 
 [node name="Water" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5398, 184 )
+position = Vector2( 4057, -82 )
 
 [node name="Water2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5930, 184 )
+position = Vector2( 4595, -65 )
+
+[node name="Ladder" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5081, -116 )
+
+[node name="Ladder2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5431, -122 )
+
+[node name="SlowFloor" parent="." instance=ExtResource( 11 )]
+position = Vector2( 6364, 619 )
