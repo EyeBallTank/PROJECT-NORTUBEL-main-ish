@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/play_actor_sprites/companion placeholder sprite.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.gd" type="Script" id=2]
@@ -6,9 +6,6 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 23, 82 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 24, 83 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "CompHurt"
@@ -65,7 +62,13 @@ tracks/1/keys = {
 "values": [ Color( 0.243137, 0, 1, 1 ) ]
 }
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 24, 83 )
+
 [sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 23, 82 )
+
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 23, 82 )
 
 [node name="Companion" type="KinematicBody2D" groups=["protagonists"]]
@@ -89,26 +92,9 @@ margin_top = -234.0
 margin_right = 77.0
 margin_bottom = -174.0
 
-[node name="CompanionHurtbox" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 32
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CompanionHurtbox"]
-position = Vector2( 0, -81 )
-shape = SubResource( 2 )
-disabled = true
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/CompHurt = SubResource( 3 )
 anims/RESET = SubResource( 4 )
-
-[node name="PortalCheck" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalCheck"]
-position = Vector2( 0, -81 )
-shape = SubResource( 5 )
 
 [node name="SwimCheck" type="RayCast2D" parent="."]
 position = Vector2( 0, -162 )
@@ -137,5 +123,31 @@ collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 
+[node name="CompanionHurtbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CompanionHurtbox"]
+position = Vector2( 0, -81 )
+shape = SubResource( 2 )
+disabled = true
+
+[node name="PortalCheck" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalCheck"]
+position = Vector2( 0, -81 )
+shape = SubResource( 5 )
+
+[node name="CrawlCheck" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CrawlCheck"]
+position = Vector2( 0, -81 )
+shape = SubResource( 6 )
+
 [connection signal="area_entered" from="CompanionHurtbox" to="." method="_on_CompanionHurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]
+[connection signal="area_entered" from="CrawlCheck" to="." method="_on_CrawlCheck_area_entered"]

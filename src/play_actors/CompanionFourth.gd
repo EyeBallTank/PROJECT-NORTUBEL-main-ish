@@ -348,3 +348,20 @@ func _on_PortalCheck_area_entered(area):
 	if(area.is_in_group("Teleportal")):
 		if(!area.lockPortal):
 			Teleport(area)
+
+
+func _on_CrawlCheck_area_entered(area):
+	if area.is_in_group("CrawlzoneEnter"):
+		if state == FOLLOWME:
+			state = CRAWLFOLLOW
+		if state == STANDSTILL:
+			state = CRAWLIDLE
+		if state == RUNAWAY:
+			state = CRAWLRUN
+	if area.is_in_group("CrawlzoneExit"):
+		if state == CRAWLFOLLOW:
+			state = FOLLOWME
+		if state == CRAWLIDLE:
+			state = STANDSTILL
+		if state == CRAWLRUN:
+			state = RUNAWAY
