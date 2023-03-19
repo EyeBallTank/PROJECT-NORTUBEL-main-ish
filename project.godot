@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Companion",
 "language": "GDScript",
-"path": "res://src/play_actors/CompanionCopy.gd"
+"path": "res://src/play_actors/CompanionFourth.gd"
 }, {
 "base": "StaticBody2D",
 "class": "ConveyorRight",

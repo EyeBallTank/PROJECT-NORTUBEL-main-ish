@@ -1,4 +1,5 @@
 extends KinematicBody2D
+class_name Companion
 
 enum {
 	FOLLOWME,
@@ -44,6 +45,8 @@ onready var Player = get_parent().get_node("Player")
 onready var healthBar = $HealthbarCompanion
 export var health : int = 50
 onready var CompanionHurtbox = $CompanionHurtbox
+onready var swimCheck = $SwimCheck
+onready var ladderCheck = $LadderCheck
 var portal_id = 0
 
 func _ready():
@@ -85,6 +88,11 @@ func _physics_process(delta):
 				state = RUNAWAY
 			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
+			if is_on_water():
+				state = SWIMMING
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBMOVE
 
 		STANDSTILL:
 			pushcheck()
@@ -97,9 +105,13 @@ func _physics_process(delta):
 			
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
-
 			if Input.is_action_pressed("runaway"):
 				state = RUNAWAY
+			if is_on_water():
+				state = SWIMIDLE
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
 
 		RUNAWAY:
 			pushcheck()
@@ -127,10 +139,84 @@ func _physics_process(delta):
 				state = FOLLOWME
 			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
+			if is_on_water():
+				state = SWIMRUN
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBRUN
+
+		SWIMMING:
+#			if Player:
+#				vel = position.direction_to(Player.position) * speed
+			if Player.global_position.x < global_position.x - 50:
+				if Player.global_position.y < global_position.y - 50:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = -1
+#					direction.y = -1
+				elif Player.global_position.y > global_position.y + 50:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = -1
+#					direction.y = 1
+			elif Player.global_position.x > global_position.x + 50:
+				if Player.global_position.y < global_position.y - 50:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = 1
+#					direction.y = -1
+				elif Player.global_position.y > global_position.y + 50:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = 1
+#					direction.y = 1
+#			if Player.global_position.x < global_position.x - 50:
+#				vel = position.direction_to(Player.position) * speed.x
+#			elif Player.global_position.x > global_position.x + 50:
+#				vel = position.direction_to(Player.position) * speed.x
+#			elif Player.global_position.y < global_position.y - 50:
+#				vel = position.direction_to(Player.position) * speed.y
+#			elif Player.global_position.y > global_position.y + 50:
+#				vel = position.direction_to(Player.position) * speed.y
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 500
+
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("runaway"):
+				state = SWIMRUN
+			if Input.is_action_pressed("standstill"):
+				state = SWIMIDLE
+			if not is_on_water():
+				state = FOLLOWME
+
+		SWIMRUN:
+			pass
+		SWIMIDLE:
+			pass
+
+		CLIMBIDLE:
+			pass
+		CLIMBMOVE:
+			pass
+		CLIMBRUN:
+			pass
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
 		get_hurted()
+
+func is_on_water():
+	if not swimCheck.is_colliding(): return false
+	var collider = swimCheck.get_collider()
+	if not collider is Water: return false
+	return true
+
+func is_on_ladder():
+	if not ladderCheck.is_colliding(): return false
+	var collider = ladderCheck.get_collider()
+	if not collider is Ladder: return false
+	return true
+
 
 func pushcheck():
 	for index in get_slide_count():
