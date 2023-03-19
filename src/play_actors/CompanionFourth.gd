@@ -31,8 +31,7 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 	
-	if is_on_floor() and Input.is_action_just_pressed("jumpup"):
+	if is_on_floor() and Player.global_position.y < global_position.y - 10:
 		velocity.y = -JUMP_SPEED
-	if Input.is_action_just_released("jumpup"):
 		if velocity.y < 0:
-			velocity.y -= 50
+			velocity.y = -gravity
