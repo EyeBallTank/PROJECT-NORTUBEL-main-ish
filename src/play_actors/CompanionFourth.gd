@@ -31,6 +31,7 @@ var PUSH_SPEED = 150
 var STOP_FORCE = 450
 var JUMP_SPEED = 1450
 
+export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 1450.0
 #export var oxygen : int = 70
 export (float, 0, 1.0) var friction = 0.1
@@ -59,6 +60,7 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = WALK_MAX_SPEED
 				direction.x = -1
@@ -85,6 +87,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		STANDSTILL:
+			pushcheck()
 			velocity.x = 0
 			direction.x = 0
 			velocity.x = direction.x * 0
@@ -99,6 +102,7 @@ func _physics_process(delta):
 				state = RUNAWAY
 
 		RUNAWAY:
+			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = WALK_MAX_SPEED
 				direction.x = 1
@@ -127,3 +131,12 @@ func _physics_process(delta):
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
 		get_hurted()
+
+func pushcheck():
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider is PushableCopy:
+			collision.collider.slide(-collision.normal * (speed / 2.5) )
+		else:
+			return false
+	return true
