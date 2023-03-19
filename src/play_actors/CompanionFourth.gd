@@ -32,15 +32,31 @@ var STOP_FORCE = 450
 var JUMP_SPEED = 1450
 
 export var gravity: = 1450.0
+#export var oxygen : int = 70
+export (float, 0, 1.0) var friction = 0.1
+export (float, 0, 1.0) var acceleration = 0.25
 
 var velocity: = Vector2.ZERO
 var direction: = Vector2.ZERO
 onready var Player = get_parent().get_node("Player")
 
+onready var healthBar = $HealthbarCompanion
+export var health : int = 50
+onready var CompanionHurtbox = $CompanionHurtbox
+
 func _ready():
-	pass
+	healthBar.max_value = health
+
+func get_hurted():
+	$AnimationPlayer.play("CompHurt")
+	health -= 10
+	velocity.y -= 500
 
 func _physics_process(delta):
+	healthBar.value = health
+	if health <= 0:
+		queue_free()
+
 	match state:
 		FOLLOWME:
 			if Player.global_position.x < global_position.x - 10:
@@ -107,3 +123,7 @@ func _physics_process(delta):
 				state = FOLLOWME
 			if Input.is_action_pressed("standstill"):
 				state = STANDSTILL
+
+func _on_CompanionHurtbox_area_entered(Area2D):
+	if Area2D.name == "EnemyHitbox":
+		get_hurted()
