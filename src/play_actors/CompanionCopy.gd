@@ -77,7 +77,7 @@ func _ready():
 func set_dir(target_dir):
 	if next_dir != target_dir:
 		next_dir = target_dir
-		next_dir_time = direction + react_time
+		next_dir_time = Time.get_ticks_msec() + react_time
 
 func get_hurted():
 	$AnimationPlayer.play("companionhurt")
@@ -111,16 +111,16 @@ func _process(delta):
 					state = CLIMBMOVE
 			velocity = direction * 290
 			if Player.position.x < position.x - target_player_distance and sees_player():
-				direction.x = -1
+				set_dir(-1)
 			elif Player.position.x > position.x + target_player_distance and sees_player():
-				direction.x = 1
+				set_dir(1)
 			else:
 				direction.x = 0
 
-#			if OS.get_ticks_msec() > next_dir_time:
-#				dir = next_dir
+			if Time.get_ticks_msec() > next_dir_time:
+				dir = next_dir
 #
-			if OS.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
+			if Time.get_ticks_msec() > next_jump_time and next_jump_time != -1 and is_on_floor():
 				if Player.position.y < position.y - 64:
 					vel.y = -800
 				next_jump_time = -1
@@ -197,7 +197,7 @@ func _process(delta):
 				set_dir(0)
 				vel.y = 0
 
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
@@ -252,7 +252,7 @@ func _process(delta):
 			else:
 				set_dir(0)
 
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
@@ -293,7 +293,7 @@ func _process(delta):
 				set_dir(0)
 				vel.y = 0
 				
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
@@ -414,7 +414,7 @@ func _process(delta):
 			else:
 				set_dir(0)
 
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
@@ -439,7 +439,7 @@ func _process(delta):
 			else:
 				set_dir(0)
 
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
@@ -466,7 +466,7 @@ func _process(delta):
 			else:
 				set_dir(0)
 
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
@@ -502,7 +502,7 @@ func _process(delta):
 			else:
 				set_dir(0)
 
-			if OS.get_ticks_msec() > next_dir_time:
+			if Time.get_ticks_msec() > next_dir_time:
 				dir = next_dir
 
 			if Input.is_action_pressed("standstill"):
