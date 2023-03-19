@@ -23,7 +23,7 @@ enum {
 	RUNAWAY
 }
 
-var state = FOLLOWME
+var state = STANDSTILL
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 70
@@ -37,7 +37,7 @@ export var gravity: = 1450.0
 export (float, 0, 1.0) var friction = 0.1
 export (float, 0, 1.0) var acceleration = 0.25
 
-var velocity: = Vector2.ZERO
+var vel: = Vector2.ZERO
 var direction: = Vector2.ZERO
 onready var Player = get_parent().get_node("Player")
 
@@ -52,7 +52,7 @@ func _ready():
 func get_hurted():
 	$AnimationPlayer.play("CompHurt")
 	health -= 10
-	velocity.y -= 500
+	vel.y -= 500
 
 func _physics_process(delta):
 	healthBar.value = health
@@ -63,24 +63,23 @@ func _physics_process(delta):
 		FOLLOWME:
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
-				velocity.x = WALK_MAX_SPEED
+				vel.x = WALK_MAX_SPEED
 				direction.x = -1
 			elif Player.global_position.x > global_position.x + 10:
-				velocity.x = -WALK_MAX_SPEED
+				vel.x = -WALK_MAX_SPEED
 				direction.x = 1
 			else:
-				velocity.x = 0
+				vel.x = 0
 				direction.x = 0
-			velocity.x = direction.x * 550
-	
-	
-			velocity.y += gravity * delta
-			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-	
+			vel.x = direction.x * 550
+
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
-				velocity.y = -JUMP_SPEED
-				if velocity.y < 0:
-					velocity.y += 500
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
 
 			if Input.is_action_pressed("runaway"):
 				state = RUNAWAY
@@ -89,12 +88,12 @@ func _physics_process(delta):
 
 		STANDSTILL:
 			pushcheck()
-			velocity.x = 0
+			vel.x = 0
 			direction.x = 0
-			velocity.x = direction.x * 0
+			vel.x = direction.x * 0
 			
-			velocity.y += gravity * delta
-			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 			
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
@@ -105,24 +104,24 @@ func _physics_process(delta):
 		RUNAWAY:
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
-				velocity.x = WALK_MAX_SPEED
+				vel.x = WALK_MAX_SPEED
 				direction.x = 1
 			elif Player.global_position.x > global_position.x + 10:
-				velocity.x = -WALK_MAX_SPEED
+				vel.x = -WALK_MAX_SPEED
 				direction.x = -1
 			else:
-				velocity.x = 0
+				vel.x = 0
 				direction.x = 0
-			velocity.x = direction.x * 550
+			vel.x = direction.x * 550
 	
 	
-			velocity.y += gravity * delta
-			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 	
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
-				velocity.y = -JUMP_SPEED
-				if velocity.y < 0:
-					velocity.y += 500
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
 
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME

@@ -1,14 +1,8 @@
 extends Area2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player":
@@ -16,6 +10,6 @@ func _on_Area2D_body_entered(body):
 		body.move_and_slide(body.velocity)
 
 	if body.name == "Companion":
-		body.velocity.y = -200
-		body.move_and_slide(body.velocity)
+		body.vel.y = -200
+		body.move_and_slide(body.vel)
 #CODE COPIED FROM hellofellowjell-0186 ON YOUTUBE
