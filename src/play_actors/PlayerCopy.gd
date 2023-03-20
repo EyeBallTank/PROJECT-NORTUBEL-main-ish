@@ -340,7 +340,11 @@ func get_hurt():
 	velocity.y -= 500
 
 func is_invul():
-	pass
+	print("does it work")
+	hurtbox.set_monitoring(false)
+	yield(get_tree().create_timer(10), "timeout")
+	print("hope it did")
+	hurtbox.set_monitoring(true)
 
 func die():
 	get_tree().reload_current_scene()
