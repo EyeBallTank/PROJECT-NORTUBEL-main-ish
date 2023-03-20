@@ -339,6 +339,9 @@ func get_hurt():
 	health -= 10
 	velocity.y -= 500
 
+func is_invul():
+	pass
+
 func die():
 	get_tree().reload_current_scene()
 
