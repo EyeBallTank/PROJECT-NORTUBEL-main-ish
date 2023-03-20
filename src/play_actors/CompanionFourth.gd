@@ -304,6 +304,46 @@ func _physics_process(delta):
 				if is_on_floor():
 					state = RUNAWAY
 
+		CRAWLFOLLOW:
+			if Player.global_position.x < global_position.x - 10:
+				vel.x = -WALK_MAX_SPEED
+				direction.x = -1
+			elif Player.global_position.x > global_position.x + 10:
+				vel.x = WALK_MAX_SPEED
+				direction.x = 1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 350
+
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("runaway"):
+				state = CRAWLRUN
+			if Input.is_action_pressed("standstill"):
+				state = CRAWLIDLE
+
+		CRAWLRUN:
+			if Player.global_position.x < global_position.x - 10:
+				vel.x = WALK_MAX_SPEED
+				direction.x = 1
+			elif Player.global_position.x > global_position.x + 10:
+				vel.x = -WALK_MAX_SPEED
+				direction.x = -1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 350
+
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("followme"):
+				state = CRAWLFOLLOW
+			if Input.is_action_pressed("standstill"):
+				state = CRAWLIDLE
+
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
 		get_hurted()
@@ -354,14 +394,51 @@ func _on_CrawlCheck_area_entered(area):
 	if area.is_in_group("CrawlzoneEnter"):
 		if state == FOLLOWME:
 			state = CRAWLFOLLOW
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
 		if state == STANDSTILL:
 			state = CRAWLIDLE
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
 		if state == RUNAWAY:
 			state = CRAWLRUN
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
+
 	if area.is_in_group("CrawlzoneExit"):
 		if state == CRAWLFOLLOW:
 			state = FOLLOWME
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(-1, -82)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
+			$CollisionShape2D.shape.extents = Vector2(23, 81)
+			$CollisionShape2D.position = Vector2(-1, -82)
 		if state == CRAWLIDLE:
 			state = STANDSTILL
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(-1, -82)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
+			$CollisionShape2D.shape.extents = Vector2(23, 81)
+			$CollisionShape2D.position = Vector2(-1, -82)
 		if state == CRAWLRUN:
 			state = RUNAWAY
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(-1, -82)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
+			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
+			$CollisionShape2D.shape.extents = Vector2(23, 81)
+			$CollisionShape2D.position = Vector2(-1, -82)
