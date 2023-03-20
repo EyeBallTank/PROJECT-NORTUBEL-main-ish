@@ -45,11 +45,11 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * JUMP-THROUGH PLATFORM: A basic platform concept that exists.
 * PORTALS: You go through one and teleport to another.
 * ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion still lacks ice physics
-* SLOW FLOOR: Only the Player so far can be affected by it; Like a reverse to ice floors kinda.
+* SLOW FLOOR: Both characters are affected by this and move slowly; Like a reverse to ice floors kinda.
 * SPACE/GRAVITY ELEMENTS: Not a thing; Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * HEALTH PICKUP: Can heal the Player and Companion but both at the same time.
 * SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen.
-* POWER UPS: Not a thing; It has to be something that works and fits the type of game it's on.
+* POWER UPS: So far, there's a temporary invulnerability item that only works on the Player.
 * ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them.
 * BOSS FIGHTS: Not a thing; Will probably be a very complex inclusion.
 * LEVEL HAZARDS: Not a thing yet
@@ -80,6 +80,7 @@ I may end up changing this goal list as well.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
+* As of writing this, i'm recreating the Companion character with different code and i got FOUR/FIVE problems: They can't use Jumppads, their hurtbox doesn't work, their swimming is broken and their climb states are a mess both in how they move and how they switch to those states. The reason why this recreation exists is because the Companion iteration i used before had complicated code i had to eventually abandon (And the use of OS.get_ticks_msec() could bring future problems)
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
