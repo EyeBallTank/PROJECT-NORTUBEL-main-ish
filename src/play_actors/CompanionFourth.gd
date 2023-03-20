@@ -344,6 +344,19 @@ func _physics_process(delta):
 			if Input.is_action_pressed("standstill"):
 				state = CRAWLIDLE
 
+		CRAWLIDLE:
+			vel.x = 0
+			direction.x = 0
+			vel.x = direction.x * 0
+			
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+			
+			if Input.is_action_pressed("followme"):
+				state = CRAWLFOLLOW
+			if Input.is_action_pressed("runaway"):
+				state = CRAWLRUN
+
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
 		get_hurted()
