@@ -2,13 +2,12 @@ extends KinematicBody2D
 class_name Companion
 
 #This character is a replacement for CompanionCopy. The main goal is that it does not use OS.get_ticks_msec() or even Time.get_ticks_msec()
-#So far there are 5/6 problems:
-#1: It can't use the Jumppad
-#2: Its hurtbox doesn't work
-#3: Even if it could lose health, it can't pick up the Health pickup
-#4: The current SWIMMING state has terrible swimming movement
-#5: The current CLIMB states also have terrible climbing movement
-#6: How to command this character to switch to CLIMB states (and switch back from them) is also not working properly
+#So far there are 5 problems:
+#1: Its hurtbox doesn't work
+#2: Even if it could lose health, it can't pick up the Health pickup
+#3: The current SWIMMING state has terrible swimming movement
+#4: The current CLIMB states also have terrible climbing movement
+#5: How to command this character to switch to CLIMB states (and switch back from them) is also not working properly
 #I may need a lot of help to make this character.
 
 enum {
