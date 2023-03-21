@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=14]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -89,7 +90,7 @@ position = Vector2( 5431, -122 )
 position = Vector2( 6594, 470 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 11 )]
-position = Vector2( 6328, 473 )
+position = Vector2( 6356, 477 )
 
 [node name="CrawlzoneEnter2" parent="." instance=ExtResource( 12 )]
 position = Vector2( 7496, 470 )
@@ -99,3 +100,6 @@ position = Vector2( 7816, 467 )
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1599, 17 )
+
+[node name="Health Pickup" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1247, -114 )
