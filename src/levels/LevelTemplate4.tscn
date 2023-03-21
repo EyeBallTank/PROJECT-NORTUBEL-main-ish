@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=13]
@@ -58,25 +57,22 @@ tile_data = PoolIntArray( -65506, 0, 0, -65483, 0, 0, 30, 0, 0, 53, 0, 0, 65566,
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1732, 83 )
+position = Vector2( 6764, 303 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2766, 157 )
 
-[node name="Gong" parent="." instance=ExtResource( 10 )]
-position = Vector2( 4028, 479 )
-
 [node name="Water" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4057, -82 )
+position = Vector2( 5037, 190 )
 
 [node name="Water2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4595, -65 )
+position = Vector2( 5575, 207 )
 
 [node name="Ladder" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5081, -116 )
+position = Vector2( 7081, -40 )
 
 [node name="Ladder2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5431, -122 )
+position = Vector2( 7451, 122 )
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 12 )]
 position = Vector2( 6594, 470 )
@@ -94,4 +90,4 @@ position = Vector2( 7816, 467 )
 position = Vector2( 1599, 17 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1876, 80 )
+position = Vector2( 6908, 300 )

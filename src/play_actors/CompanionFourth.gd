@@ -2,11 +2,10 @@ extends KinematicBody2D
 class_name Companion
 
 #This character is a replacement for CompanionCopy. The main goal is that it does not use OS.get_ticks_msec() or even Time.get_ticks_msec()
-#So far there are 4 problems:
+#So far there are 3 problems:
 #1: Its hurtbox doesn't work
 #2: The current SWIMMING state has terrible swimming movement
 #3: The current CLIMB states also have terrible climbing movement
-#4: How to command this character to switch to CLIMB states (and switch back from them) is also not working properly
 #I may need a lot of help to make this character.
 
 enum {
@@ -159,25 +158,25 @@ func _physics_process(delta):
 				state = SLOWRUN
 
 		SWIMMING:
-#			if Player:
-#				vel = position.direction_to(Player.position) * speed
-			if Player.global_position.x < global_position.x - 50:
-				if Player.global_position.y < global_position.y - 50:
-					vel = position.direction_to(Player.position) * speed
-					direction.x = -1
-#					direction.y = -1
-				elif Player.global_position.y > global_position.y + 50:
-					vel = position.direction_to(Player.position) * speed
-					direction.x = -1
-#					direction.y = 1
-			elif Player.global_position.x > global_position.x + 50:
-				if Player.global_position.y < global_position.y - 50:
-					vel = position.direction_to(Player.position) * speed
-					direction.x = 1
-#					direction.y = -1
-				elif Player.global_position.y > global_position.y + 50:
-					vel = position.direction_to(Player.position) * speed
-					direction.x = 1
+			if Player:
+				vel = position.direction_to(Player.position) * speed
+#			if Player.global_position.x < global_position.x - 50:
+#				if Player.global_position.y < global_position.y - 50:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = -1
+##					direction.y = -1
+#				elif Player.global_position.y > global_position.y + 50:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = -1
+##					direction.y = 1
+#			elif Player.global_position.x > global_position.x + 50:
+#				if Player.global_position.y < global_position.y - 50:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = 1
+##					direction.y = -1
+#				elif Player.global_position.y > global_position.y + 50:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = 1
 #					direction.y = 1
 #			if Player.global_position.x < global_position.x - 50:
 #				vel = position.direction_to(Player.position) * speed.x
@@ -204,8 +203,20 @@ func _physics_process(delta):
 
 		SWIMRUN:
 			pass
+			
+
 		SWIMIDLE:
-			pass
+			vel.x = 0
+			direction.x = 0
+			vel.x = direction.x * 500
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("runaway"):
+				state = SWIMRUN
+			if Input.is_action_pressed("followme"):
+				state = SWIMMING
+			if not is_on_water():
+				state = STANDSTILL
 
 		CLIMBIDLE:
 			vel.x = 0
