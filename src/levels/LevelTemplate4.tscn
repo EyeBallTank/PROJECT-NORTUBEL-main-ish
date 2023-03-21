@@ -8,7 +8,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=12]
@@ -59,13 +59,10 @@ tile_data = PoolIntArray( -65506, 0, 0, -65483, 0, 0, 30, 0, 0, 53, 0, 0, 65566,
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5540, 507 )
+position = Vector2( 28, 403 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2766, 157 )
-
-[node name="Jumppad" parent="." instance=ExtResource( 9 )]
-position = Vector2( 6006, 440 )
 
 [node name="Gong" parent="." instance=ExtResource( 10 )]
 position = Vector2( 4028, 479 )
@@ -98,4 +95,7 @@ position = Vector2( 7816, 467 )
 position = Vector2( 1599, 17 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5684, 504 )
+position = Vector2( 172, 400 )
+
+[node name="Health Pickup" parent="." instance=ExtResource( 9 )]
+position = Vector2( -293, 186 )

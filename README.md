@@ -80,7 +80,7 @@ I may end up changing this goal list as well.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
-* As of writing this, i'm recreating the Companion character with different code and i got FOUR/FIVE problems: 1 their hurtbox doesn't work, 2 they can't interact with the Health pickup with less than 50 health, 3 their swimming is broken and 4 their climb states are a mess both in how they move and how they switch to those states. The reason why this recreation exists is because the Companion iteration i used before had complicated code i had to eventually abandon (And the use of OS.get_ticks_msec() could bring future problems)
+* As of writing this, i'm recreating the Companion character with different code and i got FOUR/FIVE problems: 1 their hurtbox doesn't work, 2 their swimming is broken and 3/4 their climb states are a mess both in how they move and how they switch to those states. The reason why this recreation exists is because the Companion iteration i used before had complicated code i had to eventually abandon (And the use of OS.get_ticks_msec() could bring future problems)
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
