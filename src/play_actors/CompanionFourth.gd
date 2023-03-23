@@ -4,7 +4,7 @@ class_name Companion
 #This character is a replacement for CompanionCopy. The main goal is that it does not use OS.get_ticks_msec() or even Time.get_ticks_msec()
 #So far there are 3 problems:
 #1: Its hurtbox doesn't work
-#2: The current SWIMMING state has terrible swimming movement
+#2: The current SWIMMING state has terrible swimming movement; Besides the lack of proper "diagonal" movement, there are moments where if they're close enough and you press "STANDSTILL/S", they simply go up and jump to the water surface
 #3: The current CLIMB states also have terrible climbing movement
 #I may need a lot of help to make this character.
 
@@ -160,24 +160,24 @@ func _physics_process(delta):
 		SWIMMING:
 			if Player:
 				vel = position.direction_to(Player.position) * speed
-#			if Player.global_position.x < global_position.x - 50:
-#				if Player.global_position.y < global_position.y - 50:
-#					vel = position.direction_to(Player.position) * speed
-#					direction.x = -1
-##					direction.y = -1
-#				elif Player.global_position.y > global_position.y + 50:
-#					vel = position.direction_to(Player.position) * speed
-#					direction.x = -1
-##					direction.y = 1
-#			elif Player.global_position.x > global_position.x + 50:
-#				if Player.global_position.y < global_position.y - 50:
-#					vel = position.direction_to(Player.position) * speed
-#					direction.x = 1
-##					direction.y = -1
-#				elif Player.global_position.y > global_position.y + 50:
-#					vel = position.direction_to(Player.position) * speed
-#					direction.x = 1
-#					direction.y = 1
+			if Player.global_position.x < global_position.x - 30:
+				if Player.global_position.y < global_position.y - 30:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = -1
+					direction.y = -1
+				elif Player.global_position.y > global_position.y + 30:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = -1
+					direction.y = 1
+			elif Player.global_position.x > global_position.x + 30:
+				if Player.global_position.y < global_position.y - 30:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = 1
+					direction.y = -1
+				elif Player.global_position.y > global_position.y + 30:
+					vel = position.direction_to(Player.position) * speed
+					direction.x = 1
+					direction.y = 1
 #			if Player.global_position.x < global_position.x - 50:
 #				vel = position.direction_to(Player.position) * speed.x
 #			elif Player.global_position.x > global_position.x + 50:
@@ -189,7 +189,7 @@ func _physics_process(delta):
 			else:
 				vel.x = 0
 				direction.x = 0
-			vel.x = direction.x * 500
+			vel.x = direction.x * 450
 
 			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -234,6 +234,8 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBMOVE:
+#			if Player:
+#				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 10:
 				vel = position.direction_to(Player.position) * speed
 			elif Player.global_position.y > global_position.y + 10:
@@ -242,7 +244,7 @@ func _physics_process(delta):
 				vel.x = 0
 				direction.x = 0
 			vel.x = direction.x * 550
-
+#Why do i have to use vel.x and not vel.y here?
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("standstill"):
