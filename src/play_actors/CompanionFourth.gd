@@ -85,6 +85,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 550
 
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
@@ -111,6 +112,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 0
 			
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 			
 			if Input.is_action_pressed("followme"):
@@ -138,6 +140,7 @@ func _physics_process(delta):
 	
 	
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 	
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
@@ -160,21 +163,21 @@ func _physics_process(delta):
 		SWIMMING:
 			if Player:
 				vel = position.direction_to(Player.position) * speed
-			if Player.global_position.x < global_position.x - 30:
-				if Player.global_position.y < global_position.y - 30:
+			if Player.global_position.x < global_position.x - 90:
+				if Player.global_position.y < global_position.y - 90:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = -1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 30:
+				elif Player.global_position.y > global_position.y + 90:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = -1
 					direction.y = 1
-			elif Player.global_position.x > global_position.x + 30:
-				if Player.global_position.y < global_position.y - 30:
+			elif Player.global_position.x > global_position.x + 90:
+				if Player.global_position.y < global_position.y - 90:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = 1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 30:
+				elif Player.global_position.y > global_position.y + 90:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = 1
 					direction.y = 1
@@ -191,7 +194,7 @@ func _physics_process(delta):
 				direction.x = 0
 			vel.x = direction.x * 450
 
-			vel.y += gravity * delta
+#			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("runaway"):
@@ -208,7 +211,12 @@ func _physics_process(delta):
 		SWIMIDLE:
 			vel.x = 0
 			direction.x = 0
-			vel.x = direction.x * 500
+			vel.x = direction.x * 0
+			vel.y = 0
+			direction.y = 0
+			vel.y = direction.y * 450
+			vel.y += gravity * delta
+			gravity = 100.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("runaway"):
@@ -236,14 +244,16 @@ func _physics_process(delta):
 		CLIMBMOVE:
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
-			if Player.global_position.y < global_position.y - 10:
+			if Player.global_position.y < global_position.y - 30:
 				vel = position.direction_to(Player.position) * speed
-			elif Player.global_position.y > global_position.y + 10:
+			elif Player.global_position.y > global_position.y + 30:
 				vel = position.direction_to(Player.position) * speed
 			else:
 				vel.x = 0
 				direction.x = 0
-			vel.x = direction.x * 550
+				vel.y = 0
+				direction.y = 0
+			vel.x = direction.x * 390
 #Why do i have to use vel.x and not vel.y here?
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
@@ -272,6 +282,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 130
 
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
@@ -305,6 +316,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 130
 
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
@@ -338,6 +350,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("runaway"):
@@ -358,6 +371,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("followme"):
@@ -371,6 +385,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 0
 			
 			vel.y += gravity * delta
+			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 			
 			if Input.is_action_pressed("followme"):
