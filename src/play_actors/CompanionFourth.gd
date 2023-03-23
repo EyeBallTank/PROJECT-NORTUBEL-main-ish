@@ -214,11 +214,11 @@ func _physics_process(delta):
 			vel.x = 0
 			direction.x = 0
 			vel.x = direction.x * 0
-			vel.y = 0
-			direction.y = 0
-			vel.y = direction.y * 450
-			vel.y += gravity * delta
-			gravity = 100.0
+#			vel.y = 0
+#			direction.y = 0
+#			vel.y = direction.y * 450
+#			vel.y += gravity * delta
+#			gravity = 10.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("runaway"):

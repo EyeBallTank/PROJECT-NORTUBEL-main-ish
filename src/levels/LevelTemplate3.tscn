@@ -185,10 +185,10 @@ position = Vector2( -1682, -935 )
 position = Vector2( -1538, -592 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6071, 292.785 )
+position = Vector2( -137, 392.372 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 6258, 284.818 )
+position = Vector2( 50, 384.405 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 11 )]
 position = Vector2( -150, 207 )
