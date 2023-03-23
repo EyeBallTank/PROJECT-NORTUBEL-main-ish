@@ -2,10 +2,9 @@ extends KinematicBody2D
 class_name Companion
 
 #This character is a replacement for CompanionCopy. The main goal is that it does not use OS.get_ticks_msec() or even Time.get_ticks_msec()
-#So far there are 3 problems:
+#So far there are 2 problems:
 #1: Its hurtbox doesn't work
 #2: The current SWIMMING state has terrible swimming movement; Besides the lack of proper "diagonal" movement, there are moments where if they're close enough and you press "STANDSTILL/S", they simply go up and jump to the water surface
-#3: The current CLIMB states also have terrible climbing movement
 #I may need a lot of help to make this character.
 
 enum {
@@ -266,7 +265,29 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = FOLLOWME
 		CLIMBRUN:
-			pass
+#			if Player:
+#				vel = position.direction_to(Player.position) * speed
+			if Player.global_position.y < global_position.y - 30:
+				vel = position.direction_to(Player.position) * -speed
+			elif Player.global_position.y > global_position.y + 30:
+				vel = position.direction_to(Player.position) * -speed
+			else:
+				vel.x = 0
+				direction.x = 0
+				vel.y = 0
+				direction.y = 0
+			vel.x = direction.x * 390
+#Why do i have to use vel.x and not vel.y here?
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("standstill"):
+				state = CLIMBIDLE
+			if Input.is_action_pressed("followme"):
+				state = CLIMBMOVE
+			if Input.is_action_just_pressed("interactcomp"):
+				state = RUNAWAY
+			if not is_on_ladder():
+				state = RUNAWAY
 
 		SLOWFOLLOW:
 			pushcheck()
