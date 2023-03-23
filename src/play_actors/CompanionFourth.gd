@@ -162,21 +162,21 @@ func _physics_process(delta):
 		SWIMMING:
 			if Player:
 				vel = position.direction_to(Player.position) * speed
-			if Player.global_position.x < global_position.x - 90:
-				if Player.global_position.y < global_position.y - 90:
+			if Player.global_position.x < global_position.x - 10:
+				if Player.global_position.y < global_position.y - 10:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = -1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 90:
+				elif Player.global_position.y > global_position.y + 10:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = -1
 					direction.y = 1
-			elif Player.global_position.x > global_position.x + 90:
-				if Player.global_position.y < global_position.y - 90:
+			elif Player.global_position.x > global_position.x + 10:
+				if Player.global_position.y < global_position.y - 10:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = 1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 90:
+				elif Player.global_position.y > global_position.y + 10:
 					vel = position.direction_to(Player.position) * speed
 					direction.x = 1
 					direction.y = 1
@@ -191,7 +191,10 @@ func _physics_process(delta):
 			else:
 				vel.x = 0
 				direction.x = 0
-			vel.x = direction.x * 450
+				vel.y = 0
+				direction.y = 0
+			vel.x = direction.x * 400
+			vel.y = direction.y * 400
 
 #			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
