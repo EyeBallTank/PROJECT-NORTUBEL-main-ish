@@ -493,25 +493,25 @@ func _on_CrawlCheck_area_entered(area):
 	if area.is_in_group("CrawlzoneExit"):
 		if state == CRAWLFOLLOW:
 			state = FOLLOWME
-			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 81)
-			$CompanionHurtbox/CollisionShape2D.position = Vector2(-1, -82)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
-			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
-			$CollisionShape2D.shape.extents = Vector2(23, 81)
-			$CollisionShape2D.position = Vector2(-1, -82)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
 		if state == CRAWLIDLE:
 			state = STANDSTILL
-			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 81)
-			$CompanionHurtbox/CollisionShape2D.position = Vector2(-1, -82)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
-			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
-			$CollisionShape2D.shape.extents = Vector2(23, 81)
-			$CollisionShape2D.position = Vector2(-1, -82)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
 		if state == CRAWLRUN:
 			state = RUNAWAY
-			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 81)
-			$CompanionHurtbox/CollisionShape2D.position = Vector2(-1, -82)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 81)
-			$PortalCheck/CollisionShape2D.position = Vector2(-1, -82)
-			$CollisionShape2D.shape.extents = Vector2(23, 81)
-			$CollisionShape2D.position = Vector2(-1, -82)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
