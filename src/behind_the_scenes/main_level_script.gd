@@ -18,6 +18,7 @@ func _ready():
 	Signals.connect("companion_died", self, "_on_someone_died")
 
 func _on_someone_died():
+#	yield(get_tree().create_timer(0.5), "timeout")
 	var player = PlayerScene.instance()
 	player.position = player_spawn_location
 #	add_child(player)

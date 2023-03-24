@@ -356,9 +356,9 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
-#	pass
+	pass
 #	state = DEATH
-	Signals.emit_signal("player_died")
+#	Signals.emit_signal("player_died")
 #	queue_free()
 #	get_tree().reload_current_scene()
 
