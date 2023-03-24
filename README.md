@@ -20,7 +20,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
 * MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
 * SAVE/LOAD: Not a thing; Need to understand clearly how it can work and avoid the least amount of problems.
-* CHECKPOINT SYSTEM: Works with the Player so far.
+* CHECKPOINT SYSTEM: It's currently broken because when it "respawns" the characters, the scene tree gives them different names.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens.
 * LEVEL SELECT/HUB: Not a thing; Not sure exactly how level selection would work.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.

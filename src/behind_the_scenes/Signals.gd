@@ -15,6 +15,7 @@ signal coin_was_captured
 signal score_was_updated
 
 signal player_died
+signal companion_died
 signal hit_checkpoint(checkpoint_position)
 
 func _ready():

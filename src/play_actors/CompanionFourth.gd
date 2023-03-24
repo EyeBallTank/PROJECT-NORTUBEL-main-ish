@@ -58,6 +58,11 @@ var portal_id = 0
 
 func _ready():
 	healthBar.max_value = health
+	Signals.connect("player_died", self, "_i_died_too")
+
+func _i_died_too():
+	queue_free()
+	yield(get_tree().create_timer(0.5), "timeout")
 
 func get_hurt():
 	$AnimationPlayer.play("CompHurt")
