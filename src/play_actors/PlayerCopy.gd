@@ -345,7 +345,7 @@ func _physics_process(delta):
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")
-	health -= 100
+	health -= 50
 	velocity.y -= 500
 
 func is_invul():
@@ -356,6 +356,7 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
+
 	go_to_checkpoint()
 #	state = DEATH
 #	Signals.emit_signal("player_died")
@@ -426,6 +427,7 @@ func _on_PortalCheck_area_entered(area):
 			Teleport(area)
 
 func go_to_checkpoint():
-	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 0.4, Tween.TRANS_EXPO, Tween.EASE_OUT)
+	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	thing = checkpointTween.start()
 	state = MAINSTATE
+	health = 100

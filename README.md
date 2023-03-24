@@ -20,7 +20,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
 * MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
 * SAVE/LOAD: Not a thing; Need to understand clearly how it can work and avoid the least amount of problems.
-* CHECKPOINT SYSTEM: It's currently broken because when it "respawns" the characters, the scene tree gives them different names.
+* CHECKPOINT SYSTEM: It kinda works on the Player only; It essentially "drags" a character to the right spot. Had to create a "playerspawn" scene as well so it has another place to respawn when it's not a checkpoint.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens.
 * LEVEL SELECT/HUB: Not a thing; Not sure exactly how level selection would work.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
@@ -82,7 +82,6 @@ I may end up changing this goal list as well.
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * As of writing this, i'm recreating the Companion character with different code and i got TWO problems: 1 their hurtbox doesn't work and 2 their swimming is broken (One issue i see if when they quit SWIMMING and return to it, they stop chasing the Player horzintally; Another SWIMMING issue is when they're close to you and if you make them switch to SWIMIDLE, they go up really fast and jump to the water surface). The reason why this recreation exists is because the Companion iteration i used before had complicated code i had to eventually abandon (And the use of OS.get_ticks_msec() could bring future problems) Also, CompanionFourth doesn't move left and right when close to the Player during FOLLOWME.
-* Checkpoint system that should respawn both characters in its location is still broken.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
@@ -108,7 +107,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 
 * Godot demo projects like the "2D Platformer Demo (KinematicBody)" one and the now gone "Cubio" project (One was the source for the Soccer Ball attack and the other was the source for player physics, some used in the ICE state).
 * GDQuest (Made a platform tutorial series, in which i made the practice game and took some stuff from it; Did a lot of other tutorial videos and applications)
-* HeartBeast (Similar to above, such as how i implemented ladders and a checkpoint system)
+* HeartBeast (Similar to above, such as how i implemented ladders)
 * GameDev With Drew (Godot tutorial videos).
 * Samsface (Same as above)
 * Jon Topielski (Same as above)
@@ -141,6 +140,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * mjbolt (Used tutorial video on Pushable object)
 * luke_rs (Used tutorial video on the Swingable Rope)
 * jeanmakesgames (Used tutorial video on level portals)
+* matinator9185/MateuSai (Used tutorial video on the checkpoint system)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
