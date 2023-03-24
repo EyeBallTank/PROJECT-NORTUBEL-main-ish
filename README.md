@@ -20,7 +20,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
 * MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
 * SAVE/LOAD: Not a thing; Need to understand clearly how it can work and avoid the least amount of problems.
-* CHECKPOINT SYSTEM: Not a thing; I got a basic object that should fill this role, even if i need to make this work and avoid issues.
+* CHECKPOINT SYSTEM: Works with the Player so far.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens.
 * LEVEL SELECT/HUB: Not a thing; Not sure exactly how level selection would work.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
@@ -30,6 +30,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * COMPANION "INTERACT" COMMAND: A command where the Companion can have special interactions with certain things; So far, you can make them attach to ladders.
 * COMPANION CRAWL STATES: The idea is that the Companion would crawl and go to places that the Player can't go to; It could be useful for some scenarios where both characters cooperate while seperate.
 * HEALTH: Both characters have Health, can lose health/die and gain health from a pickup (NOT at the same time); Player has more health than Companion; Both have basic "pain/iframe" animations.
+* LIVE SYSTEM: Not a thing; Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on both an extra life pickup AND making it so collecting 100 coins adds a new life.
 * HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style; A main idea was a "Companion notifier" for when the Companion is off-screen like an arrow on-screen pointing at their direction so the Player gets an idea of their location.
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so they should get actual character sprites for them (And the characters have the same gameplay); Each level has 2 characters, so i need to figure a method of when/which characters show up etc.
 * JUMP PADS: Work on both characters.
@@ -106,7 +107,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 
 * Godot demo projects like the "2D Platformer Demo (KinematicBody)" one and the now gone "Cubio" project (One was the source for the Soccer Ball attack and the other was the source for player physics, some used in the ICE state).
 * GDQuest (Made a platform tutorial series, in which i made the practice game and took some stuff from it; Did a lot of other tutorial videos and applications)
-* HeartBeast (Similar to above)
+* HeartBeast (Similar to above, such as how i implemented ladders and a checkpoint system)
 * GameDev With Drew (Godot tutorial videos).
 * Samsface (Same as above)
 * Jon Topielski (Same as above)

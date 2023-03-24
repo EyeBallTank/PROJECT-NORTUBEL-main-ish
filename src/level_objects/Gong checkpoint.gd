@@ -14,3 +14,4 @@ func _on_Gong_body_entered(body):
 		audioPlayer.play()
 		animationplayer.play("TOUCHED")
 		active = false
+		Signals.emit_signal("hit_checkpoint", position)

@@ -25,8 +25,8 @@ enum {
 	ROPE,
 	KICKBALL,
 #	KNIFE
-#	DEATH
-	SLOW
+	DEATH,
+	SLOW,
 	ICE
 }
 
@@ -330,13 +330,16 @@ func _physics_process(delta):
 					pass
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
+		DEATH:
+			queue_free()
+			Signals.emit_signal("player_died")
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")
-	health -= 50
+	health -= 10
 	velocity.y -= 500
 
 func is_invul():
@@ -347,7 +350,8 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
-	get_tree().reload_current_scene()
+	state = DEATH
+#	get_tree().reload_current_scene()
 
 
 func knife_attack():

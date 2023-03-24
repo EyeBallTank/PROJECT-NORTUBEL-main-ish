@@ -14,6 +14,9 @@ signal halfcircle_plat_active_two
 signal coin_was_captured
 signal score_was_updated
 
+signal player_died
+signal hit_checkpoint(checkpoint_position)
+
 func _ready():
 	pass
 
