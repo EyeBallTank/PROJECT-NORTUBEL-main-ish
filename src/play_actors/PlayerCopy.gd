@@ -70,7 +70,7 @@ func _ready():
 func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
-		die()
+		state = DEATH
 
 	# Still using frankensteined code to do this		
 	match state:
@@ -335,13 +335,14 @@ func _physics_process(delta):
 					pass
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
-#		DEATH:
-#			queue_free()
-#			Signals.emit_signal("player_died")
-#			yield(get_tree().create_timer(0.5), "timeout")
+		DEATH:
+			velocity.x = 0
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			hurtbox.set_monitoring(false)
+			yield(get_tree().create_timer(1.6), "timeout")
+			die()
 
-# MIGHT NEED A STATE MACHINE FOR THIS
-# AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")
@@ -356,9 +357,8 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
-
+	$Sprite.visible = false
 	go_to_checkpoint()
-#	state = DEATH
 #	Signals.emit_signal("player_died")
 #	queue_free()
 #	get_tree().reload_current_scene()
@@ -431,3 +431,5 @@ func go_to_checkpoint():
 	thing = checkpointTween.start()
 	state = MAINSTATE
 	health = 100
+	hurtbox.set_monitoring(true)
+	$Sprite.visible = true
