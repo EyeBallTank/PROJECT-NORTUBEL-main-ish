@@ -148,6 +148,8 @@ collision_mask = 4
 position = Vector2( 0, -29 )
 shape = SubResource( 6 )
 
+[node name="CheckpointTween" type="Tween" parent="."]
+
 [connection signal="area_entered" from="CompanionHurtbox" to="." method="_on_CompanionHurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]
 [connection signal="area_entered" from="CrawlCheck" to="." method="_on_CrawlCheck_area_entered"]

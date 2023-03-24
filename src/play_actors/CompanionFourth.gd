@@ -56,8 +56,13 @@ onready var ladderCheck = $LadderCheck
 onready var slowCheck = $SlowCheck
 var portal_id = 0
 
+var last_checkpoint: Area2D = null
+onready var checkpointTween = $CheckpointTween
+
 func _ready():
 	healthBar.max_value = health
+	var playerspawn = get_parent().get_node("playerspawn")
+	last_checkpoint = playerspawn
 
 func get_hurt():
 	$AnimationPlayer.play("CompHurt")

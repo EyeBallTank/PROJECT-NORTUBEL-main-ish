@@ -62,6 +62,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	$CollisionShape2D.disabled = false
 	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
 	var playerspawn = get_parent().get_node("playerspawn")
@@ -357,7 +358,6 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
-	$Sprite.visible = false
 	go_to_checkpoint()
 #	Signals.emit_signal("player_died")
 #	queue_free()
@@ -429,6 +429,7 @@ func _on_PortalCheck_area_entered(area):
 func go_to_checkpoint():
 	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	thing = checkpointTween.start()
+#	yield(get_tree().create_timer(0.4), "timeout")
 	state = MAINSTATE
 	health = 100
 	hurtbox.set_monitoring(true)
