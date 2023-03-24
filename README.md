@@ -82,6 +82,7 @@ I may end up changing this goal list as well.
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * As of writing this, i'm recreating the Companion character with different code and i got TWO problems: 1 their hurtbox doesn't work and 2 their swimming is broken (One issue i see if when they quit SWIMMING and return to it, they stop chasing the Player horzintally; Another SWIMMING issue is when they're close to you and if you make them switch to SWIMIDLE, they go up really fast and jump to the water surface). The reason why this recreation exists is because the Companion iteration i used before had complicated code i had to eventually abandon (And the use of OS.get_ticks_msec() could bring future problems) Also, CompanionFourth doesn't move left and right when close to the Player during FOLLOWME.
+* Checkpoint system that should respawn both characters in its location is still broken.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

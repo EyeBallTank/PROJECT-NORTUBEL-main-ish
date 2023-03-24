@@ -61,11 +61,11 @@ onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 func _ready():
 	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
-	Signals.connect("companion_died", self, "_i_died_too")
-
-func _i_died_too():
-	queue_free()
-	yield(get_tree().create_timer(0.5), "timeout")
+#	Signals.connect("companion_died", self, "_i_died_too")
+#
+#func _i_died_too():
+#	queue_free()
+#	yield(get_tree().create_timer(0.5), "timeout")
 
 func _physics_process(delta):
 	healthBar.value = health
@@ -335,10 +335,10 @@ func _physics_process(delta):
 					pass
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
-		DEATH:
-			queue_free()
-			Signals.emit_signal("player_died")
-			yield(get_tree().create_timer(0.5), "timeout")
+#		DEATH:
+#			queue_free()
+#			Signals.emit_signal("player_died")
+#			yield(get_tree().create_timer(0.5), "timeout")
 
 # MIGHT NEED A STATE MACHINE FOR THIS
 # AT LEAST I FIGURED OUT A SPEED NERF "POWER DOWN" I GUESS
@@ -356,7 +356,10 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
-	state = DEATH
+#	pass
+#	state = DEATH
+	Signals.emit_signal("player_died")
+#	queue_free()
 #	get_tree().reload_current_scene()
 
 
