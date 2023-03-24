@@ -64,7 +64,8 @@ onready var checkpointTween = $CheckpointTween
 func _ready():
 	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
-	last_checkpoint = get_parent().get_node("playerspawn")
+	var playerspawn = get_parent().get_node("playerspawn")
+	last_checkpoint = playerspawn
 
 func _physics_process(delta):
 	healthBar.value = health
