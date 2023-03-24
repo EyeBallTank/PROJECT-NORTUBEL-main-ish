@@ -52,7 +52,7 @@ tracks/0/keys = {
 "values": [ false ]
 }
 
-[node name="Gong" type="Area2D"]
+[node name="Gong" type="Area2D" groups=["checkpoint"]]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource( 2 )

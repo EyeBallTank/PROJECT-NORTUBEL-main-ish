@@ -15,3 +15,5 @@ func _on_Gong_body_entered(body):
 		animationplayer.play("TOUCHED")
 		active = false
 		Signals.emit_signal("hit_checkpoint", position)
+#		if body.health == 0:
+#			body.global_position = global_position

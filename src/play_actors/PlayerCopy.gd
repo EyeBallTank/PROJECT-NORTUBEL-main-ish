@@ -425,3 +425,7 @@ func _on_PortalCheck_area_entered(area):
 	if(area.is_in_group("Teleportal")):
 		if(!area.lockPortal):
 			Teleport(area)
+			
+#	if(area.is_in_group("checkpoint")):
+#		if health == 0:
+#			global_position = area.global_position
