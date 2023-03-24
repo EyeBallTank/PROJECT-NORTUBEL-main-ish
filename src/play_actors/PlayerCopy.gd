@@ -246,7 +246,6 @@ func _physics_process(delta):
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
 
-
 			if is_on_water():
 				state = SWIM
 			if is_on_slow():
@@ -336,14 +335,17 @@ func _physics_process(delta):
 					pass
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
+
 		DEATH:
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 			hurtbox.set_monitoring(false)
-			yield(get_tree().create_timer(1.6), "timeout")
-			die()
-
+#			die()
+			yield(get_tree().create_timer(0.4), "timeout")
+			$AnimationPlayer.stop(true)
+			$Sprite.set_modulate(00000000)
+			go_to_checkpoint()
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")
@@ -357,12 +359,11 @@ func is_invul():
 	print("hope it did")
 	hurtbox.set_monitoring(true)
 
-func die():
-	go_to_checkpoint()
+#func die():
+	
 #	Signals.emit_signal("player_died")
 #	queue_free()
 #	get_tree().reload_current_scene()
-
 
 func knife_attack():
 	playerhitboxcollision.disabled = true
@@ -432,5 +433,7 @@ func go_to_checkpoint():
 #	yield(get_tree().create_timer(0.4), "timeout")
 	state = MAINSTATE
 	health = 100
+	yield(get_tree().create_timer(0.4), "timeout")
 	hurtbox.set_monitoring(true)
-	$Sprite.visible = true
+	$Sprite.set_modulate(00000000)
+	$AnimationPlayer.play("playerhurt")

@@ -520,3 +520,9 @@ func _on_CrawlCheck_area_entered(area):
 			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
 			$CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CollisionShape2D.position = Vector2(0, -81)
+
+func go_to_checkpoint():
+	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
+	thing = checkpointTween.start()
+	state = STANDSTILL
+	health = 100
