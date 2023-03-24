@@ -186,6 +186,8 @@ disabled = true
 position = Vector2( -2, -123 )
 shape = SubResource( 7 )
 
+[node name="CheckpointTween" type="Tween" parent="."]
+
 [connection signal="area_entered" from="RopeCheck" to="." method="_on_RopeCheck_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]

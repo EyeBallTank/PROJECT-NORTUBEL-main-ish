@@ -56,16 +56,15 @@ onready var ropeCheck = $RopeCheck
 onready var hurtbox = $Hurtbox
 onready var playerhitbox = $PlayerHitbox
 onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
-#onready var pushCheck = $PushCheckers
+
+
+var last_checkpoint: Area2D = null
+onready var checkpointTween = $CheckpointTween
 
 func _ready():
 	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
-#	Signals.connect("companion_died", self, "_i_died_too")
-#
-#func _i_died_too():
-#	queue_free()
-#	yield(get_tree().create_timer(0.5), "timeout")
+	last_checkpoint = get_parent().get_node("playerspawn")
 
 func _physics_process(delta):
 	healthBar.value = health
@@ -356,7 +355,7 @@ func is_invul():
 	hurtbox.set_monitoring(true)
 
 func die():
-	pass
+	go_to_checkpoint()
 #	state = DEATH
 #	Signals.emit_signal("player_died")
 #	queue_free()
@@ -409,7 +408,6 @@ func pushcheck():
 
 func _on_RopeCheck_area_entered(area):
 	if area.is_in_group("Hook"):
-#		if Input.is_action_just_pressed("jumpup"):
 		rope_part = area
 		state = ROPE
 
@@ -425,7 +423,8 @@ func _on_PortalCheck_area_entered(area):
 	if(area.is_in_group("Teleportal")):
 		if(!area.lockPortal):
 			Teleport(area)
-			
-#	if(area.is_in_group("checkpoint")):
-#		if health == 0:
-#			global_position = area.global_position
+
+func go_to_checkpoint():
+	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 0.4, Tween.TRANS_EXPO, Tween.EASE_OUT)
+	thing = checkpointTween.start()
+	state = MAINSTATE
