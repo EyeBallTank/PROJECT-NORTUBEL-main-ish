@@ -64,6 +64,7 @@ onready var swimCheck = $swimCheck
 onready var ladderCheck = $ladderCheck
 onready var hurtbox = $HurtboxComp
 onready var slowCheck = $SlowCheck
+
 var portal_id = 0
 
 func _ready():

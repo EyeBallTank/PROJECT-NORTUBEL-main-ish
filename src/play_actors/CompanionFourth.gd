@@ -21,9 +21,9 @@ enum {
 #	DEATH
 	SLOWRUN,
 	SLOWFOLLOW,
-#	ICE
-#	ICEFOLLOW
-#	ICERUN
+	ICEIDLE,
+	ICEFOLLOW,
+	ICERUN,
 	SWIMIDLE,
 	SWIMMING,
 	SWIMRUN,
@@ -54,6 +54,7 @@ onready var CompanionHurtbox = $CompanionHurtbox
 onready var swimCheck = $SwimCheck
 onready var ladderCheck = $LadderCheck
 onready var slowCheck = $SlowCheck
+onready var iceCheck = $IceCheck
 var portal_id = 0
 
 var last_checkpoint: Area2D = null
@@ -108,6 +109,8 @@ func _physics_process(delta):
 					state = CLIMBIDLE
 			if is_on_slow():
 				state = SLOWFOLLOW
+			if is_on_ice():
+				state = ICEFOLLOW
 
 		STANDSTILL:
 			pushcheck()
@@ -128,6 +131,9 @@ func _physics_process(delta):
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
 					state = CLIMBIDLE
+			if is_on_ice():
+				state = ICEIDLE
+
 
 		RUNAWAY:
 			pushcheck()
@@ -163,6 +169,8 @@ func _physics_process(delta):
 					state = CLIMBIDLE
 			if is_on_slow():
 				state = SLOWRUN
+			if is_on_ice():
+				state = ICERUN
 
 		SWIMMING:
 			if Player:
@@ -422,6 +430,51 @@ func _physics_process(delta):
 			if Input.is_action_pressed("runaway"):
 				state = CRAWLRUN
 
+		ICEFOLLOW:
+			pushcheck()
+			if Player.global_position.x < global_position.x - 10:
+				direction.x = -1
+			if Player.global_position.x > global_position.x + 10:
+				direction.x = 1
+			if direction.x != 0:
+				vel.x = lerp(vel.x, direction.x * speed, acceleration)
+			else:
+				vel.x = lerp(vel.x, 0, friction)
+				direction.x = 0
+			vel.x = direction.x * 550
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			if Input.is_action_pressed("runaway"):
+				state = ICERUN
+			if Input.is_action_pressed("standstill"):
+				state = ICEIDLE
+			if is_on_water():
+				state = SWIMMING
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if is_on_slow():
+				state = SLOWFOLLOW
+			if not is_on_ice():
+				if is_on_floor():
+					state = FOLLOWME
+				else:
+					pass
+
+		ICERUN:
+			pass
+
+		ICEIDLE:
+			pass
+
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
 		get_hurt()
@@ -442,6 +495,12 @@ func is_on_slow():
 	if not slowCheck.is_colliding(): return false
 	var collider = slowCheck.get_collider()
 	if not collider is SlowFloor: return false
+	return true
+
+func is_on_ice():
+	if not iceCheck.is_colliding(): return false
+	var collider = iceCheck.get_collider()
+	if not collider is IceFloor: return false
 	return true
 
 func pushcheck():
