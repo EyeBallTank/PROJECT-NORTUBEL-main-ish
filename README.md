@@ -45,7 +45,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * CONVEYOR FLOOR: As you'd expect, it drags the characters to a direction.
 * JUMP-THROUGH PLATFORM: A basic platform concept that exists.
 * PORTALS: You go through one and teleport to another.
-* ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion still lacks ice physics
+* ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion has some icy physics too, even if the switch between FOLLOW/RUN states is a bit too quick but at least their idle state can be slippery.
 * SLOW FLOOR: Both characters are affected by this and move slowly; Like a reverse to ice floors kinda.
 * SPACE/GRAVITY ELEMENTS: Not a thing; Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * HEALTH PICKUP: Can heal the Player and Companion but both at the same time.
@@ -141,6 +141,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * luke_rs (Used tutorial video on the Swingable Rope)
 * jeanmakesgames (Used tutorial video on level portals)
 * matinator9185/MateuSai (Used tutorial video on the checkpoint system)
+* kidscancode (Used an article of theirs as reference for implementing Comp4's ice physics)
 
 # ALSO: Feel free to give me Github related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
