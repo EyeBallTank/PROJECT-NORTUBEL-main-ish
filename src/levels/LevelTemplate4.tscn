@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=10]
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -60,13 +59,13 @@ tile_data = PoolIntArray( -720889, 0, 0, -720888, 0, 0, -720887, 0, 0, -720886, 
 position = Vector2( 614, 633 )
 
 [node name="Water" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2532.64, -448.362 )
+position = Vector2( 6100.68, 223.765 )
 
 [node name="Water2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3058.64, -447.362 )
+position = Vector2( 6626.68, 224.765 )
 
 [node name="Water3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2014.64, -447.362 )
+position = Vector2( 5582.68, 224.765 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
 position = Vector2( 5183.25, 522.447 )
@@ -79,15 +78,3 @@ position = Vector2( 680.128, -785.024 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4995.27, 514.177 )
-
-[node name="IceFloor" parent="." instance=ExtResource( 10 )]
-position = Vector2( 5603.08, 644.05 )
-
-[node name="IceFloor3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 6735.08, 645.677 )
-
-[node name="IceFloor4" parent="." instance=ExtResource( 10 )]
-position = Vector2( 7299.08, 644.487 )
-
-[node name="IceFloor2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 6163.08, 644.855 )

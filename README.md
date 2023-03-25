@@ -69,8 +69,9 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * MULTIPLE LANGUAGES: In case language options would be too difficult, i might as well have both English and Portuguese coexist in some way.
 * ALTERNATE/SECRET LEVELS: Not yet; Ideally, these levels could be an excuse for me to show characters and settings from different worlds.
 * SECRETS IN LEVELS: Not yet; Maybe some could be easy stuff like things hidden behind walls but more interesting secrets need work and thinking.
-* BONUS STATES: Not a thing yet but i'd also make them timed/optional; An idea i had was top down minigame levels inspired by Binary Land and Chip's Challenge where the player controls 2 characters (With opposite horizontal movement) and face some level design challenges/features but the implementation shouldn't be overly complex; Maybe some fishing minigame could work.
+* BONUS STAGES: Not a thing yet but i'd also make them timed/optional; An idea i had was top down minigame levels inspired by Binary Land and Chip's Challenge where the player controls 2 characters (With opposite horizontal movement) and face some level design challenges/features but the implementation shouldn't be overly complex; Maybe some fishing minigame could work.
 * RIVAL CHARACTERS: Not yet; Most ambitious idea, because "rivals" in videogames are special ideas that need to be done well and in what is essentially a 2D puzzle game based around escort missions, it might be something really hard; In terms of story, these characters are "alternate dimension" versions of the protagonists.
+* VEHICLES: Not a thing and maybe doesn't have to happen; It'd be a gimmicky, simple thing but i thought of things like Madeira's Toboggan couch/basket/sled hybrids, Paddle boats or even on-rail handcars; I see it as something mechanically simple that it could work for a minigame.
 
 I may end up changing this goal list as well.
 
