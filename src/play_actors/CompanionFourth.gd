@@ -436,10 +436,10 @@ func _physics_process(delta):
 			var dirthing: int = 0
 			if Player.global_position.x < global_position.x - 60:
 				dirthing -= 1
-				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
+				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
 			elif Player.global_position.x > global_position.x + 60:
 				dirthing += 1
-				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
+				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
 #			if dirthing != 0:
 #				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
 			elif dirthing == 0 and is_on_floor():
@@ -479,10 +479,10 @@ func _physics_process(delta):
 			var dirthing: int = 0
 			if Player.global_position.x < global_position.x - 10:
 				dirthing += 1
-				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
+				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
 			elif Player.global_position.x > global_position.x + 10:
 				dirthing -= 1
-				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
+				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
 #			if dirthing != 0:
 #				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
 			elif dirthing == 0 and is_on_floor():
@@ -525,13 +525,13 @@ func _physics_process(delta):
 				dirthing = 0
 				if is_on_floor():
 					dirthing = 0
-					vel.x = lerp(vel.x, -60, friction)
+					vel.x = lerp(vel.x, -60, friction * acceleration)
 			if dirthing == 1:
 				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
 				dirthing = 0
 				if is_on_floor():
 					dirthing = 0
-					vel.x = lerp(vel.x, 60, friction)
+					vel.x = lerp(vel.x, 60, friction * acceleration)
 			elif dirthing == 0 and is_on_floor():
 				vel.x = lerp(vel.x, 0, friction * acceleration)
 #			vel.x = 0

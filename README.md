@@ -45,7 +45,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 * CONVEYOR FLOOR: As you'd expect, it drags the characters to a direction.
 * JUMP-THROUGH PLATFORM: A basic platform concept that exists.
 * PORTALS: You go through one and teleport to another.
-* ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion has some icy physics too, even if the switch between FOLLOW/RUN states is a bit too quick but at least their idle state can be slippery.
+* ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion has some icy physics too.
 * SLOW FLOOR: Both characters are affected by this and move slowly; Like a reverse to ice floors kinda.
 * SPACE/GRAVITY ELEMENTS: Not a thing; Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * HEALTH PICKUP: Can heal the Player and Companion but both at the same time.
