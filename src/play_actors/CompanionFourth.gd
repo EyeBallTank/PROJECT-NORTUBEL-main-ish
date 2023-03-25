@@ -432,20 +432,20 @@ func _physics_process(delta):
 
 		ICEFOLLOW:
 			pushcheck()
-			var speedthing: int = 500
+			var speedthing: int = 700
 			var dirthing: int = 0
-			if Player.global_position.x < global_position.x - 40:
+			if Player.global_position.x < global_position.x - 60:
 				dirthing -= 1
 				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
-			elif Player.global_position.x > global_position.x + 40:
+			elif Player.global_position.x > global_position.x + 60:
 				dirthing += 1
 				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
 #			if dirthing != 0:
 #				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
-#			else:
-#				vel.x = lerp(vel.x, 0, friction)
+			elif dirthing == 0 and is_on_floor():
+				vel.x = lerp(vel.x, 0, friction)
 ##				direction.x = 0
-#			vel.x = dirthing * 550
+#			vel.x = dirthing * 350
 
 			vel.y += gravity * delta
 			gravity = 1450.0

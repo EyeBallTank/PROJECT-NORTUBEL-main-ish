@@ -83,8 +83,11 @@ position = Vector2( 4995.27, 514.177 )
 [node name="IceFloor" parent="." instance=ExtResource( 10 )]
 position = Vector2( 5603.08, 644.05 )
 
+[node name="IceFloor3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 6735.08, 645.677 )
+
+[node name="IceFloor4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 7299.08, 644.487 )
+
 [node name="IceFloor2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6163.08, 644.855 )
-
-[node name="IceFloor" parent="IceFloor2" instance=ExtResource( 10 )]
-position = Vector2( 573.999, 0.824524 )
