@@ -477,7 +477,43 @@ func _physics_process(delta):
 			pass
 
 		ICEIDLE:
-			pass
+			var speedthing: int = 700
+			var dirthing: int = 0
+			pushcheck()
+			if dirthing == -1:
+				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
+				dirthing = 0
+				if is_on_floor():
+					dirthing = 0
+					vel.x = lerp(vel.x, -60, friction)
+			if dirthing == 1:
+				vel.x = lerp(vel.x, dirthing * speedthing, acceleration)
+				dirthing = 0
+				if is_on_floor():
+					dirthing = 0
+					vel.x = lerp(vel.x, 60, friction)
+			elif dirthing == 0 and is_on_floor():
+				vel.x = lerp(vel.x, 0, friction)
+#			vel.x = 0
+#			direction.x = 0
+#			vel.x = direction.x * 0
+			
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+			
+			if Input.is_action_pressed("followme"):
+				state = ICEFOLLOW
+			if Input.is_action_pressed("runaway"):
+				state = ICERUN
+			if is_on_water():
+				state = SWIMIDLE
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if not is_on_ice():
+				if is_on_floor():
+					state = STANDSTILL
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
