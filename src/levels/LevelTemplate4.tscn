@@ -85,3 +85,6 @@ position = Vector2( 5603.08, 644.05 )
 
 [node name="IceFloor2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6163.08, 644.855 )
+
+[node name="IceFloor" parent="IceFloor2" instance=ExtResource( 10 )]
+position = Vector2( 573.999, 0.824524 )
