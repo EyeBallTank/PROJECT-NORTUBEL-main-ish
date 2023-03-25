@@ -116,14 +116,6 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Israel Ruiz (Copied code from scene changing tutorial)
 * TebyTheCat (Suggesting the use of a Finite State Machine in the code)
 * TheDex (Mod from Godot's Discord)
-* MakeHuman (References/resources for art)
-* Posemaniacs (References/resources for art)
-* Taco1704 (Art tutorials)
-* Start_yuji (Same as above)
-* Mikeymegamega (Art tutorial videos)
-* Marc Brunet (Again, art tutorial videos)
-* ProkoTV (Same as above)
-* Akihito Yoshitomi (Did some videos teaching art drawing methods)
 * TutsByKai (Software tutorials)
 * Kenney.nl (Made free assets that were used as reference)
 * FreeSound (Good resource for sounds)
@@ -143,7 +135,10 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * jeanmakesgames (Used tutorial video on level portals)
 * matinator9185/MateuSai (Used tutorial video on the checkpoint system)
 * kidscancode (Used an article of theirs as reference for implementing Comp4's ice physics)
+* MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
+* Krita (Main art software i use)
+* Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
 
-# ALSO: Feel free to give me Github related tips in general.
+# ALSO: Feel free to give me Github and Godot related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
 Let's hope 2023 will be a more productive year.
