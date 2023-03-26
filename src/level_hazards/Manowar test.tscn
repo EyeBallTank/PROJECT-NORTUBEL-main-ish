@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/sprites/level_hazard_sprites/manowar test.png" type="Texture" id=1]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 228.5, 290 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 143, 212 )
 
 [node name="Manowar" type="KinematicBody2D" groups=["hazards"]]
 collision_layer = 32
@@ -17,3 +21,9 @@ texture = ExtResource( 1 )
 position = Vector2( 3.5, -280 )
 shape = SubResource( 1 )
 disabled = true
+
+[node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
+position = Vector2( -83, -235 )
+shape = SubResource( 2 )
