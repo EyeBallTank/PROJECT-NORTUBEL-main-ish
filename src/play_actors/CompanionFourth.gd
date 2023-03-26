@@ -2,10 +2,9 @@ extends KinematicBody2D
 class_name Companion
 
 #This character is a replacement for CompanionCopy. The main goal is that it does not use OS.get_ticks_msec() or even Time.get_ticks_msec()
-#So far there are 2 problems:
-#1: Its hurtbox doesn't work
-#2: The current SWIMMING state has terrible swimming movement; Besides the lack of proper "diagonal" movement, there are moments where if they're close enough and you press "STANDSTILL/S", they simply go up and jump to the water surface
-#I may need a lot of help to make this character.
+#So far there is 1 problem:
+#1: Its hurtbox doesn't work and unlike CCopy's Hurtbox, Comp4's Hurtbox isn't fixed with setting it to both Monitoring and Monitorable
+#Their swimming is also a bit weird but honestly, i made it less bad now that it doesn't bother me a lot and maybe i could fix it in the future
 
 enum {
 	FOLLOWME,
@@ -201,13 +200,13 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed.y
 #			elif Player.global_position.y > global_position.y + 10:
 #				vel = position.direction_to(Player.position) * speed.y
-			if Player.global_position.x < global_position.x - 30:
-				if Player.global_position.y < global_position.y - 30:
+			if Player.global_position.x < global_position.x - 50:
+				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 30:
+				elif Player.global_position.y > global_position.y + 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
@@ -215,13 +214,13 @@ func _physics_process(delta):
 				else:
 					vel = position.direction_to(Player.position) * speed.x
 					direction.x = -1
-			elif Player.global_position.x > global_position.x + 30:
-				if Player.global_position.y < global_position.y - 30:
+			elif Player.global_position.x > global_position.x + 50:
+				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 30:
+				elif Player.global_position.y > global_position.y + 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
@@ -230,11 +229,11 @@ func _physics_process(delta):
 					vel = position.direction_to(Player.position) * speed.x
 					direction.x = 1
 			else:
-				if Player.global_position.y < global_position.y - 30:
+				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 30:
+				elif Player.global_position.y > global_position.y + 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.y = 1
@@ -245,8 +244,8 @@ func _physics_process(delta):
 					direction.y = 0
 			direction = direction.normalized()
 			vel = vel.normalized()
-			vel.x = direction.x * 400
-			vel.y = direction.y * 400
+			vel.x = direction.x * 350
+			vel.y = direction.y * 350
 
 #			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -266,11 +265,11 @@ func _physics_process(delta):
 			vel.x = 0
 			direction.x = 0
 			vel.x = direction.x * 0
-			vel.y = 0
+			vel.y = 85
 			direction.y = 0
 #			vel.y = direction.y * 450
-#			vel.y += gravity * delta
-#			gravity = 10.0
+			vel.y += gravity * delta
+			gravity = 10.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_pressed("runaway"):
