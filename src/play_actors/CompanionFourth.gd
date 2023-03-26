@@ -15,7 +15,7 @@ enum {
 	CLIMBRUN,
 #	PUSHFOLLOW
 #	PUSHRUN
-#	DEATH
+	DEATH,
 	SLOWRUN,
 	SLOWFOLLOW,
 	ICEIDLE,
@@ -70,7 +70,7 @@ func get_hurt():
 func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
-		queue_free()
+		state = DEATH
 
 	match state:
 		FOLLOWME:
@@ -645,6 +645,17 @@ func _physics_process(delta):
 				if is_on_floor():
 					state = STANDSTILL
 
+		DEATH:
+			vel.x = 0
+			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+			CompanionHurtbox.set_monitoring(false)
+			yield(get_tree().create_timer(0.4), "timeout")
+			$AnimationPlayer.stop(true)
+			$Sprite.set_modulate(00000000)
+			go_to_checkpoint()
+
+
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
 		get_hurt()
@@ -755,3 +766,7 @@ func go_to_checkpoint():
 	thing = checkpointTween.start()
 	state = STANDSTILL
 	health = 100
+	yield(get_tree().create_timer(0.4), "timeout")
+	CompanionHurtbox.set_monitoring(true)
+	$Sprite.set_modulate(00000000)
+	$AnimationPlayer.play("CompHurt")
