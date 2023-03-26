@@ -532,7 +532,7 @@ func is_on_ladder():
 	return true
 
 func _on_Hurtbox_area_entered(area):
-	if area.name == "EnemyHitbox":
+	if area.is_in_group("enemies"):
 		get_hurted()
 
 func pushcheck():

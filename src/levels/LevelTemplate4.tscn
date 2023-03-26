@@ -68,7 +68,7 @@ position = Vector2( 6626.68, 224.765 )
 position = Vector2( 5582.68, 224.765 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5214.2, 553.491 )
+position = Vector2( 5209.2, 550.484 )
 
 [node name="Gong" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1583.89, 81.2755 )
@@ -77,4 +77,4 @@ position = Vector2( 1583.89, 81.2755 )
 position = Vector2( 680.128, -785.024 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5026.22, 545.221 )
+position = Vector2( 5021.23, 542.214 )

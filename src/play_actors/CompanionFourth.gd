@@ -201,13 +201,13 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed.y
 #			elif Player.global_position.y > global_position.y + 10:
 #				vel = position.direction_to(Player.position) * speed.y
-			if Player.global_position.x < global_position.x - 20:
-				if Player.global_position.y < global_position.y - 20:
+			if Player.global_position.x < global_position.x - 30:
+				if Player.global_position.y < global_position.y - 30:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 20:
+				elif Player.global_position.y > global_position.y + 30:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
@@ -215,13 +215,13 @@ func _physics_process(delta):
 				else:
 					vel = position.direction_to(Player.position) * speed.x
 					direction.x = -1
-			elif Player.global_position.x > global_position.x + 20:
-				if Player.global_position.y < global_position.y - 20:
+			elif Player.global_position.x > global_position.x + 30:
+				if Player.global_position.y < global_position.y - 30:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 20:
+				elif Player.global_position.y > global_position.y + 30:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
@@ -230,11 +230,11 @@ func _physics_process(delta):
 					vel = position.direction_to(Player.position) * speed.x
 					direction.x = 1
 			else:
-				if Player.global_position.y < global_position.y - 20:
+				if Player.global_position.y < global_position.y - 30:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.y = -1
-				elif Player.global_position.y > global_position.y + 20:
+				elif Player.global_position.y > global_position.y + 30:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
 					direction.y = 1
@@ -244,6 +244,7 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 			direction = direction.normalized()
+			vel = vel.normalized()
 			vel.x = direction.x * 400
 			vel.y = direction.y * 400
 
@@ -265,8 +266,8 @@ func _physics_process(delta):
 			vel.x = 0
 			direction.x = 0
 			vel.x = direction.x * 0
-#			vel.y = 0
-#			direction.y = 0
+			vel.y = 0
+			direction.y = 0
 #			vel.y = direction.y * 450
 #			vel.y += gravity * delta
 #			gravity = 10.0
