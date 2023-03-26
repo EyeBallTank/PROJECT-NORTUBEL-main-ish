@@ -258,8 +258,62 @@ func _physics_process(delta):
 				state = FOLLOWME
 
 		SWIMRUN:
-			pass
-			
+			if Player.global_position.x < global_position.x - 50:
+				if Player.global_position.y < global_position.y - 50:
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
+					direction.x = 1
+					direction.y = 1
+				elif Player.global_position.y > global_position.y + 50:
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
+					direction.x = 1
+					direction.y = -1
+				else:
+					vel = position.direction_to(Player.position) * speed.x
+					direction.x = 1
+			elif Player.global_position.x > global_position.x + 50:
+				if Player.global_position.y < global_position.y - 50:
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
+					direction.x = -1
+					direction.y = 1
+				elif Player.global_position.y > global_position.y + 50:
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
+					direction.x = -1
+					direction.y = -1
+				else:
+					vel = position.direction_to(Player.position) * speed.x
+					direction.x = -1
+			else:
+				if Player.global_position.y < global_position.y - 50:
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
+					direction.y = 1
+				elif Player.global_position.y > global_position.y + 50:
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
+					direction.y = -1
+				else:
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+			direction = direction.normalized()
+			vel = vel.normalized()
+			vel.x = direction.x * 350
+			vel.y = direction.y * 350
+
+#			vel.y += gravity * delta
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_pressed("followme"):
+				state = SWIMMING
+			if Input.is_action_pressed("standstill"):
+				state = SWIMIDLE
+			if not is_on_water():
+				state = RUNAWAY
 
 		SWIMIDLE:
 			vel.x = 0
