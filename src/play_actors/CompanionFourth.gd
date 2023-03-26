@@ -765,7 +765,7 @@ func go_to_checkpoint():
 	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	thing = checkpointTween.start()
 	state = STANDSTILL
-	health = 100
+	health = 50
 	yield(get_tree().create_timer(0.4), "timeout")
 	CompanionHurtbox.set_monitoring(true)
 	$Sprite.set_modulate(00000000)
