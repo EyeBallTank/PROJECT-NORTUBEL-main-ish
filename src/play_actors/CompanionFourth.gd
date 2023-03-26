@@ -2,9 +2,7 @@ extends KinematicBody2D
 class_name Companion
 
 #This character is a replacement for CompanionCopy. The main goal is that it does not use OS.get_ticks_msec() or even Time.get_ticks_msec()
-#So far there is 1 problem:
-#1: Its hurtbox doesn't work and unlike CCopy's Hurtbox, Comp4's Hurtbox isn't fixed with setting it to both Monitoring and Monitorable
-#Their swimming is also a bit weird but honestly, i made it less bad now that it doesn't bother me a lot and maybe i could fix it in the future
+#As of writing this, their hurtbox was somehow fixed? Turns out it's me checking animation Player and not realizing that when i check it, i forget to turn back on the Hurtbox.
 
 enum {
 	FOLLOWME,

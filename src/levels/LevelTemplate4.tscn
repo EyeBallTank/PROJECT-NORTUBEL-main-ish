@@ -67,9 +67,6 @@ position = Vector2( 6626.68, 224.765 )
 [node name="Water3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5582.68, 224.765 )
 
-[node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5225.28, 502.507 )
-
 [node name="Gong" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1583.89, 81.2755 )
 
@@ -77,4 +74,7 @@ position = Vector2( 1583.89, 81.2755 )
 position = Vector2( 680.128, -785.024 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5110.31, 485.342 )
+position = Vector2( 1828.15, -104.374 )
+
+[node name="Companion" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1940.14, -99.2128 )

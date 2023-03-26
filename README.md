@@ -82,7 +82,7 @@ I may end up changing this goal list as well.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
-* As of writing this, i'm recreating the Companion character with different code and i got ONE problem being how their Hurtbox doesn't work (Because the previous Companion iteration had this fixed by setting their Hurtbox to both Monitoring/Monitorable but somehow this doesn't fix the Hurtbox of this new version); Their swimming is also a bit weird but i might fix it later. The reason why this recreation exists is because the Companion iteration i used before had complicated code i had to eventually abandon (And the use of OS.get_ticks_msec() could bring future problems) Also, CompanionFourth doesn't move left and right when close to the Player during FOLLOWME.
+* I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
