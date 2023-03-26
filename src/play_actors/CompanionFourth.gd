@@ -173,39 +173,62 @@ func _physics_process(delta):
 				state = ICERUN
 
 		SWIMMING:
-			if Player:
-				vel = position.direction_to(Player.position) * speed
+#			if Player:
+#				vel = position.direction_to(Player.position) * speed
+#			if Player.global_position.x < global_position.x - 10:
+#				if Player.global_position.y < global_position.y - 10:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = -1
+#					direction.y = -1
+#				elif Player.global_position.y > global_position.y + 10:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = -1
+#					direction.y = 1
+#			elif Player.global_position.x > global_position.x + 10:
+#				if Player.global_position.y < global_position.y - 10:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = 1
+#					direction.y = -1
+#				elif Player.global_position.y > global_position.y + 10:
+#					vel = position.direction_to(Player.position) * speed
+#					direction.x = 1
+#					direction.y = 1
+#			if Player.global_position.x < global_position.x - 10:
+#				vel = position.direction_to(Player.position) * speed.x
+#			elif Player.global_position.x > global_position.x + 10:
+#				vel = position.direction_to(Player.position) * speed.x
+#			elif Player.global_position.y < global_position.y - 10:
+#				vel = position.direction_to(Player.position) * speed.y
+#			elif Player.global_position.y > global_position.y + 10:
+#				vel = position.direction_to(Player.position) * speed.y
 			if Player.global_position.x < global_position.x - 10:
 				if Player.global_position.y < global_position.y - 10:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
 					direction.y = -1
 				elif Player.global_position.y > global_position.y + 10:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
 					direction.y = 1
 			elif Player.global_position.x > global_position.x + 10:
 				if Player.global_position.y < global_position.y - 10:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
 					direction.y = -1
 				elif Player.global_position.y > global_position.y + 10:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * speed.x
+					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
 					direction.y = 1
-#			if Player.global_position.x < global_position.x - 50:
-#				vel = position.direction_to(Player.position) * speed.x
-#			elif Player.global_position.x > global_position.x + 50:
-#				vel = position.direction_to(Player.position) * speed.x
-#			elif Player.global_position.y < global_position.y - 50:
-#				vel = position.direction_to(Player.position) * speed.y
-#			elif Player.global_position.y > global_position.y + 50:
-#				vel = position.direction_to(Player.position) * speed.y
 			else:
 				vel.x = 0
 				direction.x = 0
 				vel.y = 0
 				direction.y = 0
+			direction = direction.normalized()
 			vel.x = direction.x * 400
 			vel.y = direction.y * 400
 
