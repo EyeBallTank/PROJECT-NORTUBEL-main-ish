@@ -349,7 +349,7 @@ func _physics_process(delta):
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")
-	health -= 50
+	health -= 10
 	velocity.y -= 500
 
 func is_invul():

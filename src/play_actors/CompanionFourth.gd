@@ -212,6 +212,9 @@ func _physics_process(delta):
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = -1
 					direction.y = 1
+				else:
+					vel = position.direction_to(Player.position) * speed.x
+					direction.x = -1
 			elif Player.global_position.x > global_position.x + 20:
 				if Player.global_position.y < global_position.y - 20:
 					vel = position.direction_to(Player.position) * speed.x
@@ -223,6 +226,9 @@ func _physics_process(delta):
 					vel = position.direction_to(Player.position) * speed.y
 					direction.x = 1
 					direction.y = 1
+				else:
+					vel = position.direction_to(Player.position) * speed.x
+					direction.x = 1
 			else:
 				if Player.global_position.y < global_position.y - 20:
 					vel = position.direction_to(Player.position) * speed.x

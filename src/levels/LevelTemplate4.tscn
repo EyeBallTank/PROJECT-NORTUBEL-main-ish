@@ -56,7 +56,7 @@ tile_data = PoolIntArray( -720889, 0, 0, -720888, 0, 0, -720887, 0, 0, -720886, 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 8 )]
-position = Vector2( 614, 633 )
+position = Vector2( 2631.74, 180.781 )
 
 [node name="Water" parent="." instance=ExtResource( 6 )]
 position = Vector2( 6100.68, 223.765 )
@@ -68,7 +68,7 @@ position = Vector2( 6626.68, 224.765 )
 position = Vector2( 5582.68, 224.765 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5183.25, 522.447 )
+position = Vector2( 5214.2, 553.491 )
 
 [node name="Gong" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1583.89, 81.2755 )
@@ -77,4 +77,4 @@ position = Vector2( 1583.89, 81.2755 )
 position = Vector2( 680.128, -785.024 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4995.27, 514.177 )
+position = Vector2( 5026.22, 545.221 )

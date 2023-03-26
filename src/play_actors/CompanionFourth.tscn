@@ -74,7 +74,7 @@ extents = Vector2( 23, 30 )
 [node name="Companion" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 13
 collision_layer = 2
-collision_mask = 812
+collision_mask = 780
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
