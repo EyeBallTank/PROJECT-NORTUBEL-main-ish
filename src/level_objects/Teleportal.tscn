@@ -4,7 +4,7 @@
 [ext_resource path="res://src/level_objects/Teleportal.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 68, 67 )
+extents = Vector2( 64, 64 )
 
 [node name="Teleportal" type="Area2D" groups=["Teleportal"]]
 collision_layer = 4
@@ -12,7 +12,8 @@ collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.388252, 0.388252 )
+position = Vector2( 2.38419e-06, 1.54972e-06 )
+scale = Vector2( 0.365714, 0.366762 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

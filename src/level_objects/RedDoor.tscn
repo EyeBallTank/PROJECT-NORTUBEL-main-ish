@@ -4,10 +4,10 @@
 [ext_resource path="res://src/level_objects/RedDoor.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 71.5, 150.5 )
+extents = Vector2( 96, 160 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 74.5, 152.5 )
+extents = Vector2( 104, 168 )
 
 [node name="RedDoor" type="StaticBody2D"]
 collision_layer = 4
@@ -15,17 +15,16 @@ collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 1.01846, 1.01846 )
+position = Vector2( 4.76837e-06, 4.76837e-07 )
+scale = Vector2( 1.31507, 1.07023 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, -1.5 )
 shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -0.5, -1.5 )
 shape = SubResource( 2 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
