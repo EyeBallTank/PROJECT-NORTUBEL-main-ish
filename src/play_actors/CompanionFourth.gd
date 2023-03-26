@@ -59,8 +59,8 @@ onready var checkpointTween = $CheckpointTween
 
 func _ready():
 	healthBar.max_value = health
-	var playerspawn = get_parent().get_node("playerspawn")
-	last_checkpoint = playerspawn
+	var companionspawn = get_parent().get_node("companionspawn")
+	last_checkpoint = companionspawn
 
 func get_hurt():
 	$AnimationPlayer.play("CompHurt")
