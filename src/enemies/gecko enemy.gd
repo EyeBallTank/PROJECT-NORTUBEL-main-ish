@@ -18,9 +18,8 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	move_and_slide(velocity, Vector2.UP)
 
-
 func _on_GeckoHurtbox_area_entered(area):
-	if area.name == "PlayerMelee":
+	if area.name == "PlayerHitbox":
 		queue_free()
 
 func _on_GeckoHurtbox_body_entered(body):

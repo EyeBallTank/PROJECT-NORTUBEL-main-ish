@@ -57,8 +57,8 @@ onready var iceCheck = $IceCheck
 onready var slowCheck = $SlowCheck
 onready var ropeCheck = $RopeCheck
 onready var hurtbox = $Hurtbox
-onready var playermelee = $PlayerMelee
-onready var playermeleecollision = $PlayerMelee/CollisionShape2D
+onready var playerhitbox = $PlayerHitbox
+onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 onready var animatedsprite = $AnimatedSprite
 
 
@@ -67,7 +67,7 @@ onready var checkpointTween = $CheckpointTween
 
 func _ready():
 	$CollisionShape2D.disabled = false
-	playermeleecollision.disabled = true
+	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
 	var playerspawn = get_parent().get_node("playerspawn")
 	last_checkpoint = playerspawn
@@ -93,10 +93,10 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 150
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
-				playermeleecollision.position = Vector2(65, 2)
+				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
-				playermeleecollision.position = Vector2(-67, 2)
+				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
 				velocity.x = 0
 
@@ -172,10 +172,10 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 850
 			if Input.get_action_strength("right"):
 				animatedsprite.flip_h = false
-				playermeleecollision.position = Vector2(65, 2)
+				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				animatedsprite.flip_h = true
-				playermeleecollision.position = Vector2(-67, 2)
+				playerhitboxcollision.position = Vector2(-67, 2)
 			if abs(walk) < WALK_FORCE * 0.1:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 			else:
@@ -249,10 +249,10 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
-				playermeleecollision.position = Vector2(65, 2)
+				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
-				playermeleecollision.position = Vector2(-67, 2)
+				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
 				velocity.x = 0
 
@@ -397,10 +397,10 @@ func _physics_process(delta):
 				if hasball == true:
 					animatedsprite.flip_h = false
 					animatedsprite.animation = "Kickedtheball"
-					playermeleecollision.position = Vector2(65, 2)
+					playerhitboxcollision.position = Vector2(65, 2)
 					direction = 1
 					var soccerball = Ball.instance()
-					soccerball.global_position = playermeleecollision.global_position
+					soccerball.global_position = playerhitboxcollision.global_position
 					soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 					get_tree().get_root().add_child(soccerball)
 					hasball = false
@@ -413,10 +413,10 @@ func _physics_process(delta):
 				if hasball == true:
 					animatedsprite.flip_h = true
 					animatedsprite.animation = "Kickedtheball"
-					playermeleecollision.position = Vector2(-67, 2)
+					playerhitboxcollision.position = Vector2(-67, 2)
 					direction = -1
 					var soccerball = Ball.instance()
-					soccerball.global_position = playermeleecollision.global_position
+					soccerball.global_position = playerhitboxcollision.global_position
 					soccerball.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 					get_tree().get_root().add_child(soccerball)
 					hasball = false
@@ -435,13 +435,13 @@ func _physics_process(delta):
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 			animatedsprite.animation = "Abouttostab"
-			playermeleecollision.disabled = true
+			playerhitboxcollision.disabled = true
 			yield(get_tree().create_timer(0.1), "timeout")
-			playermeleecollision.disabled = false
+			playerhitboxcollision.disabled = false
 			animatedsprite.animation = "Stabtheknife"
 			yield(get_tree().create_timer(0.3), "timeout")
 			animatedsprite.animation = "Abouttostab"
-			playermeleecollision.disabled = true
+			playerhitboxcollision.disabled = true
 			state = MAINSTATE
 
 		DEATH:
