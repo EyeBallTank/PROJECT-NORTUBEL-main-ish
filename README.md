@@ -87,7 +87,6 @@ I may end up changing this goal list as well.
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
-* The Player's melee attack is broken as it rarely hurts the Gecko enemy.
 * The Player's AnimatedSprite scene is unable to play the "Pushing" animation when pushing the PushableCopy object.
 
 # Current controls/Inputs:

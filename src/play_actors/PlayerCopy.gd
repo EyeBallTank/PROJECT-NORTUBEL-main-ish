@@ -5,6 +5,7 @@ const FLOOR_NORMAL: = Vector2.UP
 
 var BALL_VELOCITY = 1500.0
 const Ball = preload("res://src/level_objects/SoccerBall.tscn")
+const PlayerMelee = preload("res://src/behind_the_scenes/PlayerMelee.tscn")
 
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
@@ -100,10 +101,10 @@ func _physics_process(delta):
 			else:
 				velocity.x = 0
 
-			if Input.get_action_strength("right") and is_on_floor() and not pushcheck():
+			if Input.get_action_strength("right") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor() and not pushcheck():
+			elif Input.get_action_strength("left") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -182,10 +183,10 @@ func _physics_process(delta):
 				velocity.x += walk * delta
 			velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 
-			if Input.get_action_strength("right") and is_on_floor() and not pushcheck():
+			if Input.get_action_strength("right") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor() and not pushcheck():
+			elif Input.get_action_strength("left") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -257,10 +258,10 @@ func _physics_process(delta):
 				velocity.x = 0
 
 
-			if Input.get_action_strength("right") and is_on_floor() and not pushcheck():
+			if Input.get_action_strength("right") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor() and not pushcheck():
+			elif Input.get_action_strength("left") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -383,6 +384,7 @@ func _physics_process(delta):
 			
 			if not is_on_water():
 				state = MAINSTATE
+
 		KICKBALL:
 			if hasball == true:
 				animatedsprite.animation = "Abouttokick"
@@ -441,6 +443,9 @@ func _physics_process(delta):
 			playerhitboxcollision.disabled = false
 			playerhitbox.set_monitorable(true)
 			animatedsprite.animation = "Stabtheknife"
+			var melee = PlayerMelee.instance()
+			melee.global_position = playerhitboxcollision.global_position
+			get_tree().get_root().add_child(melee)
 			yield(get_tree().create_timer(0.3), "timeout")
 			animatedsprite.animation = "Abouttostab"
 			playerhitboxcollision.disabled = true
@@ -527,11 +532,12 @@ func pushcheck():
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
-			collision.collider.slide(-collision.normal * (WALK_MAX_SPEED / 2) )
+			collision.collider.slide(-collision.normal * (PUSH_SPEED / 2) )
 #			animatedsprite.animation = "Pushing"
 		else:
 			return false
 	return true
+	
 
 func _on_RopeCheck_area_entered(area):
 	if area.is_in_group("Hook"):
