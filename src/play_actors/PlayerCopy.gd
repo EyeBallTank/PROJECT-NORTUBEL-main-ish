@@ -446,7 +446,7 @@ func _physics_process(delta):
 			var melee = PlayerMelee.instance()
 			melee.global_position = playerhitboxcollision.global_position
 			get_tree().get_root().add_child(melee)
-			yield(get_tree().create_timer(0.3), "timeout")
+			yield(get_tree().create_timer(0.1), "timeout")
 			animatedsprite.animation = "Abouttostab"
 			playerhitboxcollision.disabled = true
 			playerhitbox.set_monitorable(false)
@@ -468,9 +468,12 @@ func _physics_process(delta):
 
 		SADNESS:
 			pass
+#The purpose of "sad" states is to activate these when the other character dies
+#The idea being that one character would be sad if the other dies and also an excuse to "deactivate" both characters when a life is lost
+#Specially before respawn
 
 		HURT:
-			pass
+			animatedsprite.animation = "Hurt"
 
 		PUSH:
 			pass
@@ -569,3 +572,39 @@ func go_to_checkpoint():
 	show()
 	animatedsprite.animation = "Jumpgoesdown"
 	$AnimationPlayer.play("playerhurt")
+
+#ANIMATIONPLAYER ANIMATION NAMES
+#Abouttokick DONE
+#Abouttostab DONE
+#Climbidle DONE
+#Climbing DONE
+#Dead DONE
+#Hurt NOTYET
+#Iceslide DONE
+#Idle DONE
+#Jumpgoesup DONE
+#Kickedtheball DONE
+#Pushing NOTYET
+#Ropeattach DONE
+#Running DONE
+#Stabtheknife DONE
+#Swimidle DONE
+#Swimming DONE
+#Jumpgoesdown DONE
+
+#AND THIS IS FOR COMP4
+#Idle
+#Jumpgoesup
+#Jumpgoesdown
+#Hurt
+#Dead
+#Climbing
+#Climbidle
+#Running
+#Iceslide
+#Pushing
+#Swimming
+#Swimidle
+#Crawlidle
+#Crawlling
+
