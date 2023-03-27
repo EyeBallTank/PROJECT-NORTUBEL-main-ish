@@ -28,6 +28,7 @@ enum {
 	HURT,
 	DEATH,
 	SLOW,
+	PUSH,
 	ICE,
 	SADNESS
 }
@@ -80,6 +81,7 @@ func _physics_process(delta):
 	match state:
 		SLOW:
 			pushcheck()
+
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
 
@@ -91,14 +93,21 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 150
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
-				animatedsprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
-				animatedsprite.flip_h = true
 				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
 				velocity.x = 0
+
+			if Input.get_action_strength("right") and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif Input.get_action_strength("left") and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
 
 			velocity.y += gravity * delta
 
@@ -108,7 +117,20 @@ func _physics_process(delta):
 				if Input.is_action_just_pressed("jumpup"):
 					state = MAINSTATE
 					velocity.y = -JUMP_SPEED
-			#Copied code from below to the PUSH state
+
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+
 			if Input.is_action_just_pressed("jumpup"):
 				jump_buffer_counter = jump_buffer_time
 
@@ -159,12 +181,34 @@ func _physics_process(delta):
 			else:
 				velocity.x += walk * delta
 			velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
-			
+
+			if Input.get_action_strength("right") and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif Input.get_action_strength("left") and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Iceslide"
+
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
+
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
 
 			if Input.is_action_just_pressed("jumpup"):
 				jump_buffer_counter = jump_buffer_time
@@ -191,7 +235,16 @@ func _physics_process(delta):
 					pass
 
 		MAINSTATE:
-			pushcheck()
+			if pushcheck():
+				if Input.get_action_strength("right") and is_on_floor():
+					animatedsprite.animation = "Pushing"
+					animatedsprite.flip_h = false
+				elif Input.get_action_strength("left") and is_on_floor():
+					animatedsprite.animation = "Pushing"
+					animatedsprite.flip_h = false
+			else:
+				pass
+
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
 
@@ -304,6 +357,7 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = MAINSTATE
 		ROPE:
+			animatedsprite.animation = "Ropeattach"
 			global_position = rope_part.global_position
 			global_rotation = rope_part.global_rotation
 			if Input.is_action_just_pressed("jumpup"):
@@ -316,16 +370,21 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 				velocity.y = 0
+				animatedsprite.animation = "Swimming"
 				animatedsprite.flip_h = false
 			elif Input.get_action_strength("left"):
 				velocity.x = -PUSH_SPEED
 				velocity.y = 0
+				animatedsprite.animation = "Swimming"
 				animatedsprite.flip_h = true
 			elif Input.get_action_strength("jumpup"):
 				velocity.y = -PUSH_SPEED
+				animatedsprite.animation = "Swimming"
 			elif Input.get_action_strength("down"):
 				velocity.y = PUSH_SPEED
+				animatedsprite.animation = "Swimming"
 			else:
+				animatedsprite.animation = "Swimidle"
 				velocity.x = 0
 				velocity.y = 100
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
@@ -409,6 +468,9 @@ func _physics_process(delta):
 			pass
 
 		HURT:
+			pass
+
+		PUSH:
 			pass
 
 func get_hurt():

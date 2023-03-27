@@ -215,12 +215,12 @@ animations = [ {
 "frames": [ SubResource( 29 ), SubResource( 30 ) ],
 "loop": true,
 "name": "Swimidle",
-"speed": 2.0
+"speed": 3.0
 }, {
 "frames": [ SubResource( 31 ), SubResource( 32 ) ],
 "loop": true,
 "name": "Swimming",
-"speed": 2.0
+"speed": 3.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -264,7 +264,7 @@ extents = Vector2( 6.625, 30.75 )
 extents = Vector2( 27, 123 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 36, 39 )
+extents = Vector2( 36, 120.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 27, 123 )
@@ -374,7 +374,7 @@ collision_mask = 32
 monitoring = false
 
 [node name="HitboxPlayer" type="CollisionShape2D" parent="PlayerHitbox"]
-position = Vector2( 65, 2 )
+position = Vector2( 66, -0.5 )
 shape = SubResource( 5 )
 disabled = true
 
