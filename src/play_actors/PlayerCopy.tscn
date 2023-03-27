@@ -155,7 +155,7 @@ animations = [ {
 "frames": [ SubResource( 11 ), SubResource( 12 ) ],
 "loop": true,
 "name": "Climbing",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [ SubResource( 13 ) ],
 "loop": true,

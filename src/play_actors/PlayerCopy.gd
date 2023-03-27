@@ -91,11 +91,11 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 150
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
-				$Sprite.flip_h = false
+				animatedsprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
-				$Sprite.flip_h = true
+				animatedsprite.flip_h = true
 				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
 				velocity.x = 0
@@ -149,10 +149,10 @@ func _physics_process(delta):
 			var walk = WALK_FORCE * (Input.get_action_strength("right") - Input.get_action_strength("left"))
 			WALK_MAX_SPEED = 850
 			if Input.get_action_strength("right"):
-				$Sprite.flip_h = false
+				animatedsprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
-				$Sprite.flip_h = true
+				animatedsprite.flip_h = true
 				playerhitboxcollision.position = Vector2(-67, 2)
 			if abs(walk) < WALK_FORCE * 0.1:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
@@ -283,15 +283,22 @@ func _physics_process(delta):
 			PUSH_SPEED = 350
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
+				animatedsprite.animation = "Climbing"
+				animatedsprite.flip_h = false
 			elif Input.get_action_strength("left"):
 				velocity.x = -PUSH_SPEED
+				animatedsprite.animation = "Climbing"
+				animatedsprite.flip_h = true
 			elif Input.get_action_strength("jumpup"):
 				velocity.y = -PUSH_SPEED
+				animatedsprite.animation = "Climbing"
 			elif Input.get_action_strength("down"):
 				velocity.y = PUSH_SPEED
+				animatedsprite.animation = "Climbing"
 			else:
 				velocity.x = 0
 				velocity.y = 0
+				animatedsprite.animation = "Climbidle"
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 			if not is_on_ladder():
@@ -309,11 +316,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
 				velocity.y = 0
-				$Sprite.flip_h = false
+				animatedsprite.flip_h = false
 			elif Input.get_action_strength("left"):
 				velocity.x = -PUSH_SPEED
 				velocity.y = 0
-				$Sprite.flip_h = true
+				animatedsprite.flip_h = true
 			elif Input.get_action_strength("jumpup"):
 				velocity.y = -PUSH_SPEED
 			elif Input.get_action_strength("down"):
@@ -394,7 +401,7 @@ func _physics_process(delta):
 #			die()
 			yield(get_tree().create_timer(0.4), "timeout")
 			$AnimationPlayer.stop(true)
-			$Sprite.set_modulate(00000000)
+			animatedsprite.set_modulate(00000000)
 			go_to_checkpoint()
 
 
@@ -492,5 +499,5 @@ func go_to_checkpoint():
 	health = 100
 	yield(get_tree().create_timer(0.4), "timeout")
 	hurtbox.set_monitoring(true)
-	$Sprite.set_modulate(00000000)
+	animatedsprite.set_modulate(00000000)
 	$AnimationPlayer.play("playerhurt")
