@@ -50,6 +50,11 @@ flags = 4
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 465, 465 )
 
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 930, 0, 465, 465 )
+
 [sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 4 )
@@ -130,11 +135,6 @@ flags = 4
 atlas = ExtResource( 4 )
 region = Rect2( 5580, 465, 465, 465 )
 
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 4 )
-region = Rect2( 930, 0, 465, 465 )
-
 [sub_resource type="SpriteFrames" id=34]
 animations = [ {
 "frames": [ SubResource( 8 ) ],
@@ -177,6 +177,11 @@ animations = [ {
 "name": "Idle",
 "speed": 5.0
 }, {
+"frames": [ SubResource( 33 ) ],
+"loop": true,
+"name": "Jumpgoesdown",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 17 ) ],
 "loop": true,
 "name": "Jumpgoesup",
@@ -216,11 +221,6 @@ animations = [ {
 "loop": true,
 "name": "Swimming",
 "speed": 2.0
-}, {
-"frames": [ SubResource( 33 ) ],
-"loop": true,
-"name": "jumpgoesdown",
-"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -284,8 +284,7 @@ texture = ExtResource( 1 )
 position = Vector2( 0, -165 )
 scale = Vector2( 0.719999, 0.719999 )
 frames = SubResource( 34 )
-animation = "Swimidle"
-frame = 1
+animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

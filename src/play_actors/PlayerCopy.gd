@@ -25,6 +25,7 @@ enum {
 	ROPE,
 	KICKBALL,
 #	KNIFE
+	HURT,
 	DEATH,
 	SLOW,
 	ICE,
@@ -57,6 +58,7 @@ onready var ropeCheck = $RopeCheck
 onready var hurtbox = $Hurtbox
 onready var playerhitbox = $PlayerHitbox
 onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
+onready var animatedsprite = $AnimatedSprite
 
 
 var last_checkpoint: Area2D = null
@@ -202,15 +204,23 @@ func _physics_process(delta):
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
-				$Sprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
-				$Sprite.flip_h = true
 				playerhitboxcollision.position = Vector2(-67, 2)
 			else:
-#				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 				velocity.x = 0
+
+
+			if Input.get_action_strength("right") and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif Input.get_action_strength("left") and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
+
 
 	#if velocity.x < WALK_FORCE * 0.1:
 		# The velocity, slowed down a bit, and then reassigned.
@@ -229,6 +239,20 @@ func _physics_process(delta):
 	# Check for jumping. is_on_floor() must be called after movement code.
 			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
+
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+
 			#This is where i copy code from a video/page by Dicode1q
 			if Input.is_action_just_pressed("jumpup"):
 				jump_buffer_counter = jump_buffer_time
@@ -236,6 +260,7 @@ func _physics_process(delta):
 			if Input.is_action_just_released("jumpup"):
 				if velocity.y < 0:
 					velocity.y += 500
+
 				
 			if jump_buffer_counter > 0:
 				jump_buffer_counter -= 1
@@ -350,6 +375,9 @@ func _physics_process(delta):
 
 
 		SADNESS:
+			pass
+
+		HURT:
 			pass
 
 func get_hurt():
