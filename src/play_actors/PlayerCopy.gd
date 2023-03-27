@@ -436,12 +436,15 @@ func _physics_process(delta):
 
 			animatedsprite.animation = "Abouttostab"
 			playerhitboxcollision.disabled = true
+			playerhitbox.set_monitorable(false)
 			yield(get_tree().create_timer(0.1), "timeout")
 			playerhitboxcollision.disabled = false
+			playerhitbox.set_monitorable(true)
 			animatedsprite.animation = "Stabtheknife"
 			yield(get_tree().create_timer(0.3), "timeout")
 			animatedsprite.animation = "Abouttostab"
 			playerhitboxcollision.disabled = true
+			playerhitbox.set_monitorable(false)
 			state = MAINSTATE
 
 		DEATH:
