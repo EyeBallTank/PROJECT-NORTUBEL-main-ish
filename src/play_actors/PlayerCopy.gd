@@ -24,7 +24,7 @@ enum {
 	SWIM,
 	ROPE,
 	KICKBALL,
-#	KNIFE
+	KNIFE,
 	HURT,
 	DEATH,
 	SLOW,
@@ -81,7 +81,7 @@ func _physics_process(delta):
 		SLOW:
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
-				knife_attack()
+				state = KNIFE
 
 			if Input.is_action_just_pressed("kickball"):
 				if hasball == true:
@@ -138,7 +138,7 @@ func _physics_process(delta):
 		ICE:
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
-				knife_attack()
+				state = KNIFE
 
 			if Input.is_action_just_pressed("kickball"):
 				if hasball == true:
@@ -193,7 +193,7 @@ func _physics_process(delta):
 		MAINSTATE:
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
-				knife_attack()
+				state = KNIFE
 
 			if Input.is_action_just_pressed("kickball"):
 				if hasball == true:
@@ -371,6 +371,21 @@ func _physics_process(delta):
 				state = MAINSTATE
 				animatedsprite.animation = "Idle"
 
+		KNIFE:
+			velocity.x = 0
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			animatedsprite.animation = "Abouttostab"
+			playerhitboxcollision.disabled = true
+			yield(get_tree().create_timer(0.1), "timeout")
+			playerhitboxcollision.disabled = false
+			animatedsprite.animation = "Stabtheknife"
+			yield(get_tree().create_timer(0.3), "timeout")
+			playerhitboxcollision.disabled = true
+			animatedsprite.animation = "Abouttostab"
+			state = MAINSTATE
+
 		DEATH:
 			velocity.x = 0
 			velocity.y += gravity * delta
@@ -407,12 +422,12 @@ func is_invul():
 #	queue_free()
 #	get_tree().reload_current_scene()
 
-func knife_attack():
-	playerhitboxcollision.disabled = true
-	yield(get_tree().create_timer(0.1), "timeout")
-	playerhitboxcollision.disabled = false
-	yield(get_tree().create_timer(0.3), "timeout")
-	playerhitboxcollision.disabled = true
+#func knife_attack():
+#	playerhitboxcollision.disabled = true
+#	yield(get_tree().create_timer(0.1), "timeout")
+#	playerhitboxcollision.disabled = false
+#	yield(get_tree().create_timer(0.3), "timeout")
+#	playerhitboxcollision.disabled = true
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
