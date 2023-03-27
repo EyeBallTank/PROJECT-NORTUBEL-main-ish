@@ -440,8 +440,8 @@ func _physics_process(delta):
 			playerhitboxcollision.disabled = false
 			animatedsprite.animation = "Stabtheknife"
 			yield(get_tree().create_timer(0.3), "timeout")
-			playerhitboxcollision.disabled = true
 			animatedsprite.animation = "Abouttostab"
+			playerhitboxcollision.disabled = true
 			state = MAINSTATE
 
 		DEATH:
@@ -453,7 +453,7 @@ func _physics_process(delta):
 #			die()
 			yield(get_tree().create_timer(0.4), "timeout")
 			$AnimationPlayer.stop(true)
-			animatedsprite.set_modulate(00000000)
+#			animatedsprite.set_modulate(00000000)
 			go_to_checkpoint()
 
 
@@ -555,6 +555,6 @@ func go_to_checkpoint():
 	health = 100
 	yield(get_tree().create_timer(0.4), "timeout")
 	hurtbox.set_monitoring(true)
-	animatedsprite.set_modulate(00000000)
+#	animatedsprite.set_modulate(00000000)
 	animatedsprite.animation = "Idle"
 	$AnimationPlayer.play("playerhurt")
