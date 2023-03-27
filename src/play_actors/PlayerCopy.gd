@@ -326,7 +326,10 @@ func _physics_process(delta):
 			if not is_on_water():
 				state = MAINSTATE
 		KICKBALL:
-			animatedsprite.animation = "Abouttokick"
+			if hasball == true:
+				animatedsprite.animation = "Abouttokick"
+			elif hasball == false:
+				animatedsprite.animation = "Kickedtheball"
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
