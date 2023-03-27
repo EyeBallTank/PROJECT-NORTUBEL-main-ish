@@ -326,6 +326,7 @@ func _physics_process(delta):
 			if not is_on_water():
 				state = MAINSTATE
 		KICKBALL:
+			animatedsprite.animation = "Abouttokick"
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
@@ -333,7 +334,8 @@ func _physics_process(delta):
 			var direction = Input.get_axis("left", "right")
 			if Input.is_action_just_pressed("right"):
 				if hasball == true:
-					$Sprite.flip_h = false
+					animatedsprite.flip_h = false
+					animatedsprite.animation = "Kickedtheball"
 					playerhitboxcollision.position = Vector2(65, 2)
 					direction = 1
 					var soccerball = Ball.instance()
@@ -343,11 +345,13 @@ func _physics_process(delta):
 					hasball = false
 					yield(get_tree().create_timer(0.5), "timeout")
 					state = MAINSTATE
+					animatedsprite.animation = "Idle"
 				else:
 					pass
 			elif Input.is_action_just_pressed("left"):
 				if hasball == true:
-					$Sprite.flip_h = true
+					animatedsprite.flip_h = true
+					animatedsprite.animation = "Kickedtheball"
 					playerhitboxcollision.position = Vector2(-67, 2)
 					direction = -1
 					var soccerball = Ball.instance()
@@ -357,10 +361,12 @@ func _physics_process(delta):
 					hasball = false
 					yield(get_tree().create_timer(0.5), "timeout")
 					state = MAINSTATE
+					animatedsprite.animation = "Idle"
 				else:
 					pass
 			if Input.get_action_strength("down"):
 				state = MAINSTATE
+				animatedsprite.animation = "Idle"
 
 		DEATH:
 			velocity.x = 0
