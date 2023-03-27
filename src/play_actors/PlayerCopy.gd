@@ -454,6 +454,7 @@ func _physics_process(delta):
 			yield(get_tree().create_timer(0.4), "timeout")
 			$AnimationPlayer.stop(true)
 #			animatedsprite.set_modulate(00000000)
+			hide()
 			go_to_checkpoint()
 
 
@@ -468,7 +469,7 @@ func _physics_process(delta):
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")
-	health -= 10
+	health -= 50
 	velocity.y -= 500
 
 func is_invul():
@@ -553,8 +554,9 @@ func go_to_checkpoint():
 #	yield(get_tree().create_timer(0.4), "timeout")
 	state = MAINSTATE
 	health = 100
-	yield(get_tree().create_timer(0.4), "timeout")
+	yield(get_tree().create_timer(0.6), "timeout")
 	hurtbox.set_monitoring(true)
 #	animatedsprite.set_modulate(00000000)
-	animatedsprite.animation = "Idle"
+	show()
+	animatedsprite.animation = "Jumpgoesdown"
 	$AnimationPlayer.play("playerhurt")
