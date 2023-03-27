@@ -27,7 +27,8 @@ enum {
 #	KNIFE
 	DEATH,
 	SLOW,
-	ICE
+	ICE,
+	SADNESS
 }
 
 var state = MAINSTATE
@@ -346,6 +347,10 @@ func _physics_process(delta):
 			$AnimationPlayer.stop(true)
 			$Sprite.set_modulate(00000000)
 			go_to_checkpoint()
+
+
+		SADNESS:
+			pass
 
 func get_hurt():
 	$AnimationPlayer.play("playerhurt")

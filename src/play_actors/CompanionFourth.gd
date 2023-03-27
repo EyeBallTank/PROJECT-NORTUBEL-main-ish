@@ -24,7 +24,8 @@ enum {
 	SWIMIDLE,
 	SWIMMING,
 	SWIMRUN,
-	RUNAWAY
+	RUNAWAY,
+	SADNESS
 }
 
 var state = STANDSTILL
@@ -655,6 +656,8 @@ func _physics_process(delta):
 			$Sprite.set_modulate(00000000)
 			go_to_checkpoint()
 
+		SADNESS:
+			pass
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
