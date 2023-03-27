@@ -100,10 +100,10 @@ func _physics_process(delta):
 			else:
 				velocity.x = 0
 
-			if Input.get_action_strength("right") and is_on_floor():
+			if Input.get_action_strength("right") and is_on_floor() and not pushcheck():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor():
+			elif Input.get_action_strength("left") and is_on_floor() and not pushcheck():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -182,10 +182,10 @@ func _physics_process(delta):
 				velocity.x += walk * delta
 			velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 
-			if Input.get_action_strength("right") and is_on_floor():
+			if Input.get_action_strength("right") and is_on_floor() and not pushcheck():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor():
+			elif Input.get_action_strength("left") and is_on_floor() and not pushcheck():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -235,15 +235,7 @@ func _physics_process(delta):
 					pass
 
 		MAINSTATE:
-			if pushcheck():
-				if Input.get_action_strength("right") and is_on_floor():
-					animatedsprite.animation = "Pushing"
-					animatedsprite.flip_h = false
-				elif Input.get_action_strength("left") and is_on_floor():
-					animatedsprite.animation = "Pushing"
-					animatedsprite.flip_h = false
-			else:
-				pass
+			pushcheck()
 
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
@@ -265,10 +257,10 @@ func _physics_process(delta):
 				velocity.x = 0
 
 
-			if Input.get_action_strength("right") and is_on_floor():
+			if Input.get_action_strength("right") and is_on_floor() and not pushcheck():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor():
+			elif Input.get_action_strength("left") and is_on_floor() and not pushcheck():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -453,6 +445,7 @@ func _physics_process(delta):
 			state = MAINSTATE
 
 		DEATH:
+			animatedsprite.animation = "Dead"
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
@@ -531,6 +524,7 @@ func pushcheck():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
 			collision.collider.slide(-collision.normal * (WALK_MAX_SPEED / 2) )
+#			animatedsprite.animation = "Pushing"
 		else:
 			return false
 	return true
@@ -562,4 +556,5 @@ func go_to_checkpoint():
 	yield(get_tree().create_timer(0.4), "timeout")
 	hurtbox.set_monitoring(true)
 	animatedsprite.set_modulate(00000000)
+	animatedsprite.animation = "Idle"
 	$AnimationPlayer.play("playerhurt")
