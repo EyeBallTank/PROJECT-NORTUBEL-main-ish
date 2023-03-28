@@ -376,7 +376,6 @@ monitorable = false
 [node name="HurtboxPlayer" type="CollisionShape2D" parent="Hurtbox"]
 position = Vector2( -2, -123 )
 shape = SubResource( 4 )
-disabled = true
 
 [node name="PlayerHitbox" type="Area2D" parent="."]
 position = Vector2( 0, -122 )

@@ -58,6 +58,7 @@ onready var iceCheck = $IceCheck
 onready var slowCheck = $SlowCheck
 onready var ropeCheck = $RopeCheck
 onready var hurtbox = $Hurtbox
+onready var hurtboxcollision = $Hurtbox/HurtboxPlayer
 onready var playerhitbox = $PlayerHitbox
 onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 onready var animatedsprite = $AnimatedSprite
@@ -475,10 +476,15 @@ func _physics_process(delta):
 		HURT:
 			animatedsprite.animation = "Hurt"
 			$AnimationPlayer.play("playerhurt")
-			health -= 50
-			velocity.y -= 500
+			hurtbox.set_monitoring(false)
+			hurtboxcollision.disabled = true
+			health -= 10
+			velocity.y -= 200
 			yield(get_tree().create_timer(0.2), "timeout")
 			state = MAINSTATE
+			yield(get_tree().create_timer(0.2), "timeout")
+			hurtbox.set_monitoring(true)
+			hurtboxcollision.disabled = false
 
 		PUSH:
 			pass

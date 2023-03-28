@@ -87,6 +87,7 @@ I may end up changing this goal list as well.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 * The Player's AnimatedSprite scene is unable to play the "Pushing" animation when pushing the PushableCopy object.
+* The Player's new "Hurt" animation from AnimatedSprite is also messy.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
