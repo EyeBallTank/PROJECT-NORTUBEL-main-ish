@@ -60,7 +60,6 @@ tile_data = PoolIntArray( 131218, 0, 0, 131219, 0, 0, 131220, 0, 0, 131221, 0, 0
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 11079, 127 )
-new_scene = "res://src/levels/LevelTemplate3.tscn"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
