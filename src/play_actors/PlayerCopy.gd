@@ -268,6 +268,15 @@ func _physics_process(delta):
 			else:
 				animatedsprite.animation = "Idle"
 
+#
+#			if Input.get_action_strength("right") and is_on_floor() and is_pushing == true:
+#				animatedsprite.animation = "Pushing"
+#				animatedsprite.flip_h = false
+#			elif Input.get_action_strength("left") and is_on_floor() and is_pushing == true:
+#				animatedsprite.animation = "Pushing"
+#				animatedsprite.flip_h = true
+#			else:
+#				animatedsprite.animation = "Idle"
 
 	#if velocity.x < WALK_FORCE * 0.1:
 		# The velocity, slowed down a bit, and then reassigned.
@@ -475,25 +484,30 @@ func _physics_process(delta):
 
 		HURT:
 #			pass
-			health -= 1
-#			velocity.y -= 90
-			animatedsprite.animation = "Hurt"
+			
+			
+#			yield(get_tree().create_timer(0.1), "timeout")
 			$AnimationPlayer.play("playerhurt")
-			hurtbox.set_deferred("monitorable", false)
-			hurtboxcollision.disabled = true
-			yield(get_tree().create_timer(0.4), "timeout")
+			animatedsprite.animation = "Hurt"
+			health -= 1
+			velocity.y -= 90
+#			hurtbox.set_deferred("monitorable", false)
+#			hurtboxcollision.disabled = true
+			yield(get_tree().create_timer(0.1), "timeout")
+			animatedsprite.animation = "Hurt"
 			state = MAINSTATE
 			yield(get_tree().create_timer(0.2), "timeout")
-			hurtbox.set_deferred("monitorable", true)
-			hurtboxcollision.disabled = false
+#			hurtbox.set_deferred("monitorable", true)
+#			hurtboxcollision.disabled = false
 
 		PUSH:
 			pass
 
-func get_hurt():
-	hurtbox.set_deferred("monitorable", false)
-	hurtboxcollision.disabled = true
-	state = HURT
+#func get_hurt():
+	
+#	hurtbox.set_deferred("monitorable", false)
+#	hurtboxcollision.disabled = true
+#	state = HURT
 #	$AnimationPlayer.play("playerhurt")
 #	animatedsprite.animation = "Hurt"
 #	health -= 20
@@ -545,15 +559,17 @@ func is_on_slow():
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
-		get_hurt()
+		state = HURT
 
 func pushcheck():
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
 			collision.collider.slide(-collision.normal * (PUSH_SPEED / 2) )
-			animatedsprite.animation = "Pushing"
+#			is_pushing = true
+#			animatedsprite.animation = "Pushing"
 		else:
+#			is_pushing = false
 			return false
 	return true
 
