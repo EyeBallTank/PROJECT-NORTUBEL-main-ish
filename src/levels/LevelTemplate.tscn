@@ -104,10 +104,10 @@ position = Vector2( 3168, 435 )
 position = Vector2( 4410, -631 )
 
 [node name="IceFloor" parent="." instance=ExtResource( 15 )]
-position = Vector2( 5720, 645 )
+position = Vector2( 5123, 645 )
 
 [node name="IceFloor2" parent="." instance=ExtResource( 15 )]
-position = Vector2( 6251, 656 )
+position = Vector2( 5654, 656 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 16 )]
 position = Vector2( 10910, 289 )
