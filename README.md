@@ -21,7 +21,7 @@ In general, it's based on a personal project where i thought of a bunch of chara
 Done (Even if it could be better):
 * MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
 * CHECKPOINT SYSTEM: It works on both characters; It essentially "drags" a character to the right spot. Had to create "spawn" scenes as well so the characters have somewhere else to respawn when it's not a checkpoint.
-* SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens.
+* SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens; The end level Door also has an export var for the next level instead of using a specific script.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
 * COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement and only jump if they're under the Player's Y axis; If they're close enough to the Player, they can simply stop; Their running speed is slower than the Player's.
 * COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
@@ -82,7 +82,6 @@ I may end up changing this goal list as well.
 # Definitely need to change/improve:
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer node in each level, so i need to make this as an actual recurring game scene.
 * The Pause Menu shows up ABOVE the SceneManager's animation but it doesn't pause the animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
-* The Scene Changing method is still not "universal" enough: Look at the endlevel Doors and how they have specific code changes in each level, meaning a better method is needed.
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
