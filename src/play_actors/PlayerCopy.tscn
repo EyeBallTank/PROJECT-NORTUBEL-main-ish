@@ -228,33 +228,45 @@ extents = Vector2( 25.5, 122 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
-
-[sub_resource type="Animation" id=3]
-resource_name = "playerhurt"
-length = 1.6
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/path = NodePath("AnimatedSprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8, 1.2, 1.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 0, 0, 1 ), Color( 1, 0, 0, 0 ), Color( 1, 0, 0, 1 ), Color( 1, 0, 0, 0 ), Color( 1, 0, 0, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "playerhurt"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Hurtbox/HurtboxPlayer:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Hurtbox/HurtboxPlayer:disabled")
+tracks/1/path = NodePath("AnimatedSprite:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ true, false ]
+"times": PoolRealArray( 0, 0.4, 0.8, 1.2, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=6]
@@ -288,7 +300,6 @@ animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( -1.5, -123 )
 shape = SubResource( 1 )
 
@@ -299,7 +310,6 @@ zoom = Vector2( 2.6, 2.6 )
 smoothing_enabled = true
 
 [node name="HealthbarPlayer" parent="." instance=ExtResource( 3 )]
-visible = false
 margin_left = -126.0
 margin_top = -318.0
 margin_right = 125.0
@@ -360,13 +370,13 @@ position = Vector2( -0.375, 30 )
 shape = SubResource( 6 )
 
 [node name="Hurtbox" type="Area2D" parent="."]
-visible = false
 collision_mask = 32
 monitorable = false
 
 [node name="HurtboxPlayer" type="CollisionShape2D" parent="Hurtbox"]
 position = Vector2( -2, -123 )
 shape = SubResource( 4 )
+disabled = true
 
 [node name="PlayerHitbox" type="Area2D" parent="."]
 position = Vector2( 0, -122 )

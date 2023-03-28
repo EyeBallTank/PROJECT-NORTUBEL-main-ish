@@ -474,14 +474,20 @@ func _physics_process(delta):
 
 		HURT:
 			animatedsprite.animation = "Hurt"
+			$AnimationPlayer.play("playerhurt")
+			health -= 50
+			velocity.y -= 500
+			yield(get_tree().create_timer(0.2), "timeout")
+			state = MAINSTATE
 
 		PUSH:
 			pass
 
 func get_hurt():
-	$AnimationPlayer.play("playerhurt")
-	health -= 50
-	velocity.y -= 500
+	state = HURT
+#	$AnimationPlayer.play("playerhurt")
+#	health -= 50
+#	velocity.y -= 500
 
 func is_invul():
 	print("does it work")
