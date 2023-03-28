@@ -484,10 +484,8 @@ func _physics_process(delta):
 
 		HURT:
 #			pass
-			
-			
 #			yield(get_tree().create_timer(0.1), "timeout")
-			$AnimationPlayer.play("playerhurt")
+			$AnimationPlayer.play("playerhurt") 
 			animatedsprite.animation = "Hurt"
 			health -= 1
 			velocity.y -= 90
@@ -496,7 +494,7 @@ func _physics_process(delta):
 			yield(get_tree().create_timer(0.1), "timeout")
 			animatedsprite.animation = "Hurt"
 			state = MAINSTATE
-			yield(get_tree().create_timer(0.2), "timeout")
+#			yield(get_tree().create_timer(0.2), "timeout")
 #			hurtbox.set_deferred("monitorable", true)
 #			hurtboxcollision.disabled = false
 
@@ -519,19 +517,6 @@ func is_invul():
 	yield(get_tree().create_timer(10), "timeout")
 	print("hope it did")
 	hurtbox.set_monitoring(true)
-
-#func die():
-	
-#	Signals.emit_signal("player_died")
-#	queue_free()
-#	get_tree().reload_current_scene()
-
-#func knife_attack():
-#	playerhitboxcollision.disabled = true
-#	yield(get_tree().create_timer(0.1), "timeout")
-#	playerhitboxcollision.disabled = false
-#	yield(get_tree().create_timer(0.3), "timeout")
-#	playerhitboxcollision.disabled = true
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
