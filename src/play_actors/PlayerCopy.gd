@@ -43,7 +43,7 @@ var hasball = false
 
 var rope_part = null
 var portal_id = 0
-var is_pushing = false
+#var is_pushing = false
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
@@ -101,10 +101,10 @@ func _physics_process(delta):
 			else:
 				velocity.x = 0
 
-			if Input.get_action_strength("right") and is_on_floor() and is_pushing == false:
+			if Input.get_action_strength("right") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor() and is_pushing == false:
+			elif Input.get_action_strength("left") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -258,10 +258,10 @@ func _physics_process(delta):
 				velocity.x = 0
 
 
-			if Input.get_action_strength("right") and is_on_floor() and is_pushing == false:
+			if Input.get_action_strength("right") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor()  and is_pushing == false:
+			elif Input.get_action_strength("left") and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -536,11 +536,9 @@ func pushcheck():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
 			collision.collider.slide(-collision.normal * (PUSH_SPEED / 2) )
-			is_pushing = true
 #			animatedsprite.animation = "Pushing"
 		else:
 			return false
-			is_pushing = false
 	return true
 	
 
