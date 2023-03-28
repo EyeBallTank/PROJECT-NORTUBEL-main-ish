@@ -540,7 +540,6 @@ func pushcheck():
 		else:
 			return false
 	return true
-	
 
 func _on_RopeCheck_area_entered(area):
 	if area.is_in_group("Hook"):
