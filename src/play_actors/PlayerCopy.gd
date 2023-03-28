@@ -474,26 +474,28 @@ func _physics_process(delta):
 #Specially before respawn
 
 		HURT:
-			animatedsprite.animation = "Hurt"
-			$AnimationPlayer.play("playerhurt")
-			hurtbox.set_monitoring(false)
-			hurtboxcollision.disabled = true
-			health -= 10
-			velocity.y -= 200
-			yield(get_tree().create_timer(0.2), "timeout")
-			state = MAINSTATE
-			yield(get_tree().create_timer(0.2), "timeout")
-			hurtbox.set_monitoring(true)
-			hurtboxcollision.disabled = false
+			pass
+#			animatedsprite.animation = "Hurt"
+#			$AnimationPlayer.play("playerhurt")
+#			hurtbox.set_monitoring(false)
+#			hurtboxcollision.disabled = true
+#			health -= 10
+#			velocity.y -= 200
+#			yield(get_tree().create_timer(0.2), "timeout")
+#			state = MAINSTATE
+#			yield(get_tree().create_timer(0.2), "timeout")
+#			hurtbox.set_monitoring(true)
+#			hurtboxcollision.disabled = false
 
 		PUSH:
 			pass
 
 func get_hurt():
-	state = HURT
-#	$AnimationPlayer.play("playerhurt")
-#	health -= 50
-#	velocity.y -= 500
+#	state = HURT
+	$AnimationPlayer.play("playerhurt")
+	animatedsprite.animation = "Hurt"
+	health -= 20
+	velocity.y -= 500
 
 func is_invul():
 	print("does it work")
