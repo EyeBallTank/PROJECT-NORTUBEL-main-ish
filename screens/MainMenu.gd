@@ -3,8 +3,6 @@ extends Control
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
 
-
-
 func _on_StartButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate.tscn")
 

@@ -79,15 +79,15 @@ Not yet:
 
 I may end up changing this goal list as well.
 
-# Definitely need to change/improve:
+# DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
+* The Player's AnimatedSprite scene is unable to play the "Pushing" animation when pushing the PushableCopy object; Might be related to how colliding works and how the "Running" animation is used in code.
+* The Player's new "Hurt" animation from AnimatedSprite is also messy; One issue i noticed is how the Enemy can still hurt the Player because it takes a while for the "playerhurt" animation to actually play.
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer node in each level, so i need to make this as an actual recurring game scene.
 * The Pause Menu shows up ABOVE the SceneManager's animation but it doesn't pause the animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
-* The Player's AnimatedSprite scene is unable to play the "Pushing" animation when pushing the PushableCopy object; Might be related to how colliding works and how the "Running" animation is used in code.
-* The Player's new "Hurt" animation from AnimatedSprite is also messy; One issue i noticed is how the Enemy can still hurt the Player because it takes a while for the "playerhurt" animation to actually play.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
