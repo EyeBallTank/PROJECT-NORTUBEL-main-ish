@@ -89,6 +89,7 @@ I may end up changing this goal list as well.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 * Comp4 shakes during climbing when close enough to the Player, as seen in the AnimatedSprite still retaining the "Climbidle" frame when supposedly moving.
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
+* Comp4 doesn't have the "updated but still broken" take on getting hurt that the Player has.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
