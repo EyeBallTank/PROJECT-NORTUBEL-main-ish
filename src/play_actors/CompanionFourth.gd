@@ -109,15 +109,15 @@ func _physics_process(delta):
 
 			if vel.y < 0 and not is_on_floor():
 				animatedsprite.animation = "Jumpgoesup"
-				if Input.is_action_just_pressed("right"):
+				if direction.x == 1:
 					animatedsprite.flip_h = false
-				elif Input.is_action_just_pressed("left"):
+				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
 				animatedsprite.animation = "Jumpgoesdown"
-				if Input.is_action_just_pressed("right"):
+				if direction.x == 1:
 					animatedsprite.flip_h = false
-				elif Input.is_action_just_pressed("left"):
+				elif direction.x == -1:
 					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("runaway"):
@@ -143,7 +143,22 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
-			
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.x == 0 and is_on_floor():
+				animatedsprite.animation = "Idle"
+
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
 			if Input.is_action_pressed("runaway"):
@@ -174,11 +189,33 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
-	
+
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
+
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
@@ -224,6 +261,7 @@ func _physics_process(delta):
 #			elif Player.global_position.y > global_position.y + 10:
 #				vel = position.direction_to(Player.position) * speed.y
 			if Player.global_position.x < global_position.x - 50:
+				animatedsprite.flip_h = true
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -238,6 +276,7 @@ func _physics_process(delta):
 					vel = position.direction_to(Player.position) * speed.x
 					direction.x = -1
 			elif Player.global_position.x > global_position.x + 50:
+				animatedsprite.flip_h = false
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -269,6 +308,34 @@ func _physics_process(delta):
 			vel = vel.normalized()
 			vel.x = direction.x * 350
 			vel.y = direction.y * 350
+
+			if direction.x == 1:
+				if direction.y == -1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = false
+				elif direction.y == 1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = false
+				else:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = false
+			elif direction.x == -1:
+				if direction.y == -1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = true
+				elif direction.y == 1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = true
+				else:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = true
+			else:
+				if direction.y == -1:
+					animatedsprite.animation = "Swimming"
+				elif direction.y == 1:
+					animatedsprite.animation = "Swimming"
+				else:
+					animatedsprite.animation = "Swimming"
 
 #			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -282,6 +349,7 @@ func _physics_process(delta):
 
 		SWIMRUN:
 			if Player.global_position.x < global_position.x - 50:
+				animatedsprite.flip_h = false
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -296,6 +364,7 @@ func _physics_process(delta):
 					vel = position.direction_to(Player.position) * speed.x
 					direction.x = 1
 			elif Player.global_position.x > global_position.x + 50:
+				animatedsprite.flip_h = true
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -328,6 +397,34 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 			vel.y = direction.y * 350
 
+			if direction.x == 1:
+				if direction.y == -1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = false
+				elif direction.y == 1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = false
+				else:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = false
+			elif direction.x == -1:
+				if direction.y == -1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = true
+				elif direction.y == 1:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = true
+				else:
+					animatedsprite.animation = "Swimming"
+					animatedsprite.flip_h = true
+			else:
+				if direction.y == -1:
+					animatedsprite.animation = "Swimming"
+				elif direction.y == 1:
+					animatedsprite.animation = "Swimming"
+				else:
+					animatedsprite.animation = "Swimming"
+
 #			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
@@ -339,6 +436,7 @@ func _physics_process(delta):
 				state = RUNAWAY
 
 		SWIMIDLE:
+			animatedsprite.animation = "Swimidle"
 			vel.x = 0
 			direction.x = 0
 			vel.x = direction.x * 0
