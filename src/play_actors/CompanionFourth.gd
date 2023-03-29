@@ -13,9 +13,10 @@ enum {
 	CLIMBIDLE,
 	CLIMBMOVE,
 	CLIMBRUN,
-#	PUSHFOLLOW
-#	PUSHRUN
+	PUSHFOLLOW,
+	PUSHRUN,
 	DEATH,
+#	HURT,
 	SLOWRUN,
 	SLOWFOLLOW,
 	ICEIDLE,
@@ -657,6 +658,12 @@ func _physics_process(delta):
 			go_to_checkpoint()
 
 		SADNESS:
+			pass
+
+		PUSHFOLLOW:
+			pass
+
+		PUSHRUN:
 			pass
 
 func _on_CompanionHurtbox_area_entered(Area2D):

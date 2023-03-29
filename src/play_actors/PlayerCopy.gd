@@ -99,9 +99,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(65, 2)
+				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(-67, 2)
+				pushdetector.position = Vector2(-59, 0)
 			else:
 				velocity.x = 0
 
@@ -178,9 +180,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				animatedsprite.flip_h = false
 				playerhitboxcollision.position = Vector2(65, 2)
+				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("left"):
 				animatedsprite.flip_h = true
 				playerhitboxcollision.position = Vector2(-67, 2)
+				pushdetector.position = Vector2(-59, 0)
 			if abs(walk) < WALK_FORCE * 0.1:
 				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 			else:
@@ -509,9 +513,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(65, 2)
+				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(-67, 2)
+				pushdetector.position = Vector2(-59, 0)
 			else:
 				velocity.x = 0
 
@@ -697,7 +703,6 @@ func _on_PushDetector_area_entered(area):
 	if area.name == "PushArea":
 		if state == MAINSTATE:
 			state = PUSH
-
 
 func _on_PushDetector_area_exited(area):
 	if area.name == "PushArea":
