@@ -625,7 +625,7 @@ func pushcheck():
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
-			collision.collider.slide(-collision.normal * (PUSH_SPEED / 2) )
+			collision.collider.slide(-collision.normal * (WALK_MAX_SPEED / 2) )
 #			is_pushing = true
 #			animatedsprite.animation = "Pushing"
 		else:

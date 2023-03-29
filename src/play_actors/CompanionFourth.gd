@@ -56,6 +56,7 @@ onready var slowCheck = $SlowCheck
 onready var iceCheck = $IceCheck
 var portal_id = 0
 onready var animatedsprite = $AnimatedSprite
+onready var pushdetector = $PushDetector
 
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
@@ -92,9 +93,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Idle"
 
@@ -193,9 +196,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Idle"
 
@@ -545,9 +550,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Idle"
 
@@ -601,9 +608,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Idle"
 
@@ -657,9 +666,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Crawlling"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Crawlling"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Crawlidle"
 
@@ -687,9 +698,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Crawlling"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Crawlling"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Crawlidle"
 
@@ -737,9 +750,11 @@ func _physics_process(delta):
 			if dirthing == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif dirthing == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Iceslide"
 
@@ -802,9 +817,11 @@ func _physics_process(delta):
 			if dirthing == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 			elif dirthing == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 			else:
 				animatedsprite.animation = "Iceslide"
 
@@ -884,6 +901,7 @@ func _physics_process(delta):
 					state = STANDSTILL
 
 		DEATH:
+			animatedsprite.animation = "Dead"
 			vel.x = 0
 			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -891,16 +909,131 @@ func _physics_process(delta):
 			yield(get_tree().create_timer(0.4), "timeout")
 			$AnimationPlayer.stop(true)
 			$Sprite.set_modulate(00000000)
+			hide()
 			go_to_checkpoint()
 
 		SADNESS:
 			pass
 
 		PUSHFOLLOW:
-			pass
+			pushcheck()
+			if Player.global_position.x < global_position.x - 10:
+				vel.x = -WALK_MAX_SPEED
+				direction.x = -1
+			elif Player.global_position.x > global_position.x + 10:
+				vel.x = WALK_MAX_SPEED
+				direction.x = 1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 550
 
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Pushing"
+				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Pushing"
+				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
+			else:
+				animatedsprite.animation = "Idle"
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+
+			if Input.is_action_pressed("runaway"):
+				state = RUNAWAY
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+			if is_on_water():
+				state = SWIMMING
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if is_on_slow():
+				state = SLOWFOLLOW
+			if is_on_ice():
+				state = ICEFOLLOW
 		PUSHRUN:
-			pass
+			pushcheck()
+			if Player.global_position.x < global_position.x - 10:
+				vel.x = WALK_MAX_SPEED
+				direction.x = 1
+			elif Player.global_position.x > global_position.x + 10:
+				vel.x = -WALK_MAX_SPEED
+				direction.x = -1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 550
+	
+	
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Pushing"
+				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Pushing"
+				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
+			else:
+				animatedsprite.animation = "Idle"
+
+			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+
+			if Input.is_action_pressed("followme"):
+				state = FOLLOWME
+			if Input.is_action_pressed("standstill"):
+				state = STANDSTILL
+			if is_on_water():
+				state = SWIMRUN
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if is_on_slow():
+				state = SLOWRUN
+			if is_on_ice():
+				state = ICERUN
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
@@ -1014,5 +1147,22 @@ func go_to_checkpoint():
 	health = 50
 	yield(get_tree().create_timer(0.4), "timeout")
 	CompanionHurtbox.set_monitoring(true)
+	show()
+	animatedsprite.animation = "Jumpgoesdown"
 	$Sprite.set_modulate(00000000)
 	$AnimationPlayer.play("CompHurt")
+
+
+func _on_PushDetector_area_entered(area):
+	if area.name == "PushArea":
+		if state == FOLLOWME:
+			state = PUSHFOLLOW
+		if state == RUNAWAY:
+			state = PUSHRUN
+
+func _on_PushDetector_area_exited(area):
+	if area.name == "PushArea":
+		if state == PUSHFOLLOW:
+			state = FOLLOWME
+		if state == PUSHRUN:
+			state = RUNAWAY
