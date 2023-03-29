@@ -165,6 +165,9 @@ func _physics_process(delta):
 			elif vel.x == 0 and is_on_floor():
 				animatedsprite.animation = "Idle"
 
+			if is_on_floor():
+				animatedsprite.animation = "Idle"
+
 			if Input.is_action_pressed("followme"):
 				state = FOLLOWME
 			if Input.is_action_pressed("runaway"):

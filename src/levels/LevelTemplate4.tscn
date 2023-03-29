@@ -54,13 +54,13 @@ tile_data = PoolIntArray( 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 16 )]
 
 [node name="playerspawn" parent="." instance=ExtResource( 9 )]
-position = Vector2( 802.265, 512.153 )
+position = Vector2( 732.325, 470.053 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 803.268, 510.155 )
+position = Vector2( 733.328, 468.055 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 985.269, 509.416 )
+position = Vector2( 915.33, 467.316 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 985.272, 507.416 )
+position = Vector2( 915.332, 465.315 )
