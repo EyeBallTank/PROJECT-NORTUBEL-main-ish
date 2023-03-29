@@ -64,6 +64,7 @@ onready var hurtboxcollision = $Hurtbox/HurtboxPlayer
 onready var playerhitbox = $PlayerHitbox
 onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 onready var animatedsprite = $AnimatedSprite
+onready var pushdetector = $PushDetector
 
 
 var last_checkpoint: Area2D = null
@@ -254,9 +255,11 @@ func _physics_process(delta):
 			if Input.get_action_strength("right"):
 				velocity.x = WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(65, 2)
+				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(-67, 2)
+				pushdetector.position = Vector2(-59, 0)
 			else:
 				velocity.x = 0
 

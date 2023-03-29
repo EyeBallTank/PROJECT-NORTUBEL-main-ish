@@ -412,10 +412,11 @@ shape = SubResource( 7 )
 [node name="CheckpointTween" type="Tween" parent="."]
 
 [node name="PushDetector" type="Area2D" parent="."]
+position = Vector2( 63, 0 )
 collision_mask = 256
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PushDetector"]
-position = Vector2( 61.5, -122 )
+position = Vector2( -1, -122 )
 shape = SubResource( 35 )
 
 [connection signal="area_entered" from="RopeCheck" to="." method="_on_RopeCheck_area_entered"]
