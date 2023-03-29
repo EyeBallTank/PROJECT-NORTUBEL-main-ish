@@ -80,8 +80,7 @@ Not yet:
 I may end up changing this goal list as well.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
-* The Player's AnimatedSprite scene is unable to play the "Pushing" animation when pushing the PushableCopy object; Might be related to how colliding works and how the "Running" animation is used in code.
-* The Player's new "Hurt" animation from AnimatedSprite is also messy; One issue i noticed is how the Enemy can still hurt the Player because it takes a while for the "playerhurt" animation to actually play.
+* The Player's new "Hurt" animation from AnimatedSprite and/or HURT state are also messy; One issue i noticed is how the Enemy can still hurt the Player because it takes a while for the "playerhurt" animation to actually play. I want "playerhurt" to start RIGHT when the Player's hurtbox collides with the EnemyHitbox.
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer node in each level, so i need to make this as an actual recurring game scene.
 * The Pause Menu shows up ABOVE the SceneManager's animation but it doesn't pause the animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
