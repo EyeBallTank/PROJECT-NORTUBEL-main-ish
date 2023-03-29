@@ -35,6 +35,8 @@ enum {
 }
 
 var state = MAINSTATE
+var previousstate = state
+
 var hasyellowkey = false
 var hasbluekey = false
 var hasredkey = false
@@ -493,7 +495,7 @@ func _physics_process(delta):
 #			hurtboxcollision.disabled = true
 			yield(get_tree().create_timer(0.1), "timeout")
 			animatedsprite.animation = "Hurt"
-			state = MAINSTATE
+			state = previousstate
 #			yield(get_tree().create_timer(0.2), "timeout")
 #			hurtbox.set_deferred("monitorable", true)
 #			hurtboxcollision.disabled = false
