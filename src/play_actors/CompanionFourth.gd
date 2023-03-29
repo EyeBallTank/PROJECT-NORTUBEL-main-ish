@@ -267,6 +267,7 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed.y
 			if Player.global_position.x < global_position.x - 50:
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -282,6 +283,7 @@ func _physics_process(delta):
 					direction.x = -1
 			elif Player.global_position.x > global_position.x + 50:
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -318,22 +320,28 @@ func _physics_process(delta):
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = false
+					pushdetector.position = Vector2(53, 0)
 				elif direction.y == 1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = false
+					pushdetector.position = Vector2(53, 0)
 				else:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = false
+					pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1:
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = true
+					pushdetector.position = Vector2(-52, 0)
 				elif direction.y == 1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = true
+					pushdetector.position = Vector2(-52, 0)
 				else:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = true
+					pushdetector.position = Vector2(-52, 0)
 			else:
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
@@ -355,6 +363,7 @@ func _physics_process(delta):
 		SWIMRUN:
 			if Player.global_position.x < global_position.x - 50:
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -370,6 +379,7 @@ func _physics_process(delta):
 					direction.x = 1
 			elif Player.global_position.x > global_position.x + 50:
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 				if Player.global_position.y < global_position.y - 50:
 					vel = position.direction_to(Player.position) * speed.x
 					vel = position.direction_to(Player.position) * speed.y
@@ -406,22 +416,28 @@ func _physics_process(delta):
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = false
+					pushdetector.position = Vector2(53, 0)
 				elif direction.y == 1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = false
+					pushdetector.position = Vector2(53, 0)
 				else:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = false
+					pushdetector.position = Vector2(53, 0)
 			elif direction.x == -1:
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = true
+					pushdetector.position = Vector2(-52, 0)
 				elif direction.y == 1:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = true
+					pushdetector.position = Vector2(-52, 0)
 				else:
 					animatedsprite.animation = "Swimming"
 					animatedsprite.flip_h = true
+					pushdetector.position = Vector2(-52, 0)
 			else:
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"

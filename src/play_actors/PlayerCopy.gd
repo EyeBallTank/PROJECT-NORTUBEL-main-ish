@@ -349,10 +349,12 @@ func _physics_process(delta):
 				velocity.x = PUSH_SPEED
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("left"):
 				velocity.x = -PUSH_SPEED
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-59, 0)
 			elif Input.get_action_strength("jumpup"):
 				velocity.y = -PUSH_SPEED
 				animatedsprite.animation = "Climbing"
@@ -383,11 +385,13 @@ func _physics_process(delta):
 				velocity.y = 0
 				animatedsprite.animation = "Swimming"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("left"):
 				velocity.x = -PUSH_SPEED
 				velocity.y = 0
 				animatedsprite.animation = "Swimming"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-59, 0)
 			elif Input.get_action_strength("jumpup"):
 				velocity.y = -PUSH_SPEED
 				animatedsprite.animation = "Swimming"
@@ -418,6 +422,7 @@ func _physics_process(delta):
 					animatedsprite.flip_h = false
 					animatedsprite.animation = "Kickedtheball"
 					playerhitboxcollision.position = Vector2(65, 2)
+					pushdetector.position = Vector2(63, 0)
 					direction = 1
 					var soccerball = Ball.instance()
 					soccerball.global_position = playerhitboxcollision.global_position
@@ -434,6 +439,7 @@ func _physics_process(delta):
 					animatedsprite.flip_h = true
 					animatedsprite.animation = "Kickedtheball"
 					playerhitboxcollision.position = Vector2(-67, 2)
+					pushdetector.position = Vector2(-59, 0)
 					direction = -1
 					var soccerball = Ball.instance()
 					soccerball.global_position = playerhitboxcollision.global_position
