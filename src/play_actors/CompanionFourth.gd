@@ -455,6 +455,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBIDLE:
+			animatedsprite.animation = "Climbidle"
 			vel.x = 0
 			direction.x = 0
 			vel.y = 0
@@ -474,9 +475,12 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
 				vel = position.direction_to(Player.position) * speed
+				animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
 				vel = position.direction_to(Player.position) * speed
+				animatedsprite.animation = "Climbing"
 			else:
+				animatedsprite.animation = "Climbidle"
 				vel.x = 0
 				direction.x = 0
 				vel.y = 0
@@ -498,9 +502,12 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
 				vel = position.direction_to(Player.position) * -speed
+				animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
 				vel = position.direction_to(Player.position) * -speed
+				animatedsprite.animation = "Climbing"
 			else:
+				animatedsprite.animation = "Climbidle"
 				vel.x = 0
 				direction.x = 0
 				vel.y = 0
