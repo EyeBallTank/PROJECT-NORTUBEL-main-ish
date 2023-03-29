@@ -37,6 +37,8 @@ var PUSH_SPEED = 25
 var STOP_FORCE = 450
 var JUMP_SPEED = 1450
 
+export var companionskin = "res://assets/sprites/play_actor_sprites/OscarSprites.tres"
+
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 1450.0
 #export var oxygen : int = 70
@@ -62,6 +64,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	animatedsprite.frames = load(companionskin)
 	healthBar.max_value = health
 	var companionspawn = get_parent().get_node("companionspawn")
 	last_checkpoint = companionspawn

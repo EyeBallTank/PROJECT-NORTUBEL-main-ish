@@ -7,6 +7,8 @@ var BALL_VELOCITY = 1500.0
 const Ball = preload("res://src/level_objects/SoccerBall.tscn")
 const PlayerMelee = preload("res://src/behind_the_scenes/PlayerMelee.tscn")
 
+export var playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
+
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var jump_buffer_time : int  = 15
@@ -70,6 +72,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	animatedsprite.frames = load(playerskin)
 	$CollisionShape2D.disabled = false
 	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
