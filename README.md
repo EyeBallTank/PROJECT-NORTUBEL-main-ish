@@ -88,6 +88,7 @@ I may end up changing this goal list as well.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 * Comp4 shakes during climbing when close enough to the Player, as seen in the AnimatedSprite still retaining the "Climbidle" frame when supposedly moving.
+* There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

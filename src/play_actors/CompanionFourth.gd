@@ -16,7 +16,7 @@ enum {
 	PUSHFOLLOW,
 	PUSHRUN,
 	DEATH,
-#	HURT,
+	HURT,
 	SLOWRUN,
 	SLOWFOLLOW,
 	ICEIDLE,
@@ -915,6 +915,9 @@ func _physics_process(delta):
 		SADNESS:
 			pass
 
+		HURT:
+			pass
+
 		PUSHFOLLOW:
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
@@ -1151,7 +1154,6 @@ func go_to_checkpoint():
 	animatedsprite.animation = "Jumpgoesdown"
 	$Sprite.set_modulate(00000000)
 	$AnimationPlayer.play("CompHurt")
-
 
 func _on_PushDetector_area_entered(area):
 	if area.name == "PushArea":

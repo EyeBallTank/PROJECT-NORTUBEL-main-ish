@@ -35,7 +35,6 @@ enum {
 }
 
 var state = MAINSTATE
-var previousstate = state
 
 var hasyellowkey = false
 var hasbluekey = false
