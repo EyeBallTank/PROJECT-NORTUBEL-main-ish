@@ -501,7 +501,71 @@ func _physics_process(delta):
 #			hurtboxcollision.disabled = false
 
 		PUSH:
-			pass
+			pushcheck()
+			WALK_MAX_SPEED = 700
+			if Input.get_action_strength("right"):
+				velocity.x = WALK_MAX_SPEED
+				playerhitboxcollision.position = Vector2(65, 2)
+			elif Input.get_action_strength("left"):
+				velocity.x = -WALK_MAX_SPEED
+				playerhitboxcollision.position = Vector2(-67, 2)
+			else:
+				velocity.x = 0
+
+
+			if Input.get_action_strength("right") and is_on_floor():
+				animatedsprite.animation = "Pushing"
+				animatedsprite.flip_h = false
+			elif Input.get_action_strength("left") and is_on_floor():
+				animatedsprite.animation = "Pushing"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
+
+			velocity.y += gravity * delta
+
+	
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
+				velocity.y = -JUMP_SPEED
+
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+
+			if Input.is_action_just_pressed("jumpup"):
+				jump_buffer_counter = jump_buffer_time
+			
+			if Input.is_action_just_released("jumpup"):
+				if velocity.y < 0:
+					velocity.y += 500
+				
+			if jump_buffer_counter > 0:
+				jump_buffer_counter -= 1
+			
+			if jump_buffer_counter > 0 and is_on_floor():
+				velocity.y = -JUMP_SPEED
+				jump_buffer_counter = 0
+			if is_on_ladder():
+				if Input.get_action_strength("jumpup"):
+					state = CLIMB
+
+			if is_on_water():
+				state = SWIM
+			if is_on_slow():
+				state = SLOW
+			if is_on_ice():
+				state = ICE
 
 #func get_hurt():
 	
@@ -626,3 +690,13 @@ func go_to_checkpoint():
 #Crawlidle
 #Crawlling
 
+func _on_PushDetector_area_entered(area):
+	if area.name == "PushArea":
+		if state == MAINSTATE:
+			state = PUSH
+
+
+func _on_PushDetector_area_exited(area):
+	if area.name == "PushArea":
+		if state == PUSH:
+			state = MAINSTATE
