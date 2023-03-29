@@ -55,6 +55,7 @@ onready var ladderCheck = $LadderCheck
 onready var slowCheck = $SlowCheck
 onready var iceCheck = $IceCheck
 var portal_id = 0
+onready var animatedsprite = $AnimatedSprite
 
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
@@ -88,6 +89,15 @@ func _physics_process(delta):
 				direction.x = 0
 			vel.x = direction.x * 550
 
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
+
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -96,6 +106,19 @@ func _physics_process(delta):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("runaway"):
 				state = RUNAWAY
