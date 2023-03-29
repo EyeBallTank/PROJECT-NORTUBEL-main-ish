@@ -542,10 +542,32 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
+
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("runaway"):
 				state = SLOWRUN
@@ -576,10 +598,32 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Idle"
+
 			if is_on_floor() and Player.global_position.y < global_position.y - 10:
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("followme"):
 				state = SLOWFOLLOW
@@ -610,6 +654,15 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Crawlling"
+				animatedsprite.flip_h = false
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Crawlling"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Crawlidle"
+
 			if Input.is_action_pressed("runaway"):
 				state = CRAWLRUN
 			if Input.is_action_pressed("standstill"):
@@ -631,12 +684,22 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Crawlling"
+				animatedsprite.flip_h = false
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Crawlling"
+				animatedsprite.flip_h = true
+			else:
+				animatedsprite.animation = "Crawlidle"
+
 			if Input.is_action_pressed("followme"):
 				state = CRAWLFOLLOW
 			if Input.is_action_pressed("standstill"):
 				state = CRAWLIDLE
 
 		CRAWLIDLE:
+			animatedsprite.animation = "Crawlidle"
 			vel.x = 0
 			direction.x = 0
 			vel.x = direction.x * 0
