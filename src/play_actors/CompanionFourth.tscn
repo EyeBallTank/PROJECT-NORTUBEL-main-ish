@@ -94,7 +94,6 @@ animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, -81 )
 shape = SubResource( 1 )
 
@@ -110,7 +109,6 @@ anims/CompHurt = SubResource( 3 )
 anims/RESET = SubResource( 4 )
 
 [node name="SwimCheck" type="RayCast2D" parent="."]
-visible = false
 position = Vector2( 0, -162 )
 scale = Vector2( 4, 4 )
 enabled = true
@@ -120,7 +118,6 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="LadderCheck" type="RayCast2D" parent="."]
-visible = false
 position = Vector2( 0, -162 )
 scale = Vector2( 4, 4 )
 enabled = true
@@ -130,7 +127,6 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="SlowCheck" type="RayCast2D" parent="."]
-visible = false
 position = Vector2( 0, -162 )
 scale = Vector2( 4, 4 )
 enabled = true
@@ -140,7 +136,6 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="IceCheck" type="RayCast2D" parent="."]
-visible = false
 position = Vector2( 0, -162 )
 scale = Vector2( 4, 4 )
 enabled = true
@@ -150,7 +145,6 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="CompanionHurtbox" type="Area2D" parent="."]
-visible = false
 collision_layer = 2
 collision_mask = 32
 
@@ -159,7 +153,6 @@ position = Vector2( 0, -81 )
 shape = SubResource( 2 )
 
 [node name="PortalCheck" type="Area2D" parent="."]
-visible = false
 collision_layer = 2
 collision_mask = 4
 
@@ -168,7 +161,6 @@ position = Vector2( 0, -81 )
 shape = SubResource( 5 )
 
 [node name="CrawlCheck" type="Area2D" parent="."]
-visible = false
 collision_layer = 2
 collision_mask = 4
 
