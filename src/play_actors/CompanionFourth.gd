@@ -482,11 +482,59 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBIDLE:
-			animatedsprite.animation = "Climbidle"
-			vel.x = 0
-			direction.x = 0
-			vel.y = 0
-			direction.y = 0
+			if Player.global_position.y < global_position.y - 30:
+				if Player.global_position.x < global_position.x - 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				elif Player.global_position.x > global_position.x + 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				else:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+			elif Player.global_position.y > global_position.y + 30:
+				if Player.global_position.x < global_position.x - 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				elif Player.global_position.x > global_position.x + 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				else:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+			else:
+				if Player.global_position.x < global_position.x - 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				elif Player.global_position.x > global_position.x + 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				else:
+					state = STANDSTILL
 
 			if Input.is_action_pressed("followme"):
 				state = CLIMBMOVE
@@ -501,33 +549,33 @@ func _physics_process(delta):
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
-				if Player.global_position.x < global_position.x - 70:
+				if Player.global_position.x < global_position.x - 90:
 					vel = position.direction_to(Player.position) * speed
 					animatedsprite.animation = "Climbing"
-				elif Player.global_position.x > global_position.x + 70:
+				elif Player.global_position.x > global_position.x + 90:
 					vel = position.direction_to(Player.position) * speed
 					animatedsprite.animation = "Climbing"
 				else:
 					vel = position.direction_to(Player.position) * speed
 					animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
-				if Player.global_position.x < global_position.x - 70:
+				if Player.global_position.x < global_position.x - 90:
 					vel = position.direction_to(Player.position) * speed
 					animatedsprite.animation = "Climbing"
-				elif Player.global_position.x > global_position.x + 70:
+				elif Player.global_position.x > global_position.x + 90:
 					vel = position.direction_to(Player.position) * speed
 					animatedsprite.animation = "Climbing"
 				else:
 					vel = position.direction_to(Player.position) * speed
 					animatedsprite.animation = "Climbing"
 			else:
-				if Player.global_position.x < global_position.x - 70:
+				if Player.global_position.x < global_position.x - 90:
 					animatedsprite.animation = "Climbidle"
 					vel.x = 0
 					direction.x = 0
 					vel.y = 0
 					direction.y = 0
-				elif Player.global_position.x > global_position.x + 70:
+				elif Player.global_position.x > global_position.x + 90:
 					animatedsprite.animation = "Climbidle"
 					vel.x = 0
 					direction.x = 0
@@ -552,17 +600,41 @@ func _physics_process(delta):
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
-				vel = position.direction_to(Player.position) * -speed
-				animatedsprite.animation = "Climbing"
+				if Player.global_position.x < global_position.x - 90:
+					vel = position.direction_to(Player.position) * -speed
+					animatedsprite.animation = "Climbing"
+				elif Player.global_position.x > global_position.x + 90:
+					vel = position.direction_to(Player.position) * -speed
+					animatedsprite.animation = "Climbing"
+				else:
+					vel = position.direction_to(Player.position) * -speed
+					animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
-				vel = position.direction_to(Player.position) * -speed
-				animatedsprite.animation = "Climbing"
+				if Player.global_position.x < global_position.x - 90:
+					vel = position.direction_to(Player.position) * -speed
+					animatedsprite.animation = "Climbing"
+				elif Player.global_position.x > global_position.x + 90:
+					vel = position.direction_to(Player.position) * -speed
+					animatedsprite.animation = "Climbing"
+				else:
+					vel = position.direction_to(Player.position) * -speed
+					animatedsprite.animation = "Climbing"
 			else:
-				animatedsprite.animation = "Climbidle"
-				vel.x = 0
-				direction.x = 0
-				vel.y = 0
-				direction.y = 0
+				if Player.global_position.x < global_position.x - 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				elif Player.global_position.x > global_position.x + 90:
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
+				else:
+					state = STANDSTILL
+
 			vel.x = direction.x * 390
 #Why do i have to use vel.x and not vel.y here?
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
