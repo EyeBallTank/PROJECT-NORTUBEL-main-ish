@@ -71,10 +71,10 @@ position = Vector2( 11079, 127 )
 position = Vector2( 668, 456 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3093, 540 )
+position = Vector2( 8909, 356 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3025, 544 )
+position = Vector2( 8757, 348 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 990, 424 )
@@ -121,11 +121,11 @@ position = Vector2( 8238, 64 )
 position = Vector2( 6870, 449 )
 
 [node name="Teleportal" parent="." instance=ExtResource( 17 )]
-position = Vector2( 11041, 293 )
+position = Vector2( 9509, -371 )
 id = 1
 
 [node name="Teleportal2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 10186, -509 )
+position = Vector2( 11106, 287 )
 id = 1
 
 [node name="SlowFloor" parent="." instance=ExtResource( 20 )]

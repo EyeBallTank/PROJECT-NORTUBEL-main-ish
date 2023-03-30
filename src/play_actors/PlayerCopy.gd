@@ -87,6 +87,14 @@ func _physics_process(delta):
 	# Still using frankensteined code to do this		
 	match state:
 		SLOW:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			pushcheck()
 
 			if Input.is_action_just_pressed("attack"):
@@ -167,6 +175,14 @@ func _physics_process(delta):
 				else:
 					pass
 		ICE:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			pushcheck()
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
@@ -246,6 +262,14 @@ func _physics_process(delta):
 					pass
 
 		MAINSTATE:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			pushcheck()
 
 			if Input.is_action_just_pressed("attack"):
@@ -347,6 +371,14 @@ func _physics_process(delta):
 				state = ICE
 
 		CLIMB:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			PUSH_SPEED = 350
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
@@ -373,6 +405,14 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = MAINSTATE
 		ROPE:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			animatedsprite.animation = "Ropeattach"
 			global_position = rope_part.global_position
 			global_rotation = rope_part.global_rotation
@@ -382,6 +422,14 @@ func _physics_process(delta):
 				global_rotation = 0
 				state = MAINSTATE
 		SWIM:
+			$CollisionShape2D.shape.extents = Vector2(118.5, 58.5)
+			$CollisionShape2D.position = Vector2(8.5, -158.5)
+			hurtboxcollision.shape.extents = Vector2(118.5, 59)
+			hurtboxcollision.position = Vector2(8.5, -158)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(29.375, 14.5)
+			$RopeCheck/CollisionShape2D.position = Vector2(2.125, 21.25)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(118, 59)
+			$PortalCheck/CollisionShape2D.position = Vector2(9, -158)
 			PUSH_SPEED = 350
 			if Input.get_action_strength("right"):
 				velocity.x = PUSH_SPEED
@@ -411,6 +459,14 @@ func _physics_process(delta):
 				state = MAINSTATE
 
 		KICKBALL:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			if hasball == true:
 				animatedsprite.animation = "Abouttokick"
 			elif hasball == false:
@@ -459,6 +515,14 @@ func _physics_process(delta):
 				animatedsprite.animation = "Idle"
 
 		KNIFE:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
@@ -516,6 +580,14 @@ func _physics_process(delta):
 #			hurtboxcollision.disabled = false
 
 		PUSH:
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			pushcheck()
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):

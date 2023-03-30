@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/sprites/play_actor_sprites/CarrieSprites.tres" type="SpriteFrames" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 25.5, 122 )
+extents = Vector2( 26.5, 123.5 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -64,16 +64,16 @@ tracks/2/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 6.625, 30.75 )
+extents = Vector2( 6.75, 30.875 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 27, 123 )
+extents = Vector2( 26.5, 123.5 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 24.5, 120.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 27, 123 )
+extents = Vector2( 26.5, 123.5 )
 
 [sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 5.5, 121 )
@@ -97,7 +97,7 @@ animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.5, -123 )
+position = Vector2( -1.5, -123.5 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -159,7 +159,7 @@ scale = Vector2( 4, 4 )
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RopeCheck"]
-position = Vector2( -0.375, 30 )
+position = Vector2( -0.5, 29.875 )
 shape = SubResource( 6 )
 
 [node name="Hurtbox" type="Area2D" parent="."]
@@ -167,7 +167,7 @@ collision_mask = 32
 monitorable = false
 
 [node name="HurtboxPlayer" type="CollisionShape2D" parent="Hurtbox"]
-position = Vector2( -2, -123 )
+position = Vector2( -1.5, -123.5 )
 shape = SubResource( 4 )
 
 [node name="PlayerHitbox" type="Area2D" parent="."]
@@ -183,7 +183,7 @@ disabled = true
 [node name="PortalCheck" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortalCheck"]
-position = Vector2( -2, -123 )
+position = Vector2( -1.5, -123.5 )
 shape = SubResource( 7 )
 
 [node name="CheckpointTween" type="Tween" parent="."]
