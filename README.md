@@ -67,6 +67,7 @@ Not yet:
 * INGAME GALLERY: Because if i figure out basic cutscenes, maybe an art gallery would be neat.
 * COLLECTABLES: Special objects to be collected for fun is something i'd like to try, like "lore texts" or art gallery stuff.
 * NICE VISUALS: It's not just about pretty visuals for the sake of it, things like feedback could be important.
+* BACKGROUNDS AND DECORATIONS: Oh yeah, i guess i could add this to the list.
 * UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: One of those nice little touches like getting the siblings to play a game or read a book etc.
 * SOUND/MUSIC: Nothing except for a basic sound for an object in the game; I do not want voice acting at all, at least.
 * BETTER ORGANIZATION BEHIND THE SCENES: Like methods to make the game's inner workings more flexible or supportive of some stuff; It depends if certain stuff is that mandatory and if i can get away with some other methods.
