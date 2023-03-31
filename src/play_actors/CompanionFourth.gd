@@ -81,6 +81,13 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+			
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = -WALK_MAX_SPEED
@@ -141,6 +148,13 @@ func _physics_process(delta):
 				state = ICEFOLLOW
 
 		STANDSTILL:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			vel.x = 0
 			direction.x = 0
@@ -182,6 +196,13 @@ func _physics_process(delta):
 
 
 		RUNAWAY:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = WALK_MAX_SPEED
@@ -322,6 +343,13 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 			vel.y = direction.y * 350
 
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
+			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$CollisionShape2D.position = Vector2(0.5, -153)
+
 			if direction.x == 1:
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
@@ -418,6 +446,13 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 			vel.y = direction.y * 350
 
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
+			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$CollisionShape2D.position = Vector2(0.5, -153)
+
 			if direction.x == 1:
 				if direction.y == -1:
 					animatedsprite.animation = "Swimming"
@@ -474,6 +509,13 @@ func _physics_process(delta):
 			gravity = 10.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
+			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
+			$CollisionShape2D.position = Vector2(0.5, -153)
+
 			if Input.is_action_pressed("runaway"):
 				state = SWIMRUN
 			if Input.is_action_pressed("followme"):
@@ -482,6 +524,13 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBIDLE:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
 					animatedsprite.animation = "Climbidle"
@@ -546,6 +595,13 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBMOVE:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
@@ -597,6 +653,13 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = FOLLOWME
 		CLIMBRUN:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
@@ -649,6 +712,13 @@ func _physics_process(delta):
 				state = RUNAWAY
 
 		SLOWFOLLOW:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = PUSH_SPEED
@@ -707,6 +777,13 @@ func _physics_process(delta):
 				if is_on_floor():
 					state = FOLLOWME
 		SLOWRUN:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = PUSH_SPEED
@@ -845,6 +922,13 @@ func _physics_process(delta):
 				state = CRAWLRUN
 
 		ICEFOLLOW:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			var speedthing: int = 700
 			var dirthing: int = 0
@@ -912,6 +996,13 @@ func _physics_process(delta):
 					pass
 
 		ICERUN:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			var speedthing: int = 700
 			var dirthing: int = 0
@@ -979,6 +1070,13 @@ func _physics_process(delta):
 					pass
 
 		ICEIDLE:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			animatedsprite.animation = "Iceslide"
 			var speedthing: int = 700
 			var dirthing: int = 0
@@ -1037,6 +1135,13 @@ func _physics_process(delta):
 			pass
 
 		PUSHFOLLOW:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = -WALK_MAX_SPEED
@@ -1096,6 +1201,13 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = ICEFOLLOW
 		PUSHRUN:
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = WALK_MAX_SPEED

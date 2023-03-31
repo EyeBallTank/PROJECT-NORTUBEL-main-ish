@@ -71,10 +71,10 @@ position = Vector2( 11079, 127 )
 position = Vector2( 668, 456 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 8909, 356 )
+position = Vector2( 8719, 358 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8757, 348 )
+position = Vector2( 8631, 372 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 990, 424 )
@@ -85,7 +85,7 @@ position = Vector2( 1525, 627 )
 [node name="Ladder7" parent="." instance=ExtResource( 7 )]
 position = Vector2( 2622, 130 )
 rotation = 0.00495327
-scale = Vector2( 3.80048, 3.49023 )
+scale = Vector2( 0.960714, 0.882287 )
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 9 )]
 position = Vector2( 5208, 399 )
