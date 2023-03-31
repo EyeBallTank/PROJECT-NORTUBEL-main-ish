@@ -17,6 +17,9 @@ enum {
 	PUSHRUN,
 	DEATH,
 	HURT,
+#	HURTFOLLOW
+#	HURTRUN
+#	HURTIDLE
 	SLOWRUN,
 	SLOWFOLLOW,
 	ICEIDLE,
@@ -1133,6 +1136,12 @@ func _physics_process(delta):
 
 		HURT:
 			pass
+#		HURTFOLLOW:
+#			pass
+#		HURTRUN:
+#			pass
+#		HURTIDLE:
+#			pass
 
 		PUSHFOLLOW:
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
