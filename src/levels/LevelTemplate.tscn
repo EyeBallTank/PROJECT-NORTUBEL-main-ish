@@ -125,7 +125,7 @@ position = Vector2( 9509, -371 )
 id = 1
 
 [node name="Teleportal2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 11106, 287 )
+position = Vector2( 11126, 303 )
 id = 1
 
 [node name="SlowFloor" parent="." instance=ExtResource( 20 )]
