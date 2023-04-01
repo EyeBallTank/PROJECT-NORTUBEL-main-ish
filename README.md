@@ -23,10 +23,11 @@ Done (Even if it could be better):
 * CHECKPOINT SYSTEM: It works on both characters; It essentially "drags" a character to the right spot. Had to create "spawn" scenes as well so the characters have somewhere else to respawn when it's not a checkpoint.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens; The end level Door also has an export var for the next level instead of using a specific script.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
-* COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement and only jump if they're under the Player's Y axis; If they're close enough to the Player, they can simply stop; Their running speed is slower than the Player's.
+* COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement; If they're close enough to the Player, they can simply stop; Their running speed is slower than the Player's.
+* COMPANION JUMP INPUT: You press a specific input (Currently "Z") to make them jump, since it's a safer option than making them automatically jump with conditions like "if on a lower position than the Player's Y axis".
 * COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
 * COMPANION "RUN AWAY" STATE: Opposite of "Followme" where the Companion runs at the opposite directions.
-* COMPANION "INTERACT" COMMAND: A command where the Companion can have special interactions with certain things; So far, you can make them attach to ladders (If they're touchign them, at least).
+* COMPANION "INTERACT" COMMAND (THAT IS ALSO USED TO MAKE THEM JUMP): A command where the Companion can have special interactions with certain things; So far, you can make them attach to ladders (If they're touchign them, at least).
 * COMPANION CRAWL STATES: The idea is that the Companion would crawl and go to places that the Player can't go to; It could be useful for some scenarios where both characters cooperate while seperate.
 * HEALTH: Both characters have Health, can lose health/die and gain health from a pickup (NOT at the same time); Player has more health than Companion (Or at least receives less damage); Both have basic "pain/iframe" animations.
 * JUMP PADS: Work on both characters.
@@ -101,7 +102,7 @@ This is an area that needs to be improved:
 * "Follow me": F.
 * "Stand still": S.
 * "Run away" which is almost opposite to FOLLOWME: R.
-* Companion "interactions" like attaching to the Ladder: Z.
+* Companion jumping and "interactions" like attaching to the Ladder: Z.
 * Melee attack: E.
 * Ball kick attack: Q.
 

@@ -118,7 +118,7 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -162,7 +162,12 @@ func _physics_process(delta):
 			vel.x = 0
 			direction.x = 0
 			vel.x = direction.x * 0
-			
+
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -234,7 +239,7 @@ func _physics_process(delta):
 			else:
 				animatedsprite.animation = "Idle"
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -749,7 +754,7 @@ func _physics_process(delta):
 			else:
 				animatedsprite.animation = "Idle"
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -814,7 +819,7 @@ func _physics_process(delta):
 			else:
 				animatedsprite.animation = "Idle"
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -963,7 +968,7 @@ func _physics_process(delta):
 			else:
 				animatedsprite.animation = "Iceslide"
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -1050,7 +1055,7 @@ func _physics_process(delta):
 				elif dirthing == -1:
 					animatedsprite.flip_h = true
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -1101,7 +1106,12 @@ func _physics_process(delta):
 #			vel.x = 0
 #			direction.x = 0
 #			vel.x = direction.x * 0
-			
+
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -1178,7 +1188,7 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
@@ -1245,7 +1255,7 @@ func _physics_process(delta):
 			else:
 				animatedsprite.animation = "Idle"
 
-			if is_on_floor() and Player.global_position.y < global_position.y - 10:
+			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
 					vel.y += 500
