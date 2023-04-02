@@ -1192,7 +1192,6 @@ func _physics_process(delta):
 			CompanionHurtbox.set_monitoring(false)
 			yield(get_tree().create_timer(0.4), "timeout")
 			$AnimationPlayer.stop(true)
-			$Sprite.set_modulate(00000000)
 			hide()
 			go_to_checkpoint()
 
@@ -1474,7 +1473,6 @@ func go_to_checkpoint():
 	CompanionHurtbox.set_monitoring(true)
 	show()
 	animatedsprite.animation = "Jumpgoesdown"
-	$Sprite.set_modulate(00000000)
 	$AnimationPlayer.play("CompHurt")
 
 func _on_PushDetector_area_entered(area):
