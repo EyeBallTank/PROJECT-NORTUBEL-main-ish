@@ -176,12 +176,12 @@ animations = [ {
 "speed": 5.0
 }, {
 "frames": [ SubResource( 33 ) ],
-"loop": true,
+"loop": false,
 "name": "Jumpgoesdown",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 17 ) ],
-"loop": true,
+"loop": false,
 "name": "Jumpgoesup",
 "speed": 5.0
 }, {

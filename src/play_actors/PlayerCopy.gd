@@ -563,21 +563,15 @@ func _physics_process(delta):
 #The idea being that one character would be sad if the other dies and also an excuse to "deactivate" both characters when a life is lost
 #Specially before respawn
 
-		HURT:
-#			pass
+#		HURT:
+#			$AnimationPlayer.play("playerhurt") 
+#			animatedsprite.animation = "Hurt"
+#			health -= 1
+#			velocity.y -= 90
 #			yield(get_tree().create_timer(0.1), "timeout")
-			$AnimationPlayer.play("playerhurt") 
-			animatedsprite.animation = "Hurt"
-			health -= 1
-			velocity.y -= 90
-#			hurtbox.set_deferred("monitorable", false)
-#			hurtboxcollision.disabled = true
-			yield(get_tree().create_timer(0.1), "timeout")
-			animatedsprite.animation = "Hurt"
-			state = MAINSTATE
-#			yield(get_tree().create_timer(0.2), "timeout")
-#			hurtbox.set_deferred("monitorable", true)
-#			hurtboxcollision.disabled = false
+#			animatedsprite.animation = "Hurt"
+#			state = MAINSTATE
+
 
 		PUSH:
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
@@ -699,7 +693,15 @@ func is_on_slow():
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
-		state = HURT
+#		state = HURT
+		$AnimationPlayer.play("playerhurt") 
+		animatedsprite.animation = "Hurt"
+#		animatedsprite.frames.set_animation_speed("Hurt", 0.5)
+		health -= 10
+		velocity.y -= 700
+#		yield(get_tree().create_timer(0.1), "timeout")
+		animatedsprite.animation = "Hurt"
+#		state = MAINSTATE
 
 func pushcheck():
 	for index in get_slide_count():
