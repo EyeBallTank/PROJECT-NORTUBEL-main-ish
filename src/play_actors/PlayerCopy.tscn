@@ -107,7 +107,6 @@ zoom = Vector2( 2.6, 2.6 )
 smoothing_enabled = true
 
 [node name="HealthbarPlayer" parent="." instance=ExtResource( 3 )]
-visible = false
 margin_left = -126.0
 margin_top = -318.0
 margin_right = 125.0
