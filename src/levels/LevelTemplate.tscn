@@ -80,7 +80,7 @@ position = Vector2( 1935, 568 )
 position = Vector2( 990, 424 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1525, 627 )
+position = Vector2( 1533, 635 )
 
 [node name="Ladder7" parent="." instance=ExtResource( 7 )]
 position = Vector2( 2622, 130 )

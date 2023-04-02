@@ -47,6 +47,7 @@ var hasball = false
 var rope_part = null
 var portal_id = 0
 #var is_pushing = false
+var ouch = false
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
@@ -332,13 +333,19 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 
 			if velocity.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
 					animatedsprite.flip_h = true
 			elif velocity.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
@@ -693,14 +700,19 @@ func is_on_slow():
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
+		ouch = true
 #		state = HURT
 		$AnimationPlayer.play("playerhurt") 
-		animatedsprite.animation = "Hurt"
+#		animatedsprite.animation = "Hurt"
+#		animatedsprite.frames.get_frame("Hurt", 0)
 #		animatedsprite.frames.set_animation_speed("Hurt", 0.5)
+#		animatedsprite.animation.set_speed_scale("Hurt", 0.5)
 		health -= 10
 		velocity.y -= 700
-#		yield(get_tree().create_timer(0.1), "timeout")
-		animatedsprite.animation = "Hurt"
+		yield(get_tree().create_timer(0.5), "timeout")
+		ouch = false
+#		animatedsprite.animation = "Hurt"
+		
 #		state = MAINSTATE
 
 func pushcheck():
