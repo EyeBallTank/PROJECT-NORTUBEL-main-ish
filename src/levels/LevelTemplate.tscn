@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=21]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -71,16 +72,22 @@ position = Vector2( 11079, 127 )
 position = Vector2( 668, 456 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2023, 554 )
+position = Vector2( 3711, 530 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1935, 568 )
+position = Vector2( 3615, 536 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 990, 424 )
 
+[node name="Manowar" parent="." instance=ExtResource( 21 )]
+position = Vector2( 2872, 164 )
+
+[node name="Water3" parent="." instance=ExtResource( 18 )]
+position = Vector2( 3128, 132 )
+
 [node name="Gecko enemy" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1533, 635 )
+position = Vector2( 1541, 627 )
 
 [node name="Ladder7" parent="." instance=ExtResource( 7 )]
 position = Vector2( 2622, 130 )

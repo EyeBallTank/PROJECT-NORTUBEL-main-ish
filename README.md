@@ -58,7 +58,7 @@ Not yet:
 * LEVEL SELECT/HUB: Not sure exactly how level selection would work.
 * LIVE SYSTEM: Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on both an extra life pickup AND making it so collecting 100 coins adds a new life.
 * HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style; A main idea was a "Companion notifier" for when the Companion is off-screen like an arrow on-screen pointing at their direction so the Player gets an idea of their location.
-* SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so they should get actual character sprites for them (And the characters have the same gameplay); Each level has 2 characters, so i need to figure a method of when/which characters show up etc.
+* SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
 * SPACE/GRAVITY ELEMENTS: Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * BOSS FIGHTS: Will probably be a very complex inclusion.
 * NPC'S AND SIDE CHARACTERS: Not a thing yet.
@@ -82,7 +82,6 @@ Not yet:
 I may end up changing this goal list as well.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
-* The Player's new "Hurt" animation from AnimatedSprite and/or HURT state are also messy; One issue i noticed is how the Enemy can still hurt the Player because it takes a while for the "playerhurt" animation to actually play. I want "playerhurt" to start RIGHT when the Player's hurtbox collides with the EnemyHitbox.
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer node in each level, so i need to make this as an actual recurring game scene.
 * The Pause Menu shows up ABOVE the SceneManager's animation but it doesn't pause the animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
@@ -90,7 +89,6 @@ I may end up changing this goal list as well.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
-* Comp4 doesn't have the "updated but still broken" take on getting hurt that the Player has (Part of this is because i want to learn how you make an scene change to a previous state, because i don't know how a script can keep a "previous state" in mind, so the Player's HURT state just changes to MAINSTATE which can be weird if the Player was on CLIMB state).
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

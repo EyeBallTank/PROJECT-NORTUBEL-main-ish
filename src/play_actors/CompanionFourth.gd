@@ -65,17 +65,13 @@ onready var pushdetector = $PushDetector
 
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
+var ouch = false
 
 func _ready():
 	animatedsprite.frames = load(companionskin)
 	healthBar.max_value = health
 	var companionspawn = get_parent().get_node("companionspawn")
 	last_checkpoint = companionspawn
-
-func get_hurt():
-	$AnimationPlayer.play("CompHurt")
-	health -= 10
-	vel.y -= 500
 
 func _physics_process(delta):
 	healthBar.value = health
@@ -124,13 +120,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -173,19 +175,23 @@ func _physics_process(delta):
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
-			elif vel.x == 0 and is_on_floor():
-				animatedsprite.animation = "Idle"
 
 			if is_on_floor():
 				animatedsprite.animation = "Idle"
@@ -245,13 +251,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -760,13 +772,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -825,13 +843,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -974,13 +998,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if dirthing == 1:
 					animatedsprite.flip_h = false
 				elif dirthing == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if dirthing == 1:
 					animatedsprite.flip_h = false
 				elif dirthing == -1:
@@ -1043,13 +1073,19 @@ func _physics_process(delta):
 				animatedsprite.animation = "Iceslide"
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if dirthing == 1:
 					animatedsprite.flip_h = false
 				elif dirthing == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if dirthing == 1:
 					animatedsprite.flip_h = false
 				elif dirthing == -1:
@@ -1106,6 +1142,25 @@ func _physics_process(delta):
 #			vel.x = 0
 #			direction.x = 0
 #			vel.x = direction.x * 0
+
+			if vel.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
 
 			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
@@ -1194,13 +1249,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -1261,13 +1322,19 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 			elif vel.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -1289,7 +1356,13 @@ func _physics_process(delta):
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
-		get_hurt()
+		ouch = true
+		$AnimationPlayer.play("CompHurt")
+		health -= 10
+		vel.y -= 500
+		yield(get_tree().create_timer(0.5), "timeout")
+		ouch = false
+
 
 func is_on_water():
 	if not swimCheck.is_colliding(): return false

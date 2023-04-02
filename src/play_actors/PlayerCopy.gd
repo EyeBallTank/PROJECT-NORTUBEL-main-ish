@@ -28,7 +28,6 @@ enum {
 	ROPE,
 	KICKBALL,
 	KNIFE,
-	HURT,
 	DEATH,
 	SLOW,
 	PUSH,
@@ -137,13 +136,19 @@ func _physics_process(delta):
 					velocity.y = -JUMP_SPEED
 
 			if velocity.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
 					animatedsprite.flip_h = true
 			elif velocity.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
@@ -226,13 +231,19 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 
 			if velocity.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
 					animatedsprite.flip_h = true
 			elif velocity.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
@@ -570,14 +581,6 @@ func _physics_process(delta):
 #The idea being that one character would be sad if the other dies and also an excuse to "deactivate" both characters when a life is lost
 #Specially before respawn
 
-#		HURT:
-#			$AnimationPlayer.play("playerhurt") 
-#			animatedsprite.animation = "Hurt"
-#			health -= 1
-#			velocity.y -= 90
-#			yield(get_tree().create_timer(0.1), "timeout")
-#			animatedsprite.animation = "Hurt"
-#			state = MAINSTATE
 
 
 		PUSH:
@@ -621,13 +624,19 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 
 			if velocity.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
 					animatedsprite.flip_h = true
 			elif velocity.y > 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesdown"
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
 				if Input.is_action_just_pressed("right"):
 					animatedsprite.flip_h = false
 				elif Input.is_action_just_pressed("left"):
@@ -656,16 +665,6 @@ func _physics_process(delta):
 				state = SLOW
 			if is_on_ice():
 				state = ICE
-
-#func get_hurt():
-	
-#	hurtbox.set_deferred("monitorable", false)
-#	hurtboxcollision.disabled = true
-#	state = HURT
-#	$AnimationPlayer.play("playerhurt")
-#	animatedsprite.animation = "Hurt"
-#	health -= 20
-#	velocity.y -= 500
 
 func is_invul():
 	print("does it work")
@@ -701,29 +700,18 @@ func is_on_slow():
 func _on_Hurtbox_area_entered(area):
 	if area.name == "EnemyHitbox":
 		ouch = true
-#		state = HURT
 		$AnimationPlayer.play("playerhurt") 
-#		animatedsprite.animation = "Hurt"
-#		animatedsprite.frames.get_frame("Hurt", 0)
-#		animatedsprite.frames.set_animation_speed("Hurt", 0.5)
-#		animatedsprite.animation.set_speed_scale("Hurt", 0.5)
 		health -= 10
 		velocity.y -= 700
 		yield(get_tree().create_timer(0.5), "timeout")
 		ouch = false
-#		animatedsprite.animation = "Hurt"
-		
-#		state = MAINSTATE
 
 func pushcheck():
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider is PushableCopy:
 			collision.collider.slide(-collision.normal * (WALK_MAX_SPEED / 2) )
-#			is_pushing = true
-#			animatedsprite.animation = "Pushing"
 		else:
-#			is_pushing = false
 			return false
 	return true
 
