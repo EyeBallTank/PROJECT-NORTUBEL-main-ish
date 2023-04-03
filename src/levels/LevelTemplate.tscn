@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
 [ext_resource path="res://assets/sprites/3 tiles test.png" type="Texture" id=24]
+[ext_resource path="res://src/npc_actors/Bonka NPC.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -215,3 +216,6 @@ position = Vector2( 3738, 286 )
 position = Vector2( 102, 2 )
 shape = SubResource( 4 )
 one_way_collision = true
+
+[node name="Bonka NPC" parent="." instance=ExtResource( 25 )]
+position = Vector2( 1980, 563 )
