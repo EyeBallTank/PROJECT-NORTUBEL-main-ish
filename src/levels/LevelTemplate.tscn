@@ -218,4 +218,4 @@ shape = SubResource( 4 )
 one_way_collision = true
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 25 )]
-position = Vector2( 1980, 563 )
+position = Vector2( 2264, 568 )
