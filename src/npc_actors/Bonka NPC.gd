@@ -6,7 +6,7 @@ extends KinematicBody2D
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 
-onready var dialogue = $NinePatchRect
+onready var dialogue = $CanvasLayer
 
 func _ready():
 	dialogue.visible = false

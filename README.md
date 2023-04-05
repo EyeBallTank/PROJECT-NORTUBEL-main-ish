@@ -46,11 +46,12 @@ Done (Even if it could be better):
 * SLOW FLOOR: Both characters are affected by this and move slowly; Like a reverse to ice floors kinda.
 * HEALTH PICKUP: Can heal the Player and Companion but not at the same time.
 * SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen; Both characters can pick it up.
-* POWER UPS: So far, there's a temporary invulnerability item that only works on the Player.
+* POWER UPS: So far, there's a temporary invulnerability item that only works on the Player; The floater ring shows above the Player like an halo to indicate it's active.
 * ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them; It can also be killed instantly because it has no health.
 * LEVEL HAZARDS: There is at least one: A Manowar that simply stays still underwater and harms the characters.
 * COMBAT: Player has a basic melee knife attack and the ability to kick a soccer ball that acts as a projectile with physics (And after a while it disappears; This ball also has a limit of uses).
 * SOCCER GOAL NET: If the soccer ball enters the net, the net disappears; It's a level object that could have special roles in level design.
+* VERY BASIC NPC: So far, it's just a character simply standing and when you're near her, a basic dialogue text box pops up.
 
 
 Not yet:
@@ -61,7 +62,7 @@ Not yet:
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
 * SPACE/GRAVITY ELEMENTS: Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * BOSS FIGHTS: Will probably be a very complex inclusion.
-* NPC'S AND SIDE CHARACTERS: Not a thing yet.
+* NPC'S AND SIDE CHARACTERS: Not a thing yet since what i got currently is very basic.
 * DIALOGUE SYSTEM: Will i use the Dialogic addon? Not sure.
 * CUTSCENES: I don't want anything too complex, maybe some "slideshow" style presentation is good enough, i guess?
 * INGAME TEXTS: Like story segments, instructions/tips, "lore" etc.

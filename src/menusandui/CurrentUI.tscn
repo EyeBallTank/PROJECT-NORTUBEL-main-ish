@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/menusandui/ScoreCount.tscn" type="PackedScene" id=2]
+
+[node name="CurrentUI" type="CanvasLayer"]
+layer = 89
+
+[node name="ScoreCount" parent="." instance=ExtResource( 2 )]
+
+[node name="PauseMenu" parent="." instance=ExtResource( 1 )]

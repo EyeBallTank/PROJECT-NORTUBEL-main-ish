@@ -22,10 +22,9 @@ animations = [ {
 extents = Vector2( 27, 123.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 33.5, 120 )
+extents = Vector2( 91.5, 120 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 44
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 3 )
@@ -49,14 +48,16 @@ shape = SubResource( 1 )
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( 63.5, -124 )
+position = Vector2( 5.5, -124 )
 shape = SubResource( 4 )
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-margin_left = -184.0
-margin_top = -368.0
-margin_right = 245.0
-margin_bottom = -262.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 480.0
+margin_right = 1018.0
+margin_bottom = 593.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 0.330994, 0.00266838, 413.334, 409.998 )
 patch_margin_left = 4
@@ -64,13 +65,14 @@ patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 6
 
-[node name="Dialogue" type="Label" parent="NinePatchRect"]
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
 margin_left = 6.0
 margin_top = 5.0
-margin_right = 422.0
-margin_bottom = 98.0
+margin_right = 1007.0
+margin_bottom = 109.0
 custom_fonts/font = SubResource( 5 )
-text = "Test"
+text = "I'm as lost as you are, but you said this place looks like your home.
+Can you at least figure out a way out of here?"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
