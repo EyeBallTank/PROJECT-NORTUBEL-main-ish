@@ -72,6 +72,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	$FloaterActive.hide()
 	animatedsprite.frames = load(playerskin)
 	$CollisionShape2D.disabled = false
 	playerhitboxcollision.disabled = true
@@ -668,12 +669,14 @@ func _physics_process(delta):
 
 func is_invul():
 	print("does it work")
-	animatedsprite.modulate = Color(0, 255, 0)
+	$FloaterActive.show()
+#	animatedsprite.modulate = Color(0, 255, 0, 255)
 	hurtbox.set_monitoring(false)
 	yield(get_tree().create_timer(10), "timeout")
 	print("hope it did")
 	hurtbox.set_monitoring(true)
-	animatedsprite.modulate = Color(255, 255, 255)
+	$FloaterActive.hide()
+#	animatedsprite.modulate = Color(255, 255, 255, 255)
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
