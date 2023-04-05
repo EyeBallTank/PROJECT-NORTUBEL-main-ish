@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/npc_actor_sprites/BONKA SPRITE CONCEPT.png" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/Bonka NPC.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
@@ -20,9 +22,16 @@ animations = [ {
 extents = Vector2( 27, 123.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 26, 121.5 )
+extents = Vector2( 33.5, 120 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 44
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
 
 [node name="Bonka NPC" type="KinematicBody2D"]
+z_index = 14
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 2 )
@@ -40,5 +49,28 @@ shape = SubResource( 1 )
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( 1, -122.5 )
+position = Vector2( 63.5, -124 )
 shape = SubResource( 4 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_left = -184.0
+margin_top = -368.0
+margin_right = 245.0
+margin_bottom = -262.0
+texture = ExtResource( 4 )
+region_rect = Rect2( 0.330994, 0.00266838, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Dialogue" type="Label" parent="NinePatchRect"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 422.0
+margin_bottom = 98.0
+custom_fonts/font = SubResource( 5 )
+text = "Test"
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
