@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/sprites/npc_actor_sprites/BONKA SPRITE CONCEPT.png" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/Bonka NPC.gd" type="Script" id=2]
@@ -19,6 +19,9 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 27, 123.5 )
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 26, 121.5 )
+
 [node name="Bonka NPC" type="KinematicBody2D"]
 collision_layer = 64
 collision_mask = 4
@@ -33,3 +36,9 @@ animation = "Idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, -122.5 )
 shape = SubResource( 1 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( 1, -122.5 )
+shape = SubResource( 4 )
