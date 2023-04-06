@@ -83,8 +83,8 @@ Not yet:
 I may end up changing this goal list as well.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
-* The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer node in each level, so i need to make this as an actual recurring game scene.
-* The Pause Menu shows up ABOVE the SceneManager's animation but it doesn't pause the animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
+* The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer scene in each level, so i may have to make this as an actual recurring game scene.
+* The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
