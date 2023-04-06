@@ -74,5 +74,25 @@ custom_fonts/font = SubResource( 5 )
 text = "I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?"
 
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 452.0
+margin_right = 113.0
+margin_bottom = 476.0
+texture = ExtResource( 4 )
+region_rect = Rect2( 0.330994, 0.00266838, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 5 )
+text = "Bonka Millette"
+
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
