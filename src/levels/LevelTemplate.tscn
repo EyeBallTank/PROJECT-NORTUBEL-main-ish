@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
@@ -119,3 +120,6 @@ position = Vector2( 990, 424 )
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1840, 568 )
+
+[node name="BookInfo" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2285, 584 )
