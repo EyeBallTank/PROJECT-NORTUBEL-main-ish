@@ -91,6 +91,7 @@ I may end up changing this goal list as well.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
+* Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

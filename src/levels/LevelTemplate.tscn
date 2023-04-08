@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,7 +6,9 @@
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/npc_actors/BookInfoTwo.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/BookInfoThree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://assets/sprites/3 tiles test.png" type="Texture" id=24]
@@ -107,19 +109,25 @@ tile_data = PoolIntArray( 0, 1, 0, 65536, 1, 0, 131072, 1, 0, 131218, 0, 0, 1312
 position = Vector2( 11079, 127 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( 668, 456 )
+position = Vector2( 1285, 541 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 670, 456 )
+position = Vector2( 1287, 541 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 991, 424 )
+position = Vector2( 1203, 540 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
-position = Vector2( 990, 424 )
+position = Vector2( 1202, 540 )
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1840, 568 )
 
 [node name="BookInfo" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2285, 584 )
+position = Vector2( 2544, 567 )
+
+[node name="BookInfoTwo" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3110, 325 )
+
+[node name="BookInfoThree" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3746, 565 )

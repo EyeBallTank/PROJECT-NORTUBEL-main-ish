@@ -16,7 +16,7 @@ outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 3 )
 
-[node name="BookInfo" type="KinematicBody2D"]
+[node name="BookInfoTwo" type="KinematicBody2D"]
 z_index = 1
 collision_layer = 64
 collision_mask = 4
@@ -41,10 +41,10 @@ shape = SubResource( 4 )
 layer = 14
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
-margin_left = 209.0
-margin_top = 195.0
-margin_right = 822.0
-margin_bottom = 449.0
+margin_left = 152.0
+margin_top = 218.0
+margin_right = 907.0
+margin_bottom = 391.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 0.330994, 0.00266838, 413.334, 409.998 )
 patch_margin_left = 4
@@ -58,18 +58,14 @@ margin_top = 5.0
 margin_right = 901.0
 margin_bottom = 376.0
 custom_fonts/font = SubResource( 5 )
-text = "ESC: Pause menu/Menu de pausa
-Left movement/Movimento esquerdo: Left arrow key/A.
-Right movement/Movimento Direito: Right arrow key/D.
-Jumping/Climbing/Swimming upwards/Saltar/Nadar para cima/Subir: Up arrow key/W.
-Climbing/Swimming downwards/Descer/Nadar para baixo: Down arrow key.
-\"Follow me/Segue-me\": F.
-\"Stand still/Fica aí\": S.
-\"Run away/Foje\" opposite to/contrário de FOLLOWME: R.
-Companion jumping and \"interactions\" like attaching to the Ladder/
-Companheiro(a) saltar e \"interações\" como usar esquadas: Z.
-Knife attack/Ataque de faca: E.
-Ball kick attack/Ataque com bola e pontapé: Q."
+text = "Companion receives more damage than Player/O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
+Keys unlock doors of corresponding colors/Chaves abrem portas de cores correspondentes
+Grocery basket heals whoever picks it up/O cesto de compras cura quem o apanhar
+Lifeguard Floater makes you invincible for a short time/A bóia salva-vidas faz-te invencível por pouco tempo
+This bag gives you one soccer ball/Esta mala dá-te uma bola de futebol
+Soccer ball can defeat enemies/A bola de futebol consegue derrotar inimigos
+Soccer net disappears when receiving the ball/A rede de futebol desaparece quando recebe a bola
+The Manowar can't be defeated/A caravela não pode ser derrotada"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
