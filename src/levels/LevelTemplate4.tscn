@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/sprites/tile test.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/levels/LevelTemplate4.gd" type="Script" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=9]
 
@@ -59,3 +60,7 @@ position = Vector2( 915.33, 467.316 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( 915.332, 465.315 )
+
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2111.17, 577.033 )
+new_scene = "res://src/levels/LevelTemplate5.tscn"
