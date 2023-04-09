@@ -4,10 +4,10 @@
 [ext_resource path="res://src/level_objects/YellowDoor.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 96, 160 )
+extents = Vector2( 64, 128 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 104, 168 )
+extents = Vector2( 80, 144 )
 
 [node name="YellowDoor" type="StaticBody2D"]
 collision_layer = 4
@@ -15,8 +15,8 @@ collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 9.53674e-07, -2.86102e-06 )
-scale = Vector2( 1.28859, 1.05611 )
+position = Vector2( 0, 5.72205e-06 )
+scale = Vector2( 0.85906, 0.844884 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
