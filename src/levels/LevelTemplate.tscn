@@ -249,6 +249,15 @@ position = Vector2( 4480, 512 )
 [node name="Coin" parent="." instance=ExtResource( 13 )]
 position = Vector2( 4096, 512 )
 
+[node name="Coin6" parent="." instance=ExtResource( 13 )]
+position = Vector2( 9728, 256 )
+
+[node name="Coin7" parent="." instance=ExtResource( 13 )]
+position = Vector2( 10304, 512 )
+
+[node name="Coin8" parent="." instance=ExtResource( 13 )]
+position = Vector2( 9536, 256 )
+
 [node name="Teleportal3" parent="." instance=ExtResource( 27 )]
 position = Vector2( 6400, 768 )
 id = 2

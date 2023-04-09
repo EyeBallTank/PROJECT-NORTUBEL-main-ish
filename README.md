@@ -92,10 +92,12 @@ I may end up changing this goal list as well.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
 * Maybe the Water scene in general is a bit messy.
+* Turns out the jump/fall through platforms aren't as "universal".
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
 * OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough).
+* Can i make export vars out of collision shapes? I wonder if that can improve water, ladders, ice, mud and fall/jump-through platforms so i can also make their visuals come from the TileMap.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

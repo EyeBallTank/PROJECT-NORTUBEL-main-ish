@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://src/level_objects/BluePlatHoriz.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=28]
 
@@ -139,3 +140,6 @@ position = Vector2( 3648, 509.884 )
 
 [node name="CrawlzoneEnter2" parent="." instance=ExtResource( 20 )]
 position = Vector2( 3456, 509.884 )
+
+[node name="IceFloor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 2304, 701.09 )
