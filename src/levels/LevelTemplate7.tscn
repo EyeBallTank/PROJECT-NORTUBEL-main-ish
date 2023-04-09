@@ -1,11 +1,32 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/sprites/screens/Nortubel Demo endimage.png" type="Texture" id=2]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=3]
 
 [node name="LevelTemplate7" type="Node2D"]
 light_mask = 4
 rotation = -0.00143664
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/ColorRect"]
+position = Vector2( 647.13, 408.125 )
+scale = Vector2( 0.434672, 0.434672 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect"]
+margin_left = 126.0
+margin_top = 106.0
+margin_right = 818.0
+margin_bottom = 212.0
+custom_fonts/font = ExtResource( 3 )
+text = "Thanks for player/Obrigado por jogar
+This game is still in development and needs feedback and criticism to improve
+Este jogo está a ser desenvolvido e precisa de feedback e criticas para melhorar"
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 1 )]
