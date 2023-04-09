@@ -672,7 +672,7 @@ func is_invul():
 	$FloaterActive.show()
 #	animatedsprite.modulate = Color(0, 255, 0, 255)
 	hurtbox.set_monitoring(false)
-	yield(get_tree().create_timer(10), "timeout")
+	yield(get_tree().create_timer(30), "timeout")
 	print("hope it did")
 	hurtbox.set_monitoring(true)
 	$FloaterActive.hide()
