@@ -96,7 +96,7 @@ I may end up changing this goal list as well.
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
-* OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough).
+* OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough; Maybe make it a seperate door type).
 * Can i make export vars out of collision shapes? I wonder if that can improve water, ladders, ice, mud and fall/jump-through platforms so i can also make their visuals come from the TileMap.
 
 # Current controls/Inputs:
@@ -150,6 +150,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * jeanmakesgames (Used tutorial video on level portals)
 * matinator9185/MateuSai (Used tutorial video on the checkpoint system)
 * kidscancode (Used an article of theirs as reference for implementing Comp4's ice physics)
+* clecioespindolagamedev (Used tutorial video on how i could export my game)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
