@@ -58,7 +58,9 @@ Not yet:
 * SAVE/LOAD: Need to understand clearly how it can work and avoid the least amount of problems.
 * LEVEL SELECT/HUB: Not sure exactly how level selection would work.
 * LIVE SYSTEM: Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on both an extra life pickup AND making it so collecting 100 coins adds a new life.
+* "SADNESS" STATE: The idea is that when a character dies, the other is in a "sad state"; This is just a way to "lock" one character when the other is dead, so both respawn when a life is lost.
 * HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style; A main idea was a "Companion notifier" for when the Companion is off-screen like an arrow on-screen pointing at their direction so the Player gets an idea of their location.
+* OFF-SCREEN COMPANION INDICATOR/WAYPOINT: Mentioned above; Ideally, i want it to look like an Astrolobe because of Nortubel's Portugal influences.
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
 * SPACE/GRAVITY ELEMENTS: Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * BOSS FIGHTS: Will probably be a very complex inclusion.
@@ -93,6 +95,7 @@ I may end up changing this goal list as well.
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
+* The endlevel door should technically require both characters.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

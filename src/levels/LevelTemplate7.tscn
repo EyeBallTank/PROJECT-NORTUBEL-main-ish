@@ -25,8 +25,8 @@ margin_top = 106.0
 margin_right = 818.0
 margin_bottom = 212.0
 custom_fonts/font = ExtResource( 3 )
-text = "Thanks for player/Obrigado por jogar
-This game is still in development and needs feedback and criticism to improve
-Este jogo está a ser desenvolvido e precisa de feedback e criticas para melhorar"
+text = "Thanks for playing/Obrigado por jogar
+This game is still in development and needs help and criticism to improve
+Este jogo está a ser desenvolvido e precisa de ajúda e criticas para melhorar"
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource( 1 )]
