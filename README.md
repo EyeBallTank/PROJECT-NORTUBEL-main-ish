@@ -2,6 +2,8 @@
 
 The game i want to make, under Godot 3.5 Win32; GLES3 sort of.
 
+You can play a demo of it here https://eyeballtank.itch.io/project-nortubel make sure to give me feedback.
+
 Code was taken from GDQuest's platformer tutorial series (In which i did finish from the 3 videos, so in a way i still wrote that code), Gonkee's "Jared AI" project and the Cubio demo. I plan to soon try and do my own code and improve on skills when using Godot's tools.
 
 Both main actors have gravity but only one is playable by moving left/right and jumping, while the other can follow you around at a certain distance. The test level is very basic.
