@@ -1,18 +1,14 @@
 extends Area2D
 class_name Water
+tool
+
+#water's collision should be 2 "squares" under its tiles or something due to collision weirdness
+#maybe this issue is more on the characters but still
 
 onready var collisionshape = $CollisionShape2D
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var collision_newsize = Vector2()
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	self.scale = collision_newsize
+	pass

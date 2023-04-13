@@ -6,6 +6,7 @@ var is_pressed = false
 onready var animationplayer = $AnimationPlayer
 
 func _ready():
+	$Sprite.animation = "switchon"
 	pass
 
 func _on_YellowSwitch_body_entered(body):
@@ -13,9 +14,11 @@ func _on_YellowSwitch_body_entered(body):
 		is_pressed = true
 		print("YELLOW IS PRESSED")
 		animationplayer.play("PRESSED")
+		$Sprite.animation = "switchoff"
 		Signals.emit_signal("yellow_switch_pressed")
 #		yield(get_tree().create_timer(3), "timeout")
 		yield(get_node("AnimationPlayer"), "animation_finished")
 		is_pressed = false
 		print("YELLOW IS UNPRESSED AGAIN")
 		animationplayer.play("UNPRESSED")
+		$Sprite.animation = "switchon"

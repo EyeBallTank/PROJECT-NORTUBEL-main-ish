@@ -1,5 +1,4 @@
-extends Area2D
-class_name SlowFloor
+extends StaticBody2D
 tool
 
 onready var collisionshape = $CollisionShape2D

@@ -1,16 +1,14 @@
 extends Area2D
 class_name IceFloor
+tool
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+#With ice tiles, add an extra square to their size if there's a cliff
+#This is so characters can maintain their icy physics when falling off an icy platform
+
+onready var collisionshape = $CollisionShape2D
+export var collision_newsize = Vector2()
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	self.scale = collision_newsize
+	pass

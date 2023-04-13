@@ -1,20 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/ladder test.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Ladder.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 64, 128 )
+resource_local_to_scene = true
+extents = Vector2( 4, 4 )
 
 [node name="Ladder" type="Area2D"]
+scale = Vector2( 64, 64 )
 collision_layer = 4
 collision_mask = 3
 script = ExtResource( 2 )
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 4, -7.95693e-06 )
-scale = Vector2( 0.637168, 0.646465 )
-texture = ExtResource( 1 )
+collision_newsize = Vector2( 64, 64 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -4, -4 )
 shape = SubResource( 1 )

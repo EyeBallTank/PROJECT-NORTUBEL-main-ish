@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
@@ -7,6 +7,24 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.5, 123.5 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 807, 349 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 349, 807, 349 )
+
+[sub_resource type="SpriteFrames" id=38]
+animations = [ {
+"frames": [ SubResource( 36 ), SubResource( 37 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -106,10 +124,12 @@ margin_top = -318.0
 margin_right = 125.0
 margin_bottom = -258.0
 
-[node name="FloaterActive" type="Sprite" parent="."]
+[node name="FloaterActive" type="AnimatedSprite" parent="."]
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
-texture = ExtResource( 1 )
+frames = SubResource( 38 )
+frame = 1
+playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )

@@ -1,21 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/Icefloor.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/IceFloor.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 316, 44 )
+extents = Vector2( 0.8, 4 )
 
 [node name="IceFloor" type="Area2D" groups=["ice"]]
+scale = Vector2( 1e-05, 1e-05 )
 collision_layer = 4
 collision_mask = 3
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 36, -76 )
-scale = Vector2( 1.01038, 0.727273 )
-texture = ExtResource( 1 )
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 36, -108 )
+position = Vector2( 4, -4 )
+scale = Vector2( 5, 1 )
 shape = SubResource( 1 )

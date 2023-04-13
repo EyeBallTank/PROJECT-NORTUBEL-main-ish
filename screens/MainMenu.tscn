@@ -91,7 +91,8 @@ custom_fonts/font = SubResource( 4 )
 text = "Quit/Saída"
 
 [node name="Sprite" type="Sprite" parent="MenuMain"]
-position = Vector2( 156, -114 )
+position = Vector2( 156, -128 )
+scale = Vector2( 1.12844, 1.12844 )
 texture = ExtResource( 3 )
 
 [node name="OptionsMenu" type="Control" parent="."]
