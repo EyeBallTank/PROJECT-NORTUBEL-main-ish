@@ -13,6 +13,7 @@ extents = Vector2( 26, 111 )
 extents = Vector2( 18, 74.25 )
 
 [node name="Soccer Goal" type="StaticBody2D"]
+z_index = 15
 collision_layer = 2048
 collision_mask = 1059
 script = ExtResource( 2 )
