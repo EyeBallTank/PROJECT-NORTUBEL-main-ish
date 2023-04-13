@@ -90,6 +90,7 @@ I may end up changing this goal list as well.
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer scene in each level, so i may have to make this as an actual recurring game scene.
 * The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
+* If the Player is on a different state type (Like swimming) from the Companion (Like walking normally on floor), then you'll get weird movement from the Companion.
 * Current health bars are attached to the main characters and not part of an ingame HUD attached to the screen.
 * Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
 * I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
@@ -99,7 +100,7 @@ I may end up changing this goal list as well.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
 * OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough; Maybe make it a seperate door type).
-* Can i make export vars out of collision shapes? I wonder if that can improve water, ladders, ice, mud and fall/jump-through platforms so i can also make their visuals come from the TileMap.
+* TileMap tiles seem to have subtle white lines between the tiles.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
