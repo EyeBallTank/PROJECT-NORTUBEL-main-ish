@@ -1,8 +1,26 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/enemy_sprites/gecko test.png" type="Texture" id=1]
 [ext_resource path="res://src/enemies/gecko enemy.gd" type="Script" id=2]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=3]
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 430, 283 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 283, 430, 283 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 5.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 206.5, 74 )
@@ -18,10 +36,12 @@ collision_layer = 32
 collision_mask = 2052
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1, -215 )
-rotation = -1.5708
-texture = ExtResource( 1 )
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1, -221 )
+rotation = 3.14159
+frames = SubResource( 6 )
+animation = "Walking"
+playing = true
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
