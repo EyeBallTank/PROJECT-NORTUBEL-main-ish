@@ -100,7 +100,6 @@ I may end up changing this goal list as well.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
 * OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough; Maybe make it a seperate door type).
-* TileMap tiles seem to have subtle white lines between the tiles.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
