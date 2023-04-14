@@ -99,6 +99,7 @@ I may end up changing this goal list as well.
 * There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
+* Visuals in general are weird because of the resolution, so the game looks like it has pixels moving/changing on their own; I'm not sure if it has to do with the camera, window or the art.
 * OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough; Maybe make it a seperate door type).
 
 # Current controls/Inputs:
