@@ -8,6 +8,9 @@ var active = false
 onready var Player = get_parent().get_node("Player")
 onready var Companion = get_parent().get_node("Companion")
 
+func ready():
+	$Sprite.animation = "silent"
+
 func _on_Gong_body_entered(body):
 #	if body.is_in_group("protagonists"):
 	if not active:
@@ -18,6 +21,9 @@ func _on_Gong_body_entered(body):
 		audioPlayer.play()
 		animationplayer.play("TOUCHED")
 		active = true
+		$Sprite.animation = "active"
+		yield(get_tree().create_timer(1.2), "timeout")
+		$Sprite.animation = "silent"
 #		Signals.emit_signal("hit_checkpoint", position)
 #		if body.health == 0:
 #			body.global_position = global_position
