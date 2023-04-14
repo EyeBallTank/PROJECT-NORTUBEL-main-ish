@@ -15,8 +15,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/ColorRect"]
-position = Vector2( 647.13, 408.125 )
-scale = Vector2( 0.434672, 0.434672 )
+position = Vector2( 572.592, 370.125 )
+scale = Vector2( 0.520645, 0.520645 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="CanvasLayer/ColorRect"]
