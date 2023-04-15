@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=31]
@@ -37,6 +38,11 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 28 )]
+background = "res://assets/sprites/level_backgrounds/level bg test.png"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

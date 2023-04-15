@@ -23,7 +23,7 @@
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/FishHookKinematic.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/sprites/level_backgrounds/level bg test 2.png" type="Texture" id=24]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/Bonka NPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=27]
@@ -34,15 +34,7 @@ script = ExtResource( 11 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( -48, -328 )
-motion_scale = Vector2( 1.3, 1.3 )
-motion_mirroring = Vector2( 4096, 2400 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 1, 3 )
-texture = ExtResource( 24 )
-centered = false
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 24 )]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

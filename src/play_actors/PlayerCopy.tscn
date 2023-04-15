@@ -114,7 +114,6 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, -59 )
-scale = Vector2( 0.992923, 1 )
 current = true
 zoom = Vector2( 2.6, 2.6 )
 smoothing_enabled = true
