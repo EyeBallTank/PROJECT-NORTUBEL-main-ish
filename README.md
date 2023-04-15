@@ -54,6 +54,7 @@ Done (Even if it could be better):
 * COMBAT: Player has a basic melee knife attack and the ability to kick a soccer ball that acts as a projectile with physics (And after a while it disappears; This ball also has a limit of uses).
 * SOCCER GOAL NET: If the soccer ball enters the net, the net disappears; It's a level object that could have special roles in level design.
 * VERY BASIC NPC: So far, it's just a character simply standing and when you're near her, a basic dialogue text box pops up.
+* BACKGROUND: Just a basic sky with clouds.
 
 
 Not yet:
