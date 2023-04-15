@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -18,11 +18,16 @@
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=19]
 
 [node name="LevelTemplate5" type="Node2D"]
 light_mask = 4
 rotation = -0.00143664
 script = ExtResource( 4 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 19 )]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

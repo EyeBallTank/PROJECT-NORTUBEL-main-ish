@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=28]
 
@@ -28,6 +29,10 @@
 light_mask = 4
 scale = Vector2( 1, 1.00415 )
 script = ExtResource( 4 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 22 )]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
