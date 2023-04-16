@@ -73,7 +73,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
-	camera.zoom = Vector2(2.5, 2.5)
+	camera.zoom = Vector2(2, 2)
 	$FloaterActive.hide()
 	animatedsprite.frames = load(playerskin)
 	$CollisionShape2D.disabled = false
