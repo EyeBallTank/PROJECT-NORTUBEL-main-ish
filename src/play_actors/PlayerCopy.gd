@@ -54,6 +54,7 @@ var PUSH_SPEED = 150
 var STOP_FORCE = 450
 var JUMP_SPEED = 1500
 
+onready var camera = $Camera2D
 onready var healthBar = $HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
@@ -72,6 +73,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	camera.zoom = Vector2(2.5, 2.5)
 	$FloaterActive.hide()
 	animatedsprite.frames = load(playerskin)
 	$CollisionShape2D.disabled = false
