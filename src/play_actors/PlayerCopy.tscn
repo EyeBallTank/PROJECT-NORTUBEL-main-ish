@@ -113,10 +113,14 @@ position = Vector2( -1.5, -123.5 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 0, -59 )
+position = Vector2( 0, -32 )
 current = true
-zoom = Vector2( 2.6, 2.6 )
+zoom = Vector2( 2, 2 )
 smoothing_enabled = true
+drag_margin_left = 1.0
+drag_margin_top = 1.0
+drag_margin_right = 1.0
+drag_margin_bottom = 1.0
 
 [node name="HealthbarPlayer" parent="." instance=ExtResource( 3 )]
 margin_left = -126.0
