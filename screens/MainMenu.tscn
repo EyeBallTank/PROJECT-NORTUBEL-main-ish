@@ -58,6 +58,7 @@ margin_bottom = 419.0
 [node name="StartButton" type="Button" parent="MenuMain"]
 margin_right = 296.0
 margin_bottom = 23.0
+focus_mode = 1
 theme = ExtResource( 4 )
 custom_fonts/font = ExtResource( 5 )
 text = "Start/Começo"
@@ -66,6 +67,7 @@ text = "Start/Começo"
 margin_top = 27.0
 margin_right = 296.0
 margin_bottom = 50.0
+focus_mode = 1
 custom_fonts/font = SubResource( 2 )
 text = "Options/Opções"
 
@@ -73,6 +75,7 @@ text = "Options/Opções"
 margin_top = 54.0
 margin_right = 296.0
 margin_bottom = 77.0
+focus_mode = 1
 custom_fonts/font = SubResource( 3 )
 text = "Extra"
 
@@ -80,6 +83,7 @@ text = "Extra"
 margin_top = 81.0
 margin_right = 296.0
 margin_bottom = 104.0
+focus_mode = 1
 custom_fonts/font = SubResource( 3 )
 text = "Load/Carregar"
 
@@ -87,6 +91,7 @@ text = "Load/Carregar"
 margin_top = 108.0
 margin_right = 296.0
 margin_bottom = 131.0
+focus_mode = 1
 custom_fonts/font = SubResource( 4 )
 text = "Quit/Saída"
 
