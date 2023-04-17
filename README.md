@@ -102,6 +102,7 @@ I may end up changing this goal list as well.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
 * Visuals in general are weird because of the resolution, so the game looks like it has pixels moving/changing on their own; I'm not sure if it has to do with the camera, window or the art (And this issue may get even more complicated to fix because of small details and overlooked things to consider).
 * OPTIONAL: The endlevel door should technically require both characters (Unless some levels work better if only one character is good enough; Maybe make it a seperate door type).
+* Controls/Inputs need to be better and not feel annoying.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
