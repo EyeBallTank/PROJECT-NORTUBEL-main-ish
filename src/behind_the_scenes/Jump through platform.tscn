@@ -6,6 +6,7 @@
 extents = Vector2( 0.571429, 0.571429 )
 
 [node name="jump thru" type="StaticBody2D"]
+scale = Vector2( 1e-05, 1e-05 )
 collision_layer = 4
 collision_mask = 3
 script = ExtResource( 1 )

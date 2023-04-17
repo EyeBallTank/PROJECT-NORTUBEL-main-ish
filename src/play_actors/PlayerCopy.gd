@@ -103,7 +103,7 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
 
-			if Input.is_action_just_pressed("kickball"):
+			if Input.is_action_just_pressed("down"):
 				if hasball == true:
 					state = KICKBALL
 				else:
@@ -196,7 +196,7 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
 
-			if Input.is_action_just_pressed("kickball"):
+			if Input.is_action_just_pressed("down"):
 				if hasball == true:
 					state = KICKBALL
 				else:
@@ -290,7 +290,7 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
 
-			if Input.is_action_just_pressed("kickball"):
+			if Input.is_action_just_pressed("down"):
 				if hasball == true:
 					state = KICKBALL
 				else:
@@ -531,7 +531,7 @@ func _physics_process(delta):
 					animatedsprite.animation = "Idle"
 				else:
 					pass
-			if Input.get_action_strength("down"):
+			if Input.get_action_strength("jumpup"):
 				state = MAINSTATE
 				animatedsprite.animation = "Idle"
 
