@@ -109,14 +109,13 @@ This is an area that needs to be improved:
 * ESC for the Pause Menu.
 * Left movement: Left arrow key/A.
 * Right movement: Right arrow key/D.
-* Jumping and Climbing/Swimming upwards: Up arrow key/W.
-* Climbing/Swimming downwards: Down arrow key.
+* Jumping and Climbing/Swimming upwards/Quitting ball kick attack: Up arrow key/W.
+* Climbing/Swimming downwards/Ball kick attack: Down arrow key.
 * "Follow me": F.
 * "Stand still": S.
 * "Run away" which is almost opposite to FOLLOWME: R.
 * Companion jumping and "interactions" like attaching to the Ladder: Z.
 * Melee attack: E.
-* Ball kick attack: Q.
 
 # Credits and shout outs:
 
