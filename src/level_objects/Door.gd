@@ -1,13 +1,25 @@
 extends Area2D
-
-#Should probably make it so endlevel doors and such require both player and companion to end level
-
+#Door requires both characters to use it
+#Maybe i could consider endlevel doors that don't need both characters depending on level design
 export var new_scene = "res://src/levels/LevelTemplate2.tscn"
+var playertouch = false
+var comptouch = false
 
 func _ready():
-	pass 
+	pass
 
+func _physics_process(delta):
+	if playertouch == true and comptouch == true:
+		SceneManager.change_scene("level_transition_effect", new_scene)
 
 func _on_Door_body_entered(body):
-	if body.is_in_group("protagonists"):
-		SceneManager.change_scene("level_transition_effect", new_scene)
+	if body.name == "Player":
+		playertouch = true
+	if body.name == "Companion":
+		comptouch = true
+
+func _on_Door_body_exited(body):
+	if body.name == "Player":
+		playertouch = false
+	if body.name == "Companion":
+		comptouch = false

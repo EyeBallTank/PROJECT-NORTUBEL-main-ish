@@ -54,7 +54,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 position = Vector2( 915.332, 465.315 )
 
 [node name="Door" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2752, 3.95363 )
+position = Vector2( 2688, 3.86169 )
 new_scene = "res://src/levels/LevelTemplate6.tscn"
 
 [node name="Gong" parent="." instance=ExtResource( 8 )]
