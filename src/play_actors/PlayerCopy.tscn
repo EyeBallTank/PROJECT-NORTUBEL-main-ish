@@ -1,10 +1,10 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
 [ext_resource path="res://src/menusandui/healthbarPlayer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/sprites/play_actor_sprites/CarrieSprites.tres" type="SpriteFrames" id=4]
-[ext_resource path="res://assets/sprites/menus_and_ui_sprites/Calling Speech Balloons.PNG" type="Texture" id=5]
+[ext_resource path="res://src/menusandui/SpeechBalloon.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.5, 123.5 )
@@ -25,36 +25,6 @@ animations = [ {
 "loop": true,
 "name": "default",
 "speed": 10.0
-} ]
-
-[sub_resource type="AtlasTexture" id=39]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 347, 402, 347 )
-
-[sub_resource type="AtlasTexture" id=40]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 694, 402, 347 )
-
-[sub_resource type="AtlasTexture" id=41]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 402, 347 )
-
-[sub_resource type="SpriteFrames" id=42]
-animations = [ {
-"frames": [ SubResource( 39 ) ],
-"loop": true,
-"name": "BalloonFollow",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 40 ) ],
-"loop": true,
-"name": "BalloonRun",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 41 ) ],
-"loop": true,
-"name": "BalloonStop",
-"speed": 5.0
 } ]
 
 [sub_resource type="Animation" id=2]
@@ -164,15 +134,9 @@ margin_bottom = -258.0
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
 frames = SubResource( 38 )
-frame = 1
 playing = true
 
-[node name="SpeechBalloon" type="AnimatedSprite" parent="."]
-position = Vector2( -58, -286.938 )
-scale = Vector2( 0.141264, 0.178009 )
-frames = SubResource( 42 )
-animation = "BalloonStop"
-playing = true
+[node name="SpeechBalloon" parent="." instance=ExtResource( 5 )]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
