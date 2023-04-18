@@ -302,6 +302,8 @@ func _physics_process(delta):
 				velocity.x = WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(65, 2)
 				pushdetector.position = Vector2(63, 0)
+#			elif Input.get_action_strength("right") and not Input.is_action_pressed("kickball"):
+#				velocity.x = 0
 			elif Input.get_action_strength("left"):
 				velocity.x = -WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(-67, 2)
