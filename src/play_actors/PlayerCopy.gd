@@ -32,8 +32,8 @@ enum {
 	SLOW,
 	PUSH,
 	ICE,
-	SADNESS
-#	CALLING
+	SADNESS,
+	CALLING
 }
 
 var state = MAINSTATE
@@ -580,6 +580,8 @@ func _physics_process(delta):
 			hide()
 			go_to_checkpoint()
 
+		CALLING:
+			pass
 
 		SADNESS:
 			pass
