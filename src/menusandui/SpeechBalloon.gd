@@ -4,7 +4,7 @@ func _ready():
 	hide()
 
 func _physics_process(_delta):
-	if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+	if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 		show()
 		animation = "BalloonStop"
 		yield(get_tree().create_timer(0.5), "timeout")

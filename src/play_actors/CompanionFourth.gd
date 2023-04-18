@@ -140,7 +140,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = RUNAWAY
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
 				state = SWIMMING
@@ -271,7 +271,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = FOLLOWME
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
 				state = SWIMRUN
@@ -409,7 +409,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = SWIMRUN
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = SWIMIDLE
 			if not is_on_water():
 				state = FOLLOWME
@@ -512,7 +512,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = SWIMMING
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = SWIMIDLE
 			if not is_on_water():
 				state = RUNAWAY
@@ -664,7 +664,7 @@ func _physics_process(delta):
 #Why do i have to use vel.x and not vel.y here?
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = CLIMBIDLE
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = CLIMBRUN
@@ -722,7 +722,7 @@ func _physics_process(delta):
 #Why do i have to use vel.x and not vel.y here?
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = CLIMBIDLE
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = CLIMBMOVE
@@ -792,7 +792,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = SLOWRUN
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
 				state = SWIMMING
@@ -863,7 +863,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = SLOWFOLLOW
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
 				state = SWIMRUN
@@ -903,7 +903,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = CRAWLRUN
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = CRAWLIDLE
 
 		CRAWLRUN:
@@ -935,7 +935,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = CRAWLFOLLOW
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = CRAWLIDLE
 
 		CRAWLIDLE:
@@ -1018,7 +1018,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = ICERUN
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = ICEIDLE
 			if is_on_water():
 				state = SWIMMING
@@ -1098,7 +1098,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = ICEFOLLOW
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = ICEIDLE
 			if is_on_water():
 				state = SWIMRUN
@@ -1268,7 +1268,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = RUNAWAY
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
 				state = SWIMMING
@@ -1341,7 +1341,7 @@ func _physics_process(delta):
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = FOLLOWME
-			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("jumpup"):
+			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
 				state = SWIMRUN

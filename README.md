@@ -25,7 +25,7 @@ Done (Even if it could be better):
 * CHECKPOINT SYSTEM: It works on both characters; It essentially "drags" a character to the right spot. Had to create "spawn" scenes as well so the characters have somewhere else to respawn when it's not a checkpoint.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens; The end level Door also has an export var for the next level instead of using a specific script.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
-* COMPANION "COMMAND" SYSTEM: Now you hold Q and then press left/up/right to command the Companion into their states.
+* COMPANION "COMMAND" SYSTEM: Now you hold Q and then press left/down/right to command the Companion into their states (This system in general could be better).
 * COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement; If they're close enough to the Player, they can simply stop; Their running speed is slower than the Player's.
 * COMPANION JUMP INPUT: You press a specific input (Currently "Z") to make them jump, since it's a safer option than making them automatically jump with conditions like "if on a lower position than the Player's Y axis".
 * COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
@@ -89,7 +89,6 @@ Not yet:
 I may end up changing this goal list as well.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
-* The Player still behaves normally when "commanding" the Companion, becaues i've yet to found a way to "cancel" certain actions like movement or jumping when pressing Q and then left/right/up.
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer scene in each level, so i may have to make this as an actual recurring game scene.
 * The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
@@ -113,7 +112,7 @@ This is an area that needs to be improved:
 * Jumping and Climbing/Swimming upwards/Quitting ball kick attack: Up arrow key/W.
 * Climbing/Swimming downwards/Ball kick attack: Down arrow key.
 * "Follow me": Q + Right arrow key.
-* "Stand still": Q + Up arrow key.
+* "Stand still": Q + Down arrow key.
 * "Run away" which is almost opposite to FOLLOWME: Q + Left arrow key.
 * Companion jumping and "interactions" like attaching to the Ladder: Z.
 * Melee attack: E.
