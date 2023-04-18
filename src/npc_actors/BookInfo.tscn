@@ -41,9 +41,9 @@ shape = SubResource( 4 )
 layer = 14
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
-margin_left = 209.0
-margin_top = 195.0
-margin_right = 822.0
+margin_left = 204.0
+margin_top = 170.0
+margin_right = 827.0
 margin_bottom = 449.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 0.330994, 0.00266838, 413.334, 409.998 )
@@ -53,10 +53,10 @@ patch_margin_right = 4
 patch_margin_bottom = 6
 
 [node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
-margin_left = 6.0
-margin_top = 5.0
-margin_right = 901.0
-margin_bottom = 376.0
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 906.0
+margin_bottom = 381.0
 custom_fonts/font = SubResource( 5 )
 text = "ESC: Pause menu/Menu de pausa
 Left movement/Movimento esquerdo: Left arrow key/A.

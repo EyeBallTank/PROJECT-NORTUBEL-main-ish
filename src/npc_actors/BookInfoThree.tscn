@@ -41,10 +41,10 @@ shape = SubResource( 4 )
 layer = 14
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
-margin_left = 46.0
-margin_top = 182.0
-margin_right = 959.0
-margin_bottom = 430.0
+margin_left = 42.0
+margin_top = 160.0
+margin_right = 980.0
+margin_bottom = 434.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 0.330994, 0.00266838, 413.334, 409.998 )
 patch_margin_left = 4
@@ -53,10 +53,10 @@ patch_margin_right = 4
 patch_margin_bottom = 6
 
 [node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
-margin_left = 6.0
-margin_top = 5.0
-margin_right = 901.0
-margin_bottom = 376.0
+margin_left = 20.0
+margin_top = 16.0
+margin_right = 919.0
+margin_bottom = 387.0
 custom_fonts/font = SubResource( 5 )
 text = "Buttons are pressed automatically by either character/Botões são pressionados por qualquer personagem
 Blue buttons leave a permanent effect/Botões azuis deixam um efeito permanente
