@@ -32,8 +32,8 @@ enum {
 	SLOW,
 	PUSH,
 	ICE,
-	SADNESS,
-	CALLING
+	SADNESS
+#	CALLING
 }
 
 var state = MAINSTATE
@@ -74,6 +74,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	$SpeechBalloon.hide()
 	camera.zoom = Vector2(2, 2)
 	$FloaterActive.hide()
 	animatedsprite.frames = load(playerskin)
@@ -87,6 +88,16 @@ func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
 		state = DEATH
+
+	if Input.is_action_pressed("kickball") and Input.is_action_pressed("jumpup"):
+		$SpeechBalloon.show()
+		$SpeechBalloon.animation = "BalloonStop"
+	if Input.is_action_pressed("kickball") and Input.is_action_pressed("left"):
+		$SpeechBalloon.show()
+		$SpeechBalloon.animation = "BalloonRun"
+	if Input.is_action_pressed("kickball") and Input.is_action_pressed("right"):
+		$SpeechBalloon.show()
+		$SpeechBalloon.animation = "BalloonFollow"
 
 	# Still using frankensteined code to do this		
 	match state:
@@ -296,6 +307,9 @@ func _physics_process(delta):
 					state = KICKBALL
 				else:
 					pass
+
+#			if Input.is_action_just_pressed("kickball"):
+#				state = CALLING
 
 #this worked: if Input.is_action_pressed("down") and Input.is_action_just_pressed("attack"):
 
@@ -580,8 +594,19 @@ func _physics_process(delta):
 			hide()
 			go_to_checkpoint()
 
-		CALLING:
-			pass
+#		CALLING:
+#			animatedsprite.animation = "Idle"
+#			velocity.x = 0
+#			velocity.y += gravity * delta
+#			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+#			if Input.is_action_pressed("kickball") and Input.is_action_pressed("jumpup"):
+#				state = MAINSTATE
+#			if Input.is_action_pressed("kickball") and Input.is_action_pressed("left"):
+#				state = MAINSTATE
+#			if Input.is_action_pressed("kickball") and Input.is_action_pressed("right"):
+#				state = MAINSTATE
+#			else:
+#				pass
 
 		SADNESS:
 			pass
