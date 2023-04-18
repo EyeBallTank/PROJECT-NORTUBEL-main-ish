@@ -25,6 +25,7 @@ Done (Even if it could be better):
 * CHECKPOINT SYSTEM: It works on both characters; It essentially "drags" a character to the right spot. Had to create "spawn" scenes as well so the characters have somewhere else to respawn when it's not a checkpoint.
 * SCENE CHANGER: Levels/scenes can change and there's an animation when the transition happens; The end level Door also has an export var for the next level instead of using a specific script.
 * BASIC PLAYER MOVEMENT: You can move left/right and jump; Even got a "jump buffer" kinda.
+* COMPANION "COMMAND" SYSTEM: Now you hold Q and then press left/up/right to command the Companion into their states.
 * COMPANION FOLLOWER STATE: It can chase the player with basic AI/platformer movement; If they're close enough to the Player, they can simply stop; Their running speed is slower than the Player's.
 * COMPANION JUMP INPUT: You press a specific input (Currently "Z") to make them jump, since it's a safer option than making them automatically jump with conditions like "if on a lower position than the Player's Y axis".
 * COMPANION IDLE STATE: In case you want the Companion to stand still; It also has gravity physics.
@@ -76,7 +77,7 @@ Not yet:
 * NICE VISUALS: It's not just about pretty visuals for the sake of it, things like feedback could be important.
 * BACKGROUNDS AND DECORATIONS: Oh yeah, i guess i could add this to the list.
 * UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: One of those nice little touches like getting the siblings to play a game or read a book etc.
-* SOUND/MUSIC: Nothing except for a basic sound for an object in the game; I do not want voice acting at all, at least.
+* SOUND/MUSIC: Nothing except for basic sounds for some objects; I do not want voice acting at all, at least.
 * BETTER ORGANIZATION BEHIND THE SCENES: Like methods to make the game's inner workings more flexible or supportive of some stuff; It depends if certain stuff is that mandatory and if i can get away with some other methods.
 * MULTIPLE LANGUAGES: In case language options would be too difficult, i might as well have both English and Portuguese coexist in some way.
 * ALTERNATE/SECRET LEVELS: Ideally, these levels could be an excuse for me to show characters and settings from different worlds.
@@ -88,6 +89,7 @@ Not yet:
 I may end up changing this goal list as well.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
+* The Player still behaves normally when "commanding" the Companion, becaues i've yet to found a way to "cancel" certain actions like movement or jumping when pressing Q and then left/right/up.
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer scene in each level, so i may have to make this as an actual recurring game scene.
 * The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
 * The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
@@ -110,9 +112,9 @@ This is an area that needs to be improved:
 * Right movement: Right arrow key/D.
 * Jumping and Climbing/Swimming upwards/Quitting ball kick attack: Up arrow key/W.
 * Climbing/Swimming downwards/Ball kick attack: Down arrow key.
-* "Follow me": F.
-* "Stand still": S.
-* "Run away" which is almost opposite to FOLLOWME: R.
+* "Follow me": Q + Right arrow key.
+* "Stand still": Q + Up arrow key.
+* "Run away" which is almost opposite to FOLLOWME: Q + Left arrow key.
 * Companion jumping and "interactions" like attaching to the Ladder: Z.
 * Melee attack: E.
 
@@ -144,6 +146,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Dicode1q (Used video and article to improvise player jump physics)
 * gamedevwithdrew (Used tutorial videos on adding the health bars)
 * strangehorizon on Freesound dot org (Source of Gong sound effect)
+* uEffects on Freesound (Source of Soccer Ball Bag sound effect)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
