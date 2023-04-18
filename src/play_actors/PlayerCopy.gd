@@ -33,6 +33,7 @@ enum {
 	PUSH,
 	ICE,
 	SADNESS
+#	CALLING
 }
 
 var state = MAINSTATE
@@ -295,6 +296,8 @@ func _physics_process(delta):
 					state = KICKBALL
 				else:
 					pass
+
+#this worked: if Input.is_action_pressed("down") and Input.is_action_just_pressed("attack"):
 
 			WALK_MAX_SPEED = 700
 			if Input.get_action_strength("right"):
