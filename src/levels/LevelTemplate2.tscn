@@ -96,7 +96,7 @@ position = Vector2( -64, -320 )
 position = Vector2( 2240, 0 )
 
 [node name="Blue key" parent="." instance=ExtResource( 20 )]
-position = Vector2( 4416, 256 )
+position = Vector2( 4352, 192 )
 
 [node name="Yellow key" parent="." instance=ExtResource( 17 )]
 position = Vector2( 2752, -64 )

@@ -149,6 +149,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * uEffects on Freesound (Source of Soccer Ball Bag sound effect)
 * egolessdub on FreeSound (Source for key pickup sound)
 * VKProduktion on FreeSound (Source for switch sound)
+* SeanSecret on FreeSound (Source for door unlocking sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
