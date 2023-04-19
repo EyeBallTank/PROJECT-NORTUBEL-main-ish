@@ -41,6 +41,7 @@ position = Vector2( 1, -221 )
 rotation = 3.14159
 frames = SubResource( 6 )
 animation = "Walking"
+frame = 1
 playing = true
 flip_v = true
 
@@ -56,6 +57,7 @@ shape = SubResource( 2 )
 
 [node name="GeckoHurtbox" type="Area2D" parent="."]
 collision_layer = 32
+collision_mask = 1025
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GeckoHurtbox"]
