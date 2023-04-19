@@ -24,12 +24,3 @@ func _physics_process(delta):
 
 func slide(vector):
 	velocity.x = vector.x
-
-#func push(velocity: Vector2) -> void:
-#	move_and_slide(velocity, Vector2())
-
-
-#func _on_Area2D_body_entered(body):
-#	if body.name == "Player":
-#		get_parent().global_position.x= get_parent().get_node("Player").global_position.x + player_lenght
-#		velocity.x = WALK_MAX_SPEED

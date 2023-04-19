@@ -46,7 +46,7 @@ tile_data = PoolIntArray( -1179609, 1, 0, -1114073, 1, 0, -1048537, 1, 0, -98300
 position = Vector2( 732.325, 470.053 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 732.326, 470.053 )
+position = Vector2( 733.327, 469.054 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
@@ -83,7 +83,7 @@ scale = Vector2( 88, 16 )
 collision_newsize = Vector2( 88, 16 )
 
 [node name="Pushable" parent="." instance=ExtResource( 15 )]
-position = Vector2( -2176.64, 444.873 )
+position = Vector2( -2112.55, 380.965 )
 
 [node name="BlueDoor" parent="." instance=ExtResource( 17 )]
 position = Vector2( 2496.18, -124.414 )

@@ -29,7 +29,7 @@ extents = Vector2( 206.5, 74 )
 extents = Vector2( 208.5, 76 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 206.5, 74 )
+extents = Vector2( 207.5, 74.5 )
 
 [node name="Gecko enemy" type="KinematicBody2D" groups=["enemies"]]
 collision_layer = 32
@@ -41,7 +41,6 @@ position = Vector2( 1, -221 )
 rotation = 3.14159
 frames = SubResource( 6 )
 animation = "Walking"
-frame = 1
 playing = true
 flip_v = true
 
@@ -60,7 +59,7 @@ collision_layer = 32
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GeckoHurtbox"]
-position = Vector2( 2.5, -156 )
+position = Vector2( 2.5, -156.5 )
 shape = SubResource( 3 )
 
 [connection signal="area_entered" from="GeckoHurtbox" to="." method="_on_GeckoHurtbox_area_entered"]
