@@ -93,6 +93,7 @@ shape = SubResource( 4 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = 0.735
+pitch_scale = 1.85
 bus = "Sound"
 
 [connection signal="body_entered" from="." to="." method="_on_SoccerBall_body_entered"]
