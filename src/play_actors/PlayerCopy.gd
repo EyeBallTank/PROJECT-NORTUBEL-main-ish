@@ -480,14 +480,14 @@ func _physics_process(delta):
 				velocity.y = 0
 			elif Input.get_action_strength("jumpup") and not Input.is_action_pressed("kickball"):
 				velocity.y = -PUSH_SPEED
-				velocity.x = 0
+#				velocity.x = 0
 				animatedsprite.animation = "Swimming"
 			elif Input.get_action_strength("jumpup") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
 				velocity.y = 0
 			elif Input.get_action_strength("down") and not Input.is_action_pressed("kickball"):
 				velocity.y = PUSH_SPEED
-				velocity.x = 0
+#				velocity.x = 0
 				animatedsprite.animation = "Swimming"
 			elif Input.get_action_strength("down") and Input.is_action_pressed("kickball"):
 				velocity.x = 0

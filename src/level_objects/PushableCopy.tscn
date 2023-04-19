@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/push object.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/PushableCopy.gd" type="Script" id=2]
@@ -8,6 +8,9 @@ extents = Vector2( 96, 128 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 104, 120 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 93, 8 )
 
 [node name="Pushable" type="KinematicBody2D" groups=["pushable"]]
 collision_layer = 256
@@ -28,3 +31,10 @@ collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PushArea"]
 shape = SubResource( 4 )
+
+[node name="EnemyCrusher" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyCrusher"]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 0, 125 )
+shape = SubResource( 5 )

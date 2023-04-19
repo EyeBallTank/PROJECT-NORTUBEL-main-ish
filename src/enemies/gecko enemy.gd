@@ -21,6 +21,8 @@ func _physics_process(delta):
 func _on_GeckoHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
 		queue_free()
+	if area.name == "EnemyCrusher":
+		queue_free()
 
 func _on_GeckoHurtbox_body_entered(body):
 	if body.name == "SoccerBall":

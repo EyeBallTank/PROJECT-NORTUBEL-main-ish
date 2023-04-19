@@ -29,11 +29,11 @@ extents = Vector2( 206.5, 74 )
 extents = Vector2( 208.5, 76 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 207.5, 75 )
+extents = Vector2( 206.5, 74 )
 
 [node name="Gecko enemy" type="KinematicBody2D" groups=["enemies"]]
 collision_layer = 32
-collision_mask = 2052
+collision_mask = 2308
 script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
@@ -41,6 +41,7 @@ position = Vector2( 1, -221 )
 rotation = 3.14159
 frames = SubResource( 6 )
 animation = "Walking"
+frame = 1
 playing = true
 flip_v = true
 
