@@ -1,12 +1,19 @@
 extends Area2D
 
+onready var audioPlayer = $AudioStreamPlayer
+onready var animationplayer = $AnimationPlayer
+
 func _ready():
+	animationplayer.play("RESET")
 	pass 
 
 func _on_Health_Pickup_body_entered(body):
 	if body.name == "Player":
 		if body.health < 100:
 			body.health += 10
+			animationplayer.play("collected")
+			audioPlayer.play()
+			yield(get_tree().create_timer(0.8), "timeout")
 			queue_free()
 		else:
 			pass
@@ -14,6 +21,9 @@ func _on_Health_Pickup_body_entered(body):
 	if body.name == "Companion":
 		if body.health < 50:
 			body.health += 10
+			animationplayer.play("collected")
+			audioPlayer.play()
+			yield(get_tree().create_timer(0.8), "timeout")
 			queue_free()
 		else:
 			pass

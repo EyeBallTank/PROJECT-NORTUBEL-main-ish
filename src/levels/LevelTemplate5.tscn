@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/YellowPlatVerti.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=22]
 
 [node name="LevelTemplate5" type="Node2D"]
 light_mask = 4
@@ -100,3 +101,6 @@ position = Vector2( 2688.18, -124.138 )
 
 [node name="YellowPlatVerti" parent="." instance=ExtResource( 21 )]
 position = Vector2( 2175.35, 451.126 )
+
+[node name="Health Pickup" parent="." instance=ExtResource( 22 )]
+position = Vector2( 383.999, 0.551636 )
