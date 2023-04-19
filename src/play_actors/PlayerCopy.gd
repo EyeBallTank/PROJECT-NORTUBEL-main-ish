@@ -404,26 +404,26 @@ func _physics_process(delta):
 				animatedsprite.flip_h = false
 				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("right") and Input.is_action_pressed("kickball"):
-				pass
+				velocity.x = 0
 			elif Input.get_action_strength("left") and not Input.is_action_pressed("kickball"):
 				velocity.x = -PUSH_SPEED
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = true
 				pushdetector.position = Vector2(-59, 0)
 			elif Input.get_action_strength("left") and Input.is_action_pressed("kickball"):
-				pass
+				velocity.x = 0
 			elif Input.get_action_strength("jumpup") and not Input.is_action_pressed("kickball"):
 				velocity.y = -PUSH_SPEED
 				velocity.x = 0
 				animatedsprite.animation = "Climbing"
 			elif Input.get_action_strength("jumpup") and Input.is_action_pressed("kickball"):
-				pass
+				velocity.y = 0
 			elif Input.get_action_strength("down") and not Input.is_action_pressed("kickball"):
 				velocity.y = PUSH_SPEED
 				velocity.x = 0
 				animatedsprite.animation = "Climbing"
 			elif Input.get_action_strength("down") and Input.is_action_pressed("kickball"):
-				pass
+				velocity.y = 0
 			else:
 				velocity.x = 0
 				velocity.y = 0
