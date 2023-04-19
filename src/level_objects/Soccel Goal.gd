@@ -7,5 +7,6 @@ func _ready():
 
 func _on_BallDetector_area_entered(area):
 	if area.name == "GoalDetector":
+		$AudioStreamPlayer.play()
 		yield(get_tree().create_timer(1), "timeout")
 		queue_free()
