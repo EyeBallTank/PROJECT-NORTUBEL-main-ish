@@ -100,5 +100,6 @@ anims/UNPRESSED = SubResource( 4 )
 stream = ExtResource( 3 )
 volume_db = -10.47
 pitch_scale = 0.5
+bus = "Sound"
 
 [connection signal="body_entered" from="." to="." method="_on_GreenSwitchTwo_body_entered"]

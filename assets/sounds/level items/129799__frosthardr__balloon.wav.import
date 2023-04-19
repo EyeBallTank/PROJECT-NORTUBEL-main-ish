@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/129799__frosthardr__balloon.wav-52d1333c0778ffeada547e09a87a84cb.sample"
+
+[deps]
+
+source_file="res://assets/sounds/level items/129799__frosthardr__balloon.wav"
+dest_files=[ "res://.import/129799__frosthardr__balloon.wav-52d1333c0778ffeada547e09a87a84cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
