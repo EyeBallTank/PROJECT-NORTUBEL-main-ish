@@ -153,6 +153,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * robbeman on FreeSound (Coin sound effect source)
 * frosthardr on FreeSound (Floater ring sound effect source)
 * amiga-mark on FreeSound (Health pickup sound effect source)
+* magnuswaker on FreeSound (Jumppad sound effect source)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
