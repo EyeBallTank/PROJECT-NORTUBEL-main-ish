@@ -12,5 +12,5 @@ func _on_Coin_body_entered(body):
 		Signals.emit_signal("coin_was_captured")
 		animationplayer.play("collected")
 		audioPlayer.play()
-		yield(get_tree().create_timer(0.8), "timeout")
+		yield(animationplayer, "animation_finished")
 		queue_free()

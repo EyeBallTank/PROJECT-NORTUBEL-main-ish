@@ -13,7 +13,7 @@ func _on_Health_Pickup_body_entered(body):
 			body.health += 10
 			animationplayer.play("collected")
 			audioPlayer.play()
-			yield(get_tree().create_timer(0.8), "timeout")
+			yield(animationplayer, "animation_finished")
 			queue_free()
 		else:
 			pass
@@ -23,7 +23,7 @@ func _on_Health_Pickup_body_entered(body):
 			body.health += 10
 			animationplayer.play("collected")
 			audioPlayer.play()
-			yield(get_tree().create_timer(0.8), "timeout")
+			yield(animationplayer, "animation_finished")
 			queue_free()
 		else:
 			pass

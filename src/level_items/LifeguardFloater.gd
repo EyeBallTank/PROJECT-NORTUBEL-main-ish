@@ -13,5 +13,5 @@ func _on_LifeguardFloater_body_entered(body):
 		body.is_invul()
 		audioPlayer.play()
 		animationplayer.play("caught")
-		yield(get_tree().create_timer(0.8), "timeout")
+		yield(animationplayer, "animation_finished")
 		queue_free()

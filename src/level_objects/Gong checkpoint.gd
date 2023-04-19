@@ -22,7 +22,7 @@ func _on_Gong_body_entered(body):
 		animationplayer.play("TOUCHED")
 		active = true
 		$Sprite.animation = "active"
-		yield(get_tree().create_timer(1.2), "timeout")
+		yield(animationplayer, "animation_finished")
 		$Sprite.animation = "silent"
 #		Signals.emit_signal("hit_checkpoint", position)
 #		if body.health == 0:

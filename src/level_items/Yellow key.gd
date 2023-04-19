@@ -12,6 +12,6 @@ func _on_Yellow_key_body_entered(body: PhysicsBody2D):
 		body.hasyellowkey = true
 		audioPlayer.play()
 		animationplayer.play("caughtkey")
-		yield(get_tree().create_timer(0.9), "timeout")
+		yield(animationplayer, "animation_finished")
 		queue_free()
 		
