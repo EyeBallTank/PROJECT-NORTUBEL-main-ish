@@ -14,6 +14,7 @@ func _on_YellowSwitch_body_entered(body):
 		is_pressed = true
 		print("YELLOW IS PRESSED")
 		animationplayer.play("PRESSED")
+		$AudioStreamPlayer.play()
 		$Sprite.animation = "switchoff"
 		Signals.emit_signal("yellow_switch_pressed")
 #		yield(get_tree().create_timer(3), "timeout")

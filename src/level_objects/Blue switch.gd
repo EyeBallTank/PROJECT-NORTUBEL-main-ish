@@ -14,6 +14,7 @@ func _on_Blue_switch_body_entered(body):
 #		if Input.get_action_strength("attack"):
 		is_pressed = true
 		animationplayer.play("PRESSED")
+		$AudioStreamPlayer.play()
 		$Sprite.animation = "switchoff"
 		Signals.emit_signal("blue_switch_pressed")
 		print("BLUE IS PRESSED")
