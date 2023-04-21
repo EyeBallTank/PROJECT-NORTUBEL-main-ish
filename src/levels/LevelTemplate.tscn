@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://src/npc_actors/Bonka NPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/npc_actors/BookInfoCharNames.tscn" type="PackedScene" id=28]
 
 [node name="LevelTemplate" type="Node2D"]
 light_mask = 4
@@ -71,6 +72,9 @@ position = Vector2( 3110, 325 )
 
 [node name="BookInfoThree" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3746, 565 )
+
+[node name="BookInfoCharNames" parent="." instance=ExtResource( 28 )]
+position = Vector2( 616, 480 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 26 )]
 position = Vector2( 8832, 512 )
