@@ -19,7 +19,8 @@ func _on_UnpauseButton_pressed():
 	get_tree().paused = false
 
 func _on_QuitButton_pressed():
-	get_tree().quit()
+#	get_tree().quit()
+	SceneManager.change_scene("level_transition_effect", "res://screens/MainMenu.tscn")
 
 func show_and_hide(first, second):
 	first.show()
