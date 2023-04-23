@@ -369,13 +369,15 @@ func _physics_process(delta):
 				if velocity.y < 0:
 					velocity.y += 500
 
-				
 			if jump_buffer_counter > 0:
 				jump_buffer_counter -= 1
-			
+
 			if jump_buffer_counter > 0 and is_on_floor():
-				velocity.y = -JUMP_SPEED
+#				velocity.y = -JUMP_SPEED (is this fixed?)
 				jump_buffer_counter = 0
+#			elif jump_buffer_counter == 0 and not is_on_floor():
+#				pass
+
 			if is_on_ladder():
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
