@@ -105,6 +105,8 @@ I may end up changing this goal list as well.
 * Visuals in general are weird because of the resolution, so the game looks like it has pixels moving/changing on their own; I'm not sure if it has to do with the camera, window or the art (And this issue may get even more complicated to fix because of small details and overlooked things to consider).
 * Controls/Inputs need to be better and not feel annoying.
 * The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
+* If the Player moves away (Mostly left/right) from the Ladder and lands on a close enough platform/floor, they may automatically jump.
+* Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
