@@ -124,11 +124,13 @@ drag_margin_top = 1.0
 drag_margin_right = 1.0
 drag_margin_bottom = 1.0
 
-[node name="HealthbarPlayer" parent="." instance=ExtResource( 3 )]
-margin_left = -126.0
-margin_top = -318.0
-margin_right = 125.0
-margin_bottom = -258.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthbarPlayer" parent="CanvasLayer" instance=ExtResource( 3 )]
+margin_left = 64.0
+margin_top = 24.0
+margin_right = 315.0
+margin_bottom = 59.0
 
 [node name="FloaterActive" type="AnimatedSprite" parent="."]
 position = Vector2( -7, -286.938 )

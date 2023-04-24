@@ -52,7 +52,7 @@ var vel: = Vector2.ZERO
 var direction: = Vector2.ZERO
 onready var Player = get_parent().get_node("Player")
 
-onready var healthBar = $HealthbarCompanion
+onready var healthBar = $CanvasLayer/HealthbarCompanion
 export var health : int = 50
 onready var CompanionHurtbox = $CompanionHurtbox
 onready var swimCheck = $SwimCheck

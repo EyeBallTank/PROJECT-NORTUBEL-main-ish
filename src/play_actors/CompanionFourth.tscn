@@ -91,11 +91,13 @@ playing = true
 position = Vector2( 0, -81 )
 shape = SubResource( 1 )
 
-[node name="HealthbarCompanion" parent="." instance=ExtResource( 3 )]
-margin_left = -79.0
-margin_top = -234.0
-margin_right = 77.0
-margin_bottom = -174.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthbarCompanion" parent="CanvasLayer" instance=ExtResource( 3 )]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 208.0
+margin_bottom = 99.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/CompHurt = SubResource( 3 )

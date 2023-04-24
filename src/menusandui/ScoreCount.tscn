@@ -9,9 +9,9 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="ScoreLabel" type="Label" parent="."]
-margin_left = 182.0
-margin_top = 9.0
-margin_right = 273.0
-margin_bottom = 42.0
+margin_left = 291.0
+margin_top = 23.0
+margin_right = 382.0
+margin_bottom = 56.0
 custom_fonts/font = ExtResource( 1 )
 text = "Ezcudos: 0"

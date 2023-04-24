@@ -56,7 +56,7 @@ var STOP_FORCE = 450
 var JUMP_SPEED = 1500
 
 onready var camera = $Camera2D
-onready var healthBar = $HealthbarPlayer
+onready var healthBar = $CanvasLayer/HealthbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
 onready var iceCheck = $IceCheck
