@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
+[ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.gd" type="Script" id=2]
 [ext_resource path="res://src/menusandui/healthbarCompanion.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/sprites/play_actor_sprites/OscarSprites.tres" type="SpriteFrames" id=4]
@@ -173,6 +174,12 @@ collision_mask = 256
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PushDetector"]
 position = Vector2( 0, -81 )
 shape = SubResource( 32 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -4.095
+pitch_scale = 3.04
+bus = "Sound"
 
 [connection signal="area_entered" from="CompanionHurtbox" to="." method="_on_CompanionHurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]

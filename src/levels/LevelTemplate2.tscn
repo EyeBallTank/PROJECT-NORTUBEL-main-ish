@@ -58,18 +58,18 @@ position = Vector2( -1088, 448 )
 new_scene = "res://src/levels/LevelTemplate3.tscn"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 898, 64 )
+position = Vector2( 898, -128 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
-position = Vector2( 896, 64 )
+position = Vector2( 896, -128 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 512, 320 )
+position = Vector2( 512, 128 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="companionspawn" parent="." instance=ExtResource( 6 )]
-position = Vector2( 513, 320 )
+position = Vector2( 513, 128 )
 
 [node name="BlueDoor" parent="." instance=ExtResource( 11 )]
 position = Vector2( 128, 576 )

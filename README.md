@@ -106,6 +106,7 @@ I may end up changing this goal list as well.
 * Controls/Inputs need to be better and not feel annoying.
 * The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
+* The Pushable vase's sound also sometimes plays even when the object isn't being pushed.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 
 # Current controls/Inputs:
@@ -161,6 +162,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * sunflora on FreeSound (Ball bounce sound source)
 * nilbul on FreeSound (Water splash sound source)
 * Wdomino on FreeSound (Vase push sound source)
+* deleted_user_10023915 (Yes) on FreeSound (Player/Companion landing sound source)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)

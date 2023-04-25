@@ -42,16 +42,16 @@ tile_data = PoolIntArray( -393233, 1, 0, -393232, 1, 0, -393231, 1, 0, -393230, 
 [node name="CurrentUI" parent="." instance=ExtResource( 3 )]
 
 [node name="playerspawn" parent="." instance=ExtResource( 9 )]
-position = Vector2( 732.325, 470.053 )
+position = Vector2( 767.327, 469.103 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 767.354, 450.103 )
+position = Vector2( 802.356, 449.153 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 949.356, 449.364 )
+position = Vector2( 949.448, 385.364 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 915.332, 465.315 )
+position = Vector2( 915.424, 401.315 )
 
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2111.17, 577.033 )

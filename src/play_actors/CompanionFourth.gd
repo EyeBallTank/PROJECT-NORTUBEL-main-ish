@@ -67,6 +67,9 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 var ouch = false
 
+onready var audioplayer = $AudioStreamPlayer
+var was_on_floor = true
+
 func _ready():
 	animatedsprite.frames = load(companionskin)
 	healthBar.max_value = health
@@ -138,6 +141,10 @@ func _physics_process(delta):
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = RUNAWAY
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
@@ -174,6 +181,10 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if vel.y < 0 and not is_on_floor():
 				if ouch == false:
@@ -235,6 +246,10 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
@@ -758,6 +773,10 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
@@ -830,6 +849,10 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
@@ -891,6 +914,10 @@ func _physics_process(delta):
 				direction.x = 0
 			vel.x = direction.x * 350
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
@@ -927,6 +954,10 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Crawlling"
 				animatedsprite.flip_h = false
@@ -952,7 +983,11 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
-			
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = CRAWLFOLLOW
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
@@ -985,6 +1020,10 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if dirthing == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
@@ -1066,6 +1105,10 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if dirthing == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
@@ -1177,7 +1220,11 @@ func _physics_process(delta):
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
-			
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = ICEFOLLOW
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
@@ -1250,6 +1297,10 @@ func _physics_process(delta):
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if is_on_floor() and Input.is_action_just_pressed("interactcomp"):
 				vel.y = -JUMP_SPEED
 				if vel.y < 0:
@@ -1307,11 +1358,15 @@ func _physics_process(delta):
 				vel.x = 0
 				direction.x = 0
 			vel.x = direction.x * 550
-	
-	
+
+
 			vel.y += gravity * delta
 			gravity = 1450.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Pushing"

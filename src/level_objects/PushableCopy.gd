@@ -23,6 +23,7 @@ func _ready():
 	audioplayer.stop()
 
 func _physics_process(delta):
+#	audioplayer.stop()
 	velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
 	velocity.y += gravity * delta
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)

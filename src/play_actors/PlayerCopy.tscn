@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
 [ext_resource path="res://src/menusandui/healthbarPlayer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/sprites/play_actor_sprites/CarrieSprites.tres" type="SpriteFrames" id=4]
 [ext_resource path="res://src/menusandui/SpeechBalloon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.5, 123.5 )
@@ -136,7 +137,6 @@ margin_bottom = 59.0
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
 frames = SubResource( 38 )
-frame = 1
 playing = true
 
 [node name="SpeechBalloon" parent="." instance=ExtResource( 5 )]
@@ -223,6 +223,12 @@ collision_mask = 256
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PushDetector"]
 position = Vector2( -1, -122 )
 shape = SubResource( 35 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -4.095
+pitch_scale = 2.73
+bus = "Sound"
 
 [connection signal="area_entered" from="RopeCheck" to="." method="_on_RopeCheck_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]

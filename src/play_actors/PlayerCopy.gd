@@ -37,6 +37,7 @@ enum {
 }
 
 var state = MAINSTATE
+var was_on_floor = true
 
 var hasyellowkey = false
 var hasbluekey = false
@@ -68,6 +69,7 @@ onready var playerhitbox = $PlayerHitbox
 onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 onready var animatedsprite = $AnimatedSprite
 onready var pushdetector = $PushDetector
+onready var audioplayer = $AudioStreamPlayer
 
 
 var last_checkpoint: Area2D = null
@@ -172,6 +174,9 @@ func _physics_process(delta):
 			if jump_buffer_counter > 0:
 				jump_buffer_counter -= 1
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
@@ -275,7 +280,11 @@ func _physics_process(delta):
 				
 			if jump_buffer_counter > 0:
 				jump_buffer_counter -= 1
-			
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			if jump_buffer_counter > 0 and is_on_floor():
 				velocity.y = -JUMP_SPEED
 				jump_buffer_counter = 0
@@ -344,6 +353,7 @@ func _physics_process(delta):
 			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
 
+
 			if velocity.y < 0 and not is_on_floor():
 				if ouch == false:
 					animatedsprite.animation = "Jumpgoesup"
@@ -379,6 +389,10 @@ func _physics_process(delta):
 				jump_buffer_counter = 0
 #			elif jump_buffer_counter == 0 and not is_on_floor():
 #				pass
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if is_on_ladder():
 				if Input.get_action_strength("jumpup"):
@@ -522,7 +536,11 @@ func _physics_process(delta):
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-			
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 			var direction = Input.get_axis("left", "right")
 			if Input.is_action_just_pressed("right") and not Input.is_action_pressed("kickball"):
 				if hasball == true:
@@ -578,6 +596,10 @@ func _physics_process(delta):
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			animatedsprite.animation = "Abouttostab"
 			playerhitboxcollision.disabled = true
@@ -673,6 +695,10 @@ func _physics_process(delta):
 
 			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 			if velocity.y < 0 and not is_on_floor():
 				if ouch == false:
