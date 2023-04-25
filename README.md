@@ -105,7 +105,7 @@ I may end up changing this goal list as well.
 * Visuals in general are weird because of the resolution, so the game looks like it has pixels moving/changing on their own; I'm not sure if it has to do with the camera, window or the art (And this issue may get even more complicated to fix because of small details and overlooked things to consider).
 * Controls/Inputs need to be better and not feel annoying.
 * The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
-* Maybe be fixed: If the Player moves away (Mostly left/right) from the Ladder and lands on a close enough platform/floor, they may automatically jump.
+* The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 
 # Current controls/Inputs:
@@ -160,6 +160,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * gt.torre on FreeSound (Soccer net sound source)
 * sunflora on FreeSound (Ball bounce sound source)
 * nilbul on FreeSound (Water splash sound source)
+* Wdomino on FreeSound (Vase push sound source)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
