@@ -24,7 +24,6 @@
 
 [node name="LevelTemplate4" type="Node2D"]
 light_mask = 4
-rotation = -0.00143664
 script = ExtResource( 4 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]

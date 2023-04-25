@@ -20,25 +20,45 @@ var player_lenght = 64
 onready var pushableside = $leftandrightside
 
 func _ready():
-	audioplayer.stop()
+	pass
 
 func _physics_process(delta):
+#	print(velocity.x)
 #	audioplayer.stop()
 	velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+#	velocity.x = 0
 	velocity.y += gravity * delta
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+#	velocity = move_and_slide(velocity)
+#	velocity = Vector2.ZERO
 	if velocity.x > 0:
 		audioplayer.play()
 	elif velocity.x < 0:
 		audioplayer.play()
 	elif velocity.x == 0:
 		audioplayer.stop()
+
+
 #The sound does not loop in the way i wanted to
+#Worse, the sound plays EVEN when the object's not being pushed
 func slide(vector):
 	velocity.x = vector.x
-#	if velocity.x > 0 and velocity.x == vector.x:
+#	if velocity.x > 0:
 #		audioplayer.play()
-#	elif velocity.x < 0 and velocity.x == vector.x:
+#	elif velocity.x < 0:
 #		audioplayer.play()
 #	elif velocity.x == 0:
+#		audioplayer.stop()
+
+#func _on_PushArea_area_entered(area):
+#	if area.is_in_group("PushDetector"):
+#		if velocity.x > 0:
+#			audioplayer.play()
+#		elif velocity.x < 0:
+#			audioplayer.play()
+#		elif velocity.x == 0:
+#			audioplayer.stop()
+#
+#func _on_PushArea_area_exited(area):
+#	if area.is_in_group("PushDetector"):
 #		audioplayer.stop()

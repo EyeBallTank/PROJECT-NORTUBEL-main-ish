@@ -137,6 +137,7 @@ margin_bottom = 59.0
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
 frames = SubResource( 38 )
+frame = 1
 playing = true
 
 [node name="SpeechBalloon" parent="." instance=ExtResource( 5 )]
@@ -216,7 +217,7 @@ shape = SubResource( 7 )
 
 [node name="CheckpointTween" type="Tween" parent="."]
 
-[node name="PushDetector" type="Area2D" parent="."]
+[node name="PushDetector" type="Area2D" parent="." groups=["PushDetector"]]
 position = Vector2( 63, 0 )
 collision_mask = 256
 

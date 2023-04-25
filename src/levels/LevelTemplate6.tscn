@@ -26,7 +26,6 @@
 
 [node name="LevelTemplate6" type="Node2D"]
 light_mask = 4
-rotation = -0.00143664
 script = ExtResource( 4 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -46,7 +45,7 @@ tile_data = PoolIntArray( -3407839, 1, 0, -3276833, 1, 0, -3342303, 1, 0, -32112
 position = Vector2( 447.813, 130.643 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2051.03, -2109.06 )
+position = Vector2( 448, 128 )
 playerskin = "res://assets/sprites/play_actor_sprites/MelvinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
@@ -94,7 +93,7 @@ scale = Vector2( 152, 16 )
 collision_newsize = Vector2( 152, 16 )
 
 [node name="Pushable" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1474.85, -1981.88 )
+position = Vector2( 1586.79, -1941.72 )
 
 [node name="FishHookKinematic" parent="." instance=ExtResource( 18 )]
 position = Vector2( 1156.23, -2942.34 )
