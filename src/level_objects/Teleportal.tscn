@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Teleportal.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Teleportal.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds/magic sounds.wav" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
@@ -33,7 +34,14 @@ script = ExtResource( 2 )
 position = Vector2( 2.38419e-06, 1.54972e-06 )
 scale = Vector2( 0.365714, 0.366762 )
 frames = SubResource( 4 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -7.553
+pitch_scale = 3.03
+bus = "Sound"
