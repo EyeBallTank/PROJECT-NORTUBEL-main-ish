@@ -1,5 +1,7 @@
 extends Node
 
+signal touch_water
+
 signal blue_switch_pressed
 signal blue_plat_horiz_active
 

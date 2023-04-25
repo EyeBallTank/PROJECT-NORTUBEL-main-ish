@@ -103,7 +103,7 @@ margin_bottom = 99.0
 anims/CompHurt = SubResource( 3 )
 anims/RESET = SubResource( 4 )
 
-[node name="SwimCheck" type="RayCast2D" parent="."]
+[node name="SwimCheck" type="RayCast2D" parent="." groups=["swimchecker"]]
 position = Vector2( 0, -162 )
 scale = Vector2( 4, 4 )
 enabled = true

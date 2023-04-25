@@ -143,6 +143,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMMING
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -201,6 +202,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = RUNAWAY
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMIDLE
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -274,6 +276,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMRUN
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -795,6 +798,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMMING
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -866,6 +870,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMRUN
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -1021,6 +1026,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = ICEIDLE
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMMING
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -1101,6 +1107,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = ICEIDLE
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMRUN
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -1176,6 +1183,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = ICERUN
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMIDLE
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -1271,6 +1279,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMMING
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):
@@ -1344,6 +1353,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIMRUN
 			if is_on_ladder():
 				if Input.is_action_just_pressed("interactcomp"):

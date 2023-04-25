@@ -8,7 +8,15 @@ tool
 onready var collisionshape = $CollisionShape2D
 export var collision_newsize = Vector2()
 
+onready var audioplayer = $AudioStreamPlayer
 
 func _ready():
 	self.scale = collision_newsize
 	pass
+	Signals.connect("touch_water", self, "_on_water_touched")
+
+func playaudio():
+	audioplayer.play()
+
+func _on_water_touched():
+	playaudio()

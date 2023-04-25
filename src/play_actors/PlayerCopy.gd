@@ -181,6 +181,7 @@ func _physics_process(delta):
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIM
 
 			if not is_on_slow():
@@ -282,6 +283,7 @@ func _physics_process(delta):
 				if Input.get_action_strength("jumpup"):
 					state = CLIMB
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIM
 			if not is_on_ice():
 				if is_on_floor():
@@ -383,6 +385,7 @@ func _physics_process(delta):
 					state = CLIMB
 
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIM
 			if is_on_slow():
 				state = SLOW
@@ -708,6 +711,7 @@ func _physics_process(delta):
 					state = CLIMB
 
 			if is_on_water():
+				Signals.emit_signal("touch_water")
 				state = SWIM
 			if is_on_slow():
 				state = SLOW
