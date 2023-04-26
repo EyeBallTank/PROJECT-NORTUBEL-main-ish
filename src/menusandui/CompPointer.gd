@@ -2,7 +2,8 @@ extends Node2D
 
 #onready var Companion = get_parent()
 #onready var secret = $AstrolabeSecret
-onready var arrow = $AstrolabeBase/AstrolabeArrow
+onready var secret = $Secret
+onready var arrow = $AstrolabeArrow
 onready var base = $AstrolabeBase
 var target_position = null
 
@@ -18,6 +19,8 @@ func set_marker_position(bounds : Rect2):
 	if target_position == null:
 		base.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
 		base.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
+		arrow.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
+		arrow.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
 	else:
 		var displacement = global_position - target_position
 		var length
@@ -39,6 +42,7 @@ func set_marker_position(bounds : Rect2):
 			length = x_length / cos(angle) if cos(angle) != 0 else x_length
 
 		base.global_position = polar2cartesian(length, displacement.angle()) + target_position
+		arrow.global_position = polar2cartesian(length, displacement.angle()) + target_position
 
 	if bounds.has_point(global_position):
 		hide()
