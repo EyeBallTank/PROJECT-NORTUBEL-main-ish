@@ -107,6 +107,7 @@ I may end up changing this goal list as well.
 * The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
+* The off-screen pointer for the Companion is cropped by the screen's edges instead of being at a right distance from the edges/bourders.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
@@ -173,6 +174,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * matinator9185/MateuSai (Used tutorial video on the checkpoint system)
 * kidscancode (Used an article of theirs as reference for implementing Comp4's ice physics)
 * piratechipgames (Used tutorial video on how to implement sounds for the Soccer Ball)
+* GameEndeavor (Used tutorial video on Companion off-screen pointer)
 * clecioespindolagamedev (Used tutorial video on how i could export my game)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)

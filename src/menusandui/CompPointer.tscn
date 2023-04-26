@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/astrolabe base.PNG" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/astrolabe pointer.png" type="Texture" id=2]
+[ext_resource path="res://src/menusandui/CompPointer.gd" type="Script" id=3]
+
+[node name="CompPointer" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="AstrolabeBase" type="Sprite" parent="."]
+position = Vector2( 81, -73 )
+scale = Vector2( 0.480001, 0.480001 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -40 )
+
+[node name="AstrolabeArrow" type="Sprite" parent="AstrolabeBase"]
+position = Vector2( -1.00034, -2.00049 )
+scale = Vector2( 0.749997, 0.749997 )
+texture = ExtResource( 2 )
+offset = Vector2( 1.33377, 2.66736 )
