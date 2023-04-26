@@ -5,6 +5,7 @@
 [ext_resource path="res://src/menusandui/CompPointer.gd" type="Script" id=3]
 
 [node name="CompPointer" type="Node2D"]
+z_index = 88
 script = ExtResource( 3 )
 
 [node name="AstrolabeBase" type="Sprite" parent="."]
