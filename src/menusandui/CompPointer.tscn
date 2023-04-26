@@ -16,11 +16,11 @@ texture = ExtResource( 1 )
 offset = Vector2( 1.00067, -37.9157 )
 
 [node name="AstrolabeArrow" type="Sprite" parent="."]
-position = Vector2( 0, -1 )
-rotation = -0.723334
+position = Vector2( 0.172836, 0.0457536 )
+rotation = 0.00305079
 scale = Vector2( 0.359999, 0.359999 )
 texture = ExtResource( 2 )
-offset = Vector2( 0.797546, 3.8635 )
+offset = Vector2( 1.1134, -0.721713 )
 
 [node name="Secret" type="Sprite" parent="."]
 texture = ExtResource( 4 )

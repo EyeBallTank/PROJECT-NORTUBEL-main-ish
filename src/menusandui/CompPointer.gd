@@ -6,6 +6,9 @@ onready var secret = $Secret
 onready var arrow = $AstrolabeArrow
 onready var base = $AstrolabeBase
 var target_position = null
+#onready var testscreen = get_parent().get_node("res://src/menusandui/TestScreen.tscn")
+#get_tree().get_root().get_node("TestScreet")
+#onready var testscreen = get_tree().get_root().get_node("Companion/CanvasLayer/TestScreen")
 
 func _process(_delta):
 	var canvas = get_canvas_transform()
