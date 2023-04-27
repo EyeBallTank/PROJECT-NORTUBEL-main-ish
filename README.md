@@ -56,6 +56,8 @@ Done (Even if it could be better):
 * SOCCER GOAL NET: If the soccer ball enters the net, the net disappears; It's a level object that could have special roles in level design.
 * VERY BASIC NPC: So far, it's just a character simply standing and when you're near her, a basic dialogue text box pops up.
 * BACKGROUND: Just a basic sky with clouds.
+* MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
+
 
 
 Not yet:
@@ -79,7 +81,6 @@ Not yet:
 * UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: One of those nice little touches like getting the siblings to play a game or read a book etc.
 * SOUND/MUSIC: Nothing except for basic sounds for some objects; I do not want voice acting at all, at least.
 * BETTER ORGANIZATION BEHIND THE SCENES: Like methods to make the game's inner workings more flexible or supportive of some stuff; It depends if certain stuff is that mandatory and if i can get away with some other methods.
-* MULTIPLE LANGUAGES: In case language options would be too difficult, i might as well have both English and Portuguese coexist in some way.
 * ALTERNATE/SECRET LEVELS: Ideally, these levels could be an excuse for me to show characters and settings from different worlds.
 * SECRETS IN LEVELS: Maybe some could be easy stuff like things hidden behind walls but more interesting secrets need work and thinking.
 * BONUS STAGES: I'd also make them timed/optional; An idea i had was top down minigame levels inspired by Binary Land and Chip's Challenge where the player controls 2 characters (With opposite horizontal movement) and face some level design challenges/features but the implementation shouldn't be overly complex; Maybe some fishing minigame could work.
@@ -108,7 +109,6 @@ I may end up changing this goal list as well.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is cropped by the screen's edges instead of being at a right distance from the edges/bourders.
-* Localization not working: Godot can't accept a CSV file with languages (en and pt) unless it's set to UTF 8 even though UTF 16 should be ideal because of characters used in Portuguese.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
@@ -176,6 +176,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * kidscancode (Used an article of theirs as reference for implementing Comp4's ice physics)
 * piratechipgames (Used tutorial video on how to implement sounds for the Soccer Ball)
 * GameEndeavor (Used tutorial video on Companion off-screen pointer)
+* FinePointCGI (Tutorial video about localization)
 * clecioespindolagamedev (Used tutorial video on how i could export my game)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://screens/PauseMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/pause menu bg.png" type="Texture" id=3]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 outline_size = 3
@@ -67,42 +68,42 @@ margin_bottom = 352.0
 margin_right = 296.0
 margin_bottom = 23.0
 custom_fonts/font = SubResource( 1 )
-text = "Unpause/Retomar"
+text = "UNPAUSE_B"
 
 [node name="OptionsButton" type="Button" parent="MenuMain"]
 margin_top = 27.0
 margin_right = 296.0
 margin_bottom = 50.0
 custom_fonts/font = SubResource( 2 )
-text = "Options/Opções"
+text = "OPTIONS_B"
 
 [node name="ExtraButton" type="Button" parent="MenuMain"]
 margin_top = 54.0
 margin_right = 296.0
 margin_bottom = 77.0
 custom_fonts/font = SubResource( 3 )
-text = "Extra"
+text = "EXTRA_B"
 
 [node name="SaveButton" type="Button" parent="MenuMain"]
 margin_top = 81.0
 margin_right = 296.0
 margin_bottom = 104.0
 custom_fonts/font = SubResource( 3 )
-text = "Save/Salvar"
+text = "SAVE_B"
 
 [node name="LoadButton" type="Button" parent="MenuMain"]
 margin_top = 108.0
 margin_right = 296.0
 margin_bottom = 131.0
 custom_fonts/font = SubResource( 3 )
-text = "Load/Carregar"
+text = "LOAD_B"
 
 [node name="QuitButton" type="Button" parent="MenuMain"]
 margin_top = 135.0
 margin_right = 296.0
 margin_bottom = 158.0
 custom_fonts/font = SubResource( 4 )
-text = "Quit/Saída"
+text = "QUIT_B"
 
 [node name="OptionsMenu" type="Control" parent="."]
 pause_mode = 2
@@ -125,37 +126,37 @@ margin_right = -50.0
 margin_bottom = 20.0
 
 [node name="Labels" type="VBoxContainer" parent="OptionsMenu/SoundSettings"]
-margin_right = 78.0
+margin_right = 72.0
 margin_bottom = 40.0
 
 [node name="Music" type="Label" parent="OptionsMenu/SoundSettings/Labels"]
-margin_right = 78.0
+margin_right = 72.0
 margin_bottom = 17.0
 size_flags_vertical = 6
 custom_fonts/font = SubResource( 5 )
-text = "Músic(a)"
+text = "MUSIC_SET"
 
 [node name="Sound" type="Label" parent="OptionsMenu/SoundSettings/Labels"]
 margin_top = 22.0
-margin_right = 78.0
+margin_right = 72.0
 margin_bottom = 39.0
 size_flags_vertical = 6
 custom_fonts/font = SubResource( 6 )
-text = "Sound/Som"
+text = "SOUND_SET"
 
 [node name="Sliders" type="VBoxContainer" parent="OptionsMenu/SoundSettings"]
-margin_left = 82.0
+margin_left = 76.0
 margin_right = 190.0
 margin_bottom = 40.0
 size_flags_horizontal = 3
 
 [node name="Music" type="HSlider" parent="OptionsMenu/SoundSettings/Sliders"]
-margin_right = 108.0
+margin_right = 114.0
 margin_bottom = 16.0
 
 [node name="Sound" type="HSlider" parent="OptionsMenu/SoundSettings/Sliders"]
 margin_top = 20.0
-margin_right = 108.0
+margin_right = 114.0
 margin_bottom = 36.0
 
 [node name="VideoSettings" type="HBoxContainer" parent="OptionsMenu"]
@@ -169,20 +170,20 @@ margin_right = 235.0
 margin_bottom = 32.0
 
 [node name="Labels" type="VBoxContainer" parent="OptionsMenu/VideoSettings"]
-margin_right = 156.0
+margin_right = 91.0
 margin_bottom = 52.0
 
 [node name="Fullscreen" type="Label" parent="OptionsMenu/VideoSettings/Labels"]
 margin_top = 17.0
-margin_right = 156.0
+margin_right = 91.0
 margin_bottom = 34.0
 size_flags_vertical = 6
 custom_fonts/font = SubResource( 7 )
-text = "Fullscreen/Ecrã Inteiro"
+text = "FULLSCREEN_B"
 
 [node name="Checks" type="VBoxContainer" parent="OptionsMenu/VideoSettings"]
-margin_left = 160.0
-margin_right = 184.0
+margin_left = 95.0
+margin_right = 119.0
 margin_bottom = 52.0
 
 [node name="Fullscreen" type="CheckBox" parent="OptionsMenu/VideoSettings/Checks"]
@@ -199,7 +200,23 @@ margin_top = -167.0
 margin_right = 43.0
 margin_bottom = -144.0
 custom_fonts/font = SubResource( 9 )
-text = "Menu"
+text = "MENU_B"
+
+[node name="EN setting" type="Button" parent="OptionsMenu"]
+margin_left = 304.0
+margin_top = 354.0
+margin_right = 353.0
+margin_bottom = 402.0
+custom_fonts/font = ExtResource( 4 )
+text = "EN"
+
+[node name="PT setting" type="Button" parent="OptionsMenu"]
+margin_left = 636.0
+margin_top = 354.0
+margin_right = 685.0
+margin_bottom = 402.0
+custom_fonts/font = ExtResource( 4 )
+text = "PT"
 
 [connection signal="pressed" from="MenuMain/UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
@@ -208,3 +225,5 @@ text = "Menu"
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
 [connection signal="toggled" from="OptionsMenu/VideoSettings/Checks/Fullscreen" to="." method="_on_Fullscreen_toggled"]
 [connection signal="pressed" from="OptionsMenu/BackFromOptions" to="." method="_on_BackFromOptions_pressed"]
+[connection signal="pressed" from="OptionsMenu/EN setting" to="." method="_on_EN_setting_pressed"]
+[connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]

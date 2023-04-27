@@ -34,3 +34,11 @@ func volume(bus_index, value):
 
 func _on_Fullscreen_toggled(button_pressed):
 	OS.window_fullscreen = button_pressed
+
+
+func _on_EN_setting_pressed():
+	TranslationServer.set_locale("en")
+
+
+func _on_PT_setting_pressed():
+	TranslationServer.set_locale("pt")
