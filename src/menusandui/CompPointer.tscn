@@ -3,25 +3,32 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/astrolabe base.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/astrolabe pointer.png" type="Texture" id=2]
 [ext_resource path="res://src/menusandui/CompPointer.gd" type="Script" id=3]
-[ext_resource path="res://assets/sprites/menus_and_ui_sprites/astrolabe secret.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/astrolabe green secret.PNG" type="Texture" id=4]
 
 [node name="CompPointer" type="Node2D"]
 z_index = 88
 script = ExtResource( 3 )
 
-[node name="AstrolabeBase" type="Sprite" parent="."]
-position = Vector2( 1, 7.62939e-06 )
-scale = Vector2( 0.480001, 0.480001 )
-texture = ExtResource( 1 )
-offset = Vector2( 1.00067, -37.9157 )
-
-[node name="AstrolabeArrow" type="Sprite" parent="."]
-position = Vector2( 0.172836, 0.0457536 )
-rotation = 0.00305079
-scale = Vector2( 0.359999, 0.359999 )
-texture = ExtResource( 2 )
-offset = Vector2( 1.1134, -0.721713 )
-
 [node name="Secret" type="Sprite" parent="."]
+position = Vector2( -634.909, 65.5 )
+rotation = 3.57878
+scale = Vector2( 0.68, 0.68 )
 texture = ExtResource( 4 )
-offset = Vector2( 162, -162 )
+offset = Vector2( -403.225, 69.7883 )
+
+[node name="Node2D" type="Node2D" parent="Secret"]
+
+[node name="AstrolabeBase" type="Sprite" parent="Secret/Node2D"]
+position = Vector2( -537.961, 133.726 )
+rotation = 2.70441
+scale = Vector2( 0.705884, 0.705884 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -130.629, -204.582 )
+
+[node name="AstrolabeArrow" type="Sprite" parent="Secret/Node2D/AstrolabeBase"]
+position = Vector2( -3.73365, -6.33388 )
+rotation = 0.0030508
+scale = Vector2( 0.749996, 0.749996 )
+texture = ExtResource( 2 )
+offset = Vector2( 3.54523, 0.899094 )

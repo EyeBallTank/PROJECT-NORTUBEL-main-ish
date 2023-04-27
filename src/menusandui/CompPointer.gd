@@ -3,8 +3,9 @@ extends Node2D
 #onready var Companion = get_parent()
 #onready var secret = $AstrolabeSecret
 onready var secret = $Secret
-onready var arrow = $AstrolabeArrow
-onready var base = $AstrolabeBase
+onready var arrow = $Secret/Node2D/AstrolabeBase/AstrolabeArrow
+onready var base = $Secret/Node2D/AstrolabeBase
+onready var newnode = $Secret/Node2D
 var target_position = null
 #onready var testscreen = get_parent().get_node("res://src/menusandui/TestScreen.tscn")
 #get_tree().get_root().get_node("TestScreet")
@@ -21,10 +22,12 @@ func _process(_delta):
 func set_marker_position(bounds : Rect2):
 #	bounds = bounds.expand(Vector2(-964, -90000))
 	if target_position == null:
-		base.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
-		base.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
-		arrow.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
-		arrow.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
+		secret.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
+		secret.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
+#		arrow.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
+#		arrow.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
+#		base.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
+#		base.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)
 	else:
 		var displacement = global_position - target_position
 		var length
@@ -45,8 +48,9 @@ func set_marker_position(bounds : Rect2):
 			var angle = displacement.angle()
 			length = x_length / cos(angle) if cos(angle) != 0 else x_length
 
-		base.global_position = polar2cartesian(length, displacement.angle()) + target_position
-		arrow.global_position = polar2cartesian(length, displacement.angle()) + target_position
+		secret.global_position = polar2cartesian(length, displacement.angle()) + target_position
+#		arrow.global_position = polar2cartesian(length, displacement.angle()) + target_position
+#		base.global_position = polar2cartesian(length, displacement.angle()) + target_position
 
 	if bounds.has_point(global_position):
 		hide()
@@ -54,6 +58,10 @@ func set_marker_position(bounds : Rect2):
 		show()
 
 func set_marker_rotation():
-	var angle = (global_position - arrow.global_position).angle()
-	arrow.global_rotation = angle
+	var angle = (global_position - secret.global_position).angle()
+	secret.global_rotation = angle
+	var angle2 = (global_position - newnode.global_position).angle()
+	newnode.global_rotation = angle2
 	base.global_rotation = 0
+	var angle3 = (global_position - arrow.global_position).angle()
+	arrow.global_rotation = angle3
