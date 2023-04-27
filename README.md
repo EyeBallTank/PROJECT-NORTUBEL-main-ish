@@ -108,6 +108,7 @@ I may end up changing this goal list as well.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is cropped by the screen's edges instead of being at a right distance from the edges/bourders.
+* Localization not working: Godot can't accept a CSV file with languages (en and pt) unless it's set to UTF 8 even though UTF 16 should be ideal because of characters used in Portuguese.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

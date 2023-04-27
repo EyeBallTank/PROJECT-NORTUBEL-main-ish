@@ -61,7 +61,7 @@ margin_bottom = 23.0
 focus_mode = 1
 theme = ExtResource( 4 )
 custom_fonts/font = ExtResource( 5 )
-text = "Start/Começo"
+text = "START_B"
 
 [node name="OptionsButton" type="Button" parent="MenuMain"]
 margin_top = 27.0
