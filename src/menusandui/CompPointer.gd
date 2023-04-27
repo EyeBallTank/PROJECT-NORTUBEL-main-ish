@@ -19,7 +19,7 @@ func _process(_delta):
 	set_marker_rotation()
 
 func set_marker_position(bounds : Rect2):
-	bounds = bounds.expand(Vector2(100, 100))
+#	bounds = bounds.expand(Vector2(-964, -90000))
 	if target_position == null:
 		base.global_position.x = clamp(global_position.x, bounds.position.x, bounds.end.x)
 		base.global_position.y = clamp(global_position.y, bounds.position.y, bounds.end.y)

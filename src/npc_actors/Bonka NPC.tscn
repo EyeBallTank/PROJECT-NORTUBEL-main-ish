@@ -71,8 +71,7 @@ margin_top = 5.0
 margin_right = 1007.0
 margin_bottom = 109.0
 custom_fonts/font = SubResource( 5 )
-text = "I'm as lost as you are, but you said this place looks like your home.
-Can you at least figure out a way out of here?"
+text = "BONKA_TALK_1"
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
 margin_left = 5.0
