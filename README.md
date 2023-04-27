@@ -57,6 +57,7 @@ Done (Even if it could be better):
 * VERY BASIC NPC: So far, it's just a character simply standing and when you're near her, a basic dialogue text box pops up.
 * BACKGROUND: Just a basic sky with clouds.
 * MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
+* OFF-SCREEN COMPANION INDICATOR/WAYPOINT: When the Companion is off-screen, an Astrolabe shows up pointing at their direction; It looks a bit off so far but i tried my best (And with tricky methods too).
 
 
 
@@ -65,8 +66,7 @@ Not yet:
 * LEVEL SELECT/HUB: Not sure exactly how level selection would work.
 * LIVE SYSTEM: Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on both an extra life pickup AND making it so collecting 100 coins adds a new life.
 * "SADNESS" STATE: The idea is that when a character dies, the other is in a "sad state"; This is just a way to "lock" one character when the other is dead, so both respawn when a life is lost.
-* HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style; A main idea was a "Companion notifier" for when the Companion is off-screen like an arrow on-screen pointing at their direction so the Player gets an idea of their location.
-* OFF-SCREEN COMPANION INDICATOR/WAYPOINT: Mentioned above; Ideally, i want it to look like an Astrolobe because of Nortubel's Portugal influences.
+* HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style.
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
 * SPACE/GRAVITY ELEMENTS: Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * BOSS FIGHTS: Will probably be a very complex inclusion.
@@ -108,7 +108,7 @@ I may end up changing this goal list as well.
 * The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
-* The off-screen pointer for the Companion is cropped by the screen's edges instead of being at a right distance from the edges/bourders.
+* The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

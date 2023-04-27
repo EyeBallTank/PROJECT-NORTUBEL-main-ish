@@ -2,6 +2,7 @@ extends Control
 
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
+onready var extra = $ExtraMenu
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -45,3 +46,11 @@ func _on_EN_setting_pressed():
 
 func _on_PT_setting_pressed():
 	TranslationServer.set_locale("pt")
+
+
+func _on_ExtraButton_pressed():
+	show_and_hide(extra, menu)
+
+
+func _on_BackFromOptions2_pressed():
+	show_and_hide(menu, extra)

@@ -218,8 +218,34 @@ margin_bottom = 402.0
 custom_fonts/font = ExtResource( 4 )
 text = "PT"
 
+[node name="ExtraMenu" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="GalleryButton" type="Button" parent="ExtraMenu"]
+margin_left = 467.0
+margin_top = 249.0
+margin_right = 551.0
+margin_bottom = 286.0
+custom_fonts/font = ExtResource( 4 )
+text = "GALLERY_B"
+
+[node name="BackFromOptions2" type="Button" parent="ExtraMenu"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 486.0
+margin_top = 393.0
+margin_right = 550.0
+margin_bottom = 416.0
+custom_fonts/font = SubResource( 9 )
+text = "MENU_B"
+
 [connection signal="pressed" from="MenuMain/UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="pressed" from="MenuMain/ExtraButton" to="." method="_on_ExtraButton_pressed"]
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
@@ -227,3 +253,4 @@ text = "PT"
 [connection signal="pressed" from="OptionsMenu/BackFromOptions" to="." method="_on_BackFromOptions_pressed"]
 [connection signal="pressed" from="OptionsMenu/EN setting" to="." method="_on_EN_setting_pressed"]
 [connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]
+[connection signal="pressed" from="ExtraMenu/BackFromOptions2" to="." method="_on_BackFromOptions2_pressed"]

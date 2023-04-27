@@ -2,6 +2,7 @@ extends Control
 
 onready var pausemenu = $MenuMain
 onready var optionsmenu = $OptionsMenu
+onready var extra = $ExtraMenu
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -52,3 +53,11 @@ func _on_EN_setting_pressed():
 
 func _on_PT_setting_pressed():
 	TranslationServer.set_locale("pt")
+
+
+func _on_BackFromOptions2_pressed():
+	show_and_hide(pausemenu, extra)
+
+
+func _on_ExtraButton_pressed():
+	show_and_hide(extra, pausemenu)

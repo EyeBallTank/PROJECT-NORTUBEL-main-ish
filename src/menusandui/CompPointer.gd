@@ -1,5 +1,8 @@
 extends Node2D
 
+#This was hard to implement and still looks weird right now
+#Pay attention to the scene organization, nodes and SPECIALLY the pivot points then the code below
+
 #onready var Companion = get_parent()
 #onready var secret = $AstrolabeSecret
 onready var secret = $Secret
