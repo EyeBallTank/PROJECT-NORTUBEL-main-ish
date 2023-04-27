@@ -25,3 +25,76 @@ START_B,Start,Começar
 BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
+,,
+BOOKHINT_1,"ESC: Pause menu
+Left movement: Left arrow key/A
+Right movement: Right arrow key/D
+Jumping/Climbing/Swimming upwards: Up arrow key/W
+Climbing/Swimming downwards: Down arrow key
+""Follow me"": Q + Right
+""Stand still"": Q + Down
+""Run away"" opposite to ""Run away"": Q + Left
+Companion jumping and ""interactions"" like attaching to the Ladder: Z
+Knife attack: E
+Ball kick attack: Down
+Cancelling ball attack: Up
+","ESC: Menu de pausa
+Movimento esquerdo: Seta esquerda/A
+Movimento Direito: Seta direita/D
+Saltar/Nadar para cima/Subir: Seta de cima/W
+Descer/Nadar para baixo: Seta de baixo
+""Segue-me"": Q + Direita
+""Fica aí"": Q + Baixo
+""Foje"" contrário de ""Segue-me"": Q + Esquerda
+Companheiro(a) saltar e ""interações"" como usar esquadas: Z
+Ataque de faca: E
+Ataque com bola e pontapé: Baixo
+Cancelar ataque de bola: Cima"
+,,
+BOOKHINT_2,"Companion receives more damage than Player
+Keys unlock doors of corresponding colors
+Grocery basket heals whoever picks it up
+Lifeguard Floater makes you invincible for a short time
+This bag gives you one soccer ball
+Soccer ball can defeat enemies
+Soccer net disappears when receiving the ball
+The Manowar can't be defeated","O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
+Chaves abrem portas de cores correspondentes
+O cesto de compras cura quem o apanhar
+A bóia salva-vidas faz-te invencível por pouco tempo
+Esta mala dá-te uma bola de futebol
+A bola de futebol consegue derrotar inimigos
+A rede de futebol desaparece quando recebe a bola
+A caravela não pode ser derrotada"
+,,
+BOOKHINT_3,"Buttons are pressed automatically by either character
+Blue buttons leave a permanent effect
+Yellow buttons cause a temporary effect
+Green buttons exist in 2 to cause opposite effects
+Companion can enter tight spaces that the Player can't
+Weak platforms fall with the Player's weight
+Player can swing from the fishing rod
+Gongs are checkpoint areas
+Ice and mud affect movement
+Trampolines make both characters jump higher
+Both characters can use ladders, swim and push vases
+Portals have specific paths","Botões são pressionados por qualquer personagem
+Botões azuis deixam um efeito permanente
+Botões amarelos causam um efeito temporário
+Botões verdes existem em duplos para causar efeitos contrários
+Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
+Plataformas fracas caem com o peso do(a) Jogador(a)
+O(A) Jogador(a) consegue pendular da cana de pesca
+Gongos são áreas de ""checkpoint""
+Gelo e lama afetam o movimento
+Trampolins fazem ambos personagens saltar mais alto
+Ambos os personagens conseguem usar escadas, nadar e empurrar vasos
+Portais têm caminhos específicos"
+,,
+BOOKHINT_CHAR,"""What are the 6 characters' names?""
+Levels 1/4: Carrie and Oscar Decarde
+2/5: Katrin and Pete Flenn
+3/6: Melvin and Angéla Brokston","""Quais são os nomes das 6 personagens?""
+Níveis 1/4: Carrie e Oscar Decarde
+2/5: Katrin e Pete Flenn
+3/6: Melvin e Angéla Brokston"

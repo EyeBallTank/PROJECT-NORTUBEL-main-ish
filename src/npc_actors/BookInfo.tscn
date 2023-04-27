@@ -58,19 +58,7 @@ margin_top = 10.0
 margin_right = 906.0
 margin_bottom = 381.0
 custom_fonts/font = SubResource( 5 )
-text = "ESC: Pause menu/Menu de pausa
-Left movement/Movimento esquerdo: Left arrow key/A.
-Right movement/Movimento Direito: Right arrow key/D.
-Jumping/Climbing/Swimming upwards/Saltar/Nadar para cima/Subir: Up arrow key/W.
-Climbing/Swimming downwards/Descer/Nadar para baixo: Down arrow key.
-\"Follow me/Segue-me\": Q + Right/Direita.
-\"Stand still/Fica aí\": Q + Down/Baixo.
-\"Run away/Foje\" opposite to/contrário de FOLLOWME: Q + Left/Esquerda
-Companion jumping and \"interactions\" like attaching to the Ladder/
-Companheiro(a) saltar e \"interações\" como usar esquadas: Z.
-Knife attack/Ataque de faca: E.
-Ball kick attack/Ataque com bola e pontapé: Down/Baixo.
-Cancelling ball attack/Cancelar ataque de bola: Up/Cima."
+text = "BOOKHINT_1"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]

@@ -58,10 +58,7 @@ margin_top = 44.0
 margin_right = 563.0
 margin_bottom = 136.0
 custom_fonts/font = SubResource( 5 )
-text = "\"What are the 6 characters' names?/Quais são os nomes das 6 personagens?\"
-Levels/Níveis 1/4: Carrie & Oscar Decarde
-2/5: Katrin & Pete Flenn
-3/6: Melvin & Angéla Brokston"
+text = "BOOKHINT_CHAR"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
