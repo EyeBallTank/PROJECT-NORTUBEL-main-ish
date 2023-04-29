@@ -9,7 +9,7 @@ func _ready():
 
 
 func _on_LifeguardFloater_body_entered(body):
-	if body.is_in_group("protagonists"):
+	if body.name == "Player":
 		body.is_invul()
 		audioPlayer.play()
 		animationplayer.play("caught")

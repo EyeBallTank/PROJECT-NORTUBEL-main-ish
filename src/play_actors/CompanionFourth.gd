@@ -53,7 +53,9 @@ var direction: = Vector2.ZERO
 onready var Player = get_parent().get_node("Player")
 
 onready var healthBar = $CanvasLayer/HealthbarCompanion
+onready var oxygenbar = $CanvasLayer/OxygenbarCompanion
 export var health : int = 50
+export var oxygen : int = 1500
 onready var CompanionHurtbox = $CompanionHurtbox
 onready var swimCheck = $SwimCheck
 onready var ladderCheck = $LadderCheck
@@ -71,14 +73,19 @@ onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
 
 func _ready():
+	oxygenbar.hide()
 	animatedsprite.frames = load(companionskin)
 	healthBar.max_value = health
+	oxygenbar.max_value = oxygen
 	var companionspawn = get_parent().get_node("companionspawn")
 	last_checkpoint = companionspawn
 
 func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
+		state = DEATH
+	oxygenbar.value = oxygen
+	if oxygen <= 0:
 		state = DEATH
 
 	match state:
@@ -302,6 +309,8 @@ func _physics_process(delta):
 				state = ICERUN
 
 		SWIMMING:
+			oxygenbar.show()
+			oxygen -= 1
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
 #			if Player.global_position.x < global_position.x - 10:
@@ -430,9 +439,13 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = SWIMIDLE
 			if not is_on_water():
+				oxygenbar.hide()
+				oxygen = 1500
 				state = FOLLOWME
 
 		SWIMRUN:
+			oxygenbar.show()
+			oxygen -= 1
 			if Player.global_position.x < global_position.x - 50:
 				animatedsprite.flip_h = false
 				pushdetector.position = Vector2(53, 0)
@@ -533,9 +546,13 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = SWIMIDLE
 			if not is_on_water():
+				oxygenbar.hide()
+				oxygen = 1500
 				state = RUNAWAY
 
 		SWIMIDLE:
+			oxygenbar.show()
+			oxygen -= 1
 			animatedsprite.animation = "Swimidle"
 			vel.x = 0
 			direction.x = 0
@@ -559,6 +576,8 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = SWIMMING
 			if not is_on_water():
+				oxygenbar.hide()
+				oxygen = 1500
 				state = STANDSTILL
 
 		CLIMBIDLE:
@@ -1534,6 +1553,7 @@ func go_to_checkpoint():
 	thing = checkpointTween.start()
 	state = STANDSTILL
 	health = 50
+	oxygen = 1500
 	yield(get_tree().create_timer(0.4), "timeout")
 	CompanionHurtbox.set_monitoring(true)
 	show()
