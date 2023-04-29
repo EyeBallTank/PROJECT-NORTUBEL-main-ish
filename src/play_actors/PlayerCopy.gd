@@ -92,6 +92,8 @@ func _physics_process(delta):
 	if health <= 0:
 		state = DEATH
 	oxygenbar.value = oxygen
+	if oxygen <= 0:
+		state = DEATH
 
 	# Still using frankensteined code to do this		
 	match state:
@@ -472,6 +474,7 @@ func _physics_process(delta):
 				global_rotation = 0
 				state = MAINSTATE
 		SWIM:
+			oxygen -= 1
 			$CollisionShape2D.shape.extents = Vector2(104.5, 50.5 )
 			$CollisionShape2D.position = Vector2(0.5, -161.5)
 			hurtboxcollision.shape.extents = Vector2(104.5, 50.5)
@@ -521,6 +524,7 @@ func _physics_process(delta):
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 			
 			if not is_on_water():
+				oxygen = 1000
 				state = MAINSTATE
 
 		KICKBALL:
@@ -824,6 +828,7 @@ func go_to_checkpoint():
 #	yield(get_tree().create_timer(0.4), "timeout")
 	state = MAINSTATE
 	health = 100
+	oxygen = 1000
 	yield(get_tree().create_timer(0.6), "timeout")
 	hurtbox.set_monitoring(true)
 #	animatedsprite.set_modulate(00000000)
