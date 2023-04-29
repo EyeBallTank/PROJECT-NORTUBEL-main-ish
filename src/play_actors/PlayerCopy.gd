@@ -13,7 +13,7 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var jump_buffer_time : int  = 15
 export var health : int = 100
-export var oxygen : int = 1000
+export var oxygen : int = 1500
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
@@ -77,6 +77,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	oxygenbar.hide()
 	camera.zoom = Vector2(2, 2)
 	$FloaterActive.hide()
 	animatedsprite.frames = load(playerskin)
@@ -474,6 +475,7 @@ func _physics_process(delta):
 				global_rotation = 0
 				state = MAINSTATE
 		SWIM:
+			oxygenbar.show()
 			oxygen -= 1
 			$CollisionShape2D.shape.extents = Vector2(104.5, 50.5 )
 			$CollisionShape2D.position = Vector2(0.5, -161.5)
@@ -524,7 +526,8 @@ func _physics_process(delta):
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 			
 			if not is_on_water():
-				oxygen = 1000
+				oxygen = 1500
+				oxygenbar.hide()
 				state = MAINSTATE
 
 		KICKBALL:
@@ -828,7 +831,7 @@ func go_to_checkpoint():
 #	yield(get_tree().create_timer(0.4), "timeout")
 	state = MAINSTATE
 	health = 100
-	oxygen = 1000
+	oxygen = 1500
 	yield(get_tree().create_timer(0.6), "timeout")
 	hurtbox.set_monitoring(true)
 #	animatedsprite.set_modulate(00000000)

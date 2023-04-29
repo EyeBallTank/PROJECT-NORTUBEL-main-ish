@@ -17,6 +17,6 @@ margin_bottom = 20.0
 rect_rotation = -89.9999
 theme = ExtResource( 2 )
 custom_fonts/font = SubResource( 4 )
-max_value = 1000.0
+max_value = 1500.0
 value = 50.0
 percent_visible = false

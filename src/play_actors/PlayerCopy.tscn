@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
@@ -99,9 +99,6 @@ extents = Vector2( 26.5, 123.5 )
 [sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 5.5, 121 )
 
-[sub_resource type="RectangleShape2D" id=39]
-extents = Vector2( 62.25, 61.25 )
-
 [node name="Player" type="KinematicBody2D" groups=["player", "protagonists"]]
 z_index = 10
 collision_mask = 780
@@ -149,6 +146,7 @@ rect_scale = Vector2( 0.432724, 1.6407 )
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
 frames = SubResource( 38 )
+frame = 1
 playing = true
 
 [node name="SpeechBalloon" parent="." instance=ExtResource( 5 )]
@@ -241,13 +239,6 @@ stream = ExtResource( 6 )
 volume_db = -4.095
 pitch_scale = 2.73
 bus = "Sound"
-
-[node name="Lungs" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Lungs"]
-modulate = Color( 1, 0.984314, 0, 1 )
-position = Vector2( -8, -136 )
-shape = SubResource( 39 )
 
 [connection signal="area_entered" from="RopeCheck" to="." method="_on_RopeCheck_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
