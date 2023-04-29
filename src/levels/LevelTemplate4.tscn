@@ -62,7 +62,7 @@ scale = Vector2( 128, 192 )
 collision_newsize = Vector2( 128, 192 )
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 10 )]
-position = Vector2( 128.092, -63.816 )
+position = Vector2( 128, -64 )
 
 [node name="Manowar" parent="." instance=ExtResource( 11 )]
 position = Vector2( -449.471, 1023.36 )

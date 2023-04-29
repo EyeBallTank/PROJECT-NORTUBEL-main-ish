@@ -49,6 +49,7 @@ var rope_part = null
 var portal_id = 0
 #var is_pushing = false
 var ouch = false
+var immortal = false
 
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
@@ -77,6 +78,7 @@ var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
 func _ready():
+	immortal = false
 	oxygenbar.hide()
 	camera.zoom = Vector2(2, 2)
 	$FloaterActive.hide()
@@ -475,8 +477,12 @@ func _physics_process(delta):
 				global_rotation = 0
 				state = MAINSTATE
 		SWIM:
-			oxygenbar.show()
-			oxygen -= 1
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
 			$CollisionShape2D.shape.extents = Vector2(104.5, 50.5 )
 			$CollisionShape2D.position = Vector2(0.5, -161.5)
 			hurtboxcollision.shape.extents = Vector2(104.5, 50.5)
@@ -755,6 +761,7 @@ func _physics_process(delta):
 				state = ICE
 
 func is_invul():
+	immortal = true
 	print("does it work")
 	$FloaterActive.show()
 #	animatedsprite.modulate = Color(0, 255, 0, 255)
@@ -763,6 +770,7 @@ func is_invul():
 	print("hope it did")
 	hurtbox.set_monitoring(true)
 	$FloaterActive.hide()
+	immortal = false
 #	animatedsprite.modulate = Color(255, 255, 255, 255)
 
 func is_on_ladder():
