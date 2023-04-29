@@ -13,7 +13,7 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 export var jump_buffer_time : int  = 15
 export var health : int = 100
-#export var oxygen : int = 100
+export var oxygen : int = 1000
 
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
@@ -58,6 +58,7 @@ var JUMP_SPEED = 1500
 
 onready var camera = $Camera2D
 onready var healthBar = $CanvasLayer/HealthbarPlayer
+onready var oxygenbar = $CanvasLayer/OxygenbarPlayer
 onready var ladderCheck = $LadderCheck
 onready var swimCheck = $SwimCheck
 onready var iceCheck = $IceCheck
@@ -82,6 +83,7 @@ func _ready():
 	$CollisionShape2D.disabled = false
 	playerhitboxcollision.disabled = true
 	healthBar.max_value = health
+	oxygenbar.max_value = oxygen
 	var playerspawn = get_parent().get_node("playerspawn")
 	last_checkpoint = playerspawn
 
@@ -89,6 +91,7 @@ func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
 		state = DEATH
+	oxygenbar.value = oxygen
 
 	# Still using frankensteined code to do this		
 	match state:

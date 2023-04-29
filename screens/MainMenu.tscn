@@ -88,7 +88,6 @@ custom_fonts/font = SubResource( 3 )
 text = "LOAD_B"
 
 [node name="QuitButton" type="Button" parent="MenuMain"]
-visible = false
 margin_top = 108.0
 margin_right = 296.0
 margin_bottom = 131.0
