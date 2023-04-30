@@ -7,7 +7,7 @@ onready var audioplayer = $AudioStreamPlayer
 var bounce_factor = 150
 
 func _ready():
-	animationplayer.play("RESET")
+#	animationplayer.play("RESET")
 	ball_disappear()
 
 func ball_disappear():
