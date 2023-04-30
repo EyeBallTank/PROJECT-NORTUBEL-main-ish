@@ -12,7 +12,9 @@ func _on_Blue_key_body_entered(body: PhysicsBody2D):
 		body.hasbluekey = true
 		audioPlayer.play()
 		animationplayer.play("caughtkey")
-		yield(animationplayer, "animation_finished")
-#		yield(get_tree().create_timer(0.9), "timeout")
-		queue_free()
+#		yield(animationplayer, "animation_finished")
+#		queue_free()
 		
+
+func disappear():
+	queue_free()

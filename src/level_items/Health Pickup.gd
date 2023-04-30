@@ -13,8 +13,8 @@ func _on_Health_Pickup_body_entered(body):
 			body.health += 10
 			animationplayer.play("collected")
 			audioPlayer.play()
-			yield(animationplayer, "animation_finished")
-			queue_free()
+#			yield(animationplayer, "animation_finished")
+#			queue_free()
 		else:
 			pass
 
@@ -23,9 +23,12 @@ func _on_Health_Pickup_body_entered(body):
 			body.health += 10
 			animationplayer.play("collected")
 			audioPlayer.play()
-			yield(animationplayer, "animation_finished")
-			queue_free()
+#			yield(animationplayer, "animation_finished")
+#			queue_free()
 		else:
 			pass
+
+func disappear():
+	queue_free()
 
 #Wanted to make sure one character touching the Health Pickup heals BOTH

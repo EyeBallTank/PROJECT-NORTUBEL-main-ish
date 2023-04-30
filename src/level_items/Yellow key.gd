@@ -12,6 +12,9 @@ func _on_Yellow_key_body_entered(body: PhysicsBody2D):
 		body.hasyellowkey = true
 		audioPlayer.play()
 		animationplayer.play("caughtkey")
-		yield(animationplayer, "animation_finished")
-		queue_free()
+#		yield(animationplayer, "animation_finished")
+#		queue_free()
 		
+
+func disappear():
+	queue_free()

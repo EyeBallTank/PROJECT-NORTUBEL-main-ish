@@ -11,8 +11,10 @@ func _on_Area2D_body_entered(body):
 		if body.hasredkey == true:
 			$AudioStreamPlayer.play()
 			animationplayer.play("unlocked")
-			yield(animationplayer, "animation_finished")
-			queue_free()
+#			yield(animationplayer, "animation_finished")
+#			queue_free()
 		else:
 			pass
 
+func disappear():
+	queue_free()

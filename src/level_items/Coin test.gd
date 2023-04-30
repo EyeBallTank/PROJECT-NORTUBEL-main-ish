@@ -12,5 +12,8 @@ func _on_Coin_body_entered(body):
 		Signals.emit_signal("coin_was_captured")
 		animationplayer.play("collected")
 		audioPlayer.play()
-		yield(animationplayer, "animation_finished")
-		queue_free()
+#		yield(animationplayer, "animation_finished")
+#		queue_free()
+
+func disappear():
+	queue_free()
