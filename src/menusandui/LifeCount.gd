@@ -1,5 +1,8 @@
 extends Control
 
+# The number and name are seperate label nodes because the name uses the translation method
+# while the number is called by code
+
 var life_count = 0
 
 onready var LifeLabelNumber = $LifeLabelNumber
