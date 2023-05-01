@@ -216,21 +216,31 @@ margin_bottom = 40.0
 [node name="GalleryButton" type="Button" parent="ExtraMenu"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 465.0
+margin_left = 365.0
 margin_top = 294.0
-margin_right = 520.0
+margin_right = 420.0
 margin_bottom = 296.0
 custom_fonts/font = ExtResource( 5 )
 text = "GALLERY_B"
+
+[node name="LibrabyButton" type="Button" parent="ExtraMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 567.0
+margin_top = 294.0
+margin_right = 622.0
+margin_bottom = 296.0
+custom_fonts/font = ExtResource( 5 )
+text = "LIBRARY_B"
 
 [node name="BackFromOptions2" type="Button" parent="ExtraMenu"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 486.0
+margin_left = 458.0
 margin_top = 465.0
-margin_right = 550.0
+margin_right = 522.0
 margin_bottom = 488.0
 custom_fonts/font = SubResource( 9 )
 text = "MENU_B"
