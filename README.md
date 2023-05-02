@@ -58,7 +58,7 @@ Done (Even if it could be better):
 * BACKGROUND: Just a basic sky with clouds.
 * MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
 * OFF-SCREEN COMPANION INDICATOR/WAYPOINT: When the Companion is off-screen, an Astrolabe shows up pointing at their direction; It looks a bit off so far but i tried my best (And with tricky methods too).
-* LIVE SYSTEM (STILL WIP): Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on making it so collecting a certain amount of coins adds a new life.
+* LIVE SYSTEM (STILL WIP): Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on making it so collecting a certain amount of coins adds a new life; Still can't keep the values when a level changes.
 
 
 
@@ -110,6 +110,8 @@ I may end up changing this goal list as well.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
+* Both the coins and health values return to their default values when a level changes.
+* Level design is so messy it doesn't do a good job at introducing mechanics but i plan to revise this at the same time i revise the yellow books with info.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:

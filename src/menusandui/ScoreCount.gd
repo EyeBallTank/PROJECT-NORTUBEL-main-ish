@@ -1,6 +1,6 @@
 extends Control
 
-var ezcudo_score = 0
+var ezcudo_score = Signals.score
 
 onready var ScoreLabel = $ScoreLabel
 
@@ -17,3 +17,4 @@ func _physics_process(_delta):
 		ezcudo_score = 0
 		ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
 		Signals.emit_signal("new_life")
+#		Signals.lives += 1

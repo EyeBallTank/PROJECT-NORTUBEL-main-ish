@@ -18,16 +18,13 @@ signal score_was_updated
 
 signal new_life
 signal life_lost
+var score = 0
 var lives = 3
 var max_lives = 10
 
 #signal player_died
 #signal companion_died
 #signal hit_checkpoint(checkpoint_position)
-
-func _ready():
-	pass
-
 
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)

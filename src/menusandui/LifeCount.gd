@@ -14,6 +14,7 @@ func _ready():
 func _life_received():
 	life_count += 1
 	LifeLabelNumber.text = ": " + str(life_count)
+#	life_count = Signals.lives
 
 func _lost_a_life():
 #	life_count -= 1
