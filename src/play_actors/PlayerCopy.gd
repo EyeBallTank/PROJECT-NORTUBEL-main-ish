@@ -316,6 +316,7 @@ func _physics_process(delta):
 					pass
 
 		MAINSTATE:
+			oxygenbar.hide()
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)

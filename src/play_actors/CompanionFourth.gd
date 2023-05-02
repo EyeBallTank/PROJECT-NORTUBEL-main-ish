@@ -94,6 +94,7 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -172,6 +173,7 @@ func _physics_process(delta):
 				state = ICEFOLLOW
 
 		STANDSTILL:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -234,6 +236,7 @@ func _physics_process(delta):
 
 
 		RUNAWAY:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -585,6 +588,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBIDLE:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -656,6 +660,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBMOVE:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -714,6 +719,7 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = FOLLOWME
 		CLIMBRUN:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -773,6 +779,7 @@ func _physics_process(delta):
 				state = RUNAWAY
 
 		SLOWFOLLOW:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -849,6 +856,7 @@ func _physics_process(delta):
 				if is_on_floor():
 					state = FOLLOWME
 		SLOWRUN:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -926,6 +934,7 @@ func _physics_process(delta):
 					state = RUNAWAY
 
 		CRAWLFOLLOW:
+			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = -WALK_MAX_SPEED
 				direction.x = -1
@@ -962,6 +971,7 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLRUN:
+			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = WALK_MAX_SPEED
 				direction.x = 1
@@ -998,6 +1008,7 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLIDLE:
+			oxygenbar.hide()
 			animatedsprite.animation = "Crawlidle"
 			vel.x = 0
 			direction.x = 0
@@ -1017,6 +1028,7 @@ func _physics_process(delta):
 				state = CRAWLRUN
 
 		ICEFOLLOW:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1102,6 +1114,7 @@ func _physics_process(delta):
 					pass
 
 		ICERUN:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1187,6 +1200,7 @@ func _physics_process(delta):
 					pass
 
 		ICEIDLE:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1286,6 +1300,7 @@ func _physics_process(delta):
 #			pass
 
 		PUSHFOLLOW:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1363,6 +1378,7 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = ICEFOLLOW
 		PUSHRUN:
+			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
