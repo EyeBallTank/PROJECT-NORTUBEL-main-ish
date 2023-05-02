@@ -11,3 +11,9 @@ func _on_CoinCaptured():
 	ezcudo_score += 1
 	ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
 	Signals.emit_signal("score_was_updated")
+
+func _physics_process(_delta):
+	if ezcudo_score == 3:
+		ezcudo_score = 0
+		ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
+		Signals.emit_signal("new_life")

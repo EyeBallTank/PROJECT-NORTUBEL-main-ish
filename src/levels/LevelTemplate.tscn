@@ -54,10 +54,10 @@ position = Vector2( 11079, -448 )
 position = Vector2( 1280, 384 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1280, 392 )
+position = Vector2( 9288, 288 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1216, 384 )
+position = Vector2( 9224, 280 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1216, 384 )
@@ -162,7 +162,7 @@ position = Vector2( 4864, 448 )
 position = Vector2( 9728, 256 )
 
 [node name="Coin7" parent="." instance=ExtResource( 13 )]
-position = Vector2( 10304, 512 )
+position = Vector2( 9896, 264 )
 
 [node name="Coin8" parent="." instance=ExtResource( 13 )]
 position = Vector2( 9536, 256 )

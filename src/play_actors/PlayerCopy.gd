@@ -90,10 +90,14 @@ func _ready():
 	var playerspawn = get_parent().get_node("playerspawn")
 	last_checkpoint = playerspawn
 
+
+
 func _physics_process(delta):
 	healthBar.value = health
 	if health <= 0:
 		state = DEATH
+		Signals.lives -= 1
+		Signals.emit_signal("life_lost")
 	oxygenbar.value = oxygen
 	if oxygen <= 0:
 		state = DEATH
