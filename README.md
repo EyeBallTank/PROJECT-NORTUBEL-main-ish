@@ -58,13 +58,14 @@ Done (Even if it could be better):
 * BACKGROUND: Just a basic sky with clouds.
 * MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
 * OFF-SCREEN COMPANION INDICATOR/WAYPOINT: When the Companion is off-screen, an Astrolabe shows up pointing at their direction; It looks a bit off so far but i tried my best (And with tricky methods too).
+* LIVE SYSTEM (STILL WIP): Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on making it so collecting a certain amount of coins adds a new life.
+
 
 
 
 Not yet:
 * SAVE/LOAD: Need to understand clearly how it can work and avoid the least amount of problems.
 * LEVEL SELECT/HUB: Not sure exactly how level selection would work.
-* LIVE SYSTEM: Ideally, both characters share the lives meaning if one dies, so does the other; Besides a potential life system that could lead to a game-over screen, i also plan on both an extra life pickup AND making it so collecting 100 coins adds a new life.
 * "SADNESS" STATE: The idea is that when a character dies, the other is in a "sad state"; This is just a way to "lock" one character when the other is dead, so both respawn when a life is lost.
 * HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style.
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
@@ -167,6 +168,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
+* SimonKazehaya (Helped me fix a life subtraction issue)
 * Armanlex (Assumed that levels were tilted and turns out they were)
 * Pigdev (Used tutorial video on moving platform)
 * mjbolt (Used tutorial video on Pushable object)
