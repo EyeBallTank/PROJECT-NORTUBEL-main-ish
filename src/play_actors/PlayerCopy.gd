@@ -99,10 +99,11 @@ func _physics_process(delta):
 		state = DEATH
 		Signals.lives -= 1
 		Signals.emit_signal("life_lost")
-#		Signals.lose_life()
 	oxygenbar.value = oxygen
-	if oxygen <= 0:
+	if oxygen <= 0 and state != DEATH:
 		state = DEATH
+		Signals.lives -= 1
+		Signals.emit_signal("life_lost")
 
 	# Still using frankensteined code to do this		
 	match state:
