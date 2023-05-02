@@ -19,6 +19,7 @@ signal score_was_updated
 signal new_life
 signal life_lost
 var lives = 3
+var max_lives = 10
 
 #signal player_died
 #signal companion_died

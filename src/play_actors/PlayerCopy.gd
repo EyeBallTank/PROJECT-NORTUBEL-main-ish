@@ -98,7 +98,8 @@ func _physics_process(delta):
 	if health <= 0:
 		state = DEATH
 		Signals.lives -= 1
-#		Signals.emit_signal("life_lost")
+		Signals.emit_signal("life_lost")
+#		Signals.lose_life()
 	oxygenbar.value = oxygen
 	if oxygen <= 0:
 		state = DEATH

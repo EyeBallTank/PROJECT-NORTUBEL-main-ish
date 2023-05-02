@@ -7,17 +7,19 @@ var life_count = Signals.lives
 onready var LifeLabelNumber = $LifeLabelNumber
 
 func _ready():
-	LifeLabelNumber.text = str(life_count)
+	LifeLabelNumber.text = ": " + str(life_count)
 	Signals.connect("new_life", self, "_life_received")
 	Signals.connect("life_lost", self, "_lost_a_life")
 
 func _life_received():
 	life_count += 1
-	LifeLabelNumber.text = str(life_count)
+	LifeLabelNumber.text = ": " + str(life_count)
 
 func _lost_a_life():
 #	life_count -= 1
-	LifeLabelNumber.text = str(life_count)
+#	yield(Signals, "life_lost")
+	LifeLabelNumber.text = ": " + str(life_count)
+	life_count = Signals.lives
 
 func _physics_process(_delta):
-	LifeLabelNumber.text = str(life_count)
+	LifeLabelNumber.text = ": " + str(life_count)
