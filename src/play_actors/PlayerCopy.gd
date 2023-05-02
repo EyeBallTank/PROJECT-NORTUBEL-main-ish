@@ -77,6 +77,7 @@ onready var audioplayer = $AudioStreamPlayer
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 
+
 func _ready():
 	immortal = false
 	oxygenbar.hide()
@@ -97,7 +98,7 @@ func _physics_process(delta):
 	if health <= 0:
 		state = DEATH
 		Signals.lives -= 1
-		Signals.emit_signal("life_lost")
+#		Signals.emit_signal("life_lost")
 	oxygenbar.value = oxygen
 	if oxygen <= 0:
 		state = DEATH

@@ -4,8 +4,6 @@ extends Control
 # while the number is called by code
 
 var life_count = Signals.lives
-#onready var player = get_parent().get_node("Player")
-
 onready var LifeLabelNumber = $LifeLabelNumber
 
 func _ready():
