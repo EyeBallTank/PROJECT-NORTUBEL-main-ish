@@ -1,14 +1,16 @@
 extends Node
 class_name main_level_script
 # In case levels need a script
-const PlayerScene = preload("res://src/play_actors/PlayerCopy.tscn")
-const CompScene = preload("res://src/play_actors/CompanionFourth.tscn")
+#const PlayerScene = preload("res://src/play_actors/PlayerCopy.tscn")
+#const CompScene = preload("res://src/play_actors/CompanionFourth.tscn")
 
-var player_spawn_location = Vector2.ZERO
-var companion_spawn_location = Vector2.ZERO
+#var player_spawn_location = Vector2.ZERO
+#var companion_spawn_location = Vector2.ZERO
 
-onready var mainplayer: = $Player
-onready var maincomp: = $Companion
+#var lives = Signals.lives
+
+#onready var mainplayer: = $Player
+#onready var maincomp: = $Companion
 #
 #func _ready():
 #	player_spawn_location = mainplayer.global_position

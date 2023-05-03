@@ -7,6 +7,7 @@ onready var audioPlayer = $AudioStreamPlayer
 onready var animationplayer = $AnimationPlayer
 
 func _ready():
+#	animationplayer.play("Uncollectable")
 	animationplayer.play("RESET")
 
 func _on_Coin_body_entered(body):
