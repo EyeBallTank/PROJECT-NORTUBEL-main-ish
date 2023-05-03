@@ -22,3 +22,7 @@ func unpause_the_game():
 
 #func transfer_data_between_scenes(old_level, new_level):
 #	Signals.lives = Signals.lives
+
+#func _physics_process(_delta):
+#	Signals.lives = Signals.lives
+#	Signals.score = Signals.score

@@ -23,6 +23,9 @@ var lives = 3
 var max_lives = 4
 
 
+#func add_life():
+#	lives += 1
+
 #signal player_died
 #signal companion_died
 #signal hit_checkpoint(checkpoint_position)
