@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/GameOver.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -20,5 +27,13 @@ margin_right = 557.0
 margin_bottom = 534.0
 custom_fonts/font = ExtResource( 1 )
 text = "QUIT_B"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 421.0
+margin_top = 199.0
+margin_right = 669.0
+margin_bottom = 248.0
+custom_fonts/font = SubResource( 1 )
+text = "GAMEOVER_T"
 
 [connection signal="pressed" from="QuitButton" to="." method="_on_QuitButton_pressed"]
