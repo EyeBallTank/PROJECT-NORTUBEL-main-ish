@@ -104,6 +104,8 @@ func _physics_process(delta):
 		state = DEATH
 		Signals.lives -= 1
 		Signals.emit_signal("life_lost")
+	if Signals.lives == 0 and state != DEATH:
+		SceneManager.change_scene("level_transition_effect", "res://screens/GameOver.tscn")
 
 	# Still using frankensteined code to do this		
 	match state:

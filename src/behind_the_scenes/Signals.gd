@@ -22,6 +22,7 @@ var score = 0
 var lives = 3
 var max_lives = 10
 
+
 #signal player_died
 #signal companion_died
 #signal hit_checkpoint(checkpoint_position)
