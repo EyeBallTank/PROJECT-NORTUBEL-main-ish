@@ -111,6 +111,7 @@ I may end up changing this goal list as well.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
 * Both the coins and health values return to their default values when a level changes.
+* The coins should be unpickable if the max lives are reached.
 * Level design is so messy it doesn't do a good job at introducing mechanics but i plan to revise this at the same time i revise the yellow books with info.
 
 # Current controls/Inputs:
@@ -185,6 +186,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
+* Any help i can get from r/Godot, Discord and /agdg/.
 
 # ALSO: Feel free to give me Github and Godot related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
