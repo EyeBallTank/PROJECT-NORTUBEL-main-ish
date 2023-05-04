@@ -78,7 +78,7 @@ scale = Vector2( 32, 80 )
 collision_newsize = Vector2( 32, 80 )
 
 [node name="IceFloor" parent="." instance=ExtResource( 14 )]
-position = Vector2( -1920.92, 856 )
+position = Vector2( -1920.92, 640 )
 scale = Vector2( 88, 16 )
 collision_newsize = Vector2( 88, 16 )
 
@@ -108,9 +108,6 @@ position = Vector2( 383.999, 0.551636 )
 [node name="Coin" parent="." instance=ExtResource( 23 )]
 position = Vector2( -1208, 528 )
 
-[node name="Coin6" parent="." instance=ExtResource( 23 )]
-position = Vector2( -1864, 528 )
-
 [node name="Coin2" parent="." instance=ExtResource( 23 )]
 position = Vector2( -1600, 528 )
 
@@ -122,12 +119,3 @@ position = Vector2( -1480, 528 )
 
 [node name="Coin4" parent="." instance=ExtResource( 23 )]
 position = Vector2( -1336, 528 )
-
-[node name="Coin7" parent="." instance=ExtResource( 23 )]
-position = Vector2( 696, 88 )
-
-[node name="Coin8" parent="." instance=ExtResource( 23 )]
-position = Vector2( 824, 80 )
-
-[node name="Coin9" parent="." instance=ExtResource( 23 )]
-position = Vector2( 576, 88 )
