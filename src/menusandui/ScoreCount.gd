@@ -20,7 +20,8 @@ func _on_CoinCaptured():
 		Signals.emit_signal("new_life")
 #Still returns to 0 in the next level.
 
-#func _physics_process(_delta):
+func _physics_process(_delta):
+	ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
 #	if ezcudo_score == 3:
 #		Signals.score = 0
 #		ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)

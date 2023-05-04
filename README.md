@@ -48,7 +48,7 @@ Done (Even if it could be better):
 * ICE FLOOR: Player has icy physics and even carries a somewhat "icy jump" before landing on normal floors; Companion has some icy physics too.
 * SLOW FLOOR: Both characters are affected by this and move slowly; Like a reverse to ice floors kinda.
 * HEALTH PICKUP: Can heal the Player and Companion but not at the same time.
-* SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen; Both characters can pick it up and a certain amount of coins adds a new life: Current issue is that the value always resets to 0 when a level is changed.
+* SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen; Both characters can pick it up and a certain amount of coins adds a new life.
 * POWER UPS: So far, there's a temporary invulnerability item that only works on the Player; The floater ring shows above the Player like an halo to indicate it's active.
 * ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them; It can also be killed instantly because it has no health.
 * LEVEL HAZARDS: There is at least one: A Manowar that simply stays still underwater and harms the characters.
@@ -58,7 +58,7 @@ Done (Even if it could be better):
 * BACKGROUND: Just a basic sky with clouds.
 * MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
 * OFF-SCREEN COMPANION INDICATOR/WAYPOINT: When the Companion is off-screen, an Astrolabe shows up pointing at their direction; It looks a bit off so far but i tried my best (And with tricky methods too).
-* LIVE SYSTEM: Ideally, both characters share the lives meaning if one dies, so does the other; Besides the game-over screen, i also made it so collecting a certain amount of coins adds a new life.
+* LIVE SYSTEM: Both characters share the lives meaning if one dies, so does the other; Besides the game-over screen, i also made it so collecting a certain amount of coins adds a new life.
 
 
 
@@ -110,7 +110,6 @@ I may end up changing this goal list as well.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
-* The coins value returns to its default value when a level changes (So far, the value for lives was fixed).
 * Level design is so messy it doesn't do a good job at introducing mechanics but i plan to revise this at the same time i revise the yellow books with info.
 
 # Current controls/Inputs:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=22]
 
 [node name="LevelTemplate4" type="Node2D"]
 light_mask = 4
@@ -44,10 +45,10 @@ tile_data = PoolIntArray( -393233, 1, 0, -393232, 1, 0, -393231, 1, 0, -393230, 
 position = Vector2( 767.327, 469.103 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 802.356, 449.153 )
+position = Vector2( 768, 511.789 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 949.448, 385.364 )
+position = Vector2( 915.092, 448 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( 915.424, 401.315 )
@@ -55,6 +56,9 @@ position = Vector2( 915.424, 401.315 )
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2111.17, 577.033 )
 new_scene = "res://src/levels/LevelTemplate5.tscn"
+
+[node name="Coin" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2304, 576 )
 
 [node name="Water" parent="." instance=ExtResource( 8 )]
 position = Vector2( -1.05737, 1152 )
