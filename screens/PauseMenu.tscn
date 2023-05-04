@@ -153,11 +153,13 @@ size_flags_horizontal = 3
 [node name="Music" type="HSlider" parent="OptionsMenu/SoundSettings/Sliders"]
 margin_right = 114.0
 margin_bottom = 16.0
+value = 50.0
 
 [node name="Sound" type="HSlider" parent="OptionsMenu/SoundSettings/Sliders"]
 margin_top = 20.0
 margin_right = 114.0
 margin_bottom = 36.0
+value = 50.0
 
 [node name="VideoSettings" type="HBoxContainer" parent="OptionsMenu"]
 anchor_left = 0.5
