@@ -5,6 +5,7 @@ var ezcudo_score = Signals.score
 onready var ScoreLabel = $ScoreLabel
 
 func _ready():
+# warning-ignore:return_value_discarded
 	Signals.connect("coin_was_captured", self, "_on_CoinCaptured")
 
 func _on_CoinCaptured():

@@ -12,9 +12,9 @@ func _ready():
 	Signals.connect("life_lost", self, "_lost_a_life")
 
 func _life_received():
-	life_count += 1
+	Signals.lives += 1
 	LifeLabelNumber.text = ": " + str(life_count)
-#	life_count = Signals.lives
+	life_count = Signals.lives
 
 func _lost_a_life():
 #	life_count -= 1
