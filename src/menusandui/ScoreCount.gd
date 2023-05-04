@@ -18,7 +18,8 @@ func _on_CoinCaptured():
 		ezcudo_score = Signals.score
 		ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
 		Signals.emit_signal("new_life")
-#Still returns to 0 in the next level.
+#Still returns to 0 in the next level
+#Now it might be fixed, ignore the commented out text above
 
 func _physics_process(_delta):
 	ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
