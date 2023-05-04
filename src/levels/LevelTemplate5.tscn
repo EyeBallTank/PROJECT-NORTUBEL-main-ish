@@ -122,3 +122,12 @@ position = Vector2( -1480, 528 )
 
 [node name="Coin4" parent="." instance=ExtResource( 23 )]
 position = Vector2( -1336, 528 )
+
+[node name="Coin7" parent="." instance=ExtResource( 23 )]
+position = Vector2( 696, 88 )
+
+[node name="Coin8" parent="." instance=ExtResource( 23 )]
+position = Vector2( 824, 80 )
+
+[node name="Coin9" parent="." instance=ExtResource( 23 )]
+position = Vector2( 576, 88 )
