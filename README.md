@@ -49,7 +49,7 @@ Done (Even if it could be better):
 * SLOW FLOOR: Both characters are affected by this and move slowly; Like a reverse to ice floors kinda.
 * HEALTH PICKUP: Can heal the Player and Companion but not at the same time.
 * SCORE PICKUP: Just a basic coin that adds an int number to the score counter on the screen; Both characters can pick it up and a certain amount of coins adds a new life.
-* POWER UPS: So far, there's a temporary invulnerability item that only works on the Player; The floater ring shows above the Player like an halo to indicate it's active.
+* POWER UPS: So far, there's a temporary invulnerability item that only works on one character at a time; The floater ring shows above the Player/Companion like an halo to indicate it's active.
 * ENEMIES: So far its a Gecko lizard that moves left and right and simply hurts the characters by touching them; It can also be killed instantly because it has no health.
 * LEVEL HAZARDS: There is at least one: A Manowar that simply stays still underwater and harms the characters.
 * COMBAT: Player has a basic melee knife attack and the ability to kick a soccer ball that acts as a projectile with physics (And after a while it disappears; This ball also has a limit of uses).
