@@ -68,12 +68,15 @@ onready var pushdetector = $PushDetector
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 var ouch = false
+var immortal = false
 
 onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
 
 func _ready():
+	immortal = false
 	oxygenbar.hide()
+	$FloaterActive.hide()
 	animatedsprite.frames = load(companionskin)
 	healthBar.max_value = health
 	oxygenbar.max_value = oxygen
@@ -316,8 +319,12 @@ func _physics_process(delta):
 				state = ICERUN
 
 		SWIMMING:
-			oxygenbar.show()
-			oxygen -= 1
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
 #			if Player:
 #				vel = position.direction_to(Player.position) * speed
 #			if Player.global_position.x < global_position.x - 10:
@@ -451,8 +458,12 @@ func _physics_process(delta):
 				state = FOLLOWME
 
 		SWIMRUN:
-			oxygenbar.show()
-			oxygen -= 1
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
 			if Player.global_position.x < global_position.x - 50:
 				animatedsprite.flip_h = false
 				pushdetector.position = Vector2(53, 0)
@@ -558,8 +569,12 @@ func _physics_process(delta):
 				state = RUNAWAY
 
 		SWIMIDLE:
-			oxygenbar.show()
-			oxygen -= 1
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
 			animatedsprite.animation = "Swimidle"
 			vel.x = 0
 			direction.x = 0
@@ -1466,6 +1481,16 @@ func _on_CompanionHurtbox_area_entered(Area2D):
 		yield(get_tree().create_timer(0.5), "timeout")
 		ouch = false
 
+func is_invul():
+	immortal = true
+	print("does it work")
+	$FloaterActive.show()
+	CompanionHurtbox.set_monitoring(false)
+	yield(get_tree().create_timer(30), "timeout")
+	print("hope it did")
+	CompanionHurtbox.set_monitoring(true)
+	$FloaterActive.hide()
+	immortal = false
 
 func is_on_water():
 	if not swimCheck.is_colliding(): return false

@@ -774,14 +774,12 @@ func is_invul():
 	immortal = true
 	print("does it work")
 	$FloaterActive.show()
-#	animatedsprite.modulate = Color(0, 255, 0, 255)
 	hurtbox.set_monitoring(false)
 	yield(get_tree().create_timer(30), "timeout")
 	print("hope it did")
 	hurtbox.set_monitoring(true)
 	$FloaterActive.hide()
 	immortal = false
-#	animatedsprite.modulate = Color(255, 255, 255, 255)
 
 func is_on_ladder():
 	if not ladderCheck.is_colliding(): return false
