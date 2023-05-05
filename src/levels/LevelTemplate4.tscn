@@ -48,7 +48,7 @@ position = Vector2( 767.327, 469.103 )
 position = Vector2( 768, 511.789 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 915.092, 448 )
+position = Vector2( 896, 384 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( 915.424, 401.315 )

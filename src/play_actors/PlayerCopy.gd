@@ -79,6 +79,7 @@ onready var checkpointTween = $CheckpointTween
 
 
 func _ready():
+	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 	immortal = false
 	oxygenbar.hide()
 	camera.zoom = Vector2(2, 2)
@@ -91,7 +92,8 @@ func _ready():
 	var playerspawn = get_parent().get_node("playerspawn")
 	last_checkpoint = playerspawn
 
-
+func _i_am_invincible():
+	is_invul()
 
 func _physics_process(delta):
 	healthBar.value = health

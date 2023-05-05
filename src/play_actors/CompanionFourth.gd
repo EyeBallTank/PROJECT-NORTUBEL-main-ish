@@ -74,6 +74,7 @@ onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
 
 func _ready():
+	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 	immortal = false
 	oxygenbar.hide()
 	$FloaterActive.hide()
@@ -82,6 +83,9 @@ func _ready():
 	oxygenbar.max_value = oxygen
 	var companionspawn = get_parent().get_node("companionspawn")
 	last_checkpoint = companionspawn
+
+func _i_am_invincible():
+	is_invul()
 
 func _physics_process(delta):
 	healthBar.value = health

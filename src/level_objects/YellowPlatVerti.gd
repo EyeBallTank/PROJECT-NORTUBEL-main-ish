@@ -9,7 +9,6 @@ onready var animationplayer = $AnimationPlayer
 func _ready():
 	Signals.connect("yellow_switch_pressed", self, "_on_YellowSwitch_pressed")
 
-
 func _on_YellowSwitch_pressed():
 	print("YELPLAT IS ACTIVE")
 	Signals.emit_signal("yellow_plat_verti_active")

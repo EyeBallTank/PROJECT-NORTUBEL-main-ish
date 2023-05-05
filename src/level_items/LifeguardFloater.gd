@@ -10,7 +10,8 @@ func _ready():
 
 func _on_LifeguardFloater_body_entered(body):
 	if body.is_in_group("protagonists"):
-		body.is_invul()
+#		body.is_invul()
+		Signals.emit_signal("you_are_invincible")
 		audioPlayer.play()
 		animationplayer.play("caught")
 #		yield(animationplayer, "animation_finished")
