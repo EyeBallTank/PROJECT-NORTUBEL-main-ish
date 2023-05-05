@@ -1,6 +1,13 @@
 extends Area2D
 class_name EnemyHitbox
 
+#func _ready():
+#	Signals.connect("you_are_invincible", self, "_they_are_invincible")
+#
+#func _they_are_invincible():
+#	set_monitorable(false)
+#	yield(get_tree().create_timer(30), "timeout")
+#	set_monitorable(true)
 
 #
 #func _on_Area2D_body_entered(body):

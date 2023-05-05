@@ -808,13 +808,15 @@ func is_on_slow():
 	return true
 
 func _on_Hurtbox_area_entered(area):
-	if area.name == "EnemyHitbox":
+	if area.name == "EnemyHitbox" and immortal == false:
 		ouch = true
 		$AnimationPlayer.play("playerhurt") 
 		health -= 10
 		velocity.y -= 700
 		yield(get_tree().create_timer(0.5), "timeout")
 		ouch = false
+	elif immortal == true:
+		pass
 
 func pushcheck():
 	for index in get_slide_count():
