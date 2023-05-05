@@ -45,10 +45,10 @@ tile_data = PoolIntArray( -393233, 1, 0, -393232, 1, 0, -393231, 1, 0, -393230, 
 position = Vector2( 767.327, 469.103 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 256, 64 )
+position = Vector2( 768, 448 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( -448, 320 )
+position = Vector2( 960, 384 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( 915.424, 401.315 )
