@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,9 +6,7 @@
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/npc_actors/BookInfoTwo.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/npc_actors/BookInfoThree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=12]
@@ -27,7 +25,6 @@
 [ext_resource path="res://src/npc_actors/Bonka NPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=27]
-[ext_resource path="res://src/npc_actors/BookInfoCharNames.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=29]
 
 [node name="LevelTemplate" type="Node2D"]
@@ -66,16 +63,7 @@ position = Vector2( 1216, 384 )
 position = Vector2( 1840, 568 )
 
 [node name="BookInfo" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2544, 567 )
-
-[node name="BookInfoTwo" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3110, 325 )
-
-[node name="BookInfoThree" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3746, 565 )
-
-[node name="BookInfoCharNames" parent="." instance=ExtResource( 28 )]
-position = Vector2( 616, 480 )
+position = Vector2( 2232, 535 )
 
 [node name="fall thru" parent="." instance=ExtResource( 29 )]
 position = Vector2( 3008, -1472 )

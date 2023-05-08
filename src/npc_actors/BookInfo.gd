@@ -1,20 +1,24 @@
 extends KinematicBody2D
 
-onready var dialogue = $CanvasLayer
+onready var dialoguebox = $CanvasLayer
+onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
+export(String) var customtext = "BOOKHINT_1"
 
 #This is a basic implementation
 #May need JSON files and Arrays in the future
 
 func _ready():
-	dialogue.visible = false
+	maintext.text = str (customtext)
+#	customtext = maintext.text
+	dialoguebox.visible = false
 	pass
 
 
 func _on_TalktoArea_body_entered(body):
 	if body.name == "Player":
-		dialogue.visible = true
+		dialoguebox.visible = true
 
 
 func _on_TalktoArea_body_exited(body):
 	if body.name == "Player":
-		dialogue.visible = false
+		dialoguebox.visible = false
