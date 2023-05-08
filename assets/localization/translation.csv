@@ -26,30 +26,7 @@ BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your ho
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
 ,,
-BOOKHINT_1,"ESC: Pause menu
-Left movement: Left arrow key/A
-Right movement: Right arrow key/D
-Jumping/Climbing/Swimming upwards: Up arrow key/W
-Climbing/Swimming downwards: Down arrow key
-""Follow me"": Q + Right
-""Stand still"": Q + Down
-""Run away"" opposite to ""Run away"": Q + Left
-Companion jumping and ""interactions"" like attaching to the Ladder: Z
-Knife attack: E
-Ball kick attack: Down
-Cancelling ball attack: Up
-","ESC: Menu de pausa
-Movimento esquerdo: Seta esquerda/A
-Movimento Direito: Seta direita/D
-Saltar/Nadar para cima/Subir: Seta de cima/W
-Descer/Nadar para baixo: Seta de baixo
-""Segue-me"": Q + Direita
-""Fica aí"": Q + Baixo
-""Foje"" contrário de ""Segue-me"": Q + Esquerda
-Companheiro(a) saltar e ""interações"" como usar esquadas: Z
-Ataque de faca: E
-Ataque com bola e pontapé: Baixo
-Cancelar ataque de bola: Cima"
+STORYSKIP_T,Q: Skip it,Q: Saltar
 ,,
 BOOKHINT_2,"Companion receives more damage than Player
 Keys unlock doors of corresponding colors
