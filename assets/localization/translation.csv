@@ -28,56 +28,92 @@ Podem pelo menos descubrir uma saída?"
 ,,
 STORYSKIP_T,Q: Skip it,Q: Saltar
 ,,
-BOOKHINT_2,"Companion receives more damage than Player
-Keys unlock doors of corresponding colors
-Grocery basket heals whoever picks it up
-Lifeguard Floater makes you invincible for a short time
-This bag gives you one soccer ball
-Soccer ball can defeat enemies
-Soccer net disappears when receiving the ball
-The Manowar can't be defeated","O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
-Chaves abrem portas de cores correspondentes
-O cesto de compras cura quem o apanhar
-A bóia salva-vidas faz-te invencível por pouco tempo
-Esta mala dá-te uma bola de futebol
-A bola de futebol consegue derrotar inimigos
-A rede de futebol desaparece quando recebe a bola
-A caravela não pode ser derrotada"
+BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
 ,,
-BOOKHINT_3,"Buttons are pressed automatically by either character
-Blue buttons leave a permanent effect
-Yellow buttons cause a temporary effect
-Green buttons exist in 2 to cause opposite effects
-Companion can enter tight spaces that the Player can't
-Weak platforms fall with the Player's weight
-Player can swing from the fishing rod
-Gongs are checkpoint areas
-Ice and mud affect movement
-Trampolines make both characters jump higher
-Both characters can use ladders, swim and push vases
-Portals have specific paths","Botões são pressionados por qualquer personagem
-Botões azuis deixam um efeito permanente
-Botões amarelos causam um efeito temporário
-Botões verdes existem em duplos para causar efeitos contrários
-Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
-Plataformas fracas caem com o peso do(a) Jogador(a)
-O(A) Jogador(a) consegue pendular da cana de pesca
-Gongos são áreas de ""checkpoint""
-Gelo e lama afetam o movimento
-Trampolins fazem ambos personagens saltar mais alto
-Ambos os personagens conseguem usar escadas, nadar e empurrar vasos
-Portais têm caminhos específicos"
+BOOK_HINT_CONTROL_JUMP,Jumping/Climbing/Swimming upwards: Up arrow key/W,Saltar/Nadar para cima/Subir: Seta de cima/W
 ,,
-BOOKHINT_CHAR,"""What are the 6 characters' names?""
-Levels 1/4: Carrie and Oscar Decarde
-2/5: Katrin and Pete Flenn
-3/6: Melvin and Angéla Brokston","""Quais são os nomes das 6 personagens?""
-Níveis 1/4: Carrie e Oscar Decarde
-2/5: Katrin e Pete Flenn
-3/6: Melvin e Angéla Brokston"
+BOOK_HINT_CONTROL_MOVE,Left movement: Left arrow key/A and Right movement: Right arrow key/D,Movimento esquerdo: Seta esquerda/A e Movimento Direito: Seta direita/D
 ,,
 GALLERY_B,Gallery,Galeria
 ,,
 LIFECOUNT_T,Lives,Vidas
 ,,
 GAMEOVER_T,YOU FAILED,  FALHOU
+,,
+BOOK_HINT_CONTROL_PAUSE,ESC: Pause menu,ESC: Menu de pausa
+,,
+BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right","""Segue-me"": Q + Direita"
+,,
+BOOK_HINT_COMP_STILL,"""Stand still"": Q + Down","""Fica aí"": Q + Baixo"
+,,
+BOOK_HINT_COMP_RUN,"""Run away"" opposite to ""Run away"": Q + Left","""Foje"" contrário de ""Segue-me"": Q + Esquerda"
+,,
+BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar esquadas: Z"
+,,
+BOOK_HINT_CONTROL_KNIFE,Knife attack: E,Ataque de faca: E
+,,
+BOOK_HINT_CONTROL_BALLATTACK,Ball kick attack: Down,Ataque com bola e pontapé: Baixo
+,,
+BOOK_HINT_CONTROL_BALLCANCEL,Cancelling ball attack: Up,Cancelar ataque de bola: Cima
+,,
+BOOK_HINT_DAMAGE,Companion receives more damage than Player,O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
+,,
+BOOK_HINT_KEYS,Keys unlock doors of corresponding colors,Chaves abrem portas de cores correspondentes
+,,
+BOOK_HINT_HEALTH,Grocery basket heals whoever picks it up,O cesto de compras cura quem o apanhar
+,,
+BOOK_HINT_FLOATERRING,Lifeguard Floater makes you invincible for a short time,A bóia salva-vidas faz-te invencível por pouco tempo
+,,
+BOOK_HINT_SOCCERBAG,This bag gives you one soccer ball if you got none,Esta mala dá-te uma bola de futebol se não tens nenhuma
+,,
+BOOK_HINT_SOCCERBALL,Soccer ball can defeat enemies,A bola de futebol consegue derrotar inimigos
+,,
+BOOK_HINT_SOCCERNET,Soccer net disappears when receiving the ball,A rede de futebol desaparece quando recebe a bola
+,,
+BOOK_HINT_MANOWAR,The Manowar can't be defeated,A caravela não pode ser derrotada
+,,
+BOOK_HINT_BUTTONBLUE,Blue buttons leave a permanent effect,Botões azuis deixam um efeito permanente
+,,
+BOOK_HINT_BUTTONYELLOW,Yellow buttons cause a temporary effect,Botões amarelos causam um efeito temporário
+,,
+BOOK_HINT_BUTTONGREEN,Green buttons exist in 2 to cause opposite effects,Botões verdes existem em duplos para causar efeitos contrários
+,,
+BOOK_HINT_BUTTONS,Buttons are pressed automatically by either character,Botões são pressionados por qualquer personagem
+,,
+BOOK_HINT_PORTAL,Portals have specific paths,Portais têm caminhos específicos
+,,
+BOOK_HINT_VASE,Both characters can push vases,Ambas as personagens podem empurrar vasos
+,,
+BOOK_HINT_ICE,Ice makes the characters' movement slippery,Gelo faz o movimento das personagens escorregadio
+,,
+BOOK_HINT_MUD,Mud makes the characters' movement slow,Lama fazo o movimento das personagens lento
+,,
+BOOK_HINT_GONG,Gongs are checkpoint áreas,"Gongos são áreas de ""checkpoint"""
+,,
+BOOK_HINT_JUMPPAD,Trampolines make both characters jump higher,Trampolins fazem ambas personagens saltar mais alto
+,,
+BOOK_HINT_WATERPLAY,The Player can swim with the 4 arrow keys,O(A) Jogador(a) pode nadar com os 4 botões de setas
+,,
+BOOK_HINT_WATERCOMP,The Companion carries following/avoiding/still states under water,O/(A) Companheiro(a) contém estados de seguir/evitar/parar debaixo de água
+,,
+BOOK_HINT_LADDERPLAY,The Player can climb ladders with the 4 arrow keys,O(A) Jogador(a) pode subir escadas com os 4 botões de setas
+,,
+BOOK_HINT_LADDERCOMP,Press Z to attach Companion to ladder and then use commands to direct them,Prime Z para meter o/(a) Companheiro(a) nas escadas e depois use ordens para direcioná-lo(a)
+,,
+BOOK_HINT_LADDERCOMP2,The Player can make the Companion fall from the ladders if they're close enough while climbing,O(A) Jogador(a) pode empurrar o/(a) Companheiro(a) de fora das escadas se estiverem muito perto
+,,
+BOOK_HINT_FISHROD,Player can swing from the fishing rod,O(A) Jogador(a) consegue pendular da cana de pesca
+,,
+BOOK_HINT_FALLPLAT,Weak platforms fall with the Player's weight,Plataformas fracas caem com o peso do(a) Jogador(a)
+,,
+BOOK_HINT_CRAWL,Companion can enter tight spaces that the Player can't,Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
+,,
+BOOK_HINT_COIN,Ezcudo coins give an extra life if enough are collected,As moedas de Ezcudo dão uma vida extra se suficientes forem colecionadas
+,,
+BOOK_HINT_COMPPOINTER,The Astrolabe indicates the Companion's direction when they're off-screen,O astrolábio indica a direção do/(a) Companheiro(a) quando estiver fora do ecrã
+,,
+BOOK_HINT_GREENDOOR,Green doors need both characters,Portas verdes precisam de ambas as personagens
+,,
+BOOK_HINT_DROWN,"If either character runs out of oxygen, they die and lose a life","Se qualquer personagem fica sem oxigénio, ele(a) morre e perde uma vida"
+,,
+BOOK_HINT_LIFE,Both characters share lives,Ambas personagens partilham as mesmas vidas
