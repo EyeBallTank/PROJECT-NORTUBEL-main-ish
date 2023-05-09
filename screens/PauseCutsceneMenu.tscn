@@ -40,10 +40,13 @@ margin_bottom = 495.0
 custom_fonts/font = SubResource( 1 )
 text = "UNPAUSE_B"
 
-[node name="OptionsButton" type="Button" parent="."]
+[node name="SkipCutscene" type="Button" parent="."]
 margin_left = 526.0
 margin_top = 472.0
 margin_right = 690.0
 margin_bottom = 495.0
 custom_fonts/font = SubResource( 2 )
 text = "STORYSKIP_T"
+
+[connection signal="pressed" from="UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
+[connection signal="pressed" from="SkipCutscene" to="." method="_on_SkipCutscene_pressed"]
