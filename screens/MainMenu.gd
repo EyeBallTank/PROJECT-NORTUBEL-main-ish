@@ -8,7 +8,7 @@ func _ready():
 	TranslationServer.set_locale("en")
 
 func _on_StartButton_pressed():
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/intro cutscene/cutscene placeholder.tscn")
 
 
 func _on_QuitButton_pressed():
