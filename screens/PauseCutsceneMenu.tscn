@@ -18,15 +18,22 @@ font_data = ExtResource( 2 )
 pause_mode = 2
 script = ExtResource( 3 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 1025.0
+margin_bottom = 602.0
+color = Color( 0, 0, 0, 0.498039 )
+
 [node name="DialogueBoxTest" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 330.0
-margin_top = 462.0
+margin_top = 285.0
 margin_right = 702.0
-margin_bottom = 503.0
+margin_bottom = 326.0
 patch_margin_left = 5
 patch_margin_top = 6
 patch_margin_right = 6
@@ -34,17 +41,17 @@ patch_margin_bottom = 8
 
 [node name="UnpauseButton" type="Button" parent="."]
 margin_left = 339.0
-margin_top = 472.0
+margin_top = 295.0
 margin_right = 504.0
-margin_bottom = 495.0
+margin_bottom = 318.0
 custom_fonts/font = SubResource( 1 )
 text = "UNPAUSE_B"
 
 [node name="SkipCutscene" type="Button" parent="."]
 margin_left = 526.0
-margin_top = 472.0
+margin_top = 295.0
 margin_right = 690.0
-margin_bottom = 495.0
+margin_bottom = 318.0
 custom_fonts/font = SubResource( 2 )
 text = "STORYSKIP_T"
 
