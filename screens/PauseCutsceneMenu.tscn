@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/menusandui/DialogueBoxTest.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="PauseCutsceneMenu" type="Control"]
+pause_mode = 2
+
+[node name="DialogueBoxTest" parent="." instance=ExtResource( 1 )]
+margin_left = 7.0
+margin_top = 469.0
+margin_right = 1015.0
+margin_bottom = 592.0
+patch_margin_top = 6
+patch_margin_right = 5
+patch_margin_bottom = 8
+
+[node name="UnpauseButton" type="Button" parent="."]
+margin_left = 27.0
+margin_top = 483.0
+margin_right = 323.0
+margin_bottom = 506.0
+custom_fonts/font = SubResource( 1 )
+text = "UNPAUSE_B"
+
+[node name="OptionsButton" type="Button" parent="."]
+margin_left = 364.0
+margin_top = 275.0
+margin_right = 660.0
+margin_bottom = 298.0
+custom_fonts/font = SubResource( 2 )
+text = "OPTIONS_B"
+
+[node name="ExtraButton" type="Button" parent="."]
+margin_left = 364.0
+margin_top = 302.0
+margin_right = 660.0
+margin_bottom = 325.0
+custom_fonts/font = SubResource( 3 )
+text = "EXTRA_B"
+
+[node name="SaveButton" type="Button" parent="."]
+margin_left = 364.0
+margin_top = 329.0
+margin_right = 660.0
+margin_bottom = 352.0
+custom_fonts/font = SubResource( 3 )
+text = "SAVE_B"
+
+[node name="LoadButton" type="Button" parent="."]
+margin_left = 364.0
+margin_top = 356.0
+margin_right = 660.0
+margin_bottom = 379.0
+custom_fonts/font = SubResource( 3 )
+text = "LOAD_B"
+
+[node name="QuitButton" type="Button" parent="."]
+margin_left = 364.0
+margin_top = 383.0
+margin_right = 660.0
+margin_bottom = 406.0
+custom_fonts/font = SubResource( 4 )
+text = "QUIT_B"
