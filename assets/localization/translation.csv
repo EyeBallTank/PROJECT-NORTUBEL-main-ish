@@ -30,9 +30,13 @@ STORYSKIP_T,Q: Skip it,Q: Saltar
 ,,
 BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
 ,,
-BOOK_HINT_CONTROL_JUMP,Jumping/Climbing/Swimming upwards: Up arrow key/W,Saltar/Nadar para cima/Subir: Seta de cima/W
 ,,
-BOOK_HINT_CONTROL_MOVE,Left movement: Left arrow key/A and Right movement: Right arrow key/D,Movimento esquerdo: Seta esquerda/A e Movimento Direito: Seta direita/D
+,,
+BOOK_HINT_CONTROL_MOVE,"Left movement: Left arrow key/A and Right movement: Right arrow key/D
+Jumping/Climbing/Swimming upwards: Up arrow key/W
+ESC: Pause menu","Movimento esquerdo: Seta esquerda/A e Movimento Direito: Seta direita/D
+Saltar/Nadar para cima/Subir: Seta de cima/W
+ESC: Menu de pausa"
 ,,
 GALLERY_B,Gallery,Galeria
 ,,
@@ -40,27 +44,35 @@ LIFECOUNT_T,Lives,Vidas
 ,,
 GAMEOVER_T,YOU FAILED,  FALHOU
 ,,
-BOOK_HINT_CONTROL_PAUSE,ESC: Pause menu,ESC: Menu de pausa
 ,,
-BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right","""Segue-me"": Q + Direita"
 ,,
-BOOK_HINT_COMP_STILL,"""Stand still"": Q + Down","""Fica aí"": Q + Baixo"
+BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right
+""Stand still"": Q + Down
+""Run away"" opposite to ""Run away"": Q + Left","""Segue-me"": Q + Direita
+""Fica aí"": Q + Baixo
+""Foje"" contrário de ""Segue-me"": Q + Esquerda"
 ,,
-BOOK_HINT_COMP_RUN,"""Run away"" opposite to ""Run away"": Q + Left","""Foje"" contrário de ""Segue-me"": Q + Esquerda"
+,,
+,,
+,,
 ,,
 BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar esquadas: Z"
 ,,
 BOOK_HINT_CONTROL_KNIFE,Knife attack: E,Ataque de faca: E
 ,,
-BOOK_HINT_CONTROL_BALLATTACK,Ball kick attack: Down,Ataque com bola e pontapé: Baixo
+BOOK_HINT_CONTROL_BALLATTACK,"Ball kick attack: Down
+Cancelling ball attack: Up","Ataque com bola e pontapé: Baixo
+Cancelar ataque de bola: Cima"
 ,,
-BOOK_HINT_CONTROL_BALLCANCEL,Cancelling ball attack: Up,Cancelar ataque de bola: Cima
 ,,
-BOOK_HINT_DAMAGE,Companion receives more damage than Player,O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
+,,
+BOOK_HINT_HEALTH_DAMAGE,"Companion receives more damage than Player
+Grocery basket heals whoever picks it up","O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
+O cesto de compras cura quem o apanhar"
 ,,
 BOOK_HINT_KEYS,Keys unlock doors of corresponding colors,Chaves abrem portas de cores correspondentes
 ,,
-BOOK_HINT_HEALTH,Grocery basket heals whoever picks it up,O cesto de compras cura quem o apanhar
+,,
 ,,
 BOOK_HINT_FLOATERRING,Lifeguard Floater makes you invincible for a short time,A bóia salva-vidas faz-te invencível por pouco tempo
 ,,
@@ -88,7 +100,7 @@ BOOK_HINT_ICE,Ice makes the characters' movement slippery,Gelo faz o movimento d
 ,,
 BOOK_HINT_MUD,Mud makes the characters' movement slow,Lama fazo o movimento das personagens lento
 ,,
-BOOK_HINT_GONG,Gongs are checkpoint áreas,"Gongos são áreas de ""checkpoint"""
+BOOK_HINT_GONG,Gongs are checkpoint areas,"Gongos são áreas de ""checkpoint"""
 ,,
 BOOK_HINT_JUMPPAD,Trampolines make both characters jump higher,Trampolins fazem ambas personagens saltar mais alto
 ,,
@@ -108,12 +120,12 @@ BOOK_HINT_FALLPLAT,Weak platforms fall with the Player's weight,Plataformas frac
 ,,
 BOOK_HINT_CRAWL,Companion can enter tight spaces that the Player can't,Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
 ,,
-BOOK_HINT_COIN,Ezcudo coins give an extra life if enough are collected,As moedas de Ezcudo dão uma vida extra se suficientes forem colecionadas
+BOOK_HINT_COIN,"Ezcudo coins give an extra life if enough are collected
+Both characters share lives","As moedas de Ezcudo dão uma vida extra se suficientes forem colecionadas
+Ambas personagens partilham as mesmas vidas"
 ,,
 BOOK_HINT_COMPPOINTER,The Astrolabe indicates the Companion's direction when they're off-screen,O astrolábio indica a direção do/(a) Companheiro(a) quando estiver fora do ecrã
 ,,
 BOOK_HINT_GREENDOOR,Green doors need both characters,Portas verdes precisam de ambas as personagens
 ,,
 BOOK_HINT_DROWN,"If either character runs out of oxygen, they die and lose a life","Se qualquer personagem fica sem oxigénio, ele(a) morre e perde uma vida"
-,,
-BOOK_HINT_LIFE,Both characters share lives,Ambas personagens partilham as mesmas vidas
