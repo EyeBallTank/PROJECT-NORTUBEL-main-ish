@@ -74,6 +74,18 @@ customtext = "BOOK_HINT_COMP_FOLLOW"
 position = Vector2( 2400, 535 )
 customtext = "BOOK_HINT_COMP_Z"
 
+[node name="BookInfo4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3144, 287 )
+customtext = "BOOK_HINT_COMPPOINTER"
+
+[node name="BookInfo5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 5144, 527 )
+customtext = "BOOK_HINT_KEYS"
+
+[node name="BookInfo6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3520, -217 )
+customtext = "BOOK_HINT_LADDERPLAY"
+
 [node name="fall thru" parent="." instance=ExtResource( 29 )]
 position = Vector2( 3008, -1472 )
 scale = Vector2( 48, 8 )
