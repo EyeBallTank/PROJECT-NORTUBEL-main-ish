@@ -1,0 +1,156 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title animation.PNG" type="Texture" id=1]
+[ext_resource path="res://src/menusandui/WorldTitleName.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 88, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 440, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 528, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 176, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 616, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 704, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 264, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 352, 622, 88 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "brinkaedea",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "greklovick",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "herrko",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "hirdrih",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "krimbstone",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": true,
+"name": "lahiurn",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "massagcoav",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "nortubel",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ) ],
+"loop": true,
+"name": "untotern",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=11]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 494, -102 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "worldtitle"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 2, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 494, -102 ), Vector2( 494, 162 ), Vector2( 494, 162 ), Vector2( 494, -136 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.5, 2, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="WorldTitleName" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 494, -102 )
+frames = SubResource( 10 )
+animation = "nortubel"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 11 )
+anims/worldtitle = SubResource( 12 )
