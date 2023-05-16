@@ -51,7 +51,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 5.0
+length = 19.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("NinePatchRect/CHARNAME:text")
 tracks/0/interp = 1
@@ -59,10 +59,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "someone", "someone else" ]
+"values": [ "Carrie Decarde", "Oscar Decarde", "Katrin Flenn", "Pete Flenn", "Melvin Brokston", "Angela Brokston", "Bonka Millete", "Melvin Brokston", "Carrie Decarde", "Bonka Millete", "Katrin Flenn", "Bonka Millette", "Pete Flenn", "Bonka Millette", "Carrie Decarde", "Oscar Decarde", "Melvin Brokston" ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -71,18 +71,25 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "1
-2
-3
-4
-", "A
-B
-C
-D
-" ]
+"values": [ "Hello? 
+Where did everyone go?
+", "Carrie, i'm scared.", "Everyone, over here!", "Hold on!
+I'm coming!", "Is everyone alright?
+Angela, what are you doing?", "It's that girl.
+Miss, who are you?", "Uh? Why do you care?
+I just want to get out of here!", "So do we, but we're lost.
+A while ago, we were on the tree house.", "At least, this place looks like Lisivia.
+But there's nobody else.", "Where is that?
+", "It's the capital of Nortubel.
+Where do you come from?
+And what's your name?", "My name's Bonka.
+My homeworld's called Brinkaedea and i don't recall how i got here.", "And what's with the makeup?
+Were you attending a circus?", "This ain't no makeup and i don't work at a circus.
+Are you guys going to help me or what?", "Maybe if we work together and you calm down, we can get somewhere", "Everyone look, that building is up in the air.", "That's strange. How can that happen?
+Either way, we better think of a plan fast!" ]
 }
 tracks/2/type = "method"
 tracks/2/path = NodePath(".")
@@ -91,7 +98,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 5 ),
+"times": PoolRealArray( 18.1 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
