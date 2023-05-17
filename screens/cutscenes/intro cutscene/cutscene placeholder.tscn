@@ -51,7 +51,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 19.0
+length = 35.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("NinePatchRect/CHARNAME:text")
 tracks/0/interp = 1
@@ -59,7 +59,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1 ),
+"times": PoolRealArray( 0, 2.2, 4.2, 6.2, 8.3, 10.3, 12.3, 14.3, 16.3, 18.4, 20.3, 22.3, 24.3, 26.4, 28.4, 30.4, 32.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Carrie Decarde", "Oscar Decarde", "Katrin Flenn", "Pete Flenn", "Melvin Brokston", "Angela Brokston", "Bonka Millete", "Melvin Brokston", "Carrie Decarde", "Bonka Millete", "Katrin Flenn", "Bonka Millette", "Pete Flenn", "Bonka Millette", "Carrie Decarde", "Oscar Decarde", "Melvin Brokston" ]
@@ -71,7 +71,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1 ),
+"times": PoolRealArray( 0, 2.2, 4.2, 6.2, 8.3, 10.3, 12.3, 14.3, 16.3, 18.4, 20.3, 22.3, 24.3, 26.4, 28.4, 30.4, 32.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Hello? 
@@ -98,7 +98,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 18.1 ),
+"times": PoolRealArray( 34.8 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],

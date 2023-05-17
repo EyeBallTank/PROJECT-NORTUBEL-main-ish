@@ -9,6 +9,8 @@ export var nextscene = "res://src/levels/LevelTemplate.tscn"
 #* HOW LONG CERTAIN IMAGES STAY, SINCE THERE WILL ALWAYS BE MUCH MORE TEXT TO CHANGE
 #* AND PROBABLY MORE
 
+#DIALOGUE LINES/CHAR NAMES COULD AROUND 2 SECONDS
+
 func _ready():
 	animationplayer.play("intro cutscene")
 
