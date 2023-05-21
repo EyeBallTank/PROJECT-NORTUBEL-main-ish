@@ -60,6 +60,7 @@ position = Vector2( 1216, 384 )
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1544, 568 )
+customtext = "BONKA_TALK_2"
 
 [node name="fall thru" parent="." instance=ExtResource( 29 )]
 position = Vector2( 3008, -1472 )
