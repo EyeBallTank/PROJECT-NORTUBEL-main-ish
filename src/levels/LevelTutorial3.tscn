@@ -1,14 +1,23 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
+[ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=26]
 
 [node name="LevelTutorial3" type="Node2D"]
 light_mask = 4
@@ -23,12 +32,13 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( -262127, 0, 0, -196591, 0, 0, -131055, 0, 0, -65519, 0, 0, 17, 0, 0, 65553, 0, 0, 131089, 0, 0, 196625, 0, 0, 262161, 0, 0, 327697, 0, 0, 393233, 0, 0, 458769, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 1, 0, 524316, 1, 0, 524317, 1, 0, 524318, 1, 0, 524319, 1, 0 )
+tile_data = PoolIntArray( -262127, 0, 0, -196591, 0, 0, -131055, 0, 0, -130993, 1, 0, -65519, 0, 0, -65457, 1, 0, 17, 0, 0, 79, 1, 0, 80, 1, 0, 81, 1, 0, 82, 1, 0, 83, 1, 0, 84, 1, 0, 85, 1, 0, 86, 1, 0, 87, 1, 0, 88, 1, 0, 89, 1, 0, 90, 1, 0, 91, 1, 0, 92, 1, 0, 93, 1, 0, 94, 1, 0, 95, 1, 0, 96, 1, 0, 97, 1, 0, 98, 1, 0, 99, 1, 0, 100, 1, 0, 101, 1, 0, 65553, 0, 0, 65637, 1, 0, 131089, 0, 0, 131173, 1, 0, 196625, 0, 0, 196709, 1, 0, 262161, 0, 0, 262245, 1, 0, 327697, 0, 0, 327781, 1, 0, 393233, 0, 0, 393317, 1, 0, 458769, 0, 0, 458853, 1, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 1, 0, 524316, 1, 0, 524317, 1, 0, 524318, 1, 0, 524319, 1, 0, 524320, 1, 0, 524321, 1, 0, 524322, 1, 0, 524323, 1, 0, 524324, 1, 0, 524325, 1, 0, 524326, 1, 0, 524327, 1, 0, 524328, 1, 0, 524329, 1, 0, 524330, 1, 0, 524331, 1, 0, 524332, 1, 0, 524333, 1, 0, 524334, 1, 0, 524335, 1, 0, 524336, 1, 0, 524337, 1, 0, 524338, 1, 0, 524339, 1, 0, 524340, 1, 0, 524341, 1, 0, 524342, 1, 0, 524343, 1, 0, 524344, 1, 0, 524345, 1, 0, 524346, 1, 0, 524347, 1, 0, 524348, 1, 0, 524349, 1, 0, 524367, 1, 0, 524389, 1, 0, 589886, 1, 0, 589902, 1, 0, 589903, 1, 0, 589925, 1, 0, 655423, 1, 0, 655437, 1, 0, 655438, 1, 0, 655439, 1, 0, 655440, 1, 0, 655441, 1, 0, 655461, 1, 0, 720960, 1, 0, 720973, 1, 0, 720974, 1, 0, 720975, 1, 0, 720976, 1, 0, 720977, 1, 0, 720997, 1, 0, 786496, 1, 0, 786497, 1, 0, 786498, 1, 0, 786499, 1, 0, 786500, 1, 0, 786501, 1, 0, 786502, 1, 0, 786503, 1, 0, 786504, 1, 0, 786505, 1, 0, 786506, 1, 0, 786507, 1, 0, 786508, 1, 0, 786509, 1, 0, 786510, 1, 0, 786511, 1, 0, 786512, 1, 0, 786513, 1, 0, 786514, 1, 0, 786515, 1, 0, 786516, 1, 0, 786517, 1, 0, 786518, 1, 0, 786519, 1, 0, 786520, 1, 0, 786521, 1, 0, 786522, 1, 0, 786523, 1, 0, 786524, 1, 0, 786533, 1, 0, 852060, 1, 0, 852069, 1, 0, 917596, 1, 0, 917605, 1, 0, 983132, 1, 0, 983141, 1, 0, 1048668, 1, 0, 1048677, 1, 0, 1114204, 1, 0, 1114213, 1, 0, 1179740, 1, 0, 1179749, 1, 0, 1245276, 1, 0, 1245285, 1, 0, 1310812, 1, 0, 1310821, 1, 0, 1376348, 1, 0, 1376357, 1, 0, 1441884, 1, 0, 1441893, 1, 0, 1507420, 1, 0, 1507429, 1, 0, 1572956, 1, 0, 1572965, 1, 0, 1638492, 1, 0, 1638501, 1, 0, 1704028, 1, 0, 1704037, 1, 0, 1769564, 1, 0, 1769573, 1, 0, 1835100, 1, 0, 1835109, 1, 0, 1900636, 1, 0, 1900645, 1, 0, 1900659, 1, 0, 1900660, 1, 0, 1900661, 1, 0, 1900662, 1, 0, 1900663, 1, 0, 1900664, 1, 0, 1900665, 1, 0, 1900666, 1, 0, 1900667, 1, 0, 1900668, 1, 0, 1900676, 0, 0, 1966172, 1, 0, 1966181, 1, 0, 1966195, 1, 0, 1966204, 1, 0, 1966212, 0, 0, 2031708, 1, 0, 2031717, 1, 0, 2031731, 1, 0, 2031740, 1, 0, 2031748, 0, 0, 2097244, 1, 0, 2097253, 1, 0, 2097267, 1, 0, 2097276, 1, 0, 2097284, 0, 0, 2097309, 7, 0, 2097310, 8, 0, 2097311, 8, 0, 2097312, 9, 0, 2162780, 1, 0, 2162789, 1, 0, 2162803, 1, 0, 2162812, 1, 0, 2162820, 0, 0, 2162845, 7, 0, 2162846, 8, 0, 2162847, 8, 0, 2162848, 9, 0, 2228316, 1, 0, 2228325, 1, 0, 2228326, 1, 0, 2228327, 1, 0, 2228328, 1, 0, 2228329, 1, 0, 2228330, 1, 0, 2228331, 1, 0, 2228332, 1, 0, 2228333, 1, 0, 2228334, 1, 0, 2228335, 1, 0, 2228336, 1, 0, 2228337, 1, 0, 2228338, 1, 0, 2228339, 1, 0, 2228348, 1, 0, 2228356, 0, 0, 2228381, 7, 0, 2228382, 8, 0, 2228383, 8, 0, 2228384, 9, 0, 2293852, 1, 0, 2293884, 1, 0, 2293892, 0, 0, 2293917, 7, 0, 2293918, 8, 0, 2293919, 8, 0, 2293920, 9, 0, 2293921, 1, 0, 2293922, 1, 0, 2293923, 1, 0, 2293924, 1, 0, 2359388, 1, 0, 2359420, 1, 0, 2359421, 1, 0, 2359422, 1, 0, 2359423, 1, 0, 2359424, 1, 0, 2359425, 1, 0, 2359426, 1, 0, 2359427, 1, 0, 2359428, 0, 0, 2359453, 7, 0, 2359454, 8, 0, 2359455, 8, 0, 2359456, 9, 0, 2359457, 1, 0, 2424924, 1, 0, 2424989, 7, 0, 2424990, 8, 0, 2424991, 8, 0, 2424992, 9, 0, 2424993, 1, 0, 2490460, 1, 0, 2490525, 7, 0, 2490526, 8, 0, 2490527, 8, 0, 2490528, 9, 0, 2490529, 1, 0, 2555996, 1, 0, 2556061, 7, 0, 2556062, 8, 0, 2556063, 8, 0, 2556064, 9, 0, 2556065, 1, 0, 2621532, 1, 0, 2621597, 7, 0, 2621598, 8, 0, 2621599, 8, 0, 2621600, 9, 0, 2621601, 1, 0, 2687068, 1, 0, 2687133, 7, 0, 2687134, 8, 0, 2687135, 8, 0, 2687136, 9, 0, 2687137, 1, 0, 2752604, 1, 0, 2752669, 7, 0, 2752670, 8, 0, 2752671, 8, 0, 2752672, 9, 0, 2752673, 1, 0, 2818140, 1, 0, 2818205, 7, 0, 2818206, 8, 0, 2818207, 8, 0, 2818208, 9, 0, 2818209, 1, 0, 2883676, 1, 0, 2883677, 1, 0, 2883678, 1, 0, 2883679, 1, 0, 2883680, 1, 0, 2883681, 1, 0, 2883682, 1, 0, 2883683, 1, 0, 2883684, 1, 0, 2883685, 1, 0, 2883686, 1, 0, 2883687, 1, 0, 2883688, 1, 0, 2883689, 1, 0, 2883690, 1, 0, 2883691, 1, 0, 2883692, 1, 0, 2883693, 1, 0, 2883694, 1, 0, 2883695, 1, 0, 2883696, 1, 0, 2883697, 1, 0, 2883698, 1, 0, 2883699, 1, 0, 2883700, 1, 0, 2883701, 1, 0, 2883702, 1, 0, 2883703, 1, 0, 2883704, 1, 0, 2883705, 1, 0, 2883706, 1, 0, 2883707, 1, 0, 2883708, 1, 0, 2883709, 1, 0, 2883710, 1, 0, 2883711, 1, 0, 2883712, 1, 0, 2883713, 1, 0, 2883714, 1, 0, 2883715, 1, 0, 2883716, 1, 0, 2883717, 1, 0, 2883718, 1, 0, 2883719, 1, 0, 2883720, 1, 0, 2883721, 1, 0, 2883722, 1, 0, 2883723, 1, 0, 2883724, 1, 0, 2883725, 1, 0, 2883726, 1, 0, 2883727, 1, 0, 2883728, 1, 0, 2883729, 1, 0, 2883730, 1, 0, 2883731, 1, 0, 2883732, 1, 0, 2883733, 1, 0, 2883734, 1, 0, 2883735, 1, 0, 2883736, 1, 0, 2883737, 1, 0, 2883738, 1, 0, 2883739, 1, 0, 2883740, 1, 0, 2883741, 1, 0, 2883742, 1, 0, 2883743, 1, 0, 2883744, 1, 0, 2883745, 1, 0 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2327, 231 )
+position = Vector2( 8223, 2303 )
+new_scene = "res://src/levels/LevelTemplate.tscn"
 
 [node name="playerspawn" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1280, 384 )
@@ -43,3 +53,61 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1216, 384 )
+
+[node name="BookInfo" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2040, 520 )
+customtext = "BOOK_HINT_SOCCERBAG"
+
+[node name="BookInfo3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2368, 520 )
+customtext = "BOOK_HINT_CONTROL_BALLATTACK"
+
+[node name="BookInfo2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2688, 520 )
+customtext = "BOOK_HINT_SOCCERNET"
+
+[node name="BookInfo4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4040, 560 )
+customtext = "BOOK_HINT_SOCCERBALL"
+
+[node name="BookInfo5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5576, 752 )
+customtext = "BOOK_HINT_FALLPLAT"
+
+[node name="BookInfo6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 6592, 2752 )
+customtext = "BOOK_HINT_MANOWAR"
+
+[node name="BookInfo7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 6896, 2752 )
+customtext = "BOOK_HINT_FLOATERRING"
+
+[node name="BookInfo8" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8064, 2856 )
+customtext = "BOOK_HINT_GONG"
+
+[node name="Gecko enemy" parent="." instance=ExtResource( 26 )]
+position = Vector2( 4616, 841 )
+
+[node name="Soccer Goal" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3664, 314 )
+
+[node name="SoccerBallBag" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3136, 385 )
+
+[node name="FallingPlatNew" parent="." instance=ExtResource( 12 )]
+position = Vector2( 6200, 865 )
+
+[node name="Manowar" parent="." instance=ExtResource( 13 )]
+position = Vector2( 7704, 2537 )
+
+[node name="LifeguardFloater" parent="." instance=ExtResource( 14 )]
+position = Vector2( 7352, 2440 )
+
+[node name="Ladder" parent="." instance=ExtResource( 16 )]
+position = Vector2( 10304, 2817 )
+scale = Vector2( 32, 96 )
+collision_newsize = Vector2( 32, 96 )
+
+[node name="Gong" parent="." instance=ExtResource( 15 )]
+position = Vector2( 8288, 2817 )
