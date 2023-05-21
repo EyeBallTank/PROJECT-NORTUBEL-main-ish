@@ -1,0 +1,45 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=24]
+
+[node name="LevelTutorial3" type="Node2D"]
+light_mask = 4
+script = ExtResource( 11 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 24 )]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( -262127, 0, 0, -196591, 0, 0, -131055, 0, 0, -65519, 0, 0, 17, 0, 0, 65553, 0, 0, 131089, 0, 0, 196625, 0, 0, 262161, 0, 0, 327697, 0, 0, 393233, 0, 0, 458769, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 1, 0, 524316, 1, 0, 524317, 1, 0, 524318, 1, 0, 524319, 1, 0 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 5 )]
+
+[node name="Door" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2327, 231 )
+
+[node name="playerspawn" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1280, 384 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1280, 384 )
+playerskin = "res://assets/sprites/play_actor_sprites/MelvinSprites.tres"
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1216, 384 )
+companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
+
+[node name="companionspawn" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1216, 384 )

@@ -165,6 +165,7 @@ text = "1
 [node name="Slides" type="Node" parent="."]
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
+nextlevel = "res://src/levels/LevelTutorial1.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )

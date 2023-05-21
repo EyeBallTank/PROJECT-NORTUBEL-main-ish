@@ -39,6 +39,7 @@ tile_data = PoolIntArray( -1310512, 0, 0, -1244976, 0, 0, -1179440, 0, 0, -11139
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 13183, -384 )
+new_scene = "res://src/levels/LevelTutorial2.tscn"
 
 [node name="playerspawn" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1280, 384 )
@@ -67,8 +68,12 @@ customtext = "BOOK_HINT_COMP_FOLLOW"
 position = Vector2( 3024, 312 )
 customtext = "BOOK_HINT_COMP_Z"
 
+[node name="BookInfo15" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3496, 312 )
+customtext = "BOOK_HINT_COMPPOINTER"
+
 [node name="BookInfo4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3712, 360 )
+position = Vector2( 3968, 552 )
 customtext = "BOOK_HINT_VASE"
 
 [node name="BookInfo5" parent="." instance=ExtResource( 6 )]
@@ -84,8 +89,12 @@ position = Vector2( 7504, -392 )
 customtext = "BOOK_HINT_CRAWL"
 
 [node name="BookInfo8" parent="." instance=ExtResource( 6 )]
-position = Vector2( 10008, -112 )
+position = Vector2( 9720, -112 )
 customtext = "BOOK_HINT_LADDERPLAY"
+
+[node name="BookInfo16" parent="." instance=ExtResource( 6 )]
+position = Vector2( 9984, -112 )
+customtext = "BOOK_HINT_CONTROL_DOWN"
 
 [node name="BookInfo9" parent="." instance=ExtResource( 6 )]
 position = Vector2( 10608, -472 )

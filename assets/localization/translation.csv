@@ -84,11 +84,15 @@ BOOK_HINT_SOCCERNET,Soccer net disappears when receiving the ball,A rede de fute
 ,,
 BOOK_HINT_MANOWAR,The Manowar can't be defeated,A caravela não pode ser derrotada
 ,,
-BOOK_HINT_BUTTONBLUE,Blue buttons leave a permanent effect,Botões azuis deixam um efeito permanente
+BOOK_HINT_BUTTONBLUE,"Blue buttons leave a permanent effect
+Yellow buttons cause a temporary effect
+Green buttons exist in 2 to cause opposite effects","Botões azuis deixam um efeito permanente
+Botões amarelos causam um efeito temporário
+Botões verdes existem em duplos para causar efeitos contrários"
 ,,
-BOOK_HINT_BUTTONYELLOW,Yellow buttons cause a temporary effect,Botões amarelos causam um efeito temporário
 ,,
-BOOK_HINT_BUTTONGREEN,Green buttons exist in 2 to cause opposite effects,Botões verdes existem em duplos para causar efeitos contrários
+,,
+,,
 ,,
 BOOK_HINT_BUTTONS,Buttons are pressed automatically by either character,Botões são pressionados por qualquer personagem
 ,,

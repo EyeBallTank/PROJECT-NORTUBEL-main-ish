@@ -1,7 +1,7 @@
 extends Node
 
 onready var animationplayer = $AnimationPlayer
-export var nextscene = "res://src/levels/LevelTemplate.tscn"
+export var nextscene = "res://src/levels/LevelTutorial1.tscn"
 
 #maybe i should work on this later because i need to consider:
 #* HOW MODULAR WILL THESE TYPE OF SCENE BE IN OTHER INSTANCES/USES
