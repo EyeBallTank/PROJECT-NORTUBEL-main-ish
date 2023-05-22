@@ -27,6 +27,7 @@ script = ExtResource( 11 )
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 24 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
