@@ -36,18 +36,6 @@ tracks/1/keys = {
 4
 " ]
 }
-tracks/2/type = "value"
-tracks/2/path = NodePath("Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 234, 231 ) ]
-}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -90,18 +78,6 @@ tracks/2/keys = {
 "method": "cutscene_over"
 } ]
 }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 4.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 234, 231 ), Vector2( 835, 286 ) ]
-}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -110,10 +86,11 @@ script = ExtResource( 1 )
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_bottom = -130.0
+color = Color( 1, 0.141176, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 234, 231 )
-scale = Vector2( 0.355469, 0.328333 )
+position = Vector2( 512, 235 )
 texture = ExtResource( 4 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
