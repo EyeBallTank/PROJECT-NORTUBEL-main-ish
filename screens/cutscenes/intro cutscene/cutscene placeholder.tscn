@@ -74,22 +74,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 2.2, 4.2, 6.2, 8.3, 10.3, 12.3, 14.3, 16.3, 18.4, 20.3, 22.3, 24.3, 26.4, 28.4, 30.4, 32.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Hello? 
-Where did everyone go?
-", "Carrie, i'm scared.", "Everyone, over here!", "Hold on!
-I'm coming!", "Is everyone alright?
-Angela, what are you doing?", "It's that girl.
-Miss, who are you?", "Uh? Why do you care?
-I just want to get out of here!", "So do we, but we're lost.
-A while ago, we were on the tree house.", "At least, this place looks like Lisivia.
-But there's nobody else.", "Where is that?
-", "It's the capital of Nortubel.
-Where do you come from?
-And what's your name?", "My name's Bonka.
-My homeworld's called Brinkaedea and i don't recall how i got here.", "And what's with the makeup?
-Were you attending a circus?", "This ain't no makeup and i don't work at a circus.
-Are you guys going to help me or what?", "Maybe if we work together and you calm down, we can get somewhere", "Everyone look, that building is up in the air.", "That's strange. How can that happen?
-Either way, we better think of a plan fast!" ]
+"values": [ "INTRO_TALK_1", "INTRO_TALK_2", "INTRO_TALK_3", "INTRO_TALK_4", "INTRO_TALK_5", "INTRO_TALK_6", "INTRO_TALK_7", "INTRO_TALK_8", "INTRO_TALK_9", "INTRO_TALK_10", "INTRO_TALK_11", "INTRO_TALK_12", "INTRO_TALK_13", "INTRO_TALK_14", "INTRO_TALK_15", "INTRO_TALK_16", "INTRO_TALK_17" ]
 }
 tracks/2/type = "method"
 tracks/2/path = NodePath(".")
