@@ -93,7 +93,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Project Nortubel 2"
-run/main_scene="res://screens/MainMenu.tscn"
+run/main_scene="res://screens/cutscenes/eyeballtank presents/StartUp.tscn"
 config/icon="res://nortubel icon.png"
 
 [autoload]
