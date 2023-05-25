@@ -3,7 +3,6 @@ extends Node
 onready var animationplayer = $AnimationPlayer
 
 func _ready():
-	TranslationServer.set_locale("en")
 	animationplayer.play("TITLE SEQUENCE")
 
 func changescene():

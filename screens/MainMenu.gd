@@ -5,7 +5,7 @@ onready var options = $OptionsMenu
 onready var extra = $ExtraMenu
 
 func _ready():
-	pass
+	TranslationServer.set_locale("en")
 
 func _on_StartButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/intro cutscene/cutscene placeholder.tscn")
