@@ -16,10 +16,10 @@ func load_data():
 	var file = File.new()
 	if not file.file_exists(SAVE_FILE):
 		g_data = {
-			"current_level": 0,
+			"current_level": SceneManager.scene,
 			"lives": 0
 		}
 		save_data()
 	file.open(SAVE_FILE, File.READ)
 	g_data = file.get_var()
-	file.close
+#	file.close

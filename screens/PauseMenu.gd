@@ -66,7 +66,8 @@ func _on_ExtraButton_pressed():
 
 
 func _on_SaveButton_pressed():
-	pass
+	SaveFile.save_data()
 
 func _on_LoadButton_pressed():
-	pass
+#	SaveFile.load_data()
+	SceneManager.load_scene()
