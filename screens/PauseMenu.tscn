@@ -256,6 +256,8 @@ text = "MENU_B"
 [connection signal="pressed" from="MenuMain/UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="MenuMain/ExtraButton" to="." method="_on_ExtraButton_pressed"]
+[connection signal="pressed" from="MenuMain/SaveButton" to="." method="_on_SaveButton_pressed"]
+[connection signal="pressed" from="MenuMain/LoadButton" to="." method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]

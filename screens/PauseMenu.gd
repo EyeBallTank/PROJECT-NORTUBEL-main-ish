@@ -61,3 +61,10 @@ func _on_BackFromOptions2_pressed():
 
 func _on_ExtraButton_pressed():
 	show_and_hide(extra, pausemenu)
+
+
+func _on_SaveButton_pressed():
+	pass
+
+func _on_LoadButton_pressed():
+	pass

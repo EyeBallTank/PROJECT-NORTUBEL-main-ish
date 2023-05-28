@@ -54,3 +54,6 @@ func _on_ExtraButton_pressed():
 
 func _on_BackFromOptions2_pressed():
 	show_and_hide(menu, extra)
+
+func _on_LoadButton_pressed():
+	pass
