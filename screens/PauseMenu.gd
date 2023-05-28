@@ -4,6 +4,8 @@ onready var pausemenu = $MenuMain
 onready var optionsmenu = $OptionsMenu
 onready var extra = $ExtraMenu
 
+onready var save_file = SaveFile.g_data
+
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		toggle()
