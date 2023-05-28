@@ -59,6 +59,7 @@ Done (Even if it could be better):
 * MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
 * OFF-SCREEN COMPANION INDICATOR/WAYPOINT: When the Companion is off-screen, an Astrolabe shows up pointing at their direction; It looks a bit off so far but i tried my best (And with tricky methods too).
 * LIVE SYSTEM: Both characters share the lives meaning if one dies, so does the other; Besides the game-over screen, i also made it so collecting a certain amount of coins adds a new life.
+* CUTSCENES: So far it's a "studio intro" basic thing and a placeholder with dialogue but no images but technically got a template with lots of potential.
 
 
 
@@ -73,7 +74,6 @@ Not yet:
 * BOSS FIGHTS: Will probably be a very complex inclusion.
 * NPC'S AND SIDE CHARACTERS: Not a thing yet since what i got currently is very basic.
 * DIALOGUE SYSTEM: Will i use the Dialogic addon? Not sure.
-* CUTSCENES: I don't want anything too complex, maybe some "slideshow" style presentation is good enough, i guess?
 * INGAME TEXTS: Like story segments, instructions/tips, "lore" etc.
 * INGAME GALLERY: Because if i figure out basic cutscenes, maybe an art gallery would be neat.
 * COLLECTABLES: Special objects to be collected for fun is something i'd like to try, like "lore texts" or art gallery stuff.
@@ -111,6 +111,7 @@ I may end up changing this goal list as well.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
 * Level design is so messy it doesn't do a good job at introducing mechanics but i plan to revise this at the same time i revise the yellow books with info.
+* I tried implementing a Save/Load system but it doesn't work.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
