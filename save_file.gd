@@ -1,7 +1,10 @@
 extends Node
 
 const SAVE_FILE = "user://save_file.save"
-var g_data = {}
+var g_data = {
+#		"current_level": SceneManager.scene,
+#		"lives": 0
+}
 
 func _ready():
 	pass

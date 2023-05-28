@@ -21,5 +21,12 @@ func pause_the_game():
 func unpause_the_game():
 	get_tree().paused = false
 
+#func _load_scene():
+#	get_tree().change_scene(loaded_scene)
+#
+#func loading_scene(anim, loaded_scene):
+#	scene = loaded_scene
+#	animation.play("level_transition_effect2")
+
 #func load_scene():
 #	change_scene("level_transition_effect", loaded_scene)
