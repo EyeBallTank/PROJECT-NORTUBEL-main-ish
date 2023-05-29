@@ -17,7 +17,7 @@ A game where the player controls a character, who has to watch out for their you
 
 The actual story revolves around a group of 6 friends that get lost in some strange places and as they try to escape or even explore them, they encounter other people.
 
-In general, it's based on a personal project where i thought of a bunch of characters and ideas, so this game will be centered around elements from the project. Whether or not this becomes a series based around that project and how far it'll grow depends.
+In general, it's based on a personal project https://www.diffchecker.com/t7GS8iEi/ where i thought of a bunch of characters and ideas, so this game will be centered around elements from the project. Whether or not this becomes a series based around that project and how far it'll grow depends.
 
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
 Done (Even if it could be better):
