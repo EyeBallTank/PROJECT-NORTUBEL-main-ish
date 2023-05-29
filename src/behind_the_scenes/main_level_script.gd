@@ -1,5 +1,12 @@
 extends Node
 class_name main_level_script
+
+
+
+
+
+
+
 # In case levels need a script
 #const PlayerScene = preload("res://src/play_actors/PlayerCopy.tscn")
 #const CompScene = preload("res://src/play_actors/CompanionFourth.tscn")
