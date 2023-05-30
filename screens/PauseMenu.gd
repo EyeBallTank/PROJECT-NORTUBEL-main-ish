@@ -73,3 +73,7 @@ func _on_LoadButton_pressed():
 #	SceneManager.change_scene("level_transition_effect2", SceneManager.loaded_scene)
 #	SaveFile.load_data()
 #	SceneManager.load_scene()
+
+
+func _on_GalleryButton_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")

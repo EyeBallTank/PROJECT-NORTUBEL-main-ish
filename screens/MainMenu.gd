@@ -57,3 +57,7 @@ func _on_BackFromOptions2_pressed():
 
 func _on_LoadButton_pressed():
 	pass
+
+
+func _on_GalleryButton_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")

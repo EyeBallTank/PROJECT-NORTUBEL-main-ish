@@ -265,4 +265,5 @@ text = "MENU_B"
 [connection signal="pressed" from="OptionsMenu/BackFromOptions" to="." method="_on_BackFromOptions_pressed"]
 [connection signal="pressed" from="OptionsMenu/EN setting" to="." method="_on_EN_setting_pressed"]
 [connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]
+[connection signal="pressed" from="ExtraMenu/GalleryButton" to="." method="_on_GalleryButton_pressed"]
 [connection signal="pressed" from="ExtraMenu/BackFromOptions2" to="." method="_on_BackFromOptions2_pressed"]
