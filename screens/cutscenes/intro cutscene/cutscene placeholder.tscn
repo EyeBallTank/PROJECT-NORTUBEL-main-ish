@@ -1,10 +1,18 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/cutscene test images.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 1.png" type="Texture" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 2.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 8.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 7.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 9.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 3.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 4.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 5.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 6.png" type="Texture" id=13]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -35,6 +43,18 @@ tracks/1/keys = {
 3
 4
 " ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 4 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -77,6 +97,18 @@ tracks/2/keys = {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4.2, 8.3, 12.3, 16.3, 20.3, 24.3, 28.4, 32.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -127,6 +159,7 @@ text = "1
 [node name="Slides" type="Node" parent="."]
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
+visible = false
 nextlevel = "res://src/levels/LevelTutorial1.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
