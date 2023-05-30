@@ -14,19 +14,23 @@ func _init():
 
 func save_data():
 	var file = File.new()
-	file.open(SAVE_FOLDER, file.WRITE)
+	file.open(SAVE_FILE + "save.sav" , file.WRITE_READ)
 	file.store_var(g_data)
 	file.close()
+	ResourceSaver.save(SceneManager.scene, SAVE_FILE + "current_scene.tscn") 
 #	return
 
 func load_data():
 	var file = File.new()
 	if not file.file_exists(SAVE_FILE):
 		g_data = {
-			"current_level": SceneManager.scene,
 			"lives": 0
 		}
 		save_data()
-	file.load(SAVE_FILE, File.READ)
+	file.load(SAVE_FILE + "save.sav" , file.WRITE_READ)
 	g_data = file.get_var()
+	SceneManager.scene = load(SAVE_FILE + "current_scene.tscn")
 #	file.close
+
+
+#file.load(SAVE_FILE + "save.sav" , file.WRITE_READ)
