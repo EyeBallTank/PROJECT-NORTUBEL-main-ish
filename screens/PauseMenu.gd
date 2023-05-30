@@ -69,9 +69,9 @@ func _on_SaveButton_pressed():
 	SaveFile.save_data()
 
 func _on_LoadButton_pressed():
-	pass
+#	pass
 #	SceneManager.change_scene("level_transition_effect2", SceneManager.loaded_scene)
-#	SaveFile.load_data()
+	SaveFile.load_data()
 #	SceneManager.load_scene()
 
 
