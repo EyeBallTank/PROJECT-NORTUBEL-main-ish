@@ -1,17 +1,15 @@
 extends Node
 
-#var dir:=Directory.new() 
-#dir.make_dir("user://Scenes/")
 
-
+var dir:=Directory.new()
 const SAVE_FILE = "user://save_file.save"
 var g_data = {
 #		"current_level": SceneManager.scene,
 #		"lives": 0
 }
 
-func _ready():
-	pass
+func _init():
+	dir.make_dir("user://Scenes/")
 
 func save_data():
 	var file = File.new()
