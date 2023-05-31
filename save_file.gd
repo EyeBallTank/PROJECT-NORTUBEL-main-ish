@@ -17,7 +17,9 @@ func save_data():
 	file.open(SAVE_FILE + "save.sav" , file.WRITE_READ)
 	file.store_var(g_data)
 	file.close()
-	ResourceSaver.save(SceneManager.scene, SAVE_FILE + "current_scene.tscn") 
+	var newPacked:=PackedScene.new()
+	newPacked.pack(get_tree().current_scene)
+	ResourceSaver.save(SAVE_FILE +"current_scene.tscn", newPacked)
 #	return
 
 func load_data():
@@ -27,9 +29,9 @@ func load_data():
 			"lives": 0
 		}
 		save_data()
-	file.load(SAVE_FILE + "save.sav" , file.WRITE_READ)
+	file.open(SAVE_FILE + "save.sav" , file.WRITE_READ)
 	g_data = file.get_var()
-	SceneManager.scene = load(SAVE_FILE + "current_scene.tscn")
+	get_tree().change_scene(SAVE_FILE + "current_scene.tscn")
 #	file.close
 
 
