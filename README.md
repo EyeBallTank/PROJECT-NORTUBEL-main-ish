@@ -95,23 +95,20 @@ I may end up changing this goal list as well.
 * The new method of commands (Pressing Q + left/down/right) isn't perfect but it's the alternative to having more buttons to press (One issue it has is if you press Q + left/right when on ice, it stops the sliding like the ball kick attack).
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer scene in each level, so i may have to make this as an actual recurring game scene.
 * The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
-* The Companion's AI needs to improve as it only jumps when it's "under" the player's position (And there's more to consider depending on what will eventually be added to the game).
 * If the Player is on a different state type (Like swimming) from the Companion (Like walking normally on floor), then you'll get weird movement from the Companion.
 * CHANGED (But maybe could be done better): Current health bars are attached to the main characters but i used CanvasLayer nodes to put them on the screen like a HUD/UI system.
-* Maybe changing small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
-* I guess Comp4's swimming could be slightly better thought right now it doesn't bother me that much. It's okay at least.
+* Small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and Companion have small/subtle physics differences that just look weird.
+* I guess the Companion's swimming could be slightly better though right now it doesn't bother me that much. It's okay at least.
 * Maybe the Water scene in general is a bit messy.
-* Turns out the jump/fall through platforms aren't as "universal".
-* There may be a subtle bug on Comp4 during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
+* There may be a subtle bug on Companion during "Pushing" animation where it returns to "Running" while on PUSHRUN state i guess.
 * Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
 * Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try to get creative with weird methods like tracing over 3D models.
 * Visuals in general are weird because of the resolution, so the game looks like it has pixels moving/changing on their own; I'm not sure if it has to do with the camera, window or the art (And this issue may get even more complicated to fix because of small details and overlooked things to consider).
 * Controls/Inputs need to be better and not feel annoying.
 * The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
-* Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
-* The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
-* Level design is so messy it doesn't do a good job at introducing mechanics but i plan to revise this at the same time i revise the yellow books with info.
+* Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things, specially with swimming.
+* The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge. 
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
