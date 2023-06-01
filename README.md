@@ -91,6 +91,7 @@ Not yet:
 I may end up changing this goal list as well.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
+* I tried implementing a Save/Load system but it doesn't work; If you're interested in helping me, you may want to know more about my game's structure and the way i did things since Save/Load stuff is still alien to me.
 * The new method of commands (Pressing Q + left/down/right) isn't perfect but it's the alternative to having more buttons to press (One issue it has is if you press Q + left/right when on ice, it stops the sliding like the ball kick attack).
 * The current Pause Menu scene isn't AutoLoad/"universal" because it's set as a node under a CanvasLayer scene in each level, so i may have to make this as an actual recurring game scene.
 * The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because i don't know how to make it unavailable in certain scenes like the Main Menu).
@@ -111,7 +112,6 @@ I may end up changing this goal list as well.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.
 * Level design is so messy it doesn't do a good job at introducing mechanics but i plan to revise this at the same time i revise the yellow books with info.
-* I tried implementing a Save/Load system but it doesn't work.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
@@ -170,6 +170,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
+* NancokALT (For trying to help me with the Save/Load situation even if we got nowhere)
 * SimonKazehaya (Helped me fix a life subtraction issue)
 * Armanlex (Assumed that levels were tilted and turns out they were)
 * Pigdev (Used tutorial video on moving platform)

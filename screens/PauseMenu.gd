@@ -4,7 +4,7 @@ onready var pausemenu = $MenuMain
 onready var optionsmenu = $OptionsMenu
 onready var extra = $ExtraMenu
 
-onready var save_file = SaveFile.g_data
+#onready var save_file = SaveFile.g_data
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -66,12 +66,13 @@ func _on_ExtraButton_pressed():
 
 
 func _on_SaveButton_pressed():
-	SaveFile.save_data()
+#	SaveFile.save_data()
+	pass
 
 func _on_LoadButton_pressed():
-#	pass
+	pass
 #	SceneManager.change_scene("level_transition_effect2", SceneManager.loaded_scene)
-	SaveFile.load_data()
+#	SaveFile.load_data()
 #	SceneManager.load_scene()
 
 
