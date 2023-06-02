@@ -495,14 +495,14 @@ func _physics_process(delta):
 			elif immortal == true:
 				oxygenbar.hide()
 				oxygen = 1500
-			$CollisionShape2D.shape.extents = Vector2(104.5, 50.5 )
-			$CollisionShape2D.position = Vector2(0.5, -161.5)
-			hurtboxcollision.shape.extents = Vector2(104.5, 50.5)
-			hurtboxcollision.position = Vector2(0.5, -161.5)
-			$RopeCheck/CollisionShape2D.shape.extents = Vector2(26.125, 12.625)
-			$RopeCheck/CollisionShape2D.position = Vector2(0.125, 20.375)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(104.5, 50)
-			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -162)
+#			$CollisionShape2D.shape.extents = Vector2(104.5, 50.5 )
+#			$CollisionShape2D.position = Vector2(0.5, -161.5)
+#			hurtboxcollision.shape.extents = Vector2(104.5, 50.5)
+#			hurtboxcollision.position = Vector2(0.5, -161.5)
+#			$RopeCheck/CollisionShape2D.shape.extents = Vector2(26.125, 12.625)
+#			$RopeCheck/CollisionShape2D.position = Vector2(0.125, 20.375)
+#			$PortalCheck/CollisionShape2D.shape.extents = Vector2(104.5, 50)
+#			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -162)
 			PUSH_SPEED = 350
 #I guess the Q commands made swimming weird here but could be worse
 			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball"):

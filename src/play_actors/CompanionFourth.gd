@@ -408,12 +408,12 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 			vel.y = direction.y * 350
 
-			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
-			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$CollisionShape2D.position = Vector2(0.5, -153)
+#			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
+#			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
+#			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$CollisionShape2D.position = Vector2(0.5, -153)
 
 			if direction.x == 1:
 				if direction.y == -1:
@@ -519,12 +519,12 @@ func _physics_process(delta):
 			vel.x = direction.x * 350
 			vel.y = direction.y * 350
 
-			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
-			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$CollisionShape2D.position = Vector2(0.5, -153)
+#			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
+#			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
+#			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$CollisionShape2D.position = Vector2(0.5, -153)
 
 			if direction.x == 1:
 				if direction.y == -1:
@@ -590,12 +590,12 @@ func _physics_process(delta):
 			gravity = 10.0
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
-			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
-			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
-			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
-			$CollisionShape2D.position = Vector2(0.5, -153)
+#			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$CompanionHurtbox/CollisionShape2D.position = Vector2(0.5, -153)
+#			$PortalCheck/CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$PortalCheck/CollisionShape2D.position = Vector2(0.5, -153)
+#			$CollisionShape2D.shape.extents = Vector2(69.5, 41)
+#			$CollisionShape2D.position = Vector2(0.5, -153)
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = SWIMRUN
