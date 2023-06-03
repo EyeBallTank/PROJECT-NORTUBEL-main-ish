@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=14]
@@ -29,6 +30,13 @@ script = ExtResource( 11 )
 
 [node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 24 )]
 background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
+
+[node name="LevelProp" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1744, 497 )
+
+[node name="LevelProp2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2280, 493 )
+propname = "brinkprop pink mushroom"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
