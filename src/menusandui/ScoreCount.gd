@@ -13,7 +13,7 @@ func _on_CoinCaptured():
 	ezcudo_score = Signals.score
 	ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)
 	Signals.emit_signal("score_was_updated")
-	if ezcudo_score == 3:
+	if ezcudo_score == 10:
 		Signals.score = 0
 		ezcudo_score = Signals.score
 		ScoreLabel.text = "Ezcudos: " + str(ezcudo_score)

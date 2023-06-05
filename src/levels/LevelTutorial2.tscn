@@ -101,6 +101,27 @@ customtext = "BOOK_HINT_CONTROL_KNIFE"
 [node name="Coin" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1800, 448 )
 
+[node name="Coin4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3144, 300 )
+
+[node name="Coin5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3016, 304 )
+
+[node name="Coin6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3264, 302 )
+
+[node name="Coin7" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4192, 686 )
+
+[node name="Coin8" parent="." instance=ExtResource( 6 )]
+position = Vector2( 9832, -435 )
+
+[node name="Coin9" parent="." instance=ExtResource( 6 )]
+position = Vector2( 10233, -827 )
+
+[node name="Coin10" parent="." instance=ExtResource( 6 )]
+position = Vector2( 12329, -651 )
+
 [node name="Coin2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2104, 448 )
 
