@@ -123,6 +123,7 @@ color = Color( 1, 0.141176, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 512, 235 )
+scale = Vector2( 0.538947, 0.53653 )
 texture = ExtResource( 4 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
