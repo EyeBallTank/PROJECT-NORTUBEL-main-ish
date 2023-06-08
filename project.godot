@@ -68,11 +68,6 @@ _global_script_classes=[ {
 "class": "actor",
 "language": "GDScript",
 "path": "res://src/play_actors/actor.gd"
-}, {
-"base": "Node",
-"class": "main_level_script",
-"language": "GDScript",
-"path": "res://src/behind_the_scenes/main_level_script.gd"
 } ]
 _global_script_class_icons={
 "Companion": "",
@@ -86,8 +81,7 @@ _global_script_class_icons={
 "SlowFloor": "",
 "SoccerBall": "",
 "Water": "",
-"actor": "",
-"main_level_script": ""
+"actor": ""
 }
 
 [application]

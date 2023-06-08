@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/levels/LevelTemplate5.gd" type="Script" id=4]
+[ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=7]
