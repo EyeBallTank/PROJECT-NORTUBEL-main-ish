@@ -68,6 +68,11 @@ _global_script_classes=[ {
 "class": "actor",
 "language": "GDScript",
 "path": "res://src/play_actors/actor.gd"
+}, {
+"base": "Node",
+"class": "main_level_script",
+"language": "GDScript",
+"path": "res://src/behind_the_scenes/main_level_script.gd"
 } ]
 _global_script_class_icons={
 "Companion": "",
@@ -81,7 +86,8 @@ _global_script_class_icons={
 "SlowFloor": "",
 "SoccerBall": "",
 "Water": "",
-"actor": ""
+"actor": "",
+"main_level_script": ""
 }
 
 [application]
@@ -95,6 +101,7 @@ config/icon="res://nortubel icon.png"
 SceneManager="*res://src/behind_the_scenes/scene_manager.tscn"
 Signals="*res://src/behind_the_scenes/Signals.gd"
 SaveFile="*res://save_file.gd"
+MainLevelScript="*res://src/behind_the_scenes/main_level_script.gd"
 
 [display]
 
