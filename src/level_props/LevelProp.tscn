@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_props/brinkaedea/brinkprop pink mushroom.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood oldcart.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 3 )
@@ -11,6 +12,10 @@ region = Rect2( 0, 0, 222, 199 )
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 84, 167 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 173, 116 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -23,6 +28,11 @@ animations = [ {
 "loop": true,
 "name": "nortprop blue chimney",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "nortprop wood oldcart",
+"speed": 5.0
 } ]
 
 [node name="LevelProp" type="Node2D"]
@@ -30,5 +40,5 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "brinkprop pink mushroom"
+animation = "nortprop wood oldcart"
 playing = true

@@ -35,8 +35,8 @@ background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 position = Vector2( 1744, 497 )
 
 [node name="LevelProp2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2280, 493 )
-propname = "brinkprop pink mushroom"
+position = Vector2( 2336, 525 )
+propname = "nortprop wood oldcart"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
