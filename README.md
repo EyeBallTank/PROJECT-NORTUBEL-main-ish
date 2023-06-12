@@ -184,6 +184,8 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
 * Any help i can get from r/Godot, Discord and /agdg/.
+* Various media and stuff i took inspiration from and copied.
+* Blender and related addons, 3D software and certain models i used even in 2D art.
 
 # ALSO: Feel free to give me Github and Godot related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
