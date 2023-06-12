@@ -96,6 +96,13 @@ focus_mode = 1
 custom_fonts/font = SubResource( 4 )
 text = "QUIT_B"
 
+[node name="ReadButton" type="Button" parent="MenuMain"]
+margin_top = 108.0
+margin_right = 296.0
+margin_bottom = 131.0
+custom_fonts/font = ExtResource( 5 )
+text = "READ_B"
+
 [node name="Sprite" type="Sprite" parent="MenuMain"]
 position = Vector2( 156, -128 )
 scale = Vector2( 1.12844, 1.12844 )

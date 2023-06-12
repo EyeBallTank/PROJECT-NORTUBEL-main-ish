@@ -11,7 +11,7 @@ SAVE_B,Save,Guardar
 LOAD_B,Load,Carregar
 ,,
 QUIT_B,Quit,Saída
-,,
+READ_B,Please read!,"Por favor, lê"
 MUSIC_SET,Music,Música
 ,,
 SOUND_SET,Sound,Som
