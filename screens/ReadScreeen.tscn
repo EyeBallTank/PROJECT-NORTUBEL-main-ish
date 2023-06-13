@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
+[ext_resource path="res://screens/ReadScreeen.gd" type="Script" id=2]
+
+[node name="ReadScreeen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 21.0
+margin_top = 16.0
+margin_right = 1005.0
+margin_bottom = 533.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 976.0
+margin_bottom = 657.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
+margin_right = 976.0
+margin_bottom = 657.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+ This game is still in development, it's my very first game and it's also a very ambitious project (Part of an even more ambitious project).
+ With this in mind, expect problems like the following:
+* There's no Save/Load system because that requires fully understanding the structure of this game and making sure things work well 
+ (The few things that should be affected are the levels and the life system). I may need lots of help on this one.
+* Pressing Q and other keys at the same time isn't the best method but it was done as a response to feedback of the older system
+ including more specific buttons.
+* When the Player presses Q + left/right on ice, it stops the sliding.
+* The current Pause Menu scene isn't AutoLoad/\"universal\" because it's set as a node under a CanvasLayer scene 
+ in each level, so i may have to make this as an actual recurring game scene.
+* The Pause Menu doesn't pause the SceneManager's scene changing animation: Therefore the scene changing animation 
+ still plays and changes the scene (And i only didn't make the Pause Menu AutoLoad because 
+ i don't know how to make it unavailable in certain scenes like the Main Menu). 
+* If the Player is on a different state type (Like swimming) from the Companion
+ (Like walking normally on floor), then you'll get weird movement from the Companion.
+* Current health bars are attached to the main characters but i used CanvasLayer nodes to put them on the screen like a HUD/UI system.
+* Small things like how when a Falling Platform disappears or when pushing a Pushable object the Player and
+ Companion have small/subtle physics differences that just look weird.
+* I guess the Companion's swimming could be slightly better though right now it doesn't bother me that much. It's okay at least.
+* Maybe the Water scene in general is a bit messy.
+* There may be a subtle bug on Companion during \"Pushing\" animation where it returns to \"Running\" while on PUSHRUN state i guess.
+* Level design in general since even if i get enough working/functional mechanics, i need to use them well, make the game fun and be creative.
+* Art in general because even if some art here is placeholder/test based, my art skills are still a mess and i try
+ to get creative with weird methods like tracing over 3D models. I try to tweak some stuff
+ but may i could use other people's help, even if i also want to \"preserve\" some
+ decisions like wanting a bit of inconsistency because of the \"amateur\"/hobby nature of this game.
+* Visuals in general are weird because of the resolution, so the game looks like it has
+ pixels moving/changing on their own; I'm not sure if it has to do with the camera, window or the art
+ (And this issue may get even more complicated to fix because of small details and overlooked things to consider).
+* Controls/Inputs need to be better and not feel annoying.
+* The soccer ball's bouncing sound may still feel weird, at least based on how many times it should play its sound.
+* The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
+* The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge.     "
+
+[node name="Button" type="Button" parent="."]
+margin_left = 448.0
+margin_top = 554.0
+margin_right = 504.0
+margin_bottom = 577.0
+custom_fonts/font = ExtResource( 1 )
+text = "QUIT_B"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -61,3 +61,7 @@ func _on_LoadButton_pressed():
 
 func _on_GalleryButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")
+
+
+func _on_ReadButton_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/ReadScreeen.tscn")

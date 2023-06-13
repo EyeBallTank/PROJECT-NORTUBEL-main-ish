@@ -260,6 +260,7 @@ text = "MENU_B"
 [connection signal="pressed" from="MenuMain/ExtraButton" to="." method="_on_ExtraButton_pressed"]
 [connection signal="pressed" from="MenuMain/LoadButton" to="." method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="MenuMain/ReadButton" to="." method="_on_ReadButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
 [connection signal="toggled" from="OptionsMenu/VideoSettings/Checks/Fullscreen" to="." method="_on_Fullscreen_toggled"]
