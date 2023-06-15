@@ -35,7 +35,7 @@ background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 position = Vector2( 2823, 161 )
 
 [node name="LevelProp3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3271, 248 )
+position = Vector2( 2015, 392 )
 propname = "nortprop palmtree"
 
 [node name="LevelProp5" parent="." instance=ExtResource( 9 )]

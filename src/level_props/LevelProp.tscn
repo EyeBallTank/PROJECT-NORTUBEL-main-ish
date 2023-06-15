@@ -30,9 +30,9 @@ region = Rect2( 0, 0, 348, 200 )
 atlas = ExtResource( 9 )
 region = Rect2( 0, 0, 186, 124 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 7 )
-region = Rect2( 0, 0, 115, 174 )
+region = Rect2( 0, 0, 239, 421 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 5 )
@@ -69,7 +69,7 @@ animations = [ {
 "name": "nortprop green metal fence",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 7 ) ],
+"frames": [ SubResource( 13 ) ],
 "loop": true,
 "name": "nortprop palmtree",
 "speed": 5.0
