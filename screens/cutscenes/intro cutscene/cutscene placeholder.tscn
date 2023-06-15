@@ -67,7 +67,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 4.4, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.2, 34.3 ),
+"times": PoolRealArray( 0, 4.4, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.4, 34.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Carrie Decarde", "Oscar Decarde", "Katrin Flenn", "Pete Flenn", "Melvin Brokston", "Angela Brokston", "Bonka Millete", "Melvin Brokston", "Carrie Decarde", "Bonka Millete", "Katrin Flenn", "Bonka Millette", "Pete Flenn", "Bonka Millette", "Carrie Decarde", "Oscar Decarde", "Melvin Brokston" ]
@@ -79,7 +79,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 4.4, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.2, 34.3 ),
+"times": PoolRealArray( 0, 4.4, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.4, 34.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "INTRO_TALK_1", "INTRO_TALK_2", "INTRO_TALK_3", "INTRO_TALK_4", "INTRO_TALK_5", "INTRO_TALK_6", "INTRO_TALK_7", "INTRO_TALK_8", "INTRO_TALK_9", "INTRO_TALK_10", "INTRO_TALK_11", "INTRO_TALK_12", "INTRO_TALK_13", "INTRO_TALK_14", "INTRO_TALK_15", "INTRO_TALK_16", "INTRO_TALK_17" ]
@@ -105,7 +105,7 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 6.4, 10.4, 14.4, 18.4, 22.4, 26.4, 30.4, 34.3 ),
+"times": PoolRealArray( 0, 6.4, 10.4, 14.4, 18.4, 22.4, 26.4, 30.4, 34.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ]
