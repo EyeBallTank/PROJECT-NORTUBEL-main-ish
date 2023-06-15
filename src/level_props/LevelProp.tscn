@@ -14,9 +14,9 @@
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 222, 199 )
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 84, 167 )
+region = Rect2( 0, 0, 168, 334 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 8 )
@@ -49,7 +49,7 @@ animations = [ {
 "name": "brinkprop pink mushroom",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 1 ) ],
+"frames": [ SubResource( 10 ) ],
 "loop": true,
 "name": "nortprop blue chimney",
 "speed": 5.0
@@ -90,5 +90,5 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "nortprop green metal fence"
+animation = "nortprop blue chimney"
 playing = true
