@@ -38,13 +38,17 @@ position = Vector2( 2823, 161 )
 position = Vector2( 3271, 248 )
 propname = "nortprop palmtree"
 
+[node name="LevelProp5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1727, 486 )
+propname = "nortprop brown bench chair"
+
 [node name="LevelProp2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2336, 525 )
 propname = "nortprop wood oldcart"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2160, 303 )
-scale = Vector2( 5.34043, 5.92308 )
+position = Vector2( 3872, 355 )
+scale = Vector2( 4.66043, 4.52308 )
 propname = "nortprop green metal fence"
 
 [node name="TileMap" type="TileMap" parent="."]

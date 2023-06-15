@@ -22,9 +22,9 @@ region = Rect2( 0, 0, 168, 334 )
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 69, 104 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 6 )
-region = Rect2( 0, 0, 174, 100 )
+region = Rect2( 0, 0, 348, 200 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 9 )
@@ -59,7 +59,7 @@ animations = [ {
 "name": "nortprop blue green chair stack",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 6 ) ],
+"frames": [ SubResource( 12 ) ],
 "loop": true,
 "name": "nortprop brown bench chair",
 "speed": 5.0
