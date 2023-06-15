@@ -34,9 +34,9 @@ region = Rect2( 0, 0, 186, 124 )
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 239, 421 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 172, 240 )
+region = Rect2( 0, 0, 344, 480 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 4 )
@@ -74,7 +74,7 @@ animations = [ {
 "name": "nortprop palmtree",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 5 ) ],
+"frames": [ SubResource( 17 ) ],
 "loop": true,
 "name": "nortprop redyellow umbrella",
 "speed": 5.0
