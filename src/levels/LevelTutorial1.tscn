@@ -32,24 +32,8 @@ script = ExtResource( 11 )
 background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2823, 161 )
-
-[node name="LevelProp3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2015, 392 )
-propname = "nortprop palmtree"
-
-[node name="LevelProp5" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1727, 486 )
-propname = "nortprop brown bench chair"
-
-[node name="LevelProp2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2336, 525 )
-propname = "nortprop wood oldcart"
-
-[node name="LevelProp4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3872, 355 )
-scale = Vector2( 4.66043, 4.52308 )
-propname = "nortprop green metal fence"
+position = Vector2( 2319, 385 )
+propname = "brinkprop pink mushroom"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
