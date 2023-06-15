@@ -26,9 +26,9 @@ region = Rect2( 0, 0, 138, 208 )
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 348, 200 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 9 )
-region = Rect2( 0, 0, 186, 124 )
+region = Rect2( 0, 0, 184, 130 )
 
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 7 )
@@ -64,7 +64,7 @@ animations = [ {
 "name": "nortprop brown bench chair",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 11 ) ],
+"frames": [ SubResource( 18 ) ],
 "loop": true,
 "name": "nortprop green metal fence",
 "speed": 5.0
@@ -90,5 +90,5 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "nortprop wood oldcart"
+animation = "nortprop green metal fence"
 playing = true
