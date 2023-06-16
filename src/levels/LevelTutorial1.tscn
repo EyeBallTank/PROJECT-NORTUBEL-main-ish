@@ -39,6 +39,10 @@ propname = "hirdprop chip flower"
 position = Vector2( 2216, 115 )
 propname = "krimbprop oldcar bulletglass"
 
+[node name="LevelProp3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2592, -69 )
+propname = "grekprop pillartech computer"
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 collision_layer = 4
