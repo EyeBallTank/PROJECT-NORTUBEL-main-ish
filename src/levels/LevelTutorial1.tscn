@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
+[ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=17]
@@ -46,6 +47,9 @@ tile_data = PoolIntArray( -1310512, 0, 0, -1244976, 0, 0, -1179440, 0, 0, -11139
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 7 )]
+
+[node name="Barrier" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4880, 376 )
 
 [node name="FloorSwitch" parent="." instance=ExtResource( 13 )]
 position = Vector2( 4688, 552 )

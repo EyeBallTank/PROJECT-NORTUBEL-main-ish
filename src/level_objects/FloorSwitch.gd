@@ -15,5 +15,6 @@ func _on_FloorSwitch_body_entered(body):
 		is_pressed = true
 		animatedsprite.animation = "pressed"
 		animationplayer.play("PRESSED")
+		Signals.emit_signal("floor_switch_active")
 	else:
 		pass

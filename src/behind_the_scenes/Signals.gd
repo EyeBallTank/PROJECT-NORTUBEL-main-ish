@@ -13,6 +13,9 @@ signal green_switch_two_pressed
 signal halfcircle_plat_active_one
 signal halfcircle_plat_active_two
 
+signal floor_switch_active
+signal floor_switch_barrier_opens
+
 signal coin_was_captured
 signal score_was_updated
 
