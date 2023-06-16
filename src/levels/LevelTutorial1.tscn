@@ -43,6 +43,10 @@ propname = "krimbprop oldcar bulletglass"
 position = Vector2( 2592, -69 )
 propname = "grekprop pillartech computer"
 
+[node name="LevelProp4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2872, -93 )
+propname = "herrprop barrelwood weapons"
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 collision_layer = 4
