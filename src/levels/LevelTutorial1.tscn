@@ -35,6 +35,10 @@ background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 position = Vector2( 1688, 387 )
 propname = "hirdprop chip flower"
 
+[node name="LevelProp2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2216, 115 )
+propname = "krimbprop oldcar bulletglass"
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 collision_layer = 4
