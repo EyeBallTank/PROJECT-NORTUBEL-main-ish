@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop oldcar bulletglass.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/level_props/greklovick/grekprop pillartech computer.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop barrelwood weapons.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/level_props/lahiurn/lahiprop walldestroyed flag.png" type="Texture" id=14]
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 3 )
@@ -32,6 +33,10 @@ region = Rect2( 0, 0, 444, 398 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 14 )
 region = Rect2( 0, 0, 444, 398 )
 
 [sub_resource type="AtlasTexture" id=10]
@@ -89,6 +94,11 @@ animations = [ {
 "name": "krimbprop oldcar bulletglass",
 "speed": 5.0
 }, {
+"frames": [ SubResource( 23 ) ],
+"loop": true,
+"name": "lahiprop walldestroyed flag",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 10 ) ],
 "loop": true,
 "name": "nortprop blue chimney",
@@ -130,5 +140,5 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "herrprop barrelwood weapons"
+animation = "lahiprop walldestroyed flag"
 playing = true
