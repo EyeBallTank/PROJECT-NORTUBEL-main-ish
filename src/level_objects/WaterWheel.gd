@@ -10,7 +10,7 @@ onready var animationplayer = $AnimationPlayer
 func _ready():
 	animationplayer.play("rotate")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	woodenplat1.global_rotation_degrees = 0
 	woodenplat2.global_rotation_degrees = 0
 	woodenplat3.global_rotation_degrees = 0

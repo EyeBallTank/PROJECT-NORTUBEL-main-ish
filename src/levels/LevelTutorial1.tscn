@@ -11,7 +11,7 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
-[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=19]
@@ -47,7 +47,7 @@ tile_data = PoolIntArray( -1310512, 0, 0, -1244976, 0, 0, -1179440, 0, 0, -11139
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 7 )]
 
-[node name="FloorSwitch" parent="." instance=ExtResource( 12 )]
+[node name="FloorSwitch" parent="." instance=ExtResource( 13 )]
 position = Vector2( 4688, 552 )
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
