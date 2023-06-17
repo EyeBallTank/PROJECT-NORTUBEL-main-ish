@@ -9,7 +9,7 @@ onready var audioplayer = $AudioStreamPlayer
 onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 export(String) var customtext = "BONKA_TALK_1"
-export(String) var customtext2 = "You jerk!"
+export(String) var customtext2 = "BONKA_HONK"
 
 func _ready():
 	maintext.text = str (customtext)
