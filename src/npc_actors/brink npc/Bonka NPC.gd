@@ -10,6 +10,7 @@ onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 export(String) var customtext = "BONKA_TALK_1"
 export(String) var customtext2 = "BONKA_HONK"
+export(String) var customtext3 = "BONKA_HURT"
 
 func _ready():
 	maintext.text = str (customtext)
