@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/634034__00bpp00__zz-bike-horn.mp3-1c346fc7f71766a24dc4c407cc23f879.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/npc actors/brink npc/634034__00bpp00__zz-bike-horn.mp3"
+dest_files=[ "res://.import/634034__00bpp00__zz-bike-horn.mp3-1c346fc7f71766a24dc4c407cc23f879.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

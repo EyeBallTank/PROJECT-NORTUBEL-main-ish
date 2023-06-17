@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/443911__tissman__menuclick2.wav-c670c1a374e7de625dbd468a2821fe87.sample"
+
+[deps]
+
+source_file="res://assets/sounds/npc actors/hird npc/443911__tissman__menuclick2.wav"
+dest_files=[ "res://.import/443911__tissman__menuclick2.wav-c670c1a374e7de625dbd468a2821fe87.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
