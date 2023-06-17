@@ -164,6 +164,8 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * nilbul on FreeSound (Water splash sound source)
 * Wdomino on FreeSound (Vase push sound source)
 * deleted_user_10023915 (Yes) on FreeSound (Player/Companion landing sound source)
+* Tissman on FreeSound (Hirdrih NPC sound).
+* 00bpp00 on FreeSound (Some sound).
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
