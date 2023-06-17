@@ -52,8 +52,12 @@ position = Vector2( 3192, -53 )
 propname = "lahiprop walldestroyed flag"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3520, -53 )
+position = Vector2( 3456, -58 )
 propname = "untoprop coffin skull chains"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3728, -69 )
+propname = "massprop phonebooth jazzposter"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
