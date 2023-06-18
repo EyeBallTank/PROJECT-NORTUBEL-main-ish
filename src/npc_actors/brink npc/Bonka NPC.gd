@@ -10,13 +10,13 @@ onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 export(String) var customtext = "BONKA_TALK_1"
 export(String) var customtext2 = "BONKA_HONK"
-export(String) var customtext3 = "BONKA_HURT"
+export(String) var customtext3 = "BONKA_HUG"
+export(String) var customtext4 = "BONKA_HURT"
 
 func _ready():
 	maintext.text = str (customtext)
 	dialogue.visible = false
 	honk = false
-	pass
 
 func _physics_process(delta):
 	velocity.y += gravity * delta
@@ -36,3 +36,5 @@ func _on_TalktoArea_body_entered(body):
 func _on_TalktoArea_body_exited(body):
 	if body.name == "Player":
 		dialogue.visible = false
+		honk = false
+		maintext.text = str (customtext)
