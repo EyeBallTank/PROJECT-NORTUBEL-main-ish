@@ -235,9 +235,20 @@ De qualquer jeito, é melhor pensar num plano o mais cedo que possível."
 BONKA_HONK,"Hey, can you stop?
 I didn't even know i could make that sound.","Podes parar?
 Nem sabia que podia fazer esse som."
-BONKA_HUG,,
-BONKA_HURT,,
+BONKA_HUG,"Eww, get your germs away from me!","Eww, afasta os teus germes de mim!"
+BONKA_HURT,"Hey, what did i do to you?","Hey, o que é que eu te fiz?"
 BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
 BONKA_TALK_2,You still haven’t found nothing?,Ainda não encontraram nada?
+,,
+CARRIE_TALK_1,"We're lucky to find some coins here because not many will fit in our pockets.
+I wish there some lost bills as well.","Temos sorte por encontrar algumas moedas porque não podemos meter muitas nos nossos bolsos.
+Gostava de pelo menos encontrar algumas notas."
+CARRIE_HONK,"C'mon, don't joke around!
+We need to find an exit first.","Vá lá, para de brincar!
+Primeiro, temos que encontrar uma saída."
+CARRIE_HUG,"Katrin, is something wrong?
+It's okay. As long as we're together, we can figure something out.","Katrin, esta tudo bem?
+Não faz mal. Desde que estamos todos juntos, poderemos descobrir uma solução."
+CARRIE_HURT,What is wrong with you?,O que é que se passa contigo?
