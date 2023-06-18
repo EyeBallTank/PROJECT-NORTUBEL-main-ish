@@ -134,59 +134,55 @@ LIFECOUNT_T,Lives,Vidas
 GAMEOVER_T,YOU FAILED,  FALHOU
 ,,
 ,,
-,,
-BONKA_HONK,"Hey, can you stop?
-I didn't even know i could make that sound.","Podes parar?
-Nem sabia que podia fazer esse som."
-BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
-Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
-Podem pelo menos descubrir uma saída?"
-BONKA_TALK_2,You still haven’t found nothing?,Ainda não encontraram nada?
-,,
-,,
 BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
-,,
-,,
-,,
 BOOK_HINT_CONTROL_MOVE,"Left movement: Left arrow key/A and Right movement: Right arrow key/D
 Jumping/Climbing/Swimming upwards: Up arrow key/W
 ESC: Pause menu","Movimento esquerdo: Seta esquerda/A e Movimento Direito: Seta direita/D
 Saltar/Nadar para cima/Subir: Seta de cima/W
 ESC: Menu de pausa"
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
 BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right
 ""Stand still"": Q + Down
 ""Run away"" opposite to ""Run away"": Q + Left","""Segue-me"": Q + Direita
 ""Fica aí"": Q + Baixo
 ""Foje"" contrário de ""Segue-me"": Q + Esquerda"
-,,
-,,
-,,
-,,
-,,
 BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar esquadas: Z"
-,,
 BOOK_HINT_CONTROL_KNIFE,Knife attack: E,Ataque de faca: E
-,,
 BOOK_HINT_CONTROL_BALLATTACK,"Ball kick attack: Down
 Cancelling ball attack: Up","Ataque com bola e pontapé: Baixo
 Cancelar ataque de bola: Cima"
-,,
-,,
-,,
 BOOK_HINT_HEALTH_DAMAGE,"Companion receives more damage than Player
 Grocery basket heals whoever picks it up","O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
 O cesto de compras cura quem o apanhar"
-,,
 BOOK_HINT_KEYS,Keys unlock doors of corresponding colors,Chaves abrem portas de cores correspondentes
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
 ,,
 ,,
 ,,
@@ -295,3 +291,13 @@ How can that happen?
 Either way, we better think of a plan fast!","Mas porquê?
 Como é que isso pode acontecer?
 De qualquer jeito, é melhor pensar num plano o mais cedo que possível."
+,,
+BONKA_HONK,"Hey, can you stop?
+I didn't even know i could make that sound.","Podes parar?
+Nem sabia que podia fazer esse som."
+BONKA_HUG,,
+BONKA_HURT,,
+BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
+Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
+Podem pelo menos descubrir uma saída?"
+BONKA_TALK_2,You still haven’t found nothing?,Ainda não encontraram nada?
