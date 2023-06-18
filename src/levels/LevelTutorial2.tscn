@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/npc_actors/nort npc/Oscar NPC.tscn" type="PackedScene" id=28]
 
 [node name="LevelTutorial2" type="Node2D"]
 light_mask = 4
@@ -54,6 +55,9 @@ position = Vector2( 1280, 384 )
 
 [node name="CarrieNPC" parent="." instance=ExtResource( 27 )]
 position = Vector2( 2184, 278 )
+
+[node name="Oscar NPC" parent="." instance=ExtResource( 28 )]
+position = Vector2( 2128, 364 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1280, 384 )
