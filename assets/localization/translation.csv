@@ -1,18 +1,18 @@
 id,en,pt
-,,
 UNPAUSE_B,Unpause,Retomar
-,,
 OPTIONS_B,Options,Opções
-,,
 EXTRA_B,Extra,Extra
-,,
 SAVE_B,Save,Guardar
-,,
 LOAD_B,Load,Carregar
-,,
 QUIT_B,Quit,Saída
 READ_B,Please read!,"Por favor, lê"
 MUSIC_SET,Music,Música
+SOUND_SET,Sound,Som
+FULLSCREEN_B,Fullscreen,Ecrã Inteiro
+MENU_B,Menu,Menu
+START_B,Start,Começar
+LIBRARY_B,Library,Biblioteca 
+GALLERY_B,Gallery,Galeria
 READ_T,"
  This game is still in development, it's my very first game and it's also a very ambitious project (Part of an even more ambitious project).
 
@@ -128,13 +128,13 @@ Eu tento usar tutoriais e ajuda de outras pessoas, por isso qualquer ajuda é ap
 
 
 "
-SOUND_SET,Sound,Som
+STORYSKIP_T,Q: Skip it,Q: Saltar
+OTHER_B,Other stuff,Outras coisas
+LIFECOUNT_T,Lives,Vidas
+GAMEOVER_T,YOU FAILED,  FALHOU
 ,,
-FULLSCREEN_B,Fullscreen,Ecrã Inteiro
 ,,
-MENU_B,Menu,Menu
 ,,
-START_B,Start,Começar
 BONKA_HONK,"Hey, can you stop?
 I didn't even know i could make that sound.","Podes parar?
 Nem sabia que podia fazer esse som."
@@ -142,7 +142,7 @@ BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your ho
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
 BONKA_TALK_2,You still haven’t found nothing?,Ainda não encontraram nada?
-STORYSKIP_T,Q: Skip it,Q: Saltar
+,,
 ,,
 BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
 ,,
@@ -153,12 +153,12 @@ Jumping/Climbing/Swimming upwards: Up arrow key/W
 ESC: Pause menu","Movimento esquerdo: Seta esquerda/A e Movimento Direito: Seta direita/D
 Saltar/Nadar para cima/Subir: Seta de cima/W
 ESC: Menu de pausa"
-LIBRARY_B,Library,Biblioteca 
-GALLERY_B,Gallery,Galeria
-OTHER_B,Other stuff,Outras coisas
-LIFECOUNT_T,Lives,Vidas
 ,,
-GAMEOVER_T,YOU FAILED,  FALHOU
+,,
+,,
+,,
+,,
+,,
 ,,
 ,,
 ,,
