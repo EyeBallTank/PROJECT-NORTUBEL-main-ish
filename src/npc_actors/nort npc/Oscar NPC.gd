@@ -1,5 +1,8 @@
 extends KinematicBody2D
-#When not playable, protagonists can be NPC's
+#Similar script to Carrie
+#NOTE: Oscar and Pete use the "older version" of the sprite sheet
+#instead of the "still wip" version
+#When i redo sprites, i NEED to remember this very well
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 var honk = false

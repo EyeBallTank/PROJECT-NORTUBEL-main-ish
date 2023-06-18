@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -19,8 +19,12 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/npc_actors/nort npc/Pete NPC.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/npc_actors/nort npc/Oscar NPC.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/npc_actors/nort npc/KatrinNPC.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=26]
 
 [node name="LevelTutorial3" type="Node2D"]
@@ -58,6 +62,18 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1216, 384 )
+
+[node name="CarrieNPC" parent="." instance=ExtResource( 25 )]
+position = Vector2( 5861, 600 )
+
+[node name="Oscar NPC" parent="." instance=ExtResource( 21 )]
+position = Vector2( 5184, 485 )
+
+[node name="KatrinNPC" parent="." instance=ExtResource( 22 )]
+position = Vector2( 9576, 2132 )
+
+[node name="Pete NPC" parent="." instance=ExtResource( 20 )]
+position = Vector2( 9304, 2144 )
 
 [node name="BookInfo" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2040, 520 )

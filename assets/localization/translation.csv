@@ -252,3 +252,29 @@ CARRIE_HUG,"Katrin, is something wrong?
 It's okay. As long as we're together, we can figure something out.","Katrin, esta tudo bem?
 Não faz mal. Desde que estamos todos juntos, poderemos descobrir uma solução."
 CARRIE_HURT,What is wrong with you?,O que é que se passa contigo?
+,,
+OSCAR_TALK_1,I think i saw a big lizard.,Acho que vi um grande lagarto.
+OSCAR_HUG,"...can i get another hug, please?","...posso ter um outro abraço, por favor?"
+OSCAR_HURT,"Please, be carefull with that!","Por favor, tem cuidado com isso."
+,,
+KATRIN_TALK_1,I wonder why those portals look like grids.,Gostava de saber porque é que esses portais parecem grades.
+KATRIN_HUG,"Oh, thank you.
+I felt like i needed that.","Oh, obrigado.
+Senti que precisava disso."
+KATRIN_HONK,Uh... was it something in my shirt?,Uh... foi algo na minha camisa?
+KATRIN_HURT,Be carefull with that knife.,Tem cuidado com essa faca.
+,,
+PETE_TALK_1,Have you seen the train tracks? They're not on the floor for some reason.,Viram os carris de comboios? Não estão no chão por alguma razão.
+PETE_HUG,"Hehe, you can hug me anytime.","Hehe, podes abraçar-me a qualquer momento."
+PETE_HURT,Is there a reason why Melvin lent you that knife?,Porque é que o Melvin emprestou-te essa faca?
+,,
+MELVIN_TALK_1,"For some reason, the water is fresh.","Por alguma razão, a agua aqui é fresca."
+MELVIN_HUG,I love you too but we need to get out of here and warm you up.,Eu amo-te tambem mas temos que sair daqui e te aquecer.
+MELVIN_HONK,"Carrie, your hands are still wet and cold.
+At least dry them off first.","Carrie, as tuas mãos ainda estão frias e molhadas.
+Pelo menos, seca-te primeiro."
+MELVIN_HURT,Should i teach you how to use the knife?,Será que eu devia ensinar-te como usar essa faca?
+,,
+ANGELA_TALK_1,That green door reminds me of my uncle's house. Did something happen to him?,Essa porta faz-me lembrar do meu tio. O que lhe aconteceu?
+ANGELA_HUG,I didn't ask for a hug.,Eu não pedi um abraço.
+ANGELA_HURT,I don't like the look of that knife.,Eu não gosto da aparência dessa faca.

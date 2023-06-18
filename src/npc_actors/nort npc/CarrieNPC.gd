@@ -1,5 +1,7 @@
 extends KinematicBody2D
 #When not playable, protagonists can be NPC's
+#CARRIE AND KATRIN USE THE "still wip" SPRITE SHEET VERSION
+#MELVIN USES THE "older version" version
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 var honk = false
