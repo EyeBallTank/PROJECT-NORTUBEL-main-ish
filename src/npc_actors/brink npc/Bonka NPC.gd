@@ -16,17 +16,19 @@ export(String) var customtext4 = "BONKA_HURT"
 func _ready():
 	maintext.text = str (customtext)
 	dialogue.visible = false
-	honk = false
 
 func _physics_process(delta):
 	velocity.y += gravity * delta
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 	if honk == true:
-		if Input.is_action_just_pressed("attack"):
+		if Input.is_action_just_pressed("standstill"):
 			maintext.text = str (customtext2)
 			audioplayer.play()
 			yield(audioplayer, "finished")
-			honk = false
+		if Input.is_action_just_pressed("followme"):
+			maintext.text = str (customtext3)
+		if Input.is_action_just_pressed("attack"):
+			maintext.text = str (customtext4)
 
 func _on_TalktoArea_body_entered(body):
 	if body.name == "Player":
