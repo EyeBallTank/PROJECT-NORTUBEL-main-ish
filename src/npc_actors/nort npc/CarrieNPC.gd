@@ -21,7 +21,7 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 	if honk == true:
-		if Input.is_action_just_pressed("standstill"):
+		if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("standstill"):
 			maintext.text = str (customtext2)
 		if Input.is_action_just_pressed("followme"):
 			maintext.text = str (customtext3)

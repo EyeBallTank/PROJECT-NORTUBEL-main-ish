@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=27]
 
 [node name="LevelTutorial3" type="Node2D"]
 light_mask = 4
@@ -65,15 +66,36 @@ position = Vector2( 1216, 384 )
 
 [node name="CarrieNPC" parent="." instance=ExtResource( 25 )]
 position = Vector2( 5861, 600 )
+customtext = "CARRIE_TALK_2"
+customtext2 = "CARRIE_HONK_2"
+customtext3 = "CARRIE_HUG_2"
+customtext4 = "CARRIE_HURT_2"
 
 [node name="Oscar NPC" parent="." instance=ExtResource( 21 )]
 position = Vector2( 5184, 485 )
+customtext = "OSCAR_TALK_2"
+customtext3 = "OSCAR_HUG_2"
+customtext4 = "OSCAR_HURT_2"
 
 [node name="KatrinNPC" parent="." instance=ExtResource( 22 )]
 position = Vector2( 9576, 2132 )
+customtext = "KATRIN_TALK_2"
+customtext2 = "KATRIN_HONK_2"
+customtext3 = "KATRIN_HUG_2"
+customtext4 = "KATRIN_HURT_2"
 
 [node name="Pete NPC" parent="." instance=ExtResource( 20 )]
 position = Vector2( 9304, 2144 )
+customtext = "PETE_TALK_2"
+customtext3 = "PETE_HUG_2"
+customtext4 = "PETE_HURT_2"
+
+[node name="Bonka NPC" parent="." instance=ExtResource( 27 )]
+position = Vector2( 8960, 1784 )
+customtext = "BONKA_TALK_3"
+customtext2 = "BONKA_HONK_3"
+customtext3 = "BONKA_HUG_3"
+customtext4 = "BONKA_HURT_3"
 
 [node name="BookInfo" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2040, 520 )

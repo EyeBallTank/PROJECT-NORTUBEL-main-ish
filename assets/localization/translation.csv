@@ -240,7 +240,7 @@ BONKA_HURT,"Hey, what did i do to you?","Hey, o que é que eu te fiz?"
 BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
-BONKA_TALK_2,You still haven’t found nothing?,Ainda não encontraram nada?
+BONKA_TALK_4,You still haven’t found nothing?,Ainda não encontraram nada?
 ,,
 CARRIE_TALK_1,"We're lucky to find some coins here because not many will fit in our pockets.
 I wish there some lost bills as well.","Temos sorte por encontrar algumas moedas porque não podemos meter muitas nos nossos bolsos.
@@ -278,3 +278,17 @@ MELVIN_HURT,Should i teach you how to use the knife?,Será que eu devia ensinar-
 ANGELA_TALK_1,That green door reminds me of my uncle's house. Did something happen to him?,Essa porta faz-me lembrar do meu tio. O que lhe aconteceu?
 ANGELA_HUG,I didn't ask for a hug.,Eu não pedi um abraço.
 ANGELA_HURT,I don't like the look of that knife.,Eu não gosto da aparência dessa faca.
+,,
+MELVIN_TALK_2,"I wonder if this place has any consistent temperature, if that ice means anything.","Gostava de saber se este sítio tem uma temperatura consistente, se o gelo diz alguma coisa."
+MELVIN_HUG_2,"Hey, it's okay. You don't need to be worried as long as we're together.","Hey, não faz mal. Não precisas de ter medo enquanto estamos todos juntos."
+MELVIN_HONK_2,Okay but... how about a kiss?,Okay mas... e que tal um beijo?
+MELVIN_HURT_2,I should probably train you.,Talvez devia-te treinar.
+,,
+ANGELA_TALK_2,How come these switches work if they’re not attached to walls?,Como é que estes botões funcionam se não estão ligados às paredes?
+ANGELA_HUG_2,I don’t need hugs. I’m fine!,Eu não preciso de abraços. Eu estou bem!
+ANGELA_HURT_2,"If you lose that knife, i’m gonna tell my brother.","Se perders essa faca, vou dizer ao meu irmão."
+,,
+BONKA_TALK_2,"These keys’ blades seem sharp, so i would advise not letting your brother handle them.","As laminas destas chaves parecem afiadas, por tanto o teu irmão não devia tocar nelas."
+BONKA_HONK_2,Why are you doing this? Nobody even told me about this.,Porque é que estas a fazer isto? Ninguém me ensinou nada disto.
+BONKA_HUG_2,"What, you like me or something?","O que é, gostas me mim?"
+BONKA_HURT_2,Are you threatening me?,Estás a ameaçar-me ou que?

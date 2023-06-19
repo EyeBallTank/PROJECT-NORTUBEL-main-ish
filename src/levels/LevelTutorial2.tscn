@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://src/npc_actors/nort npc/Oscar NPC.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/npc_actors/nort npc/MelvinNPC.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/npc_actors/nort npc/Angela NPC.tscn" type="PackedScene" id=30]
+[ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=31]
 
 [node name="LevelTutorial2" type="Node2D"]
 light_mask = 4
@@ -73,6 +74,13 @@ position = Vector2( 8928, -102 )
 customtext = "ANGELA_TALK_2"
 customtext3 = "ANGELA_HUG_2"
 customtext4 = "ANGELA_HURT_2"
+
+[node name="Bonka NPC" parent="." instance=ExtResource( 31 )]
+position = Vector2( 4251, 437 )
+customtext = "BONKA_TALK_2"
+customtext2 = "BONKA_HONK_2"
+customtext3 = "BONKA_HUG_2"
+customtext4 = "BONKA_HURT_2"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1280, 384 )
