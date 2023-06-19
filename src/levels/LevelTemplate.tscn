@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
@@ -176,3 +177,6 @@ id = 1
 [node name="Teleportal2" parent="." instance=ExtResource( 27 )]
 position = Vector2( 9856, -832 )
 id = 1
+
+[node name="Brink Big Straw Redwhite" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2544, 88 )
