@@ -96,6 +96,7 @@ text = "Bonka Millette"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+volume_db = -13.701
 bus = "Sound"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]

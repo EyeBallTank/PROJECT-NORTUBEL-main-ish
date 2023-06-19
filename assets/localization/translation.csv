@@ -240,7 +240,7 @@ BONKA_HURT,"Hey, what did i do to you?","Hey, o que é que eu te fiz?"
 BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
-BONKA_TALK_4,You still haven’t found nothing?,Ainda não encontraram nada?
+,,
 ,,
 CARRIE_TALK_1,"We're lucky to find some coins here because not many will fit in our pockets.
 I wish there some lost bills as well.","Temos sorte por encontrar algumas moedas porque não podemos meter muitas nos nossos bolsos.
@@ -307,7 +307,7 @@ CARRIE_HONK_2,"C'mon, don't joke around!
 We need to find an exit first.
 And be more gentle next time, i know you can do that.","Vá lá, para de brincar!
 Primeiro, temos que encontrar uma saída.
-E se mais gentil na próxima vez, eu sei que consegues."
+E sê mais gentil na próxima vez, eu sei que consegues."
 CARRIE_HUG_2,"Mel, i appreciate it but we need to find a safer place.","Mel, eu gostei disso mas temos que encontrar um sítio mais seguro."
 CARRIE_HURT_2,Where did you even get that knife in the first place?,De onde é que arranjaste essa faca no primeiro lugar?
 ,,
@@ -316,6 +316,16 @@ OSCAR_HUG_2,Is my hair getting in the way?,O meu cabelo está te a incomodar?
 OSCAR_HURT_2,Are you sure you know what you’re doing?,Tens a certeza que sabes o que estas a fazer?
 ,,
 KATRIN_TALK_2,"Eww, that manowar almost got my hair!","Eww, aquela caravela quase tocou no meu cabelo!"
-KATRIN_HUG_2,,
-KATRIN_HONK_2,,
-KATRIN_HURT_2,,
+KATRIN_HUG_2,That felt tight. Your exercise routine is paying off.,Este abraço foi apertado. O teu horário de exercício deu resultado.
+KATRIN_HONK_2,"Simple touches are fine.
+But we promised to wait until 20 for things to be more serious.","Toques simples são aceitáveis.
+Mas prometemos para esperar até aos 20 para as coisas serem mais sérias."
+KATRIN_HURT_2,Why are you being so violent suddenly?,Porque é que de repente estás a ser tão violento?
+,,
+PETE_TALK_2,I don’t think i’ve ever seen a gong like that in our town.,Acho que nunca ví um gongo daquele tipo na nossa cidade.
+PETE_HUG_2,I don’t mind a hug but not now.,Não importo um abraço mas agora não.
+PETE_HURT_2,I don’t think a small knife will be enough.,Não acredito que uma faca pequena é suficiente.
+,,
+,,
+BONKA_TALK_4,You still haven’t found nothing?,Ainda não encontraram nada?
+BONKA_HUG_4,,
