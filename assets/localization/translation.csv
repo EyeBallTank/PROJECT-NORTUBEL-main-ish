@@ -245,9 +245,11 @@ BONKA_TALK_4,You still haven’t found nothing?,Ainda não encontraram nada?
 CARRIE_TALK_1,"We're lucky to find some coins here because not many will fit in our pockets.
 I wish there some lost bills as well.","Temos sorte por encontrar algumas moedas porque não podemos meter muitas nos nossos bolsos.
 Gostava de pelo menos encontrar algumas notas."
-CARRIE_HONK,"C'mon, don't joke around!
-We need to find an exit first.","Vá lá, para de brincar!
-Primeiro, temos que encontrar uma saída."
+CARRIE_HONK,"I should have dried my clothes a bit better.
+Listen, Kat, i know what you want but we need to hurry up.
+...maybe when we find another lake.","Eu devia secar as minhas ropas ainda mais.
+Ouve, Kat, eu sei o que queres mas temos que despachar.
+...talvez quando nós descobrimos um outro lago."
 CARRIE_HUG,"Katrin, is something wrong?
 It's okay. As long as we're together, we can figure something out.","Katrin, esta tudo bem?
 Não faz mal. Desde que estamos todos juntos, poderemos descobrir uma solução."
@@ -261,7 +263,9 @@ KATRIN_TALK_1,I wonder why those portals look like grids.,Gostava de saber porqu
 KATRIN_HUG,"Oh, thank you.
 I felt like i needed that.","Oh, obrigado.
 Senti que precisava disso."
-KATRIN_HONK,Uh... was it something in my shirt?,Uh... foi algo na minha camisa?
+KATRIN_HONK,"Uh... was it something in my shirt?
+Maybe in a better place and time, i wouldn't mind.","Uh... foi algo na minha camisa?
+Talvez num melhor sítio e tempo, não me importava."
 KATRIN_HURT,Be carefull with that knife.,Tem cuidado com essa faca.
 ,,
 PETE_TALK_1,Have you seen the train tracks? They're not on the floor for some reason.,Viram os carris de comboios? Não estão no chão por alguma razão.
@@ -292,3 +296,26 @@ BONKA_TALK_2,"These keys’ blades seem sharp, so i would advise not letting you
 BONKA_HONK_2,Why are you doing this? Nobody even told me about this.,Porque é que estas a fazer isto? Ninguém me ensinou nada disto.
 BONKA_HUG_2,"What, you like me or something?","O que é, gostas me mim?"
 BONKA_HURT_2,Are you threatening me?,Estás a ameaçar-me ou que?
+,,
+BONKA_TALK_3,Have you noticed the bits of water floating in the air?,Já repararam os pedaços de agua a flutuar no ar?
+BONKA_HONK_3,Is this a way to greet friends or what?,Isto é uma forma de cumprimentar amigos ou quê?
+BONKA_HUG_3,"What, wanna ditch those two girls or something?","O que é, queres abandonar aquelas duas raparigas?"
+BONKA_HURT3,How common is it for humans to be afraid of clowns?,É assim tão comum alguns humanos terem medo de palhaços?
+,,
+CARRIE_TALK_2,"I noticed this table was shaking a bit, better be carefull.","Reparei que esta mesa estava a tremer, por isso tem cuidado."
+CARRIE_HONK_2,"C'mon, don't joke around!
+We need to find an exit first.
+And be more gentle next time, i know you can do that.","Vá lá, para de brincar!
+Primeiro, temos que encontrar uma saída.
+E se mais gentil na próxima vez, eu sei que consegues."
+CARRIE_HUG_2,"Mel, i appreciate it but we need to find a safer place.","Mel, eu gostei disso mas temos que encontrar um sítio mais seguro."
+CARRIE_HURT_2,Where did you even get that knife in the first place?,De onde é que arranjaste essa faca no primeiro lugar?
+,,
+OSCAR_TALK_2,"You haven’t practiced soccer in a while, have you?","Não praticaste futebol em algum tempo, certo?"
+OSCAR_HUG_2,Is my hair getting in the way?,O meu cabelo está te a incomodar?
+OSCAR_HURT_2,Are you sure you know what you’re doing?,Tens a certeza que sabes o que estas a fazer?
+,,
+KATRIN_TALK_2,"Eww, that manowar almost got my hair!","Eww, aquela caravela quase tocou no meu cabelo!"
+KATRIN_HUG_2,,
+KATRIN_HONK_2,,
+KATRIN_HURT_2,,
