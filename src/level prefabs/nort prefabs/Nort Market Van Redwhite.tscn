@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/nort prefab sprites/nort market van redwhite.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/nort prefabs/Nort Market Van Redwhite.gd" type="Script" id=2]
@@ -24,55 +24,118 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 292, 37.5 )
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 57.5, 186 )
 
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 341, 54 )
 
-[sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 57.5, 186 )
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 292, 37.5 )
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 21.5, 146 )
+[sub_resource type="Curve2D" id=10]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 3298, 0 )
+}
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 19.5, 91.125 )
+[sub_resource type="Animation" id=11]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
-[node name="Nort Market Van Redwhite" type="KinematicBody2D"]
-collision_layer = 8192
-collision_mask = 7
+[sub_resource type="Animation" id=12]
+resource_name = "Vanpath"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 29, 147 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 17.5, 70.5 )
+
+[node name="Nort Market Van Redwhite" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 2, 0 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 2 )
 animation = "open"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 15, -202.5 )
-shape = SubResource( 7 )
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 346.5, -55 )
+shape = SubResource( 9 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 64, 185 )
 shape = SubResource( 8 )
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2( 346.5, -55 )
-shape = SubResource( 9 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 15, -202.5 )
+shape = SubResource( 7 )
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource( 10 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 2, 0 )
+rotate = false
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../KinematicBody2D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 11 )
+anims/Vanpath = SubResource( 12 )
 
 [node name="Enter" type="Area2D" parent="."]
 collision_layer = 8192
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enter"]
-position = Vector2( -268.5, -18 )
-shape = SubResource( 5 )
+position = Vector2( -269, -17 )
+shape = SubResource( 13 )
 
 [node name="Drive" type="Area2D" parent="."]
 collision_layer = 8192
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Drive"]
-position = Vector2( 267.5, 20.875 )
-shape = SubResource( 6 )
+position = Vector2( 272.5, 6.5 )
+shape = SubResource( 14 )
 
 [connection signal="body_entered" from="Enter" to="." method="_on_Enter_body_entered"]
 [connection signal="body_entered" from="Drive" to="." method="_on_Drive_body_entered"]

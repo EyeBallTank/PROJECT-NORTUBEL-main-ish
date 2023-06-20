@@ -4,7 +4,7 @@ extends KinematicBody2D
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 var honk = false
-
+#Note: The "honk" feature only works with characters that are canonically 18 or older.
 onready var audioplayer = $AudioStreamPlayer
 onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
