@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level_objects/WaterWheel.tscn" type="PackedScene" id=23]
 
 [node name="LevelTemplate4" type="Node2D"]
 light_mask = 4
@@ -106,3 +107,6 @@ position = Vector2( -1154.75, 1918.35 )
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 20 )]
 position = Vector2( -1346.76, 1918.07 )
+
+[node name="WaterWheel" parent="." instance=ExtResource( 23 )]
+position = Vector2( -448, 1600 )
