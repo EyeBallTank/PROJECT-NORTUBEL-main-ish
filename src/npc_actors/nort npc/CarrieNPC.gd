@@ -1,7 +1,7 @@
 extends KinematicBody2D
 #When not playable, protagonists can be NPC's
 #CARRIE AND KATRIN USE THE "still wip" SPRITE SHEET VERSION
-#MELVIN USES THE "older version" version
+#MELVIN USES THE "older version" version, which in Krita had 155 pixels and subdivision of 3 i think
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 var honk = false
