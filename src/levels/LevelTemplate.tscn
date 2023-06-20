@@ -179,4 +179,4 @@ position = Vector2( 9856, -832 )
 id = 1
 
 [node name="Nort Market Van Redwhite" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2056, 296 )
+position = Vector2( 1632, 296 )

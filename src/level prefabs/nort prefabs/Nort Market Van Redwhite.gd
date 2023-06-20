@@ -6,7 +6,6 @@ var velocity = Vector2.ZERO
 onready var sprite = $AnimatedSprite
 
 func _physics_process(delta):
-	velocity.x = 0
 	velocity.y += gravity * delta
 	move_and_slide(velocity, Vector2.UP)
 
@@ -17,3 +16,8 @@ func _ready():
 func _on_Enter_body_entered(body):
 	if body.name == "Player":
 		sprite.animation = "open"
+
+
+func _on_Drive_body_entered(body):
+	if body.name == "Player":
+		velocity = direction * 320
