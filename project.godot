@@ -207,6 +207,7 @@ interactcomp={
 2d_physics/layer_11="SOCCERBALL"
 2d_physics/layer_12="SOCCERGOAL"
 2d_physics/layer_13="FISHHOOK"
+2d_physics/layer_14="VEHICLES"
 
 [locale]
 
