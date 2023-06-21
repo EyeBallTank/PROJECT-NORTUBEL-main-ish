@@ -172,12 +172,12 @@ scale = Vector2( 64, 8 )
 collision_newsize = Vector2( 64, 8 )
 
 [node name="jump thru2" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285, 327 )
+position = Vector2( 1181, 327 )
 scale = Vector2( 16, 8 )
 collision_newsize = Vector2( 16, 8 )
 
 [node name="jump thru3" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285, 7 )
+position = Vector2( 1181, 7 )
 scale = Vector2( 16, 8 )
 collision_newsize = Vector2( 16, 8 )
 
