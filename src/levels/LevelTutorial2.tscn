@@ -35,6 +35,9 @@
 [node name="LevelTutorial2" type="Node2D"]
 light_mask = 4
 script = ExtResource( 11 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -83,11 +86,11 @@ customtext3 = "BONKA_HUG_2"
 customtext4 = "BONKA_HURT_2"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 10116, 24 )
+position = Vector2( 1279, 384 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 9866, 20 )
+position = Vector2( 1217, 384 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
