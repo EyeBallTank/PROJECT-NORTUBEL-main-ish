@@ -54,12 +54,13 @@ Done (Even if it could be better):
 * LEVEL HAZARDS: There is at least one: A Manowar that simply stays still underwater and harms the characters.
 * COMBAT: Player has a basic melee knife attack and the ability to kick a soccer ball that acts as a projectile with physics (And after a while it disappears; This ball also has a limit of uses).
 * SOCCER GOAL NET: If the soccer ball enters the net, the net disappears; It's a level object that could have special roles in level design.
-* VERY BASIC NPC: So far, it's just a character simply standing and when you're near her, a basic dialogue text box pops up.
+* VERY BASIC NPC: So far, it's just characters simply standing and when you're near them, a basic dialogue text box pops up; May or may not have some interactions.
 * BACKGROUND: Just a basic sky with clouds.
 * MULTIPLE LANGUAGES: Still early but it uses a CSV file (Had to set to UTF 8 but fixed the mixing characters now) and you can switch between English and Portuguese.
 * OFF-SCREEN COMPANION INDICATOR/WAYPOINT: When the Companion is off-screen, an Astrolabe shows up pointing at their direction; It looks a bit off so far but i tried my best (And with tricky methods too).
 * LIVE SYSTEM: Both characters share the lives meaning if one dies, so does the other; Besides the game-over screen, i also made it so collecting a certain amount of coins adds a new life.
 * CUTSCENES: So far it's a "studio intro" basic thing and a placeholder with dialogue but no images but technically got a template with lots of potential.
+* PASSWORD SYSTEM: In case i don't get a proper Save/Load system, this will do.
 
 
 
@@ -184,6 +185,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * GameEndeavor (Used tutorial video on Companion off-screen pointer)
 * FinePointCGI (Tutorial video about localization)
 * clecioespindolagamedev (Used tutorial video on how i could export my game)
+* GlitchedCode (Used tutorial video on Password system)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
