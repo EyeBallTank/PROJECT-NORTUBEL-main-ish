@@ -100,10 +100,17 @@ margin_bottom = 104.0
 custom_fonts/font = SubResource( 3 )
 text = "LOAD_B"
 
-[node name="QuitButton" type="Button" parent="MenuMain"]
+[node name="PasswordButton" type="Button" parent="MenuMain"]
 margin_top = 81.0
 margin_right = 296.0
 margin_bottom = 104.0
+custom_fonts/font = ExtResource( 4 )
+text = "PASSWORD_B"
+
+[node name="QuitButton" type="Button" parent="MenuMain"]
+margin_top = 108.0
+margin_right = 296.0
+margin_bottom = 131.0
 custom_fonts/font = SubResource( 4 )
 text = "QUIT_B"
 
@@ -255,11 +262,45 @@ margin_bottom = 416.0
 custom_fonts/font = SubResource( 9 )
 text = "MENU_B"
 
+[node name="PasswordMenu" type="Control" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 206.0
+margin_top = 201.0
+margin_right = 817.0
+margin_bottom = 477.0
+
+[node name="LineEdit" type="LineEdit" parent="PasswordMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -130.5
+margin_top = -12.0
+margin_right = 129.5
+margin_bottom = 12.0
+
+[node name="BackFromOptions3" type="Button" parent="PasswordMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -30.0
+margin_top = 98.0
+margin_right = 30.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 4 )
+text = "QUIT_B"
+
 [connection signal="pressed" from="MenuMain/UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="MenuMain/ExtraButton" to="." method="_on_ExtraButton_pressed"]
 [connection signal="pressed" from="MenuMain/SaveButton" to="." method="_on_SaveButton_pressed"]
 [connection signal="pressed" from="MenuMain/LoadButton" to="." method="_on_LoadButton_pressed"]
+[connection signal="pressed" from="MenuMain/PasswordButton" to="." method="_on_PasswordButton_pressed"]
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
@@ -269,3 +310,5 @@ text = "MENU_B"
 [connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]
 [connection signal="pressed" from="ExtraMenu/GalleryButton" to="." method="_on_GalleryButton_pressed"]
 [connection signal="pressed" from="ExtraMenu/BackFromOptions2" to="." method="_on_BackFromOptions2_pressed"]
+[connection signal="text_entered" from="PasswordMenu/LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="pressed" from="PasswordMenu/BackFromOptions3" to="." method="_on_BackFromOptions3_pressed"]

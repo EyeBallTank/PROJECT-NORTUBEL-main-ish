@@ -3,8 +3,10 @@ extends Control
 onready var pausemenu = $MenuMain
 onready var optionsmenu = $OptionsMenu
 onready var extra = $ExtraMenu
-
+onready var password = $PasswordMenu
 #onready var save_file = SaveFile.g_data
+
+var codes := ["tutor1", "tutor2", "tutor3"]
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -75,6 +77,22 @@ func _on_LoadButton_pressed():
 #	SaveFile.load_data()
 #	SceneManager.load_scene()
 
-
 func _on_GalleryButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")
+
+func _on_PasswordButton_pressed():
+	show_and_hide(password, pausemenu)
+
+func _on_BackFromOptions3_pressed():
+	show_and_hide(pausemenu, password)
+
+
+func _on_LineEdit_text_entered(keyword):
+	if !keyword in codes:
+		$PasswordMenu/LineEdit.clear()
+		return
+	$PasswordMenu/LineEdit.clear()
+	call(keyword)
+
+func tutor1():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTutorial1.tscn")
