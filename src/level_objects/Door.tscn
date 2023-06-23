@@ -40,34 +40,43 @@ patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 5
 
-[node name="CurrentPassword" type="Label" parent="CanvasLayer/NinePatchRect"]
-margin_left = 128.0
-margin_top = 52.0
-margin_right = 352.0
-margin_bottom = 72.0
-custom_fonts/font = ExtResource( 3 )
-text = "PASSWORD_T"
-
-[node name="ActualPassword" type="Label" parent="CanvasLayer/NinePatchRect"]
-margin_left = 128.0
-margin_top = 116.0
-margin_right = 352.0
-margin_bottom = 136.0
-custom_fonts/font = ExtResource( 3 )
-text = "000000"
-
-[node name="Button" type="Button" parent="CanvasLayer/NinePatchRect"]
+[node name="Control" type="Control" parent="CanvasLayer/NinePatchRect"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -96.0
-margin_top = 52.0
-margin_right = 96.0
-margin_bottom = 104.0
+margin_left = -256.0
+margin_top = -140.0
+margin_right = 256.0
+margin_bottom = 148.0
+
+[node name="CurrentPassword" type="Label" parent="CanvasLayer/NinePatchRect/Control"]
+margin_left = 128.0
+margin_top = 64.0
+margin_right = 352.0
+margin_bottom = 84.0
 custom_fonts/font = ExtResource( 3 )
-text = "NEXT_LEVEL_T"
+text = "PASSWORD_T"
+
+[node name="ActualPassword" type="Label" parent="CanvasLayer/NinePatchRect/Control"]
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 352.0
+margin_bottom = 148.0
+custom_fonts/font = ExtResource( 3 )
+text = "000000"
+
+[node name="Label" type="Label" parent="CanvasLayer/NinePatchRect/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -192.0
+margin_top = 48.0
+margin_right = 192.0
+margin_bottom = 112.0
+custom_fonts/font = ExtResource( 3 )
+text = "Press \"Space\" to continue"
 
 [connection signal="body_entered" from="." to="." method="_on_Door_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_Door_body_exited"]
-[connection signal="pressed" from="CanvasLayer/NinePatchRect/Button" to="." method="_on_Button_pressed"]
