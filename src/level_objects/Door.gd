@@ -5,8 +5,11 @@ export var new_scene = "res://src/levels/LevelTemplate2.tscn"
 var playertouch = false
 var comptouch = false
 
+onready var actualpassword = $CanvasLayer/NinePatchRect/ActualPassword
+export(String) var customtext = "000000"
+
 func _ready():
-	pass
+	actualpassword.text = str (customtext)
 
 func _physics_process(delta):
 	if playertouch == true and comptouch == true:
@@ -23,3 +26,7 @@ func _on_Door_body_exited(body):
 		playertouch = false
 	if body.name == "Companion":
 		comptouch = false
+
+
+func _on_Button_pressed():
+	pass # Replace with function body.

@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/door test.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Door.gd" type="Script" id=2]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 128, 208 )
@@ -20,5 +22,51 @@ texture = ExtResource( 1 )
 position = Vector2( 0, -208 )
 shape = SubResource( 1 )
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -256.0
+margin_top = -128.0
+margin_right = 256.0
+margin_bottom = 128.0
+texture = ExtResource( 4 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 5
+
+[node name="CurrentPassword" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 128.0
+margin_top = 52.0
+margin_right = 352.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "PASSWORD_T"
+
+[node name="ActualPassword" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 128.0
+margin_top = 116.0
+margin_right = 352.0
+margin_bottom = 136.0
+custom_fonts/font = ExtResource( 3 )
+text = "000000"
+
+[node name="Button" type="Button" parent="CanvasLayer/NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -96.0
+margin_top = 52.0
+margin_right = 96.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "NEXT_LEVEL_T"
+
 [connection signal="body_entered" from="." to="." method="_on_Door_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_Door_body_exited"]
+[connection signal="pressed" from="CanvasLayer/NinePatchRect/Button" to="." method="_on_Button_pressed"]
