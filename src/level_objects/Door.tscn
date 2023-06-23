@@ -23,6 +23,7 @@ position = Vector2( 0, -208 )
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 88
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
 anchor_left = 0.5

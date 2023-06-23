@@ -7,13 +7,15 @@ var comptouch = false
 
 onready var actualpassword = $CanvasLayer/NinePatchRect/ActualPassword
 export(String) var customtext = "000000"
+onready var dialoguebox = $CanvasLayer
 
 func _ready():
+	dialoguebox.visible = false
 	actualpassword.text = str (customtext)
 
 func _physics_process(delta):
 	if playertouch == true and comptouch == true:
-		SceneManager.change_scene("level_transition_effect", new_scene)
+		dialoguebox.visible = true
 
 func _on_Door_body_entered(body):
 	if body.name == "Player":
@@ -29,4 +31,4 @@ func _on_Door_body_exited(body):
 
 
 func _on_Button_pressed():
-	pass # Replace with function body.
+	SceneManager.change_scene("level_transition_effect", new_scene)
