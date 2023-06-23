@@ -57,6 +57,7 @@ position = Vector2( 915.424, 401.315 )
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2111.17, 577.033 )
 new_scene = "res://src/levels/LevelTemplate5.tscn"
+customtext = "osc4r0"
 
 [node name="Coin" parent="." instance=ExtResource( 22 )]
 position = Vector2( 2304, 576 )

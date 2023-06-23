@@ -7,7 +7,8 @@ onready var password = $PasswordMenu
 #onready var save_file = SaveFile.g_data
 
 var codes := ["tutor1", "tutor2", "tutor3",
-				"c4rr13", "k4tr1n", "m3lv1n",]
+				"c4rr13", "k4tr1n", "m3lv1n",
+				"osc4r0", "p33tt3", "ang3l4"]
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -112,3 +113,12 @@ func k4tr1n():
 
 func m3lv1n():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate3.tscn")
+
+func osc4r0():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate4.tscn")
+
+func p33tt3():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate5.tscn")
+
+func ang3l4():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate6.tscn")
