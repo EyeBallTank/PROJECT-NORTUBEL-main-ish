@@ -132,8 +132,8 @@ STORYSKIP_T,Q: Skip it,Q: Saltar
 OTHER_B,Other stuff,Outras coisas
 LIFECOUNT_T,Lives,Vidas
 GAMEOVER_T,YOU FAILED,  FALHOU
-,,
-,,
+SPACE_CONTINUE,Press “Space” to continue,Prime “Espaço” para continuar
+PASSWORD_B,Password,Senha
 BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
 BOOK_HINT_CONTROL_MOVE,"Left movement: Left arrow key/A and Right movement: Right arrow key/D
 Jumping/Climbing/Swimming upwards: Up arrow key/W
@@ -185,7 +185,7 @@ Ambas personagens partilham as mesmas vidas"
 BOOK_HINT_COMPPOINTER,The Astrolabe indicates the Companion's direction when they're off-screen,O astrolábio indica a direção do/(a) Companheiro(a) quando estiver fora do ecrã
 BOOK_HINT_GREENDOOR,Green doors need both characters,Portas verdes precisam de ambas as personagens
 BOOK_HINT_DROWN,"If either character runs out of oxygen, they die and lose a life","Se qualquer personagem fica sem oxigénio, ele(a) morre e perde uma vida"
-,,
+PASSWORD_REMEMBER,Remember the password:,Lembra-se da senha:
 INTRO_TALK_1,"Hello? 
 Where did everyone go?","Olá?
 Onde é que vocês estão?"

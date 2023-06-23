@@ -96,3 +96,9 @@ func _on_LineEdit_text_entered(keyword):
 
 func tutor1():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTutorial1.tscn")
+
+func tutor2():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTutorial2.tscn")
+
+func tutor3():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTutorial3.tscn")

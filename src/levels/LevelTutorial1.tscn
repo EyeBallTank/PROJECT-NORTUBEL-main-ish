@@ -54,6 +54,7 @@ tile_data = PoolIntArray( -1310498, 0, 0, -1244962, 0, 0, -1179631, 0, 0, -11794
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 14043, -384 )
 new_scene = "res://src/levels/LevelTutorial2.tscn"
+customtext = "tutor1"
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1542, 527 )

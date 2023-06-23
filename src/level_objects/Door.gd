@@ -18,6 +18,8 @@ func _physics_process(delta):
 		dialoguebox.visible = true
 		if Input.is_action_just_pressed("pressespace"):
 			SceneManager.change_scene("level_transition_effect", new_scene)
+	elif playertouch == false and comptouch == false:
+		dialoguebox.visible = false
 
 func _on_Door_body_entered(body):
 	if body.name == "Player":
