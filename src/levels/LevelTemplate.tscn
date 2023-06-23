@@ -48,6 +48,7 @@ tile_data = PoolIntArray( -1769389, 0, 0, -1769388, 0, 0, -1703853, 0, 0, -17038
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 11079, -448 )
+customtext = "c4rr13"
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1560, 552 )

@@ -56,6 +56,7 @@ tile_data = PoolIntArray( -2031651, 0, 0, -2031650, 0, 0, -2031649, 0, 0, -20316
 [node name="Door" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1088, 448 )
 new_scene = "res://src/levels/LevelTemplate3.tscn"
+customtext = "k4tr1n"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
 position = Vector2( 898, -128 )
