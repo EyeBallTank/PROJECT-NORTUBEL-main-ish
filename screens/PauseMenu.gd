@@ -6,6 +6,8 @@ onready var extra = $ExtraMenu
 onready var password = $PasswordMenu
 #onready var save_file = SaveFile.g_data
 
+#1ST LETTERS IN codes NAMES SHOULD BE LOWER CASE AND LETTERS, NOT NUMBERS
+#BECAUSE FUNC NAMES CANT START WITH NUMBERS
 var codes := ["tutor1", "tutor2", "tutor3",
 				"c4rr13", "k4tr1n", "m3lv1n",
 				"osc4r0", "p33tt3", "ang3l4"]

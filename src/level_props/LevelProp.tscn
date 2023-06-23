@@ -80,79 +80,79 @@ region = Rect2( 0, 0, 444, 398 )
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ SubResource( 15 ) ],
-"loop": true,
+"loop": false,
 "name": "brinkprop pink mushroom",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 21 ) ],
-"loop": true,
+"loop": false,
 "name": "grekprop pillartech computer",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 22 ) ],
-"loop": true,
+"loop": false,
 "name": "herrprop barrelwood weapons",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 19 ) ],
-"loop": true,
+"loop": false,
 "name": "hirdprop chip flower",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 20 ) ],
-"loop": true,
+"loop": false,
 "name": "krimbprop oldcar bulletglass",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 23 ) ],
-"loop": true,
+"loop": false,
 "name": "lahiprop walldestroyed flag",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 25 ) ],
-"loop": true,
+"loop": false,
 "name": "massprop phonebooth jazzposter",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 10 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop blue chimney",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 16 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop blue green chair stack",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 12 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop brown bench chair",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 27 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop green fence metal",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 13 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop palmtree",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 17 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop redyellow umbrella",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 14 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop wood oldcart",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 26 ) ],
-"loop": true,
+"loop": false,
 "name": "untoprop coffin skull chains",
-"speed": 5.0
+"speed": 0.0
 } ]
 
 [node name="LevelProp" type="Node2D"]
@@ -160,5 +160,5 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "nortprop green fence metal"
+animation = "nortprop blue chimney"
 playing = true
