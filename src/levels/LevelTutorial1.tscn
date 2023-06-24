@@ -37,8 +37,7 @@ script = ExtResource( 11 )
 background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2290, 435 )
-propname = "nortprop green fence metal"
+position = Vector2( 2378, 331 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
