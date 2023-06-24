@@ -310,4 +310,5 @@ text = "QUIT_B"
 [connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]
 [connection signal="pressed" from="ExtraMenu/GalleryButton" to="." method="_on_GalleryButton_pressed"]
 [connection signal="pressed" from="ExtraMenu/BackFromOptions2" to="." method="_on_BackFromOptions2_pressed"]
+[connection signal="text_entered" from="PasswordMenu/LineEdit" to="." method="_on_LineEdit_text_entered"]
 [connection signal="pressed" from="PasswordMenu/BackFromOptions3" to="." method="_on_BackFromOptions3_pressed"]
