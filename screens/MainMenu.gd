@@ -3,6 +3,7 @@ extends Control
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
 onready var extra = $ExtraMenu
+onready var password = $PasswordMenu
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -65,3 +66,11 @@ func _on_GalleryButton_pressed():
 
 func _on_ReadButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/ReadScreeen.tscn")
+
+
+func _on_PasswordButton_pressed():
+	show_and_hide(password, menu)
+
+
+func _on_BackFromOptions3_pressed():
+	show_and_hide(menu, password)
