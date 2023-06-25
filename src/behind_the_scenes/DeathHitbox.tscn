@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/behind_the_scenes/DeathHitbox.gd" type="Script" id=1]
+
+[node name="DeathHitbox" type="Area2D" groups=["death"]]
+collision_layer = 32
+collision_mask = 3
+monitoring = false
+script = ExtResource( 1 )

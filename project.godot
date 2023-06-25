@@ -20,6 +20,11 @@ _global_script_classes=[ {
 "path": "res://src/level_objects/ConveyorRight.gd"
 }, {
 "base": "Area2D",
+"class": "DeathHitbox",
+"language": "GDScript",
+"path": "res://src/behind_the_scenes/DeathHitbox.gd"
+}, {
+"base": "Area2D",
 "class": "EnemyHitbox",
 "language": "GDScript",
 "path": "res://src/behind_the_scenes/Enemy Hitbox.gd"
@@ -77,6 +82,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Companion": "",
 "ConveyorRight": "",
+"DeathHitbox": "",
 "EnemyHitbox": "",
 "IceFloor": "",
 "Ladder": "",
