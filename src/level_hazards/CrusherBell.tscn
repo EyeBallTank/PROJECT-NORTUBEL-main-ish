@@ -47,7 +47,7 @@ shape = SubResource( 5 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 volume_db = -3.736
-pitch_scale = 0.42
+pitch_scale = 0.25
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( 0, -1 )
