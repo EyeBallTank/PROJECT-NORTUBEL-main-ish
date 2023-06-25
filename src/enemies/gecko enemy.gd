@@ -6,6 +6,10 @@ var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
 var knockback_dir = 1
 onready var sprite: = $Sprite
+onready var animation: = $AnimationPlayer
+
+func _ready():
+	animation.play("RESET")
 
 func _physics_process(delta):
 	var found_wall = is_on_wall()
@@ -20,10 +24,13 @@ func _physics_process(delta):
 
 func _on_GeckoHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
-		queue_free()
+		animation.play("dying")
 	if area.name == "EnemyCrusher":
-		queue_free()
+		animation.play("dying")
 
 func _on_GeckoHurtbox_body_entered(body):
 	if body.name == "SoccerBall":
-		queue_free()
+		animation.play("dying")
+
+func die():
+	queue_free()
