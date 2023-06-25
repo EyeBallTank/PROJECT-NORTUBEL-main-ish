@@ -214,4 +214,4 @@ position = Vector2( 12320, -264 )
 position = Vector2( 10888, -16 )
 
 [node name="CrusherBell" parent="." instance=ExtResource( 32 )]
-position = Vector2( 2073, -12 )
+position = Vector2( 2097, 60 )
