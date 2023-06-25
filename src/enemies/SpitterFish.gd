@@ -5,7 +5,7 @@ var direction = Vector2.UP
 var velocity = Vector2.ZERO
 onready var sprite = $AnimatedSprite
 onready var timer = $Timer
-onready var mouth = $mouth
+onready var mouth = $Position2D
 
 var PROJECTILE_VELOCITY = 1000
 const Fireball = preload("res://src/enemies/FishProjectile.tscn")
