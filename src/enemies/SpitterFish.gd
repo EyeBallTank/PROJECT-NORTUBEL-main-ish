@@ -34,6 +34,6 @@ func _physics_process(delta):
 func attack():
 	var projectile = Fireball.instance()
 	projectile.global_position = mouth.global_position
-#	projectile.linear_velocity = direction * PROJECTILE_VELOCITY
+#	projectile.linear_velocity = Vector2(direction * PROJECTILE_VELOCITY, 0)
 	get_tree().get_root().add_child(projectile)
 	print("spit")
