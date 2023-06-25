@@ -817,6 +817,8 @@ func _on_Hurtbox_area_entered(area):
 		ouch = false
 	elif immortal == true:
 		pass
+	if area.name == "DeathHitbox":
+		health = 0
 
 func pushcheck():
 	for index in get_slide_count():

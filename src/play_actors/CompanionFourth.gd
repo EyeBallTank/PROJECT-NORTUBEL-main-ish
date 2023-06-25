@@ -1484,6 +1484,8 @@ func _on_CompanionHurtbox_area_entered(Area2D):
 		vel.y -= 500
 		yield(get_tree().create_timer(0.5), "timeout")
 		ouch = false
+	if Area2D.name == "DeathHitbox":
+		health = 0
 
 func is_invul():
 	immortal = true

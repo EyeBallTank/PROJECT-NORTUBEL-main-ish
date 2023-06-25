@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/557282__passllooll__bell.ogg-50380175123426559f47f300ed5cbb32.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level hazards/557282__passllooll__bell.ogg"
+dest_files=[ "res://.import/557282__passllooll__bell.ogg-50380175123426559f47f300ed5cbb32.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
