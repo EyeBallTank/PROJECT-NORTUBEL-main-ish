@@ -49,13 +49,11 @@ func attack():
 		projectile.global_position = mouth.global_position
 #		projectile.linear_velocity = Vector2(direction * PROJECTILE_VELOCITY, 0)
 		get_tree().get_root().add_child(projectile)
-		print("spit")
 	elif sprite.flip_h == true:
 		var projectileleft = FireballLeft.instance()
 		projectileleft.global_position = mouth.global_position
 #		projectileleft.linear_velocity = Vector2(direction * PROJECTILE_VELOCITY, 0)
 		get_tree().get_root().add_child(projectileleft)
-		print("spit")
 	sprite.animation = "openmouth"
 	spritetimer.start(0.5)
 

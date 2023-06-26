@@ -1,5 +1,8 @@
 extends KinematicBody2D
 
+#ONLY EXISTS OUT OF DESPERATION
+#BETTER USE SOME TUTORIALS FOR NEXT NEW ENEMIES LOL
+
 var velocity = Vector2.ZERO
 var direction = Vector2.RIGHT
 var speed = 25

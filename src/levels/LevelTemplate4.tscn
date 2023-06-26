@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -23,7 +23,6 @@
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/WaterWheel.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=24]
 
 [node name="LevelTemplate4" type="Node2D"]
 light_mask = 4
@@ -112,6 +111,3 @@ position = Vector2( -1346.76, 1918.07 )
 
 [node name="WaterWheel" parent="." instance=ExtResource( 23 )]
 position = Vector2( -448, 1600 )
-
-[node name="SpitterFish" parent="." instance=ExtResource( 24 )]
-position = Vector2( 256, 448 )
