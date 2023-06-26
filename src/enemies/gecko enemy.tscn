@@ -146,7 +146,6 @@ position = Vector2( 1, -221 )
 rotation = 3.14159
 frames = SubResource( 6 )
 animation = "Walking"
-frame = 1
 playing = true
 flip_v = true
 
