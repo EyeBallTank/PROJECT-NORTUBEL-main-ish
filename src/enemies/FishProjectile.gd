@@ -2,14 +2,17 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var direction = Vector2.RIGHT
-var speed = 30
+var speed = 25
+onready var animation = $AnimationPlayer
 
 func _ready():
-	pass
+	animation.play("RESET")
 
 func _physics_process(delta):
 	if is_on_wall():
-		pass
+		animation.play("dying")
 	velocity.x = speed * 10
 	move_and_slide(velocity, Vector2.UP)
 
+func die():
+	queue_free()
