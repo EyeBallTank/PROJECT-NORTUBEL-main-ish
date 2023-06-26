@@ -9,6 +9,7 @@ func _ready():
 	animation.play("RESET")
 
 func _physics_process(delta):
+	rotation_degrees += 7
 	if is_on_wall():
 		animation.play("dying")
 	velocity.x = speed * 10
