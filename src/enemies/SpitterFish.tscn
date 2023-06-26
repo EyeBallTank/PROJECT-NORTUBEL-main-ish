@@ -155,5 +155,9 @@ shape = SubResource( 5 )
 anims/RESET = SubResource( 6 )
 anims/dying = SubResource( 7 )
 
+[node name="SpriteTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
 [connection signal="area_entered" from="FishHurtbox" to="." method="_on_FishHurtbox_area_entered"]
 [connection signal="body_entered" from="FishHurtbox" to="." method="_on_FishHurtbox_body_entered"]

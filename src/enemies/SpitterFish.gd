@@ -5,6 +5,7 @@ var direction = Vector2.UP
 var velocity = Vector2.ZERO
 onready var sprite = $AnimatedSprite
 onready var timer = $Timer
+onready var spritetimer = $SpriteTimer
 onready var mouth = $Position2D
 onready var animation = $AnimationPlayer
 
@@ -37,6 +38,9 @@ func _physics_process(delta):
 			timer.start(1.5)
 		elif canattack == false:
 			pass
+	if spritetimer.time_left == 0:
+		sprite.animation = "closedmouth"
+
 
 func attack():
 	var projectile = Fireball.instance()
@@ -44,6 +48,8 @@ func attack():
 #	projectile.linear_velocity = Vector2(direction * PROJECTILE_VELOCITY, 0)
 	get_tree().get_root().add_child(projectile)
 	print("spit")
+	sprite.animation = "openmouth"
+	spritetimer.start(0.5)
 
 func die():
 	queue_free()
