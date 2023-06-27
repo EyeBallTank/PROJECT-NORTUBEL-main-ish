@@ -17,3 +17,8 @@ func _physics_process(delta):
 
 func die():
 	queue_free()
+
+
+func _on_TouchPlayer_body_entered(body):
+	if body.is_in_group("protagonists"):
+		animation.play("dying")
