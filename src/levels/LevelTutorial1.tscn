@@ -37,7 +37,7 @@ script = ExtResource( 11 )
 background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2418, 395 )
+position = Vector2( 2402, 387 )
 propname = "nortprop palmtree"
 
 [node name="TileMap" type="TileMap" parent="."]
