@@ -165,6 +165,8 @@ anims/RESET = SubResource( 5 )
 anims/dying = SubResource( 6 )
 
 [node name="TouchPlayer" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TouchPlayer"]
 shape = SubResource( 7 )
