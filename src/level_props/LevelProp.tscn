@@ -140,9 +140,9 @@ animations = [ {
 "speed": 0.0
 }, {
 "frames": [ SubResource( 28 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop computer table green chairs",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 27 ) ],
 "loop": false,
@@ -160,9 +160,9 @@ animations = [ {
 "speed": 0.0
 }, {
 "frames": [ SubResource( 29 ) ],
-"loop": true,
+"loop": false,
 "name": "nortprop restaurant table green chairs",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 14 ) ],
 "loop": false,
