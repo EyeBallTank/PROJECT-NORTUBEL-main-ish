@@ -152,3 +152,12 @@ tile_data = PoolIntArray( 3, 3, 0, 327675, 0, 0, 327676, 0, 0, 327677, 0, 0, 327
 [node name="Player" parent="." instance=ExtResource( 5 )]
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
+
+[node name="testy" type="TileMap" parent="."]
+modulate = Color( 1, 1, 1, 0.203922 )
+z_index = 20
+tile_set = SubResource( 4 )
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 3, 3, 0, 196607, 0, 0, 131072, 0, 0, 262143, 0, 0, 196608, 0, 0, 327675, 0, 0, 327676, 0, 0, 327677, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 2, 0, 262149, 2, 0, 262150, 2, 0, 262151, 2, 0, 262152, 2, 0, 262153, 2, 0, 262154, 2, 0, 262155, 2, 0, 262156, 2, 0, 262157, 2, 0 )
