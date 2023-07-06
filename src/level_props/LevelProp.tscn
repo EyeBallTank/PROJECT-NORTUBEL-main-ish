@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -42,6 +42,9 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 5.png" type="Texture" id=40]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop white triangle holes.png" type="Texture" id=41]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop window 4.png" type="Texture" id=42]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop door 2.png" type="Texture" id=43]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pink rock structure.png" type="Texture" id=44]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bluegray rock structure.png" type="Texture" id=45]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -91,6 +94,10 @@ region = Rect2( 0, 0, 138, 208 )
 atlas = ExtResource( 33 )
 region = Rect2( 0, 0, 225, 277 )
 
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 45 )
+region = Rect2( 0, 0, 289, 281 )
+
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 348, 200 )
@@ -106,6 +113,10 @@ region = Rect2( 0, 0, 190, 293 )
 [sub_resource type="AtlasTexture" id=37]
 atlas = ExtResource( 26 )
 region = Rect2( 0, 0, 213, 429 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 0, 163, 337 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 17 )
@@ -134,6 +145,10 @@ region = Rect2( 0, 0, 239, 421 )
 [sub_resource type="AtlasTexture" id=38]
 atlas = ExtResource( 27 )
 region = Rect2( 0, 0, 410, 694 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 44 )
+region = Rect2( 0, 0, 289, 281 )
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 5 )
@@ -269,6 +284,11 @@ animations = [ {
 "name": "nortprop blue symbol green leaves",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 56 ) ],
+"loop": false,
+"name": "nortprop bluegray rock structure",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "nortprop brown bench chair",
@@ -287,6 +307,11 @@ animations = [ {
 "frames": [ SubResource( 37 ) ],
 "loop": false,
 "name": "nortprop door 1",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 54 ) ],
+"loop": false,
+"name": "nortprop door 2",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 27 ) ],
@@ -322,6 +347,11 @@ animations = [ {
 "frames": [ SubResource( 38 ) ],
 "loop": false,
 "name": "nortprop pillars arc",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 55 ) ],
+"loop": false,
+"name": "nortprop pink rock structure",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 17 ) ],
@@ -421,5 +451,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop window 4"
+animation = "nortprop bluegray rock structure"
 playing = true
