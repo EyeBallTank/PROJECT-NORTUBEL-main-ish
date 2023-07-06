@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=2]
+[gd_scene load_steps=95 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -45,6 +45,8 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop door 2.png" type="Texture" id=43]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pink rock structure.png" type="Texture" id=44]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bluegray rock structure.png" type="Texture" id=45]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stall 1.png" type="Texture" id=46]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stall 2.png" type="Texture" id=47]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -185,6 +187,14 @@ region = Rect2( 0, 0, 231, 301 )
 [sub_resource type="AtlasTexture" id=51]
 atlas = ExtResource( 40 )
 region = Rect2( 0, 0, 442, 300 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 46 )
+region = Rect2( 0, 0, 450, 429 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 47 )
+region = Rect2( 0, 0, 472, 519 )
 
 [sub_resource type="AtlasTexture" id=40]
 atlas = ExtResource( 29 )
@@ -399,6 +409,16 @@ animations = [ {
 "name": "nortprop small house 5",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 57 ) ],
+"loop": false,
+"name": "nortprop stall 1",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 58 ) ],
+"loop": false,
+"name": "nortprop stall 2",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 40 ) ],
 "loop": false,
 "name": "nortprop weird carpet",
@@ -451,5 +471,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop bluegray rock structure"
+animation = "nortprop stall 2"
 playing = true
