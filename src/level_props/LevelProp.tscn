@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -31,10 +31,15 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop weird carpet.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop curtin carpet.png" type="Texture" id=30]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop window 2.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop window stone table.png" type="Texture" id=32]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
 region = Rect2( 0, 0, 84, 429 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 0, 115, 300 )
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 3 )
@@ -157,6 +162,11 @@ animations = [ {
 "frames": [ SubResource( 32 ) ],
 "loop": false,
 "name": "HEIGHT CHAR PROP TEST",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 43 ) ],
+"loop": false,
+"name": "New Anim",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 15 ) ],
@@ -310,5 +320,5 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "nortprop window 2"
+animation = "New Anim"
 playing = true
