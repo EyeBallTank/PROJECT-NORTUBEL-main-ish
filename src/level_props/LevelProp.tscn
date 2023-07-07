@@ -1,4 +1,4 @@
-[gd_scene load_steps=147 format=2]
+[gd_scene load_steps=149 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -73,6 +73,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 7.png" type="Texture" id=71]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop toboggan front.png" type="Texture" id=72]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood boat.png" type="Texture" id=73]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pedal boat.png" type="Texture" id=74]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -209,6 +210,10 @@ region = Rect2( 0, 0, 137, 80 )
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 239, 421 )
+
+[sub_resource type="AtlasTexture" id=85]
+atlas = ExtResource( 74 )
+region = Rect2( 0, 0, 921, 255 )
 
 [sub_resource type="AtlasTexture" id=38]
 atlas = ExtResource( 27 )
@@ -534,6 +539,11 @@ animations = [ {
 "name": "nortprop palmtree",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 85 ) ],
+"loop": false,
+"name": "nortprop pedal boat",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 38 ) ],
 "loop": false,
 "name": "nortprop pillars arc",
@@ -731,5 +741,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop wood boat"
+animation = "nortprop pedal boat"
 playing = true
