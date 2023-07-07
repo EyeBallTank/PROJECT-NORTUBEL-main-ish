@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=2]
+[gd_scene load_steps=145 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -71,6 +71,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big lemon.png" type="Texture" id=69]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 6.png" type="Texture" id=70]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 7.png" type="Texture" id=71]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop toboggan front.png" type="Texture" id=72]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -311,6 +312,10 @@ region = Rect2( 0, 0, 472, 519 )
 [sub_resource type="AtlasTexture" id=74]
 atlas = ExtResource( 63 )
 region = Rect2( 0, 0, 105, 179 )
+
+[sub_resource type="AtlasTexture" id=83]
+atlas = ExtResource( 72 )
+region = Rect2( 0, 0, 371, 259 )
 
 [sub_resource type="AtlasTexture" id=40]
 atlas = ExtResource( 29 )
@@ -654,6 +659,11 @@ animations = [ {
 "name": "nortprop sugar cane",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 83 ) ],
+"loop": false,
+"name": "nortprop toboggan front",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 40 ) ],
 "loop": false,
 "name": "nortprop weird carpet",
@@ -711,5 +721,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop small house 7"
+animation = "nortprop toboggan front"
 playing = true
