@@ -1,4 +1,4 @@
-[gd_scene load_steps=149 format=2]
+[gd_scene load_steps=151 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -74,6 +74,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop toboggan front.png" type="Texture" id=72]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood boat.png" type="Texture" id=73]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pedal boat.png" type="Texture" id=74]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop duck statue.png" type="Texture" id=75]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -166,6 +167,10 @@ region = Rect2( 0, 0, 434, 286 )
 [sub_resource type="AtlasTexture" id=73]
 atlas = ExtResource( 62 )
 region = Rect2( 0, 0, 204, 338 )
+
+[sub_resource type="AtlasTexture" id=86]
+atlas = ExtResource( 75 )
+region = Rect2( 0, 0, 329, 239 )
 
 [sub_resource type="AtlasTexture" id=60]
 atlas = ExtResource( 49 )
@@ -484,6 +489,11 @@ animations = [ {
 "name": "nortprop door 4",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 86 ) ],
+"loop": false,
+"name": "nortprop duck statue",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 60 ) ],
 "loop": false,
 "name": "nortprop garage door cave",
@@ -741,5 +751,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop pedal boat"
+animation = "nortprop duck statue"
 playing = true
