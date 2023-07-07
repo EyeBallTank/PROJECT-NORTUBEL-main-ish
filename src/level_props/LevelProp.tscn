@@ -1,4 +1,4 @@
-[gd_scene load_steps=151 format=2]
+[gd_scene load_steps=153 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -75,6 +75,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood boat.png" type="Texture" id=73]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pedal boat.png" type="Texture" id=74]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop duck statue.png" type="Texture" id=75]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop large twisted lamp.png" type="Texture" id=76]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -191,6 +192,10 @@ region = Rect2( 0, 0, 904, 799 )
 [sub_resource type="AtlasTexture" id=45]
 atlas = ExtResource( 34 )
 region = Rect2( 0, 0, 956, 822 )
+
+[sub_resource type="AtlasTexture" id=87]
+atlas = ExtResource( 76 )
+region = Rect2( 0, 0, 292, 314 )
 
 [sub_resource type="AtlasTexture" id=31]
 atlas = ExtResource( 20 )
@@ -519,6 +524,11 @@ animations = [ {
 "name": "nortprop house 2",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 87 ) ],
+"loop": false,
+"name": "nortprop large twisted lamp",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 31 ) ],
 "loop": false,
 "name": "nortprop largegreen streetlamp",
@@ -751,5 +761,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop duck statue"
+animation = "nortprop large twisted lamp"
 playing = true
