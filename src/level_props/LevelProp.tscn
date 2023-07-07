@@ -1,4 +1,4 @@
-[gd_scene load_steps=163 format=2]
+[gd_scene load_steps=165 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -81,6 +81,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue cabinet 1.png" type="Texture" id=79]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue cabinet 2.png" type="Texture" id=80]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stylish lamp.png" type="Texture" id=81]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop old sink.png" type="Texture" id=82]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -233,6 +234,10 @@ region = Rect2( 0, 0, 90, 104 )
 [sub_resource type="AtlasTexture" id=66]
 atlas = ExtResource( 55 )
 region = Rect2( 0, 0, 137, 80 )
+
+[sub_resource type="AtlasTexture" id=93]
+atlas = ExtResource( 82 )
+region = Rect2( 0, 0, 151, 176 )
 
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 7 )
@@ -594,6 +599,11 @@ animations = [ {
 "name": "nortprop metal fish",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 93 ) ],
+"loop": false,
+"name": "nortprop old sink",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 13 ) ],
 "loop": false,
 "name": "nortprop palmtree",
@@ -811,5 +821,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop stylish lamp"
+animation = "nortprop old sink"
 playing = true
