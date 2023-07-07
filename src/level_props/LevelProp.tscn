@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=2]
+[gd_scene load_steps=147 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -72,6 +72,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 6.png" type="Texture" id=70]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 7.png" type="Texture" id=71]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop toboggan front.png" type="Texture" id=72]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood boat.png" type="Texture" id=73]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -348,6 +349,10 @@ region = Rect2( 0, 0, 192, 128 )
 [sub_resource type="AtlasTexture" id=44]
 atlas = ExtResource( 32 )
 region = Rect2( 0, 0, 115, 300 )
+
+[sub_resource type="AtlasTexture" id=84]
+atlas = ExtResource( 73 )
+region = Rect2( 0, 0, 751, 320 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 4 )
@@ -704,6 +709,11 @@ animations = [ {
 "name": "nortprop window stone table",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 84 ) ],
+"loop": false,
+"name": "nortprop wood boat",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 14 ) ],
 "loop": false,
 "name": "nortprop wood oldcart",
@@ -721,5 +731,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop toboggan front"
+animation = "nortprop wood boat"
 playing = true
