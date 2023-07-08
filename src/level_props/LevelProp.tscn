@@ -1,4 +1,4 @@
-[gd_scene load_steps=173 format=2]
+[gd_scene load_steps=181 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -86,6 +86,10 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop chair 1.png" type="Texture" id=84]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood stand.png" type="Texture" id=85]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop gold decoration 1.png" type="Texture" id=86]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop black chest.png" type="Texture" id=87]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small fountain.png" type="Texture" id=88]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bench pillow.png" type="Texture" id=89]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stool 1.png" type="Texture" id=90]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -127,6 +131,10 @@ region = Rect2( 0, 0, 1182, 1309 )
 atlas = ExtResource( 50 )
 region = Rect2( 0, 0, 198, 316 )
 
+[sub_resource type="AtlasTexture" id=100]
+atlas = ExtResource( 89 )
+region = Rect2( 0, 0, 341, 182 )
+
 [sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 64 )
 region = Rect2( 0, 0, 331, 256 )
@@ -134,6 +142,10 @@ region = Rect2( 0, 0, 331, 256 )
 [sub_resource type="AtlasTexture" id=80]
 atlas = ExtResource( 69 )
 region = Rect2( 0, 0, 297, 145 )
+
+[sub_resource type="AtlasTexture" id=98]
+atlas = ExtResource( 87 )
+region = Rect2( 0, 0, 189, 104 )
 
 [sub_resource type="AtlasTexture" id=89]
 atlas = ExtResource( 78 )
@@ -319,6 +331,10 @@ region = Rect2( 0, 0, 75, 55 )
 atlas = ExtResource( 66 )
 region = Rect2( 0, 0, 83, 104 )
 
+[sub_resource type="AtlasTexture" id=99]
+atlas = ExtResource( 88 )
+region = Rect2( 0, 0, 102, 155 )
+
 [sub_resource type="AtlasTexture" id=78]
 atlas = ExtResource( 67 )
 region = Rect2( 0, 0, 98, 272 )
@@ -362,6 +378,10 @@ region = Rect2( 0, 0, 450, 429 )
 [sub_resource type="AtlasTexture" id=58]
 atlas = ExtResource( 47 )
 region = Rect2( 0, 0, 472, 519 )
+
+[sub_resource type="AtlasTexture" id=101]
+atlas = ExtResource( 90 )
+region = Rect2( 0, 0, 120, 96 )
 
 [sub_resource type="AtlasTexture" id=92]
 atlas = ExtResource( 81 )
@@ -479,6 +499,11 @@ animations = [ {
 "name": "nortprop beads entrance",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 100 ) ],
+"loop": false,
+"name": "nortprop bench pillow",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 75 ) ],
 "loop": false,
 "name": "nortprop big fountain",
@@ -487,6 +512,11 @@ animations = [ {
 "frames": [ SubResource( 80 ) ],
 "loop": false,
 "name": "nortprop big lemon",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 98 ) ],
+"loop": false,
+"name": "nortprop black chest",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 89 ) ],
@@ -719,6 +749,11 @@ animations = [ {
 "name": "nortprop small building 8",
 "speed": 8.0
 }, {
+"frames": [ SubResource( 99 ) ],
+"loop": false,
+"name": "nortprop small fountain",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 78 ) ],
 "loop": false,
 "name": "nortprop small green tree",
@@ -772,6 +807,11 @@ animations = [ {
 "frames": [ SubResource( 58 ) ],
 "loop": false,
 "name": "nortprop stall 2",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 101 ) ],
+"loop": false,
+"name": "nortprop stool 1",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 92 ) ],
@@ -861,5 +901,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop gold decoration 1"
+animation = "nortprop stool 1"
 playing = true
