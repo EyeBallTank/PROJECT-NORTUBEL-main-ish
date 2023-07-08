@@ -1,4 +1,4 @@
-[gd_scene load_steps=167 format=2]
+[gd_scene load_steps=171 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -83,6 +83,8 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stylish lamp.png" type="Texture" id=81]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop old sink.png" type="Texture" id=82]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop lighthouse.png" type="Texture" id=83]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop chair 1.png" type="Texture" id=84]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood stand.png" type="Texture" id=85]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -163,6 +165,10 @@ region = Rect2( 0, 0, 289, 281 )
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 348, 200 )
+
+[sub_resource type="AtlasTexture" id=95]
+atlas = ExtResource( 84 )
+region = Rect2( 0, 0, 102, 91 )
 
 [sub_resource type="AtlasTexture" id=28]
 atlas = ExtResource( 9 )
@@ -408,6 +414,10 @@ region = Rect2( 0, 0, 904, 212 )
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 346, 232 )
 
+[sub_resource type="AtlasTexture" id=96]
+atlas = ExtResource( 85 )
+region = Rect2( 0, 0, 95, 227 )
+
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 15 )
 region = Rect2( 0, 0, 444, 398 )
@@ -512,6 +522,11 @@ animations = [ {
 "frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "nortprop brown bench chair",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 95 ) ],
+"loop": false,
+"name": "nortprop chair 1",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 28 ) ],
@@ -819,6 +834,11 @@ animations = [ {
 "name": "nortprop wood oldcart",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 96 ) ],
+"loop": false,
+"name": "nortprop wood stand",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 26 ) ],
 "loop": false,
 "name": "untoprop coffin skull chains",
@@ -831,5 +851,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop lighthouse"
+animation = "nortprop wood stand"
 playing = true
