@@ -1,4 +1,4 @@
-[gd_scene load_steps=171 format=2]
+[gd_scene load_steps=173 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -85,6 +85,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop lighthouse.png" type="Texture" id=83]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop chair 1.png" type="Texture" id=84]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood stand.png" type="Texture" id=85]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop gold decoration 1.png" type="Texture" id=86]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -201,6 +202,10 @@ region = Rect2( 0, 0, 329, 239 )
 [sub_resource type="AtlasTexture" id=60]
 atlas = ExtResource( 49 )
 region = Rect2( 0, 0, 623, 650 )
+
+[sub_resource type="AtlasTexture" id=97]
+atlas = ExtResource( 86 )
+region = Rect2( 0, 0, 230, 260 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 17 )
@@ -569,6 +574,11 @@ animations = [ {
 "name": "nortprop garage door cave",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 97 ) ],
+"loop": false,
+"name": "nortprop gold decoration 1",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 27 ) ],
 "loop": false,
 "name": "nortprop green fence metal",
@@ -851,5 +861,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop wood stand"
+animation = "nortprop gold decoration 1"
 playing = true
