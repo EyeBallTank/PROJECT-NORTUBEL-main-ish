@@ -1,4 +1,4 @@
-[gd_scene load_steps=187 format=2]
+[gd_scene load_steps=189 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -93,6 +93,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small house 8.png" type="Texture" id=91]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop old bath tub.png" type="Texture" id=92]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop wood stand 2.png" type="Texture" id=93]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop weird basket.png" type="Texture" id=94]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -405,6 +406,10 @@ region = Rect2( 0, 0, 105, 179 )
 [sub_resource type="AtlasTexture" id=83]
 atlas = ExtResource( 72 )
 region = Rect2( 0, 0, 371, 259 )
+
+[sub_resource type="AtlasTexture" id=105]
+atlas = ExtResource( 94 )
+region = Rect2( 0, 0, 113, 145 )
 
 [sub_resource type="AtlasTexture" id=40]
 atlas = ExtResource( 29 )
@@ -854,6 +859,11 @@ animations = [ {
 "name": "nortprop toboggan front",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 105 ) ],
+"loop": false,
+"name": "nortprop weird basket",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 40 ) ],
 "loop": false,
 "name": "nortprop weird carpet",
@@ -931,5 +941,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop wood stand 2"
+animation = "nortprop weird basket"
 playing = true
