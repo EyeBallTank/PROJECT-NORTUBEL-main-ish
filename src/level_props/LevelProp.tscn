@@ -1,4 +1,4 @@
-[gd_scene load_steps=201 format=2]
+[gd_scene load_steps=203 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -100,6 +100,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bench tree log.png" type="Texture" id=98]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bookshelf rock.png" type="Texture" id=99]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop plates holder.png" type="Texture" id=100]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pillar vases rockface.png" type="Texture" id=101]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -304,6 +305,10 @@ region = Rect2( 0, 0, 239, 421 )
 [sub_resource type="AtlasTexture" id=85]
 atlas = ExtResource( 74 )
 region = Rect2( 0, 0, 921, 255 )
+
+[sub_resource type="AtlasTexture" id=112]
+atlas = ExtResource( 101 )
+region = Rect2( 0, 0, 439, 323 )
 
 [sub_resource type="AtlasTexture" id=38]
 atlas = ExtResource( 27 )
@@ -754,6 +759,11 @@ animations = [ {
 "name": "nortprop pedal boat",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 112 ) ],
+"loop": false,
+"name": "nortprop pillar vases rockface",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 38 ) ],
 "loop": false,
 "name": "nortprop pillars arc",
@@ -1001,5 +1011,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop plates holder"
+animation = "nortprop pillar vases rockface"
 playing = true
