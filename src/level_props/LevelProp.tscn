@@ -1,4 +1,4 @@
-[gd_scene load_steps=195 format=2]
+[gd_scene load_steps=197 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -97,6 +97,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop turtle statue.png" type="Texture" id=95]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop door 5.png" type="Texture" id=96]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop giant donkey mask.png" type="Texture" id=97]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bench tree log.png" type="Texture" id=98]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -141,6 +142,10 @@ region = Rect2( 0, 0, 198, 316 )
 [sub_resource type="AtlasTexture" id=100]
 atlas = ExtResource( 89 )
 region = Rect2( 0, 0, 341, 182 )
+
+[sub_resource type="AtlasTexture" id=109]
+atlas = ExtResource( 98 )
+region = Rect2( 0, 0, 488, 323 )
 
 [sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 64 )
@@ -537,6 +542,11 @@ animations = [ {
 "frames": [ SubResource( 100 ) ],
 "loop": false,
 "name": "nortprop bench pillow",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 109 ) ],
+"loop": false,
+"name": "nortprop bench tree log",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 75 ) ],
@@ -971,5 +981,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop giant donkey mask"
+animation = "nortprop bench tree log"
 playing = true
