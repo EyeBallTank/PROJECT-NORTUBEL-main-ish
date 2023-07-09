@@ -1,4 +1,4 @@
-[gd_scene load_steps=199 format=2]
+[gd_scene load_steps=201 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -99,6 +99,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop giant donkey mask.png" type="Texture" id=97]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bench tree log.png" type="Texture" id=98]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bookshelf rock.png" type="Texture" id=99]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop plates holder.png" type="Texture" id=100]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -311,6 +312,10 @@ region = Rect2( 0, 0, 410, 694 )
 [sub_resource type="AtlasTexture" id=55]
 atlas = ExtResource( 44 )
 region = Rect2( 0, 0, 289, 281 )
+
+[sub_resource type="AtlasTexture" id=111]
+atlas = ExtResource( 100 )
+region = Rect2( 0, 0, 321, 74 )
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 5 )
@@ -759,6 +764,11 @@ animations = [ {
 "name": "nortprop pink rock structure",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 111 ) ],
+"loop": false,
+"name": "nortprop plates holder",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 17 ) ],
 "loop": false,
 "name": "nortprop redyellow umbrella",
@@ -991,5 +1001,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop bookshelf rock"
+animation = "nortprop plates holder"
 playing = true
