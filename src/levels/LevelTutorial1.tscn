@@ -36,8 +36,22 @@ script = ExtResource( 11 )
 [node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 24 )]
 background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+
+[node name="LevelProp" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
+position = Vector2( 1591, 19 )
+propname = "nortprop small house 1"
+
+[node name="LevelProp2" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
+position = Vector2( 2146, -21 )
+propname = "nortprop small house 2"
+
+[node name="LevelProp3" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
+position = Vector2( 2757, 2 )
+
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1772, 474 )
+position = Vector2( 2062, 282 )
 propname = "nortprop hanging clothes wire"
 
 [node name="TileMap" type="TileMap" parent="."]
