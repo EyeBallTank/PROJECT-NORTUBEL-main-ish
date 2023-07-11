@@ -1021,5 +1021,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop hanging clothes wire"
+animation = "nortprop blue chimney"
 playing = true

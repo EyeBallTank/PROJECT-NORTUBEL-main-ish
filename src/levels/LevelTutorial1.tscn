@@ -38,6 +38,7 @@ background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.8, 0.8 )
+motion_mirroring = Vector2( 4096, 2400 )
 
 [node name="LevelProp" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
 position = Vector2( 1591, 19 )
