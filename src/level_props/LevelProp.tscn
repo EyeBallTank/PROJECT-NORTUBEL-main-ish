@@ -1,4 +1,4 @@
-[gd_scene load_steps=209 format=2]
+[gd_scene load_steps=211 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -104,6 +104,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop hanging clothes wire.png" type="Texture" id=102]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small floating grass plat.png" type="Texture" id=103]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small floating sand plat.png" type="Texture" id=104]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop aqueduct.png" type="Texture" id=105]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -140,6 +141,10 @@ region = Rect2( 0, 0, 252, 426 )
 [sub_resource type="AtlasTexture" id=34]
 atlas = ExtResource( 23 )
 region = Rect2( 0, 0, 1182, 1309 )
+
+[sub_resource type="AtlasTexture" id=116]
+atlas = ExtResource( 105 )
+region = Rect2( 0, 0, 2139, 668 )
 
 [sub_resource type="AtlasTexture" id=61]
 atlas = ExtResource( 50 )
@@ -562,6 +567,11 @@ animations = [ {
 "frames": [ SubResource( 34 ) ],
 "loop": false,
 "name": "nortprop ancient temple pillar tree",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 116 ) ],
+"loop": false,
+"name": "nortprop aqueduct",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 61 ) ],
@@ -1041,5 +1051,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop small floating sand plat"
+animation = "nortprop aqueduct"
 playing = true
