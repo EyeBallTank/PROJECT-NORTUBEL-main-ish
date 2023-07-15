@@ -53,8 +53,8 @@ position = Vector2( 2146, -21 )
 propname = "nortprop small house 2"
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2062, 282 )
-propname = "nortprop weird doorway"
+position = Vector2( 2285, 426 )
+propname = "nortprop green metal door"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
