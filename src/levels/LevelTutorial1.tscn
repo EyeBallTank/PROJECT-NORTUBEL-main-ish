@@ -54,7 +54,7 @@ propname = "nortprop small house 2"
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2285, 426 )
-propname = "nortprop rocks wall foliage"
+propname = "nortprop stairs streetlights"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
