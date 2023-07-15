@@ -40,20 +40,21 @@ background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 motion_scale = Vector2( 0.8, 0.8 )
 motion_mirroring = Vector2( 4096, 2400 )
 
+[node name="LevelProp3" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
+position = Vector2( 2047, 127 )
+propname = "nortprop small floating grass plat"
+
 [node name="LevelProp" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
-position = Vector2( 1591, 19 )
+position = Vector2( 1939, -18 )
 propname = "nortprop small house 1"
 
 [node name="LevelProp2" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
 position = Vector2( 2146, -21 )
 propname = "nortprop small house 2"
 
-[node name="LevelProp3" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
-position = Vector2( 2757, 2 )
-
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2062, 282 )
-propname = "nortprop hanging clothes wire"
+propname = "nortprop small floating sand plat"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

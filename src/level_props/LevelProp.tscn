@@ -1,4 +1,4 @@
-[gd_scene load_steps=205 format=2]
+[gd_scene load_steps=209 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -102,6 +102,8 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop plates holder.png" type="Texture" id=100]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop pillar vases rockface.png" type="Texture" id=101]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop hanging clothes wire.png" type="Texture" id=102]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small floating grass plat.png" type="Texture" id=103]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small floating sand plat.png" type="Texture" id=104]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -374,6 +376,14 @@ region = Rect2( 0, 0, 75, 55 )
 [sub_resource type="AtlasTexture" id=77]
 atlas = ExtResource( 66 )
 region = Rect2( 0, 0, 83, 104 )
+
+[sub_resource type="AtlasTexture" id=114]
+atlas = ExtResource( 103 )
+region = Rect2( 0, 0, 647, 146 )
+
+[sub_resource type="AtlasTexture" id=115]
+atlas = ExtResource( 104 )
+region = Rect2( 0, 0, 671, 346 )
 
 [sub_resource type="AtlasTexture" id=99]
 atlas = ExtResource( 88 )
@@ -849,6 +859,16 @@ animations = [ {
 "name": "nortprop small building 8",
 "speed": 8.0
 }, {
+"frames": [ SubResource( 114 ) ],
+"loop": false,
+"name": "nortprop small floating grass plat",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 115 ) ],
+"loop": false,
+"name": "nortprop small floating sand plat",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 99 ) ],
 "loop": false,
 "name": "nortprop small fountain",
@@ -1021,5 +1041,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "nortprop small floating sand plat"
 playing = true
