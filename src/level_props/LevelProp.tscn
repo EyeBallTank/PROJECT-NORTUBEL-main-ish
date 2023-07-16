@@ -1,4 +1,4 @@
-[gd_scene load_steps=219 format=2]
+[gd_scene load_steps=221 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -109,6 +109,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop green metal door.png" type="Texture" id=107]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop rocks wall foliage.png" type="Texture" id=108]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stairs streetlights.png" type="Texture" id=109]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop sideways house part.png" type="Texture" id=110]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -361,6 +362,10 @@ region = Rect2( 0, 0, 1337, 494 )
 [sub_resource type="AtlasTexture" id=30]
 atlas = ExtResource( 19 )
 region = Rect2( 0, 0, 187, 168 )
+
+[sub_resource type="AtlasTexture" id=121]
+atlas = ExtResource( 110 )
+region = Rect2( 0, 0, 156, 697 )
 
 [sub_resource type="AtlasTexture" id=67]
 atlas = ExtResource( 56 )
@@ -859,6 +864,11 @@ animations = [ {
 "name": "nortprop school table chairs",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 121 ) ],
+"loop": false,
+"name": "nortprop sideways house part",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 67 ) ],
 "loop": false,
 "name": "nortprop small building 1",
@@ -1091,5 +1101,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop stairs streetlights"
+animation = "nortprop sideways house part"
 playing = true
