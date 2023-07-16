@@ -1,4 +1,4 @@
-[gd_scene load_steps=229 format=2]
+[gd_scene load_steps=231 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -114,6 +114,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop green roof.png" type="Texture" id=112]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bathroom public.png" type="Texture" id=113]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop balcony 1.png" type="Texture" id=114]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop balcony 2.png" type="Texture" id=115]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -158,6 +159,10 @@ region = Rect2( 0, 0, 2139, 668 )
 [sub_resource type="AtlasTexture" id=125]
 atlas = ExtResource( 114 )
 region = Rect2( 0, 0, 458, 574 )
+
+[sub_resource type="AtlasTexture" id=126]
+atlas = ExtResource( 115 )
+region = Rect2( 0, 0, 669, 436 )
 
 [sub_resource type="AtlasTexture" id=124]
 atlas = ExtResource( 113 )
@@ -622,6 +627,11 @@ animations = [ {
 "frames": [ SubResource( 125 ) ],
 "loop": false,
 "name": "nortprop balcony 1",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 126 ) ],
+"loop": false,
+"name": "nortprop balcony 2",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 124 ) ],
@@ -1141,5 +1151,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop balcony 1"
+animation = "nortprop balcony 2"
 playing = true
