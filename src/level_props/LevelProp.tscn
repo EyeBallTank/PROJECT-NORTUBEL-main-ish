@@ -1,4 +1,4 @@
-[gd_scene load_steps=223 format=2]
+[gd_scene load_steps=225 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -111,6 +111,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stairs streetlights.png" type="Texture" id=109]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop sideways house part.png" type="Texture" id=110]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop stall 3.png" type="Texture" id=111]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop green roof.png" type="Texture" id=112]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -271,6 +272,10 @@ region = Rect2( 0, 0, 212, 313 )
 [sub_resource type="AtlasTexture" id=35]
 atlas = ExtResource( 24 )
 region = Rect2( 0, 0, 117, 223 )
+
+[sub_resource type="AtlasTexture" id=123]
+atlas = ExtResource( 112 )
+region = Rect2( 0, 0, 572, 586 )
 
 [sub_resource type="AtlasTexture" id=113]
 atlas = ExtResource( 102 )
@@ -754,6 +759,11 @@ animations = [ {
 "name": "nortprop green pillar floating chain",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 123 ) ],
+"loop": false,
+"name": "nortprop green roof",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 113 ) ],
 "loop": false,
 "name": "nortprop hanging clothes wire",
@@ -1111,5 +1121,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop stall 3"
+animation = "nortprop green roof"
 playing = true
