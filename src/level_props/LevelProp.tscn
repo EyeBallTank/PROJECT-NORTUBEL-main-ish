@@ -1,4 +1,4 @@
-[gd_scene load_steps=231 format=2]
+[gd_scene load_steps=233 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -115,6 +115,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bathroom public.png" type="Texture" id=113]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop balcony 1.png" type="Texture" id=114]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop balcony 2.png" type="Texture" id=115]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop globe.png" type="Texture" id=116]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -271,6 +272,10 @@ region = Rect2( 0, 0, 623, 650 )
 [sub_resource type="AtlasTexture" id=108]
 atlas = ExtResource( 97 )
 region = Rect2( 0, 0, 607, 555 )
+
+[sub_resource type="AtlasTexture" id=127]
+atlas = ExtResource( 116 )
+region = Rect2( 0, 0, 219, 265 )
 
 [sub_resource type="AtlasTexture" id=97]
 atlas = ExtResource( 86 )
@@ -769,6 +774,11 @@ animations = [ {
 "name": "nortprop giant donkey mask",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 127 ) ],
+"loop": false,
+"name": "nortprop globe",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 97 ) ],
 "loop": false,
 "name": "nortprop gold decoration 1",
@@ -1151,5 +1161,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop balcony 2"
+animation = "nortprop globe"
 playing = true
