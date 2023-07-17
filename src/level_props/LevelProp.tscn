@@ -1,4 +1,4 @@
-[gd_scene load_steps=239 format=2]
+[gd_scene load_steps=241 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -119,6 +119,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop painted rock.png" type="Texture" id=117]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop small nortubel banner.png" type="Texture" id=118]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop flag nortubel.png" type="Texture" id=119]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop floating house.png" type="Texture" id=120]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -271,6 +272,10 @@ region = Rect2( 0, 0, 329, 239 )
 [sub_resource type="AtlasTexture" id=130]
 atlas = ExtResource( 119 )
 region = Rect2( 0, 0, 285, 189 )
+
+[sub_resource type="AtlasTexture" id=131]
+atlas = ExtResource( 120 )
+region = Rect2( 0, 0, 1165, 1196 )
 
 [sub_resource type="AtlasTexture" id=60]
 atlas = ExtResource( 49 )
@@ -784,6 +789,11 @@ animations = [ {
 "name": "nortprop flag nortubel",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 131 ) ],
+"loop": false,
+"name": "nortprop floating house",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 60 ) ],
 "loop": false,
 "name": "nortprop garage door cave",
@@ -1191,5 +1201,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop flag nortubel"
+animation = "nortprop floating house"
 playing = true

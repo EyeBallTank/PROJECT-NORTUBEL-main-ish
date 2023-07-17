@@ -90,6 +90,9 @@ Not yet:
 * VEHICLES: Maybe doesn't have to happen; It'd be a gimmicky, simple thing but i thought of things like Madeira's Toboggan couch/basket/sled hybrids, Paddle boats or even on-rail handcars; I see it as something mechanically simple that it could work for a minigame.
 
 I may end up changing this goal list as well.
+Meanwhile, here's some plans for the main story of the game:
+https://rentry.co/nortubel-story-plans
+SPOILERS, i guess.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
 * I tried implementing a Save/Load system but it doesn't work; If you're interested in helping me, you may want to know more about my game's structure and the way i did things since Save/Load stuff is still alien to me.
