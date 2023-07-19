@@ -1,4 +1,4 @@
-[gd_scene load_steps=249 format=2]
+[gd_scene load_steps=251 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -124,6 +124,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop floating house small group.png" type="Texture" id=122]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big croissant.png" type="Texture" id=123]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big berlin ball.png" type="Texture" id=124]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big cream pastel.png" type="Texture" id=125]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -196,6 +197,10 @@ region = Rect2( 0, 0, 488, 323 )
 [sub_resource type="AtlasTexture" id=135]
 atlas = ExtResource( 124 )
 region = Rect2( 0, 0, 171, 151 )
+
+[sub_resource type="AtlasTexture" id=136]
+atlas = ExtResource( 125 )
+region = Rect2( 0, 0, 185, 139 )
 
 [sub_resource type="AtlasTexture" id=134]
 atlas = ExtResource( 123 )
@@ -707,6 +712,11 @@ animations = [ {
 "frames": [ SubResource( 135 ) ],
 "loop": false,
 "name": "nortprop big berlin ball",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 136 ) ],
+"loop": false,
+"name": "nortprop big cream pastel",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 134 ) ],
@@ -1241,5 +1251,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop big berlin ball"
+animation = "nortprop big cream pastel"
 playing = true
