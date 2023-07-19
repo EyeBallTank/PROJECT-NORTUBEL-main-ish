@@ -1,4 +1,4 @@
-[gd_scene load_steps=253 format=2]
+[gd_scene load_steps=255 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -126,6 +126,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big berlin ball.png" type="Texture" id=124]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big cream pastel.png" type="Texture" id=125]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big carob pod.png" type="Texture" id=126]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop nodi logo.png" type="Texture" id=127]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -378,6 +379,10 @@ region = Rect2( 0, 0, 90, 104 )
 [sub_resource type="AtlasTexture" id=66]
 atlas = ExtResource( 55 )
 region = Rect2( 0, 0, 137, 80 )
+
+[sub_resource type="AtlasTexture" id=138]
+atlas = ExtResource( 127 )
+region = Rect2( 0, 0, 261, 261 )
 
 [sub_resource type="AtlasTexture" id=103]
 atlas = ExtResource( 92 )
@@ -944,6 +949,11 @@ animations = [ {
 "name": "nortprop metal fish",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 138 ) ],
+"loop": false,
+"name": "nortprop nodi logo",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 103 ) ],
 "loop": false,
 "name": "nortprop old bath tub",
@@ -1261,5 +1271,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop big carob pod"
+animation = "nortprop nodi logo"
 playing = true
