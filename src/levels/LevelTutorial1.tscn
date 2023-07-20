@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/Level tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=12]
@@ -40,23 +39,8 @@ background = "res://assets/sprites/level_backgrounds/level bg test 3.png"
 motion_scale = Vector2( 0.8, 0.8 )
 motion_mirroring = Vector2( 4096, 2400 )
 
-[node name="LevelProp3" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
-position = Vector2( 2047, 127 )
-propname = "nortprop small floating grass plat"
-
-[node name="LevelProp" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
-position = Vector2( 1939, -18 )
-propname = "nortprop small house 1"
-
-[node name="LevelProp2" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource( 9 )]
-position = Vector2( 2146, -21 )
-propname = "nortprop small house 2"
-
-[node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2240, 191 )
-propname = "nortprop nodi logo"
-
 [node name="TileMap" type="TileMap" parent="."]
+modulate = Color( 1, 1, 1, 0.435294 )
 tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
