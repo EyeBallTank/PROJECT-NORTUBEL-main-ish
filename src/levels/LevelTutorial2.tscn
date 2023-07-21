@@ -94,6 +94,11 @@ position = Vector2( 6847, 719 )
 scale = Vector2( 0.72, 0.72 )
 propname = "nortprop weird basket"
 
+[node name="LevelProp9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 11406, -585 )
+scale = Vector2( 0.72, 0.72 )
+propname = "nortprop basket flowers"
+
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
