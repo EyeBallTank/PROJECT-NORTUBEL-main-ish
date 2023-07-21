@@ -10,10 +10,6 @@
 
 [node name="TestLevel" type="Node2D"]
 
-[node name="LevelProp" parent="." instance=ExtResource( 7 )]
-position = Vector2( 120, -40 )
-propname = "nortprop garage door simple"
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
 collision_layer = 4
@@ -30,3 +26,7 @@ tile_data = PoolIntArray( -196604, 30, 0, -131071, 91, 0, -131070, 95, 0, -13106
 [node name="Player" parent="." instance=ExtResource( 5 )]
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
+
+[node name="LevelProp" parent="." instance=ExtResource( 7 )]
+position = Vector2( 152, 72 )
+propname = "nortprop bidet"

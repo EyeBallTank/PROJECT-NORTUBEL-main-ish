@@ -1,4 +1,4 @@
-[gd_scene load_steps=257 format=2]
+[gd_scene load_steps=259 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -128,6 +128,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop big carob pod.png" type="Texture" id=126]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop nodi logo.png" type="Texture" id=127]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop garage door simple.png" type="Texture" id=128]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bidet.png" type="Texture" id=129]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -196,6 +197,10 @@ region = Rect2( 0, 0, 341, 182 )
 [sub_resource type="AtlasTexture" id=109]
 atlas = ExtResource( 98 )
 region = Rect2( 0, 0, 488, 323 )
+
+[sub_resource type="AtlasTexture" id=140]
+atlas = ExtResource( 129 )
+region = Rect2( 0, 0, 131, 128 )
 
 [sub_resource type="AtlasTexture" id=135]
 atlas = ExtResource( 124 )
@@ -722,6 +727,11 @@ animations = [ {
 "frames": [ SubResource( 109 ) ],
 "loop": false,
 "name": "nortprop bench tree log",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 140 ) ],
+"loop": false,
+"name": "nortprop bidet",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 135 ) ],
@@ -1281,5 +1291,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop garage door simple"
+animation = "nortprop bidet"
 playing = true
