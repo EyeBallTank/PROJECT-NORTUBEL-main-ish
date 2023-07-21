@@ -78,6 +78,11 @@ scale = Vector2( 0.72, 0.72 )
 propname = "nortprop largegreen streetlamp"
 flipstate_v = true
 
+[node name="LevelProp6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8035, 594 )
+scale = Vector2( 0.72, 0.72 )
+propname = "nortprop painted rock"
+
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
