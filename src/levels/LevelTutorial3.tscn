@@ -70,6 +70,17 @@ position = Vector2( 8838, 2623 )
 scale = Vector2( 0.72, 0.72 )
 propname = "nortprop nodi logo"
 
+[node name="LevelProp5" parent="." instance=ExtResource( 34 )]
+position = Vector2( 10327, 1511 )
+scale = Vector2( 0.72, 0.72 )
+propname = "nortprop plates holder"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 34 )]
+position = Vector2( 13238, 578 )
+scale = Vector2( 0.72, 0.72 )
+propname = "nortprop brown bench chair"
+flipstate_v = true
+
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
