@@ -49,6 +49,12 @@ position = Vector2( 13372, -876 )
 scale = Vector2( 0.72, 0.72 )
 propname = "nortprop curtin carpet"
 
+[node name="LevelProp8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 5699, -306 )
+scale = Vector2( 0.72, 0.72 )
+propname = "nortprop green pillar floating chain"
+flipstate_v = true
+
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 32 )
 collision_layer = 4
@@ -82,6 +88,11 @@ flipstate_v = true
 position = Vector2( 8035, 594 )
 scale = Vector2( 0.72, 0.72 )
 propname = "nortprop painted rock"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 6847, 719 )
+scale = Vector2( 0.72, 0.72 )
+propname = "nortprop weird basket"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
