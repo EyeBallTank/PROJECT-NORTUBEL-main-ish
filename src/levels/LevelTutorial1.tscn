@@ -50,6 +50,22 @@ tile_set = ExtResource( 9 )
 format = 1
 tile_data = PoolIntArray( -2228209, 155, 0, -2228187, 155, 0 )
 
+[node name="LevelProp6" parent="." instance=ExtResource( 25 )]
+position = Vector2( 3666, -1993 )
+propname = "nortprop small green tree"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 25 )]
+position = Vector2( 3832, -1993 )
+propname = "nortprop small green tree"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 25 )]
+position = Vector2( 4111, -1976 )
+propname = "nortprop rocks wall foliage"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 25 )]
+position = Vector2( 10045, -1378 )
+propname = "nortprop stairs streetlights"
+
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 9 )
 collision_layer = 4
@@ -64,6 +80,14 @@ propname = "nortprop stylish lamp"
 [node name="LevelProp3" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1701, -1820 )
 propname = "nortprop bookshelf rock"
+
+[node name="LevelProp4" parent="." instance=ExtResource( 25 )]
+position = Vector2( 4716, -1684 )
+propname = "nortprop bench pillow"
+
+[node name="LevelProp5" parent="." instance=ExtResource( 25 )]
+position = Vector2( 4961, 461 )
+propname = "nortprop black chest"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
