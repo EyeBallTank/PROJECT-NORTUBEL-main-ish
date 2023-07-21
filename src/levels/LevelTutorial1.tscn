@@ -61,6 +61,10 @@ tile_data = PoolIntArray( -2555887, 67, 0, -2555886, 67, 0, -2555885, 67, 0, -25
 position = Vector2( 6797, -364 )
 propname = "nortprop stylish lamp"
 
+[node name="LevelProp3" parent="." instance=ExtResource( 25 )]
+position = Vector2( 1701, -1820 )
+propname = "nortprop bookshelf rock"
+
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 7 )]
