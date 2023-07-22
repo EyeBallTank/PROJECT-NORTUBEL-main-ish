@@ -1,5 +1,4 @@
 extends ParallaxLayer
-tool
 
 export var background = "res://assets/sprites/level_backgrounds/level bg test 2.png"
 onready var spritenode = $Sprite
