@@ -8,19 +8,28 @@ var knockback_dir = 1
 onready var sprite: = $Sprite
 onready var animation: = $AnimationPlayer
 
+enum {
+	ALIVE,
+	DEAD
+}
+
+var state = ALIVE
+
 func _ready():
 	animation.play("RESET")
 
 func _physics_process(delta):
-	var found_wall = is_on_wall()
-	if found_wall:
-		direction *= -1
-		sprite.flip_h = direction.x > 0
-		#using flip V instead of H because of the angle of the placeholder sprite
-		#if i give the Gecko proper sprites, this will change
-	velocity = direction * 290
-	velocity.y += gravity * delta
-	move_and_slide(velocity, Vector2.UP)
+	match state:
+		ALIVE:
+			var found_wall = is_on_wall()
+			if found_wall:
+				direction *= -1
+				sprite.flip_h = direction.x > 0
+				#using flip V instead of H because of the angle of the placeholder sprite
+				#if i give the Gecko proper sprites, this will change
+			velocity = direction * 290
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
 
 func _on_GeckoHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
