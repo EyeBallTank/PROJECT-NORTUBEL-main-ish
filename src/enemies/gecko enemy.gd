@@ -21,6 +21,7 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		ALIVE:
+			sprite.play("ALIVE")
 			var found_wall = is_on_wall()
 			if found_wall:
 				direction *= -1
@@ -30,16 +31,21 @@ func _physics_process(delta):
 			velocity = direction * 290
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
+		DEAD:
+			animation.play("dying")
+			sprite.play("DEAD")
+			velocity = 0
 
 func _on_GeckoHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
-		animation.play("dying")
+		state = DEAD
 	if area.name == "EnemyCrusher":
-		animation.play("dying")
+		state = DEAD
 
 func _on_GeckoHurtbox_body_entered(body):
 	if body.name == "SoccerBall":
-		animation.play("dying")
+		state = DEAD
 
+# animation.play("dying")
 func die():
 	queue_free()
