@@ -7,7 +7,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=8]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -31,5 +31,5 @@ tile_data = PoolIntArray( -196596, 0, 0, -196595, 0, 0, -196594, 0, 0, -131061, 
 [node name="Gecko enemy" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1224, 192 )
 
-[node name="SoccerBallBag" parent="." instance=ExtResource( 8 )]
-position = Vector2( 752, -320 )
+[node name="Pushable" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1360, -272 )
