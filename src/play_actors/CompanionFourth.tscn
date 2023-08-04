@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.gd" type="Script" id=2]
 [ext_resource path="res://src/menusandui/healthbarCompanion.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/sprites/play_actor_sprites/OscarSprites.tres" type="SpriteFrames" id=4]
+[ext_resource path="res://assets/sprites/play_actor_sprites/PeteSprites.tres" type="SpriteFrames" id=4]
 [ext_resource path="res://src/menusandui/CompPointer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/menusandui/oxygenbarCompanion.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=7]
@@ -101,6 +101,7 @@ z_index = 13
 collision_layer = 2
 collision_mask = 8972
 script = ExtResource( 2 )
+companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CompPointer" parent="." instance=ExtResource( 5 )]
 
@@ -108,8 +109,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -133 )
 scale = Vector2( 0.64, 0.64 )
 frames = ExtResource( 4 )
-animation = "Idle"
-frame = 1
+animation = "Swimdown"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -135,6 +135,7 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
