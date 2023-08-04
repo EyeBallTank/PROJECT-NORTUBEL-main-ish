@@ -51,6 +51,9 @@ var portal_id = 0
 var ouch = false
 var immortal = false
 
+var amihugging = false
+var amihonking = false
+
 var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 700
 var PUSH_SPEED = 150
@@ -365,7 +368,21 @@ func _physics_process(delta):
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
-				animatedsprite.animation = "Idle"
+				if amihonking == true:
+					animatedsprite.animation = "Honk"
+				elif amihugging == true:
+					animatedsprite.animation = "Hug"
+				else:
+					animatedsprite.animation = "Idle"
+
+			if Input.is_action_pressed("kickball") and Input.is_action_pressed("standstill"):
+				amihonking = true
+			else:
+				amihonking = false
+			if Input.is_action_pressed("followme"):
+				amihugging = true
+			else:
+				amihugging = false
 
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
@@ -526,14 +543,14 @@ func _physics_process(delta):
 			elif Input.get_action_strength("jumpup") and not Input.is_action_pressed("kickball"):
 				velocity.y = -PUSH_SPEED
 #				velocity.x = 0
-				animatedsprite.animation = "Swimming"
+				animatedsprite.animation = "Swimup"
 			elif Input.get_action_strength("jumpup") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
 				velocity.y = 0
 			elif Input.get_action_strength("down") and not Input.is_action_pressed("kickball"):
 				velocity.y = PUSH_SPEED
 #				velocity.x = 0
-				animatedsprite.animation = "Swimming"
+				animatedsprite.animation = "Swimdown"
 			elif Input.get_action_strength("down") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
 				velocity.y = 0
@@ -646,7 +663,10 @@ func _physics_process(delta):
 			state = MAINSTATE
 
 		DEATH:
-			animatedsprite.animation = "Dead"
+			if is_on_water():
+				animatedsprite.animation = "Drown"
+			elif not is_on_water():
+				animatedsprite.animation = "Dead"
 			velocity.x = 0
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)

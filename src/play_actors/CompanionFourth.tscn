@@ -105,10 +105,11 @@ script = ExtResource( 2 )
 [node name="CompPointer" parent="." instance=ExtResource( 5 )]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -148 )
+position = Vector2( 0, -133 )
 scale = Vector2( 0.64, 0.64 )
 frames = ExtResource( 4 )
 animation = "Idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

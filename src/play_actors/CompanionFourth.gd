@@ -1296,7 +1296,10 @@ func _physics_process(delta):
 					state = STANDSTILL
 
 		DEATH:
-			animatedsprite.animation = "Dead"
+			if is_on_water():
+				animatedsprite.animation = "Drown"
+			elif not is_on_water():
+				animatedsprite.animation = "Dead"
 			vel.x = 0
 			vel.y += gravity * delta
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
