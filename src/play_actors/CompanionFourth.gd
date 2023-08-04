@@ -443,9 +443,9 @@ func _physics_process(delta):
 					pushdetector.position = Vector2(-52, 0)
 			else:
 				if direction.y == -1:
-					animatedsprite.animation = "Swimming"
+					animatedsprite.animation = "Swimup"
 				elif direction.y == 1:
-					animatedsprite.animation = "Swimming"
+					animatedsprite.animation = "Swimdown"
 				else:
 					animatedsprite.animation = "Swimming"
 
