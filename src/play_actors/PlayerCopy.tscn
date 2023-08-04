@@ -147,6 +147,7 @@ rect_scale = Vector2( 0.432724, 1.6407 )
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
 frames = SubResource( 38 )
+frame = 1
 playing = true
 
 [node name="SpeechBalloon" parent="." instance=ExtResource( 5 )]
