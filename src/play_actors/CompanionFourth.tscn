@@ -109,7 +109,8 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 position = Vector2( 0, -133 )
 scale = Vector2( 0.64, 0.64 )
 frames = ExtResource( 4 )
-animation = "Swimdown"
+animation = "Idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -135,7 +136,6 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
-frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
