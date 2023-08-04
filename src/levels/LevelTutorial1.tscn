@@ -136,9 +136,11 @@ position = Vector2( 1280, 384 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1284, 381 )
+playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1216, 384 )
+companionskin = "res://assets/sprites/play_actor_sprites/OscarSprites.tres"
 
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1216, 384 )
