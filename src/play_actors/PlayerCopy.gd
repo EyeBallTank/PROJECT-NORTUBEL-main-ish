@@ -104,11 +104,13 @@ func _physics_process(delta):
 		state = DEATH
 		Signals.lives -= 1
 		Signals.emit_signal("life_lost")
+		Signals.emit_signal("player_died")
 	oxygenbar.value = oxygen
 	if oxygen <= 0 and state != DEATH:
 		state = DEATH
 		Signals.lives -= 1
 		Signals.emit_signal("life_lost")
+		Signals.emit_signal("player_died")
 	if Signals.lives == 0 and state != DEATH:
 		SceneManager.change_scene("level_transition_effect", "res://screens/GameOver.tscn")
 

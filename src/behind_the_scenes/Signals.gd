@@ -27,7 +27,7 @@ var max_lives = 5
 
 signal you_are_invincible
 
-#signal player_died
+signal player_died
 #signal companion_died
 #signal hit_checkpoint(checkpoint_position)
 

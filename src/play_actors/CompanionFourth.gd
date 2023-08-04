@@ -75,6 +75,7 @@ var was_on_floor = true
 
 func _ready():
 	Signals.connect("you_are_invincible", self, "_i_am_invincible")
+	Signals.connect("player_died", self, "_on_Player_Died")
 	immortal = false
 	oxygenbar.hide()
 	$FloaterActive.hide()
@@ -86,6 +87,36 @@ func _ready():
 
 func _i_am_invincible():
 	is_invul()
+
+func _on_Player_Died():
+	if state == FOLLOWME:
+		state = STANDSTILL
+	if state == RUNAWAY:
+		state = STANDSTILL
+	if state == CRAWLFOLLOW:
+		state = CRAWLIDLE
+	if state == CRAWLRUN:
+		state = CRAWLIDLE
+	if state == CLIMBMOVE:
+		state = CLIMBIDLE
+	if state == CLIMBRUN:
+		state = CLIMBIDLE
+	if state == PUSHFOLLOW:
+		state = STANDSTILL
+	if state == PUSHRUN:
+		state = STANDSTILL
+	if state == SLOWRUN:
+		state = STANDSTILL
+	if state == SLOWFOLLOW:
+		state = STANDSTILL
+	if state == ICERUN:
+		state = ICEIDLE
+	if state == ICEFOLLOW:
+		state = ICEIDLE
+	if state == SWIMRUN:
+		state = SWIMIDLE
+	if state == SWIMMING:
+		state = SWIMIDLE
 
 func _physics_process(delta):
 	healthBar.value = health
