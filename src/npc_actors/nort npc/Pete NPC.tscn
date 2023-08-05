@@ -1,20 +1,28 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://assets/sprites/play_actor_sprites/NORT PLAYER SPRITE CONCEPT older version.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/NORT CAST NPC.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=3]
 [ext_resource path="res://src/npc_actors/nort npc/Oscar NPC.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 2790, 465, 465 )
+region = Rect2( 0, 1260, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 420, 1260, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 840, 1260, 420, 420 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 5 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 1.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -29,8 +37,10 @@ collision_mask = 4
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -11, 14 )
 scale = Vector2( 0.64, 0.64 )
 frames = SubResource( 2 )
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -7.5, 58.5 )
