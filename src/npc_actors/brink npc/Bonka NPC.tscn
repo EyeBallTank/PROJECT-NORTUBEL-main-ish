@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://assets/sprites/npc_actor_sprites/BONKA SPRITES NPC.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/BONKA SPRITES NPC.png" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.gd" type="Script" id=2]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
@@ -65,7 +65,7 @@ script = ExtResource( 2 )
 position = Vector2( 2, -150 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 3 )
-animation = "Idle"
+animation = "Knife"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

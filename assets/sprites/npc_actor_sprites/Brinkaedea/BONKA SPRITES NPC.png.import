@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BONKA SPRITES NPC.png-b53a0368972db61a988e51bab56f9d81.stex"
+path="res://.import/BONKA SPRITES NPC.png-f5569d230364b35bd7bd581f5134a6a5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/BONKA SPRITES NPC.png"
-dest_files=[ "res://.import/BONKA SPRITES NPC.png-b53a0368972db61a988e51bab56f9d81.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/Brinkaedea/BONKA SPRITES NPC.png"
+dest_files=[ "res://.import/BONKA SPRITES NPC.png-f5569d230364b35bd7bd581f5134a6a5.stex" ]
 
 [params]
 
