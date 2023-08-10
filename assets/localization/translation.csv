@@ -191,7 +191,7 @@ PASSWORD_REMEMBER,Remember the password:,Lembra-se da senha:
 INTRO_TALK_1,"Hello? 
 Where did everyone go?","Olá?
 Onde é que vocês estão?"
-INTRO_TALK_2,"Carrie, i'm scared.","Carrie, tenho medo."
+INTRO_TALK_2,"Carrie, I'm scared.","Carrie, tenho medo."
 INTRO_TALK_3,"Everyone, over here!","Pessoal, por aqui."
 INTRO_TALK_4,"Hold on!
 I'm coming!","Esperem!
@@ -218,12 +218,12 @@ And what's your name?","É a capital de Nortubel.
 De onde é que tu vens?
 E qual é o teu nome?"
 INTRO_TALK_12,"My name's Bonka.
-My homeworld's called Brinkaedea and i don't recall how i got here.","O meu nome é Bonka.
+My homeworld's called Brinkaedea and I don't recall how I got here.","O meu nome é Bonka.
 O meu mundo chama-se Brinkaedea e eu não me lembro de como cheguei aqui."
 INTRO_TALK_13,"And what's with the makeup?
 Were you attending a circus?","E para que serve a maquilhagem?
 Trabalhaste para um circo?"
-INTRO_TALK_14,"This ain't no makeup and i don't work at a circus.
+INTRO_TALK_14,"This ain't no makeup and I don't work at a circus.
 Are you guys going to help me or what?","Isto não é maquilhagem e eu não trabalho num circo.
 Vocês vão me ajudar ou o quê?"
 INTRO_TALK_15,"Maybe if we work together and you calm down, we can get somewhere.","Talvez se trabalharmos juntos e tu acalmares, podemos chegar a algum lado."
@@ -238,7 +238,7 @@ BONKA_HONK,"Hey, can you stop?
 I didn't even know i could make that sound.","Podes parar?
 Nem sabia que podia fazer esse som."
 BONKA_HUG,"Eww, get your germs away from me!","Eww, afasta os teus germes de mim!"
-BONKA_HURT,"Hey, what did i do to you?","Hey, o que é que eu te fiz?"
+BONKA_HURT,"Hey, what did I do to you?","Hey, o que é que eu te fiz?"
 BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
@@ -248,7 +248,7 @@ CARRIE_TALK_1,"We're lucky to find some coins here because not many will fit in 
 I wish there some lost bills as well.","Temos sorte por encontrar algumas moedas porque não podemos meter muitas nos nossos bolsos.
 Gostava de pelo menos encontrar algumas notas."
 CARRIE_HONK,"I should have dried my clothes a bit better.
-Listen, Kat, i know what you want but we need to hurry up.
+Listen, Kat, I know what you want but we need to hurry up.
 ...maybe when we find another lake.","Eu devia secar as minhas ropas ainda mais.
 Ouve, Kat, eu sei o que queres mas temos que despachar.
 ...talvez quando nós descobrimos um outro lago."
@@ -257,16 +257,16 @@ It's okay. As long as we're together, we can figure something out.","Katrin, est
 Não faz mal. Desde que estamos todos juntos, poderemos descobrir uma solução."
 CARRIE_HURT,What is wrong with you?,O que é que se passa contigo?
 ,,
-OSCAR_TALK_1,I think i saw a big lizard.,Acho que vi um grande lagarto.
-OSCAR_HUG,"...can i get another hug, please?","...posso ter um outro abraço, por favor?"
+OSCAR_TALK_1,I think I saw a big lizard.,Acho que vi um grande lagarto.
+OSCAR_HUG,"...can I get another hug, please?","...posso ter um outro abraço, por favor?"
 OSCAR_HURT,"Please, be carefull with that!","Por favor, tem cuidado com isso."
 ,,
 KATRIN_TALK_1,I wonder why those portals look like grids.,Gostava de saber porque é que esses portais parecem grades.
 KATRIN_HUG,"Oh, thank you.
-I felt like i needed that.","Oh, obrigado.
+I felt like I needed that.","Oh, obrigado.
 Senti que precisava disso."
 KATRIN_HONK,"Uh... was it something in my shirt?
-Maybe in a better place and time, i wouldn't mind.","Uh... foi algo na minha camisa?
+Maybe in a better place and time, I wouldn't mind.","Uh... foi algo na minha camisa?
 Talvez num melhor sítio e tempo, não me importava."
 KATRIN_HURT,Be carefull with that knife.,Tem cuidado com essa faca.
 ,,
@@ -279,7 +279,7 @@ MELVIN_HUG,I love you too but we need to get out of here and warm you up.,Eu amo
 MELVIN_HONK,"Carrie, your hands are still wet and cold.
 At least dry them off first.","Carrie, as tuas mãos ainda estão frias e molhadas.
 Pelo menos, seca-te primeiro."
-MELVIN_HURT,Should i teach you how to use the knife?,Será que eu devia ensinar-te como usar essa faca?
+MELVIN_HURT,Should I teach you how to use the knife?,Será que eu devia ensinar-te como usar essa faca?
 ,,
 ANGELA_TALK_1,That green door reminds me of my uncle's house. Did something happen to him?,Essa porta faz-me lembrar do meu tio. O que lhe aconteceu?
 ANGELA_HUG,I didn't ask for a hug.,Eu não pedi um abraço.
@@ -292,9 +292,9 @@ MELVIN_HURT_2,I should probably train you.,Talvez devia-te treinar.
 ,,
 ANGELA_TALK_2,How come these switches work if they’re not attached to walls?,Como é que estes botões funcionam se não estão ligados às paredes?
 ANGELA_HUG_2,I don’t need hugs. I’m fine!,Eu não preciso de abraços. Eu estou bem!
-ANGELA_HURT_2,"If you lose that knife, i’m gonna tell my brother.","Se perders essa faca, vou dizer ao meu irmão."
+ANGELA_HURT_2,"If you lose that knife, I’m gonna tell my brother.","Se perders essa faca, vou dizer ao meu irmão."
 ,,
-BONKA_TALK_2,"These keys’ blades seem sharp, so i would advise not letting your brother handle them.","As laminas destas chaves parecem afiadas, por tanto o teu irmão não devia tocar nelas."
+BONKA_TALK_2,"These keys’ blades seem sharp, so I would advise not letting your brother handle them.","As laminas destas chaves parecem afiadas, por tanto o teu irmão não devia tocar nelas."
 BONKA_HONK_2,Why are you doing this? Nobody even told me about this.,Porque é que estas a fazer isto? Ninguém me ensinou nada disto.
 BONKA_HUG_2,"What, you like me or something?","O que é, gostas me mim?"
 BONKA_HURT_2,Are you threatening me?,Estás a ameaçar-me ou que?
@@ -307,10 +307,10 @@ BONKA_HURT_3,How common is it for humans to be afraid of clowns?,É assim tão c
 CARRIE_TALK_2,"I noticed this table was shaking a bit, better be carefull.","Reparei que esta mesa estava a tremer, por isso tem cuidado."
 CARRIE_HONK_2,"C'mon, don't joke around!
 We need to find an exit first.
-And be more gentle next time, i know you can do that.","Vá lá, para de brincar!
+And be more gentle next time, I know you can do that.","Vá lá, para de brincar!
 Primeiro, temos que encontrar uma saída.
 E sê mais gentil na próxima vez, eu sei que consegues."
-CARRIE_HUG_2,"Mel, i appreciate it but we need to find a safer place.","Mel, eu gostei disso mas temos que encontrar um sítio mais seguro."
+CARRIE_HUG_2,"Mel, I appreciate it but we need to find a safer place.","Mel, eu gostei disso mas temos que encontrar um sítio mais seguro."
 CARRIE_HURT_2,Where did you even get that knife in the first place?,De onde é que arranjaste essa faca no primeiro lugar?
 ,,
 OSCAR_TALK_2,"You haven’t practiced soccer in a while, have you?","Não praticaste futebol em algum tempo, certo?"
@@ -324,7 +324,7 @@ But we promised to wait until 20 for things to be more serious.","Toques simples
 Mas prometemos para esperar até aos 20 para as coisas serem mais sérias."
 KATRIN_HURT_2,Why are you being so violent suddenly?,Porque é que de repente estás a ser tão violento?
 ,,
-PETE_TALK_2,I don’t think i’ve ever seen a gong like that in our town.,Acho que nunca ví um gongo daquele tipo na nossa cidade.
+PETE_TALK_2,I don’t think I’ve ever seen a gong like that in our town.,Acho que nunca ví um gongo daquele tipo na nossa cidade.
 PETE_HUG_2,I don’t mind a hug but not now.,Não importo um abraço mas agora não.
 PETE_HURT_2,I don’t think a small knife will be enough.,Não acredito que uma faca pequena é suficiente.
 ,,
