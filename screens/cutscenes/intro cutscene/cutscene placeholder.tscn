@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 4.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 5.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 6.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 1.png" type="Texture" id=14]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -55,6 +56,30 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ ExtResource( 4 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("IntroCutscenePanel1:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("IntroCutscenePanel1:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -110,6 +135,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("IntroCutscenePanel1:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -158,6 +195,11 @@ text = "1
 "
 
 [node name="Slides" type="Node" parent="."]
+
+[node name="IntroCutscenePanel1" type="Sprite" parent="."]
+position = Vector2( 531, 321 )
+scale = Vector2( 0.399999, 0.399999 )
+texture = ExtResource( 14 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
