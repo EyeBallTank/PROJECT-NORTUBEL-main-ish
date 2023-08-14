@@ -170,8 +170,12 @@ position = Vector2( 5248, 424 )
 customtext = "BOOK_HINT_JUMPPAD"
 
 [node name="BookInfo6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6200, -128 )
+position = Vector2( 5972, -128 )
 customtext = "BOOK_HINT_PORTAL"
+
+[node name="BookInfo17" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6344, -128 )
+customtext = "BOOK_HINT_PORTAL_NOTE"
 
 [node name="BookInfo7" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2435, -1866 )

@@ -242,7 +242,11 @@ BONKA_HURT,"Hey, what did I do to you?","Hey, o que é que eu te fiz?"
 BONKA_TALK_1,"I'm as lost as you are, but you said this place looks like your home.
 Can you at least figure out a way out of here?","Estou perdida como vocês mas disseram-me que este sítio parece familiar.
 Podem pelo menos descubrir uma saída?"
-,,
+BOOK_HINT_PORTAL_NOTE,"ATTENTION: Companion’s Follow/Run states are based on Player’s LITERAL X/Y position in a level.
+Therefore they may not follow you through this portal.
+Make them go to the portal first.","ATENÇÃO: Estados “Seguir/Evitar” de Companheiros são baseados nas posições X/Y LITERAIS de Jogadores.
+Por isso, eles podem não seguir-te em alguns portais como este.
+Tenta fazer com que o Oscar vái para o portal antes de ti."
 ,,
 CARRIE_TALK_1,"We're lucky to find some coins here because not many will fit in our pockets.
 I wish there some lost bills as well.","Temos sorte por encontrar algumas moedas porque não podemos meter muitas nos nossos bolsos.
