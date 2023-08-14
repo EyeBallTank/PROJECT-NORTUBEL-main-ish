@@ -58,7 +58,7 @@ tracks/2/keys = {
 "values": [ ExtResource( 4 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("IntroCutscenePanel1:visible")
+tracks/3/path = NodePath("Panel 1:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -70,7 +70,7 @@ tracks/3/keys = {
 "values": [ true ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("IntroCutscenePanel1:modulate")
+tracks/4/path = NodePath("Panel 1:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -148,7 +148,7 @@ tracks/3/keys = {
 "values": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("IntroCutscenePanel1:modulate")
+tracks/4/path = NodePath("Panel 1:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -230,8 +230,8 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="Slides" type="Node" parent="."]
 
-[node name="IntroCutscenePanel1" type="Sprite" parent="."]
-position = Vector2( 531, 321 )
+[node name="Panel 1" type="Sprite" parent="."]
+position = Vector2( 531, 296 )
 scale = Vector2( 0.399999, 0.399999 )
 texture = ExtResource( 14 )
 
