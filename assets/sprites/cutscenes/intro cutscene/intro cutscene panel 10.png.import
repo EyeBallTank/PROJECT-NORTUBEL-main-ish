@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intro cutscene part 10.png-bc596e314b354ac156bc11bb34dc6681.stex"
+path="res://.import/intro cutscene panel 10.png-f48232db13b8e6235e84212d43ca23a9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 10.png"
-dest_files=[ "res://.import/intro cutscene part 10.png-bc596e314b354ac156bc11bb34dc6681.stex" ]
+source_file="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 10.png"
+dest_files=[ "res://.import/intro cutscene panel 10.png-f48232db13b8e6235e84212d43ca23a9.stex" ]
 
 [params]
 
