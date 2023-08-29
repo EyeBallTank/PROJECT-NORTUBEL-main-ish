@@ -1,19 +1,27 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 1.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 2.png" type="Texture" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 2.png" type="Texture" id=6]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 8.png" type="Texture" id=7]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 7.png" type="Texture" id=8]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 9.png" type="Texture" id=9]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 3.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 4.png" type="Texture" id=11]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 5.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene part 6.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 4.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 6.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 7.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 8.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 3.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 9.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 10.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 11.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 1.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 13.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 14.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 15.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 5.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 12.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 17.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 18.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 16.png" type="Texture" id=22]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -46,7 +54,7 @@ tracks/1/keys = {
 " ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Sprite:texture")
+tracks/2/path = NodePath("In front of dialogue:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -55,10 +63,10 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ ExtResource( 4 ) ]
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Panel 1:visible")
+tracks/3/path = NodePath("Panel 1:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -67,7 +75,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ true ]
+"values": [ Vector2( 531, 296 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Panel 1:modulate")
@@ -82,7 +90,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("In front of dialogue:modulate")
+tracks/5/path = NodePath("IntroCutscenePanel2:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -91,7 +99,199 @@ tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( -261, 213 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("IntroCutscenePanel3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1233, 227 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("IntroCutscenePanel4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -207, 234 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("IntroCutscenePanel5:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1225, 229 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("IntroCutscenePanel6:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 233, -233 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("IntroCutscenePanel7:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1289, 243 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("IntroCutscenePanel8:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 507, -232 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("IntroCutscenePanel9:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 465, -233 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("IntroCutscenePanel10:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1301, 232 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("IntroCutscenePanel11:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1238, 217 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("IntroCutscenePanel12:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -228, 232 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("IntroCutscenePanel13:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1246, 238 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("IntroCutscenePanel14:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -191, 230 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("IntroCutscenePanel15:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1242, 255 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("IntroCutscenePanel16:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 224, -245 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("IntroCutscenePanel17:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1217, 239 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("IntroCutscenePanel18:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 472, -244 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -104,7 +304,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 4.4, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.4, 34.4 ),
+"times": PoolRealArray( 0, 4.6, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.4, 34.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Carrie Decarde", "Oscar Decarde", "Katrin Flenn", "Pete Flenn", "Melvin Brokston", "Angela Brokston", "Bonka Millete", "Melvin Brokston", "Carrie Decarde", "Bonka Millete", "Katrin Flenn", "Bonka Millette", "Pete Flenn", "Bonka Millette", "Carrie Decarde", "Oscar Decarde", "Melvin Brokston" ]
@@ -116,7 +316,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 4.4, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.4, 34.4 ),
+"times": PoolRealArray( 0, 4.6, 6.4, 8.4, 10.4, 12.4, 14.4, 16.4, 18.4, 20.4, 22.4, 24.4, 26.4, 28.4, 30.4, 32.4, 34.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "INTRO_TALK_1", "INTRO_TALK_2", "INTRO_TALK_3", "INTRO_TALK_4", "INTRO_TALK_5", "INTRO_TALK_6", "INTRO_TALK_7", "INTRO_TALK_8", "INTRO_TALK_9", "INTRO_TALK_10", "INTRO_TALK_11", "INTRO_TALK_12", "INTRO_TALK_13", "INTRO_TALK_14", "INTRO_TALK_15", "INTRO_TALK_16", "INTRO_TALK_17" ]
@@ -136,44 +336,251 @@ tracks/2/keys = {
 } ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Sprite:texture")
+tracks/3/path = NodePath("Panel 1:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 6.4, 10.4, 14.4, 18.4, 22.4, 26.4, 30.4, 34.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ]
+"times": PoolRealArray( 0, 2, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Panel 1:modulate")
-tracks/4/interp = 1
+tracks/4/path = NodePath("In front of dialogue:modulate")
+tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
-}
-tracks/5/type = "value"
-tracks/5/path = NodePath("In front of dialogue:modulate")
-tracks/5/interp = 0
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
 "times": PoolRealArray( 0, 3.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Panel 1:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.1, 2.7, 3.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 531, 296 ), Vector2( 531, 296 ), Vector2( 531, -312 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("IntroCutscenePanel2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.7, 3.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -261, 213 ), Vector2( -261, 213 ), Vector2( 255, 213 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("IntroCutscenePanel3:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 4.1, 4.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1233, 227 ), Vector2( 1233, 227 ), Vector2( 764, 227 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("IntroCutscenePanel4:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 6.1, 6.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -207, 234 ), Vector2( -207, 234 ), Vector2( 277, 234 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("IntroCutscenePanel5:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 8, 8.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1225, 229 ), Vector2( 1225, 229 ), Vector2( 764, 229 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("IntroCutscenePanel6:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 10.1, 10.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 233, -233 ), Vector2( 233, -233 ), Vector2( 275, 228 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("IntroCutscenePanel7:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 11.9, 12.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1289, 243 ), Vector2( 1289, 243 ), Vector2( 754, 243 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("IntroCutscenePanel8:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 13.8, 14.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 507, -232 ), Vector2( 507, -232 ), Vector2( 507, 240 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("IntroCutscenePanel9:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 15.8, 16.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 465, -233 ), Vector2( 465, -233 ), Vector2( 465, 231 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("IntroCutscenePanel10:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 17.9, 18.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1301, 232 ), Vector2( 1301, 232 ), Vector2( 257, 232 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("IntroCutscenePanel11:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 20.1, 20.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1238, 217 ), Vector2( 1228, 233 ), Vector2( 810, 233 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("IntroCutscenePanel12:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 22.1, 22.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -228, 232 ), Vector2( -228, 232 ), Vector2( 236, 232 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("IntroCutscenePanel13:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 24, 24.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1246, 238 ), Vector2( 1246, 238 ), Vector2( 800, 238 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("IntroCutscenePanel14:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 26, 26.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -191, 230 ), Vector2( -191, 230 ), Vector2( 203, 236 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("IntroCutscenePanel15:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 28.2, 28.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1242, 255 ), Vector2( 1242, 255 ), Vector2( 814, 237 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("IntroCutscenePanel16:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 30.2, 31 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 224, -245 ), Vector2( 224, -245 ), Vector2( 224, 231 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("IntroCutscenePanel17:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 32, 32.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1217, 239 ), Vector2( 1217, 239 ), Vector2( 831, 239 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("IntroCutscenePanel18:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 34.1, 35.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 472, -244 ), Vector2( 472, -244 ), Vector2( 472, 240 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
@@ -181,11 +588,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_bottom = -130.0
 color = Color( 1, 0.141176, 0, 1 )
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 512, 235 )
-scale = Vector2( 0.538947, 0.53653 )
-texture = ExtResource( 4 )
 
 [node name="Behind dialogue" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -234,6 +636,91 @@ color = Color( 0, 0, 0, 1 )
 position = Vector2( 531, 296 )
 scale = Vector2( 0.399999, 0.399999 )
 texture = ExtResource( 14 )
+
+[node name="IntroCutscenePanel2" type="Sprite" parent="."]
+position = Vector2( -261, 213 )
+scale = Vector2( 0.390335, 0.390335 )
+texture = ExtResource( 4 )
+
+[node name="IntroCutscenePanel3" type="Sprite" parent="."]
+position = Vector2( 1233, 227 )
+scale = Vector2( 0.418968, 0.418968 )
+texture = ExtResource( 10 )
+
+[node name="IntroCutscenePanel4" type="Sprite" parent="."]
+position = Vector2( -207, 234 )
+scale = Vector2( 0.398908, 0.398908 )
+texture = ExtResource( 6 )
+
+[node name="IntroCutscenePanel5" type="Sprite" parent="."]
+position = Vector2( 1225, 229 )
+scale = Vector2( 0.466102, 0.466102 )
+texture = ExtResource( 18 )
+
+[node name="IntroCutscenePanel6" type="Sprite" parent="."]
+position = Vector2( 233, -233 )
+scale = Vector2( 0.459585, 0.459585 )
+texture = ExtResource( 7 )
+
+[node name="IntroCutscenePanel7" type="Sprite" parent="."]
+position = Vector2( 1289, 243 )
+scale = Vector2( 0.631728, 0.631728 )
+texture = ExtResource( 8 )
+
+[node name="IntroCutscenePanel8" type="Sprite" parent="."]
+position = Vector2( 507, -232 )
+scale = Vector2( 0.318791, 0.318791 )
+texture = ExtResource( 9 )
+
+[node name="IntroCutscenePanel9" type="Sprite" parent="."]
+position = Vector2( 465, -233 )
+scale = Vector2( 0.462527, 0.462527 )
+texture = ExtResource( 11 )
+
+[node name="IntroCutscenePanel10" type="Sprite" parent="."]
+position = Vector2( 1301, 232 )
+scale = Vector2( 0.601375, 0.601375 )
+texture = ExtResource( 12 )
+
+[node name="IntroCutscenePanel11" type="Sprite" parent="."]
+position = Vector2( 1238, 217 )
+scale = Vector2( 0.480533, 0.480533 )
+texture = ExtResource( 13 )
+
+[node name="IntroCutscenePanel12" type="Sprite" parent="."]
+position = Vector2( -228, 232 )
+scale = Vector2( 0.616216, 0.616216 )
+texture = ExtResource( 19 )
+
+[node name="IntroCutscenePanel13" type="Sprite" parent="."]
+position = Vector2( 1246, 238 )
+scale = Vector2( 0.589543, 0.589543 )
+texture = ExtResource( 15 )
+
+[node name="IntroCutscenePanel14" type="Sprite" parent="."]
+position = Vector2( -191, 230 )
+scale = Vector2( 0.598704, 0.598705 )
+texture = ExtResource( 16 )
+
+[node name="IntroCutscenePanel15" type="Sprite" parent="."]
+position = Vector2( 1242, 255 )
+scale = Vector2( 0.455268, 0.455268 )
+texture = ExtResource( 17 )
+
+[node name="IntroCutscenePanel16" type="Sprite" parent="."]
+position = Vector2( 224, -245 )
+scale = Vector2( 0.58179, 0.58179 )
+texture = ExtResource( 22 )
+
+[node name="IntroCutscenePanel17" type="Sprite" parent="."]
+position = Vector2( 1217, 239 )
+scale = Vector2( 0.553759, 0.553759 )
+texture = ExtResource( 20 )
+
+[node name="IntroCutscenePanel18" type="Sprite" parent="."]
+position = Vector2( 472, -244 )
+scale = Vector2( 0.892996, 0.892996 )
+texture = ExtResource( 21 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
