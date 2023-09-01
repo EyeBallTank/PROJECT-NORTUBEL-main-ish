@@ -155,7 +155,9 @@ Grocery basket heals whoever picks it up","O(A) Companheiro(a) recebe mais dano 
 O cesto de compras cura quem o apanhar"
 BOOK_HINT_KEYS,Keys unlock doors of corresponding colors,Chaves abrem portas de cores correspondentes
 BOOK_HINT_FLOATERRING,Lifeguard Floater makes you invincible for a short time,A bóia salva-vidas faz-te invencível por pouco tempo
-BOOK_HINT_SOCCERBAG,This bag gives you one soccer ball if you got none,Esta mala dá-te uma bola de futebol se não tens nenhuma
+BOOK_HINT_SOCCERBAG,"This bag gives you one soccer ball if you got none
+Touch the bag again if you want another ball","Esta mala dá-te uma bola de futebol se não tens nenhuma
+Toca nela outra vêz se queres outra bola"
 BOOK_HINT_SOCCERBALL,Soccer ball can defeat enemies,A bola de futebol consegue derrotar inimigos
 BOOK_HINT_SOCCERNET,Soccer net disappears when receiving the ball,A rede de futebol desaparece quando recebe a bola
 BOOK_HINT_MANOWAR,The Manowar can't be defeated,A caravela não pode ser derrotada
