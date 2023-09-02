@@ -135,10 +135,10 @@ GAMEOVER_T,YOU FAILED,  FALHOU
 SPACE_CONTINUE,Press “Space” to continue,Prime “Espaço” para continuar
 PASSWORD_B,Password,Senha
 BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
-BOOK_HINT_CONTROL_MOVE,"Left movement: Left arrow key/A and Right movement: Right arrow key/D
-Jumping/Climbing/Swimming upwards: Up arrow key/W
-ESC: Pause menu","Movimento esquerdo: Seta esquerda/A e Movimento Direito: Seta direita/D
-Saltar/Nadar para cima/Subir: Seta de cima/W
+BOOK_HINT_CONTROL_MOVE,"Left movement: Left arrow key and Right movement: Right arrow key
+Jumping/Climbing/Swimming upwards: Up arrow key
+ESC: Pause menu","Movimento esquerdo: Seta esquerda e Movimento Direito: Seta direita
+Saltar/Nadar para cima/Subir: Seta de cima
 ESC: Menu de pausa"
 BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right
 ""Stand still"": Q + Down
