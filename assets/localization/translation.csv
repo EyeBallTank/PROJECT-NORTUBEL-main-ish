@@ -142,7 +142,7 @@ Saltar/Nadar para cima/Subir: Seta de cima
 ESC: Menu de pausa"
 BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right
 ""Stand still"": Q + Down
-""Run away"" opposite to ""Run away"": Q + Left","""Segue-me"": Q + Direita
+""Run away"" opposite to ""Follow me"": Q + Left","""Segue-me"": Q + Direita
 ""Fica aí"": Q + Baixo
 ""Foje"" contrário de ""Segue-me"": Q + Esquerda"
 BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar esquadas: Z"
