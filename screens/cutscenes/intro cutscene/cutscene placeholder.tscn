@@ -1137,3 +1137,11 @@ nextlevel = "res://src/levels/LevelTutorial1.tscn"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )
 "anims/intro cutscene" = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 973.0
+margin_top = 578.0
+margin_right = 1062.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 5 )
+text = "ESC: | |"
