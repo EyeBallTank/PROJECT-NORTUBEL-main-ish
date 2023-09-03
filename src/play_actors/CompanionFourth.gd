@@ -1634,16 +1634,21 @@ func _on_CrawlCheck_area_entered(area):
 			$CollisionShape2D.position = Vector2(0, -81)
 
 func go_to_checkpoint():
-	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
-	thing = checkpointTween.start()
-	state = STANDSTILL
-	health = 50
-	oxygen = 1500
-	yield(get_tree().create_timer(0.4), "timeout")
-	CompanionHurtbox.set_monitoring(true)
-	show()
-	animatedsprite.animation = "Jumpgoesdown"
-	$AnimationPlayer.play("CompHurt")
+	if Signals.lives > 0:
+		var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
+		thing = checkpointTween.start()
+		state = STANDSTILL
+		health = 50
+		oxygen = 1500
+		$CollisionShape2D.disabled = true
+		yield(get_tree().create_timer(0.4), "timeout")
+		$CollisionShape2D.disabled = false
+		CompanionHurtbox.set_monitoring(true)
+		show()
+		animatedsprite.animation = "Jumpgoesdown"
+		$AnimationPlayer.play("CompHurt")
+	elif Signals.lives == 0:
+		SceneManager.change_scene("level_transition_effect", "res://screens/GameOver.tscn")
 
 func _on_PushDetector_area_entered(area):
 	if area.name == "PushArea":

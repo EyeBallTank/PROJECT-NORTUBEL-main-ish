@@ -870,18 +870,23 @@ func _on_PortalCheck_area_entered(area):
 			Teleport(area)
 
 func go_to_checkpoint():
-	var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
-	thing = checkpointTween.start()
+	if Signals.lives > 0:
+		var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
+		thing = checkpointTween.start()
 #	yield(get_tree().create_timer(0.4), "timeout")
-	state = MAINSTATE
-	health = 100
-	oxygen = 1500
-	yield(get_tree().create_timer(0.6), "timeout")
-	hurtbox.set_monitoring(true)
+		state = MAINSTATE
+		health = 100
+		oxygen = 1500
+		$CollisionShape2D.disabled = true
+		yield(get_tree().create_timer(0.6), "timeout")
+		$CollisionShape2D.disabled = false
+		hurtbox.set_monitoring(true)
 #	animatedsprite.set_modulate(00000000)
-	show()
-	animatedsprite.animation = "Jumpgoesdown"
-	$AnimationPlayer.play("playerhurt")
+		show()
+		animatedsprite.animation = "Jumpgoesdown"
+		$AnimationPlayer.play("playerhurt")
+	elif Signals.lives == 0:
+		SceneManager.change_scene("level_transition_effect", "res://screens/GameOver.tscn")
 
 #ANIMATIONPLAYER ANIMATION NAMES
 #Abouttokick DONE
