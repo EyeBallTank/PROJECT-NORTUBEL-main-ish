@@ -529,7 +529,7 @@ margin_right = 280.0
 margin_bottom = 143.0
 rect_rotation = 41.3462
 mouse_filter = 2
-color = Color( 0, 0.803922, 0.0117647, 1 )
+color = Color( 0.0705882, 0.556863, 0.345098, 1 )
 
 [node name="ColorRect4" type="ColorRect" parent="CanvasLayer/Control"]
 anchor_right = 1.0
@@ -540,7 +540,7 @@ margin_right = 612.0
 margin_bottom = 2794.0
 rect_rotation = 225.0
 mouse_filter = 2
-color = Color( 0, 0.803922, 0.0117647, 1 )
+color = Color( 0.0705882, 0.556863, 0.345098, 1 )
 
 [node name="ColorRect3" type="ColorRect" parent="CanvasLayer/Control"]
 anchor_right = 1.0
@@ -551,7 +551,7 @@ margin_right = -532.0
 margin_bottom = 1682.0
 rect_rotation = 315.0
 mouse_filter = 2
-color = Color( 0, 0.803922, 0.0117647, 1 )
+color = Color( 0.0705882, 0.556863, 0.345098, 1 )
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Control"]
 anchor_right = 1.0
@@ -562,7 +562,7 @@ margin_right = 1724.0
 margin_bottom = 2074.0
 rect_rotation = 135.0
 mouse_filter = 2
-color = Color( 0, 0.803922, 0.0117647, 1 )
+color = Color( 0.0705882, 0.556863, 0.345098, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
 anims/RESET = SubResource( 1 )
