@@ -282,15 +282,24 @@ margin_top = -12.0
 margin_right = 116.5
 margin_bottom = 12.0
 
-[node name="BackFromOptions3" type="Button" parent="PasswordMenu"]
+[node name="BackFromOptions3" type="TextureButton" parent="PasswordMenu"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -42.5
-margin_top = 33.0
-margin_right = 42.5
-margin_bottom = 53.0
+margin_left = -150.0
+margin_top = 146.0
+margin_right = 150.0
+margin_bottom = 173.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="PasswordMenu/BackFromOptions3"]
+margin_left = 130.0
+margin_top = 4.5
+margin_right = 178.0
+margin_bottom = 18.5
 custom_fonts/font = ExtResource( 5 )
 text = "QUIT_B"
 
