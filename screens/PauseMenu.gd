@@ -7,7 +7,8 @@ onready var password = $PasswordMenu
 
 #1ST LETTERS IN codes NAMES SHOULD BE LOWER CASE AND LETTERS, NOT NUMBERS
 #BECAUSE FUNC NAMES CANT START WITH NUMBERS
-var codes := ["tutor1", "tutor2", "tutor3",
+var codes := ["gallery",
+				"tutor1", "tutor2", "tutor3",
 				"c4rr13", "k4tr1n", "m3lv1n",
 				"osc4r0", "p33tt3", "ang3l4"]
 
@@ -89,6 +90,9 @@ func _on_LineEdit_text_entered(keyword):
 		return
 	$PasswordMenu/LineEdit.clear()
 	call(keyword)
+
+func gallery():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")
 
 func tutor1():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTutorial1.tscn")
