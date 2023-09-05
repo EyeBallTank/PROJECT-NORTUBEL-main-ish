@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://screens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when normal.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when pressed.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when hover.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3
@@ -253,19 +256,37 @@ margin_bottom = 8.5
 custom_fonts/font = ExtResource( 5 )
 text = "MENU_B"
 
-[node name="EN setting" type="Button" parent="OptionsMenu"]
+[node name="EN setting" type="TextureButton" parent="OptionsMenu"]
 margin_left = 401.0
 margin_top = 367.0
 margin_right = 462.0
 margin_bottom = 416.0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="OptionsMenu/EN setting"]
+margin_left = 24.0
+margin_top = 20.0
+margin_right = 64.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
 text = "EN"
 
-[node name="PT setting" type="Button" parent="OptionsMenu"]
-margin_left = 567.0
+[node name="PT setting" type="TextureButton" parent="OptionsMenu"]
+margin_left = 557.0
 margin_top = 367.0
-margin_right = 628.0
-margin_bottom = 416.0
+margin_right = 624.0
+margin_bottom = 422.0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="OptionsMenu/PT setting"]
+margin_left = 26.0
+margin_top = 20.0
+margin_right = 66.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
 text = "PT"
 
