@@ -1,18 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/menusandui/DialogueBoxTest.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://screens/PauseCutsceneMenu.gd" type="Script" id=3]
-
-[sub_resource type="DynamicFont" id=1]
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=2]
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/button 2 when normal.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/button 2 when pressed.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/button 2 when hover.png" type="Texture" id=6]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=7]
 
 [node name="PauseCutsceneMenu" type="Control"]
 pause_mode = 2
@@ -39,20 +32,38 @@ patch_margin_top = 6
 patch_margin_right = 6
 patch_margin_bottom = 8
 
-[node name="UnpauseButton" type="Button" parent="."]
+[node name="UnpauseButton" type="TextureButton" parent="."]
 margin_left = 339.0
-margin_top = 295.0
-margin_right = 504.0
-margin_bottom = 318.0
-custom_fonts/font = SubResource( 1 )
+margin_top = 291.0
+margin_right = 510.0
+margin_bottom = 321.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="UnpauseButton"]
+margin_left = 54.0
+margin_top = 7.0
+margin_right = 125.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
 text = "UNPAUSE_B"
 
-[node name="SkipCutscene" type="Button" parent="."]
-margin_left = 526.0
-margin_top = 295.0
-margin_right = 690.0
-margin_bottom = 318.0
-custom_fonts/font = SubResource( 2 )
+[node name="SkipCutscene" type="TextureButton" parent="."]
+margin_left = 522.0
+margin_top = 291.0
+margin_right = 693.0
+margin_bottom = 321.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="SkipCutscene"]
+margin_left = 49.0
+margin_top = 7.0
+margin_right = 133.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
 text = "STORYSKIP_T"
 
 [connection signal="pressed" from="UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
