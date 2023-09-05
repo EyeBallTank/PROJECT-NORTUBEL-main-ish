@@ -2,7 +2,6 @@ extends Control
 
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
-onready var extra = $ExtraMenu
 onready var password = $PasswordMenu
 
 #1ST LETTERS IN codes NAMES SHOULD BE LOWER CASE AND LETTERS, NOT NUMBERS
@@ -53,21 +52,6 @@ func _on_EN_setting_pressed():
 
 func _on_PT_setting_pressed():
 	TranslationServer.set_locale("pt")
-
-
-func _on_ExtraButton_pressed():
-	show_and_hide(extra, menu)
-
-
-func _on_BackFromOptions2_pressed():
-	show_and_hide(menu, extra)
-
-func _on_LoadButton_pressed():
-	pass
-
-
-func _on_GalleryButton_pressed():
-	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")
 
 
 func _on_ReadButton_pressed():

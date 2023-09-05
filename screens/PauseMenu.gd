@@ -2,7 +2,6 @@ extends Control
 
 onready var pausemenu = $MenuMain
 onready var optionsmenu = $OptionsMenu
-onready var extra = $ExtraMenu
 onready var password = $PasswordMenu
 #onready var save_file = SaveFile.g_data
 
@@ -63,12 +62,7 @@ func _on_PT_setting_pressed():
 	TranslationServer.set_locale("pt")
 
 
-func _on_BackFromOptions2_pressed():
-	show_and_hide(pausemenu, extra)
 
-
-func _on_ExtraButton_pressed():
-	show_and_hide(extra, pausemenu)
 
 
 func _on_SaveButton_pressed():
@@ -81,8 +75,6 @@ func _on_LoadButton_pressed():
 #	SaveFile.load_data()
 #	SceneManager.load_scene()
 
-func _on_GalleryButton_pressed():
-	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")
 
 func _on_PasswordButton_pressed():
 	show_and_hide(password, pausemenu)

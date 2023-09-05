@@ -2,15 +2,15 @@ id,en,pt
 UNPAUSE_B,Unpause,Retomar
 OPTIONS_B,Options,Opções
 EXTRA_B,Extra,Extra
-SAVE_B,Save,Guardar
-LOAD_B,Load,Carregar
-QUIT_B,Quit,Saída
+,,
+,,
+QUIT_B, Quit,Saída
 READ_B,Please read!,"Por favor, lê"
 MUSIC_SET,Music,Música
 SOUND_SET,Sound,Som
 FULLSCREEN_B,Fullscreen,Ecrã Inteiro
 MENU_B,Menu,Menu
-START_B,Start,Começar
+START_B,  Start,Começar
 LIBRARY_B,Library,Biblioteca 
 GALLERY_B,Gallery,Galeria
 READ_T,"
@@ -133,7 +133,7 @@ OTHER_B,Other stuff,Outras coisas
 LIFECOUNT_T,Lives,Vidas
 GAMEOVER_T,YOU FAILED,  FALHOU
 SPACE_CONTINUE,Press “Space” to continue,Prime “Espaço” para continuar
-PASSWORD_B,Password,Senha
+PASSWORD_B,Password,  Senha
 BOOK_HINT_CONTROL_DOWN,Climbing/Swimming downwards: Down arrow key,Descer/Nadar para baixo: Seta de baixo
 BOOK_HINT_CONTROL_MOVE,"Left movement: Left arrow key and Right movement: Right arrow key
 Jumping/Climbing/Swimming upwards: Up arrow key

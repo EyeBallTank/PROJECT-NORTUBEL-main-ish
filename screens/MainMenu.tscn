@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://screens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -8,21 +8,6 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when normal.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when pressed.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when hover.png" type="Texture" id=8]
-
-[sub_resource type="DynamicFont" id=2]
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=3]
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=4]
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3
@@ -72,57 +57,92 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -25.0
-margin_top = -8.0
-margin_right = 31.0
-margin_bottom = 9.0
+margin_left = -28.0
+margin_top = -8.5
+margin_right = 28.0
+margin_bottom = 8.5
 custom_fonts/font = ExtResource( 5 )
 text = "START_B"
 
-[node name="OptionsButton" type="Button" parent="MenuMain"]
+[node name="OptionsButton" type="TextureButton" parent="MenuMain"]
 margin_top = 31.0
 margin_right = 300.0
-margin_bottom = 54.0
+margin_bottom = 58.0
 focus_mode = 1
-custom_fonts/font = SubResource( 2 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MenuMain/OptionsButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -7.0
+margin_right = 49.0
+margin_bottom = 10.0
+custom_fonts/font = ExtResource( 5 )
 text = "OPTIONS_B"
 
-[node name="ExtraButton" type="Button" parent="MenuMain"]
-margin_top = 58.0
+[node name="PasswordButton" type="TextureButton" parent="MenuMain"]
+margin_top = 62.0
 margin_right = 300.0
-margin_bottom = 81.0
-focus_mode = 1
-custom_fonts/font = SubResource( 3 )
-text = "EXTRA_B"
+margin_bottom = 89.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
 
-[node name="LoadButton" type="Button" parent="MenuMain"]
-visible = false
-margin_top = 81.0
-margin_right = 296.0
-margin_bottom = 104.0
-focus_mode = 1
-custom_fonts/font = SubResource( 3 )
-text = "LOAD_B"
-
-[node name="PasswordButton" type="Button" parent="MenuMain"]
-margin_top = 85.0
-margin_right = 300.0
-margin_bottom = 108.0
+[node name="Label" type="Label" parent="MenuMain/PasswordButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -8.0
+margin_right = 56.0
+margin_bottom = 9.0
 custom_fonts/font = ExtResource( 5 )
 text = "PASSWORD_B"
 
-[node name="QuitButton" type="Button" parent="MenuMain"]
-margin_top = 112.0
+[node name="QuitButton" type="TextureButton" parent="MenuMain"]
+margin_top = 93.0
 margin_right = 300.0
-margin_bottom = 135.0
+margin_bottom = 120.0
 focus_mode = 1
-custom_fonts/font = SubResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MenuMain/QuitButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -9.0
+margin_right = 24.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 5 )
 text = "QUIT_B"
 
-[node name="ReadButton" type="Button" parent="MenuMain"]
-margin_top = 139.0
+[node name="ReadButton" type="TextureButton" parent="MenuMain"]
+margin_top = 124.0
 margin_right = 300.0
-margin_bottom = 162.0
+margin_bottom = 151.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MenuMain/ReadButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -42.0
+margin_top = -8.0
+margin_right = 5.0
+margin_bottom = 9.0
 custom_fonts/font = ExtResource( 5 )
 text = "READ_B"
 
@@ -241,43 +261,6 @@ margin_bottom = 416.0
 custom_fonts/font = ExtResource( 5 )
 text = "PT"
 
-[node name="ExtraMenu" type="Control" parent="."]
-visible = false
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="GalleryButton" type="Button" parent="ExtraMenu"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 365.0
-margin_top = 294.0
-margin_right = 420.0
-margin_bottom = 296.0
-custom_fonts/font = ExtResource( 5 )
-text = "GALLERY_B"
-
-[node name="LibrabyButton" type="Button" parent="ExtraMenu"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 567.0
-margin_top = 294.0
-margin_right = 622.0
-margin_bottom = 296.0
-custom_fonts/font = ExtResource( 5 )
-text = "LIBRARY_B"
-
-[node name="BackFromOptions2" type="Button" parent="ExtraMenu"]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = 458.0
-margin_top = 465.0
-margin_right = 522.0
-margin_bottom = 488.0
-custom_fonts/font = SubResource( 9 )
-text = "MENU_B"
-
 [node name="PasswordMenu" type="Control" parent="."]
 visible = false
 anchor_left = 0.5
@@ -313,8 +296,6 @@ text = "QUIT_B"
 
 [connection signal="pressed" from="MenuMain/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
-[connection signal="pressed" from="MenuMain/ExtraButton" to="." method="_on_ExtraButton_pressed"]
-[connection signal="pressed" from="MenuMain/LoadButton" to="." method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="MenuMain/PasswordButton" to="." method="_on_PasswordButton_pressed"]
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="pressed" from="MenuMain/ReadButton" to="." method="_on_ReadButton_pressed"]
@@ -324,7 +305,5 @@ text = "QUIT_B"
 [connection signal="pressed" from="OptionsMenu/BackFromOptions" to="." method="_on_BackFromOptions_pressed"]
 [connection signal="pressed" from="OptionsMenu/EN setting" to="." method="_on_EN_setting_pressed"]
 [connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]
-[connection signal="pressed" from="ExtraMenu/GalleryButton" to="." method="_on_GalleryButton_pressed"]
-[connection signal="pressed" from="ExtraMenu/BackFromOptions2" to="." method="_on_BackFromOptions2_pressed"]
 [connection signal="text_entered" from="PasswordMenu/LineEdit" to="." method="_on_LineEdit_text_entered"]
 [connection signal="pressed" from="PasswordMenu/BackFromOptions3" to="." method="_on_BackFromOptions3_pressed"]
