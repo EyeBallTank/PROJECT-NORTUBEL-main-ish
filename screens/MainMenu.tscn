@@ -1,10 +1,13 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://screens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/main title.PNG" type="Texture" id=3]
 [ext_resource path="res://assets/my_custom_theme.tres" type="Theme" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when normal.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when pressed.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/button when hover.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=2]
 outline_size = 3
@@ -55,26 +58,39 @@ margin_top = 319.0
 margin_right = 148.0
 margin_bottom = 419.0
 
-[node name="StartButton" type="Button" parent="MenuMain"]
-margin_right = 296.0
-margin_bottom = 23.0
+[node name="StartButton" type="TextureButton" parent="MenuMain"]
+margin_right = 300.0
+margin_bottom = 27.0
 focus_mode = 1
 theme = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MenuMain/StartButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -8.0
+margin_right = 31.0
+margin_bottom = 9.0
 custom_fonts/font = ExtResource( 5 )
 text = "START_B"
 
 [node name="OptionsButton" type="Button" parent="MenuMain"]
-margin_top = 27.0
-margin_right = 296.0
-margin_bottom = 50.0
+margin_top = 31.0
+margin_right = 300.0
+margin_bottom = 54.0
 focus_mode = 1
 custom_fonts/font = SubResource( 2 )
 text = "OPTIONS_B"
 
 [node name="ExtraButton" type="Button" parent="MenuMain"]
-margin_top = 54.0
-margin_right = 296.0
-margin_bottom = 77.0
+margin_top = 58.0
+margin_right = 300.0
+margin_bottom = 81.0
 focus_mode = 1
 custom_fonts/font = SubResource( 3 )
 text = "EXTRA_B"
@@ -89,24 +105,24 @@ custom_fonts/font = SubResource( 3 )
 text = "LOAD_B"
 
 [node name="PasswordButton" type="Button" parent="MenuMain"]
-margin_top = 81.0
-margin_right = 296.0
-margin_bottom = 104.0
+margin_top = 85.0
+margin_right = 300.0
+margin_bottom = 108.0
 custom_fonts/font = ExtResource( 5 )
 text = "PASSWORD_B"
 
 [node name="QuitButton" type="Button" parent="MenuMain"]
-margin_top = 108.0
-margin_right = 296.0
-margin_bottom = 131.0
+margin_top = 112.0
+margin_right = 300.0
+margin_bottom = 135.0
 focus_mode = 1
 custom_fonts/font = SubResource( 4 )
 text = "QUIT_B"
 
 [node name="ReadButton" type="Button" parent="MenuMain"]
-margin_top = 135.0
-margin_right = 296.0
-margin_bottom = 158.0
+margin_top = 139.0
+margin_right = 300.0
+margin_bottom = 162.0
 custom_fonts/font = ExtResource( 5 )
 text = "READ_B"
 
