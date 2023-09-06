@@ -68,5 +68,5 @@ position = Vector2( 5320, -576 )
 position = Vector2( 5568, -576 )
 
 [node name="LevelProp2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1397, 78 )
-propname = "nortprop chest with 2 openings"
+position = Vector2( 1405, -65 )
+propname = "nortprop lamp"
