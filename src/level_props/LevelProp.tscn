@@ -1,4 +1,4 @@
-[gd_scene load_steps=259 format=2]
+[gd_scene load_steps=261 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -129,6 +129,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop nodi logo.png" type="Texture" id=127]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop garage door simple.png" type="Texture" id=128]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bidet.png" type="Texture" id=129]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop park picnic table.png" type="Texture" id=130]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -409,6 +410,10 @@ region = Rect2( 0, 0, 158, 133 )
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 239, 421 )
+
+[sub_resource type="AtlasTexture" id=141]
+atlas = ExtResource( 130 )
+region = Rect2( 0, 0, 294, 137 )
 
 [sub_resource type="AtlasTexture" id=85]
 atlas = ExtResource( 74 )
@@ -994,6 +999,11 @@ animations = [ {
 "name": "nortprop palmtree",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 141 ) ],
+"loop": false,
+"name": "nortprop park picnic table",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 85 ) ],
 "loop": false,
 "name": "nortprop pedal boat",
@@ -1291,5 +1301,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "nortprop park picnic table"
 playing = true
