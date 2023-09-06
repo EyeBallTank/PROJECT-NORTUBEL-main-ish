@@ -1,4 +1,4 @@
-[gd_scene load_steps=261 format=2]
+[gd_scene load_steps=263 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -130,6 +130,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop garage door simple.png" type="Texture" id=128]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop bidet.png" type="Texture" id=129]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop park picnic table.png" type="Texture" id=130]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop chest with 2 openings.png" type="Texture" id=131]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -270,6 +271,10 @@ region = Rect2( 0, 0, 348, 200 )
 [sub_resource type="AtlasTexture" id=95]
 atlas = ExtResource( 84 )
 region = Rect2( 0, 0, 102, 91 )
+
+[sub_resource type="AtlasTexture" id=142]
+atlas = ExtResource( 131 )
+region = Rect2( 0, 0, 267, 94 )
 
 [sub_resource type="AtlasTexture" id=28]
 atlas = ExtResource( 9 )
@@ -824,6 +829,11 @@ animations = [ {
 "name": "nortprop chair 1",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 142 ) ],
+"loop": false,
+"name": "nortprop chest with 2 openings",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 28 ) ],
 "loop": false,
 "name": "nortprop computer table green chairs",
@@ -1301,5 +1311,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop park picnic table"
+animation = "nortprop chest with 2 openings"
 playing = true
