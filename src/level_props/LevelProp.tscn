@@ -1,4 +1,4 @@
-[gd_scene load_steps=267 format=2]
+[gd_scene load_steps=269 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -133,6 +133,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop chest with 2 openings.png" type="Texture" id=131]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop lamp.png" type="Texture" id=132]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop window 5.png" type="Texture" id=133]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop vase palmtree.png" type="Texture" id=134]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -593,6 +594,10 @@ region = Rect2( 0, 0, 371, 259 )
 [sub_resource type="AtlasTexture" id=106]
 atlas = ExtResource( 95 )
 region = Rect2( 0, 0, 214, 145 )
+
+[sub_resource type="AtlasTexture" id=145]
+atlas = ExtResource( 134 )
+region = Rect2( 0, 0, 165, 313 )
 
 [sub_resource type="AtlasTexture" id=105]
 atlas = ExtResource( 94 )
@@ -1239,6 +1244,11 @@ animations = [ {
 "name": "nortprop turtle statue",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 145 ) ],
+"loop": false,
+"name": "nortprop vase palmtree",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 105 ) ],
 "loop": false,
 "name": "nortprop weird basket",
@@ -1331,5 +1341,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop window 5"
+animation = "nortprop vase palmtree"
 playing = true
