@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://screens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/silhouette main characters.png" type="Texture" id=12]
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3
@@ -36,10 +37,10 @@ script = ExtResource( 1 )
 [node name="MenuMain" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -148.0
-margin_top = 319.0
-margin_right = 148.0
-margin_bottom = 419.0
+margin_left = 105.0
+margin_top = 97.0
+margin_right = 405.0
+margin_bottom = 248.0
 
 [node name="StartButton" type="TextureButton" parent="MenuMain"]
 margin_right = 300.0
@@ -145,9 +146,13 @@ custom_fonts/font = ExtResource( 5 )
 text = "READ_B"
 
 [node name="Sprite" type="Sprite" parent="MenuMain"]
-position = Vector2( 156, -128 )
+position = Vector2( -305, 80 )
 scale = Vector2( 1.12844, 1.12844 )
 texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="MenuMain"]
+position = Vector2( -79, 345 )
+texture = ExtResource( 12 )
 
 [node name="OptionsMenu" type="Control" parent="."]
 visible = false
