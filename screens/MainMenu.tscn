@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://screens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/silhouette main characters.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/options menu items.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/password menu item.png" type="Texture" id=15]
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3
@@ -315,6 +316,12 @@ margin_left = -242.0
 margin_top = -137.5
 margin_right = 242.0
 margin_bottom = 137.5
+
+[node name="Sprite" type="Sprite" parent="PasswordMenu"]
+
+[node name="PasswordMenuItem" type="Sprite" parent="PasswordMenu/Sprite"]
+position = Vector2( 260, 135.5 )
+texture = ExtResource( 15 )
 
 [node name="LineEdit" type="LineEdit" parent="PasswordMenu"]
 anchor_left = 0.5
