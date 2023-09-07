@@ -152,6 +152,7 @@ customtext = "BOOK_HINT_CONTROL_MOVE"
 [node name="BookInfo2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2656, 312 )
 customtext = "BOOK_HINT_COMP_FOLLOW"
+boardname = "board 2"
 
 [node name="BookInfo3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3024, 312 )
