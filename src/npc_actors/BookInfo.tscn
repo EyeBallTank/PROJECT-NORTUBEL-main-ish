@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/BookHint.PNG" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/BookInfo.gd" type="Script" id=2]
@@ -6,6 +6,39 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 1.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 2.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 14.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 16.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 11.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 15.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 18.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 19.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 20.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 21.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 9.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 4.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 22.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 5.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 24.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 25.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 26.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 27.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 23.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 28.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 17.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 30.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 31.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 12.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 29.png" type="Texture" id=29]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 32.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 33.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 34.png" type="Texture" id=32]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 6.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 3.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 7.png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 8.png" type="Texture" id=36]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 10.png" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 13.png" type="Texture" id=38]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 35.png" type="Texture" id=39]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 126.5, 69.5 )
@@ -22,8 +55,140 @@ font_data = ExtResource( 3 )
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 590, 374 )
 
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 37 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 28 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 38 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 25 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 590, 374 )
+
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 19 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 24 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 29 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 26 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 30 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 31 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 33 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 36 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 15 )
 region = Rect2( 0, 0, 590, 374 )
 
 [sub_resource type="SpriteFrames" id=7]
@@ -33,9 +198,174 @@ animations = [ {
 "name": "board 1",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 9 ) ],
+"loop": false,
+"name": "board 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 10 ) ],
+"loop": false,
+"name": "board 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "board 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 12 ) ],
+"loop": false,
+"name": "board 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 13 ) ],
+"loop": false,
+"name": "board 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 14 ) ],
+"loop": false,
+"name": "board 15",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": false,
+"name": "board 16",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 16 ) ],
+"loop": false,
+"name": "board 17",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 17 ) ],
+"loop": false,
+"name": "board 18",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 18 ) ],
+"loop": false,
+"name": "board 19",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 8 ) ],
 "loop": false,
 "name": "board 2",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 19 ) ],
+"loop": false,
+"name": "board 20",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": false,
+"name": "board 21",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": false,
+"name": "board 22",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 22 ) ],
+"loop": false,
+"name": "board 23",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": false,
+"name": "board 24",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 24 ) ],
+"loop": false,
+"name": "board 25",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 25 ) ],
+"loop": false,
+"name": "board 26",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 26 ) ],
+"loop": false,
+"name": "board 27",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 27 ) ],
+"loop": false,
+"name": "board 28",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 28 ) ],
+"loop": false,
+"name": "board 29",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 29 ) ],
+"loop": false,
+"name": "board 3",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 30 ) ],
+"loop": false,
+"name": "board 30",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 31 ) ],
+"loop": false,
+"name": "board 31",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 32 ) ],
+"loop": false,
+"name": "board 32",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 33 ) ],
+"loop": false,
+"name": "board 33",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 34 ) ],
+"loop": false,
+"name": "board 34",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 35 ) ],
+"loop": false,
+"name": "board 35",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 36 ) ],
+"loop": false,
+"name": "board 4",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 37 ) ],
+"loop": false,
+"name": "board 5",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 38 ) ],
+"loop": false,
+"name": "board 6",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 39 ) ],
+"loop": false,
+"name": "board 7",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 40 ) ],
+"loop": false,
+"name": "board 8",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 41 ) ],
+"loop": false,
+"name": "board 9",
 "speed": 0.0
 } ]
 
@@ -86,7 +416,7 @@ text = "BOOKHINT_1"
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 523, 235 )
 frames = SubResource( 7 )
-animation = "board 2"
+animation = "board 35"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]

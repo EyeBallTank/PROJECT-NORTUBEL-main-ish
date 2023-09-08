@@ -149,38 +149,47 @@ position = Vector2( 1216, 384 )
 [node name="BookInfo" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1552, 480 )
 customtext = "BOOK_HINT_COIN"
+boardname = "board 18"
 
 [node name="BookInfo2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2432, 480 )
 customtext = "BOOK_HINT_FISHROD"
+boardname = "board 19"
 
 [node name="BookInfo3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 4504, 792 )
 customtext = "BOOK_HINT_KEYS"
+boardname = "board 20"
 
 [node name="BookInfo4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 5760, 792 )
 customtext = "BOOK_HINT_BUTTONS"
+boardname = "board 21"
 
 [node name="BookInfo5" parent="." instance=ExtResource( 9 )]
 position = Vector2( 6160, 792 )
 customtext = "BOOK_HINT_BUTTONBLUE"
+boardname = "board 22"
 
 [node name="BookInfo6" parent="." instance=ExtResource( 9 )]
 position = Vector2( 10024, -776 )
 customtext = "BOOK_HINT_ICE"
+boardname = "board 23"
 
 [node name="BookInfo7" parent="." instance=ExtResource( 9 )]
 position = Vector2( 10024, -380 )
 customtext = "BOOK_HINT_MUD"
+boardname = "board 24"
 
 [node name="BookInfo8" parent="." instance=ExtResource( 9 )]
 position = Vector2( 13112, -439 )
 customtext = "BOOK_HINT_HEALTH_DAMAGE"
+boardname = "board 26"
 
 [node name="BookInfo9" parent="." instance=ExtResource( 9 )]
 position = Vector2( 11808, -439 )
 customtext = "BOOK_HINT_CONTROL_KNIFE"
+boardname = "board 25"
 
 [node name="Coin" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1800, 448 )

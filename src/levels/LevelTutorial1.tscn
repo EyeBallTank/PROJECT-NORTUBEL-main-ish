@@ -157,62 +157,77 @@ boardname = "board 2"
 [node name="BookInfo3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3024, 312 )
 customtext = "BOOK_HINT_COMP_Z"
+boardname = "board 3"
 
 [node name="BookInfo15" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3496, 312 )
 customtext = "BOOK_HINT_COMPPOINTER"
+boardname = "board 4"
 
 [node name="BookInfo4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3968, 552 )
 customtext = "BOOK_HINT_VASE"
+boardname = "board 5"
 
 [node name="BookInfo5" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5248, 424 )
 customtext = "BOOK_HINT_JUMPPAD"
+boardname = "board 6"
 
 [node name="BookInfo6" parent="." instance=ExtResource( 6 )]
 position = Vector2( 6114, -122 )
 customtext = "BOOK_HINT_PORTAL"
+boardname = "board 7"
 
 [node name="BookInfo17" parent="." instance=ExtResource( 6 )]
 position = Vector2( 6428, 606 )
 customtext = "BOOK_HINT_PORTAL_NOTE"
+boardname = "board 8"
 
 [node name="BookInfo7" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2435, -1866 )
 customtext = "BOOK_HINT_CRAWL"
+boardname = "board 9"
 
 [node name="BookInfo8" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5432, -1344 )
 customtext = "BOOK_HINT_LADDERPLAY"
+boardname = "board 10"
 
 [node name="BookInfo16" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5720, -1344 )
 customtext = "BOOK_HINT_CONTROL_DOWN"
+boardname = "board 11"
 
 [node name="BookInfo9" parent="." instance=ExtResource( 6 )]
 position = Vector2( 6336, -1704 )
 customtext = "BOOK_HINT_LADDERCOMP"
+boardname = "board 12"
 
 [node name="BookInfo10" parent="." instance=ExtResource( 6 )]
 position = Vector2( 6648, -1704 )
 customtext = "BOOK_HINT_LADDERCOMP2"
+boardname = "board 13"
 
 [node name="BookInfo11" parent="." instance=ExtResource( 6 )]
 position = Vector2( 7576, -1488 )
 customtext = "BOOK_HINT_WATERPLAY"
+boardname = "board 14"
 
 [node name="BookInfo12" parent="." instance=ExtResource( 6 )]
 position = Vector2( 7984, -1113 )
 customtext = "BOOK_HINT_WATERCOMP"
+boardname = "board 15"
 
 [node name="BookInfo13" parent="." instance=ExtResource( 6 )]
 position = Vector2( 8408, -763 )
 customtext = "BOOK_HINT_DROWN"
+boardname = "board 16"
 
 [node name="BookInfo14" parent="." instance=ExtResource( 6 )]
 position = Vector2( 9208, -1302 )
 customtext = "BOOK_HINT_GREENDOOR"
+boardname = "board 17"
 
 [node name="Pushable" parent="." instance=ExtResource( 19 )]
 position = Vector2( 4424, 432 )

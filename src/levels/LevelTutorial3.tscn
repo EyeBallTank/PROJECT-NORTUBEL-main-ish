@@ -147,38 +147,47 @@ customtext4 = "BONKA_HURT_3"
 [node name="BookInfo" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2040, 520 )
 customtext = "BOOK_HINT_SOCCERBAG"
+boardname = "board 27"
 
 [node name="BookInfo3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2368, 520 )
 customtext = "BOOK_HINT_CONTROL_BALLATTACK"
+boardname = "board 28"
 
 [node name="BookInfo2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2688, 520 )
 customtext = "BOOK_HINT_SOCCERNET"
+boardname = "board 29"
 
 [node name="BookInfo4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 4040, 560 )
 customtext = "BOOK_HINT_SOCCERBALL"
+boardname = "board 30"
 
 [node name="BookInfo5" parent="." instance=ExtResource( 9 )]
 position = Vector2( 5576, 752 )
 customtext = "BOOK_HINT_FALLPLAT"
+boardname = "board 31"
 
 [node name="BookInfo6" parent="." instance=ExtResource( 9 )]
 position = Vector2( 6592, 2752 )
 customtext = "BOOK_HINT_MANOWAR"
+boardname = "board 32"
 
 [node name="BookInfo7" parent="." instance=ExtResource( 9 )]
 position = Vector2( 6896, 2752 )
 customtext = "BOOK_HINT_FLOATERRING"
+boardname = "board 33"
 
 [node name="BookInfo8" parent="." instance=ExtResource( 9 )]
 position = Vector2( 8064, 2856 )
 customtext = "BOOK_HINT_GONG"
+boardname = "board 34"
 
 [node name="BookInfo9" parent="." instance=ExtResource( 9 )]
 position = Vector2( 13560, 1029 )
 customtext = "BOOK_HINT_BELL"
+boardname = "board 35"
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 26 )]
 position = Vector2( 4616, 841 )
