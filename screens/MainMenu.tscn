@@ -112,6 +112,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "PASSWORD_B"
 
 [node name="QuitButton" type="TextureButton" parent="MenuMain"]
+visible = false
 margin_top = 93.0
 margin_right = 300.0
 margin_bottom = 120.0
@@ -133,9 +134,9 @@ custom_fonts/font = ExtResource( 5 )
 text = "QUIT_B"
 
 [node name="ReadButton" type="TextureButton" parent="MenuMain"]
-margin_top = 124.0
+margin_top = 93.0
 margin_right = 300.0
-margin_bottom = 151.0
+margin_bottom = 120.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
