@@ -99,6 +99,17 @@ func _i_am_invincible():
 	is_invul()
 
 func _physics_process(delta):
+	
+	if hasbluekey == true:
+		$CanvasLayer/BlueKeyIcon.play("sim tenho chave azul")
+	elif hasbluekey == false:
+		$CanvasLayer/BlueKeyIcon.play("nao tenho chave azul")
+	if hasredkey == true:
+		$CanvasLayer/RedKeyIcon.play("sim tenho chave verm")
+	elif hasredkey == false:
+		$CanvasLayer/RedKeyIcon.play("nao tenho chave verm")
+
+
 	healthBar.value = health
 	if health <= 0 and state != DEATH:
 		state = DEATH
