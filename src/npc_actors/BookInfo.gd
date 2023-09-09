@@ -24,7 +24,8 @@ func _physics_process(delta):
 			dialoguebox.visible = true
 	elif test == false:
 		dialoguebox.visible = false
-
+	if Input.is_action_just_pressed("runaway"):
+		test = false
 
 func _on_TalktoArea_body_entered(body):
 	if body.name == "Player":

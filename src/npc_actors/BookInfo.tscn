@@ -423,9 +423,9 @@ animation = "board 35"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Basicmessage"]
 margin_left = 267.0
-margin_top = 510.0
+margin_top = 501.0
 margin_right = 773.0
-margin_bottom = 556.0
+margin_bottom = 567.0
 texture = ExtResource( 4 )
 region_rect = Rect2( -8.50003, -6, 432, 423 )
 patch_margin_left = 31
@@ -434,10 +434,10 @@ patch_margin_right = 19
 patch_margin_bottom = 19
 
 [node name="Label" type="Label" parent="Basicmessage/NinePatchRect"]
-margin_left = 178.0
-margin_top = 13.0
-margin_right = 436.0
-margin_bottom = 38.0
+margin_left = 117.0
+margin_top = 9.0
+margin_right = 375.0
+margin_bottom = 34.0
 custom_fonts/font = ExtResource( 40 )
 text = "PRESS_Q_TO_READ"
 
