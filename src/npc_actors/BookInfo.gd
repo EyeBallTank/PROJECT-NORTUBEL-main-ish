@@ -20,7 +20,7 @@ func _ready():
 
 func _physics_process(delta):
 	if test == true:
-		if Input.is_action_just_pressed("standstill"):
+		if Input.is_action_just_pressed("standstill") and dialoguebox.visible == false:
 			dialoguebox.visible = true
 	elif test == false:
 		dialoguebox.visible = false
