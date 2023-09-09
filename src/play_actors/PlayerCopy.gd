@@ -108,7 +108,14 @@ func _physics_process(delta):
 		$CanvasLayer/RedKeyIcon.play("sim tenho chave verm")
 	elif hasredkey == false:
 		$CanvasLayer/RedKeyIcon.play("nao tenho chave verm")
-
+	if hasyellowkey == true:
+		$CanvasLayer/YellowKeyIcon.play("sim tenho chave amar")
+	elif hasyellowkey == false:
+		$CanvasLayer/YellowKeyIcon.play("nao tenho chave amar")
+	if hasball == true:
+		$CanvasLayer/SoccerBallIcon.play("sim tenho bola")
+	elif hasball == false:
+		$CanvasLayer/SoccerBallIcon.play("nao tenho bola")
 
 	healthBar.value = health
 	if health <= 0 and state != DEATH:
