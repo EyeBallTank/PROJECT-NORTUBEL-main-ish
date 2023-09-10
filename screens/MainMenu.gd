@@ -9,7 +9,8 @@ onready var password = $PasswordMenu
 var codes := [ "gallery",
 				"tutor1", "tutor2", "tutor3",
 				"c4rr13", "k4tr1n", "m3lv1n",
-				"osc4r0", "p33tt3", "ang3l4"]
+				"osc4r0", "p33tt3", "ang3l4",
+				"l3300n"]
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -103,3 +104,6 @@ func p33tt3():
 
 func ang3l4():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate6.tscn")
+
+func l3300n():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel1.tscn")
