@@ -42,49 +42,49 @@ region = Rect2( 0, 352, 622, 88 )
 [sub_resource type="SpriteFrames" id=10]
 animations = [ {
 "frames": [ SubResource( 1 ) ],
-"loop": true,
+"loop": false,
 "name": "brinkaedea",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 2 ) ],
-"loop": true,
+"loop": false,
 "name": "greklovick",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 3 ) ],
-"loop": true,
+"loop": false,
 "name": "herrko",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 4 ) ],
-"loop": true,
+"loop": false,
 "name": "hirdrih",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 5 ) ],
-"loop": true,
+"loop": false,
 "name": "krimbstone",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 6 ) ],
-"loop": true,
+"loop": false,
 "name": "lahiurn",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 7 ) ],
-"loop": true,
+"loop": false,
 "name": "massagcoav",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 8 ) ],
-"loop": true,
+"loop": false,
 "name": "nortubel",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 9 ) ],
-"loop": true,
+"loop": false,
 "name": "untotern",
-"speed": 5.0
+"speed": 0.0
 } ]
 
 [sub_resource type="Animation" id=11]
