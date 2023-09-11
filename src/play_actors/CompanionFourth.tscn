@@ -110,7 +110,6 @@ position = Vector2( 0, -133 )
 scale = Vector2( 0.64, 0.64 )
 frames = ExtResource( 4 )
 animation = "Swimdown"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
