@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+
+[node name="BrinkLevel1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( -196614, 32, 0, -131078, 32, 0, -65542, 32, 0, -6, 32, 0, 65530, 32, 0, 131066, 32, 0, 196602, 32, 0, 196603, 32, 0, 196604, 32, 0, 196605, 32, 0, 196606, 32, 0, 196607, 32, 0, 131072, 32, 0, 131073, 32, 0, 131074, 32, 0, 131075, 32, 0, 131076, 32, 0, 131077, 32, 0, 131078, 32, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -190, -76 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 44, -106 )
+
+[node name="playerspawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( -190, -76 )
+
+[node name="companionspawn" parent="." instance=ExtResource( 5 )]
+position = Vector2( 46, -106 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 4 )]
+
+[node name="WorldTitleName" parent="." instance=ExtResource( 1 )]
+worldname = "brinkaedea"
