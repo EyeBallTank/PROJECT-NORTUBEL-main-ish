@@ -26,7 +26,6 @@ var lives = 3
 var max_lives = 5
 
 signal you_are_invincible
-signal invincible_no_more
 
 signal player_died
 #signal companion_died
