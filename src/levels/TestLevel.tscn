@@ -80,5 +80,5 @@ position = Vector2( 152, -360 )
 position = Vector2( -48, -360 )
 
 [node name="LevelProp2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 520, -216 )
-propname = "nortprop beanbag chair"
+position = Vector2( 448, -216 )
+propname = "nortprop green cabinet"

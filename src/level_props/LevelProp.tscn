@@ -1,4 +1,4 @@
-[gd_scene load_steps=273 format=2]
+[gd_scene load_steps=275 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -136,6 +136,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop vase palmtree.png" type="Texture" id=134]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop artistic statue.png" type="Texture" id=135]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop beanbag chair.png" type="Texture" id=136]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop green cabinet.png" type="Texture" id=137]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -352,6 +353,10 @@ region = Rect2( 0, 0, 219, 265 )
 [sub_resource type="AtlasTexture" id=97]
 atlas = ExtResource( 86 )
 region = Rect2( 0, 0, 230, 260 )
+
+[sub_resource type="AtlasTexture" id=148]
+atlas = ExtResource( 137 )
+region = Rect2( 0, 0, 459, 135 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 17 )
@@ -949,6 +954,11 @@ animations = [ {
 "name": "nortprop gold decoration 1",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 148 ) ],
+"loop": false,
+"name": "nortprop green cabinet",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 27 ) ],
 "loop": false,
 "name": "nortprop green fence metal",
@@ -1361,5 +1371,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop beanbag chair"
+animation = "nortprop green cabinet"
 playing = true
