@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://src/npc_actors/nort npc/Angela NPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=31]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=32]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=33]
 
 [node name="LevelTutorial2" type="Node2D"]
 light_mask = 4
@@ -269,3 +270,6 @@ position = Vector2( 12320, -264 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 23 )]
 position = Vector2( 10888, -16 )
+
+[node name="LoreBook" parent="." instance=ExtResource( 33 )]
+position = Vector2( 5874, -13 )
