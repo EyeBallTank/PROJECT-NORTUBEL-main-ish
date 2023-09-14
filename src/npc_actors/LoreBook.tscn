@@ -58,10 +58,14 @@ patch_margin_right = 4
 patch_margin_bottom = 6
 
 [node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
-margin_left = 11.0
-margin_top = 10.0
-margin_right = 906.0
-margin_bottom = 381.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -385.5
+margin_top = -198.0
+margin_right = 386.5
+margin_bottom = 190.0
 custom_fonts/font = SubResource( 5 )
 text = "BOOKHINT_1"
 
