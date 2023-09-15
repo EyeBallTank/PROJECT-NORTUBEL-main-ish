@@ -49,7 +49,7 @@ shape = SubResource( 4 )
 layer = 14
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
-position = Vector2( 531, 253 )
+position = Vector2( 531, 269 )
 frames = SubResource( 6 )
 animation = "placeholder"
 

@@ -24,8 +24,11 @@ func _physics_process(delta):
 
 
 func _on_TalktoArea_body_entered(body):
-	pass # Replace with function body.
-
+	if body.name == "Player":
+		basicmessage.visible = true
+		test = true
 
 func _on_TalktoArea_body_exited(body):
-	pass # Replace with function body.
+	if body.name == "Player":
+		basicmessage.visible = false
+		test = false
