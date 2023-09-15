@@ -2,8 +2,8 @@ id,en,pt
 UNPAUSE_B,Unpause,Retomar
 OPTIONS_B,Options,Opções
 EXTRA_B,Extra,Extra
-PRESS_Q_TO_READ,"Press S to read and R to stop
-Return to read again","Prime S para ler e R para parar
+PRESS_Q_TO_READ,"Press S to read/see and R to stop
+Return to read again","Prime S para ler/ver e R para parar
 Volte para ler outra vez"
 ,,
 QUIT_B, Quit,Saída
