@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 
