@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=13]
@@ -50,3 +51,6 @@ collision_newsize = Vector2( 48, 80 )
 position = Vector2( 4864, 192 )
 scale = Vector2( 80, 16 )
 collision_newsize = Vector2( 80, 16 )
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 7 )]
+position = Vector2( 712, -96 )

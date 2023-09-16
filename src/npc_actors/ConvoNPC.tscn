@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://src/npc_actors/ConvoNPC.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -25,6 +26,7 @@ extents = Vector2( 115.5, 103 )
 [node name="ConvoNPC" type="KinematicBody2D"]
 collision_layer = 64
 collision_mask = 4
+script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
@@ -41,6 +43,7 @@ position = Vector2( -6.5, 6 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 14
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
 anchor_left = 0.5
@@ -108,9 +111,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -59.0
-margin_top = -15.5
-margin_right = 59.0
-margin_bottom = 1.5
+margin_left = -61.0
+margin_top = -17.5
+margin_right = 57.0
+margin_bottom = -0.5
 custom_fonts/font = ExtResource( 1 )
 text = "PRESS_Q_TO_READ"
+
+[connection signal="body_entered" from="HearThemArea" to="." method="_on_HearThemArea_body_entered"]
+[connection signal="body_exited" from="HearThemArea" to="." method="_on_HearThemArea_body_exited"]
