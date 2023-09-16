@@ -3,8 +3,12 @@ extends KinematicBody2D
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 
+onready var animationplayer = $AnimationPlayer
 onready var dialoguebox = $CanvasLayer
-onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
+onready var maintext1 = $CanvasLayer/NinePatchRect/Dialogue1
+onready var maintext2 = $CanvasLayer/NinePatchRect/Dialogue2
+onready var maintext3 = $CanvasLayer/NinePatchRect/Dialogue3
+onready var maintext4 = $CanvasLayer/NinePatchRect/Dialogue4
 export(String) var customtext1 = "BLABLA"
 export(String) var customtext2 = "YESYES"
 export(String) var customtext3 = "NONO"
@@ -19,7 +23,10 @@ var test = false
 
 func _ready():
 	mainsprite.animation = spritename
-	maintext.text = str (customtext1)
+	maintext1.text = str (customtext1)
+	maintext2.text = str (customtext2)
+	maintext3.text = str (customtext3)
+	maintext4.text = str (customtext4)
 	dialoguebox.visible = false
 	basicmessage.visible = false
 
@@ -29,8 +36,10 @@ func _physics_process(delta):
 	if test == true:
 		if Input.is_action_just_pressed("standstill") and dialoguebox.visible == false:
 			dialoguebox.visible = true
+			animationplayer.play("maintalk")
 	elif test == false:
 		dialoguebox.visible = false
+		animationplayer.stop()
 	if Input.is_action_just_pressed("runaway"):
 		test = false
 

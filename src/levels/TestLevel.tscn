@@ -54,3 +54,7 @@ collision_newsize = Vector2( 80, 16 )
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 7 )]
 position = Vector2( 712, -96 )
+customtext1 = "test"
+customtext2 = "its a test"
+customtext3 = "does it work"
+customtext4 = "maybe"
