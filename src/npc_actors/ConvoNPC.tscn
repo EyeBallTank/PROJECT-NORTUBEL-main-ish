@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin.png" type="Texture" id=2]
@@ -22,6 +22,10 @@ extents = Vector2( 116.5, 178.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 115.5, 103 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "maintalk"
+length = 8.0
 
 [node name="ConvoNPC" type="KinematicBody2D"]
 collision_layer = 64
@@ -117,6 +121,9 @@ margin_right = 57.0
 margin_bottom = -0.5
 custom_fonts/font = ExtResource( 1 )
 text = "PRESS_Q_TO_READ"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/maintalk = SubResource( 5 )
 
 [connection signal="body_entered" from="HearThemArea" to="." method="_on_HearThemArea_body_entered"]
 [connection signal="body_exited" from="HearThemArea" to="." method="_on_HearThemArea_body_exited"]
