@@ -9,6 +9,8 @@ onready var maintext1 = $CanvasLayer/NinePatchRect/Dialogue1
 onready var maintext2 = $CanvasLayer/NinePatchRect/Dialogue2
 onready var maintext3 = $CanvasLayer/NinePatchRect/Dialogue3
 onready var maintext4 = $CanvasLayer/NinePatchRect/Dialogue4
+onready var char1 = $CanvasLayer/NinePatchRect2/Name1
+onready var char2 = $CanvasLayer/NinePatchRect2/Name2
 export(String) var customtext1 = "BLABLA"
 export(String) var customtext2 = "YESYES"
 export(String) var customtext3 = "NONO"
@@ -27,6 +29,8 @@ func _ready():
 	maintext2.text = str (customtext2)
 	maintext3.text = str (customtext3)
 	maintext4.text = str (customtext4)
+	char1.text = str (customname1)
+	char2.text = str (customname2)
 	dialoguebox.visible = false
 	basicmessage.visible = false
 
