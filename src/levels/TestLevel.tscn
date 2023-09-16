@@ -60,3 +60,13 @@ customtext3 = "does it work"
 customtext4 = "maybe"
 customname1 = "Carrrie Decarde"
 customname2 = "Katrin Flenn"
+
+[node name="ConvoNPC2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 968, -96 )
+customtext1 = "test"
+customtext2 = "its a test"
+customtext3 = "does it work"
+customtext4 = "maybe"
+customname1 = "Carrrie Decarde"
+customname2 = "Katrin Flenn"
+spritename = "oscar pete"
