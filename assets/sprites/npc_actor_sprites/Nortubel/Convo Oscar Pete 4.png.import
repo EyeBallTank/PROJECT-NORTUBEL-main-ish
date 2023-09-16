@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Convo Carrie Katrin 3.png-05d27172e49079dbc25f5017b5216b50.stex"
+path="res://.import/Convo Oscar Pete 4.png-bf7141a7b399d0bc51c428343c64922d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 3.png"
-dest_files=[ "res://.import/Convo Carrie Katrin 3.png-05d27172e49079dbc25f5017b5216b50.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete 4.png"
+dest_files=[ "res://.import/Convo Oscar Pete 4.png-bf7141a7b399d0bc51c428343c64922d.stex" ]
 
 [params]
 
