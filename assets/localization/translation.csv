@@ -5,7 +5,7 @@ EXTRA_B,Extra,Extra
 PRESS_Q_TO_READ,"Press S to read/see and R to stop
 Return to read again","Prime S para ler/ver e R para parar
 Volte para ler outra vez"
-,,
+S_TO_HEAR_CONVO,S to hear conversation,S para ouvir conversa
 QUIT_B, Quit,Saída
 READ_B,Please read!,"Por favor, lê"
 MUSIC_SET,Music,Música
