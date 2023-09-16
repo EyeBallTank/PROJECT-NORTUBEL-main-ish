@@ -169,7 +169,19 @@ collision_newsize = Vector2( 128, 16 )
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 26 )]
 position = Vector2( 1614, 362.496 )
+customtext1 = "CONVO_TALK_1"
+customtext2 = "CONVO_TALK_2"
+customtext3 = "CONVO_TALK_3"
+customtext4 = "CONVO_TALK_4"
+customname1 = "Katrin Flenn"
+customname2 = "Carrie Decarde"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 26 )]
 position = Vector2( -1513, 1724.84 )
+customtext1 = "CONVO_TALK_5"
+customtext2 = "CONVO_TALK_6"
+customtext3 = "CONVO_TALK_7"
+customtext4 = "CONVO_TALK_8"
+customname1 = "Pete Flenn"
+customname2 = "Oscar Decarde"
 spritename = "oscar pete"
