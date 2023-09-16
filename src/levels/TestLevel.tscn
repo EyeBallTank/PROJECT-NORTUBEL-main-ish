@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -7,9 +7,13 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/nort npc/Pete NPC.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/npc_actors/nort npc/Oscar NPC.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/npc_actors/nort npc/KatrinNPC.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 
 [node name="TestLevel" type="Node2D"]
@@ -70,3 +74,15 @@ customtext4 = "maybe"
 customname1 = "Carrrie Decarde"
 customname2 = "Katrin Flenn"
 spritename = "oscar pete"
+
+[node name="CarrieNPC" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1184, -80 )
+
+[node name="KatrinNPC" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1336, -80 )
+
+[node name="Oscar NPC" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1264, -64 )
+
+[node name="Pete NPC" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1416, -64 )
