@@ -1,5 +1,6 @@
 extends KinematicBody2D
-
+#Note: sprites seem bigger than they should be because of plans of adding bigger characters
+#Also, player sprites are at 0.72 and companion's at 0.64 in terms of scale
 
 export var gravity: = 2960
 var velocity = Vector2.ZERO
