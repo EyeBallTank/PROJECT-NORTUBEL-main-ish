@@ -92,7 +92,7 @@ customtext = "k4tr1n"
 position = Vector2( 898, -128 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
-position = Vector2( 896, -128 )
+position = Vector2( 902, -128 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
@@ -189,7 +189,7 @@ position = Vector2( 1920, 1024 )
 id = 1
 
 [node name="Red key" parent="." instance=ExtResource( 30 )]
-position = Vector2( -1088, -576 )
+position = Vector2( -1246, -655 )
 
 [node name="FG" type="TileMap" parent="."]
 z_index = 15
@@ -201,8 +201,20 @@ tile_data = PoolIntArray( -65497, 133, 0, -65496, 132, 0, -65495, 132, 0, -65494
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 33 )]
 position = Vector2( -1024, -651 )
+customtext1 = "CONVO_TALK_13"
+customtext2 = "CONVO_TALK_14"
+customtext3 = "CONVO_TALK_15"
+customtext4 = "CONVO_TALK_16"
+customname1 = "Melvin Brokston"
+customname2 = "Carrie Decarde"
 spritename = "carrie melvin"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 33 )]
 position = Vector2( 4395, 176 )
+customtext1 = "CONVO_TALK_21"
+customtext2 = "CONVO_TALK_22"
+customtext3 = "CONVO_TALK_23"
+customtext4 = "CONVO_TALK_24"
+customname1 = "Angela Brokston"
+customname2 = "Oscar Decarde"
 spritename = "angela oscar"

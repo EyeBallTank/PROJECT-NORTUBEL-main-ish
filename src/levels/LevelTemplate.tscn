@@ -225,8 +225,20 @@ position = Vector2( 4408, -728 )
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 1 )]
 position = Vector2( 7712, -464 )
+customtext1 = "CONVO_TALK_9"
+customtext2 = "CONVO_TALK_10"
+customtext3 = "CONVO_TALK_11"
+customtext4 = "CONVO_TALK_12"
+customname1 = "Melvin Brokston"
+customname2 = "Katrin Flenn"
 spritename = "katrin melvin"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 8791, -470 )
+customtext1 = "CONVO_TALK_17"
+customtext2 = "CONVO_TALK_18"
+customtext3 = "CONVO_TALK_19"
+customtext4 = "CONVO_TALK_20"
+customname1 = "Angela Brokston"
+customname2 = "Pete Flenn"
 spritename = "angela pete"
