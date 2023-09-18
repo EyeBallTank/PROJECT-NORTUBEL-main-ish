@@ -6,7 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
-[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=13]
@@ -52,9 +52,9 @@ position = Vector2( 4864, 192 )
 scale = Vector2( 80, 16 )
 collision_newsize = Vector2( 80, 16 )
 
-[node name="Yellow key" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1048, -64 )
+[node name="Red key" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1216, -128 )
 
-[node name="Yellow key2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 840, -112 )
-spritename = "brinkaedea yelkey"
+[node name="Red key2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1064, -128 )
+spritename = "hirdrih redkey"
