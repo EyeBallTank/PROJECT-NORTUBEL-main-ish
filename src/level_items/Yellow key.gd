@@ -2,8 +2,11 @@ extends Area2D
 
 onready var audioPlayer = $AudioStreamPlayer
 onready var animationplayer = $AnimationPlayer
+onready var sprite = $Sprite
+export var spritename = "nortubel yelkey"
 
 func _ready():
+	sprite.animation = spritename
 	animationplayer.play("RESET")
 	pass 
 
