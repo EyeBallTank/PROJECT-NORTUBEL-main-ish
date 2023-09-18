@@ -73,7 +73,7 @@ customtext3 = "does it work"
 customtext4 = "maybe"
 customname1 = "Carrrie Decarde"
 customname2 = "Katrin Flenn"
-spritename = "oscar pete"
+spritename = "angela oscar"
 
 [node name="CarrieNPC" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1184, -80 )

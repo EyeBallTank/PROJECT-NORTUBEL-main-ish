@@ -1,10 +1,15 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/npc_actors/ConvoNPC.gd" type="Script" id=4]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete 5.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Angela Oscar 2.png" type="Texture" id=6]
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
@@ -16,6 +21,11 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ SubResource( 13 ) ],
+"loop": false,
+"name": "angela oscar",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
 "name": "carrie katrin",
@@ -217,7 +227,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "carrie katrin"
+animation = "angela oscar"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
