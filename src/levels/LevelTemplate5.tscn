@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=30]
 
 [node name="LevelTemplate5" type="Node2D"]
 light_mask = 4
@@ -162,3 +163,11 @@ collision_newsize = Vector2( 40, 88 )
 
 [node name="SpitterFish" parent="." instance=ExtResource( 27 )]
 position = Vector2( -4264, -376 )
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 30 )]
+position = Vector2( 7472, -1035 )
+spritename = "angela carrie"
+
+[node name="ConvoNPC2" parent="." instance=ExtResource( 30 )]
+position = Vector2( 8553, -1012 )
+spritename = "melvin oscar"
