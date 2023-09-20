@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/npc_actors/nort npc/Angela NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/npc_actors/nort npc/Oscar NPC.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/npc_actors/nort npc/Pete NPC.tscn" type="PackedScene" id=12]
@@ -17,9 +16,6 @@
 [ext_resource path="res://src/npc_actors/nort npc/MelvinNPC.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=17]
-[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=18]
-[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=19]
-[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=20]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -46,11 +42,6 @@ position = Vector2( 124, 49 )
 [node name="Companion" parent="." instance=ExtResource( 4 )]
 position = Vector2( 124, 49 )
 
-[node name="Water" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3712, 712 )
-scale = Vector2( 160, 160 )
-collision_newsize = Vector2( 160, 160 )
-
 [node name="Ladder" parent="." instance=ExtResource( 10 )]
 position = Vector2( 4288, 128 )
 scale = Vector2( 48, 80 )
@@ -73,23 +64,32 @@ position = Vector2( 766, -92.9999 )
 [node name="Pete NPC" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1054, -101 )
 
-[node name="ConvoNPC" parent="." instance=ExtResource( 17 )]
-position = Vector2( 1622, -92.9999 )
-
 [node name="Angela NPC" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1295, -118 )
 
 [node name="MelvinNPC" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1168, -124 )
 
-[node name="Blue key" parent="." instance=ExtResource( 20 )]
-position = Vector2( 840, -322 )
-spritename = "massagcoav blukey"
+[node name="ConvoNPC" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1608, -92.9999 )
+spritename = "carrie pete"
 
-[node name="Red key" parent="." instance=ExtResource( 19 )]
-position = Vector2( 611, -323 )
-spritename = "massagcoav redkey"
+[node name="ConvoNPC2" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2883, -92.9999 )
+spritename = "angela carrie"
 
-[node name="Yellow key" parent="." instance=ExtResource( 18 )]
-position = Vector2( 701, -317 )
-spritename = "massagcoav yelkey"
+[node name="ConvoNPC3" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2601, -92.9999 )
+spritename = "katrin oscar"
+
+[node name="ConvoNPC4" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2334, -92.9999 )
+spritename = "angela katrin"
+
+[node name="ConvoNPC5" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2086, -92.9999 )
+spritename = "melvin pete"
+
+[node name="ConvoNPC6" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1843, -92.9999 )
+spritename = "melvin oscar"
