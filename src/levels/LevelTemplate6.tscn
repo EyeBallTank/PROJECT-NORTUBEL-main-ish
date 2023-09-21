@@ -133,8 +133,20 @@ tile_data = PoolIntArray( -393243, 12, 0, -393242, 12, 0, -393241, 12, 0, -39324
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 25 )]
 position = Vector2( -1681, -2117 )
+customtext1 = "CONVO_TALK_45"
+customtext2 = "CONVO_TALK_46"
+customtext3 = "CONVO_TALK_47"
+customtext4 = "CONVO_TALK_48"
+customname1 = "Carrie Decarde"
+customname2 = "Pete Flenn"
 spritename = "carrie pete"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1818, -2016 )
+customtext1 = "CONVO_TALK_41"
+customtext2 = "CONVO_TALK_42"
+customtext3 = "CONVO_TALK_43"
+customtext4 = "CONVO_TALK_44"
+customname1 = "Katrin Flenn"
+customname2 = "Oscar Decarde"
 spritename = "katrin oscar"
