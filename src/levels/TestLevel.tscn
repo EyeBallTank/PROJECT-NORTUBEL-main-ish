@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
@@ -46,6 +48,14 @@ position = Vector2( 4864, 192 )
 scale = Vector2( 80, 16 )
 collision_newsize = Vector2( 80, 16 )
 
+[node name="Blue key" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1618, -153 )
+spritename = "herrko blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1415, -156 )
+spritename = "herrko redkey"
+
 [node name="Yellow key" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1140, -331 )
-spritename = "krimbstone yelkey"
+position = Vector2( 1184, -144 )
+spritename = "herrko yelkey"

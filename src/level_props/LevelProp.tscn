@@ -1371,5 +1371,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "HEIGHT CHAR PROP TEST"
 playing = true
