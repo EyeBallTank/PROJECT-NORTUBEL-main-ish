@@ -175,7 +175,7 @@ customname2 = "Carrie Decarde"
 spritename = "angela carrie"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 30 )]
-position = Vector2( 8553, -1012 )
+position = Vector2( 7559, -877 )
 customtext1 = "CONVO_TALK_37"
 customtext2 = "CONVO_TALK_38"
 customtext3 = "CONVO_TALK_39"
