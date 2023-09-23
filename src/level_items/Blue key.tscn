@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/blue key.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Blue key.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/brinkaedea/blue key brinkaedea.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/level_item_sprites/hirdrih/blue key hirdrih.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/level_item_sprites/untotern/blue key untotern.PNG" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/level_item_sprites/lahiurn/blue key lahiurn.png" type="Texture" id=10]
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 7 )
@@ -25,6 +26,10 @@ region = Rect2( 0, 0, 54, 157 )
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 67, 67 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 61, 159 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 4 )
@@ -59,6 +64,11 @@ animations = [ {
 "frames": [ SubResource( 10 ) ],
 "loop": false,
 "name": "hirdrih blukey",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 12 ) ],
+"loop": false,
+"name": "lahiurn blukey",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 6 ) ],
@@ -192,7 +202,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
-animation = "untotern blukey"
+animation = "lahiurn blukey"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 0 )
