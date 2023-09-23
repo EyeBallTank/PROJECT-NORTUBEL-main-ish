@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/artgallery nortubel placeholder.png-31481b0012c7e2b949a30567b12ac0ac.stex"
+path="res://.import/nortubel world map.png-52dcf47c64f8957867210200bf0976b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/nortubel/artgallery nortubel placeholder.png"
-dest_files=[ "res://.import/artgallery nortubel placeholder.png-31481b0012c7e2b949a30567b12ac0ac.stex" ]
+source_file="res://assets/sprites/art gallery/nortubel/nortubel world map.png"
+dest_files=[ "res://.import/nortubel world map.png-52dcf47c64f8957867210200bf0976b1.stex" ]
 
 [params]
 

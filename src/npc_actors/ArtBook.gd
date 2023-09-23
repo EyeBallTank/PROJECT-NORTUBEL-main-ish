@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 onready var dialoguebox = $CanvasLayer
-export var boardname = "placeholder"
+export var boardname = "nortubel world map"
 onready var sprite = $CanvasLayer/AnimatedSprite
 onready var basicmessage = $Basicmessage
 
