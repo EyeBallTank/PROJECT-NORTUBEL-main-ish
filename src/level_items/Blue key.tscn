@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/blue key.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Blue key.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/greklovick/blue key greklovick 2.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_item_sprites/brinkaedea/blue key brinkaedea.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/level_item_sprites/hirdrih/blue key hirdrih.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/level_item_sprites/untotern/blue key untotern.PNG" type="Texture" id=9]
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 7 )
@@ -33,6 +34,10 @@ region = Rect2( 0, 0, 81, 164 )
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 66, 170 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 66, 173 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
@@ -64,6 +69,11 @@ animations = [ {
 "frames": [ SubResource( 4 ) ],
 "loop": false,
 "name": "nortubel blukey",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "untotern blukey",
 "speed": 0.0
 } ]
 
@@ -182,7 +192,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
-animation = "hirdrih blukey"
+animation = "untotern blukey"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 0 )
