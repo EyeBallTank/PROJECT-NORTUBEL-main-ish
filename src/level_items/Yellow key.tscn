@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/yellow key.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Yellow key.gd" type="Script" id=2]
@@ -7,10 +7,15 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/massagcoav/yellow key massagcoav.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_item_sprites/krimbstone/yellow key krimbstone.PNG" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_item_sprites/herrko/yellow key herrko.PNG" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/level_item_sprites/greklovick/yellow key greklovick.png" type="Texture" id=8]
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 103, 107 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 54, 126 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 7 )
@@ -34,6 +39,11 @@ animations = [ {
 "frames": [ SubResource( 6 ) ],
 "loop": false,
 "name": "brinkaedea yelkey",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 10 ) ],
+"loop": false,
+"name": "greklovick yelkey",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 9 ) ],
@@ -161,7 +171,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, 0 )
 frames = SubResource( 5 )
-animation = "herrko yelkey"
+animation = "greklovick yelkey"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 0 )

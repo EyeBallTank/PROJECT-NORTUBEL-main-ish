@@ -50,12 +50,12 @@ collision_newsize = Vector2( 80, 16 )
 
 [node name="Blue key" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1618, -153 )
-spritename = "herrko blukey"
+spritename = "greklovick blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1415, -156 )
-spritename = "herrko redkey"
+spritename = "greklovick redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 18 )]
 position = Vector2( 1184, -144 )
-spritename = "herrko yelkey"
+spritename = "greklovick yelkey"
