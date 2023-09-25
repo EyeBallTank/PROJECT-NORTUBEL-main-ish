@@ -74,4 +74,4 @@ spritename = "massagcoav reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1419, 0 )
-spritename = "massagcoav yeldoor"
+spritename = "krimbstone yeldoor"
