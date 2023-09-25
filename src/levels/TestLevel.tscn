@@ -67,4 +67,4 @@ position = Vector2( 843, -532 )
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 11 )]
 position = Vector2( 390, -467 )
-spritename = "krimbstone floater"
+spritename = "herrko floater"
