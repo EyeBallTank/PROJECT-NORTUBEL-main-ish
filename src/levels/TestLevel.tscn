@@ -66,12 +66,12 @@ position = Vector2( 548, -328 )
 
 [node name="BlueDoor" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1281, 0 )
-spritename = "hirdrih bludoor"
+spritename = "untotern bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1561, 0 )
-spritename = "hirdrih reddoor"
+spritename = "untotern reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1419, 0 )
-spritename = "hirdrih yeldoor"
+spritename = "untotern yeldoor"
