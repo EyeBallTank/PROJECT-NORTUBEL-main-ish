@@ -201,7 +201,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -9.53674e-07 )
 scale = Vector2( 0.456057, 0.424779 )
 frames = SubResource( 5 )
-animation = "krimbstone health"
+animation = "nortubel health"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
