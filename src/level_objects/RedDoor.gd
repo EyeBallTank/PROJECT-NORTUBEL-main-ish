@@ -1,8 +1,11 @@
 extends StaticBody2D
 
 onready var animationplayer = $AnimationPlayer
+onready var sprite = $Sprite
+export var spritename = "nortubel reddoor"
 
 func _ready():
+	sprite.animation = spritename
 	$AnimationPlayer.play("RESET")
 	pass
 

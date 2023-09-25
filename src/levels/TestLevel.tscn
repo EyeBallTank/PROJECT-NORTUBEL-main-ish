@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -7,11 +7,14 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=10]
-[ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 
 [node name="TestLevel" type="Node2D"]
@@ -52,19 +55,20 @@ collision_newsize = Vector2( 80, 16 )
 [node name="SpitterFish" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1652, -365 )
 
-[node name="jump thru" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1205, -80 )
-scale = Vector2( 80, 8 )
-collision_newsize = Vector2( 80, 8 )
+[node name="Blue key" parent="." instance=ExtResource( 12 )]
+position = Vector2( 733, -337 )
 
-[node name="jump thru2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1205, -320 )
-scale = Vector2( 80, 8 )
-collision_newsize = Vector2( 80, 8 )
+[node name="Red key" parent="." instance=ExtResource( 14 )]
+position = Vector2( 636, -328 )
 
-[node name="SoccerBallBag" parent="." instance=ExtResource( 9 )]
-position = Vector2( 843, -532 )
+[node name="Yellow key" parent="." instance=ExtResource( 8 )]
+position = Vector2( 548, -328 )
 
-[node name="LifeguardFloater" parent="." instance=ExtResource( 11 )]
-position = Vector2( 390, -467 )
-spritename = "massagcoav floater"
+[node name="BlueDoor" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1281, 0 )
+
+[node name="RedDoor" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1561, 0 )
+
+[node name="YellowDoor" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1419, 0 )
