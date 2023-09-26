@@ -10,6 +10,7 @@ onready var animation = $AnimationPlayer
 
 func _ready():
 	animation.play("RESET")
+	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 
 func _physics_process(delta):
 	rotation_degrees += -7
@@ -24,3 +25,6 @@ func die():
 func _on_TouchPlayer_body_entered(body):
 	if body.is_in_group("protagonists"):
 		animation.play("dying")
+
+func therefore_I_Go():
+	die()

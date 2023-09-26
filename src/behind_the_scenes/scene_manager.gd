@@ -20,6 +20,7 @@ func pause_the_game():
 
 func unpause_the_game():
 	get_tree().paused = false
+	Signals.emit_signal("scene_has_changed")
 
 #func _load_scene():
 #	get_tree().change_scene(loaded_scene)

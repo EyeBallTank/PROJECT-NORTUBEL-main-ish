@@ -9,6 +9,7 @@ var bounce_factor = 150
 func _ready():
 #	animationplayer.play("RESET")
 	ball_disappear()
+	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 
 func ball_disappear():
 #	yield(get_tree().create_timer(2), "timeout")
@@ -24,3 +25,6 @@ func _on_SoccerBall_body_entered(_body):
 
 func disappear():
 	queue_free()
+
+func therefore_I_Go():
+	disappear()

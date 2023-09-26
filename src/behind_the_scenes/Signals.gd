@@ -31,6 +31,8 @@ signal player_died
 #signal companion_died
 #signal hit_checkpoint(checkpoint_position)
 
+signal scene_has_changed
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case
