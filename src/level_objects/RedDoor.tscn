@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Red door.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/RedDoor.gd" type="Script" id=2]
@@ -6,6 +6,11 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/Red door hirdrih.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_object_sprites/untotern/Red door untotern.PNG" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/Red door massagcoav.PNG" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/Red door brinkaedea.png" type="Texture" id=7]
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 149, 303 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 4 )
@@ -26,6 +31,11 @@ region = Rect2( 0, 0, 146, 299 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
+"frames": [ SubResource( 10 ) ],
+"loop": false,
+"name": "brinkaedea reddoor",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 7 ) ],
 "loop": false,
 "name": "hirdrih reddoor",
@@ -154,7 +164,7 @@ script = ExtResource( 2 )
 position = Vector2( -7.62939e-06, -3.52764e-06 )
 scale = Vector2( 0.876712, 0.856187 )
 frames = SubResource( 6 )
-animation = "massagcoav reddoor"
+animation = "brinkaedea reddoor"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

@@ -57,21 +57,24 @@ position = Vector2( 1652, -365 )
 
 [node name="Blue key" parent="." instance=ExtResource( 12 )]
 position = Vector2( 733, -337 )
+spritename = "brinkaedea blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 14 )]
 position = Vector2( 636, -328 )
+spritename = "brinkaedea redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 8 )]
 position = Vector2( 548, -328 )
+spritename = "brinkaedea yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1281, 0 )
-spritename = "massagcoav bludoor"
+spritename = "brinkaedea bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1561, 0 )
-spritename = "massagcoav reddoor"
+spritename = "brinkaedea reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1419, 0 )
-spritename = "krimbstone yeldoor"
+spritename = "brinkaedea yeldoor"
