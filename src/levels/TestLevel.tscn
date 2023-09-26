@@ -69,12 +69,12 @@ spritename = "brinkaedea yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1281, 0 )
-spritename = "lahiurn bludoor"
+spritename = "greklovick bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1561, 0 )
-spritename = "lahiurn reddoor"
+spritename = "greklovick reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1419, 0 )
-spritename = "lahiurn yeldoor"
+spritename = "greklovick yeldoor"
