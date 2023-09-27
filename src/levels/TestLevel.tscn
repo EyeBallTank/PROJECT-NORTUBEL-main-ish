@@ -41,6 +41,7 @@ position = Vector2( 8, -271 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 10 )]
 position = Vector2( 524, -350 )
+bluswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Blue switch hirdrih.tres"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 7 )]
 position = Vector2( 701, -354 )
