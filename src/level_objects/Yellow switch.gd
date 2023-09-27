@@ -4,9 +4,11 @@ var is_pressed = false
 
 #onready var YellowPlatVerti = get_parent().get_node("YellowPlatVerti")
 onready var animationplayer = $AnimationPlayer
+export var yelswitchskin = "res://assets/sprites/level_object_sprites/Yellow switch.tres"
 
 func _ready():
 	$Sprite.animation = "switchon"
+	$Sprite.frames = load(yelswitchskin)
 	pass
 
 func _on_YellowSwitch_body_entered(body):
