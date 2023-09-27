@@ -17,14 +17,14 @@ region = Rect2( 0, 0, 79, 140 )
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
 "frames": [ SubResource( 5 ) ],
-"loop": true,
+"loop": false,
 "name": "switchoff",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 6 ) ],
-"loop": true,
+"loop": false,
 "name": "switchon",
-"speed": 5.0
+"speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]

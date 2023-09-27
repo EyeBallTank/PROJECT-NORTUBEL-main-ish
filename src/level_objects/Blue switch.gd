@@ -4,9 +4,12 @@ var is_pressed = false
 
 #onready var BluePlatHoriz = get_parent().get_node("BluePlatHoriz")
 onready var animationplayer = $AnimationPlayer
+#export var bluswitchskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
+
 
 func _ready():
 	$Sprite.animation = "switchon"
+#	$Sprite.frames = load(bluswitchskin)
 	pass
 
 func _on_Blue_switch_body_entered(body):
