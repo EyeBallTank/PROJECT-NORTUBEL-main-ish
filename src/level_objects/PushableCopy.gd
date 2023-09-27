@@ -7,6 +7,9 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
 onready var audioplayer = $AudioStreamPlayer
 
+onready var sprite = $Sprite
+export var spritename = "nortubel pushable"
+
 var velocity: = Vector2.ZERO
 
 var WALK_FORCE = 1600
@@ -20,7 +23,7 @@ var player_lenght = 64
 onready var pushableside = $leftandrightside
 
 func _ready():
-	pass
+		sprite.animation = spritename
 
 func _physics_process(delta):
 #	print(velocity.x)

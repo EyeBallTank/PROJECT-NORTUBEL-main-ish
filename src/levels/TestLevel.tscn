@@ -58,3 +58,4 @@ gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch
 
 [node name="Pushable" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1261, -337 )
+spritename = "hirdrih pushable"
