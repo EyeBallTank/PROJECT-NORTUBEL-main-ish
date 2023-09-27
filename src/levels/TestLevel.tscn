@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 
 [node name="TestLevel" type="Node2D"]
@@ -54,3 +55,6 @@ gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 9 )]
 position = Vector2( 990, -356 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch Two hirdrih.tres"
+
+[node name="Pushable" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1261, -337 )
