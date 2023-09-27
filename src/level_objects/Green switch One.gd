@@ -3,9 +3,12 @@ extends Area2D
 var is_pressed = false
 
 onready var animationplayer = $AnimationPlayer
+#export var gre1switchskin = "res://assets/sprites/level_object_sprites/Green switch One.tres"
+
 
 func _ready():
 	$Sprite.animation = "switchon"
+#	$Sprite.frames = load(gre1switchskin)
 	Signals.connect("green_switch_two_pressed", self, "_on_GreenSwitchTwo_pressed")
 
 func _on_GreenSwitchOne_body_entered(body):
