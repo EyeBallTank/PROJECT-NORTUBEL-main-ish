@@ -67,3 +67,7 @@ spritename = "hirdrih movplatvert"
 
 [node name="Coin" parent="." instance=ExtResource( 13 )]
 position = Vector2( 540, -642 )
+
+[node name="Coin2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 673, -642 )
+spritename = "hirdrih coin"
