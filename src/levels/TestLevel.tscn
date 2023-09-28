@@ -71,3 +71,4 @@ position = Vector2( 540, -642 )
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 14 )]
 position = Vector2( 2574, -351 )
+spritename = "hirdrih fallplat"
