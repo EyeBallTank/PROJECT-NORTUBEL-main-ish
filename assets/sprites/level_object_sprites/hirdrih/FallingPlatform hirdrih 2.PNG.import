@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FallingPlatform hirdrih.PNG-5b4f47331b21b5d3e680e8b94a23caa8.stex"
+path="res://.import/FallingPlatform hirdrih 2.PNG-a5136430caf173a12a3c56b19606415e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_object_sprites/hirdrih/FallingPlatform hirdrih.PNG"
-dest_files=[ "res://.import/FallingPlatform hirdrih.PNG-5b4f47331b21b5d3e680e8b94a23caa8.stex" ]
+source_file="res://assets/sprites/level_object_sprites/hirdrih/FallingPlatform hirdrih 2.PNG"
+dest_files=[ "res://.import/FallingPlatform hirdrih 2.PNG-a5136430caf173a12a3c56b19606415e.stex" ]
 
 [params]
 
