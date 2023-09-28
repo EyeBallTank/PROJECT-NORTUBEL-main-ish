@@ -17,7 +17,7 @@
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
 position = Vector2( 368, -403 )
-propname = "hirdprop cube house"
+propname = "hirdprop light bulb"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
