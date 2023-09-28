@@ -1,8 +1,20 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/sprites/level_item_sprites/shield coin.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_item_sprites/shield coin 2.png" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Coin test.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level items/495643__robbeman__coin-1.wav" type="AudioStream" id=3]
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 211, 212 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "nortubel coin",
+"speed": 0.0
+} ]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 47.1699
@@ -227,10 +239,11 @@ collision_layer = 8
 collision_mask = 3
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1.02871e-07, -47 )
 scale = Vector2( 0.466825, 0.440956 )
-texture = ExtResource( 1 )
+frames = SubResource( 6 )
+animation = "nortubel coin"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -46 )

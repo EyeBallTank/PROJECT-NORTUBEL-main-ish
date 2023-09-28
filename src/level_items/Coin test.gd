@@ -5,8 +5,11 @@ extends Area2D
 
 onready var audioPlayer = $AudioStreamPlayer
 onready var animationplayer = $AnimationPlayer
+onready var sprite = $Sprite
+export var spritename = "nortubel coin"
 
 func _ready():
+	sprite.animation = spritename
 #	animationplayer.play("Uncollectable")
 	animationplayer.play("RESET")
 
