@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 
 [node name="TestLevel" type="Node2D"]
@@ -26,7 +27,7 @@ tile_set = ExtResource( 6 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -786434, 1, 0, -720898, 1, 0, -655362, 1, 0, -589826, 1, 0, -524290, 1, 0, -458754, 1, 0, -393218, 1, 0, -327682, 1, 0, -262146, 1, 0, -196610, 1, 0, -131074, 1, 0, -131073, 2, 0, -196608, 2, 0, -196607, 2, 0, -196606, 2, 0, -196605, 2, 0, -196604, 2, 0, -196603, 2, 0, -196602, 2, 0, -196601, 2, 0, -196600, 2, 0, -196599, 2, 0, -196598, 2, 0, -196597, 2, 0, -196596, 2, 0, -196595, 2, 0, -196594, 2, 0, -196593, 2, 0, -196592, 2, 0, -196591, 2, 0, -196590, 2, 0, -196589, 2, 0, -196588, 2, 0, -196587, 2, 0, -196586, 2, 0, -196585, 2, 0, -196584, 2, 0, -196583, 2, 0, -196582, 2, 0, -196581, 2, 0, -196580, 2, 0, -196579, 2, 0, -196578, 2, 0, -196577, 2, 0, -196576, 2, 0, -196575, 2, 0, -196574, 2, 0, -196573, 2, 0, -196572, 2, 0, -196571, 2, 0, -196570, 2, 0, -196569, 2, 0, -196568, 2, 0 )
+tile_data = PoolIntArray( -786434, 1, 0, -720898, 1, 0, -655362, 1, 0, -589826, 1, 0, -524290, 1, 0, -458754, 1, 0, -393218, 1, 0, -327682, 1, 0, -262146, 1, 0, -196610, 1, 0, -131074, 1, 0, -131073, 2, 0, -196608, 2, 0, -196607, 2, 0, -196606, 2, 0, -196605, 2, 0, -196604, 2, 0, -196603, 2, 0, -196602, 2, 0, -196601, 2, 0, -196600, 2, 0, -196599, 2, 0, -196598, 2, 0, -196597, 2, 0, -196596, 2, 0, -196595, 2, 0, -196594, 2, 0, -196593, 2, 0, -196592, 2, 0, -196591, 2, 0, -196590, 2, 0, -196589, 2, 0, -196588, 2, 0, -196587, 2, 0, -196586, 2, 0, -196585, 2, 0, -196584, 2, 0, -196583, 2, 0, -196582, 2, 0, -196581, 2, 0, -196580, 2, 0, -196579, 2, 0, -196578, 2, 0, -196577, 2, 0, -196576, 2, 0, -196575, 2, 0, -196574, 2, 0, -196573, 2, 0, -131037, 2, 0, -65501, 2, 0, 35, 2, 0, 65571, 2, 0, 65581, 2, 0, 131107, 2, 0, 131118, 2, 0, 196643, 2, 0, 196655, 2, 0, 262179, 2, 0, 262191, 2, 0, 262192, 2, 0, 327715, 2, 0, 327729, 2, 0, 393251, 2, 0, 458787, 2, 0, 524323, 2, 0, 589859, 2, 0, 589875, 2, 0, 655395, 2, 0, 655410, 2, 0, 655411, 2, 0, 720931, 2, 0, 720945, 2, 0, 720946, 2, 0, 786467, 2, 0, 786480, 2, 0, 786481, 2, 0, 852003, 2, 0, 852015, 2, 0, 852016, 2, 0, 917539, 2, 0, 917551, 2, 0, 983075, 2, 0, 983086, 2, 0, 983087, 2, 0, 1048611, 2, 0, 1048621, 2, 0, 1048622, 2, 0, 1114147, 2, 0, 1114157, 2, 0, 1179683, 2, 0, 1179684, 2, 0, 1179685, 2, 0, 1179686, 2, 0, 1179687, 2, 0, 1179688, 2, 0, 1179689, 2, 0, 1179690, 2, 0, 1179691, 2, 0, 1179692, 2, 0, 1179693, 2, 0, 1179694, 2, 0, 1179695, 2, 0, 1179696, 2, 0 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 1 )]
 
@@ -37,10 +38,10 @@ position = Vector2( 0, -270 )
 position = Vector2( 0, -270 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 78, -273 )
+position = Vector2( 89, -281 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 8, -271 )
+position = Vector2( -1, -268 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 10 )]
 position = Vector2( 524, -350 )
@@ -68,6 +69,5 @@ spritename = "hirdrih movplatvert"
 [node name="Coin" parent="." instance=ExtResource( 13 )]
 position = Vector2( 540, -642 )
 
-[node name="Coin2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 673, -642 )
-spritename = "hirdrih coin"
+[node name="FallingPlatNew" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2574, -351 )
