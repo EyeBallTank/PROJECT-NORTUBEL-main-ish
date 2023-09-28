@@ -16,8 +16,8 @@
 [node name="TestLevel" type="Node2D"]
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
-position = Vector2( 371, -448 )
-propname = "hirdprop plug flower"
+position = Vector2( 368, -403 )
+propname = "hirdprop cube house"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
