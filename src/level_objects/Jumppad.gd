@@ -2,8 +2,12 @@ extends Area2D
 
 onready var audioPlayer = $AudioStreamPlayer
 
+onready var sprite = $Sprite
+export var spritename = "nortubel jumppad"
+
 func _ready():
 	pass
+	sprite.animation = spritename
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player":

@@ -23,7 +23,7 @@ var player_lenght = 64
 onready var pushableside = $leftandrightside
 
 func _ready():
-		sprite.animation = spritename
+	sprite.animation = spritename
 
 func _physics_process(delta):
 #	print(velocity.x)

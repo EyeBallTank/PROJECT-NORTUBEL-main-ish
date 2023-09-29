@@ -1,8 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/jumppad.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Jumppad.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level objects/540788__magnuswaker__boing-1.wav" type="AudioStream" id=3]
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 670, 350 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "nortubel jumppad",
+"speed": 0.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 183, 11.5 )
@@ -12,9 +25,10 @@ collision_layer = 4
 collision_mask = 3
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.574286, 0.574286 )
-texture = ExtResource( 1 )
+frames = SubResource( 3 )
+animation = "nortubel jumppad"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, -29.5 )
