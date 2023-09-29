@@ -18,8 +18,8 @@
 [node name="TestLevel" type="Node2D"]
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
-position = Vector2( 892, -455 )
-propname = "hirdprop clock"
+position = Vector2( 944, -555 )
+propname = "hirdprop speaker"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )

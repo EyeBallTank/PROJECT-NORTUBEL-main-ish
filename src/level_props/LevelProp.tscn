@@ -1,4 +1,4 @@
-[gd_scene load_steps=291 format=2]
+[gd_scene load_steps=293 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -145,6 +145,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop cpu cooler.png" type="Texture" id=143]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop cog.png" type="Texture" id=144]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop clock.png" type="Texture" id=145]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop speaker 2.png" type="Texture" id=147]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -197,6 +198,10 @@ region = Rect2( 0, 0, 108, 221 )
 [sub_resource type="AtlasTexture" id=149]
 atlas = ExtResource( 138 )
 region = Rect2( 0, 0, 137, 137 )
+
+[sub_resource type="AtlasTexture" id=158]
+atlas = ExtResource( 147 )
+region = Rect2( 0, 0, 281, 565 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 11 )
@@ -788,6 +793,11 @@ animations = [ {
 "loop": false,
 "name": "hirdprop socket",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 158 ) ],
+"loop": false,
+"name": "hirdprop speaker",
+"speed": 9.0
 }, {
 "frames": [ SubResource( 20 ) ],
 "loop": false,
@@ -1451,5 +1461,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "hirdprop clock"
+animation = "hirdprop speaker"
 playing = true
