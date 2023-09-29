@@ -1,4 +1,4 @@
-[gd_scene load_steps=293 format=2]
+[gd_scene load_steps=295 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -145,6 +145,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop cpu cooler.png" type="Texture" id=143]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop cog.png" type="Texture" id=144]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop clock.png" type="Texture" id=145]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop calculator.png" type="Texture" id=146]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop speaker 2.png" type="Texture" id=147]
 
 [sub_resource type="AtlasTexture" id=32]
@@ -166,6 +167,10 @@ region = Rect2( 0, 0, 444, 398 )
 [sub_resource type="AtlasTexture" id=153]
 atlas = ExtResource( 142 )
 region = Rect2( 0, 0, 423, 665 )
+
+[sub_resource type="AtlasTexture" id=159]
+atlas = ExtResource( 146 )
+region = Rect2( 0, 0, 306, 361 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 10 )
@@ -752,6 +757,11 @@ animations = [ {
 "frames": [ SubResource( 153 ) ],
 "loop": false,
 "name": "hirdprop building",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 159 ) ],
+"loop": false,
+"name": "hirdprop calculator",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 19 ) ],
@@ -1461,5 +1471,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "hirdprop speaker"
+animation = "hirdprop calculator"
 playing = true
