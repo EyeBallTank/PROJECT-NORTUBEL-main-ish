@@ -1,4 +1,4 @@
-[gd_scene load_steps=287 format=2]
+[gd_scene load_steps=289 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -143,6 +143,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop light bulb.png" type="Texture" id=141]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop building.png" type="Texture" id=142]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop cpu cooler.png" type="Texture" id=143]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop cog.png" type="Texture" id=144]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -167,6 +168,10 @@ region = Rect2( 0, 0, 423, 665 )
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 10 )
 region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=155]
+atlas = ExtResource( 144 )
+region = Rect2( 0, 0, 177, 182 )
 
 [sub_resource type="AtlasTexture" id=154]
 atlas = ExtResource( 143 )
@@ -742,6 +747,11 @@ animations = [ {
 "frames": [ SubResource( 19 ) ],
 "loop": false,
 "name": "hirdprop chip flower",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 155 ) ],
+"loop": false,
+"name": "hirdprop cog",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 154 ) ],
@@ -1431,5 +1441,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 3 )
 frames = SubResource( 2 )
-animation = "hirdprop cpu cooler"
+animation = "hirdprop plug flower"
 playing = true
