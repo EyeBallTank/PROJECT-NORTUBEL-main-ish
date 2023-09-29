@@ -1,4 +1,4 @@
-[gd_scene load_steps=301 format=2]
+[gd_scene load_steps=303 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -150,6 +150,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop television.png" type="Texture" id=148]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop console.png" type="Texture" id=149]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop exhaust pipe.png" type="Texture" id=150]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop bolt.png" type="Texture" id=151]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -166,6 +167,10 @@ region = Rect2( 0, 0, 444, 398 )
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 13 )
 region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=163]
+atlas = ExtResource( 151 )
+region = Rect2( 0, 0, 70, 70 )
 
 [sub_resource type="AtlasTexture" id=153]
 atlas = ExtResource( 142 )
@@ -767,6 +772,11 @@ animations = [ {
 "frames": [ SubResource( 22 ) ],
 "loop": false,
 "name": "herrprop barrelwood weapons",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 163 ) ],
+"loop": false,
+"name": "hirdprop bolt",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 153 ) ],
@@ -1501,5 +1511,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop exhaust pipe"
+animation = "hirdprop bolt"
 playing = true
