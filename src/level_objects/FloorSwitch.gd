@@ -4,11 +4,11 @@ var is_pressed = false
 onready var animatedsprite = $AnimatedSprite
 onready var animationplayer = $AnimationPlayer
 
-#export var floorswitchskin = "res://assets/sprites/level_object_sprites/FloorSwitch.tres"
+export var floorswitchskin = "res://assets/sprites/level_object_sprites/FloorSwitch.tres"
 
 
 func _ready():
-#	$Sprite.frames = load(floorswitchskin)
+	animatedsprite.frames = load(floorswitchskin)
 	animatedsprite.animation = "unpressed"
 	animationplayer.play("UNPRESSED")
 
