@@ -18,7 +18,7 @@
 [node name="TestLevel" type="Node2D"]
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1068, -791 )
+position = Vector2( 892, -455 )
 propname = "hirdprop light bulb"
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -67,7 +67,3 @@ position = Vector2( 380, -368 )
 [node name="FloorSwitch" parent="." instance=ExtResource( 12 )]
 position = Vector2( 692, -252 )
 floorswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/FloorSwitchhirdrih.tres"
-
-[node name="LevelProp2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 2080, -536 )
-propname = "hirdprop building"
