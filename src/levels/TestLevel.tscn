@@ -11,8 +11,8 @@
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=12]
-[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 
 [node name="TestLevel" type="Node2D"]
@@ -61,13 +61,8 @@ gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2867, -317 )
 
-[node name="Jumppad" parent="." instance=ExtResource( 12 )]
-position = Vector2( 476, -288 )
-spritename = "hirdrih jumppad"
+[node name="Pushable" parent="." instance=ExtResource( 13 )]
+position = Vector2( 380, -368 )
 
-[node name="LoreBook" parent="." instance=ExtResource( 13 )]
-position = Vector2( 864, -224 )
-
-[node name="LoreBook2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1228, -224 )
-spritename = "hirdrih lorebook"
+[node name="FloorSwitch" parent="." instance=ExtResource( 12 )]
+position = Vector2( 692, -252 )

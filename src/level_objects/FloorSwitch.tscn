@@ -1,28 +1,7 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/floor switch.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/FloorSwitch.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/level_objects/FloorSwitch.gd" type="Script" id=2]
-
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 1 )
-region = Rect2( 213, 0, 213, 30 )
-
-[sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 213, 30 )
-
-[sub_resource type="SpriteFrames" id=3]
-animations = [ {
-"frames": [ SubResource( 1 ) ],
-"loop": true,
-"name": "pressed",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 2 ) ],
-"loop": true,
-"name": "unpressed",
-"speed": 5.0
-} ]
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 96, 21 )
@@ -78,7 +57,7 @@ collision_mask = 256
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 3 )
+frames = ExtResource( 1 )
 animation = "unpressed"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
