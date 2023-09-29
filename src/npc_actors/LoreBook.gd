@@ -7,7 +7,11 @@ onready var basicmessage = $Basicmessage
 
 var test = false
 
+onready var sprite = $Sprite
+export var spritename = "nortubel lorebook"
+
 func _ready():
+	sprite.animation = spritename
 	maintext.text = str (customtext)
 	dialoguebox.visible = false
 	basicmessage.visible = false

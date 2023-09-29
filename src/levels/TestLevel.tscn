@@ -67,3 +67,7 @@ spritename = "hirdrih jumppad"
 
 [node name="LoreBook" parent="." instance=ExtResource( 13 )]
 position = Vector2( 864, -224 )
+
+[node name="LoreBook2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1228, -224 )
+spritename = "hirdrih lorebook"
