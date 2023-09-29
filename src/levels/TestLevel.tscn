@@ -14,7 +14,7 @@
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
 position = Vector2( 944, -555 )
-propname = "hirdprop phone"
+propname = "hirdprop sphere vehicle"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )

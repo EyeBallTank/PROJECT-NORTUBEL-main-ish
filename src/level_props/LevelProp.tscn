@@ -1,4 +1,4 @@
-[gd_scene load_steps=305 format=2]
+[gd_scene load_steps=307 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -152,6 +152,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop exhaust pipe.png" type="Texture" id=150]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop bolt.png" type="Texture" id=151]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop phone.png" type="Texture" id=152]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop sphere vehicle.png" type="Texture" id=153]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -228,6 +229,10 @@ region = Rect2( 0, 0, 137, 137 )
 [sub_resource type="AtlasTexture" id=158]
 atlas = ExtResource( 147 )
 region = Rect2( 0, 0, 281, 565 )
+
+[sub_resource type="AtlasTexture" id=165]
+atlas = ExtResource( 153 )
+region = Rect2( 0, 0, 305, 305 )
 
 [sub_resource type="AtlasTexture" id=160]
 atlas = ExtResource( 148 )
@@ -853,6 +858,11 @@ animations = [ {
 "loop": false,
 "name": "hirdprop speaker",
 "speed": 9.0
+}, {
+"frames": [ SubResource( 165 ) ],
+"loop": false,
+"name": "hirdprop sphere vehicle",
+"speed": 0.0
 }, {
 "frames": [ SubResource( 160 ) ],
 "loop": false,
@@ -1521,5 +1531,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop phone"
+animation = "hirdprop sphere vehicle"
 playing = true
