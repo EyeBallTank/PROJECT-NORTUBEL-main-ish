@@ -17,7 +17,7 @@
 [node name="TestLevel" type="Node2D"]
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
-position = Vector2( 368, -403 )
+position = Vector2( 1068, -791 )
 propname = "hirdprop light bulb"
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -42,23 +42,24 @@ position = Vector2( 89, -281 )
 position = Vector2( -1, -268 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 10 )]
-position = Vector2( 524, -350 )
+position = Vector2( 1224, -738 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Blue switch hirdrih.tres"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 7 )]
-position = Vector2( 687, -354 )
+position = Vector2( 1387, -742 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Yellow switch hirdrih.tres"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 8 )]
-position = Vector2( 852, -351 )
+position = Vector2( 1552, -739 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch One hirdrih.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 9 )]
-position = Vector2( 979, -356 )
+position = Vector2( 1679, -744 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch Two hirdrih.tres"
 
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2147, -345 )
+position = Vector2( 2867, -317 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1988, -568 )
+position = Vector2( 476, -288 )
+spritename = "hirdrih jumppad"
