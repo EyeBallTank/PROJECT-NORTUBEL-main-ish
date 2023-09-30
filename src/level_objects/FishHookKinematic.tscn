@@ -1,8 +1,21 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Fish hook with rope.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/FishHookKinematic.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_object_sprites/anchorhook test.PNG" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 63, 863 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "nortubel hook",
+"speed": 0.0
+} ]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 20.0
@@ -42,6 +55,19 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 4 )
 }
 
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 347, 498 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "nortubel anchor",
+"speed": 0.0
+} ]
+
 [node name="FishHookKinematic" type="Node2D"]
 position = Vector2( 1, -560 )
 script = ExtResource( 2 )
@@ -50,9 +76,10 @@ script = ExtResource( 2 )
 collision_layer = 0
 collision_mask = 0
 
-[node name="Sprite" type="Sprite" parent="FishHookWithWire"]
+[node name="Sprite" type="AnimatedSprite" parent="FishHookWithWire"]
 position = Vector2( 14, 429 )
-texture = ExtResource( 1 )
+frames = SubResource( 6 )
+animation = "nortubel hook"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishHookWithWire"]
 position = Vector2( 20, 715 )
@@ -73,7 +100,8 @@ autoplay = "RopeSwing"
 anims/RESET = SubResource( 2 )
 anims/RopeSwing = SubResource( 3 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 11, 709 )
-texture = ExtResource( 3 )
+frames = SubResource( 8 )
+animation = "nortubel anchor"
 offset = Vector2( -10.5, -923 )
