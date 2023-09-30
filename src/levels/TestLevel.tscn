@@ -46,3 +46,4 @@ position = Vector2( 1734, -402 )
 
 [node name="FishHookKinematic" parent="." instance=ExtResource( 8 )]
 position = Vector2( 538, -1174 )
+hookspritename = "hirdrih hook"
