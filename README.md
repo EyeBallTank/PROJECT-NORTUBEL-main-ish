@@ -1,6 +1,6 @@
 # PROJECT-NORTUBEL-main
 
-The game i want to make, under Godot 3.5 Win32; GLES3 sort of.
+The game I want to make, under Godot 3.5 Win32; GLES3 sort of.
 
 You can play a demo of it here https://eyeballtank.itch.io/project-nortubel make sure to give me feedback.
 
