@@ -1,10 +1,16 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Fish hook with rope.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/FishHookKinematic.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_object_sprites/anchorhook test.PNG" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/Fish hook with rope hirdrih.PNG" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/anchorhook test hirdrih.PNG" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/level_object_sprites/herrko/Fish hook with rope herrko.PNG" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/level_object_sprites/herrko/anchorhook test herrko 2.PNG" type="Texture" id=8]
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 63, 863 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 4 )
@@ -17,6 +23,11 @@ region = Rect2( 0, 0, 63, 863 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
+"frames": [ SubResource( 12 ) ],
+"loop": false,
+"name": "herrko hook",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 9 ) ],
 "loop": false,
 "name": "hirdrih hook",
@@ -66,6 +77,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 4 )
 }
 
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 347, 498 )
+
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 347, 498 )
@@ -77,6 +92,11 @@ region = Rect2( 0, 0, 347, 498 )
 
 [sub_resource type="SpriteFrames" id=8]
 animations = [ {
+"frames": [ SubResource( 13 ) ],
+"loop": false,
+"name": "herrko anchor",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 10 ) ],
 "loop": false,
 "name": "hirdrih anchor",
@@ -99,7 +119,7 @@ collision_mask = 0
 [node name="Sprite" type="AnimatedSprite" parent="FishHookWithWire"]
 position = Vector2( 14, 429 )
 frames = SubResource( 6 )
-animation = "hirdrih hook"
+animation = "herrko hook"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishHookWithWire"]
 position = Vector2( 20, 715 )
@@ -123,5 +143,5 @@ anims/RopeSwing = SubResource( 3 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 11, 709 )
 frames = SubResource( 8 )
-animation = "hirdrih anchor"
+animation = "herrko anchor"
 offset = Vector2( -10.5, -923 )
