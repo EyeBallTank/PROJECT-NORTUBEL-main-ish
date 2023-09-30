@@ -184,6 +184,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * luke_rs (Used tutorial video on the Swingable Rope)
 * jeanmakesgames (Used tutorial video on level portals)
 * matinator9185/MateuSai (Used tutorial video on the checkpoint system)
+* arithmetic1938 (Used tutorial video on Hirdrio enemy's bouncing physics)
 * kidscancode (Used an article of theirs as reference for implementing Comp4's ice physics)
 * piratechipgames (Used tutorial video on how to implement sounds for the Soccer Ball)
 * GameEndeavor (Used tutorial video on Companion off-screen pointer)
