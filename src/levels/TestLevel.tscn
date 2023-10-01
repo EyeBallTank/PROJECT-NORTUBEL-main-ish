@@ -43,4 +43,4 @@ hookspritename = "herrko hook"
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
 position = Vector2( 887, -433 )
-propname = "hirdprop squares 2"
+propname = "hirdprop house"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=329 format=2]
+[gd_scene load_steps=331 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -164,6 +164,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop building 7.png" type="Texture" id=162]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop squares.png" type="Texture" id=163]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop squares 2.png" type="Texture" id=164]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop house.png" type="Texture" id=165]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -256,6 +257,10 @@ region = Rect2( 0, 0, 411, 392 )
 [sub_resource type="AtlasTexture" id=162]
 atlas = ExtResource( 150 )
 region = Rect2( 0, 0, 70, 286 )
+
+[sub_resource type="AtlasTexture" id=177]
+atlas = ExtResource( 165 )
+region = Rect2( 0, 0, 193, 469 )
 
 [sub_resource type="AtlasTexture" id=152]
 atlas = ExtResource( 141 )
@@ -932,6 +937,11 @@ animations = [ {
 "frames": [ SubResource( 162 ) ],
 "loop": false,
 "name": "hirdprop exhaust pipe",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 177 ) ],
+"loop": false,
+"name": "hirdprop house",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 152 ) ],
@@ -1641,5 +1651,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop squares 2"
+animation = "hirdprop house"
 playing = true
