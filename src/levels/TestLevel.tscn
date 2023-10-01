@@ -12,10 +12,6 @@
 
 [node name="TestLevel" type="Node2D"]
 
-[node name="LevelProp" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1010, -580 )
-propname = "hirdprop building 6"
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
 collision_layer = 4
@@ -44,3 +40,7 @@ position = Vector2( 3118, -345 )
 position = Vector2( 1334, -1241 )
 anchorspritename = "herrko anchor"
 hookspritename = "herrko hook"
+
+[node name="LevelProp" parent="." instance=ExtResource( 16 )]
+position = Vector2( 887, -433 )
+propname = "hirdprop building 7"
