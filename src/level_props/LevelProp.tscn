@@ -1,4 +1,4 @@
-[gd_scene load_steps=333 format=2]
+[gd_scene load_steps=337 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -166,6 +166,8 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop squares 2.png" type="Texture" id=164]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop house.png" type="Texture" id=165]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop metal can.png" type="Texture" id=166]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop metal flower.png" type="Texture" id=167]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop metal flower 2.png" type="Texture" id=168]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -270,6 +272,14 @@ region = Rect2( 0, 0, 127, 209 )
 [sub_resource type="AtlasTexture" id=178]
 atlas = ExtResource( 166 )
 region = Rect2( 0, 0, 99, 177 )
+
+[sub_resource type="AtlasTexture" id=179]
+atlas = ExtResource( 167 )
+region = Rect2( 0, 0, 144, 267 )
+
+[sub_resource type="AtlasTexture" id=180]
+atlas = ExtResource( 168 )
+region = Rect2( 0, 0, 165, 306 )
 
 [sub_resource type="AtlasTexture" id=164]
 atlas = ExtResource( 152 )
@@ -957,6 +967,16 @@ animations = [ {
 "frames": [ SubResource( 178 ) ],
 "loop": false,
 "name": "hirdprop metal can",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 179 ) ],
+"loop": false,
+"name": "hirdprop metal flower",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 180 ) ],
+"loop": false,
+"name": "hirdprop metal flower 2",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 164 ) ],
@@ -1661,5 +1681,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop metal can"
+animation = "hirdprop metal flower 2"
 playing = true
