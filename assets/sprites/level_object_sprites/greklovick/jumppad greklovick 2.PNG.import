@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jumppad greklovick.PNG-fe00aab1f3630d61df9c998de3d2cb14.stex"
+path="res://.import/jumppad greklovick 2.PNG-239337cdad3c32ff587f1663242c082c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_object_sprites/greklovick/jumppad greklovick.PNG"
-dest_files=[ "res://.import/jumppad greklovick.PNG-fe00aab1f3630d61df9c998de3d2cb14.stex" ]
+source_file="res://assets/sprites/level_object_sprites/greklovick/jumppad greklovick 2.PNG"
+dest_files=[ "res://.import/jumppad greklovick 2.PNG-239337cdad3c32ff587f1663242c082c.stex" ]
 
 [params]
 

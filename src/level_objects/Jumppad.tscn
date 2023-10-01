@@ -4,7 +4,7 @@
 [ext_resource path="res://src/level_objects/Jumppad.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level objects/540788__magnuswaker__boing-1.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/jumppad hirdrih.PNG" type="Texture" id=4]
-[ext_resource path="res://assets/sprites/level_object_sprites/greklovick/jumppad greklovick.PNG" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/level_object_sprites/greklovick/jumppad greklovick 2.PNG" type="Texture" id=5]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 5 )
