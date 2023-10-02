@@ -1,4 +1,4 @@
-[gd_scene load_steps=345 format=2]
+[gd_scene load_steps=347 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -172,6 +172,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop window.png" type="Texture" id=170]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop pipes.png" type="Texture" id=171]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop vehicle monowheel.png" type="Texture" id=172]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop magnet.png" type="Texture" id=173]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -276,6 +277,10 @@ region = Rect2( 0, 0, 398, 487 )
 [sub_resource type="AtlasTexture" id=152]
 atlas = ExtResource( 141 )
 region = Rect2( 0, 0, 127, 209 )
+
+[sub_resource type="AtlasTexture" id=185]
+atlas = ExtResource( 173 )
+region = Rect2( 0, 0, 169, 213 )
 
 [sub_resource type="AtlasTexture" id=178]
 atlas = ExtResource( 166 )
@@ -987,6 +992,11 @@ animations = [ {
 "frames": [ SubResource( 152 ) ],
 "loop": false,
 "name": "hirdprop light bulb",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 185 ) ],
+"loop": false,
+"name": "hirdprop magnet",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 178 ) ],
@@ -1721,5 +1731,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop vehicle monowheel"
+animation = "hirdprop magnet"
 playing = true

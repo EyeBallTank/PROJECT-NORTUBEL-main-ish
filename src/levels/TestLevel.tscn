@@ -39,7 +39,7 @@ position = Vector2( 3118, -345 )
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
 position = Vector2( 887, -433 )
-propname = "hirdprop vehicle monowheel"
+propname = "hirdprop magnet"
 
 [node name="Jumppad" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1426, -337 )
