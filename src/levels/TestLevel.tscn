@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -6,7 +6,10 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
-[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=10]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -31,121 +34,15 @@ position = Vector2( 125, -281 )
 [node name="Companion" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1, -268 )
 
-[node name="ConvoNPC" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4611, -413 )
-customtext1 = "CONVO_TALK_9"
-customtext2 = "CONVO_TALK_10"
-customtext3 = "CONVO_TALK_11"
-customtext4 = "CONVO_TALK_12"
-customname1 = "Melvin Brokston"
-customname2 = "Katrin Flenn"
-spritename = "katrin melvin"
+[node name="BlueSwitch" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1836, -384 )
 
-[node name="ConvoNPC2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4938, -417 )
-customtext1 = "CONVO_TALK_17"
-customtext2 = "CONVO_TALK_18"
-customtext3 = "CONVO_TALK_19"
-customtext4 = "CONVO_TALK_20"
-customname1 = "Angela Brokston"
-customname2 = "Pete Flenn"
-spritename = "angela pete"
+[node name="YellowSwitch" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1496, -396 )
+yelswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Yellow switch hirdrih.tres"
 
-[node name="ConvoNPC3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3520, -416 )
-customtext1 = "CONVO_TALK_13"
-customtext2 = "CONVO_TALK_14"
-customtext3 = "CONVO_TALK_15"
-customtext4 = "CONVO_TALK_16"
-customname1 = "Melvin Brokston"
-customname2 = "Carrie Decarde"
-spritename = "carrie melvin"
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1288, -412 )
 
-[node name="ConvoNPC4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3932, -416 )
-customtext1 = "CONVO_TALK_21"
-customtext2 = "CONVO_TALK_22"
-customtext3 = "CONVO_TALK_23"
-customtext4 = "CONVO_TALK_24"
-customname1 = "Angela Brokston"
-customname2 = "Oscar Decarde"
-spritename = "angela oscar"
-
-[node name="ConvoNPC5" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4266, -416 )
-customtext1 = "CONVO_TALK_1"
-customtext2 = "CONVO_TALK_2"
-customtext3 = "CONVO_TALK_3"
-customtext4 = "CONVO_TALK_4"
-customname1 = "Katrin Flenn"
-customname2 = "Carrie Decarde"
-
-[node name="ConvoNPC6" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3120, -416 )
-customtext1 = "CONVO_TALK_5"
-customtext2 = "CONVO_TALK_6"
-customtext3 = "CONVO_TALK_7"
-customtext4 = "CONVO_TALK_8"
-customname1 = "Pete Flenn"
-customname2 = "Oscar Decarde"
-spritename = "oscar pete"
-
-[node name="ConvoNPC7" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2712, -436 )
-customtext1 = "CONVO_TALK_25"
-customtext2 = "CONVO_TALK_26"
-customtext3 = "CONVO_TALK_27"
-customtext4 = "CONVO_TALK_28"
-customname1 = "Angela Brokston"
-customname2 = "Katrin Flenn"
-spritename = "angela katrin"
-
-[node name="ConvoNPC8" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2248, -416 )
-customtext1 = "CONVO_TALK_29"
-customtext2 = "CONVO_TALK_30"
-customtext3 = "CONVO_TALK_31"
-customtext4 = "CONVO_TALK_32"
-customname1 = "Pete Flenn"
-customname2 = "Melvin Brokston"
-spritename = "melvin pete"
-
-[node name="ConvoNPC9" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1775, -408 )
-customtext1 = "CONVO_TALK_33"
-customtext2 = "CONVO_TALK_34"
-customtext3 = "CONVO_TALK_35"
-customtext4 = "CONVO_TALK_36"
-customname1 = "Angela Brokston"
-customname2 = "Carrie Decarde"
-spritename = "angela carrie"
-
-[node name="ConvoNPC10" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1359, -413 )
-customtext1 = "CONVO_TALK_37"
-customtext2 = "CONVO_TALK_38"
-customtext3 = "CONVO_TALK_39"
-customtext4 = "CONVO_TALK_40"
-customname1 = "Melvin Brokston"
-customname2 = "Oscar Decarde"
-spritename = "melvin oscar"
-
-[node name="ConvoNPC11" parent="." instance=ExtResource( 7 )]
-position = Vector2( 914, -399 )
-customtext1 = "CONVO_TALK_45"
-customtext2 = "CONVO_TALK_46"
-customtext3 = "CONVO_TALK_47"
-customtext4 = "CONVO_TALK_48"
-customname1 = "Carrie Decarde"
-customname2 = "Pete Flenn"
-spritename = "carrie pete"
-
-[node name="ConvoNPC12" parent="." instance=ExtResource( 7 )]
-position = Vector2( 541, -396 )
-customtext1 = "CONVO_TALK_41"
-customtext2 = "CONVO_TALK_42"
-customtext3 = "CONVO_TALK_43"
-customtext4 = "CONVO_TALK_44"
-customname1 = "Katrin Flenn"
-customname2 = "Oscar Decarde"
-spritename = "katrin oscar"
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1040, -416 )

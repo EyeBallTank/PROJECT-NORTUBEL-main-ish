@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Yellow Switch hirdrih.PNG-a2d150ca6b65f64b9d05aa041f29aa9b.stex"
+path="res://.import/Yellow Switch hirdrih 2.PNG-efd9423258e71fa3a09dc6a97830e947.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_object_sprites/hirdrih/Yellow Switch hirdrih.PNG"
-dest_files=[ "res://.import/Yellow Switch hirdrih.PNG-a2d150ca6b65f64b9d05aa041f29aa9b.stex" ]
+source_file="res://assets/sprites/level_object_sprites/hirdrih/Yellow Switch hirdrih 2.PNG"
+dest_files=[ "res://.import/Yellow Switch hirdrih 2.PNG-efd9423258e71fa3a09dc6a97830e947.stex" ]
 
 [params]
 

@@ -62,7 +62,7 @@ script = ExtResource( 2 )
 position = Vector2( -4.76837e-07, -9.53674e-07 )
 scale = Vector2( 0.8, 0.914286 )
 frames = ExtResource( 1 )
-animation = "switchon"
+animation = "switchoff"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
