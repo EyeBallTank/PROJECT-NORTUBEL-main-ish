@@ -32,5 +32,5 @@ position = Vector2( 125, -281 )
 position = Vector2( -1, -268 )
 
 [node name="Hird Tech Cloud" parent="." instance=ExtResource( 7 )]
-position = Vector2( 992, -644 )
+position = Vector2( 988, -1048 )
 z_index = 18
