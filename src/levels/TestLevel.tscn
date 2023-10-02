@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -6,10 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
-[ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/npc_actors/hird npc/Robbio NPC.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=7]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -18,7 +15,7 @@ tile_set = ExtResource( 6 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -786434, 1, 0, -720898, 1, 0, -655362, 1, 0, -589826, 1, 0, -524290, 1, 0, -458754, 1, 0, -393218, 1, 0, -327682, 1, 0, -262146, 1, 0, -196610, 1, 0, -131074, 1, 0, -131073, 2, 0, -196608, 2, 0, -196607, 2, 0, -196606, 2, 0, -196605, 2, 0, -196604, 2, 0, -196603, 2, 0, -196602, 2, 0, -196601, 2, 0, -196600, 2, 0, -196599, 2, 0, -196598, 2, 0, -196597, 2, 0, -196596, 2, 0, -196595, 2, 0, -196594, 2, 0, -196593, 2, 0, -196592, 2, 0, -196591, 2, 0, -196590, 2, 0, -196589, 2, 0, -196588, 2, 0, -196587, 2, 0, -196586, 2, 0, -196585, 2, 0, -196584, 2, 0, -196583, 2, 0, -196582, 2, 0, -196581, 2, 0, -196580, 2, 0, -196579, 2, 0, -196578, 2, 0, -196577, 2, 0, -196576, 2, 0, -196575, 2, 0, -196574, 2, 0, -196573, 2, 0, -196572, 2, 0, -196571, 2, 0, -196570, 2, 0, -196569, 2, 0, -196568, 2, 0, -196567, 2, 0 )
+tile_data = PoolIntArray( -786434, 1, 0, -720898, 1, 0, -655362, 1, 0, -589826, 1, 0, -524290, 1, 0, -458754, 1, 0, -393218, 1, 0, -327682, 1, 0, -262146, 1, 0, -196610, 1, 0, -131074, 1, 0, -131073, 2, 0, -196608, 2, 0, -196607, 2, 0, -196606, 2, 0, -196605, 2, 0, -196604, 2, 0, -196603, 2, 0, -196602, 2, 0, -196601, 2, 0, -196600, 2, 0, -196599, 2, 0, -196598, 2, 0, -196597, 2, 0, -196596, 2, 0, -196595, 2, 0, -196594, 2, 0, -196593, 2, 0, -196592, 2, 0, -196591, 2, 0, -196590, 2, 0, -196589, 2, 0, -196588, 2, 0, -196587, 2, 0, -196586, 2, 0, -196585, 2, 0, -196584, 2, 0, -196583, 2, 0, -196582, 2, 0, -196581, 2, 0, -196580, 2, 0, -196579, 2, 0, -196578, 2, 0, -196577, 2, 0, -196576, 2, 0, -196575, 2, 0, -196574, 2, 0, -196573, 2, 0, -196572, 2, 0, -196571, 2, 0, -196570, 2, 0, -196569, 2, 0, -196568, 2, 0, -196567, 2, 0, -196566, 2, 0, -196565, 2, 0, -196564, 2, 0, -196563, 2, 0, -196562, 2, 0, -196561, 2, 0, -196560, 2, 0, -196559, 2, 0, -196558, 2, 0, -196557, 2, 0, -196556, 2, 0, -196555, 2, 0, -196554, 2, 0, -196553, 2, 0, -196552, 2, 0, -196551, 2, 0, -196550, 2, 0, -196549, 2, 0, -196548, 2, 0, -196547, 2, 0, -196546, 2, 0, -196545, 2, 0, -196544, 2, 0, -196543, 2, 0, -196542, 2, 0, -196541, 2, 0, -196540, 2, 0, -196539, 2, 0, -196538, 2, 0, -196537, 2, 0, -196536, 2, 0, -196535, 2, 0, -196534, 2, 0, -196533, 2, 0, -196532, 2, 0, -196531, 2, 0, -196530, 2, 0, -196529, 2, 0, -196528, 2, 0, -196527, 2, 0, -196526, 2, 0, -196525, 2, 0, -196524, 2, 0, -196523, 2, 0, -196522, 2, 0, -196521, 2, 0, -196520, 2, 0, -196519, 2, 0, -196518, 2, 0, -196517, 2, 0, -196516, 2, 0, -196515, 2, 0, -196514, 2, 0, -196513, 2, 0, -196512, 2, 0, -196511, 2, 0, -196510, 2, 0, -196509, 2, 0, -196508, 2, 0, -196507, 2, 0, -196506, 2, 0, -196505, 2, 0, -196504, 2, 0, -196503, 2, 0, -196502, 2, 0, -196501, 2, 0, -196500, 2, 0, -196499, 2, 0, -196498, 2, 0, -196497, 2, 0, -196496, 2, 0, -196495, 2, 0, -196494, 2, 0, -196493, 2, 0, -196492, 2, 0, -196491, 2, 0, -196490, 2, 0, -196489, 2, 0, -196488, 2, 0, -196487, 2, 0, -196486, 2, 0, -196485, 2, 0, -196484, 2, 0, -196483, 2, 0, -196482, 2, 0, -196481, 2, 0, -196480, 2, 0, -196479, 2, 0, -196478, 2, 0, -196477, 2, 0, -196476, 2, 0 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 1 )]
 
@@ -29,21 +26,126 @@ position = Vector2( 0, -270 )
 position = Vector2( 0, -270 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 89, -281 )
+position = Vector2( 125, -281 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1, -268 )
 
-[node name="MovingPlatHoriz" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3118, -345 )
+[node name="ConvoNPC" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4611, -413 )
+customtext1 = "CONVO_TALK_9"
+customtext2 = "CONVO_TALK_10"
+customtext3 = "CONVO_TALK_11"
+customtext4 = "CONVO_TALK_12"
+customname1 = "Melvin Brokston"
+customname2 = "Katrin Flenn"
+spritename = "katrin melvin"
 
-[node name="LevelProp" parent="." instance=ExtResource( 16 )]
-position = Vector2( 887, -433 )
-propname = "hirdprop magnet"
+[node name="ConvoNPC2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4938, -417 )
+customtext1 = "CONVO_TALK_17"
+customtext2 = "CONVO_TALK_18"
+customtext3 = "CONVO_TALK_19"
+customtext4 = "CONVO_TALK_20"
+customname1 = "Angela Brokston"
+customname2 = "Pete Flenn"
+spritename = "angela pete"
 
-[node name="Jumppad" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1426, -337 )
-spritename = "greklovick jumppad"
+[node name="ConvoNPC3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3520, -416 )
+customtext1 = "CONVO_TALK_13"
+customtext2 = "CONVO_TALK_14"
+customtext3 = "CONVO_TALK_15"
+customtext4 = "CONVO_TALK_16"
+customname1 = "Melvin Brokston"
+customname2 = "Carrie Decarde"
+spritename = "carrie melvin"
 
-[node name="Robbio NPC" parent="." instance=ExtResource( 8 )]
-position = Vector2( 552, -447 )
+[node name="ConvoNPC4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3932, -416 )
+customtext1 = "CONVO_TALK_21"
+customtext2 = "CONVO_TALK_22"
+customtext3 = "CONVO_TALK_23"
+customtext4 = "CONVO_TALK_24"
+customname1 = "Angela Brokston"
+customname2 = "Oscar Decarde"
+spritename = "angela oscar"
+
+[node name="ConvoNPC5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4266, -416 )
+customtext1 = "CONVO_TALK_1"
+customtext2 = "CONVO_TALK_2"
+customtext3 = "CONVO_TALK_3"
+customtext4 = "CONVO_TALK_4"
+customname1 = "Katrin Flenn"
+customname2 = "Carrie Decarde"
+
+[node name="ConvoNPC6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3120, -416 )
+customtext1 = "CONVO_TALK_5"
+customtext2 = "CONVO_TALK_6"
+customtext3 = "CONVO_TALK_7"
+customtext4 = "CONVO_TALK_8"
+customname1 = "Pete Flenn"
+customname2 = "Oscar Decarde"
+spritename = "oscar pete"
+
+[node name="ConvoNPC7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2712, -436 )
+customtext1 = "CONVO_TALK_25"
+customtext2 = "CONVO_TALK_26"
+customtext3 = "CONVO_TALK_27"
+customtext4 = "CONVO_TALK_28"
+customname1 = "Angela Brokston"
+customname2 = "Katrin Flenn"
+spritename = "angela katrin"
+
+[node name="ConvoNPC8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2248, -416 )
+customtext1 = "CONVO_TALK_29"
+customtext2 = "CONVO_TALK_30"
+customtext3 = "CONVO_TALK_31"
+customtext4 = "CONVO_TALK_32"
+customname1 = "Pete Flenn"
+customname2 = "Melvin Brokston"
+spritename = "melvin pete"
+
+[node name="ConvoNPC9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1775, -408 )
+customtext1 = "CONVO_TALK_33"
+customtext2 = "CONVO_TALK_34"
+customtext3 = "CONVO_TALK_35"
+customtext4 = "CONVO_TALK_36"
+customname1 = "Angela Brokston"
+customname2 = "Carrie Decarde"
+spritename = "angela carrie"
+
+[node name="ConvoNPC10" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1359, -413 )
+customtext1 = "CONVO_TALK_37"
+customtext2 = "CONVO_TALK_38"
+customtext3 = "CONVO_TALK_39"
+customtext4 = "CONVO_TALK_40"
+customname1 = "Melvin Brokston"
+customname2 = "Oscar Decarde"
+spritename = "melvin oscar"
+
+[node name="ConvoNPC11" parent="." instance=ExtResource( 7 )]
+position = Vector2( 914, -399 )
+customtext1 = "CONVO_TALK_45"
+customtext2 = "CONVO_TALK_46"
+customtext3 = "CONVO_TALK_47"
+customtext4 = "CONVO_TALK_48"
+customname1 = "Carrie Decarde"
+customname2 = "Pete Flenn"
+spritename = "carrie pete"
+
+[node name="ConvoNPC12" parent="." instance=ExtResource( 7 )]
+position = Vector2( 541, -396 )
+customtext1 = "CONVO_TALK_41"
+customtext2 = "CONVO_TALK_42"
+customtext3 = "CONVO_TALK_43"
+customtext4 = "CONVO_TALK_44"
+customname1 = "Katrin Flenn"
+customname2 = "Oscar Decarde"
+spritename = "katrin oscar"
