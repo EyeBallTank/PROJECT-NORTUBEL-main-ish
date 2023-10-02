@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -6,10 +6,8 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
-[ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/hird npc/ElecSheep NPC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/npc_actors/hird npc/Robbio NPC.tscn" type="PackedScene" id=8]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -34,23 +32,8 @@ position = Vector2( 125, -281 )
 [node name="Companion" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1, -268 )
 
-[node name="BlueSwitch" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1836, -384 )
+[node name="Robbio NPC" parent="." instance=ExtResource( 8 )]
+position = Vector2( 956, -420 )
 
-[node name="YellowSwitch" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1496, -396 )
-yelswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Yellow switch hirdrih.tres"
-
-[node name="GreenSwitchOne" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1288, -412 )
-gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch One hirdrih.tres"
-
-[node name="GreenSwitchTwo" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1040, -416 )
-gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch Two hirdrih.tres"
-
-[node name="GreenSwitchOne2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 684, -392 )
-
-[node name="GreenSwitchTwo2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 576, -396 )
+[node name="ElecSheep NPC" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1292, -404 )
