@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Green Switch 1 hirdrih.PNG-9e1a489ae7e32277e3bf9d0d2fa55719.stex"
+path="res://.import/Green Switch 2 hirdrih v2.png-ad76ac714a47cb90a637efe064eefe52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_object_sprites/hirdrih/Green Switch 1 hirdrih.PNG"
-dest_files=[ "res://.import/Green Switch 1 hirdrih.PNG-9e1a489ae7e32277e3bf9d0d2fa55719.stex" ]
+source_file="res://assets/sprites/level_object_sprites/hirdrih/Green Switch 2 hirdrih v2.png"
+dest_files=[ "res://.import/Green Switch 2 hirdrih v2.png-ad76ac714a47cb90a637efe064eefe52.stex" ]
 
 [params]
 

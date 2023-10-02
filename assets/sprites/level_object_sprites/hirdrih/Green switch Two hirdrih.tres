@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=4 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/Green Switch 2 hirdrih.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/Green Switch 2 hirdrih v2.png" type="Texture" id=1]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
