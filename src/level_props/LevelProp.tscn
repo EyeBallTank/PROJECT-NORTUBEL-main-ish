@@ -1,4 +1,4 @@
-[gd_scene load_steps=343 format=2]
+[gd_scene load_steps=345 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -171,6 +171,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop house 2.png" type="Texture" id=169]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop window.png" type="Texture" id=170]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop pipes.png" type="Texture" id=171]
+[ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop vehicle monowheel.png" type="Texture" id=172]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -323,6 +324,10 @@ region = Rect2( 0, 0, 282, 283 )
 [sub_resource type="AtlasTexture" id=160]
 atlas = ExtResource( 148 )
 region = Rect2( 0, 0, 315, 213 )
+
+[sub_resource type="AtlasTexture" id=184]
+atlas = ExtResource( 172 )
+region = Rect2( 0, 0, 264, 426 )
 
 [sub_resource type="AtlasTexture" id=182]
 atlas = ExtResource( 170 )
@@ -1044,6 +1049,11 @@ animations = [ {
 "name": "hirdprop television",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 184 ) ],
+"loop": false,
+"name": "hirdprop vehicle monowheel",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 182 ) ],
 "loop": false,
 "name": "hirdprop window",
@@ -1711,5 +1721,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop pipes"
+animation = "hirdprop vehicle monowheel"
 playing = true
