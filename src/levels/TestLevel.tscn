@@ -48,3 +48,4 @@ customname = "Avietta"
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1544, -212 )
+spritename = "hirdrih greendoor"
