@@ -348,6 +348,7 @@ texture = ExtResource( 1 )
 position = Vector2( -208, 224 )
 frames = SubResource( 9 )
 animation = "droplet"
+frame = 5
 playing = true
 
 [node name="RainDroplet2" type="AnimatedSprite" parent="."]
@@ -355,7 +356,7 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -69, 462 )
 frames = SubResource( 9 )
 animation = "droplet"
-frame = 1
+frame = 6
 playing = true
 
 [node name="RainDroplet3" type="AnimatedSprite" parent="."]
@@ -363,7 +364,7 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 41, 224 )
 frames = SubResource( 9 )
 animation = "droplet"
-frame = 7
+frame = 4
 playing = true
 
 [node name="RainDroplet4" type="AnimatedSprite" parent="."]
@@ -371,20 +372,21 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 180, 462 )
 frames = SubResource( 9 )
 animation = "droplet"
+frame = 5
 playing = true
 
 [node name="RainDroplet5" type="AnimatedSprite" parent="."]
 position = Vector2( -145, 352 )
 frames = SubResource( 9 )
 animation = "droplet"
-frame = 1
+frame = 6
 playing = true
 
 [node name="RainDroplet6" type="AnimatedSprite" parent="."]
 position = Vector2( 100, 561 )
 frames = SubResource( 9 )
 animation = "droplet"
-frame = 7
+frame = 4
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

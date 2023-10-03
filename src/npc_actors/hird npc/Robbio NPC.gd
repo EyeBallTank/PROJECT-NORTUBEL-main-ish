@@ -8,8 +8,12 @@ onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 onready var sprite = $Sprite
 export(String) var customtext = "This is one of the oldest areas of Hirdrih."
 
+onready var nametext = $CanvasLayer/NinePatchRect2/Name
+export(String) var customname = "Robbio"
+
 func _ready():
 	maintext.text = str (customtext)
+	nametext.text = str (customname)
 	dialogue.visible = false
 	sprite.play("MAINSTATE")
 
