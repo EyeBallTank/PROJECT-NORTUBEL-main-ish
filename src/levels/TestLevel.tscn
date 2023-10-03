@@ -7,8 +7,8 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/level prefabs/hird prefab/Hird Tech Cloud.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/npc_actors/hird npc/Robbio NPC.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/npc_actors/hird npc/HirdTaxi NPC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/npc_actors/hird npc/ElecSheep NPC.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/hird npc/Avietta NPC.tscn" type="PackedScene" id=9]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -33,14 +33,14 @@ position = Vector2( 125, -281 )
 [node name="Companion" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1, -268 )
 
-[node name="Robbio NPC" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1324, -396 )
-
 [node name="Hird Tech Cloud" parent="." instance=ExtResource( 7 )]
 position = Vector2( 988, -1048 )
 z_index = 18
 
-[node name="HirdTaxi NPC" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1932, -448 )
-customtext = "I only have 2 seats.Please return if your files are compressed."
-customname = "Hirdrih Taxi"
+[node name="ElecSheep NPC" parent="." instance=ExtResource( 8 )]
+position = Vector2( 580, -348 )
+
+[node name="Avietta NPC" parent="." instance=ExtResource( 9 )]
+position = Vector2( 908, -368 )
+customtext = "Some of these spheres can be dangerous to those not from Hirdrih.You better take the safer rides instead."
+customname = "Avietta"
