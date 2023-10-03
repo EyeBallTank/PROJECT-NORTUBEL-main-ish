@@ -1,10 +1,23 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/door test.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Door.gd" type="Script" id=2]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=3]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
 [ext_resource path="res://src/effects/RedEffect.tscn" type="PackedScene" id=5]
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 200, 423 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "nortubel greendoor",
+"speed": 0.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 128, 208 )
@@ -14,10 +27,11 @@ collision_layer = 128
 collision_mask = 3
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 5.72205e-06, -208 )
 scale = Vector2( 1.28, 0.982 )
-texture = ExtResource( 1 )
+frames = SubResource( 3 )
+animation = "nortubel greendoor"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -208 )

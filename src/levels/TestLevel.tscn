@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/level prefabs/hird prefab/Hird Tech Cloud.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/npc_actors/hird npc/ElecSheep NPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/hird npc/Avietta NPC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -44,3 +45,6 @@ position = Vector2( 580, -348 )
 position = Vector2( 908, -368 )
 customtext = "Some of these spheres can be dangerous to those not from Hirdrih.You better take the safer rides instead."
 customname = "Avietta"
+
+[node name="Door" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1544, -212 )

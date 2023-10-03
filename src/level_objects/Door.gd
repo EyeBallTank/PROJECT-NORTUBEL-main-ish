@@ -5,6 +5,9 @@ export var new_scene = "res://src/levels/LevelTemplate2.tscn"
 var playertouch = false
 var comptouch = false
 
+onready var sprite = $Sprite
+export var spritename = "nortubel greendoor"
+
 onready var actualpassword = $CanvasLayer/NinePatchRect/Control/ActualPassword
 export(String) var customtext = "000000"
 onready var dialoguebox = $CanvasLayer
@@ -12,6 +15,7 @@ onready var dialoguebox = $CanvasLayer
 func _ready():
 	dialoguebox.visible = false
 	actualpassword.text = str (customtext)
+	sprite.animation = spritename
 
 func _physics_process(delta):
 	if playertouch == true and comptouch == true:
