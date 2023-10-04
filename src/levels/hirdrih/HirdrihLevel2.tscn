@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://assets/sprites/level_backgrounds/hirdrih/hirdrih png.png" type="Texture" id=8]
+[ext_resource path="res://src/npc_actors/hird npc/TimeRobot NPC.tscn" type="PackedScene" id=9]
 
 [node name="HirdrihLevel2" type="Node2D"]
 
@@ -43,3 +44,8 @@ position = Vector2( 284, -50 )
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 2 )]
 worldname = "hirdrih"
+
+[node name="TimeRobot NPC" parent="." instance=ExtResource( 9 )]
+position = Vector2( 600, -52 )
+customtext = "We're responsible for Hirdrih's day and night cycle.But sometimes, we let guests try out the system to see how it works."
+customname = "Time Controller"
