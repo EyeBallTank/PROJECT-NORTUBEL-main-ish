@@ -11,9 +11,9 @@ region = Rect2( 0, 0, 103, 106 )
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ SubResource( 1 ) ],
-"loop": true,
+"loop": false,
 "name": "mainball",
-"speed": 5.0
+"speed": 0.0
 } ]
 
 [sub_resource type="CircleShape2D" id=3]
