@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/level prefabs/hird prefab/Hird Tech Cloud.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/level prefabs/hird prefab/Hird Popup ad.tscn" type="PackedScene" id=8]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -33,14 +32,5 @@ position = Vector2( 125, -281 )
 position = Vector2( -1, -268 )
 
 [node name="Hird Tech Cloud" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1608, -1068 )
+position = Vector2( 1048, -1176 )
 z_index = 18
-
-[node name="Hird Popup ad" parent="." instance=ExtResource( 8 )]
-position = Vector2( 476, -356 )
-
-[node name="Hird Popup ad2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1336, -340 )
-
-[node name="Hird Popup ad3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 900, -360 )
