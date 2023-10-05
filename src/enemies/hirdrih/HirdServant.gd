@@ -11,6 +11,7 @@ onready var mouth = $Position2D
 onready var animation = $AnimationPlayer
 
 var canattack = true
+var canmove = true
 
 const Fireball = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
 
@@ -29,19 +30,24 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		ALIVE:
-			var found_wall = is_on_wall()
-			if found_wall:
-				direction *= -1
-			velocity = direction * 290
-			move_and_slide(velocity, Vector2.UP)
+			if canmove == true:
+				var found_wall = is_on_wall()
+				if found_wall:
+					direction *= -1
+				velocity = direction * 290
+				move_and_slide(velocity, Vector2.UP)
+			elif canmove == false:
+				velocity = 0
 			if timer.time_left == 0:
 				if canattack == true:
+					canmove = false
 					attack()
 					timer.start(1.5)
 				elif canattack == false:
 					pass
 			if spritetimer.time_left == 0:
 				sprite.animation = "closedmouth"
+				canmove = true
 		DEAD:
 			velocity = 0
 
@@ -52,6 +58,7 @@ func attack():
 	get_tree().get_root().add_child(projectile)
 	sprite.animation = "openmouth"
 	spritetimer.start(0.5)
+
 
 func die():
 	queue_free()
