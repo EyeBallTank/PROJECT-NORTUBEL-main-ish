@@ -55,3 +55,17 @@ func attack():
 
 func die():
 	queue_free()
+
+
+func _on_HirdServHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		animation.play("dying")
+		canattack = false
+	if area.name == "EnemyCrusher":
+		animation.play("dying")
+		canattack = false
+
+func _on_HirdServHurtbox_body_entered(body):
+	if body.name == "SoccerBall":
+		animation.play("dying")
+		canattack = false

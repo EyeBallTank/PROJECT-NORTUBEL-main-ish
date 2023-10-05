@@ -145,3 +145,6 @@ anims/dying = SubResource( 6 )
 [node name="SpriteTimer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[connection signal="area_entered" from="HirdServHurtbox" to="." method="_on_HirdServHurtbox_area_entered"]
+[connection signal="body_entered" from="HirdServHurtbox" to="." method="_on_HirdServHurtbox_body_entered"]
