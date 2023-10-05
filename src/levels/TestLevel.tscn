@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/hird npc/ElecSheep NPC.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/hird npc/Leon NPC.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/hird npc/Otto NPC.tscn" type="PackedScene" id=11]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -39,10 +40,13 @@ position = Vector2( 924, -1371 )
 z_index = 18
 
 [node name="ElecSheep NPC" parent="." instance=ExtResource( 9 )]
-position = Vector2( 868, -356 )
+position = Vector2( 1280, -400 )
 
 [node name="Bonka NPC" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1253, -206 )
+position = Vector2( 1665, -250 )
 
 [node name="Leon NPC" parent="." instance=ExtResource( 10 )]
 position = Vector2( 500, -324 )
+
+[node name="Otto NPC" parent="." instance=ExtResource( 11 )]
+position = Vector2( 888, -362 )
