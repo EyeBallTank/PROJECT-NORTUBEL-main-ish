@@ -3,8 +3,10 @@ extends StaticBody2D
 onready var animatedsprite = $AnimatedSprite
 onready var animatedplayer = $AnimationPlayer
 
+export var barrierskin = "res://assets/sprites/level_object_sprites/Barrier.tres"
 
 func _ready():
+	animatedsprite.frames = load(barrierskin)
 	animatedsprite.animation = "closed"
 	animatedplayer.play("closed")
 	Signals.connect("floor_switch_active", self, "_on_FloorSwitch_Active")
