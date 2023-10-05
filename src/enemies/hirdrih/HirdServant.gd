@@ -7,9 +7,12 @@ var knockback_dir = 1
 onready var sprite = $AnimatedSprite
 onready var timer = $Timer
 onready var spritetimer = $SpriteTimer
+onready var mouth = $Position2D
 onready var animation = $AnimationPlayer
 
 var canattack = true
+
+const Fireball = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
 
 enum {
 	ALIVE,
@@ -44,6 +47,9 @@ func _physics_process(delta):
 
 
 func attack():
+	var projectile = Fireball.instance()
+	projectile.global_position = mouth.global_position
+	get_tree().get_root().add_child(projectile)
 	sprite.animation = "openmouth"
 	spritetimer.start(0.5)
 
