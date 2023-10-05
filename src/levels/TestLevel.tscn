@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -7,9 +7,8 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/level prefabs/hird prefab/Hird Tech Cloud.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/hird npc/ElecSheep NPC.tscn" type="PackedScene" id=9]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -38,14 +37,8 @@ position = Vector2( 5, -267 )
 position = Vector2( 924, -1371 )
 z_index = 18
 
-[node name="Pushable" parent="." instance=ExtResource( 9 )]
-position = Vector2( 871, -359 )
-spritename = "hirdrih pushable"
+[node name="ElecSheep NPC" parent="." instance=ExtResource( 9 )]
+position = Vector2( 868, -356 )
 
-[node name="FloorSwitch" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1225, -215 )
-floorswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/FloorSwitchhirdrih.tres"
-
-[node name="Barrier" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1536, -331 )
-barrierskin = "res://assets/sprites/level_object_sprites/hirdrih/Barrier Hirdrih.tres"
+[node name="Bonka NPC" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1253, -206 )
