@@ -66,8 +66,9 @@ tracks/0/keys = {
 [node name="SpiderChips" type="Node2D"]
 
 [node name="Spider1" type="KinematicBody2D" parent="."]
-position = Vector2( 60.8774, -768 )
-scale = Vector2( 1.35799, 1.26504 )
+position = Vector2( -0.999992, -104 )
+rotation = -1.5708
+scale = Vector2( 1.26504, 1.35799 )
 collision_layer = 32
 collision_mask = 0
 
@@ -75,7 +76,6 @@ collision_mask = 0
 rotation = 1.5708
 frames = SubResource( 3 )
 animation = "moving"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1"]
@@ -96,8 +96,9 @@ scale = Vector2( 1.35799, 1.26504 )
 curve = SubResource( 5 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -30.8288, -625.952 )
-offset = 217.185
+position = Vector2( -76.3943, -207.693 )
+rotation = -1.5708
+offset = 50.5387
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../../Spider1")
