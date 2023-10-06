@@ -7,7 +7,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
-[ext_resource path="res://assets/sprites/level_backgrounds/hirdrih/hirdrih png.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/level_backgrounds/hirdrih/hirdrih sky 3.png" type="Texture" id=8]
 
 [node name="HirdrihLevel1" type="Node2D"]
 
