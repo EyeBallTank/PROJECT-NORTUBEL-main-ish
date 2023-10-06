@@ -10,7 +10,7 @@ var codes := [ "gallery",
 				"tutor1", "tutor2", "tutor3",
 				"c4rr13", "k4tr1n", "m3lv1n",
 				"osc4r0", "p33tt3", "ang3l4",
-				"l3300n"]
+				"l3300n", "oott00", "b0rhrr"]
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -107,3 +107,9 @@ func ang3l4():
 
 func l3300n():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel1.tscn")
+
+func oott00():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel2.tscn")
+
+func b0rhrr():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel3.tscn")
