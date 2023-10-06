@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/sprites/level_hazard_sprites/hirdrih/spiderchip.png" type="Texture" id=1]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
@@ -19,20 +19,90 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 64.4247, 51.5472 )
+
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 52.5, 65.5 )
+extents = Vector2( 64.0297, 52.2832 )
+
+[sub_resource type="Curve2D" id=5]
+bake_interval = 0.01
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -76.3943, -101.067, 0, 0, 0, 0, -76.3943, -625.952, 0, 0, 0, 0, 442.02, -625.952, 0, 0, 0, 0, 442.02, -101.067, 0, 0, 0, 0, -76.3943, -101.067 )
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0671 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "mainloop"
+length = 8.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 4, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.2473, 0.5, 0.7474, 1.0 ]
+}
 
 [node name="SpiderChips" type="Node2D"]
 
 [node name="Spider1" type="KinematicBody2D" parent="."]
+position = Vector2( 60.8774, -768 )
+scale = Vector2( 1.35799, 1.26504 )
+collision_layer = 32
+collision_mask = 0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Spider1"]
+rotation = 1.5708
 frames = SubResource( 3 )
 animation = "moving"
+frame = 1
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1"]
+position = Vector2( -0.193329, 0 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 8 )
 
 [node name="EnemyHitbox" parent="Spider1" instance=ExtResource( 2 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1/EnemyHitbox"]
-position = Vector2( -0.5, -0.5 )
+position = Vector2( 0.201874, -6.10352e-05 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2( 102.743, 23.8533 )
+scale = Vector2( 1.35799, 1.26504 )
+curve = SubResource( 5 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( -30.8288, -625.952 )
+offset = 217.185
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../Spider1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "mainloop"
+anims/RESET = SubResource( 7 )
+anims/mainloop = SubResource( 6 )
