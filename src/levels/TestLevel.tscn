@@ -43,4 +43,4 @@ scale = Vector2( 144, 96 )
 collision_newsize = Vector2( 144, 96 )
 
 [node name="SpiderChips" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1067, -116 )
+position = Vector2( 976, 65 )

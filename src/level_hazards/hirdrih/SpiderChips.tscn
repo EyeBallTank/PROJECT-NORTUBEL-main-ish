@@ -28,7 +28,7 @@ extents = Vector2( 64.0297, 52.2832 )
 [sub_resource type="Curve2D" id=5]
 bake_interval = 0.01
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -76.3943, -101.067, 0, 0, 0, 0, -76.3943, -625.952, 0, 0, 0, 0, 442.02, -625.952, 0, 0, 0, 0, 442.02, -101.067, 0, 0, 0, 0, -76.3943, -101.067 )
+"points": PoolVector2Array( 0, 0, 0, 0, -76.3943, -101.067, 0, 0, 0, 0, -76.3943, -682.868, 0, 0, 0, 0, -76.3943, -101.067 )
 }
 
 [sub_resource type="Animation" id=7]
@@ -48,7 +48,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=6]
 resource_name = "mainloop"
-length = 8.0
+length = 4.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
@@ -57,10 +57,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2, 4, 6, 8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 0.2473, 0.5, 0.7474, 1.0 ]
+"values": [ 0.0, 0.5, 1.0 ]
 }
 
 [node name="SpiderChips" type="Node2D"]
@@ -76,6 +76,7 @@ collision_mask = 0
 rotation = 1.5708
 frames = SubResource( 3 )
 animation = "moving"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1"]
@@ -96,9 +97,9 @@ scale = Vector2( 1.35799, 1.26504 )
 curve = SubResource( 5 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -76.3943, -207.693 )
+position = Vector2( -76.3943, -142.509 )
 rotation = -1.5708
-offset = 50.5387
+offset = 25.5175
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../../Spider1")
