@@ -100,8 +100,9 @@ scale = Vector2( 40, 152 )
 collision_newsize = Vector2( 40, 152 )
 
 [node name="Pushable" parent="." instance=ExtResource( 16 )]
-position = Vector2( 3664, -920 )
+position = Vector2( 3408, -992 )
 spritename = "hirdrih pushable"
 
 [node name="FloorSwitch" parent="." instance=ExtResource( 17 )]
-position = Vector2( 3968, -784 )
+position = Vector2( 3400, -784 )
+floorswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/FloorSwitchhirdrih.tres"
