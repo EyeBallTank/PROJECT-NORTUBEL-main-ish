@@ -29,6 +29,10 @@ motion_scale = Vector2( 0, 0 )
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource( 8 )
 
+[node name="LevelProp5" parent="." instance=ExtResource( 13 )]
+position = Vector2( 830, -9 )
+propname = "hirdprop pipes"
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
