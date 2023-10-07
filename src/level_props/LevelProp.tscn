@@ -1731,5 +1731,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "hirdprop magnet"
+animation = "nortprop blue chimney"
 playing = true
