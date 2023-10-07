@@ -6,7 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://assets/tilesets/hirdrih/Hirdrih Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://assets/sprites/level_backgrounds/hirdrih/hirdrih png.png" type="Texture" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
 
@@ -22,11 +22,12 @@ motion_scale = Vector2( 0, 0 )
 texture = ExtResource( 8 )
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 0, 1 )
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( -65539, 0, 0, -3, 0, 0, 65533, 0, 0, 131069, 0, 0, 196605, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0 )
+tile_data = PoolIntArray( -327683, -1610612730, 0, -262147, -1610612733, 0, -196611, -1610612733, 0, -131075, -1610612733, 0, -65539, -1610612733, 0, -3, -1610612733, 0, 65533, -1610612733, 0, 131069, -1610612733, 0, 196605, -1073741819, 0, 196606, 1610612739, 0, 196607, 1610612739, 0, 131072, 1610612739, 0, 131073, 1610612739, 0, 131074, 1610612739, 0, 131075, 1610612739, 0, 131076, 1610612739, 0, 131077, 1610612739, 0, 131078, 1610612739, 0, 131079, 1610612739, 0, 131080, 1610612739, 0, 131081, 1610612742, 0 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
 position = Vector2( 74, -48 )

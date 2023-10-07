@@ -6,7 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://assets/tilesets/hirdrih/Hirdrih Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://assets/sprites/level_backgrounds/hirdrih/hirdrih sky 2 pure night 2.png" type="Texture" id=8]
 [ext_resource path="res://src/npc_actors/hird npc/TimeRobot NPC.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/sprites/level_backgrounds/hirdrih/hirdrih sky 2 green lines.png" type="Texture" id=10]
@@ -67,7 +67,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( -262150, 0, 0, -196614, 0, 0, -131078, 0, 0, -65542, 0, 0, -6, 0, 0, 65530, 0, 0, 131066, 0, 0, 196602, 0, 0, 262138, 0, 0, 262139, 0, 0, 262140, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 0, 0, 196626, 0, 0, 196627, 0, 0, 196628, 0, 0, 196629, 0, 0, 196630, 0, 0, 196631, 0, 0, 196632, 0, 0 )
+tile_data = PoolIntArray( -131078, -1610612708, 0, -65542, -1610612708, 0, -6, -1610612708, 0, 65530, -1610612708, 0, 131066, -1610612708, 0, 196602, -1610612708, 0, 262138, -1610612708, 0, 196608, -1610612708, 0, 196609, -1610612708, 0, 196610, -1610612708, 0, 196611, -1610612708, 0, 196612, -1610612708, 0, 196613, -1610612708, 0, 196614, -1610612708, 0, 196615, -1610612708, 0, 196616, -1610612708, 0, 196617, -1610612708, 0, 196618, -1610612708, 0, 196619, -1610612708, 0, 196620, -1610612708, 0, 196621, -1610612708, 0, 196622, -1610612708, 0, 196623, -1610612708, 0, 196624, -1610612708, 0, 196625, -1610612708, 0, 196626, -1610612708, 0, 327674, -1610612708, 0, 327675, -1610612708, 0, 327676, -1610612708, 0, 327677, -1610612708, 0, 327678, -1610612708, 0, 327679, -1610612708, 0 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
 position = Vector2( 376, 46 )
