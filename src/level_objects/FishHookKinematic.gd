@@ -1,4 +1,5 @@
 extends Node2D
+tool
 
 onready var anchorsprite = $Sprite
 export var anchorspritename = "nortubel anchor"
