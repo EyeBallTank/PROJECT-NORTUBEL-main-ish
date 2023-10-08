@@ -122,3 +122,4 @@ floorswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/FloorSwitch
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4947, -905 )
+spritename = "hirdrih movplatvert"
