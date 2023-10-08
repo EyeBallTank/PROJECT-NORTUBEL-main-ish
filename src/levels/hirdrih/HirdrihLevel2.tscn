@@ -93,7 +93,7 @@ position = Vector2( 376, 46 )
 position = Vector2( 584, 16 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 376, 49 )
+position = Vector2( 0, -1 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]

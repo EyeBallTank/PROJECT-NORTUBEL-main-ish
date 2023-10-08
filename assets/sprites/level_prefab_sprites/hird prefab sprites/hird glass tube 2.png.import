@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hird glass tube.png-1bd044295488ebcdd4b67f2692ba552e.stex"
+path="res://.import/hird glass tube 2.png-1cfe6168ad51ef52cb29f9677513ad11.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_prefab_sprites/hird prefab sprites/hird glass tube.png"
-dest_files=[ "res://.import/hird glass tube.png-1bd044295488ebcdd4b67f2692ba552e.stex" ]
+source_file="res://assets/sprites/level_prefab_sprites/hird prefab sprites/hird glass tube 2.png"
+dest_files=[ "res://.import/hird glass tube 2.png-1cfe6168ad51ef52cb29f9677513ad11.stex" ]
 
 [params]
 
