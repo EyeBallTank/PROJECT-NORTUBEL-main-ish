@@ -212,3 +212,7 @@ spritename = "hirdrih redkey"
 [node name="Yellow key" parent="." instance=ExtResource( 29 )]
 position = Vector2( 748, -1840 )
 spritename = "hirdrih yelkey"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 23 )]
+position = Vector2( 5288, -832 )
+propname = "hirdprop squares"
