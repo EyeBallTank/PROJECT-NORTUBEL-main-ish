@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -27,6 +27,9 @@
 [ext_resource path="res://src/npc_actors/hird npc/ElecSheep NPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=30]
 
 [node name="HirdrihLevel1" type="Node2D"]
 
@@ -197,3 +200,15 @@ spritename = "hirdrih fallplat"
 [node name="LoreBook" parent="." instance=ExtResource( 27 )]
 position = Vector2( 1496, -105 )
 spritename = "hirdrih lorebook"
+
+[node name="Blue key" parent="." instance=ExtResource( 30 )]
+position = Vector2( 3804, 8 )
+spritename = "hirdrih blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 28 )]
+position = Vector2( -908, -604 )
+spritename = "hirdrih redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 29 )]
+position = Vector2( 748, -1840 )
+spritename = "hirdrih yelkey"
