@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/hird prefab sprites/hird sphere vehicle front.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/hird prefab sprites/hird sphere vehicle back.png" type="Texture" id=2]
+[ext_resource path="res://src/level prefabs/hird prefab/Hird Sphere Vehicle.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 19.5, 130.5 )
@@ -9,9 +10,50 @@ extents = Vector2( 19.5, 130.5 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 114, 32.5 )
 
+[sub_resource type="Curve2D" id=3]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 3286, -1568, 0, 0, 0, 0, 3286, -1869, 0, 0, 0, 0, 2456, -1871, 0, 0, 0, 0, 2452, -981, 0, 0, 0, 0, 599, -983, 0, 0, 0, 0, 594, -127 )
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "ride"
+length = 16.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4, 8, 12 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
+
 [node name="Hird Sphere Vehicle" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 3286, -1568 )
+collision_layer = 8192
+collision_mask = 3
 
 [node name="front" type="Sprite" parent="KinematicBody2D"]
 z_index = 15
@@ -32,3 +74,18 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( -1, 119.5 )
 shape = SubResource( 2 )
+
+[node name="Path2D" type="Path2D" parent="."]
+z_index = 16
+curve = SubResource( 3 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 3286, -1568 )
+rotate = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../KinematicBody2D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 5 )
+anims/ride = SubResource( 4 )
