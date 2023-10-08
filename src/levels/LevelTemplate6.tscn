@@ -62,10 +62,10 @@ propname = "nortprop blue cabinet 2"
 position = Vector2( 447.813, 130.643 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1946, -879 )
+position = Vector2( 450, 153 )
 
 [node name="Companion" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2067, -896 )
+position = Vector2( -57, 520 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( -64.7355, 511.908 )
