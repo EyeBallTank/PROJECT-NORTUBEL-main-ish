@@ -161,6 +161,10 @@ propname = "hirdprop cube house 3"
 position = Vector2( 8328, 333 )
 propname = "hirdprop squares 2"
 
+[node name="LevelProp12" parent="." instance=ExtResource( 14 )]
+position = Vector2( 11349, -1415 )
+propname = "hirdprop console"
+
 [node name="LevelProp9" parent="." instance=ExtResource( 14 )]
 position = Vector2( 9082, -1360 )
 propname = "hirdprop cube house 4"
