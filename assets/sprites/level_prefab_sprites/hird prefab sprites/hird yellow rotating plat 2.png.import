@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hird yellow rotating plat.png-e85bbe97ead94265a17c1c3180038397.stex"
+path="res://.import/hird yellow rotating plat 2.png-68bdd7fec56db1b9b90735b433f4eb3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_prefab_sprites/hird prefab sprites/hird yellow rotating plat.png"
-dest_files=[ "res://.import/hird yellow rotating plat.png-e85bbe97ead94265a17c1c3180038397.stex" ]
+source_file="res://assets/sprites/level_prefab_sprites/hird prefab sprites/hird yellow rotating plat 2.png"
+dest_files=[ "res://.import/hird yellow rotating plat 2.png-68bdd7fec56db1b9b90735b433f4eb3c.stex" ]
 
 [params]
 
