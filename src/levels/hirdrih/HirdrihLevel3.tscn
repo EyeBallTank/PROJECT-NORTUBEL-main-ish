@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -18,6 +18,8 @@
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=20]
 
 [node name="HirdrihLevel1" type="Node2D"]
 
@@ -69,7 +71,7 @@ position = Vector2( 1974, 80 )
 animation = "2ndloop"
 
 [node name="Health Pickup" parent="." instance=ExtResource( 10 )]
-position = Vector2( 608, -242 )
+position = Vector2( 6318, -1002 )
 spritename = "hirdrih health"
 
 [node name="Barrier" parent="." instance=ExtResource( 12 )]
@@ -123,3 +125,12 @@ floorswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/FloorSwitch
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4947, -905 )
 spritename = "hirdrih movplatvert"
+
+[node name="Coin" parent="." instance=ExtResource( 19 )]
+position = Vector2( 610, -184 )
+spritename = "hirdrih coin"
+
+[node name="PoisonHitbox" parent="." instance=ExtResource( 20 )]
+position = Vector2( 5920, -640 )
+scale = Vector2( 26, 4 )
+collision_newsize = Vector2( 26, 4 )
