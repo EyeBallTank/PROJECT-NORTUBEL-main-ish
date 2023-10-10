@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=30]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -169,7 +170,7 @@ position = Vector2( 8328, 333 )
 propname = "hirdprop squares 2"
 
 [node name="LevelProp12" parent="." instance=ExtResource( 14 )]
-position = Vector2( 11349, -1415 )
+position = Vector2( 11349, -1397 )
 propname = "hirdprop console"
 
 [node name="LevelProp14" parent="." instance=ExtResource( 14 )]
@@ -311,5 +312,9 @@ spritename = "hirdrih coin"
 [node name="Red key" parent="." instance=ExtResource( 29 )]
 position = Vector2( 9537, -1792 )
 spritename = "hirdrih redkey"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 30 )]
+position = Vector2( 13612, -955 )
+spritename = "leon otto"
 
 [editable path="Hird Sphere Vehicle"]
