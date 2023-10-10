@@ -249,7 +249,7 @@ position = Vector2( 6532, -1530 )
 propname = "hirdprop building 4"
 
 [node name="LevelProp13" parent="." instance=ExtResource( 23 )]
-position = Vector2( 6224, -1691 )
+position = Vector2( 7647, -1094 )
 propname = "hirdprop cog"
 
 [node name="ElecSheep NPC" parent="." instance=ExtResource( 25 )]
