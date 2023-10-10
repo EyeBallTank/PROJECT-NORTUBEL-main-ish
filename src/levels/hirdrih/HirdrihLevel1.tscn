@@ -201,6 +201,10 @@ collision_newsize = Vector2( 24, 8 )
 position = Vector2( 4746, -289 )
 spritename = "hirdrih jumppad"
 
+[node name="Jumppad2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 5433, -1432 )
+spritename = "hirdrih jumppad"
+
 [node name="BlueDoor" parent="." instance=ExtResource( 17 )]
 position = Vector2( 5595, -767 )
 spritename = "hirdrih bludoor"
