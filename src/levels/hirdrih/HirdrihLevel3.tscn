@@ -71,10 +71,10 @@ position = Vector2( 74, -48 )
 position = Vector2( 284, -48 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 9289, -1838 )
+position = Vector2( 74, -51 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 9499, -1843 )
+position = Vector2( 284, -45 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
