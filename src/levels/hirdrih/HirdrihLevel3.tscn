@@ -179,21 +179,21 @@ scale = Vector2( 96, 8 )
 collision_newsize = Vector2( 96, 8 )
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 24 )]
-position = Vector2( 9888, -1920 )
+position = Vector2( 9779, -1920 )
+greenbarrierskin = "res://assets/sprites/level_object_sprites/hirdrih/GreenBarrier Hirdrih.tres"
+
+[node name="GreenBarrier2" parent="." instance=ExtResource( 24 )]
+position = Vector2( 9779, -2240 )
 animation1 = "CLOSED"
 animation2 = "OPEN"
 greenbarrierskin = "res://assets/sprites/level_object_sprites/hirdrih/GreenBarrier Hirdrih.tres"
 
-[node name="GreenBarrier2" parent="." instance=ExtResource( 24 )]
-position = Vector2( 9888, -2240 )
-greenbarrierskin = "res://assets/sprites/level_object_sprites/hirdrih/GreenBarrier Hirdrih.tres"
-
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 25 )]
-position = Vector2( 9373, -1907 )
+position = Vector2( 9664, -1901 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch One hirdrih.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 26 )]
-position = Vector2( 9489, -1901 )
+position = Vector2( 9673, -2231 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch Two hirdrih.tres"
 
 [editable path="Hird Yellow Rotating Plat"]
