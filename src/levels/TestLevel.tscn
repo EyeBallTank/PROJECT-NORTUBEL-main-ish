@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level prefabs/hird prefab/Hird Yellow Rotating Plat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/GreenBarrier.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=11]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -37,5 +40,29 @@ position = Vector2( 995, -160 )
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 7 )]
 position = Vector2( 798, -314 )
+
+[node name="GreenBarrier" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2163, -348 )
+
+[node name="GreenBarrier2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2333, -348 )
+animation1 = "CLOSED"
+animation2 = "OPEN"
+
+[node name="GreenBarrier3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2163, -665 )
+greenbarrierskin = "res://assets/sprites/level_object_sprites/hirdrih/GreenBarrier Hirdrih.tres"
+
+[node name="GreenBarrier4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2333, -665 )
+animation1 = "CLOSED"
+animation2 = "OPEN"
+greenbarrierskin = "res://assets/sprites/level_object_sprites/hirdrih/GreenBarrier Hirdrih.tres"
+
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1926, -348 )
+
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1765, -342 )
 
 [editable path="Hird Yellow Rotating Plat"]
