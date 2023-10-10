@@ -9,7 +9,6 @@ export var yelswitchskin = "res://assets/sprites/level_object_sprites/Yellow swi
 func _ready():
 	$Sprite.animation = "switchon"
 	$Sprite.frames = load(yelswitchskin)
-	pass
 
 func _on_YellowSwitch_body_entered(body):
 	if body.is_in_group("protagonists"):
