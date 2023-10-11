@@ -331,6 +331,12 @@ spritename = "hirdrih redkey"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 30 )]
 position = Vector2( 13612, -955 )
+customtext1 = "LEONOTTOCONVO_1"
+customtext2 = "LEONOTTOCONVO_2"
+customtext3 = "LEONOTTOCONVO_3"
+customtext4 = "LEONOTTOCONVO_4"
+customname1 = "Leon"
+customname2 = "Otto"
 spritename = "leon otto"
 
 [editable path="Hird Sphere Vehicle"]
