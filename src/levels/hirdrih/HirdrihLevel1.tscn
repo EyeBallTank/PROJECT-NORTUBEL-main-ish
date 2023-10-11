@@ -280,6 +280,7 @@ spritename = "hirdrih fallplat"
 
 [node name="LoreBook" parent="." instance=ExtResource( 27 )]
 position = Vector2( 1496, -105 )
+customtext = "T_HIRD_LORE_1"
 spritename = "hirdrih lorebook"
 
 [node name="Blue key" parent="." instance=ExtResource( 30 )]
