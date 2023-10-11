@@ -269,6 +269,7 @@ propname = "hirdprop cog"
 
 [node name="ElecSheep NPC" parent="." instance=ExtResource( 25 )]
 position = Vector2( -603, -1178 )
+customname = "ELEC_SHEEP_NAME"
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 19 )]
 position = Vector2( 4452, -617 )
@@ -318,3 +319,5 @@ floorswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/FloorSwitch
 
 [node name="HirdTaxi NPC" parent="." instance=ExtResource( 35 )]
 position = Vector2( -946, -653 )
+customtext = "HIRDTAXI_TALK"
+customname = "HIRD_TAXI_NAME"
