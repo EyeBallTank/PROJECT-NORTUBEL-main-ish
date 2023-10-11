@@ -149,6 +149,7 @@ propname = "hirdprop bolt"
 
 [node name="Robbio NPC" parent="." instance=ExtResource( 14 )]
 position = Vector2( 454, -24 )
+customtext = "ROBBIO_TALK"
 
 [node name="Ladder" parent="." instance=ExtResource( 15 )]
 position = Vector2( 2752, 0 )
@@ -289,5 +290,7 @@ propname = "hirdprop building 7"
 
 [node name="Borhr NPC" parent="." instance=ExtResource( 34 )]
 position = Vector2( 15821, -2372 )
+customtext = "BORHR_T"
+customname = "Borhr"
 
 [editable path="Hird Yellow Rotating Plat"]
