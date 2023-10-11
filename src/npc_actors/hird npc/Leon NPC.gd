@@ -11,9 +11,12 @@ onready var sprite = $AnimatedSprite
 export(String) var customtext = "LEON_TALK"
 export(String) var customtext2 = "LEON_HUG"
 export(String) var customtext3 = "LEON_HURT"
+export(String) var customname = "Leon"
+onready var nametext = $CanvasLayer/NinePatchRect2/Name
 
 func _ready():
 	maintext.text = str (customtext)
+	nametext.text = str (customname)
 	dialogue.visible = false
 	sprite.play("default")
 

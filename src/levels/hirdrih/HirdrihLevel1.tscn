@@ -97,7 +97,7 @@ position = Vector2( 74, -48 )
 position = Vector2( 284, -48 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 74, -45 )
+position = Vector2( 76, -50 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
@@ -231,6 +231,10 @@ position = Vector2( 553, -13 )
 
 [node name="Otto NPC" parent="." instance=ExtResource( 20 )]
 position = Vector2( 6524, -780 )
+customtext = "OTTO_TALK"
+customtext2 = "OTTO_HUG"
+customtext3 = "OTTO_HURT"
+customname = "Otto"
 
 [node name="HirdrioEnemy" parent="." instance=ExtResource( 22 )]
 position = Vector2( 7416, -1520 )

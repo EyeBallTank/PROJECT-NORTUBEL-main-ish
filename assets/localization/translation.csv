@@ -421,3 +421,8 @@ HIRD_TAXI_NAME,Hirdrih Taxi,Táxi de Hirdrih
 HIRDTAXI_TALK,"I only have 2 seats.
 Please return if your files are compressed.","Eu só tenho 2 lugares.
 Por favor, voltem se os vossos ficheiros forem comprimidos."
+OTTO_TALK,"I hate ads, but at least you can close them if you touch the cross button.
+Be carefull with Hirdrio, these things can hurt now.","Eu odeio anúncios mas pelo menos, podes fecha-los se tocares no botão da cruz.
+Tem cuidado com Hirdrio, estas coisas agora magoam-te."
+OTTO_HUG,"Uhm, I appreciate the gesture but I don't even know you.","Uhm, eu aprecio o gesto mas nem te conheço."
+OTTO_HURT,"Hey, watch it!","Hey, tem cuidado!"
