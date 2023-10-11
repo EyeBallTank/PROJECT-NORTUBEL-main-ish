@@ -112,8 +112,8 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="TimeRobot NPC" parent="." instance=ExtResource( 9 )]
 position = Vector2( 878, -18 )
-customtext = "We're responsible for Hirdrih's day and night cycle.But sometimes, we let guests try out the system to see how it works."
-customname = "Time Controller"
+customtext = "TIMECONTR_T"
+customname = "TIMECONTR_NAME"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )
@@ -204,7 +204,7 @@ collision_newsize = Vector2( 48, 8 )
 
 [node name="Avietta NPC" parent="." instance=ExtResource( 16 )]
 position = Vector2( 2401, 299 )
-customtext = "Some of these spheres can be dangerous to those not from Hirdrih.You better take the safer rides instead."
+customtext = "AVIETTA_TALK"
 customname = "Avietta"
 
 [node name="hird glass tube" parent="." instance=ExtResource( 17 )]
