@@ -329,3 +329,4 @@ customname = "HIRD_TAXI_NAME"
 
 [node name="ArtBook" parent="." instance=ExtResource( 36 )]
 position = Vector2( 5830, -988 )
+boardname = "hirdrih leon head"
