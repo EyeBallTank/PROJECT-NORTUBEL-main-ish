@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=30]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=31]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -338,5 +339,10 @@ customtext4 = "LEONOTTOCONVO_4"
 customname1 = "Leon"
 customname2 = "Otto"
 spritename = "leon otto"
+
+[node name="LoreBook" parent="." instance=ExtResource( 31 )]
+position = Vector2( 5803, -456 )
+customtext = "T_HIRD_LORE_2"
+spritename = "hirdrih lorebook"
 
 [editable path="Hird Sphere Vehicle"]
