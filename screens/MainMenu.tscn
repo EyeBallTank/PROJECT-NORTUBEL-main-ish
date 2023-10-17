@@ -162,6 +162,14 @@ texture = ExtResource( 3 )
 position = Vector2( -79, 345 )
 texture = ExtResource( 12 )
 
+[node name="Currentupdate" type="Label" parent="MenuMain"]
+margin_top = 124.0
+margin_right = 300.0
+margin_bottom = 161.0
+custom_fonts/font = ExtResource( 5 )
+text = "CURRENT VERSION: HIRDRIH
+PASSSWORD: l3300n"
+
 [node name="OptionsMenu" type="Control" parent="."]
 visible = false
 anchor_right = 1.0
