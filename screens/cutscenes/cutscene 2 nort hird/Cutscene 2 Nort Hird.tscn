@@ -1,9 +1,27 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=2]
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=3]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 15.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 17.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 16.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 18.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 3.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 4.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 5.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 7.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 8.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 2.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 6.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 9.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 11.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 13.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 10.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 12.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 14.png" type="Texture" id=22]
 
 [sub_resource type="Animation" id=1]
 resource_name = "intro cutscene"
@@ -26,6 +44,11 @@ tracks/0/keys = {
 [node name="Cutscene 2 Nort Hird" type="Node"]
 script = ExtResource( 3 )
 nextscene = "res://src/levels/hirdrih/HirdrihLevel1.tscn"
+
+[node name="Behind dialogue" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_top = 1.0
@@ -55,7 +78,105 @@ custom_fonts/font = ExtResource( 2 )
 text = "CHARTEXT
 "
 
+[node name="in front of dialogue" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene2NortHirdPanel1" type="Sprite" parent="."]
+position = Vector2( 521, -469 )
+scale = Vector2( 1.15995, 1.15995 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene2NortHirdPanel2" type="Sprite" parent="."]
+position = Vector2( -281, 236 )
+scale = Vector2( 0.368116, 0.368116 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene2NortHirdPanel3" type="Sprite" parent="."]
+position = Vector2( 1385, 247 )
+scale = Vector2( 0.430993, 0.430993 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene2NortHirdPanel4" type="Sprite" parent="."]
+position = Vector2( -822, 229 )
+scale = Vector2( 0.626838, 0.626838 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene2NortHirdPanel5" type="Sprite" parent="."]
+position = Vector2( 2003, 234 )
+scale = Vector2( 0.589077, 0.589077 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene2NortHirdPanel6" type="Sprite" parent="."]
+position = Vector2( -1336, 238.739 )
+scale = Vector2( 0.279708, 0.279708 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene2NortHirdPanel7" type="Sprite" parent="."]
+position = Vector2( 2437, 234 )
+scale = Vector2( 0.421731, 0.421731 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene2NortHirdPanel8" type="Sprite" parent="."]
+position = Vector2( 1374, -431 )
+scale = Vector2( 0.715342, 0.715342 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene2NortHirdPanel9" type="Sprite" parent="."]
+position = Vector2( -279, -362 )
+scale = Vector2( 0.568862, 0.568862 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene2NortHirdPanel10" type="Sprite" parent="."]
+position = Vector2( 510, -982 )
+scale = Vector2( 0.721217, 0.721217 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene2NortHirdPanel11" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.552941 )
+position = Vector2( 507, -1483 )
+scale = Vector2( 0.721, 0.721 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene2NortHirdPanel12" type="Sprite" parent="."]
+position = Vector2( -1772, 233 )
+scale = Vector2( 0.512878, 0.512878 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene2NortHirdPanel13" type="Sprite" parent="."]
+position = Vector2( 2844, 235.712 )
+scale = Vector2( 0.423823, 0.423823 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene2NortHirdPanel14" type="Sprite" parent="."]
+position = Vector2( 507.416, -1981 )
+scale = Vector2( 0.660448, 0.660448 )
+texture = ExtResource( 22 )
+
+[node name="Cutscene2NortHirdPanel15" type="Sprite" parent="."]
+position = Vector2( -2395, 94 )
+scale = Vector2( 0.435, 0.435 )
+texture = ExtResource( 5 )
+
+[node name="Cutscene2NortHirdPanel16" type="Sprite" parent="."]
+position = Vector2( 3449, 370 )
+scale = Vector2( 0.434063, 0.434063 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene2NortHirdPanel17" type="Sprite" parent="."]
+position = Vector2( -2994, 235 )
+scale = Vector2( 1.03653, 1.03653 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene2NortHirdPanel18" type="Sprite" parent="."]
+position = Vector2( 4006, 264 )
+scale = Vector2( 0.643851, 0.643851 )
+texture = ExtResource( 8 )
+
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 1 )]
+visible = false
 nextlevel = "res://src/levels/hirdrih/HirdrihLevel1.tscn"
 
 [node name="Label" type="Label" parent="."]
