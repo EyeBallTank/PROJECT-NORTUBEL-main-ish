@@ -123,7 +123,7 @@ func ang3l4():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/LevelTemplate6.tscn")
 
 func l3300n():
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel1.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 2 nort hird/Cutscene 2 Nort Hird.tscn")
 
 func oott00():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel2.tscn")
