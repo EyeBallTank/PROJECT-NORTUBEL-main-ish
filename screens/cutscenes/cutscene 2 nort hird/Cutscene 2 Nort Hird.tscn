@@ -135,7 +135,6 @@ scale = Vector2( 0.721217, 0.721217 )
 texture = ExtResource( 20 )
 
 [node name="Cutscene2NortHirdPanel11" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0.552941 )
 position = Vector2( 507, -1483 )
 scale = Vector2( 0.721, 0.721 )
 texture = ExtResource( 18 )
