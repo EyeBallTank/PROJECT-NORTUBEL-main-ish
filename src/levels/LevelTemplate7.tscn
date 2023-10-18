@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://screens/PauseMenu.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/sprites/screens/Nortubel Demo endimage.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/screens/Nortubel Demo end image soon.png" type="Texture" id=2]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=3]
 
 [node name="LevelTemplate7" type="Node2D"]
@@ -15,15 +15,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/ColorRect"]
-position = Vector2( 572.592, 370.125 )
+position = Vector2( 696, 315 )
 scale = Vector2( 0.520645, 0.520645 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="CanvasLayer/ColorRect"]
-margin_left = 126.0
-margin_top = 106.0
-margin_right = 818.0
-margin_bottom = 212.0
+margin_left = 17.0
+margin_top = 61.0
+margin_right = 709.0
+margin_bottom = 167.0
 custom_fonts/font = ExtResource( 3 )
 text = "Thanks for playing/Obrigado por jogar
 This game is still in development and needs help and criticism to improve
