@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+
+[node name="NortPartTwoLevel1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( -5, 12, 0, 65531, 12, 0, 131067, 12, 0, 196603, 12, 0, 262139, 12, 0, 327675, 12, 0, 393211, 12, 0, 458747, 12, 0, 524283, 12, 0, 589819, 12, 0, 655355, 12, 0, 655356, 12, 0, 655357, 12, 0, 655358, 12, 0, 655359, 12, 0, 589824, 12, 0, 589825, 12, 0, 589826, 12, 0, 589827, 12, 0, 589828, 12, 0, 589829, 12, 0, 589830, 12, 0, 589831, 12, 0, 589832, 12, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -98, 276 )
+
+[node name="playerspawn" parent="." instance=ExtResource( 1 )]
+position = Vector2( -98, 276 )
+
+[node name="companionspawn" parent="." instance=ExtResource( 4 )]
+position = Vector2( 86, 264 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 86, 264 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 5 )]
