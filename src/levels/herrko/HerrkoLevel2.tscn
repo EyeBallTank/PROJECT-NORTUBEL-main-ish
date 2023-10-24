@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+
+[node name="HerrkoLevel1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( -131077, 43, 0, -65541, 43, 0, -5, 43, 0, 65531, 43, 0, 131067, 43, 0, 196603, 43, 0, 262139, 43, 0, 327675, 43, 0, 393211, 43, 0, 393212, 43, 0, 393213, 43, 0, 393214, 43, 0, 393215, 43, 0, 327680, 43, 0, 327681, 43, 0, 327682, 43, 0, 327683, 43, 0, 327684, 43, 0, 327685, 43, 0, 327686, 43, 0, 327687, 43, 0, 327688, 43, 0, 327689, 43, 0, 327690, 43, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -110, 24 )
+
+[node name="playerspawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( -110, 24 )
+
+[node name="companionspawn" parent="." instance=ExtResource( 5 )]
+position = Vector2( 70, -16 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 70, -16 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 4 )]
