@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
+[ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=7]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -25,7 +26,10 @@ position = Vector2( 0, -270 )
 position = Vector2( 0, -270 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 403, -312 )
+position = Vector2( 1056, -231 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 636, -312 )
+position = Vector2( 1289, -231 )
+
+[node name="Sarah Sevanko NPC" parent="." instance=ExtResource( 7 )]
+position = Vector2( 184, -462 )

@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/SARAH NPC SPRITES.png" type="Texture" id=1]
+[ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 420, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 840, 0, 420, 420 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "Idle",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "Knife",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "Knife2",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 88.5, 234.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 50.5, 140.5 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "Fightingback"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Knife", "Knife2", "Knife", "Idle" ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Idle" ]
+}
+
+[node name="Sarah Sevanko NPC" type="KinematicBody2D"]
+collision_layer = 64
+collision_mask = 7
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -2, 59 )
+scale = Vector2( 0.72, 0.72 )
+frames = SubResource( 2 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -95.5, -24.5 )
+shape = SubResource( 3 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( 69.5, 69.5 )
+shape = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Fightingback = SubResource( 6 )
+anims/RESET = SubResource( 8 )
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
