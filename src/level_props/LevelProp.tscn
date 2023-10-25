@@ -1,4 +1,4 @@
-[gd_scene load_steps=347 format=2]
+[gd_scene load_steps=349 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -173,6 +173,7 @@
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop pipes.png" type="Texture" id=171]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop vehicle monowheel.png" type="Texture" id=172]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop magnet.png" type="Texture" id=173]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop joergeun graffity.png" type="Texture" id=174]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -337,6 +338,10 @@ region = Rect2( 0, 0, 264, 426 )
 [sub_resource type="AtlasTexture" id=182]
 atlas = ExtResource( 170 )
 region = Rect2( 0, 0, 116, 98 )
+
+[sub_resource type="AtlasTexture" id=186]
+atlas = ExtResource( 174 )
+region = Rect2( 0, 0, 381, 298 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 11 )
@@ -1069,6 +1074,11 @@ animations = [ {
 "name": "hirdprop window",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 186 ) ],
+"loop": false,
+"name": "krimbprop joergeun graffity",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 20 ) ],
 "loop": false,
 "name": "krimbprop oldcar bulletglass",
@@ -1731,5 +1741,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "krimbprop joergeun graffity"
 playing = true

@@ -3,6 +3,7 @@ extends KinematicBody2D
 export var gravity: = 2960
 var velocity = Vector2.ZERO
 var fightback : int = 0
+var honk = false
 #Note: The "honk" feature only works with characters that are canonically 18 or older.
 onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
@@ -22,14 +23,15 @@ func _ready():
 func _physics_process(delta):
 	velocity.y += gravity * delta
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-	if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("standstill"):
-		maintext.text = str (customtext2)
-	if Input.is_action_just_pressed("followme"):
-		maintext.text = str (customtext3)
-	if Input.is_action_just_pressed("attack"):
-		maintext.text = str (customtext4)
-		sprite.play("Knife")
-		fightback += 1
+	if honk == true:
+		if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("standstill"):
+			maintext.text = str (customtext2)
+		if Input.is_action_just_pressed("followme"):
+			maintext.text = str (customtext3)
+		if Input.is_action_just_pressed("attack"):
+			maintext.text = str (customtext4)
+			sprite.play("Knife")
+			fightback += 1
 	
 	if fightback == 2 and Input.is_action_just_pressed("attack"):
 		fightback = 2
@@ -39,10 +41,12 @@ func _physics_process(delta):
 func _on_TalktoArea_body_entered(body):
 	if body.name == "Player":
 		dialogue.visible = true
+		honk = true
 
 func _on_TalktoArea_body_exited(body):
 	if body.name == "Player":
 		dialogue.visible = false
+		honk = false
 		fightback = 0
 		maintext.text = str (customtext)
 		sprite.play("Idle")
