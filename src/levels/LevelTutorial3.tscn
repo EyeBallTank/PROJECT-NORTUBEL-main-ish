@@ -103,7 +103,7 @@ customtext = "tutor3"
 position = Vector2( 1280, 384 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1280, 389 )
+position = Vector2( 1292, 377 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1216, 389 )
