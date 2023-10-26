@@ -191,7 +191,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * FinePointCGI (Tutorial video about localization)
 * clecioespindolagamedev (Used tutorial video on how i could export my game)
 * GlitchedCode (Used tutorial video on Password system)
-* horbror (Feedback, also for adding a Nortubel reference to his game Dreams of Joy Departed)
+* horbror (Feedback, also for adding a Nortubel reference to his game Dreams of Joy Departed which in turn lead to this game referencing DOJD)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
