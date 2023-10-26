@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Melvin Oscar.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/hirdrih/Convo Leon Otto.png" type="Texture" id=16]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Katrin Pete.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Oscar.png" type="Texture" id=18]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -40,6 +41,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 18 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=19]
@@ -104,6 +109,11 @@ animations = [ {
 "frames": [ SubResource( 15 ) ],
 "loop": false,
 "name": "carrie melvin",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 25 ) ],
+"loop": false,
+"name": "carrie oscar",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 19 ) ],
@@ -337,7 +347,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "katrin pete"
+animation = "carrie oscar"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
