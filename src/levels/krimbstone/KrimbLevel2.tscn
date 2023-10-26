@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -26,9 +27,11 @@ position = Vector2( 92, -28 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 90, -30 )
+playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( -74, -30 )
+companionskin = "res://assets/sprites/play_actor_sprites/OscarSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
@@ -38,3 +41,7 @@ position = Vector2( -453, -20 )
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
 position = Vector2( -200, -62 )
 propname = "krimbprop joergeun graffity"
+
+[node name="ArtBook" parent="." instance=ExtResource( 9 )]
+position = Vector2( 154, 146 )
+boardname = "krimbart dojd crossover"
