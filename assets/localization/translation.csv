@@ -497,3 +497,26 @@ Mas parece que vocês estão mais perdidos do que eu."
 SARAHNPC_HONK,"Hey, can you knock it off?","Hey, podes parar com isso?"
 SARAHNPC_HUG,That's cute but I don't even know you.,"Que querido, mas nem sequer te conheço."
 SARAHNPC_HURT,"Go ahead, try me again!","Vá Lá, tenta de novo!"
+,,
+CARRIE_OSCAR_CONVO_1,"At least Grandma is trying to save us.
+Maybe there's hope.","Pelo menos a avó está a tentar ajudar-nos
+Talvez há esperança."
+CARRIE_OSCAR_CONVO_2,"What about Mom and Dad?
+They must be worried about us too.","E a mãe ou o pai?
+Também devem estar preocupados."
+CARRIE_OSCAR_CONVO_3,Uh yes. They must be.,Uh sim. Eles devem estar.
+CARRIE_OSCAR_CONVO_4,I wanna know what they're up to.,Eu quero saber como devem estar agora.
+KATRIN_PETE_CONVO_1,"Kat, is it me or does Dad not like me?","Kat, é a minha impressão ou o pai não gosta de mim?"
+KATRIN_PETE_CONVO_2,What? Of course he does.,O quê? É claro que ele gosta de ti.
+KATRIN_PETE_CONVO_3,Then why does he look uncomfortable sometimes?,"Então porque é que às vezes, ele parece desconfortável?"
+KATRIN_PETE_CONVO_4,"Well, maybe he wants to say something but needs the right time and place.","Bem, talvez ele quer dizer algo, mas precisa da hora e do lugar certos."
+ANGELA_MELVIN_CONVO_1,"Mel, how was mom like?
+I don't remember much about her.","Mel, como era a mãe?
+Eu não me lembro bem dela."
+ANGELA_MELVIN_CONVO_2,"She was really nice.
+She'd raise you differently from dad.","Ela era muito simpática.
+Ela educava-te duma maneira diferente do pai."
+ANGELA_MELVIN_CONVO_3,Would you like me more if mom was around?,Gostarias mais de mim se a mãe ainda estivesse connosco?
+ANGELA_MELVIN_CONVO_4,"I still like you, Angela.
+Even without mom, I can at least carry her teachings to you.","Ainda gosto de ti, Angela.
+Mesmo sem a mãe, posso passar as lições dela para ti."
