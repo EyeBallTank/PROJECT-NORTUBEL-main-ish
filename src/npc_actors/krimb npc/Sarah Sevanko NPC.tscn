@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/SARAH NPC SPRITES.png" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.gd" type="Script" id=2]
@@ -56,6 +56,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ "Knife", "Knife2", "Knife", "Idle" ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("SarahKnife/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
 
 [sub_resource type="Animation" id=8]
 length = 0.001
@@ -71,6 +83,33 @@ tracks/0/keys = {
 "update": 0,
 "values": [ "Idle" ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("SarahKnife:monitorable")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("SarahKnife/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 45.5, 133 )
 
 [node name="Sarah Sevanko NPC" type="KinematicBody2D"]
 collision_layer = 64
@@ -139,5 +178,15 @@ text = "Sarah Sevanko"
 anims/Fightingback = SubResource( 6 )
 anims/RESET = SubResource( 8 )
 
+[node name="SarahKnife" type="Area2D" parent="."]
+position = Vector2( 49, 0 )
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SarahKnife"]
+position = Vector2( 69.5, 68 )
+shape = SubResource( 9 )
+disabled = true
+
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
+[connection signal="body_entered" from="SarahKnife" to="." method="_on_SarahKnife_body_entered"]

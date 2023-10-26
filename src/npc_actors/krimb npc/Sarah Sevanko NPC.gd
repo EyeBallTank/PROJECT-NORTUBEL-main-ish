@@ -26,8 +26,10 @@ func _physics_process(delta):
 	if honk == true:
 		if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("standstill"):
 			maintext.text = str (customtext2)
+			sprite.play("Idle")
 		if Input.is_action_just_pressed("followme"):
 			maintext.text = str (customtext3)
+			sprite.play("Idle")
 		if Input.is_action_just_pressed("attack"):
 			maintext.text = str (customtext4)
 			sprite.play("Knife")
@@ -50,3 +52,8 @@ func _on_TalktoArea_body_exited(body):
 		fightback = 0
 		maintext.text = str (customtext)
 		sprite.play("Idle")
+
+
+func _on_SarahKnife_body_entered(body):
+	if body.name == "Player" and body.health > 10:
+		body.health -= 10

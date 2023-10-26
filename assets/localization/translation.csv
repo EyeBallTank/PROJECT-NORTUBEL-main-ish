@@ -271,7 +271,7 @@ OSCAR_HURT,"Please, be carefull with that!","Por favor, tem cuidado com isso."
 ,,
 KATRIN_TALK_1,I wonder why those portals look like grids.,Gostava de saber porque é que esses portais parecem grades.
 KATRIN_HUG,"Oh, thank you.
-I felt like I needed that.","Oh, obrigado.
+I felt like I needed that.","Oh, obrigada.
 Senti que precisava disso."
 KATRIN_HONK,"Uh... was it something in my shirt?
 Maybe in a better place and time, I wouldn't mind.","Uh... foi algo na minha camisa?
@@ -490,3 +490,10 @@ CUTSCENE_2_TALK_18,"Unfortunately, we are currently dealing with some viruses.
 Some of them are typical and not that threatning, but our lord said there are others originating from a new source.","Infelizmente, estamos a lidar com alguns vírus.
 Alguns são típicos e não tão ameaçantes, mas o nosso senhor disse que outros vêm duma nova fonte."
 CUTSCENE_2_TALK_19,"Well, I guess we could give this place a small visit before we return to our journey.","Bem, acho que podíamos dar este sítio uma pequena visita antes de retornarmos à nossa viagem."
+,,
+SARAHNPC_TALK,"Still not exactly sure how I feel about this place, compared to Seaside City.
+But I'm sure you are even more lost than I am.","Ainda não sei exatamente como eu sinto sobre este lugar, comparado a Seaside City.
+Mas parece que vocês estão mais perdidos do que eu."
+SARAHNPC_HONK,"Hey, can you knock it off?","Hey, podes parar com isso?"
+SARAHNPC_HUG,That's cute but I don't even know you.,"Que querido, mas nem sequer te conheço."
+SARAHNPC_HURT,"Go ahead, try me again!","Vá Lá, tenta de novo!"
