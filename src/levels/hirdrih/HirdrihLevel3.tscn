@@ -80,7 +80,7 @@ position = Vector2( 284, -45 )
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
 position = Vector2( 16296, -2176 )
-new_scene = "res://src/levels/LevelTemplate7.tscn"
+new_scene = "res://screens/cutscenes/cutscene 3 hird norttwo/Cutscene 3 Hird Nort Two.tscn"
 spritename = "hirdrih greendoor"
 customtext = "b0rhrr"
 
