@@ -113,3 +113,7 @@ func oott00():
 
 func b0rhrr():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/hirdrih/HirdrihLevel3.tscn")
+
+
+func _on_CreditsButton_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/CreditsScreeen.tscn")
