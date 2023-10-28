@@ -40,7 +40,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( 728, -263 )
-boardname = "krimbart ricotto reference"
+boardname = "krimbart booker backstory"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1203, -384 )
