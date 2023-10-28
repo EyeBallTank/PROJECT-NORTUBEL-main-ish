@@ -33,4 +33,5 @@ position = Vector2( 86, 264 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 748, 578 )
+new_scene = "res://screens/cutscenes/cutscene 5 norttwo krimb/cutscene 5 norttwo krimb.tscn"
 customtext = "b3rn4d"
