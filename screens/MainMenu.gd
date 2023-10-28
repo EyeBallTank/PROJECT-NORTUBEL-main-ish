@@ -11,7 +11,8 @@ var codes := [ "gallery",
 				"c4rr13", "k4tr1n", "m3lv1n",
 				"osc4r0", "p33tt3", "ang3l4",
 				"l3300n", "oott00", "b0rhrr",
-				"p4m3l4", "sh3lly", "b3rn4d"]
+				"p4m3l4", "sh3lly", "b3rn4d",
+				"b00k3r", "r1c0t0", "phn34s"]
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -127,3 +128,12 @@ func sh3lly():
 
 func b3rn4d():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race.tscn")
+
+func b00k3r():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 5 norttwo krimb/cutscene 5 norttwo krimb.tscn")
+
+func r1c0t0():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/krimbstone/KrimbLevel2.tscn")
+
+func phn34s():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella.tscn")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
@@ -24,10 +25,15 @@ position = Vector2( 92, -28 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 90, -30 )
-playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
+playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( -74, -30 )
-companionskin = "res://assets/sprites/play_actor_sprites/OscarSprites.tres"
+companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
+
+[node name="Door" parent="." instance=ExtResource( 1 )]
+position = Vector2( 303, 195 )
+new_scene = "res://src/levels/LevelTemplate7.tscn"
+customtext = "phn34s"

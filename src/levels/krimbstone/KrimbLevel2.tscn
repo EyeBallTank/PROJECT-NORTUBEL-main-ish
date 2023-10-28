@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -17,7 +18,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131083, 4, 0, -65547, 4, 0, -11, 4, 0, 65525, 4, 0, 131061, 4, 0, 196597, 4, 0, 262133, 4, 0, 262134, 4, 0, 262135, 4, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0 )
+tile_data = PoolIntArray( -131083, 4, 0, -65547, 4, 0, -11, 4, 0, 65525, 4, 0, 131061, 4, 0, 196597, 4, 0, 262133, 4, 0, 262134, 4, 0, 262135, 4, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 196624, 4, 0, 196625, 4, 0, 196626, 4, 0, 196627, 4, 0, 196628, 4, 0 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( -74, -30 )
@@ -45,3 +46,8 @@ propname = "krimbprop joergeun graffity"
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
 position = Vector2( 154, 146 )
 boardname = "krimbart dojd crossover"
+
+[node name="Door" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1131, 204 )
+new_scene = "res://screens/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella.tscn"
+customtext = "r1c0t0"
