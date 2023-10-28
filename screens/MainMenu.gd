@@ -10,7 +10,8 @@ var codes := [ "gallery",
 				"tutor1", "tutor2", "tutor3",
 				"c4rr13", "k4tr1n", "m3lv1n",
 				"osc4r0", "p33tt3", "ang3l4",
-				"l3300n", "oott00", "b0rhrr"]
+				"l3300n", "oott00", "b0rhrr",
+				"p4m3l4", "sh3lly", "b3rn4d"]
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -117,3 +118,12 @@ func b0rhrr():
 
 func _on_CreditsButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/CreditsScreeen.tscn")
+
+func p4m3l4():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 3 hird norttwo/Cutscene 3 Hird Nort Two.tscn")
+
+func sh3lly():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelparttwo/NortPartTwoLevel2.tscn")
+
+func b3rn4d():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race.tscn")
