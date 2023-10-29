@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/npc_actors/krimb npc/Ricotto NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 
 [node name="TestLevel" type="Node2D"]
@@ -45,3 +46,6 @@ spritename = "angela melvin"
 
 [node name="Ricotto NPC" parent="." instance=ExtResource( 7 )]
 position = Vector2( 180, -401 )
+
+[node name="TradeItem" parent="." instance=ExtResource( 9 )]
+position = Vector2( 964, -510 )

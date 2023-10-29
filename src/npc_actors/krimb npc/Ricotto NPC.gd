@@ -42,8 +42,8 @@ func _on_TalktoArea_body_entered(body):
 
 func _on_TalktoArea_body_exited(body):
 	if body.name == "Player":
+		dialogue.visible = false
 		if body.hastradeitem == false:
-			dialogue.visible = false
 			honk = false
 			maintext.text = str (customtext)
 			sprite.play("Idle")
