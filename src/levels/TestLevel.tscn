@@ -6,7 +6,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
-[ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/npc_actors/krimb npc/Ricotto NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 
@@ -20,9 +20,6 @@ format = 1
 tile_data = PoolIntArray( -983015, 2, 0, -851970, 1, 0, -851969, 1, 0, -917504, 1, 0, -917503, 2, 0, -917502, 2, 0, -917501, 2, 0, -917500, 2, 0, -917499, 2, 0, -917498, 2, 0, -917497, 2, 0, -917496, 2, 0, -917495, 2, 0, -917494, 2, 0, -917493, 2, 0, -917492, 2, 0, -917491, 2, 0, -917490, 2, 0, -917489, 2, 0, -917488, 2, 0, -917487, 2, 0, -917486, 2, 0, -917485, 2, 0, -917484, 2, 0, -917483, 2, 0, -917482, 2, 0, -917481, 2, 0, -917480, 2, 0, -917479, 2, 0, -917478, 2, 0, -786434, 1, 0, -851941, 2, 0, -851940, 2, 0, -851939, 2, 0, -851938, 2, 0, -851937, 2, 0, -851936, 2, 0, -851935, 2, 0, -851934, 2, 0, -851933, 2, 0, -720898, 1, 0, -786405, 2, 0, -786397, 2, 0, -655362, 1, 0, -720869, 2, 0, -720861, 2, 0, -589826, 1, 0, -655333, 2, 0, -655325, 2, 0, -655324, 2, 0, -524290, 1, 0, -589789, 2, 0, -589788, 2, 0, -458754, 1, 0, -524252, 2, 0, -393218, 1, 0, -458716, 2, 0, -327682, 1, 0, -393180, 2, 0, -262146, 1, 0, -327644, 2, 0, -196610, 1, 0, -262129, 2, 0, -262119, 2, 0, -262108, 2, 0, -131074, 1, 0, -131073, 2, 0, -196608, 2, 0, -196607, 2, 0, -196606, 2, 0, -196605, 2, 0, -196604, 2, 0, -196603, 2, 0, -196602, 2, 0, -196601, 2, 0, -196600, 2, 0, -196599, 2, 0, -196598, 2, 0, -196597, 2, 0, -196596, 2, 0, -196595, 2, 0, -196594, 2, 0, -196593, 2, 0, -196592, 2, 0, -196591, 2, 0, -196590, 2, 0, -196589, 2, 0, -196588, 2, 0, -196587, 2, 0, -196586, 2, 0, -196585, 2, 0, -196584, 2, 0, -196583, 2, 0, -196582, 2, 0, -196581, 2, 0, -196580, 2, 0, -196579, 2, 0, -196578, 2, 0, -196577, 2, 0, -196576, 2, 0, -196575, 2, 0, -196574, 2, 0, -196573, 2, 0, -196572, 2, 0 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 1 )]
-
-[node name="Sarah Sevanko NPC" parent="." instance=ExtResource( 7 )]
-position = Vector2( 139, -417 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 574, -331 )
@@ -45,3 +42,6 @@ boardname = "krimbart booker backstory"
 [node name="ConvoNPC" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1203, -384 )
 spritename = "angela melvin"
+
+[node name="Ricotto NPC" parent="." instance=ExtResource( 7 )]
+position = Vector2( 180, -401 )

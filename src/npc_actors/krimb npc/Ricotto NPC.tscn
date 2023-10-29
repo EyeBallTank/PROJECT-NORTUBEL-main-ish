@@ -1,0 +1,110 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/RICOTTO SPRITES NPC.png" type="Texture" id=1]
+[ext_resource path="res://src/npc_actors/krimb npc/Ricotto NPC.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=4]
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 840, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 1260, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 420, 0, 420, 420 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "HasItem",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 1.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 67.5, 96.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 110.5, 126 )
+
+[node name="Ricotto NPC" type="KinematicBody2D"]
+collision_layer = 64
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -2, 76 )
+scale = Vector2( 0.64, 0.64 )
+frames = SubResource( 2 )
+animation = "Idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.5, 113.5 )
+shape = SubResource( 3 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( -3.5, 84 )
+shape = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 480.0
+margin_right = 1018.0
+margin_bottom = 593.0
+texture = ExtResource( 3 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 48.0
+margin_bottom = 25.0
+custom_fonts/font = ExtResource( 4 )
+text = "TEST"
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 452.0
+margin_right = 127.0
+margin_bottom = 476.0
+texture = ExtResource( 3 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_left = 5.0
+margin_top = 4.0
+margin_right = 104.0
+margin_bottom = 21.0
+custom_fonts/font = ExtResource( 4 )
+text = "Ricotto Bruniolli"
