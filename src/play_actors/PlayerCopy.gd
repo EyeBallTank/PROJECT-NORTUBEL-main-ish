@@ -44,6 +44,7 @@ var hasbluekey = false
 var hasredkey = false
 var hasfishhook = false
 var hasball = false
+var hastradeitem = false
 
 var rope_part = null
 var portal_id = 0
