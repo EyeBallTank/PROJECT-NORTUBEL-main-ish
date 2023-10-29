@@ -533,3 +533,12 @@ RICOTTO_HURT,"Hey, don't you dare.
 Do you know I'm not capable of hurting you?","Hey, não te atrevas.
 Achas que não sou capaz de te magoar?"
 RICOTTO_HUG,"I don't know you, stranger, but at least you seem nice.","Não te conheço, estranha, mas pelo menos pareces simpática."
+,,
+PRISONER_NAME_1,Prisoner Nº1,Prisioneiro Nº1
+PRISONER_NAME_2,Prisoner Nº2,Prisioneiro Nº2
+PRISONER_CONVO_1,"You heard stories of this ""Bullet"" guy?","Já ouviste falar deste gajo, o ""Bala""?"
+PRISONER_CONVO_2,"Yeah, he's horrible.
+Somehow worse than Filbert Ash.","Sim, é terrível.
+De alguma forma pior do que o Filbert Ash."
+PRISONER_CONVO_3,What if they send him here?,E se eles o trazerem para cá?
+PRISONER_CONVO_4,All I know is that Hell would seem like Heaven compared to this prison.,Só sei é que o Inferno vai parecer o Paraíso comparado a esta prisão.
