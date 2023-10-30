@@ -54,8 +54,9 @@ position = Vector2( 154, 146 )
 boardname = "krimbart dojd crossover"
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1161, 193 )
+position = Vector2( 1164, 157 )
 new_scene = "res://screens/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella.tscn"
+spritename = "krimbstone greendoor"
 customtext = "r1c0t0"
 
 [node name="Ricotto NPC" parent="." instance=ExtResource( 11 )]

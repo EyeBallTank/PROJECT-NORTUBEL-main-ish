@@ -6,7 +6,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://assets/tilesets/krimbstone/Krimbstone Tiles.tres" type="TileSet" id=7]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -15,7 +15,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131083, 4, 0, -65547, 4, 0, -11, 4, 0, 65525, 4, 0, 131061, 4, 0, 196597, 4, 0, 262133, 4, 0, 262134, 4, 0, 262135, 4, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0 )
+tile_data = PoolIntArray( -393225, 0, 0, -327689, 0, 0, -262153, 0, 0, -196617, 0, 0, -131081, 0, 0, -65545, 0, 0, -9, 0, 0, 65527, 0, 0, 131063, 0, 0, 131064, 0, 0, 131065, 0, 0, 131066, 0, 0, 131067, 0, 0, 131068, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( -74, -30 )
@@ -34,6 +34,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Door" parent="." instance=ExtResource( 1 )]
-position = Vector2( 303, 195 )
+position = Vector2( 739, 25 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
+spritename = "krimbstone greendoor"
 customtext = "phn34s"
