@@ -81,3 +81,27 @@ propname = "nortprop small fountain"
 [node name="LevelProp12" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1202, -226 )
 propname = "nortprop small green tree"
+
+[node name="LevelProp13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1006, 160 )
+propname = "nortprop window 1"
+
+[node name="LevelProp14" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1290, 172 )
+propname = "nortprop window 2"
+
+[node name="LevelProp15" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1248, 354 )
+propname = "nortprop window 3"
+
+[node name="LevelProp16" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1172, 570 )
+propname = "nortprop window 4"
+
+[node name="LevelProp17" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1032, 278 )
+propname = "nortprop window 5"
+
+[node name="LevelProp18" parent="." instance=ExtResource( 8 )]
+position = Vector2( 558, 644 )
+propname = "nortprop wood boat"
