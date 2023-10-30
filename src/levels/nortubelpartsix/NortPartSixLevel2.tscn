@@ -52,3 +52,7 @@ propname = "nortprop blue cabinet 2"
 [node name="LevelProp6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 474, -205 )
 propname = "nortprop chest with 2 openings"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 937, 100 )
+propname = "nortprop door 5"

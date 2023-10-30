@@ -50,6 +50,10 @@ position = Vector2( 1010, 576 )
 new_scene = "res://screens/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race.tscn"
 customtext = "sh3lly"
 
+[node name="LevelProp5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2062, -7 )
+propname = "nortprop floating house"
+
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1333, 377 )
 propname = "nortprop beads entrance"
@@ -57,3 +61,11 @@ propname = "nortprop beads entrance"
 [node name="LevelProp2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1312, 125 )
 propname = "nortprop big berlin ball"
+
+[node name="LevelProp3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1048, 17 )
+propname = "nortprop door 1"
+
+[node name="LevelProp4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1528, 8 )
+propname = "nortprop door 4"

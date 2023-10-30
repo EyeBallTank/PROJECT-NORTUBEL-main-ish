@@ -47,3 +47,7 @@ propname = "nortprop blue symbol green leaves"
 [node name="LevelProp4" parent="." instance=ExtResource( 8 )]
 position = Vector2( 184, -50 )
 propname = "nortprop chair 1"
+
+[node name="LevelProp5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 594, -35 )
+propname = "nortprop flag nortubel"
