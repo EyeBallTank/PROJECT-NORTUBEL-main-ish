@@ -37,6 +37,7 @@ func _on_TalktoArea_body_entered(body):
 		if body.hastradeitem == true:
 			maintext.text = str (customtext2)
 			sprite.play("HasItem")
+			Signals.emit_signal("trade_item_received")
 		else:
 			pass
 
@@ -48,4 +49,4 @@ func _on_TalktoArea_body_exited(body):
 			maintext.text = str (customtext)
 			sprite.play("Idle")
 		else:
-			pass
+			honk = false

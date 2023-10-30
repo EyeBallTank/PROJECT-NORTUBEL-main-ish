@@ -63,4 +63,4 @@ customtext = "r1c0t0"
 position = Vector2( 2181, -20 )
 
 [node name="TradeItem" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2151, -288 )
+position = Vector2( 1855, -341 )
