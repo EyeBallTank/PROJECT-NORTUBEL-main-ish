@@ -32,3 +32,23 @@ position = Vector2( 224, 0 )
 [node name="LevelProp" parent="." instance=ExtResource( 3 )]
 position = Vector2( 15, 297 )
 propname = "nortprop beanbag chair"
+
+[node name="LevelProp2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -28, 156 )
+propname = "nortprop big cream pastel"
+
+[node name="LevelProp3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 539, -56 )
+propname = "nortprop big fountain"
+
+[node name="LevelProp4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 793, -157 )
+propname = "nortprop blue cabinet 1"
+
+[node name="LevelProp5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1043, -147 )
+propname = "nortprop blue cabinet 2"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 474, -205 )
+propname = "nortprop chest with 2 openings"

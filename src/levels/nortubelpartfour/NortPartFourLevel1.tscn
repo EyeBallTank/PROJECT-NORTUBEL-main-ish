@@ -35,5 +35,9 @@ position = Vector2( -116, 118 )
 [node name="WorldTitleName" parent="." instance=ExtResource( 2 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 481, 199 )
+position = Vector2( 772, -89 )
 propname = "nortprop balcony 2"
+
+[node name="LevelProp2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 176, -322 )
+propname = "nortprop computer table green chairs"
