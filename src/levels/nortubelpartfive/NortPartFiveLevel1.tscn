@@ -69,3 +69,15 @@ propname = "nortprop pillar vases rockface"
 [node name="LevelProp9" parent="." instance=ExtResource( 8 )]
 position = Vector2( 372, -304 )
 propname = "nortprop plates holder"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1176, -100 )
+propname = "nortprop small floating sand plat"
+
+[node name="LevelProp11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1094, -114 )
+propname = "nortprop small fountain"
+
+[node name="LevelProp12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1202, -226 )
+propname = "nortprop small green tree"

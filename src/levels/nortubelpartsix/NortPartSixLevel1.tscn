@@ -55,3 +55,35 @@ propname = "nortprop school table chairs"
 [node name="LevelProp6" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1242, -386 )
 propname = "nortprop sideways house part"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1116, 156 )
+propname = "nortprop small building 1"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 965, 163 )
+propname = "nortprop small building 2"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1235, 166 )
+propname = "nortprop small building 3"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1117, 287 )
+propname = "nortprop small building 4"
+
+[node name="LevelProp11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1263, 302 )
+propname = "nortprop small building 5"
+
+[node name="LevelProp12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 986, 294 )
+propname = "nortprop small building 6"
+
+[node name="LevelProp13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1069, 34 )
+propname = "nortprop small building 7"
+
+[node name="LevelProp14" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1154, -8 )
+propname = "nortprop small building 8"

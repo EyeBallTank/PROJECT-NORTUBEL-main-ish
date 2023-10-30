@@ -65,3 +65,35 @@ propname = "nortprop palmtree"
 [node name="LevelProp8" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1400, -58 )
 propname = "nortprop park picnic table"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1411, 161 )
+propname = "nortprop small house 1"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1630, 89 )
+propname = "nortprop small house 2"
+
+[node name="LevelProp11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1614, -146 )
+propname = "nortprop small house 3"
+
+[node name="LevelProp12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1371, -311 )
+propname = "nortprop small house 4"
+
+[node name="LevelProp13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1750, -455 )
+propname = "nortprop small house 5"
+
+[node name="LevelProp14" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1114, -602 )
+propname = "nortprop weird carpet"
+
+[node name="LevelProp15" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1129, 467 )
+propname = "nortprop weird doorway"
+
+[node name="LevelProp16" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1012, 21 )
+propname = "nortprop white triangle holes"

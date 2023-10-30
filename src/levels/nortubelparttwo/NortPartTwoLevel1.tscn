@@ -102,3 +102,7 @@ propname = "nortprop pillars arc"
 [node name="LevelProp10" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2258, 302 )
 propname = "nortprop pink rock structure"
+
+[node name="LevelProp11" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1250, -539 )
+propname = "nortprop small floating grass plat"

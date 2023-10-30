@@ -73,3 +73,39 @@ propname = "nortprop door 1"
 [node name="LevelProp4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1528, 8 )
 propname = "nortprop door 4"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 158, -316 )
+propname = "nortprop stall 1"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 9 )]
+position = Vector2( 638, -418 )
+propname = "nortprop stall 2"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1405, 793 )
+propname = "nortprop stall 3"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1599, 937 )
+propname = "nortprop stool 1"
+
+[node name="LevelProp11" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1218, 973 )
+propname = "nortprop stylish lamp"
+
+[node name="LevelProp12" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1547, 563 )
+propname = "nortprop sugar cane"
+
+[node name="LevelProp13" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1778, 683 )
+propname = "nortprop toboggan front"
+
+[node name="LevelProp14" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1931, 327 )
+propname = "nortprop turtle statue"
+
+[node name="LevelProp15" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2219, 351 )
+propname = "nortprop vase palmtree"

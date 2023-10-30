@@ -61,3 +61,31 @@ propname = "nortprop largegreen streetlamp"
 [node name="LevelProp8" parent="." instance=ExtResource( 1 )]
 position = Vector2( 444, -28 )
 propname = "nortprop metal fish"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 978, -412 )
+propname = "nortprop small house 6"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1498, 387 )
+propname = "nortprop small house 7"
+
+[node name="LevelProp11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1760, 77 )
+propname = "nortprop small house 8"
+
+[node name="LevelProp12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1488, 287 )
+propname = "nortprop small nortubel banner"
+
+[node name="LevelProp13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1730, -163 )
+propname = "nortprop small pink tree"
+
+[node name="LevelProp14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1882, -329 )
+propname = "nortprop stairs streetlights"
+
+[node name="LevelProp15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1216, 299 )
+propname = "nortprop weird basket"
