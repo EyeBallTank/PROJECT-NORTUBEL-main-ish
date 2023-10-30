@@ -94,3 +94,11 @@ propname = "nortprop market cart"
 [node name="LevelProp8" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1044, -277 )
 propname = "nortprop market table"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2208, -529 )
+propname = "nortprop pillars arc"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2258, 302 )
+propname = "nortprop pink rock structure"

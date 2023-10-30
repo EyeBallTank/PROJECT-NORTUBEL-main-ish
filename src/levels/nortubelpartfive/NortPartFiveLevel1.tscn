@@ -41,3 +41,31 @@ propname = "nortprop basket flowers"
 [node name="LevelProp2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 368, -72 )
 propname = "nortprop brown bench chair"
+
+[node name="LevelProp3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 612, 6 )
+propname = "nortprop nodi logo"
+
+[node name="LevelProp4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 548, -142 )
+propname = "nortprop old bath tub"
+
+[node name="LevelProp5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 742, -78 )
+propname = "nortprop old sink"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 748, 86 )
+propname = "nortprop painted rock"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 588, -360 )
+propname = "nortprop pedal boat"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 894, -406 )
+propname = "nortprop pillar vases rockface"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 372, -304 )
+propname = "nortprop plates holder"
