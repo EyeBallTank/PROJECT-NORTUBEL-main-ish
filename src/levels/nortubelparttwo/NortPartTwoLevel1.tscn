@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=10]
 
 [node name="NortPartTwoLevel1" type="Node2D"]
 
@@ -61,3 +62,15 @@ spritename = "angela melvin"
 position = Vector2( 1973, 578 )
 new_scene = "res://src/levels/nortubelparttwo/NortPartTwoLevel2.tscn"
 customtext = "p4m3l4"
+
+[node name="LevelProp" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2734, 0 )
+propname = "nortprop ancient temple pillar tree"
+
+[node name="LevelProp2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1538, -102 )
+propname = "nortprop artistic statue"
+
+[node name="LevelProp3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1077, 421 )
+propname = "nortprop bidet"
