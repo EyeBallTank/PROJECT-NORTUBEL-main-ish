@@ -76,5 +76,21 @@ position = Vector2( 1077, 421 )
 propname = "nortprop bidet"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1215, 121 )
+position = Vector2( 1205, 116 )
 propname = "nortprop bookshelf rock"
+
+[node name="LevelProp5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1815, -307 )
+propname = "nortprop lighthouse"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1377, -70 )
+propname = "nortprop mannequin"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1135, -196 )
+propname = "nortprop market cart"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1044, -277 )
+propname = "nortprop market table"

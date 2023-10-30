@@ -49,3 +49,15 @@ position = Vector2( 568, -279 )
 [node name="LevelProp5" parent="." instance=ExtResource( 1 )]
 position = Vector2( 313, -105 )
 propname = "nortprop bluegray rock structure"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 471, -268 )
+propname = "nortprop large twisted lamp"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 661, -247 )
+propname = "nortprop largegreen streetlamp"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 444, -28 )
+propname = "nortprop metal fish"

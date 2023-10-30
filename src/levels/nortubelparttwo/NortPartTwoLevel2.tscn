@@ -54,6 +54,10 @@ customtext = "sh3lly"
 position = Vector2( 2062, -7 )
 propname = "nortprop floating house"
 
+[node name="LevelProp6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1279, -331 )
+propname = "nortprop floating house small group"
+
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1333, 377 )
 propname = "nortprop beads entrance"

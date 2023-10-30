@@ -50,3 +50,19 @@ propname = "nortprop door 2"
 [node name="LevelProp5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1174, -299 )
 propname = "nortprop duck statue"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1540, -147 )
+propname = "nortprop gold decoration 1"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1769, 93 )
+propname = "nortprop green metal door"
+
+[node name="LevelProp8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 381, -726 )
+propname = "nortprop house 1"
+
+[node name="LevelProp9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1398, -785 )
+propname = "nortprop house 2"

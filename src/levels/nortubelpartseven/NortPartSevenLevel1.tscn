@@ -38,6 +38,10 @@ position = Vector2( 1837, 208 )
 [node name="Nort Boat Fisher Eye" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1562, 275 )
 
+[node name="LevelProp6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 709, -439 )
+propname = "nortprop green roof"
+
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
 position = Vector2( 50, 139 )
 propname = "nortprop bench tree log"
@@ -53,3 +57,11 @@ propname = "nortprop black kitchen"
 [node name="LevelProp4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 498, -156 )
 propname = "nortprop blue green chair stack"
+
+[node name="LevelProp5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 546, -438 )
+propname = "nortprop green pillar floating chain"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 916, -247 )
+propname = "nortprop hanging clothes wire"
