@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/TradeItemDoor.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=15]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -89,3 +90,7 @@ spritename = "krimbstone pushable"
 
 [node name="TradeItemDoor" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3711, 63 )
+
+[node name="LifeguardFloater" parent="." instance=ExtResource( 15 )]
+position = Vector2( 4674, -81 )
+spritename = "krimbstone floater"

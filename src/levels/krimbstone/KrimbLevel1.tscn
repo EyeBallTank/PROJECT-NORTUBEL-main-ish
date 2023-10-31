@@ -86,5 +86,6 @@ position = Vector2( -613, 654 )
 propname = "krimbprop electric chair"
 
 [node name="LoreBook" parent="." instance=ExtResource( 14 )]
-position = Vector2( -60, 105 )
+position = Vector2( -252, 171 )
+customtext = "T_KRIMB_LORE_1"
 spritename = "krimbstone lorebook"
