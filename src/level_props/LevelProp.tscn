@@ -1,4 +1,4 @@
-[gd_scene load_steps=353 format=2]
+[gd_scene load_steps=355 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -176,6 +176,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop joergeun graffity.png" type="Texture" id=174]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop ricotto scooter bike.png" type="Texture" id=175]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop fire hydrant.png" type="Texture" id=176]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop prison bed toilet.png" type="Texture" id=177]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -352,6 +353,10 @@ region = Rect2( 0, 0, 381, 298 )
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=189]
+atlas = ExtResource( 177 )
+region = Rect2( 0, 0, 559, 183 )
 
 [sub_resource type="AtlasTexture" id=187]
 atlas = ExtResource( 175 )
@@ -1099,6 +1104,11 @@ animations = [ {
 "name": "krimbprop oldcar bulletglass",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 189 ) ],
+"loop": false,
+"name": "krimbprop prison bed toilet",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 187 ) ],
 "loop": false,
 "name": "krimbprop ricotto scooter bike",
@@ -1761,5 +1771,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "krimbprop fire hydrant"
+animation = "krimbprop prison bed toilet"
 playing = true
