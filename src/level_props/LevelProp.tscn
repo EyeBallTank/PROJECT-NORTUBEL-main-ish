@@ -1,4 +1,4 @@
-[gd_scene load_steps=361 format=2]
+[gd_scene load_steps=363 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -180,6 +180,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop street light.png" type="Texture" id=178]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop electric chair.png" type="Texture" id=179]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop booker base.png" type="Texture" id=180]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop booker base 2.png" type="Texture" id=181]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -348,6 +349,10 @@ region = Rect2( 0, 0, 116, 98 )
 [sub_resource type="AtlasTexture" id=192]
 atlas = ExtResource( 180 )
 region = Rect2( 0, 0, 1519, 295 )
+
+[sub_resource type="AtlasTexture" id=193]
+atlas = ExtResource( 181 )
+region = Rect2( 0, 0, 880, 351 )
 
 [sub_resource type="AtlasTexture" id=191]
 atlas = ExtResource( 179 )
@@ -1109,6 +1114,11 @@ animations = [ {
 "name": "krimbprop booker base",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 193 ) ],
+"loop": false,
+"name": "krimbprop booker base 2",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 191 ) ],
 "loop": false,
 "name": "krimbprop electric chair",
@@ -1801,5 +1811,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "krimbprop booker base"
+animation = "krimbprop booker base 2"
 playing = true
