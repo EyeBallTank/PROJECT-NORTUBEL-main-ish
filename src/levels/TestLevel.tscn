@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_objects/TradeItemDoor.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=13]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -48,4 +51,13 @@ spritename = "angela melvin"
 position = Vector2( 180, -401 )
 
 [node name="TradeItem" parent="." instance=ExtResource( 9 )]
-position = Vector2( 964, -510 )
+position = Vector2( 785, -657 )
+
+[node name="Yellow key" parent="." instance=ExtResource( 11 )]
+position = Vector2( 547, -666 )
+
+[node name="YellowDoor" parent="." instance=ExtResource( 13 )]
+position = Vector2( 408, -330 )
+
+[node name="TradeItemDoor" parent="." instance=ExtResource( 12 )]
+position = Vector2( 983, -386 )
