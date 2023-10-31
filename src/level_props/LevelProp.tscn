@@ -1,4 +1,4 @@
-[gd_scene load_steps=355 format=2]
+[gd_scene load_steps=359 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -177,6 +177,8 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop ricotto scooter bike.png" type="Texture" id=175]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop fire hydrant.png" type="Texture" id=176]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop prison bed toilet.png" type="Texture" id=177]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop street light.png" type="Texture" id=178]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop electric chair.png" type="Texture" id=179]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -342,6 +344,10 @@ region = Rect2( 0, 0, 264, 426 )
 atlas = ExtResource( 170 )
 region = Rect2( 0, 0, 116, 98 )
 
+[sub_resource type="AtlasTexture" id=191]
+atlas = ExtResource( 179 )
+region = Rect2( 0, 0, 151, 300 )
+
 [sub_resource type="AtlasTexture" id=188]
 atlas = ExtResource( 176 )
 region = Rect2( 0, 0, 66, 108 )
@@ -361,6 +367,10 @@ region = Rect2( 0, 0, 559, 183 )
 [sub_resource type="AtlasTexture" id=187]
 atlas = ExtResource( 175 )
 region = Rect2( 0, 0, 166, 132 )
+
+[sub_resource type="AtlasTexture" id=190]
+atlas = ExtResource( 178 )
+region = Rect2( 0, 0, 126, 390 )
 
 [sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 14 )
@@ -1089,6 +1099,11 @@ animations = [ {
 "name": "hirdprop window",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 191 ) ],
+"loop": false,
+"name": "krimbprop electric chair",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 188 ) ],
 "loop": false,
 "name": "krimbprop fire hydrant",
@@ -1112,6 +1127,11 @@ animations = [ {
 "frames": [ SubResource( 187 ) ],
 "loop": false,
 "name": "krimbprop ricotto scooter bike",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 190 ) ],
+"loop": false,
+"name": "krimbprop street light",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 23 ) ],
@@ -1771,5 +1791,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "krimbprop electric chair"
 playing = true
