@@ -1,4 +1,4 @@
-[gd_scene load_steps=369 format=2]
+[gd_scene load_steps=371 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -184,6 +184,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop trash can.png" type="Texture" id=182]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop door 1.png" type="Texture" id=183]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop caruso bar.png" type="Texture" id=184]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop phone booth.png" type="Texture" id=185]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -380,6 +381,10 @@ region = Rect2( 0, 0, 381, 298 )
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=197]
+atlas = ExtResource( 185 )
+region = Rect2( 0, 0, 113, 304 )
 
 [sub_resource type="AtlasTexture" id=189]
 atlas = ExtResource( 177 )
@@ -1164,6 +1169,11 @@ animations = [ {
 "name": "krimbprop oldcar bulletglass",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 197 ) ],
+"loop": false,
+"name": "krimbprop phone booth",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 189 ) ],
 "loop": false,
 "name": "krimbprop prison bed toilet",
@@ -1841,5 +1851,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "krimbprop caruso bar"
+animation = "krimbprop phone booth"
 playing = true
