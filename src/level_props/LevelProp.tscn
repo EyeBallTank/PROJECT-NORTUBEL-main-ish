@@ -1,4 +1,4 @@
-[gd_scene load_steps=367 format=2]
+[gd_scene load_steps=369 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -183,6 +183,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop booker base 2.png" type="Texture" id=181]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop trash can.png" type="Texture" id=182]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop door 1.png" type="Texture" id=183]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop caruso bar.png" type="Texture" id=184]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -355,6 +356,10 @@ region = Rect2( 0, 0, 1519, 295 )
 [sub_resource type="AtlasTexture" id=193]
 atlas = ExtResource( 181 )
 region = Rect2( 0, 0, 880, 351 )
+
+[sub_resource type="AtlasTexture" id=196]
+atlas = ExtResource( 184 )
+region = Rect2( 0, 0, 384, 448 )
 
 [sub_resource type="AtlasTexture" id=195]
 atlas = ExtResource( 183 )
@@ -1129,6 +1134,11 @@ animations = [ {
 "name": "krimbprop booker base 2",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 196 ) ],
+"loop": false,
+"name": "krimbprop caruso bar",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 195 ) ],
 "loop": false,
 "name": "krimbprop door 1",
@@ -1831,5 +1841,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "krimbprop door 1"
+animation = "krimbprop caruso bar"
 playing = true
