@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/npc_actors/krimb npc/PrisonWarden1.tscn" type="PackedScene" id=15]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -89,3 +90,8 @@ propname = "krimbprop electric chair"
 position = Vector2( -252, 171 )
 customtext = "T_KRIMB_LORE_1"
 spritename = "krimbstone lorebook"
+
+[node name="PrisonWarden1" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1471, 107 )
+customtext = "PRISON_WARDEN_TALK"
+customname = "PRISON_WARDEN_NAME"
