@@ -55,6 +55,10 @@ propname = "krimbprop joergeun graffity"
 position = Vector2( 3907, 123 )
 propname = "krimbprop ricotto scooter bike"
 
+[node name="LevelProp10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2976, -306 )
+propname = "krimbprop tv couch"
+
 [node name="LevelProp6" parent="." instance=ExtResource( 8 )]
 position = Vector2( 5095, 118 )
 propname = "krimbprop trash can"
