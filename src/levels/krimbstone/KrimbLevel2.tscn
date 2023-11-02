@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -18,8 +18,18 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_hazards/krimbstone/GlassShards.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/npc_actors/krimb npc/Homeless NPC.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/sprites/level_backgrounds/krimbstone/krimbstone bg.png" type="Texture" id=19]
 
 [node name="KrimbLevel1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 2, 2 )
+motion_scale = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource( 19 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
