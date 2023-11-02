@@ -1,4 +1,4 @@
-[gd_scene load_steps=375 format=2]
+[gd_scene load_steps=377 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -187,6 +187,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop phone booth.png" type="Texture" id=185]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop tv couch.png" type="Texture" id=186]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop table chair.png" type="Texture" id=187]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop nightclub.png" type="Texture" id=188]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -379,6 +380,10 @@ region = Rect2( 0, 0, 66, 108 )
 [sub_resource type="AtlasTexture" id=186]
 atlas = ExtResource( 174 )
 region = Rect2( 0, 0, 381, 298 )
+
+[sub_resource type="AtlasTexture" id=200]
+atlas = ExtResource( 188 )
+region = Rect2( 0, 0, 550, 454 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 11 )
@@ -1174,6 +1179,11 @@ animations = [ {
 "name": "krimbprop joergeun graffity",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 200 ) ],
+"loop": false,
+"name": "krimbprop nightclub",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 20 ) ],
 "loop": false,
 "name": "krimbprop oldcar bulletglass",
@@ -1871,5 +1881,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "krimbprop table chair"
+animation = "krimbprop nightclub"
 playing = true

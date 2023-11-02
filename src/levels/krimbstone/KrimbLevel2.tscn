@@ -75,6 +75,10 @@ propname = "krimbprop door 1"
 position = Vector2( 6528, -36 )
 propname = "krimbprop caruso bar"
 
+[node name="LevelProp12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 7013, -37 )
+propname = "krimbprop nightclub"
+
 [node name="LevelProp9" parent="." instance=ExtResource( 8 )]
 position = Vector2( 6153, 37 )
 propname = "krimbprop phone booth"
