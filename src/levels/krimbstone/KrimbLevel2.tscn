@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_hazards/krimbstone/GlassShards.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/npc_actors/krimb npc/Homeless NPC.tscn" type="PackedScene" id=18]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -120,3 +121,8 @@ spritename = "krimbstone lorebook"
 
 [node name="GlassShards" parent="." instance=ExtResource( 17 )]
 position = Vector2( 2090, 120 )
+
+[node name="Prisoner1" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2537, 34 )
+customtext = "HOMELESS_NPC_TALK"
+customname = "HOMELESS_NPC_NAME"
