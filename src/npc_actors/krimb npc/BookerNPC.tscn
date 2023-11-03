@@ -1,56 +1,49 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/NORT CAST NPC.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/BOOKER SPRITE NPC.png" type="Texture" id=3]
 [ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 420, 420 )
-
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 3 )
-region = Rect2( 420, 0, 420, 420 )
-
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 3 )
-region = Rect2( 840, 0, 420, 420 )
+region = Rect2( 0, 0, 746, 419 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
-"loop": true,
+"frames": [ SubResource( 5 ) ],
+"loop": false,
 "name": "default",
-"speed": 1.0
+"speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 40.5, 175 )
+extents = Vector2( 52.4444, 204.389 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 111, 174 )
+extents = Vector2( 125, 174 )
 
-[node name="CarrieNPC" type="KinematicBody2D"]
+[node name="BookerNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 20.8333 )
+position = Vector2( 155.556, 29.1667 )
 frames = SubResource( 2 )
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.5, 56 )
+position = Vector2( -11.4445, 26.6111 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( -2, 57 )
+position = Vector2( 26.3889, 57 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -92,7 +85,7 @@ margin_top = 5.0
 margin_right = 107.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
-text = "Carrie Decarde"
+text = "Booker Vincent"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]

@@ -568,3 +568,11 @@ HOMELESS_NPC_TALK,"My legs still hurt... it's those glass shards.
 Nobody removed them yet.","A minhas pernas ainda doem... são aqueles pedaços de vidro.
 Ainda não os tiraram."
 HOMELESS_NPC_NAME,Homeless man,Sem-abrigo
+BOOKER_NPC_TALK,"Hurry up, get inside the hole!","Despachem, entrem para o buraco!"
+BOOKER_NPC_HURT,"Your combat skills are terrible.
+But I don't have time to train you right now.","A tua maneira de lutar é terrível.
+Mas não tenho tempo para te treinar."
+BOOKER_NPC_HUG,"Don't love me too much, that could only make things more difficult.","Não me ames assim tanto, isso pode fazer as coisas mais difíceis."
+BOOKER_NPC_HONK,"If any creep ever done something to you, let me know.
+I know how to take care of that kind of problem.","Se algum nojento fez-te algo, avisa-me.
+Eu sei como lidar com esse tipo de problema."
