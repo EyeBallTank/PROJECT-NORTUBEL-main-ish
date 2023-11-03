@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=9 format=2]
+[gd_resource type="TileSet" load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/krimbstone/KRIMB TILE PASSABLE.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/krimbstone/KRIMB TILE SOLID.png" type="Texture" id=2]
@@ -20,6 +20,9 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 32, 192, 0, 192, 0, 32, 32, 32 )
 
 [resource]
 0/name = "KRIMB TILE SOLID.png 0"
@@ -466,9 +469,16 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 28/navigation_offset = Vector2( 0, 0 )
 28/shape_offset = Vector2( 0, 0 )
 28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape = SubResource( 7 )
 28/shape_one_way = false
-28/shape_one_way_margin = 0.0
-28/shapes = [  ]
+28/shape_one_way_margin = 1.0
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 28/z_index = 0
 29/name = "KRIMB TILE PASSABLE.png 29"
 29/texture = ExtResource( 1 )
