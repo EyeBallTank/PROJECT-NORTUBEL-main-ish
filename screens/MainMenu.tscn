@@ -185,10 +185,12 @@ texture = ExtResource( 12 )
 [node name="Currentupdate" type="Label" parent="MenuMain"]
 margin_top = 155.0
 margin_right = 300.0
-margin_bottom = 192.0
+margin_bottom = 232.0
 custom_fonts/font = ExtResource( 5 )
 text = "CURRENT VERSION: NORTUBEL 2 & KRIMB-STONE
-PASSSWORD: p4m3l4"
+PASSSWORD: p4m3l4
+But if you're a first time player,
+Press \"Start\" to play this from the beginning"
 
 [node name="OptionsMenu" type="Control" parent="."]
 visible = false
