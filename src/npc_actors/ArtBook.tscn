@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker backstory.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker reference.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 3.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart reptile reference.png" type="Texture" id=12]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -37,6 +38,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 12 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=11]
@@ -77,6 +82,11 @@ animations = [ {
 "loop": false,
 "name": "krimbart matysha reference",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": false,
+"name": "krimbart reptile reference",
+"speed": 5.0
 }, {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
@@ -121,7 +131,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "krimbart matysha reference"
+animation = "krimbart reptile reference"
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 

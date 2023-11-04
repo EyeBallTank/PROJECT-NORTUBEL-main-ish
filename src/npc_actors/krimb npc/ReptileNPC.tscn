@@ -1,43 +1,49 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/MATYSHA SPRITE NPC.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/REPTILE SPRITE NPC.png" type="Texture" id=3]
 [ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.gd" type="Script" id=4]
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 263, 421 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ SubResource( 5 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 60.4167, 204.389 )
+extents = Vector2( 60.4167, 206.472 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 91.6667, 174 )
+extents = Vector2( 80.5556, 174 )
 
-[node name="MatyshaNPC" type="KinematicBody2D"]
+[node name="ReptileNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -2.77778, 27.7778 )
+position = Vector2( 15.2778, 23.6111 )
 frames = SubResource( 2 )
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3.47223, 26.6111 )
+position = Vector2( -3.47223, 24.5278 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( -6.94443, 57 )
+position = Vector2( -9.72223, 57 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -79,7 +85,7 @@ margin_top = 5.0
 margin_right = 107.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
-text = "Matysha Natashka"
+text = "Reptile"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
