@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://src/level_hazards/krimbstone/GlassShards.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/npc_actors/krimb npc/Homeless NPC.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/sprites/level_backgrounds/krimbstone/krimbstone bg.png" type="Texture" id=19]
+[ext_resource path="res://src/npc_actors/krimb npc/MatyshaNPC.tscn" type="PackedScene" id=20]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -105,6 +106,10 @@ boardname = "krimbart dojd crossover"
 position = Vector2( 2654, -629 )
 boardname = "krimbart ricotto reference"
 
+[node name="ArtBook3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5697, 171 )
+boardname = "krimbart matysha reference"
+
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 5390, 207 )
 new_scene = "res://screens/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella.tscn"
@@ -152,3 +157,10 @@ position = Vector2( 2090, 120 )
 position = Vector2( 2537, 34 )
 customtext = "HOMELESS_NPC_TALK"
 customname = "HOMELESS_NPC_NAME"
+
+[node name="MatyshaNPC" parent="." instance=ExtResource( 20 )]
+position = Vector2( 5968, 19 )
+customtext = "MATYSHA_TALK_NPC"
+customtext2 = "MATYSHA_TALK_HONK"
+customtext3 = "MATYSHA_TALK_HUG"
+customtext4 = "MATYSHA_TALK_HURT"
