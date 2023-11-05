@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/jumppad.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Jumppad.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level objects/540788__magnuswaker__boing-1.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/jumppad hirdrih.PNG" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/level_object_sprites/krimbstone/jumppad krimbstone.PNG" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/jumppad greklovick 3.PNG" type="Texture" id=6]
 
 [sub_resource type="AtlasTexture" id=6]
@@ -12,6 +13,10 @@ region = Rect2( 0, 0, 670, 350 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 670, 350 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 670, 350 )
 
 [sub_resource type="AtlasTexture" id=2]
@@ -31,6 +36,11 @@ animations = [ {
 "name": "hirdrih jumppad",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "jumppad krimbstone",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 2 ) ],
 "loop": false,
 "name": "nortubel jumppad",
@@ -48,7 +58,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.574286, 0.574286 )
 frames = SubResource( 3 )
-animation = "nortubel jumppad"
+animation = "jumppad krimbstone"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, -29.5 )
