@@ -24,11 +24,12 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-scale = Vector2( 2, 2 )
 motion_scale = Vector2( 0, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -44.3733, 26 )
+scale = Vector2( 3.32333, 3.32333 )
 texture = ExtResource( 18 )
 
 [node name="walls" type="TileMap" parent="."]
