@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,8 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/npc_actors/krimb npc/PrisonWarden1.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/npc_actors/krimb npc/Prisoner2.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/npc_actors/krimb npc/Prisoner3.tscn" type="PackedScene" id=17]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -38,6 +40,16 @@ spritename = "krimb prisoners"
 [node name="Prisoner1" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1146, 109 )
 customtext = "PRISONER_NPC_TALK"
+customname = "PRISONER_NAME_NPC"
+
+[node name="Prisoner2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 0, 686 )
+customtext = "PRISONER_NPC_TALK_2"
+customname = "PRISONER_NAME_NPC"
+
+[node name="Prisoner3" parent="." instance=ExtResource( 17 )]
+position = Vector2( 562, 686 )
+customtext = "PRISONER_NPC_TALK_3"
 customname = "PRISONER_NAME_NPC"
 
 [node name="TileMap" type="TileMap" parent="."]
