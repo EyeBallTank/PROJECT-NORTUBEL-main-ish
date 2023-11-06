@@ -26,6 +26,7 @@ onready var basicmessage = $basicmessage
 var test = false
 
 func _ready():
+	animationplayer.play("RESET")
 	mainsprite.animation = spritename
 	maintext1.text = str (customtext1)
 	maintext2.text = str (customtext2)
