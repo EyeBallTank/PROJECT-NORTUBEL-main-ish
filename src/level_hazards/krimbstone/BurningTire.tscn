@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/sprites/level_hazard_sprites/krimbstone/burning tire.png" type="Texture" id=1]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 192, 192 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 91, 88.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 68, 73 )
+
+[node name="BurningTire" type="KinematicBody2D" groups=["hazards"]]
+collision_layer = 32
+collision_mask = 3
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -286 )
+frames = SubResource( 5 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -5, -278.5 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
+position = Vector2( 18, -294 )
+shape = SubResource( 2 )
