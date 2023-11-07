@@ -225,7 +225,6 @@ margin_bottom = 137.0
 position = Vector2( 0, -276 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
-frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -265,3 +264,7 @@ stream = ExtResource( 1 )
 volume_db = -4.095
 pitch_scale = 2.83
 bus = "Sound"
+
+[connection signal="area_entered" from="StellaHurtbox" to="." method="_on_StellaHurtbox_area_entered"]
+[connection signal="area_entered" from="PushDetector" to="." method="_on_PushDetector_area_entered"]
+[connection signal="area_exited" from="PushDetector" to="." method="_on_PushDetector_area_exited"]

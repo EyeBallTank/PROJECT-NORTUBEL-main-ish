@@ -29,6 +29,12 @@ func _on_Health_Pickup_body_entered(body):
 			audioPlayer.play()
 #			yield(animationplayer, "animation_finished")
 #			queue_free()
+	if body.name == "StellaComp":
+		if body.health < 100:
+			body.health += 10
+			animationplayer.play("collected")
+			audioPlayer.play()
+
 		else:
 			pass
 
