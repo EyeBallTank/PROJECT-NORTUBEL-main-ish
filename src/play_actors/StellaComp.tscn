@@ -1,10 +1,9 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/STELLA COMP SPRITES.png" type="Texture" id=2]
-[ext_resource path="res://src/menusandui/healthbarCompanion.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/menusandui/CompPointer.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/menusandui/oxygenbarCompanion.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/menusandui/healthbarStella.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/play_actors/StellaComp.gd" type="Script" id=4]
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=7]
 
 [sub_resource type="AtlasTexture" id=37]
@@ -116,7 +115,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 23, 82 )
+extents = Vector2( 26.5, 102.75 )
 
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
@@ -140,7 +139,7 @@ animations = [ {
 resource_name = "CompHurt"
 length = 1.6
 tracks/0/type = "value"
-tracks/0/path = NodePath("CompanionHurtbox/CollisionShape2D:disabled")
+tracks/0/path = NodePath("StellaHurtbox/CollisionShape2D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -167,7 +166,7 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=4]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("CompanionHurtbox/CollisionShape2D:disabled")
+tracks/0/path = NodePath("StellaHurtbox/CollisionShape2D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -192,52 +191,39 @@ tracks/1/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 23, 82 )
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 23, 82 )
-
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 23, 30 )
+extents = Vector2( 23, 121 )
 
 [sub_resource type="RectangleShape2D" id=32]
-extents = Vector2( 4.5, 78 )
+extents = Vector2( 4.5, 119 )
 
 [node name="StellaComp" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 13
 collision_layer = 2
 collision_mask = 8972
-
-[node name="CompPointer" parent="." instance=ExtResource( 5 )]
+script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 151 )
+position = Vector2( 0, -151 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 36 )
-animation = "Running"
+animation = "Idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -81 )
+position = Vector2( -0.5, -144.25 )
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="HealthbarCompanion" parent="CanvasLayer" instance=ExtResource( 3 )]
+[node name="HealthbarStella" parent="CanvasLayer" instance=ExtResource( 3 )]
 margin_left = 64.0
-margin_top = 64.0
-margin_right = 208.0
-margin_bottom = 99.0
-
-[node name="OxygenbarCompanion" parent="CanvasLayer" instance=ExtResource( 6 )]
-margin_left = 216.0
-margin_top = 64.0
-margin_right = 264.0
-margin_bottom = 96.0
-rect_rotation = 0.0
+margin_top = 102.0
+margin_right = 223.0
+margin_bottom = 137.0
 
 [node name="FloaterActive" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -208 )
+position = Vector2( 0, -276 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
 playing = true
@@ -245,15 +231,6 @@ playing = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/CompHurt = SubResource( 3 )
 anims/RESET = SubResource( 4 )
-
-[node name="SwimCheck" type="RayCast2D" parent="." groups=["swimchecker"]]
-position = Vector2( 0, -162 )
-scale = Vector2( 4, 4 )
-enabled = true
-cast_to = Vector2( 0, 47 )
-collision_mask = 4
-collide_with_areas = true
-collide_with_bodies = false
 
 [node name="LadderCheck" type="RayCast2D" parent="."]
 position = Vector2( 0, -162 )
@@ -264,47 +241,13 @@ collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 
-[node name="SlowCheck" type="RayCast2D" parent="."]
-position = Vector2( 0, -162 )
-scale = Vector2( 4, 4 )
-enabled = true
-cast_to = Vector2( 0, 47 )
-collision_mask = 4
-collide_with_areas = true
-collide_with_bodies = false
-
-[node name="IceCheck" type="RayCast2D" parent="."]
-position = Vector2( 0, -162 )
-scale = Vector2( 4, 4 )
-enabled = true
-cast_to = Vector2( 0, 47 )
-collision_mask = 4
-collide_with_areas = true
-collide_with_bodies = false
-
-[node name="CompanionHurtbox" type="Area2D" parent="."]
+[node name="StellaHurtbox" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 32
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CompanionHurtbox"]
-position = Vector2( 0, -81 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StellaHurtbox"]
+position = Vector2( -1.5, -123.5 )
 shape = SubResource( 2 )
-
-[node name="PortalCheck" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalCheck"]
-position = Vector2( 0, -81 )
-shape = SubResource( 5 )
-
-[node name="CrawlCheck" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CrawlCheck"]
-position = Vector2( 0, -29 )
-shape = SubResource( 6 )
 
 [node name="CheckpointTween" type="Tween" parent="."]
 
@@ -314,17 +257,11 @@ collision_layer = 2
 collision_mask = 256
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PushDetector"]
-position = Vector2( 0, -81 )
+position = Vector2( 0, -122 )
 shape = SubResource( 32 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
 volume_db = -4.095
-pitch_scale = 3.04
+pitch_scale = 2.83
 bus = "Sound"
-
-[connection signal="area_entered" from="CompanionHurtbox" to="." method="_on_CompanionHurtbox_area_entered"]
-[connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]
-[connection signal="area_entered" from="CrawlCheck" to="." method="_on_CrawlCheck_area_entered"]
-[connection signal="area_entered" from="PushDetector" to="." method="_on_PushDetector_area_entered"]
-[connection signal="area_exited" from="PushDetector" to="." method="_on_PushDetector_area_exited"]
