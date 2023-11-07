@@ -75,6 +75,7 @@ position = Vector2( 384, -63.7355 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 639, -127.471 )
+companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="companionspawn" parent="." instance=ExtResource( 6 )]
 position = Vector2( 640, -126.475 )
