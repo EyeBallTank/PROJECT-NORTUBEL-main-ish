@@ -1,11 +1,23 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sprites/play_actor_sprites/STELLA COMP SPRITES.png" type="Texture" id=2]
 [ext_resource path="res://src/menusandui/healthbarCompanion.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/sprites/play_actor_sprites/AngelaSprites.tres" type="SpriteFrames" id=4]
 [ext_resource path="res://src/menusandui/CompPointer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/menusandui/oxygenbarCompanion.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=7]
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 2 )
+region = Rect2( 2940, 0, 420, 420 )
+
+[sub_resource type="SpriteFrames" id=36]
+animations = [ {
+"frames": [ SubResource( 37 ) ],
+"loop": false,
+"name": "Climbidle",
+"speed": 0.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 23, 82 )
@@ -105,9 +117,8 @@ collision_mask = 8972
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -3, -150 )
 scale = Vector2( 0.72, 0.72 )
-frames = ExtResource( 4 )
+frames = SubResource( 36 )
 animation = "Idle"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -133,6 +144,7 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

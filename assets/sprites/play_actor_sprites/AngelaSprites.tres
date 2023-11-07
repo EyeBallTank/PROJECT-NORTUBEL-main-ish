@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/play_actor_sprites/NORT PLAYER SPRITE CONCEPT REBOOT.png" type="Texture" id=2]
 
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=54]
 atlas = ExtResource( 2 )
 region = Rect2( 3360, 4200, 420, 420 )
 
@@ -120,7 +120,7 @@ region = Rect2( 5040, 4620, 420, 420 )
 
 [resource]
 animations = [ {
-"frames": [ SubResource( 25 ) ],
+"frames": [ SubResource( 54 ) ],
 "loop": false,
 "name": "Climbidle",
 "speed": 0.0
