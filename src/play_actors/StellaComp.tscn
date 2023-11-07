@@ -115,7 +115,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 26.5, 102.75 )
+extents = Vector2( 26.5, 123.5 )
 
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
@@ -207,11 +207,10 @@ position = Vector2( 0, -151 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 36 )
 animation = "Idle"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, -144.25 )
+position = Vector2( -0.5, -123.5 )
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -226,6 +225,7 @@ margin_bottom = 137.0
 position = Vector2( 0, -276 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
