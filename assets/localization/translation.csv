@@ -608,3 +608,12 @@ Local authorities suggest her disappearance might be related to 6 other youngste
 Stella era conhecida por participar no campeonato local de corridas de kart, vencido pelo menos 15 corridas.
 As autoridades locais sugerem que o seu desaparecimento pode estar relacionado com outros 6 jovens, 
 2 deles sendo primos dela."""
+NORT_LORE_STELLA_TUTORIAL_T,"Stella is the only one that knows how to use the switches.
+A + Left: She avoids you.
+A + Right: She follows you.
+A + Down: She stops.
+X: She jumps.","Stella é a unica que sabe como usar estes botões.
+A + Esquerda: Ela foge de ti.
+A + Direita: Ela segue-te.
+A + Baixo: Ela para.
+X: Ela salta."
