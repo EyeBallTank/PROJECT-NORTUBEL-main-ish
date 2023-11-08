@@ -18,19 +18,19 @@ region = Rect2( 0, 0, 402, 347 )
 [sub_resource type="SpriteFrames" id=42]
 animations = [ {
 "frames": [ SubResource( 39 ) ],
-"loop": true,
+"loop": false,
 "name": "BalloonFollow",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 40 ) ],
-"loop": true,
+"loop": false,
 "name": "BalloonRun",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [ SubResource( 41 ) ],
-"loop": true,
+"loop": false,
 "name": "BalloonStop",
-"speed": 5.0
+"speed": 0.0
 } ]
 
 [node name="SpeechBalloon" type="AnimatedSprite"]
