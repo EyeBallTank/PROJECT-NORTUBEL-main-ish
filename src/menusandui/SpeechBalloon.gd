@@ -20,6 +20,22 @@ func _physics_process(_delta):
 #		yield(get_tree().create_timer(0.5), "timeout")
 #		hide()
 
+	if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("down"):
+		show()
+		animation = "BalloonStop"
+#		yield(get_tree().create_timer(0.5), "timeout")
+#		hide()
+	if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("left"):
+		show()
+		animation = "BalloonRun"
+#		yield(get_tree().create_timer(0.5), "timeout")
+#		hide()
+	if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("right"):
+		show()
+		animation = "BalloonFollow"
+#		yield(get_tree().create_timer(0.5), "timeout")
+#		hide()
+
 #maybe not the best method
 	if Input.is_action_just_released("down"):
 		hide()

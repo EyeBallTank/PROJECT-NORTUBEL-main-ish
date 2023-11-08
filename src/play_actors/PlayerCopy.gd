@@ -358,34 +358,40 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("attack"):
 				state = KNIFE
 
-			if Input.is_action_just_pressed("down") and not Input.is_action_pressed("kickball"):
+			if Input.is_action_just_pressed("down") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				if hasball == true:
 					state = KICKBALL
 				else:
 					pass
 			elif Input.is_action_just_pressed("down") and Input.is_action_pressed("kickball"):
 				pass
+			elif Input.is_action_just_pressed("down") and Input.is_action_pressed("stellacommand"):
+				pass
 
 			WALK_MAX_SPEED = 700
-			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball"):
+			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.x = WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(65, 2)
 				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("right") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
-			elif Input.get_action_strength("left")  and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("right") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
+			elif Input.get_action_strength("left")  and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.x = -WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(-67, 2)
 				pushdetector.position = Vector2(-59, 0)
 			elif Input.get_action_strength("left") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
+			elif Input.get_action_strength("left") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
 			else:
 				velocity.x = 0
 
-			if Input.get_action_strength("right") and is_on_floor() and not Input.is_action_pressed("kickball"):
+			if Input.get_action_strength("right") and is_on_floor() and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor() and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("left") and is_on_floor() and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 			else:
@@ -475,31 +481,39 @@ func _physics_process(delta):
 			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			PUSH_SPEED = 350
 #Guess you gotta press Q first because it doesn't stop the player if it's pressed after movement
-			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball"):
+			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.x = PUSH_SPEED
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = false
 				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("right") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
-			elif Input.get_action_strength("left") and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("right") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
+			elif Input.get_action_strength("left") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.x = -PUSH_SPEED
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = true
 				pushdetector.position = Vector2(-59, 0)
 			elif Input.get_action_strength("left") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
-			elif Input.get_action_strength("jumpup") and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("left") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
+			elif Input.get_action_strength("jumpup") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.y = -PUSH_SPEED
 				velocity.x = 0
 				animatedsprite.animation = "Climbing"
 			elif Input.get_action_strength("jumpup") and Input.is_action_pressed("kickball"):
 				velocity.y = 0
-			elif Input.get_action_strength("down") and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("jumpup") and Input.is_action_pressed("stellacommand"):
+				velocity.y = 0
+			elif Input.get_action_strength("down") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.y = PUSH_SPEED
 				velocity.x = 0
 				animatedsprite.animation = "Climbing"
 			elif Input.get_action_strength("down") and Input.is_action_pressed("kickball"):
+				velocity.y = 0
+			elif Input.get_action_strength("down") and Input.is_action_pressed("stellacommand"):
 				velocity.y = 0
 			else:
 				velocity.x = 0
@@ -608,7 +622,7 @@ func _physics_process(delta):
 			was_on_floor = is_on_floor()
 
 			var direction = Input.get_axis("left", "right")
-			if Input.is_action_just_pressed("right") and not Input.is_action_pressed("kickball"):
+			if Input.is_action_just_pressed("right") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				if hasball == true:
 					animatedsprite.flip_h = false
 					animatedsprite.animation = "Kickedtheball"
@@ -627,7 +641,9 @@ func _physics_process(delta):
 					pass
 			elif Input.is_action_just_pressed("right") and Input.is_action_pressed("kickball"):
 				pass
-			elif Input.is_action_just_pressed("left") and not Input.is_action_pressed("kickball"):
+			elif Input.is_action_just_pressed("right") and Input.is_action_pressed("stellacommand"):
+				pass
+			elif Input.is_action_just_pressed("left") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				if hasball == true:
 					animatedsprite.flip_h = true
 					animatedsprite.animation = "Kickedtheball"
@@ -645,6 +661,8 @@ func _physics_process(delta):
 				else:
 					pass
 			elif Input.is_action_just_pressed("left") and Input.is_action_pressed("kickball"):
+				pass
+			elif Input.is_action_just_pressed("left") and Input.is_action_pressed("stellacommand"):
 				pass
 			if Input.get_action_strength("jumpup"):
 				state = MAINSTATE
@@ -732,26 +750,30 @@ func _physics_process(delta):
 			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
 			pushcheck()
 			WALK_MAX_SPEED = 700
-			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball"):
+			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.x = WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(65, 2)
 				pushdetector.position = Vector2(63, 0)
 			elif Input.get_action_strength("right") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
-			elif Input.get_action_strength("left") and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("right") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
+			elif Input.get_action_strength("left") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				velocity.x = -WALK_MAX_SPEED
 				playerhitboxcollision.position = Vector2(-67, 2)
 				pushdetector.position = Vector2(-59, 0)
 			elif Input.get_action_strength("left") and Input.is_action_pressed("kickball"):
 				velocity.x = 0
+			elif Input.get_action_strength("left") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
 			else:
 				velocity.x = 0
 
 
-			if Input.get_action_strength("right") and is_on_floor() and not Input.is_action_pressed("kickball"):
+			if Input.get_action_strength("right") and is_on_floor() and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				animatedsprite.animation = "Pushing"
 				animatedsprite.flip_h = false
-			elif Input.get_action_strength("left") and is_on_floor() and not Input.is_action_pressed("kickball"):
+			elif Input.get_action_strength("left") and is_on_floor() and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
 				animatedsprite.animation = "Pushing"
 				animatedsprite.flip_h = true
 			else:
