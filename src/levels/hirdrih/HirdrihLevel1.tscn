@@ -103,7 +103,6 @@ playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
 position = Vector2( 284, -50 )
-companionskin = "res://assets/sprites/play_actor_sprites/OscarSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
