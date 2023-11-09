@@ -113,6 +113,10 @@ propname = "krimbprop prison bed toilet"
 position = Vector2( -1408, 684 )
 propname = "krimbprop electric chair"
 
+[node name="LevelProp3" parent="." instance=ExtResource( 13 )]
+position = Vector2( -789, 756 )
+propname = "krimbprop canteen tablechair"
+
 [node name="LoreBook" parent="." instance=ExtResource( 14 )]
 position = Vector2( -252, 171 )
 customtext = "T_KRIMB_LORE_1"
