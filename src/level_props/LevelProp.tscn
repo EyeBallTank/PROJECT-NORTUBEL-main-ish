@@ -1,4 +1,4 @@
-[gd_scene load_steps=381 format=2]
+[gd_scene load_steps=383 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -190,6 +190,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop nightclub.png" type="Texture" id=188]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop graffiti art.png" type="Texture" id=189]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop canteen tablechair.png" type="Texture" id=190]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop canteen serving counter.png" type="Texture" id=191]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -362,6 +363,10 @@ region = Rect2( 0, 0, 1519, 295 )
 [sub_resource type="AtlasTexture" id=193]
 atlas = ExtResource( 181 )
 region = Rect2( 0, 0, 880, 351 )
+
+[sub_resource type="AtlasTexture" id=203]
+atlas = ExtResource( 191 )
+region = Rect2( 0, 0, 914, 301 )
 
 [sub_resource type="AtlasTexture" id=202]
 atlas = ExtResource( 190 )
@@ -1164,6 +1169,11 @@ animations = [ {
 "name": "krimbprop booker base 2",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 203 ) ],
+"loop": false,
+"name": "krimbprop canteen serving counter",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 202 ) ],
 "loop": false,
 "name": "krimbprop canteen tablechair",
@@ -1901,5 +1911,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "krimbprop canteen tablechair"
+animation = "krimbprop canteen serving counter"
 playing = true
