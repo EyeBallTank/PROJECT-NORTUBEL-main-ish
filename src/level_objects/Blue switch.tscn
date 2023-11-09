@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/Blue switch hirdrih.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/krimbstone/Blue switch krimbstone.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/level_objects/Blue switch.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=3]
 

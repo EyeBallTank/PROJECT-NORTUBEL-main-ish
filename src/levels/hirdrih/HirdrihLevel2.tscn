@@ -221,13 +221,6 @@ bluswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Blue switch h
 [node name="Hird Sphere Vehicle" parent="." instance=ExtResource( 20 )]
 position = Vector2( 2508, 582 )
 
-[node name="KinematicBody2D" parent="Hird Sphere Vehicle" index="0"]
-position = Vector2( 2453.14, -1234.71 )
-
-[node name="PathFollow2D" parent="Hird Sphere Vehicle/Path2D" index="0"]
-position = Vector2( 3286, -1568 )
-offset = 0.0
-
 [node name="Water" parent="." instance=ExtResource( 21 )]
 position = Vector2( 9856, 0 )
 scale = Vector2( 48, 80 )
