@@ -148,6 +148,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * TutsByKai (Software tutorials)
 * Kenney.nl (Made free assets that were used as reference)
 * FreeSound (Good resource for sounds)
+* fesliyanstudios (Bullet sound effect)
 * ChipTone by SFBGames (Used to make sounds)
 * Gluk, font designer from Fontspace (Used the Mikodacs font from there)
 * 16BitDev (Used the Main Menu tutorial video as reference, hence the options menu)

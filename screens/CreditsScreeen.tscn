@@ -49,11 +49,11 @@ theme = SubResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 418.0
-margin_bottom = 2037.0
+margin_bottom = 2057.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 418.0
-margin_bottom = 2037.0
+margin_bottom = 2057.0
 custom_fonts/font = ExtResource( 1 )
 text = "
 
@@ -123,6 +123,7 @@ text = "
    Cubio (Godot Demo)
    Kenney.nl
    FreeSound
+   fesliyanstudios
    MakeHuman/MPFB2
    Posemaniacs
    Blender
