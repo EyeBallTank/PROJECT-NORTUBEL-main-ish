@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/krimbart booker reference.png-aa902c92d8d05616b18904c99dfa935c.stex"
+path="res://.import/krimbart booker reference 2.png-4e32b494cd9a85c94bebde53ee2f65d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/krimbstone/krimbart booker reference.png"
-dest_files=[ "res://.import/krimbart booker reference.png-aa902c92d8d05616b18904c99dfa935c.stex" ]
+source_file="res://assets/sprites/art gallery/krimbstone/krimbart booker reference 2.png"
+dest_files=[ "res://.import/krimbart booker reference 2.png-4e32b494cd9a85c94bebde53ee2f65d1.stex" ]
 
 [params]
 

@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art summer time.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart ricotto reference.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker backstory.png" type="Texture" id=9]
-[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker reference.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker reference 2.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 3.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart reptile reference.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art stella reference.png" type="Texture" id=13]
@@ -29,7 +29,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 9 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 10 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -73,7 +73,7 @@ animations = [ {
 "name": "krimbart booker backstory",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 13 ) ],
+"frames": [ SubResource( 17 ) ],
 "loop": false,
 "name": "krimbart booker reference",
 "speed": 0.0
