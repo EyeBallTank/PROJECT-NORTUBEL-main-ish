@@ -175,6 +175,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [ false ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimatedSprite:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Attack" ]
+}
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 150, 117.5 )
@@ -191,7 +203,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, 72 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 4 )
-animation = "Dead"
+animation = "Attack"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -233,6 +245,9 @@ volume_db = -2.122
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 76, 51 )
 
 [connection signal="body_entered" from="Eyes" to="." method="_on_Eyes_body_entered"]
 [connection signal="body_exited" from="Eyes" to="." method="_on_Eyes_body_exited"]

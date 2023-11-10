@@ -12,8 +12,11 @@ onready var eyescollosion = $Eyes/CollisionShape2D
 onready var animation = $AnimationPlayer
 onready var sound = $AudioStreamPlayer
 onready var timer = $Timer
+onready var gunhole = $Position2D
 var canattack = false
 var canmove = true
+
+const Bullet = preload("res://src/enemies/krimbstone/Bullet.tscn")
 
 enum {
 	MOVING,
@@ -36,18 +39,17 @@ func _physics_process(delta):
 				if found_wall:
 					direction *= -1
 					sprite.flip_h = direction.x < 0
-				#using flip V instead of H because of the angle of the placeholder sprite
-				#if i give the Gecko proper sprites, this will change
 				velocity = direction * 160
 				velocity.y += gravity * delta
 				move_and_slide(velocity, Vector2.UP)
 			elif canmove == false:
 				velocity = 0
 			if canattack == true:
+				sprite.play("Attack")
 				attack()
 			elif canattack == false:
 				pass
-			
+
 		DEAD:
 			animation.play("Dying.")
 			canmove = false
@@ -63,21 +65,27 @@ func die():
 	queue_free()
 
 func attack():
+	var projectile = Bullet.instance()
+	projectile.global_position = gunhole.global_position
+	get_tree().get_root().add_child(projectile)
 	sprite.play("Attack")
-	sound.play()
 	timer.start(0.5)
 	if timer.time_left == 0:
-		pass
+		canattack = false
+		canmove = true
 
 func _on_Eyes_body_entered(body):
 	if body.is_in_group("protagonists"):
+		sound.play()
 		canattack = true
 		canmove = false
+#		attack()
 
 func _on_Eyes_body_exited(body):
 	if body.is_in_group("protagonists"):
 		canattack = false
 		canmove = true
+#		eyes.set_deferred("monitoring", true)
 
 func _on_EnemyHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
