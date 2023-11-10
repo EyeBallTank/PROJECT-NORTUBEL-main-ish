@@ -9,6 +9,7 @@ onready var sprite: = $AnimatedSprite
 onready var floordetect = $Floordetect
 onready var eyes = $Eyes
 onready var animation = $AnimationPlayer
+onready var sound = $AudioStreamPlayer
 
 enum {
 	MOVING,
@@ -37,6 +38,7 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 		SHOOT:
 			sprite.play("Attack")
+			sound.play()
 		DEAD:
 			animation.play("Dying.")
 
