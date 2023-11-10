@@ -617,3 +617,16 @@ A + Esquerda: Ela foge de ti.
 A + Direita: Ela segue-te.
 A + Baixo: Ela para.
 X: Ela salta."
+,,
+MAN_TIED_TO_STREET_LIGHT_NAME_T,Man tied to traffic lights,Homem amarrado a semáforo
+STREET_LIGHT_MAN_TALK,"Hey, why are you staring?
+Help me out, will ya?","Hey, o que é que estás ai a olhar?
+Podes me ajudar?"
+STREET_LIGHT_MAN_HURT,"ALRIGHT, ALRIGHT! I'LL TALK!
+Push the garbage container to the right until you reach the garbage can and you can reach a window above you.
+There must be some money left!","ESTÁ BEM, ESTÁ BEM! EU FALO!
+Empurra o contentor de lixo para a direita até chegares ao caixote de lixo e consegues alcançar a janela em cima.
+Deve estar ai algum dinheiro!"
+STREET_LIGHT_MAN_HUG,"My lawyer warned me about physical content with young ladies like you.
+I can't be seen like this!","O meu advogado avisou-me sobre contacto físico com raparigas jovens como você.
+Eu não posso ser visto assim!"
