@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/sprites/enemy_sprites/krimbstone/Mobster Enemy sprites.png" type="Texture" id=1]
 [ext_resource path="res://src/enemies/krimbstone/MobsterEnemy.gd" type="Script" id=2]
@@ -58,8 +58,128 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 41.5, 147.5 )
 
+[sub_resource type="Animation" id=11]
+resource_name = "Dying."
+length = 3.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Hurt", "Dead" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.7, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 3.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "die"
+} ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Eyes/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 150, 117.5 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 33, 141.5 )
 
 [node name="MobsterEnemy" type="KinematicBody2D"]
 collision_layer = 32
@@ -70,7 +190,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, 72 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 4 )
-animation = "Attack"
+animation = "Dead"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -78,6 +198,8 @@ position = Vector2( -5.5, 108.5 )
 shape = SubResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Dying. = SubResource( 11 )
+anims/RESET = SubResource( 12 )
 
 [node name="Floordetect" type="RayCast2D" parent="."]
 position = Vector2( 49, 244 )
@@ -87,7 +209,22 @@ cast_to = Vector2( 0, 34 )
 collision_mask = 4
 
 [node name="Eyes" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Eyes"]
 position = Vector2( 202, 108.5 )
 shape = SubResource( 9 )
+
+[node name="EnemyHurtbox" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 1025
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
+position = Vector2( -6, 108.5 )
+shape = SubResource( 10 )
+
+[connection signal="body_entered" from="Eyes" to="." method="_on_Eyes_body_entered"]
+[connection signal="body_exited" from="Eyes" to="." method="_on_Eyes_body_exited"]
+[connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]

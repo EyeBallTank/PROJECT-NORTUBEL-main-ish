@@ -8,6 +8,7 @@ var knockback_dir = 1
 onready var sprite: = $AnimatedSprite
 onready var floordetect = $Floordetect
 onready var eyes = $Eyes
+onready var animation = $AnimationPlayer
 
 enum {
 	MOVING,
@@ -18,7 +19,7 @@ enum {
 var state = MOVING
 
 func _ready():
-	pass
+	animation.play("RESET")
 
 func _physics_process(delta):
 	match state:
@@ -34,8 +35,10 @@ func _physics_process(delta):
 			velocity = direction * 160
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
-
-
+		SHOOT:
+			sprite.play("Attack")
+		DEAD:
+			animation.play("Dying.")
 
 func detect_turn_around():
 	if not floordetect.is_colliding() and is_on_floor():
@@ -45,3 +48,18 @@ func detect_turn_around():
 
 func die():
 	queue_free()
+
+func _on_Eyes_body_entered(body):
+	if body.is_in_group("protagonists"):
+		state = SHOOT
+
+
+func _on_Eyes_body_exited(body):
+	if body.is_in_group("protagonists"):
+		state = MOVING
+
+func _on_EnemyHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD
+	if area.name == "EnemyCrusher":
+		state = DEAD
