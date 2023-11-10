@@ -34,7 +34,7 @@ position = Vector2( 577, -325 )
 position = Vector2( 59, -232 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 56, -232 )
+position = Vector2( 60, -272 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="stellaspawn" parent="." instance=ExtResource( 7 )]

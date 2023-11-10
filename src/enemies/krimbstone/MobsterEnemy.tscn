@@ -231,6 +231,8 @@ stream = ExtResource( 3 )
 volume_db = -2.122
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
 
 [connection signal="body_entered" from="Eyes" to="." method="_on_Eyes_body_entered"]
 [connection signal="body_exited" from="Eyes" to="." method="_on_Eyes_body_exited"]
