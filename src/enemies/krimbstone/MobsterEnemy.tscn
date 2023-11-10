@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/sprites/enemy_sprites/krimbstone/Mobster Enemy sprites.png" type="Texture" id=1]
 [ext_resource path="res://src/enemies/krimbstone/MobsterEnemy.gd" type="Script" id=2]
@@ -58,6 +58,9 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 41.5, 147.5 )
 
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 150, 117.5 )
+
 [node name="MobsterEnemy" type="KinematicBody2D"]
 collision_layer = 32
 collision_mask = 4
@@ -77,8 +80,14 @@ shape = SubResource( 5 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="Floordetect" type="RayCast2D" parent="."]
-position = Vector2( -1, 244 )
+position = Vector2( 49, 244 )
 scale = Vector2( 1, 1 )
 enabled = true
 cast_to = Vector2( 0, 34 )
 collision_mask = 4
+
+[node name="Eyes" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Eyes"]
+position = Vector2( 202, 108.5 )
+shape = SubResource( 9 )

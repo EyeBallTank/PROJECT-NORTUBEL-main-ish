@@ -7,6 +7,7 @@ var velocity = Vector2.ZERO
 var knockback_dir = 1
 onready var sprite: = $AnimatedSprite
 onready var floordetect = $Floordetect
+onready var eyes = $Eyes
 
 enum {
 	MOVING,
@@ -39,7 +40,8 @@ func _physics_process(delta):
 func detect_turn_around():
 	if not floordetect.is_colliding() and is_on_floor():
 		direction *= -1
-		sprite.flip_h = direction.x < 0
+#		sprite.flip_h = direction.x < 0
+		scale.x = -scale.x
 
 func die():
 	queue_free()
