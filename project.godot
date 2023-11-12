@@ -232,6 +232,7 @@ stellajump={
 2d_physics/layer_12="SOCCERGOAL"
 2d_physics/layer_13="FISHHOOK"
 2d_physics/layer_14="VEHICLES"
+2d_physics/layer_15="RIVALS"
 
 [locale]
 
