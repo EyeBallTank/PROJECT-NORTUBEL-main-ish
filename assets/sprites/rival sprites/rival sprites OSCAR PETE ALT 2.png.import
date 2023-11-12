@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rival sprites OSCAR PETE ALT.png-4ca82b053b6f40e8bb9028565d9f62c8.stex"
+path="res://.import/rival sprites OSCAR PETE ALT 2.png-95d75197b11cc4b5f1f3e02bedd5f946.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/rival sprites/rival sprites OSCAR PETE ALT.png"
-dest_files=[ "res://.import/rival sprites OSCAR PETE ALT.png-4ca82b053b6f40e8bb9028565d9f62c8.stex" ]
+source_file="res://assets/sprites/rival sprites/rival sprites OSCAR PETE ALT 2.png"
+dest_files=[ "res://.import/rival sprites OSCAR PETE ALT 2.png-95d75197b11cc4b5f1f3e02bedd5f946.stex" ]
 
 [params]
 
