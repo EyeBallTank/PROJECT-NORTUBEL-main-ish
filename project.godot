@@ -60,6 +60,11 @@ _global_script_classes=[ {
 "path": "res://src/level_objects/PushableCopy.gd"
 }, {
 "base": "Area2D",
+"class": "RivalIdleSign",
+"language": "GDScript",
+"path": "res://src/rival signs/RivalIdleSign.gd"
+}, {
+"base": "Area2D",
 "class": "SlowFloor",
 "language": "GDScript",
 "path": "res://src/level_objects/SlowFloor.gd"
@@ -95,6 +100,7 @@ _global_script_class_icons={
 "Poison": "",
 "Pushable": "",
 "PushableCopy": "",
+"RivalIdleSign": "",
 "SlowFloor": "",
 "SoccerBall": "",
 "Water": "",

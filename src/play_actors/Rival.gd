@@ -30,6 +30,8 @@ var JUMP_SPEED = 1500
 onready var ladderCheck = $LadderCheck
 onready var pushdetector = $PushDetector
 onready var audioplayer = $AudioStreamPlayer
+onready var floordetect = $Floordetect
+onready var signdetect = $Signdetect
 
 func _ready():
 	animatedsprite.frames = load(rivalskin)
@@ -39,6 +41,7 @@ func _physics_process(delta):
 	match state:
 		RUN:
 			pushcheck()
+			detect_jump()
 			
 			WALK_MAX_SPEED = 600
 			velocity.x = WALK_MAX_SPEED
@@ -49,10 +52,45 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			if detect_signs():
+				state = IDLE
+
+
+		CLIMB:
+			pass
+
+		PUSH:
+			pass
+
+		IDLE:
+			velocity.x = 0
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			animatedsprite.animation = "Idle"
+
+
 func pushcheck():
 	pass
 
+func detect_jump():
+	if not floordetect.is_colliding() and is_on_floor():
+		velocity.y = -JUMP_SPEED
 
+func detect_signs():
+	if not signdetect.is_colliding(): return false
+	var collider = signdetect.get_collider()
+	if not collider is RivalIdleSign: return false
+	return true
 
-
-
+#func _on_RivalSignCheck_area_entered(area):
+#	if area.is_in_group("RivalIdleSign"):
+#		state = IDLE
