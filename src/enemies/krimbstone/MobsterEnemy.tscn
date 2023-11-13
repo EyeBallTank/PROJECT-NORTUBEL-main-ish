@@ -69,7 +69,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ "Hurt", "Dead" ]
@@ -216,7 +216,6 @@ anims/RESET = SubResource( 12 )
 
 [node name="Floordetect" type="RayCast2D" parent="."]
 position = Vector2( 49, 244 )
-scale = Vector2( 1, 1 )
 enabled = true
 cast_to = Vector2( 0, 34 )
 collision_mask = 4
