@@ -84,7 +84,32 @@ func _physics_process(delta):
 				state = RUN
 
 		PUSH:
-			pass
+			pushcheck()
+			detect_jump()
+			
+			WALK_MAX_SPEED = 600
+			velocity.x = WALK_MAX_SPEED
+			pushdetector.position = Vector2(63, 0)
+			animatedsprite.animation = "Pushing"
+			animatedsprite.flip_h = false
+
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			if detect_signs():
+				state = IDLE
+
+			if detect_climb():
+				state = CLIMB
 
 		IDLE:
 			velocity.x = 0
@@ -101,7 +126,13 @@ func _physics_process(delta):
 			was_on_floor = is_on_floor()
 
 func pushcheck():
-	pass
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider is PushableCopy:
+			collision.collider.slide(-collision.normal * (WALK_MAX_SPEED / 2) )
+		else:
+			return false
+	return true
 
 func detect_jump():
 	if not floordetect.is_colliding() and is_on_floor():
@@ -124,3 +155,27 @@ func detect_run():
 	var collider = rundetect.get_collider()
 	if not collider is RivalRunSign: return false
 	return true
+
+
+func _on_PushDetector_area_entered(area):
+	if area.name == "PushArea":
+		if state == RUN:
+			state = PUSH
+
+func _on_PushDetector_area_exited(area):
+	if area.name == "PushArea":
+		if state == PUSH:
+			state = RUN
+
+func Teleport(area):
+	for Teleportal in get_tree().get_nodes_in_group("Teleportal"):
+		if Teleportal != area:
+			if(Teleportal.id == area.id):
+				if(!Teleportal.lockPortal):
+					area.LockedPortal()
+					global_position = Teleportal.global_position
+
+func _on_PortalCheck_area_entered(area):
+	if(area.is_in_group("Teleportal")):
+		if(!area.lockPortal):
+			Teleport(area)
