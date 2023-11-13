@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/nort npc/NortAudienceRace.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/play_actors/Rival.tscn" type="PackedScene" id=11]
 
 [node name="NortPartTwoLevel3" type="Node2D"]
 
@@ -54,3 +55,10 @@ customtext = "b3rn4d"
 position = Vector2( 2243, 394 )
 customtext = "ANGELA_B_NPC_TEXT"
 customname = "Notskorb Alegna"
+
+[node name="Rival" parent="." instance=ExtResource( 11 )]
+position = Vector2( 247, 231 )
+
+[node name="Rival2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 448, 237 )
+rivalskin = "res://assets/sprites/rival sprites/AltPete.tres"
