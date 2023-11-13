@@ -32,6 +32,9 @@ onready var pushdetector = $PushDetector
 onready var audioplayer = $AudioStreamPlayer
 onready var floordetect = $Floordetect
 onready var signdetect = $Signdetect
+onready var signdetectclimb = $Signdetectclimb
+onready var rundetect = $Rundetect
+
 
 func _ready():
 	animatedsprite.frames = load(rivalskin)
@@ -64,9 +67,21 @@ func _physics_process(delta):
 			if detect_signs():
 				state = IDLE
 
+			if detect_climb():
+				state = CLIMB
 
 		CLIMB:
-			pass
+			PUSH_SPEED = 350
+			velocity.y = -PUSH_SPEED
+			velocity.x = 0
+			animatedsprite.animation = "Climbing"
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if detect_signs():
+				state = IDLE
+
+			if detect_run():
+				state = RUN
 
 		PUSH:
 			pass
@@ -76,7 +91,14 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 			animatedsprite.animation = "Idle"
+			if velocity.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+			elif velocity.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
 
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 func pushcheck():
 	pass
@@ -91,6 +113,14 @@ func detect_signs():
 	if not collider is RivalIdleSign: return false
 	return true
 
-#func _on_RivalSignCheck_area_entered(area):
-#	if area.is_in_group("RivalIdleSign"):
-#		state = IDLE
+func detect_climb():
+	if not signdetectclimb.is_colliding(): return false
+	var collider = signdetectclimb.get_collider()
+	if not collider is RivalClimbSign: return false
+	return true
+
+func detect_run():
+	if not rundetect.is_colliding(): return false
+	var collider = rundetect.get_collider()
+	if not collider is RivalRunSign: return false
+	return true
