@@ -74,7 +74,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 134, -22 ) ]
+"values": [ Vector2( 134, -66 ) ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -114,7 +114,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 1, 2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 134, -22 ), Vector2( 134, 318 ), Vector2( 134, 318 ), Vector2( 134, -22 ) ]
+"values": [ Vector2( 134, -66 ), Vector2( 134, 318 ), Vector2( 134, 318 ), Vector2( 134, -66 ) ]
 }
 
 [node name="KrimbSpikedCrusherTrap" type="Node2D"]
@@ -134,7 +134,7 @@ position = Vector2( 0, 6 )
 shape = SubResource( 4 )
 
 [node name="Crusher" type="KinematicBody2D" parent="."]
-position = Vector2( 213, 136 )
+position = Vector2( 134, -66 )
 collision_layer = 4
 collision_mask = 35
 
