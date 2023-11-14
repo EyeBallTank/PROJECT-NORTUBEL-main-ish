@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var direction = Vector2.LEFT
-var speed = 25
+var speed = 255
 onready var animation = $AnimationPlayer
 
 func _ready():
@@ -16,7 +16,7 @@ func therefore_I_Go():
 	die()
 
 func _physics_process(delta):
-	velocity.x = speed * -10
+#	velocity.x = speed
 	move_and_slide(velocity, Vector2.UP)
 	if is_on_wall():
 		animation.play("Dying")

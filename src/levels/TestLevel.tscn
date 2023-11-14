@@ -32,10 +32,10 @@ playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 position = Vector2( 577, -325 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 59, -232 )
+position = Vector2( 1004, -300 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 60, -272 )
+position = Vector2( 1005, -340 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="stellaspawn" parent="." instance=ExtResource( 7 )]
@@ -51,7 +51,7 @@ position = Vector2( 173, -314 )
 position = Vector2( 1226, -463 )
 
 [node name="Bullet" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1665, -414 )
+position = Vector2( 1805, -653 )
 
 [node name="NortAudienceRaceNPC" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2478, -384 )

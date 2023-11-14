@@ -84,6 +84,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/level_objects/Soccer Ball.gd"
 }, {
+"base": "KinematicBody2D",
+"class": "StellaMain",
+"language": "GDScript",
+"path": "res://src/play_actors/StellaComp.gd"
+}, {
 "base": "Area2D",
 "class": "Water",
 "language": "GDScript",
@@ -115,6 +120,7 @@ _global_script_class_icons={
 "RivalRunSign": "",
 "SlowFloor": "",
 "SoccerBall": "",
+"StellaMain": "",
 "Water": "",
 "actor": "",
 "main_level_script": ""

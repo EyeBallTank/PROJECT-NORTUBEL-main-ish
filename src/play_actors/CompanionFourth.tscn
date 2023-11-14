@@ -135,6 +135,7 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

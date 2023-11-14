@@ -32,6 +32,7 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		MOVING:
+			sound.set_volume_db(-80) 
 			if see_to_attack():
 				state = SHOOT
 
@@ -47,14 +48,20 @@ func _physics_process(delta):
 
 
 		SHOOT:
+			sound.set_volume_db(-2.122) 
+#			sprite.play("Attack")
+#			attack()
+#			timer.start(0.5)
+#			if timer.time_left == 0:
+#				state = MOVING
 			velocity = 0
-			sprite.play("Attack")
-			attack()
-			timer.start(0.5)
+			animation.play("Shoot")
+			timer.start(2)
 			if timer.time_left == 0:
 				state = MOVING
 
 		DEAD:
+			sound.set_volume_db(-80) 
 			animation.play("Dying.")
 
 func detect_turn_around():
@@ -69,13 +76,24 @@ func die():
 func see_to_attack():
 	if not eyes.is_colliding(): return false
 	var collider = eyes.get_collider()
-	if not collider is PlayerMain: return false
+	if not collider.is_in_group("protagonists"): return false
+#	if not collider is StellaMain: return false
+#	if not collider is Companion: return false
 	return true
 
+func return_to_move():
+	state = MOVING
 
 func attack():
+	sound.play()
 	var projectile = Bullet.instance()
 	projectile.global_position = gunhole.global_position
+#	projectile.direction = direction
+#	projectile.speed = direction * projectile.velocity
+	if direction == Vector2.RIGHT:
+		projectile.velocity.x = projectile.speed * 10
+	elif direction == Vector2.LEFT:
+		projectile.velocity.x = projectile.speed * -10
 	get_tree().get_root().add_child(projectile)
 	sprite.play("Attack")
 	timer.start(0.5)
