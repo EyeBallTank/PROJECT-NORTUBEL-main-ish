@@ -7,6 +7,8 @@ onready var animatedsprite = $AnimatedSprite
 
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 3000.0
+export var somespeedvalue = 600
+
 
 var velocity: = Vector2.ZERO
 
@@ -46,7 +48,7 @@ func _physics_process(delta):
 			pushcheck()
 			detect_jump()
 			
-			WALK_MAX_SPEED = 600
+			WALK_MAX_SPEED = somespeedvalue
 			velocity.x = WALK_MAX_SPEED
 			pushdetector.position = Vector2(63, 0)
 			animatedsprite.animation = "Running"
@@ -87,7 +89,7 @@ func _physics_process(delta):
 			pushcheck()
 			detect_jump()
 			
-			WALK_MAX_SPEED = 600
+			WALK_MAX_SPEED = somespeedvalue
 			velocity.x = WALK_MAX_SPEED
 			pushdetector.position = Vector2(63, 0)
 			animatedsprite.animation = "Pushing"

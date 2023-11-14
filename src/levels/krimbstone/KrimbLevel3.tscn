@@ -84,7 +84,7 @@ position = Vector2( -370, -3 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Door" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6435, 1444 )
+position = Vector2( 11430, -32 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
 spritename = "krimbstone greendoor"
 customtext = "phn34s"
@@ -111,6 +111,10 @@ spritename = "krimbstone health"
 
 [node name="Coin" parent="." instance=ExtResource( 11 )]
 position = Vector2( 601, -502 )
+spritename = "krimbstone coin"
+
+[node name="Coin2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 10382, -28 )
 spritename = "krimbstone coin"
 
 [node name="BookerNPC" parent="." instance=ExtResource( 12 )]
