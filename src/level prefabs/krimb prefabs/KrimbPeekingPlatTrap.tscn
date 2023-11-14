@@ -64,10 +64,10 @@ animations = [ {
 extents = Vector2( 192, 32 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 192, 12.5 )
+extents = Vector2( 363.5, 27 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 192, 4.5 )
+extents = Vector2( 360.5, 20 )
 
 [sub_resource type="Animation" id=12]
 length = 0.001
@@ -200,20 +200,21 @@ animation = "phase1"
 shape = SubResource( 9 )
 
 [node name="Darkness" type="Sprite" parent="."]
-position = Vector2( 165, 585 )
+position = Vector2( 337, 718.864 )
+scale = Vector2( 1.89583, 1.72752 )
 z_index = 15
 texture = ExtResource( 2 )
 
 [node name="DeathHitbox" parent="." instance=ExtResource( 4 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathHitbox"]
-position = Vector2( 165, 753.5 )
+position = Vector2( 336.5, 994 )
 shape = SubResource( 10 )
 
 [node name="EnemyCrusher" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyCrusher"]
-position = Vector2( 165, 735.5 )
+position = Vector2( 333.5, 1000 )
 shape = SubResource( 11 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

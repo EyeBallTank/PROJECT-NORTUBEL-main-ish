@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var gravity: = 29600
+export var gravity: = 23600
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
@@ -45,6 +45,7 @@ func _physics_process(delta):
 			velocity = direction * 160
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
+			gravity = 37600
 
 
 		SHOOT:
@@ -54,11 +55,13 @@ func _physics_process(delta):
 #			timer.start(0.5)
 #			if timer.time_left == 0:
 #				state = MOVING
-			velocity = 0
+			velocity.x = 0
 			animation.play("Shoot")
 			timer.start(2)
 			if timer.time_left == 0:
 				state = MOVING
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
 
 		DEAD:
 			sound.set_volume_db(-80) 
