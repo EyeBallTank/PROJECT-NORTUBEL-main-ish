@@ -127,6 +127,9 @@ func _physics_process(delta):
 				audioplayer.play()
 			was_on_floor = is_on_floor()
 
+			if detect_run():
+				state = RUN
+
 func pushcheck():
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
