@@ -11,7 +11,7 @@ onready var animation = $AnimationPlayer
 
 #var PROJECTILE_VELOCITY = 1000
 const Fireball = preload("res://src/enemies/FishProjectile.tscn")
-const FireballLeft = preload("res://src/enemies/FishProjectileLeft.tscn")
+#const FireballLeft = preload("res://src/enemies/FishProjectileLeft.tscn")
 
 var canattack = true
 
@@ -44,16 +44,23 @@ func _physics_process(delta):
 
 
 func attack():
+	var projectile = Fireball.instance()
+	projectile.global_position = mouth.global_position
 	if sprite.flip_h == false:
-		var projectile = Fireball.instance()
-		projectile.global_position = mouth.global_position
+		
+		
 #		projectile.linear_velocity = Vector2(direction * PROJECTILE_VELOCITY, 0)
-		get_tree().get_root().add_child(projectile)
+		
+		projectile.velocity.x = projectile.speed * 10
+		projectile.rotation_degrees += 7
 	elif sprite.flip_h == true:
-		var projectileleft = FireballLeft.instance()
-		projectileleft.global_position = mouth.global_position
+		projectile.velocity.x = projectile.speed * -10
+		projectile.rotation_degrees += -7
+#		var projectileleft = FireballLeft.instance()
+#		projectileleft.global_position = mouth.global_position
 #		projectileleft.linear_velocity = Vector2(direction * PROJECTILE_VELOCITY, 0)
-		get_tree().get_root().add_child(projectileleft)
+#		get_tree().get_root().add_child(projectileleft)
+	get_tree().get_root().add_child(projectile)
 	sprite.animation = "openmouth"
 	spritetimer.start(0.5)
 

@@ -3,6 +3,7 @@ extends KinematicBody2D
 var velocity = Vector2.ZERO
 var direction = Vector2.RIGHT
 var speed = 25
+var spinning = 7
 onready var animation = $AnimationPlayer
 
 func _ready():
@@ -10,10 +11,10 @@ func _ready():
 	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 
 func _physics_process(delta):
-	rotation_degrees += 7
+#	rotation_degrees += 7
 	if is_on_wall():
 		animation.play("dying")
-	velocity.x = speed * 10
+#	velocity.x = speed * 10
 	move_and_slide(velocity, Vector2.UP)
 
 func die():

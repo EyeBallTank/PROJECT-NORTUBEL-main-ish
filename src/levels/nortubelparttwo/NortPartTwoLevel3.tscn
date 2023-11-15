@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/rival signs/RivalIdleSign.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=18]
 
 [node name="NortPartTwoLevel3" type="Node2D"]
 
@@ -102,3 +103,10 @@ position = Vector2( 3582, 1908 )
 
 [node name="Barrier" parent="." instance=ExtResource( 17 )]
 position = Vector2( 3803, 1536 )
+
+[node name="MovingPlatHoriz" parent="." instance=ExtResource( 18 )]
+position = Vector2( 7138, 821 )
+
+[node name="MovingPlatHoriz2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 7138, 473 )
+animation = "HorizontalPlat2"
