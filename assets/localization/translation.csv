@@ -612,11 +612,13 @@ NORT_LORE_STELLA_TUTORIAL_T,"Stella is the only one that knows how to use the sw
 A + Left: She avoids you.
 A + Right: She follows you.
 A + Down: She stops.
-X: She jumps.","Stella é a unica que sabe como usar estes botões.
+X: She jumps.
+If the traps aren't good enough, try stabbing Phineas' henchmen.","Stella é a unica que sabe como usar estes botões.
 A + Esquerda: Ela foge de ti.
 A + Direita: Ela segue-te.
 A + Baixo: Ela para.
-X: Ela salta."
+X: Ela salta.
+Se as armadilhas não forem boas o suficiente, tenta esfaquear os mafiosos de Phineas."
 ,,
 MAN_TIED_TO_STREET_LIGHT_NAME_T,Man tied to traffic lights,Homem amarrado a semáforo
 STREET_LIGHT_MAN_TALK,"Hey, why are you staring?
