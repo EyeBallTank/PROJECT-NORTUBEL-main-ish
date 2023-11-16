@@ -77,7 +77,7 @@ position = Vector2( -75, -30 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="StellaComp" parent="." instance=ExtResource( 15 )]
-position = Vector2( -372, -5 )
+position = Vector2( -372, -4 )
 
 [node name="stellaspawn" parent="." instance=ExtResource( 14 )]
 position = Vector2( -370, -3 )
@@ -126,7 +126,7 @@ customtext3 = "BOOKER_NPC_HUG"
 customtext4 = "BOOKER_NPC_HURT"
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 16 )]
-position = Vector2( 3143, 383 )
+position = Vector2( 3725, 407 )
 spritename = "krimbstone floater"
 
 [node name="Ladder" parent="." instance=ExtResource( 17 )]
