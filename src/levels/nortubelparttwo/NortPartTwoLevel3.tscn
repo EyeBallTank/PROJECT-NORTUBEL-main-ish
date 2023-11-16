@@ -64,39 +64,51 @@ position = Vector2( -255, 1534 )
 rivalskin = "res://assets/sprites/rival sprites/AltPete.tres"
 
 [node name="RivalIdleSign" parent="." instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 8778, 252 )
 
 [node name="RivalClimbSign" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 2249, 1321 )
 
 [node name="RivalRunSign" parent="." instance=ExtResource( 12 )]
+visible = false
 position = Vector2( 2202, 334 )
 
 [node name="RivalClimbSign2" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 5881, 1659 )
 
 [node name="RivalClimbSign6" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 5881, 1659 )
 
 [node name="RivalClimbSign3" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 8360, 920 )
 
 [node name="RivalClimbSign4" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 8360, 672 )
 
 [node name="RivalClimbSign5" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 8360, 424 )
 
 [node name="RivalClimbSign7" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 5856, 1758 )
 
 [node name="RivalRunSign2" parent="." instance=ExtResource( 12 )]
+visible = false
 position = Vector2( 5922, 638 )
 
 [node name="RivalRunSign4" parent="." instance=ExtResource( 12 )]
+visible = false
 position = Vector2( 5804, 556 )
 
 [node name="RivalRunSign3" parent="." instance=ExtResource( 12 )]
+visible = false
 position = Vector2( 8324, -36 )
 
 [node name="Pushable" parent="." instance=ExtResource( 13 )]
