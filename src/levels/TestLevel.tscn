@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -8,7 +8,8 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/behind_the_scenes/stellaspawn.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/play_actors/StellaComp.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level prefabs/krimb prefabs/KrimbEletricCageTrap.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=15]
 
 [node name="TestLevel" type="Node2D"]
@@ -45,5 +46,8 @@ position = Vector2( 904, -232 )
 [node name="SoccerBallBag" parent="." instance=ExtResource( 15 )]
 position = Vector2( 173, -314 )
 
-[node name="SpitterFish" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2069, -838 )
+[node name="KrimbEletricCageTrap" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1372, -352 )
+
+[node name="LifeguardFloater" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1216, -500 )

@@ -275,6 +275,7 @@ shape = SubResource( 10 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -2.122
+bus = "Sound"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

@@ -51,6 +51,7 @@ shape = SubResource( 5 )
 stream = ExtResource( 4 )
 volume_db = -80.0
 pitch_scale = 0.25
+bus = "Sound"
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( 0, -1 )
