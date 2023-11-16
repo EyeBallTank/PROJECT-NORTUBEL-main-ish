@@ -174,6 +174,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * JuhaniSankari on FreeSound (Road sound for van prefab)
 * Jaz_the_MAN_2 on FreeSound (Piano key sound)
 * passllooll on FreeSound (Bell sound)
+* sunfiredragon on FreeSound (Electric trap sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
