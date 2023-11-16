@@ -175,16 +175,20 @@ scale = Vector2( 80, 8 )
 collision_newsize = Vector2( 80, 8 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 16 )]
+visible = false
 position = Vector2( 4616, 1919 )
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 17 )]
-position = Vector2( 4764, 1919 )
+visible = false
+position = Vector2( 4764, 1932 )
 
 [node name="CrawlzoneExit2" parent="." instance=ExtResource( 16 )]
+visible = false
 position = Vector2( 5369, 1920 )
 
 [node name="CrawlzoneEnter2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 5206, 1920 )
+visible = false
+position = Vector2( 5206, 1933 )
 
 [node name="Coin" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4964, 1758 )
