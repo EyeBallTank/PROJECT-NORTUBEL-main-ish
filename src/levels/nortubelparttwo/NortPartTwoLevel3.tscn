@@ -149,6 +149,7 @@ position = Vector2( 7236, 780 )
 [node name="MovingPlatHoriz2" parent="." instance=ExtResource( 18 )]
 position = Vector2( 7832, 505 )
 animation = "HorizontalPlat2"
+spritename = "nortubel movplathoriz mirror"
 
 [node name="Jumppad" parent="." instance=ExtResource( 19 )]
 position = Vector2( 6232, 973 )
