@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cutscene 5 norttwo krimb placeholder.png-d40299257cfe1fdc210aec57d96e328c.stex"
+path="res://.import/cutscene 5 norttwo krimb panel 1.png-5c19cfaa7ff19d55b486ee34a34d63de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cutscenes/cutscene 5 norttwo krimb/cutscene 5 norttwo krimb placeholder.png"
-dest_files=[ "res://.import/cutscene 5 norttwo krimb placeholder.png-d40299257cfe1fdc210aec57d96e328c.stex" ]
+source_file="res://assets/sprites/cutscenes/cutscene 5 norttwo krimb/cutscene 5 norttwo krimb panel 1.png"
+dest_files=[ "res://.import/cutscene 5 norttwo krimb panel 1.png-5c19cfaa7ff19d55b486ee34a34d63de.stex" ]
 
 [params]
 
