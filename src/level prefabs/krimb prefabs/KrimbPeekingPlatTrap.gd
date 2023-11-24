@@ -9,6 +9,8 @@ func _ready():
 	woodsprite.play("phase1")
 	animation.play("RESET")
 
+
+
 func _on_BlueSwitch_body_entered(body):
 	if body.name == "StellaComp":
 		animation.play("active")

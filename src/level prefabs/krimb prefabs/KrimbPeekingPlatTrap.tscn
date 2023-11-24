@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/sprites/level_prefab_sprites/krimb prefab sprites/darkness effect.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/krimb prefab sprites/Krimb Peeking Plat Trap.png" type="Texture" id=3]
 [ext_resource path="res://src/behind_the_scenes/DeathHitbox.tscn" type="PackedScene" id=4]
-[ext_resource path="res://KrimbPeekingPlatTrap.gd" type="Script" id=5]
+[ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPeekingPlatTrap.gd" type="Script" id=5]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
