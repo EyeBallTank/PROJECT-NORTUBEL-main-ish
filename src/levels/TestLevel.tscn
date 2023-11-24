@@ -51,7 +51,7 @@ position = Vector2( 173, -314 )
 position = Vector2( 1216, -500 )
 
 [node name="KrimbPeekingPlatTrap" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2299, -687 )
+position = Vector2( 1501, -452 )
 
 [node name="KrimbBlueSwitchDoor" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2930, -736 )
