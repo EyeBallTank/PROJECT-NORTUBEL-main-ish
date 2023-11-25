@@ -12,10 +12,106 @@
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cutscene5NorttwoKrimbPanel1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 568, 228 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene5NorttwoKrimbPanel2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1298, 235 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene5NorttwoKrimbPanel3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 624, -299 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("In front of dialogue:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Cutscene5NorttwoKrimbPanel4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene5NorttwoKrimbPanel4:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.977872, 0.977872 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene5NorttwoKrimbPanel5:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene5NorttwoKrimbPanel5:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.404938, 0.404938 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 60.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -23,12 +119,108 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 5 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene5NorttwoKrimbPanel1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5, 2.2, 3, 3.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 520, 228 ), Vector2( 520, 228 ), Vector2( 372, 228 ), Vector2( 372, 228 ), Vector2( -376, 228 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene5NorttwoKrimbPanel2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.5, 2.2, 3, 3.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1298, 235 ), Vector2( 1298, 235 ), Vector2( 746, 235 ), Vector2( 746, 235 ), Vector2( 1348, 235 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Cutscene5NorttwoKrimbPanel3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.1, 3.2, 3.5, 3.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 624, -299 ), Vector2( 624, -299 ), Vector2( 556, 233 ), Vector2( 556, 233 ), Vector2( 556, 869 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("In front of dialogue:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene5NorttwoKrimbPanel4:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3.7, 3.8, 4.3, 4.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene5NorttwoKrimbPanel4:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 4.1, 4.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.977872, 0.977872 ), Vector2( 0.977872, 0.977872 ), Vector2( 1.97007, 1.97007 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene5NorttwoKrimbPanel5:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 3.7, 3.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Cutscene5NorttwoKrimbPanel5:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 4.1, 4.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.404938, 0.404938 ), Vector2( 0.404938, 0.404938 ), Vector2( 0.684938, 0.684938 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -81,12 +273,12 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene5NorttwoKrimbPanel1" type="Sprite" parent="."]
-position = Vector2( -585, 233.288 )
+position = Vector2( 568, 228 )
 scale = Vector2( 0.575275, 0.575275 )
 texture = ExtResource( 4 )
 
 [node name="Cutscene5NorttwoKrimbPanel2" type="Sprite" parent="."]
-position = Vector2( -43, -316 )
+position = Vector2( 1298, 235 )
 scale = Vector2( 0.871028, 0.871028 )
 texture = ExtResource( 6 )
 
@@ -96,13 +288,15 @@ scale = Vector2( 0.715596, 0.715596 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene5NorttwoKrimbPanel5" type="Sprite" parent="."]
-position = Vector2( 1773.08, 240 )
-scale = Vector2( 0.285185, 0.285185 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 541, 322 )
+scale = Vector2( 0.404938, 0.404938 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene5NorttwoKrimbPanel4" type="Sprite" parent="."]
-position = Vector2( 1772.08, 246.87 )
-scale = Vector2( 0.739574, 0.739575 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 527, 339.966 )
+scale = Vector2( 0.977872, 0.977872 )
 texture = ExtResource( 9 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
