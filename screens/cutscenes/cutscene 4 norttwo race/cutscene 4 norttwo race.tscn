@@ -16,6 +16,30 @@
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cutscene4NorttwoRacePanel1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 253, 228 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene4NorttwoRacePanel2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1265, 227 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -33,6 +57,30 @@ tracks/0/keys = {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene4NorttwoRacePanel1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 253, 228 ), Vector2( 253, 228 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene4NorttwoRacePanel2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1265, 227 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -85,12 +133,12 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene4NorttwoRacePanel1" type="Sprite" parent="."]
-position = Vector2( -1067, 229.212 )
+position = Vector2( 253, 228 )
 scale = Vector2( 0.814278, 0.814278 )
 texture = ExtResource( 13 )
 
 [node name="Cutscene4NorttwoRacePanel2" type="Sprite" parent="."]
-position = Vector2( -375, 827 )
+position = Vector2( 1265, 227 )
 scale = Vector2( 0.579781, 0.579781 )
 texture = ExtResource( 4 )
 
