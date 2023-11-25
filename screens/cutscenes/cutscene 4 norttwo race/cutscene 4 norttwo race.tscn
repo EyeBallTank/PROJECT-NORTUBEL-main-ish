@@ -124,10 +124,46 @@ tracks/8/keys = {
 "update": 0,
 "values": [ Vector2( -160, 234 ) ]
 }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Cutscene4NorttwoRacePanel7:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1357, 236 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Cutscene4NorttwoRacePanel8:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 521, -273 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Cutscene4NorttwoRacePanel9:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -206, 237 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 60.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -135,7 +171,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 5.3 ),
+"times": PoolRealArray( 7.7 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -238,6 +274,42 @@ tracks/8/keys = {
 "update": 0,
 "values": [ Vector2( -160, 234 ), Vector2( -160, 234 ), Vector2( 143, 234 ) ]
 }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Cutscene4NorttwoRacePanel7:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 4.2, 4.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1357, 236 ), Vector2( 1357, 236 ), Vector2( 601, 236 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Cutscene4NorttwoRacePanel8:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 5.1, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 668, -273 ), Vector2( 668, -273 ), Vector2( 668, 243 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Cutscene4NorttwoRacePanel9:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 5.8, 6.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -206, 237 ), Vector2( -206, 237 ), Vector2( 196, 237 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -319,17 +391,17 @@ scale = Vector2( 0.368462, 0.368462 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene4NorttwoRacePanel7" type="Sprite" parent="."]
-position = Vector2( 1432, 236.124 )
+position = Vector2( 1357, 236 )
 scale = Vector2( 0.351295, 0.351295 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene4NorttwoRacePanel8" type="Sprite" parent="."]
-position = Vector2( 1057, -452 )
+position = Vector2( 521, -273 )
 scale = Vector2( 0.446747, 0.446747 )
 texture = ExtResource( 11 )
 
 [node name="Cutscene4NorttwoRacePanel9" type="Sprite" parent="."]
-position = Vector2( 365, -380 )
+position = Vector2( -206, 237 )
 scale = Vector2( 0.857547, 0.857547 )
 texture = ExtResource( 10 )
 
