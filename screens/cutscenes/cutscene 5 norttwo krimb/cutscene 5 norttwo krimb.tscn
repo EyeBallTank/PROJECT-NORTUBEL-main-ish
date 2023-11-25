@@ -75,29 +75,35 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene5NorttwoKrimbPanel1" type="Sprite" parent="."]
-position = Vector2( -909, 425 )
+position = Vector2( -585, 233.288 )
+scale = Vector2( 0.575275, 0.575275 )
 texture = ExtResource( 4 )
 
 [node name="Cutscene5NorttwoKrimbPanel2" type="Sprite" parent="."]
-position = Vector2( -909, 425 )
+position = Vector2( -43, -316 )
+scale = Vector2( 0.871028, 0.871028 )
 texture = ExtResource( 6 )
 
 [node name="Cutscene5NorttwoKrimbPanel3" type="Sprite" parent="."]
-position = Vector2( -909, 425 )
+position = Vector2( 624, -299 )
+scale = Vector2( 0.715596, 0.715596 )
 texture = ExtResource( 8 )
 
-[node name="Cutscene5NorttwoKrimbPanel4" type="Sprite" parent="."]
-position = Vector2( -909, 425 )
-texture = ExtResource( 9 )
-
 [node name="Cutscene5NorttwoKrimbPanel5" type="Sprite" parent="."]
-position = Vector2( -909, 425 )
+position = Vector2( 1773.08, 240 )
+scale = Vector2( 0.285185, 0.285185 )
 texture = ExtResource( 7 )
+
+[node name="Cutscene5NorttwoKrimbPanel4" type="Sprite" parent="."]
+position = Vector2( 1772.08, 246.87 )
+scale = Vector2( 0.739574, 0.739575 )
+texture = ExtResource( 9 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false

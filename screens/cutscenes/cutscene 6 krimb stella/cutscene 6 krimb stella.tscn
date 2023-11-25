@@ -93,100 +93,124 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene6KrimbStellaPanel1" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -655, 294 )
+scale = Vector2( 0.722812, 0.722812 )
 texture = ExtResource( 27 )
 
 [node name="Cutscene6KrimbStellaPanel2" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -818, -358 )
+scale = Vector2( 0.454724, 0.454724 )
 texture = ExtResource( 24 )
 
 [node name="Cutscene6KrimbStellaPanel3" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -806, 1520 )
+scale = Vector2( 0.501622, 0.501622 )
 texture = ExtResource( 25 )
 
 [node name="Cutscene6KrimbStellaPanel4" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -326, 948 )
+scale = Vector2( 0.926108, 0.926108 )
 texture = ExtResource( 26 )
 
 [node name="Cutscene6KrimbStellaPanel5" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -795, 1106 )
+scale = Vector2( 0.780876, 0.780876 )
 texture = ExtResource( 21 )
 
 [node name="Cutscene6KrimbStellaPanel6" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -332, 1654 )
+scale = Vector2( 0.82265, 0.82265 )
 texture = ExtResource( 19 )
 
 [node name="Cutscene6KrimbStellaPanel7" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -299, 1270 )
+scale = Vector2( 1.22662, 1.22662 )
 texture = ExtResource( 20 )
 
-[node name="Cutscene6KrimbStellaPanel8" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
-texture = ExtResource( 22 )
-
 [node name="Cutscene6KrimbStellaPanel9" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( -250.85, -596.054 )
+scale = Vector2( 0.265486, 0.265486 )
 texture = ExtResource( 23 )
 
+[node name="Cutscene6KrimbStellaPanel8" type="Sprite" parent="."]
+position = Vector2( -406.272, -642 )
+scale = Vector2( 0.222803, 0.222803 )
+texture = ExtResource( 22 )
+
 [node name="Cutscene6KrimbStellaPanel10" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 568, -622 )
+scale = Vector2( 0.840299, 0.840299 )
 texture = ExtResource( 17 )
 
 [node name="Cutscene6KrimbStellaPanel11" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1716, -146 )
+scale = Vector2( 0.502969, 0.502969 )
 texture = ExtResource( 11 )
 
 [node name="Cutscene6KrimbStellaPanel12" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 76, 1553 )
+scale = Vector2( 0.700688, 0.700688 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene6KrimbStellaPanel13" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 628, 1387 )
+scale = Vector2( 0.703421, 0.703421 )
 texture = ExtResource( 14 )
 
 [node name="Cutscene6KrimbStellaPanel14" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 179, 961 )
+scale = Vector2( 0.805172, 0.805172 )
 texture = ExtResource( 10 )
 
 [node name="Cutscene6KrimbStellaPanel15" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1389, 1288 )
+scale = Vector2( 0.689371, 0.689371 )
 texture = ExtResource( 13 )
 
 [node name="Cutscene6KrimbStellaPanel16" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 659, 905 )
+scale = Vector2( 0.811747, 0.811747 )
 texture = ExtResource( 12 )
 
 [node name="Cutscene6KrimbStellaPanel17" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1888, 687 )
+scale = Vector2( 0.969957, 0.969957 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene6KrimbStellaPanel18" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1385, 697 )
+scale = Vector2( 0.698198, 0.698198 )
 texture = ExtResource( 16 )
 
 [node name="Cutscene6KrimbStellaPanel19" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 593, -238 )
+scale = Vector2( 1.0904, 1.0904 )
 texture = ExtResource( 6 )
 
 [node name="Cutscene6KrimbStellaPanel20" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1298, -269 )
+scale = Vector2( 0.611842, 0.611842 )
 texture = ExtResource( 15 )
 
 [node name="Cutscene6KrimbStellaPanel21" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 2130, 140 )
+scale = Vector2( 0.747535, 0.747535 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene6KrimbStellaPanel22" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1704, 281 )
+scale = Vector2( 0.549383, 0.549383 )
 texture = ExtResource( 18 )
 
 [node name="Cutscene6KrimbStellaPanel23" type="Sprite" parent="."]
-position = Vector2( -1046, 163 )
+position = Vector2( 1287, 219 )
+scale = Vector2( 0.672276, 0.672276 )
 texture = ExtResource( 4 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
