@@ -1,9 +1,32 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 23.png" type="Texture" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 19.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 17.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 21.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 12.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 14.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 11.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 16.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 15.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 13.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 20.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 18.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 10.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 22.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 6.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 7.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 5.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 8.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 9.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 2.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 3.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 4.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 1.png" type="Texture" id=27]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -73,6 +96,98 @@ text = "1
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene6KrimbStellaPanel1" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 27 )
+
+[node name="Cutscene6KrimbStellaPanel2" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 24 )
+
+[node name="Cutscene6KrimbStellaPanel3" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 25 )
+
+[node name="Cutscene6KrimbStellaPanel4" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 26 )
+
+[node name="Cutscene6KrimbStellaPanel5" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene6KrimbStellaPanel6" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene6KrimbStellaPanel7" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene6KrimbStellaPanel8" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 22 )
+
+[node name="Cutscene6KrimbStellaPanel9" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene6KrimbStellaPanel10" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene6KrimbStellaPanel11" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene6KrimbStellaPanel12" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene6KrimbStellaPanel13" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene6KrimbStellaPanel14" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene6KrimbStellaPanel15" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene6KrimbStellaPanel16" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene6KrimbStellaPanel17" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene6KrimbStellaPanel18" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene6KrimbStellaPanel19" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene6KrimbStellaPanel20" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene6KrimbStellaPanel21" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene6KrimbStellaPanel22" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene6KrimbStellaPanel23" type="Sprite" parent="."]
+position = Vector2( -1046, 163 )
+texture = ExtResource( 4 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false

@@ -1,9 +1,18 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 2.png" type="Texture" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 4.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 3.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 6.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 7.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 9.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 8.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 5.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 4 norttwo race/cutscene 4 norttwo race panel 1.png" type="Texture" id=13]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -73,6 +82,42 @@ text = "1
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene4NorttwoRacePanel1" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene4NorttwoRacePanel2" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 4 )
+
+[node name="Cutscene4NorttwoRacePanel3" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene4NorttwoRacePanel4" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene4NorttwoRacePanel5" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene4NorttwoRacePanel6" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene4NorttwoRacePanel7" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene4NorttwoRacePanel8" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene4NorttwoRacePanel9" type="Sprite" parent="."]
+position = Vector2( -821, 365 )
+texture = ExtResource( 10 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
