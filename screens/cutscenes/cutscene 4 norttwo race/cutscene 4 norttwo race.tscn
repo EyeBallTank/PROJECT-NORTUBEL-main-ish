@@ -40,6 +40,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [ Vector2( 1265, 227 ) ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene4NorttwoRacePanel3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -513, 229.5 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -65,10 +77,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.5, 1.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 253, 228 ), Vector2( 253, 228 ) ]
+"values": [ Vector2( 253, 228 ), Vector2( 253, 228 ), Vector2( -276, 228 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Cutscene4NorttwoRacePanel2:position")
@@ -77,10 +89,22 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.9, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1265, 227 ) ]
+"values": [ Vector2( 1265, 227 ), Vector2( 1265, 227 ), Vector2( 758, 227 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Cutscene4NorttwoRacePanel3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.6, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -513, 229.5 ), Vector2( -513, 229.5 ), Vector2( 275, 229.5 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
