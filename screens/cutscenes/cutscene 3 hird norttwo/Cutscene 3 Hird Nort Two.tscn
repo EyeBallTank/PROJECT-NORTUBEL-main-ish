@@ -156,6 +156,30 @@ tracks/10/keys = {
 "update": 0,
 "values": [ Vector2( 529, -238 ) ]
 }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Cutscene3HirdNorttwoPanel9:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 439, -227 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Cutscene3HirdNorttwoPanel10:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 459, -250 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -167,7 +191,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 11.3 ),
+"times": PoolRealArray( 11 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -294,6 +318,30 @@ tracks/10/keys = {
 "update": 0,
 "values": [ Vector2( 529, -238 ), Vector2( 529, -238 ), Vector2( 529, 236 ) ]
 }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Cutscene3HirdNorttwoPanel9:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 8.3, 9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 439, -227 ), Vector2( 439, -227 ), Vector2( 439, 237 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Cutscene3HirdNorttwoPanel10:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 9.1, 9.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 459, -250 ), Vector2( 459, -250 ), Vector2( 459, 238 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -388,12 +436,12 @@ scale = Vector2( 0.939096, 0.939096 )
 texture = ExtResource( 16 )
 
 [node name="Cutscene3HirdNorttwoPanel9" type="Sprite" parent="."]
-position = Vector2( 256.93, -482 )
+position = Vector2( 439, -227 )
 scale = Vector2( 0.406128, 0.406128 )
 texture = ExtResource( 12 )
 
 [node name="Cutscene3HirdNorttwoPanel10" type="Sprite" parent="."]
-position = Vector2( 957, -476 )
+position = Vector2( 459, -250 )
 scale = Vector2( 0.394757, 0.394757 )
 texture = ExtResource( 6 )
 
