@@ -24,10 +24,142 @@
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cutscene3HirdNorttwoPanel1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 280, 239 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene3HirdNorttwoPanel2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1196, 235 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene3HirdNorttwoPanel3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Cutscene3HirdNorttwoPanel4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Cutscene3HirdNorttwoPanel4:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.933333, 0.768627, 0, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene3HirdNorttwoPanel1:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene3HirdNorttwoPanel2:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene3HirdNorttwoPanel5:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -274, 241 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Cutscene3HirdNorttwoPanel6:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 294, -241 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Cutscene3HirdNorttwoPanel7:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1208, 233 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Cutscene3HirdNorttwoPanel8:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 529, -238 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 60.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -35,12 +167,132 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 11.3 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene3HirdNorttwoPanel1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 280, 239 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene3HirdNorttwoPanel2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1196, 235 ), Vector2( 1196, 235 ), Vector2( 745, 235 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Cutscene3HirdNorttwoPanel3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.6, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Cutscene3HirdNorttwoPanel4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4.1, 4.4, 4.7, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 0.933333, 0.768627, 0, 1 ), Color( 0.933333, 0.768627, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene3HirdNorttwoPanel1:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3.4, 3.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene3HirdNorttwoPanel2:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3.4, 3.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene3HirdNorttwoPanel5:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 5.2, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -274, 241 ), Vector2( -274, 241 ), Vector2( 498, 237 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Cutscene3HirdNorttwoPanel6:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 5.7, 6.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 294, -241 ), Vector2( 294, -241 ), Vector2( 294, 237 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Cutscene3HirdNorttwoPanel7:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 6.3, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1208, 233 ), Vector2( 1208, 233 ), Vector2( 774, 233 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Cutscene3HirdNorttwoPanel8:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 6.9, 7.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 529, -238 ), Vector2( 529, -238 ), Vector2( 529, 236 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -93,42 +345,45 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene3HirdNorttwoPanel1" type="Sprite" parent="."]
-position = Vector2( -696, 235.25 )
-scale = Vector2( 0.972107, 0.972107 )
+position = Vector2( 280, 239 )
+scale = Vector2( 0.905475, 0.905475 )
 texture = ExtResource( 10 )
 
 [node name="Cutscene3HirdNorttwoPanel2" type="Sprite" parent="."]
-position = Vector2( -217, 721 )
+position = Vector2( 1196, 235 )
 scale = Vector2( 0.377033, 0.377033 )
 texture = ExtResource( 14 )
 
 [node name="Cutscene3HirdNorttwoPanel3" type="Sprite" parent="."]
-position = Vector2( 562.91, -1001.25 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 516.91, 236.75 )
 scale = Vector2( 0.745114, 0.745114 )
 texture = ExtResource( 13 )
 
 [node name="Cutscene3HirdNorttwoPanel4" type="Sprite" parent="."]
-position = Vector2( 557.91, -1022 )
+modulate = Color( 1, 1, 1, 0 )
+self_modulate = Color( 0.933333, 0.768627, 0, 1 )
+position = Vector2( 511.91, 216 )
 scale = Vector2( 0.461165, 0.461165 )
 texture = ExtResource( 15 )
 
 [node name="Cutscene3HirdNorttwoPanel5" type="Sprite" parent="."]
-position = Vector2( 355, 1707 )
+position = Vector2( -274, 241 )
 scale = Vector2( 0.828018, 0.828018 )
 texture = ExtResource( 21 )
 
 [node name="Cutscene3HirdNorttwoPanel6" type="Sprite" parent="."]
-position = Vector2( -341, 1331 )
+position = Vector2( 294, -241 )
 scale = Vector2( 0.665473, 0.665473 )
 texture = ExtResource( 4 )
 
 [node name="Cutscene3HirdNorttwoPanel7" type="Sprite" parent="."]
-position = Vector2( -700, 940 )
+position = Vector2( 1208, 233 )
 scale = Vector2( 0.816078, 0.816078 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene3HirdNorttwoPanel8" type="Sprite" parent="."]
-position = Vector2( -471, -575 )
+position = Vector2( 529, -238 )
 scale = Vector2( 0.939096, 0.939096 )
 texture = ExtResource( 16 )
 
@@ -173,7 +428,7 @@ scale = Vector2( 0.378999, 0.378999 )
 texture = ExtResource( 20 )
 
 [node name="Cutscene3HirdNorttwoPanel17" type="Sprite" parent="."]
-position = Vector2( 1493, 233.008 )
+position = Vector2( 1596, 233.008 )
 scale = Vector2( 0.637619, 0.637619 )
 texture = ExtResource( 18 )
 
