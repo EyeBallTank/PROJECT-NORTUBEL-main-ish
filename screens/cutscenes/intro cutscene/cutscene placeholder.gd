@@ -22,13 +22,12 @@ func cutscene_over():
 	SceneManager.change_scene("level_transition_effect", nextscene)
 
 #POSSIBLE DIALOGUE FOR THE FOLLOWING CUTSCENES
-#Cutscene 3
-#Oscar: Look, they have games. Can we try some of them?
-#Carrie: Oscar, we're leaving.
-#Borhr: I Apologize for the current situation but please, consider a second visit when things are better
-#Borhr: But before you leave, let me give you this: This is a transdimensional translator, it'll help you better communicate with beings from other worlds.
-#Melvin: Thanks, maybe we could see you again.
-
+#CUTSCENE_3_TALK_1/ Look, they have games. Can we try some of them?/ Olha, eles têm jogos. Podemos experimentar alguns deles?
+#CUTSCENE_3_TALK_2/ Oscar, we're leaving./ Oscar, nós vamos embora.
+#CUTSCENE_3_TALK_3/ I Apologize for the current situation but please, consider a second visit when things are better./ Peço desculpa pela situação atual, mas por favor, considerem uma segunda visita quando as coisas melhorarem.
+#CUTSCENE_3_TALK_4/ But before you leave, let me give you this: This is a transdimensional translator, it'll help you better communicate with beings from other worlds./ Mas antes de partirem, deixem-me dar uma coisa: Isto é um tradutor transdimensional, que vos ajudará a comunicar melhor com seres de outros mundos.
+#CUTSCENE_3_TALK_5/Thanks, maybe we could see you again./Obrigado, talvez podemos o ver outra vez.
+ 
 #Borhr: I believe I understand better who is behind this. It's possibly a machine of hate and suffering, one that wants to bring pain accross other worlds. But besides that, there might be other threats putting realities at risk, as previous worlds I've visited no longer exist. We must do something.
 
 #Carrie: Grandma?
