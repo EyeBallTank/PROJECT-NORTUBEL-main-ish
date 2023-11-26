@@ -39,7 +39,7 @@ func cutscene_over():
 #CUTSCENE_3_TALK_15/Guess we gotta find the way out on our own again./Parece que temos que encontrar a saída sozinhos. mais uma vez.
 
 
-##CUTSCENE_4_TALK_1/Look at the signs, the text is flipped./Olhem para os sinais, o texto está virado.
+#CUTSCENE_4_TALK_1/Look at the signs, the text is flipped./Olhem para os sinais, o texto está virado.
 #CUTSCENE_4_TALK_2/Guys, you might wanna see this./Pessoal, é melhor vocês verem isto.
 #CUTSCENE_4_TALK_3/You think we're gonna meet people like this?/Acham que vamos conhecer pessoas assim?
 #CUTSCENE_4_TALK_4/Yuck, this looks nasty!/Yuck, isso é nojento!
@@ -56,21 +56,19 @@ func cutscene_over():
 #CUTSCENE_5_TALK_4/Wonder why this new place looks so dark./Porque é que este sítio é tão escuro?
 
 
-#Cutscene 6
-#Angela: I'm not liking this place
-#Oscar: I think i heard someone
-#CREEPY_GUY_NAME/Creepy guy/Homem assustador: Hey boys and girls! How about each one of you give this old man a good time, huh?
-#CREEPY_GUY_NAME: ARRGH! Uhhhh.
-
-#Booker: Any of you alright? You're not from here, are you?
-#Booker: Either way, let me take you to somewhere safer.
-
-#Booker: My name is Booker Vincent and I'm one of the few sane people in this rotten town. I've been doing my best keeping these streets clean from human waste, even if it meant getting my hands dirty. No point in trusting the cops. I know because I used to be one of them
-
-#Stella: Katrin, Pete, it's me!
-#Katrin: Stella, where have you been?
-#Stella: I ended up here after stepping on some weird wooden box. This city is scary but thanks to Booker, I'm safe.
-#Booker: You two know each other? That's nice. But know that things are rough in the outside and unfortunately, Stella did see some horrors.
+#CUTSCENE_6_TALK_1/I'm not liking this place./Não gosto deste lugar.
+#CUTSCENE_6_TALK_2/I think I heard someone!/Acho que ouvi alguém!
+#CREEPY_GUY_NAME/Creepy guy/Homem assustador
+#CUTSCENE_6_TALK_3/Hey boys and girls! How about each one of you give this old man a good time, huh?/Hey, rapazes e raparigas! E que tal cada um de vocês dar alguma diversão a este velho, huh?
+#ARRGH! Uhhhh...
+#CUTSCENE_6_TALK_4/Any of you alright? You're not from here, are you?/Estão todos bem? Não são daqui, pois não?
+#CUTSCENE_6_TALK_5/Either way, let me take you to somewhere safer./De qualquer maneira, deixam me levar vos para um lugar seguro.
+#CUTSCENE_6_TALK_6/My name is Booker Vincent and I'm one of the few sane people in this rotten town. I've been doing my best keeping these streets clean from human waste, even if it meant getting my hands dirty./O meu nome é Booker Vincent e sou uma das poucas pessoas sãs nesta cidade amaldiçoada. Fiz o meu melhor para manter estas ruas limpas de lixo humano, mesmo enquanto sugar as minhas mãos.
+#CUTSCENE_6_TALK_7/No point in trusting the cops. I know because I used to be one of them./Não vale a penar confiar nos policias. Sei disto porque era um deles.
+#CUTSCENE_6_TALK_8/Katrin, Pete, it's me!/Katrin, Pete, sou eu!
+#CUTSCENE_6_TALK_9/Stella, where have you been?/Stella, onde é que estiveste?
+#CUTSCENE_6_TALK_10/I ended up here after stepping on some weird wooden box. This city is scary but thanks to Booker, I'm safe./Aterrei aqui depois de tropeçar numa caixa de madeira qualquer. Esta cidade é assustadora mas graças ao Booker, estou segura.
+#CUTSCENE_6_TALK_11/You two know each other? That's nice. But know that things are rough in the outside and unfortunately, Stella did see some horrors./Vocês conhecem-se? Isso é bom. Mas lembrem que o mundo lá fora é uma selvajaria e infelizmente, a Stella viu alguns horrores.
 
 #Pete: Hey, who is this gold headed guy?
 #Booker: That's "The Bullet". One of the most disgusting freaks I've yet to hunt down. You don't wanna know more.
