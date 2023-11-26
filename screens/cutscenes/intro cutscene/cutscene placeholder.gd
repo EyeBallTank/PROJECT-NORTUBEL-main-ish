@@ -27,18 +27,18 @@ func cutscene_over():
 #CUTSCENE_3_TALK_3/ I Apologize for the current situation but please, consider a second visit when things are better./ Peço desculpa pela situação atual, mas por favor, considerem uma segunda visita quando as coisas melhorarem.
 #CUTSCENE_3_TALK_4/ But before you leave, let me give you this: This is a transdimensional translator, it'll help you better communicate with beings from other worlds./ Mas antes de partirem, deixem-me dar uma coisa: Isto é um tradutor transdimensional, que vos ajudará a comunicar melhor com seres de outros mundos.
 #CUTSCENE_3_TALK_5/Thanks, maybe we could see you again./Obrigado, talvez podemos o ver outra vez.
- 
-#Borhr: I believe I understand better who is behind this. It's possibly a machine of hate and suffering, one that wants to bring pain accross other worlds. But besides that, there might be other threats putting realities at risk, as previous worlds I've visited no longer exist. We must do something.
+#CUTSCENE_3_TALK_6/I believe I understand better who is behind this. It's possibly a machine of hate and suffering, one that wants to bring pain accross other worlds./Acredito que precebo quem é responsavel. Pode ser uma máquina de ódio e suferimento, que quer trazer miséria para outros mundos.
+#CUTSCENE_3_TALK_7/But besides that, there might be other threats putting realities at risk, as previous worlds I've visited no longer exist. We must do something./Mas além disso, pode haver outras ameaças que coloquem realidades em risco, já que mundos anteriores que visitei já mão existem. Nós devemos fazer algo.
+#CUTSCENE_3_TALK_8/Grandma?/Avó?
+#CUTSCENE_3_TALK_9/Carrie, is that you? Hold on, let me just-/Carrie, estás ai? Espera, deixa-me-
+#CUTSCENE_3_TALK_10/Not again, I was close this time!/Outra vez não, estava mais perto desta vez!
+#CUTSCENE_3_TALK_11/So where exactly are they again? How far is this place?/Mas onde é que eles estão, mais uma vez? Será tão longe este lugar?
+#CUTSCENE_3_TALK_12/A different reality isn't the same as a different location. The better way to explain it is by using TV channels as an example./Uma realidade diferente não é a mesma coisa que um lugar diferente. É melhor fazer a comparação com canais de televisão.
+#CUTSCENE_3_TALK_13/A cooking show only runs on channel 2 and is not available in channel 3. If you switched to channel 3, it's as if the cooking show never existed./Um programa de cozinha só aparece no canal 2 e não no 3. Se mudasses para o canal 3, é como se o programa nunca existiu.
+#CUTSCENE_3_TALK_14/But one day, the show no longer shows up in channel 2 and is now on 3. Therefore it exists in a different dimension, unrelated to place or time./Mas um dia, o programa para de aparecer no canal 2 e agora está no 3. Por isso, existe numa dimensão diferente, tendo nada a haver com lugar ou tempo.
+#CUTSCENE_3_TALK_15/Guess we gotta find the way out on our own again./Parece que temos que encontrar a saída sozinhos. mais uma vez.
 
-#Carrie: Grandma?
-#Pamela: Carrie, is that you? Hold on, let me just-
 
-#Pamela: Not again, I was close this time!
-#Bernard: So where exactly are they again? How far is this place?
-#Shelly: A different reality isn't the same as a different location. The better way to explain it is by using TV channels as an example.
-#Carrie: Guess we gotta find the way out on our own again
-#
-#
 #Cutscene 4
 #Katrin: Look at the signs, the text is flipped
 #Melvin: Guys, you might wanna see this
