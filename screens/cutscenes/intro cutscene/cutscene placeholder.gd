@@ -39,28 +39,23 @@ func cutscene_over():
 #CUTSCENE_3_TALK_15/Guess we gotta find the way out on our own again./Parece que temos que encontrar a saída sozinhos. mais uma vez.
 
 
-#Cutscene 4
-#Katrin: Look at the signs, the text is flipped
-#Melvin: Guys, you might wanna see this
+##CUTSCENE_4_TALK_1/Look at the signs, the text is flipped./Olhem para os sinais, o texto está virado.
+#CUTSCENE_4_TALK_2/Guys, you might wanna see this./Pessoal, é melhor vocês verem isto.
+#CUTSCENE_4_TALK_3/You think we're gonna meet people like this?/Acham que vamos conhecer pessoas assim?
+#CUTSCENE_4_TALK_4/Yuck, this looks nasty!/Yuck, isso é nojento!
+#CUTSCENE_4_TALK_5/You guys afraid of basic anatomy?/Vocês têm medo de anatomia básica ou quê?
+#CUTSCENE_4_TALK_6/Hey, we've finally found our doubles. My group and I saw you a couple times./Hey, finalmente encontramos os nossos duplos. O meu grupo e eu vimos você algumas vezes.
+#CUTSCENE_4_TALK_7/Uh, who are you?/Uh, quem é você?
+#CUTSCENE_4_TALK_8/I'm your sister and you must be Melvin. Guess the ages in each of our groups are different/Eu sou a tua irmã e tu deves ser o Melvin. Acho que as idades em cada um dos nossos grupos são diferentes
+#CUTSCENE_4_TALK_9/You know, my Oscar and Pete are very atheletic. I wonder about you, Mel./Sabias que o meu Oscar e Pete são muito atléticos? Gostava de saber se tu também és, Mel.
 
-#Carrie: You think we're gonna meet people like this?
-#Angela: Yuck, this looks nasty!
 
-#???: You guys afraid of basic anatomy?
-#Alt Angela: Hey, we've finally found our doubles. My group and I saw you a couple times.
-#Melvin: Uh, who are you?
-#Alt Angela: I'm your sister and you must be Melvin. Guess the ages in each of our groups are different
+#CUTSCENE_5_TALK_1/Wait, you guys are leaving already?/Vocês já vão embora?
+#CUTSCENE_5_TALK_2/We're on a journey to return home. Maybe we could meet again but we have things to take care of./Estamos numa viajem de volta á casa. Talvez podemos voltar a ver mas temos assuntos para tratar.
+#CUTSCENE_5_TALK_3/Alright! Have fun in that journey of yours./Tudo bem! Divirtam-se na vossa viagem.
+#CUTSCENE_5_TALK_4/Wonder why this new place looks so dark./Porque é que este sítio é tão escuro?
 
-#Alt Angela: You know, my Oscar and Pete are very atheletic. I wonder about you, Mel.
-#
-#Cutscene 5
-#Alt Oscar: Wait, you guys are leaving already?
-#Melvin: We're on a journey to return home. Maybe we could meet again but we have things to take care of.
-#Alt Pete: Alright! Have fun in that journey of yours.
-#Melvin: Wonder why this new placel looks so dark.
 
-#
-#
 #Cutscene 6
 #Angela: I'm not liking this place
 #Oscar: I think i heard someone
