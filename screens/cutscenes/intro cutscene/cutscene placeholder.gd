@@ -69,18 +69,15 @@ func cutscene_over():
 #CUTSCENE_6_TALK_9/Stella, where have you been?/Stella, onde é que estiveste?
 #CUTSCENE_6_TALK_10/I ended up here after stepping on some weird wooden box. This city is scary but thanks to Booker, I'm safe./Aterrei aqui depois de tropeçar numa caixa de madeira qualquer. Esta cidade é assustadora mas graças ao Booker, estou segura.
 #CUTSCENE_6_TALK_11/You two know each other? That's nice. But know that things are rough in the outside and unfortunately, Stella did see some horrors./Vocês conhecem-se? Isso é bom. Mas lembrem que o mundo lá fora é uma selvajaria e infelizmente, a Stella viu alguns horrores.
-
-#Pete: Hey, who is this gold headed guy?
-#Booker: That's "The Bullet". One of the most disgusting freaks I've yet to hunt down. You don't wanna know more.
-#Carrie: Mister, do you have a family?
-#Booker: I used to have a wonderful wife and daughter, but-
-#Angela: MISTER LOOK! THERE'S A GUY BEHIND YOU!
-
-#Booker: Benjamin McCormen! Never expected you to try and find me again. Talk, it'll be the last time you can ever be use to anyone.
-#Benjamin: Listen, Booker! It's Phineas, he knows you're here and he brought his pack with him!
-#Booker: Uh?
-#Phineas: So this is where you're hiding, you miserable prick. 600 men should be enough to send you straight to Hell.
-
-#Booker: Everybody, listen up! This path leads to an escape route that should keep you safe while I take care of Phineas' men.
-#Booker: But in case there's a few rats in the sewers, Stella should inform you about the traps I've set up.
-#Stella: Don't worry, Booker.
+#CUTSCENE_6_TALK_12/Hey, who is this gold headed guy?/Hey, quem é este homem dourado?
+#CUTSCENE_6_TALK_13/That's "The Bullet". One of the most disgusting freaks I've yet to hunt down. You don't wanna know more./Ele é o "Bala". Um dos monstros mais nojentos que ainda não cacei. Não queres saber mais.
+#CUTSCENE_6_TALK_14/Mister, do you have a family?/Senhor, você tem uma família?
+#CUTSCENE_6_TALK_15/I used to have a wonderful wife and daughter, but-/Eu tinha uma mulher e fila maravilhosas, mas-
+#CUTSCENE_6_TALK_16/MISTER LOOK! THERE'S A GUY BEHIND YOU!/SENHOR, OLHA! ESTÁ AI UM HOMEM ATRÁS DE SI!
+#CUTSCENE_6_TALK_17/Benjamin McCormen! Never expected you to try and find me again. Talk, it'll be the last time you can ever be use to anyone./Benjamim McCormen! Nunca esperei que tu tentasses me encontrar novamente. Fala, será a última vez que poderás ser útil para alguém.
+#CUTSCENE_6_TALK_18/Listen, Booker! It's Phineas, he knows you're here and he brought his pack with him!/Ouve, Booker! É o Phineas, ele sabe que estás aqui e trouxe a sua malta com ele!
+#Uh?
+#CUTSCENE_6_TALK_19/So this is where you're hiding, you miserable prick. 600 men should be enough to send you straight to Hell./Então é aqui que te escondeste, seu idiota miserável. 600 homens devem ser suficientes para mandár-te direto para o Inferno.
+#CUTSCENE_6_TALK_20/Everybody, listen up! This path leads to an escape route that should keep you safe while I take care of Phineas' men./Malta, ouvem! Este caminho leva a uma rota de fuga que deverá manter-vos seguros enquanto eu cuido dos homens de Phineas.
+#CUTSCENE_6_TALK_21/But in case there's a few rats in the sewers, Stella should inform you about the traps I've set up./Mas em caso que haja alguns ratos nos esgotos, Stella deve informar-vos sobre as armadilhas que montei.
+#CUTSCENE_6_TALK_22/Don't worry, Booker. We can handle this situation./Não te preocupes, Booker. Nós podemos lidar com esta situação.
