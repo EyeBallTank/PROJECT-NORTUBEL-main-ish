@@ -354,6 +354,30 @@ tracks/26/keys = {
 "update": 0,
 "values": [ Vector2( -196, 234 ) ]
 }
+tracks/27/type = "value"
+tracks/27/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "CUTSCENE_6_TALK_1" ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Angela Brokston" ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -365,7 +389,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 16.7 ),
+"times": PoolRealArray( 46.5 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -684,6 +708,30 @@ tracks/26/keys = {
 "update": 0,
 "values": [ Vector2( -196, 234 ), Vector2( -196, 234 ), Vector2( 203, 234 ) ]
 }
+tracks/27/type = "value"
+tracks/27/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0, 2, 4.1, 6, 8, 9.9, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36.1, 38, 40, 42, 44, 46 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "CUTSCENE_6_TALK_1", "CUTSCENE_6_TALK_2", "CUTSCENE_6_TALK_3", "AAAGH! uhhh....", "CUTSCENE_6_TALK_4", "CUTSCENE_6_TALK_5", "CUTSCENE_6_TALK_6", "CUTSCENE_6_TALK_7", "CUTSCENE_6_TALK_8", "CUTSCENE_6_TALK_9", "CUTSCENE_6_TALK_10", "CUTSCENE_6_TALK_11", "CUTSCENE_6_TALK_12", "CUTSCENE_6_TALK_13", "CUTSCENE_6_TALK_14", "CUTSCENE_6_TALK_15", "CUTSCENE_6_TALK_16", "CUTSCENE_6_TALK_17", "CUTSCENE_6_TALK_18", "Uhh?", "CUTSCENE_6_TALK_19", "CUTSCENE_6_TALK_20", "CUTSCENE_6_TALK_21", "CUTSCENE_6_TALK_22" ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0, 2, 4.1, 8, 12, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36.1, 38, 40, 42, 46 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Angela Brokston", "Oscar Decarde", "CREEPY_GUY_NAME", "???", "Booker Vincent", "Stella Flenn", "Katrin Flenn", "Stella Flenn", "Booker Vincent", "Pete Flenn", "Booker Vincent", "Carrie Decarde", "Booker Vincent", "Angela Brokston", "Booker Vincent", "Benjamin McCormen", "Booker Vincent", "Phineas Abe", "Booker Vincent", "Stella Flenn" ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -714,7 +762,7 @@ margin_top = 6.0
 margin_right = 199.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 5 )
-text = "someone"
+text = "Angela Brokston"
 
 [node name="CHARCHAT" type="Label" parent="NinePatchRect"]
 margin_left = 13.0
@@ -722,11 +770,7 @@ margin_top = 38.0
 margin_right = 1003.0
 margin_bottom = 131.0
 custom_fonts/font = ExtResource( 5 )
-text = "1
-2
-3
-4
-"
+text = "CUTSCENE_6_TALK_1"
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
 anchor_right = 1.0
