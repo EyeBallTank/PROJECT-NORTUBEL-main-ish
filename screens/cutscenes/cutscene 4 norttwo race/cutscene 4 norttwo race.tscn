@@ -160,6 +160,30 @@ tracks/11/keys = {
 "update": 0,
 "values": [ Vector2( -206, 237 ) ]
 }
+tracks/12/type = "value"
+tracks/12/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Katrin Flenn" ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "CUTSCENE_4_TALK_1" ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -171,7 +195,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 7.7 ),
+"times": PoolRealArray( 20 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -310,6 +334,30 @@ tracks/11/keys = {
 "update": 0,
 "values": [ Vector2( -206, 237 ), Vector2( -206, 237 ), Vector2( 196, 237 ) ]
 }
+tracks/12/type = "value"
+tracks/12/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 2, 4, 6, 8, 10, 12, 14, 16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Katrin Flenn", "Melvin Brokston", "Carrie Decarde", "Angela Brokston", "???", "Melvin Brokston", "Notskorb Alegna", "Melvin Brokston", "Notskorb Alegna" ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 2, 4, 6, 8, 10, 12, 14, 16, 18 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "CUTSCENE_4_TALK_1", "CUTSCENE_4_TALK_2", "CUTSCENE_4_TALK_3", "CUTSCENE_4_TALK_4", "CUTSCENE_4_TALK_5", "Uhh?", "CUTSCENE_4_TALK_6", "CUTSCENE_4_TALK_7", "CUTSCENE_4_TALK_8", "CUTSCENE_4_TALK_9" ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -340,7 +388,7 @@ margin_top = 6.0
 margin_right = 199.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 5 )
-text = "someone"
+text = "Katrin Flenn"
 
 [node name="CHARCHAT" type="Label" parent="NinePatchRect"]
 margin_left = 13.0
@@ -348,11 +396,7 @@ margin_top = 38.0
 margin_right = 1003.0
 margin_bottom = 131.0
 custom_fonts/font = ExtResource( 5 )
-text = "1
-2
-3
-4
-"
+text = "CUTSCENE_4_TALK_1"
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
 visible = false
