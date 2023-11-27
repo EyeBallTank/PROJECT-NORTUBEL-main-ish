@@ -439,7 +439,7 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 7.6, 8.1, 8.5, 8.8 ),
+"times": PoolRealArray( 0, 11.9, 12.4, 12.8, 13.1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1204, 238 ), Vector2( 1204, 238 ), Vector2( 836, 238 ), Vector2( 836, 238 ), Vector2( 836, 869 ) ]
@@ -451,7 +451,7 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 8.3, 8.8 ),
+"times": PoolRealArray( 0, 12.6, 13.1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 764, -136 ), Vector2( 764, -136 ), Vector2( 764, 131 ) ]
@@ -463,7 +463,7 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 9, 9.4 ),
+"times": PoolRealArray( 0, 13.3, 13.7 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -208, 229 ), Vector2( -208, 229 ), Vector2( 206, 229 ) ]
@@ -475,7 +475,7 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 9.6, 10.1 ),
+"times": PoolRealArray( 0, 13.9, 14.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 230, -192 ), Vector2( 230, -192 ), Vector2( 230, 232 ) ]
@@ -715,7 +715,7 @@ tracks/27/loop_wrap = true
 tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = {
-"times": PoolRealArray( 0, 7.6, 10.3, 12.2, 14.2, 16.1, 18.2, 20.2, 22.2, 24.2, 26.2, 28.2, 30.2, 32.2, 34.2, 36.2, 38.2, 40.2, 42.3, 44.2, 46.2, 48.2, 50.2, 52.2 ),
+"times": PoolRealArray( 0, 7.6, 12.8, 14.7, 16.7, 18.6, 20.7, 22.7, 24.7, 26.7, 28.7, 30.7, 32.7, 34.7, 36.7, 38.7, 40.7, 42.7, 44.8, 46.7, 48.7, 50.7, 52.7, 54.7 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "CUTSCENE_6_TALK_1", "CUTSCENE_6_TALK_2", "CUTSCENE_6_TALK_3", "AAAGH! uhhh....", "CUTSCENE_6_TALK_4", "CUTSCENE_6_TALK_5", "CUTSCENE_6_TALK_6", "CUTSCENE_6_TALK_7", "CUTSCENE_6_TALK_8", "CUTSCENE_6_TALK_9", "CUTSCENE_6_TALK_10", "CUTSCENE_6_TALK_11", "CUTSCENE_6_TALK_12", "CUTSCENE_6_TALK_13", "CUTSCENE_6_TALK_14", "CUTSCENE_6_TALK_15", "CUTSCENE_6_TALK_16", "CUTSCENE_6_TALK_17", "CUTSCENE_6_TALK_18", "Uhh?", "CUTSCENE_6_TALK_19", "CUTSCENE_6_TALK_20", "CUTSCENE_6_TALK_21", "CUTSCENE_6_TALK_22" ]
@@ -727,7 +727,7 @@ tracks/28/loop_wrap = true
 tracks/28/imported = false
 tracks/28/enabled = true
 tracks/28/keys = {
-"times": PoolRealArray( 0, 7.6, 10.3, 14.2, 18.2, 22.2, 24.2, 26.2, 28.2, 30.2, 32.2, 34.2, 36.2, 38.2, 40.2, 42.3, 44.2, 46.2, 48.2, 52.2 ),
+"times": PoolRealArray( 0, 7.6, 12.8, 16.7, 20.7, 24.7, 26.7, 28.7, 30.7, 32.7, 34.7, 36.7, 38.7, 40.7, 42.7, 44.8, 46.7, 48.7, 50.7, 54.7 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Angela Brokston", "Oscar Decarde", "CREEPY_GUY_NAME", "???", "Booker Vincent", "Stella Flenn", "Katrin Flenn", "Stella Flenn", "Booker Vincent", "Pete Flenn", "Booker Vincent", "Carrie Decarde", "Booker Vincent", "Angela Brokston", "Booker Vincent", "Benjamin McCormen", "Booker Vincent", "Phineas Abe", "Booker Vincent", "Stella Flenn" ]
