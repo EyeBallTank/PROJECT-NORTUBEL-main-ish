@@ -142,16 +142,16 @@ func phn34s():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella.tscn")
 
 func st3ll4():
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel1.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 7 krimb nortpartthree/Cutscene 7 Krimb Nortpartthree.tscn")
 
 func z4r1n4():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel2.tscn")
 
 func sh1hr0():
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel3.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 8 nortpartthree shihiro/Cutscene 8 Nortpartthree Shihiro.tscn")
 
 func h0lm3s():
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel1.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 9 nortpartthree massag/Cutscene 9 Nortpartthree Massag.tscn")
 
 func mcshry():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel2.tscn")
@@ -163,4 +163,4 @@ func b4rn3y():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel4.tscn")
 
 func k4rl44():
-	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel5.tscn")
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 10 massag karla/Cutscene 10 Massag Karla.tscn")
