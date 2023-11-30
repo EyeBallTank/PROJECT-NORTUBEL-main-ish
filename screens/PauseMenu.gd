@@ -13,7 +13,8 @@ var codes := ["gallery",
 				"osc4r0", "p33tt3", "ang3l4",
 				"l3300n", "oott00", "b0rhrr",
 				"p4m3l4", "sh3lly", "b3rn4d",
-				"b00k3r", "r1c0t0", "phn34s"]
+				"b00k3r", "r1c0t0", "phn34s",
+				"st3ll4", "z4r1n4", "sh1hr0"]
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -150,3 +151,12 @@ func r1c0t0():
 
 func phn34s():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella.tscn")
+
+func st3ll4():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel1.tscn")
+
+func z4r1n4():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel2.tscn")
+
+func sh1hr0():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel3.tscn")
