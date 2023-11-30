@@ -13,7 +13,9 @@ var codes := [ "gallery",
 				"l3300n", "oott00", "b0rhrr",
 				"p4m3l4", "sh3lly", "b3rn4d",
 				"b00k3r", "r1c0t0", "phn34s",
-				"st3ll4", "z4r1n4", "sh1hr0"]
+				"st3ll4", "z4r1n4", "sh1hr0",
+				"h0lm3s", "mcshry", "jol1t4",
+				"b4rn3y", "k4rl44"]
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -147,3 +149,18 @@ func z4r1n4():
 
 func sh1hr0():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartthree/NortPartThreeLevel3.tscn")
+
+func h0lm3s():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel1.tscn")
+
+func mcshry():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel2.tscn")
+
+func jol1t4():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel3.tscn")
+
+func b4rn3y():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel4.tscn")
+
+func k4rl44():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/massagcoav/MassagLevel5.tscn")
