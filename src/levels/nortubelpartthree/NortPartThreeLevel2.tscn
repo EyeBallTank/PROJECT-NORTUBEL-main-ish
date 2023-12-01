@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=2]
@@ -8,14 +8,16 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
 [node name="LevelProp" parent="." instance=ExtResource( 2 )]
-position = Vector2( 746, 46 )
+position = Vector2( 1136, 1720 )
 propname = "nortprop aqueduct"
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 390, 1674 )
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
@@ -23,54 +25,58 @@ format = 1
 tile_data = PoolIntArray( -131078, 56, 0, -65542, 56, 0, -6, 56, 0, 65530, 56, 0, 131066, 56, 0, 196602, 56, 0, 262138, 56, 0, 327674, 56, 0, 393210, 56, 0, 458746, 56, 0, 458747, 56, 0, 458748, 56, 0, 458749, 56, 0, 458750, 56, 0, 458751, 56, 0, 393216, 56, 0, 393217, 56, 0, 393218, 56, 0, 393219, 56, 0, 393220, 56, 0, 393221, 56, 0, 393222, 56, 0, 393223, 56, 0, 393224, 56, 0, 393225, 56, 0, 393226, 56, 0, 393227, 56, 0, 393228, 56, 0, 393229, 56, 0, 393230, 56, 0, 393231, 56, 0, 393232, 56, 0, 393233, 56, 0, 393234, 56, 0, 393235, 56, 0, 393236, 56, 0, 393237, 56, 0, 393238, 56, 0, 393239, 56, 0, 393240, 56, 0, 393241, 56, 0, 393242, 56, 0, 393243, 56, 0, 393244, 56, 0, 393245, 56, 0, 393246, 56, 0, 393247, 56, 0, 393248, 56, 0, 393249, 56, 0, 393250, 56, 0, 393251, 56, 0, 393252, 56, 0, 393253, 56, 0, 393254, 56, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -130, 88 )
+position = Vector2( 260, 1762 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
-position = Vector2( -130, 88 )
+position = Vector2( 260, 1762 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 78, 78 )
+position = Vector2( 468, 1752 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 78, 78 )
+position = Vector2( 468, 1752 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="LevelProp2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1263, -5 )
+position = Vector2( 1653, 1669 )
 propname = "nortprop big carob pod"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 985, -133 )
+position = Vector2( 1375, 1541 )
 propname = "nortprop curtin carpet"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1105, 99 )
+position = Vector2( 1495, 1773 )
 propname = "nortprop door 2"
 
 [node name="LevelProp5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1174, -299 )
+position = Vector2( 1564, 1375 )
 propname = "nortprop duck statue"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1540, -147 )
+position = Vector2( 1930, 1527 )
 propname = "nortprop gold decoration 1"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1769, 93 )
+position = Vector2( 2159, 1767 )
 propname = "nortprop green metal door"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 381, -726 )
+position = Vector2( 771, 948 )
 propname = "nortprop house 1"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1398, -785 )
+position = Vector2( 1788, 889 )
 propname = "nortprop house 2"
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2134, 386 )
+position = Vector2( 2524, 2060 )
 new_scene = "res://screens/cutscenes/cutscene 8 nortpartthree shihiro/Cutscene 8 Nortpartthree Shihiro.tscn"
 customtext = "z4r1n4"
+
+[node name="ArtBook" parent="." instance=ExtResource( 9 )]
+position = Vector2( 809, 1991 )
+boardname = "nort art zarina reference"
