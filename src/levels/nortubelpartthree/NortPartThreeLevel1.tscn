@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/npc_actors/nort npc/StellaNPC.tscn" type="PackedScene" id=10]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -44,3 +45,10 @@ customtext = "st3ll4"
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
 position = Vector2( 385, 1427 )
 boardname = "nort art pamela reference"
+
+[node name="StellaNPC" parent="." instance=ExtResource( 10 )]
+position = Vector2( 174, 1236 )
+customtext = "STELLA_NPC_TALK"
+customtext2 = "STELLA_NPC_HONK"
+customtext3 = "STELLA_NPC_HUG"
+customtext4 = "STELLA_NPC_HURT"

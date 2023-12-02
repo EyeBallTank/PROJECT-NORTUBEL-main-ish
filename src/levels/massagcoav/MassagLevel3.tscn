@@ -15,23 +15,24 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -65541, 41, 0, -5, 41, 0, 65531, 41, 0, 131067, 41, 0, 196603, 41, 0, 262139, 41, 0, 327675, 41, 0, 327676, 41, 0, 327677, 41, 0, 327678, 41, 0, 327679, 41, 0, 262144, 41, 0, 262145, 41, 0, 262146, 41, 0, 262147, 41, 0, 262148, 41, 0, 262149, 41, 0, 262150, 41, 0, 262151, 41, 0, 262152, 41, 0, 262153, 41, 0, 262154, 41, 0, 262155, 41, 0, 262156, 41, 0, 262157, 41, 0, 262158, 41, 0, 262159, 41, 0, 262160, 41, 0, 262161, 41, 0, 262162, 41, 0, 262163, 41, 0, 262164, 41, 0 )
+tile_data = PoolIntArray( 720887, 41, 0, 786423, 41, 0, 851959, 41, 0, 917495, 41, 0, 983031, 41, 0, 1048567, 41, 0, 1114103, 41, 0, 1179639, 41, 0, 1245175, 41, 0, 1310711, 41, 0, 1376247, 41, 0, 1441783, 41, 0, 1507319, 41, 0, 1507320, 41, 0, 1507321, 41, 0, 1507322, 41, 0, 1507323, 41, 0, 1507324, 41, 0, 1507325, 41, 0, 1507326, 41, 0, 1507327, 41, 0, 1441792, 41, 0, 1441793, 41, 0, 1441794, 41, 0, 1441795, 41, 0, 1441796, 41, 0, 1441797, 41, 0, 1441798, 41, 0, 1441799, 41, 0, 1441800, 41, 0, 1441801, 41, 0, 1441802, 41, 0, 1441803, 41, 0, 1441804, 41, 0, 1441805, 41, 0, 1441806, 41, 0, 1441807, 41, 0, 1441808, 41, 0, 1441809, 41, 0, 1441810, 41, 0, 1441811, 41, 0, 1441812, 41, 0, 1441813, 41, 0, 1441814, 41, 0, 1441815, 41, 0, 1441816, 41, 0, 1441817, 41, 0, 1441818, 41, 0, 1441819, 41, 0, 1441820, 41, 0, 1441821, 41, 0, 1441822, 41, 0 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 126, -90 )
+position = Vector2( 145, 1069 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -114, -78 )
+position = Vector2( -95, 1081 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -114, -74 )
+position = Vector2( -95, 1085 )
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
+position = Vector2( 19, 1159 )
 companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1172, 258 )
+position = Vector2( 1191, 1417 )
 new_scene = "res://src/levels/massagcoav/MassagLevel4.tscn"
 customtext = "jol1t4"

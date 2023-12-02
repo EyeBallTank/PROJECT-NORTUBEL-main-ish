@@ -15,23 +15,24 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -65541, 41, 0, -5, 41, 0, 65531, 41, 0, 131067, 41, 0, 196603, 41, 0, 262139, 41, 0, 327675, 41, 0, 327676, 41, 0, 327677, 41, 0, 327678, 41, 0, 327679, 41, 0, 262144, 41, 0, 262145, 41, 0, 262146, 41, 0, 262147, 41, 0, 262148, 41, 0, 262149, 41, 0, 262150, 41, 0, 262151, 41, 0, 262152, 41, 0, 262153, 41, 0, 262154, 41, 0, 262155, 41, 0, 262156, 41, 0, 262157, 41, 0, 262158, 41, 0, 262159, 41, 0, 262160, 41, 0, 262161, 41, 0, 262162, 41, 0 )
+tile_data = PoolIntArray( 917496, 41, 0, 983032, 41, 0, 1048568, 41, 0, 1114104, 41, 0, 1179640, 41, 0, 1245176, 41, 0, 1310712, 41, 0, 1376248, 41, 0, 1441784, 41, 0, 1441785, 41, 0, 1441786, 41, 0, 1441787, 41, 0, 1441788, 41, 0, 1441789, 41, 0, 1441790, 41, 0, 1441791, 41, 0, 1376256, 41, 0, 1376257, 41, 0, 1376258, 41, 0, 1376259, 41, 0, 1376260, 41, 0, 1376261, 41, 0, 1376262, 41, 0, 1376263, 41, 0, 1376264, 41, 0, 1376265, 41, 0, 1376266, 41, 0, 1376267, 41, 0, 1376268, 41, 0, 1376269, 41, 0, 1376270, 41, 0, 1376271, 41, 0, 1376272, 41, 0, 1376273, 41, 0, 1376274, 41, 0, 1376275, 41, 0, 1376276, 41, 0, 1376277, 41, 0, 1376278, 41, 0, 1376279, 41, 0, 1376280, 41, 0, 1376281, 41, 0 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 126, -90 )
+position = Vector2( 350, 1015 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -114, -78 )
+position = Vector2( 110, 1027 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -114, -74 )
+position = Vector2( 110, 1031 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
+position = Vector2( 224, 1105 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1071, 263 )
+position = Vector2( 1295, 1368 )
 new_scene = "res://screens/cutscenes/cutscene 10 massag karla/Cutscene 10 Massag Karla.tscn"
 customtext = "b4rn3y"
