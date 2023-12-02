@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -16,26 +17,30 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131078, 56, 0, -65542, 56, 0, -6, 56, 0, 65530, 56, 0, 131066, 56, 0, 196602, 56, 0, 262138, 56, 0, 327674, 56, 0, 393210, 56, 0, 458746, 56, 0, 458747, 56, 0, 458748, 56, 0, 458749, 56, 0, 458750, 56, 0, 458751, 56, 0, 393216, 56, 0, 393217, 56, 0, 393218, 56, 0, 393219, 56, 0, 393220, 56, 0, 393221, 56, 0, 393222, 56, 0, 393223, 56, 0, 393224, 56, 0, 393225, 56, 0, 393226, 56, 0, 393227, 56, 0, 393228, 56, 0, 393229, 56, 0, 393230, 56, 0, 393231, 56, 0, 393232, 56, 0, 393233, 56, 0, 393234, 56, 0, 393235, 56, 0, 393236, 56, 0 )
+tile_data = PoolIntArray( 917498, 56, 0, 983034, 56, 0, 1048570, 56, 0, 1114106, 56, 0, 1179642, 56, 0, 1245178, 56, 0, 1310714, 56, 0, 1376250, 56, 0, 1441786, 56, 0, 1507322, 56, 0, 1507323, 56, 0, 1507324, 56, 0, 1507325, 56, 0, 1507326, 56, 0, 1507327, 56, 0, 1441792, 56, 0, 1441793, 56, 0, 1441794, 56, 0, 1441795, 56, 0, 1441796, 56, 0, 1441797, 56, 0, 1441798, 56, 0, 1441799, 56, 0, 1441800, 56, 0, 1441801, 56, 0, 1441802, 56, 0, 1441803, 56, 0, 1441804, 56, 0, 1441805, 56, 0, 1441806, 56, 0, 1441807, 56, 0, 1441808, 56, 0, 1441809, 56, 0, 1441810, 56, 0, 1441811, 56, 0, 1441812, 56, 0, 1441813, 56, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -130, 88 )
+position = Vector2( -73, 1114 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
-position = Vector2( -130, 88 )
+position = Vector2( -73, 1114 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 78, 78 )
+position = Vector2( 135, 1104 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 78, 78 )
+position = Vector2( 135, 1104 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 2 )]
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1147, 386 )
+position = Vector2( 1204, 1412 )
 new_scene = "res://src/levels/nortubelpartthree/NortPartThreeLevel2.tscn"
 customtext = "st3ll4"
+
+[node name="ArtBook" parent="." instance=ExtResource( 9 )]
+position = Vector2( 385, 1427 )
+boardname = "nort art pamela reference"

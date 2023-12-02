@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nort art shihiro reference.png-2ebac3670c7487354ee2b8203d388b46.stex"
+path="res://.import/nort art pamela reference 3.png-1abe89239e5f45a7e20829469a6cbf45.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/nortubel/nort art shihiro reference.png"
-dest_files=[ "res://.import/nort art shihiro reference.png-2ebac3670c7487354ee2b8203d388b46.stex" ]
+source_file="res://assets/sprites/art gallery/nortubel/nort art pamela reference 3.png"
+dest_files=[ "res://.import/nort art pamela reference 3.png-1abe89239e5f45a7e20829469a6cbf45.stex" ]
 
 [params]
 
