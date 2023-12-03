@@ -69,7 +69,7 @@ func cutscene_over():
 #Oscar: Look at that animal, he looks cute.
 #Carrie: Oscar be carefull.
 #Oscar: But he's not hurting me, he just wants to play.
-#Katrin: But what is he? He looks like he has a human nose.
+#Katrin: But what is he? He looks like a lion and a dog mixed together.
 #???: That's a guardian lion. He's friendly but he's also a great fighter.
 #Zarina: I had a feeling I'd find you again, Shihiro.
 #Shihiro: So far, there's no exit to this strange world but I managed to built a place of my own. Took a while but I believe what I came up with can handle at least ten people.
@@ -79,5 +79,8 @@ func cutscene_over():
 #Shihiro: Yes, I've heard of this. A few missing pieces for the holes in each knob. But this box itself could've been attached to something bigger.
 #Shihiro: We're still not sure what it is, though.
 #Pete: Sir, miss Zarina said she was a sorceress. Are you a sorcerer too?
-#Shihiro: I've got some powers too, though they more likely relate to combat.
+#Shihiro: I've got powers too, specially related to combat. And I also teach martial arts and help those practice their combat skills, even if they don't have powers themselves.
+#Carrie: Well, we managed to get around by what we got. Melvin brought a knife with him.
+#Panel showing Melvin's knife
+#Shihiro: 
 
