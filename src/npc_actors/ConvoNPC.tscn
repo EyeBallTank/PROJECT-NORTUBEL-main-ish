@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Oscar.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Angela Melvin 2.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/Convo Krimb Prisoners.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Stella Zarina.png" type="Texture" id=21]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -87,6 +88,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 21 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="SpriteFrames" id=2]
@@ -174,6 +179,11 @@ animations = [ {
 "frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "oscar pete",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 28 ) ],
+"loop": false,
+"name": "stella zarina",
 "speed": 0.0
 } ]
 
@@ -367,7 +377,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "carrie katrin"
+animation = "stella zarina"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )

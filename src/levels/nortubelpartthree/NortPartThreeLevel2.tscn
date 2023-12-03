@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=10]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -80,3 +81,13 @@ customtext = "z4r1n4"
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
 position = Vector2( 809, 1991 )
 boardname = "nort art zarina reference"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1130, 1856 )
+customtext1 = "CONVO_TALK_STELLA_ZARINA_1"
+customtext2 = "CONVO_TALK_STELLA_ZARINA_2"
+customtext3 = "CONVO_TALK_STELLA_ZARINA_3"
+customtext4 = "CONVO_TALK_STELLA_ZARINA_4"
+customname1 = "Stella Flenn"
+customname2 = "Zarina Liefdei"
+spritename = "stella zarina"
