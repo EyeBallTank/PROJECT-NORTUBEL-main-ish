@@ -179,8 +179,10 @@ BOOK_HINT_WATERPLAY,The Player can swim with the 4 arrow keys,O(A) Jogador(a) po
 BOOK_HINT_WATERCOMP,The Companion carries following/avoiding/still states under water,O/(A) Companheiro(a) contém estados de seguir/evitar/parar debaixo de água
 BOOK_HINT_LADDERPLAY,The Player can climb ladders with the 4 arrow keys,O(A) Jogador(a) pode subir escadas com os 4 botões de setas
 BOOK_HINT_LADDERCOMP,"Press Z to attach Companion to ladder and then use commands to direct them
-Z also makes the Companion quit the ladders.","Prime Z para meter o/(a) Companheiro(a) nas escadas e depois use ordens para direcioná-lo(a)
-Z tambem faz o(a) Companheiro(a) sair das escadas."
+Z also makes the Companion quit the ladders.
+The Companion starts off idle when entering/exiting ladders.","Prime Z para meter o/(a) Companheiro(a) nas escadas e depois use ordens para direcioná-lo(a)
+Z tambem faz o(a) Companheiro(a) sair das escadas.
+O/(a) Companheiro(a) começa parado(a) quando entra nas/sai das escadas."
 BOOK_HINT_LADDERCOMP2,The Player can make the Companion fall from the ladders if they're close enough while climbing,O(A) Jogador(a) pode empurrar o/(a) Companheiro(a) de fora das escadas se estiverem muito perto
 BOOK_HINT_FISHROD,Player can swing from the fishing rod,O(A) Jogador(a) consegue pendular da cana de pesca
 BOOK_HINT_FALLPLAT,Weak platforms fall with the Player's weight,Plataformas fracas caem com o peso do(a) Jogador(a)
