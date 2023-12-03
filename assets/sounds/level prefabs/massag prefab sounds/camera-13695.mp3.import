@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/camera-13695.mp3-70f532a25512b4bd830f5162730650ed.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/massag prefab sounds/camera-13695.mp3"
+dest_files=[ "res://.import/camera-13695.mp3-70f532a25512b4bd830f5162730650ed.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
