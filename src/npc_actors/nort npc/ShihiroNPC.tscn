@@ -2,12 +2,12 @@
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/ZARINA NPC SPRITES.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/SHIHIRO NPC SPRITES.png" type="Texture" id=3]
 [ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 256, 448 )
+region = Rect2( 0, 0, 256, 442 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -23,14 +23,14 @@ extents = Vector2( 40.5, 213.417 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 111, 213.417 )
 
-[node name="ZarinaNPC" type="KinematicBody2D"]
+[node name="ShihiroNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 40.2778, 6.94444 )
+position = Vector2( 20.8333, 9.72222 )
 frames = SubResource( 2 )
 playing = true
 
@@ -83,7 +83,7 @@ margin_top = 5.0
 margin_right = 107.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
-text = "Zarina Liefdei"
+text = "Shihiro Xang"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
