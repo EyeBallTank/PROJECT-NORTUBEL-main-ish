@@ -1,15 +1,118 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Massag PhotoBooth.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth back.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth front.png" type="Texture" id=3]
 [ext_resource path="res://assets/sounds/level prefabs/massag prefab sounds/camera-13695.mp3" type="AudioStream" id=4]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth melvin angela.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth katrin pete.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth carrie oscar.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 68.75, 113.25 )
 
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Decarde:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 518, -139 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/Brokston:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 854, -141 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Flenn:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 176, -138 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
 [sub_resource type="Animation" id=3]
 resource_name = "phototaken"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Decarde:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 518, -139 ), Vector2( 518, 169 ), Vector2( 518, 169 ), Vector2( 518, 169 ), Vector2( 518, 169 ), Vector2( 518, 779 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/Brokston:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 854, -141 ), Vector2( 854, -141 ), Vector2( 854, -141 ), Vector2( 854, 182 ), Vector2( 854, 182 ), Vector2( 854, 792 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Flenn:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 176, -138 ), Vector2( 176, -138 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 784 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5, 0.9, 1, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 148.5, 9 )
@@ -33,7 +136,20 @@ shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Decarde" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 518, -139 )
+texture = ExtResource( 7 )
+
+[node name="Flenn" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 176, -138 )
+texture = ExtResource( 6 )
+
+[node name="Brokston" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 854, -141 )
+texture = ExtResource( 5 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 4 )
 anims/phototaken = SubResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -46,3 +162,5 @@ shape = SubResource( 2 )
 stream = ExtResource( 4 )
 volume_db = 4.333
 bus = "Sound"
+
+[connection signal="body_entered" from="Takeaphoto" to="." method="_on_Takeaphoto_body_entered"]
