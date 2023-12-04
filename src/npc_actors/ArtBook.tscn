@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art zarina reference.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art shihiro reference 2.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art pamela reference 3.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art mcsherry reference.png" type="Texture" id=17]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -50,6 +51,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 17 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=19]
@@ -107,6 +112,11 @@ animations = [ {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
 "name": "krimbart ricotto reference",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": false,
+"name": "massag art mcsherry reference",
 "speed": 0.0
 }, {
 "frames": [ ExtResource( 16 ) ],
@@ -167,7 +177,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art pamela reference"
+animation = "massag art mcsherry reference"
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 
