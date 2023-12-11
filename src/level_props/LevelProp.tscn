@@ -1,4 +1,4 @@
-[gd_scene load_steps=383 format=2]
+[gd_scene load_steps=387 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -191,6 +191,8 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop graffiti art.png" type="Texture" id=189]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop canteen tablechair.png" type="Texture" id=190]
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop canteen serving counter.png" type="Texture" id=191]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop statue 1.png" type="Texture" id=192]
+[ext_resource path="res://assets/sprites/level_props/nortubel/nortprop statue 2.png" type="Texture" id=193]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -859,6 +861,14 @@ region = Rect2( 0, 0, 472, 519 )
 [sub_resource type="AtlasTexture" id=122]
 atlas = ExtResource( 111 )
 region = Rect2( 0, 0, 486, 444 )
+
+[sub_resource type="AtlasTexture" id=204]
+atlas = ExtResource( 192 )
+region = Rect2( 0, 0, 196, 527 )
+
+[sub_resource type="AtlasTexture" id=205]
+atlas = ExtResource( 193 )
+region = Rect2( 0, 0, 191, 517 )
 
 [sub_resource type="AtlasTexture" id=101]
 atlas = ExtResource( 90 )
@@ -1789,6 +1799,16 @@ animations = [ {
 "name": "nortprop stall 3",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 204 ) ],
+"loop": false,
+"name": "nortprop statue 1",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 205 ) ],
+"loop": false,
+"name": "nortprop statue 2",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 101 ) ],
 "loop": false,
 "name": "nortprop stool 1",
@@ -1911,5 +1931,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "nortprop statue 2"
 playing = true
