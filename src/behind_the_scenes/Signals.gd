@@ -35,6 +35,7 @@ signal player_died
 
 signal scene_has_changed
 
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case
