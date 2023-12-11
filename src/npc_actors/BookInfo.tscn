@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/BookHint.PNG" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/BookInfo.gd" type="Script" id=2]
@@ -40,6 +40,8 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 13.png" type="Texture" id=38]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 35.png" type="Texture" id=39]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 36.png" type="Texture" id=41]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 37.png" type="Texture" id=42]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 126.5, 69.5 )
@@ -166,6 +168,14 @@ region = Rect2( 0, 0, 590, 374 )
 
 [sub_resource type="AtlasTexture" id=35]
 atlas = ExtResource( 39 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 0, 590, 374 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 42 )
 region = Rect2( 0, 0, 590, 374 )
 
 [sub_resource type="AtlasTexture" id=36]
@@ -339,6 +349,16 @@ animations = [ {
 "name": "board 35",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 42 ) ],
+"loop": false,
+"name": "board 36",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 43 ) ],
+"loop": false,
+"name": "board 37",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 36 ) ],
 "loop": false,
 "name": "board 4",
@@ -417,7 +437,7 @@ text = "BOOKHINT_1"
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 523, 235 )
 frames = SubResource( 7 )
-animation = "board 35"
+animation = "board 37"
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 

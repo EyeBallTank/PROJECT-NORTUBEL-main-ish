@@ -766,3 +766,9 @@ SHIHIRO_NPC_HUG,"Is something alright?
 If you're feeling a bit down, you can always talk about it.","Está tudo bem?
 Se estares a sentir um pouco deprimido, podes sempre falar sobre isso."
 SHIHIRO_NPC_HONK,You too could have this physique if you exercise a bit more.,Poderias também ter esta forma se fizeres mais exercício.
+BOOK_HINT_LADDERCOMP3,"Try having the Companion on the ladder side-by-side with you, if you feel like it!
+Then use commands and move vertically.","Tenta ter o/a Companheiro(a) na escada lado-a-lado contigo, se quiseres!
+Depois, usa comandos e move verticalmente."
+BOOK_HINT_LADDERCOMP4,"When they reach a ladder's top/bottom and leave, they retain
+equivalent states of following/running.","Quando eles alcançam o topo/fundo das escada e saem, Companheiros
+mantêm estados equivalentes de seguir/correr."
