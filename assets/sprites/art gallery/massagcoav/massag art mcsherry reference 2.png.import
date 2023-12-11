@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art mcsherry reference.png-5ff1b385578eaedda7fce61638b3344c.stex"
+path="res://.import/massag art mcsherry reference 2.png-06645a64ae7fa69002c6edb9b54119c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art mcsherry reference.png"
-dest_files=[ "res://.import/massag art mcsherry reference.png-5ff1b385578eaedda7fce61638b3344c.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art mcsherry reference 2.png"
+dest_files=[ "res://.import/massag art mcsherry reference 2.png-06645a64ae7fa69002c6edb9b54119c0.stex" ]
 
 [params]
 

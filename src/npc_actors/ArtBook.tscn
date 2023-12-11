@@ -16,7 +16,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art zarina reference.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art shihiro reference 2.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art pamela reference 3.png" type="Texture" id=16]
-[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art mcsherry reference.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art mcsherry reference 2.png" type="Texture" id=17]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="RectangleShape2D" id=1]
