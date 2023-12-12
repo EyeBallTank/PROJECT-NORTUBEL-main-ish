@@ -19,6 +19,8 @@ The actual story revolves around a group of 6 friends that get lost in some stra
 
 In general, it's based on a personal project https://www.diffchecker.com/t7GS8iEi/ where i thought of a bunch of characters and ideas, so this game will be centered around elements from the project. Whether or not this becomes a series based around that project and how far it'll grow depends.
 
+Note: In the cutscene placeholder script, you can see planned lines that could show up in cutscenes or at least show hints of the story.
+I also have this file with plans for the game in general: https://rentry.co/nortubel-story-plans
 # A few current goals (Or rather wishes, to be honest; Will definitely need help) are/were:
 Done (Even if it could be better):
 * MAIN/PAUSE MENU'S: They exist and have basic features (Start/resume the game, quit game, fullscreen/window options and sound/music settings); Both still need work because of either missing features or needing tweaks and fixes; Aesthetic/art style is also worth considering.
@@ -61,7 +63,6 @@ Done (Even if it could be better):
 * LIVE SYSTEM: Both characters share the lives meaning if one dies, so does the other; Besides the game-over screen, i also made it so collecting a certain amount of coins adds a new life.
 * CUTSCENES: So far it's a "studio intro" basic thing and a placeholder with dialogue but no images but technically got a template with lots of potential.
 * PASSWORD SYSTEM: In case i don't get a proper Save/Load system, this will do.
-
 
 
 
