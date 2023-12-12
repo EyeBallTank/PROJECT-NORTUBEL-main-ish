@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art holmes reference.png-4e19a977aaaa7fe8a1999d99a1453296.stex"
+path="res://.import/massag art holmes reference 2.png-d57563c1aa769355169bf0e689d8deea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art holmes reference.png"
-dest_files=[ "res://.import/massag art holmes reference.png-4e19a977aaaa7fe8a1999d99a1453296.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art holmes reference 2.png"
+dest_files=[ "res://.import/massag art holmes reference 2.png-d57563c1aa769355169bf0e689d8deea.stex" ]
 
 [params]
 
