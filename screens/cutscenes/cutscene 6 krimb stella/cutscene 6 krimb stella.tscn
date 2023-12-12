@@ -570,10 +570,22 @@ tracks/44/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/45/type = "value"
+tracks/45/path = NodePath("StellaTutorial:rect_position")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 123, -344 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 129.0
+length = 139.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -581,7 +593,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 127.6 ),
+"times": PoolRealArray( 136.9 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -1116,6 +1128,18 @@ tracks/44/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/45/type = "value"
+tracks/45/path = NodePath("StellaTutorial:rect_position")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/keys = {
+"times": PoolRealArray( 0, 127.2, 128.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 123, -344 ), Vector2( 123, -344 ), Vector2( 123, 89 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -1277,6 +1301,26 @@ texture = ExtResource( 18 )
 position = Vector2( -196, 234 )
 scale = Vector2( 0.672276, 0.672276 )
 texture = ExtResource( 4 )
+
+[node name="StellaTutorial" type="NinePatchRect" parent="."]
+margin_left = 123.0
+margin_top = -344.0
+margin_right = 901.0
+margin_bottom = -21.0
+texture = ExtResource( 3 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Label" type="Label" parent="StellaTutorial"]
+margin_left = 12.0
+margin_top = 14.0
+margin_right = 218.0
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 5 )
+text = "NORT_LORE_STELLA_TUTORIAL_T"
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
