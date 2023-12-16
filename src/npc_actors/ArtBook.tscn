@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art holmes reference 2.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art barney reference.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art fernaanda reference.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art feelix reference.png" type="Texture" id=21]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -58,6 +59,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 19 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 21 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=23]
@@ -134,6 +139,11 @@ animations = [ {
 "name": "massag art barney reference ",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 24 ) ],
+"loop": false,
+"name": "massag art feelix reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 23 ) ],
 "loop": false,
 "name": "massag art fernaanda reference",
@@ -207,7 +217,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "massag art fernaanda reference"
+animation = "massag art feelix reference"
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 
