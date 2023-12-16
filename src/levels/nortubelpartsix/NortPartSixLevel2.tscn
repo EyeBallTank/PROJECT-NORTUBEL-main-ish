@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 
 [node name="NortPartSixLevel1" type="Node2D"]
 
@@ -15,56 +16,62 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -65541, 50, 0, -5, 50, 0, 65531, 50, 0, 131067, 50, 0, 196603, 50, 0, 262139, 50, 0, 327675, 50, 0, 393211, 50, 0, 458747, 50, 0, 458748, 50, 0, 458749, 50, 0, 458750, 50, 0, 458751, 50, 0, 393216, 50, 0, 393217, 50, 0, 393218, 50, 0, 393219, 50, 0, 393220, 50, 0, 393221, 50, 0, 393222, 50, 0, 393223, 50, 0, 393224, 50, 0, 393225, 50, 0 )
+tile_data = PoolIntArray( 786427, 50, 0, 851963, 50, 0, 917499, 50, 0, 983035, 50, 0, 1048571, 50, 0, 1114107, 50, 0, 1179643, 50, 0, 1245179, 50, 0, 1310715, 50, 0, 1376251, 50, 0, 1441787, 50, 0, 1507323, 50, 0, 1507324, 50, 0, 1507325, 50, 0, 1507326, 50, 0, 1507327, 50, 0, 1441792, 50, 0, 1441793, 50, 0, 1441794, 50, 0, 1441795, 50, 0, 1441796, 50, 0, 1441797, 50, 0, 1441798, 50, 0, 1441799, 50, 0, 1441800, 50, 0, 1441801, 50, 0, 1441802, 50, 0, 1441803, 50, 0, 1441804, 50, 0, 1441805, 50, 0, 1441806, 50, 0, 1441807, 50, 0, 1441808, 50, 0, 1441809, 50, 0, 1441810, 50, 0, 1441811, 50, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( -114, 1240 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
+position = Vector2( -114, 1240 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 2 )]
-position = Vector2( 224, 0 )
+position = Vector2( 110, 1240 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( 224, 0 )
+position = Vector2( 110, 1240 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 3 )]
-position = Vector2( 15, 297 )
+position = Vector2( 396, 1346 )
 propname = "nortprop beanbag chair"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 3 )]
-position = Vector2( -28, 156 )
+position = Vector2( 353, 1205 )
 propname = "nortprop big cream pastel"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 539, -56 )
+position = Vector2( 920, 993 )
 propname = "nortprop big fountain"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 793, -157 )
+position = Vector2( 1174, 892 )
 propname = "nortprop blue cabinet 1"
 
 [node name="LevelProp5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1043, -147 )
+position = Vector2( 1424, 902 )
 propname = "nortprop blue cabinet 2"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 474, -205 )
+position = Vector2( 855, 844 )
 propname = "nortprop chest with 2 openings"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 937, 100 )
+position = Vector2( 1318, 1149 )
 propname = "nortprop door 5"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1292, 115 )
+position = Vector2( 1673, 1164 )
 propname = "nortprop green cabinet"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1368, -134 )
+position = Vector2( 1749, 915 )
 propname = "nortprop green fence metal"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1018, 241 )
+position = Vector2( 1399, 1290 )
 propname = "nortprop lamp"
+
+[node name="ArtBook" parent="." instance=ExtResource( 8 )]
+position = Vector2( 699, 1343 )
+boardname = "nort art 3 girls summer"
