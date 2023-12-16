@@ -102,3 +102,7 @@ propname = "nortprop white triangle holes"
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
 position = Vector2( 300, 1565 )
 boardname = "nort art 4 girls summer"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 760, 1565 )
+boardname = "nort art weird alien"
