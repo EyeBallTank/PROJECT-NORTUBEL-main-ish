@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://screens/PauseMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/pause visibility toggle.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=3]
 outline_size = 3
@@ -132,6 +133,10 @@ margin_right = 174.0
 margin_bottom = 21.5
 custom_fonts/font = ExtResource( 4 )
 text = "QUIT_B"
+
+[node name="PauseVisibilityToggle" type="Sprite" parent="MenuMain"]
+position = Vector2( 150, 176 )
+texture = ExtResource( 11 )
 
 [node name="OptionsMenu" type="Control" parent="."]
 pause_mode = 2
