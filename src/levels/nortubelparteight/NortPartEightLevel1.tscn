@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
 
 [node name="NortPartEightLevel1" type="Node2D"]
 
@@ -16,42 +17,48 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -65541, 55, 0, -5, 55, 0, 65531, 55, 0, 131067, 55, 0, 196603, 55, 0, 262139, 55, 0, 327675, 55, 0, 393211, 55, 0, 458747, 55, 0, 458748, 55, 0, 458749, 55, 0, 458750, 55, 0, 458751, 55, 0, 393216, 55, 0, 393217, 55, 0, 393218, 55, 0, 393219, 55, 0, 393220, 55, 0, 393221, 55, 0 )
+tile_data = PoolIntArray( 720886, 55, 0, 786422, 55, 0, 851958, 55, 0, 917494, 55, 0, 983030, 55, 0, 1048566, 55, 0, 1114102, 55, 0, 1179638, 55, 0, 1245174, 55, 0, 1245175, 55, 0, 1245176, 55, 0, 1245177, 55, 0, 1245178, 55, 0, 1245179, 55, 0, 1245180, 55, 0, 1245181, 55, 0, 1245182, 55, 0, 1245183, 55, 0, 1179648, 55, 0, 1179649, 55, 0, 1179650, 55, 0, 1179651, 55, 0, 1179652, 55, 0, 1179653, 55, 0, 1179654, 55, 0, 1179655, 55, 0, 1179656, 55, 0, 1179657, 55, 0, 1179658, 55, 0, 1179659, 55, 0, 1179660, 55, 0, 1179661, 55, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( -94, 72 )
+position = Vector2( -484, 1079 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( -94, 72 )
+position = Vector2( -484, 1079 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 6 )]
+position = Vector2( -390, 1007 )
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
+position = Vector2( -390, 1007 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 2 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 3 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 132, 182 )
+position = Vector2( -123, 955 )
 propname = "nortprop bathroom public"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 68, 198 )
+position = Vector2( -187, 971 )
 propname = "nortprop black chest"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 342, -61 )
+position = Vector2( 87, 712 )
 propname = "nortprop blue symbol green leaves"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 184, -50 )
+position = Vector2( -71, 723 )
 propname = "nortprop chair 1"
 
 [node name="LevelProp5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 594, -35 )
+position = Vector2( 339, 738 )
 propname = "nortprop flag nortubel"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 637, -280 )
+position = Vector2( 382, 493 )
 propname = "nortprop globe"
+
+[node name="ArtBook" parent="." instance=ExtResource( 9 )]
+position = Vector2( 219, 1103 )
+boardname = "nort art weird alien 2 reference"
