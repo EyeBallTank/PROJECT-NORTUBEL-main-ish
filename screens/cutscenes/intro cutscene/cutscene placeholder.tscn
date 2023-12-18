@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 17.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 18.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/cutscenes/intro cutscene/intro cutscene panel 16.png" type="Texture" id=22]
+[ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=23]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -1145,3 +1146,5 @@ margin_right = 1062.0
 margin_bottom = 595.0
 custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
+
+[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 23 )]
