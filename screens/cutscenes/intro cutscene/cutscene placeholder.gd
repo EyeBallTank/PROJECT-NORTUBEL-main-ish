@@ -3,6 +3,7 @@ extends Node
 onready var animationplayer = $AnimationPlayer
 export var nextscene = "res://src/levels/LevelTutorial1.tscn"
 
+
 #maybe i should work on this later because i need to consider:
 #* HOW MODULAR WILL THESE TYPE OF SCENE BE IN OTHER INSTANCES/USES
 #* NUMBER OF SLIDE IMAGES AND DIALOGUE TEXTS
@@ -13,10 +14,19 @@ export var nextscene = "res://src/levels/LevelTutorial1.tscn"
 
 func _ready():
 	animationplayer.play("intro cutscene")
+	animationplayer.set_speed_scale(1.0)
+
 
 func _process(_delta):
 	if Input.is_action_just_pressed("kickball"):
 		SceneManager.change_scene("level_transition_effect", nextscene)
+	if Input.get_action_strength("interactcomp"):
+		animationplayer.set_speed_scale(2.5)
+	elif Input.get_action_strength("stellajump"):
+		animationplayer.set_speed_scale(0.4)
+	else:
+		animationplayer.set_speed_scale(1.0)
+
 
 func cutscene_over():
 	SceneManager.change_scene("level_transition_effect", nextscene)
