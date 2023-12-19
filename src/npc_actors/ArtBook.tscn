@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -26,7 +26,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art baby barney reference.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art weird alien reference.png" type="Texture" id=25]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art weird alien 2 reference.png" type="Texture" id=26]
-[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art horatio reference.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art horatio reference 2.png" type="Texture" id=27]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -81,10 +81,6 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 18 )
-region = Rect2( 0, 0, 749, 449 )
-
-[sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 27 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=20]
@@ -189,7 +185,7 @@ animations = [ {
 "name": "massag art holmes reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 30 ) ],
+"frames": [ ExtResource( 27 ) ],
 "loop": false,
 "name": "massag art horatio reference",
 "speed": 0.0

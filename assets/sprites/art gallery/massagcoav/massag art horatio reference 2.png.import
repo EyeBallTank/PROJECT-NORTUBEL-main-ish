@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art horatio reference.png-c4c7c8d4c85824948a274d94a72ddd11.stex"
+path="res://.import/massag art horatio reference 2.png-9ce796cdee179889f52059bb6f2c4ca5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art horatio reference.png"
-dest_files=[ "res://.import/massag art horatio reference.png-c4c7c8d4c85824948a274d94a72ddd11.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art horatio reference 2.png"
+dest_files=[ "res://.import/massag art horatio reference 2.png-9ce796cdee179889f52059bb6f2c4ca5.stex" ]
 
 [params]
 
