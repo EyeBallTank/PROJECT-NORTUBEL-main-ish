@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Massag PhotoBooth.gd" type="Script" id=1]
+[ext_resource path="res://src/level prefabs/massag prefab/Massag PhotoBooth.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth back.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth front.png" type="Texture" id=3]
 [ext_resource path="res://assets/sounds/level prefabs/massag prefab sounds/camera-13695.mp3" type="AudioStream" id=4]
