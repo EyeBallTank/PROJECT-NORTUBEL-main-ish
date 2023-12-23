@@ -34,7 +34,7 @@ position = Vector2( 130, 1419 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1465, 1677 )
+position = Vector2( 1722, 1677 )
 new_scene = "res://src/levels/massagcoav/MassagLevel3.tscn"
 customtext = "mcshry"
 
@@ -49,3 +49,7 @@ boardname = "massag art horatio reference"
 [node name="ArtBook3" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1088, 1640 )
 boardname = "massag art karla reference"
+
+[node name="ArtBook4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1396, 1640 )
+boardname = "massag art touni reference"
