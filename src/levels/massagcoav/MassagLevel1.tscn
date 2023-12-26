@@ -107,3 +107,11 @@ propname = "massprop street light 2"
 [node name="LevelProp5" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1616, 993 )
 propname = "massprop casino roullette"
+
+[node name="LevelProp6" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1975, 1009 )
+propname = "massprop casino slotmachine"
+
+[node name="LevelProp7" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2200, 869 )
+propname = "massprop casino wheelfortune"
