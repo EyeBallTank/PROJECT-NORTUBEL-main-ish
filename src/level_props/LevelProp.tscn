@@ -1,4 +1,4 @@
-[gd_scene load_steps=399 format=2]
+[gd_scene load_steps=403 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -199,6 +199,8 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop casino roullette.png" type="Texture" id=197]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop casino slotmachine.png" type="Texture" id=198]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop casino wheelfortune.png" type="Texture" id=199]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop trashcan.png" type="Texture" id=200]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop tree.png" type="Texture" id=201]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -471,6 +473,14 @@ region = Rect2( 0, 0, 94, 411 )
 [sub_resource type="AtlasTexture" id=208]
 atlas = ExtResource( 196 )
 region = Rect2( 0, 0, 98, 335 )
+
+[sub_resource type="AtlasTexture" id=212]
+atlas = ExtResource( 200 )
+region = Rect2( 0, 0, 90, 181 )
+
+[sub_resource type="AtlasTexture" id=213]
+atlas = ExtResource( 201 )
+region = Rect2( 0, 0, 294, 389 )
 
 [sub_resource type="AtlasTexture" id=34]
 atlas = ExtResource( 23 )
@@ -1334,6 +1344,16 @@ animations = [ {
 "name": "massprop street light 2",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 212 ) ],
+"loop": false,
+"name": "massprop trashcan",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 213 ) ],
+"loop": false,
+"name": "massprop tree",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 34 ) ],
 "loop": false,
 "name": "nortprop ancient temple pillar tree",
@@ -1991,5 +2011,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop casino wheelfortune"
+animation = "massprop tree"
 playing = true
