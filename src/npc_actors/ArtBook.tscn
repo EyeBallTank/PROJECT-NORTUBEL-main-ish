@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art karla reference.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art touni reference.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art karoline reference.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art joolietta reference.png" type="Texture" id=31]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -84,6 +85,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 31 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=30]
@@ -205,6 +210,11 @@ animations = [ {
 "name": "massag art horatio reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 33 ) ],
+"loop": false,
+"name": "massag art joolietta reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 30 ) ],
 "loop": false,
 "name": "massag art karla reference",
@@ -303,7 +313,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "massag art karoline reference"
+animation = "massag art joolietta reference"
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 
