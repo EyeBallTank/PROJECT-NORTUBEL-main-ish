@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -10,6 +10,11 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level prefabs/massag prefab/Massag PhotoBooth.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=15]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -66,3 +71,23 @@ boardname = "massag art fernaanda reference"
 [node name="ArtBook4" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1718, 1433 )
 boardname = "massag art feelix reference"
+
+[node name="Health Pickup" parent="." instance=ExtResource( 11 )]
+position = Vector2( -430, 1318 )
+spritename = "massagcoav health"
+
+[node name="Coin" parent="." instance=ExtResource( 12 )]
+position = Vector2( -283, 1344 )
+spritename = "massagcoav coin"
+
+[node name="Red key" parent="." instance=ExtResource( 13 )]
+position = Vector2( -859, 1313 )
+spritename = "massagcoav redkey"
+
+[node name="RedDoor" parent="." instance=ExtResource( 14 )]
+position = Vector2( -679, 1313 )
+spritename = "massagcoav reddoor"
+
+[node name="LevelProp" parent="." instance=ExtResource( 15 )]
+position = Vector2( 103, 1256 )
+propname = "massprop phonebooth jazzposter"

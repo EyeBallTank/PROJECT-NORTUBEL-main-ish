@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/massagcoav/ElegantissiaTiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=10]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -41,3 +43,11 @@ customtext = "jol1t4"
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
 position = Vector2( 694, 1372 )
 boardname = "massag art joolietta reference"
+
+[node name="Yellow key" parent="." instance=ExtResource( 10 )]
+position = Vector2( -804, 1312 )
+spritename = "massagcoav yelkey"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 9 )]
+position = Vector2( -550, 1278 )
+spritename = "massagcoav yeldoor"

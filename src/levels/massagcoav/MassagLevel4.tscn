@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -7,6 +7,12 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/massagcoav/MassTrainTiles.tres" type="TileSet" id=7]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=13]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -15,7 +21,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 917496, 41, 0, 983032, 41, 0, 1048568, 41, 0, 1048573, 2, 0, 1048574, 2, 0, 1114104, 41, 0, 1114109, 2, 0, 1114110, 2, 0, 1179640, 41, 0, 1179645, 2, 0, 1179646, 2, 0, 1245176, 41, 0, 1245181, 2, 0, 1245182, 2, 0, 1310712, 41, 0, 1310717, 2, 0, 1376248, 41, 0, 1441784, 41, 0, 1441785, 41, 0, 1441786, 41, 0, 1441787, 41, 0, 1441788, 0, 0, 1441789, 0, 0, 1441790, 0, 0, 1441791, 0, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376262, 0, 0, 1376263, 0, 0, 1376264, 1, 0, 1376265, 1, 0, 1376266, 1, 0, 1376267, 1, 0, 1376268, 1, 0, 1376269, 1, 0, 1376270, 1, 0, 1376271, 1, 0, 1376272, 1, 0, 1376273, 1, 0, 1376274, 1, 0, 1376275, 1, 0, 1376276, 1, 0, 1376277, 1, 0, 1376278, 1, 0, 1376281, 41, 0 )
+tile_data = PoolIntArray( 917496, 41, 0, 983032, 41, 0, 1048568, 41, 0, 1048573, 2, 0, 1048574, 2, 0, 1114104, 41, 0, 1114109, 2, 0, 1114110, 2, 0, 1179640, 41, 0, 1179645, 2, 0, 1179646, 2, 0, 1245176, 41, 0, 1245181, 2, 0, 1245182, 2, 0, 1310712, 41, 0, 1310717, 2, 0, 1376248, 41, 0, 1441780, 0, 0, 1441781, 0, 0, 1441782, 0, 0, 1441783, 0, 0, 1441784, 0, 0, 1441785, 0, 0, 1441786, 0, 0, 1441787, 0, 0, 1441788, 0, 0, 1441789, 0, 0, 1441790, 0, 0, 1441791, 0, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376262, 0, 0, 1376263, 0, 0, 1376264, 1, 0, 1376265, 1, 0, 1376266, 1, 0, 1376267, 1, 0, 1376268, 1, 0, 1376269, 1, 0, 1376270, 1, 0, 1376271, 1, 0, 1376272, 1, 0, 1376273, 1, 0, 1376274, 1, 0, 1376275, 1, 0, 1376276, 1, 0, 1376277, 1, 0, 1376278, 1, 0, 1376281, 41, 0 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( 350, 1015 )
@@ -36,3 +42,27 @@ position = Vector2( 224, 1105 )
 position = Vector2( 1295, 1368 )
 new_scene = "res://screens/cutscenes/cutscene 10 massag karla/Cutscene 10 Massag Karla.tscn"
 customtext = "b4rn3y"
+
+[node name="Blue key" parent="." instance=ExtResource( 9 )]
+position = Vector2( 425, 1218 )
+spritename = "massagcoav blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 8 )]
+position = Vector2( 652, 1212 )
+spritename = "massagcoav redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 10 )]
+position = Vector2( 849, 1214 )
+spritename = "massagcoav yelkey"
+
+[node name="BlueDoor" parent="." instance=ExtResource( 13 )]
+position = Vector2( -377, 1214 )
+spritename = "massagcoav bludoor"
+
+[node name="RedDoor" parent="." instance=ExtResource( 11 )]
+position = Vector2( -545, 1216 )
+spritename = "massagcoav reddoor"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 12 )]
+position = Vector2( -193, 1213 )
+spritename = "massagcoav yeldoor"
