@@ -123,3 +123,7 @@ propname = "massprop trashcan"
 [node name="LevelProp9" parent="." instance=ExtResource( 15 )]
 position = Vector2( -252, 915 )
 propname = "massprop tree"
+
+[node name="LevelProp10" parent="." instance=ExtResource( 15 )]
+position = Vector2( 3102, 1244 )
+propname = "massprop flower shop"
