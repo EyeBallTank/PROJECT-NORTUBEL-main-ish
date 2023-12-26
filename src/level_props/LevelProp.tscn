@@ -1,4 +1,4 @@
-[gd_scene load_steps=387 format=2]
+[gd_scene load_steps=389 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -193,6 +193,7 @@
 [ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop canteen serving counter.png" type="Texture" id=191]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop statue 1.png" type="Texture" id=192]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop statue 2.png" type="Texture" id=193]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop bench.png" type="Texture" id=194]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -437,6 +438,10 @@ region = Rect2( 0, 0, 431, 163 )
 [sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 14 )
 region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=206]
+atlas = ExtResource( 194 )
+region = Rect2( 0, 0, 396, 223 )
 
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 16 )
@@ -1269,6 +1274,11 @@ animations = [ {
 "name": "lahiprop walldestroyed flag",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 206 ) ],
+"loop": false,
+"name": "massprop bench",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 25 ) ],
 "loop": false,
 "name": "massprop phonebooth jazzposter",
@@ -1931,5 +1941,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "nortprop blue chimney"
+animation = "massprop bench"
 playing = true

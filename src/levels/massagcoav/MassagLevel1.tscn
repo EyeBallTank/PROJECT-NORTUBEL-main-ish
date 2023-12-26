@@ -91,3 +91,7 @@ spritename = "massagcoav reddoor"
 [node name="LevelProp" parent="." instance=ExtResource( 15 )]
 position = Vector2( 103, 1256 )
 propname = "massprop phonebooth jazzposter"
+
+[node name="LevelProp2" parent="." instance=ExtResource( 15 )]
+position = Vector2( -201, 1358 )
+propname = "massprop bench"
