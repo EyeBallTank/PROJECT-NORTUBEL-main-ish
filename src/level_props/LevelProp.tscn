@@ -1,4 +1,4 @@
-[gd_scene load_steps=407 format=2]
+[gd_scene load_steps=409 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -203,6 +203,7 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop tree.png" type="Texture" id=201]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop flower shop.png" type="Texture" id=202]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop shop 2.png" type="Texture" id=203]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop restaurant tablechair.png" type="Texture" id=204]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -471,6 +472,10 @@ region = Rect2( 0, 0, 374, 448 )
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 16 )
 region = Rect2( 0, 0, 252, 426 )
+
+[sub_resource type="AtlasTexture" id=216]
+atlas = ExtResource( 204 )
+region = Rect2( 0, 0, 336, 171 )
 
 [sub_resource type="AtlasTexture" id=215]
 atlas = ExtResource( 203 )
@@ -1349,6 +1354,11 @@ animations = [ {
 "name": "massprop phonebooth jazzposter",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 216 ) ],
+"loop": false,
+"name": "massprop restaurant tablechair",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 215 ) ],
 "loop": false,
 "name": "massprop shop 2",
@@ -2031,5 +2041,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop shop 2"
+animation = "massprop restaurant tablechair"
 playing = true
