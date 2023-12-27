@@ -1,4 +1,4 @@
-[gd_scene load_steps=405 format=2]
+[gd_scene load_steps=407 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -202,6 +202,7 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop trashcan.png" type="Texture" id=200]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop tree.png" type="Texture" id=201]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop flower shop.png" type="Texture" id=202]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop shop 2.png" type="Texture" id=203]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -470,6 +471,10 @@ region = Rect2( 0, 0, 374, 448 )
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 16 )
 region = Rect2( 0, 0, 252, 426 )
+
+[sub_resource type="AtlasTexture" id=215]
+atlas = ExtResource( 203 )
+region = Rect2( 0, 0, 708, 414 )
 
 [sub_resource type="AtlasTexture" id=207]
 atlas = ExtResource( 195 )
@@ -1344,6 +1349,11 @@ animations = [ {
 "name": "massprop phonebooth jazzposter",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 215 ) ],
+"loop": false,
+"name": "massprop shop 2",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 207 ) ],
 "loop": false,
 "name": "massprop street light",
@@ -2021,5 +2031,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop flower shop"
+animation = "massprop shop 2"
 playing = true
