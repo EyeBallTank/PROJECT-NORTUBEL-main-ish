@@ -1,4 +1,4 @@
-[gd_scene load_steps=418 format=2]
+[gd_scene load_steps=420 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -208,6 +208,7 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop fountain 2.png" type="Texture" id=206]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop pillar.png" type="Texture" id=207]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop neon palmtree.png" type="Texture" id=208]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop stage light.png" type="Texture" id=209]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -504,6 +505,10 @@ region = Rect2( 0, 0, 336, 171 )
 [sub_resource type="AtlasTexture" id=215]
 atlas = ExtResource( 203 )
 region = Rect2( 0, 0, 708, 414 )
+
+[sub_resource type="AtlasTexture" id=222]
+atlas = ExtResource( 209 )
+region = Rect2( 0, 0, 226, 418 )
 
 [sub_resource type="AtlasTexture" id=207]
 atlas = ExtResource( 195 )
@@ -1408,6 +1413,11 @@ animations = [ {
 "name": "massprop shop 2",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 222 ) ],
+"loop": false,
+"name": "massprop stage light",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 207 ) ],
 "loop": false,
 "name": "massprop street light",
@@ -2085,5 +2095,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop neon palmtree"
+animation = "massprop stage light"
 playing = true
