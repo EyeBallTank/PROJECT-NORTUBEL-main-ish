@@ -156,5 +156,9 @@ propname = "massprop fancy door"
 position = Vector2( -119, 1603 )
 propname = "massprop fountain"
 
+[node name="LevelProp15" parent="." instance=ExtResource( 15 )]
+position = Vector2( 146, 1679 )
+propname = "massprop pillar"
+
 [node name="MassagBarStool" parent="." instance=ExtResource( 16 )]
 position = Vector2( -1088, 1313 )

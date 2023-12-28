@@ -1,4 +1,4 @@
-[gd_scene load_steps=414 format=2]
+[gd_scene load_steps=416 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -206,6 +206,7 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop restaurant tablechair.png" type="Texture" id=204]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop fancy door.png" type="Texture" id=205]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop fountain 2.png" type="Texture" id=206]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop pillar.png" type="Texture" id=207]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -486,6 +487,10 @@ region = Rect2( 394, 0, 394, 298 )
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 16 )
 region = Rect2( 0, 0, 252, 426 )
+
+[sub_resource type="AtlasTexture" id=220]
+atlas = ExtResource( 207 )
+region = Rect2( 0, 0, 120, 384 )
 
 [sub_resource type="AtlasTexture" id=216]
 atlas = ExtResource( 204 )
@@ -1378,6 +1383,11 @@ animations = [ {
 "name": "massprop phonebooth jazzposter",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 220 ) ],
+"loop": false,
+"name": "massprop pillar",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 216 ) ],
 "loop": false,
 "name": "massprop restaurant tablechair",
@@ -2065,6 +2075,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop fountain"
-frame = 1
+animation = "massprop pillar"
 playing = true
