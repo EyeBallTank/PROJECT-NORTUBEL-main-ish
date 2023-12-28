@@ -1,0 +1,409 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/Massag SlotMachine three slots.png" type="Texture" id=1]
+[ext_resource path="res://src/level prefabs/massag prefab/MassagSlotMachine.gd" type="Script" id=2]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/Massag SlotMachine Bluebutton.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/Massag SlotMachine door.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 318, 0, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 636, 0, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 954, 0, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 320, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 318, 320, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 636, 320, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 480, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 318, 480, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 1 )
+region = Rect2( 636, 480, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 640, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 1 )
+region = Rect2( 318, 640, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 1 )
+region = Rect2( 636, 640, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 160, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 1 )
+region = Rect2( 318, 160, 318, 160 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 1 )
+region = Rect2( 636, 160, 318, 160 )
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": false,
+"name": "loss1",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": false,
+"name": "loss2",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": false,
+"name": "loss3",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": false,
+"name": "victory",
+"speed": 3.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 30.5, 31 )
+
+[sub_resource type="Animation" id=20]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("victory button/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("loss1button/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("loss2button/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("loss3button/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Label:text")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "1" ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("door:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -221, 90 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "itsover"
+tracks/0/type = "value"
+tracks/0/path = NodePath("victory button/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("loss1button/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("loss2button/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("loss3button/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "test"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("victory button/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, true, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("loss1button/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, true, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("loss2button/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false, true, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("loss3button/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, true, false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Label:text")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "1", "2", "3", "4", "1" ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "truevictory"
+tracks/0/type = "value"
+tracks/0/path = NodePath("door:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -221, 90 ), Vector2( -221, 90 ), Vector2( -221, 669 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 140, 79, 140 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 79, 140 )
+
+[sub_resource type="SpriteFrames" id=24]
+animations = [ {
+"frames": [ SubResource( 22 ) ],
+"loop": false,
+"name": "presssed",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": false,
+"name": "unpressed",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=25]
+extents = Vector2( 31.5, 287.5 )
+
+[node name="MassagSlotMachine" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 17 )
+animation = "victory"
+frame = 2
+playing = true
+
+[node name="victory button" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="victory button"]
+position = Vector2( 0, 143 )
+shape = SubResource( 18 )
+
+[node name="loss1button" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="loss1button"]
+position = Vector2( 0, 143 )
+shape = SubResource( 18 )
+disabled = true
+
+[node name="loss2button" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="loss2button"]
+position = Vector2( 0, 143 )
+shape = SubResource( 18 )
+disabled = true
+
+[node name="loss3button" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="loss3button"]
+position = Vector2( 0, 143 )
+shape = SubResource( 18 )
+disabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "test"
+anims/RESET = SubResource( 20 )
+anims/itsover = SubResource( 21 )
+anims/test = SubResource( 19 )
+anims/truevictory = SubResource( 26 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -53.0
+margin_top = 114.0
+margin_right = -13.0
+margin_bottom = 151.0
+custom_fonts/font = ExtResource( 3 )
+text = "1"
+
+[node name="button" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 156 )
+frames = SubResource( 24 )
+animation = "unpressed"
+
+[node name="door" type="KinematicBody2D" parent="."]
+position = Vector2( -221, 90 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="Sprite" type="Sprite" parent="door"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
+position = Vector2( 0.5, -0.5 )
+shape = SubResource( 25 )
+
+[connection signal="body_entered" from="victory button" to="." method="_on_victory_button_body_entered"]
+[connection signal="body_entered" from="loss1button" to="." method="_on_loss1button_body_entered"]
+[connection signal="body_entered" from="loss2button" to="." method="_on_loss2button_body_entered"]
+[connection signal="body_entered" from="loss3button" to="." method="_on_loss3button_body_entered"]
