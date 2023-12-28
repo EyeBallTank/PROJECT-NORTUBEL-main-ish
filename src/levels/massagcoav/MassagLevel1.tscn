@@ -160,5 +160,9 @@ propname = "massprop fountain"
 position = Vector2( 146, 1679 )
 propname = "massprop pillar"
 
+[node name="LevelProp16" parent="." instance=ExtResource( 15 )]
+position = Vector2( 312, 1679 )
+propname = "massprop neon palmtree"
+
 [node name="MassagBarStool" parent="." instance=ExtResource( 16 )]
 position = Vector2( -1088, 1313 )
