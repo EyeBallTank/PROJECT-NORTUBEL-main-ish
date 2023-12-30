@@ -38,6 +38,7 @@ position = Vector2( 130, 1419 )
 [node name="Door" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2186, 1677 )
 new_scene = "res://src/levels/massagcoav/MassagLevel3.tscn"
+spritename = "massagcoav greendoor"
 customtext = "mcshry"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]

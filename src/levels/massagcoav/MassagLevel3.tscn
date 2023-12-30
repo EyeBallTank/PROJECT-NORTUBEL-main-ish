@@ -38,6 +38,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 [node name="Door" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1191, 1417 )
 new_scene = "res://src/levels/massagcoav/MassagLevel4.tscn"
+spritename = "massagcoav greendoor"
 customtext = "jol1t4"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]

@@ -41,6 +41,7 @@ position = Vector2( 224, 1105 )
 [node name="Door" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1295, 1368 )
 new_scene = "res://screens/cutscenes/cutscene 10 massag karla/Cutscene 10 Massag Karla.tscn"
+spritename = "massagcoav greendoor"
 customtext = "b4rn3y"
 
 [node name="Blue key" parent="." instance=ExtResource( 9 )]
