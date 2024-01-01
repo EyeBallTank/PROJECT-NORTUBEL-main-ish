@@ -1,4 +1,4 @@
-[gd_scene load_steps=430 format=2]
+[gd_scene load_steps=432 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -214,6 +214,7 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop trophy case.png" type="Texture" id=212]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop skate park.png" type="Texture" id=213]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop gym assets.png" type="Texture" id=214]
+[ext_resource path="res://assets/sprites/level_props/massag coav/massprop gym assets 2.png" type="Texture" id=215]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -498,6 +499,10 @@ region = Rect2( 394, 0, 394, 298 )
 [sub_resource type="AtlasTexture" id=227]
 atlas = ExtResource( 214 )
 region = Rect2( 0, 0, 944, 166 )
+
+[sub_resource type="AtlasTexture" id=228]
+atlas = ExtResource( 215 )
+region = Rect2( 0, 0, 895, 377 )
 
 [sub_resource type="AtlasTexture" id=224]
 atlas = ExtResource( 211 )
@@ -1423,6 +1428,11 @@ animations = [ {
 "name": "massprop gym assets",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 228 ) ],
+"loop": false,
+"name": "massprop gym assets 2",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 224 ) ],
 "loop": false,
 "name": "massprop jazz instruments",
@@ -2145,5 +2155,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop gym assets"
+animation = "massprop gym assets 2"
 playing = true
