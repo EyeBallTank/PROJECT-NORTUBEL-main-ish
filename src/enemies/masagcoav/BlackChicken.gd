@@ -54,20 +54,26 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
+#
+#			impacttimer.start(1.0)
+#			if impacttimer.time_left == 0:
+#				state = DIZZYIDLE
+			yield(get_tree().create_timer(1), "timeout")
+			state = DIZZYIDLE
 
-			impacttimer.start(1.0)
-			if impacttimer.time_left == 0:
-				state = DIZZYIDLE
 
 		DIZZYIDLE:
 			velocity.x = 0
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
+			yield(get_tree().create_timer(2), "timeout")
+			state = MOVING
 
-			dizzytimer.start(2.0)
-			if dizzytimer.time_left == 0:
-				state = MOVING
+#
+#			dizzytimer.start(2.0)
+#			if dizzytimer.time_left == 0:
+#				state = MOVING
 
 		DEAD:
 			animationplayer.play("dying")
