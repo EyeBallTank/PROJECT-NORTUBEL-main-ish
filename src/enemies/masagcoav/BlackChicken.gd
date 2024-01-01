@@ -25,7 +25,9 @@ var state = MOVING
 func _ready():
 	animationplayer.play("RESET")
 
+
 func _physics_process(delta):
+
 	match state:
 		MOVING:
 			sprites.play("moving")
@@ -61,8 +63,9 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
-#
-			impacttimer.start(1.0)
+
+
+			impacttimer.start(1)
 			if impacttimer.time_left == 0:
 				state = DIZZYIDLE
 #			yield(get_tree().create_timer(1), "timeout")
@@ -78,8 +81,7 @@ func _physics_process(delta):
 #			yield(get_tree().create_timer(2), "timeout")
 #			state = MOVING
 
-#
-			dizzytimer.start(2.0)
+			dizzytimer.start(2)
 			if dizzytimer.time_left == 0:
 				state = MOVING
 
