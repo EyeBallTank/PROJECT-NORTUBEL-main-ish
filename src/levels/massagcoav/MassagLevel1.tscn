@@ -226,6 +226,10 @@ propname = "massprop caffe shop"
 position = Vector2( 3363, 1903 )
 propname = "massprop jazz instruments"
 
+[node name="LevelProp21" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2959, 2172 )
+propname = "massprop trophy case"
+
 [node name="MassagBarStool" parent="." instance=ExtResource( 16 )]
 position = Vector2( -1632, 3232 )
 
