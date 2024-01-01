@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+#NOTE TO SELF: FIND A SOLUTION THAT DOESN'T USE YIELD STATEMENTS BUT STILL WORKS THE SAME
+
 export var gravity: = 33600
 
 var direction = Vector2.RIGHT
@@ -8,7 +10,7 @@ onready var eyes = $Eyes
 onready var dizzytimer = $DizzyTimer
 onready var impacttimer = $ImpactTimer
 onready var animationplayer = $AnimationPlayer
-
+onready var sprites = $Sprites
 
 enum {
 	MOVING,
@@ -26,6 +28,7 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		MOVING:
+			sprites.play("moving")
 			if see_to_attack():
 				state = RUNNING
 
@@ -38,6 +41,9 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
 		RUNNING:
+
+			
+			sprites.play("running")
 			velocity = direction * 560
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
@@ -49,33 +55,36 @@ func _physics_process(delta):
 				state = DIZZYJUMP
 				
 		DIZZYJUMP:
+			sprites.play("dizzy")
 
 			velocity = direction * 100
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
 #
-#			impacttimer.start(1.0)
-#			if impacttimer.time_left == 0:
-#				state = DIZZYIDLE
-			yield(get_tree().create_timer(1), "timeout")
-			state = DIZZYIDLE
+			impacttimer.start(1.0)
+			if impacttimer.time_left == 0:
+				state = DIZZYIDLE
+#			yield(get_tree().create_timer(1), "timeout")
+#			state = DIZZYIDLE
 
 
 		DIZZYIDLE:
+			sprites.play("fall")
 			velocity.x = 0
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
-			yield(get_tree().create_timer(2), "timeout")
-			state = MOVING
+#			yield(get_tree().create_timer(2), "timeout")
+#			state = MOVING
 
 #
-#			dizzytimer.start(2.0)
-#			if dizzytimer.time_left == 0:
-#				state = MOVING
+			dizzytimer.start(2.0)
+			if dizzytimer.time_left == 0:
+				state = MOVING
 
 		DEAD:
+			sprites.play("dead")
 			animationplayer.play("dying")
 
 func see_to_attack():
