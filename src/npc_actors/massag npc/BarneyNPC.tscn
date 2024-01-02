@@ -1,70 +1,102 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/RICOTTO SPRITES NPC.png" type="Texture" id=1]
-[ext_resource path="res://src/npc_actors/krimb npc/Ricotto NPC.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/BARNEY SPRITES NPC.png" type="Texture" id=1]
+[ext_resource path="res://src/npc_actors/massag npc/BarneyNPC.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=4]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 840, 0, 420, 420 )
+region = Rect2( 450, 0, 450, 450 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 1 )
-region = Rect2( 1260, 0, 420, 420 )
+region = Rect2( 450, 450, 450, 450 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 420, 420 )
+region = Rect2( 0, 0, 450, 450 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
-region = Rect2( 420, 0, 420, 420 )
+region = Rect2( 0, 450, 450, 450 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 5 ) ],
-"loop": false,
-"name": "HasItem",
-"speed": 0.0
-}, {
-"frames": [ SubResource( 6 ) ],
-"loop": false,
-"name": "Hurt",
-"speed": 0.0
-}, {
-"frames": [ SubResource( 7 ), SubResource( 8 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
-"name": "Idle",
-"speed": 1.0
+"name": "Falling",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "MAINSTATE",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "Otherstate",
+"speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 67.5, 96.5 )
+extents = Vector2( 73, 130.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 110.5, 126 )
+extents = Vector2( 98, 97.5 )
 
-[node name="Ricotto NPC" type="KinematicBody2D"]
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -4, 14 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "floating"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -4, 14 ), Vector2( -4, -7 ), Vector2( -4, 14 ) ]
+}
+
+[node name="BarneyNPC" type="KinematicBody2D"]
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 2 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -2, 76 )
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -4, 14 )
 scale = Vector2( 0.64, 0.64 )
 frames = SubResource( 2 )
-animation = "Idle"
+animation = "Otherstate"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3.5, 113.5 )
+position = Vector2( -12, 55.5 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( -3.5, 84 )
+position = Vector2( -10, 48.5 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -82,17 +114,16 @@ patch_margin_right = 4
 patch_margin_bottom = 6
 
 [node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 48.0
-margin_bottom = 25.0
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 1007.0
+margin_bottom = 109.0
 custom_fonts/font = ExtResource( 4 )
-text = "TEST"
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
 margin_left = 5.0
 margin_top = 452.0
-margin_right = 127.0
+margin_right = 113.0
 margin_bottom = 476.0
 texture = ExtResource( 3 )
 region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
@@ -102,12 +133,17 @@ patch_margin_right = 4
 patch_margin_bottom = 6
 
 [node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
-margin_left = 5.0
-margin_top = 4.0
-margin_right = 104.0
-margin_bottom = 21.0
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 23.0
 custom_fonts/font = ExtResource( 4 )
-text = "Ricotto Bruniolli"
+text = "Barney Mackenstein"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "floating"
+anims/RESET = SubResource( 9 )
+anims/floating = SubResource( 10 )
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
