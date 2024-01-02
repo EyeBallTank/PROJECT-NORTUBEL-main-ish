@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art feelix reference.png-db7db2a2e0fa4e243004e4492ff39a7e.stex"
+path="res://.import/massag art feelix reference 2.png-0ffdb9ce79f4f7ecdce6bab339d0c0b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art feelix reference.png"
-dest_files=[ "res://.import/massag art feelix reference.png-db7db2a2e0fa4e243004e4492ff39a7e.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art feelix reference 2.png"
+dest_files=[ "res://.import/massag art feelix reference 2.png-0ffdb9ce79f4f7ecdce6bab339d0c0b9.stex" ]
 
 [params]
 

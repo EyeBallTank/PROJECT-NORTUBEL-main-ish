@@ -20,7 +20,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art holmes reference 2.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art barney reference 2.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art fernaanda reference.png" type="Texture" id=20]
-[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art feelix reference.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art feelix reference 2.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 3 girls summer.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 4 girls summer.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art baby barney reference.png" type="Texture" id=24]
@@ -75,7 +75,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 19 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=35]
 atlas = ExtResource( 21 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -190,7 +190,7 @@ animations = [ {
 "name": "massag art barney reference ",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 24 ) ],
+"frames": [ SubResource( 35 ) ],
 "loop": false,
 "name": "massag art feelix reference",
 "speed": 0.0
