@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://src/enemies/masagcoav/BlackChicken.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/massag npc/BarneyNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/npc_actors/massag npc/HolmesNPC.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/npc_actors/massag npc/FernaandaNPC.tscn" type="PackedScene" id=27]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -287,5 +288,12 @@ customtext = "HOLMES_NPC_TALK"
 customtext2 = "HOLMES_NPC_HONK"
 customtext3 = "HOLMES_NPC_HUG"
 customtext4 = "HOLMES_NPC_HURT"
+
+[node name="FernaandaNPC" parent="." instance=ExtResource( 27 )]
+position = Vector2( 1073, 3215 )
+customtext = "FERNAANDA_NPC_TALK"
+customtext2 = "FERNAANDA_NPC_HONK"
+customtext3 = "FERNAANDA_NPC_HUG"
+customtext4 = "FERNAANDA_NPC_HURT"
 
 [editable path="MassagSlotMachine"]
