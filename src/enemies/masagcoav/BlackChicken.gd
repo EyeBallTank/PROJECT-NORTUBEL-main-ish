@@ -64,10 +64,10 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
 
-
 			impacttimer.start(1)
 			if impacttimer.time_left == 0:
 				state = DIZZYIDLE
+				
 #			yield(get_tree().create_timer(1), "timeout")
 #			state = DIZZYIDLE
 
