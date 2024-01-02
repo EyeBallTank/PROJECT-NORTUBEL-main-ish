@@ -11,6 +11,8 @@ onready var dizzytimer = $DizzyTimer
 onready var impacttimer = $ImpactTimer
 onready var animationplayer = $AnimationPlayer
 onready var sprites = $Sprites
+var impact_timer_starting
+var dizzy_timer_starting
 
 enum {
 	MOVING,
@@ -55,6 +57,7 @@ func _physics_process(delta):
 				direction *= -1
 				scale.x = -scale.x
 				state = DIZZYJUMP
+				impact_timer_starting = true # new lin to set the Bool
 				
 		DIZZYJUMP:
 			sprites.play("dizzy")
@@ -63,10 +66,14 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
+			if impact_timer_starting:
+				impacttimer.start(1)
+				impact_timer_starting = false
 
-			impacttimer.start(1)
+#			impacttimer.start(1)
 			if impacttimer.time_left == 0:
 				state = DIZZYIDLE
+				dizzy_timer_starting = true
 				
 #			yield(get_tree().create_timer(1), "timeout")
 #			state = DIZZYIDLE
@@ -81,7 +88,12 @@ func _physics_process(delta):
 #			yield(get_tree().create_timer(2), "timeout")
 #			state = MOVING
 
-			dizzytimer.start(2)
+			if dizzy_timer_starting:
+				dizzytimer.start(2)
+				dizzy_timer_starting = false
+
+
+#			dizzytimer.start(2)
 			if dizzytimer.time_left == 0:
 				state = MOVING
 

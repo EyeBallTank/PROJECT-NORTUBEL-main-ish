@@ -180,6 +180,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
+* BrastenXBL (Helping me fix a Timer node situation with the black chicken enemy)
 * NancokALT (For trying to help me with the Save/Load situation even if we got nowhere)
 * SimonKazehaya (Helped me fix a life subtraction issue)
 * Armanlex (Assumed that levels were tilted and turns out they were)
