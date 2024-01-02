@@ -123,7 +123,7 @@ custom_fonts/font = ExtResource( 4 )
 [node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
 margin_left = 5.0
 margin_top = 452.0
-margin_right = 113.0
+margin_right = 158.0
 margin_bottom = 476.0
 texture = ExtResource( 3 )
 region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
