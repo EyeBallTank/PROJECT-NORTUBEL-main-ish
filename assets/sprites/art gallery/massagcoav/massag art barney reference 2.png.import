@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art barney reference.png-c6f534894ee170bf9e8b0e1943668d83.stex"
+path="res://.import/massag art barney reference 2.png-941120ac1cf60302f005310bd8d516ce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art barney reference.png"
-dest_files=[ "res://.import/massag art barney reference.png-c6f534894ee170bf9e8b0e1943668d83.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art barney reference 2.png"
+dest_files=[ "res://.import/massag art barney reference 2.png-941120ac1cf60302f005310bd8d516ce.stex" ]
 
 [params]
 

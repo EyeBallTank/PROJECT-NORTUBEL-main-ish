@@ -92,7 +92,7 @@ position = Vector2( 531, 1227 )
 boardname = "massag art holmes reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 846, 1229 )
+position = Vector2( 154, 3343 )
 boardname = "massag art barney reference "
 
 [node name="ArtBook5" parent="." instance=ExtResource( 10 )]
