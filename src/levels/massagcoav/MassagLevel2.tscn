@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/massag npc/McSherryNPC.tscn" type="PackedScene" id=11]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -36,7 +37,7 @@ position = Vector2( 130, 1419 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2186, 1677 )
+position = Vector2( 2272, 1677 )
 new_scene = "res://src/levels/massagcoav/MassagLevel3.tscn"
 spritename = "massagcoav greendoor"
 customtext = "mcshry"
@@ -68,3 +69,10 @@ spritename = "massagcoav blukey"
 [node name="BlueDoor" parent="." instance=ExtResource( 10 )]
 position = Vector2( -339, 1481 )
 spritename = "massagcoav bludoor"
+
+[node name="McSherryNPC" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1971, 1451 )
+customtext = "MCSHERRY_NPC_TALK"
+customtext2 = "MCSHERRY_NPC_HONK"
+customtext3 = "MCSHERRY_NPC_HUG"
+customtext4 = "MCSHERRY_NPC_HURT"
