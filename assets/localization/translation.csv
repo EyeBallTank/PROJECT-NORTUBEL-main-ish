@@ -831,3 +831,9 @@ KARLA_NPC_HONK,"Hey, stop that or we'll ban you!","Hey, pare com isso ou será b
 KARLA_NPC_HUG,"Wow, thanks.
 Are you a fan?","Wow, obrigada.
 Será você uma fã?"
+TOUNI_NPC_TALK,How many times do I gotta remind Dexter that the equipment stays here?,Quantas vezes tenho de dizer ao Dexter que o equipamento fica aqui?
+TOUNI_NPC_HURT,"Hey, who are you and what's your problem?","Hey, quem é você e qual é o seu problema?"
+TOUNI_NPC_HONK,"Can you stop?
+I'm a married man.","Pode parar?
+Sou um homem casado."
+TOUNI_NPC_HUG,I used to be in better shape.,"Antigamente, eu estava em melhor forma."
