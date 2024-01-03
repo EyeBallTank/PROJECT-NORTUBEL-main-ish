@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://src/npc_actors/massag npc/FernaandaNPC.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/npc_actors/massag npc/FeelixNPC.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/npc_actors/massag npc/KarlaNPC.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/npc_actors/massag npc/HoratioNPC.tscn" type="PackedScene" id=30]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -310,5 +311,10 @@ customtext = "KARLA_NPC_TALK"
 customtext2 = "KARLA_NPC_HONK"
 customtext3 = "KARLA_NPC_HUG"
 customtext4 = "KARLA_NPC_HURT"
+
+[node name="HoratioNPC" parent="." instance=ExtResource( 30 )]
+position = Vector2( 1674, 3302 )
+customtext = "Bloo bloo bloo brrrrrrrrrr...."
+customname = "Horatio"
 
 [editable path="MassagSlotMachine"]
