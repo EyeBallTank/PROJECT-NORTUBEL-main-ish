@@ -837,3 +837,11 @@ TOUNI_NPC_HONK,"Can you stop?
 I'm a married man.","Pode parar?
 Sou um homem casado."
 TOUNI_NPC_HUG,I used to be in better shape.,"Antigamente, eu estava em melhor forma."
+KAROLINE_TALK_NOITEM,"Hey, have you seen an orange skateboard?
+I was pretty sure it's here somewhere.","Hey, você viu uma prancha de skate em algum lado?
+Tinha a certeza que estava por aqui."
+KAROLINE_TALK_YESITEM,"Wow, thank you!
+Next time, I should be more carefull.","Wow, obrigada!
+Na próxima vez, devo ter mais cuidado."
+KAROLINE_HUG,Why the hug? Did Feelix send you here?,Porquê o abraço? Foi o Feelix que te mandou?
+KAROLINE_HURT,"Stop it, I'm gonna call my parents!","Para, vou chamar os meus pais!"

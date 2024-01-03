@@ -329,6 +329,10 @@ customtext4 = "TOUNI_NPC_HURT"
 
 [node name="KarolineNPC" parent="." instance=ExtResource( 32 )]
 position = Vector2( 2135, 3243 )
+customtext = "KAROLINE_TALK_NOITEM"
+customtext2 = "KAROLINE_TALK_YESITEM"
+customtext3 = "KAROLINE_HUG"
+customtext4 = "KAROLINE_HURT"
 
 [node name="TradeItem" parent="." instance=ExtResource( 33 )]
 position = Vector2( 2437, 3311 )
