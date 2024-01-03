@@ -253,6 +253,10 @@ propname = "massprop gym assets"
 position = Vector2( 5020, 1048 )
 propname = "massprop gym assets 2"
 
+[node name="LevelProp25" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1743, 2820 )
+propname = "massprop bus"
+
 [node name="MassagBarStool" parent="." instance=ExtResource( 16 )]
 position = Vector2( -1632, 3232 )
 
