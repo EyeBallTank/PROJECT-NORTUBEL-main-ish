@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -31,6 +31,8 @@
 [ext_resource path="res://src/npc_actors/massag npc/KarlaNPC.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/npc_actors/massag npc/HoratioNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/massag npc/TouniNPC.tscn" type="PackedScene" id=31]
+[ext_resource path="res://src/npc_actors/krimb npc/KarolineNPC.tscn" type="PackedScene" id=32]
+[ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=33]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -324,5 +326,12 @@ customtext = "TOUNI_NPC_TALK"
 customtext2 = "TOUNI_NPC_HONK"
 customtext3 = "TOUNI_NPC_HUG"
 customtext4 = "TOUNI_NPC_HURT"
+
+[node name="KarolineNPC" parent="." instance=ExtResource( 32 )]
+position = Vector2( 2135, 3243 )
+
+[node name="TradeItem" parent="." instance=ExtResource( 33 )]
+position = Vector2( 2437, 3311 )
+spritename = "tradeitem massag karoline skateboard"
 
 [editable path="MassagSlotMachine"]
