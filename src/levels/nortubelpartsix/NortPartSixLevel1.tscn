@@ -11,23 +11,40 @@
 
 [node name="NortPartSixLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 851976, 91, 0, 917512, 91, 0, 983048, 91, 0, 1048584, 91, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -65541, 50, 0, -5, 50, 0, 65531, 50, 0, 131067, 50, 0, 196603, 50, 0, 262139, 50, 0, 327675, 50, 0, 393211, 50, 0, 458747, 50, 0, 458748, 50, 0, 458749, 50, 0, 458750, 50, 0, 458751, 50, 0, 393216, 50, 0, 393217, 50, 0, 393218, 50, 0, 393219, 50, 0, 393220, 50, 0, 393221, 50, 0, 393222, 50, 0, 393223, 50, 0, 393224, 50, 0, 393225, 50, 0 )
+tile_data = PoolIntArray( 720889, 50, 0, 786425, 50, 0, 851961, 50, 0, 917497, 50, 0, 983033, 50, 0, 1048569, 50, 0, 1114105, 50, 0, 1048593, 50, 0, 1048594, 50, 0, 1048595, 50, 0, 1048596, 50, 0, 1179641, 50, 0, 1179642, 50, 0, 1179643, 50, 0, 1179644, 50, 0, 1179645, 50, 0, 1179646, 50, 0, 1179647, 50, 0, 1114112, 50, 0, 1114113, 50, 0, 1114114, 50, 0, 1114115, 50, 0, 1114116, 50, 0, 1114117, 50, 0, 1114118, 50, 0, 1114119, 50, 0, 1114120, 50, 0, 1114121, 50, 0, 1114122, 50, 0, 1114123, 50, 0, 1114124, 50, 0, 1114125, 50, 0, 1114126, 50, 0, 1114127, 50, 0, 1114128, 50, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 851975, 91, 0, 917511, 91, 0, 983047, 91, 0, 1048583, 91, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 797, 817 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
+position = Vector2( 797, 817 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 2 )]
-position = Vector2( 224, 0 )
+position = Vector2( 1021, 817 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( 224, 0 )
+position = Vector2( 1021, 817 )
 companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
@@ -35,65 +52,65 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 [node name="WorldTitleName" parent="." instance=ExtResource( 3 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 298, -74 )
+position = Vector2( 1095, 743 )
 propname = "nortprop redyellow umbrella"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 534, -180 )
+position = Vector2( 1331, 637 )
 propname = "nortprop restaurant table green chairs"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 642, 34 )
+position = Vector2( 1439, 851 )
 propname = "nortprop rocks wall foliage"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1380, 116 )
+position = Vector2( 2177, 933 )
 propname = "nortprop rocky struckture arc "
 
 [node name="LevelProp5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1073, -265 )
+position = Vector2( 1870, 552 )
 propname = "nortprop school table chairs"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1242, -386 )
+position = Vector2( 2039, 431 )
 propname = "nortprop sideways house part"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1116, 156 )
+position = Vector2( 1913, 973 )
 propname = "nortprop small building 1"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 8 )]
-position = Vector2( 965, 163 )
+position = Vector2( 1762, 980 )
 propname = "nortprop small building 2"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1235, 166 )
+position = Vector2( 2032, 983 )
 propname = "nortprop small building 3"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1117, 287 )
+position = Vector2( 1914, 1104 )
 propname = "nortprop small building 4"
 
 [node name="LevelProp11" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1263, 302 )
+position = Vector2( 2060, 1119 )
 propname = "nortprop small building 5"
 
 [node name="LevelProp12" parent="." instance=ExtResource( 8 )]
-position = Vector2( 986, 294 )
+position = Vector2( 1783, 1111 )
 propname = "nortprop small building 6"
 
 [node name="LevelProp13" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1069, 34 )
+position = Vector2( 1866, 851 )
 propname = "nortprop small building 7"
 
 [node name="LevelProp14" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1154, -8 )
+position = Vector2( 1951, 809 )
 propname = "nortprop small building 8"
 
 [node name="LevelProp15" parent="." instance=ExtResource( 8 )]
-position = Vector2( 625, -416 )
+position = Vector2( 1422, 401 )
 propname = "nortprop wood stand"
 
 [node name="LevelProp16" parent="." instance=ExtResource( 8 )]
-position = Vector2( 794, -431 )
+position = Vector2( 1591, 386 )
 propname = "nortprop wood stand 2"
