@@ -12,12 +12,27 @@
 
 [node name="NortPartFourLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1441799, 95, 0, 1507335, 95, 0, 1572871, 95, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
 tile_data = PoolIntArray( 983034, 67, 0, 1048570, 67, 0, 1114106, 67, 0, 1179642, 67, 0, 1245178, 67, 0, 1310714, 67, 0, 1376250, 67, 0, 1441786, 67, 0, 1507322, 67, 0, 1572858, 67, 0, 1638394, 67, 0, 1703930, 67, 0, 1703931, 67, 0, 1703932, 67, 0, 1703933, 67, 0, 1703934, 67, 0, 1703935, 67, 0, 1638400, 67, 0, 1638401, 67, 0, 1638402, 67, 0, 1638403, 67, 0, 1638404, 67, 0, 1638405, 67, 0, 1638406, 67, 0, 1638407, 67, 0, 1638408, 67, 0, 1638409, 67, 0, 1638410, 67, 0, 1638411, 67, 0, 1638412, 67, 0, 1638413, 67, 0, 1638414, 67, 0, 1638415, 67, 0, 1638416, 67, 0, 1638417, 67, 0, 1638418, 67, 0, 1638419, 67, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1441800, 95, 0, 1507336, 95, 0, 1572872, 95, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -169, 1451 )

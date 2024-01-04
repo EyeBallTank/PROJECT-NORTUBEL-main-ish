@@ -9,24 +9,39 @@
 
 [node name="NortPartSevenLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 917504, 91, 0, 983040, 91, 0, 1048576, 91, 0, 1114112, 91, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -65541, 56, 0, -5, 56, 0, 65531, 56, 0, 131067, 56, 0, 196603, 56, 0, 262139, 56, 0, 327675, 56, 0, 393211, 56, 0, 393212, 56, 0, 393213, 56, 0, 393214, 56, 0, 393215, 56, 0, 327680, 56, 0, 327681, 56, 0, 327682, 56, 0, 327683, 56, 0, 327684, 56, 0, 327685, 56, 0, 327686, 56, 0, 327687, 56, 0, 327688, 56, 0, 327689, 56, 0, 327690, 56, 0, 327691, 56, 0, 327692, 56, 0, 327693, 56, 0, 327694, 56, 0 )
+tile_data = PoolIntArray( 720888, 56, 0, 786424, 56, 0, 851960, 56, 0, 917496, 56, 0, 983032, 56, 0, 1048568, 56, 0, 1114104, 56, 0, 1179640, 56, 0, 1245176, 56, 0, 1245177, 56, 0, 1245178, 56, 0, 1245179, 56, 0, 1245180, 56, 0, 1245181, 56, 0, 1245182, 56, 0, 1245183, 56, 0, 1179648, 56, 0, 1179649, 56, 0, 1179650, 56, 0, 1179651, 56, 0, 1179652, 56, 0, 1179653, 56, 0, 1179654, 56, 0, 1179655, 56, 0, 1179656, 56, 0, 1179657, 56, 0, 1179658, 56, 0, 1179659, 56, 0, 1179660, 56, 0, 1179661, 56, 0, 1179662, 56, 0, 1179663, 56, 0, 1179664, 56, 0, 1179665, 56, 0, 1179666, 56, 0, 1179667, 56, 0, 1179668, 56, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 917505, 91, 0, 983041, 91, 0, 1048577, 91, 0, 1114113, 91, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -109, 225 )
+position = Vector2( -316, 1127 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -109, 225 )
+position = Vector2( -316, 1127 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( 57, 175 )
+position = Vector2( -150, 1077 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( 57, 175 )
+position = Vector2( -150, 1077 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]

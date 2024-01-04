@@ -12,32 +12,47 @@
 
 [node name="NortPartNineLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1114122, 95, 0, 1179658, 95, 0, 1245194, 95, 0, 1310730, 95, 0, 1376266, 95, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -5, 63, 0, 65531, 63, 0, 131067, 63, 0, 196603, 63, 0, 262139, 63, 0, 196634, 63, 0, 196635, 63, 0, 327675, 63, 0, 262170, 63, 0, 262171, 63, 0, 393211, 63, 0, 327705, 63, 0, 327706, 63, 0, 327707, 63, 0, 458747, 63, 0, 458748, 63, 0, 458749, 63, 0, 458750, 63, 0, 458751, 63, 0, 393216, 63, 0, 393217, 63, 0, 393218, 63, 0, 393219, 63, 0, 393220, 63, 0, 393221, 63, 0, 393222, 63, 0, 393223, 63, 0, 393224, 63, 0, 393225, 63, 0, 393226, 63, 0, 393227, 63, 0, 393228, 63, 0, 393229, 63, 0, 393230, 63, 0, 393231, 63, 0, 393232, 63, 0, 393233, 63, 0, 393234, 63, 0, 393235, 63, 0, 393236, 63, 0, 393237, 63, 0, 393238, 63, 0, 393239, 63, 0, 393240, 63, 0, 393241, 63, 0, 393242, 63, 0, 393243, 63, 0 )
+tile_data = PoolIntArray( 851959, 63, 0, 917495, 63, 0, 983031, 63, 0, 1048567, 63, 0, 1114103, 63, 0, 1179639, 63, 0, 1245175, 63, 0, 1179677, 63, 0, 1179678, 63, 0, 1310711, 63, 0, 1245213, 63, 0, 1245214, 63, 0, 1376247, 63, 0, 1310749, 63, 0, 1310750, 63, 0, 1441783, 63, 0, 1376284, 63, 0, 1376285, 63, 0, 1376286, 63, 0, 1507319, 63, 0, 1507320, 63, 0, 1507321, 63, 0, 1507322, 63, 0, 1507323, 63, 0, 1507324, 63, 0, 1507325, 63, 0, 1507326, 63, 0, 1507327, 63, 0, 1441792, 63, 0, 1441793, 63, 0, 1441794, 63, 0, 1441795, 63, 0, 1441796, 63, 0, 1441797, 63, 0, 1441798, 63, 0, 1441799, 63, 0, 1441800, 63, 0, 1441801, 63, 0, 1441802, 63, 0, 1441803, 63, 0, 1441804, 63, 0, 1441805, 63, 0, 1441806, 63, 0, 1441807, 63, 0, 1441808, 63, 0, 1441809, 63, 0, 1441810, 63, 0, 1441811, 63, 0, 1441812, 63, 0, 1441813, 63, 0, 1441814, 63, 0, 1441815, 63, 0, 1441816, 63, 0, 1441817, 63, 0, 1441818, 63, 0, 1441819, 63, 0, 1441820, 63, 0, 1441821, 63, 0, 1441822, 63, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1114123, 95, 0, 1179659, 95, 0, 1245195, 95, 0, 1310731, 95, 0, 1376267, 95, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -102, 86 )
+position = Vector2( 322, 1338 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( -102, 86 )
+position = Vector2( 322, 1338 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 98, 50 )
+position = Vector2( 522, 1302 )
 
 [node name="Companion" parent="." instance=ExtResource( 6 )]
-position = Vector2( 98, 50 )
+position = Vector2( 522, 1302 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 1 )]
 
 [node name="Nort Broken Stairs Yellow" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1283, 171 )
+position = Vector2( 1561, 1195 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1245, 158 )
+position = Vector2( 1523, 1182 )
 boardname = "nort art 6 char height"
