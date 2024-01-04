@@ -9,23 +9,38 @@
 
 [node name="LahiurnLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1376256, 227, 0, 1441792, 227, 0, 1507328, 227, 0, 1572864, 227, 0, 1638400, 227, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131078, 50, 0, -65542, 50, 0, -6, 50, 0, 65530, 50, 0, 131066, 50, 0, 196602, 50, 0, 262138, 50, 0, 327674, 50, 0, 393210, 50, 0, 393211, 50, 0, 393212, 50, 0, 393213, 50, 0, 393214, 50, 0, 393215, 50, 0, 327680, 50, 0, 327681, 50, 0, 327682, 50, 0, 327683, 50, 0, 327684, 50, 0, 327685, 50, 0, 327686, 50, 0 )
+tile_data = PoolIntArray( 1245174, 50, 0, 1310710, 50, 0, 1376246, 50, 0, 1441782, 50, 0, 1507318, 50, 0, 1572854, 50, 0, 1638390, 50, 0, 1703926, 50, 0, 1769462, 50, 0, 1769463, 50, 0, 1769464, 50, 0, 1769465, 50, 0, 1769466, 50, 0, 1769467, 50, 0, 1769468, 50, 0, 1769469, 50, 0, 1769470, 50, 0, 1769471, 50, 0, 1703936, 50, 0, 1703937, 50, 0, 1703938, 50, 0, 1703939, 50, 0, 1703940, 50, 0, 1703941, 50, 0, 1703942, 50, 0, 1703943, 50, 0, 1703944, 50, 0, 1703945, 50, 0, 1703946, 50, 0, 1703947, 50, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1376257, 227, 0, 1441793, 227, 0, 1507329, 227, 0, 1572865, 227, 0, 1638401, 227, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -152, -18 )
+position = Vector2( -477, 1583 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 146, -46 )
+position = Vector2( -179, 1555 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -152, -18 )
+position = Vector2( -477, 1583 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 146, -46 )
+position = Vector2( -179, 1555 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]

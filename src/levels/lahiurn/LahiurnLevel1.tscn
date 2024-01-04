@@ -10,24 +10,39 @@
 
 [node name="LahiurnLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1376262, 227, 0, 1441798, 227, 0, 1507334, 227, 0, 1572870, 227, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131078, 50, 0, -65542, 50, 0, -6, 50, 0, 65530, 50, 0, 131066, 50, 0, 196602, 50, 0, 262138, 50, 0, 327674, 50, 0, 393210, 50, 0, 393211, 50, 0, 393212, 50, 0, 393213, 50, 0, 393214, 50, 0, 393215, 50, 0, 327680, 50, 0, 327681, 50, 0, 327682, 50, 0, 327683, 50, 0, 327684, 50, 0, 327685, 50, 0, 327686, 50, 0 )
+tile_data = PoolIntArray( 1114107, 50, 0, 1179643, 50, 0, 1245179, 50, 0, 1310715, 50, 0, 1376251, 50, 0, 1441787, 50, 0, 1507323, 50, 0, 1572859, 50, 0, 1638395, 50, 0, 1703931, 50, 0, 1703932, 50, 0, 1703933, 50, 0, 1703934, 50, 0, 1703935, 50, 0, 1638400, 50, 0, 1638401, 50, 0, 1638402, 50, 0, 1638403, 50, 0, 1638404, 50, 0, 1638405, 50, 0, 1638406, 50, 0, 1638407, 50, 0, 1638408, 50, 0, 1638409, 50, 0, 1638410, 50, 0, 1638411, 50, 0, 1638412, 50, 0, 1638413, 50, 0, 1638414, 50, 0, 1638415, 50, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1376263, 227, 0, 1441799, 227, 0, 1507335, 227, 0, 1572871, 227, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -152, -18 )
+position = Vector2( -105, 1533 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 146, -46 )
+position = Vector2( 193, 1505 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -152, -18 )
+position = Vector2( -105, 1533 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 146, -46 )
+position = Vector2( 193, 1505 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 

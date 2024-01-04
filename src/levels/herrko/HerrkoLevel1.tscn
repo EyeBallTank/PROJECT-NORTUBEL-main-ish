@@ -10,24 +10,39 @@
 
 [node name="HerrkoLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 917506, 221, 0, 983042, 221, 0, 1048578, 221, 0, 1114114, 221, 0, 1179650, 221, 0, 1245186, 221, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131077, 43, 0, -65541, 43, 0, -5, 43, 0, 65531, 43, 0, 131067, 43, 0, 196603, 43, 0, 262139, 43, 0, 327675, 43, 0, 393211, 43, 0, 393212, 43, 0, 393213, 43, 0, 393214, 43, 0, 393215, 43, 0, 327680, 43, 0, 327681, 43, 0, 327682, 43, 0, 327683, 43, 0, 327684, 43, 0, 327685, 43, 0, 327686, 43, 0, 327687, 43, 0, 327688, 43, 0, 327689, 43, 0, 327690, 43, 0 )
+tile_data = PoolIntArray( 917497, 43, 0, 983033, 43, 0, 1048569, 43, 0, 1114105, 43, 0, 1179641, 43, 0, 1245177, 43, 0, 1310713, 43, 0, 1376249, 43, 0, 1376250, 43, 0, 1376251, 43, 0, 1376252, 43, 0, 1376253, 43, 0, 1376254, 43, 0, 1376255, 43, 0, 1310720, 43, 0, 1310721, 43, 0, 1310722, 43, 0, 1310723, 43, 0, 1310724, 43, 0, 1310725, 43, 0, 1310726, 43, 0, 1310727, 43, 0, 1310728, 43, 0, 1310729, 43, 0, 1310730, 43, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 917507, 221, 0, 983043, 221, 0, 1048579, 221, 0, 1114115, 221, 0, 1179651, 221, 0, 1245187, 221, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -110, 24 )
+position = Vector2( -242, 1221 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -110, 24 )
+position = Vector2( -242, 1221 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 70, -16 )
+position = Vector2( -62, 1181 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 70, -16 )
+position = Vector2( -62, 1181 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
