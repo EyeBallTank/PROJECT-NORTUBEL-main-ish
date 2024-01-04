@@ -10,24 +10,39 @@
 
 [node name="BrinkLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 983045, 228, 0, 1048581, 228, 0, 1114117, 228, 0, 1179653, 228, 0, 1245189, 228, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -196614, 32, 0, -131078, 32, 0, -65542, 32, 0, -6, 32, 0, 65530, 32, 0, 131066, 32, 0, 196602, 32, 0, 196603, 32, 0, 196604, 32, 0, 196605, 32, 0, 196606, 32, 0, 196607, 32, 0, 131072, 32, 0, 131073, 32, 0, 131074, 32, 0, 131075, 32, 0, 131076, 32, 0, 131077, 32, 0, 131078, 32, 0 )
+tile_data = PoolIntArray( 917500, 32, 0, 983036, 32, 0, 1048572, 32, 0, 1114108, 32, 0, 1179644, 32, 0, 1245180, 32, 0, 1310716, 32, 0, 1376252, 32, 0, 1376253, 32, 0, 1376254, 32, 0, 1376255, 32, 0, 1310720, 32, 0, 1310721, 32, 0, 1310722, 32, 0, 1310723, 32, 0, 1310724, 32, 0, 1310725, 32, 0, 1310726, 32, 0, 1310727, 32, 0, 1310728, 32, 0, 1310729, 32, 0, 1310730, 32, 0, 1310731, 32, 0, 1310732, 32, 0, 1310733, 32, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 983046, 228, 0, 1048582, 228, 0, 1114118, 228, 0, 1179654, 228, 0, 1245190, 228, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -190, -76 )
+position = Vector2( -76, 1202 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 44, -106 )
+position = Vector2( 158, 1172 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -190, -76 )
+position = Vector2( -76, 1202 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 46, -106 )
+position = Vector2( 160, 1172 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 

@@ -9,20 +9,38 @@
 
 [node name="GrekLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1048582, 227, 0, 1114118, 227, 0, 1179654, 227, 0, 1245190, 227, 0, 1310726, 227, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -131077, 42, 0, -65541, 42, 0, -5, 42, 0, 65531, 42, 0, 131067, 42, 0, 196603, 42, 0, 262139, 42, 0, 327675, 42, 0, 393211, 42, 0, 458747, 42, 0, 458748, 42, 0, 458749, 42, 0, 458750, 42, 0, 458751, 42, 0, 393216, 42, 0, 393217, 42, 0, 393218, 42, 0, 393219, 42, 0, 393220, 42, 0, 393221, 42, 0, 393222, 42, 0, 393223, 42, 0, 393224, 42, 0, 393225, 42, 0 )
+tile_data = PoolIntArray( 917499, 37, 0, 983035, 37, 0, 1048571, 37, 0, 1114107, 37, 0, 1179643, 37, 0, 1245179, 37, 0, 1310715, 37, 0, 1376251, 37, 0, 1441787, 37, 0, 1441788, 37, 0, 1441789, 37, 0, 1441790, 37, 0, 1441791, 37, 0, 1376256, 37, 0, 1376257, 37, 0, 1376258, 37, 0, 1376259, 37, 0, 1376260, 37, 0, 1376261, 37, 0, 1376262, 37, 0, 1376263, 37, 0, 1376264, 37, 0, 1376265, 37, 0, 1376266, 37, 0, 1376267, 37, 0, 1376268, 37, 0, 1376269, 37, 0, 1376270, 37, 0, 1376271, 37, 0, 1376272, 37, 0, 1376273, 37, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1048583, 227, 0, 1114119, 227, 0, 1179655, 227, 0, 1245191, 227, 0, 1310727, 227, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -102, 1272 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 196, 0 )
+position = Vector2( 94, 1272 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( -102, 1272 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
+position = Vector2( -102, 1272 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]

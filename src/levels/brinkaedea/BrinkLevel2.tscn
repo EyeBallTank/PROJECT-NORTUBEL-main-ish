@@ -9,23 +9,38 @@
 
 [node name="BrinkLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1245188, 229, 0, 1310724, 229, 0, 1376260, 229, 0, 1441796, 229, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -196614, 32, 0, -131078, 32, 0, -65542, 32, 0, -6, 32, 0, 65530, 32, 0, 131066, 32, 0, 196602, 32, 0, 196603, 32, 0, 196604, 32, 0, 196605, 32, 0, 196606, 32, 0, 196607, 32, 0, 131072, 32, 0, 131073, 32, 0, 131074, 32, 0, 131075, 32, 0, 131076, 32, 0, 131077, 32, 0, 131078, 32, 0 )
+tile_data = PoolIntArray( 1048569, 32, 0, 1114105, 32, 0, 1179641, 32, 0, 1245177, 32, 0, 1310713, 32, 0, 1376249, 32, 0, 1441785, 32, 0, 1507321, 32, 0, 1572857, 32, 0, 1572858, 32, 0, 1572859, 32, 0, 1572860, 32, 0, 1572861, 32, 0, 1572862, 32, 0, 1572863, 32, 0, 1507328, 32, 0, 1507329, 32, 0, 1507330, 32, 0, 1507331, 32, 0, 1507332, 32, 0, 1507333, 32, 0, 1507334, 32, 0, 1507335, 32, 0, 1507336, 32, 0, 1507337, 32, 0, 1507338, 32, 0, 1507339, 32, 0, 1507340, 32, 0, 1507341, 32, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1245189, 229, 0, 1310725, 229, 0, 1376261, 229, 0, 1441797, 229, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -190, -76 )
+position = Vector2( -240, 1421 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 44, -106 )
+position = Vector2( -6, 1391 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -190, -76 )
+position = Vector2( -240, 1421 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 46, -106 )
+position = Vector2( -4, 1391 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
