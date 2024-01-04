@@ -13,12 +13,27 @@
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 2293752, 93, 0, 2293753, 93, 0, 2359288, 93, 0, 2359289, 93, 0, 2424824, 93, 0, 2424825, 93, 0 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
 tile_data = PoolIntArray( 2031604, 56, 0, 2097140, 56, 0, 2162676, 56, 0, 2228212, 56, 0, 2293748, 56, 0, 2359284, 56, 0, 2424820, 56, 0, 2490356, 56, 0, 2490357, 56, 0, 2490358, 56, 0, 2490359, 56, 0, 2490360, 56, 0, 2490361, 56, 0, 2490362, 56, 0, 2490363, 56, 0, 2490364, 56, 0, 2490365, 56, 0, 2490366, 56, 0, 2490367, 56, 0, 2424832, 56, 0, 2424833, 56, 0, 2424834, 56, 0, 2424835, 56, 0, 2424836, 56, 0, 2424837, 56, 0, 2424838, 56, 0, 2424839, 56, 0, 2424840, 56, 0, 2424841, 56, 0, 2424842, 56, 0, 2424843, 56, 0, 2424844, 56, 0, 2424845, 56, 0, 2424846, 56, 0, 2424847, 56, 0, 2424848, 56, 0, 2424849, 56, 0, 2424850, 56, 0, 2424851, 56, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 2293750, 93, 0, 2293751, 93, 0, 2359286, 93, 0, 2359287, 93, 0, 2424822, 93, 0, 2424823, 93, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( -249, 2299 )
