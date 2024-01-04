@@ -1,4 +1,4 @@
-[gd_scene load_steps=434 format=2]
+[gd_scene load_steps=440 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -216,6 +216,9 @@
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop gym assets.png" type="Texture" id=214]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop gym assets 2.png" type="Texture" id=215]
 [ext_resource path="res://assets/sprites/level_props/massag coav/massprop bus.png" type="Texture" id=216]
+[ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 1.png" type="Texture" id=217]
+[ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 2.png" type="Texture" id=218]
+[ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 3.png" type="Texture" id=219]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -1076,6 +1079,18 @@ region = Rect2( 0, 0, 95, 227 )
 [sub_resource type="AtlasTexture" id=104]
 atlas = ExtResource( 93 )
 region = Rect2( 0, 0, 90, 248 )
+
+[sub_resource type="AtlasTexture" id=230]
+atlas = ExtResource( 217 )
+region = Rect2( 0, 0, 66, 170 )
+
+[sub_resource type="AtlasTexture" id=231]
+atlas = ExtResource( 218 )
+region = Rect2( 0, 0, 62, 177 )
+
+[sub_resource type="AtlasTexture" id=232]
+atlas = ExtResource( 219 )
+region = Rect2( 0, 0, 61, 173 )
 
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 15 )
@@ -2153,6 +2168,21 @@ animations = [ {
 "name": "nortprop wood stand 2",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 230 ) ],
+"loop": false,
+"name": "shihiro lantern 1",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 231 ) ],
+"loop": false,
+"name": "shihiro lantern 2",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 232 ) ],
+"loop": false,
+"name": "shihiro lantern 3",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 26 ) ],
 "loop": false,
 "name": "untoprop coffin skull chains",
@@ -2165,5 +2195,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "massprop bus"
+animation = "shihiro lantern 3"
 playing = true

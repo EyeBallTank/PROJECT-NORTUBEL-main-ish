@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/nort npc/ShihiroNPC.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/nort npc/BaoBaoNPC.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=11]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -69,3 +70,15 @@ customtext = "sh1hr0"
 position = Vector2( 801, 2221 )
 customtext = "Arff Arff"
 customname = "Bao Bao"
+
+[node name="LevelProp" parent="." instance=ExtResource( 11 )]
+position = Vector2( 4, 1972 )
+propname = "shihiro lantern 1"
+
+[node name="LevelProp2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 85, 1977 )
+propname = "shihiro lantern 2"
+
+[node name="LevelProp3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 179, 1962 )
+propname = "shihiro lantern 3"
