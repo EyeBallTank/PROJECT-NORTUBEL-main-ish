@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+#in real life this is called a Mu ren zhuang
 onready var sprite = $AnimatedSprite
 
 func _ready():

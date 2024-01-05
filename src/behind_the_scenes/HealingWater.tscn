@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://src/behind_the_scenes/PoisonHitbox.gd" type="Script" id=1]
+[ext_resource path="res://src/behind_the_scenes/HealingWater.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -50,12 +50,11 @@ tracks/0/keys = {
 "values": [ false, true ]
 }
 
-[node name="PoisonHitbox" type="Area2D"]
+[node name="HealingWater" type="Area2D"]
 scale = Vector2( 64, 64 )
 collision_layer = 32
 collision_mask = 3
 script = ExtResource( 1 )
-collision_newsize = Vector2( 64, 64 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["poisonarea"]]
 shape = SubResource( 1 )
@@ -68,4 +67,4 @@ reset_on_save = false
 anims/RESET = SubResource( 2 )
 anims/poison = SubResource( 3 )
 
-[connection signal="body_entered" from="." to="." method="_on_PoisonHitbox_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_HealingWater_body_entered"]

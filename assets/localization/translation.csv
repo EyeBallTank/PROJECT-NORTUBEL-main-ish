@@ -759,8 +759,12 @@ CONVO_TALK_STELLA_ZARINA_4,"The towns were built long before everyone knew about
 But I could figure out different solutions when an eruption happens.","As cidades foram construídas muito antes de todos saberem sobre o estado dos lagos.
 Mas eu poderia descobrir soluções diferentes quando uma erupção acontecer."
 SHIHIRO_NPC_TALK,"You will never have the same powers as I do, but I believe you don't need to.
-Just master what you got and you can go further.","Vocês nunca vão ter os mesmos poderes que eu, mas acredito que não precisam.
-Basta dominar o que têm e podem ir mais longe."
+Just master what you got and you can go further.
+Be carefull, some of this stuff may hurt if you're not carefull.
+But at least Zarina provided us with healing water","Vocês nunca vão ter os mesmos poderes que eu, mas acredito que não precisam.
+Basta dominar o que têm e podem ir mais longe.
+Tem cuidado porque algumas coisas podem te magoar se não tens cuidado.
+Pelo menos a Zarina trouxe-nos agua curativa."
 SHIHIRO_NPC_HURT,This isn't how I wanted to see your combat skills.,Não é assim que eu queria ver as tuas habilidades de combate.
 SHIHIRO_NPC_HUG,"Is something alright?
 If you're feeling a bit down, you can always talk about it.","Está tudo bem?
@@ -857,3 +861,4 @@ Eu não tenho esperança nenhuma para a minha turma."
 JOOLIETTA_NPC_HUG,I guess this is all a hard working teacher like myself needs.,Talvez isso é a única coisa que uma professora trabalhadora como eu precisa.
 JOOLIETTA_NPC_HONK,"Gaaargh, take your hands off me!","Gaaargh, tira as tuas mãos de mim!"
 JOOLIETTA_NPC_HURT,What do you seek in hurting a school teacher like myself?,Em que procuras em magoar uma professora como eu?
+ZARINA_AUDIENCE_WATER_T,"As long as you simply touch this magical water, you can heal your wounds.","Desde que você simplesmente toque nesta agua mágica, pode curar as suas feridas."
