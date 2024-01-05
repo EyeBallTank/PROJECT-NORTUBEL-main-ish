@@ -210,6 +210,11 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = ICEFOLLOW
 
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = RUNAWAY
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = STANDSTILL
+
 		STANDSTILL:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -272,6 +277,10 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = ICEIDLE
 
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = RUNAWAY
+			if Input.is_action_just_pressed("simplefollow"):
+				state = FOLLOWME
 
 		RUNAWAY:
 			oxygenbar.hide()
@@ -352,6 +361,11 @@ func _physics_process(delta):
 				state = SLOWRUN
 			if is_on_ice():
 				state = ICERUN
+
+			if Input.is_action_just_pressed("simplefollow"):
+				state = FOLLOWME
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = STANDSTILL
 
 		SWIMMING:
 			if immortal == false:
@@ -492,6 +506,11 @@ func _physics_process(delta):
 				oxygen = 1500
 				state = FOLLOWME
 
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = SWIMRUN
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = SWIMIDLE
+
 		SWIMRUN:
 			if immortal == false:
 				oxygenbar.show()
@@ -603,6 +622,11 @@ func _physics_process(delta):
 				oxygen = 1500
 				state = RUNAWAY
 
+			if Input.is_action_just_pressed("simplefollow"):
+				state = SWIMMING
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = SWIMIDLE
+
 		SWIMIDLE:
 			if immortal == false:
 				oxygenbar.show()
@@ -636,6 +660,12 @@ func _physics_process(delta):
 				oxygenbar.hide()
 				oxygen = 1500
 				state = STANDSTILL
+
+			if Input.is_action_just_pressed("simplefollow"):
+				state = SWIMMING
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = SWIMRUN
+
 
 		CLIMBIDLE:
 			oxygenbar.hide()
@@ -709,6 +739,11 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = STANDSTILL
 
+			if Input.is_action_just_pressed("simplefollow"):
+				state = CLIMBMOVE
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = CLIMBRUN
+
 		CLIMBMOVE:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -768,6 +803,12 @@ func _physics_process(delta):
 				state = FOLLOWME
 			if not is_on_ladder():
 				state = FOLLOWME
+
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = CLIMBIDLE
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = CLIMBRUN
+
 		CLIMBRUN:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -827,6 +868,11 @@ func _physics_process(delta):
 				state = RUNAWAY
 			if not is_on_ladder():
 				state = RUNAWAY
+
+			if Input.is_action_just_pressed("simplefollow"):
+				state = CLIMBMOVE
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = CLIMBIDLE
 
 		SLOWFOLLOW:
 			oxygenbar.hide()
@@ -905,6 +951,13 @@ func _physics_process(delta):
 			if not is_on_slow():
 				if is_on_floor():
 					state = FOLLOWME
+
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = SLOWRUN
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = STANDSTILL
+
+
 		SLOWRUN:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -983,6 +1036,11 @@ func _physics_process(delta):
 				if is_on_floor():
 					state = RUNAWAY
 
+			if Input.is_action_just_pressed("simplefollow"):
+				state = SLOWFOLLOW
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = STANDSTILL
+
 		CRAWLFOLLOW:
 			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
@@ -1018,6 +1076,11 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
 				state = CRAWLRUN
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
+				state = CRAWLIDLE
+
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = CRAWLRUN
+			if Input.is_action_just_pressed("simplestandstill"):
 				state = CRAWLIDLE
 
 		CRAWLRUN:
@@ -1057,6 +1120,11 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("down"):
 				state = CRAWLIDLE
 
+			if Input.is_action_just_pressed("simplefollow"):
+				state = CRAWLFOLLOW
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = CRAWLIDLE
+
 		CRAWLIDLE:
 			oxygenbar.hide()
 			animatedsprite.animation = "Crawlidle"
@@ -1075,6 +1143,11 @@ func _physics_process(delta):
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = CRAWLFOLLOW
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("left"):
+				state = CRAWLRUN
+
+			if Input.is_action_just_pressed("simplefollow"):
+				state = CRAWLFOLLOW
+			if Input.is_action_just_pressed("simplerunaway"):
 				state = CRAWLRUN
 
 		ICEFOLLOW:
@@ -1163,6 +1236,12 @@ func _physics_process(delta):
 				else:
 					pass
 
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = ICEIDLE
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = ICERUN
+
+
 		ICERUN:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1249,6 +1328,11 @@ func _physics_process(delta):
 				else:
 					pass
 
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = ICEIDLE
+			if Input.is_action_just_pressed("simplefollow"):
+				state = ICEFOLLOW
+
 		ICEIDLE:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1325,6 +1409,11 @@ func _physics_process(delta):
 			if not is_on_ice():
 				if is_on_floor():
 					state = STANDSTILL
+
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = ICERUN
+			if Input.is_action_just_pressed("simplefollow"):
+				state = ICEFOLLOW
 
 		DEATH:
 			if is_on_water():
@@ -1430,6 +1519,12 @@ func _physics_process(delta):
 				state = SLOWFOLLOW
 			if is_on_ice():
 				state = ICEFOLLOW
+
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = PUSHRUN
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = STANDSTILL
+
 		PUSHRUN:
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1509,6 +1604,11 @@ func _physics_process(delta):
 				state = SLOWRUN
 			if is_on_ice():
 				state = ICERUN
+
+			if Input.is_action_just_pressed("simplefollow"):
+				state = PUSHFOLLOW
+			if Input.is_action_just_pressed("simplestandstill"):
+				state = STANDSTILL
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":
