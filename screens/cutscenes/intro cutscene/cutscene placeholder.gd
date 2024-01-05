@@ -38,6 +38,7 @@ func cutscene_over():
 #Stella: Well, I felt the same way. Even I still feel weird about it.
 #Katrin: Booker, are you alright?
 #Booker: I got almost all of them... except for that coward Phineas. Of course he ran away.
+#Booker: Unfortunately, this once abandoned warehouse got compromised. Need to find a new place again.
 #Melvin: By the way, Stella, we could get you out of here.
 #Melvin: See this box? It's how we got here and it could get us out!
 #A portal shows up.
@@ -54,6 +55,7 @@ func cutscene_over():
 #Booker: Even I wonder if it could happen to me, but you have a chance to return to a better place.
 #Stella: Is it wrong that I hope to see you again?
 #Booker: I warned you not to love me too much... but you did bring back a part of me I thought died years ago.
+#(Shows animatedsprite of flashbacks to Booker's past
 #Booker: Somewhere in heaven, a man could rejoin his loved ones... had he not became a shadow participating on a war against demons.
 #Stella: Well, I'll miss you Booker. Thank you for everything.
 #She leaves with the 6 others.
@@ -90,7 +92,57 @@ func cutscene_over():
 #Shihiro: We're still not sure what it is, though.
 #Pete: Sir, miss Zarina said she was a sorceress. Are you a sorcerer too?
 #Shihiro: I've got powers too, specially related to combat. And I also teach martial arts and help those practice their combat skills, even if they don't have powers themselves.
+#(Shows an animation of a muscular Shihiro with purple energy)
 #Carrie: Well, we managed to get around by what we got. Melvin brought a knife with him.
 #Panel showing Melvin's knife
-#Shihiro: 
+#Shihiro:  I see. If you don't mind, I'd like to test your combat skills.
+
+
+#Shihiro: Not bad, I knew you got something in you.
+#Melvin: It's been a while, any of you wanna try another trip with this thing?
+#Katrin: Sure, Stella you wanna come along?
+#Stella: Not really, I'd rather stay here with Zarina.
+#Stella: But promise me you'll be safe.
+#Katrin: Don't worry, I'm sure the next place we could visit could be safe.
+#Holmes: So... you still haven't got word about your husband?
+#Fernaanda: No. At this point I'm losing hope.
+#The 6 show up
+#Holmes: Uh, who are you people?
+#Oscar: Wow look, a talking cat.
+#Holmes: Something's off about these kids. What are they?
+#Barney: I knew it! My theory was true. There is such thing as a multiverse!
+#Barney: And there is something weird about these 6 specimen.
+#Carrie: We're humans, a civilized species from Earth.
+#Melvin: In our world, humans are technically a relative to monkeys.
+#Barney: How is it you know what a monkey is? And why did that boy called Holmes a cat?
+#Pete: Our world has animals of all sorts. Some kinda look like you guys.
+#Barney: Mmmm, this is wonderfull. A different universe that might have its own diverse ecosystem.
+#Holmes: Well, what brings you kids here anyway?
+#Katrin: We've been travelling through different worlds in hopes to find our home. But so far, we're still lost.
+#Holmes: Well, the good news is that Massag-Coav is a wonderfull place, I'm sure you guys can find a lot of fun to be had here.
+#Fernaanda: Holmes, didn't you see the news lately? There was a crysis at the zoo and some animals escaped.
+#Holmes: C'mon, Fern. There can't be that many.
+#Feelix: Mom, can I play with these new kids?
+#Angela: Why do you wear that thing, anyway?
+#Feelix: I was born with one eye. My mom has 2 eyes but they got worse over time, so she wears something to retain her vision.
+#Fernaanda: Well if you kids treat my son nicely, I could make something for you all like a cake. But it can't be chocolate.
+#Holmes: But for now, let us introduce our world to these 6 guests, shall we?
+
+#Melvin: By the way, you guys have that sports center, right? Is soccer a thing there?
+#Holmes: I guess. Better ask Karla about it.
+#Karla: Uh? Sure, you guys can have fun here. Just make sure to sign your name here... and here... and...
+#Touni: I almost forgot we had a soccer division. Interest has been down lately, but this is why we welcome new blood in the first place.
+#Karoline: Dad, do you and mom have any idea what these people are?
+#Touni: Dr Barney said they're "humans" and in their world, could be related to monkeys. If that's true, they can't be that out of the ordinary.
+
+#Karla: Maybe it's because we haven't seen any soccer action in years but you did good.
+#Carrie: Well, Mel, you did enough to show off your kicks. Can we go home now?
+#Melvin: Alright, carrot. Let me just say good bye first.
+#McSherry: Holmes? Where the heck are ya?
+#Holmes: Oh hey, McSher, looking for another bottle of whiskey?
+#McSherry: No, you idiot! I need to tell you something. It's about Marlon.
+#Holmes: Marlon Valentinou? What has he been up to? (Shows an image of Marlon)
+#McSherry: Heard he was looking for some artifacts. Something to do with the god Mluto.
+#Holmes: Has he gone mad?
+#Barney: 
 
