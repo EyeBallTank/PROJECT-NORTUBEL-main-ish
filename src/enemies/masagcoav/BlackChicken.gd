@@ -40,7 +40,7 @@ func _physics_process(delta):
 			if found_wall:
 				direction *= -1
 				scale.x = -scale.x
-			velocity = direction * 160
+			velocity = direction * 140
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
@@ -89,7 +89,7 @@ func _physics_process(delta):
 #			state = MOVING
 
 			if dizzy_timer_starting:
-				dizzytimer.start(2)
+				dizzytimer.start(3.5)
 				dizzy_timer_starting = false
 
 

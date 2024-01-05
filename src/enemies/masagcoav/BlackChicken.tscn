@@ -223,7 +223,7 @@ cast_to = Vector2( 527, 0 )
 collision_mask = 3
 
 [node name="DizzyTimer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 3.5
 one_shot = true
 
 [node name="ImpactTimer" type="Timer" parent="."]
