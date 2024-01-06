@@ -37,6 +37,8 @@ onready var ladderCheck = $LadderCheck
 onready var animatedsprite = $AnimatedSprite
 onready var pushdetector = $PushDetector
 
+onready var stellastateteller = $CanvasLayer/StellaStateTeller
+
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 var ouch = false
@@ -79,6 +81,7 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			stellastateteller.play("followstate")
 			pass
 
 			pushcheck()
@@ -150,6 +153,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		STANDSTILL:
+			stellastateteller.play("stopstate")
 			pushcheck()
 			vel.x = 0
 			direction.x = 0
@@ -205,6 +209,7 @@ func _physics_process(delta):
 				state = FOLLOWME
 
 		RUNAWAY:
+			stellastateteller.play("runstate")
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = WALK_MAX_SPEED
@@ -275,6 +280,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CLIMBIDLE:
+			stellastateteller.play("stopstate")
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
 					animatedsprite.animation = "Climbidle"
@@ -348,6 +354,7 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBMOVE:
+			stellastateteller.play("followstate")
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
 					vel = position.direction_to(Player.position) * climbspeed
@@ -407,6 +414,7 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBRUN:
+			stellastateteller.play("runstate")
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
 					vel = position.direction_to(Player.position) * -climbspeed
@@ -477,6 +485,7 @@ func _physics_process(delta):
 			go_to_checkpoint()
 
 		PUSHFOLLOW:
+			stellastateteller.play("followstate")
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = -WALK_MAX_SPEED
@@ -548,6 +557,7 @@ func _physics_process(delta):
 				state = PUSHRUN
 
 		PUSHRUN:
+			stellastateteller.play("runstate")
 			pushcheck()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = WALK_MAX_SPEED

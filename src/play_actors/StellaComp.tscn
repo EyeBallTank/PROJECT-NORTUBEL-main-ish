@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/STELLA COMP SPRITES.png" type="Texture" id=2]
 [ext_resource path="res://src/menusandui/healthbarStella.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/play_actors/StellaComp.gd" type="Script" id=4]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/compstateteller.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=7]
 
 [sub_resource type="AtlasTexture" id=37]
@@ -117,6 +118,36 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.5, 123.5 )
 
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 37, 36 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 5 )
+region = Rect2( 74, 0, 37, 36 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 5 )
+region = Rect2( 37, 0, 37, 36 )
+
+[sub_resource type="SpriteFrames" id=55]
+animations = [ {
+"frames": [ SubResource( 52 ) ],
+"loop": false,
+"name": "followstate",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 53 ) ],
+"loop": false,
+"name": "runstate",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 54 ) ],
+"loop": false,
+"name": "stopstate",
+"speed": 0.0
+} ]
+
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 7 )
@@ -220,6 +251,12 @@ margin_left = 64.0
 margin_top = 102.0
 margin_right = 223.0
 margin_bottom = 137.0
+
+[node name="StellaStateTeller" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 247, 119 )
+frames = SubResource( 55 )
+animation = "runstate"
+playing = true
 
 [node name="FloaterActive" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -276 )
