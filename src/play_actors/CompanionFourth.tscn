@@ -140,6 +140,7 @@ position = Vector2( 0, -133 )
 scale = Vector2( 0.64, 0.64 )
 frames = ExtResource( 4 )
 animation = "Idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -149,7 +150,7 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="CompStateTeller" type="AnimatedSprite" parent="CanvasLayer"]
-position = Vector2( 285, 81 )
+position = Vector2( 231, 81 )
 frames = SubResource( 37 )
 animation = "stopstate"
 playing = true
@@ -161,9 +162,9 @@ margin_right = 208.0
 margin_bottom = 99.0
 
 [node name="OxygenbarCompanion" parent="CanvasLayer" instance=ExtResource( 6 )]
-margin_left = 216.0
+margin_left = 253.0
 margin_top = 64.0
-margin_right = 264.0
+margin_right = 301.0
 margin_bottom = 96.0
 rect_rotation = 0.0
 
@@ -171,6 +172,7 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
