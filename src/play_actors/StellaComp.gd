@@ -21,6 +21,7 @@ var WALK_MAX_SPEED = 700
 var PUSH_SPEED = 150
 var STOP_FORCE = 450
 var JUMP_SPEED = 1500
+var climbspeed = 360
 
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 1450.0
@@ -326,7 +327,11 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 				else:
-					state = STANDSTILL
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
 
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("right"):
 				state = CLIMBMOVE
@@ -345,23 +350,23 @@ func _physics_process(delta):
 		CLIMBMOVE:
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 			else:
 				if Player.global_position.x < global_position.x - 90:
@@ -377,7 +382,11 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 				else:
-					state = STANDSTILL
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
 
 			vel.x = direction.x * 390
 #Why do i have to use vel.x and not vel.y here?
@@ -400,23 +409,23 @@ func _physics_process(delta):
 		CLIMBRUN:
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 			else:
 				if Player.global_position.x < global_position.x - 90:
@@ -432,7 +441,11 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 				else:
-					state = STANDSTILL
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
 
 			vel.x = direction.x * 390
 #Why do i have to use vel.x and not vel.y here?
