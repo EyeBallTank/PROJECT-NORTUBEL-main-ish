@@ -66,6 +66,8 @@ var portal_id = 0
 onready var animatedsprite = $AnimatedSprite
 onready var pushdetector = $PushDetector
 
+onready var compstateteller = $CanvasLayer/CompStateTeller
+
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
 var ouch = false
@@ -133,6 +135,7 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -217,6 +220,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		STANDSTILL:
+			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -284,6 +288,7 @@ func _physics_process(delta):
 				state = FOLLOWME
 
 		RUNAWAY:
+			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -369,6 +374,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		SWIMMING:
+			compstateteller.play("followstate")
 			if immortal == false:
 				oxygenbar.show()
 				oxygen -= 1
@@ -513,6 +519,7 @@ func _physics_process(delta):
 				state = SWIMIDLE
 
 		SWIMRUN:
+			compstateteller.play("runstate")
 			if immortal == false:
 				oxygenbar.show()
 				oxygen -= 1
@@ -629,6 +636,7 @@ func _physics_process(delta):
 				state = SWIMIDLE
 
 		SWIMIDLE:
+			compstateteller.play("stopstate")
 			if immortal == false:
 				oxygenbar.show()
 				oxygen -= 1
@@ -669,6 +677,7 @@ func _physics_process(delta):
 
 
 		CLIMBIDLE:
+			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -750,6 +759,7 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBMOVE:
+			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -819,6 +829,7 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBRUN:
+			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -889,6 +900,7 @@ func _physics_process(delta):
 				state = CLIMBIDLE
 
 		SLOWFOLLOW:
+			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -973,6 +985,7 @@ func _physics_process(delta):
 
 
 		SLOWRUN:
+			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -1056,6 +1069,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		CRAWLFOLLOW:
+			compstateteller.play("followstate")
 			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = -WALK_MAX_SPEED
@@ -1098,6 +1112,7 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLRUN:
+			compstateteller.play("runstate")
 			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = WALK_MAX_SPEED
@@ -1140,6 +1155,7 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLIDLE:
+			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			animatedsprite.animation = "Crawlidle"
 			vel.x = 0
@@ -1165,6 +1181,7 @@ func _physics_process(delta):
 				state = CRAWLRUN
 
 		ICEFOLLOW:
+			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -1257,6 +1274,7 @@ func _physics_process(delta):
 
 
 		ICERUN:
+			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -1348,6 +1366,7 @@ func _physics_process(delta):
 				state = ICEFOLLOW
 
 		ICEIDLE:
+			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -1456,6 +1475,7 @@ func _physics_process(delta):
 #			pass
 
 		PUSHFOLLOW:
+			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
@@ -1540,6 +1560,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		PUSHRUN:
+			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
