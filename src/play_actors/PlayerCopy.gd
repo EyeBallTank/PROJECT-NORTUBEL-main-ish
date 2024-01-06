@@ -100,7 +100,11 @@ func _i_am_invincible():
 	is_invul()
 
 func _physics_process(delta):
-	
+	if Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == false:
+		$Camera2D.smoothing_enabled = true
+	elif Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == true:
+		$Camera2D.smoothing_enabled = false
+
 	if hasbluekey == true:
 		$CanvasLayer/BlueKeyIcon.play("sim tenho chave azul")
 	elif hasbluekey == false:
