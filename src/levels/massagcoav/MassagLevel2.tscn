@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/npc_actors/massag npc/McSherryNPC.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/npc_actors/massag npc/StarfishNPC.tscn" type="PackedScene" id=12]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -91,3 +92,8 @@ customtext = "MCSHERRY_NPC_TALK"
 customtext2 = "MCSHERRY_NPC_HONK"
 customtext3 = "MCSHERRY_NPC_HUG"
 customtext4 = "MCSHERRY_NPC_HURT"
+
+[node name="StarfishNPC" parent="." instance=ExtResource( 12 )]
+position = Vector2( -129, 1507 )
+customtext = "STARFISH_JANITOR_TALK_NPC"
+customname = "STARFISH_JANITOR_NAME"

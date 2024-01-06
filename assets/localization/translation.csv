@@ -173,7 +173,7 @@ BOOK_HINT_PORTAL,Portals have specific paths,Portais têm caminhos específicos
 BOOK_HINT_VASE,Both characters can push vases,Ambas as personagens podem empurrar vasos
 BOOK_HINT_ICE,Ice makes the characters' movement slippery,Gelo faz o movimento das personagens escorregadio
 BOOK_HINT_MUD,Mud makes the characters' movement slow,Lama fazo o movimento das personagens lento
-BOOK_HINT_GONG,Gongs are checkpoint áreas,"Gongos são áreas de ""checkpoint"""
+BOOK_HINT_GONG,Gongs are checkpoint areas,"Gongos são áreas de ""checkpoint"""
 BOOK_HINT_JUMPPAD,Trampolines make both characters jump higher,Trampolins fazem ambas personagens saltar mais alto
 BOOK_HINT_WATERPLAY,The Player can swim with the 4 arrow keys,O(A) Jogador(a) pode nadar com os 4 botões de setas
 BOOK_HINT_WATERCOMP,The Companion carries following/avoiding/still states under water,O/(A) Companheiro(a) contém estados de seguir/evitar/parar debaixo de água
@@ -866,3 +866,5 @@ SMOOTH_CAMERA_OPTION_TEXT,     Smooth Camera on/off: C (Only works when game is 
 KANGAROO_ZACK_NPC_TALK,"Man, those Gallus even got to this city.
 But at least I got enough stories of celebrities being injured, to make some quick cash out of.","Meu, estes Gallus até chegaram a esta cidade.
 Pelo menus tenho estórias suficientes de celebridades serem atacadas, para fazer algum dinheiro."
+STARFISH_JANITOR_NAME,Starfish Street Sweeper,"Varredor, estrela do mar"
+STARFISH_JANITOR_TALK_NPC,The worst part of this Gallus invasion is all the mess I've gotta clean up.,A pior parte da invasão dos Gallus é a tralha que eu vou ter que limpar.
