@@ -143,6 +143,11 @@ func _physics_process(delta):
 				if Input.is_action_just_pressed("stellajump"):
 					state = CLIMBIDLE
 
+			if Input.is_action_just_pressed("basicstellarun"):
+				state = RUNAWAY
+			if Input.is_action_just_pressed("basicstellastop"):
+				state = STANDSTILL
+
 		STANDSTILL:
 			pushcheck()
 			vel.x = 0
@@ -192,6 +197,11 @@ func _physics_process(delta):
 			if is_on_ladder():
 				if Input.is_action_just_pressed("stellajump"):
 					state = CLIMBIDLE
+
+			if Input.is_action_just_pressed("basicstellarun"):
+				state = RUNAWAY
+			if Input.is_action_just_pressed("basicstellafollow"):
+				state = FOLLOWME
 
 		RUNAWAY:
 			pushcheck()
@@ -258,6 +268,11 @@ func _physics_process(delta):
 				if Input.is_action_just_pressed("stellajump"):
 					state = CLIMBIDLE
 
+			if Input.is_action_just_pressed("basicstellafollow"):
+				state = FOLLOWME
+			if Input.is_action_just_pressed("basicstellastop"):
+				state = STANDSTILL
+
 		CLIMBIDLE:
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
@@ -322,6 +337,11 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = STANDSTILL
 
+			if Input.is_action_just_pressed("basicstellafollow"):
+				state = CLIMBMOVE
+			if Input.is_action_just_pressed("basicstellarun"):
+				state = CLIMBRUN
+
 		CLIMBMOVE:
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
@@ -372,6 +392,11 @@ func _physics_process(delta):
 			if not is_on_ladder():
 				state = FOLLOWME
 
+			if Input.is_action_just_pressed("basicstellastop"):
+				state = CLIMBIDLE
+			if Input.is_action_just_pressed("basicstellarun"):
+				state = CLIMBRUN
+
 		CLIMBRUN:
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
@@ -421,6 +446,11 @@ func _physics_process(delta):
 				state = RUNAWAY
 			if not is_on_ladder():
 				state = RUNAWAY
+
+			if Input.is_action_just_pressed("basicstellastop"):
+				state = CLIMBIDLE
+			if Input.is_action_just_pressed("basicstellafollow"):
+				state = CLIMBMOVE
 
 		DEATH:
 			animatedsprite.animation = "Dead"
@@ -490,12 +520,19 @@ func _physics_process(delta):
 					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("left"):
-				state = RUNAWAY
+				state = PUSHRUN
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_ladder():
 				if Input.is_action_just_pressed("stellajump"):
 					state = CLIMBIDLE
+
+
+
+			if Input.is_action_just_pressed("basicstellastop"):
+				state = STANDSTILL
+			if Input.is_action_just_pressed("basicstellarun"):
+				state = PUSHRUN
 
 		PUSHRUN:
 			pushcheck()
@@ -554,12 +591,17 @@ func _physics_process(delta):
 					animatedsprite.flip_h = true
 
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("right"):
-				state = FOLLOWME
+				state = PUSHFOLLOW
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("down"):
 				state = STANDSTILL
 			if is_on_ladder():
 				if Input.is_action_just_pressed("stellajump"):
 					state = CLIMBIDLE
+
+			if Input.is_action_just_pressed("basicstellastop"):
+				state = STANDSTILL
+			if Input.is_action_just_pressed("basicstellafollow"):
+				state = PUSHFOLLOW
 
 func pushcheck():
 	for index in get_slide_count():
