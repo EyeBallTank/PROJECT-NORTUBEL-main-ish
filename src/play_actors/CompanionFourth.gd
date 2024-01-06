@@ -728,7 +728,11 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 				else:
-					state = STANDSTILL
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
 
 			if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("right"):
 				state = CLIMBMOVE
@@ -789,7 +793,11 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 				else:
-					state = STANDSTILL
+					animatedsprite.animation = "Climbidle"
+					vel.x = 0
+					direction.x = 0
+					vel.y = 0
+					direction.y = 0
 
 			vel.x = direction.x * 390
 #Why do i have to use vel.x and not vel.y here?
@@ -854,7 +862,12 @@ func _physics_process(delta):
 					vel.y = 0
 					direction.y = 0
 				else:
-					state = STANDSTILL
+#					animatedsprite.animation = "Climbidle"
+#					vel.x = 0
+#					direction.x = 0
+#					vel.y = 0
+#					direction.y = 0
+					pass
 
 			vel.x = direction.x * 390
 #Why do i have to use vel.x and not vel.y here?

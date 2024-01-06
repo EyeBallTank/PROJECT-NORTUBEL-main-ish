@@ -37,7 +37,7 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 7.png" type="Texture" id=35]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 8.png" type="Texture" id=36]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 10.png" type="Texture" id=37]
-[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 13.png" type="Texture" id=38]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 13 v2.png" type="Texture" id=38]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 35.png" type="Texture" id=39]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 36.png" type="Texture" id=41]
@@ -70,7 +70,7 @@ region = Rect2( 0, 0, 590, 374 )
 atlas = ExtResource( 28 )
 region = Rect2( 0, 0, 590, 374 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=44]
 atlas = ExtResource( 38 )
 region = Rect2( 0, 0, 590, 374 )
 
@@ -224,7 +224,7 @@ animations = [ {
 "name": "board 12",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 12 ) ],
+"frames": [ SubResource( 44 ) ],
 "loop": false,
 "name": "board 13",
 "speed": 0.0
