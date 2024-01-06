@@ -32,6 +32,7 @@ enum {
 	SADNESS
 }
 
+var climbspeed = 360
 var state = STANDSTILL
 
 var WALK_FORCE = 1600
@@ -761,23 +762,23 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * speed
+					vel = position.direction_to(Player.position) * climbspeed
 					animatedsprite.animation = "Climbing"
 			else:
 				if Player.global_position.x < global_position.x - 90:
@@ -830,23 +831,23 @@ func _physics_process(delta):
 #				vel = position.direction_to(Player.position) * speed
 			if Player.global_position.y < global_position.y - 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 			elif Player.global_position.y > global_position.y + 30:
 				if Player.global_position.x < global_position.x - 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				elif Player.global_position.x > global_position.x + 90:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 				else:
-					vel = position.direction_to(Player.position) * -speed
+					vel = position.direction_to(Player.position) * -climbspeed
 					animatedsprite.animation = "Climbing"
 			else:
 				if Player.global_position.x < global_position.x - 90:
