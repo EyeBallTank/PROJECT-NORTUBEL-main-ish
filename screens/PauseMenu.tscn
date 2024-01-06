@@ -47,9 +47,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 364.0
-margin_top = 235.0
+margin_top = 213.0
 margin_right = 664.0
-margin_bottom = 355.0
+margin_bottom = 333.0
 
 [node name="UnpauseButton" type="TextureButton" parent="MenuMain"]
 margin_right = 300.0
@@ -135,8 +135,16 @@ custom_fonts/font = ExtResource( 4 )
 text = "QUIT_B"
 
 [node name="PauseVisibilityToggle" type="Sprite" parent="MenuMain"]
-position = Vector2( 150, 176 )
+position = Vector2( 150, 170 )
 texture = ExtResource( 11 )
+
+[node name="SmoothCamera" type="Label" parent="MenuMain/PauseVisibilityToggle"]
+margin_left = -230.0
+margin_top = 51.0
+margin_right = 70.0
+margin_bottom = 68.0
+custom_fonts/font = ExtResource( 4 )
+text = "SMOOTH_CAMERA_OPTION_TEXT"
 
 [node name="OptionsMenu" type="Control" parent="."]
 pause_mode = 2
