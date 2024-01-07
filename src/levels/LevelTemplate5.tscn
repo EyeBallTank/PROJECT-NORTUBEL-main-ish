@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=30]
+[ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=31]
 
 [node name="LevelTemplate5" type="Node2D"]
 light_mask = 4
@@ -183,3 +184,6 @@ customtext4 = "CONVO_TALK_40"
 customname1 = "Melvin Brokston"
 customname2 = "Oscar Decarde"
 spritename = "melvin oscar"
+
+[node name="MovingPlatVerti" parent="." instance=ExtResource( 31 )]
+position = Vector2( 7867, -194 )
