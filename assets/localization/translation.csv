@@ -184,7 +184,7 @@ The Companion starts off idle when entering/exiting ladders.","Prime Z para mete
 Z tambem faz o(a) Companheiro(a) sair das escadas.
 O/(a) Companheiro(a) começa parado(a) quando entra nas/sai das escadas."
 BOOK_HINT_LADDERCOMP2,"While the Player can climb horizontally, the Companion only climbs vertically.","Enquanto o(a) Jogador(a) pode trepar horizontalmente, o Companheiro(a) só pode trepar verticalmente."
-BOOK_HINT_FISHROD,Player can swing from the fishing rod,O(A) Jogador(a) consegue pendular da cana de pesca
+BOOK_HINT_FISHROD,"Player can swing from the fishing rod, but not the Companion.","O(A) Jogador(a) consegue pendular da cana de pesca, mas não o Companheiro(a)"
 BOOK_HINT_FALLPLAT,Weak platforms fall with the Player's weight,Plataformas fracas caem com o peso do(a) Jogador(a)
 BOOK_HINT_CRAWL,Companion can enter tight spaces that the Player can't,Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
 BOOK_HINT_COIN,"Ezcudo coins give an extra life if enough are collected
@@ -347,7 +347,7 @@ BONKA_HONK_4,Is this supposed to be a game you play with that friend of yours dr
 BONKA_HURT_4,"If you want to attack me, at least pull an funny prank.","Se queres atacar-me, pelo menos faz uma partida engraçada."
 ,,
 LORETEXT_1,"""Current year in Nortubel: 2007
-The following youngsters were last seen at a three house in October:
+The following youngsters were last seen at a tree house in October:
 
 Carrie: 11/03/1989
 Oscar: 10/03/1999

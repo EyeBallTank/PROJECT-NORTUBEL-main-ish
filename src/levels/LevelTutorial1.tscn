@@ -219,17 +219,17 @@ customtext = "BOOK_HINT_LADDERCOMP2"
 boardname = "board 13"
 
 [node name="BookInfo11" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7576, -1488 )
+position = Vector2( 6976, -1704 )
 customtext = "BOOK_HINT_WATERPLAY"
 boardname = "board 14"
 
 [node name="BookInfo12" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7984, -1113 )
+position = Vector2( 7344, -1537 )
 customtext = "BOOK_HINT_WATERCOMP"
 boardname = "board 15"
 
 [node name="BookInfo13" parent="." instance=ExtResource( 6 )]
-position = Vector2( 8408, -763 )
+position = Vector2( 7672, -1467 )
 customtext = "BOOK_HINT_DROWN"
 boardname = "board 16"
 
