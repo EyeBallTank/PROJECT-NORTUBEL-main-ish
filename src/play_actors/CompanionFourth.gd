@@ -153,6 +153,9 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLENORMAL
+
 			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -238,6 +241,8 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		STANDSTILL:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLENORMAL
 			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -306,6 +311,8 @@ func _physics_process(delta):
 				state = FOLLOWME
 
 		RUNAWAY:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLENORMAL
 			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1665,7 +1672,85 @@ func _physics_process(delta):
 
 
 		PLAYABLENORMAL:
-			pass
+			if Input.is_action_just_pressed("charswitch"):
+				state = STANDSTILL
+
+			oxygenbar.hide()
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+			
+			pushcheck()
+			if Input.get_action_strength("left"):
+				vel.x = -WALK_MAX_SPEED
+				direction.x = -1
+			elif Input.get_action_strength("right"):
+				vel.x = WALK_MAX_SPEED
+				direction.x = 1
+			else:
+				vel.x = 0
+				direction.x = 0
+			vel.x = direction.x * 550
+
+			if direction.x == 1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
+			elif direction.x == -1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
+			else:
+				animatedsprite.animation = "Idle"
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			if vel.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = PLAYABLESWIM
+			if is_on_ladder():
+				if Input.is_action_just_pressed("jumpup"):
+					state = PLAYABLECLIMB
+			if is_on_slow():
+				state = PLAYABLESLOW
+			if is_on_ice():
+				state = PLAYABLEICE
+
+
 
 		PLAYABLECLIMB:
 			pass
