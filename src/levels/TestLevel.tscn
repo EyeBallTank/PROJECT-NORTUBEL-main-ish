@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_hazards/CrusherBell.tscn" type="PackedScene" id=18]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -33,7 +34,7 @@ tile_data = PoolIntArray( -2359229, 2, 0, -2359228, 2, 0, -2359227, 2, 0, -23592
 position = Vector2( 621, -207 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4371, -486 )
+position = Vector2( 1027, -254 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 2 )]
@@ -43,7 +44,7 @@ position = Vector2( 857, -261 )
 position = Vector2( 1080, -203 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4294, -497 )
+position = Vector2( 950, -265 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="stellaspawn" parent="." instance=ExtResource( 7 )]
@@ -89,3 +90,6 @@ position = Vector2( 5136, -256 )
 
 [node name="Pushable" parent="." instance=ExtResource( 12 )]
 position = Vector2( 5248, -624 )
+
+[node name="CrusherBell" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1624, -624 )

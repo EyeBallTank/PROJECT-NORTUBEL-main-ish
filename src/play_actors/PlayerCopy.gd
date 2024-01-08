@@ -18,6 +18,8 @@ export var oxygen : int = 1500
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
 
+
+var iamplayable = true
 #The following comments are not my own, if that isn't clear enough
 
 #THESE ARE PREPERATIONS FOR FUTURE PLAYER SATES
@@ -88,6 +90,7 @@ onready var checkpointTween = $CheckpointTween
 
 
 func _ready():
+	iamplayable = true
 	$Camera2D.current = true
 	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 	immortal = false
@@ -151,6 +154,7 @@ func _physics_process(delta):
 	# Still using frankensteined code to do this		
 	match state:
 		SLOW:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -257,6 +261,7 @@ func _physics_process(delta):
 				state = STOPNORMAL
 
 		ICE:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -366,6 +371,7 @@ func _physics_process(delta):
 				state = STOPICE
 
 		MAINSTATE:
+			iamplayable = true
 			if Input.is_action_just_pressed("charnormal"):
 				state = STOPNORMAL
 
@@ -496,6 +502,7 @@ func _physics_process(delta):
 				state = ICE
 
 		CLIMB:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -552,6 +559,7 @@ func _physics_process(delta):
 				state = STOPCLIMB
 
 		ROPE:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -573,6 +581,7 @@ func _physics_process(delta):
 				state = STOPSWING
 
 		SWIM:
+			iamplayable = true
 			if immortal == false:
 				oxygenbar.show()
 				oxygen -= 1
@@ -636,6 +645,7 @@ func _physics_process(delta):
 				state = STOPSWIM
 
 		KICKBALL:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -707,6 +717,7 @@ func _physics_process(delta):
 				state = STOPNORMAL
 
 		KNIFE:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -760,6 +771,7 @@ func _physics_process(delta):
 			pass
 
 		PUSH:
+			iamplayable = true
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -859,6 +871,7 @@ func _physics_process(delta):
 				state = STOPNORMAL
 
 		STOPNORMAL:
+			iamplayable = false
 			velocity.x = 0
 			animatedsprite.animation = "Idle"
 
@@ -890,6 +903,7 @@ func _physics_process(delta):
 				state = STOPICE
 
 		STOPCLIMB:
+			iamplayable = false
 			velocity.x = 0
 			velocity.y = 0
 			animatedsprite.animation = "Climbidle"
@@ -902,6 +916,7 @@ func _physics_process(delta):
 				state = CLIMB
 
 		STOPSWIM:
+			iamplayable = false
 			if immortal == false:
 				oxygenbar.show()
 				oxygen -= 1
@@ -924,6 +939,7 @@ func _physics_process(delta):
 				state = SWIM
 
 		STOPICE:
+			iamplayable = false
 			animatedsprite.animation = "Iceslide"
 			var speedthing: int = 700
 			var dirthing: int = 0
@@ -980,6 +996,7 @@ func _physics_process(delta):
 					pass
 
 		STOPSWING:
+			iamplayable = false
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -1075,7 +1092,10 @@ func go_to_checkpoint():
 		var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
 		thing = checkpointTween.start()
 #	yield(get_tree().create_timer(0.4), "timeout")
-		state = MAINSTATE
+		if iamplayable == true:
+			state = MAINSTATE
+		elif iamplayable == false:
+			state = STOPNORMAL
 		health = 100
 		oxygen = 1500
 		$CollisionShape2D.disabled = true

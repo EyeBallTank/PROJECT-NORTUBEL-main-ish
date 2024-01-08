@@ -74,6 +74,7 @@ onready var animatedsprite = $AnimatedSprite
 onready var pushdetector = $PushDetector
 
 onready var compstateteller = $CanvasLayer/CompStateTeller
+var iamplayable = false
 
 var last_checkpoint: Area2D = null
 onready var checkpointTween = $CheckpointTween
@@ -84,6 +85,7 @@ onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
 
 func _ready():
+	iamplayable = false
 	$Camera2D.current = false
 	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 	Signals.connect("player_died", self, "_on_Player_Died")
@@ -155,6 +157,7 @@ func _physics_process(delta):
 
 	match state:
 		FOLLOWME:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLENORMAL
 
@@ -243,6 +246,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		STANDSTILL:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLENORMAL
 			compstateteller.play("stopstate")
@@ -313,6 +317,7 @@ func _physics_process(delta):
 				state = FOLLOWME
 
 		RUNAWAY:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLENORMAL
 			compstateteller.play("runstate")
@@ -401,6 +406,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		SWIMMING:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLESWIM
 
@@ -549,6 +555,7 @@ func _physics_process(delta):
 				state = SWIMIDLE
 
 		SWIMRUN:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLESWIM
 
@@ -669,6 +676,7 @@ func _physics_process(delta):
 				state = SWIMIDLE
 
 		SWIMIDLE:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLESWIM
 			compstateteller.play("stopstate")
@@ -712,6 +720,7 @@ func _physics_process(delta):
 
 
 		CLIMBIDLE:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLECLIMB
 			compstateteller.play("stopstate")
@@ -796,6 +805,7 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBMOVE:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLECLIMB
 
@@ -869,6 +879,7 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBRUN:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLECLIMB
 			compstateteller.play("runstate")
@@ -942,6 +953,7 @@ func _physics_process(delta):
 				state = CLIMBIDLE
 
 		SLOWFOLLOW:
+			iamplayable = false
 			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1029,6 +1041,7 @@ func _physics_process(delta):
 				state = PLAYABLENORMAL
 
 		SLOWRUN:
+			iamplayable = false
 			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1116,6 +1129,7 @@ func _physics_process(delta):
 				state = PLAYABLENORMAL
 
 		CRAWLFOLLOW:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLECRAWL
 
@@ -1162,6 +1176,7 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLRUN:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLECRAWL
 
@@ -1208,6 +1223,7 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLIDLE:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLECRAWL
 
@@ -1237,6 +1253,7 @@ func _physics_process(delta):
 				state = CRAWLRUN
 
 		ICEFOLLOW:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLEICE
 			compstateteller.play("followstate")
@@ -1332,6 +1349,7 @@ func _physics_process(delta):
 
 
 		ICERUN:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLEICE
 			compstateteller.play("runstate")
@@ -1426,6 +1444,7 @@ func _physics_process(delta):
 				state = ICEFOLLOW
 
 		ICEIDLE:
+			iamplayable = false
 			if Input.is_action_just_pressed("charnormal"):
 				state = PLAYABLEICE
 			compstateteller.play("stopstate")
@@ -1537,6 +1556,7 @@ func _physics_process(delta):
 #			pass
 
 		PUSHFOLLOW:
+			iamplayable = false
 			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1622,6 +1642,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		PUSHRUN:
+			iamplayable = false
 			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1709,6 +1730,7 @@ func _physics_process(delta):
 
 
 		PLAYABLENORMAL:
+			iamplayable = true
 			if Input.is_action_just_pressed("charswitch"):
 				state = STANDSTILL
 
@@ -1790,6 +1812,7 @@ func _physics_process(delta):
 
 
 		PLAYABLECLIMB:
+			iamplayable = true
 			if Input.get_action_strength("right"):
 				vel.x = 350
 				animatedsprite.animation = "Climbing"
@@ -1826,6 +1849,7 @@ func _physics_process(delta):
 				state = CLIMBIDLE
 
 		PLAYABLEICE:
+			iamplayable = true
 			if Input.is_action_just_pressed("charswitch"):
 				state = ICEIDLE
 
@@ -1908,6 +1932,7 @@ func _physics_process(delta):
 
 
 		PLAYABLESWIM:
+			iamplayable = true
 			if Input.is_action_just_pressed("charswitch"):
 				state = SWIMIDLE
 
@@ -1958,6 +1983,7 @@ func _physics_process(delta):
 
 
 		PLAYABLECRAWL:
+			iamplayable = true
 			if Input.is_action_just_pressed("charswitch"):
 				state = CRAWLIDLE
 
@@ -1989,6 +2015,7 @@ func _physics_process(delta):
 			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 		PLAYABLEPUSH:
+			iamplayable = true
 			if Input.is_action_just_pressed("charswitch"):
 				state = STANDSTILL
 
@@ -2069,6 +2096,7 @@ func _physics_process(delta):
 
 
 		PLAYABLESLOW:
+			iamplayable = true
 			if Input.is_action_just_pressed("charswitch"):
 				state = STANDSTILL
 
@@ -2294,7 +2322,10 @@ func go_to_checkpoint():
 	if Signals.lives > 0:
 		var thing = checkpointTween.interpolate_property(self, "position", position, last_checkpoint.global_position, 1, Tween.TRANS_EXPO, Tween.EASE_OUT)
 		thing = checkpointTween.start()
-		state = STANDSTILL
+		if iamplayable == false:
+			state = STANDSTILL
+		elif iamplayable == true:
+			state = PLAYABLENORMAL
 		health = 50
 		oxygen = 1500
 		$CollisionShape2D.disabled = true
