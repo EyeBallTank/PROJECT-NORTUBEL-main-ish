@@ -29,7 +29,14 @@ enum {
 	SWIMMING,
 	SWIMRUN,
 	RUNAWAY,
-	SADNESS
+	SADNESS,
+	PLAYABLENORMAL,
+	PLAYABLECLIMB,
+	PLAYABLEICE,
+	PLAYABLESWIM,
+	PLAYABLECRAWL,
+	PLAYABLEPUSH,
+	PLAYABLESLOW
 }
 
 var climbspeed = 360
@@ -1655,6 +1662,29 @@ func _physics_process(delta):
 				state = PUSHFOLLOW
 			if Input.is_action_just_pressed("simplestandstill"):
 				state = STANDSTILL
+
+
+		PLAYABLENORMAL:
+			pass
+
+		PLAYABLECLIMB:
+			pass
+
+		PLAYABLEICE:
+			pass
+
+		PLAYABLESWIM:
+			pass
+
+		PLAYABLECRAWL:
+			pass
+
+		PLAYABLEPUSH:
+			pass
+
+		PLAYABLESLOW:
+			pass
+
 
 func _on_CompanionHurtbox_area_entered(Area2D):
 	if Area2D.name == "EnemyHitbox":

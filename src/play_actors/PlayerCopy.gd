@@ -32,9 +32,14 @@ enum {
 	SLOW,
 	PUSH,
 	ICE,
-	SADNESS
-#	CALLING
+	SADNESS,
+	STOPNORMAL,
+	STOPCLIMB,
+	STOPSWIM,
+	STOPICE,
+	STOPSWING
 }
+
 
 var state = MAINSTATE
 var was_on_floor = true
@@ -844,6 +849,22 @@ func _physics_process(delta):
 				state = SLOW
 			if is_on_ice():
 				state = ICE
+
+		STOPNORMAL:
+			pass
+
+		STOPCLIMB:
+			pass
+
+		STOPSWIM:
+			pass
+
+		STOPICE:
+			pass
+
+		STOPSWING:
+			pass
+
 
 func is_invul():
 	immortal = true
