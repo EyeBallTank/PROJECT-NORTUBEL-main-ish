@@ -142,11 +142,11 @@ Jumping/Climbing/Swimming upwards: Up arrow key
 ESC: Pause menu","Movimento esquerdo: Seta esquerda e Movimento Direito: Seta direita
 Saltar/Nadar para cima/Subir: Seta de cima
 ESC: Menu de pausa"
-BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right
-""Stand still"": Q + Down
-""Run away"" opposite to ""Follow me"": Q + Left","""Segue-me"": Q + Direita
-""Fica aí"": Q + Baixo
-""Foje"" contrário de ""Segue-me"": Q + Esquerda"
+BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right or 3
+""Stand still"": Q + Down or 2
+""Run away"" opposite to ""Follow me"": Q + Left or 1","""Segue-me"": Q + Direita ou 3
+""Fica aí"": Q + Baixo ou 2
+""Foje"" contrário de ""Segue-me"": Q + Esquerda ou 1"
 BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar esquadas: Z"
 BOOK_HINT_CONTROL_KNIFE,Knife attack: E,Ataque de faca: E
 BOOK_HINT_CONTROL_BALLATTACK,"Ball kick attack: Down
@@ -611,14 +611,14 @@ Stella era conhecida por participar no campeonato local de corridas de kart, ven
 As autoridades locais sugerem que o seu desaparecimento pode estar relacionado com outros 6 jovens, 
 2 deles sendo primos dela."""
 NORT_LORE_STELLA_TUTORIAL_T,"Stella is the only one that knows how to use the switches.
-A + Left: She avoids you.
-A + Right: She follows you.
-A + Down: She stops.
+A + Left or 4: She avoids you.
+A + Right or 6: She follows you.
+A + Down or 5: She stops.
 X: She jumps.
 If the traps aren't good enough, try stabbing Phineas' henchmen.","Stella é a unica que sabe como usar estes botões.
-A + Esquerda: Ela foge de ti.
-A + Direita: Ela segue-te.
-A + Baixo: Ela para.
+A + Esquerda ou 4: Ela foge de ti.
+A + Direita ou 6: Ela segue-te.
+A + Baixo ou 5: Ela para.
 X: Ela salta.
 Se as armadilhas não forem boas o suficiente, tenta esfaquear os mafiosos de Phineas."
 ,,
@@ -868,3 +868,6 @@ But at least I got enough stories of celebrities being injured, to make some qui
 Pelo menus tenho estórias suficientes de celebridades serem atacadas, para fazer algum dinheiro."
 STARFISH_JANITOR_NAME,Starfish Street Sweeper,"Varredor, estrela do mar"
 STARFISH_JANITOR_TALK_NPC,The worst part of this Gallus invasion is all the mess I've gotta clean up.,A pior parte da invasão dos Gallus é a tralha que eu vou ter que limpar.
+BOOK_HINT_CHAR_SWITCH_PLAY,"If you press ""O"", the little sibling becomes the player character.
+Pressing ""P"" brings the playability back to the older sibling.","Se premires ""O"", os mais novos serão a personagem controlada.
+Premir ""P"" traz o papel de jogabilidade de volta aos irmãos mais velhos."

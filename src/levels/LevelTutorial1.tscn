@@ -154,14 +154,19 @@ customtext = "BOOK_HINT_COMP_FOLLOW"
 boardname = "board 2"
 
 [node name="BookInfo3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3024, 312 )
+position = Vector2( 3000, 312 )
 customtext = "BOOK_HINT_COMP_Z"
 boardname = "board 3"
 
 [node name="BookInfo15" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3496, 312 )
+position = Vector2( 3352, 312 )
 customtext = "BOOK_HINT_COMPPOINTER"
 boardname = "board 4"
+
+[node name="BookInfo20" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3720, 312 )
+customtext = "BOOK_HINT_CHAR_SWITCH_PLAY"
+boardname = "tutorial board 38"
 
 [node name="BookInfo4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3968, 552 )

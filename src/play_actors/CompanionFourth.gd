@@ -1817,11 +1817,13 @@ func _physics_process(delta):
 				vel.x = 350
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
 
 			elif Input.get_action_strength("left"):
 				vel.x = -350
 				animatedsprite.animation = "Climbing"
 				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
 
 			elif Input.get_action_strength("jumpup"):
 				vel.y = -350
