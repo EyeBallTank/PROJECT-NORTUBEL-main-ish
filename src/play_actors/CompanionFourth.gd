@@ -399,6 +399,9 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		SWIMMING:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLESWIM
+
 			compstateteller.play("followstate")
 			if immortal == false:
 				oxygenbar.show()
@@ -544,6 +547,9 @@ func _physics_process(delta):
 				state = SWIMIDLE
 
 		SWIMRUN:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLESWIM
+
 			compstateteller.play("runstate")
 			if immortal == false:
 				oxygenbar.show()
@@ -661,6 +667,8 @@ func _physics_process(delta):
 				state = SWIMIDLE
 
 		SWIMIDLE:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLESWIM
 			compstateteller.play("stopstate")
 			if immortal == false:
 				oxygenbar.show()
@@ -1213,6 +1221,8 @@ func _physics_process(delta):
 				state = CRAWLRUN
 
 		ICEFOLLOW:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLEICE
 			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1306,6 +1316,8 @@ func _physics_process(delta):
 
 
 		ICERUN:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLEICE
 			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1398,6 +1410,8 @@ func _physics_process(delta):
 				state = ICEFOLLOW
 
 		ICEIDLE:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLEICE
 			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1796,10 +1810,137 @@ func _physics_process(delta):
 				state = CLIMBIDLE
 
 		PLAYABLEICE:
-			pass
+			if Input.is_action_just_pressed("charswitch"):
+				state = ICEIDLE
+
+			oxygenbar.hide()
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
+			animatedsprite.animation = "Iceslide"
+			var speedthing: int = 700
+			var dirthing: int = 0
+			pushcheck()
+			if Input.get_action_strength("left"):
+				dirthing -= 1
+				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
+			elif Input.get_action_strength("right"):
+				dirthing += 1
+				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
+
+			else:
+				if dirthing == 0 and is_on_floor():
+					vel.x = lerp(vel.x, 0, friction)
+
+			if dirthing == 1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
+			elif dirthing == -1 and is_on_floor():
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
+			else:
+				animatedsprite.animation = "Iceslide"
+
+
+			if vel.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+
+			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
+				vel.y = -JUMP_SPEED
+				if vel.y < 0:
+					vel.y += 500
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = PLAYABLESWIM
+			if is_on_ladder():
+				if Input.is_action_just_pressed("jumpup"):
+					state = PLAYABLECLIMB
+			if not is_on_ice():
+				if is_on_floor():
+					state = PLAYABLENORMAL
+
 
 		PLAYABLESWIM:
-			pass
+			if Input.is_action_just_pressed("charswitch"):
+				state = SWIMIDLE
+
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
+
+			if Input.get_action_strength("right"):
+				vel.x = 350
+				vel.y = 0
+				animatedsprite.animation = "Swimming"
+				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
+			elif Input.get_action_strength("left"):
+				vel.x = -350
+				vel.y = 0
+				animatedsprite.animation = "Swimming"
+				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
+			elif Input.get_action_strength("jumpup"):
+				vel.y = -350
+#				vel.x = 0
+				animatedsprite.animation = "Swimup"
+			elif Input.get_action_strength("down"):
+				vel.y = 350
+#				vel.x = 0
+				animatedsprite.animation = "Swimdown"
+			else:
+				vel.x = 0
+				direction.x = 0
+				vel.x = direction.x * 0
+				vel.y = 85
+				direction.y = 0	
+				animatedsprite.animation = "Swimidle"
+
+			if not is_on_water():
+				oxygen = 1500
+				oxygenbar.hide()
+				state = PLAYABLENORMAL
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+			direction = direction.normalized()
+			vel = vel.normalized()
+			vel.x = direction.x * 350
+			vel.y = direction.y * 350
+
+
 
 		PLAYABLECRAWL:
 			pass
