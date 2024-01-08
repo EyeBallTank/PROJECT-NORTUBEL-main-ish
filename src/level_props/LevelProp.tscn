@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue green chair stack.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop computer table green chairs.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_props/hirdrih/hirdprop chip flower.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop oldcar bulletglass.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/level_props/krimbstone/krimbprop oldcar bulletglass 2.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/level_props/greklovick/grekprop pillartech computer.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop barrelwood weapons.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/level_props/lahiurn/lahiprop walldestroyed flag.png" type="Texture" id=14]
@@ -428,7 +428,7 @@ region = Rect2( 0, 0, 381, 298 )
 atlas = ExtResource( 188 )
 region = Rect2( 0, 0, 550, 454 )
 
-[sub_resource type="AtlasTexture" id=20]
+[sub_resource type="AtlasTexture" id=233]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 444, 398 )
 
@@ -1358,7 +1358,7 @@ animations = [ {
 "name": "krimbprop nightclub",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 20 ) ],
+"frames": [ SubResource( 233 ) ],
 "loop": false,
 "name": "krimbprop oldcar bulletglass",
 "speed": 0.0
@@ -2195,5 +2195,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "shihiro lantern 3"
+animation = "nortprop blue chimney"
 playing = true

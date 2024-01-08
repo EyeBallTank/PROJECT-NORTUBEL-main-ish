@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/npc_actors/krimb npc/ManTiedStreetLight NPC.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPoliceCar.tscn" type="PackedScene" id=29]
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -322,3 +323,6 @@ position = Vector2( 19361, -1877 )
 customtext = "STREET_LIGHT_MAN_TALK"
 customtext3 = "STREET_LIGHT_MAN_HUG"
 customtext4 = "STREET_LIGHT_MAN_HURT"
+
+[node name="KrimbPoliceCar" parent="." instance=ExtResource( 29 )]
+position = Vector2( 1225, -634 )

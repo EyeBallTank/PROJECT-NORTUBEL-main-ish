@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/krimbprop oldcar bulletglass.png-810c905c37217d688a5bbb6baa98ff40.stex"
+path="res://.import/krimbprop oldcar bulletglass 2.png-92af9b5054570c71ae593cb188c834a1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_props/krimbstone/krimbprop oldcar bulletglass.png"
-dest_files=[ "res://.import/krimbprop oldcar bulletglass.png-810c905c37217d688a5bbb6baa98ff40.stex" ]
+source_file="res://assets/sprites/level_props/krimbstone/krimbprop oldcar bulletglass 2.png"
+dest_files=[ "res://.import/krimbprop oldcar bulletglass 2.png-92af9b5054570c71ae593cb188c834a1.stex" ]
 
 [params]
 
