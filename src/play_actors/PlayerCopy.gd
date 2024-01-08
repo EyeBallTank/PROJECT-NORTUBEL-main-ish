@@ -83,6 +83,7 @@ onready var checkpointTween = $CheckpointTween
 
 
 func _ready():
+	$Camera2D.current = true
 	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 	immortal = false
 	oxygenbar.hide()
@@ -100,6 +101,11 @@ func _i_am_invincible():
 	is_invul()
 
 func _physics_process(delta):
+	if Input.is_action_just_pressed("charnormal"):
+		$Camera2D.current = false
+	elif Input.is_action_just_pressed("charswitch"):
+		$Camera2D.current = true
+	
 	if Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == false:
 		$Camera2D.smoothing_enabled = true
 	elif Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == true:

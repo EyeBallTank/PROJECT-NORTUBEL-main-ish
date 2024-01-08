@@ -77,6 +77,7 @@ onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
 
 func _ready():
+	$Camera2D.current = false
 	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 	Signals.connect("player_died", self, "_on_Player_Died")
 	immortal = false
@@ -122,6 +123,16 @@ func _on_Player_Died():
 		state = SWIMIDLE
 
 func _physics_process(delta):
+	if Input.is_action_just_pressed("charnormal"):
+		$Camera2D.current = true
+	elif Input.is_action_just_pressed("charswitch"):
+		$Camera2D.current = false
+	
+	if Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == false:
+		$Camera2D.smoothing_enabled = true
+	elif Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == true:
+		$Camera2D.smoothing_enabled = false
+
 	healthBar.value = health
 	if health <= 0  and state != DEATH:
 		state = DEATH
