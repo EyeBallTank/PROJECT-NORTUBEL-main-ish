@@ -1114,6 +1114,9 @@ func _physics_process(delta):
 				state = PLAYABLENORMAL
 
 		CRAWLFOLLOW:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLECRAWL
+
 			compstateteller.play("followstate")
 			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
@@ -1157,6 +1160,9 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLRUN:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLECRAWL
+
 			compstateteller.play("runstate")
 			oxygenbar.hide()
 			if Player.global_position.x < global_position.x - 10:
@@ -1200,6 +1206,9 @@ func _physics_process(delta):
 				state = CRAWLIDLE
 
 		CRAWLIDLE:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLECRAWL
+
 			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			animatedsprite.animation = "Crawlidle"
@@ -1946,9 +1955,36 @@ func _physics_process(delta):
 			vel.y = direction.y * 350
 
 
-
 		PLAYABLECRAWL:
-			pass
+			if Input.is_action_just_pressed("charswitch"):
+				state = CRAWLIDLE
+
+			oxygenbar.hide()
+			if Input.get_action_strength("left"):
+				vel.x = -WALK_MAX_SPEED
+				direction.x = -1
+				animatedsprite.animation = "Crawlling"
+				animatedsprite.flip_h = true
+				pushdetector.position = Vector2(-52, 0)
+			elif Input.get_action_strength("right"):
+				vel.x = WALK_MAX_SPEED
+				direction.x = 1
+				animatedsprite.animation = "Crawlling"
+				animatedsprite.flip_h = false
+				pushdetector.position = Vector2(53, 0)
+			else:
+				vel.x = 0
+				direction.x = 0
+				animatedsprite.animation = "Crawlidle"
+			vel.x = direction.x * 350
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
 
 		PLAYABLEPUSH:
 			pass
@@ -2130,6 +2166,15 @@ func _on_CrawlCheck_area_entered(area):
 			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -40)
 			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
 			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
+		if state == PLAYABLENORMAL:
+			state = PLAYABLECRAWL
+			$CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CollisionShape2D.position = Vector2(0, -40)
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -40)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(68, 35)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -40)
+
 
 	if area.is_in_group("CrawlzoneExit"):
 		if state == CRAWLFOLLOW:
@@ -2156,6 +2201,15 @@ func _on_CrawlCheck_area_entered(area):
 			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
 			$CollisionShape2D.shape.extents = Vector2(23, 82)
 			$CollisionShape2D.position = Vector2(0, -81)
+		if state == PLAYABLECRAWL:
+			state = PLAYABLENORMAL
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
 
 func go_to_checkpoint():
 	if Signals.lives > 0:
