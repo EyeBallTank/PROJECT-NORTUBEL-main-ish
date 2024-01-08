@@ -132,8 +132,10 @@ func _on_Player_Died():
 func _physics_process(delta):
 	if Input.is_action_just_pressed("charnormal"):
 		$Camera2D.current = true
+		compstateteller.hide()
 	elif Input.is_action_just_pressed("charswitch"):
 		$Camera2D.current = false
+		compstateteller.show()
 	
 	if Input.is_action_just_pressed("cameratest") and $Camera2D.smoothing_enabled == false:
 		$Camera2D.smoothing_enabled = true
