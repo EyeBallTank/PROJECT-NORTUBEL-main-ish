@@ -358,7 +358,13 @@ func _physics_process(delta):
 				else:
 					pass
 
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPICE
+
 		MAINSTATE:
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPNORMAL
+
 			oxygenbar.hide()
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
@@ -538,6 +544,9 @@ func _physics_process(delta):
 
 			if not is_on_ladder():
 				state = MAINSTATE
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPCLIMB
+
 		ROPE:
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
@@ -555,6 +564,10 @@ func _physics_process(delta):
 				rope_part = null
 				global_rotation = 0
 				state = MAINSTATE
+
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPSWING
+
 		SWIM:
 			if immortal == false:
 				oxygenbar.show()
@@ -851,19 +864,151 @@ func _physics_process(delta):
 				state = ICE
 
 		STOPNORMAL:
-			pass
+			velocity.x = 0
+			animatedsprite.animation = "Idle"
+
+			if velocity.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+			elif velocity.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_just_pressed("charswitch"):
+				state = MAINSTATE
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = STOPSWIM
+			if is_on_ice():
+				state = STOPICE
 
 		STOPCLIMB:
-			pass
+			velocity.x = 0
+			velocity.y = 0
+			animatedsprite.animation = "Climbidle"
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if not is_on_ladder():
+				state = STOPNORMAL
+
+			if Input.is_action_just_pressed("charswitch"):
+				state = CLIMB
 
 		STOPSWIM:
 			pass
 
 		STOPICE:
-			pass
+#			var walk = WALK_FORCE
+#			animatedsprite.animation = "Iceslide"
+#			if abs(walk) < WALK_FORCE * 0.1:
+#				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+#			else:
+#				velocity.x += walk * delta
+#			velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
+#
+#			velocity.y += gravity * delta
+#			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+#
+#			if velocity.y < 0 and not is_on_floor():
+#				if ouch == false:
+#					animatedsprite.animation = "Jumpgoesup"
+#				elif ouch == true:
+#					animatedsprite.animation = "Hurt"
+#			elif velocity.y > 0 and not is_on_floor():
+#				if ouch == false:
+#					animatedsprite.animation = "Jumpgoesdown"
+#				elif ouch == true:
+#					animatedsprite.animation = "Hurt"
+#
+#			if is_on_floor() and not was_on_floor:
+#				audioplayer.play()
+#			was_on_floor = is_on_floor()
+
+
+
+			animatedsprite.animation = "Iceslide"
+			var speedthing: int = 700
+			var dirthing: int = 0
+			var friction = 0.1
+			var acceleration = 0.25
+	
+			if dirthing == -1:
+				velocity.x = lerp(velocity.x, dirthing * speedthing, acceleration)
+				dirthing = 0
+				if is_on_floor():
+					dirthing = 0
+					velocity.x = lerp(velocity.x, -60, friction * acceleration)
+			if dirthing == 1:
+				velocity.x = lerp(velocity.x, dirthing * speedthing, acceleration)
+				dirthing = 0
+				if is_on_floor():
+					dirthing = 0
+					velocity.x = lerp(velocity.x, 60, friction * acceleration)
+			elif dirthing == 0 and is_on_floor():
+				velocity.x = lerp(velocity.x, 0, friction * acceleration)
+
+
+			if velocity.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+			elif velocity.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+
+			velocity.y += gravity * delta
+#			gravity = 1450.0
+			velocity= move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_just_pressed("charswitch"):
+				gravity = 3000.0
+				state = ICE
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+
+			if is_on_ladder():
+				state = STOPCLIMB
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = STOPSWIM
+			if not is_on_ice():
+				if is_on_floor():
+					state = STOPNORMAL
+				else:
+					pass
 
 		STOPSWING:
-			pass
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
+			animatedsprite.animation = "Ropeattach"
+			global_position = rope_part.global_position
+			global_rotation = rope_part.global_rotation
+			if Input.is_action_just_pressed("charswitch"):
+				state = ROPE
 
 
 func is_invul():
