@@ -702,6 +702,8 @@ func _physics_process(delta):
 
 
 		CLIMBIDLE:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLECLIMB
 			compstateteller.play("stopstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -784,6 +786,9 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBMOVE:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLECLIMB
+
 			compstateteller.play("followstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -854,6 +859,8 @@ func _physics_process(delta):
 				state = CLIMBRUN
 
 		CLIMBRUN:
+			if Input.is_action_just_pressed("charnormal"):
+				state = PLAYABLECLIMB
 			compstateteller.play("runstate")
 			oxygenbar.hide()
 			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
@@ -1753,7 +1760,40 @@ func _physics_process(delta):
 
 
 		PLAYABLECLIMB:
-			pass
+			if Input.get_action_strength("right"):
+				vel.x = 350
+				animatedsprite.animation = "Climbing"
+				animatedsprite.flip_h = false
+
+			elif Input.get_action_strength("left"):
+				vel.x = -350
+				animatedsprite.animation = "Climbing"
+				animatedsprite.flip_h = true
+
+			elif Input.get_action_strength("jumpup"):
+				vel.y = -350
+#				vel.x = 0
+				animatedsprite.animation = "Climbing"
+			elif Input.get_action_strength("down"):
+				vel.y = 350
+#				vel.x = 0
+				animatedsprite.animation = "Climbing"
+
+			else:
+				animatedsprite.animation = "Climbidle"
+				vel.x = 0
+				direction.x = 0
+				vel.y = 0
+				direction.y = 0
+
+#			vel.x = direction.x * 390
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if not is_on_ladder():
+				state = PLAYABLENORMAL
+
+			if Input.is_action_just_pressed("charswitch"):
+				state = CLIMBIDLE
 
 		PLAYABLEICE:
 			pass
