@@ -252,6 +252,10 @@ func _physics_process(delta):
 					state = MAINSTATE
 				else:
 					pass
+
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPNORMAL
+
 		ICE:
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
@@ -628,6 +632,9 @@ func _physics_process(delta):
 				oxygenbar.hide()
 				state = MAINSTATE
 
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPSWIM
+
 		KICKBALL:
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
@@ -696,6 +703,9 @@ func _physics_process(delta):
 				state = MAINSTATE
 				animatedsprite.animation = "Idle"
 
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPNORMAL
+
 		KNIFE:
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
@@ -745,27 +755,9 @@ func _physics_process(delta):
 			hide()
 			go_to_checkpoint()
 
-#		CALLING:
-#			animatedsprite.animation = "Idle"
-#			velocity.x = 0
-#			velocity.y += gravity * delta
-#			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-#			if Input.is_action_pressed("kickball") and Input.is_action_pressed("jumpup"):
-#				state = MAINSTATE
-#			if Input.is_action_pressed("kickball") and Input.is_action_pressed("left"):
-#				state = MAINSTATE
-#			if Input.is_action_pressed("kickball") and Input.is_action_pressed("right"):
-#				state = MAINSTATE
-#			else:
-#				pass
 
 		SADNESS:
 			pass
-#The purpose of "sad" states is to activate these when the other character dies
-#The idea being that one character would be sad if the other dies and also an excuse to "deactivate" both characters when a life is lost
-#Specially before respawn
-
-
 
 		PUSH:
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
@@ -863,6 +855,9 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = ICE
 
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPNORMAL
+
 		STOPNORMAL:
 			velocity.x = 0
 			animatedsprite.animation = "Idle"
@@ -907,37 +902,28 @@ func _physics_process(delta):
 				state = CLIMB
 
 		STOPSWIM:
-			pass
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
+
+#			PUSH_SPEED = 350
+			animatedsprite.animation = "Swimidle"
+			velocity.x = 0
+			velocity.y = 100
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+			
+			if not is_on_water():
+				oxygen = 1500
+				oxygenbar.hide()
+				state = STOPNORMAL
+
+			if Input.is_action_just_pressed("charswitch"):
+				state = SWIM
 
 		STOPICE:
-#			var walk = WALK_FORCE
-#			animatedsprite.animation = "Iceslide"
-#			if abs(walk) < WALK_FORCE * 0.1:
-#				velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
-#			else:
-#				velocity.x += walk * delta
-#			velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
-#
-#			velocity.y += gravity * delta
-#			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-#
-#			if velocity.y < 0 and not is_on_floor():
-#				if ouch == false:
-#					animatedsprite.animation = "Jumpgoesup"
-#				elif ouch == true:
-#					animatedsprite.animation = "Hurt"
-#			elif velocity.y > 0 and not is_on_floor():
-#				if ouch == false:
-#					animatedsprite.animation = "Jumpgoesdown"
-#				elif ouch == true:
-#					animatedsprite.animation = "Hurt"
-#
-#			if is_on_floor() and not was_on_floor:
-#				audioplayer.play()
-#			was_on_floor = is_on_floor()
-
-
-
 			animatedsprite.animation = "Iceslide"
 			var speedthing: int = 700
 			var dirthing: int = 0
@@ -972,7 +958,6 @@ func _physics_process(delta):
 					animatedsprite.animation = "Hurt"
 
 			velocity.y += gravity * delta
-#			gravity = 1450.0
 			velocity= move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 			if Input.is_action_just_pressed("charswitch"):
@@ -982,7 +967,6 @@ func _physics_process(delta):
 			if is_on_floor() and not was_on_floor:
 				audioplayer.play()
 			was_on_floor = is_on_floor()
-
 
 			if is_on_ladder():
 				state = STOPCLIMB
