@@ -1873,7 +1873,7 @@ func _physics_process(delta):
 			elif Input.get_action_strength("right"):
 				dirthing += 1
 				vel.x = lerp(vel.x, dirthing * speedthing, friction * acceleration)
-
+#Seems Companion is heavier on ice when playable
 			else:
 				if dirthing == 0 and is_on_floor():
 					vel.x = lerp(vel.x, 0, friction)
