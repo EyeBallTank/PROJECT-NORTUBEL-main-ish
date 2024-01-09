@@ -188,6 +188,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Pigdev (Used tutorial video on moving platform)
 * mjbolt (Used tutorial video on Pushable object)
 * luke_rs (Used tutorial video on the Swingable Rope)
+* useyourillusion_ (Used tutorial video on moving background)
 * jeanmakesgames (Used tutorial video on level portals)
 * matinator9185/MateuSai (Used tutorial video on the checkpoint system)
 * arithmetic1938 (Used tutorial video on Hirdrio enemy's bouncing physics)
