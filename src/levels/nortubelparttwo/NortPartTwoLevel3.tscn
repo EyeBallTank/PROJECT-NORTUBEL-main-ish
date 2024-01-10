@@ -29,6 +29,13 @@
 [node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 9 )]
 background = "res://assets/sprites/level_backgrounds/level bg test 5.png"
 
+[node name="NortRaceFlag" parent="." instance=ExtResource( 20 )]
+position = Vector2( 8508, 253 )
+
+[node name="Wood" parent="NortRaceFlag" index="2"]
+position = Vector2( 548, 35 )
+scale = Vector2( 2.03998, 2.36 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
@@ -155,9 +162,6 @@ spritename = "nortubel movplathoriz mirror"
 [node name="Jumppad" parent="." instance=ExtResource( 19 )]
 position = Vector2( 6232, 973 )
 
-[node name="NortRaceFlag" parent="." instance=ExtResource( 20 )]
-position = Vector2( 8508, 253 )
-
 [node name="Coin" parent="." instance=ExtResource( 21 )]
 position = Vector2( 9274, 216 )
 
@@ -166,3 +170,5 @@ position = Vector2( 9404, 340 )
 
 [node name="Coin3" parent="." instance=ExtResource( 21 )]
 position = Vector2( 9524, 223 )
+
+[editable path="NortRaceFlag"]
