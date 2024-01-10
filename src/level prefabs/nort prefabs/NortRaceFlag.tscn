@@ -123,7 +123,7 @@ position = Vector2( -15, -105.5 )
 shape = SubResource( 4 )
 
 [node name="Wood" type="KinematicBody2D" parent="."]
-position = Vector2( 234, -21 )
+position = Vector2( 548, 35 )
 collision_layer = 4
 collision_mask = 16387
 
