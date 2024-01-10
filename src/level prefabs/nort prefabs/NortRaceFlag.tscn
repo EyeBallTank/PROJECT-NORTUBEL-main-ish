@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/nort prefab sprites/Nort Race Flag.png" type="Texture" id=1]
+[ext_resource path="res://src/level prefabs/nort prefabs/NortRaceFlag.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 69, 264 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 69, 0, 69, 264 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 12, 236.5 )
+
+[node name="NortRaceFlag" type="Area2D"]
+collision_layer = 4
+collision_mask = 16385
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -15, -105.5 )
+shape = SubResource( 4 )
+
+[connection signal="body_entered" from="." to="." method="_on_NortRaceFlag_body_entered"]
