@@ -19,6 +19,6 @@ func not_anymore():
 
 func _on_HealingWater_body_entered(body):
 	if body.is_in_group("protagonists"):
-		body.health += 1
+		body.health += 3
 		if body.health > 100:
 			body.health = 100
