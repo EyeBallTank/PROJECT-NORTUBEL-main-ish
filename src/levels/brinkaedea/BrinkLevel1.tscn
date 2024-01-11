@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite Bottom.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite Middle.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite.tscn" type="PackedScene" id=10]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -48,3 +51,12 @@ position = Vector2( 160, 1172 )
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 1 )]
 worldname = "brinkaedea"
+
+[node name="Brink Big Straw Redwhite" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1183, 62 )
+
+[node name="Brink Big Straw Redwhite Bottom" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1183, 1006 )
+
+[node name="Brink Big Straw Redwhite Middle" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1183, 534 )
