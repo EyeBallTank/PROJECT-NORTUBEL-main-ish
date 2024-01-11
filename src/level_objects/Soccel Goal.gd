@@ -1,8 +1,13 @@
 extends StaticBody2D
 
 onready var animationplayer = $AnimationPlayer
+export var sides = 1
 
 func _ready():
+	if sides == 1:
+		pass
+	elif sides == 2:
+		scale.x = -scale.x
 	$AnimationPlayer.play("RESET")
 	pass
 
