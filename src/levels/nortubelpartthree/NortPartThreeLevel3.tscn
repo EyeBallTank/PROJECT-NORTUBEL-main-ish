@@ -97,3 +97,11 @@ position = Vector2( 1024, 2156 )
 
 [node name="NortFloatingTarget" parent="." instance=ExtResource( 14 )]
 position = Vector2( 683, 2120 )
+
+[node name="NortFloatingTarget2" parent="." instance=ExtResource( 14 )]
+position = Vector2( 683, 2120 )
+customstate = 2
+
+[node name="NortFloatingTarget3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 683, 2120 )
+customstate = 3
