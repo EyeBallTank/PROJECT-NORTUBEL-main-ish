@@ -73,6 +73,10 @@ customtext = "mcshry"
 position = Vector2( 476, 1640 )
 boardname = "massag art mcsherry reference"
 
+[node name="ArtBook6" parent="." instance=ExtResource( 8 )]
+position = Vector2( -689, 1607 )
+boardname = "massag art atlantis scenery"
+
 [node name="ArtBook2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 796, 1640 )
 boardname = "massag art horatio reference"
