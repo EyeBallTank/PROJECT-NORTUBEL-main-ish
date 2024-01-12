@@ -6,32 +6,32 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/tilesets/greklovick/grek base tiles.tres" type="TileSet" id=9]
 
 [node name="GrekLevel1" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048582, 197, 0, 1114118, 197, 0, 1179654, 197, 0, 1245190, 197, 0, 1310726, 197, 0, 1376262, 197, 0 )
+tile_data = PoolIntArray( 1048582, 1, 0, 1114118, 1, 0, 1179654, 1, 0, 1245190, 1, 0, 1310726, 1, 0, 1376262, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 589819, 87, 0, 655355, 87, 0, 720891, 87, 0, 786427, 87, 0, 851963, 87, 0, 917499, 87, 0, 983035, 87, 0, 1048571, 87, 0, 1114107, 87, 0, 1179643, 87, 0, 1245179, 87, 0, 1310715, 87, 0, 1376251, 87, 0, 1441787, 87, 0, 1507323, 87, 0, 1507324, 87, 0, 1507325, 87, 0, 1507326, 87, 0, 1507327, 87, 0, 1441792, 87, 0, 1441793, 87, 0, 1441794, 87, 0, 1441795, 87, 0, 1441796, 87, 0, 1441797, 87, 0, 1441798, 87, 0, 1441799, 87, 0, 1441800, 87, 0, 1441801, 87, 0, 1441802, 87, 0, 1441803, 87, 0, 1441804, 87, 0, 1441805, 87, 0, 1441806, 87, 0, 1441807, 87, 0, 1441808, 87, 0 )
+tile_data = PoolIntArray( 589819, 87, 0, 655355, 87, 0, 720891, 87, 0, 786427, 87, 0, 851963, 87, 0, 917499, 87, 0, 983035, 87, 0, 1048571, 87, 0, 1114107, 87, 0, 1114109, 0, 0, 1179643, 87, 0, 1179645, 0, 0, 1245179, 87, 0, 1245181, 0, 0, 1310715, 87, 0, 1310717, 0, 0, 1376251, 87, 0, 1376253, 0, 0, 1441787, 87, 0, 1441789, 0, 0, 1507323, 87, 0, 1507324, 87, 0, 1507325, 0, 0, 1507326, 87, 0, 1507327, 87, 0, 1441792, 87, 0, 1441793, 87, 0, 1441794, 87, 0, 1441795, 87, 0, 1441796, 87, 0, 1441797, 87, 0, 1441798, 87, 0, 1441799, 87, 0, 1441800, 87, 0, 1441801, 87, 0, 1441802, 87, 0, 1441803, 87, 0, 1441804, 87, 0, 1441805, 87, 0, 1441806, 87, 0, 1441807, 87, 0, 1441808, 87, 0, 1572861, 0, 0, 1572862, 1, 0, 1572863, 1, 0, 1507343, 0, 0, 1507344, 0, 0, 1507345, 0, 0, 1507346, 0, 0, 1638397, 0, 0, 1638398, 0, 0, 1638399, 0, 0, 1572864, 0, 0, 1572865, 0, 0, 1572866, 0, 0, 1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1572879, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048583, 197, 0, 1114119, 197, 0, 1179655, 197, 0, 1245191, 197, 0, 1310727, 197, 0, 1376263, 197, 0 )
+tile_data = PoolIntArray( 1048583, 1, 0, 1114119, 1, 0, 1179655, 1, 0, 1245191, 1, 0, 1310727, 1, 0, 1376263, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 0, 1322 )
