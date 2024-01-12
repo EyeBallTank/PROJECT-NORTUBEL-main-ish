@@ -1,20 +1,20 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/tilesets/greklovick/grek radio tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 
-[node name="GrekLevel2" type="Node2D"]
+[node name="GrekLevel3" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048582, 1, 0, 1114118, 1, 0, 1179654, 1, 0, 1245190, 1, 0, 1310726, 1, 0 )
+tile_data = PoolIntArray( 1048582, 1, 0, 1114118, 1, 0, 1179654, 1, 0, 1245190, 1, 0, 1310726, 1, 0, 1376262, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -29,7 +29,7 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048583, 1, 0, 1114119, 1, 0, 1179655, 1, 0, 1245191, 1, 0, 1310727, 1, 0 )
+tile_data = PoolIntArray( 1048583, 1, 0, 1114119, 1, 0, 1179655, 1, 0, 1245191, 1, 0, 1310727, 1, 0, 1376263, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -102, 1272 )
