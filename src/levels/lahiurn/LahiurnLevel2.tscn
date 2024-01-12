@@ -5,23 +5,23 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://assets/tilesets/lahiurn/lahiurn 2 sub tiles.tres" type="TileSet" id=7]
 
-[node name="LahiurnLevel1" type="Node2D"]
+[node name="LahiurnLevel2" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1376256, 227, 0, 1441792, 227, 0, 1507328, 227, 0, 1572864, 227, 0, 1638400, 227, 0 )
+tile_data = PoolIntArray( 1376256, 1, 0, 1441792, 1, 0, 1507328, 1, 0, 1572864, 1, 0, 1638400, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 1245174, 50, 0, 1310710, 50, 0, 1376246, 50, 0, 1441782, 50, 0, 1507318, 50, 0, 1572854, 50, 0, 1638390, 50, 0, 1703926, 50, 0, 1769462, 50, 0, 1769463, 50, 0, 1769464, 50, 0, 1769465, 50, 0, 1769466, 50, 0, 1769467, 50, 0, 1769468, 50, 0, 1769469, 50, 0, 1769470, 50, 0, 1769471, 50, 0, 1703936, 50, 0, 1703937, 50, 0, 1703938, 50, 0, 1703939, 50, 0, 1703940, 50, 0, 1703941, 50, 0, 1703942, 50, 0, 1703943, 50, 0, 1703944, 50, 0, 1703945, 50, 0, 1703946, 50, 0, 1703947, 50, 0 )
+tile_data = PoolIntArray( 1245174, 50, 0, 1310710, 50, 0, 1376246, 50, 0, 1441780, 0, 0, 1441782, 50, 0, 1507316, 0, 0, 1507318, 50, 0, 1572852, 0, 0, 1572854, 50, 0, 1638388, 0, 0, 1638390, 50, 0, 1703924, 0, 0, 1703926, 50, 0, 1769460, 0, 0, 1769463, 50, 0, 1769464, 50, 0, 1769465, 50, 0, 1769466, 50, 0, 1769467, 50, 0, 1769468, 50, 0, 1769469, 50, 0, 1769470, 50, 0, 1769471, 50, 0, 1703936, 50, 0, 1703937, 50, 0, 1703938, 50, 0, 1703939, 50, 0, 1703940, 50, 0, 1703941, 50, 0, 1703942, 50, 0, 1703943, 50, 0, 1703944, 50, 0, 1703945, 50, 0, 1703946, 50, 0, 1703947, 50, 0, 1834996, 0, 0, 1834997, 1, 0, 1900532, 0, 0, 1900533, 1, 0, 1900534, 1, 0, 1966068, 0, 0, 1966069, 0, 0, 1966070, 0, 0, 1966071, 0, 0, 1966072, 0, 0, 1966073, 0, 0, 1966074, 0, 0, 1966075, 0, 0, 1966076, 0, 0, 1966077, 0, 0, 1966078, 0, 0, 1966079, 0, 0, 1900544, 0, 0, 1900545, 0, 0, 1900546, 0, 0, 1900547, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -29,7 +29,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1376257, 227, 0, 1441793, 227, 0, 1507329, 227, 0, 1572865, 227, 0, 1638401, 227, 0 )
+tile_data = PoolIntArray( 1376257, 1, 0, 1441793, 1, 0, 1507329, 1, 0, 1572865, 1, 0, 1638401, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -477, 1583 )
