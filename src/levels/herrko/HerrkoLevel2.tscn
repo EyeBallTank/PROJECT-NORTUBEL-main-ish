@@ -1,35 +1,35 @@
 [gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 
-[node name="HerrkoLevel1" type="Node2D"]
+[node name="HerrkoLevel2" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114114, 219, 0, 1179650, 219, 0, 1245186, 219, 0, 1310722, 219, 0, 1376258, 219, 0, 1441794, 219, 0, 1507330, 219, 0 )
+tile_data = PoolIntArray( 1114114, 1, 0, 1179650, 1, 0, 1245186, 1, 0, 1310722, 1, 0, 1376258, 1, 0, 1441794, 1, 0, 1507330, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 983031, 43, 0, 1048567, 43, 0, 1114103, 43, 0, 1179639, 43, 0, 1245175, 43, 0, 1310711, 43, 0, 1376247, 43, 0, 1441783, 43, 0, 1507319, 43, 0, 1572855, 43, 0, 1638391, 43, 0, 1638392, 43, 0, 1638393, 43, 0, 1638394, 43, 0, 1638395, 43, 0, 1638396, 43, 0, 1638397, 43, 0, 1638398, 43, 0, 1638399, 43, 0, 1572864, 43, 0, 1572865, 43, 0, 1572866, 43, 0, 1572867, 43, 0, 1572868, 43, 0, 1572869, 43, 0, 1572870, 43, 0, 1572871, 43, 0, 1572872, 43, 0, 1572873, 43, 0, 1572874, 43, 0, 1572875, 43, 0, 1572876, 43, 0, 1572877, 43, 0, 1572878, 43, 0, 1572879, 43, 0, 1572880, 43, 0 )
+tile_data = PoolIntArray( 983031, 43, 0, 1048567, 43, 0, 1114100, 0, 0, 1114103, 43, 0, 1179636, 0, 0, 1179639, 43, 0, 1245172, 0, 0, 1245175, 43, 0, 1310708, 0, 0, 1310711, 43, 0, 1376244, 0, 0, 1376247, 43, 0, 1441780, 0, 0, 1441783, 43, 0, 1507316, 0, 0, 1507319, 43, 0, 1572852, 0, 0, 1572853, 1, 0, 1572855, 43, 0, 1638388, 0, 0, 1638389, 1, 0, 1638391, 43, 0, 1638392, 43, 0, 1638393, 43, 0, 1638394, 43, 0, 1638395, 43, 0, 1638396, 43, 0, 1638397, 43, 0, 1638398, 43, 0, 1638399, 43, 0, 1572864, 43, 0, 1572865, 43, 0, 1572866, 43, 0, 1572867, 43, 0, 1572868, 43, 0, 1572869, 43, 0, 1572870, 43, 0, 1572871, 43, 0, 1572872, 43, 0, 1572873, 43, 0, 1572874, 43, 0, 1572875, 43, 0, 1572876, 43, 0, 1572877, 43, 0, 1572878, 43, 0, 1572879, 43, 0, 1572880, 43, 0, 1703924, 0, 0, 1703925, 1, 0, 1703926, 1, 0, 1769460, 0, 0, 1769461, 1, 0, 1769462, 1, 0, 1834996, 0, 0, 1834997, 0, 0, 1834998, 0, 0, 1834999, 0, 0, 1835000, 0, 0, 1835001, 0, 0, 1835002, 0, 0, 1835003, 0, 0, 1835004, 0, 0, 1835005, 0, 0, 1835006, 0, 0, 1835007, 0, 0, 1769472, 0, 0, 1769473, 0, 0, 1769474, 0, 0, 1769475, 0, 0, 1769476, 0, 0, 1769477, 0, 0, 1769478, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114115, 219, 0, 1179651, 219, 0, 1245187, 219, 0, 1310723, 219, 0, 1376259, 219, 0, 1441795, 219, 0, 1507331, 219, 0 )
+tile_data = PoolIntArray( 1114115, 1, 0, 1179651, 1, 0, 1245187, 1, 0, 1310723, 1, 0, 1376259, 1, 0, 1441795, 1, 0, 1507331, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -337, 1420 )
