@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/tilesets/greklovick/grek space tiles.tres" type="TileSet" id=7]
+
+[node name="GrekLevel4" type="Node2D"]
+
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1048582, 1, 0, 1114118, 1, 0, 1179654, 1, 0, 1245190, 1, 0, 1310726, 1, 0, 1376262, 1, 0 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 917499, 37, 0, 983035, 37, 0, 1048570, 0, 0, 1048571, 37, 0, 1114106, 0, 0, 1114107, 37, 0, 1179642, 0, 0, 1179643, 37, 0, 1245178, 0, 0, 1245179, 37, 0, 1310714, 0, 0, 1310715, 37, 0, 1376250, 0, 0, 1376251, 37, 0, 1441786, 0, 0, 1441787, 37, 0, 1441788, 37, 0, 1441789, 37, 0, 1441790, 37, 0, 1441791, 37, 0, 1376256, 37, 0, 1376257, 37, 0, 1376258, 37, 0, 1376259, 37, 0, 1376260, 37, 0, 1376261, 37, 0, 1376262, 37, 0, 1376263, 37, 0, 1376264, 37, 0, 1376265, 37, 0, 1376266, 37, 0, 1376267, 37, 0, 1376268, 37, 0, 1376269, 37, 0, 1376270, 37, 0, 1376271, 37, 0, 1376272, 37, 0, 1376273, 37, 0, 1507322, 0, 0, 1572858, 0, 0, 1638394, 0, 0, 1638395, 1, 0, 1638396, 1, 0, 1638397, 1, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1703930, 0, 0, 1703931, 0, 0, 1703932, 0, 0, 1703933, 0, 0, 1703934, 0, 0, 1703935, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638402, 0, 0, 1638403, 0, 0, 1638404, 0, 0, 1638405, 0, 0, 1638406, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638409, 0, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1048583, 1, 0, 1048584, 1, 0, 1114119, 1, 0, 1179655, 1, 0, 1245191, 1, 0, 1310727, 1, 0, 1376263, 1, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -102, 1272 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 94, 1272 )
+
+[node name="playerspawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( -102, 1272 )
+
+[node name="companionspawn" parent="." instance=ExtResource( 5 )]
+position = Vector2( -102, 1272 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 4 )]
