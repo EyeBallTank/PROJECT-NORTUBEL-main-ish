@@ -6,19 +6,19 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/tilesets/untotern/unto 2 scary tiles.tres" type="TileSet" id=8]
+[ext_resource path="res://assets/tilesets/untotern/unto 3 undead tiles.tres" type="TileSet" id=7]
 
-[node name="UntoternLevel2" type="Node2D"]
+[node name="UntoternLevel3" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
-tile_set = ExtResource( 8 )
+tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( 1114116, 1, 0, 1179652, 1, 0, 1245188, 1, 0, 1310724, 1, 0, 1376260, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 8 )
+tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
@@ -26,7 +26,7 @@ tile_data = PoolIntArray( 917498, 56, 0, 983034, 56, 0, 1048570, 56, 0, 1114103,
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
-tile_set = ExtResource( 8 )
+tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
