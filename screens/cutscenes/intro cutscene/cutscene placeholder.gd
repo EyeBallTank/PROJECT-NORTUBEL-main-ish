@@ -99,6 +99,7 @@ func cutscene_over():
 
 
 #Shihiro: Not bad, I knew you got something in you.
+#Melvin: Really? I feel tired already!
 #Melvin: It's been a while, any of you wanna try another trip with this thing?
 #Katrin: Sure, Stella you wanna come along?
 #Stella: Not really, I'd rather stay here with Zarina.

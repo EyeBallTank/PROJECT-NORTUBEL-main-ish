@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://src/level prefabs/nort prefabs/NortFloatingTarget.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level prefabs/nort prefabs/NortHurtingTarget.tscn" type="PackedScene" id=17]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -113,3 +114,6 @@ position = Vector2( 1280, 2065 )
 
 [node name="RedDoor" parent="." instance=ExtResource( 16 )]
 position = Vector2( 2167, 2563 )
+
+[node name="NortHurtingTarget" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1041, 2090 )
