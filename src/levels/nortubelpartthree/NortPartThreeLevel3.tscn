@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://src/level prefabs/nort prefabs/NortTrainingWoodenPost.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_hazards/Manowar test.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level prefabs/nort prefabs/NortFloatingTarget.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=16]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -105,3 +107,9 @@ customstate = 2
 [node name="NortFloatingTarget3" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1741, 2476 )
 customstate = 3
+
+[node name="Red key" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1280, 2065 )
+
+[node name="RedDoor" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2167, 2563 )
