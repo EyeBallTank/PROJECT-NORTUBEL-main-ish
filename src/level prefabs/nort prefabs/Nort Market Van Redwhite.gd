@@ -9,7 +9,7 @@ func _ready():
 	animation.play("RESET")
 
 func _on_Enter_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("protagonists"):
 		sprite.animation = "open"
 
 func _on_Drive_body_entered(body):
