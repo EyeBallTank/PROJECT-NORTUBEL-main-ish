@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/npc_actors/krimb npc/KarolineNPC.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/level_objects/TradeItemDoor.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=35]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -346,5 +347,8 @@ spritename = "tradeitem massag karoline skateboard"
 [node name="TradeItemDoor" parent="." instance=ExtResource( 34 )]
 position = Vector2( 2649, 3320 )
 spritename = "tradeitemdoor massagcoav"
+
+[node name="Gong" parent="." instance=ExtResource( 35 )]
+position = Vector2( -282, 2867 )
 
 [editable path="MassagSlotMachine"]

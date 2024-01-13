@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=2]
@@ -10,8 +10,13 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=11]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 11 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1136, 1720 )
@@ -94,11 +99,11 @@ new_scene = "res://screens/cutscenes/cutscene 8 nortpartthree shihiro/Cutscene 8
 customtext = "z4r1n4"
 
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
-position = Vector2( 809, 1991 )
+position = Vector2( 802, 2015 )
 boardname = "nort art zarina reference"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1130, 1856 )
+position = Vector2( 1476, 1858 )
 customtext1 = "CONVO_TALK_STELLA_ZARINA_1"
 customtext2 = "CONVO_TALK_STELLA_ZARINA_2"
 customtext3 = "CONVO_TALK_STELLA_ZARINA_3"

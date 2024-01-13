@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -14,8 +14,14 @@
 [ext_resource path="res://src/level_hazards/Cheesespawner.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level prefabs/nort prefabs/CheeseSaver.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=15]
 
 [node name="NortPartThreeLevel1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 15 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 5.png"
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
