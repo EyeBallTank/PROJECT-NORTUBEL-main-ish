@@ -1,7 +1,21 @@
 extends KinematicBody2D
 
+var velocity = Vector2(200, 200)
+var horizdirection = Vector2.RIGHT
+var vertidirection = Vector2.UP
+
 onready var animationplayer = $AnimationPlayer
 export var sides = 1
+export var customstate = 1
+
+enum {
+	DIAGONAL,
+	HORIZONTAL,
+	VERTICAL
+}
+
+var state = DIAGONAL
+
 
 func _ready():
 	animationplayer.play("RESET")
@@ -9,6 +23,37 @@ func _ready():
 		pass
 	elif sides == 2:
 		scale.x = -scale.x
+
+func _physics_process(delta):
+	if customstate == 1:
+		state = DIAGONAL
+	elif customstate == 2:
+		state = HORIZONTAL
+	elif customstate == 3:
+		state = VERTICAL
+
+	match state:
+		DIAGONAL:
+			var collision_info = move_and_collide(velocity * delta)
+			if collision_info:
+				velocity = velocity.bounce(collision_info.normal)
+
+		HORIZONTAL:
+			var found_wall = is_on_wall()
+			if found_wall:
+				horizdirection *= -1
+			velocity = horizdirection * 290
+			move_and_slide(velocity, Vector2.UP)
+
+		VERTICAL:
+			var hitceiling = is_on_ceiling()
+			var hitfloor = is_on_floor()
+			if hitfloor:
+				vertidirection *= -1
+			if hitceiling:
+				vertidirection *= -1
+			velocity = vertidirection * 290
+			move_and_slide(velocity, Vector2.UP)
 
 func disappear():
 	queue_free()
