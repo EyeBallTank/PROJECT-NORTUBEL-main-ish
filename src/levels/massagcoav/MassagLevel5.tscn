@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tilesets/massagcoav/MassSoccerTiles.tres" type="TileSet" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/SoccerFloatingNet.tscn" type="PackedScene" id=9]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -58,11 +59,14 @@ spritename = "massagcoav greendoor"
 customtext = "k4rl44"
 
 [node name="Soccer Goal" parent="." instance=ExtResource( 7 )]
-position = Vector2( 632, 1272 )
+position = Vector2( 1967, 1245 )
 
 [node name="Soccer Goal2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1240, 1280 )
+position = Vector2( 2399, 1221 )
 sides = 2
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 8 )]
 position = Vector2( 144, 1308 )
+
+[node name="SoccerFloatingNet" parent="." instance=ExtResource( 9 )]
+position = Vector2( 689, 1121 )
