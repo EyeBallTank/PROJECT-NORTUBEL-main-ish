@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/458570__imagery2__red-alert_nuclear_buzzer.mp3-9b22e0f5ffd74ee660dacff46516a4a7.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/lahiurn prefab sounds/458570__imagery2__red-alert_nuclear_buzzer.mp3"
+dest_files=[ "res://.import/458570__imagery2__red-alert_nuclear_buzzer.mp3-9b22e0f5ffd74ee660dacff46516a4a7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

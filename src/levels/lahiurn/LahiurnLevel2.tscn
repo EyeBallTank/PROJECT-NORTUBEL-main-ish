@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 2 sub tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/458570__imagery2__red-alert_nuclear_buzzer.mp3" type="AudioStream" id=9]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -23,10 +24,22 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "alarmon"
-length = 2.0
+length = 2.4
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("alarm effect:modulate")
@@ -35,10 +48,22 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.694118 ), Color( 1, 1, 1, 0.694118 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 1.2, 2.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false ]
 }
 
 [node name="LahiurnLevel2" type="Node2D"]
@@ -96,3 +121,9 @@ anims/alarmon = SubResource( 2 )
 [node name="BlueSwitch" parent="." instance=ExtResource( 8 )]
 position = Vector2( -303, 1733 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/lahiurn/Blue switch lahiurn.tres"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -16.7
+pitch_scale = 1.19
+bus = "Sound"

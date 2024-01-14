@@ -178,6 +178,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * sunfiredragon on FreeSound (Electric trap sound)
 * szpury on FreeSound (Police car sound effect)
 * irinairinafomicheva/pixabay (Camera sound)
+* imagery2 on FreeSound (Alarm sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
