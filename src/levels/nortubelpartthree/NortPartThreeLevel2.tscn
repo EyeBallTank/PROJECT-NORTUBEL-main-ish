@@ -94,7 +94,7 @@ position = Vector2( 6994, 2120 )
 propname = "nortprop house 2"
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2524, 2060 )
+position = Vector2( 7022, 1355 )
 new_scene = "res://screens/cutscenes/cutscene 8 nortpartthree shihiro/Cutscene 8 Nortpartthree Shihiro.tscn"
 customtext = "z4r1n4"
 
