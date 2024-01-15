@@ -1,4 +1,5 @@
 extends Area2D
+tool
 
 #Failed goal: Making the coin unpickable when the player reaches max lives
 #The coin is still pickable somehow
