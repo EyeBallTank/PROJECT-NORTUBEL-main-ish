@@ -92,11 +92,11 @@ position = Vector2( -1053, 3355 )
 position = Vector2( -1189, 3360 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1190, 3360 )
+position = Vector2( 16826, -623 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1041, 3357 )
+position = Vector2( 16975, -626 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
@@ -455,5 +455,6 @@ position = Vector2( 15802, -440 )
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 38 )]
 position = Vector2( 16543, -624 )
+yelswitchskin = "res://assets/sprites/level_object_sprites/massagcoav/Yellow switch massagcoav.tres"
 
 [editable path="MassagSlotMachine"]
