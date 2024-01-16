@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/BookHint.PNG" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/LoreBook.gd" type="Script" id=2]
@@ -7,7 +7,12 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/BookHint hirdrih.PNG" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_object_sprites/krimbstone/BookHint Krimbstone.PNG" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/BookHint Massagcoav.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/level_object_sprites/herrko/BookHint herrko.PNG" type="Texture" id=8]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 363, 208 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 5 )
@@ -28,6 +33,11 @@ region = Rect2( 0, 0, 363, 208 )
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "herrko lorebook",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 8 ) ],
 "loop": false,
 "name": "hirdrih lorebook",
@@ -71,7 +81,7 @@ customtext = "LORETEXT_1"
 position = Vector2( 2, -134 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 7 )
-animation = "massagcoav lorebook"
+animation = "herrko lorebook"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1.5, -135.5 )
