@@ -55,6 +55,9 @@ texture = ExtResource( 17 )
 position = Vector2( 917, 3246 )
 propname = "massprop neon palmtree"
 
+[node name="MassagYellowPlatVerti" parent="." instance=ExtResource( 37 )]
+position = Vector2( 15873, -1058 )
+
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
@@ -92,11 +95,11 @@ position = Vector2( -1053, 3355 )
 position = Vector2( -1189, 3360 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1190, 3361 )
+position = Vector2( -1193, 3361 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1041, 3358 )
+position = Vector2( -1044, 3358 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
@@ -458,8 +461,5 @@ collision_newsize = Vector2( 64, 8 )
 [node name="YellowSwitch" parent="." instance=ExtResource( 38 )]
 position = Vector2( 16543, -624 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/massagcoav/Yellow switch massagcoav.tres"
-
-[node name="MassagYellowPlatVerti" parent="." instance=ExtResource( 37 )]
-position = Vector2( 15873, -1058 )
 
 [editable path="MassagSlotMachine"]
