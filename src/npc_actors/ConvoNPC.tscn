@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -21,6 +21,12 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Angela Melvin 2.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Krimbstone/Convo Krimb Prisoners.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Stella Zarina.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Barney Feelix.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Barney Fernaanda.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Barney Holmes.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Feelix Fernaanda.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Feelix Holmes.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Fernaanda Holmes.png" type="Texture" id=27]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -42,6 +48,18 @@ region = Rect2( 0, 0, 420, 583 )
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 420, 583 )
 
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 24 )
+region = Rect2( 0, 0, 420, 583 )
+
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 420, 583 )
@@ -56,6 +74,18 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 25 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 26 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 27 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=16]
@@ -121,6 +151,21 @@ animations = [ {
 "name": "angela pete",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 29 ) ],
+"loop": false,
+"name": "barney feelix",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 30 ) ],
+"loop": false,
+"name": "barney fernaanda",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 31 ) ],
+"loop": false,
+"name": "barney holmes",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
 "name": "carrie katrin",
@@ -139,6 +184,21 @@ animations = [ {
 "frames": [ SubResource( 19 ) ],
 "loop": false,
 "name": "carrie pete",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 32 ) ],
+"loop": false,
+"name": "feelix fernaanda",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 33 ) ],
+"loop": false,
+"name": "feelix holmes",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 34 ) ],
+"loop": false,
+"name": "fernaanda holmes",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 16 ) ],
@@ -377,7 +437,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "stella zarina"
+animation = "fernaanda holmes"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
