@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=13]
 [ext_resource path="res://assets/sprites/level_backgrounds/massagcoav/mc train bg.png" type="Texture" id=14]
 [ext_resource path="res://src/levels/massagcoav/MassagLevel4.gd" type="Script" id=15]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=16]
 
 [node name="MassagLevel1" type="Node2D"]
 script = ExtResource( 15 )
@@ -97,3 +98,11 @@ spritename = "massagcoav reddoor"
 [node name="YellowDoor" parent="." instance=ExtResource( 12 )]
 position = Vector2( -193, 1213 )
 spritename = "massagcoav yeldoor"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1620, 1119 )
+spritename = "barney fernaanda"
+
+[node name="ConvoNPC2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2001, 1119 )
+spritename = "feelix holmes"
