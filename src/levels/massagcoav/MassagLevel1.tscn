@@ -292,6 +292,11 @@ position = Vector2( 6368, 2383 )
 customtext = "MASSAG_LORE_CHICKEN_T"
 spritename = "massagcoav lorebook"
 
+[node name="LoreBook2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 10696, 843 )
+customtext = "MASSAG_LORE_CURRENTYEAR_T"
+spritename = "massagcoav lorebook"
+
 [node name="MassagSlotMachine" parent="." instance=ExtResource( 19 )]
 position = Vector2( -2050, 2630 )
 
