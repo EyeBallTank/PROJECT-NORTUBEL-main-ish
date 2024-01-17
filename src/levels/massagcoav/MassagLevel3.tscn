@@ -96,8 +96,20 @@ customname = "Kangaroo Zack"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 14 )]
 position = Vector2( 565, 1164 )
+customtext1 = "FEELIX_BARNEY_CONVO_TALK_1"
+customtext2 = "FEELIX_BARNEY_CONVO_TALK_2"
+customtext3 = "FEELIX_BARNEY_CONVO_TALK_3"
+customtext4 = "FEELIX_BARNEY_CONVO_TALK_4"
+customname1 = "Feelix Johnson"
+customname2 = "Barney Mackenstein"
 spritename = "barney feelix"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 14 )]
 position = Vector2( 865, 1187 )
+customtext1 = "HOLMES_FERNAANDA_CONVO_TALK_1"
+customtext2 = "HOLMES_FERNAANDA_CONVO_TALK_2"
+customtext3 = "HOLMES_FERNAANDA_CONVO_TALK_3"
+customtext4 = "HOLMES_FERNAANDA_CONVO_TALK_4"
+customname1 = "Holmes Dekarro"
+customname2 = "Fernaanda Johnson"
 spritename = "fernaanda holmes"
