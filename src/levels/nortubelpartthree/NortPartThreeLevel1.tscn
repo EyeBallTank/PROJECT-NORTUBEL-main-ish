@@ -68,8 +68,12 @@ new_scene = "res://src/levels/nortubelpartthree/NortPartThreeLevel2.tscn"
 customtext = "st3ll4"
 
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2136, 799 )
+position = Vector2( 2136, 815 )
 boardname = "nort art pamela reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1787, 805 )
+boardname = "nort art bernard shelly"
 
 [node name="StellaNPC" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1093, 1299 )
