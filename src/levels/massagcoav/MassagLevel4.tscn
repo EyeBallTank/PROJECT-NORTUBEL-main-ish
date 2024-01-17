@@ -101,8 +101,20 @@ spritename = "massagcoav yeldoor"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1620, 1119 )
+customtext1 = "BARNEY_FERNAANDA_CONVO_TALK_1"
+customtext2 = "BARNEY_FERNAANDA_CONVO_TALK_2"
+customtext3 = "BARNEY_FERNAANDA_CONVO_TALK_3"
+customtext4 = "BARNEY_FERNAANDA_CONVO_TALK_4"
+customname1 = "Barney Mackenstein"
+customname2 = "Fernaanda Johnson"
 spritename = "barney fernaanda"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 16 )]
 position = Vector2( 2001, 1119 )
+customtext1 = "FEELIX_HOLMES_CONVO_TALK_1"
+customtext2 = "FEELIX_HOLMES_CONVO_TALK_2"
+customtext3 = "FEELIX_HOLMES_CONVO_TALK_3"
+customtext4 = "FEELIX_HOLMES_CONVO_TALK_4"
+customname1 = "Feelix Johnson"
+customname2 = "Holmes Dekarro"
 spritename = "feelix holmes"
