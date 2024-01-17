@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Feelix Fernaanda.png" type="Texture" id=25]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Feelix Holmes.png" type="Texture" id=26]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Fernaanda Holmes.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Henson Family.png" type="Texture" id=28]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -86,6 +87,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=34]
 atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 28 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=16]
@@ -199,6 +204,11 @@ animations = [ {
 "frames": [ SubResource( 34 ) ],
 "loop": false,
 "name": "fernaanda holmes",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 35 ) ],
+"loop": false,
+"name": "henson family",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 16 ) ],
@@ -437,7 +447,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "fernaanda holmes"
+animation = "henson family"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
