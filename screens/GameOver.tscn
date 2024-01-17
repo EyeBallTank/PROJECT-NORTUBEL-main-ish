@@ -30,9 +30,9 @@ text = "QUIT_B"
 
 [node name="Label" type="Label" parent="."]
 margin_left = 421.0
-margin_top = 199.0
+margin_top = 161.0
 margin_right = 669.0
-margin_bottom = 248.0
+margin_bottom = 210.0
 custom_fonts/font = SubResource( 1 )
 text = "GAMEOVER_T"
 

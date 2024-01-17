@@ -19,6 +19,7 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 11 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 6.png"
 
 [node name="LevelProp" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1136, 1720 )
