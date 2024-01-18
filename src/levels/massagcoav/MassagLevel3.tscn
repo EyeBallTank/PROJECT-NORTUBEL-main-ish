@@ -113,3 +113,13 @@ customtext4 = "HOLMES_FERNAANDA_CONVO_TALK_4"
 customname1 = "Holmes Dekarro"
 customname2 = "Fernaanda Johnson"
 spritename = "fernaanda holmes"
+
+[node name="ConvoNPC3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2048, 810 )
+customtext1 = "CONVO_HENSON_FAMILY_T_5"
+customtext2 = "CONVO_HENSON_FAMILY_T_6"
+customtext3 = "CONVO_HENSON_FAMILY_T_7"
+customtext4 = "CONVO_HENSON_FAMILY_T_8"
+customname1 = "Touni Henson"
+customname2 = "Karoline Henson"
+spritename = "henson family"
