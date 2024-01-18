@@ -152,6 +152,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * fesliyanstudios (Bullet sound effect)
 * ChipTone by SFBGames (Used to make sounds)
 * Gluk, font designer from Fontspace (Used the Mikodacs font from there)
+* nickkarvounis, Unsplash (Used a real photo for the image used in the game over screen)
 * 16BitDev (Used the Main Menu tutorial video as reference, hence the options menu)
 * hellofellowjell-0186 (Used a tutorial video to make the jump pad work)
 * Dicode1q (Used video and article to improvise player jump physics)
