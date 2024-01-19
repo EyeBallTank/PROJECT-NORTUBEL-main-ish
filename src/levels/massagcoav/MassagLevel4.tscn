@@ -126,8 +126,8 @@ customtext1 = "CONVO_HENSON_FAMILY_T_9"
 customtext2 = "CONVO_HENSON_FAMILY_T_10"
 customtext3 = "CONVO_HENSON_FAMILY_T_11"
 customtext4 = "CONVO_HENSON_FAMILY_T_12"
-customname1 = ""
-customname2 = ""
+customname1 = "Karoline Henson"
+customname2 = "Karla Henson"
 spritename = "henson family"
 
 [node name="McSherryNPC" parent="." instance=ExtResource( 17 )]

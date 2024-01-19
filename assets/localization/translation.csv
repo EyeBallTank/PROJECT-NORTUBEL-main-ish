@@ -956,10 +956,14 @@ CONVO_OSCAR_PETE_BEACH_3,"I was told it might be from mom's side.
 Even my aunt that lived in cold places still had them.","Disseram-me que pode ser do lado da minha mãe.
 Até a minha tia que vivia em sítios frios tinha sardas."
 CONVO_OSCAR_PETE_BEACH_4,I see.,Agora percebo.
-CONVO_HENSON_FAMILY_T_9,,
-CONVO_HENSON_FAMILY_T_10,,
-CONVO_HENSON_FAMILY_T_11,,
-CONVO_HENSON_FAMILY_T_12,,
+CONVO_HENSON_FAMILY_T_9,"Wow, these trains have a lot of space!","Wow, estes comboios têm muito espaço!"
+CONVO_HENSON_FAMILY_T_10,"Some of these are often used like hotels.
+Some people even live here.","Alguns destes comboios são usados como hotéis.
+Algumas pessoas até vivem aqui."
+CONVO_HENSON_FAMILY_T_11,"Really? But why?
+What if there's an accident?","A sério? Mas porquê?
+E se houver um acidente?"
+CONVO_HENSON_FAMILY_T_12,Maybe those people just do things for the sake of luxury.,Talvez essas pessoas só fazem coisas por causa do luxo.
 MCSHERRY_NPC_TALK_2,"What does Holmes want from me this time?
 Pretty sure there's more than just give these weird kids a tour.","O que é que o Holmes quer de mim desta vez?
 Deve ser algo mais do que dar estes miúdos estranhos um passeio."
