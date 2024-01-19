@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Fernaanda Holmes.png" type="Texture" id=27]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Henson Family.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin Beach.png" type="Texture" id=29]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach.png" type="Texture" id=30]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -128,6 +129,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 30 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=28]
@@ -259,6 +264,11 @@ animations = [ {
 "frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "oscar pete",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 37 ) ],
+"loop": false,
+"name": "oscar pete beach",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 28 ) ],
@@ -457,7 +467,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "carrie katrin beach"
+animation = "oscar pete beach"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
