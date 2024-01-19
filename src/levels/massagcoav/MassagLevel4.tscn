@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/massagcoav/mc train bg.png" type="Texture" id=14]
 [ext_resource path="res://src/levels/massagcoav/MassagLevel4.gd" type="Script" id=15]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/npc_actors/massag npc/McSherryNPC.tscn" type="PackedScene" id=17]
 
 [node name="MassagLevel1" type="Node2D"]
 script = ExtResource( 15 )
@@ -118,3 +119,20 @@ customtext4 = "FEELIX_HOLMES_CONVO_TALK_4"
 customname1 = "Feelix Johnson"
 customname2 = "Holmes Dekarro"
 spritename = "feelix holmes"
+
+[node name="ConvoNPC3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2700, 1067 )
+customtext1 = "CONVO_HENSON_FAMILY_T_9"
+customtext2 = "CONVO_HENSON_FAMILY_T_10"
+customtext3 = "CONVO_HENSON_FAMILY_T_11"
+customtext4 = "CONVO_HENSON_FAMILY_T_12"
+customname1 = ""
+customname2 = ""
+spritename = "henson family"
+
+[node name="McSherryNPC" parent="." instance=ExtResource( 17 )]
+position = Vector2( 3125, 1148 )
+customtext = "MCSHERRY_NPC_TALK_3"
+customtext2 = "MCSHERRY_NPC_HONK"
+customtext3 = "MCSHERRY_NPC_HUG"
+customtext4 = "MCSHERRY_NPC_HURT"
