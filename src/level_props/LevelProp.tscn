@@ -1,4 +1,4 @@
-[gd_scene load_steps=442 format=2]
+[gd_scene load_steps=448 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -220,6 +220,9 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 2.png" type="Texture" id=218]
 [ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 3.png" type="Texture" id=219]
 [ext_resource path="res://assets/sprites/level_props/massag coav/elegprop balloon blimp vehicle.png" type="Texture" id=220]
+[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 1.png" type="Texture" id=221]
+[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 2.png" type="Texture" id=222]
+[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 3.png" type="Texture" id=223]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -240,6 +243,18 @@ region = Rect2( 0, 0, 444, 398 )
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 13 )
 region = Rect2( 0, 0, 444, 398 )
+
+[sub_resource type="AtlasTexture" id=235]
+atlas = ExtResource( 221 )
+region = Rect2( 0, 0, 133, 317 )
+
+[sub_resource type="AtlasTexture" id=236]
+atlas = ExtResource( 222 )
+region = Rect2( 0, 0, 153, 422 )
+
+[sub_resource type="AtlasTexture" id=237]
+atlas = ExtResource( 223 )
+region = Rect2( 0, 0, 303, 562 )
 
 [sub_resource type="AtlasTexture" id=163]
 atlas = ExtResource( 151 )
@@ -1126,6 +1141,21 @@ animations = [ {
 "frames": [ SubResource( 22 ) ],
 "loop": false,
 "name": "herrprop barrelwood weapons",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 235 ) ],
+"loop": false,
+"name": "herrprop yevlen statue 1",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 236 ) ],
+"loop": false,
+"name": "herrprop yevlen statue 2",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 237 ) ],
+"loop": false,
+"name": "herrprop yevlen statue 3",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 163 ) ],
@@ -2205,5 +2235,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "elegprop balloon blimp vehicle"
+animation = "herrprop yevlen statue 3"
 playing = true
