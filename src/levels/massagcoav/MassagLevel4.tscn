@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/levels/massagcoav/MassagLevel4.gd" type="Script" id=15]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/massag npc/McSherryNPC.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/npc_actors/massag npc/JooliettaNPC.tscn" type="PackedScene" id=18]
 
 [node name="MassagLevel1" type="Node2D"]
 script = ExtResource( 15 )
@@ -136,3 +137,10 @@ customtext = "MCSHERRY_NPC_TALK_3"
 customtext2 = "MCSHERRY_NPC_HONK"
 customtext3 = "MCSHERRY_NPC_HUG"
 customtext4 = "MCSHERRY_NPC_HURT"
+
+[node name="JooliettaNPC" parent="." instance=ExtResource( 18 )]
+position = Vector2( 3598, 1161 )
+customtext = "JOOLIETTA_NPC_TALK_2"
+customtext2 = "JOOLIETTA_NPC_HONK"
+customtext3 = "JOOLIETTA_NPC_HUG"
+customtext4 = "JOOLIETTA_NPC_HURT"
