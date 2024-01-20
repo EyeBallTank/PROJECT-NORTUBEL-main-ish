@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tilesets/massagcoav/MassSoccerTiles.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/SoccerFloatingNet.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/massag npc/MassagAudienceSoccer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=11]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -60,10 +61,10 @@ spritename = "massagcoav greendoor"
 customtext = "k4rl44"
 
 [node name="Soccer Goal" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2634, 1047 )
+position = Vector2( 2555, 1304 )
 
 [node name="Soccer Goal2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3013, 1071 )
+position = Vector2( 3118, 1312 )
 sides = 2
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 8 )]
@@ -78,3 +79,7 @@ customstate = 2
 position = Vector2( 1974, 1288 )
 customtext = "MASSAG_SOCCER_AUDIENCE_NPC"
 customname = "Karla Henson"
+
+[node name="NumberBasedDoor" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3504, 1291 )
+idealnumber = 3
