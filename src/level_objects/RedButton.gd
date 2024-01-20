@@ -6,13 +6,10 @@ onready var animationplayer = $AnimationPlayer
 
 export var redbuttonskin = "res://assets/sprites/level_object_sprites/RedButton.tres"
 
-
 func _ready():
 	animatedsprite.frames = load(redbuttonskin)
 	animatedsprite.animation = "unpressed"
 	animationplayer.play("UNPRESSED")
-
-
 
 func _on_RedButton_body_entered(body):
 	if body.is_in_group("protagonists"):
