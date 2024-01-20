@@ -36,6 +36,8 @@ signal player_died
 signal scene_has_changed
 
 signal collectible_picked
+signal red_button_active
+signal red_button_unactive
 
 
 #signal blue_switch_pressed(blueswitchresponse)
