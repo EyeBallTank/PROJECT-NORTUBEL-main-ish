@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek radio tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=8]
 
 [node name="GrekLevel3" type="Node2D"]
 
@@ -44,3 +46,11 @@ position = Vector2( -102, 1272 )
 position = Vector2( -102, 1272 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
+
+[node name="Health Pickup" parent="." instance=ExtResource( 7 )]
+position = Vector2( 701, 1397 )
+spritename = "greklovick health"
+
+[node name="LifeguardFloater" parent="." instance=ExtResource( 8 )]
+position = Vector2( 989, 1416 )
+spritename = "greklovick floater"
