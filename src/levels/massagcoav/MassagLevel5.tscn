@@ -81,5 +81,5 @@ customtext = "MASSAG_SOCCER_AUDIENCE_NPC"
 customname = "Karla Henson"
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3504, 1291 )
+position = Vector2( 3484, 1190 )
 idealnumber = 3
