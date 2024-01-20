@@ -53,10 +53,13 @@ func _physics_process(delta):
 func die():
 	queue_free()
 
+func send_a_signal():
+	Signals.emit_signal("collectible_picked")
+
 func _on_TargetDelete_body_entered(body):
 	if body.name == "SoccerBall":
 		animation.play("dying")
-
+		
 func _on_TargetDelete_area_entered(area):
 	if area.name == "PlayerMelee":
 		animation.play("dying")
