@@ -57,3 +57,7 @@ propname = "herrprop yevlen statue 2"
 [node name="LevelProp3" parent="." instance=ExtResource( 7 )]
 position = Vector2( 790, 1444 )
 propname = "herrprop yevlen statue 3"
+
+[node name="LevelProp4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1317, 1478 )
+propname = "herrprop yevlen statue 4"
