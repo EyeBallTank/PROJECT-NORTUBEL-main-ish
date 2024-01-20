@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=8]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -61,3 +62,8 @@ propname = "herrprop yevlen statue 3"
 [node name="LevelProp4" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1317, 1478 )
 propname = "herrprop yevlen statue 4"
+
+[node name="LoreBook" parent="." instance=ExtResource( 8 )]
+position = Vector2( 168, 1722 )
+customtext = "HERRKO_LORE_ANCESTOR_T"
+spritename = "herrko lorebook"
