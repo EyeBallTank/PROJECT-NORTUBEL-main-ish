@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://src/level prefabs/nort prefabs/NortFloatingTarget.gd" type="Script" id=1]
+[ext_resource path="res://src/level prefabs/nort prefabs/NortHurtingTarget.gd" type="Script" id=1]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/nort prefab sprites/nort hurting target.png" type="Texture" id=3]
 

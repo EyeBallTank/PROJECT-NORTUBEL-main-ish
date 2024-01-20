@@ -21,3 +21,6 @@ func _on_BallDetector_area_entered(area):
 
 func disappear():
 	queue_free()
+
+func send_a_signal():
+	Signals.emit_signal("collectible_picked")

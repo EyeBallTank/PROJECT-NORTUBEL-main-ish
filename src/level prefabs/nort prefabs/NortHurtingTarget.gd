@@ -3,9 +3,8 @@ extends KinematicBody2D
 var velocity = Vector2(200, 200)
 var horizdirection = Vector2.RIGHT
 var vertidirection = Vector2.UP
+onready var animation = $AnimationPlayer
 
-onready var animationplayer = $AnimationPlayer
-export var sides = 1
 export var customstate = 1
 
 enum {
@@ -16,13 +15,8 @@ enum {
 
 var state = DIAGONAL
 
-
 func _ready():
-	animationplayer.play("RESET")
-	if sides == 1:
-		pass
-	elif sides == 2:
-		scale.x = -scale.x
+	animation.play("RESET")
 
 func _physics_process(delta):
 	if customstate == 1:
@@ -55,18 +49,31 @@ func _physics_process(delta):
 			velocity = vertidirection * 290
 			move_and_slide(velocity, Vector2.UP)
 
-func disappear():
+
+func die():
 	queue_free()
 
 func send_a_signal():
 	Signals.emit_signal("collectible_picked")
 
-func _on_BallDetector_area_exited(area):
-	if area.name == "GoalDetector":
-		$AudioStreamPlayer.play()
-		animationplayer.play("ballreceived")
+#func _on_TargetDelete_body_entered(body):
+#	if body.name == "SoccerBall":
+#		animation.play("dying")
+#
+#func _on_TargetDelete_area_entered(area):
+#	if area.name == "PlayerMelee":
+#		animation.play("dying")
+#	if area.name == "EnemyCrusher":
+#		animation.play("dying")
 
-func _on_BallDetector_body_entered(body):
+
+func _on_TargetDelete_body_entered(body):
 	if body.name == "SoccerBall":
-		$AudioStreamPlayer.play()
-		animationplayer.play("ballreceived")
+		animation.play("dying")
+
+func _on_TargetDelete_area_entered(area):
+	if area.name == "PlayerMelee":
+		animation.play("dying")
+	if area.name == "EnemyCrusher":
+		animation.play("dying")
+
