@@ -39,7 +39,9 @@ enum {
 	STOPCLIMB,
 	STOPSWIM,
 	STOPICE,
-	STOPSWING
+	STOPSWING,
+	LOWGRAV,
+	STOPLOWGRAV
 }
 
 
@@ -83,6 +85,7 @@ onready var playerhitboxcollision = $PlayerHitbox/HitboxPlayer
 onready var animatedsprite = $AnimatedSprite
 onready var pushdetector = $PushDetector
 onready var audioplayer = $AudioStreamPlayer
+onready var lowgravcheck = $LowGravCheck
 
 
 var last_checkpoint: Area2D = null
@@ -371,6 +374,10 @@ func _physics_process(delta):
 				state = STOPICE
 
 		MAINSTATE:
+
+			if is_on_lowgrav():
+				state = LOWGRAV
+
 			iamplayable = true
 			if Input.is_action_just_pressed("charnormal"):
 				state = STOPNORMAL
@@ -448,7 +455,6 @@ func _physics_process(delta):
 			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
 				velocity.y = -JUMP_SPEED
 
-
 			if velocity.y < 0 and not is_on_floor():
 				if ouch == false:
 					animatedsprite.animation = "Jumpgoesup"
@@ -475,6 +481,7 @@ func _physics_process(delta):
 			if Input.is_action_just_released("jumpup"):
 				if velocity.y < 0:
 					velocity.y += 500
+
 
 			if jump_buffer_counter > 0:
 				jump_buffer_counter -= 1
@@ -871,6 +878,10 @@ func _physics_process(delta):
 				state = STOPNORMAL
 
 		STOPNORMAL:
+			
+			if is_on_lowgrav():
+				state = STOPLOWGRAV
+
 			iamplayable = false
 			velocity.x = 0
 			animatedsprite.animation = "Idle"
@@ -1011,6 +1022,178 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("charswitch"):
 				state = ROPE
 
+		LOWGRAV:
+			gravity = 1200
+			iamplayable = true
+			if not is_on_lowgrav():
+				gravity = 3000
+				state = MAINSTATE
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPLOWGRAV
+
+			oxygenbar.hide()
+			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
+			$CollisionShape2D.position = Vector2(-1.5, -123)
+			hurtboxcollision.shape.extents = Vector2(27, 123)
+			hurtboxcollision.position = Vector2(-2, -123)
+			$RopeCheck/CollisionShape2D.shape.extents = Vector2(6.625, 30.75)
+			$RopeCheck/CollisionShape2D.position = Vector2(-0.375, 30)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(27, 123)
+			$PortalCheck/CollisionShape2D.position = Vector2(-2, -123)
+			pushcheck()
+
+			if Input.is_action_just_pressed("attack"):
+				state = KNIFE
+
+			if Input.is_action_just_pressed("down") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
+				if hasball == true:
+					state = KICKBALL
+				else:
+					pass
+			elif Input.is_action_just_pressed("down") and Input.is_action_pressed("kickball"):
+				pass
+			elif Input.is_action_just_pressed("down") and Input.is_action_pressed("stellacommand"):
+				pass
+
+			WALK_MAX_SPEED = 700
+			if Input.get_action_strength("right") and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
+				velocity.x = WALK_MAX_SPEED
+				playerhitboxcollision.position = Vector2(65, 2)
+				pushdetector.position = Vector2(63, 0)
+			elif Input.get_action_strength("right") and Input.is_action_pressed("kickball"):
+				velocity.x = 0
+			elif Input.get_action_strength("right") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
+			elif Input.get_action_strength("left")  and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
+				velocity.x = -WALK_MAX_SPEED
+				playerhitboxcollision.position = Vector2(-67, 2)
+				pushdetector.position = Vector2(-59, 0)
+			elif Input.get_action_strength("left") and Input.is_action_pressed("kickball"):
+				velocity.x = 0
+			elif Input.get_action_strength("left") and Input.is_action_pressed("stellacommand"):
+				velocity.x = 0
+			else:
+				velocity.x = 0
+
+			if Input.get_action_strength("right") and is_on_floor() and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = false
+			elif Input.get_action_strength("left") and is_on_floor() and not Input.is_action_pressed("kickball") and not Input.is_action_pressed("stellacommand"):
+				animatedsprite.animation = "Running"
+				animatedsprite.flip_h = true
+			else:
+				if amihonking == true:
+					animatedsprite.animation = "Honk"
+				elif amihugging == true:
+					animatedsprite.animation = "Hug"
+				else:
+					animatedsprite.animation = "Idle"
+
+			if Input.is_action_pressed("kickball") and Input.is_action_pressed("standstill"):
+				amihonking = true
+			else:
+				amihonking = false
+			if Input.is_action_pressed("followme"):
+				amihugging = true
+			else:
+				amihugging = false
+
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and Input.is_action_just_pressed("jumpup"):
+				velocity.y = -JUMP_SPEED
+
+			if velocity.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+			elif velocity.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if Input.is_action_just_pressed("right"):
+					animatedsprite.flip_h = false
+				elif Input.is_action_just_pressed("left"):
+					animatedsprite.flip_h = true
+
+			#This is where i copy code from a video/page by Dicode1q
+			if Input.is_action_just_pressed("jumpup"):
+				jump_buffer_counter = jump_buffer_time
+			
+			if Input.is_action_just_released("jumpup"):
+				if velocity.y < 0:
+					velocity.y += 500
+
+
+			if jump_buffer_counter > 0:
+				jump_buffer_counter -= 1
+
+			if jump_buffer_counter > 0 and is_on_floor():
+#				velocity.y = -JUMP_SPEED (is this fixed?)
+				jump_buffer_counter = 0
+#			elif jump_buffer_counter == 0 and not is_on_floor():
+#				pass
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			if is_on_ladder():
+				if Input.get_action_strength("jumpup"):
+					state = CLIMB
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = SWIM
+			if is_on_slow():
+				state = SLOW
+			if is_on_ice():
+				state = ICE
+
+		STOPLOWGRAV:
+			iamplayable = false
+			if not is_on_lowgrav():
+				gravity = 3000
+				state = STOPNORMAL
+
+			if Input.is_action_just_pressed("charswitch"):
+				state = LOWGRAV
+
+			gravity = 1100
+			iamplayable = false
+			velocity.x = 0
+			animatedsprite.animation = "Idle"
+
+			if velocity.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesup"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+			elif velocity.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Jumpgoesdown"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = STOPSWIM
+			if is_on_ice():
+				state = STOPICE
 
 func is_invul():
 	immortal = true
@@ -1045,6 +1228,12 @@ func is_on_slow():
 	if not slowCheck.is_colliding(): return false
 	var collider = slowCheck.get_collider()
 	if not collider is SlowFloor: return false
+	return true
+
+func is_on_lowgrav():
+	if not lowgravcheck.is_colliding(): return false
+	var collider = lowgravcheck.get_collider()
+	if not collider is lowgravity: return false
 	return true
 
 func _on_Hurtbox_area_entered(area):

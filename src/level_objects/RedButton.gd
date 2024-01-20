@@ -6,6 +6,8 @@ onready var animationplayer = $AnimationPlayer
 
 export var redbuttonskin = "res://assets/sprites/level_object_sprites/RedButton.tres"
 
+#PROBABLY WORKS BEST IF ONLY ONE CHARACTER CAN ACCESS IT
+
 func _ready():
 	animatedsprite.frames = load(redbuttonskin)
 	animatedsprite.animation = "unpressed"
