@@ -61,19 +61,61 @@ spritename = "massagcoav greendoor"
 customtext = "k4rl44"
 
 [node name="Soccer Goal" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2555, 1304 )
+position = Vector2( 2395, 48 )
+
+[node name="Soccer Goal8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1910, 276 )
+
+[node name="Soccer Goal9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1810, 825 )
+
+[node name="Soccer Goal3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2385, 525 )
+
+[node name="Soccer Goal4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2875, 314 )
 
 [node name="Soccer Goal2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3118, 1312 )
+position = Vector2( 3286, 48 )
+scale = Vector2( -1, 1 )
+sides = 2
+
+[node name="Soccer Goal6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3678, -137 )
+sides = 2
+
+[node name="Soccer Goal7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3942, 383 )
+scale = Vector2( -1, 1 )
+sides = 2
+
+[node name="Soccer Goal5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3336, 526 )
 sides = 2
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 8 )]
 position = Vector2( 144, 1308 )
 
 [node name="SoccerFloatingNet" parent="." instance=ExtResource( 9 )]
-position = Vector2( 689, 1121 )
+position = Vector2( 2532, 1323 )
 sides = 2
 customstate = 2
+
+[node name="SoccerFloatingNet4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2499, 1027 )
+sides = 2
+
+[node name="SoccerFloatingNet2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2937, 1309 )
+customstate = 2
+
+[node name="SoccerFloatingNet3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2882, 1006 )
+sides = 2
+customstate = 3
+
+[node name="SoccerFloatingNet5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3319, 1194 )
 
 [node name="MassagAudienceSoccer" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1974, 1288 )
@@ -81,5 +123,5 @@ customtext = "MASSAG_SOCCER_AUDIENCE_NPC"
 customname = "Karla Henson"
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3484, 1190 )
-idealnumber = 3
+position = Vector2( 3690, 727 )
+idealnumber = 9

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/greklovick/grek space tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/behind_the_scenes/LowGravity.tscn" type="PackedScene" id=9]
 
 [node name="GrekLevel4" type="Node2D"]
 
@@ -62,3 +63,8 @@ position = Vector2( 3347, 1536 )
 [node name="CrawlzoneEnter2" parent="." instance=ExtResource( 8 )]
 visible = false
 position = Vector2( 3203, 1536 )
+
+[node name="LowGravity" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1350, 1511 )
+scale = Vector2( 32, 32 )
+collision_newsize = Vector2( 32, 32 )

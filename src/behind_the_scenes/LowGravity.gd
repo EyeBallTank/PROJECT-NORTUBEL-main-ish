@@ -8,7 +8,7 @@ export var collision_newsize = Vector2()
 func _ready():
 	self.scale = collision_newsize
 
-
+#NOTE TO SELF: MAKE IT SO ONLY PLAYER GETS TO USE LOW GRAVITY
 
 #
 #func _on_LowGravity_body_entered(body):
