@@ -49,6 +49,11 @@ position = Vector2( 1346, -274 )
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3166, -388 )
 
+[node name="NumberBasedDoor2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2516, -388 )
+spritename = "shihiro"
+idealnumber = 3
+
 [node name="NortFloatingTarget" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1912, -414 )
 customstate = 3
