@@ -77,20 +77,20 @@ position = Vector2( 2875, 314 )
 
 [node name="Soccer Goal2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3286, 48 )
-scale = Vector2( -1, 1 )
 sides = 2
 
 [node name="Soccer Goal6" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3678, -137 )
+scale = Vector2( -1, 1 )
 sides = 2
 
 [node name="Soccer Goal7" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3942, 383 )
-scale = Vector2( -1, 1 )
 sides = 2
 
 [node name="Soccer Goal5" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3336, 526 )
+scale = Vector2( -1, 1 )
 sides = 2
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 8 )]
