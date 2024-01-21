@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+#give the grek sprites like 7 pixel inch bars next time
 onready var dialoguebox = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 export(String) var customtext = "BOOKHINT_1"
