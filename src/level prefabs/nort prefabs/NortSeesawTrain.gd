@@ -1,16 +1,24 @@
 extends Node2D
 
+onready var sprite =  $KinematicBody2D/AnimatedSprite
+onready var animationplayer = $AnimationPlayer
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+#NOTE: MAKE THE "PATH" LONGER
+#MAKE IT THAT EITHER BOTH CHARACTERS ARE NEEDED OR THE PLAYER USES AN INPUT (maybe both)
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	animationplayer.play("RESET")
+	sprite.play("default")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
+func _on_CharacterDetect_body_entered(body):
+	if body.is_in_group("protagonists"):
+		animationplayer.play("moving")
+		sprite.play("moving")
+
+
+func _on_CharacterDetect_body_exited(body):
+	if body.is_in_group("protagonists"):
+		animationplayer.stop(false)
+		sprite.play("default")
