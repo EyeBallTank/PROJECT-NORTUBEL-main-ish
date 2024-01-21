@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkBonkaLetterPickup.tscn" type="PackedScene" id=8]
 
 [node name="BrinkLevel3" type="Node2D"]
 
@@ -44,3 +46,26 @@ position = Vector2( -240, 1421 )
 position = Vector2( -4, 1391 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
+
+[node name="NumberBasedDoor" parent="." instance=ExtResource( 7 )]
+position = Vector2( 667, 1329 )
+spritename = "bonka"
+
+[node name="BrinkBonkaLetterPickup" parent="." instance=ExtResource( 8 )]
+position = Vector2( 80, 1562 )
+
+[node name="BrinkBonkaLetterPickup2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 188, 1562 )
+spritename = "O"
+
+[node name="BrinkBonkaLetterPickup3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 298, 1562 )
+spritename = "N"
+
+[node name="BrinkBonkaLetterPickup4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 397, 1562 )
+spritename = "K"
+
+[node name="BrinkBonkaLetterPickup5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 491, 1562 )
+spritename = "A"
