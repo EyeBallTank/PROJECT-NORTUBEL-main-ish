@@ -68,11 +68,11 @@ position = Vector2( 256, 1329 )
 position = Vector2( 16, 1341 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 16, 1345 )
+position = Vector2( 9336, -679 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
-position = Vector2( 130, 1419 )
+position = Vector2( 9450, -605 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
@@ -172,9 +172,11 @@ position = Vector2( 6567, -1011 )
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 21 )]
 position = Vector2( 9889, 351 )
+gre1switchskin = "res://assets/sprites/level_object_sprites/massagcoav/Green switch One atlantis.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 20 )]
 position = Vector2( 9606, -618 )
+gre2switchskin = "res://assets/sprites/level_object_sprites/massagcoav/Green switch Two atlantis.tres"
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 22 )]
 position = Vector2( 5919, -384 )
