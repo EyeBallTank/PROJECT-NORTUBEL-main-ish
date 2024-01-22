@@ -197,6 +197,7 @@ spritename = "massagcoav lorebook"
 
 [node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 26 )]
 position = Vector2( 7426, 2226 )
+spritename = "atlantis movplatvert"
 
 [node name="Water" parent="." instance=ExtResource( 15 )]
 position = Vector2( 7556, 2370 )
