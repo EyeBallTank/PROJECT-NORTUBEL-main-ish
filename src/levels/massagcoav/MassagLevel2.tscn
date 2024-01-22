@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/level_objects/GreenBarrier.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=25]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -189,3 +190,8 @@ position = Vector2( 9308, 383 )
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 24 )]
 position = Vector2( 9477, 385 )
+
+[node name="LoreBook" parent="." instance=ExtResource( 25 )]
+position = Vector2( 2437, 1609 )
+customtext = "MASSAG_ATLANTIS_LORE_T"
+spritename = "massagcoav lorebook"
