@@ -14,7 +14,6 @@
 [ext_resource path="res://src/npc_actors/massag npc/StarfishNPC.tscn" type="PackedScene" id=12]
 [ext_resource path="res://assets/sprites/level_backgrounds/massagcoav/atlantis bg.png" type="Texture" id=13]
 [ext_resource path="res://src/level prefabs/massag prefab/AtlanMovingPlatSurf.tscn" type="PackedScene" id=14]
-[ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=18]
@@ -25,6 +24,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=26]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -128,9 +128,6 @@ customname = "STARFISH_JANITOR_NAME"
 [node name="AtlanMovingPlatSurf" parent="." instance=ExtResource( 14 )]
 position = Vector2( 9702, -1370 )
 
-[node name="MovingPlatVerti" parent="." instance=ExtResource( 15 )]
-position = Vector2( 7203, 1442 )
-
 [node name="LifeguardFloater" parent="." instance=ExtResource( 16 )]
 position = Vector2( 786, 1520 )
 spritename = "massagcoav floater"
@@ -195,3 +192,6 @@ position = Vector2( 9477, 385 )
 position = Vector2( 2437, 1609 )
 customtext = "MASSAG_ATLANTIS_LORE_T"
 spritename = "massagcoav lorebook"
+
+[node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 26 )]
+position = Vector2( 7234, 1790 )
