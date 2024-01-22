@@ -170,6 +170,8 @@ spritename = "atlantis jumppad"
 
 [node name="FishHookKinematic" parent="." instance=ExtResource( 19 )]
 position = Vector2( 6567, -1011 )
+anchorspritename = "atlantis anchor"
+hookspritename = "atlantis hook"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 21 )]
 position = Vector2( 9889, 351 )
