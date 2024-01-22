@@ -150,6 +150,8 @@ spritename = "massagcoav lorebook"
 
 [node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 19 )]
 position = Vector2( 2085, -491 )
+spritename = "elegantissia movplatvert"
 
 [node name="MovingPlatVertiLonger2" parent="." instance=ExtResource( 19 )]
 position = Vector2( -1254, -1157 )
+spritename = "elegantissia movplatvert"

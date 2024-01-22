@@ -136,6 +136,7 @@ func cutscene_over():
 #Karoline: Dad, do you and mom have any idea what these people are?
 #Touni: Dr Barney said they're "humans" and in their world, could be related to monkeys. If that's true, they can't be that out of the ordinary.
 
+#Cheerleaders: WOOOOOW!
 #Karla: Maybe it's because we haven't seen any soccer action in years but you did good.
 #Carrie: Well, Mel, you did enough to show off your kicks. Can we go home now?
 #Melvin: Alright, carrot. Let me just say good bye first.
@@ -143,7 +144,13 @@ func cutscene_over():
 #Holmes: Oh hey, McSher, looking for another bottle of whiskey?
 #McSherry: No, you idiot! I need to tell you something. It's about Marlon.
 #Holmes: Marlon Valentinou? What has he been up to? (Shows an image of Marlon)
-#McSherry: Heard he was looking for some artifacts. Something to do with the god Mluto.
+#McSherry: Heard he was looking for some artifacts. Something to do with the god Mluto. (Image of Mluto)
 #Holmes: Has he gone mad?
-#Barney: 
+#Barney: I know exactly what he's looking for.
+#Later
+#Carrie: Sometimes, this place doesn't seem bad. There's still things we're familiar with.
+#Katrin: That place looks like a beach. And in that direction, there's a clothes shop.
+#Katrin: Maybe we could try and have fun here, while nothing happens. After all, it didn't took too long to find Stella and someone your grandma knows.
+#Carrie: Sure. How about you Mel?
+#Melvin: You girls have your fun, I still wanna explore this weird place.
 
