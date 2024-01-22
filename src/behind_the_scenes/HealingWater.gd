@@ -7,6 +7,7 @@ export var collision_newsize = Vector2()
 onready var animation = $AnimationPlayer
 
 func _ready():
+#	Signals.connect("touch_water", self, "_on_water_touched")
 	animation.play("poison")
 #	collisionshape.shape.extents = collision_newsize
 	self.scale = collision_newsize
@@ -22,3 +23,10 @@ func _on_HealingWater_body_entered(body):
 		body.health += 3
 		if body.health > 100:
 			body.health = 100
+
+#func _on_water_touched():
+#	playaudio()
+#
+#func playaudio():
+#	audio.play()
+
