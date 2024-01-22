@@ -90,6 +90,7 @@ position = Vector2( 2573, -816 )
 
 [node name="Soccer Goal" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3122, -884 )
+scale = Vector2( -1, 1 )
 sides = 2
 
 [node name="SoccerFloatingNet" parent="." instance=ExtResource( 15 )]
