@@ -27,7 +27,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "active"
-length = 6.0
+length = 18.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("KinematicBody2D:position")
@@ -36,10 +36,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 3, 6 ),
+"times": PoolRealArray( 0, 9, 18 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( 1684, 0 ), Vector2( 0, 0 ) ]
+"values": [ Vector2( 0, 0 ), Vector2( 4732, 0 ), Vector2( 0, 0 ) ]
 }
 
 [node name="ElegantJumppad" type="Node2D"]
