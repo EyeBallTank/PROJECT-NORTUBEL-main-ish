@@ -1,4 +1,4 @@
-[gd_scene load_steps=454 format=2]
+[gd_scene load_steps=456 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -226,10 +226,15 @@
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 4.png" type="Texture" id=224]
 [ext_resource path="res://assets/sprites/level_props/massag coav/antlaprop beach chair.png" type="Texture" id=225]
 [ext_resource path="res://assets/sprites/level_props/massag coav/antlaprop waterfall 2.png" type="Texture" id=226]
+[ext_resource path="res://assets/sprites/level_props/massag coav/antlaprop palmtree.png" type="Texture" id=227]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
 region = Rect2( 0, 0, 84, 429 )
+
+[sub_resource type="AtlasTexture" id=241]
+atlas = ExtResource( 227 )
+region = Rect2( 0, 0, 239, 421 )
 
 [sub_resource type="AtlasTexture" id=239]
 atlas = ExtResource( 226 )
@@ -1141,6 +1146,11 @@ animations = [ {
 "frames": [ ExtResource( 225 ) ],
 "loop": false,
 "name": "antlaprop beach chair",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 241 ) ],
+"loop": false,
+"name": "antlaprop palmtree",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 239 ), SubResource( 240 ) ],
@@ -2265,6 +2275,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "antlaprop waterfall"
-frame = 1
+animation = "antlaprop palmtree"
 playing = true
