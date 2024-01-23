@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/enemies/masagcoav/BlackChicken.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=30]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -239,3 +240,7 @@ spritename = "massagcoav health"
 [node name="Health Pickup2" parent="." instance=ExtResource( 29 )]
 position = Vector2( 13440, -1049 )
 spritename = "massagcoav health"
+
+[node name="LevelProp" parent="." instance=ExtResource( 30 )]
+position = Vector2( 4327, 1641 )
+propname = "antlaprop beach chair"

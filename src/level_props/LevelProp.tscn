@@ -1,4 +1,4 @@
-[gd_scene load_steps=450 format=2]
+[gd_scene load_steps=451 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_props/nortubel/nortprop blue chimney.png" type="Texture" id=2]
@@ -224,6 +224,7 @@
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 2.png" type="Texture" id=222]
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 3.png" type="Texture" id=223]
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 4.png" type="Texture" id=224]
+[ext_resource path="res://assets/sprites/level_props/massag coav/antlaprop beach chair.png" type="Texture" id=225]
 
 [sub_resource type="AtlasTexture" id=32]
 atlas = ExtResource( 21 )
@@ -1126,6 +1127,11 @@ animations = [ {
 "frames": [ SubResource( 32 ) ],
 "loop": false,
 "name": "HEIGHT CHAR PROP TEST",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 225 ) ],
+"loop": false,
+"name": "antlaprop beach chair",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 15 ) ],
@@ -2245,5 +2251,5 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 4 )
 frames = SubResource( 2 )
-animation = "herrprop yevlen statue 4"
+animation = "antlaprop beach chair"
 playing = true
