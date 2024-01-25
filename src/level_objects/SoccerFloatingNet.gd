@@ -5,7 +5,6 @@ var horizdirection = Vector2.RIGHT
 var vertidirection = Vector2.UP
 
 onready var animationplayer = $AnimationPlayer
-export var sides = 1
 export var customstate = 1
 
 enum {
@@ -19,10 +18,6 @@ var state = DIAGONAL
 
 func _ready():
 	animationplayer.play("RESET")
-	if sides == 1:
-		pass
-	elif sides == 2:
-		scale.x = -scale.x
 
 func _physics_process(delta):
 	if customstate == 1:
