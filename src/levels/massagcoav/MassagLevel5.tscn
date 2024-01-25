@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/level_objects/OneCharDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tilesets/massagcoav/MassSoccerTiles.tres" type="TileSet" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://src/npc_actors/massag npc/MassagAudienceSoccer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/npc_actors/massag npc/MassagCheerleaders.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/Soccel Goal Right.tscn" type="PackedScene" id=13]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -61,39 +62,6 @@ new_scene = "res://src/levels/LevelTemplate7.tscn"
 spritename = "massagcoav greendoor"
 customtext = "k4rl44"
 
-[node name="Soccer Goal" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2395, 48 )
-
-[node name="Soccer Goal8" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1910, 276 )
-
-[node name="Soccer Goal9" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1810, 825 )
-
-[node name="Soccer Goal3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2385, 525 )
-
-[node name="Soccer Goal4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2875, 314 )
-
-[node name="Soccer Goal2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3286, 48 )
-sides = 2
-
-[node name="Soccer Goal6" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3678, -137 )
-scale = Vector2( -1, 1 )
-sides = 2
-
-[node name="Soccer Goal7" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3942, 383 )
-sides = 2
-
-[node name="Soccer Goal5" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3336, 526 )
-scale = Vector2( -1, 1 )
-sides = 2
-
 [node name="SoccerBallBag" parent="." instance=ExtResource( 8 )]
 position = Vector2( 144, 1308 )
 
@@ -129,3 +97,30 @@ idealnumber = 9
 
 [node name="MassagCheerleaders" parent="." instance=ExtResource( 12 )]
 position = Vector2( 863, 1259 )
+
+[node name="Soccer Goal" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2162, 1137 )
+
+[node name="Soccer Goal2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2162, 1137 )
+
+[node name="Soccer Goal3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2162, 1137 )
+
+[node name="Soccer Goal4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2162, 1137 )
+
+[node name="Soccer Goal6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2162, 1137 )
+
+[node name="Soccer Goal5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2162, 1137 )
+
+[node name="Soccer Goal Right" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2339, 481 )
+
+[node name="Soccer Goal Right2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2339, 481 )
+
+[node name="Soccer Goal Right3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2702, 524 )
