@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -8,18 +8,8 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/behind_the_scenes/stellaspawn.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/play_actors/StellaComp.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/level prefabs/nort prefabs/NortFloatingTarget.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
-[ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/level prefabs/nort prefabs/NortHurtingTarget.tscn" type="PackedScene" id=12]
-[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=13]
-[ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=14]
-[ext_resource path="res://src/level_objects/SoccerFloatingNet.tscn" type="PackedScene" id=15]
-[ext_resource path="res://src/level_objects/RedButton.tscn" type="PackedScene" id=16]
-[ext_resource path="res://src/level_objects/RedButtonGate.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/LowGravity.tscn" type="PackedScene" id=18]
-[ext_resource path="res://src/behind_the_scenes/HealingWater.tscn" type="PackedScene" id=19]
-[ext_resource path="res://src/level_objects/Soccel Goal Right.tscn" type="PackedScene" id=20]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -36,85 +26,26 @@ tile_data = PoolIntArray( -2359229, 2, 0, -2359228, 2, 0, -2359227, 2, 0, -23592
 position = Vector2( 621, -207 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4647, -568 )
+position = Vector2( 1718, -685 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4285, -567 )
+position = Vector2( 688, -309 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 4508, -509 )
+position = Vector2( 911, -251 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4544, -582 )
+position = Vector2( 947, -324 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="stellaspawn" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4685, -733 )
+position = Vector2( 1088, -475 )
 
 [node name="StellaComp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4774, -580 )
-
-[node name="NumberBasedDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3166, -388 )
-idealnumber = 8
-
-[node name="NumberBasedDoor2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3007, -388 )
-spritename = "shihiro"
-
-[node name="NortFloatingTarget" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2463, -437 )
-customstate = 3
-
-[node name="NortFloatingTarget2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2538, -410 )
-customstate = 3
-
-[node name="NortFloatingTarget3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2656, -429 )
-customstate = 3
-
-[node name="NortFloatingTarget4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2697, -456 )
-customstate = 5
-
-[node name="NortFloatingTarget5" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2772, -425 )
-customstate = 3
-
-[node name="NortHurtingTarget" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2902, -422 )
-customstate = 3
-
-[node name="SoccerBallBag" parent="." instance=ExtResource( 13 )]
-position = Vector2( 4745, -609 )
-
-[node name="SoccerFloatingNet" parent="." instance=ExtResource( 15 )]
-position = Vector2( 2179, -842 )
-customstate = 3
-
-[node name="RedButton" parent="." instance=ExtResource( 16 )]
-position = Vector2( 2070, -271 )
-
-[node name="RedButtonGate" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2216, -384 )
-
-[node name="RedButtonGate2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2333, -392 )
+position = Vector2( 1177, -322 )
 
 [node name="Water" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1611, -182 )
+position = Vector2( 1611, -566 )
 scale = Vector2( 40, 160 )
 collision_newsize = Vector2( 40, 160 )
-
-[node name="HealingWater" parent="." instance=ExtResource( 19 )]
-position = Vector2( 399, -164 )
-scale = Vector2( 40, 8 )
-collision_newsize = Vector2( 40, 8 )
-
-[node name="Soccer Goal" parent="." instance=ExtResource( 14 )]
-position = Vector2( 5273, -642 )
-
-[node name="Soccer Goal Right" parent="." instance=ExtResource( 20 )]
-position = Vector2( 4238, -643 )

@@ -913,6 +913,8 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = STOPICE
 
+			oxygenbar.hide()
+
 		STOPCLIMB:
 			iamplayable = false
 			velocity.x = 0
@@ -1026,12 +1028,21 @@ func _physics_process(delta):
 			gravity = 1200
 			iamplayable = true
 			if not is_on_lowgrav():
+				oxygen = 1500
+				oxygenbar.hide()
 				gravity = 3000
 				state = MAINSTATE
 			if Input.is_action_just_pressed("charnormal"):
 				state = STOPLOWGRAV
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
 
-			oxygenbar.hide()
+
+#			oxygenbar.hide()
 			$CollisionShape2D.shape.extents = Vector2(25.5, 122)
 			$CollisionShape2D.position = Vector2(-1.5, -123)
 			hurtboxcollision.shape.extents = Vector2(27, 123)
@@ -1160,11 +1171,20 @@ func _physics_process(delta):
 		STOPLOWGRAV:
 			iamplayable = false
 			if not is_on_lowgrav():
+				oxygen = 1500
+				oxygenbar.hide()
 				gravity = 3000
 				state = STOPNORMAL
 
 			if Input.is_action_just_pressed("charswitch"):
 				state = LOWGRAV
+
+			if immortal == false:
+				oxygenbar.show()
+				oxygen -= 1
+			elif immortal == true:
+				oxygenbar.hide()
+				oxygen = 1500
 
 			gravity = 1100
 			iamplayable = false
