@@ -1,7 +1,8 @@
-[gd_resource type="TileSet" load_steps=13 format=2]
+[gd_resource type="TileSet" load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/massagcoav/ELEGANTISSIA TILE PASSABLE.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/massagcoav/ELEGANTISSIA TILE SOLID.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/tile sets/massagcoav/ELEGBUILD 1.png" type="Texture" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -552,3 +553,17 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 31/shape_one_way_margin = 0.0
 31/shapes = [  ]
 31/z_index = 0
+32/name = "ELEGBUILD 1.png 32"
+32/texture = ExtResource( 3 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 640, 1408 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape_one_way = false
+32/shape_one_way_margin = 0.0
+32/shapes = [  ]
+32/z_index = 0
