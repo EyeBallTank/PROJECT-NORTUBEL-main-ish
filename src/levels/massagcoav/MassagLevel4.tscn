@@ -216,9 +216,10 @@ yelswitchskin = "res://assets/sprites/level_object_sprites/massagcoav/Yellow swi
 position = Vector2( 6786, 481 )
 
 [node name="Platform" parent="MassagYellowTrainPlat" index="0"]
-position = Vector2( -2, -1 )
+position = Vector2( -2, 384 )
 
 [node name="PathFollow2D" parent="MassagYellowTrainPlat/Path2D" index="0"]
+position = Vector2( -2, -1 )
 offset = 385.164
 
 [editable path="MassagYellowTrainPlat"]
