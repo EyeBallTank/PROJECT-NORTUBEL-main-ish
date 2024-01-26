@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art joolietta reference.png-39d50936c92788cf317466692bc2b71f.stex"
+path="res://.import/massag art joolietta reference 2.png-220f018b2ba1baad81f6df9d4b1b7606.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art joolietta reference.png"
-dest_files=[ "res://.import/massag art joolietta reference.png-39d50936c92788cf317466692bc2b71f.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art joolietta reference 2.png"
+dest_files=[ "res://.import/massag art joolietta reference 2.png-220f018b2ba1baad81f6df9d4b1b7606.stex" ]
 
 [params]
 

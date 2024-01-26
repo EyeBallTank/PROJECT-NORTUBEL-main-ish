@@ -80,7 +80,7 @@ spritename = "massagcoav greendoor"
 customtext = "jol1t4"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( -760, -1059 )
+position = Vector2( 1054, 1314 )
 boardname = "massag art joolietta reference"
 
 [node name="Yellow key" parent="." instance=ExtResource( 10 )]

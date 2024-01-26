@@ -30,7 +30,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art karla reference.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art touni reference.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art karoline reference.png" type="Texture" id=30]
-[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art joolietta reference.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art joolietta reference 2.png" type="Texture" id=31]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 6 char height 2.png" type="Texture" id=32]
 [ext_resource path="res://assets/sprites/art gallery/hirdrih/hird art leon otto avietta.png" type="Texture" id=33]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art atlantis scenery.png" type="Texture" id=34]
@@ -100,7 +100,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 18 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=33]
+[sub_resource type="AtlasTexture" id=41]
 atlas = ExtResource( 31 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -241,7 +241,7 @@ animations = [ {
 "name": "massag art horatio reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 33 ) ],
+"frames": [ SubResource( 41 ) ],
 "loop": false,
 "name": "massag art joolietta reference",
 "speed": 0.0
