@@ -37,7 +37,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art delusional dream.png" type="Texture" id=35]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art bernard shelly.png" type="Texture" id=36]
 [ext_resource path="res://assets/sprites/level_object_sprites/ExclamationSign.PNG" type="Texture" id=37]
-[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map.png" type="Texture" id=38]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map 2.png" type="Texture" id=38]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="AtlasTexture" id=42]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/massag art elegantissia map.png-d65dcf9973aa9fbd97e94a8c869b8d41.stex"
+path="res://.import/massag art elegantissia map 2.png-8eab8ba08d0759d3c15204c5a282c2d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map.png"
-dest_files=[ "res://.import/massag art elegantissia map.png-d65dcf9973aa9fbd97e94a8c869b8d41.stex" ]
+source_file="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map 2.png"
+dest_files=[ "res://.import/massag art elegantissia map 2.png-8eab8ba08d0759d3c15204c5a282c2d6.stex" ]
 
 [params]
 
