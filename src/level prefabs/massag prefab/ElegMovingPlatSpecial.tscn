@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/ElegMovingPlatSpecial.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 482, 69 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 238.5, 21.5 )
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -16, 0, 0, 0, 0, 0, 264, -736, 0, 0, 0, 0, 1176, -568, 0, 0, 0, 0, 1592, -888 )
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "VerticalPlat"
+length = 9.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="ElegMovingPlatSpecial" type="Node2D"]
+
+[node name="Platform" type="KinematicBody2D" parent="."]
+position = Vector2( -16, 0 )
+collision_layer = 4
+collision_mask = 3
+motion/sync_to_physics = true
+
+[node name="Sprite" type="AnimatedSprite" parent="Platform"]
+frames = SubResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2( -0.499992, -5.5 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource( 2 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( -16, 0 )
+rotate = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../Platform")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "VerticalPlat"
+playback_process_mode = 0
+anims/RESET = SubResource( 4 )
+anims/VerticalPlat = SubResource( 5 )

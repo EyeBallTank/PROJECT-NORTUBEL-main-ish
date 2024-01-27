@@ -5,12 +5,16 @@ export var boardname = "nortubel world map"
 onready var sprite = $CanvasLayer/AnimatedSprite
 onready var basicmessage = $Basicmessage
 
+onready var yellowbooksprite = $MainSprite
+export var yellowbookname = "artbookmain"
+
 var test = false
 
 func _ready():
 	sprite.animation = boardname
 	dialoguebox.visible = false
 	basicmessage.visible = false
+	yellowbooksprite.animation = yellowbookname
 
 func _physics_process(delta):
 	if test == true:
