@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -37,6 +37,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art delusional dream.png" type="Texture" id=35]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art bernard shelly.png" type="Texture" id=36]
 [ext_resource path="res://assets/sprites/level_object_sprites/ExclamationSign.PNG" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map.png" type="Texture" id=38]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="AtlasTexture" id=42]
@@ -109,6 +110,10 @@ region = Rect2( 0, 0, 749, 449 )
 [sub_resource type="AtlasTexture" id=34]
 atlas = ExtResource( 19 )
 region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 38 )
+region = Rect2( 0, 0, 613, 449 )
 
 [sub_resource type="AtlasTexture" id=35]
 atlas = ExtResource( 21 )
@@ -241,6 +246,11 @@ animations = [ {
 "frames": [ SubResource( 34 ) ],
 "loop": false,
 "name": "massag art barney reference ",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 45 ) ],
+"loop": false,
+"name": "massag art elegantissia map",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 35 ) ],
@@ -382,7 +392,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art bernard shelly"
+animation = "massag art elegantissia map"
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 

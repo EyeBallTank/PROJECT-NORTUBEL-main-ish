@@ -251,6 +251,7 @@ position = Vector2( 3592, -2720 )
 
 [node name="ArtBook2" parent="." instance=ExtResource( 8 )]
 position = Vector2( -96, 1344 )
+boardname = "massag art elegantissia map"
 yellowbookname = "exclamationsign"
 
 [node name="ElegMovingPlatSpecial" parent="." instance=ExtResource( 25 )]
