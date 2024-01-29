@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/herrprop yevlen statue 3.png-bbeacd92a9c03fa4ba12058020246bee.stex"
+path="res://.import/herrprop yevlen statue 1 v2.png-89a4c35d9a5ac1d8de8b1644ea8abeee.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_props/herrko/herrprop yevlen statue 3.png"
-dest_files=[ "res://.import/herrprop yevlen statue 3.png-bbeacd92a9c03fa4ba12058020246bee.stex" ]
+source_file="res://assets/sprites/level_props/herrko/herrprop yevlen statue 1 v2.png"
+dest_files=[ "res://.import/herrprop yevlen statue 1 v2.png-89a4c35d9a5ac1d8de8b1644ea8abeee.stex" ]
 
 [params]
 

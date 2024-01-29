@@ -220,9 +220,9 @@
 [ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 2.png" type="Texture" id=218]
 [ext_resource path="res://assets/sprites/level_props/nortubel/shihiro lantern 3.png" type="Texture" id=219]
 [ext_resource path="res://assets/sprites/level_props/massag coav/elegprop balloon blimp vehicle.png" type="Texture" id=220]
-[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 1.png" type="Texture" id=221]
-[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 2.png" type="Texture" id=222]
-[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 3.png" type="Texture" id=223]
+[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 1 v2.png" type="Texture" id=221]
+[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 3 v2.png" type="Texture" id=222]
+[ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 2 v2.png" type="Texture" id=223]
 [ext_resource path="res://assets/sprites/level_props/herrko/herrprop yevlen statue 4.png" type="Texture" id=224]
 [ext_resource path="res://assets/sprites/level_props/massag coav/antlaprop beach chair.png" type="Texture" id=225]
 [ext_resource path="res://assets/sprites/level_props/massag coav/antlaprop waterfall 2.png" type="Texture" id=226]
@@ -260,16 +260,16 @@ region = Rect2( 0, 0, 444, 398 )
 atlas = ExtResource( 13 )
 region = Rect2( 0, 0, 444, 398 )
 
-[sub_resource type="AtlasTexture" id=235]
+[sub_resource type="AtlasTexture" id=242]
 atlas = ExtResource( 221 )
 region = Rect2( 0, 0, 133, 317 )
 
-[sub_resource type="AtlasTexture" id=236]
-atlas = ExtResource( 222 )
+[sub_resource type="AtlasTexture" id=243]
+atlas = ExtResource( 223 )
 region = Rect2( 0, 0, 153, 422 )
 
-[sub_resource type="AtlasTexture" id=237]
-atlas = ExtResource( 223 )
+[sub_resource type="AtlasTexture" id=244]
+atlas = ExtResource( 222 )
 region = Rect2( 0, 0, 303, 562 )
 
 [sub_resource type="AtlasTexture" id=238]
@@ -1178,17 +1178,17 @@ animations = [ {
 "name": "herrprop barrelwood weapons",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 235 ) ],
+"frames": [ SubResource( 242 ) ],
 "loop": false,
 "name": "herrprop yevlen statue 1",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 236 ) ],
+"frames": [ SubResource( 243 ) ],
 "loop": false,
 "name": "herrprop yevlen statue 2",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 237 ) ],
+"frames": [ SubResource( 244 ) ],
 "loop": false,
 "name": "herrprop yevlen statue 3",
 "speed": 0.0
