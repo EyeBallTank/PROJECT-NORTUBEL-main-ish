@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -6,6 +6,24 @@
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/booker flashback test.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 2.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 1.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 5.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 10.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 3.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 4.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 13.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 8.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 16.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 15.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 18.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 11.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 9.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 17.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 12.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 7.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 6.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 14.png" type="Texture" id=24]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 6 )
@@ -133,10 +151,100 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
+[node name="Cutscene7KrimbNortpartthreePanel2" type="Sprite" parent="."]
+position = Vector2( -572, 245 )
+scale = Vector2( 0.685848, 0.685848 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene7KrimbNortpartthreePanel1" type="Sprite" parent="."]
+position = Vector2( 1321, 241 )
+scale = Vector2( 0.507773, 0.507773 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene7KrimbNortpartthreePanel3" type="Sprite" parent="."]
+position = Vector2( 510, -642 )
+scale = Vector2( 0.485523, 0.485523 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene7KrimbNortpartthreePanel4" type="Sprite" parent="."]
+position = Vector2( 155, -273 )
+scale = Vector2( 0.753521, 0.753521 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene7KrimbNortpartthreePanel5" type="Sprite" parent="."]
+position = Vector2( 650, -308 )
+scale = Vector2( 0.587571, 0.587571 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene7KrimbNortpartthreePanel6" type="Sprite" parent="."]
+position = Vector2( 528.213, -1064 )
+scale = Vector2( 0.529686, 0.529686 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene7KrimbNortpartthreePanel7" type="Sprite" parent="."]
+position = Vector2( -1030, 234 )
+scale = Vector2( 0.471443, 0.471443 )
+texture = ExtResource( 22 )
+
 [node name="BookerFlashback" type="AnimatedSprite" parent="."]
-position = Vector2( 524, 241 )
+position = Vector2( 512, 241 )
 frames = SubResource( 15 )
 frame = 11
+
+[node name="Cutscene7KrimbNortpartthreePanel8" type="Sprite" parent="."]
+position = Vector2( 1764, 235.5 )
+scale = Vector2( 0.558111, 0.558111 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene7KrimbNortpartthreePanel9" type="Sprite" parent="."]
+position = Vector2( 538.639, -1563 )
+scale = Vector2( 0.581551, 0.581551 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene7KrimbNortpartthreePanel10" type="Sprite" parent="."]
+position = Vector2( -1679, 241.196 )
+scale = Vector2( 0.657466, 0.657466 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene7KrimbNortpartthreePanel11" type="Sprite" parent="."]
+position = Vector2( 2286, 237 )
+scale = Vector2( 0.915323, 0.915323 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene7KrimbNortpartthreePanel12" type="Sprite" parent="."]
+position = Vector2( 2846, 234.895 )
+scale = Vector2( 0.790738, 0.790738 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene7KrimbNortpartthreePanel14" type="Sprite" parent="."]
+position = Vector2( -2352.86, 231.579 )
+scale = Vector2( 1.15818, 1.15818 )
+texture = ExtResource( 24 )
+
+[node name="Cutscene7KrimbNortpartthreePanel13" type="Sprite" parent="."]
+position = Vector2( -2352.86, 231.579 )
+scale = Vector2( 1.15818, 1.15818 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene7KrimbNortpartthreePanel15" type="Sprite" parent="."]
+position = Vector2( -709, -659 )
+scale = Vector2( 0.706436, 0.706436 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene7KrimbNortpartthreePanel16" type="Sprite" parent="."]
+position = Vector2( 3366, 234 )
+scale = Vector2( 0.547393, 0.547393 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene7KrimbNortpartthreePanel17" type="Sprite" parent="."]
+position = Vector2( 1367, -307 )
+scale = Vector2( 0.470825, 0.470825 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene7KrimbNortpartthreePanel18" type="Sprite" parent="."]
+position = Vector2( -2992, 234 )
+scale = Vector2( 0.554102, 0.554102 )
+texture = ExtResource( 17 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
