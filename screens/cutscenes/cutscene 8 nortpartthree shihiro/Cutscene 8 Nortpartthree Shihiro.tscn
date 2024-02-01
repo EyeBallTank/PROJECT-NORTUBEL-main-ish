@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 1.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 2.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 3.png" type="Texture" id=8]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +74,25 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene8NortpartthreeShihiroPanel1" type="Sprite" parent="."]
+position = Vector2( -325, 236.5 )
+scale = Vector2( 0.730284, 0.730284 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene8NortpartthreeShihiroPanel2" type="Sprite" parent="."]
+position = Vector2( -1161, 243.501 )
+scale = Vector2( 1.00211, 1.00211 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene8NortpartthreeShihiroPanel3" type="Sprite" parent="."]
+position = Vector2( 1550, 230.651 )
+scale = Vector2( 0.558469, 0.558469 )
+texture = ExtResource( 8 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
