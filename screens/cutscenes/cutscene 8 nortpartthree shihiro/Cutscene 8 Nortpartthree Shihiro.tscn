@@ -96,7 +96,7 @@ scale = Vector2( 0.558469, 0.558469 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene8NortpartthreeShihiroPanel4" type="Sprite" parent="."]
-position = Vector2( 462.775, 230.75 )
+position = Vector2( 2333, 230.75 )
 scale = Vector2( 0.571514, 0.571514 )
 texture = ExtResource( 9 )
 
