@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -11,6 +11,23 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 4.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 5.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 6.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/shihiro power.png" type="Texture" id=12]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 510, 441 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 12 )
+region = Rect2( 510, 0, 510, 441 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -111,6 +128,10 @@ texture = ExtResource( 10 )
 position = Vector2( 485, -772 )
 scale = Vector2( 0.739146, 0.739146 )
 texture = ExtResource( 11 )
+
+[node name="ShihiroPower" type="AnimatedSprite" parent="."]
+position = Vector2( 513, 233 )
+frames = SubResource( 5 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
