@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 6.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 5.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 8.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 9.png" type="Texture" id=14]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -105,24 +106,29 @@ scale = Vector2( 0.550116, 0.550116 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene9NortpartthreeMassagPanel5" type="Sprite" parent="."]
-position = Vector2( 500, -772 )
-scale = Vector2( 0.718266, 0.718266 )
+position = Vector2( 527, 231 )
+scale = Vector2( 0.600619, 0.600619 )
 texture = ExtResource( 12 )
 
 [node name="Cutscene9NortpartthreeMassagPanel6" type="Sprite" parent="."]
-position = Vector2( -1529, 279.343 )
-scale = Vector2( 0.609992, 0.609992 )
+position = Vector2( 119.098, 339.881 )
+scale = Vector2( 0.409686, 0.409686 )
 texture = ExtResource( 11 )
 
 [node name="Cutscene9NortpartthreeMassagPanel7" type="Sprite" parent="."]
-position = Vector2( 1899, 261 )
-scale = Vector2( 0.662314, 0.662313 )
+position = Vector2( 901.264, 313.089 )
+scale = Vector2( 0.467952, 0.467952 )
 texture = ExtResource( 10 )
 
 [node name="Cutscene9NortpartthreeMassagPanel8" type="Sprite" parent="."]
-position = Vector2( -259, -274 )
-scale = Vector2( 0.552005, 0.552005 )
+position = Vector2( 125.227, 111.51 )
+scale = Vector2( 0.256868, 0.256868 )
 texture = ExtResource( 13 )
+
+[node name="Cutscene9NortpartthreeMassagPanel9" type="Sprite" parent="."]
+position = Vector2( -1720, 232.75 )
+scale = Vector2( 0.674638, 0.674638 )
+texture = ExtResource( 14 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
