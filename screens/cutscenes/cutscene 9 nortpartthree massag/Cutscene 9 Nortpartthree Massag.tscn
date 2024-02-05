@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 10.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 11.png" type="Texture" id=16]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 12.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 13.png" type="Texture" id=18]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -147,6 +148,11 @@ texture = ExtResource( 16 )
 position = Vector2( 2565, 230.949 )
 scale = Vector2( 0.734412, 0.734412 )
 texture = ExtResource( 17 )
+
+[node name="Cutscene9NortpartthreeMassagPanel13" type="Sprite" parent="."]
+position = Vector2( 374.525, -751 )
+scale = Vector2( 0.466894, 0.466894 )
+texture = ExtResource( 18 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
