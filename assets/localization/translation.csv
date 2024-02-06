@@ -1112,3 +1112,56 @@ And I also teach martial arts and help those practice their combat skills, even 
 E também ensino artes marciais e ajudo outros a praticar como lutar, mesmo que não tenham poderes."
 CUTSCENE_8_TALK_14,"Well, we managed to get around by what we got. Melvin brought a knife with him.",Nós conseguimos com o que tínhamos. Melvin trouxe a sua faca.
 CUTSCENE_8_TALK_15,"I see. If you don't mind, I'd like to test your combat skills.","Entendo. Se não se importem, gostava de testar as vossas habilidades de combate."
+,,
+CUTSCENE_9_TALK_1,"Not bad, I knew you got something in you.","Nada mal, sabia que vocês tinham algo."
+CUTSCENE_9_TALK_2,"Really? I feel tired already!
+It's been a while, any of you wanna try another trip with this thing?","A sério? Já sinto cansado.
+Já foi algum tempo, alguém quer tentar outra viajem com esta coisa?"
+CUTSCENE_9_TALK_3,"Sure. Stella, you wanna come along?","Pode ser. Stella, queres vir connosco?"
+CUTSCENE_9_TALK_4,"Not really, I'd rather stay here with Zarina and Shihiro.
+But promise me you'll be safe.","Não me apetece. Prefiro ficar com a Zarina e o Shihiro.
+Mas promete me que ficam bem."
+CUTSCENE_9_TALK_5,"Don't worry, I'm sure the next place we could visit could be safe.",Não te preocupes. Tenho a certeza que o próximo lugar que visitamos é seguro.
+CUTSCENE_9_TALK_6,So... you still haven't got word about your husband?,Então... ainda não sabes onde está o teu marido?
+CUTSCENE_9_TALK_7,No. At this point I'm losing hope.,"Não. E a este ponto, estou a perder esperança."
+CUTSCENE_9_TALK_8,"Wow look, a talking cat.","Wow olhem, um gato que fala."
+CUTSCENE_9_TALK_9,"Uh, who are you people?","Uh, quem são vocês?"
+CUTSCENE_9_TALK_10,Something's off about these kids.,Há algo de estranho nestes jovens.
+CUTSCENE_9_TALK_11,Could it be? Was my theory about the multiverse true?,Será verdade? A minha teoria do multi-verso?
+CUTSCENE_9_TALK_12,"We're humans, a civilized species from Earth.","Somos humanos, uma espécie civilizada do planeta Terra."
+CUTSCENE_9_TALK_13,"In our world, humans are technically a relative to monkeys.","No nosso mundo, humanos são tecnicamente relacionados com macacos."
+CUTSCENE_9_TALK_14,How is it you know what a monkey is? And why did that boy called Holmes a cat?,Como é que sabem o que é um macaco? E porque é que aquele rapaz chamou Holmes um gato?
+CUTSCENE_9_TALK_15,Our world has animals of all sorts. Some kinda look like you guys.,"O nosso mundo tem animais, alguns parecidos com vocês."
+CUTSCENE_9_TALK_16,"Mmmm, this is wonderfull. A different universe that might have its own diverse ecosystem.","Mmmm, magnifico. Um universo diferente que pode ter o seu ecossistema diverso."
+CUTSCENE_9_TALK_17,"Well, what brings you kids here anyway?",E o que vos traz aqui?
+CUTSCENE_9_TALK_18,"We've been travelling through different worlds in hopes to find our home.
+But so far, we're still lost.","Nós estivemos a viajar por mundos diferentes ao tentar encontrar a nossa casa.
+Mas por agora, ainda estamos perdidos."
+CUTSCENE_9_TALK_19,"Well, the good news is that Massag-Coav is a wonderfull place, I'm sure you guys can find a lot of fun to be had here.",As boas noticias é que Massag-Coav é um sitio maravilhoso. Tenho a certeza que vão ter muita diversão.
+CUTSCENE_9_TALK_20,"Holmes, didn't you see the news lately?
+There was a crysis at the zoo and some animals escaped.","Holmes, não viste as noticias?
+Houve uma crise no jardim zoológico e alguns animais escaparam."
+CUTSCENE_9_TALK_21,"C'mon, Fern. There can't be that many.","Vá lá, Fern. Não pode haver assim tantos."
+CUTSCENE_9_TALK_22,"Mom, can I play with these kids?","Mãe, posso brincar com estes meninos?"
+CUTSCENE_9_TALK_23,"Why do you wear that thing, anyway?",Porque é que tens essa coisa na cara?
+CUTSCENE_9_TALK_24,"I was born with one eye. My mom has 2 eyes but they got worse over time, so she wears something to keep her vision.","Nasci com um olho. A minha mãe tem 2 olhos mas pioraram ultimamente, por isso, ela tem uma coisa para manter a visão."
+CUTSCENE_9_TALK_25,"Well if you kids treat my son nicely, I could make something for you all like a cake.
+But it can't be chocolate.","Se vocês tratarem bem o meu filho, posso fazer algo como um bolo.
+Mas não pode ser de chocolate."
+CUTSCENE_9_TALK_26,"But for now, let us introduce our world to these 6 guests, shall we?",E que tal nós introduzirmos o nosso mundo a estes 6 convidados?
+,,
+CUTSCENE_10_TALK_1,"By the way, you guys have that sports center, right?
+Is soccer a thing there?","É verdade, vocês têm aquele centro de desporto, certo?
+Têm futebol aí?"
+CUTSCENE_10_TALK_2,I guess. Better ask Karla about it.,Talvez. É melhor perguntar a Karla sobre esse assunto.
+CUTSCENE_10_TALK_3,"Ok, you already got your name here.
+For now, it's free but if you wish to become a member, it's only 100 Eltons a year.","Ok, já tens o nome escrito aqui.
+Por agora, é grátis mas se quiseres ser um membro, é só pagar 100 Eltons por ano."
+CUTSCENE_10_TALK_4,"Good to see the soccer division being brought back.
+It's been unused for years but this is why we welcome new blood in the first place.","É bom ver a secção de futebol ser trazida de volta.
+Não foi usada há anos mas é por isto que o novo sangue é bem vindo no primeiro lugar."
+CUTSCENE_10_TALK_5,"What are these people anyway, dad?","O que é que são estas pessoas, pai?"
+CUTSCENE_10_TALK_6,"Dr Barney said they're ""humans"" and in their world, could be related to monkeys.
+If that's true, they can't be that out of the ordinary.","O Dr Barney disse que são ""humanos"" e no mundo deles, podem ser relacionados com os macacos.
+Se é verdade, não podem ser assim tão estranhos."
+CUTSCENE_10_TALK_7,"Either way, I wanna see if this guy is that good.","De qualquer maneira, eu quero ver se este tipo é assim tão bom."
