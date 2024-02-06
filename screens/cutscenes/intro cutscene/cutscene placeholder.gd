@@ -235,3 +235,13 @@ func cutscene_over():
 #Shows Tfoorie.
 #Yiegour: On my way.
 #Back at Nortubel
+#Shihiro: So, why did you ran from home?
+#Carrie: In my case, I had a terrible arguement with my mom and I took Oscar with me. It's because she thought dad was cheating on her.
+#Carrie: My dad played guitar in a band and he was popular in the town. I never believed he'd hit on other women.
+#Melvin: I always had a complicated relationship with my dad. Even to this day, he blames himself for what happened to mom.
+#Melvin: Last time I saw him, he was in his chair, looking really tired, with a bottle on the floor. Like he was attempting suicide.
+#Melvin: So I took Angela with me in case he'd be too late to save him.
+#Katrin: Both my parents were fine but it's my uncle that made things rough. Truth is that he might be Pete's real father, so Pete would be both Stella's and my half-brother.
+#Katrin: At some point, my uncle started to threatnen my parents and it was my dad so told me to take Pete and run to a safer place.
+#Katrin: It makes sense why Stella liked Booker so much. I guess he was a better father figure and he was once a father too
+#Shows image of Booker, with no black/white colors because no character is aware of that except maybe Leon/Otto, so they address that part of Krimb-Stone as an anomaly
