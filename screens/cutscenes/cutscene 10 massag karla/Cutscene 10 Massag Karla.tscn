@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 2.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 3.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 4.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 5.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -96,9 +97,14 @@ scale = Vector2( 0.750746, 0.750746 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene10MassagKarlaPanel4" type="Sprite" parent="."]
-position = Vector2( 318.255, 231.25 )
+position = Vector2( 1670, 231.25 )
 scale = Vector2( 0.534502, 0.534502 )
 texture = ExtResource( 9 )
+
+[node name="Cutscene10MassagKarlaPanel5" type="Sprite" parent="."]
+position = Vector2( 485, 231 )
+scale = Vector2( 0.753205, 0.753205 )
+texture = ExtResource( 10 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
