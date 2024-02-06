@@ -1061,7 +1061,7 @@ CUTSCENE_7_TALK_9,It looks like Nortubel but it's a weird place.,Parece Nortubel
 CUTSCENE_7_TALK_10,"Yeah, there's flying buildings and giant geckos.
 But my grandma could be getting close to take us back.","Sim, há casas a voar e lagartos gigantes.
 Mas a minha avó pode estar perto de nos trazer de volta."
-CUTSCENE_7_TALK_11,You should go if I were you.,"Se eu fosse a ti, voltava para casa."
+CUTSCENE_7_TALK_11,"If i were you, i’d leave.","Se eu fosse a ti, voltava para casa."
 CUTSCENE_7_TALK_12,"Booker, but why?","Mas porquê, Booker?"
 CUTSCENE_7_TALK_13,"Girl, I can tell you're still not used to this Hellscape and maybe it's for the best.","Miuda, ainda vejo que não estás habituada a este inferno e talvez é melhor assim."
 CUTSCENE_7_TALK_14,"If you get used to things here, you might lose it and stumble upon a worse fate than death.","Se te habituares, podes perder a cabeça e chegar a um destino pior que a morte."
@@ -1088,3 +1088,27 @@ CUTSCENE_7_TALK_30,"I've heard of such device.
 You can unlock new worlds if you find its missing pieces, specially when you consider the rotation of each knob.","Ouvi falar desse instrumento. 
 Podem desbloquear novos mundos se encontrar as peças que faltam, especialmente quando consideram a rotação de cada maçaneta."
 CUTSCENE_7_TALK_31,"But even then, there could be more to that box that is missing.","Mas mesmo assim, pode haver mais dessa caixa que está em falta."
+,,
+CUTSCENE_8_TALK_1,"Look at that animal, he looks cute.","Olhem para aquele animal, ele é tão querido."
+CUTSCENE_8_TALK_2,"Oscar, be carefull! We don't know what that is.","Oscar, tem cuidado! Nós não sabemos o que é isso."
+CUTSCENE_8_TALK_3,"But he's not hurting me, he just wants to play.","Mas ele não está a magoar, só quer brincar."
+CUTSCENE_8_TALK_4,But what is he? He looks like a lion and a dog mixed together.,Mas o que é ele? Parece ser um leão e um cão misturados
+CUTSCENE_8_TALK_5,That's a guardian lion. He's friendly but he's also a great fighter.,"É um leão guardião. É amigável, mas também é um ótimo lutador."
+CUTSCENE_8_TALK_6,"I had a feeling I'd find you again, Shihiro.","Tinha um pressentimento que te encontrava outra vez, Shihiro."
+CUTSCENE_8_TALK_7,"So far, there's no exit to this strange world but I managed to built a place of my own.
+Took a while but I believe what I came up with can handle at least ten people.","Ainda agora, não há saída neste mundo estranho mas consegui construir um sitio para mim.
+Demorou tempo mas acredito que o que arranjei pode aguentar pelo menos 10 pessoas."
+CUTSCENE_8_TALK_8,Really? That's great to hear. 2 of these kids are Pamela's grandchildren and they've been on their own journey to return home.,A sério? Que bom. 2 destes miúdos são netos da Pamela e eles estiveram no seu caminho de voltar a casa.
+CUTSCENE_8_TALK_9,"Mister Shihiro, my name's Melvin and a while back, we found this weird object that allowed us to go through different worlds.","Senhor Shihiro, o meu nome é Melvin e uns momentos atrás, encontra-mos este objeto estranho que nos levou a mundos diferentes."
+CUTSCENE_8_TALK_10,"And miss Zarina even said the object might be incomplete, as if there could be more to it.","E a senhora Zarina disse que o objeto pode estar incompleto, como se faltasse mais algo."
+CUTSCENE_8_TALK_11,"Yes, I've heard of this. A few missing pieces for the holes in each knob.
+But this box itself could've been attached to something bigger.
+We're still not sure what it is, though.","Sim, ouvi falar. Falta umas peças para os buracos das maçanetas.
+Mas a caixa em si própria pode ser ligada a algo maior.
+Mas ainda não sabemos o que realmente é."
+CUTSCENE_8_TALK_12,"Sir, miss Zarina said she was a sorceress. Are you a sorcerer too?","Senhor, a senhora Zarina disse que é feiticeira. Você também é feiticeiro?"
+CUTSCENE_8_TALK_13,"I've got powers too, specially related to combat.
+And I also teach martial arts and help those practice their combat skills, even if they don't have powers themselves.","Eu também tenho poderes, especialmente relacionados a combate.
+E também ensino artes marciais e ajudo outros a praticar como lutar, mesmo que não tenham poderes."
+CUTSCENE_8_TALK_14,"Well, we managed to get around by what we got. Melvin brought a knife with him.",Nós conseguimos com o que tínhamos. Melvin trouxe a sua faca.
+CUTSCENE_8_TALK_15,"I see. If you don't mind, I'd like to test your combat skills.","Entendo. Se não se importem, gostava de testar as vossas habilidades de combate."
