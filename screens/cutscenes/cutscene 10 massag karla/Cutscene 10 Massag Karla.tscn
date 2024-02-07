@@ -13,10 +13,106 @@
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cutscene10MassagKarlaPanel1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 249, 258 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Melvin Brokston" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "CUTSCENE_10_TALK_2" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("In front of dialogue:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Cutscene10MassagKarlaPanel2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -216, 247 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene10MassagKarlaPanel3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 185, 231.236 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene10MassagKarlaPanel4:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1670, 231.25 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene10MassagKarlaPanel5:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 485, -281 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 36.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -24,12 +120,108 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 34.8 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene10MassagKarlaPanel1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 9, 9.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 249, 258 ), Vector2( 249, 258 ), Vector2( -242, 258 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 5, 13.1, 20.3, 24.5, 27.7, 31.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Melvin Brokston", "Holmes Dekarro", "Karla Henson", "Touni Henson", "Karoline Henson", "Touni Henson", "Karoline Henson" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 5, 13.1, 20.3, 24.5, 27.7, 31.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "CUTSCENE_10_TALK_1", "CUTSCENE_10_TALK_2", "CUTSCENE_10_TALK_3", "CUTSCENE_10_TALK_4", "CUTSCENE_10_TALK_5", "CUTSCENE_10_TALK_6", "CUTSCENE_10_TALK_7" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("In front of dialogue:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 9.1, 13.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene10MassagKarlaPanel2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 9.4, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -216, 247 ), Vector2( -216, 247 ), Vector2( 1302, 247 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene10MassagKarlaPanel3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 11.6, 12.2, 19, 19.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1215, 231.236 ), Vector2( 1230, 231.236 ), Vector2( 185, 231.236 ), Vector2( 185, 231.236 ), Vector2( -219, 231.236 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene10MassagKarlaPanel4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 13.2, 13.9, 19, 19.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1670, 231.25 ), Vector2( 1670, 231.25 ), Vector2( 711, 231.25 ), Vector2( 711, 231.25 ), Vector2( 1350, 231.25 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Cutscene10MassagKarlaPanel5:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 19.4, 20 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 485, -281 ), Vector2( 485, -281 ), Vector2( 485, 229 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -61,7 +253,7 @@ margin_top = 6.0
 margin_right = 199.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 5 )
-text = "someone"
+text = "Melvin Brokston"
 
 [node name="CHARCHAT" type="Label" parent="NinePatchRect"]
 margin_left = 13.0
@@ -69,11 +261,7 @@ margin_top = 38.0
 margin_right = 1003.0
 margin_bottom = 131.0
 custom_fonts/font = ExtResource( 5 )
-text = "1
-2
-3
-4
-"
+text = "CUTSCENE_10_TALK_2"
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
 visible = false
@@ -82,17 +270,17 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene10MassagKarlaPanel1" type="Sprite" parent="."]
-position = Vector2( -261, 258 )
+position = Vector2( 249, 258 )
 scale = Vector2( 0.639442, 0.639442 )
 texture = ExtResource( 6 )
 
 [node name="Cutscene10MassagKarlaPanel2" type="Sprite" parent="."]
-position = Vector2( -677, 231.924 )
+position = Vector2( -216, 247 )
 scale = Vector2( 0.454043, 0.454043 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene10MassagKarlaPanel3" type="Sprite" parent="."]
-position = Vector2( 1218, 231.236 )
+position = Vector2( 185, 231.236 )
 scale = Vector2( 0.750746, 0.750746 )
 texture = ExtResource( 8 )
 
@@ -102,7 +290,7 @@ scale = Vector2( 0.534502, 0.534502 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene10MassagKarlaPanel5" type="Sprite" parent="."]
-position = Vector2( 485, 231 )
+position = Vector2( 485, -281 )
 scale = Vector2( 0.753205, 0.753205 )
 texture = ExtResource( 10 )
 
