@@ -33,45 +33,6 @@ func cutscene_over():
 
 #POSSIBLE DIALOGUE FOR THE FOLLOWING CUTSCENES
 
-
-#Shihiro: Not bad, I knew you got something in you.
-#Melvin: Really? I feel tired already!
-#Melvin: It's been a while, any of you wanna try another trip with this thing?
-#Katrin: Sure, Stella you wanna come along?
-#Stella: Not really, I'd rather stay here with Zarina.
-#Stella: But promise me you'll be safe.
-#Katrin: Don't worry, I'm sure the next place we could visit could be safe.
-#Holmes: So... you still haven't got word about your husband?
-#Fernaanda: No. At this point I'm losing hope.
-#The 6 show up
-#Holmes: Uh, who are you people?
-#Oscar: Wow look, a talking cat.
-#Holmes: Something's off about these kids. What are they?
-#Barney: I knew it! My theory was true. There is such thing as a multiverse!
-#Barney: And there is something weird about these 6 specimen.
-#Carrie: We're humans, a civilized species from Earth.
-#Melvin: In our world, humans are technically a relative to monkeys.
-#Barney: How is it you know what a monkey is? And why did that boy called Holmes a cat?
-#Pete: Our world has animals of all sorts. Some kinda look like you guys.
-#Barney: Mmmm, this is wonderfull. A different universe that might have its own diverse ecosystem.
-#Holmes: Well, what brings you kids here anyway?
-#Katrin: We've been travelling through different worlds in hopes to find our home. But so far, we're still lost.
-#Holmes: Well, the good news is that Massag-Coav is a wonderfull place, I'm sure you guys can find a lot of fun to be had here.
-#Fernaanda: Holmes, didn't you see the news lately? There was a crysis at the zoo and some animals escaped.
-#Holmes: C'mon, Fern. There can't be that many.
-#Feelix: Mom, can I play with these new kids?
-#Angela: Why do you wear that thing, anyway?
-#Feelix: I was born with one eye. My mom has 2 eyes but they got worse over time, so she wears something to retain her vision.
-#Fernaanda: Well if you kids treat my son nicely, I could make something for you all like a cake. But it can't be chocolate.
-#Holmes: But for now, let us introduce our world to these 6 guests, shall we?
-
-#Melvin: By the way, you guys have that sports center, right? Is soccer a thing there?
-#Holmes: I guess. Better ask Karla about it.
-#Karla: Uh? Sure, you guys can have fun here. Just make sure to sign your name here... and here... and...
-#Touni: I almost forgot we had a soccer division. Interest has been down lately, but this is why we welcome new blood in the first place.
-#Karoline: Dad, do you and mom have any idea what these people are?
-#Touni: Dr Barney said they're "humans" and in their world, could be related to monkeys. If that's true, they can't be that out of the ordinary.
-
 #Cheerleaders: WOOOOOW!
 #Karla: Maybe it's because we haven't seen any soccer action in years but you did good.
 #Carrie: Well, Mel, you did enough to show off your kicks. Can we go home now?
