@@ -21,10 +21,118 @@
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cutscene9NortpartthreeMassagPanel1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 508, 240 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Shihiro Xang" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "CUTSCENE_9_TALK_1" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Cutscene9NortpartthreeMassagPanel2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1325, 229.75 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Cutscene9NortpartthreeMassagPanel3:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 496.136, -266 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("In front of dialogue:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene9NortpartthreeMassagPanel3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene9NortpartthreeMassagPanel4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 505, 229 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Cutscene9NortpartthreeMassagPanel4:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 120.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -32,12 +140,108 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 116.4 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cutscene9NortpartthreeMassagPanel1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 8.9, 9.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 508, 240 ), Vector2( 508, 240 ), Vector2( -394, 240 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 4.1, 9.7, 13.3, 19, 24.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Shihiro Xang", "Melvin Brokston", "Katrin Flenn", "Stella Flenn", "Katrin Flenn", "Holmes Dekarro" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4.1, 9.7, 13.3, 19, 24.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "CUTSCENE_9_TALK_1", "CUTSCENE_9_TALK_2", "CUTSCENE_9_TALK_3", "CUTSCENE_9_TALK_4", "CUTSCENE_9_TALK_5", "CUTSCENE_9_TALK_6" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Cutscene9NortpartthreeMassagPanel2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 9, 9.5, 18, 18.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1325, 229.75 ), Vector2( 1325, 229.75 ), Vector2( 705, 229.75 ), Vector2( 705, 229.75 ), Vector2( 1316, 229.75 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene9NortpartthreeMassagPanel3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 18.4, 19.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 496.136, -266 ), Vector2( 496.136, -266 ), Vector2( 496.136, 231 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene9NortpartthreeMassagPanel3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 22.6, 23.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Cutscene9NortpartthreeMassagPanel4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 505, 229 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Cutscene9NortpartthreeMassagPanel4:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 24, 25.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -69,7 +273,7 @@ margin_top = 6.0
 margin_right = 199.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 5 )
-text = "someone"
+text = "Shihiro Xang"
 
 [node name="CHARCHAT" type="Label" parent="NinePatchRect"]
 margin_left = 13.0
@@ -77,11 +281,7 @@ margin_top = 38.0
 margin_right = 1003.0
 margin_bottom = 131.0
 custom_fonts/font = ExtResource( 5 )
-text = "1
-2
-3
-4
-"
+text = "CUTSCENE_9_TALK_1"
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
 visible = false
@@ -90,12 +290,12 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene9NortpartthreeMassagPanel1" type="Sprite" parent="."]
-position = Vector2( -407, 240 )
+position = Vector2( 508, 240 )
 scale = Vector2( 0.754409, 0.754409 )
 texture = ExtResource( 6 )
 
 [node name="Cutscene9NortpartthreeMassagPanel2" type="Sprite" parent="."]
-position = Vector2( 1380, 229.75 )
+position = Vector2( 1325, 229.75 )
 scale = Vector2( 0.720092, 0.720092 )
 texture = ExtResource( 8 )
 
@@ -105,27 +305,28 @@ scale = Vector2( 0.696165, 0.696165 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene9NortpartthreeMassagPanel4" type="Sprite" parent="."]
-position = Vector2( -1077, 229 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 505, 229 )
 scale = Vector2( 0.550116, 0.550116 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene9NortpartthreeMassagPanel5" type="Sprite" parent="."]
-position = Vector2( 527, 231 )
+position = Vector2( 527, -283 )
 scale = Vector2( 0.600619, 0.600619 )
 texture = ExtResource( 12 )
 
 [node name="Cutscene9NortpartthreeMassagPanel6" type="Sprite" parent="."]
-position = Vector2( 119.098, 339.881 )
+position = Vector2( -135, 339.881 )
 scale = Vector2( 0.409686, 0.409686 )
 texture = ExtResource( 11 )
 
 [node name="Cutscene9NortpartthreeMassagPanel7" type="Sprite" parent="."]
-position = Vector2( 901.264, 313.089 )
+position = Vector2( 1206, 313.089 )
 scale = Vector2( 0.467952, 0.467952 )
 texture = ExtResource( 10 )
 
 [node name="Cutscene9NortpartthreeMassagPanel8" type="Sprite" parent="."]
-position = Vector2( 125.227, 111.51 )
+position = Vector2( -127, 111.51 )
 scale = Vector2( 0.256868, 0.256868 )
 texture = ExtResource( 13 )
 
