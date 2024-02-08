@@ -119,5 +119,7 @@ animation2 = "OPEN"
 greenbarrierskin = "res://assets/sprites/level_object_sprites/greklovick/GreenBarrier Greklovick.tres"
 
 [node name="Door" parent="." instance=ExtResource( 21 )]
-position = Vector2( 3988, -61 )
+position = Vector2( -525, 1497 )
+new_scene = "res://src/levels/greklovick/GrekLevel2.tscn"
 spritename = "greklovick greendoor"
+customtext = "y13g0r"

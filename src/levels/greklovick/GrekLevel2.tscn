@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -52,3 +53,9 @@ position = Vector2( 2064, 1613 )
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2331, 1370 )
+
+[node name="Door" parent="." instance=ExtResource( 9 )]
+position = Vector2( 736, 1557 )
+new_scene = "res://src/levels/greklovick/GrekLevel3.tscn"
+spritename = "greklovick greendoor"
+customtext = "clr1ty"
