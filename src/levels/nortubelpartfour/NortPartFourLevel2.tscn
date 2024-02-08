@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
@@ -58,3 +59,8 @@ customtext = "NORTUBEL_SEESAW_HANDCAR_T"
 
 [node name="NortSeesawTrain" parent="." instance=ExtResource( 9 )]
 position = Vector2( -334, 1440 )
+
+[node name="Door" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1098, 1605 )
+new_scene = "res://screens/cutscenes/cutscene 12 nortpartfour amalia/cutscene 12 nortpartfour amalia.tscn"
+customtext = "x444ng"
