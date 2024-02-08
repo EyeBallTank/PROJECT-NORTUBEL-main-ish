@@ -32,6 +32,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
+nextscene = "res://src/levels/greklovick/GrekLevel1.tscn"
 
 [node name="Behind dialogue" type="ColorRect" parent="."]
 anchor_right = 1.0
