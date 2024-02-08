@@ -15,7 +15,10 @@ var codes := [ "gallery",
 				"b00k3r", "r1c0t0", "phn34s",
 				"st3ll4", "z4r1n4", "sh1hr0",
 				"h0lm3s", "mcshry", "jol1t4",
-				"b4rn3y", "k4rl44"]
+				"b4rn3y", "k4rl44",
+				"l13fd1", "x444ng", "am4l14",
+				"y13g0r", "clr1ty", "kl3rrr",
+				"tf00r1", "zrkv1l"]
 
 func _ready():
 	TranslationServer.set_locale("en")
@@ -164,3 +167,27 @@ func b4rn3y():
 
 func k4rl44():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 10 massag karla/Cutscene 10 Massag Karla.tscn")
+
+func l13fd1():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour.tscn")
+
+func x444ng():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartfour/NortPartFourLevel2.tscn")
+
+func am4l14():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 12 nortpartfour amalia/cutscene 12 nortpartfour amalia.tscn")
+
+func y13g0r():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 13 nortpartfour grek/cutscene 13 nortpartfour grek.tscn")
+
+func clr1ty():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/greklovick/GrekLevel2.tscn")
+
+func kl3rrr():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/greklovick/GrekLevel3.tscn")
+
+func tf00r1():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/greklovick/GrekLevel4.tscn")
+
+func zrkv1l():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil.tscn")
