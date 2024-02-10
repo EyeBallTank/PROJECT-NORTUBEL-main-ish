@@ -267,8 +267,5 @@ yellowbookname = "exclamationsign"
 [node name="ElegMovingPlatSpecial" parent="." instance=ExtResource( 25 )]
 position = Vector2( -784, 520 )
 
-[node name="Platform" parent="ElegMovingPlatSpecial" index="0"]
-position = Vector2( 1.68695, -46.4915 )
-
 [editable path="ElegantJumppad"]
 [editable path="ElegMovingPlatSpecial"]
