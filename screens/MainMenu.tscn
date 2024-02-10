@@ -112,6 +112,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "PASSWORD_B"
 
 [node name="QuitButton" type="TextureButton" parent="MenuMain"]
+visible = false
 margin_top = 93.0
 margin_right = 304.0
 margin_bottom = 120.0
@@ -133,9 +134,9 @@ custom_fonts/font = ExtResource( 5 )
 text = "QUIT_B"
 
 [node name="ReadButton" type="TextureButton" parent="MenuMain"]
-margin_top = 124.0
+margin_top = 93.0
 margin_right = 304.0
-margin_bottom = 151.0
+margin_bottom = 120.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
@@ -153,9 +154,9 @@ custom_fonts/font = ExtResource( 5 )
 text = "READ_B"
 
 [node name="CreditsButton" type="TextureButton" parent="MenuMain"]
-margin_top = 155.0
+margin_top = 124.0
 margin_right = 304.0
-margin_bottom = 182.0
+margin_bottom = 151.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
@@ -182,9 +183,9 @@ position = Vector2( -79, 345 )
 texture = ExtResource( 12 )
 
 [node name="Currentupdate" type="Label" parent="MenuMain"]
-margin_top = 186.0
+margin_top = 155.0
 margin_right = 304.0
-margin_bottom = 263.0
+margin_bottom = 232.0
 custom_fonts/font = ExtResource( 5 )
 text = "CURRENT VERSION: NORTUBEL 3 & MASSAG-COAV
 PASSSWORD: st3ll4
