@@ -34,7 +34,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 6 char height 2.png" type="Texture" id=32]
 [ext_resource path="res://assets/sprites/art gallery/hirdrih/hird art leon otto avietta.png" type="Texture" id=33]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art atlantis scenery.png" type="Texture" id=34]
-[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art delusional dream.png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art delusional dream 2.png" type="Texture" id=35]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art bernard shelly.png" type="Texture" id=36]
 [ext_resource path="res://assets/sprites/level_object_sprites/ExclamationSign.PNG" type="Texture" id=37]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map 2.png" type="Texture" id=38]
@@ -159,7 +159,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 36 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=39]
+[sub_resource type="AtlasTexture" id=46]
 atlas = ExtResource( 35 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -318,7 +318,7 @@ animations = [ {
 "name": "nort art bernard shelly",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 39 ) ],
+"frames": [ SubResource( 46 ) ],
 "loop": false,
 "name": "nort art delusional dream",
 "speed": 0.0
