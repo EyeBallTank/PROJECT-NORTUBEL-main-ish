@@ -1,8 +1,9 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title animation.PNG" type="Texture" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/fused title test.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 nortubel.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -76,6 +77,10 @@ region = Rect2( 0, 264, 622, 88 )
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 622, 88 )
 
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 454, 170 )
+
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 352, 622, 88 )
@@ -130,6 +135,11 @@ animations = [ {
 "frames": [ SubResource( 8 ) ],
 "loop": false,
 "name": "nortubel",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": false,
+"name": "nortubel2",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 9 ) ],
@@ -200,8 +210,7 @@ script = ExtResource( 2 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 494, -102 )
 frames = SubResource( 10 )
-animation = "justatest"
-frame = 6
+animation = "nortubel2"
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
