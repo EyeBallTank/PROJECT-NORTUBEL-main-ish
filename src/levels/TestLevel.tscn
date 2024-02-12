@@ -52,4 +52,4 @@ scale = Vector2( 40, 160 )
 collision_newsize = Vector2( 40, 160 )
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 9 )]
-worldname = "massagcoav2"
+worldname = "krimbstone2"
