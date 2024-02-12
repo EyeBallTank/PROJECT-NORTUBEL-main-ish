@@ -215,6 +215,9 @@ collision_newsize = Vector2( 40, 8 )
 [node name="Coin" parent="." instance=ExtResource( 25 )]
 position = Vector2( 5573, 2149 )
 
+[node name="Coin3" parent="." instance=ExtResource( 25 )]
+position = Vector2( 5637, 1248 )
+
 [node name="Coin2" parent="." instance=ExtResource( 25 )]
 position = Vector2( 5706, 2149 )
 
