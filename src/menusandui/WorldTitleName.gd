@@ -9,3 +9,6 @@ export var worldname = "nortubel"
 func _ready():
 	animatedsprite.animation = worldname
 	animationplayer.play("worldtitle")
+
+func goodbye():
+	queue_free()
