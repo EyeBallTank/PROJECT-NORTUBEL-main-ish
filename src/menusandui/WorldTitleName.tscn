@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title animation.PNG" type="Texture" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 hirdrih.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 massagcoav.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 krimbstone.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 greklovick.png" type="Texture" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -19,6 +20,10 @@ region = Rect2( 0, 0, 623, 170 )
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 440, 622, 88 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 694, 146 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
@@ -115,6 +120,11 @@ animations = [ {
 "frames": [ SubResource( 2 ) ],
 "loop": false,
 "name": "greklovick",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 27 ) ],
+"loop": false,
+"name": "greklovick2",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 3 ) ],
@@ -240,7 +250,7 @@ script = ExtResource( 2 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 494, -102 )
 frames = SubResource( 10 )
-animation = "krimbstone2"
+animation = "greklovick2"
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
