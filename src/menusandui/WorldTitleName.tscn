@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title animation.PNG" type="Texture" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 krimbstone.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 greklovick 2.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 brinkaedea.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 lahiurn 2.png" type="Texture" id=10]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -90,6 +91,10 @@ region = Rect2( 0, 0, 312, 125 )
 atlas = ExtResource( 1 )
 region = Rect2( 0, 704, 622, 88 )
 
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 400, 158 )
+
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 264, 622, 88 )
@@ -170,6 +175,11 @@ animations = [ {
 "frames": [ SubResource( 6 ) ],
 "loop": false,
 "name": "lahiurn",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 29 ) ],
+"loop": false,
+"name": "lahiurn2",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 7 ) ],
@@ -274,7 +284,7 @@ script = ExtResource( 2 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 494, -102 )
 frames = SubResource( 10 )
-animation = "brinkaedea2"
+animation = "lahiurn2"
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
