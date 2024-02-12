@@ -319,6 +319,10 @@ spritename = "hirdrih reddoor"
 position = Vector2( 7275, -126 )
 spritename = "hirdrih coin"
 
+[node name="Coin9" parent="." instance=ExtResource( 24 )]
+position = Vector2( 13916, -875 )
+spritename = "hirdrih coin"
+
 [node name="Coin5" parent="." instance=ExtResource( 24 )]
 position = Vector2( 7111, -278 )
 spritename = "hirdrih coin"

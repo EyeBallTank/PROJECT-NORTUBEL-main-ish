@@ -252,6 +252,22 @@ propname = "massprop trashcan"
 position = Vector2( 4896, -1344 )
 spritename = "massagcoav coin"
 
+[node name="Coin3" parent="." instance=ExtResource( 23 )]
+position = Vector2( -2712, -608 )
+spritename = "massagcoav coin"
+
+[node name="Coin4" parent="." instance=ExtResource( 23 )]
+position = Vector2( -416, -1072 )
+spritename = "massagcoav coin"
+
+[node name="Coin5" parent="." instance=ExtResource( 23 )]
+position = Vector2( 3520, -3720 )
+spritename = "massagcoav coin"
+
+[node name="Coin6" parent="." instance=ExtResource( 23 )]
+position = Vector2( 4056, -2720 )
+spritename = "massagcoav coin"
+
 [node name="Coin2" parent="." instance=ExtResource( 23 )]
 position = Vector2( 4896, -1592 )
 spritename = "massagcoav coin"

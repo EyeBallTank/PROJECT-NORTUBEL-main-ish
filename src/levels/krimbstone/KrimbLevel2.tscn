@@ -273,6 +273,10 @@ spritename = "krimbstone coin"
 position = Vector2( 7114, -846 )
 spritename = "krimbstone coin"
 
+[node name="Coin8" parent="." instance=ExtResource( 24 )]
+position = Vector2( 6804, -2118 )
+spritename = "krimbstone coin"
+
 [node name="jump thru" parent="." instance=ExtResource( 25 )]
 position = Vector2( 8448, -1162 )
 scale = Vector2( 112, 8 )

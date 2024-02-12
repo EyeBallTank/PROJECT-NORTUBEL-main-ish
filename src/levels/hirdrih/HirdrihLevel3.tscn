@@ -173,6 +173,14 @@ spritename = "hirdrih movplatvert"
 position = Vector2( 610, -184 )
 spritename = "hirdrih coin"
 
+[node name="Coin2" parent="." instance=ExtResource( 19 )]
+position = Vector2( 1303, -1037 )
+spritename = "hirdrih coin"
+
+[node name="Coin3" parent="." instance=ExtResource( 19 )]
+position = Vector2( 7594, -1780 )
+spritename = "hirdrih coin"
+
 [node name="PoisonHitbox" parent="." instance=ExtResource( 20 )]
 position = Vector2( 5920, -640 )
 scale = Vector2( 26, 4 )

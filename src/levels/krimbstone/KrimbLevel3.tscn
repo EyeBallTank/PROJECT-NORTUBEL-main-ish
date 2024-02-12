@@ -123,6 +123,10 @@ spritename = "krimbstone coin"
 position = Vector2( 10382, -28 )
 spritename = "krimbstone coin"
 
+[node name="Coin3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 13944, 128 )
+spritename = "krimbstone coin"
+
 [node name="BookerNPC" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2471, -104 )
 customtext = "BOOKER_NPC_TALK"

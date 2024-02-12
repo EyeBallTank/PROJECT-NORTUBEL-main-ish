@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=35]
 
 [node name="MassagLevel1" type="Node2D"]
 
@@ -342,3 +343,15 @@ collision_newsize = Vector2( 32, 8 )
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 34 )]
 position = Vector2( 4996, -860 )
 spritename = "atlantis movplatvert"
+
+[node name="Coin" parent="." instance=ExtResource( 35 )]
+position = Vector2( 4001, 1009 )
+spritename = "massagcoav coin"
+
+[node name="Coin2" parent="." instance=ExtResource( 35 )]
+position = Vector2( 3054, -1355 )
+spritename = "massagcoav coin"
+
+[node name="Coin3" parent="." instance=ExtResource( 35 )]
+position = Vector2( 1133, -1832 )
+spritename = "massagcoav coin"

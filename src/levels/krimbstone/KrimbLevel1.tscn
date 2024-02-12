@@ -175,6 +175,18 @@ position = Vector2( -1156, 1215 )
 position = Vector2( 4090, 1098 )
 spritename = "krimbstone coin"
 
+[node name="Coin7" parent="." instance=ExtResource( 22 )]
+position = Vector2( -1127, 661 )
+spritename = "krimbstone coin"
+
+[node name="Coin8" parent="." instance=ExtResource( 22 )]
+position = Vector2( -1529, 661 )
+spritename = "krimbstone coin"
+
+[node name="Coin9" parent="." instance=ExtResource( 22 )]
+position = Vector2( -1940, 661 )
+spritename = "krimbstone coin"
+
 [node name="Coin2" parent="." instance=ExtResource( 22 )]
 position = Vector2( 4389, 1108 )
 spritename = "krimbstone coin"

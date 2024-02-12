@@ -131,6 +131,10 @@ spritename = "hirdrih coin"
 position = Vector2( 957, -87 )
 spritename = "hirdrih coin"
 
+[node name="Coin5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 444, -1125 )
+spritename = "hirdrih coin"
+
 [node name="FishHookKinematic" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2919, -1907 )
 anchorspritename = "hirdrih anchor"
