@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 16.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 11.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 15.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 18.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 18 V2.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 19.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 20.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 21.png" type="Texture" id=14]
@@ -91,7 +91,7 @@ region = Rect2( 0, 0, 590, 374 )
 atlas = ExtResource( 25 )
 region = Rect2( 0, 0, 590, 374 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=46]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 590, 374 )
 
@@ -254,7 +254,7 @@ animations = [ {
 "name": "board 17",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 17 ) ],
+"frames": [ SubResource( 46 ) ],
 "loop": false,
 "name": "board 18",
 "speed": 0.0

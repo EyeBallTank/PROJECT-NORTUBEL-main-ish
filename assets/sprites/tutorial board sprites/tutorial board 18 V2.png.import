@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tutorial board 18.png-30de56a0e294df8a1bc6f9dbeb9c0c6b.stex"
+path="res://.import/tutorial board 18 V2.png-89a4714fb764c02d35a3001d3c2da0ca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tutorial board sprites/tutorial board 18.png"
-dest_files=[ "res://.import/tutorial board 18.png-30de56a0e294df8a1bc6f9dbeb9c0c6b.stex" ]
+source_file="res://assets/sprites/tutorial board sprites/tutorial board 18 V2.png"
+dest_files=[ "res://.import/tutorial board 18 V2.png-89a4714fb764c02d35a3001d3c2da0ca.stex" ]
 
 [params]
 
