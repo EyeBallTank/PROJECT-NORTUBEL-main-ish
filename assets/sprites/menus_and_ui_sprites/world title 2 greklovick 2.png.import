@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/world title 2 greklovick.png-213b54702c704f98308f4ef61cae3658.stex"
+path="res://.import/world title 2 greklovick 2.png-ff69431be34518e57946a9013fe54c3d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/menus_and_ui_sprites/world title 2 greklovick.png"
-dest_files=[ "res://.import/world title 2 greklovick.png-213b54702c704f98308f4ef61cae3658.stex" ]
+source_file="res://assets/sprites/menus_and_ui_sprites/world title 2 greklovick 2.png"
+dest_files=[ "res://.import/world title 2 greklovick 2.png-ff69431be34518e57946a9013fe54c3d.stex" ]
 
 [params]
 

@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 hirdrih.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 massagcoav.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 krimbstone.png" type="Texture" id=7]
-[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 greklovick.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 greklovick 2.png" type="Texture" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
