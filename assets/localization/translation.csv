@@ -172,7 +172,7 @@ BOOK_HINT_BUTTONS,Buttons are pressed automatically by either character,Botões 
 BOOK_HINT_PORTAL,Portals have specific paths,Portais têm caminhos específicos
 BOOK_HINT_VASE,Both characters can push vases,Ambas as personagens podem empurrar vasos
 BOOK_HINT_ICE,Ice makes the characters' movement slippery,Gelo faz o movimento das personagens escorregadio
-BOOK_HINT_MUD,Mud makes the characters' movement slow,Lama fazo o movimento das personagens lento
+BOOK_HINT_MUD,Mud makes the characters' movement slow,Lama faz o movimento das personagens lento
 BOOK_HINT_GONG,Gongs are checkpoint areas,"Gongos são áreas de ""checkpoint"""
 BOOK_HINT_JUMPPAD,Trampolines make both characters jump higher,Trampolins fazem ambas personagens saltar mais alto
 BOOK_HINT_WATERPLAY,The Player can swim with the 4 arrow keys,O(A) Jogador(a) pode nadar com os 4 botões de setas
