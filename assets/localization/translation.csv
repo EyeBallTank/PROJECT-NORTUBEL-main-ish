@@ -147,7 +147,7 @@ BOOK_HINT_COMP_FOLLOW,"""Follow me"": Q + Right or 3
 ""Run away"" opposite to ""Follow me"": Q + Left or 1","""Segue-me"": Q + Direita ou 3
 ""Fica aí"": Q + Baixo ou 2
 ""Foje"" contrário de ""Segue-me"": Q + Esquerda ou 1"
-BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar esquadas: Z"
+BOOK_HINT_COMP_Z,"Companion jumping and ""interactions"" like attaching to the Ladder: Z","Companheiro(a) saltar e ""interações"" como usar escadas: Z"
 BOOK_HINT_CONTROL_KNIFE,Knife attack: E,Ataque de faca: E
 BOOK_HINT_CONTROL_BALLATTACK,"Ball kick attack: Down
 Cancelling ball attack: Up","Ataque com bola e pontapé: Baixo
@@ -1166,3 +1166,254 @@ If that's true, they can't be that out of the ordinary.","O Dr Barney disse que 
 Se é verdade, não podem ser assim tão estranhos."
 CUTSCENE_10_TALK_7,"Either way, I wanna see if this guy is that good.","De qualquer maneira, eu quero ver se este tipo é assim tão bom."
 MANUAL_B,Instructions,Instruções
+MANUAL_MAIN_TEXT,"
+   ESC: Pause menu
+
+   , when paused: ""Screenshot friendly"" setting
+
+   Left movement: Left arrow key and Right movement: Right arrow key
+
+   Jumping/Climbing/Swimming upwards: Up arrow key
+
+   Climbing/Swimming downwards: Down arrow key
+
+   ""Follow me"": Q + Right or 3
+
+   ""Stand still"": Q + Down or 2
+
+   ""Run away"" opposite to ""Follow me"": Q + Left or 1
+
+   Companion jumping and ""interactions"" like attaching to the Ladder: Z
+
+   If you press ""O"", the little sibling becomes the player character.
+
+   Pressing ""P"" brings the playability back to the older sibling.
+
+   Knife attack: E
+
+   Ball kick attack: Down
+
+   Cancelling ball attack: Up
+
+   The Astrolabe indicates the Companion's direction when they're off-screen
+
+
+
+   Soccer ball can defeat enemies
+
+   The Soccer bag gives you one soccer ball if you got none
+
+   Touch the bag again if you want another ball
+
+   Soccer net disappears when receiving the ball
+
+   But not every enemy can be defeated
+
+
+
+   Green doors need both characters
+
+   Gongs are checkpoint areas
+
+   Portals have specific paths
+   
+
+
+   Buttons are pressed automatically by either character
+
+   Blue buttons leave a permanent effect
+
+   Yellow buttons cause a temporary effect
+
+   Green buttons exist in 2 to cause opposite effects
+
+   Keys unlock doors of corresponding colors
+   
+
+
+   Companion receives more damage than Player
+
+   Grocery basket heals whoever picks it up
+
+   Lifeguard Floater makes you invincible for a short time
+
+   Ezcudo coins give an extra life if enough are collected
+
+   Both characters share lives
+   
+
+
+   Trampolines make both characters jump higher
+
+   Both characters can push vases
+
+   Ice makes the characters' movement slippery
+
+   Mud makes the characters' movement slow
+   
+
+
+   The Player can swim with the 4 arrow keys
+
+   The Companion carries following/avoiding/still states under water
+
+   If either character runs out of oxygen, they die and lose a life
+   
+
+
+   The Player can climb ladders with the 4 arrow keys
+
+   While the Player can climb horizontally, the Companion only climbs vertically.
+
+   Press Z to attach Companion to ladder and then use commands to direct them
+
+   Z also makes the Companion quit the ladders.
+
+   The Companion starts off idle when entering/exiting ladders.
+
+   Try having the Companion on the ladder side-by-side with you,
+
+   if you feel like it!
+
+   Then use commands and move vertically.
+
+   When they reach a ladder's top/bottom and leave, they retain
+
+   equivalent states of following/running.
+   
+
+
+   Player can swing from the fishing rod, but not the Companion.
+
+   Weak platforms fall with the Player's weight
+
+   Companion can enter tight spaces that the Player can't
+
+
+","
+   ESC: Menu de pausa
+
+   , na pausa: Modo ""bom para screenshots""
+
+   Movimento esquerdo: Seta esquerda e Movimento Direito: Seta direita
+
+   Saltar/Nadar para cima/Subir: Seta de cima
+
+   Descer/Nadar para baixo: Seta de baixo
+
+   ""Segue-me"": Q + Direita ou 3
+
+   ""Fica aí"": Q + Baixo ou 2
+
+   ""Foje"" contrário de ""Segue-me"": Q + Esquerda ou 1
+
+   Companheiro(a) saltar e ""interações"" como usar escadas: Z
+
+   Se premires ""O"", os mais novos serão a personagem controlada.
+
+   Premir ""P"" traz o papel de jogabilidade de volta aos irmãos mais velhos.
+
+   Ataque de faca: E
+
+   Ataque com bola e pontapé: Baixo
+
+   Cancelar ataque de bola: Cima
+
+   O astrolábio indica a direção do/(a) Companheiro(a) quando estiver fora do ecrã
+
+
+
+   A bola de futebol consegue derrotar inimigos
+
+   A mala de futebol dá-te uma bola se não tens nenhuma
+
+   Toca nela outra vêz se queres outra bola
+
+   A rede de futebol desaparece quando recebe a bola
+
+   Nem todos os inimigos podem ser derrotados
+
+
+
+   Portas verdes precisam de ambas as personagens
+
+   Gongos são áreas de ""checkpoint""
+
+   Portais têm caminhos específicos
+   
+
+
+   Botões são pressionados por qualquer personagem
+
+   Botões azuis deixam um efeito permanente
+
+   Botões amarelos causam um efeito temporário
+
+   Botões verdes existem em duplos para causar efeitos contrários
+
+   Chaves abrem portas de cores correspondentes
+   
+
+
+   O(A) Companheiro(a) recebe mais dano que o(a) Jogador(a)
+
+   O cesto de compras cura quem o apanhar
+
+   A bóia salva-vidas faz-te invencível por pouco tempo
+
+   As moedas de Ezcudo dão uma vida extra se suficientes forem colecionadas
+
+   Ambas personagens partilham as mesmas vidas
+   
+
+
+   Trampolins fazem ambas personagens saltar mais alto
+
+   Ambas as personagens podem empurrar vasos
+
+   Gelo faz o movimento das personagens escorregadio
+
+   Lama faz o movimento das personagens lento
+   
+
+
+   O(A) Jogador(a) pode nadar com os 4 botões de setas
+
+   O/(A) Companheiro(a) contém estados de seguir/evitar/parar debaixo de água
+
+   Se qualquer personagem fica sem oxigénio, ele(a) morre e perde uma vida
+   
+
+
+   O(A) Jogador(a) pode subir escadas com os 4 botões de setas
+
+   Enquanto o(a) Jogador(a) pode trepar horizontalmente, 
+
+   o Companheiro(a) só pode trepar verticalmente.
+
+   Prime Z para meter o/(a) Companheiro(a) nas escadas 
+
+   e depois use ordens para direcioná-lo(a)
+
+   Z tambem faz o(a) Companheiro(a) sair das escadas.
+
+   O/(a) Companheiro(a) começa parado(a) quando entra nas/sai das escadas.
+
+   Tenta ter o/a Companheiro(a) na escada lado-a-lado contigo, se quiseres!
+
+   Depois, usa comandos e move verticalmente.
+
+   Quando eles alcançam o topo/fundo das escada e saem, Companheiros
+
+   mantêm estados equivalentes de seguir/correr.
+   
+
+
+   O(A) Jogador(a) consegue pendular da cana de pesca, mas não o Companheiro(a)
+
+   Plataformas fracas caem com o peso do(a) Jogador(a)
+
+   Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
+
+
+"
