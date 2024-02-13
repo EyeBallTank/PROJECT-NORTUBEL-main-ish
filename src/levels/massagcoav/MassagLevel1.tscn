@@ -105,7 +105,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 2 )]
-worldname = "massagcoav"
+worldname = "massagcoav2"
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 18482, -511 )

@@ -51,4 +51,4 @@ position = Vector2( -295, 1299 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 1 )]
-worldname = "untotern"
+worldname = "untotern2"

@@ -51,7 +51,7 @@ position = Vector2( 160, 1172 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 1 )]
-worldname = "brinkaedea"
+worldname = "brinkaedea2"
 
 [node name="Brink Big Straw Redwhite" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1183, 62 )

@@ -93,7 +93,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 1 )]
-worldname = "krimbstone"
+worldname = "krimbstone2"
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 6665, 794 )
