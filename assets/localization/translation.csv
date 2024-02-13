@@ -1290,6 +1290,16 @@ MANUAL_MAIN_TEXT,"
    Companion can enter tight spaces that the Player can't
 
 
+
+   X: A third character jumps.
+
+   A + left or 4: They run from you.
+
+   A + right or 6: They follow you.
+
+   A + down or 5: They stand still.
+
+
 ","
    ESC: Menu de pausa
 
@@ -1414,6 +1424,17 @@ MANUAL_MAIN_TEXT,"
    Plataformas fracas caem com o peso do(a) Jogador(a)
 
    Companheiro(a) pode chegar a sítios apertados que o(a) Jogador(a) não pode
+
+
+
+
+   X: Uma terceira personagem salta.
+
+   A + esquerda ou 4: Ela foge de ti.
+
+   A + direita ou 6: Ela segue-te.
+
+   A + baixo ou 5: Ela fica parada.
 
 
 "
