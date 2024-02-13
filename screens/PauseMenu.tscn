@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://screens/PauseMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/pause visibility toggle.png" type="Texture" id=11]
+[ext_resource path="res://assets/CreditsScreeen.tres" type="Theme" id=12]
 
 [sub_resource type="DynamicFont" id=3]
 outline_size = 3
@@ -47,9 +48,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 364.0
-margin_top = 213.0
+margin_top = 207.0
 margin_right = 664.0
-margin_bottom = 333.0
+margin_bottom = 358.0
 
 [node name="UnpauseButton" type="TextureButton" parent="MenuMain"]
 margin_right = 300.0
@@ -134,15 +135,31 @@ margin_bottom = 21.5
 custom_fonts/font = ExtResource( 4 )
 text = "QUIT_B"
 
+[node name="ManualButton" type="TextureButton" parent="MenuMain"]
+margin_top = 124.0
+margin_right = 300.0
+margin_bottom = 151.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="MenuMain/ManualButton"]
+margin_left = 114.0
+margin_top = 4.5
+margin_right = 182.0
+margin_bottom = 21.5
+custom_fonts/font = ExtResource( 4 )
+text = "MANUAL_B"
+
 [node name="PauseVisibilityToggle" type="Sprite" parent="MenuMain"]
-position = Vector2( 150, 170 )
+position = Vector2( 150, 198 )
 texture = ExtResource( 11 )
 
 [node name="SmoothCamera" type="Label" parent="MenuMain/PauseVisibilityToggle"]
 margin_left = -230.0
-margin_top = 51.0
+margin_top = 47.0
 margin_right = 70.0
-margin_bottom = 68.0
+margin_bottom = 64.0
 custom_fonts/font = ExtResource( 4 )
 text = "SMOOTH_CAMERA_OPTION_TEXT"
 
@@ -334,12 +351,75 @@ margin_bottom = 21.5
 custom_fonts/font = ExtResource( 4 )
 text = "QUIT_B"
 
+[node name="ManualText" type="Control" parent="."]
+visible = false
+margin_left = 206.0
+margin_top = 201.0
+margin_right = 817.0
+margin_bottom = 477.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ManualText"]
+margin_left = 18.0
+margin_top = 17.0
+margin_right = 592.0
+margin_bottom = 232.0
+theme = ExtResource( 12 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ManualText/ScrollContainer"]
+margin_right = 88.0
+margin_bottom = 357.0
+
+[node name="Label" type="Label" parent="ManualText/ScrollContainer/VBoxContainer"]
+margin_right = 88.0
+margin_bottom = 357.0
+custom_fonts/font = ExtResource( 4 )
+text = "aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa
+aaaaaaaaaaa"
+
+[node name="QuitButtonFromManual" type="TextureButton" parent="ManualText"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -145.5
+margin_top = 105.0
+margin_right = 154.5
+margin_bottom = 145.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="ManualText/QuitButtonFromManual"]
+margin_left = 129.0
+margin_top = 5.0
+margin_right = 177.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 4 )
+text = "QUIT_B"
+
 [connection signal="pressed" from="MenuMain/UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="MenuMain/SaveButton" to="." method="_on_SaveButton_pressed"]
 [connection signal="pressed" from="MenuMain/LoadButton" to="." method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="MenuMain/PasswordButton" to="." method="_on_PasswordButton_pressed"]
 [connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="MenuMain/ManualButton" to="." method="_on_ManualButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
 [connection signal="toggled" from="OptionsMenu/VideoSettings/Checks/Fullscreen" to="." method="_on_Fullscreen_toggled"]
@@ -348,3 +428,4 @@ text = "QUIT_B"
 [connection signal="pressed" from="OptionsMenu/PT setting" to="." method="_on_PT_setting_pressed"]
 [connection signal="text_entered" from="PasswordMenu/LineEdit" to="." method="_on_LineEdit_text_entered"]
 [connection signal="pressed" from="PasswordMenu/BackFromOptions3" to="." method="_on_BackFromOptions3_pressed"]
+[connection signal="pressed" from="ManualText/QuitButtonFromManual" to="." method="_on_QuitButtonFromManual_pressed"]
