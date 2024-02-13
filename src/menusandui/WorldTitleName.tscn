@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title animation.PNG" type="Texture" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 brinkaedea.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 lahiurn 2.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 herrko.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/world title 2 untotern.png" type="Texture" id=12]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -120,6 +121,10 @@ region = Rect2( 0, 0, 454, 170 )
 atlas = ExtResource( 1 )
 region = Rect2( 0, 352, 622, 88 )
 
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 528, 172 )
+
 [sub_resource type="SpriteFrames" id=10]
 animations = [ {
 "frames": [ SubResource( 1 ) ],
@@ -216,6 +221,11 @@ animations = [ {
 "loop": false,
 "name": "untotern",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 31 ) ],
+"loop": false,
+"name": "untotern2",
+"speed": 0.0
 } ]
 
 [sub_resource type="Animation" id=11]
@@ -294,7 +304,7 @@ script = ExtResource( 2 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 494, -102 )
 frames = SubResource( 10 )
-animation = "herrko2"
+animation = "untotern2"
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
