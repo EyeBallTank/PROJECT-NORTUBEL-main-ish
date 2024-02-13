@@ -96,6 +96,7 @@ propname = "nortprop stairs streetlights"
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 7 )]
+worldname = "nortubel2"
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 10372, -1217 )

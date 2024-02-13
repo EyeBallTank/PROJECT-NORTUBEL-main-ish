@@ -51,6 +51,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="WorldTitleName" parent="." instance=ExtResource( 3 )]
+worldname = "nortubel2"
 
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1095, 743 )
