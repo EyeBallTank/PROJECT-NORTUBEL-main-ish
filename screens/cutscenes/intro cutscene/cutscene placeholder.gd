@@ -46,11 +46,12 @@ func cutscene_over():
 #Barney: I know exactly what he's looking for.
 #Barney: And I think I know who could also be involved.
 #Later
-#Carrie: Sometimes, this place doesn't seem bad. There's still things we're familiar with.
-#Katrin: That place looks like a beach. And in that direction, there's a clothes shop.
-#Katrin: Maybe we could try and have fun here, while nothing happens. After all, it didn't took too long to find Stella and someone your grandma knows.
-#Carrie: Sure. How about you Mel?
-#Melvin: Might as well tell the others.
+#Carrie: What is this place?
+#Shihiro: It's a beach, almost like any other. I come here by sometimes.
+#Shihiro: Sometimes, this place doesn't seem that bad. There are famliar things in this world.
+#Katrin: Maybe we could try and have fun here, while nothing happens.
+#Katrin: After all, we're in good company. And Carrie's grandma could be close to getting us back.
+#Carrie: Sure. Maybe a break here can't be that bad. There's even that empty store with clothes and stuff.
 
 
 #Carrie: So, what have you guys been up to?
