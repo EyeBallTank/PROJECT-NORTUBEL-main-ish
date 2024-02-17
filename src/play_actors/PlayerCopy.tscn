@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.gd" type="Script" id=2]
 [ext_resource path="res://src/menusandui/healthbarPlayer.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/sprites/play_actor_sprites/MelvinSprites.tres" type="SpriteFrames" id=4]
+[ext_resource path="res://assets/sprites/play_actor_sprites/BeachMelvin.tres" type="SpriteFrames" id=4]
 [ext_resource path="res://src/menusandui/SpeechBalloon.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=6]
 [ext_resource path="res://src/menusandui/oxygenbarPlayer.tscn" type="PackedScene" id=7]
@@ -194,7 +194,7 @@ playerskin = "res://assets/sprites/play_actor_sprites/MelvinSprites.tres"
 position = Vector2( 0, -151 )
 scale = Vector2( 0.719999, 0.719999 )
 frames = ExtResource( 4 )
-animation = "Honk"
+animation = "Ropeattach"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,0 +1,240 @@
+[gd_resource type="SpriteFrames" load_steps=33 format=2]
+
+[ext_resource path="res://assets/sprites/play_actor_sprites/beach melvin angela sprites.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 1 )
+region = Rect2( 2100, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 5460, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 3360, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 3780, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 4200, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 1 )
+region = Rect2( 2100, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 2940, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 7140, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 6720, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 1 )
+region = Rect2( 2100, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 1 )
+region = Rect2( 2100, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 420, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 1 )
+region = Rect2( 840, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 1 )
+region = Rect2( 1680, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 1 )
+region = Rect2( 1260, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 1 )
+region = Rect2( 2100, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 1 )
+region = Rect2( 2100, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 1 )
+region = Rect2( 2520, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 1 )
+region = Rect2( 420, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 1 )
+region = Rect2( 840, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 1 )
+region = Rect2( 5880, 0, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 1 )
+region = Rect2( 5460, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 1 )
+region = Rect2( 5880, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 1 )
+region = Rect2( 2940, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 1 )
+region = Rect2( 3360, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 1 )
+region = Rect2( 3780, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 1 )
+region = Rect2( 4200, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 1 )
+region = Rect2( 4620, 420, 420, 420 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 1 )
+region = Rect2( 5040, 420, 420, 420 )
+
+[resource]
+animations = [ {
+"frames": [ SubResource( 16 ) ],
+"loop": true,
+"name": "Abouttokick",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "Abouttostab",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "Climbidle",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "Climbing",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 17 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "Drown",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": false,
+"name": "Honk",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "Hug",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 18 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 19 ) ],
+"loop": true,
+"name": "Iceslide",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 1.0
+}, {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "Jumpgoesdown",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 12 ) ],
+"loop": false,
+"name": "Jumpgoesup",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": true,
+"name": "Kickedtheball",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": true,
+"name": "Pushing",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ) ],
+"loop": true,
+"name": "Ropeattach",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 14 ) ],
+"loop": true,
+"name": "Running",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": false,
+"name": "Stabtheknife",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "Swimdown",
+"speed": 2.0
+}, {
+"frames": [ SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "Swimidle",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "Swimming",
+"speed": 2.0
+}, {
+"frames": [ SubResource( 30 ), SubResource( 31 ) ],
+"loop": true,
+"name": "Swimup",
+"speed": 2.0
+} ]

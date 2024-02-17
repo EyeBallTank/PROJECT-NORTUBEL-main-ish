@@ -41,6 +41,7 @@ format = 1
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -169, 1451 )
+playerskin = "res://assets/sprites/play_actor_sprites/BeachMelvin.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
 position = Vector2( -169, 1451 )
@@ -50,7 +51,7 @@ position = Vector2( -53, 1449 )
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
 position = Vector2( -53, 1449 )
-companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
+companionskin = "res://assets/sprites/play_actor_sprites/BeachAngela.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
