@@ -137,6 +137,16 @@ customname1 = "Katrin Flenn"
 customname2 = "Carrie Decarde"
 spritename = "carrie katrin beach"
 
+[node name="ConvoNPC3" parent="." instance=ExtResource( 10 )]
+position = Vector2( -1430, 1411 )
+customtext1 = "CONVO_ZARINA_SHIHIRO_TALK_1"
+customtext2 = "CONVO_ZARINA_SHIHIRO_TALK_2"
+customtext3 = "CONVO_ZARINA_SHIHIRO_TALK_3"
+customtext4 = "CONVO_ZARINA_SHIHIRO_TALK_4"
+customname1 = "Shihiro Xang"
+customname2 = "Zarina Liefdei"
+spritename = "shihiro zarina"
+
 [node name="ConvoNPC2" parent="." instance=ExtResource( 10 )]
 position = Vector2( -1172, 1404 )
 customtext1 = "CONVO_OSCAR_PETE_BEACH_1"
