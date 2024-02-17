@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Convo Shihiro Zarina.png-4d82add541e1da2760ffc9f3853303ce.stex"
+path="res://.import/Convo Shihiro Zarina v2.png-2818150f0af8faca4347d0b79809173c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina.png"
-dest_files=[ "res://.import/Convo Shihiro Zarina.png-4d82add541e1da2760ffc9f3853303ce.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina v2.png"
+dest_files=[ "res://.import/Convo Shihiro Zarina v2.png-2818150f0af8faca4347d0b79809173c.stex" ]
 
 [params]
 

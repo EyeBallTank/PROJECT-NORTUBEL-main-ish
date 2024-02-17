@@ -30,7 +30,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Henson Family.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin Beach.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach.png" type="Texture" id=30]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina v2.png" type="Texture" id=32]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -136,8 +136,8 @@ region = Rect2( 0, 0, 420, 583 )
 atlas = ExtResource( 30 )
 region = Rect2( 0, 0, 420, 583 )
 
-[sub_resource type="AtlasTexture" id=38]
-atlas = ExtResource( 31 )
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 32 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=28]
@@ -276,7 +276,7 @@ animations = [ {
 "name": "oscar pete beach",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 38 ) ],
+"frames": [ SubResource( 39 ) ],
 "loop": false,
 "name": "shihiro zarina",
 "speed": 0.0
