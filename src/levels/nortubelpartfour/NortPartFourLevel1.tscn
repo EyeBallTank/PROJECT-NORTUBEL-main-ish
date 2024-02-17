@@ -156,4 +156,6 @@ customtext = "l13fd1"
 position = Vector2( -2655, 1933 )
 
 [node name="BaoBaoNPC" parent="." instance=ExtResource( 13 )]
-position = Vector2( 88, 1404 )
+position = Vector2( -3141, 686 )
+customtext = "Arff Arff"
+customname = "Bao Bao"
