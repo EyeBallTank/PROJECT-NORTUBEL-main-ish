@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/npc_actors/nort npc/BaoBaoNPC.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/npc_actors/nort npc/BeachStellaNPC.tscn" type="PackedScene" id=14]
 
 [node name="NortPartFourLevel1" type="Node2D"]
 
@@ -158,7 +159,7 @@ customname2 = "Pete Flenn"
 spritename = "oscar pete beach"
 
 [node name="Door" parent="." instance=ExtResource( 11 )]
-position = Vector2( -400, 1582 )
+position = Vector2( -1622, 304 )
 new_scene = "res://src/levels/nortubelpartfour/NortPartFourLevel2.tscn"
 customtext = "l13fd1"
 
@@ -169,3 +170,10 @@ position = Vector2( -2655, 1933 )
 position = Vector2( -3141, 686 )
 customtext = "Arff Arff"
 customname = "Bao Bao"
+
+[node name="BeachStellaNPC" parent="." instance=ExtResource( 14 )]
+position = Vector2( -342, 1423 )
+customtext = "STELLA_BEACH_NPC_TALK"
+customtext2 = "STELLA_BEACH_NPC_HONK"
+customtext3 = "STELLA_BEACH_NPC_HUG"
+customtext4 = "STELLA_BEACH_NPC_HURT"
