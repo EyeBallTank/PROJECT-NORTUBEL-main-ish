@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/npc_actors/nort npc/BaoBaoNPC.tscn" type="PackedScene" id=13]
 
 [node name="NortPartFourLevel1" type="Node2D"]
 
@@ -153,3 +154,6 @@ customtext = "l13fd1"
 
 [node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 12 )]
 position = Vector2( -2655, 1933 )
+
+[node name="BaoBaoNPC" parent="." instance=ExtResource( 13 )]
+position = Vector2( 88, 1404 )
