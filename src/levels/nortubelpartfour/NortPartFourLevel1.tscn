@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -23,6 +23,8 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=25]
 
 [node name="NortPartFourLevel1" type="Node2D"]
 
@@ -237,3 +239,23 @@ position = Vector2( -4016, 1407 )
 position = Vector2( -5120, 1216 )
 scale = Vector2( 32, 192 )
 collision_newsize = Vector2( 32, 192 )
+
+[node name="Water" parent="." instance=ExtResource( 24 )]
+position = Vector2( -1536, 1856 )
+scale = Vector2( 168, 32 )
+collision_newsize = Vector2( 168, 32 )
+
+[node name="jump thru" parent="." instance=ExtResource( 25 )]
+position = Vector2( -1600, 1344 )
+scale = Vector2( 112, 8 )
+collision_newsize = Vector2( 112, 8 )
+
+[node name="jump thru2" parent="." instance=ExtResource( 25 )]
+position = Vector2( -2048, 960 )
+scale = Vector2( 56, 8 )
+collision_newsize = Vector2( 56, 8 )
+
+[node name="jump thru3" parent="." instance=ExtResource( 25 )]
+position = Vector2( -2368, -320 )
+scale = Vector2( 40, 8 )
+collision_newsize = Vector2( 40, 8 )
