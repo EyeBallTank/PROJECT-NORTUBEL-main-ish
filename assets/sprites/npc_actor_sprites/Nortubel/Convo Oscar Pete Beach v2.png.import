@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Convo Oscar Pete Beach.png-c5b3090af93e6001145ff27772416da6.stex"
+path="res://.import/Convo Oscar Pete Beach v2.png-31977ba375a519bbb509e51bf10999b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach.png"
-dest_files=[ "res://.import/Convo Oscar Pete Beach.png-c5b3090af93e6001145ff27772416da6.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach v2.png"
+dest_files=[ "res://.import/Convo Oscar Pete Beach v2.png-31977ba375a519bbb509e51bf10999b9.stex" ]
 
 [params]
 

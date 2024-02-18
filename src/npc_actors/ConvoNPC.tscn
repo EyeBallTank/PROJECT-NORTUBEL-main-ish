@@ -29,7 +29,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Fernaanda Holmes.png" type="Texture" id=27]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Henson Family.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin Beach.png" type="Texture" id=29]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach v2.png" type="Texture" id=30]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina v2.png" type="Texture" id=32]
 
 [sub_resource type="AtlasTexture" id=17]
@@ -132,7 +132,7 @@ region = Rect2( 0, 0, 420, 583 )
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 420, 583 )
 
-[sub_resource type="AtlasTexture" id=37]
+[sub_resource type="AtlasTexture" id=40]
 atlas = ExtResource( 30 )
 region = Rect2( 0, 0, 420, 583 )
 
@@ -271,7 +271,7 @@ animations = [ {
 "name": "oscar pete",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 37 ) ],
+"frames": [ SubResource( 40 ) ],
 "loop": false,
 "name": "oscar pete beach",
 "speed": 0.0
