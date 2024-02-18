@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -14,8 +14,18 @@
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/npc_actors/nort npc/BaoBaoNPC.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/nort npc/BeachStellaNPC.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/sprites/level_backgrounds/nort sun.png" type="Texture" id=15]
 
 [node name="NortPartFourLevel1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 2, 2 )
+motion_scale = Vector2( 0, 0 )
+
+[node name="NortSun" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource( 15 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
