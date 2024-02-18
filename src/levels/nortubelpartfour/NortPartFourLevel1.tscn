@@ -21,10 +21,10 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-scale = Vector2( 2, 2 )
 motion_scale = Vector2( 0, 0 )
 
 [node name="NortSun" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 2, 2 )
 texture = ExtResource( 15 )
 
 [node name="back" type="TileMap" parent="."]
