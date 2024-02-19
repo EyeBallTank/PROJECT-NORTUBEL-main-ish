@@ -83,16 +83,6 @@ func attack():
 	grenade.global_position = gunhole.global_position
 #	grenade.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 
-#	if direction == Vector2.RIGHT:
-#		var grenade = Bullet.instance()
-#		get_tree().get_root().add_child(grenade)
-#		grenade.global_position = gunhole.global_position
-#		grenade.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
-#	elif direction == Vector2.LEFT:
-#		var grenade = Bullet.instance()
-#		get_tree().get_root().add_child(grenade)
-#		grenade.global_position = gunhole.global_position
-#		grenade.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
 	sprite.play("Attack")
 	timer.start(0.5)
 
