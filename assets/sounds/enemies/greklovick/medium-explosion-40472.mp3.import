@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/medium-explosion-40472.mp3-85d1da83b9f1b94a148d59dda1452bdf.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/enemies/greklovick/medium-explosion-40472.mp3"
+dest_files=[ "res://.import/medium-explosion-40472.mp3-85d1da83b9f1b94a148d59dda1452bdf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

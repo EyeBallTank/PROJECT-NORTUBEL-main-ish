@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/enemies/greklovick/GrekGrenade.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Grek Dispenser Grenade.png" type="Texture" id=2]
+[ext_resource path="res://assets/sounds/enemies/greklovick/medium-explosion-40472.mp3" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 28, 53 )
@@ -99,3 +100,6 @@ anims/BallVanish = SubResource( 3 )
 anims/RESET = SubResource( 2 )
 
 [node name="Position2D" type="Position2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )

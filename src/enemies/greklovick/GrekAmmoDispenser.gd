@@ -12,6 +12,7 @@ onready var eyes = $Eyes
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var gunhole = $Position2D
+onready var sound = $AudioStreamPlayer
 var canattack = false
 var canmove = true
 
@@ -32,6 +33,7 @@ func _physics_process(delta):
 
 	match state:
 		MOVING:
+			sound.set_volume_db(-80)
 			if see_to_attack():
 				state = SHOOT
 
@@ -48,6 +50,7 @@ func _physics_process(delta):
 
 
 		SHOOT:
+			sound.set_volume_db(-2.122) 
 			velocity.x = 0
 			animation.play("Shoot")
 			timer.start(2)
@@ -57,6 +60,7 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 
 		DEAD:
+			sound.set_volume_db(-80)
 			animation.play("Dying.")
 
 
@@ -78,6 +82,7 @@ func return_to_move():
 	state = MOVING
 
 func attack():
+	sound.play()
 	var bombdirect = scale.x
 	var grenade = Bullet.instance()
 	get_tree().get_root().add_child(grenade)

@@ -18,11 +18,11 @@ theme = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 418.0
-margin_bottom = 2217.0
+margin_bottom = 2237.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 418.0
-margin_bottom = 2217.0
+margin_bottom = 2237.0
 custom_fonts/font = ExtResource( 1 )
 text = " 
 
@@ -103,7 +103,7 @@ text = "
    ChipTone (SFBGames)
    Gluk (FontSpace)
    nickkarvounis (Unsplash)
-
+   Pixabay
 
                   FREESOUND
    strangehorizon
@@ -128,6 +128,7 @@ text = "
    sunfiredragon
    szpury
    imagery2
+   LeMudCrab
 
 
                   CROSSOVER WITH/COM \"DREAMS OF JOY DEPARTED\"
