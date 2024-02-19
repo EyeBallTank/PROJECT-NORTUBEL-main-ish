@@ -106,7 +106,7 @@ position = Vector2( 1419, 798 )
 propname = "nortprop giant donkey mask"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1982, 1207 )
+position = Vector2( 868, 1526 )
 propname = "nortprop park picnic table"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 8 )]
