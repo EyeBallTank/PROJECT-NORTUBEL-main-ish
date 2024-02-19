@@ -1,11 +1,13 @@
 extends RigidBody2D
 
+onready var animationplayer = $AnimationPlayer
 
 func _ready():
-	pass
+	ball_disappear()
+	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 
-
-
+func ball_disappear():
+	animationplayer.play("BallVanish")
 
 
 func disappear():
