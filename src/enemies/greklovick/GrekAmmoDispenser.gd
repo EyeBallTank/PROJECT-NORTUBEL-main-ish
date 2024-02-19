@@ -77,11 +77,11 @@ func return_to_move():
 	state = MOVING
 
 func attack():
-
+	var bombdirect = scale.x
 	var grenade = Bullet.instance()
 	get_tree().get_root().add_child(grenade)
 	grenade.global_position = gunhole.global_position
-#	grenade.linear_velocity = Vector2(direction * BALL_VELOCITY, 0)
+	grenade.linear_velocity = Vector2(bombdirect * BALL_VELOCITY, 0)
 
 	sprite.play("Attack")
 	timer.start(0.5)
