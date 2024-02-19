@@ -72,7 +72,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 44.5, 108 )
+extents = Vector2( 42, 143 )
 
 [sub_resource type="Animation" id=27]
 resource_name = "Dying."
@@ -261,7 +261,7 @@ tracks/2/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 42.5, 107 )
+extents = Vector2( 44, 143.5 )
 
 [node name="GrekAmmoDispenser" type="KinematicBody2D"]
 collision_layer = 32
@@ -269,15 +269,13 @@ collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 72 )
-scale = Vector2( 0.72, 0.72 )
+position = Vector2( 0, 26 )
 frames = SubResource( 4 )
-animation = "Running"
-frame = 1
+animation = "Attack"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, 82 )
+position = Vector2( 1, 47 )
 shape = SubResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -286,7 +284,7 @@ anims/RESET = SubResource( 25 )
 anims/Shoot = SubResource( 26 )
 
 [node name="Floordetect" type="RayCast2D" parent="."]
-position = Vector2( 50, 186 )
+position = Vector2( 57, 185 )
 enabled = true
 cast_to = Vector2( 0, 34 )
 collision_mask = 4
@@ -297,7 +295,7 @@ collision_mask = 1025
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
-position = Vector2( -0.5, 82 )
+position = Vector2( 1, 45.5 )
 shape = SubResource( 10 )
 
 [node name="Timer" type="Timer" parent="."]
@@ -305,10 +303,10 @@ wait_time = 2.0
 one_shot = true
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 61, 91 )
+position = Vector2( 60, 64 )
 
 [node name="Eyes" type="RayCast2D" parent="."]
-position = Vector2( 17, 33 )
+position = Vector2( 31, -18 )
 enabled = true
 cast_to = Vector2( 257, 0 )
 collision_mask = 3

@@ -1,6 +1,8 @@
 extends RigidBody2D
 
 onready var animationplayer = $AnimationPlayer
+onready var elecplace = $Position2D
+const Electricity = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
 func _ready():
 	ball_disappear()
@@ -15,3 +17,8 @@ func disappear():
 
 func therefore_I_Go():
 	disappear()
+
+func attack():
+	var projectile = Electricity.instance()
+	projectile.global_position = elecplace.global_position
+	get_tree().get_root().add_child(projectile)
