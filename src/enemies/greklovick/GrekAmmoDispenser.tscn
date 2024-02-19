@@ -303,12 +303,12 @@ wait_time = 2.0
 one_shot = true
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 60, 64 )
+position = Vector2( 77, 36 )
 
 [node name="Eyes" type="RayCast2D" parent="."]
 position = Vector2( 31, -18 )
 enabled = true
-cast_to = Vector2( 257, 0 )
+cast_to = Vector2( 590, 0 )
 collision_mask = 3
 
 [connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]

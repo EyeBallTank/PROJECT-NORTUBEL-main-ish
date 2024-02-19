@@ -4,7 +4,7 @@ export var gravity: = 23600
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
-var BALL_VELOCITY = 1500.0
+var BALL_VELOCITY = 1200.0
 
 onready var sprite: = $AnimatedSprite
 onready var floordetect = $Floordetect
@@ -29,6 +29,7 @@ func _ready():
 	animation.play("RESET")
 
 func _physics_process(delta):
+
 	match state:
 		MOVING:
 			if see_to_attack():
@@ -81,7 +82,7 @@ func attack():
 	var grenade = Bullet.instance()
 	get_tree().get_root().add_child(grenade)
 	grenade.global_position = gunhole.global_position
-	grenade.linear_velocity = Vector2(bombdirect * BALL_VELOCITY, 0)
+	grenade.linear_velocity = Vector2(direction.x * BALL_VELOCITY, 0)
 
 	sprite.play("Attack")
 	timer.start(0.5)
