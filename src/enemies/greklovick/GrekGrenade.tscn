@@ -8,7 +8,7 @@ extents = Vector2( 28, 53 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "BallVanish"
-length = 5.5
+length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:modulate")
 tracks/0/interp = 1
@@ -40,7 +40,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 3.2, 4.9 ),
+"times": PoolRealArray( 3.2, 6.7 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
 "args": [  ],
