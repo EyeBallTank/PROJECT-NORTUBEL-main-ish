@@ -194,7 +194,8 @@ playerskin = "res://assets/sprites/play_actor_sprites/MelvinSprites.tres"
 position = Vector2( 0, -151 )
 scale = Vector2( 0.719999, 0.719999 )
 frames = ExtResource( 4 )
-animation = "Ropeattach"
+animation = "Idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -353,6 +354,9 @@ stream = ExtResource( 6 )
 volume_db = -4.095
 pitch_scale = 2.73
 bus = "Sound"
+
+[node name="EatableHead" type="Position2D" parent="."]
+position = Vector2( 5, -218 )
 
 [connection signal="area_entered" from="RopeCheck" to="." method="_on_RopeCheck_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
