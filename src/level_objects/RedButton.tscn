@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/RedButton massagcoav.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/RedButton brinkaedea.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/level_objects/RedButton.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=4]
