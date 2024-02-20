@@ -14,7 +14,7 @@ onready var sprites = $Sprites
 onready var jumptimer = $Timer
 onready var Player = get_parent().get_node("Player/EatableHead")
 #onready var Playerspeed = get_parent().get_node("Player")
-
+#var icanjump = false
 
 func _ready():
 	jumptimer.start(2)
@@ -54,9 +54,10 @@ func _physics_process(delta):
 
 #			if jumptimer.time_left == 0:
 #			do_a_jump()
-			jumptimer.start(2)
-			if jumptimer.time_left == 0:
-				do_a_jump()
+#			jumptimer.start(2)
+#			if jumptimer.time_left == 0:
+#				icanjump = true
+#				do_a_jump()
 			gravity = 300
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = -WALK_MAX_SPEED
@@ -130,10 +131,12 @@ func die():
 	queue_free()
 
 func do_a_jump():
+#	if icanjump == true:
 #	if jumptimer.time_left == 0:
 	velocity.y = -JUMP_SPEED
 	if velocity.y < 0:
 		velocity.y += 200
+#		icanjump = false
 #		state = CHASE
 #			jumptimer.start(2)
 
