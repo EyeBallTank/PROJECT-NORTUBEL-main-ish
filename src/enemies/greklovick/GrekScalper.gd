@@ -13,6 +13,8 @@ onready var animationplayer = $AnimationPlayer
 onready var sprites = $Sprites
 onready var jumptimer = $Timer
 onready var Player = get_parent().get_node("Player/EatableHead")
+#onready var Playerspeed = get_parent().get_node("Player")
+
 
 func _ready():
 	pass 
