@@ -147,6 +147,7 @@ func see_to_attack():
 	return true
 
 
+
 func _on_HeadEater_body_entered(body):
 	if state == CHASE and body.name == "Player":
 		state = EATING
