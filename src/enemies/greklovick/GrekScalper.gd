@@ -110,3 +110,8 @@ func see_to_attack():
 func _on_HeadEater_body_entered(body):
 	if state == CHASE and body.name == "Player":
 		state = EATING
+
+
+func _on_AltHurtBox_area_entered(area):
+	if state == EATING and area.name == "PlayerMelee":
+		state = DEAD

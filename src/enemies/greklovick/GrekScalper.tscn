@@ -118,18 +118,6 @@ tracks/4/keys = {
 "update": 0,
 "values": [ false ]
 }
-tracks/5/type = "value"
-tracks/5/path = NodePath("AltHurtBox/CollisionShape2D:disabled")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ true ]
-}
 
 [sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 48, 40.5 )
@@ -185,6 +173,6 @@ collision_layer = 32
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AltHurtBox"]
 position = Vector2( 1, -43 )
 shape = SubResource( 22 )
-disabled = true
 
 [connection signal="body_entered" from="HeadEater" to="." method="_on_HeadEater_body_entered"]
+[connection signal="area_entered" from="AltHurtBox" to="." method="_on_AltHurtBox_area_entered"]
