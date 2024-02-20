@@ -17,7 +17,8 @@ onready var Player = get_parent().get_node("Player/EatableHead")
 
 
 func _ready():
-	pass 
+#	jumptimer.start(2)
+	animationplayer.play("RESET") 
 
 enum {
 	MOVING,
@@ -55,17 +56,20 @@ func _physics_process(delta):
 			elif Player.global_position.x > global_position.x + 1:
 				velocity.x = WALK_MAX_SPEED
 				direction.x = 1
+			else:
+				do_a_jump()
 			velocity = direction * 560
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
 
-#			if Player.global_position.y < global_position.y - 20:
-#				pass
-#			elif Player.global_position.y > global_position.y -10:
-#				pass
-#			else:
-#				print("nom")
+
+			if Player.global_position.y < global_position.y - 1:
+				pass
+			elif Player.global_position.y > global_position.y + 1:
+				pass
+			else:
+				print("nom")
 
 
 		JUMP:
@@ -84,6 +88,7 @@ func _physics_process(delta):
 			global_position = Player.global_position
 
 		DEAD:
+			animationplayer.play("Dying") 
 			sprites.play("dead")
 			velocity.x = 0
 			direction.x = 0
@@ -92,13 +97,15 @@ func _physics_process(delta):
 			gravity = 33600
 
 
-
+func die():
+	queue_free()
 
 func do_a_jump():
-#	jumptimer.start(2)
+#	if jumptimer.time_left == 0:
 	velocity.y = -JUMP_SPEED
 	if velocity.y < 0:
 		velocity.y += 500
+#		jumptimer.start(2)
 
 func see_to_attack():
 	if not eyes.is_colliding(): return false
