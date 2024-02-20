@@ -59,4 +59,4 @@ position = Vector2( 1919, -330 )
 position = Vector2( 1719, -509 )
 
 [node name="GrekScalper" parent="." instance=ExtResource( 12 )]
-position = Vector2( 4768, -783 )
+position = Vector2( 4818, -500 )

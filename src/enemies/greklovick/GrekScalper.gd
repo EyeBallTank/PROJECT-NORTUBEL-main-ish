@@ -33,7 +33,7 @@ func _physics_process(delta):
 		MOVING:
 			sprites.play("moving")
 			if see_to_attack() and is_on_floor():
-				state = EATING
+				state = CHASE
 			elif see_to_attack() and not is_on_floor():
 				pass
 			var found_wall = is_on_wall()
@@ -58,12 +58,12 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
 
-			if Player.global_position.y < global_position.y - 20:
-				pass
-			elif Player.global_position.y > global_position.y -10:
-				pass
-			else:
-				print("nom")
+#			if Player.global_position.y < global_position.y - 20:
+#				pass
+#			elif Player.global_position.y > global_position.y -10:
+#				pass
+#			else:
+#				print("nom")
 
 
 		JUMP:
@@ -83,6 +83,13 @@ func _physics_process(delta):
 
 		DEAD:
 			sprites.play("dead")
+			velocity.x = 0
+			direction.x = 0
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
+			gravity = 33600
+
+
 
 
 func do_a_jump():
@@ -94,5 +101,10 @@ func do_a_jump():
 func see_to_attack():
 	if not eyes.is_colliding(): return false
 	var collider = eyes.get_collider()
-	if not collider.is_in_group("protagonists"): return false
+	if not collider.is_in_group("player"): return false
 	return true
+
+
+func _on_HeadEater_body_entered(body):
+	if state == CHASE and body.name == "Player":
+		state = EATING
