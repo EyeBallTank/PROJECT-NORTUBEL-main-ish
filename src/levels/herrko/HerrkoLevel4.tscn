@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_objects/RedButtonGate.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/RedButton.tscn" type="PackedScene" id=10]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -67,3 +69,11 @@ propname = "herrprop yevlen statue 4"
 position = Vector2( 168, 1722 )
 customtext = "HERRKO_LORE_ANCESTOR_T"
 spritename = "herrko lorebook"
+
+[node name="RedButton" parent="." instance=ExtResource( 10 )]
+position = Vector2( 592, 1608 )
+redbuttonskin = "res://assets/sprites/level_object_sprites/herrko/RedButton herrko.tres"
+
+[node name="RedButtonGate" parent="." instance=ExtResource( 9 )]
+position = Vector2( 821, 1527 )
+spritename = "herrko"

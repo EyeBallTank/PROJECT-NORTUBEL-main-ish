@@ -1,12 +1,17 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/red button gate.png" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/RedButtonGate.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/red button gate massag.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/red button gate brinkaedea.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/level_object_sprites/herrko/red button gate herrko.png" type="Texture" id=5]
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 64, 384 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 64, 384 )
 
 [sub_resource type="AtlasTexture" id=6]
@@ -22,6 +27,11 @@ animations = [ {
 "frames": [ SubResource( 7 ) ],
 "loop": false,
 "name": "brinkaedea",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "herrko",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 6 ) ],
@@ -78,7 +88,7 @@ collision_mask = 1315
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 2 )
-animation = "brinkaedea"
+animation = "herrko"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( -2.60274e-07, 6.25849e-06 )
