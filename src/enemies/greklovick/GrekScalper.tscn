@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Grek Scalper sprites.png" type="Texture" id=1]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 1 )
+region = Rect2( 150, 0, 150, 150 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "moving",
+"speed": 2.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 84, 100 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 62.5, 70.25 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 67, 86.5 )
+
+[node name="GrekScalper" type="KinematicBody2D"]
+collision_layer = 32
+collision_mask = 4
+
+[node name="Sprites" type="AnimatedSprite" parent="."]
+frames = SubResource( 14 )
+animation = "moving"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 4, 25 )
+shape = SubResource( 1 )
+
+[node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
+position = Vector2( 5.5, 52.25 )
+shape = SubResource( 2 )
+
+[node name="HurtBoxScalper" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxScalper"]
+position = Vector2( -10, 93 )
+shape = SubResource( 3 )
+
+[node name="Eyes" type="RayCast2D" parent="."]
+position = Vector2( 9, -56 )
+enabled = true
+cast_to = Vector2( 527, 0 )
+collision_mask = 3
+
+[node name="DizzyTimer" type="Timer" parent="."]
+wait_time = 3.5
+one_shot = true
+
+[node name="ImpactTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
