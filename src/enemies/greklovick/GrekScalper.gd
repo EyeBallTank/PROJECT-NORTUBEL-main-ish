@@ -4,7 +4,7 @@ export var gravity: = 33600
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
-var JUMP_SPEED = 1450
+var JUMP_SPEED = 1950
 var WALK_MAX_SPEED = 70
 
 
@@ -50,32 +50,56 @@ func _physics_process(delta):
 
 
 		CHASE:
-			if Player.global_position.x < global_position.x - 1:
+
+
+#			do_a_jump()
+			gravity = 300
+			if Player.global_position.x < global_position.x - 10:
 				velocity.x = -WALK_MAX_SPEED
 				direction.x = -1
-			elif Player.global_position.x > global_position.x + 1:
+				sprites.flip_h = false
+#				if Player.global_position.y < global_position.y - 1:
+#					state = JUMP
+#				elif Player.global_position.y > global_position.y + 1:
+#					pass
+			elif Player.global_position.x > global_position.x + 10:
 				velocity.x = WALK_MAX_SPEED
 				direction.x = 1
-			else:
-				pass
+				sprites.flip_h = true
+#				if Player.global_position.y < global_position.y - 1:
+#					state = JUMP
+#				elif Player.global_position.y > global_position.y + 1:
+#					pass
+
+#			else:
+#				state = JUMP
+
+#			if Player.global_position.y < global_position.y - 10:
+#				state = JUMP
+#				do_a_jump()
+					
 				
 			velocity = direction * 560
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
 
-
-			if Player.global_position.y < global_position.y - 1:
-				do_a_jump()
-			elif Player.global_position.y > global_position.y + 1:
-				pass
-			else:
-				print("nom")
+#
+#			if Player.global_position.y < global_position.y - 1:
+#				state = JUMP
+#			elif Player.global_position.y > global_position.y + 1:
+#				pass
+#			else:
+#				print("nom")
 
 
 		JUMP:
-
-
+			do_a_jump()
+			velocity.x = 0
+			direction.x = 0
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
+			gravity = 3000
 
 			sprites.play("jump")
 
@@ -106,6 +130,7 @@ func do_a_jump():
 		velocity.y = -JUMP_SPEED
 		if velocity.y < 0:
 			velocity.y += 500
+#		state = CHASE
 		jumptimer.start(2)
 
 func see_to_attack():
