@@ -52,7 +52,7 @@ func _physics_process(delta):
 		CHASE:
 
 
-#			do_a_jump()
+			do_a_jump()
 			gravity = 300
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = -WALK_MAX_SPEED
@@ -67,7 +67,7 @@ func _physics_process(delta):
 				direction.x = 1
 				sprites.flip_h = true
 #				if Player.global_position.y < global_position.y - 1:
-#					state = JUMP
+#					state = do_a_jump()
 #				elif Player.global_position.y > global_position.y + 1:
 #					pass
 
@@ -82,7 +82,7 @@ func _physics_process(delta):
 			velocity = direction * 560
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
-			gravity = 33600
+#			gravity = 33600
 
 #
 #			if Player.global_position.y < global_position.y - 1:
