@@ -52,6 +52,7 @@ func _physics_process(delta):
 		CHASE:
 
 
+#			if jumptimer.time_left == 0:
 			do_a_jump()
 			gravity = 300
 			if Player.global_position.x < global_position.x - 10:
@@ -131,7 +132,7 @@ func do_a_jump():
 		if velocity.y < 0:
 			velocity.y += 500
 #		state = CHASE
-		jumptimer.start(2)
+			jumptimer.start(2)
 
 func see_to_attack():
 	if not eyes.is_colliding(): return false
