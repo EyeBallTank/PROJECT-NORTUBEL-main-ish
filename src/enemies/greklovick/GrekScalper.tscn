@@ -63,24 +63,25 @@ collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="Sprites" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -48 )
 frames = SubResource( 14 )
 animation = "dead"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 6 )
+position = Vector2( 0, -42 )
 shape = SubResource( 1 )
 
 [node name="HurtBoxScalper" type="Area2D" parent="."]
+position = Vector2( 0, -48 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxScalper"]
 position = Vector2( 0.5, 6 )
 shape = SubResource( 3 )
 
-[node name="Eyes" type="RayCast2D" parent="."]
-position = Vector2( 9, -56 )
-enabled = true
-cast_to = Vector2( 103, 0 )
-collision_mask = 3
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Eyes" type="RayCast2D" parent="."]
+position = Vector2( 0, -133 )
+enabled = true
+cast_to = Vector2( 300, 0 )
