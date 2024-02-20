@@ -265,5 +265,6 @@ collision_layer = 32
 position = Vector2( 1, -43 )
 shape = SubResource( 22 )
 
+[connection signal="area_entered" from="HurtBoxScalper" to="." method="_on_HurtBoxScalper_area_entered"]
 [connection signal="body_entered" from="HeadEater" to="." method="_on_HeadEater_body_entered"]
 [connection signal="area_entered" from="AltHurtBox" to="." method="_on_AltHurtBox_area_entered"]

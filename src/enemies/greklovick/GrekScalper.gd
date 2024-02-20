@@ -155,3 +155,10 @@ func _on_HeadEater_body_entered(body):
 func _on_AltHurtBox_area_entered(area):
 	if state == EATING and area.name == "PlayerMelee":
 		state = DEAD
+
+
+func _on_HurtBoxScalper_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD
+	if area.name == "EnemyCrusher":
+		state = DEAD
