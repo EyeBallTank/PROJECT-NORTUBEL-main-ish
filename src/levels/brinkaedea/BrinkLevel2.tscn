@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Piano Key.tscn" type="PackedScene" id=7]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -44,3 +45,34 @@ position = Vector2( -240, 1421 )
 position = Vector2( -4, 1391 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
+
+[node name="Brink Piano Key" parent="." instance=ExtResource( 7 )]
+position = Vector2( 545, 1615 )
+
+[node name="Brink Piano Key2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 610, 1615 )
+pitchscale = 1.13
+
+[node name="Brink Piano Key3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 675, 1615 )
+pitchscale = 1.26
+
+[node name="Brink Piano Key4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 740, 1615 )
+pitchscale = 1.34
+
+[node name="Brink Piano Key5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 805, 1615 )
+pitchscale = 1.5
+
+[node name="Brink Piano Key6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 870, 1615 )
+pitchscale = 1.68
+
+[node name="Brink Piano Key7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 935, 1615 )
+pitchscale = 1.86
+
+[node name="Brink Piano Key8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1000, 1615 )
+pitchscale = 1.99
