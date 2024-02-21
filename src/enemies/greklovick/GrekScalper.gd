@@ -60,7 +60,7 @@ func _physics_process(delta):
 			if is_on_wall():
 				do_a_jump()
 
-			gravity = 300
+			gravity = 33600
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = -WALK_MAX_SPEED
 				direction.x = -1
