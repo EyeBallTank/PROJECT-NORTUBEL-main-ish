@@ -37,7 +37,8 @@ func _physics_process(delta):
 func _on_RopeLeft_area_entered(area):
 	if area.name == "PlayerMelee":
 		if state == NORMAL:
-			pass
+			animation.play("TheLeftWasCut")
+			state = RIGHTATTACH
 		elif state == LEFTATTACH:
 			animation.play("AndSoWasLeft")
 			state = FALLFROMLEFT
@@ -47,3 +48,6 @@ func _on_RopeRight_area_entered(area):
 		if state == NORMAL:
 			animation.play("TheRightWasCut")
 			state = LEFTATTACH
+		elif state == RIGHTATTACH:
+			animation.play("AndSoWasRight")
+			state = FALLFROMRIGHT
