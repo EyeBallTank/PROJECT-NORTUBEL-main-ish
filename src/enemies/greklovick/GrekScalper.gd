@@ -4,7 +4,7 @@ export var gravity: = 33600
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
-var JUMP_SPEED = 1950
+var JUMP_SPEED = 1450
 var WALK_MAX_SPEED = 70
 
 
@@ -36,7 +36,7 @@ func _physics_process(delta):
 		MOVING:
 			sprites.play("moving")
 			if see_to_attack() and is_on_floor():
-				state = CHASE
+				state = JUMP
 			elif see_to_attack() and not is_on_floor():
 				pass
 			var found_wall = is_on_wall()
@@ -47,8 +47,6 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 33600
-
-
 		CHASE:
 
 
@@ -104,6 +102,7 @@ func _physics_process(delta):
 			direction.x = 0
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
+#			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 			gravity = 3000
 
 			sprites.play("jump")
@@ -135,7 +134,7 @@ func do_a_jump():
 #	if jumptimer.time_left == 0:
 	velocity.y = -JUMP_SPEED
 	if velocity.y < 0:
-		velocity.y += 200
+		velocity.y += 500
 #		icanjump = false
 #		state = CHASE
 #			jumptimer.start(2)
