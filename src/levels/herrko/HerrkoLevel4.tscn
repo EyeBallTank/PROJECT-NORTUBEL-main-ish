@@ -80,8 +80,8 @@ redbuttonskin = "res://assets/sprites/level_object_sprites/herrko/RedButton herr
 position = Vector2( -137, 883 )
 spritename = "herrko"
 
-[node name="ArrowSpawner" parent="." instance=ExtResource( 12 )]
-position = Vector2( 509, 1576 )
-
 [node name="ArrowTrapButton" parent="." instance=ExtResource( 11 )]
 position = Vector2( 55, 1644 )
+
+[node name="ArrowSpawner" parent="." instance=ExtResource( 12 )]
+position = Vector2( 435, 1563 )
