@@ -3,18 +3,28 @@ extends Node2D
 onready var mainplatform = $KinematicBody2D
 onready var ropeleft = $RopeLeft
 onready var roperight = $RopeRight
+onready var animation = $AnimationPlayer
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+enum {
+	NORMAL,
+	LEFTATTACH,
+	RIGHTATTACH,
+	FALLFROMLEFT,
+	FALLFROMRIGHT
+}
 
+var state = NORMAL
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	animation.play("RESET")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
+func _on_RopeLeft_area_entered(area):
+	if area.name == "PlayerMelee":
+		pass
+
+func _on_RopeRight_area_entered(area):
+	if area.name == "PlayerMelee":
+		pass
