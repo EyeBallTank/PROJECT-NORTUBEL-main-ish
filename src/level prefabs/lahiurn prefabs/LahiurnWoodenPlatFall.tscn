@@ -1,11 +1,37 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/Lahiurn Wooden Plat Fall.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/Lahiurn Wooden Plat Rope.png" type="Texture" id=2]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnWoodenPlatFall.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 42.5, 123 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 192, 32 )
 
 [node name="LahiurnWoodenPlatFall" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="RopeLeft" type="Area2D" parent="."]
+position = Vector2( -45, -135 )
+
+[node name="LahiurnWoodenPlatRope" type="Sprite" parent="RopeLeft"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RopeLeft"]
+position = Vector2( -32.5, -4 )
+shape = SubResource( 2 )
+
+[node name="RopeRight" type="Area2D" parent="."]
+position = Vector2( 104, -135 )
+
+[node name="LahiurnWoodenPlatRope" type="Sprite" parent="RopeRight"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RopeRight"]
+position = Vector2( -32.5, -4 )
+shape = SubResource( 2 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 collision_layer = 4
