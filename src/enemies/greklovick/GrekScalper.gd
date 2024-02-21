@@ -57,6 +57,8 @@ func _physics_process(delta):
 #				icanjump = true
 #				do_a_jump()
 
+#			animationplayer.play("jumpy")
+
 			if is_on_wall():
 				do_a_jump()
 

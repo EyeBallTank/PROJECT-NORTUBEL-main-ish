@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Grek Scalper sprites.png" type="Texture" id=1]
 [ext_resource path="res://src/enemies/greklovick/GrekScalper.gd" type="Script" id=2]
@@ -209,6 +209,23 @@ tracks/5/keys = {
 "values": [ false ]
 }
 
+[sub_resource type="Animation" id=25]
+resource_name = "jumpy"
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "do_a_jump"
+} ]
+}
+
 [sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 48, 40.5 )
 
@@ -241,6 +258,7 @@ shape = SubResource( 3 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Dying = SubResource( 24 )
 anims/RESET = SubResource( 23 )
+anims/jumpy = SubResource( 25 )
 
 [node name="Eyes" type="RayCast2D" parent="."]
 position = Vector2( 0, -133 )
