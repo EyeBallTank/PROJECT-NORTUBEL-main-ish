@@ -9,7 +9,6 @@ func _ready():
 	animatedsprite.animation = "unpressed"
 	animationplayer.play("UNPRESSED")
 
-
 func _on_ArrowTrapButton_body_entered(body):
 	if body.is_in_group("protagonists"):
 		is_pressed = true
