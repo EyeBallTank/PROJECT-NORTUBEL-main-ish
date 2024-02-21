@@ -36,7 +36,7 @@ func _physics_process(delta):
 		MOVING:
 			sprites.play("moving")
 			if see_to_attack() and is_on_floor():
-				state = JUMP
+				state = CHASE
 			elif see_to_attack() and not is_on_floor():
 				pass
 			var found_wall = is_on_wall()
@@ -56,6 +56,10 @@ func _physics_process(delta):
 #			if jumptimer.time_left == 0:
 #				icanjump = true
 #				do_a_jump()
+
+			if is_on_wall():
+				do_a_jump()
+
 			gravity = 300
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = -WALK_MAX_SPEED

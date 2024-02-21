@@ -16,7 +16,7 @@ func attack():
 	projectile.global_position = mouth.global_position
 	get_tree().get_root().add_child(projectile)
 #ACCORDING TO GODOT, THE LINE ABOVE CAUSES LIKE 5 ARROWS AND I DON'T GET WHY
-#IT'S SUPPOSED TO BE COPIED FROM THE CHEESE SPAWNER SCENE'S CODE
+#IT'S SUPPOSED TO BE COPIED FROM THE CHEESE S
 	projectile.velocity.x = projectile.speed * -10
 
 func _doesnt_shoot_an_arrow():
