@@ -51,4 +51,4 @@ position = Vector2( -157, 1380 )
 position = Vector2( 108, 1652 )
 
 [node name="ArrowSpawner" parent="." instance=ExtResource( 8 )]
-position = Vector2( 503, 1639 )
+position = Vector2( 381, 1626 )
