@@ -39,6 +39,8 @@ signal collectible_picked
 signal red_button_active
 signal red_button_unactive
 
+signal arrow_button_active
+signal arrow_button_unactive
 
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
