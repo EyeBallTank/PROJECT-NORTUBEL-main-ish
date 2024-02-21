@@ -122,7 +122,7 @@ shape = SubResource( 2 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 collision_layer = 4
-collision_mask = 3
+collision_mask = 67
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 texture = ExtResource( 1 )

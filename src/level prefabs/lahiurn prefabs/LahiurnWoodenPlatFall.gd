@@ -5,6 +5,7 @@ onready var ropeleft = $RopeLeft
 onready var roperight = $RopeRight
 onready var animation = $AnimationPlayer
 
+#UNRELATED TO THIS SCENE BUT SETTING THE BUCKET TO "CHARACTER" SEEMS TO WORK
 
 enum {
 	NORMAL,
