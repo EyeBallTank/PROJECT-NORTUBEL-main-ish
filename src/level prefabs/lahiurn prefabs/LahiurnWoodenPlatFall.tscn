@@ -84,6 +84,18 @@ tracks/5/keys = {
 "update": 0,
 "values": [ false ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("KinematicBody2D/Sprite:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="LahiurnWoodenPlatFall" type="Node2D"]
 script = ExtResource( 3 )

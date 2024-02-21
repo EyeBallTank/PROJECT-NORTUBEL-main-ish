@@ -9,7 +9,6 @@ extents = Vector2( 34.5, 37 )
 z_index = 17
 collision_layer = 64
 collision_mask = 4
-mass = 1.44388
 gravity_scale = 9.56
 
 [node name="Sprite" type="Sprite" parent="."]

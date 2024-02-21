@@ -19,12 +19,31 @@ var state = NORMAL
 func _ready():
 	animation.play("RESET")
 
+func _physics_process(delta):
+
+	match state:
+		NORMAL:
+			pass
+		LEFTATTACH:
+			pass
+		RIGHTATTACH:
+			pass
+		FALLFROMLEFT:
+			pass
+		FALLFROMRIGHT:
+			pass
 
 
 func _on_RopeLeft_area_entered(area):
 	if area.name == "PlayerMelee":
-		pass
+		if state == NORMAL:
+			pass
+		elif state == LEFTATTACH:
+			animation.play("AndSoWasLeft")
+			state = FALLFROMLEFT
 
 func _on_RopeRight_area_entered(area):
 	if area.name == "PlayerMelee":
-		pass
+		if state == NORMAL:
+			animation.play("TheRightWasCut")
+			state = LEFTATTACH
