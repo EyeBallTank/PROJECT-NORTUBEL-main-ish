@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/RedButtonGate.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/RedButton.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_hazards/herrko/ArrowTrapButton.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_hazards/herrko/ArrowSpawner.tscn" type="PackedScene" id=12]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -71,9 +73,15 @@ customtext = "HERRKO_LORE_ANCESTOR_T"
 spritename = "herrko lorebook"
 
 [node name="RedButton" parent="." instance=ExtResource( 10 )]
-position = Vector2( 592, 1608 )
+position = Vector2( -18, 998 )
 redbuttonskin = "res://assets/sprites/level_object_sprites/herrko/RedButton herrko.tres"
 
 [node name="RedButtonGate" parent="." instance=ExtResource( 9 )]
-position = Vector2( 821, 1527 )
+position = Vector2( -137, 883 )
 spritename = "herrko"
+
+[node name="ArrowSpawner" parent="." instance=ExtResource( 12 )]
+position = Vector2( 509, 1576 )
+
+[node name="ArrowTrapButton" parent="." instance=ExtResource( 11 )]
+position = Vector2( 55, 1644 )
