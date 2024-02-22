@@ -18,6 +18,8 @@ var canmove = true
 const Elec = preload("res://src/enemies/lahiurn/LahiurnNightRiderElec.tscn")
 
 const StarProjectile = preload("res://src/enemies/lahiurn/LahiurnMorningStar.tscn")
+const StarProjectileLeft = preload("res://src/enemies/lahiurn/LahiurnMorningStarLEFT.tscn")
+
 
 
 enum {
@@ -69,10 +71,11 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 
 		DEAD:
-#			animation.play("Dying.")
-			sprite.play("dead")
+			animation.play("Dying")
+#			sprite.play("dead")
 
-
+func die():
+	queue_free()
 
 func see_to_elec():
 	if not eyeselec.is_colliding(): return false
@@ -96,7 +99,19 @@ func attack():
 	timer.start(0.5)
 
 func attack_star():
-	var star_hurt = StarProjectile.instance()
-	get_tree().get_root().add_child(star_hurt)
-	star_hurt.global_position = starspawn.global_position
+
+	if direction == Vector2.RIGHT:
+		var star_hurt = StarProjectile.instance()
+		get_tree().get_root().add_child(star_hurt)
+		star_hurt.global_position = starspawn.global_position
+	elif direction == Vector2.LEFT:
+		var star_hurt_left = StarProjectileLeft.instance()
+		get_tree().get_root().add_child(star_hurt_left)
+		star_hurt_left.global_position = starspawn.global_position
+
 	timer.start(0.5)
+
+
+func _on_EnemyHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD
