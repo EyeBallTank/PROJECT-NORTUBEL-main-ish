@@ -7,6 +7,7 @@ var velocity = Vector2.ZERO
 
 onready var sprite: = $AnimatedSprite
 onready var eyeselec = $EyesElec
+onready var eyesstar = $EyesStar
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var elecspawn = $ElecSpawn

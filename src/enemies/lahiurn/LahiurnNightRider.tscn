@@ -159,6 +159,18 @@ tracks/5/keys = {
 "method": "return_to_move"
 } ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("EyesStar:enabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [sub_resource type="Animation" id=38]
 length = 0.001
@@ -222,6 +234,18 @@ tracks/4/keys = {
 "update": 0,
 "values": [ "ElecFrameOne" ]
 }
+tracks/5/type = "value"
+tracks/5/path = NodePath("EyesStar:enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
 
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 54, 158.5 )
@@ -266,6 +290,12 @@ position = Vector2( 130, -62 )
 
 [node name="EyesElec" type="RayCast2D" parent="."]
 position = Vector2( 61, -22 )
+enabled = true
+cast_to = Vector2( 215, 0 )
+collision_mask = 3
+
+[node name="EyesStar" type="RayCast2D" parent="."]
+position = Vector2( 280, -22 )
 enabled = true
 cast_to = Vector2( 215, 0 )
 collision_mask = 3
