@@ -187,6 +187,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Nkzar (Gave me tips on fixing collision/animation related stuff)
 * BrastenXBL (Helping me fix a Timer node situation with the black chicken enemy)
 * According-Code-4772 (Helping me with a RigidBody related issue for the grenade dispenser bot)
+* soxxoxsmox (Helping me with the Scalper enemy to fix its physics and AI)
 * NancokALT (For trying to help me with the Save/Load situation even if we got nowhere)
 * SimonKazehaya (Helped me fix a life subtraction issue)
 * Armanlex (Assumed that levels were tilted and turns out they were)

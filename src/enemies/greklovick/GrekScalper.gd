@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var gravity: = 300
+export var gravity: = 3700
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
@@ -43,7 +43,7 @@ func _physics_process(delta):
 #	velocity = direction * WALK_MAX_SPEED
 #	velocity.y += gravity * delta
 #	move_and_slide(velocity, Vector2.UP)
-	gravity = 33600
+#	gravity = 33600
 
 	match state:
 		MOVING:
