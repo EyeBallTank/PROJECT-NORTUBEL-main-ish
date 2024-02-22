@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var gravity: = 33600
+export var gravity: = 300
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
@@ -8,7 +8,7 @@ var JUMP_SPEED = 1450
 var WALK_MAX_SPEED = 70
 
 export var passive_walk_speed = 70
-export var chase_walk_speed = 140
+export var chase_walk_speed = 300
 export var eat_or_dead_speed = 0
 var walk_speed = passive_walk_speed
 
@@ -140,8 +140,8 @@ func do_a_jump():
 #	if icanjump == true:
 #	if jumptimer.time_left == 0:
 	velocity.y = -JUMP_SPEED
-	if velocity.y < 0:
-		velocity.y += JUMP_SPEED
+#	if velocity.y < 0:
+#		velocity.y += JUMP_SPEED
 #		icanjump = false
 #		state = CHASE
 #			jumptimer.start(2)
