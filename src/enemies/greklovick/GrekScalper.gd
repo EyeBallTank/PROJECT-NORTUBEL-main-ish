@@ -7,6 +7,10 @@ var velocity = Vector2.ZERO
 var JUMP_SPEED = 1450
 var WALK_MAX_SPEED = 70
 
+export var passive_walk_speed = 70
+export var chase_walk_speed = 140
+export var eat_or_dead_speed = 0
+var walk_speed = passive_walk_speed
 
 onready var eyes = $Eyes
 onready var animationplayer = $AnimationPlayer
@@ -32,13 +36,19 @@ var state = MOVING
 
 func _physics_process(delta):
 
-	velocity = direction * 140
+
+
+	velocity.x = direction.x * walk_speed
 	velocity.y += gravity * delta
 	move_and_slide(velocity, Vector2.UP)
+#	velocity = direction * WALK_MAX_SPEED
+#	velocity.y += gravity * delta
+#	move_and_slide(velocity, Vector2.UP)
 	gravity = 33600
 
 	match state:
 		MOVING:
+			walk_speed = passive_walk_speed
 			sprites.play("moving")
 			if see_to_attack() and is_on_floor():
 				state = CHASE
@@ -53,6 +63,7 @@ func _physics_process(delta):
 #			move_and_slide(velocity, Vector2.UP)
 #			gravity = 33600
 		CHASE:
+			walk_speed = chase_walk_speed
 
 
 #			if jumptimer.time_left == 0:
@@ -127,10 +138,12 @@ func _physics_process(delta):
 
 
 		EATING:
+			walk_speed = eat_or_dead_speed
 			sprites.play("eating")
 			global_position = Player.global_position
 
 		DEAD:
+			walk_speed = eat_or_dead_speed
 			animationplayer.play("Dying") 
 			sprites.play("dead")
 			velocity.x = 0
