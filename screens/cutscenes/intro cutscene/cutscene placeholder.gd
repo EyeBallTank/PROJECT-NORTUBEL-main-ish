@@ -187,3 +187,57 @@ func cutscene_over():
 #Monica: And she isn't always alone while doing it. She has a friend named Puff but she calls him Bonky. Unlike Bonka, Bonky is usually nice and calm.
 #Pete: Doesn't seem so nice if he works for a girl that ruins everyone's day.
 #Melvin: Maybe Bonka doesn't have any friends except for that guy.
+#Katrin: Perhaps she just needs someone to talk. I wonder if Bonky even thought of that.
+#Oscar: We saw him before, didn't we Kat? I think he was in that portal before Bonka ran away.
+#Katrin: You're right, but we didn't see much of him. Was he a pink rabbit?
+#Monica: He is a talking rabbit and much like Bonka, he said he once went to another dimension.
+#Monica: He said he went to a planet called "Earth" and a country in it called "Australia".
+#Melvin: We are from Earth but I've never heard of Australia.
+
+#Carrie: What is that house? Does Bonka live here?
+#Katrin: Aww look at these flowers
+#Flowers spray Katrin with water
+#Katrin: Aaahh!
+#Pete: Well, she is known of pulling off pranks.
+#Melvin: That's pretty basic as far as pranks go.
+#Oscar: Look at that TV
+#Animated TV, stylish presentation and comic style panels, maybe Bonka is dancing
+#Bonka: Good morning, ladies and gentleman. It's everyone's favorite prankster and improviser, Bonka Millette!
+#Bonka: Today's special guests, if they managed to show up, are a group of 6, all from a countr called "Nortubel"!
+#Bonka: Where is Nortubel, you may ask? I don't know and I don't even care.
+#Bonka: But after a rather unpleasent time I've had with them, I feel I owe them an apology.
+#Bonka: So if you're watching this and you happen to be that group... please! Come inside! I've got plenty of surprises for you!
+#Bonka: Bye bye *the tv shuts down*
+#Carrie: Alright, let's give her the benefit of the doubt and she what's going on!
+
+#Carrie: Help, somebody!
+#Bonka: WHY IS THIS HAPPENING?
+#Odin shows up
+#Odin: Now, for a special trick...
+#Something happens
+#Oscar: We're safe!
+#Odin: Bonka, what happened? I thought you wouldn't reach this low!
+#Bonka: Odin, I can explained. This wasn't part of the plan? BONKY, WHERE ARE YOU?
+#Bonky: Uh, what's going on? I was taking a nap.
+#Bonka: You idiot! Don't tell me you slept when I told you to take care of things while I was gone.
+#Bonky: ... uuhh... oi, ya know how easy it is for me to get sleepy and-
+#Linda: Puff? You're still working for her? Don't you have anything better to do?
+#Bonky: Sister, I uh... well, I had that new carrot cake recipy I wanted to try.
+#Bonka: Listen, all I wanted to do was humiliate you. I didn't meant to actually hurt you-
+#Carrie: THAT'S IT! WE'RE DONE HERE! EVERYONE, LET'S GO!
+#Bonky: WAIT, I almost forgot! I did see someone show up in the construction.
+#Bonky: I thought it was Bonka but she looked different: She was kinda bald and looked a bit scary.
+#Bonky: And I saw 2 kids with her, they looked like Monica and illou but Monica had a pointy tooth and illou was dressed like a scientist.
+#Melvin: You mean, like versions of Bonka and those 2 kids from a different universe? Because we also stumbled upon our own doubles.
+#Bonka: Maybe that's what happened. Maybe someone that looked like me infiltrated my plan and did this.
+#Carrie: I don't care, I wanna leave this place.
+#The 6 leave
+#Bonka: You gotta believe me... 
+#Bonky: Don't worry Bonka, I believe you.
+#Odin: Honestly, I believe you too. After all, I believe that beneath a trouble maker clown like you, there's someone that just needs help.
+#Odin: But duty is calling me, so I gotta go.
+#Odin leave
+#Bonka: Grrr Odin, you cheesy, pretentious, annoying...
+#Bonka: Big, strong, charming... GAAAHH! ewww
+#3 characters were watching all along, behind the bushes
+#Bonkette:
