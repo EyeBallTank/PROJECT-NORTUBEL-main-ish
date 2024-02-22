@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Grek Scalper sprites.png" type="Texture" id=1]
 [ext_resource path="res://src/enemies/greklovick/GrekScalper.gd" type="Script" id=2]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=3]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 1 )
@@ -133,6 +134,18 @@ tracks/5/keys = {
 "method": "die"
 } ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("EnemyHitbox/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=23]
 length = 0.001
@@ -208,6 +221,18 @@ tracks/5/keys = {
 "update": 0,
 "values": [ false ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("EnemyHitbox/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=25]
 resource_name = "jumpy"
@@ -231,6 +256,9 @@ extents = Vector2( 48, 40.5 )
 
 [sub_resource type="CircleShape2D" id=22]
 radius = 197.525
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 21, 18.5 )
 
 [node name="GrekScalper" type="KinematicBody2D"]
 z_index = 15
@@ -282,6 +310,12 @@ collision_layer = 32
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AltHurtBox"]
 position = Vector2( 1, -43 )
 shape = SubResource( 22 )
+
+[node name="EnemyHitbox" parent="." instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
+position = Vector2( 0, -44 )
+shape = SubResource( 26 )
 
 [connection signal="area_entered" from="HurtBoxScalper" to="." method="_on_HurtBoxScalper_area_entered"]
 [connection signal="body_entered" from="HeadEater" to="." method="_on_HeadEater_body_entered"]
