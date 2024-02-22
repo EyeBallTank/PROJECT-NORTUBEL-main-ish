@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://src/behind_the_scenes/stellaspawn.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/play_actors/StellaComp.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/enemies/lahiurn/LahiurnNightRiderElec.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/enemies/lahiurn/LahiurnNightRider.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/enemies/greklovick/GrekScalper.tscn" type="PackedScene" id=12]
@@ -31,23 +31,23 @@ tile_data = PoolIntArray( -2359229, 2, 0, -2359228, 2, 0, -2359227, 2, 0, -23592
 position = Vector2( 621, -207 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4975, -533 )
+position = Vector2( 2829, -269 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4246, -471 )
+position = Vector2( 2100, -207 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3865, -325 )
+position = Vector2( 3038, -300 )
 
 [node name="Companion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3880, -386 )
+position = Vector2( 3053, -361 )
 companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="stellaspawn" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4216, -326 )
+position = Vector2( 3389, -301 )
 
 [node name="StellaComp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4004, -278 )
+position = Vector2( 3177, -253 )
 
 [node name="Water" parent="." instance=ExtResource( 18 )]
 position = Vector2( 619, -566 )
@@ -58,13 +58,10 @@ collision_newsize = Vector2( 40, 160 )
 position = Vector2( 1919, -330 )
 
 [node name="GrekAmmoDispenser" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1719, -509 )
+position = Vector2( 4760, -677 )
 
 [node name="GrekScalper" parent="." instance=ExtResource( 12 )]
 position = Vector2( 4166, -1162 )
-
-[node name="LahiurnNightRiderElec" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3909, -797 )
 
 [node name="Teleportal" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5128, -573 )
@@ -73,3 +70,6 @@ id = 1
 [node name="Teleportal2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5430, -1048 )
 id = 1
+
+[node name="LahiurnNightRider" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1502, -459 )
