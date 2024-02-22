@@ -178,6 +178,11 @@ tracks/6/keys = {
 [node name="LahiurnMorningStar" type="Node2D"]
 script = ExtResource( 4 )
 
+[node name="LahiurnMorningstarChains" type="Sprite" parent="."]
+position = Vector2( 279.474, 0 )
+scale = Vector2( 1e-05, 1 )
+texture = ExtResource( 3 )
+
 [node name="MorningStar" type="KinematicBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MorningStar"]
@@ -192,11 +197,6 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MorningStar/EnemyHitbox"]
 position = Vector2( -0.5, 0 )
 shape = SubResource( 2 )
-
-[node name="LahiurnMorningstarChains" type="Sprite" parent="."]
-position = Vector2( 279.474, 0 )
-scale = Vector2( 1e-05, 1 )
-texture = ExtResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 3 )
