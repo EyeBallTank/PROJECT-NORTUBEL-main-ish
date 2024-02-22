@@ -26,7 +26,6 @@ func _ready():
 
 enum {
 	MOVING,
-	JUMP,
 	EATING,
 	CHASE,
 	DEAD
@@ -87,7 +86,6 @@ func _physics_process(delta):
 				direction.x = -1
 				sprites.flip_h = false
 #				if Player.global_position.y < global_position.y - 1:
-#					state = JUMP
 #				elif Player.global_position.y > global_position.y + 1:
 #					pass
 			elif Player.global_position.x > global_position.x + 10:
@@ -99,11 +97,9 @@ func _physics_process(delta):
 #				elif Player.global_position.y > global_position.y + 1:
 #					pass
 
-#			else:
-#				state = JUMP
+
 
 #			if Player.global_position.y < global_position.y - 10:
-#				state = JUMP
 #				do_a_jump()
 					
 				
@@ -114,27 +110,11 @@ func _physics_process(delta):
 
 #
 #			if Player.global_position.y < global_position.y - 1:
-#				state = JUMP
 #			elif Player.global_position.y > global_position.y + 1:
 #				pass
 #			else:
 #				print("nom")
 
-
-		JUMP:
-			do_a_jump()
-			velocity.x = 0
-			direction.x = 0
-			velocity.y += gravity * delta
-			move_and_slide(velocity, Vector2.UP)
-#			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
-			gravity = 3000
-
-			sprites.play("jump")
-
-			var found_wall = is_on_wall()
-			if found_wall:
-				do_a_jump()
 
 
 		EATING:
