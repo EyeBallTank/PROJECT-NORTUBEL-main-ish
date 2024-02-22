@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/enemies/greklovick/GrekAmmoDispenser.tscn" type="PackedScene" id=22]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -123,3 +124,6 @@ position = Vector2( -525, 1497 )
 new_scene = "res://src/levels/greklovick/GrekLevel2.tscn"
 spritename = "greklovick greendoor"
 customtext = "y13g0r"
+
+[node name="GrekAmmoDispenser" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2155, -233 )
