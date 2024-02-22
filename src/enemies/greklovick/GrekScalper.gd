@@ -32,6 +32,11 @@ var state = MOVING
 
 func _physics_process(delta):
 
+	velocity = direction * 140
+	velocity.y += gravity * delta
+	move_and_slide(velocity, Vector2.UP)
+	gravity = 33600
+
 	match state:
 		MOVING:
 			sprites.play("moving")
@@ -43,10 +48,10 @@ func _physics_process(delta):
 			if found_wall:
 				direction *= -1
 				scale.x = -scale.x
-			velocity = direction * 140
-			velocity.y += gravity * delta
-			move_and_slide(velocity, Vector2.UP)
-			gravity = 33600
+#			velocity = direction * 140
+#			velocity.y += gravity * delta
+#			move_and_slide(velocity, Vector2.UP)
+#			gravity = 33600
 		CHASE:
 
 
@@ -65,7 +70,7 @@ func _physics_process(delta):
 #				if velocity.y < 0:
 #					velocity.y += 500
 
-			gravity = 33600
+#			gravity = 33600
 			if Player.global_position.x < global_position.x - 10:
 				velocity.x = -WALK_MAX_SPEED
 				direction.x = -1
@@ -91,9 +96,9 @@ func _physics_process(delta):
 #				do_a_jump()
 					
 				
-			velocity = direction * 560
-			velocity.y += gravity * delta
-			move_and_slide(velocity, Vector2.UP)
+#			velocity = direction * 560
+#			velocity.y += gravity * delta
+#			move_and_slide(velocity, Vector2.UP)
 #			gravity = 33600
 
 #
@@ -143,7 +148,7 @@ func do_a_jump():
 #	if jumptimer.time_left == 0:
 	velocity.y = -JUMP_SPEED
 	if velocity.y < 0:
-		velocity.y += 500
+		velocity.y += JUMP_SPEED
 #		icanjump = false
 #		state = CHASE
 #			jumptimer.start(2)
