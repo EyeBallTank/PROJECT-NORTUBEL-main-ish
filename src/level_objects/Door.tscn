@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/door test 3.png" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Door.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/door test massagcoav.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/door test brinkaedea.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/door test greklovick.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/door test lahiurn.png" type="Texture" id=11]
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 9 )
@@ -29,6 +30,10 @@ region = Rect2( 0, 0, 300, 523 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 300, 523 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 300, 523 )
 
 [sub_resource type="AtlasTexture" id=7]
@@ -61,6 +66,11 @@ animations = [ {
 "name": "krimbstone greendoor",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "lahiurn greendoor",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 7 ) ],
 "loop": false,
 "name": "massagcoav greendoor",
@@ -83,7 +93,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -212 )
 frames = SubResource( 3 )
-animation = "greklovick greendoor"
+animation = "lahiurn greendoor"
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]
