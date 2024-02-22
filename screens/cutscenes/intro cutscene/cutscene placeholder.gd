@@ -143,3 +143,47 @@ func cutscene_over():
 #Katrin: At some point, my uncle started to threatnen my parents and it was my dad so told me to take Pete and run to a safer place.
 #Katrin: It makes sense why Stella liked Booker so much. I guess he was a better father figure and he was once a father too
 #Shows image of Booker, with no black/white colors because no character is aware of that except maybe Leon/Otto, so they address that part of Krimb-Stone as an anomaly
+
+
+#Angela: Miss Zarina? Mister Shihiro? What are you-
+#Katrin: Not now, Angela. They're busy doing something. They managed to contact Carrie's grandma.
+#A portal shows up and moves to pick up the 2
+#Zarina: Miss Margareen, it seems the portal worked!
+#Shihiro: And we're in your house now.
+#Pamela: It seems the portal moved on its own to pick up you 2. Almost like it someone picking up fish with a net.
+#Oscar: Grandma, we're here!
+#Pamela: Hold on, this portal can only take one person at a time. Shihiro and Zarina could only go at the same time because they were summoning the portal.
+#Katrin: Stella, you're closer so you should go first.
+#Stella: Alright, here I go!
+#Pamela: Good. Carrie, it's your t-
+#Something happens, the portal shuts down while the area shakes
+#Stella: What happened?
+#Pamela: Something caused the portal to close. Perhaps vibrations like it was an earthquake.
+#Melvin: The ground is shaking, what's going on?
+#The sky spider thing boss shows up
+
+#When the boss is defeated
+#Katrin: We did it. We managed to escape. Carrie?
+#Carrie: Once more, my grandma couldn't save us... and worse, Shihiro and Zarina aren't here to protect us anymore.
+#Melvin: C'mon, Carrie. It's pretty clear your grandma's getting close. And besides, we still have this box.
+#Melvin tries the box and opens an portal
+#Pete: Hey, look at all those toys. Didn't we see this place before?
+#They enter Brinkaedea
+#Katrin: I wonder if we'll meet up with Bonka again.
+#Monica: Hello, you people are not from here, are you?
+#Oscar: Why are you flying?
+#Monica: Why aren't you? My name's Monica and flying isn't even my best power.
+#Monica: I can make fruits and vegetables of any kind show up out of nowhere. See?
+#Angela: How can you do that?
+#Monica: When I was a little baby, I felt into a cauldron my mom was using to make soup.
+#Shows image of a goofy looking baby inside the cauldron, maybe drawn poorly but acceptable
+#Monica: Then I ate all the soup and suddenly got these powers.
+#Monica: My friend illou sort of had something similar but instead, he ate crayons and got art powers.
+#Also show a goofy drawing of baby illou eating crayons
+#illou: "..." while looking disappointed
+#Monica: Don't mind illou, he doesn't talk much but he's a great artist.
+#Carrie: Do any of you know of a girl named Bonka?
+#Monica: We do and her reputation isn't the best. She's known for pulling off prinks and making fun of people.
+#Monica: And she isn't always alone while doing it. She has a friend named Puff but she calls him Bonky. Unlike Bonka, Bonky is usually nice and calm.
+#Pete: Doesn't seem so nice if he works for a girl that ruins everyone's day.
+#Melvin: Maybe Bonka doesn't have any friends except for that guy.
