@@ -61,6 +61,9 @@ func _physics_process(delta):
 
 			if is_on_wall():
 				do_a_jump()
+#				velocity.y = -JUMP_SPEED
+#				if velocity.y < 0:
+#					velocity.y += 500
 
 			gravity = 33600
 			if Player.global_position.x < global_position.x - 10:
@@ -144,6 +147,8 @@ func do_a_jump():
 #		icanjump = false
 #		state = CHASE
 #			jumptimer.start(2)
+
+
 
 func see_to_attack():
 	if not eyes.is_colliding(): return false
