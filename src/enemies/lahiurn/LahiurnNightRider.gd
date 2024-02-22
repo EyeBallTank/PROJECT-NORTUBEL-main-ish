@@ -17,6 +17,9 @@ var canmove = true
 
 const Elec = preload("res://src/enemies/lahiurn/LahiurnNightRiderElec.tscn")
 
+const StarProjectile = preload("res://src/enemies/lahiurn/LahiurnMorningStar.tscn")
+
+
 enum {
 	MOVING,
 	STAR,
@@ -35,6 +38,8 @@ func _physics_process(delta):
 		MOVING:
 			if see_to_elec():
 				state = ELEC
+			if see_to_star():
+				state = STAR
 			sprite.play("moving")
 			var found_wall = is_on_wall()
 			if found_wall:
@@ -46,7 +51,13 @@ func _physics_process(delta):
 			gravity = 37600
 
 		STAR:
-			pass
+			velocity.x = 0
+			animation.play("MorningStarAttack")
+			timer.start(2)
+			if timer.time_left == 0:
+				state = MOVING
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
 
 		ELEC:
 			velocity.x = 0
@@ -69,6 +80,12 @@ func see_to_elec():
 	if not collider.is_in_group("protagonists"): return false
 	return true
 
+func see_to_star():
+	if not eyesstar.is_colliding(): return false
+	var collider = eyesstar.get_collider()
+	if not collider.is_in_group("protagonists"): return false
+	return true
+
 func return_to_move():
 	state = MOVING
 
@@ -76,4 +93,10 @@ func attack():
 	var elec_hurt = Elec.instance()
 	get_tree().get_root().add_child(elec_hurt)
 	elec_hurt.global_position = elecspawn.global_position
+	timer.start(0.5)
+
+func attack_star():
+	var star_hurt = StarProjectile.instance()
+	get_tree().get_root().add_child(star_hurt)
+	star_hurt.global_position = starspawn.global_position
 	timer.start(0.5)

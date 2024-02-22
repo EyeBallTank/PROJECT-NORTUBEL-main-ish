@@ -3,7 +3,7 @@ extends Node2D
 onready var animation = $AnimationPlayer
 
 func _ready():
-#	animation.play("RESET")
+	animation.play("starattack")
 	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 
 func die():
