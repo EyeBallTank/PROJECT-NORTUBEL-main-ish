@@ -85,4 +85,7 @@ position = Vector2( 1527, 1627 )
 [node name="BrinkPinballFlipper" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1579, 2470 )
 
+[node name="CollisionShape2D" parent="BrinkPinballFlipper/makejump" index="0"]
+position = Vector2( 99.5, -78.5 )
+
 [editable path="BrinkPinballFlipper"]

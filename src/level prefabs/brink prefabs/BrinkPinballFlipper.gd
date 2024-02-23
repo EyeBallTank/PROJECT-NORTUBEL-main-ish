@@ -8,7 +8,6 @@ var comptouch = false
 func _ready():
 	animation.play("RESET")
 
-
 func _physics_process(delta):
 	if playertouch == true or comptouch == true:
 		can_be_used = true
@@ -42,5 +41,5 @@ func _on_makejump_body_entered(body):
 		body.move_and_slide(body.velocity)
 
 	if body.name == "Companion":
-		body.vel.y = -1500
+		body.vel.y = -2000
 		body.move_and_slide(body.vel)

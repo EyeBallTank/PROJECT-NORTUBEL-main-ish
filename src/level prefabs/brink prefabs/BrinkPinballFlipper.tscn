@@ -4,7 +4,7 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkPinballFlipper.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 97.5, 213.5 )
+extents = Vector2( 63.5, 213.5 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130, 6 )
@@ -101,6 +101,8 @@ tracks/0/keys = {
 script = ExtResource( 2 )
 
 [node name="makejump" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="makejump"]
 position = Vector2( 103.5, -78.5 )
