@@ -99,6 +99,10 @@ position = Vector2( 1507, 348 )
 position = Vector2( -267, 1441 )
 spritename = "greklovick lorebook"
 
+[node name="LoreBook2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1146, 1465 )
+customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
+
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 17 )]
 position = Vector2( 598, 1335 )
 
