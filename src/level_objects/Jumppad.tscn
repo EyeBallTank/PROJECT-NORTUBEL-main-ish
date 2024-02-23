@@ -98,7 +98,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.574286, 0.574286 )
 frames = SubResource( 3 )
-animation = "elegant jumppad regular"
+animation = "nortubel jumppad"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, -29.5 )

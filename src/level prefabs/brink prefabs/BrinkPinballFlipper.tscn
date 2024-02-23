@@ -1,0 +1,140 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink pinball flipper.png" type="Texture" id=1]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkPinballFlipper.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 97.5, 213.5 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 130, 6 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 133, 69 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "Activate"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 47.3643, -51.2463 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 47.3643 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("makejump/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "stays_on"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -51.2463 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("makejump/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "test"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[node name="BrinkPinballFlipper" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="makejump" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="makejump"]
+position = Vector2( 103.5, -78.5 )
+shape = SubResource( 7 )
+disabled = true
+
+[node name="Flipper" type="KinematicBody2D" parent="."]
+rotation = 0.826663
+collision_layer = 4
+collision_mask = 3
+
+[node name="BrinkPinballFlipper" type="Sprite" parent="Flipper"]
+position = Vector2( 92, 3 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper"]
+position = Vector2( 91, -30 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="Area2D" type="Area2D" parent="Flipper"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Area2D"]
+position = Vector2( 99, -84 )
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Activate = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+anims/stays_on = SubResource( 6 )
+anims/test = SubResource( 5 )
+
+[connection signal="body_entered" from="makejump" to="." method="_on_makejump_body_entered"]
+[connection signal="body_entered" from="Flipper/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Flipper/Area2D" to="." method="_on_Area2D_body_exited"]
