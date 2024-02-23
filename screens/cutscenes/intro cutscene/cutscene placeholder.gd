@@ -240,4 +240,29 @@ func cutscene_over():
 #Bonka: Grrr Odin, you cheesy, pretentious, annoying...
 #Bonka: Big, strong, charming... GAAAHH! ewww
 #3 characters were watching all along, behind the bushes
-#Bonkette:
+#Bonkette: Well, there goes our plan. Nobody died and we were noticed.
+#Monika: Well at least we were only seen by that stupid bunny.
+#Dr Ill-Ow: But even the magician superhero believes it and if he believes it, more people will be aware.
+#Dr Ill-ow: We better do something about it.
+#Bonkette: I'm tired of being in the shadows. Maybe I should face Bonka face to face and turn her world upside down.
+#Monika: Yeah. More fun that way.
+#Bonkoid: Um, what are you guys talking about? I didn't see anything.
+#Back at Nortubel
+#Angela: Look at that old lady, is she lost?
+#Katrin: Excuse me, but who are you, miss?
+#Claudia: My name is Claudia Santamara. I deliver presents to those who are well behaved.
+#Claudia: I've been travelling through different worlds ever since I've left Brinkaedea, which unfortunately was destroyed.
+#Carrie: But we've left Brinkaedea a short while ago. And we've had to put up with an annoying clown named Bonka.
+#Cladia: I don't know who "Bonka" is, but I've met a girl named Bonkette and she is so much trouble. Perhaps, there is another Brinkaedea I've never heard of.
+#Carrie: Maybe Bonka is right...
+#don't know what else to add
+
+#Claudia: You all behaved nicely, I believe I owe you some presents.
+#Melvin: Thank you mam, but the only thing we need is a way back home.
+#Melvin shows the box
+#Claudia: I see. In fact, I am correct that I owe you all something.
+#She gives them a white piece.
+#Claudia, now I must go. Perhaps we may meet again.
+#She leaves
+#Melvin: This piece fits one of these wholes.
+#And then a portal to Lahiurn shows up
