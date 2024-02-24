@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/enemies/greklovick/GrekAmmoDispenser.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=23]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -30,7 +31,6 @@ tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048582, 1, 0, 1114118, 1, 0, 1179654, 1, 0, 1245190, 1, 0, 1310726, 1, 0, 1376262, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 9 )
@@ -45,7 +45,6 @@ tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048583, 1, 0, 1114119, 1, 0, 1179655, 1, 0, 1245191, 1, 0, 1310727, 1, 0, 1376263, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -2, 1322 )
@@ -131,3 +130,6 @@ customtext = "y13g0r"
 
 [node name="GrekAmmoDispenser" parent="." instance=ExtResource( 22 )]
 position = Vector2( 2155, -233 )
+
+[node name="ArtBook" parent="." instance=ExtResource( 23 )]
+position = Vector2( 435, 1473 )
