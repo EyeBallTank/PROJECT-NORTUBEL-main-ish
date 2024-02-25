@@ -1,6 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/sprites/enemy_sprites/brinkaedea/brink jack in box sprites.png" type="Texture" id=1]
+[ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/enemy_sprites/brinkaedea/brink jack in box glove sprite.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/enemy_sprites/brinkaedea/brink jack in box glove spring.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -40,8 +43,19 @@ animations = [ {
 extents = Vector2( 70, 68.5 )
 
 [node name="BrinkJackInBox" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+collision_layer = 32
+collision_mask = 0
+
+[node name="BrinkJackInBoxGloveSpring" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 0, 152 )
+texture = ExtResource( 4 )
+
+[node name="BrinkJackInBoxGloveSprite" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 9, 297 )
+texture = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 5 )
@@ -51,5 +65,11 @@ playing = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 0, -31.5 )
 shape = SubResource( 6 )
+
+[node name="RayCast2D" type="RayCast2D" parent="KinematicBody2D"]
+position = Vector2( 0, 38 )
+enabled = true
+cast_to = Vector2( 0, 322 )
+collision_mask = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
