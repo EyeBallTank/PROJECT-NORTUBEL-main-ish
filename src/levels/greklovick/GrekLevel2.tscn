@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -59,3 +60,7 @@ position = Vector2( 736, 1557 )
 new_scene = "res://src/levels/greklovick/GrekLevel3.tscn"
 spritename = "greklovick greendoor"
 customtext = "clr1ty"
+
+[node name="ArtBook" parent="." instance=ExtResource( 10 )]
+position = Vector2( 224, 1554 )
+boardname = "grek art clarity reference"
