@@ -38,6 +38,7 @@ func _physics_process(delta):
 				direction *= -1
 
 		PUNCH:
+			velocity = 0
 			animation.play("punch")
 			timer.start(2)
 			if timer.time_left == 0:
@@ -45,6 +46,7 @@ func _physics_process(delta):
 
 
 		DEAD:
+			velocity = 0
 			animation.play("dying")
 
 func return_to_move():
