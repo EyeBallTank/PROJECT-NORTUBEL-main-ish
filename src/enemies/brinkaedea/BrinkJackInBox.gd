@@ -1,10 +1,9 @@
-extends Node2D
+extends KinematicBody2D
 
 onready var animation = $AnimationPlayer
-onready var mainsprite = $MainBox/AnimatedSprite
-onready var raycast = $MainBox/RayCast2D
+onready var mainsprite = $AnimatedSprite
+onready var raycast = $RayCast2D
 onready var timer = $Timer
-onready var mainbox = $MainBox
 
 
 var direction = Vector2.RIGHT
@@ -29,8 +28,14 @@ func _physics_process(delta):
 	match state:
 		FLOATING:
 #			animation.play("floating")
+			mainsprite.play("moving")
 			if see_to_punch():
 				state = PUNCH
+			velocity = direction * 290
+			move_and_slide(velocity, Vector2.UP)
+			var found_wall = is_on_wall()
+			if found_wall:
+				direction *= -1
 
 		PUNCH:
 			animation.play("punch")
