@@ -42,7 +42,7 @@
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour cybernetics v2.png" type="Texture" id=41]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art clarity reference v2.png" type="Texture" id=42]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey v2.png" type="Texture" id=43]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey v3.png" type="Texture" id=43]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour reference v2.png" type="Texture" id=44]
 
 [sub_resource type="AtlasTexture" id=42]
@@ -84,7 +84,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 41 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=52]
+[sub_resource type="AtlasTexture" id=54]
 atlas = ExtResource( 43 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -223,7 +223,7 @@ animations = [ {
 "name": "grek art clarity reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 52 ) ],
+"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 54 ) ],
 "loop": true,
 "name": "grek art yiegour reference",
 "speed": 1.0
