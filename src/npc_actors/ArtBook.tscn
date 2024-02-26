@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -43,6 +43,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour reference.png" type="Texture" id=41]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art clarity reference.png" type="Texture" id=42]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour cybernetics.png" type="Texture" id=43]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey.png" type="Texture" id=44]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -81,6 +82,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=50]
 atlas = ExtResource( 43 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 44 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=37]
@@ -218,7 +223,7 @@ animations = [ {
 "name": "grek art clarity reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 48 ), SubResource( 50 ) ],
+"frames": [ SubResource( 48 ), SubResource( 50 ), SubResource( 51 ) ],
 "loop": true,
 "name": "grek art yiegour reference",
 "speed": 1.0
