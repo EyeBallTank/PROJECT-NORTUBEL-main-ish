@@ -41,7 +41,7 @@
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art night rider.png" type="Texture" id=39]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour cybernetics v2.png" type="Texture" id=41]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art clarity reference.png" type="Texture" id=42]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art clarity reference v2.png" type="Texture" id=42]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey v2.png" type="Texture" id=43]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour reference v2.png" type="Texture" id=44]
 
@@ -72,7 +72,7 @@ extents = Vector2( 126.5, 99.5 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 127, 72 )
 
-[sub_resource type="AtlasTexture" id=49]
+[sub_resource type="AtlasTexture" id=53]
 atlas = ExtResource( 42 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -218,7 +218,7 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ SubResource( 49 ) ],
+"frames": [ SubResource( 53 ) ],
 "loop": false,
 "name": "grek art clarity reference",
 "speed": 0.0

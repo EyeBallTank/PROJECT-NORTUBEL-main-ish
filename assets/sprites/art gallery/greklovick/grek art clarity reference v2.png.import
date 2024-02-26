@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grek art clarity reference.png-8c1d63bb2cb63c40ce781b10982b79fa.stex"
+path="res://.import/grek art clarity reference v2.png-f3375744582738bd12cf8c3a3b62fba6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/greklovick/grek art clarity reference.png"
-dest_files=[ "res://.import/grek art clarity reference.png-8c1d63bb2cb63c40ce781b10982b79fa.stex" ]
+source_file="res://assets/sprites/art gallery/greklovick/grek art clarity reference v2.png"
+dest_files=[ "res://.import/grek art clarity reference v2.png-f3375744582738bd12cf8c3a3b62fba6.stex" ]
 
 [params]
 
