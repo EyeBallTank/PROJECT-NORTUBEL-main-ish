@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grek art yiegour electric arms honey.png-91b6d3a547a6a095de772a7fc3081d85.stex"
+path="res://.import/grek art yiegour electric arms honey v2.png-8bac715efee226a8911eed0f2d53eed2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey.png"
-dest_files=[ "res://.import/grek art yiegour electric arms honey.png-91b6d3a547a6a095de772a7fc3081d85.stex" ]
+source_file="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey v2.png"
+dest_files=[ "res://.import/grek art yiegour electric arms honey v2.png-8bac715efee226a8911eed0f2d53eed2.stex" ]
 
 [params]
 

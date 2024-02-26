@@ -40,10 +40,10 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map 2.png" type="Texture" id=38]
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art night rider.png" type="Texture" id=39]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour reference.png" type="Texture" id=41]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour cybernetics v2.png" type="Texture" id=41]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art clarity reference.png" type="Texture" id=42]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour cybernetics.png" type="Texture" id=43]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey.png" type="Texture" id=44]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour electric arms honey v2.png" type="Texture" id=43]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art yiegour reference v2.png" type="Texture" id=44]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -76,16 +76,16 @@ extents = Vector2( 127, 72 )
 atlas = ExtResource( 42 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=48]
-atlas = ExtResource( 41 )
-region = Rect2( 0, 0, 749, 449 )
-
 [sub_resource type="AtlasTexture" id=50]
-atlas = ExtResource( 43 )
+atlas = ExtResource( 44 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=51]
-atlas = ExtResource( 44 )
+atlas = ExtResource( 41 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 43 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=37]
@@ -223,7 +223,7 @@ animations = [ {
 "name": "grek art clarity reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 48 ), SubResource( 50 ), SubResource( 51 ) ],
+"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 52 ) ],
 "loop": true,
 "name": "grek art yiegour reference",
 "speed": 1.0
