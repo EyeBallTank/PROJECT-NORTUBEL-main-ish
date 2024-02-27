@@ -327,5 +327,6 @@ collision_mask = 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
+bus = "Sound"
 
 [connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]

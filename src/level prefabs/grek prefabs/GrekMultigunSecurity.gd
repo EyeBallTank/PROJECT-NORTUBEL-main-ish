@@ -4,8 +4,9 @@ var honk = false
 onready var dialogue = $CanvasLayer
 onready var elecplace = $Position2D
 onready var animation = $AnimationPlayer
+onready var audio = $AudioStreamPlayer
 
-const Electricity = preload("res://src/level prefabs/krimb prefabs/TemporaryElec.tscn")
+const Electricity = preload("res://src/level prefabs/grek prefabs/GrekMultigunElec.tscn")
 
 
 func _ready():
