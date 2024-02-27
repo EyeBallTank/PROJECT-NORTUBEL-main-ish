@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/grek multigun security.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekMultigunSecurity.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=4]
-[ext_resource path="res://assets/sounds/level prefabs/krimb prefab sounds/683637__sunfiredragon__combo-electricity.wav" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 124, 88.5 )
@@ -36,18 +35,6 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("AudioStreamPlayer:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
 "values": [ false ]
 }
 
@@ -91,18 +78,6 @@ tracks/2/keys = {
 "args": [  ],
 "method": "attack"
 } ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("AudioStreamPlayer:playing")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 1.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ true, false ]
 }
 
 [node name="GrekMultigunSecurity" type="KinematicBody2D"]
@@ -171,11 +146,6 @@ margin_right = 73.0
 margin_bottom = 22.0
 custom_fonts/font = ExtResource( 4 )
 text = "Multigun"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-volume_db = -12.267
-bus = "Sound"
 
 [connection signal="body_entered" from="TalkToArea" to="." method="_on_TalkToArea_body_entered"]
 [connection signal="body_exited" from="TalkToArea" to="." method="_on_TalkToArea_body_exited"]

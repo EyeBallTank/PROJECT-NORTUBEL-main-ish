@@ -4,7 +4,6 @@ var honk = false
 onready var dialogue = $CanvasLayer
 onready var elecplace = $Position2D
 onready var animation = $AnimationPlayer
-onready var audio = $AudioStreamPlayer
 
 const Electricity = preload("res://src/level prefabs/grek prefabs/GrekElecTest.tscn")
 
@@ -26,6 +25,8 @@ func _on_TalkToArea_body_entered(body):
 	if body.name == "Player":
 		dialogue.visible = true
 		honk = true
+#		attack()
+#		animation.play("active")
 
 func _on_TalkToArea_body_exited(body):
 	if body.name == "Player":

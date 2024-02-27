@@ -3,9 +3,8 @@ extends KinematicBody2D
 onready var positiontest = $Position2D
 onready var animationplayer = $AnimationPlayer
 const Electricity = preload("res://src/level prefabs/grek prefabs/GrekMultigunElec.tscn")
-#grek_gun_active
+
 func _ready():
-#	ball_disappear()
 	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 	Signals.connect("grek_gun_active", self, "_the_grek_gun_is_active")
 
