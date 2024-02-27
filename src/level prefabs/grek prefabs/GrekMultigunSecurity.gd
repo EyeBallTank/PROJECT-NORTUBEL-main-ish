@@ -7,6 +7,10 @@ onready var animation = $AnimationPlayer
 
 const Electricity = preload("res://src/level prefabs/grek prefabs/GrekElecTest.tscn")
 
+#HOW DO I MAKE IT SO IT ONLY TAKES ONE LIFE FROM THE PLAYER?
+#TAKING 2 LIVES WHEN THE PLAYER HAS 1 MEANS A SOFTLOCK BECAUSE THE GAME
+#DOESN'T KNOW WHAT TO DO WHEN THERE'S "LESS THAN 0" LIVES
+
 
 func _ready():
 	dialogue.visible = false
