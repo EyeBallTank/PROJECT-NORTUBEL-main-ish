@@ -6,7 +6,7 @@ onready var elecplace = $Position2D
 onready var animation = $AnimationPlayer
 onready var audio = $AudioStreamPlayer
 
-const Electricity = preload("res://src/level prefabs/grek prefabs/GrekMultigunElec.tscn")
+const Electricity = preload("res://src/level prefabs/grek prefabs/GrekElecTest.tscn")
 
 
 func _ready():

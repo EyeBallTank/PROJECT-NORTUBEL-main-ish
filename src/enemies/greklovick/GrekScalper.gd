@@ -17,6 +17,7 @@ onready var animationplayer = $AnimationPlayer
 onready var sprites = $Sprites
 onready var jumptimer = $Timer
 onready var Player = get_parent().get_node("Player/EatableHead")
+onready var RealPlayer = get_parent().get_node("Player")
 #onready var Playerspeed = get_parent().get_node("Player")
 #var icanjump = false
 
@@ -63,7 +64,8 @@ func _physics_process(delta):
 #			gravity = 33600
 		CHASE:
 			walk_speed = chase_walk_speed
-
+			if RealPlayer.health == 0:
+				state = MOVING
 
 #			if jumptimer.time_left == 0:
 #			do_a_jump()
@@ -121,6 +123,8 @@ func _physics_process(delta):
 			walk_speed = eat_or_dead_speed
 			sprites.play("eating")
 			global_position = Player.global_position
+			if RealPlayer.health == 0:
+				state = MOVING
 
 		DEAD:
 			walk_speed = eat_or_dead_speed
