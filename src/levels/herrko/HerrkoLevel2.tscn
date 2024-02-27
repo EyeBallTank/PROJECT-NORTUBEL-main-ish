@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=7]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -44,3 +45,7 @@ position = Vector2( -157, 1380 )
 position = Vector2( -157, 1380 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
+
+[node name="ArtBook" parent="." instance=ExtResource( 7 )]
+position = Vector2( 204, 1639 )
+boardname = "herrko art red ghalbeen horg reference"
