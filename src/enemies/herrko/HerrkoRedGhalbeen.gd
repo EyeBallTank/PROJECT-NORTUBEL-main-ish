@@ -9,11 +9,11 @@ onready var sprite: = $AnimatedSprite
 onready var eyes = $RayCast2D
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
-onready var shockwavesource = $ShockwaveSource
+onready var arrowsource = $ArrowSource
 
 enum {
 	MOVING,
-	HAMMER,
+	ARROW,
 	DEAD
 }
 
