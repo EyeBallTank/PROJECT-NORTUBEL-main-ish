@@ -42,6 +42,8 @@ signal red_button_unactive
 signal arrow_button_active
 signal arrow_button_unactive
 
+signal grek_gun_active
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case

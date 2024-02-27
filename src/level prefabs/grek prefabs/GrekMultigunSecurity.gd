@@ -33,6 +33,7 @@ func _on_TalkToArea_body_exited(body):
 		honk = false
 
 func attack():
-	var projectile = Electricity.instance()
-	projectile.global_position = elecplace.global_position
-	get_tree().get_root().add_child(projectile)
+	Signals.emit_signal("grek_gun_active")
+#	var projectile = Electricity.instance()
+#	projectile.global_position = elecplace.global_position
+#	get_tree().get_root().add_child(projectile)
