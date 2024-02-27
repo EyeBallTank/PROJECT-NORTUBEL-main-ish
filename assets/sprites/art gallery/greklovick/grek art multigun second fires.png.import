@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grek art multigun reference.png-2ad2b496b510fd8f5732de40ea565ea3.stex"
+path="res://.import/grek art multigun second fires.png-ba3aba0eb096b8c98e26484c095b86d9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/greklovick/grek art multigun reference.png"
-dest_files=[ "res://.import/grek art multigun reference.png-2ad2b496b510fd8f5732de40ea565ea3.stex" ]
+source_file="res://assets/sprites/art gallery/greklovick/grek art multigun second fires.png"
+dest_files=[ "res://.import/grek art multigun second fires.png-ba3aba0eb096b8c98e26484c095b86d9.stex" ]
 
 [params]
 
