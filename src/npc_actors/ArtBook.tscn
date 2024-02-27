@@ -463,6 +463,7 @@ layer = 14
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
 animation = "grek art multigun reference"
+frame = 2
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
