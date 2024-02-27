@@ -36,14 +36,12 @@ playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -11.4445, 26.6111 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
 position = Vector2( 26.3889, 57 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
