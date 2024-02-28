@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=2]
+[gd_scene load_steps=99 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -49,6 +49,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art multigun first fires.png" type="Texture" id=47]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art multigun second fires.png" type="Texture" id=48]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art red ghalbeen horg reference.png" type="Texture" id=49]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art tfoorie reference.png" type="Texture" id=50]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -95,6 +96,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=58]
 atlas = ExtResource( 48 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 50 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=50]
@@ -257,6 +262,11 @@ animations = [ {
 "loop": true,
 "name": "grek art multigun reference",
 "speed": 1.0
+}, {
+"frames": [ SubResource( 60 ) ],
+"loop": false,
+"name": "grek art tfoorie reference",
+"speed": 0.0
 }, {
 "frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 54 ) ],
 "loop": true,
@@ -472,7 +482,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art red ghalbeen horg reference"
+animation = "grek art tfoorie reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
