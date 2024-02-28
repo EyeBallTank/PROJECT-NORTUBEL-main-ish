@@ -12,7 +12,7 @@ onready var timer = $Timer
 onready var arrowsource = $ArrowSource
 
 const Bullet = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
-
+#NOTE: THIS GUY IS BROKEN AND SO IS HIS ARROW
 #"res://src/level_hazards/herrko/GhalbeenArrow.tscn"
 enum {
 	MOVING,
