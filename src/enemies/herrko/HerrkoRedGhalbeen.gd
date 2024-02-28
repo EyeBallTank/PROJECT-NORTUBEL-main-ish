@@ -11,9 +11,9 @@ onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var arrowsource = $ArrowSource
 
-const Bullet = preload("res://src/level_hazards/herrko/GhalbeenArrow.tscn")
+const Bullet = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
 
-
+#"res://src/level_hazards/herrko/GhalbeenArrow.tscn"
 enum {
 	MOVING,
 	ARROW,
