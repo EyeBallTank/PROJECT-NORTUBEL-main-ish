@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/enemies/greklovick/GrekAmmoDispenser.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekMultigunSecurity.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/level prefabs/grek prefabs/GrekElecTest.tscn" type="PackedScene" id=25]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -48,7 +49,7 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -2, 1322 )
+position = Vector2( -8, 1351 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 196, 1322 )
@@ -140,5 +141,8 @@ boardname = "grek art yiegour reference"
 position = Vector2( 13, 1356 )
 boardname = "grek art multigun reference"
 
+[node name="GrekElecTest" parent="." instance=ExtResource( 25 )]
+position = Vector2( 74, -142 )
+
 [node name="GrekMultigunSecurity" parent="." instance=ExtResource( 24 )]
-position = Vector2( 107, -128 )
+position = Vector2( 74, -142 )
