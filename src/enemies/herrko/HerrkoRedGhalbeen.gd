@@ -10,9 +10,11 @@ onready var eyes = $RayCast2D
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var arrowsource = $ArrowSource
+onready var walldetect = $wall_detect
 
 const Bullet = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
 #NOTE: THIS GUY IS BROKEN AND SO IS HIS ARROW
+#His movement is a mess
 #"res://src/level_hazards/herrko/GhalbeenArrow.tscn"
 enum {
 	MOVING,
@@ -28,6 +30,7 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		MOVING:
+			detect_turn_around()
 			if see_to_attack():
 				state = ARROW
 
@@ -39,7 +42,7 @@ func _physics_process(delta):
 			velocity = direction * 160
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
-			gravity = 23600
+#			gravity = 23600
 
 
 		ARROW:
@@ -71,3 +74,12 @@ func attack():
 	projectile.global_position = arrowsource.global_position
 	get_tree().get_root().add_child(projectile)
 
+func detect_turn_around():
+	if not walldetect.is_colliding() and is_on_wall():
+		direction *= -1
+#		sprite.flip_h = direction.x < 0
+		scale.x = -scale.x
+
+func _on_EnemyHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD

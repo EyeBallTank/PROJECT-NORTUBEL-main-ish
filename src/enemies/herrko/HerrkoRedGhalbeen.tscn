@@ -133,6 +133,18 @@ tracks/5/keys = {
 "method": "die"
 } ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("wall_detect:enabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=16]
 length = 0.001
@@ -195,6 +207,18 @@ tracks/4/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ "abouttoshoot" ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("wall_detect:enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=19]
@@ -288,18 +312,25 @@ position = Vector2( 0, -192 )
 frames = SubResource( 8 )
 animation = "abouttoshoot"
 playing = true
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -4, -92.25 )
 shape = SubResource( 9 )
 
 [node name="ArrowSource" type="Position2D" parent="."]
-position = Vector2( -120, -112 )
+position = Vector2( 86, -112 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( -46, -140 )
+position = Vector2( 44, -140 )
 enabled = true
-cast_to = Vector2( -537, 0 )
+cast_to = Vector2( 537, 0 )
+collision_mask = 3
+
+[node name="wall_detect" type="RayCast2D" parent="."]
+position = Vector2( 55, -18 )
+enabled = true
+cast_to = Vector2( 108, 0 )
 collision_mask = 3
 
 [node name="EnemyHurtbox" type="Area2D" parent="."]
@@ -318,3 +349,5 @@ one_shot = true
 anims/Dying = SubResource( 20 )
 anims/RESET = SubResource( 16 )
 anims/Shoot = SubResource( 19 )
+
+[connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]
