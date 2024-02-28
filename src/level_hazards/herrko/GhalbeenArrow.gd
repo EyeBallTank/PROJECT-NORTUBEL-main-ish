@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var speed = 120
+export var speed = 140
 var player_position
 var target_position
 onready var player = get_parent().get_node("Player")
@@ -17,6 +17,7 @@ func _physics_process(delta):
 
 	if position.distance_to(player_position) > 3:
 		move_and_slide(target_position * speed)
+		look_at(player_position)
 
 func die():
 	queue_free()
