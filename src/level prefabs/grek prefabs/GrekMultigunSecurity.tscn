@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/grek multigun security.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekMultigunSecurity.gd" type="Script" id=2]
@@ -37,10 +37,22 @@ tracks/1/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "active"
-length = 5.0
+length = 2.9
 tracks/0/type = "value"
 tracks/0/path = NodePath("GrekMultigunSecurity:modulate")
 tracks/0/interp = 1
@@ -60,7 +72,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 4.5 ),
+"times": PoolRealArray( 0, 2.9 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
@@ -79,6 +91,21 @@ tracks/2/keys = {
 "method": "attack"
 } ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 115, 79.5 )
 
 [node name="GrekMultigunSecurity" type="KinematicBody2D"]
 collision_layer = 64
@@ -147,5 +174,14 @@ margin_bottom = 22.0
 custom_fonts/font = ExtResource( 4 )
 text = "Multigun"
 
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 1025
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2( 0, -0.5 )
+shape = SubResource( 5 )
+
 [connection signal="body_entered" from="TalkToArea" to="." method="_on_TalkToArea_body_entered"]
 [connection signal="body_exited" from="TalkToArea" to="." method="_on_TalkToArea_body_exited"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]

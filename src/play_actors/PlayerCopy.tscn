@@ -195,6 +195,7 @@ position = Vector2( 0, -151 )
 scale = Vector2( 0.719999, 0.719999 )
 frames = ExtResource( 4 )
 animation = "Idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -252,7 +253,6 @@ animation = "nao tenho bola"
 position = Vector2( -7, -286.938 )
 scale = Vector2( 0.141264, 0.178009 )
 frames = SubResource( 38 )
-frame = 1
 playing = true
 
 [node name="SpeechBalloon" parent="." instance=ExtResource( 5 )]

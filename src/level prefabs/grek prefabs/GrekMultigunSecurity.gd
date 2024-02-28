@@ -22,8 +22,8 @@ func _physics_process(delta):
 			animation.play("active")
 		if Input.is_action_just_pressed("followme"):
 			animation.play("active")
-		if Input.is_action_just_pressed("attack"):
-			animation.play("active")
+#		if Input.is_action_just_pressed("attack"):
+#			animation.play("active")
 
 func _on_TalkToArea_body_entered(body):
 	if body.name == "Player":
@@ -42,3 +42,8 @@ func attack():
 #	var projectile = Electricity.instance()
 #	projectile.global_position = elecplace.global_position
 #	get_tree().get_root().add_child(projectile)
+
+
+func _on_Hurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		animation.play("active")
