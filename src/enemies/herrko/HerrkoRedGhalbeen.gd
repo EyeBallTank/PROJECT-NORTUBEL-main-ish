@@ -16,6 +16,9 @@ const Bullet = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
 #NOTE: THIS GUY IS BROKEN AND SO IS HIS ARROW
 #His movement is a mess
 #"res://src/level_hazards/herrko/GhalbeenArrow.tscn"
+
+#CHANCES ARE I GOTTA MAKE GHALBEEN'S SCRIPT CONTROL THE ARROW AND HAVE DATA LIKE TARGET AND HOMING LOGIC
+
 enum {
 	MOVING,
 	ARROW,
