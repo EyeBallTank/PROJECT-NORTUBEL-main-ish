@@ -10,6 +10,7 @@ onready var eyes = $RayCast2D
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var shockwavesource = $ShockwaveSource
+onready var floordetect = $FloorDetect
 
 const Bullet = preload("res://src/level_hazards/herrko/HorgShockwaveProjectile.tscn")
 
@@ -28,6 +29,7 @@ func _physics_process(delta):
 
 	match state:
 		MOVING:
+			detect_turn_around()
 			if see_to_attack():
 				state = HAMMER
 
@@ -43,7 +45,7 @@ func _physics_process(delta):
 		HAMMER:
 			velocity.x = 0
 			animation.play("HammerAttack")
-			timer.start(3)
+			timer.start(4)
 			if timer.time_left == 0:
 				state = MOVING
 			velocity.y += gravity * delta
@@ -73,6 +75,12 @@ func attack():
 		projectile.velocity.x = projectile.speed * -10
 	get_tree().get_root().add_child(projectile)
 	timer.start(1)
+
+func detect_turn_around():
+	if not floordetect.is_colliding() and is_on_floor():
+		direction *= -1
+#		sprite.flip_h = direction.x < 0
+		scale.x = -scale.x
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
