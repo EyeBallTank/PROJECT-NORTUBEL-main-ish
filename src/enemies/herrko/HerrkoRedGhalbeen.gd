@@ -66,7 +66,7 @@ func die():
 func see_to_attack():
 	if not eyes.is_colliding(): return false
 	var collider = eyes.get_collider()
-	if not collider.is_in_group("protagonists"): return false
+	if not collider.is_in_group("player"): return false
 	return true
 
 func attack():
