@@ -65,7 +65,14 @@ func see_to_attack():
 	return true
 
 func attack():
-	pass
+	var projectile = Bullet.instance()
+	projectile.global_position = shockwavesource.global_position
+	if direction == Vector2.RIGHT:
+		projectile.velocity.x = projectile.speed * 10
+	elif direction == Vector2.LEFT:
+		projectile.velocity.x = projectile.speed * -10
+	get_tree().get_root().add_child(projectile)
+	timer.start(1)
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
