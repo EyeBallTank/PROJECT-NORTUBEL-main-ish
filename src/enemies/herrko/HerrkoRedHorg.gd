@@ -11,6 +11,8 @@ onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var shockwavesource = $ShockwaveSource
 
+const Bullet = preload("res://src/level_hazards/herrko/HorgShockwaveProjectile.tscn")
+
 enum {
 	MOVING,
 	HAMMER,

@@ -1,16 +1,30 @@
 extends KinematicBody2D
 
+var velocity = Vector2.ZERO
+var direction = Vector2.LEFT
+var speed = 255
+onready var animation = $AnimationPlayer
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	animation.play("RESET")
+	Signals.connect("scene_has_changed", self, "therefore_I_Go")
+
+func _physics_process(delta):
+	move_and_slide(velocity, Vector2.UP)
+	if is_on_wall():
+		animation.play("Dying")
+
+func die():
+	queue_free()
+
+func therefore_I_Go():
+	die()
+
+func _on_Touchplayer_body_entered(body):
+	if body.is_in_group("protagonists"):
+		animation.play("Dying")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_Hurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		animation.play("Dying")
