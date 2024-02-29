@@ -60,9 +60,13 @@ spritename = "greklovick greendoor"
 customtext = "clr1ty"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
-position = Vector2( 224, 1554 )
+position = Vector2( 224, 927 )
 boardname = "grek art clarity reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 567, 1554 )
+position = Vector2( 567, 927 )
 boardname = "grek art bolt reference"
+
+[node name="ArtBook3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 275, 1536 )
+boardname = "grek art raymond reference"
