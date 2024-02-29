@@ -129,7 +129,7 @@ extents = Vector2( 54.5, 75.5 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 67.5, 87.5 )
 
-[node name="HorgShockwaveProjectile" type="KinematicBody2D"]
+[node name="HorgShockwaveProjectile" type="KinematicBody2D" groups=["horgshockwave"]]
 collision_layer = 32
 collision_mask = 4
 script = ExtResource( 2 )
@@ -155,7 +155,7 @@ collision_mask = 3
 position = Vector2( -2.5, -3.5 )
 shape = SubResource( 3 )
 
-[node name="Hurtbox" type="Area2D" parent="."]
+[node name="Hurtbox" type="Area2D" parent="." groups=["horgshockwave"]]
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]

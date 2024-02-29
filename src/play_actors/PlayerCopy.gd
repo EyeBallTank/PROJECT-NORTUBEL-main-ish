@@ -15,6 +15,8 @@ export var jump_buffer_time : int  = 15
 export var health : int = 100
 export var oxygen : int = 1500
 
+onready var horgtimer = $HorgTimer
+
 var velocity: = Vector2.ZERO
 var jump_buffer_counter : int = 0
 
@@ -41,7 +43,8 @@ enum {
 	STOPICE,
 	STOPSWING,
 	LOWGRAV,
-	STOPLOWGRAV
+	STOPLOWGRAV,
+	DIZZYBYHORG
 }
 
 
@@ -1215,6 +1218,45 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = STOPICE
 
+		DIZZYBYHORG:
+			if horgtimer.time_left == 0:
+				state = MAINSTATE
+
+			if is_on_lowgrav():
+				state = STOPLOWGRAV
+
+			iamplayable = false
+			velocity.x = 0
+			animatedsprite.animation = "Iceslide"
+
+			if velocity.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Iceslide"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+			elif velocity.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Iceslide"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			velocity.y += gravity * delta
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
+
+			if Input.is_action_just_pressed("charnormal"):
+				state = STOPNORMAL
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = STOPSWIM
+			if is_on_ice():
+				state = STOPICE
+			oxygenbar.hide()
+
 func is_invul():
 	immortal = true
 	print("does it work")
@@ -1362,3 +1404,11 @@ func _on_PushDetector_area_exited(area):
 	if area.name == "PushArea":
 		if state == PUSH:
 			state = MAINSTATE
+
+
+func _on_HorgWaveDetect_body_entered(body):
+	if body.is_in_group("horgshockwave"):
+		if state == MAINSTATE:
+			state = DIZZYBYHORG
+			horgtimer.start(2)
+
