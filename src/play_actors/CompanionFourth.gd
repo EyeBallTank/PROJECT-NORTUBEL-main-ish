@@ -36,7 +36,8 @@ enum {
 	PLAYABLESWIM,
 	PLAYABLECRAWL,
 	PLAYABLEPUSH,
-	PLAYABLESLOW
+	PLAYABLESLOW,
+	DIZZYBYHORG
 }
 
 var climbspeed = 360
@@ -47,6 +48,8 @@ var WALK_MAX_SPEED = 70
 var PUSH_SPEED = 25
 var STOP_FORCE = 450
 var JUMP_SPEED = 1450
+
+
 
 export var companionskin = "res://assets/sprites/play_actor_sprites/OscarSprites.tres"
 
@@ -83,6 +86,8 @@ var immortal = false
 
 onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
+
+onready var horgtimer = $HorgTimer
 
 func _ready():
 	iamplayable = false
@@ -2177,6 +2182,71 @@ func _physics_process(delta):
 			if is_on_ice():
 				state = PLAYABLEICE
 
+		DIZZYBYHORG:
+			if horgtimer.time_left == 0:
+				state = PLAYABLENORMAL
+
+			iamplayable = false
+			if Input.is_action_just_pressed("charswitch"):
+				state = STANDSTILL
+			compstateteller.play("stopstate")
+			oxygenbar.hide()
+			$CompanionHurtbox/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CompanionHurtbox/CollisionShape2D.position = Vector2(0, -81)
+			$PortalCheck/CollisionShape2D.shape.extents = Vector2(23, 82)
+			$PortalCheck/CollisionShape2D.position = Vector2(0, -81)
+			$CollisionShape2D.shape.extents = Vector2(23, 82)
+			$CollisionShape2D.position = Vector2(0, -81)
+
+			pushcheck()
+			vel.x = 0
+			direction.x = 0
+			vel.x = direction.x * 0
+
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			if vel.y < 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Iceslide"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+			elif vel.y > 0 and not is_on_floor():
+				if ouch == false:
+					animatedsprite.animation = "Iceslide"
+				elif ouch == true:
+					animatedsprite.animation = "Hurt"
+				if direction.x == 1:
+					animatedsprite.flip_h = false
+				elif direction.x == -1:
+					animatedsprite.flip_h = true
+
+			if is_on_floor():
+				animatedsprite.animation = "Iceslide"
+
+			if is_on_water():
+				Signals.emit_signal("touch_water")
+				state = SWIMIDLE
+			if is_on_ladder():
+				if Input.is_action_just_pressed("interactcomp"):
+					state = CLIMBIDLE
+			if is_on_ice():
+				state = ICEIDLE
+
+			if Input.is_action_just_pressed("simplerunaway"):
+				state = RUNAWAY
+			if Input.is_action_just_pressed("simplefollow"):
+				state = FOLLOWME
 
 
 func _on_CompanionHurtbox_area_entered(Area2D):
@@ -2358,3 +2428,10 @@ func _on_PushDetector_area_exited(area):
 			state = RUNAWAY
 		if state == PLAYABLEPUSH:
 			state = PLAYABLENORMAL
+
+
+func _on_HorgWaveDetect_body_entered(body):
+	if body.is_in_group("horgshockwave"):
+		if state == PLAYABLENORMAL:
+			state = DIZZYBYHORG
+			horgtimer.start(2)

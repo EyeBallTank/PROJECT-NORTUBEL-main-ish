@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.gd" type="Script" id=2]
@@ -127,6 +127,9 @@ extents = Vector2( 23, 30 )
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 4.5, 78 )
 
+[sub_resource type="RectangleShape2D" id=40]
+extents = Vector2( 43, 85.5 )
+
 [node name="Companion" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 13
 collision_layer = 2
@@ -181,7 +184,6 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
-frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -265,8 +267,22 @@ volume_db = -4.095
 pitch_scale = 3.04
 bus = "Sound"
 
+[node name="HorgWaveDetect" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HorgWaveDetect"]
+modulate = Color( 1, 0.960784, 0, 1 )
+position = Vector2( -1, -84.5 )
+shape = SubResource( 40 )
+
+[node name="HorgTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [connection signal="area_entered" from="CompanionHurtbox" to="." method="_on_CompanionHurtbox_area_entered"]
 [connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]
 [connection signal="area_entered" from="CrawlCheck" to="." method="_on_CrawlCheck_area_entered"]
 [connection signal="area_entered" from="PushDetector" to="." method="_on_PushDetector_area_entered"]
 [connection signal="area_exited" from="PushDetector" to="." method="_on_PushDetector_area_exited"]
+[connection signal="body_entered" from="HorgWaveDetect" to="." method="_on_HorgWaveDetect_body_entered"]
