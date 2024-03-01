@@ -68,13 +68,17 @@ position = Vector2( 567, 927 )
 boardname = "grek art bolt reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 275, 1536 )
+position = Vector2( 894, 904 )
 boardname = "grek art raymond reference"
 
 [node name="ArtBook4" parent="." instance=ExtResource( 10 )]
-position = Vector2( 566, 1536 )
+position = Vector2( 960, 1510 )
 boardname = "grek art grekpolice reference"
 
 [node name="ArtBook5" parent="." instance=ExtResource( 10 )]
-position = Vector2( 869, 1536 )
+position = Vector2( 647, 1512 )
 boardname = "grek art grekmerc reference"
+
+[node name="ArtBook6" parent="." instance=ExtResource( 10 )]
+position = Vector2( 327, 1512 )
+boardname = "grek art lahrn reference"

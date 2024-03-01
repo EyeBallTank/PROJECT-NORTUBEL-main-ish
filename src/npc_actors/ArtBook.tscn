@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=2]
+[gd_scene load_steps=107 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -53,6 +53,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art raymond reference.png" type="Texture" id=51]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art grekpolice reference.png" type="Texture" id=52]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art grekmerc reference.png" type="Texture" id=53]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art lahrn reference.png" type="Texture" id=54]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -95,6 +96,10 @@ region = Rect2( 0, 0, 384, 449 )
 
 [sub_resource type="AtlasTexture" id=62]
 atlas = ExtResource( 52 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 54 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=56]
@@ -281,6 +286,11 @@ animations = [ {
 "frames": [ SubResource( 62 ) ],
 "loop": false,
 "name": "grek art grekpolice reference",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 64 ) ],
+"loop": false,
+"name": "grek art lahrn reference",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 56 ), SubResource( 57 ), SubResource( 58 ) ],
@@ -512,7 +522,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "grek art grekmerc reference"
+animation = "grek art lahrn reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
