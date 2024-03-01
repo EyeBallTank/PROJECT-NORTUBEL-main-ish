@@ -70,3 +70,7 @@ boardname = "grek art bolt reference"
 [node name="ArtBook3" parent="." instance=ExtResource( 10 )]
 position = Vector2( 275, 1536 )
 boardname = "grek art raymond reference"
+
+[node name="ArtBook4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 566, 1536 )
+boardname = "grek art grekpolice reference"
