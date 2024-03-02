@@ -266,3 +266,38 @@ func cutscene_over():
 #She leaves
 #Melvin: This piece fits one of these wholes.
 #And then a portal to Lahiurn shows up
+#The 6 watch planes and explosions, then they overheard a conversation
+#Gustav: You know the way out?
+#Jerold: We can just keep going North and we'll find the sub base. There has to be some submarines left.
+#Jerold: But we must be carefull. I heard they're using a recent prototype of a weapon in this fight.
+#Gustav: What kind of weapon?
+#Jerold: I heard they were experimenting with bodies of prisoners and turning them into machines. As if they were creating blind followers out of carcasses.
+
+#Carrie: Are we getting somewhere?
+#Melvin: We gotta keep going. This whole has some light at the other end. Uh?
+#Buellarock soldier: Hold it there? Who do you work for?
+#Melvin: Wait, we can explain.
+#Some time later
+#Charles: Alright, let's get this started. Who do you work for? And what orders did they gave you?
+#Katrin: Nobody, we're just finding our way home. We're not even from this universe.
+#Buellarock soldier: Sir, we examined some of their stuff but find no clue of any ties to either Lahiurn or Eygzouhl.
+#Charles: What country are they from? Any document in any language someone might recognize?
+#Soldier: We found some books in this weird language. I thought I recognize the language but they don't seem to be from Dahrgrinde.
+#Charles: Maybe the "blue" girl is right. What kinda God made you kids?
+#Melvin: We're not even sure. We were in a threehouse and then were brought to a weird place that only looked like our home.
+#Melvin: We even saw a girl that came from a different universe and then we found this box and it brought us to different worlds. Including this one.
+#Charles: Alright, I'm trying to make sense of this. How did you brats even get to our base? For how long were you in world?
+#Carrie: At first, we were in a battlefield full of soldiers dressed in either blue or yellow. But we heard a conversation of 2 guys wanting to escape and they said something about submarines.
+#Carrie: We managed to get to a submarine but Melvin accidently touched something and the submarine moved to a place close to a city.
+#Carrie: And the city had so many cameras and security, we were only lucky because we stumbled upon someone's book with hints of hidden routes.
+#Jerold: That notebook could be my mother's. Something must have happened to her.
+#Angela: You're the man we saw in the war.
+#Pete: I guess we gotta thank you for how we got here.
+#Gustav: I don't feel proud that anyone heard our talk in the first place. It means we gotta be more carefull.
+#Oscar: We also found this thing (Shows golden book)
+#Charles: Wait a second, gimme that. Do you know how big this is? We might have confidential information here.
+#Jerold: Cpt Kendery, I can help you translate some of those documents. Just give me some time and I can do it.
+#Charles: Sure thing. Anyway, how can we tank you kids?
+#Carrie: Just let us go home! Give us some space and we can open a portal with the device, so we can leave.
+#Charles: Alright, go ahead and show me... Jesus Christ! *portal closes*
+#Charles: I must admit. I feel jealous, but we have things to focus on. Maybe those Laihurn freaks might've something similar with their technology, who knows.
