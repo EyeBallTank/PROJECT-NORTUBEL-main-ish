@@ -301,6 +301,8 @@ func cutscene_over():
 #Carrie: Just let us go home! Give us some space and we can open a portal with the device, so we can leave.
 #Charles: Alright, go ahead and show me... Jesus Christ! *portal closes*
 #Charles: I must admit. I feel jealous, but we have things to focus on. Maybe those Laihurn freaks might've something similar with their technology, who knows.
+#Gustav: You believe your mother's still alive?
+#Jerold: I hope she is, after losing Rosetta. If not, I'll get to Lomeshtin and kill him myself.
 #Back at Nortubel
 #Oscar: Someone seems lost, what's with the big suit?
 #Melvin: Looks like a diver. Hello, who are you?
