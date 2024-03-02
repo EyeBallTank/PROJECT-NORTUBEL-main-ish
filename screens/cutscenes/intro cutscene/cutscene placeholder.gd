@@ -301,3 +301,8 @@ func cutscene_over():
 #Carrie: Just let us go home! Give us some space and we can open a portal with the device, so we can leave.
 #Charles: Alright, go ahead and show me... Jesus Christ! *portal closes*
 #Charles: I must admit. I feel jealous, but we have things to focus on. Maybe those Laihurn freaks might've something similar with their technology, who knows.
+#Back at Nortubel
+#Oscar: Someone seems lost, what's with the big suit?
+#Melvin: Looks like a diver. Hello, who are you?
+#takes off helmet
+#Namylea: Hello, my name is Namylea Matdur and I'm an reporter and explorer working for Dahrgrinde's official 
