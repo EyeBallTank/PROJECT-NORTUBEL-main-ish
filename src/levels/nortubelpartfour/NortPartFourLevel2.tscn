@@ -69,3 +69,7 @@ customtext = "x444ng"
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( 736, 1544 )
 boardname = "nort art altsix older reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1064, 1544 )
+boardname = "nort art altsix younger reference"
