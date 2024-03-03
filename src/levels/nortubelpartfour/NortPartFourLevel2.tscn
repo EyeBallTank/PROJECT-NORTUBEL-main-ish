@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level prefabs/nort prefabs/NortSeesawTrain.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 
 [node name="NortPartFourLevel2" type="Node2D"]
 
@@ -64,3 +65,7 @@ position = Vector2( -334, 1440 )
 position = Vector2( -1098, 1605 )
 new_scene = "res://screens/cutscenes/cutscene 12 nortpartfour amalia/cutscene 12 nortpartfour amalia.tscn"
 customtext = "x444ng"
+
+[node name="ArtBook" parent="." instance=ExtResource( 10 )]
+position = Vector2( 736, 1544 )
+boardname = "nort art altsix older reference"

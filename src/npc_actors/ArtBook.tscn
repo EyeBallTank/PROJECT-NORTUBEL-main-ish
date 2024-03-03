@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -55,6 +55,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art grekmerc reference.png" type="Texture" id=53]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art lahrn reference.png" type="Texture" id=54]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v2.png" type="Texture" id=55]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix older reference.png" type="Texture" id=56]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -233,6 +234,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 56 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=40]
@@ -453,6 +458,11 @@ animations = [ {
 "name": "nort art 6 char height",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 66 ) ],
+"loop": false,
+"name": "nort art altsix older reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 40 ) ],
 "loop": false,
 "name": "nort art bernard shelly",
@@ -532,7 +542,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "grek art kler reference"
+animation = "nort art altsix older reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
