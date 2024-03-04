@@ -68,9 +68,13 @@ position = Vector2( 741, 1267 )
 spritename = "brinkaedea greendoor"
 
 [node name="ArtBook" parent="." instance=ExtResource( 12 )]
-position = Vector2( 392, 864 )
+position = Vector2( 409, 857 )
 boardname = "brink art monica reference"
 
+[node name="ArtBook3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 419, 1251 )
+boardname = "brink art bonky linda reference"
+
 [node name="ArtBook2" parent="." instance=ExtResource( 12 )]
-position = Vector2( 404, 1176 )
+position = Vector2( 81, 850 )
 boardname = "brink art illou reference"
