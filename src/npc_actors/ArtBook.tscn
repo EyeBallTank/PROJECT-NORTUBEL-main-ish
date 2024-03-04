@@ -56,12 +56,12 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art lahrn reference.png" type="Texture" id=54]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v2.png" type="Texture" id=55]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix older reference.png" type="Texture" id=56]
-[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix younger reference.png" type="Texture" id=57]
-[ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art monica reference.png" type="Texture" id=58]
+[ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art monica reference v2.png" type="Texture" id=58]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art illou reference.png" type="Texture" id=59]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art bonky linda reference.png" type="Texture" id=60]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art jester king reference v2.png" type="Texture" id=61]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art fragile reference.png" type="Texture" id=62]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix younger reference v2.png" type="Texture" id=63]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -102,7 +102,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 61 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=68]
+[sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 58 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -266,8 +266,8 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 56 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=67]
-atlas = ExtResource( 57 )
+[sub_resource type="AtlasTexture" id=76]
+atlas = ExtResource( 63 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=40]
@@ -323,7 +323,7 @@ animations = [ {
 "name": "brink art jester king reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 68 ) ],
+"frames": [ SubResource( 75 ) ],
 "loop": false,
 "name": "brink art monica reference",
 "speed": 0.0
@@ -518,7 +518,7 @@ animations = [ {
 "name": "nort art altsix older reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 67 ) ],
+"frames": [ SubResource( 76 ) ],
 "loop": false,
 "name": "nort art altsix younger reference",
 "speed": 0.0

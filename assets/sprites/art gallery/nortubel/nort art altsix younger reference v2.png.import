@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nort art altsix younger reference.png-a85669629e0cb761bced4a68b72d5035.stex"
+path="res://.import/nort art altsix younger reference v2.png-fbd22166c6d42b73ff859dbea4576578.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/nortubel/nort art altsix younger reference.png"
-dest_files=[ "res://.import/nort art altsix younger reference.png-a85669629e0cb761bced4a68b72d5035.stex" ]
+source_file="res://assets/sprites/art gallery/nortubel/nort art altsix younger reference v2.png"
+dest_files=[ "res://.import/nort art altsix younger reference v2.png-fbd22166c6d42b73ff859dbea4576578.stex" ]
 
 [params]
 
