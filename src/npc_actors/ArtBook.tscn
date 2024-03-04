@@ -1,4 +1,4 @@
-[gd_scene load_steps=115 format=2]
+[gd_scene load_steps=117 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -58,6 +58,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix older reference.png" type="Texture" id=56]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix younger reference.png" type="Texture" id=57]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art monica reference.png" type="Texture" id=58]
+[ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art illou reference.png" type="Texture" id=59]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -85,6 +86,10 @@ extents = Vector2( 126.5, 99.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 127, 72 )
+
+[sub_resource type="AtlasTexture" id=69]
+atlas = ExtResource( 59 )
+region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=68]
 atlas = ExtResource( 58 )
@@ -288,6 +293,11 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
+"frames": [ SubResource( 69 ) ],
+"loop": false,
+"name": "brink art illou reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 68 ) ],
 "loop": false,
 "name": "brink art monica reference",
@@ -562,7 +572,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "brink art monica reference"
+animation = "brink art illou reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
