@@ -1,0 +1,101 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/sprites/enemy_sprites/herrko/HERRKO RED GHALBEEN SPRITES.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 384, 384, 384 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 2 )
+region = Rect2( 384, 384, 384, 384 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 768, 384, 384 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 2 )
+region = Rect2( 384, 768, 384, 384 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 384, 384 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 2 )
+region = Rect2( 384, 0, 384, 384 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 15 ) ],
+"loop": false,
+"name": "abouttoshoot",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 14 ) ],
+"loop": false,
+"name": "didtheshot",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ) ],
+"loop": false,
+"name": "dying1",
+"speed": 1.0
+}, {
+"frames": [ SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "moving",
+"speed": 3.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 67, 91.75 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 66, 90.5 )
+
+[sub_resource type="Animation" id=16]
+length = 0.001
+
+[node name="BrinkRedJester" type="KinematicBody2D"]
+collision_layer = 32
+collision_mask = 4
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -192 )
+frames = SubResource( 8 )
+animation = "abouttoshoot"
+playing = true
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -4, -92.25 )
+shape = SubResource( 9 )
+
+[node name="GreenJesterSource" type="Position2D" parent="."]
+position = Vector2( 0, -83 )
+
+[node name="CloudEffect" type="Position2D" parent="."]
+position = Vector2( 0, -83 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 44, -140 )
+enabled = true
+cast_to = Vector2( 537, 0 )
+collision_mask = 3
+
+[node name="EnemyHurtbox" type="Area2D" parent="."]
+position = Vector2( 15, -333 )
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
+position = Vector2( -19, 240.5 )
+shape = SubResource( 18 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 16 )
