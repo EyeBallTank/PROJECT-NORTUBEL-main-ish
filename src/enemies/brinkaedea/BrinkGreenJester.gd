@@ -1,5 +1,8 @@
 extends KinematicBody2D
 
+#ISSUES:
+#MUCH LIKE RED GHALBEEN AND RED JESTER. HE CAN'T TURN AROUND WHEN COLLIDING WITH WALLS
+
 export var gravity: = 3700
 
 var direction = Vector2.RIGHT

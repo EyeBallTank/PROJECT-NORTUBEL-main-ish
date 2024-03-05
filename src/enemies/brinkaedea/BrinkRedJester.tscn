@@ -294,6 +294,7 @@ script = ExtResource( 2 )
 position = Vector2( -6, -150 )
 frames = SubResource( 8 )
 animation = "dizzy"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
