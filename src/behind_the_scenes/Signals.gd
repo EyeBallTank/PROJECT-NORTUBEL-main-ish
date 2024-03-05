@@ -43,6 +43,7 @@ signal arrow_button_active
 signal arrow_button_unactive
 
 signal grek_gun_active
+signal red_jester_hurt
 
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)

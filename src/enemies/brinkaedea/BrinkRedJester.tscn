@@ -277,9 +277,12 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 3.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
+"args": [  ],
+"method": "red_jester_lost"
+}, {
 "args": [  ],
 "method": "die"
 } ]
@@ -294,6 +297,7 @@ script = ExtResource( 2 )
 position = Vector2( -6, -150 )
 frames = SubResource( 8 )
 animation = "dizzy"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

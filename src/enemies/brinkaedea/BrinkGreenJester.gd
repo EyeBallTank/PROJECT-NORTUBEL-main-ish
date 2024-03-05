@@ -22,6 +22,7 @@ var state = MOVING
 func _ready():
 	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 	animation.play("RESET")
+	Signals.connect("red_jester_hurt", self, "green_jester_goes")
 
 func _physics_process(delta):
 	match state:
@@ -46,6 +47,12 @@ func die():
 
 func therefore_I_Go():
 	die()
+
+func green_jester_goes():
+	if state == MOVING:
+		state = DEAD
+	elif state == DEAD:
+		pass
 
 func _on_EnemyHurtbox_area_exited(area):
 	if area.name == "PlayerMelee":

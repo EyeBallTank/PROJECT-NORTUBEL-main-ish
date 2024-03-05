@@ -67,6 +67,9 @@ func _physics_process(delta):
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 
+func red_jester_lost():
+	Signals.emit_signal("red_jester_hurt")
+
 func attack():
 	can_i_spawn_more += 1
 	var grenade = Bullet.instance()
