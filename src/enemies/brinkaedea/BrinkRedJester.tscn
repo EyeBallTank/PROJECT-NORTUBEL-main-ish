@@ -308,9 +308,9 @@ position = Vector2( 0, -113 )
 position = Vector2( 0, -83 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( 44, -140 )
+position = Vector2( -214, -151 )
 enabled = true
-cast_to = Vector2( 311, 0 )
+cast_to = Vector2( 611, 0 )
 collision_mask = 3
 
 [node name="EnemyHurtbox" type="Area2D" parent="."]
