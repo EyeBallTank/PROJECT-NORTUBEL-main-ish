@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkBonkaLetterPickup.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/RedButtonGate.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/RedButton.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=11]
 
 [node name="BrinkLevel3" type="Node2D"]
 
@@ -79,3 +80,7 @@ redbuttonskin = "res://assets/sprites/level_object_sprites/brinkaedea/RedButton 
 [node name="RedButtonGate" parent="." instance=ExtResource( 9 )]
 position = Vector2( 520, 1422 )
 spritename = "brinkaedea"
+
+[node name="ArtBook" parent="." instance=ExtResource( 11 )]
+position = Vector2( 66, 1560 )
+boardname = "brink art odin reference"

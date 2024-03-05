@@ -1,4 +1,4 @@
-[gd_scene load_steps=123 format=2]
+[gd_scene load_steps=125 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -56,6 +56,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art lahrn reference.png" type="Texture" id=54]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v2.png" type="Texture" id=55]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix older reference.png" type="Texture" id=56]
+[ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art odin reference.png" type="Texture" id=57]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art monica reference v2.png" type="Texture" id=58]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art illou reference.png" type="Texture" id=59]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art bonky linda reference.png" type="Texture" id=60]
@@ -104,6 +105,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 58 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=77]
+atlas = ExtResource( 57 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=55]
@@ -326,6 +331,11 @@ animations = [ {
 "frames": [ SubResource( 75 ) ],
 "loop": false,
 "name": "brink art monica reference",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 77 ) ],
+"loop": false,
+"name": "brink art odin reference",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 55 ) ],
@@ -602,7 +612,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "grek art fragile reference"
+animation = "brink art odin reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
