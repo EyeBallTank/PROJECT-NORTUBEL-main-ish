@@ -18,6 +18,8 @@ onready var timer = $Timer
 onready var greenjestersource = $GreenJesterSource
 onready var cloudeffect = $CloudEffect
 
+var can_i_spawn_more = 0
+
 const Bullet = preload("res://src/enemies/brinkaedea/BrinkGreenJester.tscn")
 const cloud = preload("res://src/enemies/brinkaedea/SmokeCloud.tscn")
 
@@ -37,8 +39,10 @@ func _physics_process(delta):
 	match state:
 		MOVING:
 			sprites.play("moving")
-			if see_to_attack():
+			if see_to_attack() and can_i_spawn_more < 5:
 				state = SUMMON
+			elif see_to_attack() and can_i_spawn_more == 5:
+				pass
 			var found_wall = is_on_wall()
 			if found_wall:
 				direction *= -1
@@ -64,6 +68,7 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 
 func attack():
+	can_i_spawn_more += 1
 	var grenade = Bullet.instance()
 	get_tree().get_root().add_child(grenade)
 	grenade.global_position = greenjestersource.global_position
