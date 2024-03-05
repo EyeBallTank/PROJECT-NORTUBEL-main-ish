@@ -294,7 +294,6 @@ script = ExtResource( 2 )
 position = Vector2( -6, -150 )
 frames = SubResource( 8 )
 animation = "dizzy"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -302,10 +301,10 @@ position = Vector2( -5, -92.25 )
 shape = SubResource( 9 )
 
 [node name="GreenJesterSource" type="Position2D" parent="."]
-position = Vector2( 0, -113 )
+position = Vector2( 0, -99 )
 
 [node name="CloudEffect" type="Position2D" parent="."]
-position = Vector2( 0, -83 )
+position = Vector2( 0, -120 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( -214, -151 )

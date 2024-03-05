@@ -19,7 +19,7 @@ onready var greenjestersource = $GreenJesterSource
 onready var cloudeffect = $CloudEffect
 
 const Bullet = preload("res://src/enemies/brinkaedea/BrinkGreenJester.tscn")
-
+const cloud = preload("res://src/enemies/brinkaedea/SmokeCloud.tscn")
 
 enum {
 	MOVING,
@@ -67,6 +67,11 @@ func attack():
 	var grenade = Bullet.instance()
 	get_tree().get_root().add_child(grenade)
 	grenade.global_position = greenjestersource.global_position
+	timer.start(0.5)
+
+	var smokecloud = cloud.instance()
+	get_tree().get_root().add_child(smokecloud)
+	smokecloud.global_position = cloudeffect.global_position
 	timer.start(0.5)
 
 func see_to_attack():
