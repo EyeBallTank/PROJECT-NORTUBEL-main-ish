@@ -20,6 +20,7 @@ enum {
 var state = MOVING
 
 func _ready():
+	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 	animation.play("RESET")
 
 func _physics_process(delta):
@@ -43,6 +44,8 @@ func _physics_process(delta):
 func die():
 	queue_free()
 
+func therefore_I_Go():
+	die()
 
 func _on_EnemyHurtbox_area_exited(area):
 	if area.name == "PlayerMelee":
