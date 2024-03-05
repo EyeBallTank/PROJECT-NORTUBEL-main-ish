@@ -245,7 +245,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, 72 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 4 )
-animation = "Dead"
+animation = "Attack"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
