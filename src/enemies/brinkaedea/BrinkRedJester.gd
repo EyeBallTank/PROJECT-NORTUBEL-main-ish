@@ -14,6 +14,11 @@ onready var sprites = $AnimatedSprite
 onready var animation = $AnimationPlayer
 onready var eyes = $RayCast2D
 onready var timer = $Timer
+onready var greenjestersource = $GreenJesterSource
+onready var cloudeffect = $CloudEffect
+
+const Bullet = preload("res://src/enemies/brinkaedea/BrinkGreenJester.tscn")
+
 
 enum {
 	MOVING,
@@ -58,7 +63,10 @@ func _physics_process(delta):
 			move_and_slide(velocity, Vector2.UP)
 
 func attack():
-	pass
+	var grenade = Bullet.instance()
+	get_tree().get_root().add_child(grenade)
+	grenade.global_position = greenjestersource.global_position
+	timer.start(0.5)
 
 func see_to_attack():
 	if not eyes.is_colliding(): return false

@@ -313,7 +313,7 @@ position = Vector2( -5, -92.25 )
 shape = SubResource( 9 )
 
 [node name="GreenJesterSource" type="Position2D" parent="."]
-position = Vector2( 0, -83 )
+position = Vector2( 0, -113 )
 
 [node name="CloudEffect" type="Position2D" parent="."]
 position = Vector2( 0, -83 )
