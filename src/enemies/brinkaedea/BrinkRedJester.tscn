@@ -43,7 +43,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 88, 91.75 )
+extents = Vector2( 88, 99.75 )
 
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 66, 90.5 )
@@ -297,11 +297,10 @@ script = ExtResource( 2 )
 position = Vector2( -6, -150 )
 frames = SubResource( 8 )
 animation = "dizzy"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -5, -92.25 )
+position = Vector2( -5, -100.25 )
 shape = SubResource( 9 )
 
 [node name="GreenJesterSource" type="Position2D" parent="."]
