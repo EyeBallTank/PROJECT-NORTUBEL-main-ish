@@ -311,4 +311,6 @@ func cutscene_over():
 #Namylea: I'm from Dahrgrinde and am part of an organization whose works relate to history, science and archeology.
 #Carrie: How did you get here?
 #Namylea: A blue portal showed up and, due to my curiosity, I simply walked through it.
+#Katrin: It might be from this device we use to travel through worlds. Maybe we could help you get back home.
+#Melvin: I remember the combination to her place, but we're never sure exactly where it takes us. For what we know, we could end up back in that battlefield.
 
