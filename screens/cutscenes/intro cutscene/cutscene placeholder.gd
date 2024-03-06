@@ -307,4 +307,8 @@ func cutscene_over():
 #Oscar: Someone seems lost, what's with the big suit?
 #Melvin: Looks like a diver. Hello, who are you?
 #takes off helmet
-#Namylea: Hello, my name is Namylea Matdur and I'm an reporter and explorer working for Dahrgrinde's official 
+#Namylea: Hello, my name is Namylea Matdur and I'm an reporter and explorer.
+#Namylea: I'm from Dahrgrinde and am part of an organization whose works relate to history, science and archeology.
+#Carrie: How did you get here?
+#Namylea: A blue portal showed up and, due to my curiosity, I simply walked through it.
+
