@@ -111,28 +111,6 @@ margin_bottom = 9.0
 custom_fonts/font = ExtResource( 5 )
 text = "PASSWORD_B"
 
-[node name="QuitButton" type="TextureButton" parent="MenuMain"]
-visible = false
-margin_top = 93.0
-margin_right = 304.0
-margin_bottom = 120.0
-focus_mode = 1
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
-texture_hover = ExtResource( 8 )
-
-[node name="Label" type="Label" parent="MenuMain/QuitButton"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -9.0
-margin_right = 24.0
-margin_bottom = 8.0
-custom_fonts/font = ExtResource( 5 )
-text = "QUIT_B"
-
 [node name="ReadButton" type="TextureButton" parent="MenuMain"]
 margin_top = 93.0
 margin_right = 304.0
@@ -172,6 +150,28 @@ margin_right = 5.0
 margin_bottom = 9.0
 custom_fonts/font = ExtResource( 5 )
 text = "CREDITS_B"
+
+[node name="QuitButton" type="TextureButton" parent="MenuMain"]
+visible = false
+margin_top = 155.0
+margin_right = 304.0
+margin_bottom = 182.0
+focus_mode = 1
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MenuMain/QuitButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -9.0
+margin_right = 24.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 5 )
+text = "QUIT_B"
 
 [node name="Sprite" type="Sprite" parent="MenuMain"]
 position = Vector2( -305, 80 )
@@ -388,9 +388,9 @@ text = "QUIT_B"
 [connection signal="pressed" from="MenuMain/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="MenuMain/PasswordButton" to="." method="_on_PasswordButton_pressed"]
-[connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="pressed" from="MenuMain/ReadButton" to="." method="_on_ReadButton_pressed"]
 [connection signal="pressed" from="MenuMain/CreditsButton" to="." method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="MenuMain/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
 [connection signal="value_changed" from="OptionsMenu/SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
 [connection signal="toggled" from="OptionsMenu/VideoSettings/Checks/Fullscreen" to="." method="_on_Fullscreen_toggled"]
