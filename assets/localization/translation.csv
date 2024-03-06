@@ -7,7 +7,7 @@ Return to read again","Prime S para ler/ver e R para parar
 Volte para ler outra vez"
 S_TO_HEAR_CONVO,S to hear conversation,S para ouvir conversa
 QUIT_B, Quit,Saída
-READ_B,Please read!,"Por favor, lê"
+READ_B,   Current issues!,Problemas presentes!
 MUSIC_SET,Music,Música
 SOUND_SET,Sound,Som
 FULLSCREEN_B,Fullscreen,Ecrã Inteiro
