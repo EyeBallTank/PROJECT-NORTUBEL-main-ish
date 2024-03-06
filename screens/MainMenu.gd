@@ -3,6 +3,7 @@ extends Control
 onready var menu = $MenuMain
 onready var options = $OptionsMenu
 onready var password = $PasswordMenu
+onready var manualmenu = $ManualMenu
 
 #1ST LETTERS IN codes NAMES SHOULD BE LOWER CASE AND LETTERS, NOT NUMBERS
 #BECAUSE FUNC NAMES CANT START WITH NUMBERS
@@ -198,3 +199,10 @@ func tf00r1():
 
 func zrkv1l():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil.tscn")
+
+
+func _on_ManualButton_pressed():
+		show_and_hide(manualmenu, menu)
+
+func _on_Manual_Quitbutton_pressed():
+	show_and_hide(menu, manualmenu)
