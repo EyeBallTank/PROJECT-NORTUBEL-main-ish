@@ -152,9 +152,9 @@ position = Vector2( 74, -142 )
 position = Vector2( 74, -142 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 26 )]
-position = Vector2( 432, 1098 )
+position = Vector2( 406, 1107 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Blue switch Greklovick.tres"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 27 )]
-position = Vector2( 503, 1400 )
+position = Vector2( 490, 1313 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Yellow switch Greklovick.tres"
