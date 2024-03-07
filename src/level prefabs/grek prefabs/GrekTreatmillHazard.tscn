@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/Grek Treadmill conveyer floor.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekTreatmillHazard.gd" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/Grek Treadmill crate 2.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/Grek Treadmill crate 3.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/Grek Treadmill crate 4.png" type="Texture" id=6]
+[ext_resource path="res://src/behind_the_scenes/DeathHitbox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/Grek Treadmill laser.png" type="Texture" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -334,6 +336,12 @@ tracks/11/keys = {
 "values": [ false, true, false ]
 }
 
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 96.5, 34 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 21, 159.5 )
+
 [node name="GrekTreatmillHazard" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -343,6 +351,7 @@ collision_mask = 3
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ConveyerFloor"]
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ConveyerFloor"]
@@ -407,3 +416,41 @@ one_way_collision = true
 autoplay = "running"
 anims/RESET = SubResource( 9 )
 anims/running = SubResource( 10 )
+
+[node name="LaserPlatLeft" type="StaticBody2D" parent="."]
+position = Vector2( -575, -160 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="GrekTreadmillLaser" type="Sprite" parent="LaserPlatLeft"]
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaserPlatLeft"]
+position = Vector2( -0.5, -222 )
+shape = SubResource( 11 )
+
+[node name="DeathHitbox" parent="LaserPlatLeft" instance=ExtResource( 7 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaserPlatLeft/DeathHitbox"]
+position = Vector2( 21, -26.5 )
+shape = SubResource( 12 )
+
+[node name="LaserPlatLeftRight" type="StaticBody2D" parent="."]
+position = Vector2( 576, -160 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="GrekTreadmillLaser" type="Sprite" parent="LaserPlatLeftRight"]
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaserPlatLeftRight"]
+position = Vector2( -0.5, -222 )
+shape = SubResource( 11 )
+
+[node name="DeathHitbox" parent="LaserPlatLeftRight" instance=ExtResource( 7 )]
+position = Vector2( -45, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaserPlatLeftRight/DeathHitbox"]
+position = Vector2( 21, -26.5 )
+shape = SubResource( 12 )
