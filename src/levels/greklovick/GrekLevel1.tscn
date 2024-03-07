@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekMultigunSecurity.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekElecTest.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=26]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -148,3 +149,7 @@ position = Vector2( 74, -142 )
 
 [node name="GrekMultigunSecurity" parent="." instance=ExtResource( 24 )]
 position = Vector2( 74, -142 )
+
+[node name="BlueSwitch" parent="." instance=ExtResource( 26 )]
+position = Vector2( 432, 1364 )
+bluswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Blue switch Greklovick.tres"
