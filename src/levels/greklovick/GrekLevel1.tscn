@@ -106,9 +106,11 @@ customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 17 )]
 position = Vector2( 598, 1335 )
+gre1switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch One Greklovick.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
 position = Vector2( 314, 1377 )
+gre2switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch Two Greklovick.tres"
 
 [node name="LevelProp" parent="." instance=ExtResource( 20 )]
 position = Vector2( 800, 1335 )
@@ -134,7 +136,7 @@ customtext = "y13g0r"
 position = Vector2( 2155, -233 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 23 )]
-position = Vector2( 462, 1356 )
+position = Vector2( 329, 1087 )
 boardname = "grek art yiegour reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 23 )]
