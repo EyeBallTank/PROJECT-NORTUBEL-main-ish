@@ -118,9 +118,13 @@ position = Vector2( 1591, 386 )
 propname = "nortprop wood stand 2"
 
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
-position = Vector2( -144, 586 )
+position = Vector2( -305, 438 )
 boardname = "nort art delusional dream"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 9 )]
-position = Vector2( -144, 955 )
+position = Vector2( -85, 425 )
 boardname = "brink art claudia reference"
+
+[node name="ArtBook3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -115, 984 )
+boardname = "brink art bonkette reference"
