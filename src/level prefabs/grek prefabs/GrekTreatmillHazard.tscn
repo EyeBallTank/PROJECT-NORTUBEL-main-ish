@@ -148,10 +148,47 @@ tracks/8/keys = {
 "update": 0,
 "values": [ false ]
 }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Crate4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 328, -134 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Crate4/GrekTreadmillCrate1:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Crate4/CollisionShape2D:disabled")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=10]
 resource_name = "running"
 length = 46.0
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Crate1:position")
 tracks/0/interp = 1
@@ -198,7 +235,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 15.5, 41, 46 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -384, -96 ), Vector2( 672, -96 ), Vector2( -672, -96 ), Vector2( -384, -96 ) ]
+"values": [ Vector2( -384, -96 ), Vector2( 672, -96 ), Vector2( -768, -96 ), Vector2( -384, -96 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Crate2/GrekTreadmillCrate1:modulate")
@@ -234,7 +271,7 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 11, 36, 46 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -88, -120 ), Vector2( 688, -120 ), Vector2( -688, -120 ), Vector2( -88, -120 ) ]
+"values": [ Vector2( -88, -120 ), Vector2( 688, -120 ), Vector2( -856, -120 ), Vector2( -88, -120 ) ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Crate3/GrekTreadmillCrate1:modulate")
@@ -260,6 +297,42 @@ tracks/8/keys = {
 "update": 1,
 "values": [ false, true, false ]
 }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Crate4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 6.7, 31, 46 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 328, -134 ), Vector2( 816, -134 ), Vector2( -816, -134 ), Vector2( 328, -134 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Crate4/GrekTreadmillCrate1:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 6.8, 31 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Crate4/CollisionShape2D:disabled")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 6.8, 31 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
 
 [node name="GrekTreatmillHazard" type="Node2D"]
 script = ExtResource( 2 )
@@ -270,7 +343,6 @@ collision_mask = 3
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ConveyerFloor"]
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ConveyerFloor"]
@@ -332,5 +404,6 @@ shape = SubResource( 8 )
 one_way_collision = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "running"
 anims/RESET = SubResource( 9 )
 anims/running = SubResource( 10 )

@@ -13,4 +13,4 @@ func _ready():
 
 
 func _physics_process(delta):
-	conveyerfloor.constant_linear_velocity = Vector2(80, 0)
+	conveyerfloor.constant_linear_velocity = Vector2(68, 0)
