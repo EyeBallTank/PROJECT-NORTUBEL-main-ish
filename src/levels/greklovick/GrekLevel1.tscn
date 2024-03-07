@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekMultigunSecurity.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekElecTest.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=27]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -106,15 +107,15 @@ position = Vector2( 1146, 1465 )
 customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 17 )]
-position = Vector2( 598, 1335 )
+position = Vector2( 608, 1081 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch One Greklovick.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
-position = Vector2( 314, 1377 )
+position = Vector2( 530, 1093 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch Two Greklovick.tres"
 
 [node name="LevelProp" parent="." instance=ExtResource( 20 )]
-position = Vector2( 800, 1335 )
+position = Vector2( 874, 1361 )
 propname = "grekprop pillartech computer"
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 18 )]
@@ -137,7 +138,7 @@ customtext = "y13g0r"
 position = Vector2( 2155, -233 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 23 )]
-position = Vector2( 329, 1087 )
+position = Vector2( 105, 987 )
 boardname = "grek art yiegour reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 23 )]
@@ -151,5 +152,9 @@ position = Vector2( 74, -142 )
 position = Vector2( 74, -142 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 26 )]
-position = Vector2( 432, 1364 )
+position = Vector2( 432, 1098 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Blue switch Greklovick.tres"
+
+[node name="YellowSwitch" parent="." instance=ExtResource( 27 )]
+position = Vector2( 503, 1400 )
+yelswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Yellow switch Greklovick.tres"
