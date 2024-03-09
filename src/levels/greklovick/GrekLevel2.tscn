@@ -52,6 +52,7 @@ position = Vector2( 2064, 1613 )
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2331, 1370 )
+spritename = "greklovick fallplat"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 736, 1557 )
