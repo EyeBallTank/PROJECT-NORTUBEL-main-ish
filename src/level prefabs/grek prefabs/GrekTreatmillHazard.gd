@@ -9,8 +9,9 @@ onready var create_four = $Crate4
 onready var animation = $AnimationPlayer
 
 func _ready():
-	pass # Replace with function body.
+	animation.set_speed_scale(2.3)
+#	pass # Replace with function body.
 
 
 func _physics_process(delta):
-	conveyerfloor.constant_linear_velocity = Vector2(68, 0)
+	conveyerfloor.constant_linear_velocity = Vector2(155, 0)
