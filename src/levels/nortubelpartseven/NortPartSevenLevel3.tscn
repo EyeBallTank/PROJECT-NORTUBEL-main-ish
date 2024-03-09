@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=4]
@@ -45,3 +46,7 @@ position = Vector2( -150, 1077 )
 position = Vector2( -150, 1077 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
+
+[node name="ArtBook" parent="." instance=ExtResource( 1 )]
+position = Vector2( 315, 1084 )
+boardname = "nort art how 3 older ones met"
