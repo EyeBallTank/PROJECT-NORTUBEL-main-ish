@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_objects/FishHookKinematic.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/tilesets/herrko/herrko 1 tree tiles.tres" type="TileSet" id=9]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 
 [node name="HerrkoLevel1" type="Node2D"]
 
@@ -59,3 +60,7 @@ hookspritename = "herrko hook"
 [node name="LoreBook" parent="." instance=ExtResource( 7 )]
 position = Vector2( 475, 1438 )
 spritename = "herrko lorebook"
+
+[node name="ArtBook" parent="." instance=ExtResource( 10 )]
+position = Vector2( 174, 1416 )
+boardname = "herrko art pebble reference"

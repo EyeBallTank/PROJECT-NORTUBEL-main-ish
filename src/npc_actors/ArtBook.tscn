@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=2]
+[gd_scene load_steps=148 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -74,6 +74,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art how 3 older ones met.png" type="Texture" id=72]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art how 3 older arm heart v2.png" type="Texture" id=73]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art uulga reference v2.png" type="Texture" id=74]
+[ext_resource path="res://assets/sprites/art gallery/herrko/herrko art pebble reference.png" type="Texture" id=75]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -208,6 +209,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=54]
 atlas = ExtResource( 43 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=89]
+atlas = ExtResource( 75 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=59]
@@ -479,6 +484,11 @@ animations = [ {
 "name": "grek art yiegour reference",
 "speed": 1.0
 }, {
+"frames": [ SubResource( 89 ) ],
+"loop": false,
+"name": "herrko art pebble reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 59 ) ],
 "loop": false,
 "name": "herrko art red ghalbeen horg reference",
@@ -713,7 +723,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art uulga reference"
+animation = "herrko art pebble reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
