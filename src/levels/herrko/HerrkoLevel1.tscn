@@ -64,3 +64,7 @@ spritename = "herrko lorebook"
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( 174, 1416 )
 boardname = "herrko art pebble reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 10 )]
+position = Vector2( -547, 1408 )
+boardname = "herrko art ivan reference"
