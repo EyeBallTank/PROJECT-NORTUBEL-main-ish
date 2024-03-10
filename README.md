@@ -63,7 +63,10 @@ Done (Even if it could be better):
 * LIVE SYSTEM: Both characters share the lives meaning if one dies, so does the other; Besides the game-over screen, i also made it so collecting a certain amount of coins adds a new life.
 * CUTSCENES: So far it's a "studio intro" basic thing and a placeholder with dialogue but no images but technically got a template with lots of potential.
 * PASSWORD SYSTEM: In case i don't get a proper Save/Load system, this will do.
-
+* SPACE/GRAVITY ELEMENTS: At least one level is planned to have this.
+* NPC'S AND SIDE CHARACTERS: They're basic but I figured out some good enough stuff.
+* INGAME TEXTS: Yellow and brown objects you interact to read stuff.
+* INGAME GALLERY: Similar to above.
 
 
 Not yet:
@@ -72,12 +75,8 @@ Not yet:
 * "SADNESS" STATE: The idea is that when a character dies, the other is in a "sad state"; This is just a way to "lock" one character when the other is dead, so both respawn when a life is lost.
 * HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style.
 * SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
-* SPACE/GRAVITY ELEMENTS: Maybe "low gravity zones" are good enough and no need for "inverted gravity" zones.
 * BOSS FIGHTS: Will probably be a very complex inclusion.
-* NPC'S AND SIDE CHARACTERS: Not a thing yet since what i got currently is very basic.
 * DIALOGUE SYSTEM: Will i use the Dialogic addon? Not sure.
-* INGAME TEXTS: Like story segments, instructions/tips, "lore" etc.
-* INGAME GALLERY: Because if i figure out basic cutscenes, maybe an art gallery would be neat.
 * COLLECTABLES: Special objects to be collected for fun is something i'd like to try, like "lore texts" or art gallery stuff.
 * NICE VISUALS: It's not just about pretty visuals for the sake of it, things like feedback could be important.
 * BACKGROUNDS AND DECORATIONS: Oh yeah, i guess i could add this to the list.
@@ -93,6 +92,7 @@ Not yet:
 I may end up changing this goal list as well.
 Meanwhile, here's some plans for the main story of the game:
 https://rentry.co/nortubel-story-plans
+https://docs.google.com/document/d/1Ua-ShLy6Z346w-tCx2dfHLl5o2VNHW3KdFtUMO6fTlw/edit#heading=h.4ic3gl7eie3a
 SPOILERS, i guess.
 
 # DEFINITELY NEED TO CHANGE/IMPROVE (EVEN IF I NEED HELP FROM OTHERS):
@@ -114,6 +114,8 @@ SPOILERS, i guess.
 * The sound for the Pushable vase doesn't loop in the way i'd like to, even if it technically works.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things, specially with swimming.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge. 
+* HerrkoLevel4 has 2 scenes representing a switch and a scene that spawns arrow if said switch is pressed: It technically works but Godot gives red error text for some reason.
+* 3 enemies (BrinkRedJester, BrinkGreenJester, HerrkoRedGhalbeen) have a weird problem where they keep running right/to a wall instead of actually switching to the left/properly flip based on wall detection.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
