@@ -1,4 +1,4 @@
-[gd_scene load_steps=152 format=2]
+[gd_scene load_steps=154 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -77,6 +77,7 @@
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art pebble reference.png" type="Texture" id=75]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art ivan reference.png" type="Texture" id=76]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art tarrak reference.png" type="Texture" id=77]
+[ext_resource path="res://assets/sprites/art gallery/herrko/herrko art uulga weapon reference.png" type="Texture" id=78]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -231,6 +232,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=88]
 atlas = ExtResource( 74 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=92]
+atlas = ExtResource( 78 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=37]
@@ -519,6 +524,11 @@ animations = [ {
 "name": "herrko art uulga reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 92 ) ],
+"loop": false,
+"name": "herrko art uulga weapon reference  ",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 37 ) ],
 "loop": false,
 "name": "hird art leon otto avietta",
@@ -743,7 +753,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art tarrak reference"
+animation = "herrko art uulga weapon reference  "
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
