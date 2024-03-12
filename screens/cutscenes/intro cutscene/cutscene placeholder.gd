@@ -230,7 +230,7 @@ func cutscene_over():
 #Bonky: And I saw 2 kids with her, they looked like Monica and illou but Monica had a pointy tooth and illou was dressed like a scientist.
 #Melvin: You mean, like versions of Bonka and those 2 kids from a different universe? Because we also stumbled upon our own doubles.
 #Bonka: Maybe that's what happened. Maybe someone that looked like me infiltrated my plan and did this.
-#Carrie: I don't care, I wanna leave this place.
+#Carrie: I don't care ("Estou me nas tintas"), I wanna leave this place.
 #The 6 leave
 #Bonka: You gotta believe me... 
 #Bonky: Don't worry Bonka, I believe you.
