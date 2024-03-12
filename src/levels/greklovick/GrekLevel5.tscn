@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/tilesets/greklovick/grek base tiles.tres" type="TileSet" id=9]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 
 [node name="GrekLevel5" type="Node2D"]
 
@@ -60,3 +61,7 @@ position = Vector2( 467, 1522 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
 spritename = "greklovick greendoor"
 customtext = "zrkv1l"
+
+[node name="ArtBook" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1225, 1432 )
+boardname = "grek art zharkovil reference"
