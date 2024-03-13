@@ -144,8 +144,12 @@ position = Vector2( 105, 987 )
 boardname = "grek art yiegour reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 23 )]
-position = Vector2( 13, 1356 )
+position = Vector2( 446, 938 )
 boardname = "grek art multigun reference"
+
+[node name="ArtBook3" parent="." instance=ExtResource( 23 )]
+position = Vector2( 285, 1583 )
+boardname = "grek art isaac reference"
 
 [node name="GrekElecTest" parent="." instance=ExtResource( 25 )]
 position = Vector2( 74, -142 )
