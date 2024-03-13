@@ -1,4 +1,4 @@
-[gd_scene load_steps=160 format=2]
+[gd_scene load_steps=162 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -81,6 +81,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art the grid reference.png" type="Texture" id=79]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art zharkovil part 2 reference.png" type="Texture" id=80]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art zharkovil part 1 reference.png" type="Texture" id=81]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art npc references.png" type="Texture" id=82]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -331,6 +332,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=96]
+atlas = ExtResource( 82 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=31]
@@ -659,6 +664,11 @@ animations = [ {
 "name": "massag art mcsherry reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 96 ) ],
+"loop": false,
+"name": "massag art npc references",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 31 ) ],
 "loop": false,
 "name": "massag art touni reference",
@@ -778,8 +788,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "grek art zharkovil reference"
-frame = 1
+animation = "massag art npc references"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
