@@ -1,4 +1,4 @@
-[gd_scene load_steps=168 format=2]
+[gd_scene load_steps=170 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -85,6 +85,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art cheerleaders reference.png" type="Texture" id=83]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art isaac reference.png" type="Texture" id=84]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art euloria reference v2.png" type="Texture" id=85]
+[ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirlindu reference.png" type="Texture" id=86]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -235,6 +236,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=95]
 atlas = ExtResource( 80 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=100]
+atlas = ExtResource( 86 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=99]
@@ -549,6 +554,11 @@ animations = [ {
 "name": "grek art zharkovil reference",
 "speed": 1.0
 }, {
+"frames": [ SubResource( 100 ) ],
+"loop": false,
+"name": "herrko art dirlindu reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 99 ) ],
 "loop": false,
 "name": "herrko art euloria reference",
@@ -818,7 +828,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art euloria reference"
+animation = "herrko art dirlindu reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
