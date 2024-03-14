@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/herrko art euloria reference.png-b9290b74e21fcaf3d75e26a68a10dec6.stex"
+path="res://.import/herrko art euloria reference v2.png-6d4d796440783051c812971a9f5b681e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/herrko/herrko art euloria reference.png"
-dest_files=[ "res://.import/herrko art euloria reference.png-b9290b74e21fcaf3d75e26a68a10dec6.stex" ]
+source_file="res://assets/sprites/art gallery/herrko/herrko art euloria reference v2.png"
+dest_files=[ "res://.import/herrko art euloria reference v2.png-6d4d796440783051c812971a9f5b681e.stex" ]
 
 [params]
 
