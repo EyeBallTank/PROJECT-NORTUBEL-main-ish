@@ -1,4 +1,4 @@
-[gd_scene load_steps=170 format=2]
+[gd_scene load_steps=172 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -86,6 +86,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art isaac reference.png" type="Texture" id=84]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art euloria reference v2.png" type="Texture" id=85]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirlindu reference.png" type="Texture" id=86]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art venus base reference.png" type="Texture" id=87]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -216,6 +217,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=93]
 atlas = ExtResource( 79 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=101]
+atlas = ExtResource( 87 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=50]
@@ -544,6 +549,11 @@ animations = [ {
 "name": "grek art the grid reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 101 ) ],
+"loop": false,
+"name": "grek art venus base reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 54 ) ],
 "loop": true,
 "name": "grek art yiegour reference",
@@ -828,7 +838,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art dirlindu reference"
+animation = "grek art venus base reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
