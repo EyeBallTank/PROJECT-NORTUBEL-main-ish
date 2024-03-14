@@ -47,5 +47,9 @@ position = Vector2( -157, 1380 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="ArtBook" parent="." instance=ExtResource( 1 )]
-position = Vector2( 49, 1669 )
+position = Vector2( -125, 997 )
 boardname = "herrko art tarrak reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 30, 1703 )
+boardname = "herrko art euloria reference"
