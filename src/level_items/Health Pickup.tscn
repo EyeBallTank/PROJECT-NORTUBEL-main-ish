@@ -8,16 +8,16 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/untotern/health pickup untotern 2.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_item_sprites/herrko/health pickup herrko.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/level_item_sprites/massagcoav/health pickup massagcoav.PNG" type="Texture" id=8]
-[ext_resource path="res://assets/sprites/level_item_sprites/greklovick/health pickup greklovick.PNG" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_item_sprites/lahiurn/health pickup lahiurn.PNG" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/level_item_sprites/krimbstone/health pickup krimbstone.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/level_item_sprites/greklovick/health pickup greklovick v3.png" type="Texture" id=12]
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 376, 388 )
 
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 9 )
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 12 )
 region = Rect2( 0, 0, 421, 452 )
 
 [sub_resource type="AtlasTexture" id=9]
@@ -56,7 +56,7 @@ animations = [ {
 "name": "brinkaedea health",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 11 ) ],
+"frames": [ SubResource( 14 ) ],
 "loop": false,
 "name": "greklovick health",
 "speed": 0.0

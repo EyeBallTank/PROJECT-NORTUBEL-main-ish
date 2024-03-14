@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/health pickup greklovick.PNG-e35d59b639e22425cc115ecc16ce9949.stex"
+path="res://.import/health pickup greklovick v3.png-65bf12f953cf73ce6959228d61ff838a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_item_sprites/greklovick/health pickup greklovick.PNG"
-dest_files=[ "res://.import/health pickup greklovick.PNG-e35d59b639e22425cc115ecc16ce9949.stex" ]
+source_file="res://assets/sprites/level_item_sprites/greklovick/health pickup greklovick v3.png"
+dest_files=[ "res://.import/health pickup greklovick v3.png-65bf12f953cf73ce6959228d61ff838a.stex" ]
 
 [params]
 
