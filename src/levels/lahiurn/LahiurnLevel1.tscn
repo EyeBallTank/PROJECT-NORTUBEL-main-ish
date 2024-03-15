@@ -58,3 +58,7 @@ spritename = "lahiurn greendoor"
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
 position = Vector2( 287, 1688 )
 boardname = "lahiurn art night rider"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 701, 1688 )
+boardname = "lahiurn art both soldiers reference"

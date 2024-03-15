@@ -1,4 +1,4 @@
-[gd_scene load_steps=178 format=2]
+[gd_scene load_steps=180 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -90,6 +90,7 @@
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art herkko castle reference.png" type="Texture" id=88]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art npc reference.png" type="Texture" id=89]
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art submarine.png" type="Texture" id=90]
+[ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art both soldiers reference.png" type="Texture" id=91]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -316,6 +317,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=105]
+atlas = ExtResource( 91 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=47]
@@ -669,6 +674,11 @@ animations = [ {
 "name": "krimbart ricotto reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 105 ) ],
+"loop": false,
+"name": "lahiurn art both soldiers reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 47 ) ],
 "loop": false,
 "name": "lahiurn art night rider",
@@ -868,7 +878,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "lahiurn art submarine"
+animation = "lahiurn art both soldiers reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
