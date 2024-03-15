@@ -86,7 +86,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art isaac reference.png" type="Texture" id=84]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art euloria reference v2.png" type="Texture" id=85]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirlindu reference.png" type="Texture" id=86]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art venus base reference.png" type="Texture" id=87]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art venus base reference v2.png" type="Texture" id=87]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
