@@ -1,4 +1,4 @@
-[gd_scene load_steps=176 format=2]
+[gd_scene load_steps=178 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -89,6 +89,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art venus base reference v2.png" type="Texture" id=87]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art herkko castle reference.png" type="Texture" id=88]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art npc reference.png" type="Texture" id=89]
+[ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art submarine.png" type="Texture" id=90]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -319,6 +320,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=47]
 atlas = ExtResource( 39 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=104]
+atlas = ExtResource( 90 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=38]
@@ -669,6 +674,11 @@ animations = [ {
 "name": "lahiurn art night rider",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 104 ) ],
+"loop": false,
+"name": "lahiurn art submarine",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 38 ) ],
 "loop": false,
 "name": "massag art atlantis scenery",
@@ -858,7 +868,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art npc reference"
+animation = "lahiurn art submarine"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
