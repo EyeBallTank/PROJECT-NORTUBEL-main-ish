@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/krimbstone/BookHint Krimbstone.PNG" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/BookHint Massagcoav.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/level_object_sprites/herrko/BookHint herrko.PNG" type="Texture" id=8]
-[ext_resource path="res://assets/sprites/level_object_sprites/greklovick/BookHint greklovick 4.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/level_object_sprites/greklovick/BookHint greklovick 5.png" type="Texture" id=9]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="AtlasTexture" id=12]
@@ -45,7 +45,7 @@ animations = [ {
 "frames": [ SubResource( 12 ), SubResource( 13 ) ],
 "loop": true,
 "name": "greklovick lorebook",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
