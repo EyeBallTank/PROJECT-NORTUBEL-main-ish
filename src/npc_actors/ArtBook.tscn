@@ -1,4 +1,4 @@
-[gd_scene load_steps=182 format=2]
+[gd_scene load_steps=184 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -92,6 +92,7 @@
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art submarine.png" type="Texture" id=90]
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art both soldiers reference.png" type="Texture" id=91]
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art resistance reference.png" type="Texture" id=92]
+[ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art namylea reference.png" type="Texture" id=93]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -322,6 +323,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=105]
 atlas = ExtResource( 91 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=107]
+atlas = ExtResource( 93 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=47]
@@ -684,6 +689,11 @@ animations = [ {
 "name": "lahiurn art both soldiers reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 107 ) ],
+"loop": false,
+"name": "lahiurn art namylea reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 47 ) ],
 "loop": false,
 "name": "lahiurn art night rider",
@@ -888,7 +898,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "lahiurn art resistance reference"
+animation = "lahiurn art namylea reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

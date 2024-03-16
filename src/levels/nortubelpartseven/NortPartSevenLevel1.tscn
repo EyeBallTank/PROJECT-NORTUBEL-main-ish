@@ -97,3 +97,7 @@ customtext = "NORTUBEL_LORE_POET_T"
 [node name="ArtBook" parent="." instance=ExtResource( 11 )]
 position = Vector2( 76, 1391 )
 boardname = "lahiurn art resistance reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 11 )]
+position = Vector2( -342, 1391 )
+boardname = "lahiurn art namylea reference"
