@@ -35,9 +35,11 @@ format = 1
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -102, 1272 )
+playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( 94, 1272 )
+companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
 position = Vector2( -102, 1272 )
