@@ -334,5 +334,6 @@ position = Vector2( 6571, 988 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( 491, 1782 )
+boardname = "lahiurn art lomeshtin reference"
 
 [editable path="LahiurnWoodenPlatFall"]
