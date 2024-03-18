@@ -96,5 +96,9 @@ position = Vector2( -393, 1413 )
 spritename = "untotern pushable"
 
 [node name="ArtBook" parent="." instance=ExtResource( 17 )]
-position = Vector2( -357, 1232 )
+position = Vector2( -544, 703 )
 boardname = "unto art beatrice reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 17 )]
+position = Vector2( -352, 1227 )
+boardname = "unto art cornelius reference"
