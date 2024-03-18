@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/unto art taaf reference.png-35d39b65b9410612c23102f9764d0ffa.stex"
+path="res://.import/unto art taaf reference v2.png-5f3ad787ffd9c7b4dcc0f0f9d2fd64f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/untotern/unto art taaf reference.png"
-dest_files=[ "res://.import/unto art taaf reference.png-35d39b65b9410612c23102f9764d0ffa.stex" ]
+source_file="res://assets/sprites/art gallery/untotern/unto art taaf reference v2.png"
+dest_files=[ "res://.import/unto art taaf reference v2.png-5f3ad787ffd9c7b4dcc0f0f9d2fd64f9.stex" ]
 
 [params]
 

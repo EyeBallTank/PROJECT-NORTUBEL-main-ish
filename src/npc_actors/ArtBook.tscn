@@ -98,7 +98,7 @@
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art kalub reference.png" type="Texture" id=96]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art beatrice reference.png" type="Texture" id=97]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art cornelius reference.png" type="Texture" id=98]
-[ext_resource path="res://assets/sprites/art gallery/untotern/unto art taaf reference.png" type="Texture" id=99]
+[ext_resource path="res://assets/sprites/art gallery/untotern/unto art taaf reference v2.png" type="Texture" id=99]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art marcus reference.png" type="Texture" id=100]
 
 [sub_resource type="AtlasTexture" id=42]
@@ -488,7 +488,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 95 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=113]
+[sub_resource type="AtlasTexture" id=115]
 atlas = ExtResource( 99 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -929,7 +929,7 @@ animations = [ {
 "name": "unto art stoker twins reference",
 "speed": 1.0
 }, {
-"frames": [ SubResource( 113 ) ],
+"frames": [ SubResource( 115 ) ],
 "loop": false,
 "name": "unto art taaf reference",
 "speed": 0.0
