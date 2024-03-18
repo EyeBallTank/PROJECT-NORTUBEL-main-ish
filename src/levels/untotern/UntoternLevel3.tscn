@@ -100,5 +100,9 @@ position = Vector2( -544, 703 )
 boardname = "unto art beatrice reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 17 )]
-position = Vector2( -352, 1227 )
+position = Vector2( -186, 637 )
 boardname = "unto art cornelius reference"
+
+[node name="ArtBook3" parent="." instance=ExtResource( 17 )]
+position = Vector2( -342, 1252 )
+boardname = "unto art taaf reference"
