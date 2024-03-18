@@ -1,4 +1,4 @@
-[gd_scene load_steps=196 format=2]
+[gd_scene load_steps=198 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -99,6 +99,7 @@
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art beatrice reference.png" type="Texture" id=97]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art cornelius reference.png" type="Texture" id=98]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art taaf reference.png" type="Texture" id=99]
+[ext_resource path="res://assets/sprites/art gallery/untotern/unto art marcus reference.png" type="Texture" id=100]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -473,6 +474,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=112]
 atlas = ExtResource( 98 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=114]
+atlas = ExtResource( 100 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=110]
@@ -914,6 +919,11 @@ animations = [ {
 "name": "unto art cornelius reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 114 ) ],
+"loop": false,
+"name": "unto art marcus reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 110 ), SubResource( 109 ) ],
 "loop": true,
 "name": "unto art stoker twins reference",
@@ -953,7 +963,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "unto art taaf reference"
+animation = "unto art marcus reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
