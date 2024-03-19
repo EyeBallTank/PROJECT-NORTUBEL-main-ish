@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/shield coin 2.png" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Coin test.gd" type="Script" id=2]
@@ -6,6 +6,11 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/hirdrih/shield coin hirdrih.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_item_sprites/massagcoav/shield coin massagcoav.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_item_sprites/krimbstone/shield coin krimbstone.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/level_item_sprites/greklovick/shield coin greklovick.png" type="Texture" id=7]
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 211, 212 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 4 )
@@ -25,6 +30,11 @@ region = Rect2( 0, 0, 211, 212 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "greklovick coin",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 8 ) ],
 "loop": false,
 "name": "hirdrih coin",
@@ -273,7 +283,7 @@ script = ExtResource( 2 )
 position = Vector2( 1.02871e-07, -47 )
 scale = Vector2( 0.466825, 0.440956 )
 frames = SubResource( 6 )
-animation = "nortubel coin"
+animation = "greklovick coin"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -46 )
