@@ -1,4 +1,4 @@
-[gd_scene load_steps=202 format=2]
+[gd_scene load_steps=204 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -102,6 +102,7 @@
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art marcus reference.png" type="Texture" id=100]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art maikouto p1 reference.png" type="Texture" id=101]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art maikouto p2 reference.png" type="Texture" id=102]
+[ext_resource path="res://assets/sprites/art gallery/untotern/unto art vimana reference.png" type="Texture" id=103]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -500,6 +501,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=115]
 atlas = ExtResource( 99 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=118]
+atlas = ExtResource( 103 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="SpriteFrames" id=6]
@@ -948,6 +953,11 @@ animations = [ {
 "loop": false,
 "name": "unto art taaf reference",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 118 ) ],
+"loop": false,
+"name": "unto art vimana reference",
+"speed": 0.0
 } ]
 
 [node name="ArtBook" type="KinematicBody2D"]
@@ -978,8 +988,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "unto art maikouto reference"
-frame = 1
+animation = "unto art vimana reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
