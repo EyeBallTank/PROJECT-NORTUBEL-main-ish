@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,12 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=14]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -31,7 +37,7 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114115, 1, 0, 1179651, 1, 0, 1245187, 1, 0, 1310723, 1, 0, 1376259, 1, 0, 1441795, 1, 0, 1507331, 1, 0 )
+tile_data = PoolIntArray( 1114115, 1, 0, 1179651, 1, 0, 1245187, 1, 0, 1310723, 1, 0, 1376259, 1, 0, 1441795, 1, 0, 1507331, 1, 0, 1769479, 0, 0, 1769480, 0, 0, 1769481, 0, 0, 1769482, 0, 0, 1769483, 0, 0, 1769484, 0, 0, 1769485, 0, 0, 1769486, 0, 0, 1769487, 0, 0, 1769488, 0, 0, 1769489, 0, 0, 1769490, 0, 0, 1769491, 0, 0, 1769492, 0, 0, 1769493, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -337, 1420 )
@@ -62,3 +68,27 @@ boardname = "herrko art uulga weapon reference  "
 [node name="LifeguardFloater" parent="." instance=ExtResource( 8 )]
 position = Vector2( 407, 1403 )
 spritename = "herrko floater"
+
+[node name="Blue key" parent="." instance=ExtResource( 12 )]
+position = Vector2( 383, 1574 )
+spritename = "herrko blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 14 )]
+position = Vector2( 503, 1573 )
+spritename = "herrko redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 9 )]
+position = Vector2( 641, 1568 )
+spritename = "herrko yelkey"
+
+[node name="BlueDoor" parent="." instance=ExtResource( 11 )]
+position = Vector2( 783, 1579 )
+spritename = "herrko bludoor"
+
+[node name="RedDoor" parent="." instance=ExtResource( 10 )]
+position = Vector2( 993, 1575 )
+spritename = "herrko reddoor"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1243, 1574 )
+spritename = "herrko yeldoor"
