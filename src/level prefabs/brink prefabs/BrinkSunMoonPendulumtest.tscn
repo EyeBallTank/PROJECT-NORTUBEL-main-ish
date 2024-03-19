@@ -1,26 +1,106 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink sunmoon stars thing.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink sunmoon cloud thing.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink sunmoon thing.png" type="Texture" id=3]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkSunMoonPendulumtest.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 10, 175.714 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 90, 3.5 )
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 47.1699
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 91, 6 )
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BrinkSunmoonStarsThing:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 67.0294 ]
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("BrinkSunmoonStarsThing/Cloud:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 271, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("BrinkSunmoonStarsThing/Cloud:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 157, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "swing"
+length = 4.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("BrinkSunmoonStarsThing:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -59.928, -0.25, 0, 1.07, 1.24869, 60.2068, -1.09, -0.0411186, 1.21, -0.0411186, -60.0252, -1.11, 1.68235, 0.25, 0 ),
+"times": PoolRealArray( 0.03, 1.99, 4.01 )
+}
 
 [node name="BrinkSunMoonPendulumtest" type="Node2D"]
+script = ExtResource( 4 )
 
-[node name="BrinkSunmoonStarsThing" type="Sprite" parent="."]
-position = Vector2( 0, 148 )
+[node name="BrinkSunmoonStarsThing" type="KinematicBody2D" parent="."]
+rotation = 1.16988
+collision_layer = 16384
+collision_mask = 0
+
+[node name="BrinkSunmoonStarsThing" type="Sprite" parent="BrinkSunmoonStarsThing"]
+position = Vector2( 0.0854053, 0.0227692 )
 texture = ExtResource( 1 )
+offset = Vector2( -2.53554, 157.394 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BrinkSunmoonStarsThing"]
+position = Vector2( 0, 165.714 )
+shape = SubResource( 5 )
+
+[node name="Cloud" type="KinematicBody2D" parent="BrinkSunmoonStarsThing"]
+position = Vector2( 271, 157 )
+rotation = 1.04594
+collision_layer = 4
+collision_mask = 3
+
+[node name="BrinkSunmoonCloudThing" type="Sprite" parent="BrinkSunmoonStarsThing/Cloud"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BrinkSunmoonStarsThing/Cloud"]
+position = Vector2( 5, 9.5 )
+shape = SubResource( 6 )
+one_way_collision = true
+
+[node name="Anchor" type="Position2D" parent="BrinkSunmoonStarsThing"]
+position = Vector2( -1.43869, 312.829 )
+rotation = 1.04594
 
 [node name="sunmoon" type="StaticBody2D" parent="."]
-collision_layer = 8192
+collision_layer = 16384
 collision_mask = 0
 
 [node name="BrinkSunmoonThing" type="Sprite" parent="sunmoon"]
@@ -29,18 +109,7 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sunmoon"]
 shape = SubResource( 1 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 0, 305 )
-collision_layer = 4
-collision_mask = 3
-
-[node name="BrinkSunmoonCloudThing" type="Sprite" parent="KinematicBody2D"]
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 6, 7 )
-shape = SubResource( 2 )
-one_way_collision = true
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "swing"
+anims/RESET = SubResource( 4 )
 anims/swing = SubResource( 3 )

@@ -139,7 +139,7 @@ collision_mask = 0
 [node name="Sprite" type="AnimatedSprite" parent="FishHookWithWire"]
 position = Vector2( 14, 429 )
 frames = SubResource( 6 )
-animation = "atlantis hook"
+animation = "nortubel hook"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishHookWithWire"]
 position = Vector2( 20, 715 )
@@ -163,5 +163,5 @@ anims/RopeSwing = SubResource( 3 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 11, 709 )
 frames = SubResource( 8 )
-animation = "atlantis anchor"
+animation = "nortubel anchor"
 offset = Vector2( -10.5, -923 )
