@@ -77,10 +77,10 @@ position = Vector2( 2429, -471 )
 position = Vector2( 3253, -729 )
 
 [node name="HerrkoRedGhalbeen" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3969, -246 )
+position = Vector2( 1726, -317 )
 
 [node name="BrinkRedJester" parent="." instance=ExtResource( 15 )]
-position = Vector2( 3866, -346 )
+position = Vector2( 507, -335 )
 
 [node name="GrekAmmoDispenser" parent="." instance=ExtResource( 12 )]
 position = Vector2( 352, -1109 )

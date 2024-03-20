@@ -294,29 +294,28 @@ collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -6, -150 )
+position = Vector2( -2, -50 )
 frames = SubResource( 8 )
-animation = "dizzy"
+animation = "laugh"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -5, -100.25 )
 shape = SubResource( 9 )
 
 [node name="GreenJesterSource" type="Position2D" parent="."]
-position = Vector2( 0, -99 )
+position = Vector2( 4, 1 )
 
 [node name="CloudEffect" type="Position2D" parent="."]
-position = Vector2( 0, -120 )
+position = Vector2( 4, -20 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( -214, -151 )
+position = Vector2( -210, -51 )
 enabled = true
 cast_to = Vector2( 611, 0 )
 collision_mask = 3
 
 [node name="EnemyHurtbox" type="Area2D" parent="."]
-position = Vector2( 15, -333 )
+position = Vector2( 19, -233 )
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
@@ -324,6 +323,7 @@ position = Vector2( -19, 240.5 )
 shape = SubResource( 18 )
 
 [node name="EnemyHitbox" parent="." instance=ExtResource( 3 )]
+position = Vector2( 4, 100 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
 position = Vector2( -4, -93 )

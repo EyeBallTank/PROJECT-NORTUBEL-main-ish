@@ -81,7 +81,6 @@ func attack():
 	timer.start(0.5)
 
 func attack_grenade():
-	sound.play()
 	var bombdirect = scale.x
 	var grenade = Bomb.instance()
 	get_tree().get_root().add_child(grenade)
