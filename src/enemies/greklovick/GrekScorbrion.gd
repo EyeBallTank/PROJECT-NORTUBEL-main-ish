@@ -15,7 +15,7 @@ onready var gunhole = $Position2D
 var canattack = false
 var canmove = true
 
-#const Bullet = preload("res://src/enemies/greklovick/GrekGrenade.tscn")
+const Bullet = preload("res://src/enemies/greklovick/GrekEnergyOrb.tscn")
 
 enum {
 	MOVING,
@@ -47,10 +47,16 @@ func _physics_process(delta):
 			gravity = 37600
 
 		SHOOT:
-			pass
+			velocity.x = 0
+			animation.play("Shoot")
+			timer.start(2)
+			if timer.time_left == 0:
+				state = MOVING
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
 
 		DEAD:
-			pass
+			animation.play("Dying.")
 
 func detect_turn_around():
 	if not floordetect.is_colliding() and is_on_floor():
@@ -68,3 +74,21 @@ func see_to_attack():
 
 func return_to_move():
 	state = MOVING
+
+func attack():
+	var grenade = Bullet.instance()
+	get_tree().get_root().add_child(grenade)
+	grenade.global_position = gunhole.global_position
+	if sprite.flip_h == true:
+		grenade.velocity.x = grenade.speed * 10
+	elif sprite.flip_h == false:
+		grenade.velocity.x = grenade.speed * -10
+
+
+	timer.start(0.5)
+
+func _on_EnemyHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD
+	if area.name == "EnemyCrusher":
+		state = DEAD
