@@ -12,13 +12,17 @@ onready var timer = $Timer
 onready var arrowsource = $ArrowSource
 onready var walldetect = $wall_detect
 
-const Bullet = preload("res://src/enemies/hirdrih/HirdServProjectile.tscn")
+const Bullet = preload("res://src/level_hazards/herrko/GhalbeenArrow.tscn")
 #NOTE: THIS GUY IS BROKEN AND SO IS HIS ARROW
 #His movement is a mess
 #Still can't turn when touching walls
 #"res://src/level_hazards/herrko/GhalbeenArrow.tscn"
-
+#res://src/enemies/hirdrih/HirdServProjectile.tscn
 #CHANCES ARE I GOTTA MAKE GHALBEEN'S SCRIPT CONTROL THE ARROW AND HAVE DATA LIKE TARGET AND HOMING LOGIC
+
+var player_position
+var target_position
+onready var player = get_parent().get_node("Player")
 
 enum {
 	MOVING,
@@ -32,6 +36,9 @@ func _ready():
 	animation.play("RESET")
 
 func _physics_process(delta):
+	player_position = player.position
+	target_position = (player_position - position).normalized()
+
 	match state:
 		MOVING:
 			detect_turn_around()
@@ -77,6 +84,11 @@ func attack():
 	var projectile = Bullet.instance()
 	projectile.global_position = arrowsource.global_position
 	get_tree().get_root().add_child(projectile)
+
+	if projectile.position.distance_to(player_position) > 3:
+		projectile.move_and_slide(target_position * projectile.speed)
+		projectile.look_at(player_position)
+
 
 func detect_turn_around():
 	if not walldetect.is_colliding() and is_on_wall():
