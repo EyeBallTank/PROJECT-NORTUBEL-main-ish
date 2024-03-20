@@ -79,9 +79,9 @@ func attack():
 	var grenade = Bullet.instance()
 	get_tree().get_root().add_child(grenade)
 	grenade.global_position = gunhole.global_position
-	if sprite.flip_h == false:
+	if direction == Vector2.RIGHT:
 		grenade.velocity.x = grenade.speed * 10
-	elif sprite.flip_h == true:
+	elif direction == Vector2.LEFT:
 		grenade.velocity.x = grenade.speed * -10
 
 
