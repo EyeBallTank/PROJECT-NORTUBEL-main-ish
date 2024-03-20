@@ -100,4 +100,4 @@ position = Vector2( 3866, -346 )
 position = Vector2( 2869, -771 )
 
 [node name="BrinkSunMoonPendulumtest" parent="." instance=ExtResource( 22 )]
-position = Vector2( 624, -863 )
+position = Vector2( 3102, -1518 )
