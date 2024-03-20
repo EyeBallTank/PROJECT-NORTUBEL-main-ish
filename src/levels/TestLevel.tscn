@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekElecTest.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkSunMoonPendulumtest.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/enemies/greklovick/GrekScorbrion.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/enemies/untotern/UntoDesolate.tscn" type="PackedScene" id=24]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -104,4 +105,7 @@ position = Vector2( 2869, -771 )
 position = Vector2( 3102, -1518 )
 
 [node name="GrekScorbrion" parent="." instance=ExtResource( 23 )]
-position = Vector2( 292, -419 )
+position = Vector2( 3429, -425 )
+
+[node name="UntoDesolate" parent="." instance=ExtResource( 24 )]
+position = Vector2( 31, -409 )

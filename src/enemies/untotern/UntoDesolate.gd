@@ -12,7 +12,7 @@ onready var gunhole = $Position2D
 var canattack = false
 var canmove = true
 
-const Bullet = preload("res://src/enemies/greklovick/GrekEnergyOrb.tscn")
+const Bullet = preload("res://src/enemies/untotern/UntoDoubleFireballs.tscn")
 
 enum {
 	MOVING,
