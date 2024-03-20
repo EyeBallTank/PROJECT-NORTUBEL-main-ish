@@ -26,13 +26,25 @@ enum {
 var state = MOVING
 
 func _ready():
-	pass
+	animation.play("RESET")
 
 func _physics_process(delta):
 
 	match state:
 		MOVING:
-			pass
+			if see_to_attack():
+				state = SHOOT
+
+			detect_turn_around()
+			sprite.play("move")
+			var found_wall = is_on_wall()
+			if found_wall:
+				direction *= -1
+				scale.x = -scale.x
+			velocity = direction * 160
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
+			gravity = 37600
 
 		SHOOT:
 			pass
