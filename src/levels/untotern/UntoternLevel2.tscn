@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/tilesets/untotern/unto 2 scary tiles.tres" type="TileSet" id=8]
+[ext_resource path="res://src/enemies/untotern/UntoDesolate.tscn" type="PackedScene" id=9]
 
 [node name="UntoternLevel2" type="Node2D"]
 
@@ -53,3 +54,6 @@ position = Vector2( 965, 880 )
 [node name="ArtBook" parent="." instance=ExtResource( 7 )]
 position = Vector2( 325, 1544 )
 boardname = "unto art vimana reference"
+
+[node name="UntoDesolate" parent="." instance=ExtResource( 9 )]
+position = Vector2( 900, 1397 )
