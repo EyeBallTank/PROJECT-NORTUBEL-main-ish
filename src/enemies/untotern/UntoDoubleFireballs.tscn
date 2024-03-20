@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/enemies/lahiurn/LahiurnMorningStar.gd" type="Script" id=4]
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+
+[sub_resource type="Animation" id=4]
+resource_name = "starattack"
+length = 7.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 6.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "die"
+} ]
+}
+
+[node name="UntoDoubleFireballs" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 8 )
+anims/starattack = SubResource( 4 )
