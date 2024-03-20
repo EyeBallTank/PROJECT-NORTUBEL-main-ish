@@ -115,7 +115,9 @@ SPOILERS, i guess.
 * Player and Companion's collision shapes change size when on some states (Like Swimming) which can bring some weird things, specially with swimming.
 * The off-screen pointer for the Companion is placed weirdly but i did all i could do based on my knowledge. 
 * HerrkoLevel4 has 2 scenes representing a switch and a scene that spawns arrow if said switch is pressed: It technically works but Godot gives red error text for some reason.
-* 3 enemies (BrinkRedJester, BrinkGreenJester, HerrkoRedGhalbeen) have a weird problem where they keep running right/to a wall instead of actually switching to the left/properly flip based on wall detection.
+* The enemy HerrkoRedGhalbeen has a weird problem where he keeps running right/to a wall instead of actually switching to the left/properly flip based on wall detection.
+* I didn't find a way to make HerrkoRedGhalbeen summon GhalbeenArrow probably and have the latter proberly chase the Player as a homing projectile.
+* When BrinkRedJester summons BrinkGreenJester, the debugger sends red code about there not being an animation called "abouttosummon" even though it's no where in the code or the nodes used, unless I'm overlooking something.
 
 # Current controls/Inputs:
 This is an area that needs to be improved:
