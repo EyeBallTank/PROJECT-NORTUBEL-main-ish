@@ -7,7 +7,7 @@ var speed = 25
 onready var animation = $AnimationPlayer
 onready var elecplace = $Position2D
 
-const Electricity = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
+const Electricity = preload("res://src/enemies/greklovick/GrekSplittingEnergyOrbs.tscn")
 
 
 func _ready():

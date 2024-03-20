@@ -144,7 +144,7 @@ tracks/4/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=7]
-radius = 53.0377
+radius = 582.001
 
 [node name="GrekEnergyOrb" type="KinematicBody2D"]
 z_index = 9
