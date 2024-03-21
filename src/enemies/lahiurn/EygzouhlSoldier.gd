@@ -59,7 +59,10 @@ func _physics_process(delta):
 			animation.play("Dying.")
 
 func attack():
-	pass
+	var fire_hurt = Bullet.instance()
+	get_tree().get_root().add_child(fire_hurt)
+	fire_hurt.global_position = gunhole.global_position
+	timer.start(0.5)
 
 func detect_turn_around():
 	if not floordetect.is_colliding() and is_on_floor():
