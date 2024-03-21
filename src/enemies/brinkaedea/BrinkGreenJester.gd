@@ -6,7 +6,7 @@ export var gravity: = 3700
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
-var walk_speed = 220
+var walk_speed = 400
 
 onready var sprites = $AnimatedSprite
 onready var animation = $AnimationPlayer

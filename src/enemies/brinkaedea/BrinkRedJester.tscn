@@ -113,6 +113,18 @@ tracks/4/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/5/type = "value"
+tracks/5/path = NodePath("AnimatedSprite:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "doingalaugh" ]
+}
 
 [sub_resource type="Animation" id=25]
 resource_name = "attack"
@@ -309,9 +321,9 @@ position = Vector2( 4, 1 )
 position = Vector2( 4, -20 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( -210, -51 )
+position = Vector2( -448, -40 )
 enabled = true
-cast_to = Vector2( 611, 0 )
+cast_to = Vector2( 896, -4 )
 collision_mask = 3
 
 [node name="EnemyHurtbox" type="Area2D" parent="."]

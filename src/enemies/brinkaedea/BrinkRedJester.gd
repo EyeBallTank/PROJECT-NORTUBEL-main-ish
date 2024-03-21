@@ -8,6 +8,8 @@ extends KinematicBody2D
 #IT SEEMS HE CAN TURN WHEN TOUCHING WALLS NOW AND THE SAME FOR GREEN JESTER
 #BUT DEBUGGER SAYING THERE'S NO "ABOUTTOSUMMON" ANIMATION IS STILL THERE
 
+#think i made it worse with "doingalaugh"
+
 export var gravity: = 3700
 
 var direction = Vector2.RIGHT

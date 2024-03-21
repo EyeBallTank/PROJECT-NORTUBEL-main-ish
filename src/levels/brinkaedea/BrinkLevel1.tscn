@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=11]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_hazards/brinkaedea/BrinkEvilAccordion.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/enemies/brinkaedea/BrinkRedJester.tscn" type="PackedScene" id=14]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -28,7 +29,7 @@ tile_set = ExtResource( 11 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 786426, 0, 0, 851962, 0, 0, 917498, 0, 0, 917500, 32, 0, 983034, 0, 0, 983036, 32, 0, 1048570, 0, 0, 1048572, 32, 0, 1114106, 0, 0, 1114108, 32, 0, 1179642, 0, 0, 1179644, 32, 0, 1245178, 0, 0, 1245179, 1, 0, 1245180, 32, 0, 1310714, 0, 0, 1310715, 1, 0, 1310716, 32, 0, 1376250, 0, 0, 1376251, 1, 0, 1376252, 32, 0, 1376253, 32, 0, 1376254, 32, 0, 1376255, 32, 0, 1310720, 32, 0, 1310721, 32, 0, 1310722, 32, 0, 1310723, 32, 0, 1310724, 32, 0, 1310725, 32, 0, 1310726, 32, 0, 1310727, 32, 0, 1310728, 32, 0, 1310729, 32, 0, 1310730, 32, 0, 1310731, 32, 0, 1310732, 32, 0, 1310733, 32, 0, 1441786, 0, 0, 1441787, 0, 0, 1441788, 0, 0, 1441789, 0, 0, 1441790, 0, 0, 1441791, 0, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376262, 0, 0, 1376263, 0, 0, 1376264, 0, 0, 1376265, 0, 0, 1376266, 0, 0, 1376267, 0, 0, 1376268, 0, 0, 1376269, 0, 0, 1376270, 0, 0, 1376271, 0, 0, 1376272, 0, 0, 1376273, 0, 0, 1376274, 0, 0 )
+tile_data = PoolIntArray( 786426, 0, 0, 851962, 0, 0, 917498, 0, 0, 917500, 32, 0, 983034, 0, 0, 983036, 32, 0, 1048570, 0, 0, 1048572, 32, 0, 1114106, 0, 0, 1114108, 32, 0, 1179642, 0, 0, 1179644, 32, 0, 1245178, 0, 0, 1245179, 1, 0, 1245180, 32, 0, 1310714, 0, 0, 1310715, 1, 0, 1310716, 32, 0, 1245204, 0, 0, 1245234, 0, 0, 1376250, 0, 0, 1376251, 1, 0, 1376252, 32, 0, 1376253, 32, 0, 1376254, 32, 0, 1376255, 32, 0, 1310720, 32, 0, 1310721, 32, 0, 1310722, 32, 0, 1310723, 32, 0, 1310724, 32, 0, 1310725, 32, 0, 1310726, 32, 0, 1310727, 32, 0, 1310728, 32, 0, 1310729, 32, 0, 1310730, 32, 0, 1310731, 32, 0, 1310732, 32, 0, 1310733, 32, 0, 1310740, 0, 0, 1310770, 0, 0, 1441786, 0, 0, 1441787, 0, 0, 1441788, 0, 0, 1441789, 0, 0, 1441790, 0, 0, 1441791, 0, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376262, 0, 0, 1376263, 0, 0, 1376264, 0, 0, 1376265, 0, 0, 1376266, 0, 0, 1376267, 0, 0, 1376268, 0, 0, 1376269, 0, 0, 1376270, 0, 0, 1376271, 0, 0, 1376272, 0, 0, 1376273, 0, 0, 1376274, 0, 0, 1376275, 0, 0, 1376276, 0, 0, 1376277, 0, 0, 1376278, 0, 0, 1376279, 0, 0, 1376280, 0, 0, 1376281, 0, 0, 1376282, 0, 0, 1376283, 0, 0, 1376284, 0, 0, 1376285, 0, 0, 1376286, 0, 0, 1376287, 0, 0, 1376288, 0, 0, 1376289, 0, 0, 1376290, 0, 0, 1376291, 0, 0, 1376292, 0, 0, 1376293, 0, 0, 1376294, 0, 0, 1376295, 0, 0, 1376296, 0, 0, 1376297, 0, 0, 1376298, 0, 0, 1376299, 0, 0, 1376300, 0, 0, 1376301, 0, 0, 1376302, 0, 0, 1376303, 0, 0, 1376304, 0, 0, 1376305, 0, 0, 1376306, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -56,13 +57,13 @@ position = Vector2( 160, 1172 )
 worldname = "brinkaedea2"
 
 [node name="Brink Big Straw Redwhite" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1183, 62 )
+position = Vector2( 3548, 713 )
 
 [node name="Brink Big Straw Redwhite Bottom" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1183, 1006 )
+position = Vector2( 3548, 1657 )
 
 [node name="Brink Big Straw Redwhite Middle" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1183, 534 )
+position = Vector2( 3548, 1185 )
 
 [node name="Door" parent="." instance=ExtResource( 7 )]
 position = Vector2( 741, 1267 )
@@ -89,4 +90,7 @@ position = Vector2( -296, 530 )
 boardname = "brink art jester king reference"
 
 [node name="BrinkEvilAccordion" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1661, 774 )
+position = Vector2( 3986, 1023 )
+
+[node name="BrinkRedJester" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1500, 1221 )
