@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/enemies/lahiurn/EygzouhlSoldier.gd" type="Script" id=1]
+[ext_resource path="res://assets/sounds/enemies/lahiurn/387924__aegersum__fire-massive-no-cracking.wav" type="AudioStream" id=2]
 [ext_resource path="res://assets/sprites/enemy_sprites/lahiurn/Eygzouhl Soldier sprites.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=25]
@@ -186,6 +187,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [ true ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("AudioStreamPlayer:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=13]
 resource_name = "Shoot"
@@ -233,6 +246,18 @@ tracks/2/keys = {
 "args": [  ],
 "method": "return_to_move"
 } ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
 }
 
 [sub_resource type="RectangleShape2D" id=10]
@@ -289,5 +314,11 @@ position = Vector2( 21.32, -71.68 )
 enabled = true
 cast_to = Vector2( 257, 0 )
 collision_mask = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = 2.69
+pitch_scale = 1.22
+bus = "Sound"
 
 [connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]

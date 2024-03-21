@@ -43,7 +43,7 @@ func _physics_process(delta):
 			if found_wall:
 				direction *= -1
 				scale.x = -scale.x
-			velocity = direction * 160
+			velocity = direction * 200
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 			gravity = 37600
