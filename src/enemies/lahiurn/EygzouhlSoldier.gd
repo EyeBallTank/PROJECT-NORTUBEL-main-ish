@@ -15,7 +15,7 @@ onready var gunhole = $Position2D
 var canattack = false
 var canmove = true
 
-const Bullet = preload("res://src/enemies/krimbstone/Bullet.tscn")
+const Bullet = preload("res://src/enemies/lahiurn/EygzouhlFire.tscn")
 
 enum {
 	MOVING,
