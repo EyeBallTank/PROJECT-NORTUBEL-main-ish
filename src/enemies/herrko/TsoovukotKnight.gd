@@ -34,6 +34,9 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		MOVING:
+			if see_to_attack():
+				state = SHOOT
+
 			detect_turn_around()
 			sprite.play("Running")
 			var found_wall = is_on_wall()
