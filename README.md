@@ -186,6 +186,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * imagery2 on FreeSound (Alarm sound)
 * lluiset7 on FreeSound (Train horn sound)
 * LeMudCrab on FreeSound (Grenade Launcher sound)
+* Aegersum on FreeSound (Flamethrower sound)
 * Pixabay (Explosion sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
