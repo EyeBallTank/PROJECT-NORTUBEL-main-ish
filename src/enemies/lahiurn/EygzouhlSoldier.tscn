@@ -221,11 +221,14 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.5, 3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0.5, 2.8, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "attack"
+}, {
+"args": [  ],
+"method": "attackfloorfire"
 }, {
 "args": [  ],
 "method": "return_to_move"
@@ -277,6 +280,9 @@ one_shot = true
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 86, -44 )
+
+[node name="FloorFireSpawnArea" type="Position2D" parent="."]
+position = Vector2( 265, 147 )
 
 [node name="Eyes" type="RayCast2D" parent="."]
 position = Vector2( 21.32, -71.68 )

@@ -12,10 +12,12 @@ onready var eyes = $Eyes
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var gunhole = $Position2D
+onready var floorhole = $FloorFireSpawnArea
 var canattack = false
 var canmove = true
 
 const Bullet = preload("res://src/enemies/lahiurn/EygzouhlFire.tscn")
+const FloorFire = preload("res://src/enemies/lahiurn/EygzouhlFloorFire.tscn")
 
 enum {
 	MOVING,
@@ -62,6 +64,12 @@ func attack():
 	var fire_hurt = Bullet.instance()
 	get_tree().get_root().add_child(fire_hurt)
 	fire_hurt.global_position = gunhole.global_position
+	timer.start(0.5)
+
+func attackfloorfire():
+	var floor_fire_hurt = FloorFire.instance()
+	get_tree().get_root().add_child(floor_fire_hurt)
+	floor_fire_hurt.global_position = floorhole.global_position
 	timer.start(0.5)
 
 func detect_turn_around():
