@@ -18,6 +18,7 @@ var canmove = true
 
 const Bullet = preload("res://src/enemies/lahiurn/EygzouhlFire.tscn")
 const FloorFire = preload("res://src/enemies/lahiurn/EygzouhlFloorFire.tscn")
+const BulletLeft = preload("res://src/enemies/lahiurn/EygzouhlFireLeft.tscn")
 
 enum {
 	MOVING,
@@ -61,9 +62,18 @@ func _physics_process(delta):
 			animation.play("Dying.")
 
 func attack():
-	var fire_hurt = Bullet.instance()
-	get_tree().get_root().add_child(fire_hurt)
-	fire_hurt.global_position = gunhole.global_position
+
+
+
+	if direction == Vector2.RIGHT:
+		var fire_hurt = Bullet.instance()
+		get_tree().get_root().add_child(fire_hurt)
+		fire_hurt.global_position = gunhole.global_position
+	elif direction == Vector2.LEFT:
+		var fire_hurt_left = BulletLeft.instance()
+		get_tree().get_root().add_child(fire_hurt_left)
+		fire_hurt_left.global_position = gunhole.global_position
+
 	timer.start(0.5)
 
 func attackfloorfire():
