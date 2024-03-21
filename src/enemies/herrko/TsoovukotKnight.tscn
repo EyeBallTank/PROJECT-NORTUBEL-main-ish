@@ -297,3 +297,5 @@ position = Vector2( 67, 5 )
 enabled = true
 cast_to = Vector2( 257, 0 )
 collision_mask = 3
+
+[connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]
