@@ -36,6 +36,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("poisonlikedamage/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=7]
 resource_name = "elecvanish"
@@ -52,20 +64,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/1/type = "method"
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 5.8 ),
-"transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "disappear"
-} ]
-}
 
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 186.5, 63 )
@@ -78,7 +76,6 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 174, -6 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -94,6 +91,7 @@ anims/elecvanish = SubResource( 7 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="poisonlikedamage"]
 position = Vector2( 181, -8 )
 shape = SubResource( 12 )
+disabled = true
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

@@ -4,22 +4,23 @@ onready var animationplayer = $AnimationPlayer
 onready var timer = $Timer
 
 func _ready():
+	animationplayer.play("elecvanish")
 	timer.start(2)
-	elec_disappear()
 	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 	Signals.connect("you_are_invincible", self, "_i_am_invincible")
 
 func _physics_process(delta):
-	pass
+	if timer.time_left == 0:
+		disappear()
 
-#func _i_am_invincible():
-#	animation.play("RESET")
+func _i_am_invincible():
+	animationplayer.play("RESET")
 #
-#func not_anymore():
-#	animation.play("poison")
-
-func elec_disappear():
+func not_anymore():
 	animationplayer.play("elecvanish")
+
+#func elec_disappear():
+#	animationplayer.play("elecvanish")
 
 func disappear():
 	queue_free()
