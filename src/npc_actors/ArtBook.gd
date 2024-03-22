@@ -1,5 +1,16 @@
 extends KinematicBody2D
 
+#ART PLANS:
+#GREK ENEMIES probably 4 pages
+#GREK AMMO BOT
+#SCALPER
+#ZHARK SOLDIER
+#SCORBRION
+
+#HERRKO TSOOVOKUT KNIGHT
+
+
+
 onready var dialoguebox = $CanvasLayer
 export var boardname = "nortubel world map"
 onready var sprite = $CanvasLayer/AnimatedSprite
