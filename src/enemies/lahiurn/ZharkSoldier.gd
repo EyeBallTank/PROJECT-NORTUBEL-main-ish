@@ -18,6 +18,7 @@ var canattack = false
 var canmove = true
 
 onready var bombsound = $BombSound
+onready var shotgunsound = $ShotgunSound
 
 const ShotgunBlast = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
 #const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
@@ -59,9 +60,11 @@ func _physics_process(delta):
 
 func attack():
 	if direction == Vector2.RIGHT:
+		shotgunsound.play()
 		var fire_hurt = ShotgunBlast.instance()
 		get_tree().get_root().add_child(fire_hurt)
 		fire_hurt.global_position = gunhole.global_position
+		
 #	elif direction == Vector2.LEFT:
 #		var fire_hurt_left = ShotgunBlastLeft.instance()
 #		get_tree().get_root().add_child(fire_hurt_left)
@@ -70,7 +73,6 @@ func attack():
 	timer.start(0.5)
 
 func attack_post_death():
-	bombsound.play()
 	var floor_fire_hurt = Bomb.instance()
 	get_tree().get_root().add_child(floor_fire_hurt)
 	floor_fire_hurt.global_position = bombspawn.global_position
