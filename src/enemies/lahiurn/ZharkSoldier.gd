@@ -32,3 +32,35 @@ var state = MOVING
 
 func _ready():
 	animation.play("RESET")
+
+func _physics_process(delta):
+	match state:
+		MOVING:
+			if see_to_attack():
+				state = SHOOT
+
+		SHOOT:
+			pass
+
+func attack():
+	pass
+
+func detect_turn_around():
+	if not floordetect.is_colliding() and is_on_floor():
+		direction *= -1
+#		sprite.flip_h = direction.x < 0
+		scale.x = -scale.x
+
+func die():
+	queue_free()
+
+func see_to_attack():
+	if not eyes.is_colliding(): return false
+	var collider = eyes.get_collider()
+	if not collider.is_in_group("protagonists"): return false
+#	if not collider is StellaMain: return false
+#	if not collider is Companion: return false
+	return true
+
+func return_to_move():
+	state = MOVING
