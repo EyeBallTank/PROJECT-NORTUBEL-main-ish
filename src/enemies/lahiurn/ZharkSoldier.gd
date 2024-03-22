@@ -17,5 +17,18 @@ onready var bombspawn = $BombSpawn
 var canattack = false
 var canmove = true
 
+#const Bullet = preload("res://src/enemies/lahiurn/EygzouhlFire.tscn")
+#const FloorFire = preload("res://src/enemies/lahiurn/EygzouhlFloorFire.tscn")
+#const BulletLeft = preload("res://src/enemies/lahiurn/EygzouhlFireLeft.tscn")
+#
+
+enum {
+	MOVING,
+	SHOOT,
+	DEAD
+}
+
+var state = MOVING
+
 func _ready():
-	pass
+	animation.play("RESET")
