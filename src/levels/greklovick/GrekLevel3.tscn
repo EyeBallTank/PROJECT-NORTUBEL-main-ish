@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek radio tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/enemies/greklovick/GrekScalper.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/enemies/lahiurn/ZharkSoldier.tscn" type="PackedScene" id=12]
 
 [node name="GrekLevel3" type="Node2D"]
 
@@ -75,3 +76,6 @@ boardname = "grek art kler reference"
 [node name="ArtBook2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 407, 1514 )
 boardname = "grek art fragile reference"
+
+[node name="ZharkSoldier" parent="." instance=ExtResource( 12 )]
+position = Vector2( 3524, 1549 )
