@@ -1,16 +1,21 @@
 extends KinematicBody2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var gravity: = 23600
 
+var direction = Vector2.RIGHT
+var velocity = Vector2.ZERO
 
-# Called when the node enters the scene tree for the first time.
+onready var sprite: = $AnimatedSprite
+onready var floordetect = $Floordetect
+onready var eyes = $Eyes
+
+onready var animation = $AnimationPlayer
+onready var timer = $Timer #2 seconds
+onready var gunhole = $Position2D
+onready var bombspawn = $BombSpawn
+var canattack = false
+var canmove = true
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	pass
