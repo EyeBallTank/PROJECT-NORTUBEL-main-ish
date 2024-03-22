@@ -188,6 +188,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * LeMudCrab on FreeSound (Grenade Launcher sound)
 * Aegersum on FreeSound (Flamethrower sound)
 * AbuNijmeh on FreeSound (Shotgun sound)
+* Xiko__ on FreeSound (Zhark soldier alarm sound)
 * Pixabay (Explosion sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
