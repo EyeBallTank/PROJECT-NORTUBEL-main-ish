@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Zhark soldier sprites.png-70093ce6bf75b5baec11d14dfcfb6a38.stex"
+path="res://.import/Zhark soldier sprites v2.png-a4ea815464d6a03aa6b228861fa083b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemy_sprites/greklovick/Zhark soldier sprites.png"
-dest_files=[ "res://.import/Zhark soldier sprites.png-70093ce6bf75b5baec11d14dfcfb6a38.stex" ]
+source_file="res://assets/sprites/enemy_sprites/greklovick/Zhark soldier sprites v2.png"
+dest_files=[ "res://.import/Zhark soldier sprites v2.png-a4ea815464d6a03aa6b228861fa083b8.stex" ]
 
 [params]
 
