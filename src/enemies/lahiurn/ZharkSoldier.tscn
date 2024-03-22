@@ -1,0 +1,299 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Zhark soldier sprites.png" type="Texture" id=1]
+[ext_resource path="res://src/enemies/lahiurn/ZharkSoldier.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds/enemies/Beefy-Desert-Eagle-.50-AE-Close-Single-Gunshot-B-www.fesliyanstudios.com-www.fesliyanstudios.com.mp3" type="AudioStream" id=3]
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 1 )
+region = Rect2( 300, 0, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 1 )
+region = Rect2( 1200, 0, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 1 )
+region = Rect2( 900, 0, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 1 )
+region = Rect2( 600, 0, 300, 300 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 19 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": false,
+"name": "Dead2",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 22 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": false,
+"name": "Idle",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 39.5, 147 )
+
+[sub_resource type="Animation" id=11]
+resource_name = "Dying."
+length = 3.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Hurt", "Dead" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.7, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 3.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "die"
+} ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Eyes:enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Eyes:enabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Shoot"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Attack" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Eyes:enabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5, 0.8, 1.1, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack_grenade"
+}, {
+"args": [  ],
+"method": "return_to_move"
+} ]
+}
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 33, 141.5 )
+
+[node name="ZharkSoldier" type="KinematicBody2D"]
+collision_layer = 32
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -3, -6 )
+scale = Vector2( 1.02, 1.02 )
+frames = SubResource( 4 )
+animation = "Idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Dying. = SubResource( 11 )
+anims/RESET = SubResource( 12 )
+anims/Shoot = SubResource( 13 )
+
+[node name="Floordetect" type="RayCast2D" parent="."]
+position = Vector2( 52.32, 135.32 )
+enabled = true
+cast_to = Vector2( 0, 34 )
+collision_mask = 4
+
+[node name="EnemyHurtbox" type="Area2D" parent="."]
+position = Vector2( 3.32001, -108.68 )
+collision_layer = 32
+collision_mask = 1025
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
+position = Vector2( -6, 108.5 )
+shape = SubResource( 10 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -2.122
+bus = "Sound"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 79.32, -57.68 )
+
+[node name="BombSpawn" type="Position2D" parent="."]
+position = Vector2( 1, 80 )
+
+[node name="Eyes" type="RayCast2D" parent="."]
+position = Vector2( 21.32, -71.68 )
+enabled = true
+cast_to = Vector2( 257, 0 )
+collision_mask = 3
