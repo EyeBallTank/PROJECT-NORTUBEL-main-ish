@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/sounds/enemies/greklovick/medium-explosion-40472.mp3" type="AudioStream" id=1]
 [ext_resource path="res://src/enemies/lahiurn/ZharkSoldier.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/enemies/greklovick/318973__abunijmeh__shotgun-fire.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Zhark soldier sprites v2.png" type="Texture" id=4]
+[ext_resource path="res://assets/sounds/enemies/greklovick/710511__xiko__simple_buzztone1.wav" type="AudioStream" id=5]
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 4 )
@@ -136,6 +137,18 @@ tracks/5/keys = {
 "update": 1,
 "values": [ false, true, false ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("AlarmSound:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true, false ]
+}
 
 [sub_resource type="Animation" id=12]
 length = 0.001
@@ -149,7 +162,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("CollisionShape2D:disabled")
@@ -211,10 +224,22 @@ tracks/5/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("AlarmSound:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=13]
 resource_name = "Shoot"
-length = 4.0
+length = 4.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -234,7 +259,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 4 ),
+"times": PoolRealArray( 0, 4.6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
@@ -268,6 +293,18 @@ tracks/3/keys = {
 "method": "return_to_move"
 } ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimatedSprite:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.3, 1.8, 2.7, 3.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 33, 141.5 )
@@ -278,6 +315,7 @@ collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -3, -6 )
 scale = Vector2( 1.02, 1.02 )
 frames = SubResource( 4 )
@@ -319,6 +357,11 @@ stream = ExtResource( 3 )
 volume_db = 16.0
 bus = "Sound"
 
+[node name="AlarmSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+pitch_scale = 1.84
+bus = "Sound"
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
@@ -330,9 +373,9 @@ position = Vector2( 114, -47 )
 position = Vector2( 1, 106 )
 
 [node name="Eyes" type="RayCast2D" parent="."]
-position = Vector2( 21.32, -71.68 )
+position = Vector2( 58, -73 )
 enabled = true
-cast_to = Vector2( 336, 0 )
+cast_to = Vector2( 298.68, 0 )
 collision_mask = 3
 
 [connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]
