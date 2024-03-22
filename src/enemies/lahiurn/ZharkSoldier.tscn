@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=2]
 
+[ext_resource path="res://assets/sounds/enemies/greklovick/medium-explosion-40472.mp3" type="AudioStream" id=1]
 [ext_resource path="res://src/enemies/lahiurn/ZharkSoldier.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/enemies/Beefy-Desert-Eagle-.50-AE-Close-Single-Gunshot-B-www.fesliyanstudios.com-www.fesliyanstudios.com.mp3" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Zhark soldier sprites v2.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=27]
@@ -57,7 +57,7 @@ extents = Vector2( 39.5, 147 )
 
 [sub_resource type="Animation" id=11]
 resource_name = "Dying."
-length = 3.5
+length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -65,37 +65,42 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.6 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.6, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Hurt", "Dead" ]
+"values": [ "Hurt", "Dead", "Dead2", "Dead", "Dead2", "Dead", "Dead2", "Dead", "Dead2" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("AnimatedSprite:modulate")
+tracks/1/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.7, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 2.2 ),
+"times": PoolRealArray( 2.7, 6.5 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
+"values": [ {
+"args": [  ],
+"method": "attack_post_death"
+}, {
+"args": [  ],
+"method": "die"
+} ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
+tracks/3/path = NodePath("Eyes:enabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -104,33 +109,19 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
 }
-tracks/4/type = "method"
-tracks/4/path = NodePath(".")
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimatedSprite:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 3.5 ),
-"transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "die"
-} ]
-}
-tracks/5/type = "value"
-tracks/5/path = NodePath("Eyes:enabled")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 2.8 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
 [sub_resource type="Animation" id=12]
@@ -198,7 +189,7 @@ tracks/4/keys = {
 
 [sub_resource type="Animation" id=13]
 resource_name = "Shoot"
-length = 2.0
+length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -206,10 +197,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ "Attack" ]
+"values": [ "Attack", "Idle" ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Eyes:enabled")
@@ -218,32 +209,35 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2 ),
+"times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
-tracks/2/type = "method"
-tracks/2/path = NodePath(".")
+tracks/2/type = "value"
+tracks/2/path = NodePath("EnemyHurtbox/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.5, 0.8, 1.1, 1.5, 2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.5, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "attack"
-}, {
-"args": [  ],
-"method": "attack"
-}, {
-"args": [  ],
-"method": "attack"
-}, {
-"args": [  ],
-"method": "attack_grenade"
 }, {
 "args": [  ],
 "method": "return_to_move"
@@ -262,7 +256,7 @@ script = ExtResource( 2 )
 position = Vector2( -3, -6 )
 scale = Vector2( 1.02, 1.02 )
 frames = SubResource( 4 )
-animation = "Attack"
+animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -290,8 +284,8 @@ position = Vector2( -6, 108.5 )
 shape = SubResource( 10 )
 disabled = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
+[node name="BombSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
 volume_db = -2.122
 bus = "Sound"
 
@@ -310,3 +304,5 @@ position = Vector2( 21.32, -71.68 )
 enabled = true
 cast_to = Vector2( 257, 0 )
 collision_mask = 3
+
+[connection signal="area_entered" from="EnemyHurtbox" to="." method="_on_EnemyHurtbox_area_entered"]

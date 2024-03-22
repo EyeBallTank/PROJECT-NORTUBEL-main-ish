@@ -17,7 +17,10 @@ onready var bombspawn = $BombSpawn
 var canattack = false
 var canmove = true
 
+onready var bombsound = $BombSound
+
 const ShotgunBlast = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
+#const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
 const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
 enum {
@@ -49,16 +52,29 @@ func _physics_process(delta):
 			gravity = 37600
 
 		SHOOT:
-			pass
+			animation.play("Shoot")
 
 		DEAD:
-			pass
+			animation.play("Dying.")
 
 func attack():
-	pass
+	if direction == Vector2.RIGHT:
+		var fire_hurt = ShotgunBlast.instance()
+		get_tree().get_root().add_child(fire_hurt)
+		fire_hurt.global_position = gunhole.global_position
+#	elif direction == Vector2.LEFT:
+#		var fire_hurt_left = ShotgunBlastLeft.instance()
+#		get_tree().get_root().add_child(fire_hurt_left)
+#		fire_hurt_left.global_position = gunhole.global_position
+
+	timer.start(0.5)
 
 func attack_post_death():
-	pass
+	bombsound.play()
+	var floor_fire_hurt = Bomb.instance()
+	get_tree().get_root().add_child(floor_fire_hurt)
+	floor_fire_hurt.global_position = bombspawn.global_position
+	timer.start(0.5)
 
 func detect_turn_around():
 	if not floordetect.is_colliding() and is_on_floor():
@@ -79,3 +95,10 @@ func see_to_attack():
 
 func return_to_move():
 	state = MOVING
+
+
+func _on_EnemyHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD
+	if area.name == "EnemyCrusher":
+		state = DEAD
