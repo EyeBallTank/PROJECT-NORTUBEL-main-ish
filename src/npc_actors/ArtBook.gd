@@ -9,6 +9,8 @@ extends KinematicBody2D
 
 #HERRKO TSOOVOKUT KNIGHT
 
+#HIRDRIH NPC, BORHR, ENEMIES?
+
 
 
 onready var dialoguebox = $CanvasLayer

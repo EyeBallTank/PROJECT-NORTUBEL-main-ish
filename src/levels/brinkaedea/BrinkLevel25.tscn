@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkSeeSawPlatTest.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkSunMoonPendulumtest.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=9]
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -52,3 +53,7 @@ position = Vector2( 1170, 1232 )
 
 [node name="BrinkSunMoonPendulumtest" parent="." instance=ExtResource( 8 )]
 position = Vector2( 836, 1024 )
+
+[node name="LevelProp" parent="." instance=ExtResource( 9 )]
+position = Vector2( 178, 1373 )
+propname = "brinkprop pink mushroom"
