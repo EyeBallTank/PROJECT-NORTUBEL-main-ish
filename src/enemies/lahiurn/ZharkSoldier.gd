@@ -21,7 +21,7 @@ onready var bombsound = $BombSound
 onready var shotgunsound = $ShotgunSound
 
 const ShotgunBlast = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
-#const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
+const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPelletsLeft.tscn")
 const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
 enum {
@@ -65,10 +65,11 @@ func attack():
 		get_tree().get_root().add_child(fire_hurt)
 		fire_hurt.global_position = gunhole.global_position
 		
-#	elif direction == Vector2.LEFT:
-#		var fire_hurt_left = ShotgunBlastLeft.instance()
-#		get_tree().get_root().add_child(fire_hurt_left)
-#		fire_hurt_left.global_position = gunhole.global_position
+	elif direction == Vector2.LEFT:
+		shotgunsound.play()
+		var fire_hurt_left = ShotgunBlastLeft.instance()
+		get_tree().get_root().add_child(fire_hurt_left)
+		fire_hurt_left.global_position = gunhole.global_position
 
 	timer.start(0.5)
 
