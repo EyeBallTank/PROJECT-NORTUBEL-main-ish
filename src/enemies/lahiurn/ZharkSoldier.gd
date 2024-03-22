@@ -17,10 +17,8 @@ onready var bombspawn = $BombSpawn
 var canattack = false
 var canmove = true
 
-#const Bullet = preload("res://src/enemies/lahiurn/EygzouhlFire.tscn")
-#const FloorFire = preload("res://src/enemies/lahiurn/EygzouhlFloorFire.tscn")
-#const BulletLeft = preload("res://src/enemies/lahiurn/EygzouhlFireLeft.tscn")
-#
+const ShotgunBlast = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
+const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
 enum {
 	MOVING,
@@ -39,10 +37,27 @@ func _physics_process(delta):
 			if see_to_attack():
 				state = SHOOT
 
+			detect_turn_around()
+			sprite.play("Idle")
+			var found_wall = is_on_wall()
+			if found_wall:
+				direction *= -1
+				scale.x = -scale.x
+			velocity = direction * 300
+			velocity.y += gravity * delta
+			move_and_slide(velocity, Vector2.UP)
+			gravity = 37600
+
 		SHOOT:
 			pass
 
+		DEAD:
+			pass
+
 func attack():
+	pass
+
+func attack_post_death():
 	pass
 
 func detect_turn_around():

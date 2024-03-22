@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/enemies/herrko/TsoovukotKnight.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/enemies/lahiurn/ZharkSoldier.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/LowGravity.tscn" type="PackedScene" id=18]
@@ -76,4 +77,7 @@ position = Vector2( 972, -1048 )
 position = Vector2( 4341, -564 )
 
 [node name="TsoovukotKnight" parent="." instance=ExtResource( 12 )]
-position = Vector2( -48, -353 )
+position = Vector2( 3427, -408 )
+
+[node name="ZharkSoldier" parent="." instance=ExtResource( 14 )]
+position = Vector2( -47, -364 )
