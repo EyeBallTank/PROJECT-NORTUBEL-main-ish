@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/number based door.png" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_object_sprites/number based door shihiro.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/number based door bonka.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/level_object_sprites/greklovick/number based door zharkovil.png" type="Texture" id=5]
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 4 )
@@ -15,6 +16,10 @@ region = Rect2( 0, 0, 141, 448 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 141, 448 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 141, 448 )
 
 [sub_resource type="SpriteFrames" id=4]
@@ -32,6 +37,11 @@ animations = [ {
 "frames": [ SubResource( 3 ) ],
 "loop": false,
 "name": "shihiro",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "zharkovil",
 "speed": 0.0
 } ]
 
@@ -114,7 +124,7 @@ script = ExtResource( 2 )
 
 [node name="NumberBasedDoor" type="AnimatedSprite" parent="."]
 frames = SubResource( 4 )
-animation = "bonka"
+animation = "zharkovil"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

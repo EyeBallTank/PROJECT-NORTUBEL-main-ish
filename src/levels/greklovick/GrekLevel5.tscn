@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
+[ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=4]
@@ -17,7 +18,6 @@ tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048582, 1, 0, 1114118, 1, 0, 1179654, 1, 0, 1245190, 1, 0, 1310726, 1, 0, 1376262, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 9 )
@@ -32,7 +32,6 @@ tile_set = ExtResource( 9 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1048583, 1, 0, 1114119, 1, 0, 1179655, 1, 0, 1245191, 1, 0, 1310727, 1, 0, 1376263, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 0, 1322 )
@@ -50,11 +49,11 @@ position = Vector2( 0, 1322 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Jumppad" parent="." instance=ExtResource( 8 )]
-position = Vector2( 846, 1276 )
+position = Vector2( 1573, 1317 )
 spritename = "greklovick jumppad"
 
 [node name="Door" parent="." instance=ExtResource( 7 )]
-position = Vector2( 467, 1522 )
+position = Vector2( 1896, 1473 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
 spritename = "greklovick greendoor"
 customtext = "zrkv1l"
@@ -62,3 +61,7 @@ customtext = "zrkv1l"
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1225, 1432 )
 boardname = "grek art zharkovil reference"
+
+[node name="NumberBasedDoor" parent="." instance=ExtResource( 1 )]
+position = Vector2( 568, 1240 )
+spritename = "zharkovil"
