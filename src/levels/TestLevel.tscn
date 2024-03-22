@@ -30,7 +30,7 @@ tile_data = PoolIntArray( -2359229, 2, 0, -2359228, 2, 0, -2359227, 2, 0, -23592
 [node name="CurrentUI" parent="." instance=ExtResource( 1 )]
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
-position = Vector2( 621, -207 )
+position = Vector2( 2295, -502 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1096, -689 )
