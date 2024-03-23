@@ -15,6 +15,8 @@ var phase = 1
 var canattack = true
 var canmove = true
 
+onready var shieldsprite = $shieldSprite
+
 const Bullet = preload("res://src/bosses/ZharkBulletSpreadTest.tscn")
 #const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPelletsLeft.tscn")
 #const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
@@ -29,6 +31,8 @@ enum {
 var state = MOVING
 
 func _ready():
+	shieldsprite.show()
+	Signals.connect("turn_off_zhark_shield", self, "oh_no_my_shield")
 	sprite.animation = "Moving"
 	timer.start(2)
 	animation.play("RESET")
@@ -58,9 +62,13 @@ func _physics_process(delta):
 
 
 		HURT:
+			shieldsprite.hide()
 			pass
 			
 		DEAD:
+			canmove = false
+			canattack = false
+			shieldsprite.hide()
 			pass
 
 
@@ -70,6 +78,7 @@ func return_to_move():
 	timer.start(2)
 	if phase < 4:
 		state = MOVING
+		shieldsprite.show()
 	elif phase == 4:
 		state = DEAD
 	

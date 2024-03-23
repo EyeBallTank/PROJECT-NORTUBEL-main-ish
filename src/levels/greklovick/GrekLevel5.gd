@@ -7,3 +7,7 @@ onready var animation = $AnimationPlayer
 
 func _ready():
 	pass 
+
+
+func send_a_signal():
+	Signals.emit_signal("turn_off_zhark_shield")
