@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/sprites/bosses/Zarkovill/yiegour multigun fps view.png" type="Texture" id=15]
 [ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun.wav" type="AudioStream" id=16]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=18]
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 12 )
@@ -817,9 +819,6 @@ boardname = "grek art zharkovil reference"
 [node name="ZharkovilBoss" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3326, 598 )
 
-[node name="shieldSprite" parent="ZharkovilBoss" index="7"]
-frame = 0
-
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 1 )]
 position = Vector2( 5263, 1437 )
 spritename = "zharkovil"
@@ -863,12 +862,45 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
+frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 16 )
 pitch_scale = 1.23
 bus = "Sound"
+
+[node name="Health Pickup" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2197, 1073 )
+spritename = "greklovick health"
+
+[node name="Health Pickup2" parent="." instance=ExtResource( 17 )]
+position = Vector2( 4974, 1073 )
+spritename = "greklovick health"
+
+[node name="Coin" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2797, 1021 )
+spritename = "greklovick coin"
+
+[node name="Coin2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 3845, 1021 )
+spritename = "greklovick coin"
+
+[node name="Coin3" parent="." instance=ExtResource( 18 )]
+position = Vector2( 5346, 856 )
+spritename = "greklovick coin"
+
+[node name="Coin4" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2548, 1411 )
+spritename = "greklovick coin"
+
+[node name="Coin5" parent="." instance=ExtResource( 18 )]
+position = Vector2( 4908, 1346 )
+spritename = "greklovick coin"
+
+[node name="Coin6" parent="." instance=ExtResource( 18 )]
+position = Vector2( 4908, 1541 )
+spritename = "greklovick coin"
 
 [connection signal="body_entered" from="ShieldGenerator1/ButtonPress1" to="." method="_on_ButtonPress1_body_entered"]
 [connection signal="body_entered" from="ShieldGenerator2/ButtonPress2" to="." method="_on_ButtonPress2_body_entered"]
