@@ -370,6 +370,7 @@ shape = SubResource( 1 )
 [node name="OrbSprite" type="AnimatedSprite" parent="EnergyOrbWest"]
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
+frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="EnergyOrbWest" instance=ExtResource( 1 )]
@@ -391,7 +392,6 @@ disabled = true
 modulate = Color( 1, 1, 1, 0 )
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
-frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="TinyOrbWest1" instance=ExtResource( 1 )]
@@ -412,6 +412,7 @@ disabled = true
 [node name="OrbSprite" type="AnimatedSprite" parent="EnergyOrbEast"]
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
+frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="EnergyOrbEast" instance=ExtResource( 1 )]
@@ -433,7 +434,6 @@ disabled = true
 modulate = Color( 1, 1, 1, 0 )
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
-frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="TinyOrbEast1" instance=ExtResource( 1 )]

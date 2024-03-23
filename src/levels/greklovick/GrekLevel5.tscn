@@ -56,7 +56,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator1"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1"]
@@ -80,6 +79,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator2"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2"]

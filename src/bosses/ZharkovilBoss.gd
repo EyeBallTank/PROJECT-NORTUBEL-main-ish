@@ -4,13 +4,12 @@ var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
 
 onready var sprite: = $AnimatedSprite
-onready var eyes = $Eyes
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
 onready var spritetimer = $SpriteTimer
 onready var gunhole = $Gunhole
 onready var orbsource = $OrbSource
-var phase = 1
+var phase = 3
 
 var canattack = true
 var canmove = true
@@ -20,6 +19,7 @@ onready var shieldsprite = $shieldSprite
 const Bullet = preload("res://src/bosses/ZharkBulletSpreadTest.tscn")
 const BasicTwoOrbs = preload("res://src/bosses/ZharkTwoBasicOrbs.tscn")
 const WorseTwoOrbs = preload("res://src/bosses/ZharkTwoWorseOrbs.tscn")
+const Grenade = preload("res://src/bosses/ZharkGrenadeTest.tscn")
 
 enum {
 	MOVING,
@@ -101,11 +101,16 @@ func attack():
 		doubleorbs.global_position = orbsource.global_position
 		get_tree().get_root().add_child(doubleorbs)
 
-
 	elif phase == 3:
 		var badorbs = WorseTwoOrbs.instance()
 		badorbs.global_position = orbsource.global_position
 		get_tree().get_root().add_child(badorbs)
+
+		var bomb = Grenade.instance()
+		bomb.global_position = orbsource.global_position
+		get_tree().get_root().add_child(bomb)
+
+
 	spritetimer.start(1)
 
 func send_a_signal():
