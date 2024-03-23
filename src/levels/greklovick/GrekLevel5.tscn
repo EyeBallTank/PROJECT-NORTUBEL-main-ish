@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -85,6 +85,150 @@ tracks/2/keys = {
 "update": 0,
 "values": [ "spin" ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("ShieldGenerator1:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4529, 1381 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ShieldGenerator1/ButtonPress1/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ShieldGenerator4:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2347, 1380 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ShieldGenerator4/ButtonPress4/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ShieldGenerator2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1834, 1348 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("ShieldGenerator2/ButtonPress2/CollisionShape2D:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ShieldGenerator3:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 5218, 1343 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ShieldGenerator3/ButtonPress3/CollisionShape2D:disabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("ShieldGenerator5:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3287, 1338 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("ShieldGenerator5/ButtonPress5/CollisionShape2D:disabled")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("ShieldGenerator6:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4798, 1803 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("ShieldGenerator6/ButtonPress6/CollisionShape2D:disabled")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=14]
 resource_name = "yiegourattacksone"
@@ -124,6 +268,238 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ "spin", "fire", "spin" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ShieldGenerator1:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4529, 1381 ), Vector2( 4529, 1918 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ShieldGenerator4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2347, 1380 ), Vector2( 2347, 1821 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ShieldGenerator1/ButtonPress1/CollisionShape2D:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ShieldGenerator4/ButtonPress4/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ShieldGenerator2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1834, 1348 ), Vector2( 1834, 998 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("ShieldGenerator2/ButtonPress2/CollisionShape2D:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ShieldGenerator3:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 5218, 1343 ), Vector2( 5218, 999 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ShieldGenerator3/ButtonPress3/CollisionShape2D:disabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "yiegourattackstwo"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Multigun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2.4, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 623 ), Vector2( 512, 412 ), Vector2( 512, 412 ), Vector2( 512, 623 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Multigun/AnimatedSprite:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ "spin", "fire", "spin" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ShieldGenerator2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1834, 998 ), Vector2( 1834, 1355 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ShieldGenerator2/ButtonPress2/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ShieldGenerator3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 5218, 999 ), Vector2( 5218, 1327 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ShieldGenerator3/ButtonPress3/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ShieldGenerator5:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3287, 1338 ), Vector2( 3287, 1002 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("ShieldGenerator5/ButtonPress5/CollisionShape2D:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ShieldGenerator6:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4798, 1803 ), Vector2( 4798, 1450 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ShieldGenerator6/ButtonPress6/CollisionShape2D:disabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
 }
 
 [sub_resource type="RectangleShape2D" id=7]
@@ -185,7 +561,7 @@ position = Vector2( 38, 0 )
 shape = SubResource( 6 )
 
 [node name="ShieldGenerator2" type="KinematicBody2D" parent="."]
-position = Vector2( 1834, 998 )
+position = Vector2( 1834, 1348 )
 collision_layer = 4
 collision_mask = 0
 
@@ -206,9 +582,10 @@ collision_mask = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2/ButtonPress2"]
 position = Vector2( 38, 0 )
 shape = SubResource( 6 )
+disabled = true
 
 [node name="ShieldGenerator3" type="KinematicBody2D" parent="."]
-position = Vector2( 5218, 993 )
+position = Vector2( 5218, 1343 )
 collision_layer = 4
 collision_mask = 0
 
@@ -229,6 +606,7 @@ collision_mask = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator3/ButtonPress3"]
 position = Vector2( 38, 0 )
 shape = SubResource( 6 )
+disabled = true
 
 [node name="ShieldGenerator4" type="KinematicBody2D" parent="."]
 position = Vector2( 2347, 1380 )
@@ -255,7 +633,7 @@ position = Vector2( 38, 0 )
 shape = SubResource( 6 )
 
 [node name="ShieldGenerator5" type="KinematicBody2D" parent="."]
-position = Vector2( 3287, 995 )
+position = Vector2( 3287, 1338 )
 collision_layer = 4
 collision_mask = 0
 
@@ -276,9 +654,10 @@ collision_mask = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator5/ButtonPress5"]
 position = Vector2( 38, 0 )
 shape = SubResource( 6 )
+disabled = true
 
 [node name="ShieldGenerator6" type="KinematicBody2D" parent="."]
-position = Vector2( 4798, 1441 )
+position = Vector2( 4798, 1803 )
 collision_layer = 4
 collision_mask = 0
 
@@ -299,6 +678,7 @@ collision_mask = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator6/ButtonPress6"]
 position = Vector2( 38, 0 )
 shape = SubResource( 6 )
+disabled = true
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 9 )
@@ -357,6 +737,7 @@ idealnumber = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 13 )
 anims/yiegourattacksone = SubResource( 14 )
+anims/yiegourattackstwo = SubResource( 15 )
 
 [node name="CrawlzoneExit" parent="." instance=ExtResource( 13 )]
 visible = false
@@ -390,7 +771,6 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
-frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
