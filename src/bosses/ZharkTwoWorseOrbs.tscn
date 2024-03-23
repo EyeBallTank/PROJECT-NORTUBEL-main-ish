@@ -211,7 +211,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 5.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -119, 0 ), Vector2( -119, 0 ), Vector2( -541, 470 ) ]
+"values": [ Vector2( -119, 0 ), Vector2( -119, 0 ), Vector2( -706, 784 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("EnergyOrbWest/CollisionShape2D:disabled")
@@ -259,7 +259,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 1, 5.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 119, 0 ), Vector2( 119, 0 ), Vector2( 541, 470 ) ]
+"values": [ Vector2( 119, 0 ), Vector2( 119, 0 ), Vector2( 706, 784 ) ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("EnergyOrbEast/OrbSprite:modulate")
@@ -295,7 +295,7 @@ tracks/8/keys = {
 "times": PoolRealArray( 0, 1, 2.7, 5.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 119, 0 ), Vector2( 119, 0 ), Vector2( 285.837, 185.814 ), Vector2( 109, 470 ) ]
+"values": [ Vector2( 119, 0 ), Vector2( 119, 0 ), Vector2( 351.07, 309.953 ), Vector2( -110, 784 ) ]
 }
 tracks/9/type = "value"
 tracks/9/path = NodePath("TinyOrbEast1/OrbSprite:modulate")
@@ -331,7 +331,7 @@ tracks/11/keys = {
 "times": PoolRealArray( 0, 1, 2.7, 5.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -119, 0 ), Vector2( -119, 0 ), Vector2( -285.837, 185.814 ), Vector2( -109, 470 ) ]
+"values": [ Vector2( -119, 0 ), Vector2( -119, 0 ), Vector2( -351.07, 309.953 ), Vector2( 110, 784 ) ]
 }
 tracks/12/type = "value"
 tracks/12/path = NodePath("TinyOrbWest1/OrbSprite:modulate")
@@ -370,7 +370,6 @@ shape = SubResource( 1 )
 [node name="OrbSprite" type="AnimatedSprite" parent="EnergyOrbWest"]
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
-frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="EnergyOrbWest" instance=ExtResource( 1 )]
@@ -392,6 +391,7 @@ disabled = true
 modulate = Color( 1, 1, 1, 0 )
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
+frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="TinyOrbWest1" instance=ExtResource( 1 )]
@@ -412,7 +412,6 @@ disabled = true
 [node name="OrbSprite" type="AnimatedSprite" parent="EnergyOrbEast"]
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
-frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="EnergyOrbEast" instance=ExtResource( 1 )]
@@ -434,6 +433,7 @@ disabled = true
 modulate = Color( 1, 1, 1, 0 )
 scale = Vector2( 0.464459, 0.464459 )
 frames = SubResource( 7 )
+frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="TinyOrbEast1" instance=ExtResource( 1 )]

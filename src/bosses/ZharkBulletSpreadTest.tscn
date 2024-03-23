@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/bosses/ZharkBulletSpreadTest.gd" type="Script" id=1]
+[ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun.wav" type="AudioStream" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -35,6 +36,18 @@ tracks/0/keys = {
 "method": "die"
 } ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( -7.3, 0, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
 
 [node name="ZharkBulletSpreadTest" type="KinematicBody2D"]
 collision_layer = 32
@@ -50,3 +63,8 @@ disabled = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "RESET"
 anims/RESET = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -6.633
+bus = "Sound"

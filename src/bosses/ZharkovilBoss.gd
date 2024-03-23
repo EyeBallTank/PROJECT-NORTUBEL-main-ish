@@ -45,7 +45,7 @@ func _physics_process(delta):
 				var found_wall = is_on_wall()
 				if found_wall:
 					direction *= -1
-				velocity = direction * 160
+				velocity = direction * 360
 				move_and_slide(velocity, Vector2.UP)
 			elif canmove == false:
 				velocity = 0

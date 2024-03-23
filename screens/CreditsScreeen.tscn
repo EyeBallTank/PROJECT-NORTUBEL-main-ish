@@ -18,11 +18,11 @@ theme = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 382.0
-margin_bottom = 2337.0
+margin_bottom = 2357.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 382.0
-margin_bottom = 2337.0
+margin_bottom = 2357.0
 custom_fonts/font = ExtResource( 1 )
 text = " 
 
@@ -134,6 +134,7 @@ text = "
    Aegersum
    AbuNijmeh
    Xiko__
+   pgi
 
 
                   CROSSOVERS
