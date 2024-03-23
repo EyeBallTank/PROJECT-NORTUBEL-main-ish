@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var direction = Vector2.DOWN
-var speed = 150
+var speed = 120
 onready var animation = $AnimationPlayer
 
 func _ready():

@@ -15,7 +15,7 @@ var phase = 1
 var canattack = true
 var canmove = true
 
-const Bullet = preload("res://src/bosses/VerticalBullet.tscn")
+const Bullet = preload("res://src/bosses/ZharkBulletSpreadTest.tscn")
 #const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPelletsLeft.tscn")
 #const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
@@ -77,7 +77,7 @@ func return_to_move():
 func attack():
 	var projectile = Bullet.instance()
 	projectile.global_position = gunhole.global_position
-	projectile.velocity.y = projectile.speed * 10
+#	projectile.velocity.y = projectile.speed * 10
 	get_tree().get_root().add_child(projectile)
 	sprite.animation = "Attack"
 	if phase == 1:
