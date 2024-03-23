@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
+export var gravity: = 23600
 
 onready var sprite: = $AnimatedSprite
 onready var animation = $AnimationPlayer
@@ -47,7 +48,9 @@ func _physics_process(delta):
 				if found_wall:
 					direction *= -1
 				velocity = direction * 360
+				velocity.y += gravity * delta
 				move_and_slide(velocity, Vector2.UP)
+				gravity = 0
 			elif canmove == false:
 				velocity = 0
 			if timer.time_left == 0:
@@ -76,6 +79,12 @@ func _physics_process(delta):
 			canmove = false
 			canattack = false
 			shieldsprite.hide()
+
+#			velocity.y += gravity * delta
+#			move_and_slide(velocity, Vector2.UP)
+#			gravity = 23600
+			if is_on_floor():
+				sprite.animation = "Dead"
 
 
 func return_to_move():
