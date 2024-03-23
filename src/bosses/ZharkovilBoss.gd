@@ -62,8 +62,7 @@ func _physics_process(delta):
 
 
 		HURT:
-			velocity = 0
-			move_and_slide(velocity, Vector2.UP)
+#			velocity = 0
 			shieldsprite.hide()
 			animation.play("Hurting")
 			

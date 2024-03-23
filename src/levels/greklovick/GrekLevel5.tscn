@@ -47,7 +47,7 @@ extents = Vector2( 41, 160 )
 script = ExtResource( 11 )
 
 [node name="ShieldGenerator1" type="KinematicBody2D" parent="."]
-position = Vector2( 2629, 1275 )
+position = Vector2( 2547, 1323 )
 collision_layer = 4
 collision_mask = 0
 
@@ -123,3 +123,5 @@ spritename = "zharkovil"
 idealnumber = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="body_entered" from="ShieldGenerator1/ButtonPress" to="." method="_on_ButtonPress_body_entered"]
