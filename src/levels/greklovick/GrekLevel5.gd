@@ -30,9 +30,11 @@ func _ready():
 	shieldgen5.animation = "on"
 	shieldgen6.animation = "on"
 
-#func _physics_process(delta):
+func _physics_process(delta):
+	pass
+
 #	if switchespressed == 2:
-#		send_a_signal()
+#		animation.play("yiegourattacksone")
 
 func send_a_signal():
 	Signals.emit_signal("turn_off_zhark_shield")
@@ -62,6 +64,7 @@ func _on_ButtonPress4_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchfour = true
 		shieldgen4.animation = "off"
+		switch_pressed()
 
 func _on_ButtonPress3_body_entered(body):
 	if body.is_in_group("protagonists"):
@@ -74,6 +77,10 @@ func _on_ButtonPress2_body_entered(body):
 		shieldgen2.animation = "off"
 
 func _on_ButtonPress1_body_entered(body):
-	if body.is_in_group("protagonists"):
+	if body.is_in_group("protagonists") and switchfour == false:
 		switchone = true
 		shieldgen1.animation = "off"
+		switch_pressed()
+	elif body.is_in_group("protagonists") and switchfour == true:
+		animation.play("yiegourattacksone")
+		send_a_signal()
