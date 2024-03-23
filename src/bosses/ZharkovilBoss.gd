@@ -19,7 +19,7 @@ onready var shieldsprite = $shieldSprite
 
 const Bullet = preload("res://src/bosses/ZharkBulletSpreadTest.tscn")
 const BasicTwoOrbs = preload("res://src/bosses/ZharkTwoBasicOrbs.tscn")
-#const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
+#const WorseTwoOrbs = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
 enum {
 	MOVING,
