@@ -2,12 +2,12 @@ extends Node2D
 
 onready var animation = $AnimationPlayer
 #yiegourattacksone
-onready var shieldgen1 = $ShieldGenerator1
-onready var shieldgen2 = $ShieldGenerator2
-onready var shieldgen3 = $ShieldGenerator3
-onready var shieldgen4 = $ShieldGenerator4
-onready var shieldgen5 = $ShieldGenerator5
-onready var shieldgen6 = $ShieldGenerator6
+onready var shieldgen1 = $ShieldGenerator1/AnimatedSprite
+onready var shieldgen2 = $ShieldGenerator2/AnimatedSprite
+onready var shieldgen3 = $ShieldGenerator3/AnimatedSprite
+onready var shieldgen4 = $ShieldGenerator4/AnimatedSprite
+onready var shieldgen5 = $ShieldGenerator5/AnimatedSprite
+onready var shieldgen6 = $ShieldGenerator6/AnimatedSprite
 
 var switchone = false
 var switchtwo = false
@@ -22,7 +22,13 @@ var switchespressed = 0
 #The leve could use a script of its own
 
 func _ready():
-	pass 
+	animation.play("RESET")
+	shieldgen1.animation = "on"
+	shieldgen2.animation = "on"
+	shieldgen3.animation = "on"
+	shieldgen4.animation = "on"
+	shieldgen5.animation = "on"
+	shieldgen6.animation = "on"
 
 #func _physics_process(delta):
 #	if switchespressed == 2:
@@ -45,23 +51,29 @@ func switch_pressed():
 func _on_ButtonPress6_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchsix = true
+		shieldgen6.animation = "off"
 
 func _on_ButtonPress5_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchfive = true
+		shieldgen5.animation = "off"
 
 func _on_ButtonPress4_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchfour = true
+		shieldgen4.animation = "off"
 
 func _on_ButtonPress3_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchthree = true
+		shieldgen3.animation = "off"
 
 func _on_ButtonPress2_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchtwo = true
+		shieldgen2.animation = "off"
 
 func _on_ButtonPress1_body_entered(body):
 	if body.is_in_group("protagonists"):
 		switchone = true
+		shieldgen1.animation = "off"
