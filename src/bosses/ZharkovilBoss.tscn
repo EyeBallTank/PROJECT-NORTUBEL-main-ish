@@ -254,6 +254,7 @@ position = Vector2( -2, -44 )
 scale = Vector2( 1.02, 1.02 )
 frames = SubResource( 4 )
 animation = "Moving"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -272,7 +273,7 @@ one_shot = true
 one_shot = true
 
 [node name="Gunhole" type="Position2D" parent="."]
-position = Vector2( -71, 63 )
+position = Vector2( -59, 82 )
 
 [node name="OrbSource" type="Position2D" parent="."]
 position = Vector2( -2, 103 )
@@ -286,4 +287,5 @@ collision_mask = 3
 [node name="shieldSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, -43 )
 frames = SubResource( 23 )
+frame = 1
 playing = true

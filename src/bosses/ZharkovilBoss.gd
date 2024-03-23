@@ -77,7 +77,8 @@ func return_to_move():
 func attack():
 	var projectile = Bullet.instance()
 	projectile.global_position = gunhole.global_position
-	projectile.velocity.y = projectile.speed * -10
+	projectile.velocity.y = projectile.speed * 10
+	get_tree().get_root().add_child(projectile)
 	sprite.animation = "Attack"
 	if phase == 1:
 		pass
