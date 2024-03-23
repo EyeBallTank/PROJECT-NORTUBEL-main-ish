@@ -30,6 +30,7 @@ var state = MOVING
 
 func _ready():
 	sprite.animation = "Moving"
+	timer.start(2)
 	animation.play("RESET")
 
 func _physics_process(delta):
@@ -47,6 +48,14 @@ func _physics_process(delta):
 			if timer.time_left == 0:
 				if canattack == true:
 					canmove = false
+					attack()
+					timer.start(2)
+				elif canattack == false:
+					pass
+			if spritetimer.time_left == 0:
+				sprite.animation = "Moving"
+				canmove = true
+
 
 		HURT:
 			pass
@@ -56,6 +65,8 @@ func _physics_process(delta):
 
 
 func return_to_move():
+	canmove = true
+	timer.start(2)
 	if phase < 4:
 		state = MOVING
 	elif phase == 4:
@@ -63,12 +74,15 @@ func return_to_move():
 	
 
 func attack():
+	sprite.animation = "Attack"
 	if phase == 1:
 		pass
 	elif phase == 2:
 		pass
 	elif phase == 3:
 		pass
+	spritetimer.start(1)
+
 
 func add_to_phase():
 	phase += 1
