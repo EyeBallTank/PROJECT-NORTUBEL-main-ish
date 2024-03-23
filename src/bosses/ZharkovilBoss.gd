@@ -68,10 +68,11 @@ func _physics_process(delta):
 			animation.play("Hurting")
 			
 		DEAD:
+			animation.play("Dying.")
+			velocity = 0
 			canmove = false
 			canattack = false
 			shieldsprite.hide()
-			pass
 
 
 func return_to_move():
