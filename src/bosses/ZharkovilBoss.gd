@@ -9,7 +9,7 @@ onready var timer = $Timer
 onready var spritetimer = $SpriteTimer
 onready var gunhole = $Gunhole
 onready var orbsource = $OrbSource
-onready var grenadetimer = $grenadetimer
+#onready var grenadetimer = $grenadetimer
 var phase = 3
 
 var canattack = true
@@ -20,7 +20,7 @@ onready var shieldsprite = $shieldSprite
 const Bullet = preload("res://src/bosses/ZharkBulletSpreadTest.tscn")
 const BasicTwoOrbs = preload("res://src/bosses/ZharkTwoBasicOrbs.tscn")
 const WorseTwoOrbs = preload("res://src/bosses/ZharkTwoWorseOrbs.tscn")
-const Grenade = preload("res://src/bosses/ZharkGrenadeTest.tscn")
+#const Grenade = preload("res://src/bosses/ZharkGrenadeTest.tscn")
 
 enum {
 	MOVING,
@@ -116,11 +116,11 @@ func attack():
 
 	spritetimer.start(1)
 
-func bombdrop():
-	var bomb = Grenade.instance()
-	bomb.global_position = orbsource.global_position
-	get_tree().get_root().add_child(bomb)
-	
+#func bombdrop():
+#	var bomb = Grenade.instance()
+#	bomb.global_position = orbsource.global_position
+#	get_tree().get_root().add_child(bomb)
+#
 
 func send_a_signal():
 	Signals.emit_signal("collectible_picked")

@@ -193,10 +193,6 @@ one_shot = true
 [node name="SpriteTimer" type="Timer" parent="."]
 one_shot = true
 
-[node name="grenadetimer" type="Timer" parent="."]
-wait_time = 3.0
-one_shot = true
-
 [node name="Gunhole" type="Position2D" parent="."]
 position = Vector2( -59, 82 )
 
