@@ -277,7 +277,7 @@ position = Vector2( -2, 103 )
 [node name="Eyes" type="RayCast2D" parent="."]
 position = Vector2( 0, -1 )
 enabled = true
-cast_to = Vector2( 0, 355 )
+cast_to = Vector2( 0, 784 )
 collision_mask = 3
 
 [node name="shieldSprite" type="AnimatedSprite" parent="."]

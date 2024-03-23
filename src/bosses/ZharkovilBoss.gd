@@ -11,6 +11,9 @@ onready var gunhole = $Gunhole
 onready var orbsource = $OrbSource
 var phase = 1
 
+var canattack = true
+var canmove = true
+
 #const ShotgunBlast = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
 #const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPelletsLeft.tscn")
 #const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
