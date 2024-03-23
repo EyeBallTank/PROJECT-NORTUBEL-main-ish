@@ -23,4 +23,4 @@ func switch_pressed():
 
 func _on_ButtonPress_body_entered(body):
 	if body.is_in_group("protagonists"):
-		switch_pressed()
+		send_a_signal()

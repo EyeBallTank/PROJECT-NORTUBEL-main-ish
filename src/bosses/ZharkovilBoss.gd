@@ -10,7 +10,7 @@ onready var spritetimer = $SpriteTimer
 onready var gunhole = $Gunhole
 onready var orbsource = $OrbSource
 #onready var grenadetimer = $grenadetimer
-var phase = 3
+var phase = 1
 
 var canattack = true
 var canmove = true

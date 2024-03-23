@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://assets/sprites/bosses/Zarkovill/Zhark shield generator.png" type="Texture" id=12]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/bosses/YiegourMultigun.tscn" type="PackedScene" id=15]
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 12 )
@@ -56,7 +57,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator1"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1"]
@@ -80,6 +80,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator2"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2"]
@@ -138,7 +139,7 @@ spritename = "greklovick greendoor"
 customtext = "zrkv1l"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
-position = Vector2( 6337, 1062 )
+position = Vector2( 5693, 1569 )
 boardname = "grek art zharkovil reference"
 
 [node name="ZharkovilBoss" parent="." instance=ExtResource( 8 )]
@@ -166,6 +167,8 @@ position = Vector2( 4727, 1131 )
 [node name="CrawlzoneEnter2" parent="." instance=ExtResource( 14 )]
 visible = false
 position = Vector2( 4875, 1131 )
+
+[node name="YiegourMultigun" parent="." instance=ExtResource( 15 )]
 
 [connection signal="body_entered" from="ShieldGenerator1/ButtonPress" to="." method="_on_ButtonPress_body_entered"]
 [connection signal="body_entered" from="ShieldGenerator2/ButtonPress" to="." method="_on_ButtonPress_body_entered"]
