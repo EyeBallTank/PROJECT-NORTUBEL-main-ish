@@ -7,6 +7,7 @@ onready var sprite: = $AnimatedSprite
 onready var eyes = $Eyes
 onready var animation = $AnimationPlayer
 onready var timer = $Timer
+onready var spritetimer = $SpriteTimer
 onready var gunhole = $Gunhole
 onready var orbsource = $OrbSource
 var phase = 1
@@ -28,4 +29,46 @@ enum {
 var state = MOVING
 
 func _ready():
+	sprite.animation = "Moving"
 	animation.play("RESET")
+
+func _physics_process(delta):
+
+	match state:
+		MOVING:
+			if canmove == true:
+				var found_wall = is_on_wall()
+				if found_wall:
+					direction *= -1
+				velocity = direction * 160
+				move_and_slide(velocity, Vector2.UP)
+			elif canmove == false:
+				velocity = 0
+			if timer.time_left == 0:
+				if canattack == true:
+					canmove = false
+
+		HURT:
+			pass
+			
+		DEAD:
+			pass
+
+
+func return_to_move():
+	if phase < 4:
+		state = MOVING
+	elif phase == 4:
+		state = DEAD
+	
+
+func attack():
+	if phase == 1:
+		pass
+	elif phase == 2:
+		pass
+	elif phase == 3:
+		pass
+
+func add_to_phase():
+	phase += 1
