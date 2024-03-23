@@ -15,7 +15,7 @@ var phase = 1
 var canattack = true
 var canmove = true
 
-#const ShotgunBlast = preload("res://src/enemies/greklovick/GrekShotgunPellets.tscn")
+const Bullet = preload("res://src/bosses/VerticalBullet.tscn")
 #const ShotgunBlastLeft = preload("res://src/enemies/greklovick/GrekShotgunPelletsLeft.tscn")
 #const Bomb = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
 
@@ -49,7 +49,7 @@ func _physics_process(delta):
 				if canattack == true:
 					canmove = false
 					attack()
-					timer.start(2)
+					timer.start(5)
 				elif canattack == false:
 					pass
 			if spritetimer.time_left == 0:
@@ -66,6 +66,7 @@ func _physics_process(delta):
 
 func return_to_move():
 	canmove = true
+	canattack = true
 	timer.start(2)
 	if phase < 4:
 		state = MOVING
@@ -74,6 +75,9 @@ func return_to_move():
 	
 
 func attack():
+	var projectile = Bullet.instance()
+	projectile.global_position = gunhole.global_position
+	projectile.velocity.y = projectile.speed * -10
 	sprite.animation = "Attack"
 	if phase == 1:
 		pass

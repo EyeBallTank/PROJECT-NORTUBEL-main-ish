@@ -101,7 +101,7 @@ spritename = "zharkovil"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="ShieldGenerator1" type="KinematicBody2D" parent="."]
-position = Vector2( 2820, 1093 )
+position = Vector2( 2629, 1275 )
 collision_layer = 4
 collision_mask = 0
 
