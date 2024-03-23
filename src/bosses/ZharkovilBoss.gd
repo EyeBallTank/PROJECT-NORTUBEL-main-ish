@@ -25,7 +25,7 @@ const WorseTwoOrbs = preload("res://src/bosses/ZharkTwoWorseOrbs.tscn")
 
 enum {
 	MOVING,
-	SHOOT,
+	ONFLOOR,
 	HURT,
 	DEAD
 }
@@ -80,12 +80,20 @@ func _physics_process(delta):
 			canattack = false
 			shieldsprite.hide()
 
+#			if raycast.is_colliding():
+#				var collision_point = raycast.get_collision_point()
+#				position.y = collision_point.y
+#				state = ONFLOOR
 #			velocity.y += gravity * delta
 #			move_and_slide(velocity, Vector2.UP)
 #			gravity = 23600
-			if is_on_floor():
-				sprite.animation = "Dead"
+#			if is_on_floor():
+#				sprite.animation = "Dead"
 
+		ONFLOOR:
+			velocity = 0
+			sprite.animation = "Dead"
+			send_a_signal()
 
 func return_to_move():
 	
@@ -139,6 +147,4 @@ func add_to_phase():
 
 func oh_no_my_shield():
 	state = HURT
-
-
 
