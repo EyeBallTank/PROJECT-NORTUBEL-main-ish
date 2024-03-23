@@ -95,6 +95,9 @@ func _physics_process(delta):
 			sprite.animation = "Dead"
 			send_a_signal()
 
+func die():
+	queue_free()
+
 func return_to_move():
 	
 	
