@@ -19,7 +19,7 @@ onready var shieldsprite = $shieldSprite
 
 const Bullet = preload("res://src/bosses/ZharkBulletSpreadTest.tscn")
 const BasicTwoOrbs = preload("res://src/bosses/ZharkTwoBasicOrbs.tscn")
-#const WorseTwoOrbs = preload("res://src/enemies/greklovick/TemporaryExplosion.tscn")
+const WorseTwoOrbs = preload("res://src/bosses/ZharkTwoWorseOrbs.tscn")
 
 enum {
 	MOVING,
@@ -103,7 +103,9 @@ func attack():
 
 
 	elif phase == 3:
-		pass
+		var badorbs = WorseTwoOrbs.instance()
+		badorbs.global_position = orbsource.global_position
+		get_tree().get_root().add_child(badorbs)
 	spritetimer.start(1)
 
 func send_a_signal():
