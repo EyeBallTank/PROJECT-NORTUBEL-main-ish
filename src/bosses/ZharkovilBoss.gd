@@ -62,8 +62,10 @@ func _physics_process(delta):
 
 
 		HURT:
+			velocity = 0
+			move_and_slide(velocity, Vector2.UP)
 			shieldsprite.hide()
-			pass
+			animation.play("Hurting")
 			
 		DEAD:
 			canmove = false
@@ -73,11 +75,14 @@ func _physics_process(delta):
 
 
 func return_to_move():
-	canmove = true
-	canattack = true
+	
+	
 	timer.start(2)
 	if phase < 4:
+		canmove = true
+		canattack = true
 		state = MOVING
+		sprite.animation = "Moving"
 		shieldsprite.show()
 	elif phase == 4:
 		state = DEAD
@@ -102,3 +107,9 @@ func send_a_signal():
 
 func add_to_phase():
 	phase += 1
+
+func oh_no_my_shield():
+	state = HURT
+
+
+

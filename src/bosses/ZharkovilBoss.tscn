@@ -120,6 +120,39 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
+[sub_resource type="Animation" id=24]
+resource_name = "Hurting"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Moving", "Hurt" ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 2.9, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "add_to_phase"
+}, {
+"args": [  ],
+"method": "return_to_move"
+} ]
+}
+
 [sub_resource type="Animation" id=12]
 length = 0.001
 tracks/0/type = "value"
@@ -171,63 +204,6 @@ tracks/3/keys = {
 "values": [ "Moving" ]
 }
 
-[sub_resource type="Animation" id=13]
-resource_name = "Shoot"
-length = 4.6
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ "Attack", "Idle" ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Eyes:enabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 4.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
-}
-tracks/2/type = "method"
-tracks/2/path = NodePath(".")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.5, 3.2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"values": [ {
-"args": [  ],
-"method": "attack"
-}, {
-"args": [  ],
-"method": "return_to_move"
-} ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("AnimatedSprite:modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 0.3, 1.8, 2.7, 3.1 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
-}
-
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 500, 500 )
@@ -262,8 +238,8 @@ shape = SubResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Dying. = SubResource( 11 )
+anims/Hurting = SubResource( 24 )
 anims/RESET = SubResource( 12 )
-anims/Shoot = SubResource( 13 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
@@ -287,5 +263,4 @@ collision_mask = 3
 [node name="shieldSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, -43 )
 frames = SubResource( 23 )
-frame = 1
 playing = true
