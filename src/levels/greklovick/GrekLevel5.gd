@@ -21,7 +21,7 @@ func send_a_signal():
 func switch_pressed():
 	switchespressed += 1
 
-func _on_ButtonPress_body_entered(body):
-	if body.is_in_group("protagonists"):
-		send_a_signal()
-		animation.play("yiegourattacks")
+#func _on_ButtonPress_body_entered(body):
+#	if body.is_in_group("protagonists"):
+#		send_a_signal()
+#		animation.play("yiegourattacks")

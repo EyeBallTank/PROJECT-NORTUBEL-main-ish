@@ -175,11 +175,11 @@ position = Vector2( 36, -4 )
 shape = SubResource( 5 )
 disabled = true
 
-[node name="ButtonPress" type="Area2D" parent="ShieldGenerator1"]
+[node name="ButtonPress1" type="Area2D" parent="ShieldGenerator1"]
 collision_layer = 512
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1/ButtonPress"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1/ButtonPress1"]
 position = Vector2( 38, 0 )
 shape = SubResource( 6 )
 
@@ -199,11 +199,11 @@ position = Vector2( 36, -4 )
 shape = SubResource( 5 )
 disabled = true
 
-[node name="ButtonPress" type="Area2D" parent="ShieldGenerator2"]
+[node name="ButtonPress2" type="Area2D" parent="ShieldGenerator2"]
 collision_layer = 512
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2/ButtonPress"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2/ButtonPress2"]
 position = Vector2( 38, 0 )
 shape = SubResource( 6 )
 
@@ -297,13 +297,9 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
-frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 16 )
 pitch_scale = 1.23
 bus = "Sound"
-
-[connection signal="body_entered" from="ShieldGenerator1/ButtonPress" to="." method="_on_ButtonPress_body_entered"]
-[connection signal="body_entered" from="ShieldGenerator2/ButtonPress" to="." method="_on_ButtonPress_body_entered"]
