@@ -88,6 +88,8 @@ func attack():
 		pass
 	spritetimer.start(1)
 
+func send_a_signal():
+	Signals.emit_signal("collectible_picked")
 
 func add_to_phase():
 	phase += 1

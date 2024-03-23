@@ -97,6 +97,7 @@ position = Vector2( 3366, 890 )
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 1 )]
 position = Vector2( 5597, 1217 )
 spritename = "zharkovil"
+idealnumber = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
