@@ -5,6 +5,7 @@
 [ext_resource path="res://src/bosses/amalia/AmaliaHand.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 229, 86.5 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
@@ -96,6 +97,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("RayCast2D:enabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="AmaliaHand" type="KinematicBody2D"]
 collision_layer = 32
@@ -103,12 +116,13 @@ collision_mask = 4
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -30, 18.5 )
 shape = SubResource( 1 )
-disabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 4 )
 animation = "handnormal"
+frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]
@@ -128,3 +142,11 @@ disabled = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 9 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 0, 150 )
+enabled = true
+cast_to = Vector2( 0, 682 )
+collision_mask = 3
+
+[node name="Timer" type="Timer" parent="."]
