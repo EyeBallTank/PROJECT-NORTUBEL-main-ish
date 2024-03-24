@@ -8,16 +8,15 @@ onready var righthandspawn = $RightHandSpawn
 var phase = 1
 
 const RightHand = preload("res://src/bosses/amalia/AmaliaHand.tscn")
-#const LeftHand = preload(""res://src/bosses/amalia/AmaliaHandLeft.tscn"")
+const LeftHand = preload("res://src/bosses/amalia/AmaliaHandLeft.tscn")
 
 
 enum {
 	PHASEONE,
 	PHASETWO,
 	PHASETHREE,
-	ANIMATEDFROMONE,
-	ANIMATEDFROMTWO,
-	ANIMATEDFROMTHREE
+	DEAD,
+	VERYDEAD
 }
 
 var state = PHASEONE
@@ -41,7 +40,13 @@ func _physics_process(delta):
 			if phase == 4:
 				animation.play("painfromtwo")
 		PHASETHREE:
-			pass
+			if phase == 6:
+				pass
+		DEAD:
+			animation.play("deadhouse")
+		VERYDEAD:
+			animation.play("staydead")
+
 
 func go_to_phase_two():
 	animation.play("RESET")
@@ -52,11 +57,15 @@ func go_to_phase_three():
 	animation.play("RESET")
 	state = PHASETHREE
 
+func please_stay_dead():
+	state = VERYDEAD
+	print("please")
+
 func summon_both_hands():
 	var righthanded = RightHand.instance()
 	righthanded.global_position = righthandspawn.global_position
 	get_tree().get_root().add_child(righthanded)
-#	var lefthanded = LeftHand.instance()
-#	lefthanded.global_position = lefthandspawn.global_position
-#	get_tree().get_root().add_child(lefthanded)
+	var lefthanded = LeftHand.instance()
+	lefthanded.global_position = lefthandspawn.global_position
+	get_tree().get_root().add_child(lefthanded)
 
