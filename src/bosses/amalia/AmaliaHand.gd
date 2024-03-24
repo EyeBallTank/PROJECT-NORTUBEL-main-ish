@@ -18,6 +18,7 @@ var state = FLOATING
 
 
 func _ready():
+	animation.play("RESET")
 	sprite.play("handnormal")
 
 func _physics_process(delta):
@@ -27,8 +28,17 @@ func _physics_process(delta):
 			sprite.play("handnormal")
 			if see_to_punch():
 				state = SLAM
+			velocity = direction * 290
+			move_and_slide(velocity, Vector2.UP)
+			var found_wall = is_on_wall()
+			if found_wall:
+				direction *= -1
 		SLAM:
-			pass
+			animation.play("slamming")
+			velocity = 0
+			timer.start(4)
+			if timer.time_left == 0:
+				state = FLOATING
 		DEAD:
 			pass
 
@@ -37,3 +47,6 @@ func see_to_punch():
 	var collider = raycast.get_collider()
 	if not collider.is_in_group("protagonists"): return false
 	return true
+
+func return_to_move():
+	state = FLOATING

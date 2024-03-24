@@ -144,4 +144,9 @@ spritename = "amalia"
 anims/RESET = SubResource( 6 )
 
 [node name="AmaliaHand" parent="." instance=ExtResource( 11 )]
-position = Vector2( -649, 721 )
+position = Vector2( -649, 917 )
+
+[node name="RayCast2D" parent="AmaliaHand" index="5"]
+cast_to = Vector2( 0, 511 )
+
+[editable path="AmaliaHand"]
