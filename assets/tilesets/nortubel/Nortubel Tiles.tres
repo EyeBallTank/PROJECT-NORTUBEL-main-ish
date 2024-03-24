@@ -1,7 +1,20 @@
-[gd_resource type="TileSet" load_steps=92 format=2]
+[gd_resource type="TileSet" load_steps=144 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILE PASSABLE.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/NORT2 TILE PASSABLE.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/NORT2 TILE SOLID.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE PILLOW WOOL.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE BANDSTAND.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE DOUBLE HOUSE.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE DOORWAY.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE GAMBOZINO.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE BEETROOT PILLAR.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE CORK OAK TREE.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE RESTAURANT.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE RED DOOR.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE STONE PILLARS PROP.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE ROCK WOOL.png" type="Texture" id=15]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -72,8 +85,50 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 [sub_resource type="ConvexPolygonShape2D" id=22]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
+[sub_resource type="ConvexPolygonShape2D" id=90]
+points = PoolVector2Array( 0, 0, 256, 0, 256, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=91]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=92]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=93]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
 [sub_resource type="ConvexPolygonShape2D" id=23]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=94]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=95]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=96]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=97]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=98]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=99]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=100]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=101]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=102]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=103]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=24]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -81,11 +136,86 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 32, 64, 0, 64, 0, 0, 32, 0 )
 
+[sub_resource type="ConvexPolygonShape2D" id=104]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=105]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=106]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=107]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=108]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=109]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=110]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=111]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=112]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=113]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
 [sub_resource type="ConvexPolygonShape2D" id=26]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
+[sub_resource type="ConvexPolygonShape2D" id=114]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=115]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=116]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=117]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=118]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=119]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=120]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=121]
+points = PoolVector2Array( 0, 0, 192, 0, 192, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=122]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=123]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
 [sub_resource type="ConvexPolygonShape2D" id=27]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=124]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=125]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=126]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=127]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=128]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=28]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -4142,3 +4272,1816 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 231/shape_one_way_margin = 0.0
 231/shapes = [  ]
 231/z_index = 0
+232/name = "NORT2 TILE PASSABLE.png 232"
+232/texture = ExtResource( 3 )
+232/tex_offset = Vector2( 0, 0 )
+232/modulate = Color( 1, 1, 1, 1 )
+232/region = Rect2( 1344, 1344, 256, 256 )
+232/tile_mode = 0
+232/occluder_offset = Vector2( 0, 0 )
+232/navigation_offset = Vector2( 0, 0 )
+232/shape_offset = Vector2( 0, 0 )
+232/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+232/shape_one_way = false
+232/shape_one_way_margin = 0.0
+232/shapes = [  ]
+232/z_index = 0
+233/name = "NORT2 TILE PASSABLE.png 233"
+233/texture = ExtResource( 3 )
+233/tex_offset = Vector2( 0, 0 )
+233/modulate = Color( 1, 1, 1, 1 )
+233/region = Rect2( 448, 1504, 192, 96 )
+233/tile_mode = 0
+233/occluder_offset = Vector2( 0, 0 )
+233/navigation_offset = Vector2( 0, 0 )
+233/shape_offset = Vector2( 0, 0 )
+233/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+233/shape_one_way = false
+233/shape_one_way_margin = 0.0
+233/shapes = [  ]
+233/z_index = 0
+234/name = "NORT2 TILE PASSABLE.png 234"
+234/texture = ExtResource( 3 )
+234/tex_offset = Vector2( 0, 0 )
+234/modulate = Color( 1, 1, 1, 1 )
+234/region = Rect2( 32, 1152, 416, 448 )
+234/tile_mode = 0
+234/occluder_offset = Vector2( 0, 0 )
+234/navigation_offset = Vector2( 0, 0 )
+234/shape_offset = Vector2( 0, 0 )
+234/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+234/shape_one_way = false
+234/shape_one_way_margin = 0.0
+234/shapes = [  ]
+234/z_index = 0
+235/name = "NORT2 TILE PASSABLE.png 235"
+235/texture = ExtResource( 3 )
+235/tex_offset = Vector2( 0, 0 )
+235/modulate = Color( 1, 1, 1, 1 )
+235/region = Rect2( 960, 576, 256, 384 )
+235/tile_mode = 0
+235/occluder_offset = Vector2( 0, 0 )
+235/navigation_offset = Vector2( 0, 0 )
+235/shape_offset = Vector2( 0, 0 )
+235/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+235/shape_one_way = false
+235/shape_one_way_margin = 0.0
+235/shapes = [  ]
+235/z_index = 0
+236/name = "NORT2 TILE PASSABLE.png 236"
+236/texture = ExtResource( 3 )
+236/tex_offset = Vector2( 0, 0 )
+236/modulate = Color( 1, 1, 1, 1 )
+236/region = Rect2( 992, 320, 192, 256 )
+236/tile_mode = 0
+236/occluder_offset = Vector2( 0, 0 )
+236/navigation_offset = Vector2( 0, 0 )
+236/shape_offset = Vector2( 0, 0 )
+236/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+236/shape_one_way = false
+236/shape_one_way_margin = 0.0
+236/shapes = [  ]
+236/z_index = 0
+237/name = "NORT2 TILE PASSABLE.png 237"
+237/texture = ExtResource( 3 )
+237/tex_offset = Vector2( 0, 0 )
+237/modulate = Color( 1, 1, 1, 1 )
+237/region = Rect2( 0, 0, 192, 192 )
+237/tile_mode = 0
+237/occluder_offset = Vector2( 0, 0 )
+237/navigation_offset = Vector2( 0, 0 )
+237/shape_offset = Vector2( 0, 0 )
+237/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+237/shape_one_way = false
+237/shape_one_way_margin = 0.0
+237/shapes = [  ]
+237/z_index = 0
+238/name = "NORT2 TILE PASSABLE.png 238"
+238/texture = ExtResource( 3 )
+238/tex_offset = Vector2( 0, 0 )
+238/modulate = Color( 1, 1, 1, 1 )
+238/region = Rect2( 0, 192, 192, 256 )
+238/tile_mode = 0
+238/occluder_offset = Vector2( 0, 0 )
+238/navigation_offset = Vector2( 0, 0 )
+238/shape_offset = Vector2( 0, 0 )
+238/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+238/shape_one_way = false
+238/shape_one_way_margin = 0.0
+238/shapes = [  ]
+238/z_index = 0
+239/name = "NORT2 TILE PASSABLE.png 239"
+239/texture = ExtResource( 3 )
+239/tex_offset = Vector2( 0, 0 )
+239/modulate = Color( 1, 1, 1, 1 )
+239/region = Rect2( 192, 192, 64, 64 )
+239/tile_mode = 0
+239/occluder_offset = Vector2( 0, 0 )
+239/navigation_offset = Vector2( 0, 0 )
+239/shape_offset = Vector2( 0, 0 )
+239/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+239/shape_one_way = false
+239/shape_one_way_margin = 0.0
+239/shapes = [  ]
+239/z_index = 0
+240/name = "NORT2 TILE PASSABLE.png 240"
+240/texture = ExtResource( 3 )
+240/tex_offset = Vector2( 0, 0 )
+240/modulate = Color( 1, 1, 1, 1 )
+240/region = Rect2( 256, 192, 64, 64 )
+240/tile_mode = 0
+240/occluder_offset = Vector2( 0, 0 )
+240/navigation_offset = Vector2( 0, 0 )
+240/shape_offset = Vector2( 0, 0 )
+240/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+240/shape_one_way = false
+240/shape_one_way_margin = 0.0
+240/shapes = [  ]
+240/z_index = 0
+241/name = "NORT2 TILE PASSABLE.png 241"
+241/texture = ExtResource( 3 )
+241/tex_offset = Vector2( 0, 0 )
+241/modulate = Color( 1, 1, 1, 1 )
+241/region = Rect2( 192, 256, 128, 128 )
+241/tile_mode = 0
+241/occluder_offset = Vector2( 0, 0 )
+241/navigation_offset = Vector2( 0, 0 )
+241/shape_offset = Vector2( 0, 0 )
+241/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+241/shape_one_way = false
+241/shape_one_way_margin = 0.0
+241/shapes = [  ]
+241/z_index = 0
+242/name = "NORT2 TILE PASSABLE.png 242"
+242/texture = ExtResource( 3 )
+242/tex_offset = Vector2( 0, 0 )
+242/modulate = Color( 1, 1, 1, 1 )
+242/region = Rect2( 320, 256, 128, 128 )
+242/tile_mode = 0
+242/occluder_offset = Vector2( 0, 0 )
+242/navigation_offset = Vector2( 0, 0 )
+242/shape_offset = Vector2( 0, 0 )
+242/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+242/shape_one_way = false
+242/shape_one_way_margin = 0.0
+242/shapes = [  ]
+242/z_index = 0
+243/name = "NORT2 TILE PASSABLE.png 243"
+243/texture = ExtResource( 3 )
+243/tex_offset = Vector2( 0, 0 )
+243/modulate = Color( 1, 1, 1, 1 )
+243/region = Rect2( 0, 448, 256, 128 )
+243/tile_mode = 0
+243/occluder_offset = Vector2( 0, 0 )
+243/navigation_offset = Vector2( 0, 0 )
+243/shape_offset = Vector2( 0, 0 )
+243/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+243/shape_one_way = false
+243/shape_one_way_margin = 0.0
+243/shapes = [  ]
+243/z_index = 0
+244/name = "NORT2 TILE PASSABLE.png 244"
+244/texture = ExtResource( 3 )
+244/tex_offset = Vector2( 0, 0 )
+244/modulate = Color( 1, 1, 1, 1 )
+244/region = Rect2( 0, 576, 64, 64 )
+244/tile_mode = 0
+244/occluder_offset = Vector2( 0, 0 )
+244/navigation_offset = Vector2( 0, 0 )
+244/shape_offset = Vector2( 0, 0 )
+244/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+244/shape_one_way = false
+244/shape_one_way_margin = 0.0
+244/shapes = [  ]
+244/z_index = 0
+245/name = "NORT2 TILE PASSABLE.png 245"
+245/texture = ExtResource( 3 )
+245/tex_offset = Vector2( 0, 0 )
+245/modulate = Color( 1, 1, 1, 1 )
+245/region = Rect2( 64, 576, 64, 64 )
+245/tile_mode = 0
+245/occluder_offset = Vector2( 0, 0 )
+245/navigation_offset = Vector2( 0, 0 )
+245/shape_offset = Vector2( 0, 0 )
+245/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+245/shape_one_way = false
+245/shape_one_way_margin = 0.0
+245/shapes = [  ]
+245/z_index = 0
+246/name = "NORT2 TILE PASSABLE.png 246"
+246/texture = ExtResource( 3 )
+246/tex_offset = Vector2( 0, 0 )
+246/modulate = Color( 1, 1, 1, 1 )
+246/region = Rect2( 0, 640, 64, 64 )
+246/tile_mode = 0
+246/occluder_offset = Vector2( 0, 0 )
+246/navigation_offset = Vector2( 0, 0 )
+246/shape_offset = Vector2( 0, 0 )
+246/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+246/shape_one_way = false
+246/shape_one_way_margin = 0.0
+246/shapes = [  ]
+246/z_index = 0
+247/name = "NORT2 TILE PASSABLE.png 247"
+247/texture = ExtResource( 3 )
+247/tex_offset = Vector2( 0, 0 )
+247/modulate = Color( 1, 1, 1, 1 )
+247/region = Rect2( 192, 0, 192, 192 )
+247/tile_mode = 0
+247/occluder_offset = Vector2( 0, 0 )
+247/navigation_offset = Vector2( 0, 0 )
+247/shape_offset = Vector2( 0, 0 )
+247/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+247/shape_one_way = false
+247/shape_one_way_margin = 0.0
+247/shapes = [  ]
+247/z_index = 0
+248/name = "NORT2 TILE PASSABLE.png 248"
+248/texture = ExtResource( 3 )
+248/tex_offset = Vector2( 0, 0 )
+248/modulate = Color( 1, 1, 1, 1 )
+248/region = Rect2( 384, 0, 128, 128 )
+248/tile_mode = 0
+248/occluder_offset = Vector2( 0, 0 )
+248/navigation_offset = Vector2( 0, 0 )
+248/shape_offset = Vector2( 0, 0 )
+248/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+248/shape_one_way = false
+248/shape_one_way_margin = 0.0
+248/shapes = [  ]
+248/z_index = 0
+249/name = "NORT2 TILE PASSABLE.png 249"
+249/texture = ExtResource( 3 )
+249/tex_offset = Vector2( 0, 0 )
+249/modulate = Color( 1, 1, 1, 1 )
+249/region = Rect2( 384, 128, 64, 128 )
+249/tile_mode = 0
+249/occluder_offset = Vector2( 0, 0 )
+249/navigation_offset = Vector2( 0, 0 )
+249/shape_offset = Vector2( 0, 0 )
+249/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+249/shape_one_way = false
+249/shape_one_way_margin = 0.0
+249/shapes = [  ]
+249/z_index = 0
+250/name = "NORT2 TILE PASSABLE.png 250"
+250/texture = ExtResource( 3 )
+250/tex_offset = Vector2( 0, 0 )
+250/modulate = Color( 1, 1, 1, 1 )
+250/region = Rect2( 448, 128, 64, 128 )
+250/tile_mode = 0
+250/occluder_offset = Vector2( 0, 0 )
+250/navigation_offset = Vector2( 0, 0 )
+250/shape_offset = Vector2( 0, 0 )
+250/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+250/shape_one_way = false
+250/shape_one_way_margin = 0.0
+250/shapes = [  ]
+250/z_index = 0
+251/name = "NORT2 TILE PASSABLE.png 251"
+251/texture = ExtResource( 3 )
+251/tex_offset = Vector2( 0, 0 )
+251/modulate = Color( 1, 1, 1, 1 )
+251/region = Rect2( 576, 0, 64, 64 )
+251/tile_mode = 0
+251/occluder_offset = Vector2( 0, 0 )
+251/navigation_offset = Vector2( 0, 0 )
+251/shape_offset = Vector2( 0, 0 )
+251/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+251/shape_one_way = false
+251/shape_one_way_margin = 0.0
+251/shapes = [  ]
+251/z_index = 0
+252/name = "NORT2 TILE PASSABLE.png 252"
+252/texture = ExtResource( 3 )
+252/tex_offset = Vector2( 0, 0 )
+252/modulate = Color( 1, 1, 1, 1 )
+252/region = Rect2( 512, 0, 64, 64 )
+252/tile_mode = 0
+252/occluder_offset = Vector2( 0, 0 )
+252/navigation_offset = Vector2( 0, 0 )
+252/shape_offset = Vector2( 0, 0 )
+252/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+252/shape_one_way = false
+252/shape_one_way_margin = 0.0
+252/shapes = [  ]
+252/z_index = 0
+253/name = "NORT2 TILE PASSABLE.png 253"
+253/texture = ExtResource( 3 )
+253/tex_offset = Vector2( 0, 0 )
+253/modulate = Color( 1, 1, 1, 1 )
+253/region = Rect2( 640, 0, 64, 64 )
+253/tile_mode = 0
+253/occluder_offset = Vector2( 0, 0 )
+253/navigation_offset = Vector2( 0, 0 )
+253/shape_offset = Vector2( 0, 0 )
+253/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+253/shape_one_way = false
+253/shape_one_way_margin = 0.0
+253/shapes = [  ]
+253/z_index = 0
+254/name = "NORT2 TILE PASSABLE.png 254"
+254/texture = ExtResource( 3 )
+254/tex_offset = Vector2( 0, 0 )
+254/modulate = Color( 1, 1, 1, 1 )
+254/region = Rect2( 704, 0, 64, 64 )
+254/tile_mode = 0
+254/occluder_offset = Vector2( 0, 0 )
+254/navigation_offset = Vector2( 0, 0 )
+254/shape_offset = Vector2( 0, 0 )
+254/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+254/shape_one_way = false
+254/shape_one_way_margin = 0.0
+254/shapes = [  ]
+254/z_index = 0
+255/name = "NORT2 TILE PASSABLE.png 255"
+255/texture = ExtResource( 3 )
+255/tex_offset = Vector2( 0, 0 )
+255/modulate = Color( 1, 1, 1, 1 )
+255/region = Rect2( 768, 0, 64, 64 )
+255/tile_mode = 0
+255/occluder_offset = Vector2( 0, 0 )
+255/navigation_offset = Vector2( 0, 0 )
+255/shape_offset = Vector2( 0, 0 )
+255/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+255/shape_one_way = false
+255/shape_one_way_margin = 0.0
+255/shapes = [  ]
+255/z_index = 0
+256/name = "NORT2 TILE PASSABLE.png 256"
+256/texture = ExtResource( 3 )
+256/tex_offset = Vector2( 0, 0 )
+256/modulate = Color( 1, 1, 1, 1 )
+256/region = Rect2( 832, 0, 64, 64 )
+256/tile_mode = 0
+256/occluder_offset = Vector2( 0, 0 )
+256/navigation_offset = Vector2( 0, 0 )
+256/shape_offset = Vector2( 0, 0 )
+256/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+256/shape_one_way = false
+256/shape_one_way_margin = 0.0
+256/shapes = [  ]
+256/z_index = 0
+257/name = "NORT2 TILE PASSABLE.png 257"
+257/texture = ExtResource( 3 )
+257/tex_offset = Vector2( 0, 0 )
+257/modulate = Color( 1, 1, 1, 1 )
+257/region = Rect2( 896, 0, 64, 64 )
+257/tile_mode = 0
+257/occluder_offset = Vector2( 0, 0 )
+257/navigation_offset = Vector2( 0, 0 )
+257/shape_offset = Vector2( 0, 0 )
+257/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+257/shape_one_way = false
+257/shape_one_way_margin = 0.0
+257/shapes = [  ]
+257/z_index = 0
+258/name = "NORT2 TILE PASSABLE.png 258"
+258/texture = ExtResource( 3 )
+258/tex_offset = Vector2( 0, 0 )
+258/modulate = Color( 1, 1, 1, 1 )
+258/region = Rect2( 704, 64, 64, 64 )
+258/tile_mode = 0
+258/occluder_offset = Vector2( 0, 0 )
+258/navigation_offset = Vector2( 0, 0 )
+258/shape_offset = Vector2( 0, 0 )
+258/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+258/shape_one_way = false
+258/shape_one_way_margin = 0.0
+258/shapes = [  ]
+258/z_index = 0
+259/name = "NORT2 TILE PASSABLE.png 259"
+259/texture = ExtResource( 3 )
+259/tex_offset = Vector2( 0, 0 )
+259/modulate = Color( 1, 1, 1, 1 )
+259/region = Rect2( 640, 64, 64, 64 )
+259/tile_mode = 0
+259/occluder_offset = Vector2( 0, 0 )
+259/navigation_offset = Vector2( 0, 0 )
+259/shape_offset = Vector2( 0, 0 )
+259/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+259/shape_one_way = false
+259/shape_one_way_margin = 0.0
+259/shapes = [  ]
+259/z_index = 0
+260/name = "NORT2 TILE PASSABLE.png 260"
+260/texture = ExtResource( 3 )
+260/tex_offset = Vector2( 0, 0 )
+260/modulate = Color( 1, 1, 1, 1 )
+260/region = Rect2( 768, 64, 64, 64 )
+260/tile_mode = 0
+260/occluder_offset = Vector2( 0, 0 )
+260/navigation_offset = Vector2( 0, 0 )
+260/shape_offset = Vector2( 0, 0 )
+260/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+260/shape_one_way = false
+260/shape_one_way_margin = 0.0
+260/shapes = [  ]
+260/z_index = 0
+261/name = "NORT2 TILE PASSABLE.png 261"
+261/texture = ExtResource( 3 )
+261/tex_offset = Vector2( 0, 0 )
+261/modulate = Color( 1, 1, 1, 1 )
+261/region = Rect2( 832, 64, 64, 64 )
+261/tile_mode = 0
+261/occluder_offset = Vector2( 0, 0 )
+261/navigation_offset = Vector2( 0, 0 )
+261/shape_offset = Vector2( 0, 0 )
+261/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+261/shape_one_way = false
+261/shape_one_way_margin = 0.0
+261/shapes = [  ]
+261/z_index = 0
+262/name = "NORT2 TILE PASSABLE.png 262"
+262/texture = ExtResource( 3 )
+262/tex_offset = Vector2( 0, 0 )
+262/modulate = Color( 1, 1, 1, 1 )
+262/region = Rect2( 768, 128, 128, 128 )
+262/tile_mode = 0
+262/occluder_offset = Vector2( 0, 0 )
+262/navigation_offset = Vector2( 0, 0 )
+262/shape_offset = Vector2( 0, 0 )
+262/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+262/shape_one_way = false
+262/shape_one_way_margin = 0.0
+262/shapes = [  ]
+262/z_index = 0
+263/name = "NORT2 TILE PASSABLE.png 263"
+263/texture = ExtResource( 3 )
+263/tex_offset = Vector2( 0, 0 )
+263/modulate = Color( 1, 1, 1, 1 )
+263/region = Rect2( 640, 128, 128, 128 )
+263/tile_mode = 0
+263/occluder_offset = Vector2( 0, 0 )
+263/navigation_offset = Vector2( 0, 0 )
+263/shape_offset = Vector2( 0, 0 )
+263/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+263/shape_one_way = false
+263/shape_one_way_margin = 0.0
+263/shapes = [  ]
+263/z_index = 0
+264/name = "NORT2 TILE PASSABLE.png 264"
+264/texture = ExtResource( 3 )
+264/tex_offset = Vector2( 0, 0 )
+264/modulate = Color( 1, 1, 1, 1 )
+264/region = Rect2( 512, 64, 64, 64 )
+264/tile_mode = 0
+264/occluder_offset = Vector2( 0, 0 )
+264/navigation_offset = Vector2( 0, 0 )
+264/shape_offset = Vector2( 0, 0 )
+264/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+264/shape_one_way = false
+264/shape_one_way_margin = 0.0
+264/shapes = [  ]
+264/z_index = 0
+265/name = "NORT2 TILE PASSABLE.png 265"
+265/texture = ExtResource( 3 )
+265/tex_offset = Vector2( 0, 0 )
+265/modulate = Color( 1, 1, 1, 1 )
+265/region = Rect2( 576, 64, 64, 64 )
+265/tile_mode = 0
+265/occluder_offset = Vector2( 0, 0 )
+265/navigation_offset = Vector2( 0, 0 )
+265/shape_offset = Vector2( 0, 0 )
+265/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+265/shape_one_way = false
+265/shape_one_way_margin = 0.0
+265/shapes = [  ]
+265/z_index = 0
+266/name = "NORT2 TILE PASSABLE.png 266"
+266/texture = ExtResource( 3 )
+266/tex_offset = Vector2( 0, 0 )
+266/modulate = Color( 1, 1, 1, 1 )
+266/region = Rect2( 512, 128, 64, 64 )
+266/tile_mode = 0
+266/occluder_offset = Vector2( 0, 0 )
+266/navigation_offset = Vector2( 0, 0 )
+266/shape_offset = Vector2( 0, 0 )
+266/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+266/shape_one_way = false
+266/shape_one_way_margin = 0.0
+266/shapes = [  ]
+266/z_index = 0
+267/name = "NORT2 TILE PASSABLE.png 267"
+267/texture = ExtResource( 3 )
+267/tex_offset = Vector2( 0, 0 )
+267/modulate = Color( 1, 1, 1, 1 )
+267/region = Rect2( 576, 128, 64, 64 )
+267/tile_mode = 0
+267/occluder_offset = Vector2( 0, 0 )
+267/navigation_offset = Vector2( 0, 0 )
+267/shape_offset = Vector2( 0, 0 )
+267/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+267/shape_one_way = false
+267/shape_one_way_margin = 0.0
+267/shapes = [  ]
+267/z_index = 0
+268/name = "NORT2 TILE PASSABLE.png 268"
+268/texture = ExtResource( 3 )
+268/tex_offset = Vector2( 0, 0 )
+268/modulate = Color( 1, 1, 1, 1 )
+268/region = Rect2( 960, 0, 64, 64 )
+268/tile_mode = 0
+268/occluder_offset = Vector2( 0, 0 )
+268/navigation_offset = Vector2( 0, 0 )
+268/shape_offset = Vector2( 0, 0 )
+268/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+268/shape_one_way = false
+268/shape_one_way_margin = 0.0
+268/shapes = [  ]
+268/z_index = 0
+269/name = "NORT2 TILE PASSABLE.png 269"
+269/texture = ExtResource( 3 )
+269/tex_offset = Vector2( 0, 0 )
+269/modulate = Color( 1, 1, 1, 1 )
+269/region = Rect2( 960, 64, 64, 64 )
+269/tile_mode = 0
+269/occluder_offset = Vector2( 0, 0 )
+269/navigation_offset = Vector2( 0, 0 )
+269/shape_offset = Vector2( 0, 0 )
+269/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+269/shape_one_way = false
+269/shape_one_way_margin = 0.0
+269/shapes = [  ]
+269/z_index = 0
+270/name = "NORT2 TILE PASSABLE.png 270"
+270/texture = ExtResource( 3 )
+270/tex_offset = Vector2( 0, 0 )
+270/modulate = Color( 1, 1, 1, 1 )
+270/region = Rect2( 960, 128, 64, 64 )
+270/tile_mode = 0
+270/occluder_offset = Vector2( 0, 0 )
+270/navigation_offset = Vector2( 0, 0 )
+270/shape_offset = Vector2( 0, 0 )
+270/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+270/shape_one_way = false
+270/shape_one_way_margin = 0.0
+270/shapes = [  ]
+270/z_index = 0
+271/name = "NORT2 TILE PASSABLE.png 271"
+271/texture = ExtResource( 3 )
+271/tex_offset = Vector2( 0, 0 )
+271/modulate = Color( 1, 1, 1, 1 )
+271/region = Rect2( 896, 64, 64, 64 )
+271/tile_mode = 0
+271/occluder_offset = Vector2( 0, 0 )
+271/navigation_offset = Vector2( 0, 0 )
+271/shape_offset = Vector2( 0, 0 )
+271/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+271/shape_one_way = false
+271/shape_one_way_margin = 0.0
+271/shapes = [  ]
+271/z_index = 0
+272/name = "NORT2 TILE PASSABLE.png 272"
+272/texture = ExtResource( 3 )
+272/tex_offset = Vector2( 0, 0 )
+272/modulate = Color( 1, 1, 1, 1 )
+272/region = Rect2( 896, 128, 64, 64 )
+272/tile_mode = 0
+272/occluder_offset = Vector2( 0, 0 )
+272/navigation_offset = Vector2( 0, 0 )
+272/shape_offset = Vector2( 0, 0 )
+272/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+272/shape_one_way = false
+272/shape_one_way_margin = 0.0
+272/shapes = [  ]
+272/z_index = 0
+273/name = "NORT2 TILE PASSABLE.png 273"
+273/texture = ExtResource( 3 )
+273/tex_offset = Vector2( 0, 0 )
+273/modulate = Color( 1, 1, 1, 1 )
+273/region = Rect2( 896, 192, 64, 64 )
+273/tile_mode = 0
+273/occluder_offset = Vector2( 0, 0 )
+273/navigation_offset = Vector2( 0, 0 )
+273/shape_offset = Vector2( 0, 0 )
+273/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+273/shape_one_way = false
+273/shape_one_way_margin = 0.0
+273/shapes = [  ]
+273/z_index = 0
+274/name = "NORT2 TILE PASSABLE.png 274"
+274/texture = ExtResource( 3 )
+274/tex_offset = Vector2( 0, 0 )
+274/modulate = Color( 1, 1, 1, 1 )
+274/region = Rect2( 960, 192, 64, 64 )
+274/tile_mode = 0
+274/occluder_offset = Vector2( 0, 0 )
+274/navigation_offset = Vector2( 0, 0 )
+274/shape_offset = Vector2( 0, 0 )
+274/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+274/shape_one_way = false
+274/shape_one_way_margin = 0.0
+274/shapes = [  ]
+274/z_index = 0
+275/name = "NORT2 TILE PASSABLE.png 275"
+275/texture = ExtResource( 3 )
+275/tex_offset = Vector2( 0, 0 )
+275/modulate = Color( 1, 1, 1, 1 )
+275/region = Rect2( 1024, 0, 128, 128 )
+275/tile_mode = 0
+275/occluder_offset = Vector2( 0, 0 )
+275/navigation_offset = Vector2( 0, 0 )
+275/shape_offset = Vector2( 0, 0 )
+275/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+275/shape_one_way = false
+275/shape_one_way_margin = 0.0
+275/shapes = [  ]
+275/z_index = 0
+276/name = "NORT2 TILE PASSABLE.png 276"
+276/texture = ExtResource( 3 )
+276/tex_offset = Vector2( 0, 0 )
+276/modulate = Color( 1, 1, 1, 1 )
+276/region = Rect2( 1024, 128, 128, 160 )
+276/tile_mode = 0
+276/occluder_offset = Vector2( 0, 0 )
+276/navigation_offset = Vector2( 0, 0 )
+276/shape_offset = Vector2( 0, 0 )
+276/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+276/shape_one_way = false
+276/shape_one_way_margin = 0.0
+276/shapes = [  ]
+276/z_index = 0
+277/name = "NORT2 TILE PASSABLE.png 277"
+277/texture = ExtResource( 3 )
+277/tex_offset = Vector2( 0, 0 )
+277/modulate = Color( 1, 1, 1, 1 )
+277/region = Rect2( 1216, 0, 384, 128 )
+277/tile_mode = 0
+277/occluder_offset = Vector2( 0, 0 )
+277/navigation_offset = Vector2( 0, 0 )
+277/shape_offset = Vector2( 0, 0 )
+277/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+277/shape_one_way = false
+277/shape_one_way_margin = 0.0
+277/shapes = [  ]
+277/z_index = 0
+278/name = "NORT2 TILE PASSABLE.png 278"
+278/texture = ExtResource( 3 )
+278/tex_offset = Vector2( 0, 0 )
+278/modulate = Color( 1, 1, 1, 1 )
+278/region = Rect2( 1280, 128, 256, 256 )
+278/tile_mode = 0
+278/occluder_offset = Vector2( 0, 0 )
+278/navigation_offset = Vector2( 0, 0 )
+278/shape_offset = Vector2( 0, 0 )
+278/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+278/shape_one_way = false
+278/shape_one_way_margin = 0.0
+278/shapes = [  ]
+278/z_index = 0
+279/name = "NORT2 TILE PASSABLE.png 279"
+279/texture = ExtResource( 3 )
+279/tex_offset = Vector2( 0, 0 )
+279/modulate = Color( 1, 1, 1, 1 )
+279/region = Rect2( 640, 256, 64, 64 )
+279/tile_mode = 0
+279/occluder_offset = Vector2( 0, 0 )
+279/navigation_offset = Vector2( 0, 0 )
+279/shape_offset = Vector2( 0, 0 )
+279/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+279/shape_one_way = false
+279/shape_one_way_margin = 0.0
+279/shapes = [  ]
+279/z_index = 0
+280/name = "NORT2 TILE PASSABLE.png 280"
+280/texture = ExtResource( 3 )
+280/tex_offset = Vector2( 0, 0 )
+280/modulate = Color( 1, 1, 1, 1 )
+280/region = Rect2( 640, 320, 64, 64 )
+280/tile_mode = 0
+280/occluder_offset = Vector2( 0, 0 )
+280/navigation_offset = Vector2( 0, 0 )
+280/shape_offset = Vector2( 0, 0 )
+280/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+280/shape_one_way = false
+280/shape_one_way_margin = 0.0
+280/shapes = [  ]
+280/z_index = 0
+281/name = "NORT2 TILE PASSABLE.png 281"
+281/texture = ExtResource( 3 )
+281/tex_offset = Vector2( 0, 0 )
+281/modulate = Color( 1, 1, 1, 1 )
+281/region = Rect2( 512, 224, 64, 64 )
+281/tile_mode = 0
+281/occluder_offset = Vector2( 0, 0 )
+281/navigation_offset = Vector2( 0, 0 )
+281/shape_offset = Vector2( 0, 0 )
+281/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+281/shape_one_way = false
+281/shape_one_way_margin = 0.0
+281/shapes = [  ]
+281/z_index = 0
+282/name = "NORT2 TILE PASSABLE.png 282"
+282/texture = ExtResource( 3 )
+282/tex_offset = Vector2( 0, 0 )
+282/modulate = Color( 1, 1, 1, 1 )
+282/region = Rect2( 576, 224, 64, 64 )
+282/tile_mode = 0
+282/occluder_offset = Vector2( 0, 0 )
+282/navigation_offset = Vector2( 0, 0 )
+282/shape_offset = Vector2( 0, 0 )
+282/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+282/shape_one_way = false
+282/shape_one_way_margin = 0.0
+282/shapes = [  ]
+282/z_index = 0
+283/name = "NORT2 TILE PASSABLE.png 283"
+283/texture = ExtResource( 3 )
+283/tex_offset = Vector2( 0, 0 )
+283/modulate = Color( 1, 1, 1, 1 )
+283/region = Rect2( 576, 288, 64, 32 )
+283/tile_mode = 0
+283/occluder_offset = Vector2( 0, 0 )
+283/navigation_offset = Vector2( 0, 0 )
+283/shape_offset = Vector2( 0, 0 )
+283/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+283/shape_one_way = false
+283/shape_one_way_margin = 0.0
+283/shapes = [  ]
+283/z_index = 0
+284/name = "NORT2 TILE PASSABLE.png 284"
+284/texture = ExtResource( 3 )
+284/tex_offset = Vector2( 0, 0 )
+284/modulate = Color( 1, 1, 1, 1 )
+284/region = Rect2( 768, 256, 64, 192 )
+284/tile_mode = 0
+284/occluder_offset = Vector2( 0, 0 )
+284/navigation_offset = Vector2( 0, 0 )
+284/shape_offset = Vector2( 0, 0 )
+284/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+284/shape_one_way = false
+284/shape_one_way_margin = 0.0
+284/shapes = [  ]
+284/z_index = 0
+285/name = "NORT2 TILE PASSABLE.png 285"
+285/texture = ExtResource( 3 )
+285/tex_offset = Vector2( 0, 0 )
+285/modulate = Color( 1, 1, 1, 1 )
+285/region = Rect2( 704, 256, 64, 192 )
+285/tile_mode = 0
+285/occluder_offset = Vector2( 0, 0 )
+285/navigation_offset = Vector2( 0, 0 )
+285/shape_offset = Vector2( 0, 0 )
+285/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+285/shape_one_way = false
+285/shape_one_way_margin = 0.0
+285/shapes = [  ]
+285/z_index = 0
+286/name = "NORT2 TILE SOLID.png 286"
+286/texture = ExtResource( 4 )
+286/tex_offset = Vector2( 0, 0 )
+286/modulate = Color( 1, 1, 1, 1 )
+286/region = Rect2( 0, 0, 256, 64 )
+286/tile_mode = 0
+286/occluder_offset = Vector2( 0, 0 )
+286/navigation_offset = Vector2( 0, 0 )
+286/shape_offset = Vector2( 0, 0 )
+286/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+286/shape = SubResource( 90 )
+286/shape_one_way = false
+286/shape_one_way_margin = 1.0
+286/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 90 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+286/z_index = 0
+287/name = "NORT2 TILE SOLID.png 287"
+287/texture = ExtResource( 4 )
+287/tex_offset = Vector2( 0, 0 )
+287/modulate = Color( 1, 1, 1, 1 )
+287/region = Rect2( 256, 0, 64, 64 )
+287/tile_mode = 0
+287/occluder_offset = Vector2( 0, 0 )
+287/navigation_offset = Vector2( 0, 0 )
+287/shape_offset = Vector2( 0, 0 )
+287/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+287/shape = SubResource( 91 )
+287/shape_one_way = false
+287/shape_one_way_margin = 1.0
+287/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 91 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+287/z_index = 0
+288/name = "NORT2 TILE SOLID.png 288"
+288/texture = ExtResource( 4 )
+288/tex_offset = Vector2( 0, 0 )
+288/modulate = Color( 1, 1, 1, 1 )
+288/region = Rect2( 320, 0, 64, 64 )
+288/tile_mode = 0
+288/occluder_offset = Vector2( 0, 0 )
+288/navigation_offset = Vector2( 0, 0 )
+288/shape_offset = Vector2( 0, 0 )
+288/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+288/shape = SubResource( 92 )
+288/shape_one_way = false
+288/shape_one_way_margin = 1.0
+288/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 92 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+288/z_index = 0
+289/name = "NORT2 TILE SOLID.png 289"
+289/texture = ExtResource( 4 )
+289/tex_offset = Vector2( 0, 0 )
+289/modulate = Color( 1, 1, 1, 1 )
+289/region = Rect2( 384, 0, 64, 64 )
+289/tile_mode = 0
+289/occluder_offset = Vector2( 0, 0 )
+289/navigation_offset = Vector2( 0, 0 )
+289/shape_offset = Vector2( 0, 0 )
+289/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+289/shape = SubResource( 93 )
+289/shape_one_way = false
+289/shape_one_way_margin = 1.0
+289/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 93 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+289/z_index = 0
+290/name = "NORT2 TILE SOLID.png 290"
+290/texture = ExtResource( 4 )
+290/tex_offset = Vector2( 0, 0 )
+290/modulate = Color( 1, 1, 1, 1 )
+290/region = Rect2( 256, 64, 64, 64 )
+290/tile_mode = 0
+290/occluder_offset = Vector2( 0, 0 )
+290/navigation_offset = Vector2( 0, 0 )
+290/shape_offset = Vector2( 0, 0 )
+290/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+290/shape = SubResource( 94 )
+290/shape_one_way = false
+290/shape_one_way_margin = 1.0
+290/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 94 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+290/z_index = 0
+291/name = "NORT2 TILE SOLID.png 291"
+291/texture = ExtResource( 4 )
+291/tex_offset = Vector2( 0, 0 )
+291/modulate = Color( 1, 1, 1, 1 )
+291/region = Rect2( 320, 64, 64, 64 )
+291/tile_mode = 0
+291/occluder_offset = Vector2( 0, 0 )
+291/navigation_offset = Vector2( 0, 0 )
+291/shape_offset = Vector2( 0, 0 )
+291/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+291/shape = SubResource( 95 )
+291/shape_one_way = false
+291/shape_one_way_margin = 1.0
+291/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 95 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+291/z_index = 0
+292/name = "NORT2 TILE SOLID.png 292"
+292/texture = ExtResource( 4 )
+292/tex_offset = Vector2( 0, 0 )
+292/modulate = Color( 1, 1, 1, 1 )
+292/region = Rect2( 384, 64, 64, 64 )
+292/tile_mode = 0
+292/occluder_offset = Vector2( 0, 0 )
+292/navigation_offset = Vector2( 0, 0 )
+292/shape_offset = Vector2( 0, 0 )
+292/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+292/shape = SubResource( 96 )
+292/shape_one_way = false
+292/shape_one_way_margin = 1.0
+292/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 96 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+292/z_index = 0
+293/name = "NORT2 TILE SOLID.png 293"
+293/texture = ExtResource( 4 )
+293/tex_offset = Vector2( 0, 0 )
+293/modulate = Color( 1, 1, 1, 1 )
+293/region = Rect2( 256, 128, 64, 64 )
+293/tile_mode = 0
+293/occluder_offset = Vector2( 0, 0 )
+293/navigation_offset = Vector2( 0, 0 )
+293/shape_offset = Vector2( 0, 0 )
+293/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+293/shape = SubResource( 97 )
+293/shape_one_way = false
+293/shape_one_way_margin = 1.0
+293/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 97 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+293/z_index = 0
+294/name = "NORT2 TILE SOLID.png 294"
+294/texture = ExtResource( 4 )
+294/tex_offset = Vector2( 0, 0 )
+294/modulate = Color( 1, 1, 1, 1 )
+294/region = Rect2( 320, 128, 64, 64 )
+294/tile_mode = 0
+294/occluder_offset = Vector2( 0, 0 )
+294/navigation_offset = Vector2( 0, 0 )
+294/shape_offset = Vector2( 0, 0 )
+294/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+294/shape = SubResource( 98 )
+294/shape_one_way = false
+294/shape_one_way_margin = 1.0
+294/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 98 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+294/z_index = 0
+295/name = "NORT2 TILE SOLID.png 295"
+295/texture = ExtResource( 4 )
+295/tex_offset = Vector2( 0, 0 )
+295/modulate = Color( 1, 1, 1, 1 )
+295/region = Rect2( 384, 128, 64, 64 )
+295/tile_mode = 0
+295/occluder_offset = Vector2( 0, 0 )
+295/navigation_offset = Vector2( 0, 0 )
+295/shape_offset = Vector2( 0, 0 )
+295/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+295/shape = SubResource( 99 )
+295/shape_one_way = false
+295/shape_one_way_margin = 1.0
+295/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 99 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+295/z_index = 0
+296/name = "NORT2 TILE SOLID.png 296"
+296/texture = ExtResource( 4 )
+296/tex_offset = Vector2( 0, 0 )
+296/modulate = Color( 1, 1, 1, 1 )
+296/region = Rect2( 320, 192, 64, 64 )
+296/tile_mode = 0
+296/occluder_offset = Vector2( 0, 0 )
+296/navigation_offset = Vector2( 0, 0 )
+296/shape_offset = Vector2( 0, 0 )
+296/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+296/shape = SubResource( 100 )
+296/shape_one_way = false
+296/shape_one_way_margin = 1.0
+296/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 100 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+296/z_index = 0
+297/name = "NORT2 TILE SOLID.png 297"
+297/texture = ExtResource( 4 )
+297/tex_offset = Vector2( 0, 0 )
+297/modulate = Color( 1, 1, 1, 1 )
+297/region = Rect2( 0, 64, 64, 64 )
+297/tile_mode = 0
+297/occluder_offset = Vector2( 0, 0 )
+297/navigation_offset = Vector2( 0, 0 )
+297/shape_offset = Vector2( 0, 0 )
+297/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+297/shape = SubResource( 101 )
+297/shape_one_way = false
+297/shape_one_way_margin = 1.0
+297/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 101 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+297/z_index = 0
+298/name = "NORT2 TILE SOLID.png 298"
+298/texture = ExtResource( 4 )
+298/tex_offset = Vector2( 0, 0 )
+298/modulate = Color( 1, 1, 1, 1 )
+298/region = Rect2( 64, 64, 64, 64 )
+298/tile_mode = 0
+298/occluder_offset = Vector2( 0, 0 )
+298/navigation_offset = Vector2( 0, 0 )
+298/shape_offset = Vector2( 0, 0 )
+298/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+298/shape = SubResource( 102 )
+298/shape_one_way = false
+298/shape_one_way_margin = 1.0
+298/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 102 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+298/z_index = 0
+299/name = "NORT2 TILE SOLID.png 299"
+299/texture = ExtResource( 4 )
+299/tex_offset = Vector2( 0, 0 )
+299/modulate = Color( 1, 1, 1, 1 )
+299/region = Rect2( 128, 64, 64, 64 )
+299/tile_mode = 0
+299/occluder_offset = Vector2( 0, 0 )
+299/navigation_offset = Vector2( 0, 0 )
+299/shape_offset = Vector2( 0, 0 )
+299/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+299/shape = SubResource( 103 )
+299/shape_one_way = false
+299/shape_one_way_margin = 1.0
+299/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 103 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+299/z_index = 0
+300/name = "NORT2 TILE SOLID.png 300"
+300/texture = ExtResource( 4 )
+300/tex_offset = Vector2( 0, 0 )
+300/modulate = Color( 1, 1, 1, 1 )
+300/region = Rect2( 0, 128, 64, 64 )
+300/tile_mode = 0
+300/occluder_offset = Vector2( 0, 0 )
+300/navigation_offset = Vector2( 0, 0 )
+300/shape_offset = Vector2( 0, 0 )
+300/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+300/shape = SubResource( 104 )
+300/shape_one_way = false
+300/shape_one_way_margin = 1.0
+300/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 104 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+300/z_index = 0
+301/name = "NORT2 TILE SOLID.png 301"
+301/texture = ExtResource( 4 )
+301/tex_offset = Vector2( 0, 0 )
+301/modulate = Color( 1, 1, 1, 1 )
+301/region = Rect2( 64, 128, 64, 64 )
+301/tile_mode = 0
+301/occluder_offset = Vector2( 0, 0 )
+301/navigation_offset = Vector2( 0, 0 )
+301/shape_offset = Vector2( 0, 0 )
+301/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+301/shape = SubResource( 105 )
+301/shape_one_way = false
+301/shape_one_way_margin = 1.0
+301/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 105 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+301/z_index = 0
+302/name = "NORT2 TILE SOLID.png 302"
+302/texture = ExtResource( 4 )
+302/tex_offset = Vector2( 0, 0 )
+302/modulate = Color( 1, 1, 1, 1 )
+302/region = Rect2( 128, 128, 64, 64 )
+302/tile_mode = 0
+302/occluder_offset = Vector2( 0, 0 )
+302/navigation_offset = Vector2( 0, 0 )
+302/shape_offset = Vector2( 0, 0 )
+302/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+302/shape = SubResource( 106 )
+302/shape_one_way = false
+302/shape_one_way_margin = 1.0
+302/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 106 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+302/z_index = 0
+303/name = "NORT2 TILE SOLID.png 303"
+303/texture = ExtResource( 4 )
+303/tex_offset = Vector2( 0, 0 )
+303/modulate = Color( 1, 1, 1, 1 )
+303/region = Rect2( 0, 192, 64, 64 )
+303/tile_mode = 0
+303/occluder_offset = Vector2( 0, 0 )
+303/navigation_offset = Vector2( 0, 0 )
+303/shape_offset = Vector2( 0, 0 )
+303/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+303/shape = SubResource( 107 )
+303/shape_one_way = false
+303/shape_one_way_margin = 1.0
+303/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 107 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+303/z_index = 0
+304/name = "NORT2 TILE SOLID.png 304"
+304/texture = ExtResource( 4 )
+304/tex_offset = Vector2( 0, 0 )
+304/modulate = Color( 1, 1, 1, 1 )
+304/region = Rect2( 64, 192, 64, 64 )
+304/tile_mode = 0
+304/occluder_offset = Vector2( 0, 0 )
+304/navigation_offset = Vector2( 0, 0 )
+304/shape_offset = Vector2( 0, 0 )
+304/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+304/shape = SubResource( 108 )
+304/shape_one_way = false
+304/shape_one_way_margin = 1.0
+304/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 108 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+304/z_index = 0
+305/name = "NORT2 TILE SOLID.png 305"
+305/texture = ExtResource( 4 )
+305/tex_offset = Vector2( 0, 0 )
+305/modulate = Color( 1, 1, 1, 1 )
+305/region = Rect2( 128, 192, 64, 64 )
+305/tile_mode = 0
+305/occluder_offset = Vector2( 0, 0 )
+305/navigation_offset = Vector2( 0, 0 )
+305/shape_offset = Vector2( 0, 0 )
+305/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+305/shape = SubResource( 109 )
+305/shape_one_way = false
+305/shape_one_way_margin = 1.0
+305/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 109 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+305/z_index = 0
+306/name = "NORT2 TILE SOLID.png 306"
+306/texture = ExtResource( 4 )
+306/tex_offset = Vector2( 0, 0 )
+306/modulate = Color( 1, 1, 1, 1 )
+306/region = Rect2( 64, 256, 64, 64 )
+306/tile_mode = 0
+306/occluder_offset = Vector2( 0, 0 )
+306/navigation_offset = Vector2( 0, 0 )
+306/shape_offset = Vector2( 0, 0 )
+306/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+306/shape = SubResource( 110 )
+306/shape_one_way = false
+306/shape_one_way_margin = 1.0
+306/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 110 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+306/z_index = 0
+307/name = "NORT2 TILE SOLID.png 307"
+307/texture = ExtResource( 4 )
+307/tex_offset = Vector2( 0, 0 )
+307/modulate = Color( 1, 1, 1, 1 )
+307/region = Rect2( 0, 320, 64, 64 )
+307/tile_mode = 0
+307/occluder_offset = Vector2( 0, 0 )
+307/navigation_offset = Vector2( 0, 0 )
+307/shape_offset = Vector2( 0, 0 )
+307/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+307/shape = SubResource( 111 )
+307/shape_one_way = false
+307/shape_one_way_margin = 1.0
+307/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 111 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+307/z_index = 0
+308/name = "NORT2 TILE SOLID.png 308"
+308/texture = ExtResource( 4 )
+308/tex_offset = Vector2( 0, 0 )
+308/modulate = Color( 1, 1, 1, 1 )
+308/region = Rect2( 64, 320, 64, 64 )
+308/tile_mode = 0
+308/occluder_offset = Vector2( 0, 0 )
+308/navigation_offset = Vector2( 0, 0 )
+308/shape_offset = Vector2( 0, 0 )
+308/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+308/shape = SubResource( 112 )
+308/shape_one_way = false
+308/shape_one_way_margin = 1.0
+308/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 112 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+308/z_index = 0
+309/name = "NORT2 TILE SOLID.png 309"
+309/texture = ExtResource( 4 )
+309/tex_offset = Vector2( 0, 0 )
+309/modulate = Color( 1, 1, 1, 1 )
+309/region = Rect2( 128, 320, 64, 64 )
+309/tile_mode = 0
+309/occluder_offset = Vector2( 0, 0 )
+309/navigation_offset = Vector2( 0, 0 )
+309/shape_offset = Vector2( 0, 0 )
+309/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+309/shape = SubResource( 113 )
+309/shape_one_way = false
+309/shape_one_way_margin = 1.0
+309/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 113 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+309/z_index = 0
+310/name = "NORT2 TILE SOLID.png 310"
+310/texture = ExtResource( 4 )
+310/tex_offset = Vector2( 0, 0 )
+310/modulate = Color( 1, 1, 1, 1 )
+310/region = Rect2( 0, 384, 64, 64 )
+310/tile_mode = 0
+310/occluder_offset = Vector2( 0, 0 )
+310/navigation_offset = Vector2( 0, 0 )
+310/shape_offset = Vector2( 0, 0 )
+310/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+310/shape = SubResource( 114 )
+310/shape_one_way = false
+310/shape_one_way_margin = 1.0
+310/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 114 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+310/z_index = 0
+311/name = "NORT2 TILE SOLID.png 311"
+311/texture = ExtResource( 4 )
+311/tex_offset = Vector2( 0, 0 )
+311/modulate = Color( 1, 1, 1, 1 )
+311/region = Rect2( 64, 384, 64, 64 )
+311/tile_mode = 0
+311/occluder_offset = Vector2( 0, 0 )
+311/navigation_offset = Vector2( 0, 0 )
+311/shape_offset = Vector2( 0, 0 )
+311/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+311/shape = SubResource( 115 )
+311/shape_one_way = false
+311/shape_one_way_margin = 1.0
+311/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 115 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+311/z_index = 0
+312/name = "NORT2 TILE SOLID.png 312"
+312/texture = ExtResource( 4 )
+312/tex_offset = Vector2( 0, 0 )
+312/modulate = Color( 1, 1, 1, 1 )
+312/region = Rect2( 128, 384, 64, 64 )
+312/tile_mode = 0
+312/occluder_offset = Vector2( 0, 0 )
+312/navigation_offset = Vector2( 0, 0 )
+312/shape_offset = Vector2( 0, 0 )
+312/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+312/shape = SubResource( 116 )
+312/shape_one_way = false
+312/shape_one_way_margin = 1.0
+312/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 116 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+312/z_index = 0
+313/name = "NORT2 TILE SOLID.png 313"
+313/texture = ExtResource( 4 )
+313/tex_offset = Vector2( 0, 0 )
+313/modulate = Color( 1, 1, 1, 1 )
+313/region = Rect2( 0, 448, 64, 64 )
+313/tile_mode = 0
+313/occluder_offset = Vector2( 0, 0 )
+313/navigation_offset = Vector2( 0, 0 )
+313/shape_offset = Vector2( 0, 0 )
+313/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+313/shape = SubResource( 117 )
+313/shape_one_way = false
+313/shape_one_way_margin = 1.0
+313/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 117 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+313/z_index = 0
+314/name = "NORT2 TILE SOLID.png 314"
+314/texture = ExtResource( 4 )
+314/tex_offset = Vector2( 0, 0 )
+314/modulate = Color( 1, 1, 1, 1 )
+314/region = Rect2( 64, 448, 64, 64 )
+314/tile_mode = 0
+314/occluder_offset = Vector2( 0, 0 )
+314/navigation_offset = Vector2( 0, 0 )
+314/shape_offset = Vector2( 0, 0 )
+314/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+314/shape = SubResource( 118 )
+314/shape_one_way = false
+314/shape_one_way_margin = 1.0
+314/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 118 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+314/z_index = 0
+315/name = "NORT2 TILE SOLID.png 315"
+315/texture = ExtResource( 4 )
+315/tex_offset = Vector2( 0, 0 )
+315/modulate = Color( 1, 1, 1, 1 )
+315/region = Rect2( 128, 448, 64, 64 )
+315/tile_mode = 0
+315/occluder_offset = Vector2( 0, 0 )
+315/navigation_offset = Vector2( 0, 0 )
+315/shape_offset = Vector2( 0, 0 )
+315/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+315/shape = SubResource( 119 )
+315/shape_one_way = false
+315/shape_one_way_margin = 1.0
+315/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 119 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+315/z_index = 0
+316/name = "NORT2 TILE SOLID.png 316"
+316/texture = ExtResource( 4 )
+316/tex_offset = Vector2( 0, 0 )
+316/modulate = Color( 1, 1, 1, 1 )
+316/region = Rect2( 64, 512, 64, 64 )
+316/tile_mode = 0
+316/occluder_offset = Vector2( 0, 0 )
+316/navigation_offset = Vector2( 0, 0 )
+316/shape_offset = Vector2( 0, 0 )
+316/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+316/shape = SubResource( 120 )
+316/shape_one_way = false
+316/shape_one_way_margin = 1.0
+316/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 120 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+316/z_index = 0
+317/name = "NORT2 TILE SOLID.png 317"
+317/texture = ExtResource( 4 )
+317/tex_offset = Vector2( 0, 0 )
+317/modulate = Color( 1, 1, 1, 1 )
+317/region = Rect2( 448, 64, 192, 128 )
+317/tile_mode = 0
+317/occluder_offset = Vector2( 0, 0 )
+317/navigation_offset = Vector2( 0, 0 )
+317/shape_offset = Vector2( 0, 0 )
+317/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+317/shape = SubResource( 121 )
+317/shape_one_way = false
+317/shape_one_way_margin = 1.0
+317/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 121 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+317/z_index = 0
+318/name = "NORT2 TILE SOLID.png 318"
+318/texture = ExtResource( 4 )
+318/tex_offset = Vector2( 0, 0 )
+318/modulate = Color( 1, 1, 1, 1 )
+318/region = Rect2( 448, 0, 64, 64 )
+318/tile_mode = 0
+318/occluder_offset = Vector2( 0, 0 )
+318/navigation_offset = Vector2( 0, 0 )
+318/shape_offset = Vector2( 0, 0 )
+318/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+318/shape = SubResource( 122 )
+318/shape_one_way = false
+318/shape_one_way_margin = 1.0
+318/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 122 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+318/z_index = 0
+319/name = "NORT2 TILE SOLID.png 319"
+319/texture = ExtResource( 4 )
+319/tex_offset = Vector2( 0, 0 )
+319/modulate = Color( 1, 1, 1, 1 )
+319/region = Rect2( 512, 0, 64, 64 )
+319/tile_mode = 0
+319/occluder_offset = Vector2( 0, 0 )
+319/navigation_offset = Vector2( 0, 0 )
+319/shape_offset = Vector2( 0, 0 )
+319/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+319/shape = SubResource( 123 )
+319/shape_one_way = false
+319/shape_one_way_margin = 1.0
+319/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 123 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+319/z_index = 0
+320/name = "NORT2 TILE SOLID.png 320"
+320/texture = ExtResource( 4 )
+320/tex_offset = Vector2( 0, 0 )
+320/modulate = Color( 1, 1, 1, 1 )
+320/region = Rect2( 576, 0, 64, 64 )
+320/tile_mode = 0
+320/occluder_offset = Vector2( 0, 0 )
+320/navigation_offset = Vector2( 0, 0 )
+320/shape_offset = Vector2( 0, 0 )
+320/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+320/shape = SubResource( 124 )
+320/shape_one_way = false
+320/shape_one_way_margin = 1.0
+320/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 124 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+320/z_index = 0
+321/name = "NORT2 TILE SOLID.png 321"
+321/texture = ExtResource( 4 )
+321/tex_offset = Vector2( 0, 0 )
+321/modulate = Color( 1, 1, 1, 1 )
+321/region = Rect2( 640, 0, 64, 64 )
+321/tile_mode = 0
+321/occluder_offset = Vector2( 0, 0 )
+321/navigation_offset = Vector2( 0, 0 )
+321/shape_offset = Vector2( 0, 0 )
+321/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+321/shape = SubResource( 125 )
+321/shape_one_way = false
+321/shape_one_way_margin = 1.0
+321/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 125 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+321/z_index = 0
+322/name = "NORT2 TILE SOLID.png 322"
+322/texture = ExtResource( 4 )
+322/tex_offset = Vector2( 0, 0 )
+322/modulate = Color( 1, 1, 1, 1 )
+322/region = Rect2( 704, 0, 64, 64 )
+322/tile_mode = 0
+322/occluder_offset = Vector2( 0, 0 )
+322/navigation_offset = Vector2( 0, 0 )
+322/shape_offset = Vector2( 0, 0 )
+322/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+322/shape = SubResource( 126 )
+322/shape_one_way = false
+322/shape_one_way_margin = 1.0
+322/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 126 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+322/z_index = 0
+323/name = "NORT2 TILE SOLID.png 323"
+323/texture = ExtResource( 4 )
+323/tex_offset = Vector2( 0, 0 )
+323/modulate = Color( 1, 1, 1, 1 )
+323/region = Rect2( 768, 0, 64, 64 )
+323/tile_mode = 0
+323/occluder_offset = Vector2( 0, 0 )
+323/navigation_offset = Vector2( 0, 0 )
+323/shape_offset = Vector2( 0, 0 )
+323/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+323/shape = SubResource( 127 )
+323/shape_one_way = false
+323/shape_one_way_margin = 1.0
+323/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 127 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+323/z_index = 0
+324/name = "NORT2 TILE SOLID.png 324"
+324/texture = ExtResource( 4 )
+324/tex_offset = Vector2( 0, 0 )
+324/modulate = Color( 1, 1, 1, 1 )
+324/region = Rect2( 832, 0, 64, 64 )
+324/tile_mode = 0
+324/occluder_offset = Vector2( 0, 0 )
+324/navigation_offset = Vector2( 0, 0 )
+324/shape_offset = Vector2( 0, 0 )
+324/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+324/shape = SubResource( 128 )
+324/shape_one_way = false
+324/shape_one_way_margin = 1.0
+324/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 128 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+324/z_index = 0
+325/name = "SINGLE NORT TILE BANDSTAND.png 325"
+325/texture = ExtResource( 6 )
+325/tex_offset = Vector2( 0, 0 )
+325/modulate = Color( 1, 1, 1, 1 )
+325/region = Rect2( 0, 32, 640, 608 )
+325/tile_mode = 0
+325/occluder_offset = Vector2( 0, 0 )
+325/navigation_offset = Vector2( 0, 0 )
+325/shape_offset = Vector2( 0, 0 )
+325/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+325/shape_one_way = false
+325/shape_one_way_margin = 0.0
+325/shapes = [  ]
+325/z_index = 0
+326/name = "SINGLE NORT TILE BEETROOT PILLAR.png 326"
+326/texture = ExtResource( 10 )
+326/tex_offset = Vector2( 0, 0 )
+326/modulate = Color( 1, 1, 1, 1 )
+326/region = Rect2( 32, 32, 192, 352 )
+326/tile_mode = 0
+326/occluder_offset = Vector2( 0, 0 )
+326/navigation_offset = Vector2( 0, 0 )
+326/shape_offset = Vector2( 0, 0 )
+326/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+326/shape_one_way = false
+326/shape_one_way_margin = 0.0
+326/shapes = [  ]
+326/z_index = 0
+327/name = "SINGLE NORT TILE CORK OAK TREE.png 327"
+327/texture = ExtResource( 11 )
+327/tex_offset = Vector2( 0, 0 )
+327/modulate = Color( 1, 1, 1, 1 )
+327/region = Rect2( 0, 32, 576, 544 )
+327/tile_mode = 0
+327/occluder_offset = Vector2( 0, 0 )
+327/navigation_offset = Vector2( 0, 0 )
+327/shape_offset = Vector2( 0, 0 )
+327/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+327/shape_one_way = false
+327/shape_one_way_margin = 0.0
+327/shapes = [  ]
+327/z_index = 0
+328/name = "SINGLE NORT TILE DOORWAY.png 328"
+328/texture = ExtResource( 8 )
+328/tex_offset = Vector2( 0, 0 )
+328/modulate = Color( 1, 1, 1, 1 )
+328/region = Rect2( 0, 0, 640, 704 )
+328/tile_mode = 0
+328/occluder_offset = Vector2( 0, 0 )
+328/navigation_offset = Vector2( 0, 0 )
+328/shape_offset = Vector2( 0, 0 )
+328/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+328/shape_one_way = false
+328/shape_one_way_margin = 0.0
+328/shapes = [  ]
+328/z_index = 0
+329/name = "SINGLE NORT TILE DOUBLE HOUSE.png 329"
+329/texture = ExtResource( 7 )
+329/tex_offset = Vector2( 0, 0 )
+329/modulate = Color( 1, 1, 1, 1 )
+329/region = Rect2( 0, 0, 1184, 640 )
+329/tile_mode = 0
+329/occluder_offset = Vector2( 0, 0 )
+329/navigation_offset = Vector2( 0, 0 )
+329/shape_offset = Vector2( 0, 0 )
+329/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+329/shape_one_way = false
+329/shape_one_way_margin = 0.0
+329/shapes = [  ]
+329/z_index = 0
+330/name = "SINGLE NORT TILE GAMBOZINO.png 330"
+330/texture = ExtResource( 9 )
+330/tex_offset = Vector2( 0, 0 )
+330/modulate = Color( 1, 1, 1, 1 )
+330/region = Rect2( 64, 32, 320, 384 )
+330/tile_mode = 0
+330/occluder_offset = Vector2( 0, 0 )
+330/navigation_offset = Vector2( 0, 0 )
+330/shape_offset = Vector2( 0, 0 )
+330/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+330/shape_one_way = false
+330/shape_one_way_margin = 0.0
+330/shapes = [  ]
+330/z_index = 0
+331/name = "SINGLE NORT TILE PILLOW WOOL.png 331"
+331/texture = ExtResource( 5 )
+331/tex_offset = Vector2( 0, 0 )
+331/modulate = Color( 1, 1, 1, 1 )
+331/region = Rect2( 0, 0, 192, 192 )
+331/tile_mode = 0
+331/occluder_offset = Vector2( 0, 0 )
+331/navigation_offset = Vector2( 0, 0 )
+331/shape_offset = Vector2( 0, 0 )
+331/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+331/shape_one_way = false
+331/shape_one_way_margin = 0.0
+331/shapes = [  ]
+331/z_index = 0
+332/name = "SINGLE NORT TILE PILLOW WOOL.png 332"
+332/texture = ExtResource( 5 )
+332/tex_offset = Vector2( 0, 0 )
+332/modulate = Color( 1, 1, 1, 1 )
+332/region = Rect2( 192, 0, 192, 384 )
+332/tile_mode = 0
+332/occluder_offset = Vector2( 0, 0 )
+332/navigation_offset = Vector2( 0, 0 )
+332/shape_offset = Vector2( 0, 0 )
+332/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+332/shape_one_way = false
+332/shape_one_way_margin = 0.0
+332/shapes = [  ]
+332/z_index = 0
+333/name = "SINGLE NORT TILE PILLOW WOOL.png 333"
+333/texture = ExtResource( 5 )
+333/tex_offset = Vector2( 0, 0 )
+333/modulate = Color( 1, 1, 1, 1 )
+333/region = Rect2( 384, 0, 192, 384 )
+333/tile_mode = 0
+333/occluder_offset = Vector2( 0, 0 )
+333/navigation_offset = Vector2( 0, 0 )
+333/shape_offset = Vector2( 0, 0 )
+333/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+333/shape_one_way = false
+333/shape_one_way_margin = 0.0
+333/shapes = [  ]
+333/z_index = 0
+334/name = "SINGLE NORT TILE PILLOW WOOL.png 334"
+334/texture = ExtResource( 5 )
+334/tex_offset = Vector2( 0, 0 )
+334/modulate = Color( 1, 1, 1, 1 )
+334/region = Rect2( 576, 0, 192, 192 )
+334/tile_mode = 0
+334/occluder_offset = Vector2( 0, 0 )
+334/navigation_offset = Vector2( 0, 0 )
+334/shape_offset = Vector2( 0, 0 )
+334/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+334/shape_one_way = false
+334/shape_one_way_margin = 0.0
+334/shapes = [  ]
+334/z_index = 0
+335/name = "SINGLE NORT TILE PILLOW WOOL.png 335"
+335/texture = ExtResource( 5 )
+335/tex_offset = Vector2( 0, 0 )
+335/modulate = Color( 1, 1, 1, 1 )
+335/region = Rect2( 576, 192, 192, 192 )
+335/tile_mode = 0
+335/occluder_offset = Vector2( 0, 0 )
+335/navigation_offset = Vector2( 0, 0 )
+335/shape_offset = Vector2( 0, 0 )
+335/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+335/shape_one_way = false
+335/shape_one_way_margin = 0.0
+335/shapes = [  ]
+335/z_index = 0
+336/name = "SINGLE NORT TILE PILLOW WOOL.png 336"
+336/texture = ExtResource( 5 )
+336/tex_offset = Vector2( 0, 0 )
+336/modulate = Color( 1, 1, 1, 1 )
+336/region = Rect2( 192, 384, 384, 416 )
+336/tile_mode = 0
+336/occluder_offset = Vector2( 0, 0 )
+336/navigation_offset = Vector2( 0, 0 )
+336/shape_offset = Vector2( 0, 0 )
+336/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+336/shape_one_way = false
+336/shape_one_way_margin = 0.0
+336/shapes = [  ]
+336/z_index = 0
+337/name = "SINGLE NORT TILE PILLOW WOOL.png 337"
+337/texture = ExtResource( 5 )
+337/tex_offset = Vector2( 0, 0 )
+337/modulate = Color( 1, 1, 1, 1 )
+337/region = Rect2( 0, 192, 192, 192 )
+337/tile_mode = 0
+337/occluder_offset = Vector2( 0, 0 )
+337/navigation_offset = Vector2( 0, 0 )
+337/shape_offset = Vector2( 0, 0 )
+337/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+337/shape_one_way = false
+337/shape_one_way_margin = 0.0
+337/shapes = [  ]
+337/z_index = 0
+338/name = "SINGLE NORT TILE RED DOOR.png 338"
+338/texture = ExtResource( 13 )
+338/tex_offset = Vector2( 0, 0 )
+338/modulate = Color( 1, 1, 1, 1 )
+338/region = Rect2( 32, 0, 320, 640 )
+338/tile_mode = 0
+338/occluder_offset = Vector2( 0, 0 )
+338/navigation_offset = Vector2( 0, 0 )
+338/shape_offset = Vector2( 0, 0 )
+338/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+338/shape_one_way = false
+338/shape_one_way_margin = 0.0
+338/shapes = [  ]
+338/z_index = 0
+339/name = "SINGLE NORT TILE RESTAURANT.png 339"
+339/texture = ExtResource( 12 )
+339/tex_offset = Vector2( 0, 0 )
+339/modulate = Color( 1, 1, 1, 1 )
+339/region = Rect2( 32, 0, 1632, 640 )
+339/tile_mode = 0
+339/occluder_offset = Vector2( 0, 0 )
+339/navigation_offset = Vector2( 0, 0 )
+339/shape_offset = Vector2( 0, 0 )
+339/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+339/shape_one_way = false
+339/shape_one_way_margin = 0.0
+339/shapes = [  ]
+339/z_index = 0
+340/name = "SINGLE NORT TILE ROCK WOOL.png 340"
+340/texture = ExtResource( 15 )
+340/tex_offset = Vector2( 0, 0 )
+340/modulate = Color( 1, 1, 1, 1 )
+340/region = Rect2( 0, 0, 384, 320 )
+340/tile_mode = 0
+340/occluder_offset = Vector2( 0, 0 )
+340/navigation_offset = Vector2( 0, 0 )
+340/shape_offset = Vector2( 0, 0 )
+340/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+340/shape_one_way = false
+340/shape_one_way_margin = 0.0
+340/shapes = [  ]
+340/z_index = 0
+341/name = "SINGLE NORT TILE STONE PILLARS PROP.png 341"
+341/texture = ExtResource( 14 )
+341/tex_offset = Vector2( 0, 0 )
+341/modulate = Color( 1, 1, 1, 1 )
+341/region = Rect2( 32, 0, 320, 320 )
+341/tile_mode = 0
+341/occluder_offset = Vector2( 0, 0 )
+341/navigation_offset = Vector2( 0, 0 )
+341/shape_offset = Vector2( 0, 0 )
+341/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+341/shape_one_way = false
+341/shape_one_way_margin = 0.0
+341/shapes = [  ]
+341/z_index = 0
