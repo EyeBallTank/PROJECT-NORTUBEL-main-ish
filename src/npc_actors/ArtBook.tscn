@@ -1,4 +1,4 @@
-[gd_scene load_steps=204 format=2]
+[gd_scene load_steps=206 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -103,6 +103,7 @@
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art maikouto p1 reference.png" type="Texture" id=101]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art maikouto p2 reference.png" type="Texture" id=102]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art vimana reference.png" type="Texture" id=103]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art amalia.png" type="Texture" id=104]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -425,6 +426,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=76]
 atlas = ExtResource( 63 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=119]
+atlas = ExtResource( 104 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=40]
@@ -864,6 +869,11 @@ animations = [ {
 "name": "nort art altsix younger reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 119 ) ],
+"loop": false,
+"name": "nort art amalia",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 40 ) ],
 "loop": false,
 "name": "nort art bernard shelly",
@@ -988,7 +998,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "unto art vimana reference"
+animation = "nort art amalia"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

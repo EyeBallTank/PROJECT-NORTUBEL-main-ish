@@ -365,6 +365,7 @@ position = Vector2( 794, 1235 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 15 )]
 position = Vector2( 2026, 1545 )
+boardname = "nort art amalia"
 
 [node name="Coin" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1445, 1309 )
