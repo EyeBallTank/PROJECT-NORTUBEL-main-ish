@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -11,6 +11,9 @@
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/sprites/bosses/amalia/amalia spriteset.png" type="Texture" id=10]
 [ext_resource path="res://src/bosses/amalia/AmaliaHand.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/sprites/bosses/amalia/amalia smash sprite.png" type="Texture" id=12]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -61,16 +64,16 @@ tracks/0/keys = {
 "values": [ "default" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("ParallaxBackground/ParallaxLayer/House/AnimatedSprite:position")
+tracks/1/path = NodePath("HouseSmash:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2, 4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( 0, 184.091 ), Vector2( 0, 0 ) ]
+"values": [ Vector2( -189, -1000 ) ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -107,9 +110,12 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 9 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 5.3, 9 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
+"args": [  ],
+"method": "send_a_signal"
+}, {
 "args": [  ],
 "method": "please_stay_dead"
 } ]
@@ -117,7 +123,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=7]
 resource_name = "painfromone"
-length = 7.0
+length = 10.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer/House/AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -137,7 +143,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2, 3.5, 6, 7 ),
+"times": PoolRealArray( 0, 2, 3.5, 8.8, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -54, 543 ), Vector2( -54, 543 ), Vector2( -54, -1129 ), Vector2( -54, -1129 ), Vector2( -54, 543 ) ]
@@ -149,17 +155,29 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 7 ),
+"times": PoolRealArray( 10 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "go_to_phase_two"
 } ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("HouseSmash:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4.6, 6.825, 8, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -189, -1000 ), Vector2( -189, -1000 ), Vector2( -189, 1164 ), Vector2( -189, 1164 ), Vector2( -189, -1000 ) ]
+}
 
-[sub_resource type="Animation" id=8]
-resource_name = "painfromtwo"
-length = 7.0
+[sub_resource type="Animation" id=13]
+resource_name = "painfromtwobetter"
+length = 10.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer/House/AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -179,7 +197,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2, 3.5, 6, 7 ),
+"times": PoolRealArray( 0, 2, 3.5, 8.8, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -54, 543 ), Vector2( -54, 543 ), Vector2( -54, -1129 ), Vector2( -54, -1129 ), Vector2( -54, 543 ) ]
@@ -191,12 +209,24 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 7 ),
+"times": PoolRealArray( 10 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "go_to_phase_three"
 } ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("HouseSmash:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4.6, 6.825, 8, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -189, -1000 ), Vector2( -189, -1000 ), Vector2( -189, 1164 ), Vector2( -189, 1164 ), Vector2( -189, -1000 ) ]
 }
 
 [sub_resource type="Animation" id=10]
@@ -214,6 +244,11 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 0, 3106.15 ) ]
 }
+
+[sub_resource type="RectangleShape2D" id=12]
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 487, 338 )
 
 [node name="NortPartFourLevel3" type="Node2D"]
 script = ExtResource( 8 )
@@ -234,6 +269,7 @@ shape = SubResource( 1 )
 disabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer/House"]
+position = Vector2( 0, 2609.17 )
 frames = SubResource( 3 )
 playing = true
 
@@ -281,12 +317,13 @@ customtext = "am4l14"
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1055, 1376 )
 spritename = "amalia"
+idealnumber = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 6 )
 anims/deadhouse = SubResource( 9 )
 anims/painfromone = SubResource( 7 )
-anims/painfromtwo = SubResource( 8 )
+anims/painfromtwobetter = SubResource( 13 )
 anims/staydead = SubResource( 10 )
 
 [node name="AmaliaHand" parent="." instance=ExtResource( 11 )]
@@ -300,5 +337,26 @@ position = Vector2( -649, 917 )
 
 [node name="LeftHandSpawn" type="Position2D" parent="."]
 position = Vector2( 550, 917 )
+
+[node name="HouseSmash" type="KinematicBody2D" parent="."]
+position = Vector2( -189, -1000 )
+collision_layer = 32
+collision_mask = 0
+
+[node name="AmaliaSmashSprite" type="Sprite" parent="HouseSmash"]
+texture = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HouseSmash"]
+shape = SubResource( 12 )
+disabled = true
+
+[node name="EnemyHitbox" parent="HouseSmash" instance=ExtResource( 13 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HouseSmash/EnemyHitbox"]
+position = Vector2( 0, 100 )
+shape = SubResource( 11 )
+
+[node name="Health Pickup" parent="." instance=ExtResource( 14 )]
+position = Vector2( -1504, 1235 )
 
 [editable path="AmaliaHand"]

@@ -38,7 +38,7 @@ func _physics_process(delta):
 				animation.play("painfromone")
 		PHASETWO:
 			if phase == 4:
-				animation.play("painfromtwo")
+				animation.play("painfromtwobetter")
 		PHASETHREE:
 			if phase == 6:
 				pass
