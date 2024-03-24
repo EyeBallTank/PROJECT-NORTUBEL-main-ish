@@ -8,6 +8,7 @@ onready var shieldgen3 = $ShieldGenerator3/AnimatedSprite
 onready var shieldgen4 = $ShieldGenerator4/AnimatedSprite
 onready var shieldgen5 = $ShieldGenerator5/AnimatedSprite
 onready var shieldgen6 = $ShieldGenerator6/AnimatedSprite
+onready var sound = $AudioStreamPlayer2
 
 var switchone = false
 var switchtwo = false
@@ -51,6 +52,7 @@ func switch_pressed():
 
 
 func _on_ButtonPress6_body_entered(body):
+	sound.play()
 	if body.is_in_group("protagonists") and switchfive == false:
 		switchsix = true
 		shieldgen6.animation = "off"
@@ -60,6 +62,7 @@ func _on_ButtonPress6_body_entered(body):
 		send_a_signal()
 
 func _on_ButtonPress5_body_entered(body):
+	sound.play()
 	if body.is_in_group("protagonists") and switchsix == false:
 		switchfive = true
 		shieldgen5.animation = "off"
@@ -69,6 +72,7 @@ func _on_ButtonPress5_body_entered(body):
 		send_a_signal()
 
 func _on_ButtonPress4_body_entered(body):
+	sound.play()
 	if body.is_in_group("protagonists") and switchone == false:
 		switchfour = true
 		shieldgen4.animation = "off"
@@ -78,6 +82,7 @@ func _on_ButtonPress4_body_entered(body):
 		send_a_signal()
 
 func _on_ButtonPress3_body_entered(body):
+	sound.play()
 	if body.is_in_group("protagonists") and switchtwo == false:
 		switchthree = true
 		shieldgen3.animation = "off"
@@ -87,6 +92,7 @@ func _on_ButtonPress3_body_entered(body):
 		send_a_signal()
 
 func _on_ButtonPress2_body_entered(body):
+	sound.play()
 	if body.is_in_group("protagonists") and switchthree == false:
 		switchtwo = true
 		shieldgen2.animation = "off"
@@ -96,6 +102,7 @@ func _on_ButtonPress2_body_entered(body):
 		send_a_signal()
 
 func _on_ButtonPress1_body_entered(body):
+	sound.play()
 	if body.is_in_group("protagonists") and switchfour == false:
 		switchone = true
 		shieldgen1.animation = "off"

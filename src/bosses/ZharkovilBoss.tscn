@@ -230,7 +230,6 @@ position = Vector2( -2, -44 )
 scale = Vector2( 1.02, 1.02 )
 frames = SubResource( 4 )
 animation = "Moving"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -257,4 +256,5 @@ position = Vector2( -2, 103 )
 [node name="shieldSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, -43 )
 frames = SubResource( 23 )
+frame = 1
 playing = true
