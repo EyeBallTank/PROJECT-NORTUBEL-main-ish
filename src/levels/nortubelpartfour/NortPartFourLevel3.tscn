@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/levels/nortubelpartfour/NortPartFourLevel3.gd" type="Script" id=8]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/sprites/bosses/amalia/amalia spriteset.png" type="Texture" id=10]
+[ext_resource path="res://src/bosses/amalia/AmaliaHand.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -111,3 +112,6 @@ position = Vector2( 1069, 1383 )
 spritename = "amalia"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AmaliaHand" parent="." instance=ExtResource( 11 )]
+position = Vector2( -649, 1219 )
