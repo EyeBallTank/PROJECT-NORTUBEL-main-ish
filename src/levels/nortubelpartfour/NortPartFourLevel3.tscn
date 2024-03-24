@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -9,9 +9,61 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/levels/nortubelpartfour/NortPartFourLevel3.gd" type="Script" id=8]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/sprites/bosses/amalia/amalia spriteset.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 1600, 1600, 800 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 1600, 800 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 800, 1600, 800 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "dead",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": false,
+"name": "hurt",
+"speed": 0.0
+} ]
 
 [node name="NortPartFourLevel3" type="Node2D"]
 script = ExtResource( 8 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="House" type="KinematicBody2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -54, 645 )
+scale = Vector2( 0.879999, 0.879999 )
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground/ParallaxLayer/House"]
+shape = SubResource( 1 )
+disabled = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer/House"]
+frames = SubResource( 3 )
+playing = true
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -24,7 +76,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 1703913, 78, 0, 1703914, 78, 0, 1703915, 78, 0, 1703916, 78, 0, 1703917, 78, 0, 1703918, 78, 0, 1703919, 78, 0, 1703920, 78, 0, 1703921, 78, 0, 1703922, 78, 0, 1703923, 78, 0, 1703924, 78, 0, 1703925, 78, 0, 1703926, 78, 0, 1703927, 78, 0, 1703928, 78, 0, 1703929, 78, 0, 1703930, 78, 0, 1703931, 78, 0, 1703932, 78, 0, 1703933, 78, 0, 1703934, 78, 0, 1703935, 78, 0, 1638400, 78, 0, 1638401, 78, 0, 1638402, 78, 0, 1638403, 78, 0, 1638404, 78, 0, 1638405, 78, 0, 1638406, 78, 0, 1638407, 78, 0, 1638408, 78, 0, 1638409, 78, 0, 1638410, 78, 0, 1638411, 78, 0, 1638412, 78, 0, 1638413, 78, 0, 1638414, 78, 0, 1638415, 78, 0, 1638416, 78, 0, 1638417, 78, 0, 1638418, 78, 0, 1638419, 78, 0, 1769449, 84, 0, 1769450, 84, 0, 1769451, 84, 0, 1769452, 84, 0, 1769453, 84, 0, 1769454, 84, 0, 1769455, 84, 0, 1769456, 84, 0, 1769457, 84, 0, 1769458, 84, 0, 1769459, 84, 0, 1769460, 84, 0, 1769461, 84, 0, 1769462, 84, 0, 1769463, 84, 0, 1769464, 84, 0, 1769465, 84, 0, 1769466, 84, 0, 1769467, 84, 0, 1769468, 84, 0, 1769469, 84, 0, 1769470, 84, 0, 1769471, 84, 0, 1703936, 84, 0, 1703937, 84, 0, 1703938, 84, 0, 1703939, 84, 0, 1703940, 84, 0, 1703941, 84, 0, 1703942, 84, 0, 1703943, 84, 0, 1703944, 84, 0, 1703945, 84, 0, 1703946, 84, 0, 1703947, 84, 0, 1703948, 84, 0, 1703949, 84, 0, 1703950, 84, 0, 1703951, 84, 0, 1703952, 84, 0, 1703953, 84, 0, 1703954, 84, 0, 1703955, 84, 0 )
+tile_data = PoolIntArray( 1703910, 78, 0, 1703911, 78, 0, 1703912, 78, 0, 1703913, 78, 0, 1703914, 78, 0, 1703915, 78, 0, 1703916, 78, 0, 1703917, 78, 0, 1703918, 78, 0, 1703919, 78, 0, 1703920, 78, 0, 1703921, 78, 0, 1703922, 78, 0, 1703923, 78, 0, 1703924, 78, 0, 1703925, 78, 0, 1703926, 78, 0, 1703927, 78, 0, 1703928, 78, 0, 1703929, 78, 0, 1703930, 78, 0, 1703931, 78, 0, 1703932, 78, 0, 1703933, 78, 0, 1703934, 78, 0, 1703935, 78, 0, 1638400, 78, 0, 1638401, 78, 0, 1638402, 78, 0, 1638403, 78, 0, 1638404, 78, 0, 1638405, 78, 0, 1638406, 78, 0, 1638407, 78, 0, 1638408, 78, 0, 1638409, 78, 0, 1638410, 78, 0, 1638411, 78, 0, 1638412, 78, 0, 1638413, 78, 0, 1638414, 78, 0, 1638415, 78, 0, 1638416, 78, 0, 1638417, 78, 0, 1638418, 78, 0, 1638419, 78, 0, 1638420, 78, 0, 1638421, 78, 0, 1638422, 78, 0, 1638423, 78, 0, 1769446, 84, 0, 1769447, 84, 0, 1769448, 84, 0, 1769449, 84, 0, 1769450, 84, 0, 1769451, 84, 0, 1769452, 84, 0, 1769453, 84, 0, 1769454, 84, 0, 1769455, 84, 0, 1769456, 84, 0, 1769457, 84, 0, 1769458, 84, 0, 1769459, 84, 0, 1769460, 84, 0, 1769461, 84, 0, 1769462, 84, 0, 1769463, 84, 0, 1769464, 84, 0, 1769465, 84, 0, 1769466, 84, 0, 1769467, 84, 0, 1769468, 84, 0, 1769469, 84, 0, 1769470, 84, 0, 1769471, 84, 0, 1703936, 84, 0, 1703937, 84, 0, 1703938, 84, 0, 1703939, 84, 0, 1703940, 84, 0, 1703941, 84, 0, 1703942, 84, 0, 1703943, 84, 0, 1703944, 84, 0, 1703945, 84, 0, 1703946, 84, 0, 1703947, 84, 0, 1703948, 84, 0, 1703949, 84, 0, 1703950, 84, 0, 1703951, 84, 0, 1703952, 84, 0, 1703953, 84, 0, 1703954, 84, 0, 1703955, 84, 0, 1703956, 84, 0, 1703957, 84, 0, 1703958, 84, 0, 1703959, 84, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -32,7 +84,6 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1572844, 187, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -169, 1451 )
@@ -51,10 +102,12 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
-position = Vector2( -511, 1577 )
+position = Vector2( 2262, 1600 )
 new_scene = "res://screens/cutscenes/cutscene 13 nortpartfour grek/cutscene 13 nortpartfour grek.tscn"
 customtext = "am4l14"
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1069, 1383 )
 spritename = "amalia"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
