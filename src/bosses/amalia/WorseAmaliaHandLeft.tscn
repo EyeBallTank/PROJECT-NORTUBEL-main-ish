@@ -380,7 +380,6 @@ shape = SubResource( 1 )
 modulate = Color( 1, 1, 1, 0 )
 frames = SubResource( 4 )
 animation = "handnormal"
-frame = 1
 playing = true
 
 [node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]

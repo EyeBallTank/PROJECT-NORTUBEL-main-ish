@@ -1,9 +1,9 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/STELLA COMP SPRITES.png" type="Texture" id=2]
+[ext_resource path="res://src/play_actors/UulgaComp.gd" type="Script" id=3]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/compstateteller.png" type="Texture" id=5]
-[ext_resource path="res://assets/sprites/level_item_sprites/Floater Active.PNG" type="Texture" id=7]
 
 [sub_resource type="AtlasTexture" id=37]
 atlas = ExtResource( 2 )
@@ -146,24 +146,6 @@ animations = [ {
 "speed": 0.0
 } ]
 
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 7 )
-region = Rect2( 0, 0, 807, 349 )
-
-[sub_resource type="AtlasTexture" id=34]
-flags = 4
-atlas = ExtResource( 7 )
-region = Rect2( 0, 349, 807, 349 )
-
-[sub_resource type="SpriteFrames" id=35]
-animations = [ {
-"frames": [ SubResource( 33 ), SubResource( 34 ) ],
-"loop": true,
-"name": "default",
-"speed": 10.0
-} ]
-
 [sub_resource type="Animation" id=4]
 length = 0.001
 tracks/0/type = "value"
@@ -179,20 +161,18 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=32]
-extents = Vector2( 4.5, 119 )
-
 [node name="UulgaComp" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 13
 collision_layer = 2
 collision_mask = 8972
+script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -151 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 36 )
 animation = "Idle"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -201,32 +181,16 @@ shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="StellaStateTeller" type="AnimatedSprite" parent="CanvasLayer"]
+[node name="UulgaStateTeller" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 81, 119 )
 frames = SubResource( 55 )
 animation = "runstate"
-playing = true
-
-[node name="FloaterActive" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -276 )
-scale = Vector2( 0.111381, 0.111381 )
-frames = SubResource( 35 )
-frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 4 )
 
 [node name="CheckpointTween" type="Tween" parent="."]
-
-[node name="PushDetector" type="Area2D" parent="." groups=["PushDetector"]]
-position = Vector2( 53, 0 )
-collision_layer = 2
-collision_mask = 256
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PushDetector"]
-position = Vector2( 0, -122 )
-shape = SubResource( 32 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
@@ -235,6 +199,3 @@ pitch_scale = 2.33
 bus = "Sound"
 
 [node name="Timer" type="Timer" parent="."]
-
-[connection signal="area_entered" from="PushDetector" to="." method="_on_PushDetector_area_entered"]
-[connection signal="area_exited" from="PushDetector" to="." method="_on_PushDetector_area_exited"]
