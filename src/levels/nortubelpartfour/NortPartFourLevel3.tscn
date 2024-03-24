@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/sprites/bosses/amalia/house shadow.png" type="Texture" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -76,6 +77,18 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( -189, -1000 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("HouseShadow:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -176,6 +189,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Vector2( -189, -1000 ), Vector2( -189, -1000 ), Vector2( -189, 1164 ), Vector2( -189, 1164 ), Vector2( -189, -1000 ) ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("HouseShadow:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3.5, 4.6, 9.5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=13]
 resource_name = "painfromtwobetter"
@@ -229,6 +254,18 @@ tracks/3/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -189, -1000 ), Vector2( -189, -1000 ), Vector2( -189, 1164 ), Vector2( -189, 1164 ), Vector2( -189, -1000 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("HouseShadow:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3.5, 4.6, 9.5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
 [sub_resource type="Animation" id=10]
@@ -356,6 +393,12 @@ disabled = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HouseSmash/EnemyHitbox"]
 position = Vector2( 0, 100 )
 shape = SubResource( 11 )
+
+[node name="HouseShadow" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -187, 1638 )
+scale = Vector2( 1.16, 1.28 )
+texture = ExtResource( 17 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 14 )]
 position = Vector2( -1504, 1235 )
