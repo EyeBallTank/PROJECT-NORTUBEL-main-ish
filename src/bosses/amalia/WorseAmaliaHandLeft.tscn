@@ -1,41 +1,42 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://assets/sprites/bosses/amalia/amalia hand sprites.png" type="Texture" id=1]
+[ext_resource path="res://src/bosses/amalia/WorseAmaliaHand.gd" type="Script" id=1]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/bosses/amalia/AmaliaHand.gd" type="Script" id=3]
+[ext_resource path="res://assets/sprites/bosses/amalia/amalia worse hand sprites.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/bosses/amalia/testhand.PNG" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 229, 86.5 )
 
-[sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 1 )
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 3 )
 region = Rect2( 0, 600, 600, 600 )
 
-[sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 1 )
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 600, 600 )
 
-[sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 1 )
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 3 )
 region = Rect2( 600, 0, 600, 600 )
 
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 1 )
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 3 )
 region = Rect2( 600, 600, 600, 600 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ SubResource( 5 ) ],
+"frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "attack",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ) ],
+"frames": [ SubResource( 13 ), SubResource( 14 ) ],
 "loop": true,
 "name": "handnormal",
 "speed": 2.0
 }, {
-"frames": [ SubResource( 6 ) ],
+"frames": [ SubResource( 15 ) ],
 "loop": false,
 "name": "hurt",
 "speed": 0.0
@@ -239,7 +240,7 @@ tracks/5/keys = {
 
 [sub_resource type="Animation" id=10]
 resource_name = "slamming"
-length = 5.0
+length = 4.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -271,7 +272,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 5 ),
+"times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
@@ -283,7 +284,7 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 5 ),
+"times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
@@ -295,7 +296,7 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 5 ),
+"times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
@@ -307,7 +308,7 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 1, 3, 4 ),
+"times": PoolRealArray( 0, 0.7, 2.5, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( 0, 551 ), Vector2( 0, 551 ), Vector2( 0, 0 ) ]
@@ -319,7 +320,7 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 1, 3, 4 ),
+"times": PoolRealArray( 0, 0.7, 2.5, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 18.5, 64.5 ), Vector2( 18.5, 615.5 ), Vector2( 18.5, 615.5 ), Vector2( 18.5, 64.5 ) ]
@@ -331,7 +332,7 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 1, 3, 4 ),
+"times": PoolRealArray( 0, 0.7, 2.5, 3.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -144, 20.5 ), Vector2( -144, 571.5 ), Vector2( -144, 571.5 ), Vector2( -144, 20.5 ) ]
@@ -343,9 +344,12 @@ tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0.8, 4.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
+"args": [  ],
+"method": "shockwave_summon"
+}, {
 "args": [  ],
 "method": "return_to_move"
 } ]
@@ -357,17 +361,17 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 5 ),
+"times": PoolRealArray( 0, 4.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
 
-[node name="AmaliaHandLeft" type="KinematicBody2D"]
+[node name="WorseAmaliaHand" type="KinematicBody2D"]
 scale = Vector2( -1, 1 )
 collision_layer = 32
 collision_mask = 4
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -30, 18.5 )
@@ -377,6 +381,8 @@ shape = SubResource( 1 )
 modulate = Color( 1, 1, 1, 0 )
 frames = SubResource( 4 )
 animation = "handnormal"
+frame = 1
+playing = true
 
 [node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]
 
@@ -406,5 +412,15 @@ collision_mask = 3
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -19, 679 )
+
+[node name="Testhand" type="Sprite" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.396078 )
+position = Vector2( -18, 578 )
+scale = Vector2( 2.00184, 2.00184 )
+texture = ExtResource( 4 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]

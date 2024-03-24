@@ -10,6 +10,8 @@ var phase = 1
 const RightHand = preload("res://src/bosses/amalia/AmaliaHand.tscn")
 const LeftHand = preload("res://src/bosses/amalia/AmaliaHandLeft.tscn")
 
+const BADRightHand = preload("res://src/bosses/amalia/WorseAmaliaHand.tscn")
+const BADLeftHand = preload("res://src/bosses/amalia/WorseAmaliaHandLeft.tscn")
 
 enum {
 	PHASEONE,
@@ -56,7 +58,7 @@ func go_to_phase_two():
 func go_to_phase_three():
 	animation.play("RESET")
 	state = PHASETHREE
-	summon_both_hands()
+	summon_worse_hands()
 
 func please_stay_dead():
 	state = VERYDEAD
@@ -70,3 +72,10 @@ func summon_both_hands():
 	lefthanded.global_position = lefthandspawn.global_position
 	get_tree().get_root().add_child(lefthanded)
 
+func summon_worse_hands():
+	var righthandedworse = BADRightHand.instance()
+	righthandedworse.global_position = righthandspawn.global_position
+	get_tree().get_root().add_child(righthandedworse)
+	var lefthandedworse = BADLeftHand.instance()
+	lefthandedworse.global_position = lefthandspawn.global_position
+	get_tree().get_root().add_child(lefthandedworse)
