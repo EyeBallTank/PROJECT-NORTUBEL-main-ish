@@ -367,7 +367,12 @@ anims/staydead = SubResource( 10 )
 [node name="AmaliaHand" parent="." instance=ExtResource( 11 )]
 position = Vector2( -649, 917 )
 
+[node name="AnimatedSprite" parent="AmaliaHand" index="1"]
+modulate = Color( 1, 1, 1, 0 )
+frame = 0
+
 [node name="RayCast2D" parent="AmaliaHand" index="5"]
+enabled = false
 cast_to = Vector2( 0, 511 )
 
 [node name="RightHandSpawn" type="Position2D" parent="."]
