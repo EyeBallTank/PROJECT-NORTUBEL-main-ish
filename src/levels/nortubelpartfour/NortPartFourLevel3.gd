@@ -41,7 +41,7 @@ func _physics_process(delta):
 				animation.play("painfromtwobetter")
 		PHASETHREE:
 			if phase == 6:
-				pass
+				state = DEAD
 		DEAD:
 			animation.play("deadhouse")
 		VERYDEAD:
@@ -56,6 +56,7 @@ func go_to_phase_two():
 func go_to_phase_three():
 	animation.play("RESET")
 	state = PHASETHREE
+	summon_both_hands()
 
 func please_stay_dead():
 	state = VERYDEAD
