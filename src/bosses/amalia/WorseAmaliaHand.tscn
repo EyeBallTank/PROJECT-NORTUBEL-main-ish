@@ -1,9 +1,8 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/bosses/amalia/WorseAmaliaHand.gd" type="Script" id=1]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/bosses/amalia/amalia worse hand sprites.png" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/bosses/amalia/testhand.PNG" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 229, 86.5 )
@@ -413,12 +412,5 @@ one_shot = true
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( -19, 679 )
-
-[node name="Testhand" type="Sprite" parent="."]
-visible = false
-modulate = Color( 1, 1, 1, 0.396078 )
-position = Vector2( -18, 578 )
-scale = Vector2( 2.00184, 2.00184 )
-texture = ExtResource( 4 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
