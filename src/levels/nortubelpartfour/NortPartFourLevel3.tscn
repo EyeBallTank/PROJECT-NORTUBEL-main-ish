@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -73,6 +73,90 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 184.091 ), Vector2( 0, 0 ) ]
 }
 
+[sub_resource type="Animation" id=7]
+resource_name = "painfromone"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer/House/AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "hurt", "default" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ParallaxBackground/ParallaxLayer/House:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2, 3.5, 6, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -54, 543 ), Vector2( -54, 543 ), Vector2( -54, -1129 ), Vector2( -54, -1129 ), Vector2( -54, 543 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "go_to_phase_two"
+} ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "painfromtwo"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer/House/AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "hurt", "default" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ParallaxBackground/ParallaxLayer/House:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2, 3.5, 6, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -54, 543 ), Vector2( -54, 543 ), Vector2( -54, -1129 ), Vector2( -54, -1129 ), Vector2( -54, 543 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "go_to_phase_three"
+} ]
+}
+
 [node name="NortPartFourLevel3" type="Node2D"]
 script = ExtResource( 8 )
 
@@ -142,11 +226,22 @@ spritename = "amalia"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 6 )
+anims/painfromone = SubResource( 7 )
+anims/painfromtwo = SubResource( 8 )
 
 [node name="AmaliaHand" parent="." instance=ExtResource( 11 )]
 position = Vector2( -649, 917 )
 
+[node name="AnimatedSprite" parent="AmaliaHand" index="1"]
+modulate = Color( 1, 1, 1, 0 )
+
 [node name="RayCast2D" parent="AmaliaHand" index="5"]
 cast_to = Vector2( 0, 511 )
+
+[node name="RightHandSpawn" type="Position2D" parent="."]
+position = Vector2( -1066, 748 )
+
+[node name="LeftHandSpawn" type="Position2D" parent="."]
+position = Vector2( 452, 748 )
 
 [editable path="AmaliaHand"]
