@@ -232,16 +232,13 @@ anims/painfromtwo = SubResource( 8 )
 [node name="AmaliaHand" parent="." instance=ExtResource( 11 )]
 position = Vector2( -649, 917 )
 
-[node name="AnimatedSprite" parent="AmaliaHand" index="1"]
-modulate = Color( 1, 1, 1, 0 )
-
 [node name="RayCast2D" parent="AmaliaHand" index="5"]
 cast_to = Vector2( 0, 511 )
 
 [node name="RightHandSpawn" type="Position2D" parent="."]
-position = Vector2( -1066, 748 )
+position = Vector2( -649, 917 )
 
 [node name="LeftHandSpawn" type="Position2D" parent="."]
-position = Vector2( 452, 748 )
+position = Vector2( 550, 917 )
 
 [editable path="AmaliaHand"]

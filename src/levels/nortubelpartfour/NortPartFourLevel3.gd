@@ -46,6 +46,7 @@ func _physics_process(delta):
 func go_to_phase_two():
 	animation.play("RESET")
 	state = PHASETWO
+	summon_both_hands()
 
 func go_to_phase_three():
 	animation.play("RESET")
