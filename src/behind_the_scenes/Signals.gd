@@ -48,6 +48,8 @@ signal red_jester_hurt
 signal turn_off_zhark_shield
 signal you_can_kill_zhark_now
 
+signal hand_was_destroyed
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case

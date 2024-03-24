@@ -18,6 +18,7 @@ var state = FLOATING
 
 
 func _ready():
+	Signals.connect("scene_has_changed", self, "therefore_I_Go")
 	animation.play("RESET")
 	sprite.play("handnormal")
 
@@ -54,7 +55,13 @@ func return_to_move():
 func die():
 	queue_free()
 
+func therefore_I_Go():
+	die()
+
+func send_a_signal_to_amalia():
+	Signals.emit_signal("hand_was_destroyed")
 
 func _on_Hurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
+		send_a_signal_to_amalia()
 		state = DEAD
