@@ -10,6 +10,7 @@ extends KinematicBody2D
 #HERRKO TSOOVOKUT KNIGHT
 
 #HIRDRIH NPC, BORHR, ENEMIES?
+#What about Nortubel enemies? And even Krimb or the chicken?
 
 
 
