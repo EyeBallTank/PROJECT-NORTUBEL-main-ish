@@ -138,20 +138,41 @@ position = Vector2( -7220, 324 )
 
 [node name="AltPeteNPC" parent="." instance=ExtResource( 18 )]
 position = Vector2( -1516, -297 )
+customtext = "PETE_B_NPC_TALK"
+customtext2 = "PETE_B_NPC_HONK"
+customtext3 = "PETE_B_NPC_HUG"
+customtext4 = "PETE_B_NPC_HURT"
 
 [node name="AltOscarNPC" parent="." instance=ExtResource( 19 )]
 position = Vector2( -409, -298 )
+customtext = "OSCAR_B_NPC_TALK"
+customtext2 = "OSCAR_B_NPC_HONK"
+customtext3 = "OSCAR_B_NPC_HUG"
+customtext4 = "OSCAR_B_NPC_HURT"
 
 [node name="AltAngelaNPC" parent="." instance=ExtResource( 21 )]
 position = Vector2( -1998, -296 )
+customtext = "ANGELA_B_NPC_TALK"
+customtext2 = "ANGELA_B_NPC_HONK"
+customtext3 = "ANGELA_B_NPC_HUG"
+customtext4 = "ANGELA_B_NPC_HURT"
 
 [node name="AltCarrieNPC" parent="." instance=ExtResource( 20 )]
 position = Vector2( 1172, -278 )
+customtext = "CARRIE_B_NPC_TALK"
+customtext3 = "CARRIE_B_NPC_HUG"
+customtext4 = "CARRIE_B_NPC_HURT"
 
 [node name="AltKatrinNPC" parent="." instance=ExtResource( 22 )]
 position = Vector2( 1271, -923 )
+customtext = "KATRIN_B_NPC_TALK"
+customtext3 = "KATRIN_B_NPC_HUG"
+customtext4 = "KATRIN_B_NPC_HURT"
 
 [node name="AltMelvinNPC" parent="." instance=ExtResource( 17 )]
 position = Vector2( 371, -858 )
+customtext = "MELVIN_B_NPC_TALK"
+customtext3 = "MELVIN_B_NPC_HUG"
+customtext4 = "MELVIN_B_NPC_HURT"
 
 [editable path="NortSeesawTrain"]

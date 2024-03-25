@@ -1471,3 +1471,42 @@ GREK_MULTIGUN_IDCHECK_TALK,"WARNGING: IDENTITY CHECK SYSTEM ACTIVATED!
 ANY UNAUTHORIZED USE OF THIS WEAPON BY AN UNRECOGNIZED USER WILL LEAD TO THE SUBJECT BE ELECTROCUTED IN ADVANCE!","ATENÇÃO: SISTEMA DE VERIFICAÇÃO DE IDENTIDADE ATIVADO!
 QUALQUER USO NÃO AUTORIZADO DESTA ARMA POR UM UTILIZADOR NÃO RECONHECIDO 
 LEVARÁ O SUJEITO A SER ELETROCUTADO ANTECIPADAMENTE!"
+ANGELA_B_NPC_TALK,"Hey, look who we haven't seen in a while.","Hey, olha quem não vimos há algum tempo."
+ANGELA_B_NPC_HONK,"Stop it, don't be a pig!","Para, não sejas badalhoca!"
+ANGELA_B_NPC_HURT,"You jerk, what did I do to you?","Sua parva, o que é que eu te fiz?"
+ANGELA_B_NPC_HUG,"You seem quite sensitive.
+Will our Carrie be like you?","Pareces ser sensível.
+Será que a nossa Carrie vai ser como tu?"
+OSCAR_B_NPC_TALK,I wonder who covered these rocks in wool.,Gostava de saber quem é que tapou estas pedras com lã.
+OSCAR_B_NPC_HONK,"Eww, you're still technically my sister.","Eww, tu és tecnicamente a minha irmã."
+OSCAR_B_NPC_HURT,"Hey, cut it out!
+What would your brother think of this?","Hey, para com isso!
+O que vai o teu irmão achar disto?"
+OSCAR_B_NPC_HUG,"What, is this gonna be the last time we see each other?","O quê, vai ser a ultima vez que vemos um a outro?"
+PETE_B_NPC_TALK,"Do any of you like beetroot?
+The ones in these pillars are edible.","Algum de vocês gosta de beterraba?
+As que são destes pilares são comestíveis."
+PETE_B_NPC_HONK,You treat your friends like this?,É assim que tratas os teus amigos?
+PETE_B_NPC_HURT,Have you lost your mind?,Perdeste a cabeça?
+PETE_B_NPC_HUG,"I know, the ladies can't resist Pete.","Eu sei, as senhoras não conseguem resistir o Pete."
+KATRIN_B_NPC_TALK,"Is this some kind of musical instrument?
+I still don't know.","Será que isto é um instrumento musical?
+Ainda não sei."
+KATRIN_B_NPC_HURT,You're scaring me!,Estás me a assustar!
+KATRIN_B_NPC_HUG,"You're very friendly.
+Just like the Carrie I know.","És muito amigável.
+Tal como a Carrie que conheço."
+CARRIE_B_NPC_TALK,"What a bunch of weird looking pillows.
+And these walls have these carpets that have these weird patterns.","Que almofadas tão estranhas.
+E estas paredes têm estes tapetes com padrões estranhos."
+CARRIE_B_NPC_HURT,"You better stop that.
+What if it turns out you can make yourself disappear if you hurt me?
+Is that not how it works?","É melhor parares com isso.
+E se tu desapareceres, depois de me magoar?
+Não é assim que funciona?"
+CARRIE_B_NPC_HUG,"I hope I grow to be as pretty as you are.
+I can't wait for the future.","Eu espero crescer para ser linda como tu.
+Não posso esperar para o futuro."
+MELVIN_B_NPC_TALK,"I hate these cookies, they always taste dry.","Eu odeio estas bolachas, têm sempre um sabor seco."
+MELVIN_B_NPC_HURT,Why are you being so mean?,Porque é que estás a ser tão má?
+MELVIN_B_NPC_HUG,My sister's hugs are better but yours aren't so bad.,Os abraços da minha irmã são melhores mas os teus não são assim tão maus.
