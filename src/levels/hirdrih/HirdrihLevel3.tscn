@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/npc_actors/hird npc/Borhr NPC.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=35]
 
 [node name="HirdrihLevel1" type="Node2D"]
 
@@ -301,5 +302,9 @@ propname = "hirdprop building 7"
 position = Vector2( 15821, -2372 )
 customtext = "BORHR_T"
 customname = "Borhr"
+
+[node name="ArtBook" parent="." instance=ExtResource( 35 )]
+position = Vector2( 5280, -1561 )
+boardname = "hird art borhr reference"
 
 [editable path="Hird Yellow Rotating Plat"]
