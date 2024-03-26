@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/sprites/bosses/amalia/house shadow.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/level_backgrounds/level bg test 6.png" type="Texture" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -327,6 +328,15 @@ extents = Vector2( 487, 338 )
 
 [node name="NortPartFourLevel3" type="Node2D"]
 script = ExtResource( 8 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 0.2, 0.2 )
+motion_mirroring = Vector2( 4096, 2400 )
+
+[node name="LevelBgTest6" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+texture = ExtResource( 18 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
