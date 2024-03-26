@@ -302,3 +302,10 @@ position = Vector2( -2205, 1181 )
 
 [node name="Coin10" parent="." instance=ExtResource( 26 )]
 position = Vector2( -1820, 1181 )
+
+[node name="outlines" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( -720945, 352, 0, -720944, 352, 0, -720943, 352, 0, -720942, 352, 0, -720941, 352, 0, -720940, 352, 0, -720939, 352, 0, -720938, 352, 0, -720937, 352, 0, -720936, 352, 0, -720935, 352, 0, -720934, 352, 0, -720933, 352, 0, -720932, 352, 0, -720931, 352, 0, -720930, 352, 0, -720929, 352, 0, -720928, 352, 0, -720927, 352, 0, -720926, 352, 0, -720925, 352, 0 )
