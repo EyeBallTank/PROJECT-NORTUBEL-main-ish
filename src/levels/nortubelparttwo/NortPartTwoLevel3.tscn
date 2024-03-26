@@ -32,6 +32,9 @@ background = "res://assets/sprites/level_backgrounds/level bg test 5.png"
 [node name="NortRaceFlag" parent="." instance=ExtResource( 20 )]
 position = Vector2( 8508, 253 )
 
+[node name="AnimatedSprite" parent="NortRaceFlag" index="0"]
+frame = 0
+
 [node name="Wood" parent="NortRaceFlag" index="2"]
 scale = Vector2( 2.03998, 2.36 )
 
@@ -170,5 +173,12 @@ position = Vector2( 9404, 340 )
 
 [node name="Coin3" parent="." instance=ExtResource( 21 )]
 position = Vector2( 9524, 223 )
+
+[node name="outlines" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 786564, -2147483299, 0, 786565, 536871262, 0, 786566, -1610612387, 0, 852100, -2147483298, 0, 852102, -1610612386, 0, 917636, -2147483298, 0, 917638, -1610612386, 0, 983172, -2147483298, 0, 983174, -1610612386, 0, 1048708, -1073741475, 0, 1048709, 1610613086, 0, 1048710, 1610613085, 0 )
 
 [editable path="NortRaceFlag"]
