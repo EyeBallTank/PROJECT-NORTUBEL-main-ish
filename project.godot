@@ -94,6 +94,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/play_actors/StellaComp.gd"
 }, {
+"base": "KinematicBody2D",
+"class": "UulgaMain",
+"language": "GDScript",
+"path": "res://src/play_actors/UulgaComp.gd"
+}, {
 "base": "Area2D",
 "class": "Water",
 "language": "GDScript",
@@ -132,6 +137,7 @@ _global_script_class_icons={
 "SlowFloor": "",
 "SoccerBall": "",
 "StellaMain": "",
+"UulgaMain": "",
 "Water": "",
 "actor": "",
 "lowgravity": "",

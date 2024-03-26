@@ -199,3 +199,7 @@ pitch_scale = 2.33
 bus = "Sound"
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 0, -123 )
+cast_to = Vector2( 302, 0 )
