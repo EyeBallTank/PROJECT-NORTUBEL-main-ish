@@ -1,4 +1,4 @@
-[gd_scene load_steps=216 format=2]
+[gd_scene load_steps=218 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -109,6 +109,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art enemy showcase 3.png" type="Texture" id=107]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art enemy showcase 4.png" type="Texture" id=108]
 [ext_resource path="res://assets/sprites/art gallery/hirdrih/hird art borhr reference.png" type="Texture" id=109]
+[ext_resource path="res://assets/sprites/art gallery/hirdrih/hird art enemies.png" type="Texture" id=110]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -323,6 +324,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=124]
 atlas = ExtResource( 109 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=125]
+atlas = ExtResource( 110 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=37]
@@ -734,6 +739,11 @@ animations = [ {
 "name": "hird art borhr reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 125 ) ],
+"loop": false,
+"name": "hird art enemies",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 37 ) ],
 "loop": false,
 "name": "hird art leon otto avietta",
@@ -1033,7 +1043,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "hird art borhr reference"
+animation = "hird art enemies"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

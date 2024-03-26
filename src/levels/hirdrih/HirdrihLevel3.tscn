@@ -307,4 +307,8 @@ customname = "Borhr"
 position = Vector2( 5280, -1561 )
 boardname = "hird art borhr reference"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 35 )]
+position = Vector2( 2067, -989 )
+boardname = "hird art enemies"
+
 [editable path="Hird Yellow Rotating Plat"]
