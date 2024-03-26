@@ -1,11 +1,11 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 17.png" type="Texture" id=6]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=9]
@@ -27,6 +27,10 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 9.png" type="Texture" id=28]
+[ext_resource path="res://src/npc_actors/BookInfoRevised.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 16.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 15.png" type="Texture" id=31]
 
 [node name="LevelTutorial1" type="Node2D"]
 light_mask = 4
@@ -146,105 +150,6 @@ position = Vector2( 1272, 488 )
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1272, 488 )
 
-[node name="BookInfo" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2000, 552 )
-customtext = "BOOK_HINT_CONTROL_MOVE"
-
-[node name="BookInfo2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2656, 312 )
-customtext = "BOOK_HINT_COMP_FOLLOW"
-boardname = "board 2"
-
-[node name="BookInfo3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3000, 312 )
-customtext = "BOOK_HINT_COMP_Z"
-boardname = "board 3"
-
-[node name="BookInfo15" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3352, 312 )
-customtext = "BOOK_HINT_COMPPOINTER"
-boardname = "board 4"
-
-[node name="BookInfo20" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3720, 312 )
-customtext = "BOOK_HINT_CHAR_SWITCH_PLAY"
-boardname = "tutorial board 38"
-
-[node name="BookInfo4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3968, 552 )
-customtext = "BOOK_HINT_VASE"
-boardname = "board 5"
-
-[node name="BookInfo5" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5248, 424 )
-customtext = "BOOK_HINT_JUMPPAD"
-boardname = "board 6"
-
-[node name="BookInfo6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6114, -122 )
-customtext = "BOOK_HINT_PORTAL"
-boardname = "board 7"
-
-[node name="BookInfo17" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6428, 606 )
-customtext = "BOOK_HINT_PORTAL_NOTE"
-boardname = "board 8"
-
-[node name="BookInfo7" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2435, -1866 )
-customtext = "BOOK_HINT_CRAWL"
-boardname = "board 9"
-
-[node name="BookInfo8" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5432, -1344 )
-customtext = "BOOK_HINT_LADDERPLAY"
-boardname = "board 10"
-
-[node name="BookInfo16" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5720, -1344 )
-customtext = "BOOK_HINT_CONTROL_DOWN"
-boardname = "board 11"
-
-[node name="BookInfo9" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6336, -1704 )
-customtext = "BOOK_HINT_LADDERCOMP"
-boardname = "board 12"
-
-[node name="BookInfo18" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6336, -2120 )
-customtext = "BOOK_HINT_LADDERCOMP3"
-boardname = "board 36"
-
-[node name="BookInfo19" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6656, -2120 )
-customtext = "BOOK_HINT_LADDERCOMP4"
-boardname = "board 37"
-
-[node name="BookInfo10" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6648, -1704 )
-customtext = "BOOK_HINT_LADDERCOMP2"
-boardname = "board 13"
-
-[node name="BookInfo11" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6976, -1704 )
-customtext = "BOOK_HINT_WATERPLAY"
-boardname = "board 14"
-
-[node name="BookInfo12" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7344, -1537 )
-customtext = "BOOK_HINT_WATERCOMP"
-boardname = "board 15"
-
-[node name="BookInfo13" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7672, -1467 )
-customtext = "BOOK_HINT_DROWN"
-boardname = "board 16"
-
-[node name="BookInfo14" parent="." instance=ExtResource( 6 )]
-position = Vector2( 9208, -1302 )
-customtext = "BOOK_HINT_GREENDOOR"
-boardname = "board 17"
-
 [node name="Pushable" parent="." instance=ExtResource( 19 )]
 position = Vector2( 4424, 432 )
 
@@ -330,3 +235,33 @@ position = Vector2( 1640, -320 )
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 1 )]
 position = Vector2( 8224, -1208 )
+
+[node name="TutorialBoard9" type="Sprite" parent="."]
+position = Vector2( 2516, -2009 )
+scale = Vector2( 0.53877, 0.53877 )
+texture = ExtResource( 28 )
+
+[node name="BookInfoRevised" parent="." instance=ExtResource( 29 )]
+position = Vector2( 2944, 296 )
+customtext = "BOOK_HINT_COMP_FOLLOW_REVISED"
+boardname = "tutorial comp follow revised"
+
+[node name="BookInfoRevised2" parent="." instance=ExtResource( 29 )]
+position = Vector2( 6376, -1760 )
+customtext = "BOOK_HINT_LADDERCOMP_REVISED"
+boardname = "tutorial comp ladder revised"
+
+[node name="TutorialBoard16" type="Sprite" parent="."]
+position = Vector2( 7904, -1608 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 30 )
+
+[node name="TutorialBoard15" type="Sprite" parent="."]
+position = Vector2( 7488, -1672 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 31 )
+
+[node name="TutorialBoard17" type="Sprite" parent="."]
+position = Vector2( 9160, -1440 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 6 )

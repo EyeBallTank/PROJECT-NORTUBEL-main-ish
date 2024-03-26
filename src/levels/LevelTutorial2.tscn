@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -8,7 +8,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_objects/FishHookKinematic.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 25.png" type="Texture" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=12]
@@ -33,6 +33,13 @@
 [ext_resource path="res://src/npc_actors/brink npc/Bonka NPC.tscn" type="PackedScene" id=31]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=32]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 18 V2.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 19.png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 21.png" type="Texture" id=36]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 22.png" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 24.png" type="Texture" id=38]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 23.png" type="Texture" id=39]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 26.png" type="Texture" id=40]
 
 [node name="LevelTutorial2" type="Node2D"]
 light_mask = 4
@@ -147,51 +154,6 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1216, 384 )
 
-[node name="BookInfo" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1552, 480 )
-customtext = "BOOK_HINT_COIN"
-boardname = "board 18"
-
-[node name="BookInfo2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2432, 480 )
-customtext = "BOOK_HINT_FISHROD"
-boardname = "board 19"
-
-[node name="BookInfo3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 4504, 792 )
-customtext = "BOOK_HINT_KEYS"
-boardname = "board 20"
-
-[node name="BookInfo4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 5760, 792 )
-customtext = "BOOK_HINT_BUTTONS"
-boardname = "board 21"
-
-[node name="BookInfo5" parent="." instance=ExtResource( 9 )]
-position = Vector2( 6160, 792 )
-customtext = "BOOK_HINT_BUTTONBLUE"
-boardname = "board 22"
-
-[node name="BookInfo6" parent="." instance=ExtResource( 9 )]
-position = Vector2( 10024, -776 )
-customtext = "BOOK_HINT_ICE"
-boardname = "board 23"
-
-[node name="BookInfo7" parent="." instance=ExtResource( 9 )]
-position = Vector2( 10024, -380 )
-customtext = "BOOK_HINT_MUD"
-boardname = "board 24"
-
-[node name="BookInfo8" parent="." instance=ExtResource( 9 )]
-position = Vector2( 13112, -439 )
-customtext = "BOOK_HINT_HEALTH_DAMAGE"
-boardname = "board 26"
-
-[node name="BookInfo9" parent="." instance=ExtResource( 9 )]
-position = Vector2( 11808, -439 )
-customtext = "BOOK_HINT_CONTROL_KNIFE"
-boardname = "board 25"
-
 [node name="Coin" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1800, 448 )
 
@@ -223,10 +185,10 @@ position = Vector2( 13579, -510 )
 position = Vector2( 4192, 686 )
 
 [node name="Coin8" parent="." instance=ExtResource( 6 )]
-position = Vector2( 9832, -435 )
+position = Vector2( 9790, -435 )
 
 [node name="Coin9" parent="." instance=ExtResource( 6 )]
-position = Vector2( 10233, -827 )
+position = Vector2( 10241, -827 )
 
 [node name="Coin10" parent="." instance=ExtResource( 6 )]
 position = Vector2( 12329, -651 )
@@ -250,7 +212,7 @@ position = Vector2( 5377, 640 )
 position = Vector2( 7665, 648 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 16 )]
-position = Vector2( 6457, 632 )
+position = Vector2( 6638, 632 )
 
 [node name="YellowPlatVerti" parent="." instance=ExtResource( 19 )]
 position = Vector2( 8553, 544 )
@@ -288,3 +250,43 @@ position = Vector2( 10888, -16 )
 
 [node name="LoreBook" parent="." instance=ExtResource( 33 )]
 position = Vector2( 5874, -13 )
+
+[node name="TutorialBoard18V2" type="Sprite" parent="."]
+position = Vector2( 1969, 239 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 34 )
+
+[node name="TutorialBoard19" type="Sprite" parent="."]
+position = Vector2( 2587, 239 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 35 )
+
+[node name="TutorialBoard21" type="Sprite" parent="."]
+position = Vector2( 5818, 596 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 36 )
+
+[node name="TutorialBoard22" type="Sprite" parent="."]
+position = Vector2( 6313, 596 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 37 )
+
+[node name="TutorialBoard23" type="Sprite" parent="."]
+position = Vector2( 10016, -932 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 39 )
+
+[node name="TutorialBoard24" type="Sprite" parent="."]
+position = Vector2( 10016, -570 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 38 )
+
+[node name="TutorialBoard25" type="Sprite" parent="."]
+position = Vector2( 11652, -571 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 9 )
+
+[node name="TutorialBoard26" type="Sprite" parent="."]
+position = Vector2( 13041, -637 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 40 )

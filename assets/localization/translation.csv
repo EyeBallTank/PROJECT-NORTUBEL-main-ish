@@ -1510,3 +1510,27 @@ Não posso esperar para o futuro."
 MELVIN_B_NPC_TALK,"I hate these cookies, they always taste dry.","Eu odeio estas bolachas, têm sempre um sabor seco."
 MELVIN_B_NPC_HURT,Why are you being so mean?,Porque é que estás a ser tão má?
 MELVIN_B_NPC_HUG,My sister's hugs are better but yours aren't so bad.,Os abraços da minha irmã são melhores mas os teus não são assim tão maus.
+BOOK_HINT_COMP_FOLLOW_REVISED,"""Follow me"": Q + Right or 3
+""Stand still"": Q + Down or 2
+""Run away"" opposite to ""Follow me"": Q + Left or 1
+Companion jump/ladder user: Z
+Play as Companion: O
+Play as Older Sibling again: P","""Segue-me"": Q + Direita ou 3
+""Fica aí"": Q + Baixo ou 2
+""Foje"" contrário de ""Segue-me"": Q + Esquerda ou 1
+Companheiro(a) saltar/usar escadas: Z
+Joga como Companheiro(a): O
+Joga de volta como Irmã(o) Mais Velho(a): P"
+BOOK_HINT_LADDERCOMP_REVISED,"Press Z to attach Companion to ladder, then use commands to direct them
+Z also makes the Companion quit the ladders.
+The Companion starts off idle when entering/exiting ladders.
+Try having the Companion on the ladder side-by-side with you, if you feel like it!
+Then use commands and move vertically.
+When they reach a ladder's top/bottom and leave, they retain
+equivalent states of following/running.","Prime Z para meter o/(a) Companheiro(a) nas escadas e depois use ordens para direcioná-lo(a)
+Z também faz o(a) Companheiro(a) sair das escadas.
+O/(a) Companheiro(a) começa parado(a) quando entra nas/sai das escadas.
+Tenta ter o/a Companheiro(a) na escada lado-a-lado contigo, se quiseres!
+Depois, usa comandos e move verticalmente.
+Quando eles alcançam o topo/fundo das escada e saem, Companheiros
+mantêm estados equivalentes de seguir/correr."
