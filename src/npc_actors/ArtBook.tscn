@@ -1063,7 +1063,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "hird art taxi"
+animation = "brink art bonka reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

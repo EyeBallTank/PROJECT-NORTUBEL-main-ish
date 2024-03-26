@@ -260,7 +260,6 @@ collision_mask = 0
 rotation = 1.5708
 frames = SubResource( 3 )
 animation = "moving"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1"]
