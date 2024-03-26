@@ -315,4 +315,8 @@ boardname = "hird art enemies"
 position = Vector2( 7368, -1727 )
 boardname = "hird art npc"
 
+[node name="ArtBook4" parent="." instance=ExtResource( 35 )]
+position = Vector2( 5715, -1747 )
+boardname = "hird art taxi"
+
 [editable path="Hird Yellow Rotating Plat"]
