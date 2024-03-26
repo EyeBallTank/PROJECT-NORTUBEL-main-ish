@@ -61,7 +61,6 @@ position = Vector2( 2136, -257.93 )
 propname = "nortprop big lemon"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 7 )]
-visible = false
 
 [node name="Door" parent="." instance=ExtResource( 28 )]
 position = Vector2( 2880, 0 )

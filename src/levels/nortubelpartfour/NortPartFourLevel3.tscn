@@ -415,6 +415,7 @@ position = Vector2( -649, 917 )
 
 [node name="AnimatedSprite" parent="AmaliaHand" index="1"]
 modulate = Color( 1, 1, 1, 0 )
+frame = 1
 
 [node name="RayCast2D" parent="AmaliaHand" index="5"]
 enabled = false
