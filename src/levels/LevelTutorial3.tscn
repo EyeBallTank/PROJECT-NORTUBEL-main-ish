@@ -1,5 +1,6 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=42 format=2]
 
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 29.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
@@ -7,7 +8,7 @@
 [ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/npc_actors/BookInfo.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 35.png" type="Texture" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=11]
 [ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=12]
@@ -33,6 +34,13 @@
 [ext_resource path="res://src/level_hazards/CrusherBell.tscn" type="PackedScene" id=32]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=33]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=34]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 27.png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 28.png" type="Texture" id=36]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 30.png" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 31.png" type="Texture" id=38]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 32.png" type="Texture" id=39]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 33.png" type="Texture" id=40]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 34.png" type="Texture" id=41]
 
 [node name="LevelTutorial3" type="Node2D"]
 light_mask = 4
@@ -145,51 +153,6 @@ customtext2 = "BONKA_HONK_3"
 customtext3 = "BONKA_HUG_3"
 customtext4 = "BONKA_HURT_3"
 
-[node name="BookInfo" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2040, 520 )
-customtext = "BOOK_HINT_SOCCERBAG"
-boardname = "board 27"
-
-[node name="BookInfo3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2368, 520 )
-customtext = "BOOK_HINT_CONTROL_BALLATTACK"
-boardname = "board 28"
-
-[node name="BookInfo2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2688, 520 )
-customtext = "BOOK_HINT_SOCCERNET"
-boardname = "board 29"
-
-[node name="BookInfo4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 4040, 560 )
-customtext = "BOOK_HINT_SOCCERBALL"
-boardname = "board 30"
-
-[node name="BookInfo5" parent="." instance=ExtResource( 9 )]
-position = Vector2( 5576, 752 )
-customtext = "BOOK_HINT_FALLPLAT"
-boardname = "board 31"
-
-[node name="BookInfo6" parent="." instance=ExtResource( 9 )]
-position = Vector2( 6592, 2752 )
-customtext = "BOOK_HINT_MANOWAR"
-boardname = "board 32"
-
-[node name="BookInfo7" parent="." instance=ExtResource( 9 )]
-position = Vector2( 6896, 2752 )
-customtext = "BOOK_HINT_FLOATERRING"
-boardname = "board 33"
-
-[node name="BookInfo8" parent="." instance=ExtResource( 9 )]
-position = Vector2( 8064, 2856 )
-customtext = "BOOK_HINT_GONG"
-boardname = "board 34"
-
-[node name="BookInfo9" parent="." instance=ExtResource( 9 )]
-position = Vector2( 13560, 1029 )
-customtext = "BOOK_HINT_BELL"
-boardname = "board 35"
-
 [node name="Gecko enemy" parent="." instance=ExtResource( 26 )]
 position = Vector2( 4616, 841 )
 
@@ -197,7 +160,7 @@ position = Vector2( 4616, 841 )
 position = Vector2( 3664, 314 )
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3136, 385 )
+position = Vector2( 2305, 385 )
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 12 )]
 position = Vector2( 6200, 865 )
@@ -251,3 +214,48 @@ position = Vector2( 12639, 1703 )
 
 [node name="CrusherBell" parent="." instance=ExtResource( 32 )]
 position = Vector2( 13895, 306 )
+
+[node name="TutorialBoard27" type="Sprite" parent="."]
+position = Vector2( 2274, -35 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 35 )
+
+[node name="TutorialBoard28" type="Sprite" parent="."]
+position = Vector2( 3010.73, 1.5 )
+scale = Vector2( 0.826203, 0.826203 )
+texture = ExtResource( 36 )
+
+[node name="TutorialBoard29" type="Sprite" parent="."]
+position = Vector2( 2926, 340 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 1 )
+
+[node name="TutorialBoard30" type="Sprite" parent="."]
+position = Vector2( 4502, 341 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 37 )
+
+[node name="TutorialBoard31" type="Sprite" parent="."]
+position = Vector2( 6213.62, 306.448 )
+scale = Vector2( 0.72967, 0.72967 )
+texture = ExtResource( 38 )
+
+[node name="TutorialBoard32" type="Sprite" parent="."]
+position = Vector2( 6641, 2351.9 )
+scale = Vector2( 0.598377, 0.598377 )
+texture = ExtResource( 39 )
+
+[node name="TutorialBoard33" type="Sprite" parent="."]
+position = Vector2( 7028.94, 2351.9 )
+scale = Vector2( 0.598377, 0.598377 )
+texture = ExtResource( 40 )
+
+[node name="TutorialBoard34" type="Sprite" parent="."]
+position = Vector2( 8241, 2509 )
+scale = Vector2( 0.710178, 0.710178 )
+texture = ExtResource( 41 )
+
+[node name="TutorialBoard35" type="Sprite" parent="."]
+position = Vector2( 13234, 844.397 )
+scale = Vector2( 0.675917, 0.675917 )
+texture = ExtResource( 9 )

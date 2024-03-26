@@ -1,4 +1,5 @@
 extends Area2D
+tool
 
 onready var audioPlayer = $AudioStreamPlayer
 onready var animationplayer = $AnimationPlayer
