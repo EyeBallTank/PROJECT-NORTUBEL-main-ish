@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=144 format=2]
+[gd_resource type="TileSet" load_steps=155 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILE PASSABLE.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE RED DOOR.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE STONE PILLARS PROP.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE ROCK WOOL.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/BASIC SOLID OUTLINES.png" type="Texture" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -223,8 +224,38 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 [sub_resource type="ConvexPolygonShape2D" id=29]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
+[sub_resource type="ConvexPolygonShape2D" id=129]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
 [sub_resource type="ConvexPolygonShape2D" id=30]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=130]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=131]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=132]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=133]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=134]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=135]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=136]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=137]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=138]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=31]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -6113,3 +6144,213 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 348/shape_one_way_margin = 0.0
 348/shapes = [  ]
 348/z_index = 0
+349/name = "BASIC SOLID OUTLINES.png 349"
+349/texture = ExtResource( 16 )
+349/tex_offset = Vector2( 0, 0 )
+349/modulate = Color( 1, 1, 1, 1 )
+349/region = Rect2( 0, 0, 64, 64 )
+349/tile_mode = 0
+349/occluder_offset = Vector2( 0, 0 )
+349/navigation_offset = Vector2( 0, 0 )
+349/shape_offset = Vector2( 0, 0 )
+349/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+349/shape = SubResource( 129 )
+349/shape_one_way = false
+349/shape_one_way_margin = 1.0
+349/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 129 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+349/z_index = 0
+350/name = "BASIC SOLID OUTLINES.png 350"
+350/texture = ExtResource( 16 )
+350/tex_offset = Vector2( 0, 0 )
+350/modulate = Color( 1, 1, 1, 1 )
+350/region = Rect2( 64, 0, 64, 64 )
+350/tile_mode = 0
+350/occluder_offset = Vector2( 0, 0 )
+350/navigation_offset = Vector2( 0, 0 )
+350/shape_offset = Vector2( 0, 0 )
+350/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+350/shape = SubResource( 130 )
+350/shape_one_way = false
+350/shape_one_way_margin = 1.0
+350/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 130 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+350/z_index = 0
+351/name = "BASIC SOLID OUTLINES.png 351"
+351/texture = ExtResource( 16 )
+351/tex_offset = Vector2( 0, 0 )
+351/modulate = Color( 1, 1, 1, 1 )
+351/region = Rect2( 128, 0, 64, 64 )
+351/tile_mode = 0
+351/occluder_offset = Vector2( 0, 0 )
+351/navigation_offset = Vector2( 0, 0 )
+351/shape_offset = Vector2( 0, 0 )
+351/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+351/shape = SubResource( 131 )
+351/shape_one_way = false
+351/shape_one_way_margin = 1.0
+351/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 131 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+351/z_index = 0
+352/name = "BASIC SOLID OUTLINES.png 352"
+352/texture = ExtResource( 16 )
+352/tex_offset = Vector2( 0, 0 )
+352/modulate = Color( 1, 1, 1, 1 )
+352/region = Rect2( 0, 64, 64, 64 )
+352/tile_mode = 0
+352/occluder_offset = Vector2( 0, 0 )
+352/navigation_offset = Vector2( 0, 0 )
+352/shape_offset = Vector2( 0, 0 )
+352/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+352/shape = SubResource( 132 )
+352/shape_one_way = false
+352/shape_one_way_margin = 1.0
+352/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 132 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+352/z_index = 0
+353/name = "BASIC SOLID OUTLINES.png 353"
+353/texture = ExtResource( 16 )
+353/tex_offset = Vector2( 0, 0 )
+353/modulate = Color( 1, 1, 1, 1 )
+353/region = Rect2( 64, 64, 64, 64 )
+353/tile_mode = 0
+353/occluder_offset = Vector2( 0, 0 )
+353/navigation_offset = Vector2( 0, 0 )
+353/shape_offset = Vector2( 0, 0 )
+353/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+353/shape = SubResource( 133 )
+353/shape_one_way = false
+353/shape_one_way_margin = 1.0
+353/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 133 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+353/z_index = 0
+354/name = "BASIC SOLID OUTLINES.png 354"
+354/texture = ExtResource( 16 )
+354/tex_offset = Vector2( 0, 0 )
+354/modulate = Color( 1, 1, 1, 1 )
+354/region = Rect2( 128, 64, 64, 64 )
+354/tile_mode = 0
+354/occluder_offset = Vector2( 0, 0 )
+354/navigation_offset = Vector2( 0, 0 )
+354/shape_offset = Vector2( 0, 0 )
+354/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+354/shape = SubResource( 134 )
+354/shape_one_way = false
+354/shape_one_way_margin = 1.0
+354/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 134 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+354/z_index = 0
+355/name = "BASIC SOLID OUTLINES.png 355"
+355/texture = ExtResource( 16 )
+355/tex_offset = Vector2( 0, 0 )
+355/modulate = Color( 1, 1, 1, 1 )
+355/region = Rect2( 128, 128, 64, 64 )
+355/tile_mode = 0
+355/occluder_offset = Vector2( 0, 0 )
+355/navigation_offset = Vector2( 0, 0 )
+355/shape_offset = Vector2( 0, 0 )
+355/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+355/shape = SubResource( 135 )
+355/shape_one_way = false
+355/shape_one_way_margin = 1.0
+355/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 135 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+355/z_index = 0
+356/name = "BASIC SOLID OUTLINES.png 356"
+356/texture = ExtResource( 16 )
+356/tex_offset = Vector2( 0, 0 )
+356/modulate = Color( 1, 1, 1, 1 )
+356/region = Rect2( 64, 128, 64, 64 )
+356/tile_mode = 0
+356/occluder_offset = Vector2( 0, 0 )
+356/navigation_offset = Vector2( 0, 0 )
+356/shape_offset = Vector2( 0, 0 )
+356/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+356/shape = SubResource( 136 )
+356/shape_one_way = false
+356/shape_one_way_margin = 1.0
+356/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 136 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+356/z_index = 0
+357/name = "BASIC SOLID OUTLINES.png 357"
+357/texture = ExtResource( 16 )
+357/tex_offset = Vector2( 0, 0 )
+357/modulate = Color( 1, 1, 1, 1 )
+357/region = Rect2( 0, 128, 64, 64 )
+357/tile_mode = 0
+357/occluder_offset = Vector2( 0, 0 )
+357/navigation_offset = Vector2( 0, 0 )
+357/shape_offset = Vector2( 0, 0 )
+357/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+357/shape = SubResource( 137 )
+357/shape_one_way = false
+357/shape_one_way_margin = 1.0
+357/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 137 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+357/z_index = 0
+358/name = "BASIC SOLID OUTLINES.png 358"
+358/texture = ExtResource( 16 )
+358/tex_offset = Vector2( 0, 0 )
+358/modulate = Color( 1, 1, 1, 1 )
+358/region = Rect2( 64, 192, 64, 64 )
+358/tile_mode = 0
+358/occluder_offset = Vector2( 0, 0 )
+358/navigation_offset = Vector2( 0, 0 )
+358/shape_offset = Vector2( 0, 0 )
+358/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+358/shape = SubResource( 138 )
+358/shape_one_way = false
+358/shape_one_way_margin = 1.0
+358/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 138 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+358/z_index = 0
