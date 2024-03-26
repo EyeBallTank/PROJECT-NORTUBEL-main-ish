@@ -1,16 +1,13 @@
 extends KinematicBody2D
 
 #ART PLANS:
-#GREK ENEMIES probably 4 pages
-#GREK AMMO BOT
-#SCALPER
-#ZHARK SOLDIER
-#SCORBRION
 
 #HERRKO TSOOVOKUT KNIGHT
 
 #HIRDRIH NPC, BORHR, ENEMIES?
 #What about Nortubel enemies? And even Krimb or the chicken?
+
+#NORT: OUR MAIN CHARACTERS, THEIR PARENTS
 
 
 
