@@ -1,4 +1,4 @@
-[gd_scene load_steps=206 format=2]
+[gd_scene load_steps=214 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -104,6 +104,10 @@
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art maikouto p2 reference.png" type="Texture" id=102]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art vimana reference.png" type="Texture" id=103]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art amalia.png" type="Texture" id=104]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art enemy showcase 1.png" type="Texture" id=105]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art enemy showcase 2.png" type="Texture" id=106]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art enemy showcase 3.png" type="Texture" id=107]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art enemy showcase 4.png" type="Texture" id=108]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -186,6 +190,22 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=53]
 atlas = ExtResource( 42 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=120]
+atlas = ExtResource( 105 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=121]
+atlas = ExtResource( 106 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=122]
+atlas = ExtResource( 107 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=123]
+atlas = ExtResource( 108 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=72]
@@ -583,6 +603,11 @@ animations = [ {
 "loop": false,
 "name": "grek art clarity reference",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 120 ), SubResource( 121 ), SubResource( 122 ), SubResource( 123 ) ],
+"loop": true,
+"name": "grek art enemy showcase",
+"speed": 1.0
 }, {
 "frames": [ SubResource( 72 ) ],
 "loop": false,
@@ -998,7 +1023,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art amalia"
+animation = "grek art enemy showcase"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

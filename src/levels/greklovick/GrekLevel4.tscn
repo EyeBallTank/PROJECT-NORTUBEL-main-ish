@@ -93,6 +93,10 @@ boardname = "grek art tfoorie reference"
 position = Vector2( 2055, 1527 )
 boardname = "grek art venus base reference"
 
+[node name="ArtBook3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 39, 1527 )
+boardname = "grek art enemy showcase"
+
 [node name="Pushable" parent="." instance=ExtResource( 13 )]
 position = Vector2( 886, 1447 )
 spritename = "greklovick pushable"
