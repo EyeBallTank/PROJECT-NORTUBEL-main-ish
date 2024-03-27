@@ -158,6 +158,10 @@ propname = "nortprop door 4"
 position = Vector2( -2951, -321 )
 boardname = "nort art 4 girls summer"
 
+[node name="ArtBook3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -202, -106 )
+boardname = "nort art black chicken phineas"
+
 [node name="ArtBook2" parent="." instance=ExtResource( 9 )]
 position = Vector2( -5546, 96 )
 boardname = "nort art weird alien"

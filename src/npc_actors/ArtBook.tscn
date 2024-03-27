@@ -1,4 +1,4 @@
-[gd_scene load_steps=224 format=2]
+[gd_scene load_steps=226 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -113,6 +113,7 @@
 [ext_resource path="res://assets/sprites/art gallery/hirdrih/hird art npc.png" type="Texture" id=111]
 [ext_resource path="res://assets/sprites/art gallery/hirdrih/hird art taxi.png" type="Texture" id=112]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art tsoovukot knight reference.png" type="Texture" id=113]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art black chicken phineas.png" type="Texture" id=114]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -479,6 +480,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=40]
 atlas = ExtResource( 36 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=129]
+atlas = ExtResource( 114 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=46]
@@ -954,6 +959,11 @@ animations = [ {
 "name": "nort art bernard shelly",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 129 ) ],
+"loop": false,
+"name": "nort art black chicken phineas",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 46 ) ],
 "loop": false,
 "name": "nort art delusional dream",
@@ -1073,7 +1083,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art tsoovukot knight reference"
+animation = "nort art black chicken phineas"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

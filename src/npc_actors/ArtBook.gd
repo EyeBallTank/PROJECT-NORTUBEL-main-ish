@@ -2,10 +2,7 @@ extends KinematicBody2D
 
 #ART PLANS:
 
-#HERRKO TSOOVOKUT KNIGHT
-
-#What about Nortubel enemies? And even Krimb or the chicken?
-
+#What about Nortubel enemies?
 #NORT: OUR MAIN CHARACTERS, THEIR PARENTS
 
 
