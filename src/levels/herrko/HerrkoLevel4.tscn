@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_hazards/herrko/ArrowTrapButton.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_hazards/herrko/ArrowSpawner.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/enemies/herrko/TsoovukotKnight.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=14]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -89,3 +90,7 @@ position = Vector2( 435, 1563 )
 
 [node name="TsoovukotKnight" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1864, 1551 )
+
+[node name="ArtBook" parent="." instance=ExtResource( 14 )]
+position = Vector2( -492, 1653 )
+boardname = "herrko art tsoovukot knight reference"
