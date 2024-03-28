@@ -4,6 +4,7 @@ class_name UulgaMain
 #CURRENT ISSUE: HER JUMPGOESUP ANIMATION ONLY ANIMATES DURING STANDSTILL, BECAUSE IN OTHER STATES,
 #THE ANIMATION IS STUCK IN THE FIRST FRAME
 
+#CAN'T ROTATE HER HITBOX AS OF NOW
 
 enum {
 	FOLLOWME,
@@ -25,6 +26,8 @@ export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 1450.0
 onready var animatedsprite = $AnimatedSprite
 onready var enemycheck = $RayCast2D
+
+onready var uulgahitbox = $UulgaHitbox
 
 onready var uulgastateteller = $CanvasLayer/UulgaStateTeller
 onready var audioplayer = $AudioStreamPlayer
@@ -55,8 +58,10 @@ func _on_Player_Died():
 func _physics_process(delta):
 	if animatedsprite.flip_h == false:
 		enemycheck.scale.x = 1
+#		uulgahitbox.scale.x = 1
 	elif animatedsprite.flip_h == true:
 		enemycheck.scale.x = -1
+#		uulgahitbox.scale.x = -1
 #I GUESS HER RAYCAST FLIPPING WORKS NOW?
 
 	match state:
@@ -81,9 +86,11 @@ func _physics_process(delta):
 			if direction.x == 1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
+#				uulgahitbox.position = Vector2(212, -9.5)
 			elif direction.x == -1 and is_on_floor():
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
+#				uulgahitbox.position = Vector2(-213, -9.5)
 			else:
 				animatedsprite.animation = "Idle"
 

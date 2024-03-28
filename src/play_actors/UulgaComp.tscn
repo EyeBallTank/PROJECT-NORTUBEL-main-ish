@@ -280,10 +280,10 @@ cast_to = Vector2( 285, 0 )
 collision_mask = 32
 
 [node name="UulgaHitbox" type="Area2D" parent="."]
+position = Vector2( 212, -9.5 )
 collision_layer = 2
 collision_mask = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UulgaHitbox"]
-position = Vector2( 212, -9.5 )
 shape = SubResource( 69 )
 disabled = true
