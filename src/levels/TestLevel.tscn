@@ -75,6 +75,6 @@ position = Vector2( 972, -1048 )
 position = Vector2( 4341, -564 )
 
 [node name="LowGravity" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1163, -180 )
+position = Vector2( 4261, -827 )
 scale = Vector2( 80, 160 )
 collision_newsize = Vector2( 80, 160 )
