@@ -377,7 +377,7 @@ func _physics_process(delta):
 				state = STOPICE
 
 		MAINSTATE:
-
+			gravity = 3000
 			if is_on_lowgrav():
 				state = LOWGRAV
 
@@ -1028,7 +1028,7 @@ func _physics_process(delta):
 				state = ROPE
 
 		LOWGRAV:
-			gravity = 1200
+			
 			iamplayable = true
 			if not is_on_lowgrav():
 				oxygen = 1500
@@ -1119,6 +1119,7 @@ func _physics_process(delta):
 				velocity.y = -JUMP_SPEED
 
 			if velocity.y < 0 and not is_on_floor():
+				gravity = 1200
 				if ouch == false:
 					animatedsprite.animation = "Jumpgoesup"
 				elif ouch == true:
@@ -1128,6 +1129,7 @@ func _physics_process(delta):
 				elif Input.is_action_just_pressed("left"):
 					animatedsprite.flip_h = true
 			elif velocity.y > 0 and not is_on_floor():
+				gravity = 600
 				if ouch == false:
 					animatedsprite.animation = "Jumpgoesdown"
 				elif ouch == true:
