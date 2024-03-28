@@ -81,4 +81,4 @@ scale = Vector2( 80, 160 )
 collision_newsize = Vector2( 80, 160 )
 
 [node name="UulgaComp" parent="." instance=ExtResource( 12 )]
-position = Vector2( 161, -212 )
+position = Vector2( 176, -416 )

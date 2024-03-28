@@ -1,6 +1,11 @@
 extends KinematicBody2D
 class_name UulgaMain
 
+#CURRENT ISSUE: HER JUMPGOESUP ANIMATION ONLY ANIMATES DURING STANDSTILL, BECAUSE IN OTHER STATES,
+#THE ANIMATION IS STUCK IN THE FIRST FRAME
+
+#ALSO DON'T KNOW HOW TO ROTATE HER RAYCAST
+
 enum {
 	FOLLOWME,
 	STANDSTILL,
@@ -215,6 +220,15 @@ func _physics_process(delta):
 				state = FOLLOWME
 			if Input.is_action_just_pressed("basicstellastop"):
 				state = STANDSTILL
+
+		ATTACKFROMFOLLOW:
+			pass
+
+		ATTACKFROMRUN:
+			pass
+
+		ATTACKFROMIDLE:
+			pass
 
 func see_to_attack():
 	if not enemycheck.is_colliding(): return false
