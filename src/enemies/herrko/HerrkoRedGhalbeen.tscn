@@ -302,7 +302,7 @@ tracks/5/keys = {
 "values": [ "abouttoshoot", "didtheshot" ]
 }
 
-[node name="HerrkoRedGhalbeen" type="KinematicBody2D"]
+[node name="HerrkoRedGhalbeen" type="KinematicBody2D" groups=["enemies"]]
 collision_layer = 32
 collision_mask = 4
 script = ExtResource( 1 )

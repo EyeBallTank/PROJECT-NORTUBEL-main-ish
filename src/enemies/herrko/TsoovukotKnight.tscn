@@ -368,7 +368,7 @@ extents = Vector2( 200.5, 20.9999 )
 [sub_resource type="RectangleShape2D" id=23]
 extents = Vector2( 61.5, 81 )
 
-[node name="TsoovukotKnight" type="KinematicBody2D"]
+[node name="TsoovukotKnight" type="KinematicBody2D" groups=["enemies"]]
 collision_layer = 32
 collision_mask = 4
 script = ExtResource( 2 )
@@ -377,7 +377,7 @@ script = ExtResource( 2 )
 position = Vector2( 55, -185 )
 scale = Vector2( 0.950074, 0.950074 )
 frames = SubResource( 4 )
-animation = "Running"
+animation = "shieldstart"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
