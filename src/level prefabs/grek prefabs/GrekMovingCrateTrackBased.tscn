@@ -102,7 +102,7 @@ z_index = 16
 curve = SubResource( 3 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( 3286, -1568 )
+position = Vector2( 3286.88, -1734.03 )
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
