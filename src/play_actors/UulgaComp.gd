@@ -4,7 +4,6 @@ class_name UulgaMain
 #CURRENT ISSUE: HER JUMPGOESUP ANIMATION ONLY ANIMATES DURING STANDSTILL, BECAUSE IN OTHER STATES,
 #THE ANIMATION IS STUCK IN THE FIRST FRAME
 
-#ALSO DON'T KNOW HOW TO ROTATE HER RAYCAST
 
 enum {
 	FOLLOWME,
@@ -51,6 +50,12 @@ func _on_Player_Died():
 		state = STANDSTILL
 
 func _physics_process(delta):
+	if animatedsprite.flip_h == false:
+		enemycheck.scale.x = 1
+	elif animatedsprite.flip_h == true:
+		enemycheck.scale.x = -1
+#I GUESS HER RAYCAST FLIPPING WORKS NOW?
+
 	match state:
 		FOLLOWME:
 			if see_to_attack():
@@ -60,9 +65,11 @@ func _physics_process(delta):
 			if Player.global_position.x < global_position.x - 10:
 				vel.x = -WALK_MAX_SPEED
 				direction.x = -1
+				
 			elif Player.global_position.x > global_position.x + 10:
 				vel.x = WALK_MAX_SPEED
 				direction.x = 1
+				
 			else:
 				vel.x = 0
 				direction.x = 0
