@@ -30,6 +30,9 @@ onready var uulgastateteller = $CanvasLayer/UulgaStateTeller
 onready var audioplayer = $AudioStreamPlayer
 var was_on_floor = true
 
+onready var animationplayer = $AnimationPlayer
+onready var timer = $Timer
+
 var vel: = Vector2.ZERO
 var direction: = Vector2.ZERO
 onready var Player = get_parent().get_node("Player")
@@ -229,7 +232,8 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		ATTACKFROMFOLLOW:
-			pass
+			animationplayer.play("uulga attack")
+#			timer.start(0.5)
 
 		ATTACKFROMRUN:
 			pass
@@ -244,6 +248,9 @@ func see_to_attack():
 #	if not collider is StellaMain: return false
 #	if not collider is Companion: return false
 	return true
+
+func return_to_move_follow():
+	state = FOLLOWME
 
 func return_to_move():
 	if state == ATTACKFROMFOLLOW:

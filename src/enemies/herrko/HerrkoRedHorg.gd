@@ -85,3 +85,5 @@ func detect_turn_around():
 func _on_Hurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
 		state = DEAD
+	if area.name == "UulgaHitbox":
+		state = DEAD
