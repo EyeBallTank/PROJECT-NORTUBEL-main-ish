@@ -249,6 +249,10 @@ func _physics_process(delta):
 				audioplayer.play()
 			was_on_floor = is_on_floor()
 
+			vel.x = 0
+			direction.x = 0
+			vel.x = direction.x * 0
+
 		ATTACKFROMRUN:
 			animationplayer.play("uulga attack run")
 
@@ -260,6 +264,10 @@ func _physics_process(delta):
 				audioplayer.play()
 			was_on_floor = is_on_floor()
 
+			vel.x = 0
+			direction.x = 0
+			vel.x = direction.x * 0
+
 		ATTACKFROMIDLE:
 			animationplayer.play("uulga attack idle")
 
@@ -270,6 +278,10 @@ func _physics_process(delta):
 			if is_on_floor() and not was_on_floor:
 				audioplayer.play()
 			was_on_floor = is_on_floor()
+
+			vel.x = 0
+			direction.x = 0
+			vel.x = direction.x * 0
 
 func see_to_attack():
 	if not enemycheck.is_colliding(): return false

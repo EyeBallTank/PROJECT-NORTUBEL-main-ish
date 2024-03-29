@@ -332,7 +332,7 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1, -88 )
 frames = SubResource( 36 )
-animation = "pleasespin"
+animation = "Attack1"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -371,4 +371,4 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="meleespawn" type="Position2D" parent="RayCast2D"]
-position = Vector2( 212, 8 )
+position = Vector2( 229, 8 )
