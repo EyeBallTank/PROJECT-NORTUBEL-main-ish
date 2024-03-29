@@ -289,3 +289,6 @@ collision_mask = 32
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UulgaHitbox"]
 shape = SubResource( 69 )
 disabled = true
+
+[node name="meleespawn" type="Position2D" parent="."]
+position = Vector2( 212, -10 )
