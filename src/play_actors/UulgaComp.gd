@@ -241,13 +241,36 @@ func _physics_process(delta):
 
 		ATTACKFROMFOLLOW:
 			animationplayer.play("uulga attack")
-#			timer.start(0.5)
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 		ATTACKFROMRUN:
 			animationplayer.play("uulga attack run")
 
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
 		ATTACKFROMIDLE:
 			animationplayer.play("uulga attack idle")
+
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
 
 func see_to_attack():
 	if not enemycheck.is_colliding(): return false
@@ -271,11 +294,3 @@ func return_to_move_run():
 
 func return_to_move_idle():
 	state = STANDSTILL
-
-func return_to_move():
-	if state == ATTACKFROMFOLLOW:
-		FOLLOWME
-	elif state == ATTACKFROMRUN:
-		RUNAWAY
-	elif state == ATTACKFROMIDLE:
-		STANDSTILL
