@@ -368,7 +368,7 @@ extents = Vector2( 200.5, 20.9999 )
 [sub_resource type="RectangleShape2D" id=23]
 extents = Vector2( 61.5, 81 )
 
-[node name="TsoovukotKnight" type="KinematicBody2D" groups=["enemies"]]
+[node name="TsoovukotKnight" type="KinematicBody2D"]
 collision_layer = 32
 collision_mask = 4
 script = ExtResource( 2 )
@@ -394,7 +394,7 @@ enabled = true
 cast_to = Vector2( 0, 34 )
 collision_mask = 4
 
-[node name="EnemyHurtbox" type="Area2D" parent="."]
+[node name="EnemyHurtbox" type="Area2D" parent="." groups=["enemies"]]
 position = Vector2( 3.32001, -108.68 )
 collision_layer = 32
 collision_mask = 1025

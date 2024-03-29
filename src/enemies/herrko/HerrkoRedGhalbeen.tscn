@@ -302,7 +302,7 @@ tracks/5/keys = {
 "values": [ "abouttoshoot", "didtheshot" ]
 }
 
-[node name="HerrkoRedGhalbeen" type="KinematicBody2D" groups=["enemies"]]
+[node name="HerrkoRedGhalbeen" type="KinematicBody2D"]
 collision_layer = 32
 collision_mask = 4
 script = ExtResource( 1 )
@@ -332,7 +332,7 @@ enabled = true
 cast_to = Vector2( 108, 0 )
 collision_mask = 3
 
-[node name="EnemyHurtbox" type="Area2D" parent="."]
+[node name="EnemyHurtbox" type="Area2D" parent="." groups=["enemies"]]
 position = Vector2( 19, -241 )
 collision_layer = 32
 

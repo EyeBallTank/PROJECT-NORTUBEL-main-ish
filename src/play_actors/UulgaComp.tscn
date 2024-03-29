@@ -278,6 +278,8 @@ position = Vector2( 0, -18 )
 enabled = true
 cast_to = Vector2( 285, 0 )
 collision_mask = 32
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="UulgaHitbox" type="Area2D" parent="."]
 position = Vector2( 212, -9.5 )

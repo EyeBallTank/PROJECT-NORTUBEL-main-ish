@@ -298,7 +298,7 @@ extents = Vector2( 94.5, 145.5 )
 [sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 87, 138.5 )
 
-[node name="HerrkoRedHorg" type="KinematicBody2D" groups=["enemies"]]
+[node name="HerrkoRedHorg" type="KinematicBody2D"]
 collision_layer = 32
 collision_mask = 4
 script = ExtResource( 2 )
@@ -331,7 +331,7 @@ collision_mask = 3
 wait_time = 4.0
 one_shot = true
 
-[node name="Hurtbox" type="Area2D" parent="."]
+[node name="Hurtbox" type="Area2D" parent="." groups=["enemies"]]
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
