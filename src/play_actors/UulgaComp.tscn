@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/UULGA COMP SPRITES.png" type="Texture" id=2]
@@ -57,6 +57,22 @@ region = Rect2( 500, 500, 500, 500 )
 atlas = ExtResource( 2 )
 region = Rect2( 1000, 500, 500, 500 )
 
+[sub_resource type="AtlasTexture" id=73]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=74]
+atlas = ExtResource( 2 )
+region = Rect2( 500, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=75]
+atlas = ExtResource( 2 )
+region = Rect2( 1000, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=76]
+atlas = ExtResource( 2 )
+region = Rect2( 1500, 1000, 500, 500 )
+
 [sub_resource type="SpriteFrames" id=36]
 animations = [ {
 "frames": [ SubResource( 56 ) ],
@@ -93,6 +109,11 @@ animations = [ {
 "loop": true,
 "name": "Running",
 "speed": 3.0
+}, {
+"frames": [ SubResource( 73 ), SubResource( 74 ), SubResource( 75 ), SubResource( 76 ) ],
+"loop": true,
+"name": "pleasespin",
+"speed": 7.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -311,7 +332,7 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1, -88 )
 frames = SubResource( 36 )
-animation = "Attack1"
+animation = "pleasespin"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -4,7 +4,6 @@ class_name UulgaMain
 #CURRENT ISSUE: HER JUMPGOESUP ANIMATION ONLY ANIMATES DURING STANDSTILL, BECAUSE IN OTHER STATES,
 #THE ANIMATION IS STUCK IN THE FIRST FRAME
 
-#CAN'T ROTATE HER HITBOX/MELEE SPAWN AS OF NOW
 
 enum {
 	FOLLOWME,
@@ -105,7 +104,7 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				animatedsprite.animation = "pleasespin"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -153,7 +152,7 @@ func _physics_process(delta):
 			was_on_floor = is_on_floor()
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				animatedsprite.animation = "pleasespin"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
@@ -213,7 +212,7 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.animation = "Jumpgoesup"
+				animatedsprite.animation = "pleasespin"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
 				elif direction.x == -1:
