@@ -84,15 +84,18 @@ func _physics_process(delta):
 			vel.x = direction.x * 400
 
 			if direction.x == 1 and is_on_floor():
+
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = false
 #				uulgahitbox.position = Vector2(212, -9.5)
 			elif direction.x == -1 and is_on_floor():
+
 				animatedsprite.animation = "Running"
 				animatedsprite.flip_h = true
 #				uulgahitbox.position = Vector2(-213, -9.5)
 			else:
 				animatedsprite.animation = "Idle"
+
 
 			vel.y += gravity * delta
 			gravity = 1450.0
@@ -104,12 +107,13 @@ func _physics_process(delta):
 					vel.y += 500
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.rotation_degrees += 8
 				animatedsprite.animation = "nevermind"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
+					animatedsprite.rotation_degrees += 8
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
+					animatedsprite.rotation_degrees -= 8
 			elif vel.y > 0 and not is_on_floor():
 				animatedsprite.animation = "Jumpgoesdown"
 				animatedsprite.rotation_degrees = 0
@@ -154,12 +158,13 @@ func _physics_process(delta):
 			was_on_floor = is_on_floor()
 
 			if vel.y < 0 and not is_on_floor():
-				animatedsprite.rotation_degrees += 8
 				animatedsprite.animation = "nevermind"
 				if direction.x == 1:
 					animatedsprite.flip_h = false
+					animatedsprite.rotation_degrees += 8
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
+					animatedsprite.rotation_degrees -= 8
 			elif vel.y > 0 and not is_on_floor():
 				animatedsprite.animation = "Jumpgoesdown"
 				animatedsprite.rotation_degrees = 0
@@ -169,6 +174,7 @@ func _physics_process(delta):
 					animatedsprite.flip_h = true
 
 			if is_on_floor():
+				animatedsprite.rotation_degrees = 0
 				animatedsprite.animation = "Idle"
 
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("right"):
@@ -247,6 +253,7 @@ func _physics_process(delta):
 				state = STANDSTILL
 
 		ATTACKFROMFOLLOW:
+			animatedsprite.rotation_degrees = 0
 			animationplayer.play("uulga attack")
 
 			vel.y += gravity * delta
@@ -262,6 +269,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 0
 
 		ATTACKFROMRUN:
+			animatedsprite.rotation_degrees = 0
 			animationplayer.play("uulga attack run")
 
 			vel.y += gravity * delta
@@ -277,6 +285,7 @@ func _physics_process(delta):
 			vel.x = direction.x * 0
 
 		ATTACKFROMIDLE:
+			animatedsprite.rotation_degrees = 0
 			animationplayer.play("uulga attack idle")
 
 			vel.y += gravity * delta
