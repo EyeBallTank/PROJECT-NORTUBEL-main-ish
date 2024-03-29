@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,8 +11,27 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/sprites/level_backgrounds/greklovick/the grid bg.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek city bg.png" type="Texture" id=13]
 
 [node name="GrekLevel2" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="TheGridBg" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="GrekCityBg" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
