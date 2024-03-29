@@ -244,10 +244,10 @@ func _physics_process(delta):
 #			timer.start(0.5)
 
 		ATTACKFROMRUN:
-			pass
+			animationplayer.play("uulga attack run")
 
 		ATTACKFROMIDLE:
-			pass
+			animationplayer.play("uulga attack idle")
 
 func see_to_attack():
 	if not enemycheck.is_colliding(): return false
@@ -265,6 +265,12 @@ func actual_attack():
 
 func return_to_move_follow():
 	state = FOLLOWME
+
+func return_to_move_run():
+	state = RUNAWAY
+
+func return_to_move_idle():
+	state = STANDSTILL
 
 func return_to_move():
 	if state == ATTACKFROMFOLLOW:
