@@ -1,8 +1,7 @@
 extends KinematicBody2D
 class_name UulgaMain
 
-#CURRENT ISSUE: HER JUMPGOESUP ANIMATION ONLY ANIMATES DURING STANDSTILL, BECAUSE IN OTHER STATES,
-#THE ANIMATION IS STUCK IN THE FIRST FRAME
+#HER SPINNING IS STILL WEIRD BUT IT'S ALMOST THERE AT LEAST
 
 
 enum {
@@ -159,12 +158,12 @@ func _physics_process(delta):
 
 			if vel.y < 0 and not is_on_floor():
 				animatedsprite.animation = "nevermind"
+				animatedsprite.rotation_degrees += 8
 				if direction.x == 1:
 					animatedsprite.flip_h = false
-					animatedsprite.rotation_degrees += 8
+					
 				elif direction.x == -1:
 					animatedsprite.flip_h = true
-					animatedsprite.rotation_degrees -= 8
 			elif vel.y > 0 and not is_on_floor():
 				animatedsprite.animation = "Jumpgoesdown"
 				animatedsprite.rotation_degrees = 0
@@ -174,7 +173,6 @@ func _physics_process(delta):
 					animatedsprite.flip_h = true
 
 			if is_on_floor():
-				animatedsprite.rotation_degrees = 0
 				animatedsprite.animation = "Idle"
 
 			if Input.is_action_pressed("stellacommand") and Input.is_action_just_pressed("right"):
