@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/UULGA COMP SPRITES.png" type="Texture" id=2]
@@ -143,7 +143,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("UulgaHitbox/CollisionShape2D:disabled")
+tracks/1/path = NodePath("AnimatedSprite:animation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -151,28 +151,16 @@ tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
+"update": 0,
+"values": [ "Attack1" ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("AnimatedSprite:animation")
+tracks/2/path = NodePath("RayCast2D:enabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ "Attack1" ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("RayCast2D:enabled")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -224,9 +212,6 @@ tracks/2/keys = {
 } ]
 }
 
-[sub_resource type="RectangleShape2D" id=69]
-extents = Vector2( 73.5, 147 )
-
 [node name="UulgaComp" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 13
 collision_layer = 2
@@ -274,13 +259,3 @@ collide_with_bodies = false
 
 [node name="meleespawn" type="Position2D" parent="RayCast2D"]
 position = Vector2( 212, 8 )
-
-[node name="UulgaHitbox" type="Area2D" parent="."]
-position = Vector2( 212, -9.5 )
-collision_layer = 2
-collision_mask = 32
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="UulgaHitbox"]
-position = Vector2( -0.5, -0.5 )
-shape = SubResource( 69 )
-disabled = true

@@ -6,7 +6,7 @@
 extents = Vector2( 19, 6.5 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 23, 48 )
+extents = Vector2( 74, 161 )
 
 [sub_resource type="Animation" id=8]
 length = 0.001
@@ -63,7 +63,7 @@ position = Vector2( -9, -12 )
 shape = SubResource( 4 )
 disabled = true
 
-[node name="HurtsEnemies" type="Area2D" parent="."]
+[node name="HurtsEnemies" type="Area2D" parent="." groups=["uulgahurtsyou"]]
 collision_layer = 2
 collision_mask = 32
 

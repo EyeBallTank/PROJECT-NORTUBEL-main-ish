@@ -99,3 +99,5 @@ func detect_turn_around():
 func _on_EnemyHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
 		state = DEAD
+	if area.is_in_group("uulgahurtsyou"):
+		state = DEAD

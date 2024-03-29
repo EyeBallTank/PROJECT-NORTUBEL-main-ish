@@ -27,7 +27,6 @@ export var gravity: = 1450.0
 onready var animatedsprite = $AnimatedSprite
 onready var enemycheck = $RayCast2D
 
-onready var uulgahitbox = $UulgaHitbox
 onready var meleespawn = $RayCast2D/meleespawn
 
 onready var uulgastateteller = $CanvasLayer/UulgaStateTeller
