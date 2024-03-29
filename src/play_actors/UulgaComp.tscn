@@ -380,4 +380,4 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="meleespawn" type="Position2D" parent="RayCast2D"]
-position = Vector2( 229, 8 )
+position = Vector2( 177, 8 )
