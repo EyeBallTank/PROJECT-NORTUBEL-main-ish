@@ -28,7 +28,7 @@ onready var animatedsprite = $AnimatedSprite
 onready var enemycheck = $RayCast2D
 
 onready var uulgahitbox = $UulgaHitbox
-#onready var meleespawn = $meleespawn
+onready var meleespawn = $RayCast2D/meleespawn
 
 onready var uulgastateteller = $CanvasLayer/UulgaStateTeller
 onready var audioplayer = $AudioStreamPlayer
@@ -40,6 +40,9 @@ onready var timer = $Timer
 var vel: = Vector2.ZERO
 var direction: = Vector2.ZERO
 onready var Player = get_parent().get_node("Player")
+
+const MeleeAttack = preload("res://src/play_actors/uulga/UulgaMeleeTest.tscn")
+
 
 func _ready():
 	Signals.connect("player_died", self, "_on_Player_Died")
@@ -254,6 +257,12 @@ func see_to_attack():
 #	if not collider is StellaMain: return false
 #	if not collider is Companion: return false
 	return true
+
+func actual_attack():
+	var elec_hurt = MeleeAttack.instance()
+	get_tree().get_root().add_child(elec_hurt)
+	elec_hurt.global_position = meleespawn.global_position
+	timer.start(0.5)
 
 func return_to_move_follow():
 	state = FOLLOWME

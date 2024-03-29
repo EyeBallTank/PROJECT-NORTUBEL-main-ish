@@ -195,46 +195,37 @@ tracks/0/keys = {
 "values": [ "Attack1", "Attack2", "Attack3" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("UulgaHitbox/CollisionShape2D:disabled")
+tracks/1/path = NodePath("RayCast2D:enabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5, 1.1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ true, false, true ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("RayCast2D:enabled")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
 "times": PoolRealArray( 0, 2.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
-tracks/3/type = "method"
-tracks/3/path = NodePath(".")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 1.1 ),
-"transitions": PoolRealArray( 1 ),
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
+"args": [  ],
+"method": "actual_attack"
+}, {
 "args": [  ],
 "method": "return_to_move_follow"
 } ]
 }
 
 [sub_resource type="RectangleShape2D" id=69]
-extents = Vector2( 74, 146.5 )
+extents = Vector2( 73.5, 147 )
 
 [node name="UulgaComp" type="KinematicBody2D" groups=["protagonists"]]
 z_index = 13
@@ -281,14 +272,15 @@ collision_mask = 32
 collide_with_areas = true
 collide_with_bodies = false
 
+[node name="meleespawn" type="Position2D" parent="RayCast2D"]
+position = Vector2( 212, 8 )
+
 [node name="UulgaHitbox" type="Area2D" parent="."]
 position = Vector2( 212, -9.5 )
 collision_layer = 2
 collision_mask = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UulgaHitbox"]
+position = Vector2( -0.5, -0.5 )
 shape = SubResource( 69 )
 disabled = true
-
-[node name="meleespawn" type="Position2D" parent="."]
-position = Vector2( 212, -10 )
