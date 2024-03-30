@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekLargeTank.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekSmallTank.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/level prefabs/massag prefab/GrekYellowBasePlat.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/level prefabs/grek prefabs/GrekBlueBaseLift.tscn" type="PackedScene" id=35]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -203,3 +204,6 @@ position = Vector2( 3131, 3340 )
 
 [node name="GrekYellowBasePlat" parent="." instance=ExtResource( 34 )]
 position = Vector2( 2832, -135 )
+
+[node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
+position = Vector2( 3213, 273 )
