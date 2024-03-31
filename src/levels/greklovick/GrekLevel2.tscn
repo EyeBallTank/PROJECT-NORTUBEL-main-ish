@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/the grid bg.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek city bg.png" type="Texture" id=13]
+[ext_resource path="res://src/level prefabs/grek prefabs/GrekRoboSellTruck.tscn" type="PackedScene" id=14]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -114,3 +115,6 @@ boardname = "grek art the grid reference"
 [node name="Coin" parent="." instance=ExtResource( 11 )]
 position = Vector2( 358, 1486 )
 spritename = "greklovick coin"
+
+[node name="GrekRoboSellTruck" parent="." instance=ExtResource( 14 )]
+position = Vector2( 3548, 1108 )
