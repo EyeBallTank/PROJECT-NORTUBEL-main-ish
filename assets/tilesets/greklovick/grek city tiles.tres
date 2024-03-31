@@ -1,9 +1,10 @@
-[gd_resource type="TileSet" load_steps=6 format=2]
+[gd_resource type="TileSet" load_steps=7 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CITY TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CITY TILE PASSABLE.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK RED CAR TILE.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK BLUE CAR TILE.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tile sets/greklovick/GREK TRAFFIC LIGHTS.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -86,3 +87,17 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
+5/name = "GREK TRAFFIC LIGHTS.png 5"
+5/texture = ExtResource( 5 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 1856, 768 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
