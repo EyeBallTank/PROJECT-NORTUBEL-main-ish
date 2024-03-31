@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek city bg.png" type="Texture" id=13]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekRoboSellTruck.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekPoliceCar.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level prefabs/grek prefabs/GrekTaxiCar.tscn" type="PackedScene" id=16]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -122,3 +123,6 @@ position = Vector2( 3548, 1108 )
 
 [node name="GrekPoliceCar" parent="." instance=ExtResource( 15 )]
 position = Vector2( 4747, 1254 )
+
+[node name="GrekTaxiCar" parent="." instance=ExtResource( 16 )]
+position = Vector2( 5594, 1327 )
