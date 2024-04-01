@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkSunMoonPendulumtest.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/npc_actors/brink npc/FaygoNPC.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkFaygoPlat.tscn" type="PackedScene" id=13]
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -18,7 +21,6 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1245188, 1, 0, 1310724, 1, 0, 1376260, 1, 0, 1441796, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -33,7 +35,6 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0, 1441797, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -240, 1421 )
@@ -50,15 +51,25 @@ position = Vector2( -4, 1391 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="BrinkSeeSawPlatTest" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1170, 1232 )
+position = Vector2( 2890, 902 )
 
 [node name="BrinkSunMoonPendulumtest" parent="." instance=ExtResource( 8 )]
-position = Vector2( 836, 1024 )
+position = Vector2( 2778, 642 )
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 178, 1373 )
+position = Vector2( 2282, 914 )
 propname = "brinkprop pink mushroom"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
-position = Vector2( 186, 1504 )
+position = Vector2( 2114, 1246 )
 boardname = "brink art faygo and bonka"
+
+[node name="TradeItem" parent="." instance=ExtResource( 11 )]
+position = Vector2( 590, 1425 )
+spritename = "tradeitem brink faygo balloons"
+
+[node name="FaygoNPC" parent="." instance=ExtResource( 12 )]
+position = Vector2( 276, 1401 )
+
+[node name="BrinkFaygoPlat" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1142, 1555 )

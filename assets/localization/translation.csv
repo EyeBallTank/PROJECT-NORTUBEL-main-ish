@@ -1534,3 +1534,12 @@ Tenta ter o/a Companheiro(a) na escada lado-a-lado contigo, se quiseres!
 Depois, usa comandos e move verticalmente.
 Quando eles alcançam o topo/fundo das escada e saem, Companheiros
 mantêm estados equivalentes de seguir/correr."
+FAYGO_NPC_TALK_NOITEM,I'll promise to show you a cool magic trick if you find my balloons.,Eu prometo mostrar um truque de magia fixe se tu encontrares os meus balões.
+FAYGO_NPC_TALK_YESITEM,"Awesome, see? Pretty cool, huh?
+Seems the clowns that live here don't have any cool powers like this.
+Quite a shame, I must say.","Fixe, não é? Estás a ver?
+Parece que os palhaços daqui não têm poderes fixes como este.
+Mas que tristeza, não é?"
+FAYGO_NPC_HUG,I don't like getting hugs from strangers but sure.,Não gosto de ser abraçada por estranhos mas está bem.
+FAYGO_NPC_HURT,Your puny butter knife can't hurt me.,Essa tua faca de manteiga patética não me magoa.
+FAYGO_NPC_HONK,"Don't you dare even touch my nose, weirdo.","Nem te atreves tocar no meu nariz, esquisita."
