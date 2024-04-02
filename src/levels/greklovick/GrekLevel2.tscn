@@ -129,4 +129,4 @@ position = Vector2( 4747, 1254 )
 position = Vector2( 5594, 1327 )
 
 [node name="GrekTrainFront" parent="." instance=ExtResource( 17 )]
-position = Vector2( 5149, 709 )
+position = Vector2( 7589, 709 )
