@@ -1,10 +1,11 @@
-[gd_resource type="TileSet" load_steps=12 format=2]
+[gd_resource type="TileSet" load_steps=13 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK RAD TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK RAD TILE PASSABLE.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK TILE TRIM SEAM.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK DEAD TREE.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK DEAD TREE 2.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tile sets/greklovick/GREK DESTROYED BARRELS.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -319,3 +320,31 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 17/shape_one_way_margin = 0.0
 17/shapes = [  ]
 17/z_index = 0
+18/name = "GREK DESTROYED BARRELS.png 18"
+18/texture = ExtResource( 6 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 256, 0, 256, 256 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape_one_way = false
+18/shape_one_way_margin = 0.0
+18/shapes = [  ]
+18/z_index = 0
+19/name = "GREK DESTROYED BARRELS.png 19"
+19/texture = ExtResource( 6 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 256, 256 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape_one_way = false
+19/shape_one_way_margin = 0.0
+19/shapes = [  ]
+19/z_index = 0
