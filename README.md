@@ -189,6 +189,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Aegersum on FreeSound (Flamethrower sound)
 * AbuNijmeh on FreeSound (Shotgun sound)
 * pgi on FreeSound (Minigun sound)
+* Soundscape_Leuphana on Freesound (Amalia house quake sound)
 * Xiko__ on FreeSound (Zhark soldier alarm sound)
 * Pixabay (Explosion sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
