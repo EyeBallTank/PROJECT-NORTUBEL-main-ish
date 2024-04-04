@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=21 format=2]
+[gd_resource type="TileSet" load_steps=22 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CITY TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CITY TILE PASSABLE.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CRANE TILES.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK LARGE PIPE TEST.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK FRONT TRASH.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CYBORG SKULL.png" type="Texture" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -506,3 +507,17 @@ points = PoolVector2Array( 256, 320, 0, 320, 0, 128, 256, 128 )
 31/shape_one_way_margin = 0.0
 31/shapes = [  ]
 31/z_index = 0
+32/name = "GREK CYBORG SKULL.png 32"
+32/texture = ExtResource( 17 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 384, 384 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape_one_way = false
+32/shape_one_way_margin = 0.0
+32/shapes = [  ]
+32/z_index = 0
