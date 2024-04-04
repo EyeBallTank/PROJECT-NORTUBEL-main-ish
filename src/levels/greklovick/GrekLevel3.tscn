@@ -34,6 +34,7 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
+tile_data = PoolIntArray( 1703998, 44, 0, 1703999, 43, 0 )
 
 [node name="outlines" type="TileMap" parent="."]
 z_index = 17
