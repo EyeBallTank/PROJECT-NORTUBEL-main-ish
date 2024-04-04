@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=26 format=2]
+[gd_resource type="TileSet" load_steps=27 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK RAD TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK RAD TILE PASSABLE.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/sprites/tile sets/greklovick/BASIC SOLID OUTLINES.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK DESTROYED CARS.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK WASTELAND CARS.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/tile sets/greklovick/GREK DESTROYED HOUSE 1.png" type="Texture" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -801,3 +802,17 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 44/shape_one_way_margin = 0.0
 44/shapes = [  ]
 44/z_index = 0
+45/name = "GREK DESTROYED HOUSE 1.png 45"
+45/texture = ExtResource( 10 )
+45/tex_offset = Vector2( 0, 0 )
+45/modulate = Color( 1, 1, 1, 1 )
+45/region = Rect2( 0, 0, 1280, 768 )
+45/tile_mode = 0
+45/occluder_offset = Vector2( 0, 0 )
+45/navigation_offset = Vector2( 0, 0 )
+45/shape_offset = Vector2( 0, 0 )
+45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+45/shape_one_way = false
+45/shape_one_way_margin = 0.0
+45/shapes = [  ]
+45/z_index = 0
