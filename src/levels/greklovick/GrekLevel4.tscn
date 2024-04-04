@@ -87,7 +87,7 @@ collision_newsize = Vector2( 32, 32 )
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 391, 1585 )
 new_scene = "res://screens/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil.tscn"
-spritename = "greklovick greendoor"
+spritename = "altgrek greendoor"
 customtext = "tf00r1"
 
 [node name="GrekAsteroidHazard" parent="." instance=ExtResource( 11 )]

@@ -635,6 +635,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator1"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1"]
@@ -658,7 +659,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator2"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2"]
@@ -683,7 +683,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator3"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator3"]
@@ -708,6 +707,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator4"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator4"]
@@ -731,7 +731,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator5"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator5"]
@@ -756,7 +755,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator6"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator6"]
@@ -812,7 +810,7 @@ position = Vector2( 3287, 1492 )
 [node name="Door" parent="." instance=ExtResource( 7 )]
 position = Vector2( 7075, 1208 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
-spritename = "greklovick greendoor"
+spritename = "altgrek greendoor"
 customtext = "zrkv1l"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
@@ -871,7 +869,6 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
-frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
