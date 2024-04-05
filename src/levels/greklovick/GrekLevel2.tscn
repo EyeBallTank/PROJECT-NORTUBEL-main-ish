@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -18,6 +18,7 @@
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekTaxiCar.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekTrainFront.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level prefabs/grek prefabs/GrekGarbageShip.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/npc_actors/grek npc/SamathaNPC.tscn" type="PackedScene" id=19]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -141,3 +142,6 @@ position = Vector2( 7589, 709 )
 
 [node name="GrekGarbageShip" parent="." instance=ExtResource( 18 )]
 position = Vector2( 7595, 1398 )
+
+[node name="SamathaNPC" parent="." instance=ExtResource( 19 )]
+position = Vector2( 7041, 2070 )
