@@ -52,6 +52,9 @@ position = Vector2( -157, 1380 )
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( -157, 1380 )
 
+[node name="UulgaComp" parent="." instance=ExtResource( 15 )]
+position = Vector2( -479, 1323 )
+
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 7 )]
@@ -95,6 +98,3 @@ position = Vector2( 1864, 1551 )
 [node name="ArtBook" parent="." instance=ExtResource( 14 )]
 position = Vector2( -492, 1653 )
 boardname = "herrko art tsoovukot knight reference"
-
-[node name="UulgaComp" parent="." instance=ExtResource( 15 )]
-position = Vector2( -479, 1323 )
