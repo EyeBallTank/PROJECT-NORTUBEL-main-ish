@@ -1,4 +1,4 @@
-[gd_scene load_steps=232 format=2]
+[gd_scene load_steps=234 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -117,6 +117,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art medic rad crew reference.png" type="Texture" id=115]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art faygo and bonka.png" type="Texture" id=116]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art samatha reference.png" type="Texture" id=117]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art ganyah and zarina.png" type="Texture" id=118]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -503,6 +504,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=46]
 atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=133]
+atlas = ExtResource( 118 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=87]
@@ -999,6 +1004,11 @@ animations = [ {
 "name": "nort art delusional dream",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 133 ) ],
+"loop": false,
+"name": "nort art ganyah and zarina",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 87 ) ],
 "loop": false,
 "name": "nort art how 3 older arm heart",
@@ -1113,7 +1123,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "grek art samatha reference"
+animation = "nort art ganyah and zarina"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
