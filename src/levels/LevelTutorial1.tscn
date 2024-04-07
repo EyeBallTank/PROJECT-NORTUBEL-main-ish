@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,6 +32,9 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 16.png" type="Texture" id=30]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 15.png" type="Texture" id=31]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 7.png" type="Texture" id=32]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 36.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 12.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 37.png" type="Texture" id=35]
 
 [node name="LevelTutorial1" type="Node2D"]
 light_mask = 4
@@ -278,3 +281,18 @@ texture = ExtResource( 6 )
 position = Vector2( 6720, 424 )
 scale = Vector2( 0.539, 0.539 )
 texture = ExtResource( 32 )
+
+[node name="TutorialBoard12" type="Sprite" parent="."]
+position = Vector2( 6456, -2323 )
+scale = Vector2( 0.891713, 0.891713 )
+texture = ExtResource( 34 )
+
+[node name="TutorialBoard36" type="Sprite" parent="."]
+position = Vector2( 7002, -2327 )
+scale = Vector2( 0.816845, 0.816845 )
+texture = ExtResource( 33 )
+
+[node name="TutorialBoard37" type="Sprite" parent="."]
+position = Vector2( 7091, -1967 )
+scale = Vector2( 0.81797, 0.81797 )
+texture = ExtResource( 35 )

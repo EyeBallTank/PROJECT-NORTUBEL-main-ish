@@ -114,7 +114,6 @@ position = Vector2( 512, 190 )
 scale = Vector2( 0.842246, 0.842246 )
 frames = SubResource( 7 )
 animation = "tutorial comp ladder revised"
-frame = 2
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
