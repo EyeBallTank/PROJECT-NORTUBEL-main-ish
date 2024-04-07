@@ -171,9 +171,9 @@ text = "CREDITS_B"
 
 [node name="QuitButton" type="TextureButton" parent="MenuMain"]
 visible = false
-margin_top = 155.0
+margin_top = 186.0
 margin_right = 304.0
-margin_bottom = 182.0
+margin_bottom = 213.0
 focus_mode = 1
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
