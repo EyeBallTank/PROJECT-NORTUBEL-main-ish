@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/krimbart dojd crossover.png-109d7e8a414887d630c532d93b2af184.stex"
+path="res://.import/krimbart dojd crossover v2.png-12a9a862256e883e8a86d88e1e05aeb5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/krimbstone/krimbart dojd crossover.png"
-dest_files=[ "res://.import/krimbart dojd crossover.png-109d7e8a414887d630c532d93b2af184.stex" ]
+source_file="res://assets/sprites/art gallery/krimbstone/krimbart dojd crossover v2.png"
+dest_files=[ "res://.import/krimbart dojd crossover v2.png-12a9a862256e883e8a86d88e1e05aeb5.stex" ]
 
 [params]
 

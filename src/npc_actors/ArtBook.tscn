@@ -5,7 +5,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.gd" type="Script" id=3]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/art gallery/hirdrih/artgallery hirdrih placeholder.png" type="Texture" id=5]
-[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart dojd crossover.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart dojd crossover v2.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art summer time.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart ricotto reference.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker backstory.png" type="Texture" id=9]
@@ -378,7 +378,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 10 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=134]
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -834,7 +834,7 @@ animations = [ {
 "name": "krimbart booker reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 9 ) ],
+"frames": [ SubResource( 134 ) ],
 "loop": false,
 "name": "krimbart dojd crossover",
 "speed": 0.0
