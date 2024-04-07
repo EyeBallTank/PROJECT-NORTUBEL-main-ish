@@ -217,6 +217,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * horbror (Feedback, also for adding a Nortubel reference to his game Dreams of Joy Departed which in turn lead to this game referencing DOJD)
 * Slapson/Slapsoff (Faygo cameo)
 * FairyGodBomber (Ganyah cameo)
+* Hemoglobinworld (Crossover with DreadHunter)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
