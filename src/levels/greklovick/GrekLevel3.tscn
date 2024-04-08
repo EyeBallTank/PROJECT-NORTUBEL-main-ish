@@ -98,3 +98,6 @@ spritename = "greklovick pushable"
 
 [node name="XemarokkNPC" parent="." instance=ExtResource( 14 )]
 position = Vector2( 6670, -532 )
+
+[node name="ArtBook4" parent="." instance=ExtResource( 11 )]
+position = Vector2( 7984, -393 )

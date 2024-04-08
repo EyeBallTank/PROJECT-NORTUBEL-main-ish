@@ -62,7 +62,7 @@ position = Vector2( 2385, 1386 )
 
 [node name="OneCharDoor" parent="." instance=ExtResource( 1 )]
 position = Vector2( 4573, -1534 )
-new_scene = "res://src/levels/LevelTemplate7.tscn"
+new_scene = "res://screens/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour.tscn"
 spritename = "massagcoav greendoor"
 customtext = "k4rl44"
 
