@@ -18,11 +18,11 @@ theme = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 382.0
-margin_bottom = 2597.0
+margin_bottom = 2617.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 382.0
-margin_bottom = 2597.0
+margin_bottom = 2617.0
 custom_fonts/font = ExtResource( 1 )
 text = " 
 
@@ -143,6 +143,7 @@ text = "
    Faygo (Slapson/Slapsoff)
    Ganyah (FairyGodBomber)
    Anna Fresser (DreadHunter/Hemoglobinworld)
+   Xemarokk (MarkerSlayer/PraiseAltman111)
 
                   INSPIRATION/INSPIRAÇÕES
                   REFERENCE/REFERÊNCIAS

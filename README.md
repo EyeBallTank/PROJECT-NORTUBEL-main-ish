@@ -218,6 +218,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Slapson/Slapsoff (Faygo cameo)
 * FairyGodBomber (Ganyah cameo)
 * Hemoglobinworld (Crossover with DreadHunter)
+* MarkerSlayer/PraiseAltman111 (Xemarokk cameo)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
