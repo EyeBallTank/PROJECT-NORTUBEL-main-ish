@@ -1,4 +1,4 @@
-[gd_scene load_steps=238 format=2]
+[gd_scene load_steps=240 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -120,6 +120,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art ganyah and zarina.png" type="Texture" id=118]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art dreadhunter crossover.png" type="Texture" id=119]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art xemarokk vs yiegour.png" type="Texture" id=120]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art simo reference.png" type="Texture" id=121]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -270,6 +271,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=132]
 atlas = ExtResource( 117 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=137]
+atlas = ExtResource( 121 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=60]
@@ -724,6 +729,11 @@ animations = [ {
 "name": "grek art samatha reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 137 ) ],
+"loop": false,
+"name": "grek art simo reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 60 ) ],
 "loop": false,
 "name": "grek art tfoorie reference",
@@ -1143,7 +1153,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "grek art xemarokk vs yiegour"
+animation = "grek art simo reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
