@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -11,13 +11,12 @@
 [ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeen.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/npc_actors/grek npc/Xemarokk.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=14]
-[ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
-[ext_resource path="res://src/behind_the_scenes/LowGravity.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -43,7 +42,7 @@ tile_data = PoolIntArray( -2359229, 2, 0, -2359228, 2, 0, -2359227, 2, 0, -23592
 position = Vector2( 2295, -502 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( -24, -385 )
+position = Vector2( 57, -360 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1671, -564 )
@@ -60,11 +59,6 @@ position = Vector2( 1836, -583 )
 
 [node name="StellaComp" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1936, -610 )
-
-[node name="Water" parent="." instance=ExtResource( 18 )]
-position = Vector2( 3693, -801 )
-scale = Vector2( 40, 160 )
-collision_newsize = Vector2( 40, 160 )
 
 [node name="SoccerBallBag" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3001, -334 )
@@ -86,13 +80,16 @@ position = Vector2( 972, -1048 )
 [node name="HerrkoRedGhalbeen" parent="." instance=ExtResource( 9 )]
 position = Vector2( 4341, -564 )
 
+[node name="UulgaComp" parent="." instance=ExtResource( 12 )]
+position = Vector2( 284, -402 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "test"
 anims/RESET = SubResource( 1 )
 anims/test = SubResource( 2 )
 
-[node name="XemarokkNPC" parent="." instance=ExtResource( 12 )]
-position = Vector2( 606, -338 )
+[node name="HerrkoRedHorg" parent="." instance=ExtResource( 15 )]
+position = Vector2( -388, -630 )
 
-[node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 15 )]
-position = Vector2( 283, -232 )
+[node name="HerrkoRedHorg2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 781, -615 )
