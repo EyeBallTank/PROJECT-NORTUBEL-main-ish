@@ -865,7 +865,6 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
-frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
