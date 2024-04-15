@@ -101,116 +101,116 @@ position = Vector2( 0, 1322 )
 worldname = "greklovick2"
 
 [node name="Jumppad" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1516, 1462 )
+position = Vector2( 1380, 3054 )
 spritename = "greklovick jumppad"
 
 [node name="Blue key" parent="." instance=ExtResource( 7 )]
-position = Vector2( 509, -148 )
+position = Vector2( 405, 2444 )
 spritename = "greklovick blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 14 )]
-position = Vector2( 663, -143 )
+position = Vector2( 495, 2441 )
 spritename = "greklovick redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 13 )]
-position = Vector2( 837, -157 )
+position = Vector2( 557, 2387 )
 spritename = "greklovick yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1056, -162 )
+position = Vector2( 520, 2830 )
 spritename = "greklovick bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1242, -169 )
+position = Vector2( 786, 2887 )
 spritename = "greklovick reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1489, -172 )
+position = Vector2( 1025, 2788 )
 spritename = "greklovick yeldoor"
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1523, 1202 )
+position = Vector2( 1323, 2690 )
 spritename = "greklovick movplatvert"
 
 [node name="LoreBook" parent="." instance=ExtResource( 16 )]
-position = Vector2( -912, -64 )
+position = Vector2( -568, 2264 )
 spritename = "greklovick lorebook"
 
 [node name="LoreBook2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1146, 1465 )
+position = Vector2( 914, 3321 )
 customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2718, -344 )
+position = Vector2( -666, 2520 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch One Greklovick.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
-position = Vector2( 2640, -332 )
+position = Vector2( -744, 2532 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch Two Greklovick.tres"
 
 [node name="LevelProp" parent="." instance=ExtResource( 20 )]
-position = Vector2( 874, 1361 )
+position = Vector2( 306, 3153 )
 propname = "grekprop pillartech computer"
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 18 )]
-position = Vector2( 759, 1394 )
+position = Vector2( 671, 2522 )
 greenbarrierskin = "res://assets/sprites/level_object_sprites/greklovick/GreenBarrier Greklovick.tres"
 
 [node name="GreenBarrier2" parent="." instance=ExtResource( 18 )]
-position = Vector2( 933, 1394 )
+position = Vector2( 845, 2522 )
 animation1 = "CLOSED"
 animation2 = "OPEN"
 greenbarrierskin = "res://assets/sprites/level_object_sprites/greklovick/GreenBarrier Greklovick.tres"
 
 [node name="Door" parent="." instance=ExtResource( 21 )]
-position = Vector2( 4956, -50 )
+position = Vector2( 1860, 2774 )
 new_scene = "res://src/levels/greklovick/GrekLevel2.tscn"
 spritename = "greklovick greendoor"
 customtext = "y13g0r"
 
 [node name="GrekAmmoDispenser" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2155, -233 )
+position = Vector2( 1083, 2215 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 23 )]
-position = Vector2( 642, -258 )
+position = Vector2( 170, 2518 )
 boardname = "grek art yiegour reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 23 )]
-position = Vector2( -380, -92 )
+position = Vector2( -28, 2340 )
 boardname = "grek art multigun reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 23 )]
-position = Vector2( 296, -1036 )
+position = Vector2( -320, 2220 )
 boardname = "grek art isaac reference"
 
 [node name="GrekElecTest" parent="." instance=ExtResource( 25 )]
 position = Vector2( 74, -142 )
 
 [node name="GrekMultigunSecurity" parent="." instance=ExtResource( 24 )]
-position = Vector2( 74, -142 )
+position = Vector2( -958, 2202 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2516, -318 )
+position = Vector2( 1476, 2330 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Blue switch Greklovick.tres"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2600, -112 )
+position = Vector2( -784, 2752 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/greklovick/Yellow switch Greklovick.tres"
 
 [node name="GrekTreatmillHazard" parent="." instance=ExtResource( 28 )]
-position = Vector2( 5029, 1676 )
+position = Vector2( 341, 4428 )
 
 [node name="GrekMovingCrateTrackBased" parent="." instance=ExtResource( 29 )]
-position = Vector2( 1956, 2435 )
+position = Vector2( -1044, 4131 )
 
 [node name="GrekLargeTank" parent="." instance=ExtResource( 32 )]
-position = Vector2( 5302, 2802 )
+position = Vector2( 4230, 3514 )
 
 [node name="GrekSmallTank" parent="." instance=ExtResource( 33 )]
-position = Vector2( 3131, 3340 )
+position = Vector2( 2027, 3764 )
 
 [node name="GrekYellowBasePlat" parent="." instance=ExtResource( 34 )]
-position = Vector2( 2832, -135 )
+position = Vector2( -552, 2729 )
 
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
-position = Vector2( 3213, 273 )
+position = Vector2( -171, 3137 )

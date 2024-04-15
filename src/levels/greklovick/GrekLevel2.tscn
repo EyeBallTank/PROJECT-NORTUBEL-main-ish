@@ -83,65 +83,65 @@ position = Vector2( 246, 1456 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2096, 2094 )
+position = Vector2( 580, 2400 )
 spritename = "greklovick movplathoriz"
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2331, 1370 )
+position = Vector2( -531, 2388 )
 spritename = "greklovick fallplat"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
-position = Vector2( 736, 1557 )
+position = Vector2( 2779, 3167 )
 new_scene = "res://src/levels/greklovick/GrekLevel3.tscn"
 spritename = "altgrek greendoor"
 customtext = "clr1ty"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2099, 2651 )
+position = Vector2( 1036, 3217 )
 boardname = "grek art clarity reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1771, 2640 )
+position = Vector2( 708, 3206 )
 boardname = "grek art bolt reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1458, 2648 )
+position = Vector2( 395, 3214 )
 boardname = "grek art raymond reference"
 
 [node name="ArtBook4" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1147, 2654 )
+position = Vector2( 84, 3220 )
 boardname = "grek art grekpolice reference"
 
 [node name="ArtBook5" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2410, 2646 )
+position = Vector2( 1347, 3212 )
 boardname = "grek art grekmerc reference"
 
 [node name="ArtBook6" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2772, 2647 )
+position = Vector2( 1709, 3213 )
 boardname = "grek art lahrn reference"
 
 [node name="ArtBook7" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3162, 2649 )
+position = Vector2( 2099, 3215 )
 boardname = "grek art the grid reference"
 
 [node name="Coin" parent="." instance=ExtResource( 11 )]
-position = Vector2( 438, 1454 )
+position = Vector2( 2447, 2912 )
 spritename = "greklovick coin"
 
 [node name="GrekRoboSellTruck" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3548, 1108 )
+position = Vector2( 3672, 3337 )
 
 [node name="GrekPoliceCar" parent="." instance=ExtResource( 15 )]
-position = Vector2( 4747, 1254 )
+position = Vector2( 4838, 3234 )
 
 [node name="GrekTaxiCar" parent="." instance=ExtResource( 16 )]
-position = Vector2( 5594, 1327 )
+position = Vector2( 5685, 3307 )
 
 [node name="GrekTrainFront" parent="." instance=ExtResource( 17 )]
-position = Vector2( 7589, 709 )
+position = Vector2( 1943, 3571 )
 
 [node name="GrekGarbageShip" parent="." instance=ExtResource( 18 )]
-position = Vector2( 7595, 1398 )
+position = Vector2( 4574, 4045 )
 
 [node name="SamathaNPC" parent="." instance=ExtResource( 19 )]
-position = Vector2( 7041, 2070 )
+position = Vector2( 2844, 3688 )

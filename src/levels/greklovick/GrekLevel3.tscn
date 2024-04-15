@@ -71,39 +71,39 @@ position = Vector2( -102, 1272 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="Health Pickup" parent="." instance=ExtResource( 7 )]
-position = Vector2( 701, 1397 )
+position = Vector2( 1366, 2203 )
 spritename = "greklovick health"
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 8 )]
-position = Vector2( 989, 1416 )
+position = Vector2( 1695, 2353 )
 spritename = "greklovick floater"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1800, 1392 )
+position = Vector2( 2385, 2481 )
 new_scene = "res://src/levels/greklovick/GrekLevel4.tscn"
 spritename = "greklovick greendoor"
 customtext = "kl3rrr"
 
 [node name="GrekScalper" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2686, 326 )
+position = Vector2( 3069, 2241 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1321, 1423 )
+position = Vector2( 2027, 2360 )
 boardname = "grek art kler reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2068, 1293 )
+position = Vector2( 2653, 2382 )
 boardname = "grek art samatha reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 407, 1514 )
+position = Vector2( 1042, 2189 )
 boardname = "grek art fragile reference"
 
 [node name="ZharkSoldier" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3524, 1549 )
+position = Vector2( 3464, 2184 )
 
 [node name="Pushable" parent="." instance=ExtResource( 13 )]
-position = Vector2( 5500, -1345 )
+position = Vector2( 3817, 2153 )
 spritename = "greklovick pushable"
 
 [node name="XemarokkNPC" parent="." instance=ExtResource( 14 )]
@@ -114,5 +114,5 @@ position = Vector2( 7984, -393 )
 boardname = "grek art xemarokk vs yiegour"
 
 [node name="ArtBook5" parent="." instance=ExtResource( 11 )]
-position = Vector2( -302, 1607 )
+position = Vector2( 635, 2161 )
 boardname = "grek art simo reference"

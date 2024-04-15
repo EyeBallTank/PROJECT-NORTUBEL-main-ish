@@ -91,38 +91,38 @@ visible = false
 position = Vector2( 3203, 1536 )
 
 [node name="LowGravity" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1350, 1511 )
+position = Vector2( 1226, 2094 )
 scale = Vector2( 32, 32 )
 collision_newsize = Vector2( 32, 32 )
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
-position = Vector2( 391, 1585 )
+position = Vector2( 272, 2411 )
 new_scene = "res://screens/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil.tscn"
 spritename = "altgrek greendoor"
 customtext = "tf00r1"
 
 [node name="GrekAsteroidHazard" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2346, 1200 )
+position = Vector2( 1633, 2275 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1617, 1527 )
+position = Vector2( 1515, 2076 )
 boardname = "grek art tfoorie reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2055, 1527 )
+position = Vector2( 1863, 2081 )
 boardname = "grek art venus base reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2410, 1549 )
+position = Vector2( 2206, 2052 )
 boardname = "grek art enemy showcase"
 
 [node name="ArtBook4" parent="." instance=ExtResource( 12 )]
-position = Vector2( 66, 1531 )
+position = Vector2( -126, 2464 )
 boardname = "grek art medic rad crew reference"
 
 [node name="Pushable" parent="." instance=ExtResource( 13 )]
-position = Vector2( 886, 1447 )
+position = Vector2( 756, 2199 )
 spritename = "greklovick pushable"
 
 [node name="GrekScorbrion" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2037, 570 )
+position = Vector2( 2586, 2001 )
