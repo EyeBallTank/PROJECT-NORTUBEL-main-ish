@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek radio tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/grek npc/Xemarokk.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek rad bg.png" type="Texture" id=15]
+[ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=16]
 
 [node name="GrekLevel3" type="Node2D"]
 
@@ -116,3 +117,6 @@ boardname = "grek art xemarokk vs yiegour"
 [node name="ArtBook5" parent="." instance=ExtResource( 11 )]
 position = Vector2( 635, 2161 )
 boardname = "grek art simo reference"
+
+[node name="PoisonHitbox" parent="." instance=ExtResource( 16 )]
+position = Vector2( 10149, 2433 )

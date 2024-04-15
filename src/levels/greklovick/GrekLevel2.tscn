@@ -84,11 +84,11 @@ position = Vector2( 246, 1456 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 7 )]
-position = Vector2( 580, 2400 )
+position = Vector2( 1988, 1648 )
 spritename = "greklovick movplathoriz"
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 8 )]
-position = Vector2( -531, 2388 )
+position = Vector2( 2365, 1588 )
 spritename = "greklovick fallplat"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
@@ -126,7 +126,7 @@ position = Vector2( 2099, 3215 )
 boardname = "grek art the grid reference"
 
 [node name="Coin" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2447, 2912 )
+position = Vector2( 671, 1480 )
 spritename = "greklovick coin"
 
 [node name="GrekRoboSellTruck" parent="." instance=ExtResource( 14 )]
@@ -145,4 +145,4 @@ position = Vector2( 1943, 3571 )
 position = Vector2( 4574, 4045 )
 
 [node name="SamathaNPC" parent="." instance=ExtResource( 19 )]
-position = Vector2( 2844, 3688 )
+position = Vector2( 6438, 3409 )
