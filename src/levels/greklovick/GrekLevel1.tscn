@@ -217,10 +217,14 @@ position = Vector2( 2027, 3764 )
 position = Vector2( 6978, 673 )
 
 [node name="Platform" parent="GrekYellowBasePlat" index="0"]
-position = Vector2( -2, -1 )
+position = Vector2( -2, 384 )
 
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
 position = Vector2( 11202, 1603 )
 
+[node name="Platform" parent="GrekBlueBaseLift" index="0"]
+position = Vector2( -2, 359 )
+
 [editable path="GrekMovingCrateTrackBased"]
 [editable path="GrekYellowBasePlat"]
+[editable path="GrekBlueBaseLift"]
