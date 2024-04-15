@@ -134,6 +134,12 @@ spritename = "greklovick pushable"
 [node name="GrekScorbrion" parent="." instance=ExtResource( 14 )]
 position = Vector2( 9353, -2975 )
 
+[node name="GrekScorbrion3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 10036, -1944 )
+
+[node name="GrekScorbrion4" parent="." instance=ExtResource( 14 )]
+position = Vector2( 12361, -2747 )
+
 [node name="GrekScorbrion2" parent="." instance=ExtResource( 14 )]
 position = Vector2( 10719, -809 )
 
