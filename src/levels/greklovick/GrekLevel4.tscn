@@ -172,11 +172,11 @@ position = Vector2( 9771, 187 )
 spritename = "greklovick bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 22 )]
-position = Vector2( 9771, 187 )
+position = Vector2( 10019, 187 )
 spritename = "greklovick reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 23 )]
-position = Vector2( 9771, 187 )
+position = Vector2( 9498, 190 )
 spritename = "greklovick yeldoor"
 
 [editable path="GrekAsteroidHazard"]
