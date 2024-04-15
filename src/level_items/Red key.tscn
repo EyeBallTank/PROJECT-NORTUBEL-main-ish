@@ -191,7 +191,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 4, 0 )
 frames = SubResource( 5 )
-animation = "lahiurn redkey"
+animation = "nortubel redkey"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 0 )
