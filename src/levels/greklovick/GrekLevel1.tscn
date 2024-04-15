@@ -170,7 +170,10 @@ spritename = "greklovick greendoor"
 customtext = "y13g0r"
 
 [node name="GrekAmmoDispenser" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1083, 2215 )
+position = Vector2( 6667, 431 )
+
+[node name="GrekAmmoDispenser2" parent="." instance=ExtResource( 22 )]
+position = Vector2( 7931, -97 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 23 )]
 position = Vector2( 170, 2518 )
@@ -219,4 +222,5 @@ position = Vector2( -2, -1 )
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
 position = Vector2( 11202, 1603 )
 
+[editable path="GrekMovingCrateTrackBased"]
 [editable path="GrekYellowBasePlat"]

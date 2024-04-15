@@ -10,7 +10,7 @@ extents = Vector2( 96, 15 )
 
 [sub_resource type="Curve2D" id=3]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 3286, -1568, 0, 0, 0, 0, 3288, -1944 )
+"points": PoolVector2Array( 0, 0, 0, 0, 3288, -656, 0, 0, 0, 0, 3288, -656, 0, 0, 0, 0, 2904, -656, 0, 0, 0, 0, 2904, -16, 0, 0, 0, 0, 2456, -16, 0, 0, 0, 0, 2456, -3160, 0, 0, 0, 0, 3288, -3160, 0, 0, 0, 0, 3288, -656 )
 }
 
 [sub_resource type="Animation" id=5]
@@ -54,7 +54,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "ride"
-length = 4.0
+length = 18.7
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Path2D/PathFollow2D:offset")
@@ -63,10 +63,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2, 4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 1, 3, 8.8, 12, 18.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 376.069, 0.0 ]
+"values": [ 0.0, 391.821, 1773.93, 4603.26, 5670.68, 7947.69 ]
 }
 
 [node name="GrekMovingCrateTrackBased" type="Node2D"]
@@ -102,7 +102,7 @@ z_index = 16
 curve = SubResource( 3 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( 3286.88, -1734.03 )
+position = Vector2( 3288, -656 )
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
