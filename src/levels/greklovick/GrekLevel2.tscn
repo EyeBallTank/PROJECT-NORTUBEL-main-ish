@@ -180,7 +180,12 @@ position = Vector2( 9058, 2441 )
 spritename = "greklovick movplatvert"
 
 [node name="MovingPlatHorizLonger" parent="." instance=ExtResource( 21 )]
-position = Vector2( 13005, -332 )
+position = Vector2( 13005, -428 )
+spritename = "greklovick movplathoriz"
+
+[node name="MovingPlatHorizLonger2" parent="." instance=ExtResource( 21 )]
+position = Vector2( 13005, -196 )
+animation = "HorizontalPlat2"
 spritename = "greklovick movplathoriz"
 
 [node name="Ladder" parent="." instance=ExtResource( 22 )]
