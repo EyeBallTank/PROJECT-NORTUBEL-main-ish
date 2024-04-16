@@ -171,8 +171,12 @@ position = Vector2( 12622, 713 )
 position = Vector2( 17552, 1758 )
 spritename = "greklovick movplatvert"
 
+[node name="MovingPlatVertiLonger4" parent="." instance=ExtResource( 20 )]
+position = Vector2( 25264, 2870 )
+spritename = "greklovick movplatvert"
+
 [node name="MovingPlatVertiLonger2" parent="." instance=ExtResource( 20 )]
-position = Vector2( 4371, 2545 )
+position = Vector2( 4371, 2617 )
 spritename = "greklovick movplatvert"
 
 [node name="MovingPlatVertiLonger3" parent="." instance=ExtResource( 20 )]
