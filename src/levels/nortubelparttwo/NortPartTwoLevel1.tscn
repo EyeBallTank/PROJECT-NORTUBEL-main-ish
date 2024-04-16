@@ -154,7 +154,7 @@ position = Vector2( 1659, 714 )
 position = Vector2( 1690, 499 )
 
 [node name="RedDoor" parent="." instance=ExtResource( 17 )]
-position = Vector2( 6206, 1025 )
+position = Vector2( 6206, 1024 )
 
 [node name="CrusherBell" parent="." instance=ExtResource( 18 )]
 position = Vector2( 3274, -291 )

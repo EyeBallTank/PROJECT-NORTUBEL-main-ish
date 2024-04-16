@@ -202,9 +202,9 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 5.72205e-06 )
-scale = Vector2( 0.85906, 0.844884 )
+scale = Vector2( 0.883, 0.856 )
 frames = SubResource( 6 )
-animation = "herrko yeldoor"
+animation = "nortubel yeldoor"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

@@ -194,7 +194,7 @@ script = ExtResource( 2 )
 position = Vector2( 3.8147e-06, 9.53674e-07 )
 scale = Vector2( 0.882759, 0.856187 )
 frames = SubResource( 6 )
-animation = "herrko bludoor"
+animation = "nortubel bludoor"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

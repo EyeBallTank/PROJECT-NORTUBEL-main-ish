@@ -124,7 +124,7 @@ position = Vector2( 2057, -1962 )
 position = Vector2( -2159, -2083 )
 
 [node name="YellowDoor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 1793.38, -957.425 )
+position = Vector2( 1793.38, -958.425 )
 
 [node name="FG" type="TileMap" parent="."]
 z_index = 15

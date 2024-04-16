@@ -199,7 +199,7 @@ position = Vector2( 15553, 641 )
 spritename = "greklovick reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 23 )]
-position = Vector2( 15744, 643 )
+position = Vector2( 15744, 640 )
 spritename = "greklovick yeldoor"
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 24 )]

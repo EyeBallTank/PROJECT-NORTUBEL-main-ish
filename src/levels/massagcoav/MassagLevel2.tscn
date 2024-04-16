@@ -276,7 +276,7 @@ position = Vector2( 5393, -417 )
 spritename = "massagcoav blukey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 10 )]
-position = Vector2( 10049, -579 )
+position = Vector2( 10049, -576 )
 spritename = "massagcoav bludoor"
 
 [node name="McSherryNPC" parent="." instance=ExtResource( 11 )]
