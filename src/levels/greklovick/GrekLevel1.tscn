@@ -118,7 +118,7 @@ position = Vector2( 11998, -111 )
 spritename = "greklovick yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 12 )]
-position = Vector2( 18899, -251 )
+position = Vector2( 19371, 161 )
 spritename = "greklovick bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 10 )]
@@ -126,7 +126,7 @@ position = Vector2( 18253, -185 )
 spritename = "greklovick reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 18688, -55 )
+position = Vector2( 19082, 579 )
 spritename = "greklovick yeldoor"
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 15 )]
@@ -146,11 +146,11 @@ position = Vector2( 4121, 2822 )
 customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 17 )]
-position = Vector2( 18107, 426 )
+position = Vector2( 18419, 583 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch One Greklovick.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
-position = Vector2( 18419, 389 )
+position = Vector2( 18445, -51 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch Two Greklovick.tres"
 
 [node name="LevelProp" parent="." instance=ExtResource( 20 )]
