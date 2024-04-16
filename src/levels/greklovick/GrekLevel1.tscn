@@ -217,6 +217,9 @@ position = Vector2( 7008, 2720 )
 [node name="GrekMovingCrateTrackBased" parent="." instance=ExtResource( 29 )]
 position = Vector2( 5770, 2164 )
 
+[node name="KinematicBody2D" parent="GrekMovingCrateTrackBased" index="0"]
+position = Vector2( 3288, -656 )
+
 [node name="GrekLargeTank" parent="." instance=ExtResource( 32 )]
 position = Vector2( 16305, 954 )
 
