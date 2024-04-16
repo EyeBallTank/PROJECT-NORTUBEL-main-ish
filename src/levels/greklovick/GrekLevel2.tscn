@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/MovingPlatHorizLonger.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -197,3 +198,33 @@ collision_newsize = Vector2( 16, 144 )
 position = Vector2( 22034, 884 )
 scale = Vector2( 8, 112 )
 collision_newsize = Vector2( 8, 112 )
+
+[node name="jump thru" parent="." instance=ExtResource( 23 )]
+position = Vector2( 8064, 768 )
+scale = Vector2( 32, 8 )
+collision_newsize = Vector2( 32, 8 )
+
+[node name="jump thru2" parent="." instance=ExtResource( 23 )]
+position = Vector2( 8064, 960 )
+scale = Vector2( 32, 8 )
+collision_newsize = Vector2( 32, 8 )
+
+[node name="jump thru6" parent="." instance=ExtResource( 23 )]
+position = Vector2( 21184, 1344 )
+scale = Vector2( 32, 8 )
+collision_newsize = Vector2( 32, 8 )
+
+[node name="jump thru3" parent="." instance=ExtResource( 23 )]
+position = Vector2( 8064, 1152 )
+scale = Vector2( 32, 8 )
+collision_newsize = Vector2( 32, 8 )
+
+[node name="jump thru4" parent="." instance=ExtResource( 23 )]
+position = Vector2( 8128, 1344 )
+scale = Vector2( 40, 8 )
+collision_newsize = Vector2( 40, 8 )
+
+[node name="jump thru5" parent="." instance=ExtResource( 23 )]
+position = Vector2( 20096, 1920 )
+scale = Vector2( 40, 8 )
+collision_newsize = Vector2( 40, 8 )
