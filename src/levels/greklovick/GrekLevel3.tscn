@@ -118,10 +118,6 @@ position = Vector2( 10042, -680 )
 position = Vector2( 4916, -1193 )
 spritename = "greklovick pushable"
 
-[node name="Pushable2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 15360, -885 )
-spritename = "greklovick pushable"
-
 [node name="XemarokkNPC" parent="." instance=ExtResource( 14 )]
 position = Vector2( 6670, -532 )
 
