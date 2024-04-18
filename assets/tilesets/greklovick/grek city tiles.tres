@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=76 format=2]
+[gd_resource type="TileSet" load_steps=77 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CITY TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CITY TILE PASSABLE.png" type="Texture" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK CLOSED STORE.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK BIKE.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/tile sets/greklovick/GREK WEIRD BRIDGE V2.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/tile sets/greklovick/GREK SCI FI TILES.png" type="Texture" id=23]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -2696,3 +2697,115 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 152/z_index = 0
+153/name = "GREK SCI FI TILES.png 153"
+153/texture = ExtResource( 23 )
+153/tex_offset = Vector2( 0, 0 )
+153/modulate = Color( 1, 1, 1, 1 )
+153/region = Rect2( 448, 1024, 64, 64 )
+153/tile_mode = 0
+153/occluder_offset = Vector2( 0, 0 )
+153/navigation_offset = Vector2( 0, 0 )
+153/shape_offset = Vector2( 0, 0 )
+153/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+153/shape_one_way = false
+153/shape_one_way_margin = 0.0
+153/shapes = [  ]
+153/z_index = 0
+154/name = "GREK SCI FI TILES.png 154"
+154/texture = ExtResource( 23 )
+154/tex_offset = Vector2( 0, 0 )
+154/modulate = Color( 1, 1, 1, 1 )
+154/region = Rect2( 512, 1024, 64, 64 )
+154/tile_mode = 0
+154/occluder_offset = Vector2( 0, 0 )
+154/navigation_offset = Vector2( 0, 0 )
+154/shape_offset = Vector2( 0, 0 )
+154/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+154/shape_one_way = false
+154/shape_one_way_margin = 0.0
+154/shapes = [  ]
+154/z_index = 0
+155/name = "GREK SCI FI TILES.png 155"
+155/texture = ExtResource( 23 )
+155/tex_offset = Vector2( 0, 0 )
+155/modulate = Color( 1, 1, 1, 1 )
+155/region = Rect2( 576, 1024, 64, 64 )
+155/tile_mode = 0
+155/occluder_offset = Vector2( 0, 0 )
+155/navigation_offset = Vector2( 0, 0 )
+155/shape_offset = Vector2( 0, 0 )
+155/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+155/shape_one_way = false
+155/shape_one_way_margin = 0.0
+155/shapes = [  ]
+155/z_index = 0
+156/name = "GREK SCI FI TILES.png 156"
+156/texture = ExtResource( 23 )
+156/tex_offset = Vector2( 0, 0 )
+156/modulate = Color( 1, 1, 1, 1 )
+156/region = Rect2( 640, 1024, 64, 64 )
+156/tile_mode = 0
+156/occluder_offset = Vector2( 0, 0 )
+156/navigation_offset = Vector2( 0, 0 )
+156/shape_offset = Vector2( 0, 0 )
+156/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+156/shape_one_way = false
+156/shape_one_way_margin = 0.0
+156/shapes = [  ]
+156/z_index = 0
+157/name = "GREK SCI FI TILES.png 157"
+157/texture = ExtResource( 23 )
+157/tex_offset = Vector2( 0, 0 )
+157/modulate = Color( 1, 1, 1, 1 )
+157/region = Rect2( 704, 1024, 64, 64 )
+157/tile_mode = 0
+157/occluder_offset = Vector2( 0, 0 )
+157/navigation_offset = Vector2( 0, 0 )
+157/shape_offset = Vector2( 0, 0 )
+157/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+157/shape_one_way = false
+157/shape_one_way_margin = 0.0
+157/shapes = [  ]
+157/z_index = 0
+158/name = "GREK SCI FI TILES.png 158"
+158/texture = ExtResource( 23 )
+158/tex_offset = Vector2( 0, 0 )
+158/modulate = Color( 1, 1, 1, 1 )
+158/region = Rect2( 768, 1024, 64, 64 )
+158/tile_mode = 0
+158/occluder_offset = Vector2( 0, 0 )
+158/navigation_offset = Vector2( 0, 0 )
+158/shape_offset = Vector2( 0, 0 )
+158/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+158/shape_one_way = false
+158/shape_one_way_margin = 0.0
+158/shapes = [  ]
+158/z_index = 0
+159/name = "GREK SCI FI TILES.png 159"
+159/texture = ExtResource( 23 )
+159/tex_offset = Vector2( 0, 0 )
+159/modulate = Color( 1, 1, 1, 1 )
+159/region = Rect2( 320, 320, 64, 64 )
+159/tile_mode = 0
+159/occluder_offset = Vector2( 0, 0 )
+159/navigation_offset = Vector2( 0, 0 )
+159/shape_offset = Vector2( 0, 0 )
+159/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+159/shape_one_way = false
+159/shape_one_way_margin = 0.0
+159/shapes = [  ]
+159/z_index = 0
+160/name = "GREK SCI FI TILES.png 160"
+160/texture = ExtResource( 23 )
+160/tex_offset = Vector2( 0, 0 )
+160/modulate = Color( 1, 1, 1, 1 )
+160/region = Rect2( 256, 320, 64, 64 )
+160/tile_mode = 0
+160/occluder_offset = Vector2( 0, 0 )
+160/navigation_offset = Vector2( 0, 0 )
+160/shape_offset = Vector2( 0, 0 )
+160/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+160/shape_one_way = false
+160/shape_one_way_margin = 0.0
+160/shapes = [  ]
+160/z_index = 0
