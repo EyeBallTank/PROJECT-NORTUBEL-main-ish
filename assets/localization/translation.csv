@@ -1569,3 +1569,11 @@ Nenhuma destas criaturas representa nem uma fração de desafio.
 E vocês, miúdos, se atrevem a chegar perto de mim?
 Admiro estupidez como essa, devo admitir."
 XEMAROKK_NPC_TALK_HEAD,"Uh, maybe you're not as dumb as you look.","Uh, talvez vocês não são tão estúpidos como parecem."
+CLARITY_NPC_TALK,"That's my room.
+If you wanna talk, you're always welcome.","Ali é o meu quarto.
+Se quiseres falar, és sempre bem vinda."
+CLARITY_NPC_HURT,"Hey, don't break the screen.
+If I see one scratch, you're going to pay for it.","Hey, não partes o ecrâ.
+Se eu vir um arranhão, vais ter que pagar."
+CLARITY_NPC_HUG,I'd love to hug you back but I fear it could be uncomfortable for you.,Gostava de te abraçar de volta mas tenho medo que pode ser desconfortável para ti.
+CLARITY_NPC_HONK,I... didn't know I had any programming to feel this.,Eu... não sabia que tinha qualquer programação para sentir isto.
