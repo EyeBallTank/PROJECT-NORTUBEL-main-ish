@@ -151,6 +151,10 @@ spritename = "greklovick coin"
 position = Vector2( 22908, 85 )
 spritename = "greklovick coin"
 
+[node name="Coin5" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3983, 2104 )
+spritename = "greklovick coin"
+
 [node name="GrekRoboSellTruck" parent="." instance=ExtResource( 14 )]
 position = Vector2( 22618, 518 )
 
