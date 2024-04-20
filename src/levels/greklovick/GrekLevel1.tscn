@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -42,6 +42,7 @@
 [ext_resource path="res://src/npc_actors/grek npc/ClarityNPC.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/npc_actors/grek npc/GrekMercNPC.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/npc_actors/grek npc/BoltNPC.tscn" type="PackedScene" id=42]
+[ext_resource path="res://src/npc_actors/grek npc/IsaacNPC.tscn" type="PackedScene" id=43]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -359,10 +360,17 @@ customtext = "GREK_MERC_TALK_1"
 customname = "GREK_MERC_SOLDER_NAME"
 
 [node name="BoltNPC" parent="." instance=ExtResource( 42 )]
-position = Vector2( 20, 1303 )
+position = Vector2( 4384, 1517 )
 customtext = "BOLT_NPC_TALK"
 customtext3 = "BOLT_NPC_HUG"
 customtext4 = "BOLT_NPC_HURT"
+
+[node name="IsaacNPC" parent="." instance=ExtResource( 43 )]
+position = Vector2( 83, 1295 )
+customtext = "ISAAC_NPC_TALK"
+customtext2 = "ISAAC_NPC_HONK"
+customtext3 = "ISAAC_NPC_HUG"
+customtext4 = "ISAAC_NPC_HURT"
 
 [editable path="GrekMovingCrateTrackBased"]
 [editable path="GrekYellowBasePlat"]
