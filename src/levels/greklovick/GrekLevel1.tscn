@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/npc_actors/grek npc/ClarityNPC.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/npc_actors/grek npc/GrekMercNPC.tscn" type="PackedScene" id=41]
+[ext_resource path="res://src/npc_actors/grek npc/BoltNPC.tscn" type="PackedScene" id=42]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -239,7 +240,7 @@ position = Vector2( 13993, 1493 )
 position = Vector2( 6978, 673 )
 
 [node name="Platform" parent="GrekYellowBasePlat" index="0"]
-position = Vector2( -2, -1 )
+position = Vector2( -2, 384 )
 
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
 position = Vector2( 11202, 1603 )
@@ -356,6 +357,12 @@ customtext4 = "CLARITY_NPC_HURT"
 position = Vector2( 1818, -151 )
 customtext = "GREK_MERC_TALK_1"
 customname = "GREK_MERC_SOLDER_NAME"
+
+[node name="BoltNPC" parent="." instance=ExtResource( 42 )]
+position = Vector2( 20, 1303 )
+customtext = "BOLT_NPC_TALK"
+customtext3 = "BOLT_NPC_HUG"
+customtext4 = "BOLT_NPC_HURT"
 
 [editable path="GrekMovingCrateTrackBased"]
 [editable path="GrekYellowBasePlat"]

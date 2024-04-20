@@ -1582,3 +1582,10 @@ GREK_MERC_TALK_1,"Better watch out, the ammo dispenser bots were hacked!
 This could be sign of an incoming attack.","É melhor teres cuidado!
 As dispensas robô de munição foram manipuladas! 
 Isto poderá ser sinal de um ataque iminente."
+BOLT_NPC_TALK,"If you get your clothes dirty, I can help you with that.
+Cleaning is my speciality.","Se você sujar a roupa, posso lhe ajudar com isso.
+A limpeza é a minha especialidade."
+BOLT_NPC_HUG,Can I play with your brother?,Posso brincar com o seu irmão?
+BOLT_NPC_HURT,"Why are you being hostile all of a sudden?
+Did you get any radiation?","Porque é que você está a ser agressiva de repente?
+Apanhou alguma radiação?"
