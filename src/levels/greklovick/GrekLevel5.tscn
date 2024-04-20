@@ -868,6 +868,7 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
+frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -909,7 +910,7 @@ spritename = "greklovick coin"
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
-volume_db = -6.703
+volume_db = -80.0
 pitch_scale = 0.5
 bus = "Sound"
 
