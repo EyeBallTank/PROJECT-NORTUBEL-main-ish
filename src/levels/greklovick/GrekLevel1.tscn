@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -43,6 +43,7 @@
 [ext_resource path="res://src/npc_actors/grek npc/GrekMercNPC.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/npc_actors/grek npc/BoltNPC.tscn" type="PackedScene" id=42]
 [ext_resource path="res://src/npc_actors/grek npc/IsaacNPC.tscn" type="PackedScene" id=43]
+[ext_resource path="res://src/npc_actors/grek npc/YiegourNPC.tscn" type="PackedScene" id=44]
 
 [node name="GrekLevel1" type="Node2D"]
 
@@ -372,6 +373,13 @@ customtext = "ISAAC_NPC_TALK"
 customtext2 = "ISAAC_NPC_HONK"
 customtext3 = "ISAAC_NPC_HUG"
 customtext4 = "ISAAC_NPC_HURT"
+
+[node name="YiegourNPC" parent="." instance=ExtResource( 44 )]
+position = Vector2( 1051, 856 )
+customtext = "YIEGOUR_NPC_TALK"
+customtext2 = "YIEGOUR_NPC_HONK"
+customtext3 = "YIEGOUR_NPC_HUG"
+customtext4 = "YIEGOUR_NPC_HURT"
 
 [editable path="GrekMovingCrateTrackBased"]
 [editable path="GrekYellowBasePlat"]
