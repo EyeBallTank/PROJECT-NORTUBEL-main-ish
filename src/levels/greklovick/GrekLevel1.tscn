@@ -148,7 +148,8 @@ position = Vector2( 13203, 1254 )
 spritename = "greklovick movplatvert"
 
 [node name="LoreBook" parent="." instance=ExtResource( 16 )]
-position = Vector2( 3976, -120 )
+position = Vector2( 7648, 993 )
+customtext = "GREK_MERC_FORCE_LORE"
 spritename = "greklovick lorebook"
 
 [node name="LoreBook2" parent="." instance=ExtResource( 16 )]
@@ -366,7 +367,7 @@ customtext3 = "BOLT_NPC_HUG"
 customtext4 = "BOLT_NPC_HURT"
 
 [node name="IsaacNPC" parent="." instance=ExtResource( 43 )]
-position = Vector2( 83, 1295 )
+position = Vector2( 22391, 921 )
 customtext = "ISAAC_NPC_TALK"
 customtext2 = "ISAAC_NPC_HONK"
 customtext3 = "ISAAC_NPC_HUG"
