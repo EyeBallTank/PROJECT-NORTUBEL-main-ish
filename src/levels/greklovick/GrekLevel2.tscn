@@ -289,3 +289,13 @@ customtext4 = "GREK_TWO_MERCS_CONVO_4"
 customname1 = "GREK_MERC_SOLDIER_NAME_1"
 customname2 = "GREK_MERC_SOLDIER_NAME_2"
 spritename = "grek mercs"
+
+[node name="ConvoNPC2" parent="." instance=ExtResource( 25 )]
+position = Vector2( 3137, 1279 )
+customtext1 = "CONVO_YIEGOUR_CLARITY_1"
+customtext2 = "CONVO_YIEGOUR_CLARITY_2"
+customtext3 = "CONVO_YIEGOUR_CLARITY_3"
+customtext4 = "CONVO_YIEGOUR_CLARITY_4"
+customname1 = "Clarity"
+customname2 = "Yiegour Sarvotsky"
+spritename = "clarity yiegour"
