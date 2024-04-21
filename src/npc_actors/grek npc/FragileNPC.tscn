@@ -1,49 +1,49 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/npc_actors/massag npc/BarneyNPC.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/BARNEY SPRITES NPC.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/greklovick/FRAGILE NPC SPRITES.png" type="Texture" id=4]
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 4 )
-region = Rect2( 450, 0, 450, 450 )
+region = Rect2( 0, 300, 300, 300 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 4 )
-region = Rect2( 450, 450, 450, 450 )
+region = Rect2( 300, 300, 300, 300 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 4 )
-region = Rect2( 0, 0, 450, 450 )
+region = Rect2( 0, 0, 300, 300 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 4 )
-region = Rect2( 0, 450, 450, 450 )
+region = Rect2( 300, 0, 300, 300 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ SubResource( 11 ), SubResource( 12 ) ],
 "loop": true,
 "name": "Falling",
-"speed": 3.0
+"speed": 5.0
 }, {
-"frames": [ SubResource( 7 ) ],
+"frames": [ SubResource( 13 ) ],
 "loop": false,
 "name": "MAINSTATE",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 8 ) ],
+"frames": [ SubResource( 14 ) ],
 "loop": false,
 "name": "Otherstate",
 "speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 73, 130.5 )
+extents = Vector2( 47, 53.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 98, 97.5 )
+extents = Vector2( 232, 143 )
 
 [sub_resource type="Animation" id=9]
 length = 0.001
@@ -60,43 +60,25 @@ tracks/0/keys = {
 "values": [ Vector2( -4, 14 ) ]
 }
 
-[sub_resource type="Animation" id=10]
-resource_name = "floating"
-length = 2.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( -4, 14 ), Vector2( -4, -7 ), Vector2( -4, 14 ) ]
-}
-
 [node name="FragileNPC" type="KinematicBody2D"]
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( -4, 14 )
-scale = Vector2( 0.64, 0.64 )
+position = Vector2( -18, -2 )
 frames = SubResource( 2 )
 animation = "Otherstate"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -12, 55.5 )
+position = Vector2( -12, 92.5 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( -10, 48.5 )
+position = Vector2( -19, 3 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -141,9 +123,7 @@ custom_fonts/font = ExtResource( 1 )
 text = "Fragile"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "floating"
 anims/RESET = SubResource( 9 )
-anims/floating = SubResource( 10 )
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
