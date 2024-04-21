@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://src/npc_actors/grek npc/FragileNPC.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/npc_actors/grek npc/RaymondNPC.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/npc_actors/grek npc/GrekPoliceNPC.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/npc_actors/grek npc/LahrnNPC.tscn" type="PackedScene" id=29]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -321,3 +322,10 @@ customtext4 = "RAYMOND_NPC_HURT"
 position = Vector2( 34518, 2211 )
 customtext = "GREK_POLICE_TALK"
 customname = "GREK_POLICE_NAME"
+
+[node name="RaymondNPC2" parent="." instance=ExtResource( 29 )]
+position = Vector2( 490, 1399 )
+customtext = "LAHRN_NPC_TALK"
+customtext2 = "LAHRN_NPC_HONK"
+customtext3 = "LAHRN_NPC_HUG"
+customtext4 = "LAHRN_NPC_HURT"
