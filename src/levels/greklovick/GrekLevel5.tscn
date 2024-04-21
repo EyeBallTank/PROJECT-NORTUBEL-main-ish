@@ -833,6 +833,12 @@ boardname = "grek art zharkovil reference"
 [node name="ZharkovilBoss" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3326, 598 )
 
+[node name="AnimatedSprite" parent="ZharkovilBoss" index="0"]
+frame = 1
+
+[node name="shieldSprite" parent="ZharkovilBoss" index="7"]
+frame = 0
+
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 1 )]
 position = Vector2( 5263, 1437 )
 spritename = "zharkovil"
@@ -876,6 +882,7 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
+frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

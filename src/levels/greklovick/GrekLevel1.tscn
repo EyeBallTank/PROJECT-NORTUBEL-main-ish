@@ -245,6 +245,10 @@ position = Vector2( 6978, 673 )
 [node name="Platform" parent="GrekYellowBasePlat" index="0"]
 position = Vector2( -2, 384 )
 
+[node name="PathFollow2D" parent="GrekYellowBasePlat/Path2D" index="0"]
+position = Vector2( -2, 384 )
+offset = 0.000244141
+
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
 position = Vector2( 11202, 1603 )
 

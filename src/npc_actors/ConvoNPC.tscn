@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/massagcoav/Convo Henson Family.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin Beach.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Oscar Pete Beach v2.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/greklovick/Convo Grek Mercs.png" type="Texture" id=31]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina v2.png" type="Texture" id=32]
 
 [sub_resource type="AtlasTexture" id=17]
@@ -94,6 +95,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=34]
 atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 31 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=35]
@@ -224,6 +229,11 @@ animations = [ {
 "frames": [ SubResource( 34 ) ],
 "loop": false,
 "name": "fernaanda holmes",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 41 ) ],
+"loop": false,
+"name": "grek mercs",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 35 ) ],
@@ -477,7 +487,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "shihiro zarina"
+animation = "grek mercs"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )

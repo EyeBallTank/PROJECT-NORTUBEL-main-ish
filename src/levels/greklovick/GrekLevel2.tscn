@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=25]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -278,3 +279,13 @@ collision_newsize = Vector2( 40, 8 )
 [node name="Jumppad" parent="." instance=ExtResource( 24 )]
 position = Vector2( 36840, 1864 )
 spritename = "greklovick jumppad"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 25 )]
+position = Vector2( 18632, 195 )
+customtext1 = "GREK_TWO_MERCS_CONVO_1"
+customtext2 = "GREK_TWO_MERCS_CONVO_2"
+customtext3 = "GREK_TWO_MERCS_CONVO_3"
+customtext4 = "GREK_TWO_MERCS_CONVO_4"
+customname1 = "GREK_MERC_SOLDIER_NAME_1"
+customname2 = "GREK_MERC_SOLDIER_NAME_2"
+spritename = "grek mercs"
