@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/npc_actors/grek npc/FragileNPC.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/npc_actors/grek npc/RaymondNPC.tscn" type="PackedScene" id=27]
 
 [node name="GrekLevel2" type="Node2D"]
 
@@ -307,3 +308,10 @@ customtext = "FRAGILE_NPC_TALK"
 customtext2 = "FRAGILE_NPC_HUG"
 customtext3 = "FRAGILE_NPC_HURT"
 customname = "Fragile"
+
+[node name="RaymondNPC" parent="." instance=ExtResource( 27 )]
+position = Vector2( 5584, 1304 )
+customtext = "RAYMOND_NPC_TALK"
+customtext2 = "RAYMOND_NPC_HONK"
+customtext3 = "RAYMOND_NPC_HUG"
+customtext4 = "RAYMOND_NPC_HURT"
