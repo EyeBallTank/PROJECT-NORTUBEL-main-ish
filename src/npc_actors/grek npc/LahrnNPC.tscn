@@ -11,7 +11,7 @@ extents = Vector2( 40.5, 175 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 139.583, 176.611 )
 
-[node name="RaymondNPC" type="KinematicBody2D"]
+[node name="LahrnNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
 collision_mask = 4

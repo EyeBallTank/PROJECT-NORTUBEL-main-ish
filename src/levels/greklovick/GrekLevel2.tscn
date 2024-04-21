@@ -323,8 +323,8 @@ position = Vector2( 34518, 2211 )
 customtext = "GREK_POLICE_TALK"
 customname = "GREK_POLICE_NAME"
 
-[node name="RaymondNPC2" parent="." instance=ExtResource( 29 )]
-position = Vector2( 490, 1399 )
+[node name="LahrnNPC" parent="." instance=ExtResource( 29 )]
+position = Vector2( 8835, 343 )
 customtext = "LAHRN_NPC_TALK"
 customtext2 = "LAHRN_NPC_HONK"
 customtext3 = "LAHRN_NPC_HUG"
