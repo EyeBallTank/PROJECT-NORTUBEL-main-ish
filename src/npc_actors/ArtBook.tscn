@@ -54,7 +54,6 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art grekpolice reference.png" type="Texture" id=52]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art grekmerc reference.png" type="Texture" id=53]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art lahrn reference.png" type="Texture" id=54]
-[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v2.png" type="Texture" id=55]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art altsix older reference.png" type="Texture" id=56]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art odin reference.png" type="Texture" id=57]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art monica reference v2.png" type="Texture" id=58]
@@ -121,6 +120,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art dreadhunter crossover.png" type="Texture" id=119]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art xemarokk vs yiegour.png" type="Texture" id=120]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art simo reference.png" type="Texture" id=121]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v3.png" type="Texture" id=122]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -241,8 +241,8 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 84 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=65]
-atlas = ExtResource( 55 )
+[sub_resource type="AtlasTexture" id=138]
+atlas = ExtResource( 122 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=64]
@@ -699,7 +699,7 @@ animations = [ {
 "name": "grek art isaac reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 65 ) ],
+"frames": [ SubResource( 138 ) ],
 "loop": false,
 "name": "grek art kler reference",
 "speed": 0.0
