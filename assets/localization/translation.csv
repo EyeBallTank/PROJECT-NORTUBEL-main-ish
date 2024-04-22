@@ -1723,3 +1723,9 @@ GREK_RAD_CREW_TALK,"You better find some suit if you're thinking of a short visi
 And don't bring children there either.","É melhor encontrares um fato se estás a pensar numa visita curta lá fora.
 E não podes trazer crianças para lá também."
 GREK_RAD_CREW_NAME,Grek radiation specialist,Especialista de radiação Grek
+GREK_MEDIC_CREW_TALK,"These species could be in a similar level of intelligence as humans, despite their odd anatomy:
+5 eyes, 2 mouths, purple blood, 7 fingers, antennas, an odd tail and unusual materials for clothing.
+We've also seen strange objects believed to be weapons.","Estas espécies podem estar num nível de inteligência semelhante ao dos humanos, apesar da sua anatomia estranha:
+5 olhos, 2 bocas, sangue roxo, 7 dedos, antenas, cauda estranha e materiais invulgares para a roupas.
+Também vimos objetos estranhos que podem ser armas de combate."
+GREK_MEDIC_CREW_NAME,Grek medic,Médico Grek
