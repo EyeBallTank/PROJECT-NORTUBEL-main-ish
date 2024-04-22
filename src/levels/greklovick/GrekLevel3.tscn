@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek radio tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/npc_actors/grek npc/KlerNPC.tscn" type="PackedScene" id=24]
 
 [node name="GrekLevel3" type="Node2D"]
 
@@ -241,3 +242,10 @@ spritename = "greklovick redkey"
 [node name="RedDoor" parent="." instance=ExtResource( 23 )]
 position = Vector2( 24097, 256 )
 spritename = "greklovick reddoor"
+
+[node name="KlerNPC" parent="." instance=ExtResource( 24 )]
+position = Vector2( 2320, 1554 )
+customtext = "KLER_NPC_TALK"
+customtext2 = "KLER_NPC_HONK"
+customtext3 = "KLER_NPC_HUG"
+customtext4 = "KLER_NPC_HURT"
