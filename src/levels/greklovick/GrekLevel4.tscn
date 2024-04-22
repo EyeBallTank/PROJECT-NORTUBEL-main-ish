@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/npc_actors/grek npc/GrekRadCrewNPC.tscn" type="PackedScene" id=29]
 
 [node name="GrekLevel4" type="Node2D"]
 
@@ -277,5 +278,10 @@ collision_newsize = Vector2( 32, 304 )
 
 [node name="Gong" parent="." instance=ExtResource( 28 )]
 position = Vector2( 7294, -247 )
+
+[node name="GrekRadCrewNPC" parent="." instance=ExtResource( 29 )]
+position = Vector2( 7110, -408 )
+customtext = "GREK_RAD_CREW_TALK"
+customname = "GREK_RAD_CREW_NAME"
 
 [editable path="GrekAsteroidHazard"]
