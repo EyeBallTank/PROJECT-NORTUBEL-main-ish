@@ -87,14 +87,28 @@ func cutscene_over():
 #Yiegour: Name's Yiegour Sarvotsky, but some friends call me "B-Man".
 #Yiegour: Feel free to explore this place but do be carefull. Lot of things around here are designed to kill and some security systems are activated.
 
-#Carrie: The air keeps getting worse.
+#Oscar: Wow, those ships look cool. Look at all these buttons.
+#Pete: This reminds me of when the 2 of us wanted to be astronauts.
+#Carrie: Oscar, Pete. Both of you, get out of there.
+#Oscar: I'm just looking at this stuff. I'm not gonna touch anything.
+#Base announcer: Atention. The base is at state of emergency! Please proceed to the nearest escape ship!
+#Angela: What's going on?
+#Melvin: I don't know, but we might as well enter one of these ships.
+#Katrin: But wait, we don't even know how they work.
+#Pete: *presses big red button* Might as well guess!
+#The ship leaves the base
+#Carrie: What happened there?
+#The ship lands in a shop at the Grek city
+#Katrin: Ouch. Is everyone okay?
+#Grek police: What the Hell happened? And how did you get those vehicles? Did you get any permission?
 #Grek police: Hold still, I need your ID's.
 #Melvin: But we don't have any.
-#Grek police: So you're trespassing? Then come with me quick before I-
+#Grek police: So you're also trespassing? Then come with me quick before I-
 #Yiegour: Let them go! They're under my custody.
-#Grek police: Yiegour? Mh, sure.
+#Grek police: Yiegour? Mh, sure. Better make sure to pay for the damage, since you "mercs" are paid more for doing half of what we do.
 #Pete: Are you mad at us for going too far?
 #Yiegour: I'm rather impressed. Somehow you're still alive. 
+#Yiegour: But I'm gonna put you all in a safer place and not as a punishment. They said we could be dealing with an attacker at some point, so I wanna make sure you kids stay out of that.
 #Some time later
 #Yiegour: And what's in your mind?
 #Melvin: I'm just thinking about my dad and all. We've all been having some family trouble and it's why we ran from home, but now we're trying to get back.
