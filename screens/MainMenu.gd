@@ -20,6 +20,9 @@ var codes := [ "gallery",
 				"l13fd1", "x444ng", "am4l14",
 				"y13g0r", "clr1ty", "kl3rrr",
 				"tf00r1", "zrkv1l"]
+#				"d3c4rd", "fl3nnn", "brkstn",
+#				"m0nic4", "ill0uu", "b0nkyy",
+#				"b0nk44"
 
 #SOME PASSWORDS TAKE YOU TO CUTSCENES THAT YOU CAN EASILY SKIP
 #THIS IS BECAUSE THEY HAPPEN BEFORE CERTAIN LEVELS
