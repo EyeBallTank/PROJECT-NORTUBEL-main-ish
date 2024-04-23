@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/npc_actors/brink npc/FaygoNPC.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkFaygoPlat.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=14]
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -73,3 +74,9 @@ position = Vector2( 276, 1401 )
 
 [node name="BrinkFaygoPlat" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1142, 1555 )
+
+[node name="Door" parent="." instance=ExtResource( 14 )]
+position = Vector2( 818, 1512 )
+new_scene = "res://screens/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse.tscn"
+spritename = "brinkaedea greendoor"
+customtext = "b0nkyy"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkPinballPiece.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkPinballFlipper.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -91,5 +92,11 @@ position = Vector2( 99.5, -78.5 )
 
 [node name="BrinkJackInBox" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2277, 1474 )
+
+[node name="Door" parent="." instance=ExtResource( 11 )]
+position = Vector2( 585, 1522 )
+new_scene = "res://src/levels/brinkaedea/BrinkLevel25.tscn"
+spritename = "brinkaedea greendoor"
+customtext = "ill0uu"
 
 [editable path="BrinkPinballFlipper"]

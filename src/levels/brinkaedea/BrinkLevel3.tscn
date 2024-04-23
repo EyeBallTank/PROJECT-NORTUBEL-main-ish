@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://src/level_objects/RedButtonGate.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/RedButton.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=12]
 
 [node name="BrinkLevel3" type="Node2D"]
 
@@ -88,3 +89,8 @@ boardname = "brink art odin reference"
 [node name="ArtBook2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 29, 1540 )
 boardname = "brink art bonka reference"
+
+[node name="Door" parent="." instance=ExtResource( 12 )]
+position = Vector2( 792, 1552 )
+spritename = "brinkaedea greendoor"
+customtext = "b0nk44"
