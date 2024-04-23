@@ -19,10 +19,10 @@ var codes := [ "gallery",
 				"b4rn3y", "k4rl44",
 				"l13fd1", "x444ng", "am4l14",
 				"y13g0r", "clr1ty", "kl3rrr",
-				"tf00r1", "zrkv1l"]
-#				"d3c4rd", "fl3nnn", "brkstn",
-#				"m0nic4", "ill0uu", "b0nkyy",
-#				"b0nk44"
+				"tf00r1", "zrkv1l",
+				"d3c4rd", "fl3nnn", "brkstn",
+				"m0nic4", "ill0uu", "b0nkyy",
+				"b0nk44"]
 
 #SOME PASSWORDS TAKE YOU TO CUTSCENES THAT YOU CAN EASILY SKIP
 #THIS IS BECAUSE THEY HAPPEN BEFORE CERTAIN LEVELS
@@ -209,3 +209,31 @@ func _on_ManualButton_pressed():
 
 func _on_Manual_Quitbutton_pressed():
 	show_and_hide(menu, manualmenu)
+
+func d3c4rd():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive.tscn")
+
+func fl3nnn():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartfive/NortPartFiveLevel2.tscn")
+
+func brkstn():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider.tscn")
+
+func m0nic4():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 17 nortpartfive brink/cutscene 17 nortpartfive brink.tscn")
+
+func ill0uu():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/brinkaedea/BrinkLevel2.tscn")
+
+func b0nkyy():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/brinkaedea/BrinkLevel25.tscn")
+
+func b0nk44():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse.tscn")
+
+
+
+
+
+
+
