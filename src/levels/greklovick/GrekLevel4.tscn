@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/npc_actors/grek npc/GrekRadCrewNPC.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/npc_actors/grek npc/GrekMedicCrewNPC.tscn" type="PackedScene" id=30]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=31]
 
 [node name="GrekLevel4" type="Node2D"]
 
@@ -289,5 +290,10 @@ customname = "GREK_RAD_CREW_NAME"
 position = Vector2( 7691, 1571 )
 customtext = "GREK_MEDIC_CREW_TALK"
 customname = "GREK_MEDIC_CREW_NAME"
+
+[node name="LoreBook" parent="." instance=ExtResource( 31 )]
+position = Vector2( 2133, 752 )
+customtext = "GREK_VENUS_BASE_LORE"
+spritename = "greklovick lorebook"
 
 [editable path="GrekAsteroidHazard"]
