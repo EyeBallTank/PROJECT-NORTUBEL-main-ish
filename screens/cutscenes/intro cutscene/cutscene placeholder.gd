@@ -91,6 +91,7 @@ func cutscene_over():
 #Pete: This reminds me of when the 2 of us wanted to be astronauts.
 #Carrie: Oscar, Pete. Both of you, get out of there.
 #Oscar: I'm just looking at this stuff. I'm not gonna touch anything.
+#RED LIGHT EFFECT
 #Base announcer: Atention. The base is at state of emergency! Please proceed to the nearest escape ship!
 #Angela: What's going on?
 #Melvin: I don't know, but we might as well enter one of these ships.
