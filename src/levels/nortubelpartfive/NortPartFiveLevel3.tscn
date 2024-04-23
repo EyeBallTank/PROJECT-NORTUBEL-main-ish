@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
+
+[node name="NortPartFiveLevel3" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 10 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 7.png"
+
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 1638421, 61, 0, 1638422, 61, 0, 1638423, 61, 0, 1638424, 61, 0, 1638425, 61, 0, 1638426, 61, 0, 1638427, 61, 0, 1638428, 61, 0, 1638429, 61, 0, 1638430, 61, 0, 1638431, 61, 0, 1638432, 61, 0, 1638433, 61, 0, 1638434, 61, 0, 1638435, 61, 0, 1638436, 61, 0, 1638437, 61, 0, 1638438, 61, 0, 1638439, 61, 0, 1638440, 61, 0, 1638441, 61, 0, 1638442, 61, 0, 1638443, 61, 0, 1638444, 61, 0, 1638445, 61, 0, 1638446, 61, 0, 1638447, 61, 0, 1638448, 61, 0, 1638449, 61, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1679, 1436 )
+playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
+
+[node name="playerspawn" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1684, 1449 )
+
+[node name="companionspawn" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2746, 1528 )
+
+[node name="Companion" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2742, 1519 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 1 )]
