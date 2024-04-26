@@ -54,10 +54,10 @@ func cutscene_over():
 #Carrie: Sure. Maybe a break here can't be that bad. There's even that empty store with clothes and stuff.
 
 
-#Carrie: So, what have you guys been up to?
+#Katrin: So, what have you guys been up to?
 #Alt Angela: We've wanted to show you a friend we've made in a while. We call her Amalia
 #Amalia hsows up
-#Katrin: What is that? Is that a house?
+#Carrie: What is that? Is that a house?
 #Alt Angela: It's alive.
 #Stella: HELP!!!
 #Katrin: STELLA! WE GOTTA DO SOMETHING!
