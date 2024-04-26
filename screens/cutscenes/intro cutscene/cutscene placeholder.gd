@@ -69,7 +69,7 @@ func cutscene_over():
 #Melvin: WHAT IS WRONG WITH YOU GUYS?
 #Alt Carrie: IT'S YOUR FRIEND'S FAULT. AMALIA WAS CALM AND YOUR FRIEND PROBABLY SCARED HER.
 #Alt Katrin: AND NOW SHE'S GONE BECAUSE OF YOU.
-#Alt Angela: I know what it is. We've been here longer than your group, so you don't really undestand how things work here.
+#Alt Oscar: I know what it is. We've been here longer than your group, so you don't really undestand how things work here.
 #Melvin: And maybe I don't want to. This place might've been driving you mad and that's why we wanna go home in the first place.
 #Some time later
 #Stella: I'm better now. I didn't know those guys were different versions of you.
