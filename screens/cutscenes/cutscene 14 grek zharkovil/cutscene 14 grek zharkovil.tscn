@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 11.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 yiegour helmet hud test.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -26,6 +28,22 @@ tracks/0/keys = {
 "method": "cutscene_over"
 } ]
 }
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 426, 580 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 580, 426, 580 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -71,6 +89,7 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -92,3 +111,14 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="Cutscene14GrekZharkovilPanel11" type="Sprite" parent="."]
+position = Vector2( 225, 235 )
+scale = Vector2( 0.759729, 0.759729 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene14YiegourHelmetHudTest" type="AnimatedSprite" parent="."]
+position = Vector2( 225, 237 )
+scale = Vector2( 0.828284, 0.828284 )
+frames = SubResource( 5 )
+flip_h = true
