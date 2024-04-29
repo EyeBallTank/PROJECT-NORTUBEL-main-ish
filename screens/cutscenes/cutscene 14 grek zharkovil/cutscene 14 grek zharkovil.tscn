@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -7,6 +7,24 @@
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 11.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 yiegour helmet hud test.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 space bg test.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 5.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 12.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 city bg test.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 2.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 10.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 virtual clarity test.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 6.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 3.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 7.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 venus buildings test.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 4.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 9.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 tiny spaceship.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 8.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 13.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 1.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/venus base red alarm effect.png" type="Texture" id=25]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -45,6 +63,22 @@ animations = [ {
 "speed": 4.0
 } ]
 
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 316, 369 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 14 )
+region = Rect2( 316, 0, 316, 369 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
 __meta__ = {
@@ -56,6 +90,24 @@ nextscene = "res://src/levels/greklovick/GrekLevel5.tscn"
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene14SpaceBgTest" type="Sprite" parent="."]
+position = Vector2( 512.038, -341.918 )
+scale = Vector2( 1.07539, 1.16311 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene14CityBgTest" type="Sprite" parent="."]
+position = Vector2( 513.115, -952 )
+scale = Vector2( 0.92914, 0.92914 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene14TinySpaceship" type="Sprite" parent="."]
+position = Vector2( 1049, -563 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene14VenusBuildingsTest" type="Sprite" parent="."]
+position = Vector2( 480, -477 )
+texture = ExtResource( 18 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_top = 1.0
@@ -113,12 +165,84 @@ text = "ESC: | |"
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
 
 [node name="Cutscene14GrekZharkovilPanel11" type="Sprite" parent="."]
-position = Vector2( 225, 235 )
+position = Vector2( 207.425, 843.202 )
 scale = Vector2( 0.759729, 0.759729 )
 texture = ExtResource( 6 )
 
 [node name="Cutscene14YiegourHelmetHudTest" type="AnimatedSprite" parent="."]
-position = Vector2( 225, 237 )
+position = Vector2( 207.425, 845.202 )
 scale = Vector2( 0.828284, 0.828284 )
 frames = SubResource( 5 )
 flip_h = true
+
+[node name="Cutscene14GrekZharkovilPanel1" type="Sprite" parent="."]
+position = Vector2( 497, 228 )
+scale = Vector2( 0.727419, 0.727419 )
+texture = ExtResource( 24 )
+
+[node name="Cutscene14GrekZharkovilPanel2" type="Sprite" parent="."]
+position = Vector2( -204, 236 )
+scale = Vector2( 0.787457, 0.787457 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene14GrekZharkovilPanel3" type="Sprite" parent="."]
+position = Vector2( 1304, 240.174 )
+scale = Vector2( 1.34862, 1.34862 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene14GrekZharkovilPanel4" type="Sprite" parent="."]
+position = Vector2( -736, 235 )
+scale = Vector2( 1.07572, 1.07572 )
+texture = ExtResource( 19 )
+
+[node name="VenusBaseRedAlarmEffect" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.658824 )
+position = Vector2( 512.115, 1366 )
+scale = Vector2( 8.25621, 6.18109 )
+texture = ExtResource( 25 )
+
+[node name="Cutscene14GrekZharkovilPanel5" type="Sprite" parent="."]
+position = Vector2( 1957, 233 )
+scale = Vector2( 1.01969, 1.01969 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene14GrekZharkovilPanel6" type="Sprite" parent="."]
+position = Vector2( 516, -1502 )
+scale = Vector2( 1.18015, 1.18015 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene14GrekZharkovilPanel7" type="Sprite" parent="."]
+position = Vector2( -1214, 231.419 )
+scale = Vector2( 0.523679, 0.523679 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene14GrekZharkovilPanel8" type="Sprite" parent="."]
+position = Vector2( 2616, 232.553 )
+scale = Vector2( 1.10689, 1.10689 )
+texture = ExtResource( 22 )
+
+[node name="Cutscene14GrekZharkovilPanel9" type="Sprite" parent="."]
+position = Vector2( 512.687, -2008 )
+scale = Vector2( 0.773089, 0.773089 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene14GrekZharkovilPanel10" type="Sprite" parent="."]
+position = Vector2( -1778, 235 )
+scale = Vector2( 1.17738, 1.17738 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene14GrekZharkovilPanel12" type="Sprite" parent="."]
+position = Vector2( 3119, 230.203 )
+scale = Vector2( 0.784727, 0.784727 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene14GrekZharkovilPanel13" type="Sprite" parent="."]
+position = Vector2( -572, -461 )
+scale = Vector2( 1.25341, 1.25341 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene14VirtualClarityTest" type="AnimatedSprite" parent="."]
+position = Vector2( 467, 816 )
+scale = Vector2( 0.625331, 0.625331 )
+frames = SubResource( 8 )
+frame = 1
