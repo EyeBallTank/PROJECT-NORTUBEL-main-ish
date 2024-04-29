@@ -1,10 +1,25 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 3.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 4.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 5.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 6.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 7.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 8.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 carrie circle.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 cheerleader bunny.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 cheerleader cat.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 cheerleader goat.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 1.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 2.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 9.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 10.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour score effect.png" type="Texture" id=20]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,6 +86,7 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -92,3 +108,76 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="Cutscene11CarrieCircle" type="Sprite" parent="."]
+position = Vector2( 1177, -125 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene11MassagNortpartfourPanel1" type="Sprite" parent="."]
+position = Vector2( 477, 248.838 )
+scale = Vector2( 0.676704, 0.676704 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene11MassagNortpartfourScoreEffect" type="Sprite" parent="."]
+position = Vector2( 474, 343 )
+scale = Vector2( 0.519668, 0.519668 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene11CheerleaderBunny" type="Sprite" parent="."]
+position = Vector2( 219, -244 )
+scale = Vector2( 0.554455, 0.554455 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene11CheerleaderCat" type="Sprite" parent="."]
+position = Vector2( 521, -244 )
+scale = Vector2( 0.554, 0.554 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene11CheerleaderGoat" type="Sprite" parent="."]
+position = Vector2( 809, -244 )
+scale = Vector2( 0.554, 0.554 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene11MassagNortpartfourPanel2" type="Sprite" parent="."]
+position = Vector2( -333, 234 )
+scale = Vector2( 0.64016, 0.64016 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene11MassagNortpartfourPanel3" type="Sprite" parent="."]
+position = Vector2( 1220, 246.25 )
+scale = Vector2( 0.560992, 0.560992 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene11MassagNortpartfourPanel4" type="Sprite" parent="."]
+position = Vector2( -952, 237 )
+scale = Vector2( 0.646307, 0.646307 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene11MassagNortpartfourPanel5" type="Sprite" parent="."]
+position = Vector2( 1576, 241 )
+scale = Vector2( 1.04218, 1.04218 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene11MassagNortpartfourPanel6" type="Sprite" parent="."]
+position = Vector2( 1920, 237 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene11MassagNortpartfourPanel7" type="Sprite" parent="."]
+position = Vector2( -1499, 234.119 )
+scale = Vector2( 0.659698, 0.659698 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene11MassagNortpartfourPanel8" type="Sprite" parent="."]
+position = Vector2( -1936, 231.286 )
+scale = Vector2( 1.01375, 1.01375 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene11MassagNortpartfourPanel9" type="Sprite" parent="."]
+position = Vector2( 2344, 233.013 )
+scale = Vector2( 0.74452, 0.74452 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene11MassagNortpartfourPanel10" type="Sprite" parent="."]
+position = Vector2( 510, -805 )
+scale = Vector2( 0.977505, 0.977505 )
+texture = ExtResource( 19 )
