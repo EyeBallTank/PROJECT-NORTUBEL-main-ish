@@ -297,6 +297,78 @@ tracks/20/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/21/type = "value"
+tracks/21/path = NodePath("Cutscene13NortpartfourGrekPanel11:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -214, 240 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Cutscene13NortpartfourGrekPanel11:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Cutscene13NortpartfourGrekPanel12:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1244, 234 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Cutscene13NortpartfourGrekPanel12:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Cutscene13NortpartfourGrekPanel13:position")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -206, 236 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Cutscene13NortpartfourGrekPanel13:modulate")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -334,10 +406,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 9.1, 15.8, 19.9, 25.5, 31.2, 37.3, 43.6, 49, 55.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 9.1, 15.8, 19.9, 25.5, 31.2, 37.3, 43.6, 49, 55.3, 61.8, 68.1, 74.5, 80, 86.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_13_TALK_1", "CUTSCENE_13_TALK_2", "CUTSCENE_13_TALK_3", "CUTSCENE_13_TALK_4", "CUTSCENE_13_TALK_5", "CUTSCENE_13_TALK_6", "CUTSCENE_13_TALK_7", "CUTSCENE_13_TALK_8", "CUTSCENE_13_TALK_9", "CUTSCENE_13_TALK_10" ]
+"values": [ "CUTSCENE_13_TALK_1", "CUTSCENE_13_TALK_2", "CUTSCENE_13_TALK_3", "CUTSCENE_13_TALK_4", "CUTSCENE_13_TALK_5", "CUTSCENE_13_TALK_6", "CUTSCENE_13_TALK_7", "CUTSCENE_13_TALK_8", "CUTSCENE_13_TALK_9", "CUTSCENE_13_TALK_10", "CUTSCENE_13_TALK_11", "CUTSCENE_13_TALK_12", "CUTSCENE_13_TALK_13", "CUTSCENE_13_TALK_14", "CUTSCENE_13_TALK_15" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("NinePatchRect/CHARNAME:text")
@@ -346,10 +418,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 9.1, 15.8, 19.9, 25.5, 31.2, 37.3, 43.6, 49, 55.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 9.1, 15.8, 19.9, 25.5, 31.2, 37.3, 43.6, 49, 55.3, 61.8, 74.5, 80, 86.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Katrin Flenn", "Shihiro Xang", "Pete Flenn", "Zarina Liefdei", "Melvin Brokston", "Edraced Racso", "Notskorb Nivlem", "Nnelf Nirtak", "Edraced Eirrac", "Stella Flenn" ]
+"values": [ "Katrin Flenn", "Shihiro Xang", "Pete Flenn", "Zarina Liefdei", "Melvin Brokston", "Edraced Racso", "Notskorb Nivlem", "Nnelf Nirtak", "Edraced Eirrac", "Stella Flenn", "Carrie Decarde", "Isaac", "Angela Brokston", "Clarity" ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Cutscene13NortpartfourGrekPanel2:position")
@@ -562,6 +634,78 @@ tracks/21/loop_wrap = true
 tracks/21/imported = false
 tracks/21/enabled = true
 tracks/21/keys = {
+"times": PoolRealArray( 0, 73.7, 74.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Cutscene13NortpartfourGrekPanel11:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 74, 74.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -214, 240 ), Vector2( -214, 240 ), Vector2( 213, 240 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Cutscene13NortpartfourGrekPanel11:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 86, 86.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Cutscene13NortpartfourGrekPanel12:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 74, 75.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1244, 234 ), Vector2( 1244, 234 ), Vector2( 800, 234 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Cutscene13NortpartfourGrekPanel12:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 74, 75.6, 86, 86.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Cutscene13NortpartfourGrekPanel13:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 85.5, 86.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -206, 236 ), Vector2( -206, 236 ), Vector2( 202, 236 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Cutscene13NortpartfourGrekPanel13:modulate")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -591,24 +735,24 @@ scale = Vector2( 0.567764, 0.567764 )
 texture = ExtResource( 16 )
 
 [node name="ClarityScreenFacesTest" type="Sprite" parent="."]
-position = Vector2( 473.77, 1104 )
+position = Vector2( 717.413, 1104 )
 scale = Vector2( 0.80531, 0.80531 )
 texture = ExtResource( 20 )
 
 [node name="ClarityScreenDetectorEst" type="Sprite" parent="."]
-position = Vector2( 442, 1173 )
+position = Vector2( 685.643, 1173 )
 scale = Vector2( 0.725152, 0.656489 )
 texture = ExtResource( 19 )
 
 [node name="ClarityScreenAnimatedEffectTest" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 1, 1, 0.298039 )
-position = Vector2( 474.68, 1105.75 )
+position = Vector2( 718.323, 1105.75 )
 scale = Vector2( 0.81087, 0.81087 )
 frames = SubResource( 5 )
 frame = 1
 
 [node name="Cutscene13NortpartfourGrekPanel14" type="Sprite" parent="."]
-position = Vector2( 473, 1039 )
+position = Vector2( 716.643, 1039 )
 scale = Vector2( 0.800699, 0.800699 )
 texture = ExtResource( 22 )
 
@@ -686,17 +830,17 @@ scale = Vector2( 0.516887, 0.516887 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene13NortpartfourGrekPanel11" type="Sprite" parent="."]
-position = Vector2( -785.281, 240 )
+position = Vector2( -214, 240 )
 scale = Vector2( 0.89939, 0.89939 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene13NortpartfourGrekPanel12" type="Sprite" parent="."]
-position = Vector2( 1352, 234 )
+position = Vector2( 1244, 234 )
 scale = Vector2( 0.831418, 0.831418 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene13NortpartfourGrekPanel13" type="Sprite" parent="."]
-position = Vector2( -1318.28, 236 )
+position = Vector2( -206, 236 )
 scale = Vector2( 0.773973, 0.773973 )
 texture = ExtResource( 25 )
 
