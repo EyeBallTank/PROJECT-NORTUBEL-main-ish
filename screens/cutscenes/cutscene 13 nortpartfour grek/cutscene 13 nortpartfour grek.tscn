@@ -145,24 +145,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
-[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
-visible = false
-nextlevel = "res://src/levels/LevelTutorial1.tscn"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 1 )
-"anims/intro cutscene" = SubResource( 2 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = 973.0
-margin_top = 578.0
-margin_right = 1062.0
-margin_bottom = 595.0
-custom_fonts/font = ExtResource( 5 )
-text = "ESC: | |"
-
-[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
-
 [node name="Cutscene13NortpartfourGrekPanel3" type="Sprite" parent="."]
 position = Vector2( 505, -193 )
 scale = Vector2( 0.665094, 0.665094 )
@@ -237,3 +219,21 @@ texture = ExtResource( 21 )
 position = Vector2( -222.051, -317.636 )
 scale = Vector2( 0.597839, 0.597839 )
 texture = ExtResource( 23 )
+
+[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
+visible = false
+nextlevel = "res://src/levels/LevelTutorial1.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+"anims/intro cutscene" = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 973.0
+margin_top = 578.0
+margin_right = 1062.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 5 )
+text = "ESC: | |"
+
+[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]

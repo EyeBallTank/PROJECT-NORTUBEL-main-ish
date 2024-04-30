@@ -79,6 +79,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
+[node name="Cutscene12NortpartfourAmaliaPanel1" type="Sprite" parent="."]
+position = Vector2( 387, 236.5 )
+scale = Vector2( 0.65, 0.65 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene12NortpartfourAmaliaPanel2" type="Sprite" parent="."]
+position = Vector2( 1334, 231 )
+scale = Vector2( 0.6469, 0.6469 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene12NortpartfourAmaliaPanel3" type="Sprite" parent="."]
+position = Vector2( -214, 235.692 )
+scale = Vector2( 0.768972, 0.768972 )
+texture = ExtResource( 8 )
+
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
 nextlevel = "res://src/levels/LevelTutorial1.tscn"
@@ -96,18 +111,3 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
-
-[node name="Cutscene12NortpartfourAmaliaPanel1" type="Sprite" parent="."]
-position = Vector2( 387, 236.5 )
-scale = Vector2( 0.65, 0.65 )
-texture = ExtResource( 7 )
-
-[node name="Cutscene12NortpartfourAmaliaPanel2" type="Sprite" parent="."]
-position = Vector2( 1334, 231 )
-scale = Vector2( 0.6469, 0.6469 )
-texture = ExtResource( 6 )
-
-[node name="Cutscene12NortpartfourAmaliaPanel3" type="Sprite" parent="."]
-position = Vector2( -214, 235.692 )
-scale = Vector2( 0.768972, 0.768972 )
-texture = ExtResource( 8 )

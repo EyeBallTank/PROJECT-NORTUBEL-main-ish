@@ -816,10 +816,10 @@ tracks/32/loop_wrap = true
 tracks/32/imported = false
 tracks/32/enabled = true
 tracks/32/keys = {
-"times": PoolRealArray( 0, 79.2, 82.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 79.1, 79.2, 82.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 510, -155.125 ), Vector2( 510, -244 ), Vector2( 510, 230 ) ]
+"values": [ Vector2( 510, -248 ), Vector2( 510, -248 ), Vector2( 510, -244 ), Vector2( 510, 230 ) ]
 }
 tracks/33/type = "value"
 tracks/33/path = NodePath("Cutscene11MassagNortpartfourPanel10:modulate")
@@ -877,24 +877,6 @@ text = "CUTSCENE_11_TALK_2"
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
-
-[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
-visible = false
-nextlevel = "res://src/levels/LevelTutorial1.tscn"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 1 )
-"anims/intro cutscene" = SubResource( 2 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = 973.0
-margin_top = 578.0
-margin_right = 1062.0
-margin_bottom = 595.0
-custom_fonts/font = ExtResource( 5 )
-text = "ESC: | |"
-
-[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
 
 [node name="Cutscene11MassagNortpartfourPanel1" type="Sprite" parent="."]
 position = Vector2( 477, 248.838 )
@@ -969,3 +951,21 @@ texture = ExtResource( 18 )
 position = Vector2( 510, -244 )
 scale = Vector2( 0.977505, 0.977505 )
 texture = ExtResource( 19 )
+
+[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
+visible = false
+nextlevel = "res://src/levels/LevelTutorial1.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+"anims/intro cutscene" = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 973.0
+margin_top = 578.0
+margin_right = 1062.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 5 )
+text = "ESC: | |"
+
+[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]

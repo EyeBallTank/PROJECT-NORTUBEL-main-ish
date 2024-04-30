@@ -26,27 +26,6 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 1.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/venus base red alarm effect.png" type="Texture" id=25]
 
-[sub_resource type="Animation" id=1]
-length = 0.001
-
-[sub_resource type="Animation" id=2]
-resource_name = "intro cutscene"
-length = 6.0
-tracks/0/type = "method"
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 4 ),
-"transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "cutscene_over"
-} ]
-}
-
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 426, 580 )
@@ -78,6 +57,27 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 } ]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+
+[sub_resource type="Animation" id=2]
+resource_name = "intro cutscene"
+length = 6.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "cutscene_over"
+} ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -145,24 +145,6 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
-
-[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
-visible = false
-nextlevel = "res://src/levels/LevelTutorial1.tscn"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 1 )
-"anims/intro cutscene" = SubResource( 2 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = 973.0
-margin_top = 578.0
-margin_right = 1062.0
-margin_bottom = 595.0
-custom_fonts/font = ExtResource( 5 )
-text = "ESC: | |"
-
-[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
 
 [node name="Cutscene14GrekZharkovilPanel11" type="Sprite" parent="."]
 position = Vector2( 207.425, 843.202 )
@@ -246,3 +228,21 @@ position = Vector2( 467, 816 )
 scale = Vector2( 0.625331, 0.625331 )
 frames = SubResource( 8 )
 frame = 1
+
+[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
+visible = false
+nextlevel = "res://src/levels/LevelTutorial1.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+"anims/intro cutscene" = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 973.0
+margin_top = 578.0
+margin_right = 1062.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 5 )
+text = "ESC: | |"
+
+[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
