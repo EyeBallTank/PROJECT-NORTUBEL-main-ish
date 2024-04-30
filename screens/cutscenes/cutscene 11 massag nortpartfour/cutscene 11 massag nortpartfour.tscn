@@ -287,6 +287,42 @@ tracks/21/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/22/type = "value"
+tracks/22/path = NodePath("Cutscene11MassagNortpartfourPanel5:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1168, 241 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Cutscene11MassagNortpartfourPanel5:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Cutscene11MassagNortpartfourPanel6:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -360,10 +396,10 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 8, 13.5, 18.4, 23.1, 28.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 8, 13.5, 18.4, 23.1, 28.8, 34, 39.6, 45.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Stacy, Millie & Katy", "Karla Henson", "Carrie Decarde", "Melvin Brokston", "McSherry Triffelo", "Holmes Dekarro" ]
+"values": [ "Stacy, Millie & Katy", "Karla Henson", "Carrie Decarde", "Melvin Brokston", "McSherry Triffelo", "Holmes Dekarro", "McSherry Triffelo", "Holmes Dekarro", "McSherry Triffelo" ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Cutscene11CheerleaderBunny:position")
@@ -408,10 +444,10 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 8, 13.5, 18.4, 23.1, 28.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 8, 13.5, 18.4, 23.1, 28.8, 34, 39.6, 45.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_11_TALK_1", "CUTSCENE_11_TALK_2", "CUTSCENE_11_TALK_3", "CUTSCENE_11_TALK_4", "CUTSCENE_11_TALK_5", "CUTSCENE_11_TALK_6" ]
+"values": [ "CUTSCENE_11_TALK_1", "CUTSCENE_11_TALK_2", "CUTSCENE_11_TALK_3", "CUTSCENE_11_TALK_4", "CUTSCENE_11_TALK_5", "CUTSCENE_11_TALK_6", "CUTSCENE_11_TALK_7", "CUTSCENE_11_TALK_8", "CUTSCENE_11_TALK_9" ]
 }
 tracks/10/type = "value"
 tracks/10/path = NodePath("Cutscene11MassagNortpartfourPanel2:position")
@@ -569,6 +605,42 @@ tracks/22/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/23/type = "value"
+tracks/23/path = NodePath("Cutscene11MassagNortpartfourPanel5:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 39.6, 40.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1168, 241 ), Vector2( 1168, 241 ), Vector2( 880, 241 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Cutscene11MassagNortpartfourPanel5:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Cutscene11MassagNortpartfourPanel6:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 40.2, 40.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -677,12 +749,13 @@ scale = Vector2( 0.646307, 0.646307 )
 texture = ExtResource( 7 )
 
 [node name="Cutscene11MassagNortpartfourPanel5" type="Sprite" parent="."]
-position = Vector2( 1576, 241 )
+position = Vector2( 1168, 241 )
 scale = Vector2( 1.04218, 1.04218 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene11MassagNortpartfourPanel6" type="Sprite" parent="."]
-position = Vector2( 1920, 237 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 577, 239 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene11MassagNortpartfourPanel7" type="Sprite" parent="."]
