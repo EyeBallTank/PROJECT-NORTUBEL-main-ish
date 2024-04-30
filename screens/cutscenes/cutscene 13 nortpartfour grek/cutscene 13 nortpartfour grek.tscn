@@ -369,6 +369,66 @@ tracks/26/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/27/type = "value"
+tracks/27/path = NodePath("ClarityScreenFacesTest:modulate")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("ClarityScreenDetectorEst:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("ClarityScreenAnimatedEffectTest:modulate")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Cutscene13NortpartfourGrekPanel14:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("ClarityScreenDetectorEst:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 681, 280 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -711,6 +771,66 @@ tracks/27/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/28/type = "value"
+tracks/28/path = NodePath("ClarityScreenFacesTest:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0, 88.2, 89.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("ClarityScreenDetectorEst:modulate")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0, 88.2, 89.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("ClarityScreenAnimatedEffectTest:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0, 88.2, 89.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.298039 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("Cutscene13NortpartfourGrekPanel14:modulate")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0, 88.2, 89.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("ClarityScreenDetectorEst:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0, 89.5, 90.5, 92.5, 93.5, 95.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 681, 280 ), Vector2( 681, 280 ), Vector2( 681, 280 ), Vector2( 819, 280 ), Vector2( 819, 369 ), Vector2( 676, 369 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -735,24 +855,27 @@ scale = Vector2( 0.567764, 0.567764 )
 texture = ExtResource( 16 )
 
 [node name="ClarityScreenFacesTest" type="Sprite" parent="."]
-position = Vector2( 717.413, 1104 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 748.413, 310 )
 scale = Vector2( 0.80531, 0.80531 )
 texture = ExtResource( 20 )
 
 [node name="ClarityScreenDetectorEst" type="Sprite" parent="."]
-position = Vector2( 685.643, 1173 )
-scale = Vector2( 0.725152, 0.656489 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 681, 280 )
+scale = Vector2( 0.706012, 0.639161 )
 texture = ExtResource( 19 )
 
 [node name="ClarityScreenAnimatedEffectTest" type="AnimatedSprite" parent="."]
-modulate = Color( 1, 1, 1, 0.298039 )
-position = Vector2( 718.323, 1105.75 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 749.323, 311.75 )
 scale = Vector2( 0.81087, 0.81087 )
 frames = SubResource( 5 )
-frame = 1
+playing = true
 
 [node name="Cutscene13NortpartfourGrekPanel14" type="Sprite" parent="."]
-position = Vector2( 716.643, 1039 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 747.643, 245 )
 scale = Vector2( 0.800699, 0.800699 )
 texture = ExtResource( 22 )
 
