@@ -1821,3 +1821,70 @@ O nome é Yiegour Sarvotsky, mas alguns amigos chamam-me ""B-Man""."
 CUTSCENE_13_TALK_19,"Feel free to explore this place but do be carefull.
 Lot of things around here are designed to kill and some security systems are activated.","Podem explorar este sitio como quiserem mas têm cuidado.
 Muitas coisas aqui foram feitas para matar e alguns sistemas de segurança estão ativos."
+CUTSCENE_14_TALK_1,"Wow, those ships look cool.
+This reminds me of when the 2 of us wanted to be astronauts.","Wow, estas naves são tão fixes.
+Lembram-me de quando nós os 2 queriam ser astronautas."
+CUTSCENE_14_TALK_2,"Oscar, Pete. Both of you, get out of there now!","Oscar, Pete. Vocês os dois, saem dai já!"
+CUTSCENE_14_TALK_3,"We're just looking at this stuff. 
+We're not gonna touch anything.","Só estávamos a ver.
+Não vamos tocar em nada."
+CUTSCENE_14_NAME_BASE_ANNOUNCER,Base announcer,Anunciador da Base
+CUTSCENE_14_TALK_4,Atention. The base is at state of emergency! Please proceed to the nearest escape ship!,"Atenção. A base está em estado de emergência! Por favor, prossiga para a nave de fuga mais próxima!"
+CUTSCENE_14_TALK_5,What's going on?,O que se passa?
+CUTSCENE_14_TALK_6,"I don't know, but we might as well enter one of these ships.",Não sei mas é melhor entrar numa destas naves.
+CUTSCENE_14_TALK_7,"But wait, we don't even know how they work.","Espera lá, nem sequer sabemos como elas funcionam."
+CUTSCENE_14_NAME_EVERYONE,Everyone,Todos
+CUTSCENE_14_TALK_8,Ouch. Is everyone okay?,Ouch. Estão todos bem?
+CUTSCENE_14_TALK_9,"What the Hell happened? And how did you get that vehicle? Did you get any permission?
+Where's your identification?","Que raio aconteceu aqui? Donde arranjaram esse veiculo? Tiveram alguma permissão?
+Onde estão as vossas identificações?"
+CUTSCENE_14_TALK_10,"We don't have any.
+We were visiting a lab from space and something happened, so we had to use this ship.","Não temos nenhuma.
+Visitamos um laboratório no espaço e algo aconteceu, por isso tivemos que usar esta nave."
+CUTSCENE_14_TALK_11,"So you don't have any form of identification nor authorization to use this ship.
+Then come with me quick before I-","Então não têm nenhuma identificação ou autorização para aquela nave?
+Vêm comigo antes que eu-"
+CUTSCENE_14_TALK_12,"Let them go, Soromovikz!
+They're with me.","Deixa-lhes em paz, Soromovikz!
+Eles estão comigo."
+CUTSCENE_14_TALK_13,"Yiegour? Mh, sure.
+Better make sure to pay for the damage, since you ""mercs"" are paid more for doing half of what we do.","Yiegour? Mh, está bem.
+É melhor pagares pelo dano, já que vocês ""mercs"" recebem mais por fazer metade do nosso trabalho."
+CUTSCENE_14_TALK_14,Are you mad at us for going too far?,Está zangado connosco por ir assim tão longe?
+CUTSCENE_14_TALK_15,"I'm rather impressed. Somehow you're still alive. 
+But I'm gonna put you all in a safer place and not as a punishment. 
+They said we could be dealing with an attacker at some point, so I wanna make sure you kids stay out of that.","Eu estou é impressionado. Apesar de tudo, estão vivos.
+Mas terei que meter-vos num lugar mais seguro e não como castigo.
+Dizem que podemos antecipar um ataque a qualquer momento, então tenho que ter a certeza que não estejam envolvidos."
+CUTSCENE_14_TALK_16,And what's in your mind?,E o que estas a pensar?
+CUTSCENE_14_TALK_17,"I'm just thinking about my dad and all.
+We've all been having some family trouble and it's why we ran from home, but now we're trying to get back.","Estava só a pensar no meu pai e um pouco mais.
+Estivemos problemas com família e é por isso que fugimos de casa, mas agora estamos a tentar voltar."
+CUTSCENE_14_TALK_18,"I've had my family troubles too. And it was Hell.
+My older brother couldn't take it anymore, so he found a quick way out.","Eu tive os meus problemas de família. Era um inferno.
+O meu irmão mais velho não aguentou mais, por isso encontrou a maneira mais rápida."
+CUTSCENE_14_TALK_19,"And my old man barely loved me. My mother died when I was born.
+After my brother's death, I ended up confronting my father and it was the first time I ever pulled a trigger.","E o meu velho raramente gostava de mim. A minha mãe morreu quando nasci.
+Depois da morte do meu irmão, eu acabei por confrontar o meu pai e foi a primeira vez que puxei o gatilho."
+CUTSCENE_14_TALK_20,"Ran from home and didn't took long enough before Qubritz gave me a different life.
+He says I've became his best man in the field.
+That can be either good or bad news depending on how you look at it. But-","Fugi de casa e foi pouco antes de Qubritz dar-me uma vida diferente.
+Ele diz que eu tornei no melhor homem nessa área.
+Pode ser uma coisa boa ou má, dependendo de como vez isso. Mas-"
+CUTSCENE_14_TALK_21,"Something happened! Clarity, what's going on?","Algo aconteceu! Clarity, o que está acontecer?"
+CUTSCENE_14_TALK_22,"Someone's attacking the base. It must be Zharkovil.
+I'm fine and so are Bolt and Isaac but some of the mercs aren't responding.","Alguem está a atacar a base. Deve ser o Zharkovil.
+Eu estou bem e também estão o Bolt e Isaac, mas alguns dos mercs não estão a responder."
+CUTSCENE_14_TALK_23,I need to know what happened to those 6 kids.,Eu tenho que saber o que aconteceu com os 6 miúdos.
+CUTSCENE_14_TALK_24,"We better be quick.
+It seems Zharkovil is near them!","Temos que ser rápidos.
+Parece que o Zharkovil aproximou deles!"
+CUTSCENE_14_TALK_25,"What happened? What's going on?
+Wait.. that screen.","O que aconteceu? O que se passa?
+Espera... aquele ecrâ."
+CUTSCENE_14_TALK_26,"KATRIN, LISTEN! THE BASE IS UNDER ATTACK BY ZHARKOVIL AND HIS MEN.
+WE'RE DOING WHAT WE CAN TO STOP THEM BUT ACCORDING TO CLARITY, HE HAS AN ENERGY SHIELD ACTIVATED!","KATRIN, OUVE! A BASE ESTÁ A SER ATACADA PELO ZHARKOVIL E OS SEUS HOMENS.
+ESTAMOS A FAZER O QUE PODEMOS PARA PARA-LOS MAS A CLARITY DISSE QUE ELE TEM UM ESCUDO DE ENERGIA ATIVO!"
+CUTSCENE_14_TALK_27,"FIND THE GENERATORS AND TURN THEM OFF!
+WHEN HIS SHIELD GOES DOWN, YIEGOUR CAN SHOOT HIM BACK!","ENCONTRA OS REGENERADORES E DESLIGA OS!
+QUANDO O ESCUDO DELE FOR ABAIXO, O YIEGOUR PODE ATACA-LO DE VOLTA!"
