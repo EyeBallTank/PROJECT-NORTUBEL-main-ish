@@ -71,10 +71,22 @@ tracks/4/keys = {
 "update": 0,
 "values": [ Vector2( 1291, 231 ) ]
 }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Cutscene12NortpartfourAmaliaPanel3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -195, 235.692 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 30.0
+length = 35.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -82,7 +94,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 28.8 ),
+"times": PoolRealArray( 32.1 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -108,7 +120,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 11.7, 12.1 ),
+"times": PoolRealArray( 0, 11.3, 11.7 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -120,10 +132,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 6.6, 12 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 6.2, 11.6, 16.9, 21.9, 25.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Katrin Flenn", "Notskorb Alegna", "Carrie Decarde" ]
+"values": [ "Katrin Flenn", "Notskorb Alegna", "Carrie Decarde", "Notskorb Alegna", "Stella Flenn", "Katrin Flenn" ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -132,10 +144,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 6.6, 12 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 6.2, 11.6, 16.9, 21.9, 25.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_12_TALK_1", "CUTSCENE_12_TALK_2", "CUTSCENE_12_TALK_3" ]
+"values": [ "CUTSCENE_12_TALK_1", "CUTSCENE_12_TALK_2", "CUTSCENE_12_TALK_3", "CUTSCENE_12_TALK_4", "CUTSCENE_12_TALK_5", "CUTSCENE_12_TALK_6" ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Cutscene12NortpartfourAmaliaPanel2:position")
@@ -144,10 +156,22 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 11.7, 12 ),
+"times": PoolRealArray( 0, 11.3, 11.6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1291, 231 ), Vector2( 1291, 231 ), Vector2( 767, 231 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Cutscene12NortpartfourAmaliaPanel3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 21.4, 22.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -195, 235.692 ), Vector2( -195, 235.692 ), Vector2( 192, 235.692 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -206,7 +230,7 @@ scale = Vector2( 0.6469, 0.6469 )
 texture = ExtResource( 6 )
 
 [node name="Cutscene12NortpartfourAmaliaPanel3" type="Sprite" parent="."]
-position = Vector2( -214, 235.692 )
+position = Vector2( -195, 235.692 )
 scale = Vector2( 0.768972, 0.768972 )
 texture = ExtResource( 8 )
 
