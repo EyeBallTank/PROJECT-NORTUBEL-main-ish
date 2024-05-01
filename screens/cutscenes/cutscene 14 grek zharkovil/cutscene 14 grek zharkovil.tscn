@@ -975,7 +975,6 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 207.425, 239.202 )
 scale = Vector2( 0.828284, 0.828284 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 flip_h = true
 
