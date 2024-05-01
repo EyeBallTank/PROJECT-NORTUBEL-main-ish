@@ -433,10 +433,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 8.6, 14.3, 20.9, 26.3, 33.1, 39.3, 44.2, 50.5, 54, 60.2, 66, 72, 77.5, 84, 89, 96 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 8.6, 14.3, 20.9, 26.3, 33.1, 39.3, 44.2, 50.5, 54, 60.2, 66, 72, 77.5, 84, 89, 96, 100.5, 106.8, 112.9, 118.5, 126.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_14_TALK_1", "CUTSCENE_14_TALK_2", "CUTSCENE_14_TALK_3", "CUTSCENE_14_TALK_4", "CUTSCENE_14_TALK_5", "CUTSCENE_14_TALK_6", "CUTSCENE_14_TALK_7", "AAAAAAHHH!!!!", "CUTSCENE_14_TALK_8", "CUTSCENE_14_TALK_9", "CUTSCENE_14_TALK_10", "CUTSCENE_14_TALK_11", "CUTSCENE_14_TALK_12", "CUTSCENE_14_TALK_13", "CUTSCENE_14_TALK_14", "CUTSCENE_14_TALK_15", "CUTSCENE_14_TALK_16" ]
+"values": [ "CUTSCENE_14_TALK_1", "CUTSCENE_14_TALK_2", "CUTSCENE_14_TALK_3", "CUTSCENE_14_TALK_4", "CUTSCENE_14_TALK_5", "CUTSCENE_14_TALK_6", "CUTSCENE_14_TALK_7", "AAAAAAHHH!!!!", "CUTSCENE_14_TALK_8", "CUTSCENE_14_TALK_9", "CUTSCENE_14_TALK_10", "CUTSCENE_14_TALK_11", "CUTSCENE_14_TALK_12", "CUTSCENE_14_TALK_13", "CUTSCENE_14_TALK_14", "CUTSCENE_14_TALK_15", "CUTSCENE_14_TALK_16", "CUTSCENE_14_TALK_17", "CUTSCENE_14_TALK_18", "CUTSCENE_14_TALK_19", "CUTSCENE_14_TALK_20", "CUTSCENE_14_TALK_21" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("NinePatchRect/CHARNAME:text")
@@ -445,10 +445,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 8.6, 14.3, 20.9, 26.3, 33.1, 39.3, 44.2, 50.5, 54, 60.2, 66, 72, 77.5, 84, 89 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 8.6, 14.3, 20.9, 26.3, 33.1, 39.3, 44.2, 50.5, 54, 60.2, 66, 72, 77.5, 84, 89, 100.5, 106.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Pete Flenn", "Carrie Decarde", "Oscar Decarde", "CUTSCENE_14_NAME_BASE_ANNOUNCER", "Angela Brokston", "Melvin Brokston", "Katrin Flenn", "CUTSCENE_14_NAME_EVERYONE", "Melvin Brokston", "Soromovikz", "Pete Flenn", "Soromovikz", "Yiegour Sarvotsky", "Soromovikz", "Carrie Decarde", "Yiegour Sarvotsky" ]
+"values": [ "Pete Flenn", "Carrie Decarde", "Oscar Decarde", "CUTSCENE_14_NAME_BASE_ANNOUNCER", "Angela Brokston", "Melvin Brokston", "Katrin Flenn", "CUTSCENE_14_NAME_EVERYONE", "Melvin Brokston", "Soromovikz", "Pete Flenn", "Soromovikz", "Yiegour Sarvotsky", "Soromovikz", "Carrie Decarde", "Yiegour Sarvotsky", "Melvin Brokston", "Yiegour Sarvotsky" ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Cutscene14GrekZharkovilPanel2:position")
@@ -733,10 +733,10 @@ tracks/27/loop_wrap = true
 tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 125 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ true, false ]
 }
 tracks/28/type = "value"
 tracks/28/path = NodePath("Cutscene14GrekZharkovilPanel10:position")
