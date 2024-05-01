@@ -28,3 +28,11 @@ func _on_UnpauseButton_pressed():
 
 func _on_SkipCutscene_pressed():
 	SceneManager.change_scene("level_transition_effect", nextlevel)
+
+
+func _on_EN_Setting_pressed():
+	TranslationServer.set_locale("en")
+
+
+func _on_PT_Setting_pressed():
+	TranslationServer.set_locale("pt")

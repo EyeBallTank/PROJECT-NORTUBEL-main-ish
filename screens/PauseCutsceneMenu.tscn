@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menusandui/DialogueBoxTest.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/pause visibility toggle.png" type="Texture" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button 2 when pressed.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/button 2 when hover.png" type="Texture" id=6]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=7]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=10]
 
 [node name="PauseCutsceneMenu" type="Control"]
 pause_mode = 2
@@ -71,5 +74,41 @@ text = "STORYSKIP_T"
 position = Vector2( 515, 390 )
 texture = ExtResource( 2 )
 
+[node name="EN Setting" type="TextureButton" parent="."]
+margin_left = 292.0
+margin_top = 360.0
+margin_right = 359.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="EN Setting"]
+margin_left = 26.0
+margin_top = 21.0
+margin_right = 66.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 7 )
+text = "EN"
+
+[node name="PT Setting" type="TextureButton" parent="."]
+margin_left = 670.0
+margin_top = 360.0
+margin_right = 737.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="PT Setting"]
+margin_left = 26.0
+margin_top = 21.0
+margin_right = 66.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 7 )
+text = "PT"
+
 [connection signal="pressed" from="UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="SkipCutscene" to="." method="_on_SkipCutscene_pressed"]
+[connection signal="pressed" from="EN Setting" to="." method="_on_EN_Setting_pressed"]
+[connection signal="pressed" from="PT Setting" to="." method="_on_PT_Setting_pressed"]
