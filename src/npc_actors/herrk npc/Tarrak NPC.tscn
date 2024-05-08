@@ -91,7 +91,7 @@ margin_top = 5.0
 margin_right = 1007.0
 margin_bottom = 109.0
 custom_fonts/font = ExtResource( 4 )
-text = "TARRAK_NPC_TALK"
+text = "RRRROOOOOOOooooaaaaarrrr!!!!"
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
 margin_left = 5.0

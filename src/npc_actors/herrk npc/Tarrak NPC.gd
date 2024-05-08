@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+#notes: move it to better location, add a coin and maybe make the windows transparent if the image files aren't ruined
+
 onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 onready var sprite = $Sprite
