@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,6 +11,12 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkPinballFlipper.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=17]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -98,5 +104,29 @@ position = Vector2( 585, 1522 )
 new_scene = "res://src/levels/brinkaedea/BrinkLevel25.tscn"
 spritename = "brinkaedea greendoor"
 customtext = "ill0uu"
+
+[node name="Blue key" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2051, 1981 )
+spritename = "brinkaedea blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2242, 2198 )
+spritename = "brinkaedea redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2464, 2006 )
+spritename = "brinkaedea yelkey"
+
+[node name="BlueDoor" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2641, 2305 )
+spritename = "brinkaedea bludoor"
+
+[node name="RedDoor" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2446, 2415 )
+spritename = "brinkaedea reddoor"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2094, 2479 )
+spritename = "brinkaedea yeldoor"
 
 [editable path="BrinkPinballFlipper"]
