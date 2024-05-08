@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/sprites/enemy_sprites/brinkaedea/BRINK JESTER SPRITES ALSO NPC.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 900, 300, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 1200, 300, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 300, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 300, 300, 300, 300 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 600, 300, 300, 300 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "dizzy",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": false,
+"name": "laugh",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 4 ), SubResource( 5 ) ],
+"loop": true,
+"name": "moving",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 91, 99.25 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 68, 90.5 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 67, 91 )
+
+[node name="BrinkRedJesterThree" type="KinematicBody2D"]
+collision_layer = 32
+collision_mask = 4
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -2, -50 )
+frames = SubResource( 6 )
+animation = "laugh"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1, 0.25 )
+shape = SubResource( 7 )
+
+[node name="GreenJesterSource" type="Position2D" parent="."]
+position = Vector2( 4, 1 )
+
+[node name="CloudEffect" type="Position2D" parent="."]
+position = Vector2( 4, -20 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( -448, -40 )
+enabled = true
+cast_to = Vector2( 896, -4 )
+collision_mask = 3
+
+[node name="EnemyHurtbox" type="Area2D" parent="."]
+position = Vector2( 19, -233 )
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
+position = Vector2( -19, 240.5 )
+shape = SubResource( 8 )
+
+[node name="EnemyHitbox" parent="." instance=ExtResource( 1 )]
+position = Vector2( 4, 100 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
+position = Vector2( -4, -93 )
+shape = SubResource( 9 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
