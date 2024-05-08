@@ -1,14 +1,9 @@
 extends KinematicBody2D
 
 #ISSUES:
-#MUCH LIKE RED GHALBEEN. HE CAN'T TURN AROUND WHEN COLLIDING WITH WALLS
-#RED TEXT IN DEBUGGER SAYING , FROM ANIMATEDSPRITE?
-#I EVEN CHANGED IT TO "LAUGH"
-
-#IT SEEMS HE CAN TURN WHEN TOUCHING WALLS NOW AND THE SAME FOR GREEN JESTER
-#BUT DEBUGGER SAYING THERE'S NO "ABOUTTOSUMMON" ANIMATION IS STILL THERE
-
-#think i made it worse with "doingalaugh"
+#Recreated the Red Jester and this time, the animation was called "laugh" since the beginning
+#but the issue still showed up
+#So then I renamed it "abouttosummon" and it's still there
 
 export var gravity: = 3700
 
