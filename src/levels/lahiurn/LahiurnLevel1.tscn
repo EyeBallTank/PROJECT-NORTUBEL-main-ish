@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,12 @@
 [ext_resource path="res://src/enemies/lahiurn/LahiurnNightRider.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/enemies/lahiurn/EygzouhlSoldier.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=19]
 
 [node name="LahiurnLevel1" type="Node2D"]
 
@@ -79,3 +85,27 @@ position = Vector2( -171, 721 )
 [node name="LevelProp" parent="." instance=ExtResource( 13 )]
 position = Vector2( 2258, 1063 )
 propname = "lahiprop walldestroyed flag"
+
+[node name="Blue key" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1783, 794 )
+spritename = "lahiurn blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2031, 786 )
+spritename = "lahiurn redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1902, 793 )
+spritename = "lahiurn yelkey"
+
+[node name="BlueDoor" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1621, 456 )
+spritename = "lahiurn bludoor"
+
+[node name="RedDoor" parent="." instance=ExtResource( 19 )]
+position = Vector2( 2202, 499 )
+spritename = "lahiurn reddoor"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1903, 488 )
+spritename = "lahiurn yeldoor"
