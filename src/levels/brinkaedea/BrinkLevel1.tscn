@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=11]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_hazards/brinkaedea/BrinkEvilAccordion.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/enemies/brinkaedea/BrinkRedJesterThree.tscn" type="PackedScene" id=14]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -92,3 +93,6 @@ boardname = "brink art jester king reference"
 
 [node name="BrinkEvilAccordion" parent="." instance=ExtResource( 13 )]
 position = Vector2( 3986, 1023 )
+
+[node name="BrinkRedJesterThree" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1838, 1109 )
