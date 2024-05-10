@@ -1,9 +1,14 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/FallingPlatform.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/FallingPlatNew.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/FallingPlatform hirdrih 2.PNG" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/FallingPlatform greklovick.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/FallingPlatform brinkaedea.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 383, 194 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 4 )
@@ -20,6 +25,11 @@ region = Rect2( 0, 0, 383, 194 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
+"frames": [ SubResource( 12 ) ],
+"loop": false,
+"name": "brinkaedea fallplat",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
 "name": "greklovick fallplat",
@@ -237,7 +247,7 @@ motion/sync_to_physics = true
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
 modulate = Color( 1, 1, 1, 0 )
 frames = SubResource( 9 )
-animation = "greklovick fallplat"
+animation = "brinkaedea fallplat"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
 position = Vector2( 1.50001, 2.44644 )

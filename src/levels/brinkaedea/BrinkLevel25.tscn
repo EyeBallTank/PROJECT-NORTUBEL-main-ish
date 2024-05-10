@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkFaygoPlat.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/FallingPlatNew.tscn" type="PackedScene" id=16]
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -85,3 +86,7 @@ customtext = "b0nkyy"
 [node name="LifeguardFloater" parent="." instance=ExtResource( 15 )]
 position = Vector2( 233, 1117 )
 spritename = "brinkaedea floater"
+
+[node name="FallingPlatNew" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1487, 1359 )
+spritename = "brinkaedea fallplat"
