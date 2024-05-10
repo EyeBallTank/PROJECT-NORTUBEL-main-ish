@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/level_hazards/brinkaedea/BrinkEvilAccordion.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkRedJesterThree.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=16]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -99,5 +100,9 @@ position = Vector2( 3986, 1023 )
 position = Vector2( 1838, 1109 )
 
 [node name="Coin" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1170, 1089 )
+position = Vector2( 1409, 779 )
 spritename = "brinkaedea coin"
+
+[node name="Health Pickup" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1618, 741 )
+spritename = "brinkaedea health"
