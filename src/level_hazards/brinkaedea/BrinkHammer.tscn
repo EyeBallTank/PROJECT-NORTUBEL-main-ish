@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/level_hazard_sprites/brinkaedea/brink hammer main.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_hazard_sprites/brinkaedea/brink hammer base.png" type="Texture" id=3]
+[ext_resource path="res://src/level_hazards/brinkaedea/BrinkHammer.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 86, 43.5 )
@@ -26,7 +27,25 @@ tracks/0/keys = {
 "values": [ 0.0, 180.0, 360.0 ]
 }
 
-[node name="KinematicBody2D" type="Node2D"]
+[sub_resource type="Animation" id=4]
+resource_name = "reverse"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 360.0, 180.0, 0.0 ]
+}
+
+[node name="BrinkHammer" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 collision_layer = 64
@@ -52,3 +71,4 @@ texture = ExtResource( 3 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "RESET"
 anims/RESET = SubResource( 3 )
+anims/reverse = SubResource( 4 )
