@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/greklovick/Yellow switch Greklovick.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/Yellow switch brinkaedea.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/level_objects/Yellow switch.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=3]
 
