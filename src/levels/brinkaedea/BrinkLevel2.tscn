@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=18]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -128,5 +129,8 @@ spritename = "brinkaedea reddoor"
 [node name="YellowDoor" parent="." instance=ExtResource( 17 )]
 position = Vector2( 2094, 2479 )
 spritename = "brinkaedea yeldoor"
+
+[node name="BlueSwitch" parent="." instance=ExtResource( 18 )]
+position = Vector2( 191, 1369 )
 
 [editable path="BrinkPinballFlipper"]
