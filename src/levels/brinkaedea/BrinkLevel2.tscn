@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=21]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -143,5 +144,10 @@ gre1switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green swi
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
 position = Vector2( 329, 1526 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch Two brinkaedea.tres"
+
+[node name="SlowFloor" parent="." instance=ExtResource( 21 )]
+position = Vector2( -596, 1654 )
+scale = Vector2( 8, 16 )
+collision_newsize = Vector2( 8, 16 )
 
 [editable path="BrinkPinballFlipper"]
