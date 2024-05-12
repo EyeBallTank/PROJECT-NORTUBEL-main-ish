@@ -183,6 +183,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * sunfiredragon on FreeSound (Electric trap sound)
 * szpury on FreeSound (Police car sound effect)
 * irinairinafomicheva/pixabay (Camera sound)
+* floraphonic-38928062/pixabay (Squishy hammer sound)
 * imagery2 on FreeSound (Alarm sound)
 * lluiset7 on FreeSound (Train horn sound)
 * LeMudCrab on FreeSound (Grenade Launcher sound)
