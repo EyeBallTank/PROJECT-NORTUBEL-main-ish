@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/baby-squeak-toy-2-183912.mp3-647f7d879e614b6eea1410c7c0d0c5b9.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level hazards/brinkaedea/baby-squeak-toy-2-183912.mp3"
+dest_files=[ "res://.import/baby-squeak-toy-2-183912.mp3-647f7d879e614b6eea1410c7c0d0c5b9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
