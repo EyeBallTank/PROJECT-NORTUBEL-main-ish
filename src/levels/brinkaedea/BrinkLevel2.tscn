@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -18,6 +18,8 @@
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=20]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -133,5 +135,13 @@ spritename = "brinkaedea yeldoor"
 [node name="BlueSwitch" parent="." instance=ExtResource( 18 )]
 position = Vector2( 191, 1369 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Blue switch brinkaedea.tres"
+
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
+position = Vector2( 102, 1526 )
+gre1switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch One brinkaedea.tres"
+
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
+position = Vector2( 329, 1526 )
+gre2switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch Two brinkaedea.tres"
 
 [editable path="BrinkPinballFlipper"]
