@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nort art weird spider.png-91c7096bee797020d23904b1e7c11ec8.stex"
+path="res://.import/nort art weird spider v2.png-cb0aecbae6e5651d0d1797f58b27eefc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/nortubel/nort art weird spider.png"
-dest_files=[ "res://.import/nort art weird spider.png-91c7096bee797020d23904b1e7c11ec8.stex" ]
+source_file="res://assets/sprites/art gallery/nortubel/nort art weird spider v2.png"
+dest_files=[ "res://.import/nort art weird spider v2.png-cb0aecbae6e5651d0d1797f58b27eefc.stex" ]
 
 [params]
 
