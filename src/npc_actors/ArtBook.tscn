@@ -12,7 +12,7 @@
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker reference 2.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 3.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart reptile reference.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art stella reference.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art stella reference v2.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art zarina reference.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art shihiro reference 2.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art pamela reference 3.png" type="Texture" id=16]
@@ -538,7 +538,7 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 15 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=140]
 atlas = ExtResource( 13 )
 region = Rect2( 0, 0, 749, 449 )
 
@@ -1064,7 +1064,7 @@ animations = [ {
 "name": "nort art shihiro reference",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 16 ) ],
+"frames": [ SubResource( 140 ) ],
 "loop": false,
 "name": "nort art stella reference",
 "speed": 0.0

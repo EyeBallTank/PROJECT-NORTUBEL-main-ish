@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nort art stella reference.png-b1304a60739afcade86bb0faf8f2ce52.stex"
+path="res://.import/nort art stella reference v2.png-191cbc675c02dabb8063b38b1c550c97.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/nortubel/nort art stella reference.png"
-dest_files=[ "res://.import/nort art stella reference.png-b1304a60739afcade86bb0faf8f2ce52.stex" ]
+source_file="res://assets/sprites/art gallery/nortubel/nort art stella reference v2.png"
+dest_files=[ "res://.import/nort art stella reference v2.png-191cbc675c02dabb8063b38b1c550c97.stex" ]
 
 [params]
 
