@@ -26,6 +26,7 @@ onready var basicmessage = $basicmessage
 var test = false
 
 func _ready():
+	animationplayer.set_speed_scale(1.0)
 	animationplayer.play("RESET")
 	mainsprite.animation = spritename
 	maintext1.text = str (customtext1)
@@ -42,6 +43,15 @@ func _physics_process(delta):
 	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 	if test == true:
 		if Input.is_action_just_pressed("standstill") and dialoguebox.visible == false:
+			animationplayer.set_speed_scale(1.0)
+			dialoguebox.visible = true
+			animationplayer.play("maintalk")
+		elif Input.is_action_just_pressed("stellacommand") and dialoguebox.visible == false:
+			animationplayer.set_speed_scale(2.0)
+			dialoguebox.visible = true
+			animationplayer.play("maintalk")
+		elif Input.is_action_just_pressed("stellajump") and dialoguebox.visible == false:
+			animationplayer.set_speed_scale(0.6)
 			dialoguebox.visible = true
 			animationplayer.play("maintalk")
 	elif test == false:
@@ -60,3 +70,4 @@ func _on_HearThemArea_body_exited(body):
 	if body.name == "Player":
 		basicmessage.visible = false
 		test = false
+		animationplayer.set_speed_scale(1.0)
