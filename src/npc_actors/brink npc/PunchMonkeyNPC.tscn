@@ -37,6 +37,9 @@ extents = Vector2( 78.6458, 119.903 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 152.083, 409.917 )
 
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 152.083, 409.722 )
+
 [sub_resource type="Animation" id=8]
 resource_name = "RESET"
 tracks/0/type = "value"
@@ -99,64 +102,13 @@ tracks/4/keys = {
 "update": 1,
 "values": [ false ]
 }
-
-[sub_resource type="Animation" id=11]
-resource_name = "RESET2"
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ "default" ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("StaticBody2D/PunchMonkeyBreakableCeiling:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("StaticBody2D/CollisionShape2D:disabled")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("AnimatedSprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( -2.77778, 8.33333 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("TalktoArea/CollisionShape2D:disabled")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
+tracks/5/type = "value"
+tracks/5/path = NodePath("AnimationArea/CollisionShape2D:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -214,6 +166,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Vector2( -2.77778, 8.33333 ), Vector2( -2.77778, -545.833 ), Vector2( -2.778, 8.333 ) ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimationArea/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 223.611, 31.9444 )
@@ -240,6 +204,14 @@ shape = SubResource( 3 )
 position = Vector2( -9.02778, -290.083 )
 scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
+
+[node name="AnimationArea" type="Area2D" parent="."]
+scale = Vector2( 1, 1 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimationArea"]
+position = Vector2( -9.02777, -290.278 )
+shape = SubResource( 12 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -284,7 +256,6 @@ text = "Monkey"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 8 )
-anims/RESET2 = SubResource( 11 )
 anims/gotbananas = SubResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -302,3 +273,4 @@ shape = SubResource( 9 )
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
+[connection signal="body_entered" from="AnimationArea" to="." method="_on_AnimationArea_body_entered"]

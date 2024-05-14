@@ -25,15 +25,15 @@ func _physics_process(delta):
 			maintext.text = str (customtext3)
 		if Input.is_action_just_pressed("attack"):
 			maintext.text = str (customtext4)
-	if nobanana == false:
-		if bananatime == 0:
-			animationplayer.play("gotbananas")
-			yield(animationplayer, "animation_finished")
-			nobanana = true
-			bananatime + 1
-			animationplayer.play("RESET2")
-		elif bananatime == 1:
-			animationplayer.play("RESET2")
+#	if nobanana == false:
+#		if bananatime == 0:
+#			animationplayer.play("gotbananas")
+#			yield(animationplayer, "animation_finished")
+#			nobanana = true
+#			bananatime + 1
+#			animationplayer.play("RESET2")
+#		elif bananatime == 1:
+#			animationplayer.play("RESET2")
 
 func _on_TalktoArea_body_entered(body):
 	if body.name == "Player":
@@ -42,8 +42,7 @@ func _on_TalktoArea_body_entered(body):
 		if body.hastradeitem == true:
 			maintext.text = str (customtext2)
 			Signals.emit_signal("trade_item_received")
-			nobanana = false
-			
+#			nobanana = false
 		else:
 			pass
 
@@ -55,3 +54,10 @@ func _on_TalktoArea_body_exited(body):
 			maintext.text = str (customtext)
 		else:
 			honk = false
+
+func _on_AnimationArea_body_entered(body):
+	if body.name == "Player":
+		if body.hastradeitem == true:
+			animationplayer.play("gotbananas")
+		else:
+			pass
