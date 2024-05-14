@@ -40,6 +40,7 @@ tile_data = PoolIntArray( 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0, 1441797, 
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -240, 1421 )
+playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( -6, 1391 )
