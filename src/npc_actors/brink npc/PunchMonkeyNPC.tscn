@@ -1,45 +1,117 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/FAYGO SPRITE NPC.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/PUNCH MONKEY SPRITES NPC.png" type="Texture" id=3]
+[ext_resource path="res://src/npc_actors/brink npc/PunchMonkeyNPC.gd" type="Script" id=4]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/punch monkey breakable ceiling.png" type="Texture" id=5]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 254, 433 )
+region = Rect2( 0, 0, 206, 308 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 3 )
+region = Rect2( 206, 0, 206, 308 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 3 )
+region = Rect2( 412, 0, 206, 308 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 5 ) ],
-"loop": false,
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
 "name": "default",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "punch",
 "speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 60.4167, 206.472 )
+extents = Vector2( 78.6458, 119.903 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 85.4167, 174 )
+extents = Vector2( 152.083, 409.917 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "default" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("StaticBody2D/PunchMonkeyBreakableCeiling:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("StaticBody2D/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 223.611, 31.9444 )
 
 [node name="PunchMonkeyNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
 collision_mask = 4
+script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -48.6111, 19.4444 )
+position = Vector2( -2.77778, 8.33333 )
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3.47223, 24.5278 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
-position = Vector2( -4.86111, 57 )
+position = Vector2( -9.02778, -290.083 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -81,4 +153,23 @@ margin_top = 5.0
 margin_right = 107.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
-text = "Faygo"
+text = "Monkey"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 8 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -68.0556, -668.056 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="PunchMonkeyBreakableCeiling" type="Sprite" parent="StaticBody2D"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1.62257e-05, -6.62274e-07 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 9 )
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
