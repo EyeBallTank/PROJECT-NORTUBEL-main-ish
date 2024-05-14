@@ -7,10 +7,10 @@ onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
 onready var animationplayer = $AnimationPlayer
 
-export(String) var customtext = "FAYGO_NPC_TALK_NOITEM"
-export(String) var customtext2 = "FAYGO_NPC_TALK_YESITEM"
-export(String) var customtext3 = "FAYGO_NPC_HUG"
-export(String) var customtext4 = "FAYGO_NPC_HURT"
+export(String) var customtext = "PUNCH_MONKEY_NPC_TALK_NOITEM"
+export(String) var customtext2 = "PUNCH_MONKEY_NPC_TALK_YESITEM"
+export(String) var customtext3 = "PUNCH_MONKEY_NPC_HUG"
+export(String) var customtext4 = "PUNCH_MONKEY_NPC_HURT"
 
 func _ready():
 	animationplayer.play("RESET")

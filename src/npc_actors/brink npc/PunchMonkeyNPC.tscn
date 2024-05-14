@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
@@ -52,7 +52,7 @@ tracks/0/keys = {
 "values": [ "default" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:position")
+tracks/1/path = NodePath("StaticBody2D/PunchMonkeyBreakableCeiling:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -60,11 +60,11 @@ tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 0, 0 ) ]
+"update": 1,
+"values": [ true ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("StaticBody2D/PunchMonkeyBreakableCeiling:visible")
+tracks/2/path = NodePath("StaticBody2D/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -73,10 +73,10 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("StaticBody2D/CollisionShape2D:disabled")
+tracks/3/path = NodePath("AnimatedSprite:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -84,8 +84,60 @@ tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -2.77778, 8.33333 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "gotbananas"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("StaticBody2D/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false ]
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StaticBody2D/PunchMonkeyBreakableCeiling:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "punch", "default" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimatedSprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -2.77778, 8.33333 ), Vector2( -2.77778, -545.833 ), Vector2( -2.778, 8.333 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=9]
@@ -94,7 +146,7 @@ extents = Vector2( 223.611, 31.9444 )
 [node name="PunchMonkeyNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
-collision_mask = 4
+collision_mask = 0
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -157,6 +209,7 @@ text = "Monkey"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 8 )
+anims/gotbananas = SubResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( -68.0556, -668.056 )
