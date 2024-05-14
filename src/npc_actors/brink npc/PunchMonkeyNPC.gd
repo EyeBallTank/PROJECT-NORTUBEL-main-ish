@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 var honk = false
 var nobanana = true
-var bananatime = 1
+var bananatime = 0
 
 onready var dialogue = $CanvasLayer
 onready var maintext = $CanvasLayer/NinePatchRect/Dialogue
@@ -26,12 +26,13 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("attack"):
 			maintext.text = str (customtext4)
 	if nobanana == false:
-		if bananatime == 1:
+		if bananatime == 0:
 			animationplayer.play("gotbananas")
 			yield(animationplayer, "animation_finished")
 			nobanana = true
+			bananatime + 1
 			animationplayer.play("RESET2")
-		elif bananatime == 2:
+		elif bananatime == 1:
 			animationplayer.play("RESET2")
 
 func _on_TalktoArea_body_entered(body):
@@ -42,7 +43,7 @@ func _on_TalktoArea_body_entered(body):
 			maintext.text = str (customtext2)
 			Signals.emit_signal("trade_item_received")
 			nobanana = false
-			bananatime + 1
+			
 		else:
 			pass
 
