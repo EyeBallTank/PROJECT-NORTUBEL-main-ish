@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=22]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -149,5 +150,9 @@ gre2switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green swi
 position = Vector2( -596, 1654 )
 scale = Vector2( 8, 16 )
 collision_newsize = Vector2( 8, 16 )
+
+[node name="ArtBook" parent="." instance=ExtResource( 22 )]
+position = Vector2( -671, 1441 )
+boardname = "brink art punch monkey crossover"
 
 [editable path="BrinkPinballFlipper"]

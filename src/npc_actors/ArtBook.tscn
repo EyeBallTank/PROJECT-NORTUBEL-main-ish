@@ -1,4 +1,4 @@
-[gd_scene load_steps=242 format=2]
+[gd_scene load_steps=244 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -122,6 +122,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art xemarokk vs yiegour.png" type="Texture" id=120]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art simo reference.png" type="Texture" id=121]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v3.png" type="Texture" id=122]
+[ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art punch monkey crossover.png" type="Texture" id=123]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -200,6 +201,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=77]
 atlas = ExtResource( 57 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=141]
+atlas = ExtResource( 123 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=55]
@@ -667,6 +672,11 @@ animations = [ {
 "frames": [ SubResource( 77 ) ],
 "loop": false,
 "name": "brink art odin reference",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 141 ) ],
+"loop": false,
+"name": "brink art punch monkey crossover",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 55 ) ],
@@ -1163,7 +1173,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art weird spider"
+animation = "brink art punch monkey crossover"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

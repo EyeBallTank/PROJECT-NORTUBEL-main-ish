@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/FAYGO SPRITE NPC.png" type="Texture" id=3]
-[ext_resource path="res://src/npc_actors/brink npc/FaygoNPC.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 3 )
@@ -23,11 +22,10 @@ extents = Vector2( 60.4167, 206.472 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 85.4167, 174 )
 
-[node name="FaygoNPC" type="KinematicBody2D"]
+[node name="PunchMonkeyNPC" type="KinematicBody2D"]
 scale = Vector2( 0.72, 0.72 )
 collision_layer = 64
 collision_mask = 4
-script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -48.6111, 19.4444 )
@@ -84,6 +82,3 @@ margin_right = 107.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
 text = "Faygo"
-
-[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
-[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
