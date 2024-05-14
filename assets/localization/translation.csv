@@ -1890,3 +1890,9 @@ ESTAMOS A FAZER O QUE PODEMOS PARA PARA-LOS MAS A CLARITY DISSE QUE ELE TEM UM E
 CUTSCENE_14_TALK_27,"FIND THE GENERATORS AND TURN THEM OFF!
 WHEN HIS SHIELD GOES DOWN, YIEGOUR CAN SHOOT HIM BACK!","ENCONTRA OS REGENERADORES E DESLIGA OS!
 QUANDO O ESCUDO DELE FOR ABAIXO, O YIEGOUR PODE ATACA-LO DE VOLTA!"
+PUNCH_MONKEY_NPC_TALK_NOITEM,"Hey girl, I'll help you get there if you find me a banana around here.","Hey miúda, Eu ajudo-te a chegar até lá se me encontrares uma banana por aqui."
+PUNCH_MONKEY_NPC_TALK_YESITEM,Nice!,Boa!
+PUNCH_MONKEY_NPC_HUG,"Wow, you like me or something?
+I don't mind.","Wow, gostas de mim ou que?
+Não importo"
+PUNCH_MONKEY_NPC_HURT,"Hey, knock if off before I...","Hey, para com isso, se não..."
