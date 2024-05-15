@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/sprites/level_prefab_sprites/greklovick/GrekYellowBasePlat.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/BrinkYellowTrianglePlat sprite.png" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/YellowPlatVerti.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -42,11 +42,11 @@ tracks/0/keys = {
 "values": [ 1.0, 0.0 ]
 }
 
-[node name="GrekYellowBasePlat" type="Node2D" groups=["actionables"]]
+[node name="BrinkYellowTrianglePlat" type="Node2D" groups=["actionables"]]
 script = ExtResource( 2 )
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( -2, -1 )
+position = Vector2( -2, 384 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
