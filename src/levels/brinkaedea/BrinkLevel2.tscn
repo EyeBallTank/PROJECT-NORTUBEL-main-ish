@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/npc_actors/brink npc/PunchMonkeyNPC.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkBalloonPlatVerti.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkBlueTeaCup.tscn" type="PackedScene" id=26]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -168,5 +169,8 @@ position = Vector2( -761, 1506 )
 
 [node name="BrinkBalloonPlatVerti" parent="." instance=ExtResource( 25 )]
 position = Vector2( 713, 1471 )
+
+[node name="BrinkBlueTeaCup" parent="." instance=ExtResource( 26 )]
+position = Vector2( 166, 2202 )
 
 [editable path="BrinkPinballFlipper"]
