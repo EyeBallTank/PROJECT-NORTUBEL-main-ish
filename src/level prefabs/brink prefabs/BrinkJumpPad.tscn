@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink jumppad.png" type="Texture" id=1]
+[ext_resource path="res://src/level_objects/Jumppad.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds/level prefabs/brink prefab sounds/81623__tony-knievel-588593355__middle-tom-of-god-wet-016.wav" type="AudioStream" id=3]
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 380, 281 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 4 ) ],
+"loop": false,
+"name": "nortubel jumppad",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 149.5, 4.5 )
+
+[node name="BrinkJumpPad" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource( 2 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 42 )
+scale = Vector2( 0.817101, 0.817101 )
+frames = SubResource( 3 )
+animation = "nortubel jumppad"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.5, -22.5 )
+shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 1.783
+bus = "Sound"
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
