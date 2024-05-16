@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,10 @@
 [ext_resource path="res://src/level prefabs/nort prefabs/NortWeirdHands.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/SoccerFloatingNet.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_objects/SoccerFloatingNetRight.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=14]
 
 [node name="NortPartFiveLevel2" type="Node2D"]
 
@@ -63,3 +67,22 @@ position = Vector2( 975, 1251 )
 position = Vector2( 2145, 1310 )
 new_scene = "res://screens/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider.tscn"
 customtext = "fl3nnn"
+
+[node name="SoccerFloatingNet" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2429, 226 )
+customstate = 2
+
+[node name="SoccerFloatingNet2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2162, 236 )
+customstate = 3
+
+[node name="SoccerFloatingNetRight" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1925, 244 )
+customstate = 2
+
+[node name="NumberBasedDoor" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2640, 178 )
+idealnumber = 3
+
+[node name="SoccerBallBag" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1480, 217 )
