@@ -1,10 +1,11 @@
-[gd_resource type="TileSet" load_steps=18 format=2]
+[gd_resource type="TileSet" load_steps=19 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE LINDA HOUSE.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE TV CURTAIN.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES CUBES NUMBERS LETTERS.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE YARN BALL.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -519,3 +520,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 27/shape_one_way_margin = 0.0
 27/shapes = [  ]
 27/z_index = 0
+28/name = "BRINK SINGLE TILE YARN BALL.png 28"
+28/texture = ExtResource( 6 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 0, 320, 384 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape_one_way = false
+28/shape_one_way_margin = 0.0
+28/shapes = [  ]
+28/z_index = 0
