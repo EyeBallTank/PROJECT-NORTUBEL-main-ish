@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-
+#could be better
 onready var animationplayer = $AnimationPlayer
 
 enum {

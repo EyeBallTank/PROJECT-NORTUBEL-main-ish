@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkYellowSwitchFlower.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkYellowTrianglePlat.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkSpinningTop.tscn" type="PackedScene" id=20]
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -105,3 +106,6 @@ position = Vector2( -531, 1600 )
 
 [node name="BrinkYellowTrianglePlat" parent="." instance=ExtResource( 19 )]
 position = Vector2( 404, 1223 )
+
+[node name="BrinkSpinningTop" parent="." instance=ExtResource( 20 )]
+position = Vector2( -2174, 1377 )
