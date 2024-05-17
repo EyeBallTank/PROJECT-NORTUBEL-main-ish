@@ -11,7 +11,7 @@ enum {
 var state = GORIGHT
 
 func _ready():
-	animationplayer.play("RESET")
+#	animationplayer.play("RESET")
 	state = GORIGHT
 
 func _physics_process(delta):
@@ -26,3 +26,8 @@ func changetoleft():
 
 func changetoright():
 	state = GORIGHT
+
+
+func _on_MakeYouSpin_body_entered(body):
+	if body.is_in_group("protagonists"):
+		animationplayer.play("RESET")
