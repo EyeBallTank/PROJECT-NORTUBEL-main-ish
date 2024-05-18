@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=41 format=2]
+[gd_resource type="TileSet" load_steps=42 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE STAR BALL.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE CANDY TREE.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES ART TOOLS.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES FRUIT.png" type="Texture" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -1574,3 +1575,101 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 93/shape_one_way_margin = 0.0
 93/shapes = [  ]
 93/z_index = 0
+94/name = "BRINK TILES FRUIT.png 94"
+94/texture = ExtResource( 17 )
+94/tex_offset = Vector2( 0, 0 )
+94/modulate = Color( 1, 1, 1, 1 )
+94/region = Rect2( 1344, 64, 320, 320 )
+94/tile_mode = 0
+94/occluder_offset = Vector2( 0, 0 )
+94/navigation_offset = Vector2( 0, 0 )
+94/shape_offset = Vector2( 0, 0 )
+94/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+94/shape_one_way = false
+94/shape_one_way_margin = 0.0
+94/shapes = [  ]
+94/z_index = 0
+95/name = "BRINK TILES FRUIT.png 95"
+95/texture = ExtResource( 17 )
+95/tex_offset = Vector2( 0, 0 )
+95/modulate = Color( 1, 1, 1, 1 )
+95/region = Rect2( 1152, 0, 192, 384 )
+95/tile_mode = 0
+95/occluder_offset = Vector2( 0, 0 )
+95/navigation_offset = Vector2( 0, 0 )
+95/shape_offset = Vector2( 0, 0 )
+95/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+95/shape_one_way = false
+95/shape_one_way_margin = 0.0
+95/shapes = [  ]
+95/z_index = 0
+96/name = "BRINK TILES FRUIT.png 96"
+96/texture = ExtResource( 17 )
+96/tex_offset = Vector2( 0, 0 )
+96/modulate = Color( 1, 1, 1, 1 )
+96/region = Rect2( 896, 64, 256, 320 )
+96/tile_mode = 0
+96/occluder_offset = Vector2( 0, 0 )
+96/navigation_offset = Vector2( 0, 0 )
+96/shape_offset = Vector2( 0, 0 )
+96/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+96/shape_one_way = false
+96/shape_one_way_margin = 0.0
+96/shapes = [  ]
+96/z_index = 0
+97/name = "BRINK TILES FRUIT.png 97"
+97/texture = ExtResource( 17 )
+97/tex_offset = Vector2( 0, 0 )
+97/modulate = Color( 1, 1, 1, 1 )
+97/region = Rect2( 640, 128, 256, 256 )
+97/tile_mode = 0
+97/occluder_offset = Vector2( 0, 0 )
+97/navigation_offset = Vector2( 0, 0 )
+97/shape_offset = Vector2( 0, 0 )
+97/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+97/shape_one_way = false
+97/shape_one_way_margin = 0.0
+97/shapes = [  ]
+97/z_index = 0
+98/name = "BRINK TILES FRUIT.png 98"
+98/texture = ExtResource( 17 )
+98/tex_offset = Vector2( 0, 0 )
+98/modulate = Color( 1, 1, 1, 1 )
+98/region = Rect2( 448, 128, 192, 256 )
+98/tile_mode = 0
+98/occluder_offset = Vector2( 0, 0 )
+98/navigation_offset = Vector2( 0, 0 )
+98/shape_offset = Vector2( 0, 0 )
+98/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+98/shape_one_way = false
+98/shape_one_way_margin = 0.0
+98/shapes = [  ]
+98/z_index = 0
+99/name = "BRINK TILES FRUIT.png 99"
+99/texture = ExtResource( 17 )
+99/tex_offset = Vector2( 0, 0 )
+99/modulate = Color( 1, 1, 1, 1 )
+99/region = Rect2( 256, 128, 192, 256 )
+99/tile_mode = 0
+99/occluder_offset = Vector2( 0, 0 )
+99/navigation_offset = Vector2( 0, 0 )
+99/shape_offset = Vector2( 0, 0 )
+99/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+99/shape_one_way = false
+99/shape_one_way_margin = 0.0
+99/shapes = [  ]
+99/z_index = 0
+100/name = "BRINK TILES FRUIT.png 100"
+100/texture = ExtResource( 17 )
+100/tex_offset = Vector2( 0, 0 )
+100/modulate = Color( 1, 1, 1, 1 )
+100/region = Rect2( 0, 64, 256, 320 )
+100/tile_mode = 0
+100/occluder_offset = Vector2( 0, 0 )
+100/navigation_offset = Vector2( 0, 0 )
+100/shape_offset = Vector2( 0, 0 )
+100/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+100/shape_one_way = false
+100/shape_one_way_margin = 0.0
+100/shapes = [  ]
+100/z_index = 0
