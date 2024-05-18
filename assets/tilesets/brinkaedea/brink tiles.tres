@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=45 format=2]
+[gd_resource type="TileSet" load_steps=46 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES FRUIT.png" type="Texture" id=17]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE RINGS TOY.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE PIZZA SLICE.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES SUN AND CLOUD DRAWINGS.png" type="Texture" id=20]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -1713,3 +1714,31 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 102/shape_one_way_margin = 0.0
 102/shapes = [  ]
 102/z_index = 0
+103/name = "BRINK TILES SUN AND CLOUD DRAWINGS.png 103"
+103/texture = ExtResource( 20 )
+103/tex_offset = Vector2( 0, 0 )
+103/modulate = Color( 1, 1, 1, 1 )
+103/region = Rect2( 0, 384, 448, 256 )
+103/tile_mode = 0
+103/occluder_offset = Vector2( 0, 0 )
+103/navigation_offset = Vector2( 0, 0 )
+103/shape_offset = Vector2( 0, 0 )
+103/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+103/shape_one_way = false
+103/shape_one_way_margin = 0.0
+103/shapes = [  ]
+103/z_index = 0
+104/name = "BRINK TILES SUN AND CLOUD DRAWINGS.png 104"
+104/texture = ExtResource( 20 )
+104/tex_offset = Vector2( 0, 0 )
+104/modulate = Color( 1, 1, 1, 1 )
+104/region = Rect2( 64, 0, 384, 384 )
+104/tile_mode = 0
+104/occluder_offset = Vector2( 0, 0 )
+104/navigation_offset = Vector2( 0, 0 )
+104/shape_offset = Vector2( 0, 0 )
+104/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+104/shape_one_way = false
+104/shape_one_way_margin = 0.0
+104/shapes = [  ]
+104/z_index = 0
