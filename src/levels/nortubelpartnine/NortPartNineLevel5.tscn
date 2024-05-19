@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+
+[node name="NortPartNineLevel5" type="Node2D"]
+
+[node name="back" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1114122, 95, 0, 1179658, 95, 0, 1245194, 95, 0, 1310730, 95, 0, 1376266, 95, 0 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 851959, 63, 0, 917495, 63, 0, 983031, 63, 0, 1048567, 63, 0, 1114103, 63, 0, 1179639, 63, 0, 1245175, 63, 0, 1179677, 63, 0, 1179678, 63, 0, 1310711, 63, 0, 1245213, 63, 0, 1245214, 63, 0, 1376247, 63, 0, 1310749, 63, 0, 1310750, 63, 0, 1441783, 63, 0, 1376284, 63, 0, 1376285, 63, 0, 1376286, 63, 0, 1507319, 63, 0, 1507320, 63, 0, 1507321, 63, 0, 1507322, 63, 0, 1507323, 63, 0, 1507324, 63, 0, 1507325, 63, 0, 1507326, 63, 0, 1507327, 63, 0, 1441792, 63, 0, 1441793, 63, 0, 1441794, 63, 0, 1441795, 63, 0, 1441796, 63, 0, 1441797, 63, 0, 1441798, 63, 0, 1441799, 63, 0, 1441800, 63, 0, 1441801, 63, 0, 1441802, 63, 0, 1441803, 63, 0, 1441804, 63, 0, 1441805, 63, 0, 1441806, 63, 0, 1441807, 63, 0, 1441808, 63, 0, 1441809, 63, 0, 1441810, 63, 0, 1441811, 63, 0, 1441812, 63, 0, 1441813, 63, 0, 1441814, 63, 0, 1441815, 63, 0, 1441816, 63, 0, 1441817, 63, 0, 1441818, 63, 0, 1441819, 63, 0, 1441820, 63, 0, 1441821, 63, 0, 1441822, 63, 0 )
+
+[node name="front" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 1114123, 95, 0, 1179659, 95, 0, 1245195, 95, 0, 1310731, 95, 0, 1376267, 95, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 322, 1338 )
+
+[node name="playerspawn" parent="." instance=ExtResource( 4 )]
+position = Vector2( 322, 1338 )
+
+[node name="companionspawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( 522, 1302 )
+
+[node name="Companion" parent="." instance=ExtResource( 6 )]
+position = Vector2( 522, 1302 )
+
+[node name="CurrentUI" parent="." instance=ExtResource( 5 )]
