@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=65 format=2]
+[gd_resource type="TileSet" load_steps=67 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES LADDER.png" type="Texture" id=25]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE WEIRD CAR.png" type="Texture" id=26]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE WEIRD CLOCK.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES TRAIN AND MORE.png" type="Texture" id=28]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -81,6 +82,9 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+points = PoolVector2Array( 0, 64, 128, 64, 128, 96, 160, 96, 160, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
@@ -2331,3 +2335,80 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 137/shape_one_way_margin = 0.0
 137/shapes = [  ]
 137/z_index = 0
+138/name = "BRINK TILES TRAIN AND MORE.png 138"
+138/texture = ExtResource( 28 )
+138/tex_offset = Vector2( 0, 0 )
+138/modulate = Color( 1, 1, 1, 1 )
+138/region = Rect2( 1344, 256, 192, 128 )
+138/tile_mode = 0
+138/occluder_offset = Vector2( 0, 0 )
+138/navigation_offset = Vector2( 0, 0 )
+138/shape_offset = Vector2( 0, 0 )
+138/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+138/shape = SubResource( 38 )
+138/shape_one_way = false
+138/shape_one_way_margin = 1.0
+138/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 38 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+138/z_index = 0
+139/name = "BRINK TILES TRAIN AND MORE.png 139"
+139/texture = ExtResource( 28 )
+139/tex_offset = Vector2( 0, 0 )
+139/modulate = Color( 1, 1, 1, 1 )
+139/region = Rect2( 1216, 0, 128, 384 )
+139/tile_mode = 0
+139/occluder_offset = Vector2( 0, 0 )
+139/navigation_offset = Vector2( 0, 0 )
+139/shape_offset = Vector2( 0, 0 )
+139/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+139/shape_one_way = false
+139/shape_one_way_margin = 0.0
+139/shapes = [  ]
+139/z_index = 0
+140/name = "BRINK TILES TRAIN AND MORE.png 140"
+140/texture = ExtResource( 28 )
+140/tex_offset = Vector2( 0, 0 )
+140/modulate = Color( 1, 1, 1, 1 )
+140/region = Rect2( 1088, 256, 128, 128 )
+140/tile_mode = 0
+140/occluder_offset = Vector2( 0, 0 )
+140/navigation_offset = Vector2( 0, 0 )
+140/shape_offset = Vector2( 0, 0 )
+140/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+140/shape_one_way = false
+140/shape_one_way_margin = 0.0
+140/shapes = [  ]
+140/z_index = 0
+141/name = "BRINK TILES TRAIN AND MORE.png 141"
+141/texture = ExtResource( 28 )
+141/tex_offset = Vector2( 0, 0 )
+141/modulate = Color( 1, 1, 1, 1 )
+141/region = Rect2( 704, 0, 384, 384 )
+141/tile_mode = 0
+141/occluder_offset = Vector2( 0, 0 )
+141/navigation_offset = Vector2( 0, 0 )
+141/shape_offset = Vector2( 0, 0 )
+141/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+141/shape_one_way = false
+141/shape_one_way_margin = 0.0
+141/shapes = [  ]
+141/z_index = 0
+142/name = "BRINK TILES TRAIN AND MORE.png 142"
+142/texture = ExtResource( 28 )
+142/tex_offset = Vector2( 0, 0 )
+142/modulate = Color( 1, 1, 1, 1 )
+142/region = Rect2( 0, 0, 704, 384 )
+142/tile_mode = 0
+142/occluder_offset = Vector2( 0, 0 )
+142/navigation_offset = Vector2( 0, 0 )
+142/shape_offset = Vector2( 0, 0 )
+142/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+142/shape_one_way = false
+142/shape_one_way_margin = 0.0
+142/shapes = [  ]
+142/z_index = 0
