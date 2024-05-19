@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=60 format=2]
+[gd_resource type="TileSet" load_steps=61 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES SUN AND CLOUD DRAWINGS.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE  CHRISTMAS TREE.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES MUSIC STUFF.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE MILK AND COOKIES.png" type="Texture" id=23]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -2144,3 +2145,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 124/shape_one_way_margin = 0.0
 124/shapes = [  ]
 124/z_index = 0
+125/name = "BRINK SINGLE TILE MILK AND COOKIES.png 125"
+125/texture = ExtResource( 23 )
+125/tex_offset = Vector2( 0, 0 )
+125/modulate = Color( 1, 1, 1, 1 )
+125/region = Rect2( 0, 0, 256, 256 )
+125/tile_mode = 0
+125/occluder_offset = Vector2( 0, 0 )
+125/navigation_offset = Vector2( 0, 0 )
+125/shape_offset = Vector2( 0, 0 )
+125/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+125/shape_one_way = false
+125/shape_one_way_margin = 0.0
+125/shapes = [  ]
+125/z_index = 0
