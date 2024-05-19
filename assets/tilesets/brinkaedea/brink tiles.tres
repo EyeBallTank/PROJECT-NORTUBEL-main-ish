@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=61 format=2]
+[gd_resource type="TileSet" load_steps=62 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE  CHRISTMAS TREE.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES MUSIC STUFF.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE MILK AND COOKIES.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE MUSIC SHEET.png" type="Texture" id=24]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -2159,3 +2160,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 125/shape_one_way_margin = 0.0
 125/shapes = [  ]
 125/z_index = 0
+126/name = "BRINK SINGLE TILE MUSIC SHEET.png 126"
+126/texture = ExtResource( 24 )
+126/tex_offset = Vector2( 0, 0 )
+126/modulate = Color( 1, 1, 1, 1 )
+126/region = Rect2( 0, 0, 832, 192 )
+126/tile_mode = 0
+126/occluder_offset = Vector2( 0, 0 )
+126/navigation_offset = Vector2( 0, 0 )
+126/shape_offset = Vector2( 0, 0 )
+126/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+126/shape_one_way = false
+126/shape_one_way_margin = 0.0
+126/shapes = [  ]
+126/z_index = 0
