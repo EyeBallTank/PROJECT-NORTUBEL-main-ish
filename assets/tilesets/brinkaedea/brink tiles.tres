@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=63 format=2]
+[gd_resource type="TileSet" load_steps=64 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE MILK AND COOKIES.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE MUSIC SHEET.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES LADDER.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE WEIRD CAR.png" type="Texture" id=26]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -2301,3 +2302,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 135/shape_one_way_margin = 0.0
 135/shapes = [  ]
 135/z_index = 0
+136/name = "BRINK SINGLE TILE WEIRD CAR.png 136"
+136/texture = ExtResource( 26 )
+136/tex_offset = Vector2( 0, 0 )
+136/modulate = Color( 1, 1, 1, 1 )
+136/region = Rect2( 0, 0, 448, 256 )
+136/tile_mode = 0
+136/occluder_offset = Vector2( 0, 0 )
+136/navigation_offset = Vector2( 0, 0 )
+136/shape_offset = Vector2( 0, 0 )
+136/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+136/shape_one_way = false
+136/shape_one_way_margin = 0.0
+136/shapes = [  ]
+136/z_index = 0
