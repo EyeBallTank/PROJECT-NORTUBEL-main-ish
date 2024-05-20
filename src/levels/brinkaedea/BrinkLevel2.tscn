@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_objects/IceFloor.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkGreenBumperCar.tscn" type="PackedScene" id=30]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -187,5 +188,8 @@ collision_newsize = Vector2( 24, 24 )
 
 [node name="Ladder" parent="." instance=ExtResource( 29 )]
 position = Vector2( -893, 1798 )
+
+[node name="BrinkGreenBumperCar" parent="." instance=ExtResource( 30 )]
+position = Vector2( 3721, 2787 )
 
 [editable path="BrinkPinballFlipper"]
