@@ -64,7 +64,7 @@ tracks/1/keys = {
 script = ExtResource( 2 )
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( 3403.36, -56 )
+position = Vector2( -1137, -56 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
