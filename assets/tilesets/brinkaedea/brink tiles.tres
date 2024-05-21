@@ -2659,3 +2659,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 153/z_index = 0
+154/name = "BRINK TILE PASSABLE.png 154"
+154/texture = ExtResource( 2 )
+154/tex_offset = Vector2( 0, 0 )
+154/modulate = Color( 1, 1, 1, 1 )
+154/region = Rect2( 128, 1536, 64, 64 )
+154/tile_mode = 0
+154/occluder_offset = Vector2( 0, 0 )
+154/navigation_offset = Vector2( 0, 0 )
+154/shape_offset = Vector2( 0, 0 )
+154/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+154/shape_one_way = false
+154/shape_one_way_margin = 0.0
+154/shapes = [  ]
+154/z_index = 0
