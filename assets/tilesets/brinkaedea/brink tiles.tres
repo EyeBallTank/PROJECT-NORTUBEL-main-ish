@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=116 format=2]
+[gd_resource type="TileSet" load_steps=117 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE CLOWN HOUSE 1.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE CLOWN HOUSE 2.png" type="Texture" id=30]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BASIC SOLID OUTLINES.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE  PLANETS.png" type="Texture" id=32]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -4009,3 +4010,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 223/shape_one_way_margin = 0.0
 223/shapes = [  ]
 223/z_index = 0
+224/name = "BRINK SINGLE TILE  PLANETS.png 224"
+224/texture = ExtResource( 32 )
+224/tex_offset = Vector2( 0, 0 )
+224/modulate = Color( 1, 1, 1, 1 )
+224/region = Rect2( 0, 0, 960, 704 )
+224/tile_mode = 0
+224/occluder_offset = Vector2( 0, 0 )
+224/navigation_offset = Vector2( 0, 0 )
+224/shape_offset = Vector2( 0, 0 )
+224/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+224/shape_one_way = false
+224/shape_one_way_margin = 0.0
+224/shapes = [  ]
+224/z_index = 0
