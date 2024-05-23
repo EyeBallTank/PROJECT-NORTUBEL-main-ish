@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=117 format=2]
+[gd_resource type="TileSet" load_steps=118 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -238,6 +238,9 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=84]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=85]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
@@ -4024,3 +4027,52 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 224/shape_one_way_margin = 0.0
 224/shapes = [  ]
 224/z_index = 0
+225/name = "BRINK TILE SOLID.png 225"
+225/texture = ExtResource( 1 )
+225/tex_offset = Vector2( 0, 0 )
+225/modulate = Color( 1, 1, 1, 1 )
+225/region = Rect2( 1216, 0, 64, 64 )
+225/tile_mode = 0
+225/occluder_offset = Vector2( 0, 0 )
+225/navigation_offset = Vector2( 0, 0 )
+225/shape_offset = Vector2( 0, 0 )
+225/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+225/shape_one_way = false
+225/shape_one_way_margin = 0.0
+225/shapes = [  ]
+225/z_index = 0
+226/name = "BRINK TILE SOLID.png 226"
+226/texture = ExtResource( 1 )
+226/tex_offset = Vector2( 0, 0 )
+226/modulate = Color( 1, 1, 1, 1 )
+226/region = Rect2( 1152, 0, 64, 64 )
+226/tile_mode = 0
+226/occluder_offset = Vector2( 0, 0 )
+226/navigation_offset = Vector2( 0, 0 )
+226/shape_offset = Vector2( 0, 0 )
+226/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+226/shape_one_way = false
+226/shape_one_way_margin = 0.0
+226/shapes = [  ]
+226/z_index = 0
+227/name = "BRINK TILE SOLID.png 227"
+227/texture = ExtResource( 1 )
+227/tex_offset = Vector2( 0, 0 )
+227/modulate = Color( 1, 1, 1, 1 )
+227/region = Rect2( 1280, 0, 64, 64 )
+227/tile_mode = 0
+227/occluder_offset = Vector2( 0, 0 )
+227/navigation_offset = Vector2( 0, 0 )
+227/shape_offset = Vector2( 0, 0 )
+227/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+227/shape = SubResource( 85 )
+227/shape_one_way = false
+227/shape_one_way_margin = 1.0
+227/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 85 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+227/z_index = 0
