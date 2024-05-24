@@ -48,6 +48,30 @@ tracks/1/keys = {
 "update": 0,
 "values": [ 0.0 ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Platform/Sprite:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Platform/CollisionShape2D:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "VerticalPlat"
@@ -65,20 +89,45 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 0.0, 1.0 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Platform/Sprite:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3.7, 4.7, 4.9, 5.1, 5.9, 6.1, 7.2, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, -8.28583, -8.05882, -84.968, -103.004, -147.379, -183.973, -184.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Platform/CollisionShape2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3.7, 4.7, 4.9, 5.1, 5.9, 6.1, 7.2, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, -8.28583, -8.05882, -84.968, -103.004, -147.379, -183.973, -184.0 ]
+}
 
 [node name="BrinkPaperPlane" type="Node2D"]
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( -785, -1324 )
+position = Vector2( -143.932, -2692.35 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
 
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
-position = Vector2( 6.75754, -31.4777 )
+position = Vector2( -3.05176e-05, -1.52588e-05 )
 frames = SubResource( 7 )
 animation = "brink"
 playing = true
+offset = Vector2( 6.75757, -31.4777 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
 position = Vector2( 0.14624, 0.522339 )
