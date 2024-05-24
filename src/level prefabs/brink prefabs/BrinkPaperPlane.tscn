@@ -72,6 +72,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [ 0.0 ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Platform/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "VerticalPlat"
@@ -113,17 +125,30 @@ tracks/2/keys = {
 "update": 0,
 "values": [ 0.0, 0.0, -8.28583, -8.05882, -84.968, -103.004, -147.379, -183.973, -184.0, -220.911, -220.9, -282.577, -282.6 ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Platform/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [node name="BrinkPaperPlane" type="Node2D"]
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( 225.218, -883.657 )
+position = Vector2( 3082.97, -1593.12 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
 
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
 position = Vector2( -3.05176e-05, -1.52588e-05 )
+z_index = 17
 frames = SubResource( 7 )
 animation = "brink"
 playing = true
@@ -138,8 +163,8 @@ one_way_collision = true
 curve = SubResource( 2 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( 225.218, -883.657 )
-offset = 1128.5
+position = Vector2( 3082.97, -1593.12 )
+offset = 4346.85
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
