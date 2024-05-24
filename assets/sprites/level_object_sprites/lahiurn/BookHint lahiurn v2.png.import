@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BookHint lahiurn.png-edd0309c4ebbe2ff92a8cf7236ddd150.stex"
+path="res://.import/BookHint lahiurn v2.png-abb72c20a09bdd9e8e8503bea7ff1c4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_object_sprites/lahiurn/BookHint lahiurn.png"
-dest_files=[ "res://.import/BookHint lahiurn.png-edd0309c4ebbe2ff92a8cf7236ddd150.stex" ]
+source_file="res://assets/sprites/level_object_sprites/lahiurn/BookHint lahiurn v2.png"
+dest_files=[ "res://.import/BookHint lahiurn v2.png-abb72c20a09bdd9e8e8503bea7ff1c4c.stex" ]
 
 [params]
 

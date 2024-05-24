@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/herrko/BookHint herrko.PNG" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/BookHint greklovick 5.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/BookHint brinkaedea.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/BookHint lahiurn.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/BookHint lahiurn v2.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/level_object_sprites/untotern/BookHint untotern.png" type="Texture" id=12]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
@@ -38,7 +38,7 @@ region = Rect2( 0, 0, 363, 208 )
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 363, 208 )
 
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 363, 208 )
 
@@ -82,7 +82,7 @@ animations = [ {
 "name": "krimbstone lorebook",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 15 ) ],
+"frames": [ SubResource( 17 ) ],
 "loop": false,
 "name": "lahiurn lorebook",
 "speed": 5.0
