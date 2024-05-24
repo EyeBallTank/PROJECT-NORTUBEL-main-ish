@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/BookHint.PNG" type="Texture" id=1]
 [ext_resource path="res://src/npc_actors/LoreBook.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/BookHint greklovick 5.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/BookHint brinkaedea.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/BookHint lahiurn.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/level_object_sprites/untotern/BookHint untotern.png" type="Texture" id=12]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
 
 [sub_resource type="AtlasTexture" id=14]
@@ -48,6 +49,10 @@ region = Rect2( 0, 0, 363, 208 )
 [sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 363, 208 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 12 )
 region = Rect2( 0, 0, 363, 208 )
 
 [sub_resource type="SpriteFrames" id=7]
@@ -91,6 +96,11 @@ animations = [ {
 "loop": false,
 "name": "nortubel lorebook",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 16 ) ],
+"loop": false,
+"name": "untotern lorebook",
+"speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -115,7 +125,7 @@ customtext = "LORETEXT_1"
 position = Vector2( 2, -134 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 7 )
-animation = "lahiurn lorebook"
+animation = "untotern lorebook"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
