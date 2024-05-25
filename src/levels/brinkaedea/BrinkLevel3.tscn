@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,8 +13,19 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_hazards/brinkaedea/BrinkHammer.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/sprites/level_backgrounds/brinkaedea/brinklevel3 bg.png" type="Texture" id=14]
 
 [node name="BrinkLevel3" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="Brinklevel3Bg" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+modulate = Color( 0, 0, 0, 1 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
