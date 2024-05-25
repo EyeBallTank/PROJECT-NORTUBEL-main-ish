@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink ball pit.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink ball pit ball green.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink ball pit ball yellow.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink ball pit ball blue.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink ball pit ball red.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 256, 44.5 )
@@ -60,6 +62,54 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Path2D3/PathFollow2D:unit_offset")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.8491 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Path2D3/PathFollow2D/ball1/BrinkBallPitBallGreen:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Path2D4/PathFollow2D:unit_offset")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.8491 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Path2D4/PathFollow2D/KinematicBody2D/BrinkBallPitBallBlue:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=6]
 length = 0.001
@@ -111,6 +161,54 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Path2D3/PathFollow2D:unit_offset")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Path2D3/PathFollow2D/ball1/BrinkBallPitBallGreen:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Path2D4/PathFollow2D:unit_offset")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Path2D4/PathFollow2D/KinematicBody2D/BrinkBallPitBallBlue:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Curve2D" id=4]
 _data = {
@@ -118,6 +216,13 @@ _data = {
 }
 
 [sub_resource type="CircleShape2D" id=3]
+
+[sub_resource type="Curve2D" id=7]
+_data = {
+"points": PoolVector2Array( -10.6787, 66.742, 10.6787, -66.742, -205, -39, -84.0949, 32.0362, 84.0949, -32.0362, -132, -318, 0, 0, 0, 0, 17, 49 )
+}
+
+[sub_resource type="CircleShape2D" id=8]
 
 [node name="BrinkBallPit" type="StaticBody2D"]
 collision_layer = 4
@@ -160,7 +265,7 @@ shape = SubResource( 3 )
 disabled = true
 
 [node name="Path2D2" type="Path2D" parent="."]
-position = Vector2( -36, -19 )
+position = Vector2( -64, -36 )
 curve = SubResource( 4 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D2"]
@@ -175,3 +280,37 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D2/PathFollow2D/ball1"]
 shape = SubResource( 3 )
 disabled = true
+
+[node name="Path2D3" type="Path2D" parent="."]
+position = Vector2( -96, 14 )
+curve = SubResource( 4 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D3"]
+position = Vector2( 71, -47 )
+rotation = -1.74964
+
+[node name="ball1" type="KinematicBody2D" parent="Path2D3/PathFollow2D"]
+
+[node name="BrinkBallPitBallGreen" type="Sprite" parent="Path2D3/PathFollow2D/ball1"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D3/PathFollow2D/ball1"]
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Path2D4" type="Path2D" parent="."]
+position = Vector2( 236, -23 )
+curve = SubResource( 7 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D4"]
+position = Vector2( -205, -39 )
+rotation = -1.42638
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Path2D4/PathFollow2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D4/PathFollow2D/KinematicBody2D"]
+shape = SubResource( 8 )
+disabled = true
+
+[node name="BrinkBallPitBallBlue" type="Sprite" parent="Path2D4/PathFollow2D/KinematicBody2D"]
+texture = ExtResource( 4 )
