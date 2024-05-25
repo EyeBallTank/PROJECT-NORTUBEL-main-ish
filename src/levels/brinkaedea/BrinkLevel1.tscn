@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=20]
 [ext_resource path="res://assets/sprites/level_backgrounds/brinkaedea/brinklevel1 bg v2.png" type="Texture" id=21]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkBallPit.tscn" type="PackedScene" id=22]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -142,3 +143,6 @@ spritename = "brinkaedea pushable"
 
 [node name="Water" parent="." instance=ExtResource( 20 )]
 position = Vector2( -465, 941 )
+
+[node name="BrinkBallPit" parent="." instance=ExtResource( 22 )]
+position = Vector2( -2750, 1472 )
