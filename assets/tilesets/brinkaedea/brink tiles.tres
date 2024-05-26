@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=126 format=2]
+[gd_resource type="TileSet" load_steps=136 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -264,6 +264,36 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=92]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=93]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=94]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=95]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=96]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=97]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=98]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=99]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=100]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=101]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=102]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -4497,3 +4527,213 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 252/z_index = 0
+253/name = "BRINK TILE SOLID.png 253"
+253/texture = ExtResource( 1 )
+253/tex_offset = Vector2( 0, 0 )
+253/modulate = Color( 1, 1, 1, 1 )
+253/region = Rect2( 832, 1344, 64, 64 )
+253/tile_mode = 0
+253/occluder_offset = Vector2( 0, 0 )
+253/navigation_offset = Vector2( 0, 0 )
+253/shape_offset = Vector2( 0, 0 )
+253/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+253/shape = SubResource( 93 )
+253/shape_one_way = false
+253/shape_one_way_margin = 1.0
+253/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 93 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+253/z_index = 0
+254/name = "BRINK TILE SOLID.png 254"
+254/texture = ExtResource( 1 )
+254/tex_offset = Vector2( 0, 0 )
+254/modulate = Color( 1, 1, 1, 1 )
+254/region = Rect2( 768, 1408, 64, 64 )
+254/tile_mode = 0
+254/occluder_offset = Vector2( 0, 0 )
+254/navigation_offset = Vector2( 0, 0 )
+254/shape_offset = Vector2( 0, 0 )
+254/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+254/shape = SubResource( 94 )
+254/shape_one_way = false
+254/shape_one_way_margin = 1.0
+254/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 94 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+254/z_index = 0
+255/name = "BRINK TILE SOLID.png 255"
+255/texture = ExtResource( 1 )
+255/tex_offset = Vector2( 0, 0 )
+255/modulate = Color( 1, 1, 1, 1 )
+255/region = Rect2( 832, 1408, 64, 64 )
+255/tile_mode = 0
+255/occluder_offset = Vector2( 0, 0 )
+255/navigation_offset = Vector2( 0, 0 )
+255/shape_offset = Vector2( 0, 0 )
+255/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+255/shape = SubResource( 95 )
+255/shape_one_way = false
+255/shape_one_way_margin = 1.0
+255/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 95 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+255/z_index = 0
+256/name = "BRINK TILE SOLID.png 256"
+256/texture = ExtResource( 1 )
+256/tex_offset = Vector2( 0, 0 )
+256/modulate = Color( 1, 1, 1, 1 )
+256/region = Rect2( 896, 1408, 64, 64 )
+256/tile_mode = 0
+256/occluder_offset = Vector2( 0, 0 )
+256/navigation_offset = Vector2( 0, 0 )
+256/shape_offset = Vector2( 0, 0 )
+256/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+256/shape = SubResource( 96 )
+256/shape_one_way = false
+256/shape_one_way_margin = 1.0
+256/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 96 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+256/z_index = 0
+257/name = "BRINK TILE SOLID.png 257"
+257/texture = ExtResource( 1 )
+257/tex_offset = Vector2( 0, 0 )
+257/modulate = Color( 1, 1, 1, 1 )
+257/region = Rect2( 768, 1472, 64, 64 )
+257/tile_mode = 0
+257/occluder_offset = Vector2( 0, 0 )
+257/navigation_offset = Vector2( 0, 0 )
+257/shape_offset = Vector2( 0, 0 )
+257/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+257/shape = SubResource( 97 )
+257/shape_one_way = false
+257/shape_one_way_margin = 1.0
+257/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 97 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+257/z_index = 0
+258/name = "BRINK TILE SOLID.png 258"
+258/texture = ExtResource( 1 )
+258/tex_offset = Vector2( 0, 0 )
+258/modulate = Color( 1, 1, 1, 1 )
+258/region = Rect2( 832, 1472, 64, 64 )
+258/tile_mode = 0
+258/occluder_offset = Vector2( 0, 0 )
+258/navigation_offset = Vector2( 0, 0 )
+258/shape_offset = Vector2( 0, 0 )
+258/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+258/shape = SubResource( 98 )
+258/shape_one_way = false
+258/shape_one_way_margin = 1.0
+258/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 98 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+258/z_index = 0
+259/name = "BRINK TILE SOLID.png 259"
+259/texture = ExtResource( 1 )
+259/tex_offset = Vector2( 0, 0 )
+259/modulate = Color( 1, 1, 1, 1 )
+259/region = Rect2( 896, 1472, 64, 64 )
+259/tile_mode = 0
+259/occluder_offset = Vector2( 0, 0 )
+259/navigation_offset = Vector2( 0, 0 )
+259/shape_offset = Vector2( 0, 0 )
+259/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+259/shape = SubResource( 99 )
+259/shape_one_way = false
+259/shape_one_way_margin = 1.0
+259/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 99 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+259/z_index = 0
+260/name = "BRINK TILE SOLID.png 260"
+260/texture = ExtResource( 1 )
+260/tex_offset = Vector2( 0, 0 )
+260/modulate = Color( 1, 1, 1, 1 )
+260/region = Rect2( 768, 1536, 64, 64 )
+260/tile_mode = 0
+260/occluder_offset = Vector2( 0, 0 )
+260/navigation_offset = Vector2( 0, 0 )
+260/shape_offset = Vector2( 0, 0 )
+260/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+260/shape = SubResource( 100 )
+260/shape_one_way = false
+260/shape_one_way_margin = 1.0
+260/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 100 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+260/z_index = 0
+261/name = "BRINK TILE SOLID.png 261"
+261/texture = ExtResource( 1 )
+261/tex_offset = Vector2( 0, 0 )
+261/modulate = Color( 1, 1, 1, 1 )
+261/region = Rect2( 832, 1536, 64, 64 )
+261/tile_mode = 0
+261/occluder_offset = Vector2( 0, 0 )
+261/navigation_offset = Vector2( 0, 0 )
+261/shape_offset = Vector2( 0, 0 )
+261/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+261/shape = SubResource( 101 )
+261/shape_one_way = false
+261/shape_one_way_margin = 1.0
+261/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 101 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+261/z_index = 0
+262/name = "BRINK TILE SOLID.png 262"
+262/texture = ExtResource( 1 )
+262/tex_offset = Vector2( 0, 0 )
+262/modulate = Color( 1, 1, 1, 1 )
+262/region = Rect2( 896, 1536, 64, 64 )
+262/tile_mode = 0
+262/occluder_offset = Vector2( 0, 0 )
+262/navigation_offset = Vector2( 0, 0 )
+262/shape_offset = Vector2( 0, 0 )
+262/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+262/shape = SubResource( 102 )
+262/shape_one_way = false
+262/shape_one_way_margin = 1.0
+262/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 102 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+262/z_index = 0
