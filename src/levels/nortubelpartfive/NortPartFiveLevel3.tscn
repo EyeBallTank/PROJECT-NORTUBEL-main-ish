@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -30,6 +30,11 @@ animations = [ {
 "speed": 3.0
 } ]
 
+[sub_resource type="Curve2D" id=5]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 2306, 1254, 0, 0, 0, 0, 2517, 915, 0, 0, 0, 0, 2613, 608, 0, 0, 0, 0, 2671, 293 )
+}
+
 [node name="NortPartFiveLevel3" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -52,18 +57,27 @@ texture = ExtResource( 9 )
 motion_scale = Vector2( 0.7, 0.7 )
 
 [node name="CowSpider" type="KinematicBody2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
-position = Vector2( 2141, 661 )
+position = Vector2( 2306, 1254 )
+rotation = -1.01412
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground3 spider/ParallaxLayer/CowSpider"]
 shape = SubResource( 1 )
 disabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ParallaxBackground3 spider/ParallaxLayer/CowSpider"]
-position = Vector2( 152, 384 )
 frames = SubResource( 4 )
 animation = "crawl"
-frame = 1
 playing = true
+
+[node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
+curve = SubResource( 5 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D"]
+position = Vector2( 2306, 1254 )
+rotation = -1.01412
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D/PathFollow2D"]
+remote_path = NodePath("../../../CowSpider")
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
