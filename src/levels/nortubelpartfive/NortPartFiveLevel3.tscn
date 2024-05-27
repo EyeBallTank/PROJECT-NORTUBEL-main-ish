@@ -68,6 +68,7 @@ disabled = true
 rotation = 1.52367
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
