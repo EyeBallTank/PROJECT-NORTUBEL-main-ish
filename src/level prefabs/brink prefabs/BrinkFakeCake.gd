@@ -13,3 +13,6 @@ func _on_accept_knife_area_entered(area):
 	if area.name == "PlayerMelee":
 		animationplayer.play("pop")
 		sound.play()
+
+func die():
+	queue_free()

@@ -102,6 +102,7 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -110,6 +111,7 @@ curve = SubResource( 5 )
 [node name="PathFollow2D" type="PathFollow2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D"]
 position = Vector2( 2307, 1255 )
 rotation = -1.01762
+offset = 19678.7
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D/PathFollow2D"]
 remote_path = NodePath("../../../CowSpider")
