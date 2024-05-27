@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,7 +32,38 @@ animations = [ {
 
 [sub_resource type="Curve2D" id=5]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 2306, 1254, 0, 0, 0, 0, 2517, 915, 0, 0, 0, 0, 2613, 608, 0, 0, 0, 0, 2671, 293, 0, 0, 0, 0, 2658, 124, 0, 0, 0, 0, 2845, 251, 0, 0, 0, 0, 3102, 423, 0, 0, 0, 0, 3239, 515, 0, 0, 0, 0, 3312, 591, 0, 0, 0, 0, 3451, 763, 0, 0, 0, 0, 3531, 836, 0, 0, 0, 0, 3645, 912, 0, 0, 0, 0, 3782, 982, 0, 0, 0, 0, 3648, 1239, 0, 0, 0, 0, 3594, 1394, 0, 0, 0, 0, 3752, 1413, 0, 0, 0, 0, 3942, 1429, 0, 0, 0, 0, 4263, 1420, 0, 0, 0, 0, 4679, 1321, 0, 0, 0, 0, 4895, 1264, 0, 0, 0, 0, 5047, 902, 0, 0, 0, 0, 5161, 636, 0, 0, 0, 0, 5336, 290, 0, 0, 0, 0, 5441, 1, 0, 0, 0, 0, 5282, 55, 0, 0, 0, 0, 5060, 220, 0, 0, 0, 0, 4720, 385, 0, 0, 0, 0, 4342, 540, 0, 0, 0, 0, 4241, 544, 0, 0, 0, 0, 4202, 448, 0, 0, 0, 0, 4104, 359, 0, 0, 0, 0, 3980, 277, 0, 0, 0, 0, 3812, 232, 0, 0, 0, 0, 3729, 201, 0, 0, 0, 0, 3768, 105, 0, 0, 0, 0, 3783, -155, 0, 0, 0, 0, 3710, -330, 0, 0, 0, 0, 3621, -450, 0, 0, 0, 0, 3437, -520, 0, 0, 0, 0, 3510, -736, 0, 0, 0, 0, 3571, -907, 0, 0, 0, 0, 3577, -1009, 0, 0, 0, 0, 3406, -1053, 0, 0, 0, 0, 3056, -1193, 0, 0, 0, 0, 2694, -1307, 0, 0, 0, 0, 2447, -1164, 0, 0, 0, 0, 2250, -1034, 0, 0, 0, 0, 2113, -803, 0, 0, 0, 0, 1926, -552, 0, 0, 0, 0, 1866, -406, 0, 0, 0, 0, 1847, -260, 0, 0, 0, 0, 1904, -12, 0, 0, 0, 0, 1977, 90, 0, 0, 0, 0, 2085, 140, 0, 0, 0, 0, 2021, 242, 0, 0, 0, 0, 2028, 356, 0, 0, 0, 0, 2059, 467, 0, 0, 0, 0, 2158, 556, 0, 0, 0, 0, 2215, 645, 0, 0, 0, 0, 2082, 632, 0, 0, 0, 0, 2133, 763, 0, 0, 0, 0, 2120, 890, 0, 0, 0, 0, 2206, 1042, 0, 0, 0, 0, 2256, 1134, 0, 0, 0, 0, 2306, 1254 )
+"points": PoolVector2Array( 0, 0, 0, 0, 2307, 1255, 0, 0, 0, 0, 2517, 915 )
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ParallaxBackground3 spider/ParallaxLayer/Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "spiderwalk"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ParallaxBackground3 spider/ParallaxLayer/Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 18 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
 }
 
 [node name="NortPartFiveLevel3" type="Node2D"]
@@ -57,8 +88,8 @@ texture = ExtResource( 9 )
 motion_scale = Vector2( 0.7, 0.7 )
 
 [node name="CowSpider" type="KinematicBody2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
-position = Vector2( 2306, 1254 )
-rotation = -1.01412
+position = Vector2( 5193.72, 120.616 )
+rotation = 2.50235
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground3 spider/ParallaxLayer/CowSpider"]
 shape = SubResource( 1 )
@@ -68,15 +99,14 @@ disabled = true
 rotation = 1.52367
 frames = SubResource( 4 )
 animation = "crawl"
-frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
 curve = SubResource( 5 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D"]
-position = Vector2( 2306, 1254 )
-rotation = -1.01412
+position = Vector2( 2307, 1255 )
+rotation = -1.01762
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D/PathFollow2D"]
 remote_path = NodePath("../../../CowSpider")
@@ -102,17 +132,17 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1679, 1436 )
+position = Vector2( 2619, 1436 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1684, 1449 )
+position = Vector2( 2613, 1449 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2746, 1528 )
+position = Vector2( 2746, 1449 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2742, 1519 )
+position = Vector2( 2742, 1417 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 1 )]
 
@@ -126,3 +156,6 @@ position = Vector2( 2141, 1579 )
 boardname = "nort art weird spider"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "spiderwalk"
+anims/RESET = SubResource( 6 )
+anims/spiderwalk = SubResource( 7 )
