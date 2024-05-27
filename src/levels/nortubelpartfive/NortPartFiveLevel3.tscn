@@ -27,6 +27,11 @@ motion_mirroring = Vector2( 4096, 2400 )
 [node name="NortCowSpiderwebTest" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
 texture = ExtResource( 9 )
 
+[node name="ParallaxBackground3 spider" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3 spider"]
+motion_scale = Vector2( 0.7, 0.7 )
+
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
