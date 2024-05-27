@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,25 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/sprites/level_backgrounds/nort cow spiderweb test.png" type="Texture" id=9]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/sprites/bosses/cow spider/COW SPIDER IN BACKGROUND.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 746, 729 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 11 )
+region = Rect2( 746, 0, 746, 729 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "crawl",
+"speed": 3.0
+} ]
 
 [node name="NortPartFiveLevel3" type="Node2D"]
 
@@ -31,6 +50,20 @@ texture = ExtResource( 9 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3 spider"]
 motion_scale = Vector2( 0.7, 0.7 )
+
+[node name="CowSpider" type="KinematicBody2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
+position = Vector2( 2141, 661 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground3 spider/ParallaxLayer/CowSpider"]
+shape = SubResource( 1 )
+disabled = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ParallaxBackground3 spider/ParallaxLayer/CowSpider"]
+position = Vector2( 152, 384 )
+frames = SubResource( 4 )
+animation = "crawl"
+frame = 1
+playing = true
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
