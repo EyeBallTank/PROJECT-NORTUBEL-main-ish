@@ -123,3 +123,5 @@ customtext = "brkstn"
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2141, 1579 )
 boardname = "nort art weird spider"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
