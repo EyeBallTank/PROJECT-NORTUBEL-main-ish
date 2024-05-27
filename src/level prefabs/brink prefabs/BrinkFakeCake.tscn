@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink fake cake.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 384, 256 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 256, 384, 256 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "balloon",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "cake",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 76, 100.5 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 116, 100.5 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "cake" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("accept_knife/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="BrinkFakeCake" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+animation = "cake"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 27.5 )
+shape = SubResource( 4 )
+
+[node name="accept_knife" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="accept_knife"]
+position = Vector2( 0, 27.5 )
+shape = SubResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 6 )
