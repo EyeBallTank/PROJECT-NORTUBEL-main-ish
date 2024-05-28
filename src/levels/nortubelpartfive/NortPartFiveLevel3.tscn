@@ -110,8 +110,9 @@ playing = true
 curve = SubResource( 5 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D"]
-position = Vector2( 932, 3366 )
-rotation = -1.16609
+position = Vector2( 2103.21, 887.067 )
+rotation = 2.89067
+offset = 3190.14
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="ParallaxBackground3 spider/ParallaxLayer/Path2D/PathFollow2D"]
 remote_path = NodePath("../../../CowSpider")

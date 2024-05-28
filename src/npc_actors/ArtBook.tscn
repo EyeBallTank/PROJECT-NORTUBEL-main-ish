@@ -1,4 +1,4 @@
-[gd_scene load_steps=244 format=2]
+[gd_scene load_steps=246 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -123,6 +123,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art simo reference.png" type="Texture" id=121]
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art kler reference v3.png" type="Texture" id=122]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art punch monkey crossover.png" type="Texture" id=123]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art carrie reference.png" type="Texture" id=124]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -537,6 +538,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=86]
 atlas = ExtResource( 72 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=142]
+atlas = ExtResource( 124 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=19]
@@ -1064,6 +1069,11 @@ animations = [ {
 "name": "nort art how 3 older ones met",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 142 ) ],
+"loop": true,
+"name": "nort art older main six",
+"speed": 1.0
+}, {
 "frames": [ ExtResource( 16 ) ],
 "loop": false,
 "name": "nort art pamela reference",
@@ -1173,7 +1183,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "brink art punch monkey crossover"
+animation = "nort art older main six"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
