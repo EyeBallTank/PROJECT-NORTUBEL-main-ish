@@ -61,4 +61,5 @@ boardname = "unto art stoker twins reference"
 
 [node name="LoreBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( -593, 1417 )
+customtext = "UNTOTERN_LORE_WORLD_TEXT"
 spritename = "untotern lorebook"

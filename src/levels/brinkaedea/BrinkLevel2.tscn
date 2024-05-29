@@ -198,6 +198,7 @@ position = Vector2( 166, 2202 )
 
 [node name="LoreBook" parent="." instance=ExtResource( 27 )]
 position = Vector2( -435, 1563 )
+customtext = "BRINK_LORE_WORLD_TEXT"
 spritename = "brinkaedea lorebook"
 
 [node name="IceFloor" parent="." instance=ExtResource( 28 )]

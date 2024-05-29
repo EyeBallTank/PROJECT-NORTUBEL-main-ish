@@ -112,5 +112,6 @@ position = Vector2( 1903, 488 )
 spritename = "lahiurn yeldoor"
 
 [node name="LoreBook" parent="." instance=ExtResource( 20 )]
-position = Vector2( 766, 1475 )
+position = Vector2( -131, 1672 )
+customtext = "LAHIURN_LORE_WORLD_TEXT"
 spritename = "lahiurn lorebook"
