@@ -49,3 +49,7 @@ position = Vector2( 522, 1302 )
 [node name="ArtBook" parent="." instance=ExtResource( 1 )]
 position = Vector2( 48, 1319 )
 boardname = "nort art older main six"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1012, 1319 )
+boardname = "nort art younger main six"
