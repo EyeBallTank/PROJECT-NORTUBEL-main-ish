@@ -173,12 +173,12 @@ anims/spiderwalk = SubResource( 7 )
 position = Vector2( 4001, 822 )
 
 [node name="jump thru" parent="." instance=ExtResource( 13 )]
-position = Vector2( 4288, 1344 )
+position = Vector2( 5996, 1158 )
 scale = Vector2( 56, 8 )
 collision_newsize = Vector2( 56, 8 )
 
 [node name="jump thru2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 3840, 1088 )
+position = Vector2( 7497, 1281 )
 scale = Vector2( 288, 8 )
 collision_newsize = Vector2( 288, 8 )
 
