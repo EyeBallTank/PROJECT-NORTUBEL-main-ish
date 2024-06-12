@@ -1,0 +1,304 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://src/level_hazards/hirdrih/SpiderChips.gd" type="Script" id=1]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/sprites/level_hazard_sprites/hirdrih/spiderchip.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 151, 134 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 3 )
+region = Rect2( 151, 0, 151, 134 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "moving",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 64.4247, 51.5472 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 64.0297, 52.2832 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 83.5, 94.0001 )
+
+[sub_resource type="Curve2D" id=5]
+bake_interval = 0.01
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -76.3943, -101.067, 0, 0, 0, 0, -76.3943, -682.868, 0, 0, 0, 0, -76.3943, -101.067 )
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "2ndloop"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.5162, 1.0, 0.5162 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Spider1/AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Spider1/EnemyHitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Spider1/hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0671 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Spider1/AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Spider1/EnemyHitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Spider1/hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "dying"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Spider1/AnimatedSprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Spider1/EnemyHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Spider1/hurtbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 3.6 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "die"
+} ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "mainloop"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.5, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Spider1/AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Spider1/EnemyHitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Spider1/hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="NortCowSpiderVerti" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Spider1" type="KinematicBody2D" parent="."]
+position = Vector2( -0.999718, -156.522 )
+rotation = -1.5708
+scale = Vector2( 1.26504, 1.35799 )
+collision_layer = 32
+collision_mask = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Spider1"]
+rotation = 1.5708
+frames = SubResource( 3 )
+animation = "moving"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1"]
+position = Vector2( -0.193329, 0 )
+shape = SubResource( 8 )
+
+[node name="EnemyHitbox" parent="Spider1" instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1/EnemyHitbox"]
+position = Vector2( 0.201874, -6.10352e-05 )
+shape = SubResource( 4 )
+
+[node name="hurtbox" type="Area2D" parent="Spider1"]
+position = Vector2( 656.797, -0.736203 )
+rotation = -1.5708
+scale = Vector2( 0.736382, 0.790489 )
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1/hurtbox"]
+position = Vector2( -1, -832 )
+shape = SubResource( 10 )
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2( 102.743, 23.8533 )
+scale = Vector2( 1.35799, 1.26504 )
+curve = SubResource( 5 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( -76.3943, -142.584 )
+rotation = -1.5708
+offset = 25.5497
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../Spider1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/2ndloop = SubResource( 9 )
+anims/RESET = SubResource( 7 )
+anims/dying = SubResource( 11 )
+anims/mainloop = SubResource( 6 )
+
+[connection signal="area_entered" from="Spider1/hurtbox" to="." method="_on_hurtbox_area_entered"]
