@@ -1,54 +1,33 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://src/enemies/gecko enemy.gd" type="Script" id=1]
+[ext_resource path="res://src/bosses/cow spider/NortCowSpiderHoriz.gd" type="Script" id=1]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/sprites/enemy_sprites/gecko sprite new.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/bosses/cow spider/COW SPIDER horiz sprites.png" type="Texture" id=3]
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 430, 283 )
+region = Rect2( 0, 0, 729, 746 )
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 3 )
-region = Rect2( 0, 283, 430, 283 )
-
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 566, 430, 283 )
-
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 849, 430, 283 )
-
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 1132, 430, 283 )
-
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 1415, 430, 283 )
+region = Rect2( 0, 746, 729, 746 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"frames": [ SubResource( 9 ), SubResource( 10 ) ],
 "loop": true,
 "name": "ALIVE",
 "speed": 5.0
-}, {
-"frames": [ SubResource( 13 ), SubResource( 14 ) ],
-"loop": true,
-"name": "DEAD",
-"speed": 3.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 206.5, 74 )
+extents = Vector2( 192.5, 142 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 208.5, 76 )
+extents = Vector2( 205, 150 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 207.5, 74.5 )
+extents = Vector2( 213.5, 159.5 )
 
 [sub_resource type="Animation" id=7]
 length = 0.001
@@ -155,28 +134,25 @@ tracks/3/keys = {
 } ]
 }
 
-[node name="Gecko enemy" type="KinematicBody2D" groups=["enemies"]]
+[node name="NortCowSpiderHoriz" type="KinematicBody2D" groups=["enemies"]]
 collision_layer = 32
 collision_mask = 2308
 script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1, -183 )
-rotation = 3.14159
 frames = SubResource( 6 )
-animation = "DEAD"
-frame = 1
+animation = "ALIVE"
 playing = true
-flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2.5, -156 )
+position = Vector2( -2.5, -167 )
 shape = SubResource( 1 )
 
 [node name="EnemyHitbox" parent="." instance=ExtResource( 2 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitbox"]
-position = Vector2( 2.5, -156 )
+position = Vector2( -1, -167 )
 shape = SubResource( 2 )
 
 [node name="GeckoHurtbox" type="Area2D" parent="."]
@@ -185,7 +161,7 @@ collision_mask = 1025
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GeckoHurtbox"]
-position = Vector2( 2.5, -156.5 )
+position = Vector2( -2.5, -164.5 )
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
