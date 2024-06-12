@@ -1,20 +1,20 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://src/level_hazards/hirdrih/SpiderChips.gd" type="Script" id=1]
+[ext_resource path="res://src/bosses/cow spider/NortCowSpiderVerti.gd" type="Script" id=1]
 [ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/sprites/level_hazard_sprites/hirdrih/spiderchip.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/bosses/cow spider/COW SPIDER IN BACKGROUND.png" type="Texture" id=3]
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 151, 134 )
+region = Rect2( 0, 0, 746, 729 )
 
-[sub_resource type="AtlasTexture" id=2]
+[sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 3 )
-region = Rect2( 151, 0, 151, 134 )
+region = Rect2( 746, 0, 746, 729 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"frames": [ SubResource( 12 ), SubResource( 13 ) ],
 "loop": true,
 "name": "moving",
 "speed": 5.0
@@ -24,15 +24,15 @@ animations = [ {
 extents = Vector2( 64.4247, 51.5472 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 64.0297, 52.2832 )
+extents = Vector2( 260.466, 144.699 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 83.5, 94.0001 )
+extents = Vector2( 203.499, 337.501 )
 
 [sub_resource type="Curve2D" id=5]
 bake_interval = 0.01
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -76.3943, -101.067, 0, 0, 0, 0, -76.3943, -682.868, 0, 0, 0, 0, -76.3943, -101.067 )
+"points": PoolVector2Array( 0, 0, 0, 0, -76.3943, -101.067, 0, 0, 0, 0, -79.34, -3919.92, 0, 0, 0, 0, -76.3943, -101.067 )
 }
 
 [sub_resource type="Animation" id=9]
@@ -250,8 +250,8 @@ tracks/3/keys = {
 script = ExtResource( 1 )
 
 [node name="Spider1" type="KinematicBody2D" parent="."]
-position = Vector2( -0.999718, -156.522 )
-rotation = -1.5708
+position = Vector2( -0.999702, -104.001 )
+rotation = -1.57162
 scale = Vector2( 1.26504, 1.35799 )
 collision_layer = 32
 collision_mask = 0
@@ -260,16 +260,19 @@ collision_mask = 0
 rotation = 1.5708
 frames = SubResource( 3 )
 animation = "moving"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1"]
 position = Vector2( -0.193329, 0 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 8 )
 
 [node name="EnemyHitbox" parent="Spider1" instance=ExtResource( 2 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1/EnemyHitbox"]
-position = Vector2( 0.201874, -6.10352e-05 )
+position = Vector2( -60.0942, 13.6229 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 
 [node name="hurtbox" type="Area2D" parent="Spider1"]
@@ -279,7 +282,7 @@ scale = Vector2( 0.736382, 0.790489 )
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spider1/hurtbox"]
-position = Vector2( -1, -832 )
+position = Vector2( -20.496, -909.896 )
 shape = SubResource( 10 )
 
 [node name="Path2D" type="Path2D" parent="."]
@@ -288,9 +291,9 @@ scale = Vector2( 1.35799, 1.26504 )
 curve = SubResource( 5 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -76.3943, -142.584 )
-rotation = -1.5708
-offset = 25.5497
+position = Vector2( -76.5672, -325.209 )
+rotation = -1.57157
+offset = 29.0345
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../../Spider1")
