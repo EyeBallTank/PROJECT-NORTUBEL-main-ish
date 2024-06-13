@@ -32,6 +32,9 @@ func _physics_process(delta):
 func die():
 	queue_free()
 
+func send_a_signal():
+	Signals.emit_signal("collectible_picked")
+
 func _on_SpiderHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
 		state = DEAD
