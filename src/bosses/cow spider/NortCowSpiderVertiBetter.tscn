@@ -126,9 +126,12 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 2 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
+"args": [  ],
+"method": "send_a_signal"
+}, {
 "args": [  ],
 "method": "die"
 } ]
@@ -143,6 +146,7 @@ script = ExtResource( 3 )
 position = Vector2( -14, 1 )
 frames = SubResource( 6 )
 animation = "ALIVE"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

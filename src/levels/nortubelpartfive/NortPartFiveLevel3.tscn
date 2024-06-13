@@ -109,6 +109,7 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -171,7 +172,7 @@ anims/RESET = SubResource( 6 )
 anims/spiderwalk = SubResource( 7 )
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 12 )]
-position = Vector2( 4001, 822 )
+position = Vector2( 4073, 1172 )
 
 [node name="jump thru" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5996, 1158 )
