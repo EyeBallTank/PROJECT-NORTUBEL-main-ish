@@ -22,7 +22,7 @@ func _physics_process(delta):
 			var found_wall = is_on_wall()
 			if found_wall:
 				direction *= -1
-				sprite.flip_h = direction.x > 0
+				sprite.flip_h = direction.x < 0
 			velocity = direction * 390
 			move_and_slide(velocity, Vector2.UP)
 		DEAD:
