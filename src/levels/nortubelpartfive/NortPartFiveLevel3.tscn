@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/nortubelpartfive/NortPartFiveLevel3.gd" type="Script" id=14]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/bosses/cow spider/NortCowSpiderHoriz.tscn" type="PackedScene" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -107,6 +108,7 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -195,3 +197,6 @@ idealnumber = 7
 position = Vector2( 5587, 480 )
 spritename = "cowspider"
 idealnumber = 14
+
+[node name="NortCowSpiderHoriz" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1576, 1000 )

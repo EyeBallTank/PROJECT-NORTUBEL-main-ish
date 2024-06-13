@@ -68,7 +68,7 @@ tracks/2/keys = {
 "values": [ false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("GeckoHurtbox/CollisionShape2D:disabled")
+tracks/3/path = NodePath("SpiderHurtbox/CollisionShape2D:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -108,7 +108,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("GeckoHurtbox/CollisionShape2D:disabled")
+tracks/2/path = NodePath("SpiderHurtbox/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -143,6 +143,7 @@ script = ExtResource( 1 )
 position = Vector2( 1, -183 )
 frames = SubResource( 6 )
 animation = "ALIVE"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -155,12 +156,12 @@ shape = SubResource( 1 )
 position = Vector2( -1, -167 )
 shape = SubResource( 2 )
 
-[node name="GeckoHurtbox" type="Area2D" parent="."]
+[node name="SpiderHurtbox" type="Area2D" parent="."]
 collision_layer = 32
 collision_mask = 1025
 monitorable = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GeckoHurtbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpiderHurtbox"]
 position = Vector2( -2.5, -164.5 )
 shape = SubResource( 3 )
 
@@ -168,5 +169,4 @@ shape = SubResource( 3 )
 anims/RESET = SubResource( 7 )
 anims/dying = SubResource( 8 )
 
-[connection signal="area_entered" from="GeckoHurtbox" to="." method="_on_GeckoHurtbox_area_entered"]
-[connection signal="body_entered" from="GeckoHurtbox" to="." method="_on_GeckoHurtbox_body_entered"]
+[connection signal="area_entered" from="SpiderHurtbox" to="." method="_on_SpiderHurtbox_area_entered"]
