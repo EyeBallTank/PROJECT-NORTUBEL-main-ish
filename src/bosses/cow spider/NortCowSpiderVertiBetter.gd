@@ -1,16 +1,45 @@
 extends KinematicBody2D
 
+var vertidirection = Vector2.UP
+var velocity = Vector2.ZERO
+var knockback_dir = 1
+onready var sprite: = $Sprite
+onready var animation: = $AnimationPlayer
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+enum {
+	ALIVE,
+	DEAD
+}
 
+var state = ALIVE
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	animation.play("RESET")
+
+func _physics_process(delta):
+	match state:
+		ALIVE:
+			var hitceiling = is_on_ceiling()
+			var hitfloor = is_on_floor()
+			if hitfloor:
+				vertidirection *= -1
+				sprite.flip_v = false
+			if hitceiling:
+				vertidirection *= -1
+				sprite.flip_v = true
+			velocity = vertidirection * 390
+			move_and_slide(velocity, Vector2.UP)
+
+		DEAD:
+			animation.play("dying")
+			velocity = 0
+
+func die():
+	queue_free()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_SpiderHurtbox_area_entered(area):
+	if area.name == "PlayerMelee":
+		state = DEAD
+	if area.name == "EnemyCrusher":
+		state = DEAD

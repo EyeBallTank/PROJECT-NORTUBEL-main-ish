@@ -164,3 +164,5 @@ shape = SubResource( 3 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 7 )
 anims/dying = SubResource( 8 )
+
+[connection signal="area_entered" from="SpiderHurtbox" to="." method="_on_SpiderHurtbox_area_entered"]
