@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=136 format=2]
+[gd_resource type="TileSet" load_steps=137 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILE PASSABLE.png" type="Texture" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BASIC SOLID OUTLINES.png" type="Texture" id=31]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE  PLANETS.png" type="Texture" id=32]
 [ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK SINGLE TILE WEIRD TREE AND CLOCKS.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/tile sets/brinkaedea/BRINK TILES BONKA BONKETTE SMILES.png" type="Texture" id=34]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -4751,3 +4752,31 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 192, 0, 192 )
 263/shape_one_way_margin = 0.0
 263/shapes = [  ]
 263/z_index = 0
+264/name = "BRINK TILES BONKA BONKETTE SMILES.png 264"
+264/texture = ExtResource( 34 )
+264/tex_offset = Vector2( 0, 0 )
+264/modulate = Color( 1, 1, 1, 1 )
+264/region = Rect2( 0, 0, 256, 256 )
+264/tile_mode = 0
+264/occluder_offset = Vector2( 0, 0 )
+264/navigation_offset = Vector2( 0, 0 )
+264/shape_offset = Vector2( 0, 0 )
+264/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+264/shape_one_way = false
+264/shape_one_way_margin = 0.0
+264/shapes = [  ]
+264/z_index = 0
+265/name = "BRINK TILES BONKA BONKETTE SMILES.png 265"
+265/texture = ExtResource( 34 )
+265/tex_offset = Vector2( 0, 0 )
+265/modulate = Color( 1, 1, 1, 1 )
+265/region = Rect2( 256, 0, 256, 256 )
+265/tile_mode = 0
+265/occluder_offset = Vector2( 0, 0 )
+265/navigation_offset = Vector2( 0, 0 )
+265/shape_offset = Vector2( 0, 0 )
+265/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+265/shape_one_way = false
+265/shape_one_way_margin = 0.0
+265/shapes = [  ]
+265/z_index = 0
