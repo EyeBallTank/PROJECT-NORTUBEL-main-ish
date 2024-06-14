@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/brinkaedea/brinklevel3 bg.png" type="Texture" id=14]
 [ext_resource path="res://src/npc_actors/brink npc/BonkaSpeakerNPC.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkFakeCake.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_hazards/brinkaedea/BrinkEvilCircularSaw.tscn" type="PackedScene" id=17]
 
 [node name="BrinkLevel3" type="Node2D"]
 
@@ -131,3 +132,6 @@ customname = "Bonka Millette"
 
 [node name="BrinkFakeCake" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1692, 1464 )
+
+[node name="BrinkEvilCircularSaw" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1123, 1284 )
