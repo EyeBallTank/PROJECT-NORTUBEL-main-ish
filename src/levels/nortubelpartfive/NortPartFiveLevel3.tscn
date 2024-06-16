@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/bosses/cow spider/NortCowSpiderHoriz.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/bosses/cow spider/NortCowSpiderVertiBetter.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -109,7 +110,6 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
-frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -206,3 +206,6 @@ collision_newsize = Vector2( 69, 224 )
 position = Vector2( 3519, -257 )
 scale = Vector2( 32, 160 )
 collision_newsize = Vector2( 32, 160 )
+
+[node name="Health Pickup" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2448, -136 )
