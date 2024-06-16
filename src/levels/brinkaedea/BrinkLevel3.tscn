@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/npc_actors/brink npc/BonkaSpeakerNPC.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkFakeCake.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_hazards/brinkaedea/BrinkEvilCircularSaw.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkFakePresent.tscn" type="PackedScene" id=18]
 
 [node name="BrinkLevel3" type="Node2D"]
 
@@ -135,3 +136,6 @@ position = Vector2( 1692, 1464 )
 
 [node name="BrinkEvilCircularSaw" parent="." instance=ExtResource( 17 )]
 position = Vector2( 1123, 1284 )
+
+[node name="BrinkFakePresent" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2249, 1603 )
