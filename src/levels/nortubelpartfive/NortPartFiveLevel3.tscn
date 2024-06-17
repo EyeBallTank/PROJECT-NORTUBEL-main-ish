@@ -110,6 +110,7 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -229,3 +230,11 @@ collision_newsize = Vector2( 32, 160 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 18 )]
 position = Vector2( 2448, -136 )
+
+[node name="ArtBook2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 7864, 896 )
+boardname = "nort art delusional dream"
+
+[node name="ArtBook3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 7376, 896 )
+boardname = "nort art 3 girls summer"
