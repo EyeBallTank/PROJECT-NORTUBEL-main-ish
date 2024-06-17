@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -18,6 +18,7 @@
 [ext_resource path="res://src/behind_the_scenes/right through platform.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=19]
 
 [node name="NortPartFiveLevel2" type="Node2D"]
 
@@ -112,3 +113,13 @@ position = Vector2( 2826, 113 )
 
 [node name="Jumppad" parent="." instance=ExtResource( 18 )]
 position = Vector2( 2830, -844 )
+
+[node name="Ladder" parent="." instance=ExtResource( 19 )]
+position = Vector2( 1792, 1600 )
+scale = Vector2( 32, 344 )
+collision_newsize = Vector2( 32, 344 )
+
+[node name="Ladder2" parent="." instance=ExtResource( 19 )]
+position = Vector2( 3136, 576 )
+scale = Vector2( 24, 80 )
+collision_newsize = Vector2( 24, 80 )
