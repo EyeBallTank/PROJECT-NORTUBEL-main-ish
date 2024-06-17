@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,7 +11,6 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/nort cow spiderweb test.png" type="Texture" id=9]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/sprites/bosses/cow spider/COW SPIDER IN BACKGROUND.png" type="Texture" id=11]
-[ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/nortubelpartfive/NortPartFiveLevel3.gd" type="Script" id=14]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=15]
@@ -110,6 +109,7 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -207,7 +207,7 @@ position = Vector2( 7007, 1528 )
 position = Vector2( 8375, -568 )
 
 [node name="NortCowSpiderHoriz7" parent="." instance=ExtResource( 16 )]
-position = Vector2( 7119, 888 )
+position = Vector2( 7136, 919 )
 
 [node name="NortCowSpiderVertiBetter" parent="." instance=ExtResource( 17 )]
 position = Vector2( 3993, 707 )
@@ -267,9 +267,3 @@ boardname = "nort art delusional dream"
 [node name="ArtBook3" parent="." instance=ExtResource( 8 )]
 position = Vector2( 9307, 147 )
 boardname = "nort art 3 girls summer"
-
-[node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 12 )]
-position = Vector2( 7408, 1556 )
-
-[node name="MovingPlatVertiLonger2" parent="." instance=ExtResource( 12 )]
-position = Vector2( 8080, 1208 )

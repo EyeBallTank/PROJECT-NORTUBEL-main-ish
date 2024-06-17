@@ -27,7 +27,7 @@ extents = Vector2( 192.5, 142 )
 extents = Vector2( 205, 150 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 213.5, 159.5 )
+extents = Vector2( 225.5, 171 )
 
 [sub_resource type="Animation" id=7]
 length = 0.001
@@ -164,7 +164,7 @@ collision_mask = 1025
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SpiderHurtbox"]
-position = Vector2( -2.5, -164.5 )
+position = Vector2( -1.5, -167 )
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
