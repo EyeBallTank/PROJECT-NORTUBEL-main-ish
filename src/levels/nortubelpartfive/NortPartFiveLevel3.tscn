@@ -11,7 +11,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/nort cow spiderweb test.png" type="Texture" id=9]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/sprites/bosses/cow spider/COW SPIDER IN BACKGROUND.png" type="Texture" id=11]
-[ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/nortubelpartfive/NortPartFiveLevel3.gd" type="Script" id=14]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=15]
@@ -174,9 +174,6 @@ autoplay = "spiderwalk"
 anims/RESET = SubResource( 6 )
 anims/spiderwalk = SubResource( 7 )
 
-[node name="MovingPlatVerti" parent="." instance=ExtResource( 12 )]
-position = Vector2( 8561, 2136 )
-
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 15 )]
 position = Vector2( 4414, 480 )
 spritename = "cowspider"
@@ -209,6 +206,15 @@ position = Vector2( 4945, 1491 )
 
 [node name="NortCowSpiderVertiBetter3" parent="." instance=ExtResource( 17 )]
 position = Vector2( 6369, 91 )
+
+[node name="NortCowSpiderVertiBetter5" parent="." instance=ExtResource( 17 )]
+position = Vector2( 7113, 547 )
+
+[node name="NortCowSpiderVertiBetter6" parent="." instance=ExtResource( 17 )]
+position = Vector2( 7729, 547 )
+
+[node name="NortCowSpiderVertiBetter7" parent="." instance=ExtResource( 17 )]
+position = Vector2( 8385, 547 )
 
 [node name="NortCowSpiderVertiBetter4" parent="." instance=ExtResource( 17 )]
 position = Vector2( 5641, 787 )
@@ -244,3 +250,6 @@ boardname = "nort art delusional dream"
 [node name="ArtBook3" parent="." instance=ExtResource( 8 )]
 position = Vector2( 6328, 2176 )
 boardname = "nort art 3 girls summer"
+
+[node name="MovingPlatVertiLonger" parent="." instance=ExtResource( 12 )]
+position = Vector2( 7320, 1288 )
