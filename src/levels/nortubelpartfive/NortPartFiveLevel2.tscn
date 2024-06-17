@@ -100,13 +100,13 @@ position = Vector2( 871, -1989 )
 
 [node name="left through platform" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1920, 960 )
-scale = Vector2( 8, 56 )
-collision_newsize = Vector2( 8, 56 )
+scale = Vector2( 8, 384 )
+collision_newsize = Vector2( 8, 384 )
 
 [node name="right through platform" parent="." instance=ExtResource( 16 )]
 position = Vector2( 2432, 960 )
-scale = Vector2( 8, 56 )
-collision_newsize = Vector2( 8, 56 )
+scale = Vector2( 8, 384 )
+collision_newsize = Vector2( 8, 384 )
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 17 )]
 position = Vector2( 2763, 1416 )
