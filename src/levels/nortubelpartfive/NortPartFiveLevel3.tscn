@@ -110,7 +110,6 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
-frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]
@@ -270,6 +269,12 @@ position = Vector2( 7736, -512 )
 
 [node name="Health Pickup5" parent="." instance=ExtResource( 18 )]
 position = Vector2( 8512, 1552 )
+
+[node name="Health Pickup6" parent="." instance=ExtResource( 18 )]
+position = Vector2( 6816, 1552 )
+
+[node name="Health Pickup7" parent="." instance=ExtResource( 18 )]
+position = Vector2( 3720, -1216 )
 
 [node name="Health Pickup3" parent="." instance=ExtResource( 18 )]
 position = Vector2( 5920, 1672 )
