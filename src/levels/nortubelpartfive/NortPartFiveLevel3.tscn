@@ -174,7 +174,7 @@ anims/RESET = SubResource( 6 )
 anims/spiderwalk = SubResource( 7 )
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 12 )]
-position = Vector2( 8017, 432 )
+position = Vector2( 8897, 1128 )
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 15 )]
 position = Vector2( 4414, 480 )
@@ -187,7 +187,7 @@ spritename = "cowspider"
 idealnumber = 7
 
 [node name="NumberBasedDoor3" parent="." instance=ExtResource( 15 )]
-position = Vector2( 8203, -752 )
+position = Vector2( 8771, 528 )
 spritename = "cowspider"
 idealnumber = 14
 
