@@ -247,6 +247,11 @@ position = Vector2( -3072, 3137 )
 scale = Vector2( 24, 144 )
 collision_newsize = Vector2( 24, 144 )
 
+[node name="Ladder2" parent="." instance=ExtResource( 25 )]
+position = Vector2( -4864, 1473 )
+scale = Vector2( 24, 104 )
+collision_newsize = Vector2( 24, 104 )
+
 [node name="Water" parent="." instance=ExtResource( 26 )]
 position = Vector2( 2050, 577 )
 scale = Vector2( 128, 48 )
