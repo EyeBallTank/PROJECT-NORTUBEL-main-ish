@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -16,6 +16,12 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_hazards/CrusherBell.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=22]
 
 [node name="NortPartFiveLevel1" type="Node2D"]
 
@@ -177,3 +183,21 @@ id = 1
 [node name="Teleportal2" parent="." instance=ExtResource( 16 )]
 position = Vector2( -320, 1792 )
 id = 1
+
+[node name="Blue key" parent="." instance=ExtResource( 22 )]
+position = Vector2( -2352, 2328 )
+
+[node name="Red key" parent="." instance=ExtResource( 17 )]
+position = Vector2( -512, 3096 )
+
+[node name="Yellow key" parent="." instance=ExtResource( 21 )]
+position = Vector2( -1344, 264 )
+
+[node name="BlueDoor" parent="." instance=ExtResource( 20 )]
+position = Vector2( -120, 2376 )
+
+[node name="RedDoor" parent="." instance=ExtResource( 18 )]
+position = Vector2( -560, 2376 )
+
+[node name="YellowDoor" parent="." instance=ExtResource( 19 )]
+position = Vector2( -352, 2376 )
