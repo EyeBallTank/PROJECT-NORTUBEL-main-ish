@@ -78,7 +78,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 worldname = "nortubel2"
 
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3100, 2399 )
+position = Vector2( -2883, 2636 )
 propname = "nortprop basket flowers"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 8 )]
@@ -98,7 +98,7 @@ position = Vector2( 3218, 2056 )
 propname = "nortprop old sink"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2082, 2462 )
+position = Vector2( -677, 1350 )
 propname = "nortprop painted rock"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 8 )]
@@ -106,11 +106,11 @@ position = Vector2( 2664, 2582 )
 propname = "nortprop pedal boat"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2533, 1670 )
+position = Vector2( -3933, 2346 )
 propname = "nortprop pillar vases rockface"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2896, 2300 )
+position = Vector2( -786, 198 )
 propname = "nortprop plates holder"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 8 )]
@@ -118,11 +118,11 @@ position = Vector2( -4127, 392 )
 propname = "nortprop small floating sand plat"
 
 [node name="LevelProp11" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2240, 2074 )
+position = Vector2( -3521, 2418 )
 propname = "nortprop small fountain"
 
 [node name="LevelProp12" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2035, 1833 )
+position = Vector2( -1967, 3126 )
 propname = "nortprop small green tree"
 
 [node name="LevelProp13" parent="." instance=ExtResource( 8 )]
@@ -138,7 +138,7 @@ position = Vector2( 1008, 2611 )
 propname = "nortprop window 3"
 
 [node name="LevelProp16" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1869, 2171 )
+position = Vector2( -1759, 350 )
 propname = "nortprop window 4"
 
 [node name="LevelProp17" parent="." instance=ExtResource( 8 )]
@@ -150,11 +150,11 @@ position = Vector2( 1255, 2283 )
 propname = "nortprop wood boat"
 
 [node name="LevelProp19" parent="." instance=ExtResource( 8 )]
-position = Vector2( 641, 2345 )
+position = Vector2( 789, -256 )
 propname = "nortprop statue 1"
 
 [node name="LoreBook" parent="." instance=ExtResource( 9 )]
-position = Vector2( 333, 2595 )
+position = Vector2( 485, -47 )
 customtext = "NORTUBEL_LORE_FIRSTKING_T"
 
 [node name="NortSeesawTrain" parent="." instance=ExtResource( 12 )]
