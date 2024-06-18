@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -24,6 +24,9 @@
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=27]
 
 [node name="NortPartFiveLevel1" type="Node2D"]
 
@@ -231,10 +234,23 @@ position = Vector2( -2638, 1400 )
 position = Vector2( -3620, 1400 )
 
 [node name="Coin9" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1789, 377 )
+position = Vector2( 1685, 513 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 24 )]
 position = Vector2( -4552, 534 )
 
 [node name="Health Pickup2" parent="." instance=ExtResource( 24 )]
 position = Vector2( 1343, 843 )
+
+[node name="Ladder" parent="." instance=ExtResource( 25 )]
+position = Vector2( -3072, 3137 )
+scale = Vector2( 24, 144 )
+collision_newsize = Vector2( 24, 144 )
+
+[node name="Water" parent="." instance=ExtResource( 26 )]
+position = Vector2( 2050, 577 )
+scale = Vector2( 128, 48 )
+collision_newsize = Vector2( 128, 48 )
+
+[node name="MovingPlatVerti" parent="." instance=ExtResource( 27 )]
+position = Vector2( 1880, 320 )
