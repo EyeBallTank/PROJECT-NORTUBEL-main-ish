@@ -822,7 +822,7 @@ position = Vector2( 3287, 1492 )
 
 [node name="Door" parent="." instance=ExtResource( 7 )]
 position = Vector2( 7853, 1089 )
-new_scene = "res://src/levels/LevelTemplate7.tscn"
+new_scene = "res://screens/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive.tscn"
 spritename = "altgrek greendoor"
 customtext = "zrkv1l"
 
