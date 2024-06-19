@@ -37,14 +37,13 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1245188, 1, 0, 1310724, 1, 0, 1376260, 1, 0, 1441796, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 917497, 0, 0, 983033, 0, 0, 1048569, 0, 0, 1114105, 0, 0, 1048592, 266, 0, 1048593, 267, 0, 1048596, 264, 0, 1048601, 265, 0, 1179641, 0, 0, 1114128, 268, 0, 1245177, 0, 0, 1179649, 169, 0, 1179651, 170, 0, 1179654, 171, 0, 1310713, 0, 0, 1245190, 172, 0, 1376249, 0, 0, 1376250, 1, 0, 1310726, 172, 0, 1441785, 0, 0, 1441786, 1, 0, 1441787, 1, 0, 1507321, 0, 0, 1507322, 1, 0, 1507323, 1, 0, 1441810, 263, 0, 1572857, 0, 0, 1572858, 1, 0, 1572859, 1, 0, 1572860, 32, 0, 1572861, 32, 0, 1572862, 32, 0, 1572863, 32, 0, 1507328, 32, 0, 1507329, 32, 0, 1507330, 32, 0, 1507331, 32, 0, 1507332, 32, 0, 1507333, 32, 0, 1507334, 32, 0, 1507335, 32, 0, 1507336, 32, 0, 1507337, 32, 0, 1507338, 32, 0, 1507339, 32, 0, 1507340, 32, 0, 1507341, 32, 0, 1638393, 0, 0, 1638394, 1, 0, 1638395, 1, 0, 1703929, 0, 0, 1703930, 0, 0, 1703931, 0, 0, 1703932, 0, 0, 1703933, 0, 0, 1703934, 0, 0, 1703935, 0, 0, 1638400, 173, 0, 1638401, 173, 0, 1638402, 0, 0, 1638403, 0, 0, 1638404, 0, 0, 1638405, 0, 0, 1638406, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638409, 0, 0, 1638410, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638414, 0, 0, 1638415, 0, 0, 1638416, 0, 0, 1638417, 0, 0, 1638418, 0, 0, 1638419, 0, 0, 1638420, 0, 0, 1638421, 0, 0, 1638422, 0, 0, 1638423, 0, 0, 1638424, 0, 0, 1638425, 0, 0, 1638426, 0, 0, 1638427, 0, 0, 1638428, 0, 0, 1638429, 0, 0, 1638430, 0, 0, 1638431, 0, 0, 1638432, 0, 0, 1638433, 0, 0, 1638434, 0, 0, 1638435, 0, 0 )
+tile_data = PoolIntArray( 917497, -1610612479, 0, 983033, -1610612479, 0, 1048569, -1610612479, 0, 1114105, -1610612479, 0, 1179641, -1610612479, 0, 1245177, -1610612479, 0, 1310713, -1610612479, 0, 1376249, -1610612479, 0, 1441785, -1610612479, 0, 1507321, -1610612479, 0, 1572857, -1610612479, 0, 1638393, -1610612479, 0, 1703929, 259, 0, 1703930, 1610612993, 0, 1703931, 1610612993, 0, 1703932, 1610612993, 0, 1703933, 1610612993, 0, 1703934, 1610612993, 0, 1703935, 1610612993, 0, 1638400, 1610612993, 0, 1638401, 1610612993, 0, 1638402, 1610612993, 0, 1638403, 1610612993, 0, 1638404, 1610612993, 0, 1638405, 1610612993, 0, 1638406, 1610612993, 0, 1638407, 1610612993, 0, 1638408, 1610612993, 0, 1638409, 0, 0, 1638410, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638414, 0, 0, 1638415, 0, 0, 1638416, 0, 0, 1638417, 0, 0, 1638418, 0, 0, 1638419, 0, 0, 1638420, 0, 0, 1638421, 0, 0, 1638422, 0, 0, 1638423, 0, 0, 1638424, 0, 0, 1638425, 0, 0, 1638426, 0, 0, 1638427, 0, 0, 1638428, 0, 0, 1638429, 0, 0, 1638430, 0, 0, 1638431, 0, 0, 1638432, 0, 0, 1638433, 0, 0, 1638434, 0, 0, 1638435, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -52,7 +51,6 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0, 1441797, 1, 0 )
 
 [node name="outlines" type="TileMap" parent="."]
 z_index = 17
@@ -77,69 +75,69 @@ position = Vector2( -4, 1391 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 7 )]
-position = Vector2( 610, 926 )
+position = Vector2( 3235, -239 )
 spritename = "bonka"
 
 [node name="BrinkBonkaLetterPickup" parent="." instance=ExtResource( 8 )]
-position = Vector2( 69, 1088 )
+position = Vector2( 2471, -373 )
 
 [node name="BrinkBonkaLetterPickup2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 177, 1088 )
+position = Vector2( 2579, -373 )
 spritename = "O"
 
 [node name="BrinkBonkaLetterPickup3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 287, 1088 )
+position = Vector2( 2689, -373 )
 spritename = "N"
 
 [node name="BrinkBonkaLetterPickup4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 386, 1088 )
+position = Vector2( 2788, -373 )
 spritename = "K"
 
 [node name="BrinkBonkaLetterPickup5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 480, 1088 )
+position = Vector2( 2882, -373 )
 spritename = "A"
 
 [node name="RedButton" parent="." instance=ExtResource( 10 )]
-position = Vector2( 369, 1518 )
+position = Vector2( 2781, -104 )
 redbuttonskin = "res://assets/sprites/level_object_sprites/brinkaedea/RedButton brinkaedea.tres"
 
 [node name="RedButtonGate" parent="." instance=ExtResource( 9 )]
-position = Vector2( 520, 1422 )
+position = Vector2( 3056, -238 )
 spritename = "brinkaedea"
 
 [node name="ArtBook" parent="." instance=ExtResource( 11 )]
-position = Vector2( -85, 780 )
+position = Vector2( 1736, -238 )
 boardname = "brink art odin reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 29, 1540 )
+position = Vector2( 1244, -123 )
 boardname = "brink art bonka reference"
 
 [node name="Door" parent="." instance=ExtResource( 12 )]
-position = Vector2( 792, 1552 )
+position = Vector2( 2159, -146 )
 spritename = "brinkaedea greendoor"
 customtext = "b0nk44"
 
 [node name="BrinkHammer" parent="." instance=ExtResource( 13 )]
-position = Vector2( 2649, 864 )
+position = Vector2( 3410, -21 )
 
 [node name="BrinkHammer2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 2886, 875 )
+position = Vector2( 3552, 5 )
 animation = "reverse"
 
 [node name="BonkaSpeakerNPC" parent="." instance=ExtResource( 15 )]
-position = Vector2( -173, 1069 )
+position = Vector2( 1574, 557 )
 customtext = "BONKA_SPEAKER_TALK_1"
 customname = "Bonka Millette"
 
 [node name="BrinkFakeCake" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1858, 728 )
+position = Vector2( 2848, -656 )
 
 [node name="BrinkEvilCircularSaw" parent="." instance=ExtResource( 17 )]
-position = Vector2( 1561, 680 )
+position = Vector2( 3744, -252 )
 
 [node name="BrinkFakePresent" parent="." instance=ExtResource( 18 )]
-position = Vector2( 2457, 799 )
+position = Vector2( 3460, -483 )
 
 [node name="BrinkEvilHatchet" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1915, 1603 )
+position = Vector2( 3647, -414 )
