@@ -59,6 +59,7 @@ collision_newsize = Vector2( 64, 64 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["poisonarea"]]
 shape = SubResource( 1 )
+disabled = true
 
 [node name="Timer" type="Timer" parent="."]
 
