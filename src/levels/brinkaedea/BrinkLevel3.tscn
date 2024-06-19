@@ -141,6 +141,11 @@ position = Vector2( 3419, 1041 )
 customtext = "BONKA_SPEAKER_TALK_3"
 customname = "Bonka Millette"
 
+[node name="BonkaSpeakerNPC4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 4467, 1029 )
+customtext = "BONKA_SPEAKER_TALK_4"
+customname = "Bonka Millette"
+
 [node name="BrinkFakeCake" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1685, 1023 )
 
