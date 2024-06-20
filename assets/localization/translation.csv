@@ -1960,3 +1960,12 @@ LINDA_NPC_HURT,"Hey, don't be rude.","Hey, não seja mal educado."
 LINDA_NPC_HUG,"Thank you but I'm not a plush doll.
 You can ask one of them if they want hugs, though.","Obrigada mas não sou uma boneca de peluche.
 Pode perguntar um deles se eles quiserem abraços."
+BONKY_NPC_TALK,"Oh hi! I think I remember seeing you.
+Bonka talked about you guys.
+She's hoping to see you again.","Olá! Acho que me lembro de vos ver.
+A Bonka falou de vocês.
+Ela espera de vos ver outra vez"
+BONKY_NPC_HUG,"You need a friend?
+I can be your friend.","Queres um amigo?
+Eu posso ser ter amigo."
+BONKY_NPC_HURT,Ahhhh! I didn't do anything I swear!,Ahhhh! Eu juro que não fiz nada!
