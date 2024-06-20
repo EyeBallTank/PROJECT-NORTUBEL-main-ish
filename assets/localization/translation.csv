@@ -1974,3 +1974,8 @@ If you get hungry, I can give you some fruit.","Espero que vocês se divertem ne
 Se tiverem fome, eu posso vos dar alguma fruta."
 MONICA_NPC_HUG,"Sorry, I don't accept hugs from strangers.","Desculpe, mas não aceito abraços de desconhecidos."
 MONICA_NPC_HURT,Why are you being so mean?,Porque é que você está a ser mau?
+ILLOU_NPC_TALK,"What do you want?
+I'm busy.","O que é que tu queres?
+Estou ocupado."
+ILLOU_NPC_HUG,"Okay, can you leave me alone now?","Ok, podes me deixar em paz?"
+ILLOU_NPC_HURT,"Stop it, I already lost another sketch book.","Para, eu já perdi um outro livro de desenhos."
