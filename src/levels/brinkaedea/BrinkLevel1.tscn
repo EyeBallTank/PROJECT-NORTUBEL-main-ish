@@ -194,12 +194,20 @@ customname = "Serif"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 29 )]
 position = Vector2( 1900, 1967 )
+customtext1 = "BRINK_CONVO_1"
+customtext2 = "BRINK_CONVO_2"
+customtext3 = "BRINK_CONVO_3"
+customtext4 = "BRINK_CONVO_4"
 customname1 = "Cenourio"
 customname2 = "Mack"
 spritename = "cenourio mack"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 29 )]
 position = Vector2( 1472, 1967 )
+customtext1 = "BRINK_CONVO_5"
+customtext2 = "BRINK_CONVO_6"
+customtext3 = "BRINK_CONVO_7"
+customtext4 = "BRINK_CONVO_8"
 customname1 = "Mecanita"
 customname2 = "Braaaaaaaadwiiiiiin"
 spritename = "braaaaaaaadwiiiiiin mecanita"
