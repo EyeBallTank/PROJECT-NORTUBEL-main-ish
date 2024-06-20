@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://src/npc_actors/brink npc/illouNPC.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/npc_actors/brink npc/JesterKingNPC.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/npc_actors/brink npc/SerifNPC.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=29]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -158,35 +159,47 @@ position = Vector2( -465, 941 )
 position = Vector2( 640, 2240 )
 
 [node name="LindaNPC" parent="." instance=ExtResource( 23 )]
-position = Vector2( 3121, 1960 )
+position = Vector2( 3277, 1968 )
 customtext = "LINDA_NPC_TALK"
 customtext3 = "LINDA_NPC_HUG"
 customtext4 = "LINDA_NPC_HURT"
 
 [node name="BonkyNPC" parent="." instance=ExtResource( 24 )]
-position = Vector2( 2797, 1982 )
+position = Vector2( 3105, 1957 )
 customtext = "BONKY_NPC_TALK"
 customtext3 = "BONKY_NPC_HUG"
 customtext4 = "BONKY_NPC_HURT"
 
 [node name="MonicaNPC" parent="." instance=ExtResource( 25 )]
-position = Vector2( 2595, 1948 )
+position = Vector2( 2943, 1951 )
 customtext = "MONICA_NPC_TALK"
 customtext3 = "MONICA_NPC_HUG"
 customtext4 = "MONICA_NPC_HURT"
 
 [node name="illouNPC" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2392, 1945 )
+position = Vector2( 2763, 1956 )
 customtext = "ILLOU_NPC_TALK"
 customtext3 = "ILLOU_NPC_HUG"
 customtext4 = "ILLOU_NPC_HURT"
 
 [node name="JesterKingNPC" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2182, 1955 )
+position = Vector2( 2561, 1947 )
 customtext = "JESTER_KING_NPC_TALK"
 customname = "JESTER_KING_NPC_NAME"
 
 [node name="SerifNPC" parent="." instance=ExtResource( 28 )]
-position = Vector2( 1526, 1978 )
+position = Vector2( 2293, 1986 )
 customtext = "SERIF_NPC_TALK"
 customname = "Serif"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 29 )]
+position = Vector2( 1900, 1967 )
+customname1 = "Cenourio"
+customname2 = "Mack"
+spritename = "cenourio mack"
+
+[node name="ConvoNPC2" parent="." instance=ExtResource( 29 )]
+position = Vector2( 1472, 1967 )
+customname1 = "Mecanita"
+customname2 = "Braaaaaaaadwiiiiiin"
+spritename = "braaaaaaaadwiiiiiin mecanita"

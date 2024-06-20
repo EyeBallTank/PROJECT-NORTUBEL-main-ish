@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=73 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -33,6 +33,8 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/greklovick/Convo Grek Mercs.png" type="Texture" id=31]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Shihiro Zarina v2.png" type="Texture" id=32]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/greklovick/Convo Clarity Yiegour.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo Cenourio Mack.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo Braaaaaaaadwiiiiiin Mecanita.png" type="Texture" id=35]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -66,6 +68,10 @@ region = Rect2( 0, 0, 420, 583 )
 atlas = ExtResource( 24 )
 region = Rect2( 0, 0, 420, 583 )
 
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 420, 583 )
+
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 420, 583 )
@@ -84,6 +90,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 34 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=42]
@@ -196,6 +206,11 @@ animations = [ {
 "name": "barney holmes",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 44 ) ],
+"loop": false,
+"name": "braaaaaaaadwiiiiiin mecanita",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
 "name": "carrie katrin",
@@ -219,6 +234,11 @@ animations = [ {
 "frames": [ SubResource( 19 ) ],
 "loop": false,
 "name": "carrie pete",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 43 ) ],
+"loop": false,
+"name": "cenourio mack",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 42 ) ],
@@ -497,7 +517,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "clarity yiegour"
+animation = "braaaaaaaadwiiiiiin mecanita"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
