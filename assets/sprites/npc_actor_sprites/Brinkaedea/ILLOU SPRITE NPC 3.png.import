@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ILLOU SPRITE NPC 2.png-8279eb288969aa8f9879aa9b84fa9709.stex"
+path="res://.import/ILLOU SPRITE NPC 3.png-b6c7c51b42ecfc908afbc6fbc7d22a26.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/Brinkaedea/ILLOU SPRITE NPC 2.png"
-dest_files=[ "res://.import/ILLOU SPRITE NPC 2.png-8279eb288969aa8f9879aa9b84fa9709.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/Brinkaedea/ILLOU SPRITE NPC 3.png"
+dest_files=[ "res://.import/ILLOU SPRITE NPC 3.png-b6c7c51b42ecfc908afbc6fbc7d22a26.stex" ]
 
 [params]
 
