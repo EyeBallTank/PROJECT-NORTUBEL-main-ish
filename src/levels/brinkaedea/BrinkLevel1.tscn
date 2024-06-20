@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://src/npc_actors/brink npc/BonkyNPC.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/brink npc/MonicaNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/npc_actors/brink npc/illouNPC.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/npc_actors/brink npc/JesterKingNPC.tscn" type="PackedScene" id=27]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -174,7 +175,12 @@ customtext3 = "MONICA_NPC_HUG"
 customtext4 = "MONICA_NPC_HURT"
 
 [node name="illouNPC" parent="." instance=ExtResource( 26 )]
-position = Vector2( 1593, 1979 )
+position = Vector2( 2392, 1945 )
 customtext = "ILLOU_NPC_TALK"
 customtext3 = "ILLOU_NPC_HUG"
 customtext4 = "ILLOU_NPC_HURT"
+
+[node name="JesterKingNPC" parent="." instance=ExtResource( 27 )]
+position = Vector2( 1751, 2019 )
+customtext = "JESTER_KING_NPC_TALK"
+customname = "JESTER_KING_NPC_NAME"
