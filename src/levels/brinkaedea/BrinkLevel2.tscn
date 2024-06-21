@@ -217,7 +217,7 @@ position = Vector2( 3721, 2787 )
 position = Vector2( 3096, 3976 )
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 33 )]
-position = Vector2( 1398, 1883 )
+position = Vector2( 1923, 2525 )
 customtext1 = "CONVO_MONICA_ILLOU_1"
 customtext2 = "CONVO_MONICA_ILLOU_2"
 customtext3 = "CONVO_MONICA_ILLOU_3"
@@ -225,5 +225,15 @@ customtext4 = "CONVO_MONICA_ILLOU_4"
 customname1 = "Monica Strawa"
 customname2 = "illou Dallee"
 spritename = "illou monica"
+
+[node name="ConvoNPC2" parent="." instance=ExtResource( 33 )]
+position = Vector2( 1466, 1967 )
+customtext1 = "CONVO_LINDA_BONKY_1"
+customtext2 = "CONVO_LINDA_BONKY_2"
+customtext3 = "CONVO_LINDA_BONKY_3"
+customtext4 = "CONVO_LINDA_BONKY_4"
+customname1 = "Linda Donkuph"
+customname2 = "Bonky Donkuph"
+spritename = "bonky linda"
 
 [editable path="BrinkPinballFlipper"]
