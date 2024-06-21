@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkGreenBumperCar.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=31]
 [ext_resource path="res://assets/sprites/level_backgrounds/brinkaedea/brinklevel2 bg.png" type="Texture" id=32]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=33]
 
 [node name="BrinkLevel2" type="Node2D"]
 
@@ -214,5 +215,15 @@ position = Vector2( 3721, 2787 )
 
 [node name="PoisonHitbox" parent="." instance=ExtResource( 31 )]
 position = Vector2( 3096, 3976 )
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 33 )]
+position = Vector2( 1398, 1883 )
+customtext1 = "CONVO_MONICA_ILLOU_1"
+customtext2 = "CONVO_MONICA_ILLOU_2"
+customtext3 = "CONVO_MONICA_ILLOU_3"
+customtext4 = "CONVO_MONICA_ILLOU_4"
+customname1 = "Monica Strawa"
+customname2 = "illou Dallee"
+spritename = "illou monica"
 
 [editable path="BrinkPinballFlipper"]
