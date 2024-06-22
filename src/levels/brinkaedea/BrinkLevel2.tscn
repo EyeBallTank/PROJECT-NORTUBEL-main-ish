@@ -293,6 +293,10 @@ spritename = "brinkaedea movplatvert"
 position = Vector2( 9072, 1496 )
 spritename = "brinkaedea coin"
 
+[node name="Coin10" parent="." instance=ExtResource( 38 )]
+position = Vector2( 11352, 3462 )
+spritename = "brinkaedea coin"
+
 [node name="Coin2" parent="." instance=ExtResource( 38 )]
 position = Vector2( 6320, 3360 )
 spritename = "brinkaedea coin"
