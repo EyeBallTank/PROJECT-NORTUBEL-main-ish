@@ -127,10 +127,10 @@ position = Vector2( 8040, 3087 )
 pitchscale = 1.99
 
 [node name="BrinkPinballPiece" parent="." instance=ExtResource( 8 )]
-position = Vector2( 6767, 1579 )
+position = Vector2( 9111, 3571 )
 
 [node name="BrinkPinballFlipper" parent="." instance=ExtResource( 9 )]
-position = Vector2( 6923, 1926 )
+position = Vector2( 9267, 3918 )
 
 [node name="BrinkJackInBox" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2645, 3154 )
@@ -145,39 +145,39 @@ spritename = "brinkaedea greendoor"
 customtext = "ill0uu"
 
 [node name="Blue key" parent="." instance=ExtResource( 13 )]
-position = Vector2( 5443, 1693 )
+position = Vector2( 8723, 3325 )
 spritename = "brinkaedea blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 12 )]
-position = Vector2( 5218, 1726 )
+position = Vector2( 8498, 3358 )
 spritename = "brinkaedea redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 14 )]
-position = Vector2( 5048, 1750 )
+position = Vector2( 8328, 3382 )
 spritename = "brinkaedea yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 16 )]
-position = Vector2( 5457, 2129 )
+position = Vector2( 8737, 3761 )
 spritename = "brinkaedea bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 15 )]
-position = Vector2( 4878, 2143 )
+position = Vector2( 8158, 3775 )
 spritename = "brinkaedea reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 17 )]
-position = Vector2( 4846, 1703 )
+position = Vector2( 8126, 3335 )
 spritename = "brinkaedea yeldoor"
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 18 )]
-position = Vector2( 4415, 2249 )
+position = Vector2( 3783, 1761 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Blue switch brinkaedea.tres"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
-position = Vector2( 4326, 2406 )
+position = Vector2( 7646, 3998 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch One brinkaedea.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
-position = Vector2( 4553, 2406 )
+position = Vector2( 7833, 4038 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch Two brinkaedea.tres"
 
 [node name="SlowFloor" parent="." instance=ExtResource( 21 )]
@@ -207,7 +207,10 @@ position = Vector2( -2, -1 )
 offset = 0.0
 
 [node name="BrinkBlueTeaCup" parent="." instance=ExtResource( 26 )]
-position = Vector2( 7342, 2882 )
+position = Vector2( 3926, 2762 )
+
+[node name="KinematicBody2D" parent="BrinkBlueTeaCup" index="0"]
+position = Vector2( 1982, -2044 )
 
 [node name="LoreBook" parent="." instance=ExtResource( 27 )]
 position = Vector2( 893, 3419 )
@@ -228,7 +231,7 @@ collision_newsize = Vector2( 88, 24 )
 position = Vector2( 2155, 2438 )
 
 [node name="BrinkGreenBumperCar" parent="." instance=ExtResource( 30 )]
-position = Vector2( 9145, 1763 )
+position = Vector2( 8409, 4347 )
 
 [node name="PoisonHitbox" parent="." instance=ExtResource( 31 )]
 position = Vector2( 4287, 3938 )
@@ -246,7 +249,7 @@ customname2 = "illou Dallee"
 spritename = "illou monica"
 
 [node name="ConvoNPC2" parent="." instance=ExtResource( 33 )]
-position = Vector2( 6106, 2247 )
+position = Vector2( 9042, 2991 )
 customtext1 = "CONVO_LINDA_BONKY_1"
 customtext2 = "CONVO_LINDA_BONKY_2"
 customtext3 = "CONVO_LINDA_BONKY_3"
@@ -280,3 +283,4 @@ position = Vector2( 6320, 3360 )
 spritename = "brinkaedea coin"
 
 [editable path="BrinkBalloonPlatVerti"]
+[editable path="BrinkBlueTeaCup"]
