@@ -142,7 +142,7 @@ position = Vector2( 2645, 3154 )
 position = Vector2( 6885, 3066 )
 
 [node name="Door" parent="." instance=ExtResource( 11 )]
-position = Vector2( 13084, 2081 )
+position = Vector2( 13067, 2113 )
 new_scene = "res://src/levels/brinkaedea/BrinkLevel25.tscn"
 spritename = "brinkaedea greendoor"
 customtext = "ill0uu"
