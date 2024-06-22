@@ -14,7 +14,7 @@ extents = Vector2( 57, 13.5 )
 
 [sub_resource type="Curve2D" id=3]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1982, -2044, 0, 0, 0, 0, 2352, -1557, 0, 0, 0, 0, 1903, -813, 0, 0, 0, 0, 1156, -704, 0, 0, 0, 0, 434, -772, 0, 0, 0, 0, 155, -1308, 0, 0, 0, 0, 295, -1946 )
+"points": PoolVector2Array( 0, 0, 0, 0, 184, -792, 0, 0, 0, 0, 232, -1408, 0, 0, 0, 0, 800, -1448, 0, 0, 0, 0, 1592, -1464, 0, 0, 0, 0, 2184, -1448, 0, 0, 0, 0, 2176, -2136, 0, 0, 0, 0, 2488, -2144 )
 }
 
 [sub_resource type="Animation" id=5]
@@ -53,7 +53,7 @@ tracks/0/keys = {
 script = ExtResource( 3 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 224.638, -1625.35 )
+position = Vector2( 184, -792 )
 collision_layer = 8192
 collision_mask = 3
 motion/sync_to_physics = true
@@ -83,7 +83,7 @@ z_index = 16
 curve = SubResource( 3 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( 1982, -2044 )
+position = Vector2( 184, -792 )
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
