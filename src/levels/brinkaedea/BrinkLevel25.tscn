@@ -82,10 +82,10 @@ position = Vector2( -139, -444 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="BrinkSeeSawPlatTest" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2890, 902 )
+position = Vector2( 410, -1250 )
 
 [node name="BrinkSunMoonPendulumtest" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2778, 642 )
+position = Vector2( 1034, -1062 )
 
 [node name="LevelProp" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2282, 914 )
@@ -116,7 +116,7 @@ position = Vector2( 233, 1117 )
 spritename = "brinkaedea floater"
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1487, 1359 )
+position = Vector2( 1653, -1075 )
 spritename = "brinkaedea fallplat"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 17 )]
@@ -130,7 +130,7 @@ position = Vector2( -531, 1600 )
 position = Vector2( 404, 1223 )
 
 [node name="BrinkSpinningTop" parent="." instance=ExtResource( 20 )]
-position = Vector2( -3613, 1318 )
+position = Vector2( -2423, -585 )
 
 [node name="BrinkColorfulSlide" parent="." instance=ExtResource( 21 )]
 position = Vector2( -2295, 1293 )
