@@ -92,7 +92,7 @@ position = Vector2( 2282, 914 )
 propname = "brinkprop pink mushroom"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2114, 1246 )
+position = Vector2( -3158, -1026 )
 boardname = "brink art faygo and bonka"
 
 [node name="TradeItem" parent="." instance=ExtResource( 11 )]
@@ -100,10 +100,10 @@ position = Vector2( 590, 1425 )
 spritename = "tradeitem brink faygo balloons"
 
 [node name="FaygoNPC" parent="." instance=ExtResource( 12 )]
-position = Vector2( 276, 1401 )
+position = Vector2( -3060, -871 )
 
 [node name="BrinkFaygoPlat" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1142, 1555 )
+position = Vector2( -3522, -1117 )
 
 [node name="Door" parent="." instance=ExtResource( 14 )]
 position = Vector2( 818, 1512 )
@@ -133,7 +133,7 @@ position = Vector2( 404, 1223 )
 position = Vector2( -2423, -585 )
 
 [node name="BrinkColorfulSlide" parent="." instance=ExtResource( 21 )]
-position = Vector2( -2295, 1293 )
+position = Vector2( 909, -368 )
 
 [node name="BrinkPaperPlane" parent="." instance=ExtResource( 22 )]
 position = Vector2( -7826, 4005 )
