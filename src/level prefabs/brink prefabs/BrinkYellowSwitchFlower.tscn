@@ -885,7 +885,7 @@ shape = SubResource( 1 )
 disabled = true
 
 [node name="Flowerswitch" type="Area2D" parent="."]
-position = Vector2( 448, -288 )
+position = Vector2( 500, -458 )
 collision_layer = 4
 collision_mask = 3
 
