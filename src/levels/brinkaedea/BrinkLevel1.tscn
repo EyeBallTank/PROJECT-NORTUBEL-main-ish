@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -40,6 +40,7 @@
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=40]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=41]
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -153,7 +154,7 @@ position = Vector2( 635, 2259 )
 spritename = "brinkaedea coin"
 
 [node name="Coin2" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1715, 1919 )
+position = Vector2( 1636, 1922 )
 spritename = "brinkaedea coin"
 
 [node name="Coin4" parent="." instance=ExtResource( 15 )]
@@ -230,7 +231,7 @@ customtext3 = "BONKY_NPC_HUG"
 customtext4 = "BONKY_NPC_HURT"
 
 [node name="MonicaNPC" parent="." instance=ExtResource( 25 )]
-position = Vector2( 1869, 1828 )
+position = Vector2( 2501, 2603 )
 customtext = "MONICA_NPC_TALK"
 customtext3 = "MONICA_NPC_HUG"
 customtext4 = "MONICA_NPC_HURT"
@@ -325,3 +326,8 @@ spritename = "brinkaedea floater"
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 40 )]
 position = Vector2( 11048, 864 )
 spritename = "brinkaedea movplathoriz"
+
+[node name="LoreBook" parent="." instance=ExtResource( 41 )]
+position = Vector2( 1961, 1982 )
+customtext = "BRINK_LORE_TEXT_PRESENTBOXES"
+spritename = "brinkaedea lorebook"

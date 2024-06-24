@@ -218,6 +218,11 @@ position = Vector2( 893, 3419 )
 customtext = "BRINK_LORE_WORLD_TEXT"
 spritename = "brinkaedea lorebook"
 
+[node name="LoreBook2" parent="." instance=ExtResource( 27 )]
+position = Vector2( 10583, 1098 )
+customtext = "BRINK_LORE_TEXT_PINBALL_FLIPPER"
+spritename = "brinkaedea lorebook"
+
 [node name="IceFloor2" parent="." instance=ExtResource( 28 )]
 position = Vector2( 1090, 3389 )
 scale = Vector2( 64, 24 )
