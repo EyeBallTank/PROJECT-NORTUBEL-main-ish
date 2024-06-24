@@ -203,9 +203,6 @@ position = Vector2( 463, 1962 )
 [node name="BrinkBalloonPlatVerti" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3321, 3807 )
 
-[node name="Platform" parent="BrinkBalloonPlatVerti" index="0"]
-position = Vector2( -2, -1 )
-
 [node name="BrinkBlueTeaCup" parent="." instance=ExtResource( 26 )]
 position = Vector2( 3926, 2762 )
 
