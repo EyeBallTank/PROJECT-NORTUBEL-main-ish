@@ -18,11 +18,11 @@ theme = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 382.0
-margin_bottom = 2717.0
+margin_bottom = 2737.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 382.0
-margin_bottom = 2717.0
+margin_bottom = 2737.0
 custom_fonts/font = ExtResource( 1 )
 text = " 
 
@@ -92,6 +92,7 @@ text = "
                   RESOURCES/RECURSOS
    Godot
    Krita
+   LibreOffice (Calc)
    2D Platformer Demo (KinematicBody)
    Cubio (Godot Demo)
    Kenney.nl

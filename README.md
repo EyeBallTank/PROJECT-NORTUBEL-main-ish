@@ -226,6 +226,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Chillygamedev (Punch Monkey crossover)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
+* LibreOffice Calc (Used for localization file)
 * Various art tutorials from certain channels and artists (Taco1704, Start_yujil, Mikeymegamega, Marc Brunet, ProkoTV, Akihito Yoshitomi, Chommang, Mmmmonexx, tbchoi5020, hodraw_official, Manga_Materials and more)
 * FreeDoom, OTEX/ukiro (Used as reference/inspiration for Greklovick)
 * Any help i can get from r/Godot, Discord and /agdg/.
