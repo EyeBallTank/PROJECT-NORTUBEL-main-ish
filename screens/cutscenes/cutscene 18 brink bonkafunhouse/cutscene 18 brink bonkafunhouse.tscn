@@ -1,10 +1,58 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse dance 3.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse dance 1.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse tv frame.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 5.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 1.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 4.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 2.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 3.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse dance 2.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 6.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse tv static effect.png" type="Texture" id=16]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 592, 435 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 435, 592, 435 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 435, 448 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 9 )
+region = Rect2( 435, 0, 435, 448 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 6 ) ],
+"loop": false,
+"name": "wateroff",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "wateron",
+"speed": 0.0
+} ]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +119,69 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene18BrinkBonkafunhousePanel1" type="Sprite" parent="."]
+position = Vector2( 529, 217.189 )
+scale = Vector2( 0.752062, 0.752062 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene18BrinkBonkafunhouseDance1" type="Sprite" parent="."]
+position = Vector2( 417, -351 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene18BrinkBonkafunhouseDance2" type="Sprite" parent="."]
+position = Vector2( 402, -186 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene18BrinkBonkafunhouseDance4" type="Sprite" parent="."]
+position = Vector2( 629, -344 )
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="Cutscene18BrinkBonkafunhouseDance5" type="Sprite" parent="."]
+position = Vector2( 631, -188 )
+texture = ExtResource( 14 )
+flip_h = true
+
+[node name="Cutscene18BrinkBonkafunhouseDance3" type="Sprite" parent="."]
+position = Vector2( 494, -247 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene18BrinkBonkafunhousePanel2" type="Sprite" parent="."]
+position = Vector2( 1306, 226 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene18BrinkBonkafunhousePanel3" type="Sprite" parent="."]
+position = Vector2( 1309, 228 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene18BrinkBonkafunhouseTvStaticEffect" type="AnimatedSprite" parent="."]
+position = Vector2( 532, 884 )
+frames = SubResource( 5 )
+playing = true
+
+[node name="Cutscene18BrinkBonkafunhouseTvFrame" type="Sprite" parent="."]
+position = Vector2( 524, 232 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene18BrinkBonkafunhousePanel4" type="Sprite" parent="."]
+position = Vector2( -231, 231 )
+scale = Vector2( 1.04677, 1.04677 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene18BrinkBonkafunhousePanel5" type="AnimatedSprite" parent="."]
+position = Vector2( 1799, 235 )
+frames = SubResource( 7 )
+animation = "wateroff"
+
+[node name="Cutscene18BrinkBonkafunhousePanel6" type="Sprite" parent="."]
+position = Vector2( -596, 228.919 )
+scale = Vector2( 0.837088, 0.837088 )
+texture = ExtResource( 15 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 5 )]
 visible = false
