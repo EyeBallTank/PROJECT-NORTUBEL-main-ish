@@ -77,7 +77,7 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 5 )]
 visible = false
-nextlevel = "res://src/levels/LevelTutorial1.tscn"
+nextlevel = "res://src/levels/brinkaedea/BrinkLevel3.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )
