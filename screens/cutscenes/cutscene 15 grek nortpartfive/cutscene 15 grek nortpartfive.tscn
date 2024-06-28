@@ -1,10 +1,24 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 4.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 8.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 9.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 2.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 5.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 6.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 7.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 3.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 10.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 14.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 13.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 11.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 12.png" type="Texture" id=19]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +85,78 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene15GrekNortpartfivePanel1" type="Sprite" parent="."]
+position = Vector2( 531, 236 )
+scale = Vector2( 1.15223, 1.15223 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene15GrekNortpartfivePanel2" type="Sprite" parent="."]
+position = Vector2( 1304, 237 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene15GrekNortpartfivePanel3" type="Sprite" parent="."]
+position = Vector2( -245, 229.805 )
+scale = Vector2( 0.610191, 0.610191 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene15GrekNortpartfivePanel4" type="Sprite" parent="."]
+position = Vector2( 511.24, -236.56 )
+scale = Vector2( 0.88, 0.88 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene15GrekNortpartfivePanel5" type="Sprite" parent="."]
+position = Vector2( 511.173, -236.21 )
+scale = Vector2( 0.88133, 0.88133 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene15GrekNortpartfivePanel6" type="Sprite" parent="."]
+position = Vector2( -750, 226.998 )
+scale = Vector2( 0.995943, 0.995943 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene15GrekNortpartfivePanel7" type="Sprite" parent="."]
+position = Vector2( 1870, 225.5 )
+scale = Vector2( 0.973896, 0.973896 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene15GrekNortpartfivePanel8" type="Sprite" parent="."]
+position = Vector2( -1205, 230 )
+scale = Vector2( 0.753012, 0.753012 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene15GrekNortpartfivePanel9" type="Sprite" parent="."]
+position = Vector2( 1022, -215 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene15GrekNortpartfivePanel10" type="Sprite" parent="."]
+position = Vector2( 523, -716 )
+scale = Vector2( 0.738794, 0.738794 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene15GrekNortpartfivePanel11" type="Sprite" parent="."]
+position = Vector2( -95, -255 )
+scale = Vector2( 0.501922, 0.501922 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene15GrekNortpartfivePanel12" type="Sprite" parent="."]
+position = Vector2( 1258, -670 )
+scale = Vector2( 0.657191, 0.657191 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene15GrekNortpartfivePanel13" type="Sprite" parent="."]
+position = Vector2( -138, -737 )
+scale = Vector2( 1.31818, 1.31818 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene15GrekNortpartfivePanel14" type="Sprite" parent="."]
+position = Vector2( 1776, -272 )
+scale = Vector2( 0.544118, 0.544118 )
+texture = ExtResource( 16 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false

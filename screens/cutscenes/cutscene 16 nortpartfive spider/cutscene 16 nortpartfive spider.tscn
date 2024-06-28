@@ -1,10 +1,42 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider portal bg.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 9.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 5.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 3.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 6.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 2.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 8.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider stella jump.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 4.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 7.png" type="Texture" id=16]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 14 )
+region = Rect2( 237, 0, 237, 413 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 237, 413 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 3 ) ],
+"loop": false,
+"name": "jumpdown",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": false,
+"name": "jumpup",
+"speed": 0.0
+} ]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -39,6 +71,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
+[node name="Cutscene16NortpartfiveSpiderPortalBg" type="Sprite" parent="."]
+position = Vector2( 537, 1052 )
+scale = Vector2( 0.884998, 0.884998 )
+texture = ExtResource( 6 )
+
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -71,9 +108,60 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel1" type="Sprite" parent="."]
+position = Vector2( 554, 228.767 )
+scale = Vector2( 0.534155, 0.534155 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel3" type="Sprite" parent="."]
+position = Vector2( 1370.99, 225.5 )
+scale = Vector2( 0.941767, 0.941767 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel2" type="Sprite" parent="."]
+position = Vector2( 1369.99, 228.5 )
+scale = Vector2( 0.941835, 0.941835 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel4" type="Sprite" parent="."]
+position = Vector2( -487, 228 )
+scale = Vector2( 0.907692, 0.907692 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel5" type="Sprite" parent="."]
+position = Vector2( 555, -228 )
+scale = Vector2( 1.32399, 1.32399 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene16NortpartfiveSpiderStellaJump" type="AnimatedSprite" parent="."]
+position = Vector2( 174, 975 )
+frames = SubResource( 5 )
+animation = "jumpup"
+
+[node name="Cutscene16NortpartfiveSpiderPanel6" type="Sprite" parent="."]
+position = Vector2( 527, -691 )
+scale = Vector2( 0.909604, 0.909605 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel7" type="Sprite" parent="."]
+position = Vector2( -1215, 230 )
+scale = Vector2( 0.388525, 0.388525 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel8" type="Sprite" parent="."]
+position = Vector2( 1975, 234 )
+scale = Vector2( 0.735986, 0.735986 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene16NortpartfiveSpiderPanel9" type="Sprite" parent="."]
+position = Vector2( 512, -1219 )
+scale = Vector2( 0.965447, 0.965447 )
+texture = ExtResource( 7 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 5 )]
 visible = false
