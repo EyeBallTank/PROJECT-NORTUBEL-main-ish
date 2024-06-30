@@ -566,6 +566,7 @@ texture = ExtResource( 13 )
 [node name="static" type="AnimatedSprite" parent="."]
 position = Vector2( 532, 237 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="TV FRAME" type="Sprite" parent="."]
