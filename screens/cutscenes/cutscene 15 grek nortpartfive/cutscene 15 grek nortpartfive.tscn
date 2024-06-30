@@ -262,6 +262,30 @@ tracks/19/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/20/type = "value"
+tracks/20/path = NodePath("Cutscene15GrekNortpartfivePanel10:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 523, -253 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Cutscene15GrekNortpartfivePanel10:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -287,10 +311,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5.1, 16.5, 20.5, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5.1, 16.5, 20.5, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57, 63.8, 68.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Zharkovil", "Yiegour Sarvotsky", "Katrin Flenn", "Yiegour Sarvotsky", "Clarity", "Bolt", "Angela Brokston", "Isaac", "Melvin Brokston", "Clarity", "Sergei" ]
+"values": [ "Zharkovil", "Yiegour Sarvotsky", "Katrin Flenn", "Yiegour Sarvotsky", "Clarity", "Bolt", "Angela Brokston", "Isaac", "Melvin Brokston", "Clarity", "Sergei", "Yiegour Sarvotsky", "Shihiro Xang" ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -299,10 +323,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 5.1, 10, 16.5, 20.5, 23.2, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5.1, 10, 16.5, 20.5, 23.2, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57, 63.8, 68.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2", "CUTSCENE_15_TALK_3", "CUTSCENE_15_TALK_4", "CUTSCENE_15_TALK_5", "CUTSCENE_15_TALK_6", "CUTSCENE_15_TALK_7", "CUTSCENE_15_TALK_8", "CUTSCENE_15_TALK_9", "CUTSCENE_15_TALK_10", "CUTSCENE_15_TALK_11", "CUTSCENE_15_TALK_12", "CUTSCENE_15_TALK_13" ]
+"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2", "CUTSCENE_15_TALK_3", "CUTSCENE_15_TALK_4", "CUTSCENE_15_TALK_5", "CUTSCENE_15_TALK_6", "CUTSCENE_15_TALK_7", "CUTSCENE_15_TALK_8", "CUTSCENE_15_TALK_9", "CUTSCENE_15_TALK_10", "CUTSCENE_15_TALK_11", "CUTSCENE_15_TALK_12", "CUTSCENE_15_TALK_13", "CUTSCENE_15_TALK_14", "CUTSCENE_15_TALK_15" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Cutscene15GrekNortpartfivePanel1:modulate")
@@ -491,10 +515,10 @@ tracks/18/loop_wrap = true
 tracks/18/imported = false
 tracks/18/enabled = true
 tracks/18/keys = {
-"times": PoolRealArray( 6.8 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 6.8, 61, 61.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/19/type = "value"
 tracks/19/path = NodePath("Cutscene15GrekNortpartfivePanel9:position")
@@ -503,10 +527,10 @@ tracks/19/loop_wrap = true
 tracks/19/imported = false
 tracks/19/enabled = true
 tracks/19/keys = {
-"times": PoolRealArray( 5.4, 56.7, 57.3 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 5.4, 56.7, 57.3, 61 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1022, -215 ), Vector2( 1022, -215 ), Vector2( 762, 225 ) ]
+"values": [ Vector2( 1022, -215 ), Vector2( 1022, -215 ), Vector2( 762, 225 ), Vector2( 762, 225 ) ]
 }
 tracks/20/type = "value"
 tracks/20/path = NodePath("Cutscene15GrekNortpartfivePanel9:modulate")
@@ -515,10 +539,34 @@ tracks/20/loop_wrap = true
 tracks/20/imported = false
 tracks/20/enabled = true
 tracks/20/keys = {
-"times": PoolRealArray( 5.4 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 5.4, 61, 61.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Cutscene15GrekNortpartfivePanel10:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 61, 62 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 523, -253 ), Vector2( 523, -253 ), Vector2( 523, 226 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Cutscene15GrekNortpartfivePanel10:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 67.6, 68.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -626,7 +674,7 @@ scale = Vector2( 0.657191, 0.657191 )
 texture = ExtResource( 19 )
 
 [node name="Cutscene15GrekNortpartfivePanel13" type="Sprite" parent="."]
-position = Vector2( -138, -737 )
+position = Vector2( 521, -264 )
 scale = Vector2( 1.31818, 1.31818 )
 texture = ExtResource( 17 )
 
