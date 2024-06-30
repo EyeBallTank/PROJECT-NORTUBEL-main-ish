@@ -188,10 +188,82 @@ tracks/10/keys = {
 "update": 0,
 "values": [ true ]
 }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Cutscene18BrinkBonkafunhousePanel3:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Cutscene18BrinkBonkafunhousePanel4:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 212, 231 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Cutscene18BrinkBonkafunhousePanel4:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Cutscene18BrinkBonkafunhousePanel5:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1261, 235 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Cutscene18BrinkBonkafunhousePanel5:animation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "wateroff" ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Cutscene18BrinkBonkafunhousePanel6:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -148, 228.919 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 150.0
+length = 77.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -199,7 +271,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 145.1 ),
+"times": PoolRealArray( 70.6 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -213,10 +285,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 8.1, 12.1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 8.1, 12.1, 53, 57.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Melvin Brokston", "Oscar Decarde", "Bonka Millette" ]
+"values": [ "Melvin Brokston", "Oscar Decarde", "Bonka Millette", "Carrie Decarde", "Katrin Flenn" ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -225,10 +297,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 8.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1, 21.9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 8.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1, 21.9, 25.3, 29.8, 34.4, 39.3, 44.3, 49.3, 53, 57.8, 62.5, 65.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_18_TALK_1", "CUTSCENE_18_TALK_2", "B", "O", "N", "K", "A", "CUTSCENE_18_TALK_3", "CUTSCENE_18_TALK_4" ]
+"values": [ "CUTSCENE_18_TALK_1", "CUTSCENE_18_TALK_2", "B", "O", "N", "K", "A", "CUTSCENE_18_TALK_3", "CUTSCENE_18_TALK_4", "CUTSCENE_18_TALK_5", "CUTSCENE_18_TALK_6", "CUTSCENE_18_TALK_7", "CUTSCENE_18_TALK_8", "CUTSCENE_18_TALK_9", "CUTSCENE_18_TALK_10", "CUTSCENE_18_TALK_11", "CUTSCENE_18_TALK_12", "AAAHHH!", "CUTSCENE_18_TALK_13" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("TV FRAME:visible")
@@ -237,10 +309,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 10.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 10.5, 53 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ false, true, false ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Cutscene18BrinkBonkafunhousePanel1:modulate")
@@ -333,10 +405,82 @@ tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0, 21.9 ),
+"times": PoolRealArray( 0, 21.9, 29.8, 39.3, 52.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Cutscene18BrinkBonkafunhousePanel3:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 29.8, 39.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Cutscene18BrinkBonkafunhousePanel4:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 52.7, 53 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -209, 231 ), Vector2( -209, 231 ), Vector2( 212, 231 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Cutscene18BrinkBonkafunhousePanel4:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 53, 65.3, 65.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Cutscene18BrinkBonkafunhousePanel5:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 57.5, 58 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1261, 235 ), Vector2( 1261, 235 ), Vector2( 783, 235 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Cutscene18BrinkBonkafunhousePanel5:animation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 62.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ "wateroff", "wateron" ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Cutscene18BrinkBonkafunhousePanel6:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 65.5, 65.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -148, 228.919 ), Vector2( -148, 228.919 ), Vector2( 215, 228.919 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -416,13 +560,12 @@ position = Vector2( 531, 226 )
 texture = ExtResource( 12 )
 
 [node name="Cutscene18BrinkBonkafunhousePanel3" type="Sprite" parent="."]
-position = Vector2( 1309, 228 )
+position = Vector2( 540, 228 )
 texture = ExtResource( 13 )
 
 [node name="static" type="AnimatedSprite" parent="."]
 position = Vector2( 532, 237 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="TV FRAME" type="Sprite" parent="."]
@@ -431,17 +574,17 @@ position = Vector2( 524, 232 )
 texture = ExtResource( 8 )
 
 [node name="Cutscene18BrinkBonkafunhousePanel4" type="Sprite" parent="."]
-position = Vector2( -231, 231 )
+position = Vector2( 212, 231 )
 scale = Vector2( 1.04677, 1.04677 )
 texture = ExtResource( 11 )
 
 [node name="Cutscene18BrinkBonkafunhousePanel5" type="AnimatedSprite" parent="."]
-position = Vector2( 1799, 235 )
+position = Vector2( 1261, 235 )
 frames = SubResource( 7 )
 animation = "wateroff"
 
 [node name="Cutscene18BrinkBonkafunhousePanel6" type="Sprite" parent="."]
-position = Vector2( -596, 228.919 )
+position = Vector2( -148, 228.919 )
 scale = Vector2( 0.837088, 0.837088 )
 texture = ExtResource( 15 )
 
