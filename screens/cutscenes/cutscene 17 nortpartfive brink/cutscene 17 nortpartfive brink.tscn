@@ -187,6 +187,54 @@ tracks/13/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
+tracks/14/type = "value"
+tracks/14/path = NodePath("Cutscene17NortpartfiveBrinkPanel8:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -257, 229.329 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Cutscene17NortpartfiveBrinkPanel9:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1311, 229.826 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Cutscene17NortpartfiveBrinkPanel9:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Cutscene17NortpartfiveBrinkPanel8:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -236,10 +284,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 7.2, 15.2, 25.9, 30.7, 34.7, 38.9, 50.9, 54.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 7.2, 15.2, 25.9, 30.7, 34.7, 38.9, 50.9, 54.7, 65.2, 69, 74.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Katrin Flenn", "Carrie Decarde", "Melvin Brokston", "Carrie Decarde", "??????", "Pete Flenn", "Monica Strawa", "Pete Flenn", "Monica Strawa" ]
+"values": [ "Katrin Flenn", "Carrie Decarde", "Melvin Brokston", "Carrie Decarde", "??????", "Pete Flenn", "Monica Strawa", "Pete Flenn", "Monica Strawa", "illou Dallee", "Monica Strawa", "Melvin Brokston" ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -248,10 +296,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 7.2, 15.2, 25.9, 30.7, 34.7, 38.9, 44.3, 50.9, 54.7, 60.1 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 7.2, 15.2, 25.9, 30.7, 34.7, 38.9, 44.3, 50.9, 54.7, 60.1, 65.2, 69, 74.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_17_TALK_1", "CUTSCENE_17_TALK_2", "CUTSCENE_17_TALK_3", "CUTSCENE_17_TALK_4", "CUTSCENE_17_TALK_5", "CUTSCENE_17_TALK_6", "CUTSCENE_17_TALK_7", "CUTSCENE_17_TALK_8", "CUTSCENE_17_TALK_9", "CUTSCENE_17_TALK_10", "CUTSCENE_17_TALK_11" ]
+"values": [ "CUTSCENE_17_TALK_1", "CUTSCENE_17_TALK_2", "CUTSCENE_17_TALK_3", "CUTSCENE_17_TALK_4", "CUTSCENE_17_TALK_5", "CUTSCENE_17_TALK_6", "CUTSCENE_17_TALK_7", "CUTSCENE_17_TALK_8", "CUTSCENE_17_TALK_9", "CUTSCENE_17_TALK_10", "CUTSCENE_17_TALK_11", "...", "CUTSCENE_17_TALK_12", "CUTSCENE_17_TALK_13" ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Cutscene17NortpartfiveBrinkPanel2:position")
@@ -368,10 +416,58 @@ tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0, 54.4, 55.1 ),
+"times": PoolRealArray( 0, 54.4, 55.1, 64.8, 65.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Cutscene17NortpartfiveBrinkPanel8:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 64.6, 65.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( -257, 229.329 ), Vector2( -257, 229.329 ), Vector2( 245, 229.329 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Cutscene17NortpartfiveBrinkPanel9:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 72.7, 74.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1311, 229.826 ), Vector2( 1311, 229.826 ), Vector2( 741, 229.826 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Cutscene17NortpartfiveBrinkPanel9:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 72.7 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Cutscene17NortpartfiveBrinkPanel8:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -455,12 +551,12 @@ scale = Vector2( 0.724693, 0.724693 )
 texture = ExtResource( 10 )
 
 [node name="Cutscene17NortpartfiveBrinkPanel8" type="Sprite" parent="."]
-position = Vector2( -600, 229.329 )
+position = Vector2( -257, 229.329 )
 scale = Vector2( 0.658569, 0.658569 )
 texture = ExtResource( 14 )
 
 [node name="Cutscene17NortpartfiveBrinkPanel9" type="Sprite" parent="."]
-position = Vector2( 1787, 229.826 )
+position = Vector2( 1311, 229.826 )
 scale = Vector2( 0.651941, 0.651941 )
 texture = ExtResource( 16 )
 
