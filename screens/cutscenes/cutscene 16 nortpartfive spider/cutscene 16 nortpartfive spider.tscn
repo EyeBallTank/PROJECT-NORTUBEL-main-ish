@@ -209,10 +209,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 7.1, 12.4, 17.3, 22, 27.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 7.1, 12.4, 17.3, 22, 27.4, 31.2, 37.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_16_TALK_1", "CUTSCENE_16_TALK_2", "...", "CUTSCENE_16_TALK_3", "CUTSCENE_16_TALK_4", "CUTSCENE_16_TALK_5" ]
+"values": [ "CUTSCENE_16_TALK_1", "CUTSCENE_16_TALK_2", "...", "CUTSCENE_16_TALK_3", "CUTSCENE_16_TALK_4", "CUTSCENE_16_TALK_5", "CUTSCENE_16_TALK_6", "CUTSCENE_16_TALK_7" ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("NinePatchRect/CHARNAME:text")
@@ -221,10 +221,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 7.1, 12.4, 17.3, 22, 27.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 7.1, 12.4, 17.3, 22, 27.4, 31.2, 37.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Oscar Decarde", "Carrie Decarde", "", "Shihiro Xang", "Pamela Margareen", "Carrie Decarde" ]
+"values": [ "Oscar Decarde", "Carrie Decarde", "", "Shihiro Xang", "Pamela Margareen", "Carrie Decarde", "Pamela Margareen", "Katrin Flenn" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Cutscene16NortpartfiveSpiderPanel1:modulate")
