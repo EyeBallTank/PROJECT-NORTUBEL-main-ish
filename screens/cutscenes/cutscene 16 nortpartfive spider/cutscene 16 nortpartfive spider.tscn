@@ -40,6 +40,42 @@ animations = [ {
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "CUTSCENE_16_TALK_1" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Oscar Decarde" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene16NortpartfiveSpiderPanel1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -57,6 +93,42 @@ tracks/0/keys = {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "CUTSCENE_16_TALK_1" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("NinePatchRect/CHARNAME:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Oscar Decarde" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Cutscene16NortpartfiveSpiderPanel1:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -93,7 +165,7 @@ margin_top = 6.0
 margin_right = 199.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
-text = "someone"
+text = "Oscar Decarde"
 
 [node name="CHARCHAT" type="Label" parent="NinePatchRect"]
 margin_left = 13.0
@@ -101,11 +173,7 @@ margin_top = 38.0
 margin_right = 1003.0
 margin_bottom = 131.0
 custom_fonts/font = ExtResource( 1 )
-text = "1
-2
-3
-4
-"
+text = "CUTSCENE_16_TALK_1"
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
 visible = false
