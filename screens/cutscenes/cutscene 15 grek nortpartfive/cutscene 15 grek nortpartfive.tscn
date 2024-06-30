@@ -131,10 +131,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 5.1, 16.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ "Zharkovil", "Yiegour Sarvotsky" ]
+"values": [ "Zharkovil", "Yiegour Sarvotsky", "Katrin Flenn" ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -143,10 +143,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 5.1, 10 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 5.1, 10, 16.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2", "CUTSCENE_15_TALK_3" ]
+"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2", "CUTSCENE_15_TALK_3", "CUTSCENE_15_TALK_4" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Cutscene15GrekNortpartfivePanel1:modulate")
