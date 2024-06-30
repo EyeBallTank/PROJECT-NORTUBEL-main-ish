@@ -22,7 +22,7 @@ length = 0.001
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 150.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -30,7 +30,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 147.9 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
