@@ -310,10 +310,34 @@ tracks/23/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
+tracks/24/type = "value"
+tracks/24/path = NodePath("Cutscene15GrekNortpartfivePanel13:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Cutscene15GrekNortpartfivePanel14:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 120.0
+length = 122.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -321,7 +345,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 117.5 ),
+"times": PoolRealArray( 116.8 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -335,10 +359,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5.1, 16.5, 20.5, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57, 63.8, 68.1, 73.4, 84.2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5.1, 16.5, 20.5, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57, 63.8, 68.1, 73.4, 84.2, 95.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Zharkovil", "Yiegour Sarvotsky", "Katrin Flenn", "Yiegour Sarvotsky", "Clarity", "Bolt", "Angela Brokston", "Isaac", "Melvin Brokston", "Clarity", "Sergei", "Yiegour Sarvotsky", "Shihiro Xang", "Carrie Decarde", "Melvin Brokston" ]
+"values": [ "Zharkovil", "Yiegour Sarvotsky", "Katrin Flenn", "Yiegour Sarvotsky", "Clarity", "Bolt", "Angela Brokston", "Isaac", "Melvin Brokston", "Clarity", "Sergei", "Yiegour Sarvotsky", "Shihiro Xang", "Carrie Decarde", "Melvin Brokston", "Katrin Flenn" ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -347,10 +371,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 5.1, 10, 16.5, 20.5, 23.2, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57, 63.8, 68.1, 73.4, 79.3, 84.2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5.1, 10, 16.5, 20.5, 23.2, 28.1, 32.3, 37.1, 42.5, 48.4, 53.7, 57, 63.8, 68.1, 73.4, 79.3, 84.2, 89, 95.7, 101.8, 107.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2", "CUTSCENE_15_TALK_3", "CUTSCENE_15_TALK_4", "CUTSCENE_15_TALK_5", "CUTSCENE_15_TALK_6", "CUTSCENE_15_TALK_7", "CUTSCENE_15_TALK_8", "CUTSCENE_15_TALK_9", "CUTSCENE_15_TALK_10", "CUTSCENE_15_TALK_11", "CUTSCENE_15_TALK_12", "CUTSCENE_15_TALK_13", "CUTSCENE_15_TALK_14", "CUTSCENE_15_TALK_15", "CUTSCENE_15_TALK_16", "CUTSCENE_15_TALK_17", "CUTSCENE_15_TALK_18" ]
+"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2", "CUTSCENE_15_TALK_3", "CUTSCENE_15_TALK_4", "CUTSCENE_15_TALK_5", "CUTSCENE_15_TALK_6", "CUTSCENE_15_TALK_7", "CUTSCENE_15_TALK_8", "CUTSCENE_15_TALK_9", "CUTSCENE_15_TALK_10", "CUTSCENE_15_TALK_11", "CUTSCENE_15_TALK_12", "CUTSCENE_15_TALK_13", "CUTSCENE_15_TALK_14", "CUTSCENE_15_TALK_15", "CUTSCENE_15_TALK_16", "CUTSCENE_15_TALK_17", "CUTSCENE_15_TALK_18", "CUTSCENE_15_TALK_19", "CUTSCENE_15_TALK_20", "CUTSCENE_15_TALK_21", "CUTSCENE_15_TALK_22" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Cutscene15GrekNortpartfivePanel1:modulate")
@@ -599,10 +623,10 @@ tracks/23/loop_wrap = true
 tracks/23/imported = false
 tracks/23/enabled = true
 tracks/23/keys = {
-"times": PoolRealArray( 0, 73.4, 74.2556 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 73.4, 74.2556, 83.7, 84.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/24/type = "value"
 tracks/24/path = NodePath("Cutscene15GrekNortpartfivePanel12:modulate")
@@ -611,7 +635,31 @@ tracks/24/loop_wrap = true
 tracks/24/imported = false
 tracks/24/enabled = true
 tracks/24/keys = {
-"times": PoolRealArray( 0, 83.9, 84.3 ),
+"times": PoolRealArray( 0, 83.9, 84.3, 95, 96.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Cutscene15GrekNortpartfivePanel13:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 95.1, 96.1, 107.2, 108.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Cutscene15GrekNortpartfivePanel14:modulate")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 107, 107.7 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
@@ -724,12 +772,14 @@ scale = Vector2( 0.657191, 0.657191 )
 texture = ExtResource( 19 )
 
 [node name="Cutscene15GrekNortpartfivePanel13" type="Sprite" parent="."]
-position = Vector2( 521, -264 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 521, 232 )
 scale = Vector2( 1.31818, 1.31818 )
 texture = ExtResource( 17 )
 
 [node name="Cutscene15GrekNortpartfivePanel14" type="Sprite" parent="."]
-position = Vector2( 1776, -272 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 888, 228 )
 scale = Vector2( 0.544118, 0.544118 )
 texture = ExtResource( 16 )
 
