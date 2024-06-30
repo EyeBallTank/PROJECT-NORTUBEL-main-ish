@@ -162,7 +162,6 @@ texture = ExtResource( 13 )
 [node name="Cutscene18BrinkBonkafunhouseTvStaticEffect" type="AnimatedSprite" parent="."]
 position = Vector2( 532, 884 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="Cutscene18BrinkBonkafunhouseTvFrame" type="Sprite" parent="."]

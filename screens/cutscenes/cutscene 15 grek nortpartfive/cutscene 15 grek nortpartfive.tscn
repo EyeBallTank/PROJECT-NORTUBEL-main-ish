@@ -23,7 +23,7 @@
 [sub_resource type="Animation" id=1]
 length = 150.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("Cutscene15GrekNortpartfivePanel1:position")
+tracks/0/path = NodePath("NinePatchRect/CHARNAME:text")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -32,7 +32,49 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 531, 236 ) ]
+"values": [ "Zharkovil" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("NinePatchRect/CHARCHAT:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "CUTSCENE_15_TALK_1" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Cutscene15GrekNortpartfivePanel1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "intro cutscene"
+length = 120.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 117.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "cutscene_over"
+} ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("NinePatchRect/CHARNAME:text")
@@ -41,10 +83,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 6 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ "Zharkovil", "Yiegour Sarvotsky" ]
+"values": [ "Zharkovil" ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("NinePatchRect/CHARCHAT:text")
@@ -53,10 +95,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 6 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ "CUTSCENE_15_TALK_1", "CUTSCENE_15_TALK_2" ]
+"values": [ "CUTSCENE_15_TALK_1" ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Cutscene15GrekNortpartfivePanel1:modulate")
@@ -65,52 +107,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 5.6, 6.1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("Cutscene15GrekNortpartfivePanel2:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 5.8, 6.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 1304, 237 ), Vector2( 1304, 237 ), Vector2( 774, 237 ) ]
-}
-tracks/5/type = "value"
-tracks/5/path = NodePath("Cutscene15GrekNortpartfivePanel2:modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"times": PoolRealArray( 0, 5.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
-}
-
-[sub_resource type="Animation" id=2]
-resource_name = "intro cutscene"
-length = 6.0
-tracks/0/type = "method"
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "cutscene_over"
-} ]
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -142,7 +142,7 @@ margin_top = 6.0
 margin_right = 199.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 5 )
-text = "Yiegour Sarvotsky"
+text = "Zharkovil"
 
 [node name="CHARCHAT" type="Label" parent="NinePatchRect"]
 margin_left = 13.0
@@ -150,7 +150,7 @@ margin_top = 38.0
 margin_right = 1003.0
 margin_bottom = 131.0
 custom_fonts/font = ExtResource( 5 )
-text = "CUTSCENE_15_TALK_2"
+text = "CUTSCENE_15_TALK_1"
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
 visible = false
@@ -159,17 +159,16 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Cutscene15GrekNortpartfivePanel1" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 531, 236 )
 scale = Vector2( 1.15223, 1.15223 )
 texture = ExtResource( 9 )
 
 [node name="Cutscene15GrekNortpartfivePanel2" type="Sprite" parent="."]
-position = Vector2( 774, 237 )
+position = Vector2( 1336, 237 )
 texture = ExtResource( 10 )
 
 [node name="Cutscene15GrekNortpartfivePanel3" type="Sprite" parent="."]
-position = Vector2( -245, 229.805 )
+position = Vector2( -248, 230 )
 scale = Vector2( 0.610191, 0.610191 )
 texture = ExtResource( 14 )
 
