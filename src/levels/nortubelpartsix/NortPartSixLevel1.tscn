@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 
 [node name="NortPartSixLevel1" type="Node2D"]
 __meta__ = {
@@ -121,21 +122,26 @@ position = Vector2( 1591, 386 )
 propname = "nortprop wood stand 2"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 807, 1047 )
+position = Vector2( 807, 1553 )
 boardname = "brink art claudia reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 462, 1042 )
+position = Vector2( 462, 1548 )
 boardname = "brink art bonkette reference"
 
 [node name="ArtBook4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 130, 1038 )
+position = Vector2( 130, 1537 )
 boardname = "brink art dr ill ow reference"
 
 [node name="ArtBook5" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1179, 993 )
+position = Vector2( 1179, 1567 )
 boardname = "brink art monika evil reference"
 
 [node name="ArtBook6" parent="." instance=ExtResource( 9 )]
-position = Vector2( -212, 1038 )
+position = Vector2( -212, 1558 )
 boardname = "brink art bonkoid reference"
+
+[node name="Door" parent="." instance=ExtResource( 10 )]
+position = Vector2( 28, 1008 )
+new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel2.tscn"
+customtext = "cl4ud1"
