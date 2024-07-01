@@ -63,15 +63,17 @@ position = Vector2( 193, 1505 )
 worldname = "lahiurn2"
 
 [node name="Door" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1317, 1210 )
+position = Vector2( 871, 1712 )
+new_scene = "res://src/levels/lahiurn/LahiurnLevel2.tscn"
 spritename = "lahiurn greendoor"
+customtext = "j3r0ld"
 
 [node name="ArtBook" parent="." instance=ExtResource( 9 )]
 position = Vector2( 287, 1688 )
 boardname = "lahiurn art night rider"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 701, 1688 )
+position = Vector2( 561, 1688 )
 boardname = "lahiurn art both soldiers reference"
 
 [node name="LahiurnSoldier" parent="." instance=ExtResource( 10 )]

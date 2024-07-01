@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/458570__imagery2__red-alert_nuclear_buzzer.mp3" type="AudioStream" id=9]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -131,3 +132,9 @@ bus = "Sound"
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( 68, 1774 )
 boardname = "lahiurn art submarine"
+
+[node name="Door" parent="." instance=ExtResource( 11 )]
+position = Vector2( 108, 2409 )
+new_scene = "res://src/levels/lahiurn/LahiurnLevel3.tscn"
+spritename = "lahiurn greendoor"
+customtext = "chrl3s"
