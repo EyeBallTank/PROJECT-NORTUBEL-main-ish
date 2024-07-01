@@ -233,9 +233,20 @@ func b0nkyy():
 func b0nk44():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse.tscn")
 
+func cl4ud1():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix.tscn")
 
+func b0nk3t():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartsix/NortPartSixLevel2.tscn")
 
+func dr1l0u():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartsix/NortPartSixLevel3.tscn")
 
+func j3r0ld():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn.tscn")
 
+func chrl3s():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/lahiurn/LahiurnLevel2.tscn")
 
-
+func lmshtn():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/lahiurn/LahiurnLevel3.tscn")
