@@ -263,7 +263,7 @@ tracks/16/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 77.0
+length = 81.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -271,7 +271,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 70.6 ),
+"times": PoolRealArray( 74.2 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -285,7 +285,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 8.1, 12.1, 53, 57.8 ),
+"times": PoolRealArray( 0, 8.1, 12.1, 56.6, 61.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Melvin Brokston", "Oscar Decarde", "Bonka Millette", "Carrie Decarde", "Katrin Flenn" ]
@@ -297,7 +297,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 8.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1, 21.9, 25.3, 29.8, 34.4, 39.3, 44.3, 49.3, 53, 57.8, 62.5, 65.7 ),
+"times": PoolRealArray( 0, 8.1, 12.1, 13.1, 14.1, 15.1, 16.1, 17.1, 21.9, 27.2, 32.8, 38, 42.9, 47.9, 52.9, 56.6, 61.4, 66.1, 69.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "CUTSCENE_18_TALK_1", "CUTSCENE_18_TALK_2", "B", "O", "N", "K", "A", "CUTSCENE_18_TALK_3", "CUTSCENE_18_TALK_4", "CUTSCENE_18_TALK_5", "CUTSCENE_18_TALK_6", "CUTSCENE_18_TALK_7", "CUTSCENE_18_TALK_8", "CUTSCENE_18_TALK_9", "CUTSCENE_18_TALK_10", "CUTSCENE_18_TALK_11", "CUTSCENE_18_TALK_12", "AAAHHH!", "CUTSCENE_18_TALK_13" ]
@@ -309,7 +309,7 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 10.5, 53 ),
+"times": PoolRealArray( 0, 10.5, 56.6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
@@ -405,7 +405,7 @@ tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0, 21.9, 29.8, 39.3, 52.3 ),
+"times": PoolRealArray( 0, 21.9, 32.8, 42.9, 55.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false, true, false ]
@@ -417,7 +417,7 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 29.8, 39.3 ),
+"times": PoolRealArray( 0, 32.8, 42.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
@@ -429,7 +429,7 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0, 52.7, 53 ),
+"times": PoolRealArray( 0, 56.3, 56.6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -209, 231 ), Vector2( -209, 231 ), Vector2( 212, 231 ) ]
@@ -441,7 +441,7 @@ tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0, 53, 65.3, 65.6 ),
+"times": PoolRealArray( 0, 56.6, 68.9, 69.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -453,7 +453,7 @@ tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 0, 57.5, 58 ),
+"times": PoolRealArray( 0, 61.1, 61.6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1261, 235 ), Vector2( 1261, 235 ), Vector2( 783, 235 ) ]
@@ -465,7 +465,7 @@ tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 0, 62.5 ),
+"times": PoolRealArray( 0, 66.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ "wateroff", "wateron" ]
@@ -477,7 +477,7 @@ tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
-"times": PoolRealArray( 0, 65.5, 65.7 ),
+"times": PoolRealArray( 0, 69.1, 69.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -148, 228.919 ), Vector2( -148, 228.919 ), Vector2( 215, 228.919 ) ]
