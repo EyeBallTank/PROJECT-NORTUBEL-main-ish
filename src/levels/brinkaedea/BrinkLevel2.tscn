@@ -362,5 +362,4 @@ collision_newsize = Vector2( 72, 8 )
 position = Vector2( 7956, 3202 )
 spritename = "brinkaedea movplatvert"
 
-[editable path="BrinkBalloonPlatVerti"]
 [editable path="BrinkBlueTeaCup"]

@@ -81,7 +81,7 @@ tracks/1/keys = {
 [node name="BrinkBalloonPlatVerti" type="Node2D"]
 
 [node name="Platform" type="KinematicBody2D" parent="."]
-position = Vector2( -2, -1 )
+position = Vector2( 2082, -889 )
 collision_layer = 4
 collision_mask = 3
 motion/sync_to_physics = true
