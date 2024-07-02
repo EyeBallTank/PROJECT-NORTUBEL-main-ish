@@ -8,7 +8,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 
-[node name="NortPartSevenLevel1" type="Node2D"]
+[node name="NortPartSevenLevel2" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
