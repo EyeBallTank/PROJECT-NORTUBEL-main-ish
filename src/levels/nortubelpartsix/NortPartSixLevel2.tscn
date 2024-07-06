@@ -21,16 +21,16 @@ format = 1
 tile_data = PoolIntArray( 1245198, 91, 0, 1310734, 91, 0, 1376270, 91, 0 )
 
 [node name="DanceEasterEgg" parent="." instance=ExtResource( 10 )]
-position = Vector2( 988.929, 987.75 )
+position = Vector2( -242, 1045 )
 scale = Vector2( 1.9537, 1.9537 )
-frame = 2
+frame = 13
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 786427, 50, 0, 851963, 50, 0, 917499, 50, 0, 983035, 50, 0, 1048571, 50, 0, 1114107, 50, 0, 1179643, 50, 0, 1245179, 50, 0, 1310715, 50, 0, 1376251, 50, 0, 1441787, 50, 0, 1507323, 50, 0, 1507324, 50, 0, 1507325, 50, 0, 1507326, 50, 0, 1507327, 50, 0, 1441792, 50, 0, 1441793, 50, 0, 1441794, 50, 0, 1441795, 50, 0, 1441796, 50, 0, 1441797, 50, 0, 1441798, 50, 0, 1441799, 50, 0, 1441800, 50, 0, 1441801, 50, 0, 1441802, 50, 0, 1441803, 50, 0, 1441804, 50, 0, 1441805, 50, 0, 1441806, 50, 0, 1441807, 50, 0, 1441808, 50, 0, 1441809, 50, 0, 1441810, 50, 0, 1441811, 50, 0 )
+tile_data = PoolIntArray( 1507306, 50, 0, 1507307, 50, 0, 1507308, 50, 0, 1507309, 50, 0, 1507310, 50, 0, 1507311, 50, 0, 1507312, 50, 0, 1507313, 50, 0, 1507314, 50, 0, 1507315, 50, 0, 1507316, 50, 0, 1507317, 50, 0, 1507318, 50, 0, 1507319, 50, 0, 1507320, 50, 0, 1507321, 50, 0, 1507322, 50, 0, 1507323, 50, 0, 1507324, 50, 0, 1507325, 50, 0, 1507326, 50, 0, 1507327, 50, 0, 1441792, 50, 0, 1441793, 50, 0, 1441794, 50, 0, 1441795, 50, 0, 1441796, 50, 0, 1441797, 50, 0, 1441798, 50, 0, 1441799, 50, 0, 1441800, 50, 0, 1441801, 50, 0, 1441802, 50, 0, 1441803, 50, 0, 1441804, 50, 0, 1441805, 50, 0, 1441806, 50, 0, 1441807, 50, 0, 1441808, 50, 0, 1441809, 50, 0, 1441810, 50, 0, 1441811, 50, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -47,16 +47,16 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( -114, 1240 )
+position = Vector2( 1026, 1259 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
-position = Vector2( -114, 1240 )
+position = Vector2( 1026, 1259 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 2 )]
-position = Vector2( 110, 1240 )
+position = Vector2( 1159, 1236 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( 110, 1240 )
+position = Vector2( 1159, 1236 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
@@ -101,7 +101,7 @@ position = Vector2( 2510, 452 )
 propname = "nortprop lamp"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( 18, 711 )
+position = Vector2( 1366, 1289 )
 boardname = "nort art weird dream"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
