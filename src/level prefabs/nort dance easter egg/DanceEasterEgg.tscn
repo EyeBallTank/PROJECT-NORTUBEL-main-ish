@@ -51,5 +51,5 @@ animations = [ {
 
 [node name="DanceEasterEgg" type="AnimatedSprite"]
 frames = SubResource( 9 )
-frame = 4
+frame = 15
 playing = true

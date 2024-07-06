@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/level prefabs/nort dance easter egg/DanceEasterEgg.tscn" type="PackedScene" id=10]
 
 [node name="NortPartSixLevel2" type="Node2D"]
 
@@ -18,6 +19,11 @@ collision_layer = 4
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( 1245198, 91, 0, 1310734, 91, 0, 1376270, 91, 0 )
+
+[node name="DanceEasterEgg" parent="." instance=ExtResource( 10 )]
+position = Vector2( 988.929, 987.75 )
+scale = Vector2( 1.9537, 1.9537 )
+frame = 2
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -55,50 +61,50 @@ position = Vector2( 110, 1240 )
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 3 )]
-position = Vector2( 396, 1346 )
+position = Vector2( 1731, 150 )
 propname = "nortprop beanbag chair"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 353, 1205 )
+position = Vector2( 2179, 175 )
 propname = "nortprop big cream pastel"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 920, 993 )
+position = Vector2( 2954, 390 )
 propname = "nortprop big fountain"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1174, 892 )
+position = Vector2( 1126, 310 )
 propname = "nortprop blue cabinet 1"
 
 [node name="LevelProp5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1424, 902 )
+position = Vector2( 1371, 347 )
 propname = "nortprop blue cabinet 2"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 855, 844 )
+position = Vector2( 3098, 326 )
 propname = "nortprop chest with 2 openings"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1318, 1149 )
+position = Vector2( 2680, 305 )
 propname = "nortprop door 5"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1673, 1164 )
+position = Vector2( 2180, 411 )
 propname = "nortprop green cabinet"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1749, 915 )
+position = Vector2( 1744, 354 )
 propname = "nortprop green fence metal"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1399, 1290 )
+position = Vector2( 2510, 452 )
 propname = "nortprop lamp"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( 344, 1202 )
+position = Vector2( 18, 711 )
 boardname = "nort art weird dream"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
-position = Vector2( 631, 1366 )
+position = Vector2( 1432, 1825 )
 new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel3.tscn"
 customtext = "b0nk3t"
