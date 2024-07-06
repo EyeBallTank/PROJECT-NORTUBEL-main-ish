@@ -261,7 +261,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 33, 141.5 )
+extents = Vector2( 51, 141.66 )
 
 [node name="EygzouhlSoldier" type="KinematicBody2D"]
 collision_layer = 32
@@ -296,7 +296,7 @@ collision_mask = 1025
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHurtbox"]
-position = Vector2( -6, 108.5 )
+position = Vector2( -2.32001, 108.34 )
 shape = SubResource( 10 )
 
 [node name="Timer" type="Timer" parent="."]
