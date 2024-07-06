@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/level prefabs/nort dance easter egg/DanceEasterEgg.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/NortDanceTV.tscn" type="PackedScene" id=10]
 
 [node name="NortPartSixLevel2" type="Node2D"]
 
@@ -19,11 +19,6 @@ collision_layer = 4
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( 1245198, 91, 0, 1310734, 91, 0, 1376270, 91, 0 )
-
-[node name="DanceEasterEgg" parent="." instance=ExtResource( 10 )]
-position = Vector2( -242, 1045 )
-scale = Vector2( 1.9537, 1.9537 )
-frame = 13
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -101,10 +96,13 @@ position = Vector2( 2510, 452 )
 propname = "nortprop lamp"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1366, 1289 )
+position = Vector2( 1276, 1349 )
 boardname = "nort art weird dream"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1432, 1825 )
 new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel3.tscn"
 customtext = "b0nk3t"
+
+[node name="NortDanceTV" parent="." instance=ExtResource( 10 )]
+position = Vector2( 653, 1313 )

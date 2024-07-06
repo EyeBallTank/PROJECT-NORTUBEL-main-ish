@@ -1,0 +1,99 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
+[ext_resource path="res://src/level prefabs/nort dance easter egg/DanceEasterEgg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/npc_actors/NortDanceTV.gd" type="Script" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 362, 294 )
+
+[sub_resource type="SpriteFrames" id=43]
+animations = [ {
+"frames": [ SubResource( 42 ) ],
+"loop": false,
+"name": "artbookmain",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 126.5, 99.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 127, 72 )
+
+[sub_resource type="Animation" id=45]
+resource_name = "RESET"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/DanceEasterEgg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 502, 249 ), Vector2( 429, 249 ), Vector2( 502, 249 ), Vector2( 593, 249 ) ]
+}
+
+[node name="NortDanceTV" type="KinematicBody2D"]
+z_index = 1
+collision_layer = 64
+collision_mask = 4
+script = ExtResource( 3 )
+
+[node name="MainSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2, -134 )
+scale = Vector2( 0.72, 0.72 )
+frames = SubResource( 43 )
+animation = "artbookmain"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.5, -133.5 )
+shape = SubResource( 1 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( 2, -135 )
+shape = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 14
+
+[node name="DanceEasterEgg" parent="CanvasLayer" instance=ExtResource( 2 )]
+position = Vector2( 502, 249 )
+
+[node name="Basicmessage" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Basicmessage"]
+margin_left = 267.0
+margin_top = 501.0
+margin_right = 773.0
+margin_bottom = 567.0
+texture = ExtResource( 4 )
+region_rect = Rect2( -8.50003, -6, 432, 423 )
+patch_margin_left = 31
+patch_margin_top = 23
+patch_margin_right = 19
+patch_margin_bottom = 19
+
+[node name="Label" type="Label" parent="Basicmessage/NinePatchRect"]
+margin_left = 117.0
+margin_top = 9.0
+margin_right = 375.0
+margin_bottom = 34.0
+custom_fonts/font = ExtResource( 40 )
+text = "PRESS_Q_TO_READ"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 45 )
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
