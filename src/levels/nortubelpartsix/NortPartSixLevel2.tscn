@@ -95,7 +95,7 @@ position = Vector2( 1399, 1290 )
 propname = "nortprop lamp"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( 600, 1766 )
+position = Vector2( 344, 1202 )
 boardname = "nort art weird dream"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
