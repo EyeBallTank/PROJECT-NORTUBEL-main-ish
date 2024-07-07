@@ -194,18 +194,15 @@ frames = SubResource( 2 )
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
 position = Vector2( -9.02778, -290.083 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 4 )
 
 [node name="AnimationArea" type="Area2D" parent="."]
-scale = Vector2( 1, 1 )
 collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimationArea"]
@@ -267,7 +264,6 @@ texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -1.62257e-05, -6.62274e-07 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 9 )
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
