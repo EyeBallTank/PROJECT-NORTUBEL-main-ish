@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/567250__iwanplays__dropping-rocks.wav-32d05f53d68e0ad252418badec15bac5.sample"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/lahiurn prefab sounds/567250__iwanplays__dropping-rocks.wav"
+dest_files=[ "res://.import/567250__iwanplays__dropping-rocks.wav-32d05f53d68e0ad252418badec15bac5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

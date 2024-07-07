@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 3 city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_items/TradeItem.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnThroneChairAndWall.tscn" type="PackedScene" id=13]
 
 [sub_resource type="Animation" id=2]
 resource_name = "AndSoWasLeft"
@@ -349,5 +350,8 @@ customtext = "lmshtn"
 [node name="TradeItem" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1318, 1397 )
 spritename = "tradeitem lahiurn chair battery"
+
+[node name="LahiurnThroneChairAndWall" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2970, 1349 )
 
 [editable path="LahiurnWoodenPlatFall"]

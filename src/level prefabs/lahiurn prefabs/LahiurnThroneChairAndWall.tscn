@@ -1,8 +1,12 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChairBase.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Breakable Wall.png" type="Texture" id=2]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnThroneChairAndWall.gd" type="Script" id=3]
+[ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/567250__iwanplays__dropping-rocks.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sprites/enemy_sprites/krimbstone/Mobster Bullet projectile.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Rocket.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Explosion test.png" type="Texture" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -114,10 +118,106 @@ tracks/5/keys = {
 "update": 0,
 "values": [ true ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("AudioStreamPlayer:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 21, -121 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite2:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Sprite2:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -13, -17 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("AnimatedSprite:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("AnimatedSprite:animation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "boom" ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("TheChair/talkto/CollisionShape2D:disabled")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=13]
 resource_name = "activechair"
-length = 8.0
+length = 9.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("TheChair/AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -190,6 +290,102 @@ tracks/5/keys = {
 "update": 1,
 "values": [ true, false ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("AudioStreamPlayer:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 4.7, 8.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 0.6, 1.1, 1.2, 1.5, 1.6, 2.1, 2.2, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false, true, false, true, false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5, 0.6, 1.1, 1.2, 1.5, 1.6, 2.1, 2.2, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 21, -121 ), Vector2( 840, -121 ), Vector2( 14, -121 ), Vector2( 854, -121 ), Vector2( 19, -121 ), Vector2( 856, -121 ), Vector2( 17, -121 ), Vector2( 865, -121 ), Vector2( 19, -121 ), Vector2( 863, -121 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite2:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2.8, 3.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Sprite2:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 2.8, 3.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -13, -17 ), Vector2( 859, -17 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("AnimatedSprite:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 3.7, 4.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("AnimatedSprite:animation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 3.7, 3.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "boom", "boom2" ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("TheChair/talkto/CollisionShape2D:disabled")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
@@ -224,14 +420,42 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 32, 224 )
 
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 400, 400 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 7 )
+region = Rect2( 400, 0, 400, 400 )
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ SubResource( 14 ) ],
+"loop": false,
+"name": "boom",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 17 ) ],
+"loop": false,
+"name": "boom2",
+"speed": 0.0
+} ]
+
 [node name="LahiurnThroneChairAndWall" type="Node2D"]
 script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 21, -121 )
+z_index = 14
+texture = ExtResource( 5 )
 
 [node name="TheChair" type="KinematicBody2D" parent="."]
 collision_layer = 64
 collision_mask = 0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="TheChair"]
+z_index = 15
 frames = SubResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TheChair"]
@@ -245,6 +469,12 @@ collision_layer = 64
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TheChair/talkto"]
 position = Vector2( -10.5, -3.5 )
 shape = SubResource( 6 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( -13, -17 )
+z_index = 16
+texture = ExtResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 12 )
@@ -263,5 +493,17 @@ animation = "notbroken"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BrickWall"]
 position = Vector2( 140, 9 )
 shape = SubResource( 11 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "Sound"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 908, -39 )
+scale = Vector2( 0.71, 0.71 )
+z_index = 15
+frames = SubResource( 16 )
+animation = "boom"
 
 [connection signal="body_entered" from="TheChair/talkto" to="." method="_on_talkto_body_entered"]

@@ -195,6 +195,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * tony-knievel-588593355 on Freesound/soundcloud (Drum sound effect)
 * vacuumfan7072 on Freesound (Cake balloon pop sound)
 * Maikkihapsis on Freesound (Fake present "tadaa" sound)
+* iwanPlays on FreeSound (Sound for wall destruction in Lahiurn level 3)
 * Pixabay (Explosion sound)
 * decipher8996 (Used tutorial video to make jump-through-platform)
 * DevWorm (Used tutorial video on "Top Down AI Enemy Movement" to fix the SWIMMING states for Companion)
