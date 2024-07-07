@@ -1,0 +1,110 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChairBase.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Breakable Wall.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 192, 384 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 192, 384 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 384, 0, 192, 384 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "bullet",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": false,
+"name": "rocket",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 79, 165.5 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 163.5, 194.5 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 64, 448 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 64, 448 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 64, 448 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "almostbroken",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "halfbroken",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 9 ) ],
+"loop": false,
+"name": "notbroken",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 32, 224 )
+
+[node name="LahiurnThroneChairAndWall" type="Node2D"]
+
+[node name="TheChair" type="KinematicBody2D" parent="."]
+collision_layer = 64
+collision_mask = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="TheChair"]
+frames = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TheChair"]
+position = Vector2( -17, 26.5 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="talkto" type="Area2D" parent="TheChair"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TheChair/talkto"]
+position = Vector2( -10.5, -3.5 )
+shape = SubResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="BrickWall" type="StaticBody2D" parent="."]
+position = Vector2( 755, -41 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="BrickWall"]
+position = Vector2( 140, 9 )
+frames = SubResource( 10 )
+animation = "notbroken"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BrickWall"]
+position = Vector2( 140, 9 )
+shape = SubResource( 11 )
