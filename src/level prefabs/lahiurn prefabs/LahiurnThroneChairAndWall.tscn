@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChairBase.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Breakable Wall.png" type="Texture" id=2]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnThroneChairAndWall.gd" type="Script" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -39,6 +40,157 @@ extents = Vector2( 79, 165.5 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 163.5, 194.5 )
 
+[sub_resource type="Animation" id=12]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("TheChair:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TheChair/AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "default" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("BrickWall/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("BrickWall/AnimatedSprite:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "notbroken" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("TheChair/AnimatedSprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("BrickWall/AnimatedSprite:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "activechair"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("TheChair/AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.8, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ "bullet", "rocket", "default" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TheChair/AnimatedSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("BrickWall/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 4.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("BrickWall/AnimatedSprite:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.5, 3.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ "notbroken", "halfbroken", "almostbroken" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("TheChair:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4, 4.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 814, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("BrickWall/AnimatedSprite:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 4.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
 region = Rect2( 128, 0, 64, 448 )
@@ -73,6 +225,7 @@ animations = [ {
 extents = Vector2( 32, 224 )
 
 [node name="LahiurnThroneChairAndWall" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="TheChair" type="KinematicBody2D" parent="."]
 collision_layer = 64
@@ -94,6 +247,8 @@ position = Vector2( -10.5, -3.5 )
 shape = SubResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 12 )
+anims/activechair = SubResource( 13 )
 
 [node name="BrickWall" type="StaticBody2D" parent="."]
 position = Vector2( 755, -41 )
@@ -108,3 +263,5 @@ animation = "notbroken"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BrickWall"]
 position = Vector2( 140, 9 )
 shape = SubResource( 11 )
+
+[connection signal="body_entered" from="TheChair/talkto" to="." method="_on_talkto_body_entered"]
