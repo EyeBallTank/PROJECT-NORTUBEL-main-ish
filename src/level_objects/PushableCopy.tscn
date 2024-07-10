@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/push object.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/PushableCopy.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/push object massagcoav.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/push object greklovick.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/push object brinkaedea.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/push object lahiurn.png" type="Texture" id=11]
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 10 )
@@ -25,6 +26,10 @@ region = Rect2( 0, 0, 217, 281 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 217, 281 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 217, 281 )
 
 [sub_resource type="AtlasTexture" id=12]
@@ -60,6 +65,11 @@ animations = [ {
 "frames": [ SubResource( 11 ) ],
 "loop": false,
 "name": "krimbstone pushable",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": false,
+"name": "lahiurn pushable",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 12 ) ],
@@ -99,7 +109,7 @@ script = ExtResource( 2 )
 position = Vector2( 1.98206e-06, -1.43051e-06 )
 scale = Vector2( 0.884793, 0.911032 )
 frames = SubResource( 8 )
-animation = "brinkaedea pushable"
+animation = "lahiurn pushable"
 
 [node name="leftandrightside" type="CollisionShape2D" parent="." groups=["pushableside"]]
 shape = SubResource( 3 )
