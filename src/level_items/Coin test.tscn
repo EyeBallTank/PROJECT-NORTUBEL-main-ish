@@ -303,7 +303,7 @@ script = ExtResource( 2 )
 position = Vector2( 1.02871e-07, -47 )
 scale = Vector2( 0.466825, 0.440956 )
 frames = SubResource( 6 )
-animation = "lahiurn coin"
+animation = "nortubel coin"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -46 )
