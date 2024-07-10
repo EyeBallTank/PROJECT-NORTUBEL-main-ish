@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnRotatingPlatTrap.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnLargeTank.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnDrillTank.tscn" type="PackedScene" id=23]
 
 [node name="LahiurnLevel1" type="Node2D"]
 
@@ -48,7 +49,7 @@ format = 1
 tile_data = PoolIntArray( 1376263, 1, 0, 1441799, 1, 0, 1507335, 1, 0, 1572871, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -122, 1627 )
+position = Vector2( 0, 1565 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
@@ -83,7 +84,7 @@ boardname = "lahiurn art both soldiers reference"
 position = Vector2( -55, 714 )
 
 [node name="LahiurnNightRider" parent="." instance=ExtResource( 11 )]
-position = Vector2( 191, 638 )
+position = Vector2( 177, 667 )
 
 [node name="EygzouhlSoldier" parent="." instance=ExtResource( 12 )]
 position = Vector2( -171, 721 )
@@ -126,3 +127,6 @@ position = Vector2( 3253, 367 )
 
 [node name="LahiurnLargeTank" parent="." instance=ExtResource( 22 )]
 position = Vector2( 7635, 865 )
+
+[node name="LahiurnDrillTank" parent="." instance=ExtResource( 23 )]
+position = Vector2( 6699, 2278 )
