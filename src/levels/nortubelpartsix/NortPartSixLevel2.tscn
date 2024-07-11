@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/npc_actors/NortDanceTV.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/hhtrintina/HhtrintinaNPC.tscn" type="PackedScene" id=11]
 
 [node name="NortPartSixLevel2" type="Node2D"]
 
@@ -99,6 +100,10 @@ propname = "nortprop lamp"
 position = Vector2( 1276, 1349 )
 boardname = "nort art weird dream"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 8 )]
+position = Vector2( -649, 1349 )
+boardname = "hhtrintina art reference"
+
 [node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1432, 1825 )
 new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel3.tscn"
@@ -106,3 +111,6 @@ customtext = "b0nk3t"
 
 [node name="NortDanceTV" parent="." instance=ExtResource( 10 )]
 position = Vector2( 653, 1313 )
+
+[node name="HhtrintinaNPC" parent="." instance=ExtResource( 11 )]
+position = Vector2( -181, 1239 )
