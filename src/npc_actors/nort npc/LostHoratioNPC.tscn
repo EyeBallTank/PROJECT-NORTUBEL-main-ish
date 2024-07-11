@@ -1,0 +1,115 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/LOST HORATIO NPC bottom.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/LOST HORATIO NPC TOP.png" type="Texture" id=4]
+[ext_resource path="res://src/npc_actors/nort npc/LostHoratioNPC.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 46.5, 133 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 82.5, 131.5 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("LostHoratioNpcTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -2, 32 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "horatio shows up"
+tracks/0/type = "value"
+tracks/0/path = NodePath("LostHoratioNpcTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -2, 32 ), Vector2( -2, -57 ) ]
+}
+
+[node name="LostHoratioNPC" type="KinematicBody2D"]
+collision_layer = 64
+collision_mask = 4
+script = ExtResource( 5 )
+
+[node name="LostHoratioNpcTop" type="Sprite" parent="."]
+position = Vector2( -2, 32 )
+texture = ExtResource( 4 )
+
+[node name="LostHoratioNpcBottom" type="Sprite" parent="."]
+position = Vector2( -3, 73 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.5, 15 )
+shape = SubResource( 3 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( -4.5, 14.5 )
+shape = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 480.0
+margin_right = 1018.0
+margin_bottom = 593.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 1007.0
+margin_bottom = 109.0
+custom_fonts/font = ExtResource( 1 )
+text = "Bloo bloo bloo brrrrrrrrrr...."
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 452.0
+margin_right = 113.0
+margin_bottom = 476.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 23.0
+custom_fonts/font = ExtResource( 1 )
+text = "Horatio"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 5 )
+"anims/horatio shows up" = SubResource( 6 )
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
