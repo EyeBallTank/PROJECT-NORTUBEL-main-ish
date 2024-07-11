@@ -148,15 +148,19 @@ func cutscene_over():
 #Pete: It gets weirder, some look like people we've met before.
 #Angela: Yeah, that one looks like the blue cat.
 #Oscar: And I see mister Yiegour over there.
-#Namylea: Well, let me test something.
-#Melvin: OUCH, did something-
-#Namylea: My suspicion was correct. These are voodoo dolls.
+#Namylea: Well, let me see...
+#Namylea: AAHHH!!!
+#Melvin: Miss Matdur, are you alright?
+#Namylea: MY BACKPACK, OPEN IT UP AND FIND THE FIRST AID KIT! I'LL HANDLE THE REST!!
+#Namylea is then seen without her suit, showing her with bandages on her arm.
+#Namylea: I'm fine now. But it seems these are voodoo dolls. What I got here now is a knife wound.
 #Namylea: I remember interviewing someone from a tribe that made such dolls.
 #Namylea: According to him, a way to make sure these dolls won't affect you any longer is to protect them.
 #Carrie: How do we do that? Is it just a matter of not hurting the dolls directly?
 #Namylea: More than that. If means preventing something else from attacking it.
 #Katrin: This place tends to have weird monsters, does that mean we gotta stop them from hurting the dolls?
 #Namylea: Could be. If you prevent those monsters from attacking the dolls, maybe the dolls will no longer be connected to you.
+
 
 #Namylea: It seems the dolls aren't active anymore. We could be safe now.
 #Melvin: By the way, I reconfigered this device back to your place. At least I hope I did it.
@@ -199,3 +203,21 @@ func cutscene_over():
 #Pebble: Uulga, please be safe!
 #Uulga: Don't worry, Pebble. I'll come back safely. Now, you 6 come with me.
 
+
+#Katrin: Here is is, another piece. Thank you miss Uulga.
+#Katrin: Is anything alright.
+#Uulga: Don't worry, I'm just... there's something about this place... I tried to ignore it but...
+#Katrin: Are you scared of something? Sorry about that question but-
+#Uulga: No, you're right. It is fear I'm having. Everyone can have that.
+#Oscar: Well, when we got lost, I was very scared too. But at least now, not as much.
+#Carrie: Maybe it's because of the odds we managed to overcome. None for us can speak for miss Uulga, though.
+#Uulga: Perhaps that's what it takes... overcome something and it'll change you.
+#Uulga: But still, I should return home. Do you want anything else?
+#Melvin: No, thanks. We gotta bo back... what about you miss.
+#Uulga: Yes, I have a request. Come here!
+#Uulga hugs the 6 at once.
+#Uulga: Go back home safely. I'm sure you kids can do it.
+#The 6 leave
+#Uulga returns safely too
+#Nort part 6
+#The six could be arguing about their parents before meeting the alt versions
