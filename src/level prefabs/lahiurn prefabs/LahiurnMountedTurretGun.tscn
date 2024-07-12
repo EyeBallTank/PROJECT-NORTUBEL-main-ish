@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/Lahiurn Mounted Turret Gun.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnMountedTurretGun.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds/enemies/Beefy-Desert-Eagle-.50-AE-Close-Single-Gunshot-B-www.fesliyanstudios.com-www.fesliyanstudios.com.mp3" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -22,10 +23,22 @@ tracks/0/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "fire gun"
-length = 3.0
+length = 2.8
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -33,9 +46,36 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
+"args": [  ],
+"method": "attack"
+}, {
 "args": [  ],
 "method": "attack"
 } ]
@@ -47,10 +87,22 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 2.8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, true, true, true, true, true, true, true, true, false ]
 }
 
 [node name="LahiurnMountedTurretGun" type="KinematicBody2D"]
@@ -59,6 +111,7 @@ collision_mask = 0
 script = ExtResource( 2 )
 
 [node name="LahiurnMountedTurretGun" type="Sprite" parent="."]
+z_index = 15
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -77,6 +130,11 @@ position = Vector2( 209, -43 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 3 )
 "anims/fire gun" = SubResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -2.122
+bus = "Sound"
 
 [connection signal="body_entered" from="UseIt" to="." method="_on_UseIt_body_entered"]
 [connection signal="body_exited" from="UseIt" to="." method="_on_UseIt_body_exited"]
