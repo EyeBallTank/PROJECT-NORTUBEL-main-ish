@@ -112,5 +112,8 @@ func _on_EnemyHurtbox_area_entered(area):
 		state = DEAD
 	if area.name == "EnemyCrusher":
 		state = DEAD
-	if area.name == "friendlybullet":
+	if area.is_in_group("friendlybullet"):
 		state = DEAD
+
+
+
