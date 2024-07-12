@@ -107,9 +107,10 @@ func see_to_attack():
 func return_to_move():
 	state = MOVING
 
-
 func _on_EnemyHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
 		state = DEAD
 	if area.name == "EnemyCrusher":
+		state = DEAD
+	if area.name == "friendlybullet":
 		state = DEAD
