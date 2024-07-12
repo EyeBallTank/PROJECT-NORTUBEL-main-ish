@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=14]
-[ext_resource path="res://src/level_hazards/lahiurn/LahiurnFloorMine.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
 
@@ -87,6 +86,3 @@ position = Vector2( 2046, -732 )
 autoplay = "test"
 anims/RESET = SubResource( 1 )
 anims/test = SubResource( 2 )
-
-[node name="LahiurnFloorMine" parent="." instance=ExtResource( 15 )]
-position = Vector2( 2380, -1753 )
