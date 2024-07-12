@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=11]
 
 [node name="NortPartSixLevel1" type="Node2D"]
 __meta__ = {
@@ -145,3 +146,7 @@ boardname = "brink art bonkoid reference"
 position = Vector2( 28, 1008 )
 new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel2.tscn"
 customtext = "cl4ud1"
+
+[node name="LoreBook" parent="." instance=ExtResource( 11 )]
+position = Vector2( 518, 956 )
+customtext = "NORT_LORE_DIFFERENT_MEANINGS_TEXT"
