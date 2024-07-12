@@ -54,7 +54,7 @@ tracks/1/keys = {
 }
 
 [node name="LahiurnMountedTurretGun" type="KinematicBody2D"]
-collision_layer = 0
+collision_layer = 64
 collision_mask = 0
 script = ExtResource( 2 )
 
@@ -65,7 +65,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="UseIt" type="Area2D" parent="."]
-collision_layer = 4
+collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UseIt"]
 position = Vector2( 3.5, -26.5 )

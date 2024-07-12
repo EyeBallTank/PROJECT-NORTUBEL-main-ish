@@ -116,4 +116,6 @@ func _on_EnemyHurtbox_area_entered(area):
 		state = DEAD
 
 
-
+func _on_EnemyHurtbox_body_entered(body):
+	if body.is_in_group("goodbullet"):
+		state = DEAD

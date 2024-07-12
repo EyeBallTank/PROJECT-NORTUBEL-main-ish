@@ -23,6 +23,6 @@ func _physics_process(delta):
 		animation.play("Dying")
 
 
-func _on_TouchEnemy_body_entered(body):
-	if body.is_in_group("enemies"):
+func _on_TouchEnemy_area_entered(area):
+	if area.is_in_group("goodbullettarget"):
 		animation.play("Dying")

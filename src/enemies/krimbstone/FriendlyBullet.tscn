@@ -100,11 +100,11 @@ tracks/2/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 60, 0.5 )
+extents = Vector2( 75, 3.5 )
 
 [node name="FriendlyBullet" type="KinematicBody2D" groups=["goodbullet"]]
 collision_layer = 1024
-collision_mask = 32
+collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -120,10 +120,10 @@ anims/RESET = SubResource( 5 )
 
 [node name="TouchEnemy" type="Area2D" parent="." groups=["friendlybullet"]]
 collision_layer = 1024
-collision_mask = 36
+collision_mask = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TouchEnemy"]
-position = Vector2( -1, -0.5 )
+position = Vector2( 0, -0.5 )
 shape = SubResource( 3 )
 
-[connection signal="body_entered" from="TouchEnemy" to="." method="_on_TouchEnemy_body_entered"]
+[connection signal="area_entered" from="TouchEnemy" to="." method="_on_TouchEnemy_area_entered"]
