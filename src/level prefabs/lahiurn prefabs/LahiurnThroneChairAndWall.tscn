@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChairBase.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Breakable Wall.png" type="Texture" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://assets/sprites/enemy_sprites/krimbstone/Mobster Bullet projectile.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Rocket.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Explosion test.png" type="Texture" id=7]
+[ext_resource path="res://assets/sounds/enemies/Beefy-Desert-Eagle-.50-AE-Close-Single-Gunshot-B-www.fesliyanstudios.com-www.fesliyanstudios.com.mp3" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/enemies/greklovick/medium-explosion-40472.mp3" type="AudioStream" id=9]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -214,6 +216,30 @@ tracks/13/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/14/type = "value"
+tracks/14/path = NodePath("bulletsound:playing")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("rocketsound:playing")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=13]
 resource_name = "activechair"
@@ -386,6 +412,30 @@ tracks/13/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/14/type = "value"
+tracks/14/path = NodePath("bulletsound:playing")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2, 1.6, 2.2, 3.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, true, true, true, false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("rocketsound:playing")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 3.7, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
@@ -505,5 +555,14 @@ scale = Vector2( 0.71, 0.71 )
 z_index = 15
 frames = SubResource( 16 )
 animation = "boom"
+
+[node name="bulletsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -2.122
+bus = "Sound"
+
+[node name="rocketsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "Sound"
 
 [connection signal="body_entered" from="TheChair/talkto" to="." method="_on_talkto_body_entered"]
