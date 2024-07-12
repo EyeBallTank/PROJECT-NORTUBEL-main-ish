@@ -160,10 +160,10 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 4.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ false, true, false ]
 }
 tracks/13/type = "value"
 tracks/13/path = NodePath("Asteroid2/Flechette:visible")
@@ -172,10 +172,10 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0.9, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0.9, 1, 5.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ false, true, false ]
 }
 tracks/14/type = "value"
 tracks/14/path = NodePath("Asteroid3/Flechette:visible")
@@ -184,10 +184,10 @@ tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 1.9, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 1.9, 2, 6.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ false, true, false ]
 }
 tracks/15/type = "value"
 tracks/15/path = NodePath("Asteroid4/Flechette:visible")
@@ -196,10 +196,10 @@ tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 2.9, 3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 2.9, 3, 7.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ false, true, false ]
 }
 
 [node name="LahiurnFlechette" type="Node2D"]
@@ -215,11 +215,12 @@ rotation = 1.57079
 texture = ExtResource( 1 )
 
 [node name="Asteroid" type="KinematicBody2D" parent="."]
-position = Vector2( 0, 600 )
+position = Vector2( 0, -552 )
 collision_layer = 0
 collision_mask = 0
 
 [node name="Flechette" type="Sprite" parent="Asteroid"]
+visible = false
 texture = ExtResource( 1 )
 
 [node name="EnemyHitbox" parent="Asteroid" instance=ExtResource( 2 )]
@@ -228,25 +229,29 @@ texture = ExtResource( 1 )
 shape = SubResource( 4 )
 
 [node name="Asteroid2" type="KinematicBody2D" parent="."]
-position = Vector2( 137, -552 )
+position = Vector2( 137, -408 )
 collision_layer = 0
 collision_mask = 0
 
 [node name="Flechette" type="Sprite" parent="Asteroid2"]
+visible = false
+modulate = Color( 1, 1, 1, 0.875 )
 texture = ExtResource( 1 )
 
 [node name="EnemyHitbox" parent="Asteroid2" instance=ExtResource( 2 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Asteroid2/EnemyHitbox"]
 shape = SubResource( 4 )
+disabled = true
 
 [node name="Asteroid3" type="KinematicBody2D" parent="."]
-position = Vector2( 268, -408 )
+position = Vector2( 268, -264 )
 collision_layer = 0
 collision_mask = 0
 
 [node name="Flechette" type="Sprite" parent="Asteroid3"]
-modulate = Color( 1, 1, 1, 0.875 )
+visible = false
+modulate = Color( 1, 1, 1, 0.75 )
 texture = ExtResource( 1 )
 
 [node name="EnemyHitbox" parent="Asteroid3" instance=ExtResource( 2 )]
@@ -256,12 +261,13 @@ shape = SubResource( 4 )
 disabled = true
 
 [node name="Asteroid4" type="KinematicBody2D" parent="."]
-position = Vector2( 432, -264 )
+position = Vector2( 432, -120 )
 collision_layer = 0
 collision_mask = 0
 
 [node name="Flechette" type="Sprite" parent="Asteroid4"]
-modulate = Color( 1, 1, 1, 0.75 )
+visible = false
+modulate = Color( 1, 1, 1, 0.625 )
 texture = ExtResource( 1 )
 
 [node name="EnemyHitbox" parent="Asteroid4" instance=ExtResource( 2 )]
