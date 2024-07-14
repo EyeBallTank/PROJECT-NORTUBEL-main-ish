@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -29,9 +29,24 @@
 [ext_resource path="res://src/level_hazards/lahiurn/LahiurnFloorMine.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnMountedTurretGun.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel1.gd" type="Script" id=29]
+[ext_resource path="res://assets/sprites/level_backgrounds/lahiurn/lahiurn background war sky.png" type="Texture" id=30]
 
 [node name="LahiurnLevel1" type="Node2D"]
 script = ExtResource( 29 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="LahiurnBackgroundWarSky" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 30 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 0, 0 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 8 )
@@ -154,3 +169,5 @@ position = Vector2( 4603, 364 )
 
 [node name="LahiurnMountedTurretGun" parent="." instance=ExtResource( 28 )]
 position = Vector2( 5356, 259 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
