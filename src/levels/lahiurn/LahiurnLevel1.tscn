@@ -126,6 +126,30 @@ tracks/5/keys = {
 "update": 0,
 "values": [ Vector2( 1685, 440 ), Vector2( 1685, 440 ), Vector2( -1283, -7.99997 ), Vector2( -1255, -256 ), Vector2( -1336, -545 ), Vector2( -1256, -799 ), Vector2( -685, -738 ), Vector2( -98, -825 ), Vector2( 559, -784 ), Vector2( 916, -754 ), Vector2( 1243, -601 ) ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("ParallaxBackgroundWar/ParallaxLayer/Bullets3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 12.8, 15.5, 18.3, 19.7, 21.2, 23.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -887, -770 ), Vector2( -887, -770 ), Vector2( 1333, 454 ), Vector2( 1335, -223 ), Vector2( 1411, -737 ), Vector2( 553, -826 ), Vector2( -247, -863 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ParallaxBackgroundWar/ParallaxLayer/Plane3:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 14.8, 16.9, 17.4, 17.9, 18.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1224, -934 ), Vector2( -1224, -934 ), Vector2( 1180, 30 ), Vector2( 1208, -154 ), Vector2( 1204, -485 ), Vector2( 1173, -725 ) ]
+}
 
 [node name="LahiurnLevel1" type="Node2D"]
 script = ExtResource( 29 )
@@ -145,14 +169,14 @@ texture = ExtResource( 30 )
 motion_scale = Vector2( 0, 0 )
 
 [node name="Plane1" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( -1737, 111 )
+position = Vector2( -482.664, -820.198 )
 rotation = -0.19036
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
 playing = true
 
 [node name="Plane2" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( 1685, 440 )
+position = Vector2( -1075.68, -779.737 )
 rotation = 0.16806
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
@@ -161,26 +185,26 @@ playing = true
 flip_h = true
 
 [node name="Plane3" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( -1224, -934 )
+position = Vector2( -880.571, -796.286 )
 rotation = 0.40362
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
 playing = true
 
 [node name="Bullets1" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( -1380, 51 )
+position = Vector2( -212.708, -837.155 )
 rotation = -0.167326
 scale = Vector2( 2, 2 )
 texture = ExtResource( 31 )
 
 [node name="Bullets2" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( 1368, 329 )
+position = Vector2( 932.419, -896.548 )
 rotation = 0.185058
 scale = Vector2( 2, 2 )
 texture = ExtResource( 31 )
 
 [node name="Bullets3" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( -887, -770 )
+position = Vector2( 1004.11, 272.667 )
 rotation = 0.450976
 scale = Vector2( 2, 2 )
 texture = ExtResource( 31 )
