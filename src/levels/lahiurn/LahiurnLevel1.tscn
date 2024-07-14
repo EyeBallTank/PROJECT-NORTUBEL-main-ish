@@ -102,6 +102,30 @@ tracks/3/keys = {
 "update": 0,
 "values": [ -10.9068, -10.9068, -10.9068, -10.9068 ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("ParallaxBackgroundWar/ParallaxLayer/Bullets2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4.4, 6.3, 10.4, 12.5, 15.6, 18.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1368, 329 ), Vector2( 1318, 369 ), Vector2( -1402, -191 ), Vector2( -1461, -854 ), Vector2( -329, -941 ), Vector2( 1175, -888 ), Vector2( 1446, -653 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ParallaxBackgroundWar/ParallaxLayer/Plane2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 7.4, 9.4, 11.5, 13.1, 14.5, 16.4, 17.1, 18.4, 19.4, 21 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1685, 440 ), Vector2( 1685, 440 ), Vector2( -1283, -7.99997 ), Vector2( -1255, -256 ), Vector2( -1336, -545 ), Vector2( -1256, -799 ), Vector2( -685, -738 ), Vector2( -98, -825 ), Vector2( 559, -784 ), Vector2( 916, -754 ), Vector2( 1243, -601 ) ]
+}
 
 [node name="LahiurnLevel1" type="Node2D"]
 script = ExtResource( 29 )
@@ -125,7 +149,6 @@ position = Vector2( -1737, 111 )
 rotation = -0.19036
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Plane2" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -133,6 +156,7 @@ position = Vector2( 1685, 440 )
 rotation = 0.16806
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 flip_h = true
 
@@ -141,7 +165,6 @@ position = Vector2( -1224, -934 )
 rotation = 0.40362
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Bullets1" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -151,7 +174,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 31 )
 
 [node name="Bullets2" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
-position = Vector2( 1318, 369 )
+position = Vector2( 1368, 329 )
 rotation = 0.185058
 scale = Vector2( 2, 2 )
 texture = ExtResource( 31 )
