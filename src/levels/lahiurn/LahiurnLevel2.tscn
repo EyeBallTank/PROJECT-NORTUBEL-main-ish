@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnMovingPlatCog.tscn" type="PackedScene" id=14]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -149,3 +150,6 @@ spritename = "lahiurn coin"
 [node name="Pushable" parent="." instance=ExtResource( 13 )]
 position = Vector2( -167, 2267 )
 spritename = "lahiurn pushable"
+
+[node name="LahiurnMovingPlatCog" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1536, 1724 )
