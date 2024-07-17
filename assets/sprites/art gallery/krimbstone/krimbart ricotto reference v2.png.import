@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/krimbart ricotto reference.png-64b46efaa7eb2833dd05331a0021d2c6.stex"
+path="res://.import/krimbart ricotto reference v2.png-cc6c6a498c1b23ad47421d8a63b3d0b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/krimbstone/krimbart ricotto reference.png"
-dest_files=[ "res://.import/krimbart ricotto reference.png-64b46efaa7eb2833dd05331a0021d2c6.stex" ]
+source_file="res://assets/sprites/art gallery/krimbstone/krimbart ricotto reference v2.png"
+dest_files=[ "res://.import/krimbart ricotto reference v2.png-cc6c6a498c1b23ad47421d8a63b3d0b2.stex" ]
 
 [params]
 
