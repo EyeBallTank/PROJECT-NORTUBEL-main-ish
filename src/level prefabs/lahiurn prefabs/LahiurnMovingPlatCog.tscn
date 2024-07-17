@@ -81,6 +81,7 @@ motion/sync_to_physics = true
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
 z_index = 15
 frames = SubResource( 7 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
