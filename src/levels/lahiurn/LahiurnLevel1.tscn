@@ -173,7 +173,6 @@ position = Vector2( -1737, 111 )
 rotation = -0.19036
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Plane2" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -181,7 +180,6 @@ position = Vector2( 1685, 440 )
 rotation = 0.16806
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 flip_h = true
 
@@ -190,6 +188,7 @@ position = Vector2( -1224, -934 )
 rotation = 0.40362
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="Bullets1" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -227,7 +226,7 @@ tile_set = ExtResource( 8 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1376262, 1, 0, 1441798, 1, 0, 1507334, 1, 0, 1572870, 1, 0 )
+tile_data = PoolIntArray( 1376262, 1, 0, 1441798, 1, 0, 1507334, 1, 0, 1572870, 1, 0, 1966074, 14, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 8 )
