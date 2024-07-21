@@ -50,6 +50,8 @@ signal you_can_kill_zhark_now
 
 signal hand_was_destroyed
 
+signal katrin_was_seen
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case
