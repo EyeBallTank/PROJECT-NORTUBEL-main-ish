@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 3 city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnThroneChairAndWall.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_hazards/lahiurn/LahiurnBurningBooks.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnAnimatedScreen.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=16]
 
 [sub_resource type="Animation" id=2]
 resource_name = "AndSoWasLeft"
@@ -363,5 +364,9 @@ position = Vector2( 968, 1760 )
 
 [node name="LahiurnAnimatedScreen" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1800, 1352 )
+
+[node name="Pushable" parent="." instance=ExtResource( 16 )]
+position = Vector2( 3217, 2363 )
+spritename = "lahiurn pushable"
 
 [editable path="LahiurnWoodenPlatFall"]

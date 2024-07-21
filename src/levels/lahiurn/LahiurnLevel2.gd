@@ -9,3 +9,6 @@ func _ready():
 
 func _sub_alarm_is_on():
 	animation.play("alarmon")
+
+#IDEA: IF BLUE SWITCH PRESSED, WATER RISES UP (LIKE IN MASSAGLEVEL2) AND A HORIZONTAL DOOR
+#OPENS TO REVEAL AN UPPER ROOM NOT AFFECTED BY WATER
