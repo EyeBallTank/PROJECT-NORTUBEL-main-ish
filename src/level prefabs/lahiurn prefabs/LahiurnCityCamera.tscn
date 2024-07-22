@@ -11,7 +11,7 @@ extents = Vector2( 331.25, 12.5 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "RESET"
-length = 2.0
+length = 6.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("maincamera/eyes/CollisionShape2D:disabled")
@@ -32,7 +32,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
+"times": PoolRealArray( 0, 3, 6 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ -36.8, 42.0774, -36.8194 ]

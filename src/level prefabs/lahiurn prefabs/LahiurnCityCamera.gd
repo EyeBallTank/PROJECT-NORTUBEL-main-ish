@@ -10,6 +10,6 @@ func _ready():
 
 
 func _on_eyes_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("protagonists"):
 		animation.play("camera saw")
 		Signals.emit_signal("katrin_was_seen")
