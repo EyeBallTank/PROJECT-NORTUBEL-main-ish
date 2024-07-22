@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/lahiurn animated screen.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnAnimatedScreen.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/lahiurn animated screen katrin.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/lahiurn animated screen pete.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 3 )
@@ -10,6 +11,14 @@ region = Rect2( 0, 0, 450, 325 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 3 )
+region = Rect2( 0, 325, 450, 325 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 450, 325 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 4 )
 region = Rect2( 0, 325, 450, 325 )
 
 [sub_resource type="AtlasTexture" id=1]
@@ -30,10 +39,10 @@ region = Rect2( 0, 975, 450, 325 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ SubResource( 6 ), SubResource( 7 ) ],
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
 "loop": true,
 "name": "caught",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
