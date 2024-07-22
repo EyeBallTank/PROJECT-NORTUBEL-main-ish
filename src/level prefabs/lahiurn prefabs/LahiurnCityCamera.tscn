@@ -87,6 +87,7 @@ collision_mask = 0
 
 [node name="eyes" type="Area2D" parent="maincamera"]
 collision_layer = 64
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="maincamera/eyes"]
 position = Vector2( -498.75, -138 )

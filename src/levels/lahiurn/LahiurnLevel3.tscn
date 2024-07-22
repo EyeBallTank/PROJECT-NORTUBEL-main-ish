@@ -312,7 +312,7 @@ position = Vector2( 155, 1853 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( 15, 1812 )
+position = Vector2( 24, 1794 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
