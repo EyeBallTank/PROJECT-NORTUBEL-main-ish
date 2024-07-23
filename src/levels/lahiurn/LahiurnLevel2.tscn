@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -12,7 +12,13 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnMovingPlatCog.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=19]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -148,3 +154,27 @@ spritename = "lahiurn coin"
 
 [node name="LahiurnMovingPlatCog" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1536, 1724 )
+
+[node name="Blue key" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2365, 2211 )
+spritename = "lahiurn blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2264, 2232 )
+spritename = "lahiurn redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2180, 2240 )
+spritename = "lahiurn yelkey"
+
+[node name="BlueDoor" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2506, 2557 )
+spritename = "lahiurn bludoor"
+
+[node name="RedDoor" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2255, 2522 )
+spritename = "lahiurn reddoor"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 19 )]
+position = Vector2( 2058, 2508 )
+spritename = "lahiurn yeldoor"
