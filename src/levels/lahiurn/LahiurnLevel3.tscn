@@ -348,6 +348,10 @@ position = Vector2( 6571, 988 )
 position = Vector2( 491, 1782 )
 boardname = "lahiurn art lomeshtin reference"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 3020, 1844 )
+boardname = "lahiurn art lahiurn main building"
+
 [node name="Door" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1228, 2988 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
