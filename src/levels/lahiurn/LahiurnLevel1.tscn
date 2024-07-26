@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -35,6 +35,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/lahiurn/lahiurn background war plane.png" type="Texture" id=33]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnWallDestroyableWood.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnWarPlatformSandbagsStairs.tscn" type="PackedScene" id=35]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnEletricCageTrap.tscn" type="PackedScene" id=36]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 33 )
@@ -355,3 +356,6 @@ position = Vector2( 5993, 296 )
 
 [node name="LahiurnWarPlatformSandbagsStairs" parent="." instance=ExtResource( 35 )]
 position = Vector2( 8934, -175 )
+
+[node name="LahiurnEletricCageTrap" parent="." instance=ExtResource( 36 )]
+position = Vector2( 4296, -38 )
