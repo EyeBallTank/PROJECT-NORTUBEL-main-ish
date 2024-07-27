@@ -112,13 +112,15 @@ func cutscene_over():
 #Charles: Alright, I'm trying to make sense of this. How did you brats even get to our base? For how long were you in world?
 #Carrie: At first, we were in a battlefield full of soldiers dressed in either blue or yellow. But we heard a conversation of 2 guys wanting to escape and they said something about submarines.
 #Carrie: We managed to get to a submarine but Melvin accidently touched something and the submarine moved to a place close to a city.
-#Carrie: And the city had so many cameras and security, we were only lucky because we stumbled upon someone's book with hints of hidden routes.
-#Jerold: That notebook could be my mother's. Something must have happened to her.
+#Carrie: And the city had so many cameras and security.
+#Oscar: We also found this thing (Shows book)
+#Charles: Wait a second, gimme that. Do you know how big this is? We might have confidential information here.
+#Charles: First thing I'm seeing here is information about prisoners... some marked as dead, others as alive...
+#Charles: Edwarda Hollenstud... this one's in the unknown category...
+#Jerold: That's my mother... she could be alive somewhere.
 #Angela: You're the man we saw in the war.
 #Pete: I guess we gotta thank you for how we got here.
 #Gustav: I don't feel proud that anyone heard our talk in the first place. It means we gotta be more carefull.
-#Oscar: We also found this thing (Shows golden book)
-#Charles: Wait a second, gimme that. Do you know how big this is? We might have confidential information here.
 #Jerold: Cpt Kendery, I can help you translate some of those documents. Just give me some time and I can do it.
 #Charles: Sure thing. Anyway, how can we tank you kids?
 #Carrie: Just let us go home! Give us some space and we can open a portal with the device, so we can leave.
