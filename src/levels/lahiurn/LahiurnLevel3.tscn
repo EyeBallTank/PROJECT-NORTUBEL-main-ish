@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 3 city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://src/level_hazards/lahiurn/LahiurnLaserHazard.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/sprites/level_backgrounds/lahiurn/lahiurn background main building.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/level_backgrounds/lahiurn/lahiurn city bg.png" type="Texture" id=20]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnLabTableDocuments.tscn" type="PackedScene" id=21]
 
 [sub_resource type="Animation" id=2]
 resource_name = "AndSoWasLeft"
@@ -399,5 +400,8 @@ position = Vector2( 2547, 1175 )
 
 [node name="LahiurnLaserHazard" parent="." instance=ExtResource( 18 )]
 position = Vector2( 1517, 1612 )
+
+[node name="LahiurnLabTableDocuments" parent="." instance=ExtResource( 21 )]
+position = Vector2( 3748, 2472 )
 
 [editable path="LahiurnWoodenPlatFall"]
