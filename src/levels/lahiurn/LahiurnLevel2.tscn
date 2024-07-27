@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=19]
 [ext_resource path="res://assets/sprites/level_backgrounds/lahiurn/lahiurn background main building.png" type="Texture" id=20]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnSubHorizDoor.tscn" type="PackedScene" id=21]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -189,3 +190,6 @@ spritename = "lahiurn reddoor"
 [node name="YellowDoor" parent="." instance=ExtResource( 19 )]
 position = Vector2( 2058, 2508 )
 spritename = "lahiurn yeldoor"
+
+[node name="LahiurnSubHorizDoor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 706, 2295 )
