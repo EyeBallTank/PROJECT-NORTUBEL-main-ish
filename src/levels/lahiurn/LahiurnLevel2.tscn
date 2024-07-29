@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -22,6 +22,8 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/lahiurn/lahiurn background main building.png" type="Texture" id=20]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnSubHorizDoor.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -197,3 +199,11 @@ position = Vector2( 706, 2295 )
 
 [node name="Gong" parent="." instance=ExtResource( 22 )]
 position = Vector2( 1573, 1363 )
+
+[node name="jump thru" parent="." instance=ExtResource( 23 )]
+position = Vector2( 342, 1084 )
+scale = Vector2( 24, 24 )
+collision_newsize = Vector2( 24, 24 )
+
+[node name="Water" parent="." instance=ExtResource( 24 )]
+position = Vector2( 474, 993 )
