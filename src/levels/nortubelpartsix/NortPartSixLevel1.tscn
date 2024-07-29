@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/npc_actors/brink npc/ClaudiaNPC.tscn" type="PackedScene" id=13]
 
 [node name="NortPartSixLevel1" type="Node2D"]
 __meta__ = {
@@ -156,3 +157,10 @@ customtext = "cl4ud1"
 [node name="LoreBook" parent="." instance=ExtResource( 11 )]
 position = Vector2( 518, 956 )
 customtext = "NORT_LORE_DIFFERENT_MEANINGS_TEXT"
+
+[node name="ClaudiaNPC" parent="." instance=ExtResource( 13 )]
+position = Vector2( 292, 822 )
+customtext = "CLAUDIA_NPC_TEXT"
+customtext2 = "CLAUDIA_NPC_HONK"
+customtext3 = "CLAUDIA_NPC_HUG"
+customtext4 = "CLAUDIA_NPC_HURT"
