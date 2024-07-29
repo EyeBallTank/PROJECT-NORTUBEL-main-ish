@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=42 format=2]
+[gd_resource type="TileSet" load_steps=43 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/lahiurn/LAHIURN 3 CITY TILE PASSABLE.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/lahiurn/LAHIURN 3 CITY TILE SOLID.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/tile sets/lahiurn/LAHIURN SINGLE TILE STAPHEN PORTRAIT.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/tile sets/lahiurn/LAHIURN TILES HUGE PIPES.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/tile sets/lahiurn/LAHIURN SINGLE TILE CITY TREE.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/tile sets/lahiurn/LAHIURN SINGLE TILE LAHIURN FLAG.png" type="Texture" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -1489,3 +1490,45 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 83/shape_one_way_margin = 0.0
 83/shapes = [  ]
 83/z_index = 0
+84/name = "LAHIURN SINGLE TILE LAHIURN FLAG.png 84"
+84/texture = ExtResource( 12 )
+84/tex_offset = Vector2( 0, 0 )
+84/modulate = Color( 1, 1, 1, 1 )
+84/region = Rect2( 0, 0, 256, 320 )
+84/tile_mode = 0
+84/occluder_offset = Vector2( 0, 0 )
+84/navigation_offset = Vector2( 0, 0 )
+84/shape_offset = Vector2( 0, 0 )
+84/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+84/shape_one_way = false
+84/shape_one_way_margin = 0.0
+84/shapes = [  ]
+84/z_index = 0
+85/name = "LAHIURN 3 CITY TILE PASSABLE.png 85"
+85/texture = ExtResource( 1 )
+85/tex_offset = Vector2( 0, 0 )
+85/modulate = Color( 1, 1, 1, 1 )
+85/region = Rect2( 64, 1472, 64, 64 )
+85/tile_mode = 0
+85/occluder_offset = Vector2( 0, 0 )
+85/navigation_offset = Vector2( 0, 0 )
+85/shape_offset = Vector2( 0, 0 )
+85/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+85/shape_one_way = false
+85/shape_one_way_margin = 0.0
+85/shapes = [  ]
+85/z_index = 0
+86/name = "LAHIURN 3 CITY TILE PASSABLE.png 86"
+86/texture = ExtResource( 1 )
+86/tex_offset = Vector2( 0, 0 )
+86/modulate = Color( 1, 1, 1, 1 )
+86/region = Rect2( 128, 1472, 64, 64 )
+86/tile_mode = 0
+86/occluder_offset = Vector2( 0, 0 )
+86/navigation_offset = Vector2( 0, 0 )
+86/shape_offset = Vector2( 0, 0 )
+86/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+86/shape_one_way = false
+86/shape_one_way_margin = 0.0
+86/shapes = [  ]
+86/z_index = 0
