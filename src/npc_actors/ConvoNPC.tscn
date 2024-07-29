@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -37,6 +37,7 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo Braaaaaaaadwiiiiiin Mecanita.png" type="Texture" id=35]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo illou Monica.png" type="Texture" id=36]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo Bonky Linda.png" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo Claudia Katrin.png" type="Texture" id=38]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -104,6 +105,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 33 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 38 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=32]
@@ -259,6 +264,11 @@ animations = [ {
 "frames": [ SubResource( 42 ) ],
 "loop": false,
 "name": "clarity yiegour",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 47 ) ],
+"loop": false,
+"name": "claudia katrin",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 32 ) ],
@@ -537,7 +547,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "bonky linda"
+animation = "claudia katrin"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )
