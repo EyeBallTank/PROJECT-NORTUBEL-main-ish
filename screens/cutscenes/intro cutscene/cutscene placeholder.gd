@@ -165,6 +165,8 @@ func cutscene_over():
 
 
 #Namylea: It seems the dolls aren't active anymore. We could be safe now.
+#Oscar: There's at least one broken doll. Turns out we didn't save someone.
+#Carrie: Hey, that's the guy tied to the traffic light back in Krimb-Stone. Poor guy, though I figured he'd be gone already. 
 #Melvin: By the way, I reconfigered this device back to your place. At least I hope I did it.
 #Namylea: No, you got it right! Thank you all. it was a great honor being here with you kids.
 #Namylea leaves
