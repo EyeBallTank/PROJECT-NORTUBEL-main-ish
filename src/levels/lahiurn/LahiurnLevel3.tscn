@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 3 city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -23,6 +23,9 @@
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnLabTableDocuments.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/enemies/lahiurn/LahiurnSoldier.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/enemies/lahiurn/LahiurnNightRider.tscn" type="PackedScene" id=26]
 
 [sub_resource type="Animation" id=2]
 resource_name = "AndSoWasLeft"
@@ -413,5 +416,16 @@ position = Vector2( 1783, 1056 )
 position = Vector2( 2090, 964 )
 scale = Vector2( 24, 24 )
 collision_newsize = Vector2( 24, 24 )
+
+[node name="LoreBook" parent="." instance=ExtResource( 24 )]
+position = Vector2( 2325, 2811 )
+customtext = "LAHIURN_LORE_TEXT_LAB_CHAIR"
+spritename = "lahiurn lorebook"
+
+[node name="LahiurnSoldier" parent="." instance=ExtResource( 25 )]
+position = Vector2( 4282, 2789 )
+
+[node name="LahiurnNightRider" parent="." instance=ExtResource( 26 )]
+position = Vector2( 4543, 2734 )
 
 [editable path="LahiurnWoodenPlatFall"]
