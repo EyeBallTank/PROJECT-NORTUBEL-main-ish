@@ -189,7 +189,7 @@ boardname = "brink art bonka reference"
 
 [node name="Door" parent="." instance=ExtResource( 12 )]
 position = Vector2( 7624, 1154 )
-new_scene = "res://src/levels/LevelTemplate7.tscn"
+new_scene = "res://screens/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix.tscn"
 spritename = "brinkaedea greendoor"
 customtext = "b0nk44"
 
