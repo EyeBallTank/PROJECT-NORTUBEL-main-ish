@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -13,6 +13,11 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/npc_actors/brink npc/ClaudiaNPC.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_objects/ConveyorRight.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level_objects/Soccel Goal.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_items/SoccerBallBag.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/RedButton.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/RedButtonGate.tscn" type="PackedScene" id=18]
 
 [node name="NortPartSixLevel1" type="Node2D"]
 __meta__ = {
@@ -29,14 +34,13 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 851976, 91, 0, 917512, 91, 0, 983048, 91, 0, 1048584, 91, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 720889, 50, 0, 786425, 50, 0, 851961, 50, 0, 917497, 50, 0, 983033, 50, 0, 1048569, 50, 0, 1114105, 50, 0, 1048593, 50, 0, 1048594, 50, 0, 1048595, 50, 0, 1048596, 50, 0, 1179641, 50, 0, 1179642, 50, 0, 1179643, 50, 0, 1179644, 50, 0, 1179645, 50, 0, 1179646, 50, 0, 1179647, 50, 0, 1114112, 50, 0, 1114113, 50, 0, 1114114, 50, 0, 1114115, 50, 0, 1114116, 50, 0, 1114117, 50, 0, 1114118, 50, 0, 1114119, 50, 0, 1114120, 50, 0, 1114121, 50, 0, 1114122, 50, 0, 1114123, 50, 0, 1114124, 50, 0, 1114125, 50, 0, 1114126, 50, 0, 1114127, 50, 0, 1114128, 50, 0 )
+tile_data = PoolIntArray( 655376, 236, 0, 720901, 235, 0, 983054, 281, 0, 983055, 282, 0, 983056, 282, 0, 983057, 282, 0, 983058, 282, 0, 983059, 282, 0, 983060, 282, 0, 983061, 536871193, 0, 1048591, 283, 0, 1048592, 283, 0, 1048593, 283, 0, 1048594, 283, 0, 1048595, 283, 0, 1048596, 283, 0, 1114114, 322, 0, 1114115, 323, 0, 1114116, 323, 0, 1114117, 323, 0, 1114118, 323, 0, 1114119, 323, 0, 1114120, 323, 0, 1114121, 323, 0, 1114122, 323, 0, 1114123, 536871234, 0, 1179651, 536871191, 0, 1179658, 536871191, 0, 1245187, 536871192, 0, 1245194, 536871192, 0, 1310723, 536871192, 0, 1310730, 536871192, 0, 1376259, 536871192, 0, 1376266, 536871192, 0, 1441795, 536871192, 0, 1441802, 536871192, 0, 1507331, 536871192, 0, 1507338, 536871192, 0, 1572867, 536871192, 0, 1572874, 536871192, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -44,7 +48,6 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 851975, 91, 0, 917511, 91, 0, 983047, 91, 0, 1048583, 91, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 797, 817 )
@@ -66,67 +69,67 @@ companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 worldname = "nortubel2"
 
 [node name="LevelProp" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1095, 743 )
+position = Vector2( 1950, -526 )
 propname = "nortprop redyellow umbrella"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1331, 637 )
+position = Vector2( 2186, -632 )
 propname = "nortprop restaurant table green chairs"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1439, 851 )
+position = Vector2( 2294, -418 )
 propname = "nortprop rocks wall foliage"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2177, 933 )
+position = Vector2( 3032, -336 )
 propname = "nortprop rocky struckture arc "
 
 [node name="LevelProp5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1870, 552 )
+position = Vector2( 2725, -717 )
 propname = "nortprop school table chairs"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2039, 431 )
+position = Vector2( 2894, -838 )
 propname = "nortprop sideways house part"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1913, 973 )
+position = Vector2( 2768, -296 )
 propname = "nortprop small building 1"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1762, 980 )
+position = Vector2( 2617, -289 )
 propname = "nortprop small building 2"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2032, 983 )
+position = Vector2( 2887, -286 )
 propname = "nortprop small building 3"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1914, 1104 )
+position = Vector2( 2769, -165 )
 propname = "nortprop small building 4"
 
 [node name="LevelProp11" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2060, 1119 )
+position = Vector2( 2915, -150 )
 propname = "nortprop small building 5"
 
 [node name="LevelProp12" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1783, 1111 )
+position = Vector2( 2638, -158 )
 propname = "nortprop small building 6"
 
 [node name="LevelProp13" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1866, 851 )
+position = Vector2( 2721, -418 )
 propname = "nortprop small building 7"
 
 [node name="LevelProp14" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1951, 809 )
+position = Vector2( 2806, -460 )
 propname = "nortprop small building 8"
 
 [node name="LevelProp15" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1422, 401 )
+position = Vector2( 2277, -868 )
 propname = "nortprop wood stand"
 
 [node name="LevelProp16" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1591, 386 )
+position = Vector2( 2446, -883 )
 propname = "nortprop wood stand 2"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 9 )]
@@ -155,7 +158,7 @@ new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel2.tscn"
 customtext = "cl4ud1"
 
 [node name="LoreBook" parent="." instance=ExtResource( 11 )]
-position = Vector2( 518, 956 )
+position = Vector2( 1734, 1534 )
 customtext = "NORT_LORE_DIFFERENT_MEANINGS_TEXT"
 
 [node name="ClaudiaNPC" parent="." instance=ExtResource( 13 )]
@@ -164,3 +167,18 @@ customtext = "CLAUDIA_NPC_TEXT"
 customtext2 = "CLAUDIA_NPC_HONK"
 customtext3 = "CLAUDIA_NPC_HUG"
 customtext4 = "CLAUDIA_NPC_HURT"
+
+[node name="ConveyorRight" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1937, 879 )
+
+[node name="Soccer Goal" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2940, 730 )
+
+[node name="SoccerBallBag" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2635, 375 )
+
+[node name="RedButton" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2635, 1200 )
+
+[node name="RedButtonGate" parent="." instance=ExtResource( 18 )]
+position = Vector2( 3054, 1378 )
