@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=2]
@@ -15,6 +15,13 @@
 [ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=22]
 
 [node name="NortPartSixLevel3" type="Node2D"]
 
@@ -85,3 +92,24 @@ position = Vector2( 1243, 64 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1058, 75 )
+
+[node name="Coin" parent="." instance=ExtResource( 16 )]
+position = Vector2( 3663, 1669 )
+
+[node name="Blue key" parent="." instance=ExtResource( 17 )]
+position = Vector2( 4734, 2031 )
+
+[node name="Red key" parent="." instance=ExtResource( 19 )]
+position = Vector2( 4213, 2016 )
+
+[node name="Yellow key" parent="." instance=ExtResource( 18 )]
+position = Vector2( 4070, 1676 )
+
+[node name="BlueDoor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 4908, 1638 )
+
+[node name="RedDoor" parent="." instance=ExtResource( 20 )]
+position = Vector2( 5127, 1714 )
+
+[node name="YellowDoor" parent="." instance=ExtResource( 22 )]
+position = Vector2( 4546, 1759 )
