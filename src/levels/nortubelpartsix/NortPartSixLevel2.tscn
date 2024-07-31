@@ -33,7 +33,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 1507306, 50, 0, 1507307, 50, 0, 1507308, 50, 0, 1507309, 50, 0, 1507310, 50, 0, 1507311, 50, 0, 1507312, 50, 0, 1507313, 50, 0, 1507314, 50, 0, 1507315, 50, 0, 1507316, 50, 0, 1507317, 50, 0, 1507318, 50, 0, 1507319, 50, 0, 1507320, 50, 0, 1507321, 50, 0, 1507322, 50, 0, 1507323, 50, 0, 1507324, 50, 0, 1507325, 50, 0, 1507326, 50, 0, 1507327, 50, 0, 1441792, 50, 0, 1441793, 50, 0, 1441794, 50, 0, 1441795, 50, 0, 1441796, 50, 0, 1441797, 50, 0, 1441798, 50, 0, 1441799, 50, 0, 1441800, 50, 0, 1441801, 50, 0, 1441802, 50, 0, 1441803, 50, 0, 1441804, 50, 0, 1441805, 50, 0, 1441806, 50, 0, 1441807, 50, 0, 1441808, 50, 0, 1441809, 50, 0, 1441810, 50, 0, 1441811, 50, 0 )
+tile_data = PoolIntArray( 1441806, 316, 0, 1441815, 316, 0, 1507342, 316, 0, 1507351, 316, 0, 1638389, 316, 0, 1638390, 316, 0, 1638391, 316, 0, 1638392, 316, 0, 1638393, 316, 0, 1638394, 316, 0, 1638395, 316, 0, 1638396, 316, 0, 1638397, 316, 0, 1638398, 316, 0, 1638399, 316, 0, 1572864, 316, 0, 1572865, 316, 0, 1572877, 316, 0, 1572878, 316, 0, 1572879, 316, 0, 1572880, 316, 0, 1572881, 316, 0, 1572882, 316, 0, 1572883, 316, 0, 1572884, 316, 0, 1572885, 316, 0, 1572886, 316, 0, 1572887, 316, 0, 1572888, 316, 0, 1572889, 316, 0, 1572890, 316, 0, 1572891, 316, 0, 1638401, 316, 0, 1638413, 316, 0, 1703937, 316, 0, 1703949, 316, 0, 1769473, 316, 0, 1769485, 316, 0, 1835009, 316, 0, 1835010, 316, 0, 1835011, 316, 0, 1835012, 316, 0, 1835013, 316, 0, 1835014, 316, 0, 1835015, 316, 0, 1835016, 316, 0, 1835017, 316, 0, 1835018, 316, 0, 1835019, 316, 0, 1835020, 316, 0, 1835021, 316, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -50,84 +50,84 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1026, 1259 )
+position = Vector2( -589, 1462 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1026, 1259 )
+position = Vector2( -589, 1462 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1159, 1236 )
+position = Vector2( -456, 1439 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1159, 1236 )
+position = Vector2( -456, 1439 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1731, 150 )
+position = Vector2( 2522, 145 )
 propname = "nortprop beanbag chair"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2179, 175 )
+position = Vector2( 2970, 170 )
 propname = "nortprop big cream pastel"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2954, 390 )
+position = Vector2( 3745, 385 )
 propname = "nortprop big fountain"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1126, 310 )
+position = Vector2( 4215, 295 )
 propname = "nortprop blue cabinet 1"
 
 [node name="LevelProp5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1371, 347 )
+position = Vector2( 4652, 282 )
 propname = "nortprop blue cabinet 2"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3098, 326 )
+position = Vector2( 3889, 321 )
 propname = "nortprop chest with 2 openings"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2680, 305 )
+position = Vector2( 3471, 300 )
 propname = "nortprop door 5"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2180, 411 )
+position = Vector2( 2971, 406 )
 propname = "nortprop green cabinet"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1744, 354 )
+position = Vector2( 2535, 349 )
 propname = "nortprop green fence metal"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2510, 452 )
+position = Vector2( 3301, 447 )
 propname = "nortprop lamp"
 
 [node name="ArtBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1276, 1349 )
+position = Vector2( 1723, -156 )
 boardname = "nort art weird dream"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 284, 1349 )
+position = Vector2( 2502, -133 )
 boardname = "nort art awkward dream two"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 8 )]
-position = Vector2( -649, 1349 )
+position = Vector2( 1715, 1473 )
 boardname = "hhtrintina art reference"
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1432, 1825 )
+position = Vector2( 4686, 1083 )
 new_scene = "res://src/levels/nortubelpartsix/NortPartSixLevel3.tscn"
 customtext = "b0nk3t"
 
 [node name="NortDanceTV" parent="." instance=ExtResource( 10 )]
-position = Vector2( 653, 1313 )
+position = Vector2( 2093, -171 )
 
 [node name="HhtrintinaNPC" parent="." instance=ExtResource( 11 )]
-position = Vector2( -181, 1239 )
+position = Vector2( 1217, 1390 )
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 13 )]
-position = Vector2( -969, 1186 )
+position = Vector2( -166, 1346 )
 customtext1 = "CLAUDIA_KATRIN_CONVO_1"
 customtext2 = "CLAUDIA_KATRIN_CONVO_2"
 customtext3 = "CLAUDIA_KATRIN_CONVO_3"
