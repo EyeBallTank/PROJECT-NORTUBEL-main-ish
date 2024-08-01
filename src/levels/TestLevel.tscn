@@ -14,10 +14,10 @@
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=14]
-[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnMountedTurretGun.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
-[ext_resource path="res://src/enemies/lahiurn/LahiurnSoldier.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -89,8 +89,10 @@ autoplay = "test"
 anims/RESET = SubResource( 1 )
 anims/test = SubResource( 2 )
 
-[node name="LahiurnMountedTurretGun" parent="." instance=ExtResource( 15 )]
-position = Vector2( 2129, -1912 )
+[node name="Ladder" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2762, -1873 )
 
-[node name="LahiurnSoldier" parent="." instance=ExtResource( 18 )]
-position = Vector2( 3122, -1944 )
+[node name="Water" parent="." instance=ExtResource( 18 )]
+position = Vector2( 3032, -1894 )
+scale = Vector2( 64, 64 )
+collision_newsize = Vector2( 64, 64 )

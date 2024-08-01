@@ -46,13 +46,12 @@ tracks/0/keys = {
 script = ExtResource( 3 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 776, -792 )
+position = Vector2( 184, -792 )
 collision_layer = 8192
 collision_mask = 3
 motion/sync_to_physics = true
 
 [node name="back" type="Sprite" parent="KinematicBody2D"]
-z_index = 17
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]

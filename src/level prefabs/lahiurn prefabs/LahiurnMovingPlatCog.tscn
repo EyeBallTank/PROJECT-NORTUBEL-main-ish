@@ -23,7 +23,7 @@ extents = Vector2( 113.5, 45 )
 
 [sub_resource type="Curve2D" id=2]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -16, 0, 0, 0, 0, 0, 582, 0 )
+"points": PoolVector2Array( 0, 0, 0, 0, -16, 0, 0, 0, 0, 0, 1136, 0, 0, 0, 0, 0, 1136, -768, 0, 0, 0, 0, -16, -768, 0, 0, 0, 0, -16, 0 )
 }
 
 [sub_resource type="Animation" id=4]
@@ -55,7 +55,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "VerticalPlat"
-length = 9.0
+length = 6.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
@@ -64,7 +64,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 4.5 ),
+"times": PoolRealArray( 0, 6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0 ]
@@ -81,7 +81,6 @@ motion/sync_to_physics = true
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
 z_index = 15
 frames = SubResource( 7 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
