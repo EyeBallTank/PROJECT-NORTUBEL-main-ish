@@ -115,3 +115,6 @@ func attack_star():
 func _on_EnemyHurtbox_area_entered(area):
 	if area.name == "PlayerMelee":
 		state = DEAD
+	if area.name == "EnemyCrusher":
+		state = DEAD
+

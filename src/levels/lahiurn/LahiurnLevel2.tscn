@@ -290,9 +290,6 @@ spritename = "lahiurn coin"
 [node name="LahiurnMovingPlatCog" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1585, 2360 )
 
-[node name="Sprite" parent="LahiurnMovingPlatCog/Platform" index="0"]
-frame = 1
-
 [node name="Blue key" parent="." instance=ExtResource( 15 )]
 position = Vector2( 3677, 1497 )
 spritename = "lahiurn blukey"

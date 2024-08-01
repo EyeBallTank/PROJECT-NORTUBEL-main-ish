@@ -205,11 +205,13 @@ tracks/15/keys = {
 [node name="LahiurnFlechette" type="Node2D"]
 
 [node name="TEST1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 42, -606 )
 rotation = 1.57079
 texture = ExtResource( 1 )
 
 [node name="TEST2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 26, 590 )
 rotation = 1.57079
 texture = ExtResource( 1 )
