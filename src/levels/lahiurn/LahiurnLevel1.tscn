@@ -180,7 +180,6 @@ position = Vector2( -1737, 111 )
 rotation = -0.19036
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Plane2" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -188,7 +187,6 @@ position = Vector2( 1685, 440 )
 rotation = 0.16806
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 flip_h = true
 
@@ -197,6 +195,7 @@ position = Vector2( -1224, -934 )
 rotation = 0.40362
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="Bullets1" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -304,9 +303,6 @@ position = Vector2( 567, 564 )
 [node name="LahiurnNightRider" parent="." instance=ExtResource( 11 )]
 position = Vector2( 6528, 890 )
 
-[node name="LahiurnNightRider2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 17908, 165 )
-
 [node name="LahiurnNightRider3" parent="." instance=ExtResource( 11 )]
 position = Vector2( 22383, 115 )
 
@@ -382,6 +378,9 @@ position = Vector2( 17757, 195 )
 
 [node name="BlueSwitch" parent="LahiurnRotatingPlatTrap" index="0"]
 position = Vector2( -434, -458 )
+
+[node name="LahiurnNightRider2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 17908, 165 )
 
 [node name="LahiurnLargeTank" parent="." instance=ExtResource( 22 )]
 position = Vector2( 25394, -464 )
