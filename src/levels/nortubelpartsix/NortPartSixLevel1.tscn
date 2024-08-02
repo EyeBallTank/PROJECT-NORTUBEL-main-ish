@@ -53,6 +53,13 @@ collision_layer = 4
 collision_mask = 0
 format = 1
 
+[node name="outlines" type="TileMap" parent="."]
+z_index = 17
+tile_set = ExtResource( 7 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 797, 817 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
