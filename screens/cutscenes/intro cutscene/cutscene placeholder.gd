@@ -209,19 +209,61 @@ func cutscene_over():
 
 
 #Katrin: Here is is, another piece. Thank you miss Uulga.
-#Katrin: Is anything alright.
-#Uulga: Don't worry, I'm just... there's something about this place... I tried to ignore it but...
-#Katrin: Are you scared of something? Sorry about that question but-
-#Uulga: No, you're right. It is fear I'm having. Everyone can have that.
-#Oscar: Well, when we got lost, I was very scared too. But at least now, not as much.
-#Carrie: Maybe it's because of the odds we managed to overcome. None for us can speak for miss Uulga, though.
-#Uulga: Perhaps that's what it takes... overcome something and it'll change you.
-#Uulga: But still, I should return home. Do you want anything else?
-#Melvin: No, thanks. We gotta bo back... what about you miss.
-#Uulga: Yes, I have a request. Come here!
-#Uulga hugs the 6 at once.
+#Katrin: I guess we can go now, though it's a bit soon.
+#Uulga: I must go back home. How about another trip on my ship before you all leave?
+#Oscar: Yay, that'd be cool.
+#On the ship
+#Carrie: Miss Uulga... how did you lose your eye.
+#Uulga: A few years back, I was fishing and then a sword-shark attacked me.
+#Uulga: He stabbed my eye but then I ripped apart his blade and fought him back.
+#Uulga: Made myself a nice meal out of what's left of him. But I still had to adapt to my eye loss.
+#Pete: Cool, did you keep the blade?
+#Uulga: I kept it in the ship's bedroom, above the bed.
+#Ship returns to Herrko
+#Melvin: Miss Uulga, thank you for helping us. Hope we get to see you again after we return home.
+#Uulga: No problem, I gotta thank you all as well. I wouldn't have gone to that island if not for you.
+#Angela: Really, but why?
+#Uulga: They say that place has some dark secrets that could change everything about this world.
+#Uulga: But you kids are outsiders who needed some help. Maybe focusing on that helped.
+#Carrie: Well, most of us were scared when we got lost. But after everything we've been through, we realized we don't need fear to hold us back.
+#Uulga: Exactly. I could tell there's something in you.
+#Katrin: Maybe  we could go. Miss Uulga is there anything you'd like us to do before we leave?
+#Uulga: Yes. Come here.
+#Uulga hugs them
 #Uulga: Go back home safely. I'm sure you kids can do it.
 #The 6 leave
-#Uulga returns safely too
+#Uulga: I know it won't be the last time I'll ever be in that island.
+#Uulga: Still, I can't let fear conquer me.
+#Uulga: Besides... I'd like to be a mother some day.
 #Nort part 6
 #The six could be arguing about their parents before meeting the alt versions
+#Oscar: Carrie, is dad alright? Why would mom do something like that?
+#Carrie: Oscar, like I said: Mom lost it. Even if she knows it, it's too late.
+#Pete: Is that why dad doesn't want to talk with me? Is my entire life wrong?
+#Katrin: Pete, don't say that. You have nothing to do with uncle. We stil love you and you love us back. You deserve to be happy and decide your fate.
+#Angela: Why didn't you save dad? You could've done something.
+#Melvin: Dad's the reason why you barely got to be with mom. He always wanted to go out anyway. Besides, uncle will take care of us.
+#Carrie: Uh? What are you guys doing? 
+#Alt Angela: This world is becoming less stable, though it was bound to happen.
+#Alt Angela: We've been here for longer yet even we don't know what it is.
+#Alt Angela: But someone told us that only some could ever return home. Because if 2 universes are too close to each other, one must go.
+#Katrin: What are you guys talking about?
+#Alt Oscar: It's either your group or ours. At least according to Knoe.
+#Alt Oscar: I wish we all got along, we could've forgive you for what happened to Amalia.
+#Alt Oscar: But now we got a chance to return home and we're getting desperate.
+#Melvin: But we're the ones who have this box.
+#Alt Angela: We've also had ours and it's more advanced. In truth, these objects do more than transdimensional travel.
+#Alt Angela: They can affect reality too and yours, being an inferior object, might as well be causing issues around you.
+#Alt Angela: It could erase you 6 without even knowing. But in our case, we can decide whether or not you get to return home.
+#Carrie: You're insane! There's no way any of that is true. Can't you at least wait until my grandma saves my group?
+#Alt Angela: The clock is ticking. You're all far behind, as you always were. Goodbye.
+#Alt 6 vanish
+#Oscar: I don't wanna die, sis! I don't wanna die.
+#Katrin: We must figure something quick! Mel!
+#Melvin: Hold on, the box is shaking, it seems to be moving towards somewhere.
+#Melvin: Whatever it is, we should follow it.
+
+#Melvin: Another piece.
+
+
+
