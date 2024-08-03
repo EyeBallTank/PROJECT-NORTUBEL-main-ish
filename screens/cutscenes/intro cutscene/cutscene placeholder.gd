@@ -263,7 +263,112 @@ func cutscene_over():
 #Melvin: Hold on, the box is shaking, it seems to be moving towards somewhere.
 #Melvin: Whatever it is, we should follow it.
 
-#Melvin: Another piece.
+#Katrin: Pete? What are you looking at?
+#Pete: It's that thing... what is that?
+#Melvin: Looks like a tree trunk... but is that a bone on the side?
+#Carrie: Is that a lightning bolt? What's that behind?
+#Pete: Looks like one of those transparent pool floaters.. but there's stuff inside.
+#Katrin: Is it like those types of fish and sea life, that are transparents and weird looking?
+#Angela: It has teeth too. Are those teeth?
+#Oscar: He looks creepy... or is it a girl?
+#HHGHH: HHHGHHH HHHGGGHHHGHGHG GGHHHH
+#Melvin: What is that noise? Let's just get out of here!
+
+#Melvin: Another piece. Let's see if it can help.
+#Haunted house shows up
+#Oscar: Carrie, I'm scared.
+#Pete: This place looks scary. Did we die?
+#??????: What difference does it make, when even the dead aren't free from this turmoil?
+#Carrie: WHAT WAS THAT?
+#??????: Teeheeheheheheheheheheheheee
+#Katrin: Knock it off! We know someone's out there!
+#??????: Poor souls....
+#??????: Never did they know...
+#??????: What hit them...
+#??????: and it hit them so....
+#Melvin: Who are you? I can tell by your voices you're just a bunch of kids.
+#??????: Correct, we shall reveal ourselves.
+#Kalub and Aliss show up
+#Kalub: We are indeed kids.
+#Aliss: As we've always been.
+#Both: For centuries.
+#Katrin: Why are you two blue? What happened?
+#Kalub: We don't remember who we were before death...
+#Aliss: Only that we might've been humans... like you...
+#Angela: Whose house is this? Was it yours?
+#Kalub: It's not just a house...
+#Aliss: There's a lot more than that...
+
+#Kalub and Aliss: Our group has been captured! Their souls are in danger.
+#Melvin: What's going on?
+#Kalub: It appears to be a strange ritual taking advantage of the undead.
+#Aliss: And we can't interfere, for it is being manipulated by exorcists from the living world.
+#Carrie: We're alive, you think you can save them?
+#Kalub: We shall be grateful...
+#Aliss: And we shall help back in return...
+
+#Cornelius: We're free!
+#Taaf: This putrid torture is over!
+#Marcus: Hahahahaha! Not this time!
+#Maikouto: Feels good to be back, doesn't?
+#Beatrice: My children, where have you been?
+#Kalub: These mortals were the ones that saved you.
+#Aliss: We couldn't interfere, though it seems the ritual wasn't prevending outsiders that were alive.
+#Kalub: Speaking of, how may we repay you?
+#Katrin: No need to, honestly. We must leave and return home.
+#Kalub: Ís it so?... *gets closer to Oscar* (could be a seperate panel on his own)
+#Beatrice: Kalub! What did I say about taking blood from living children like him?
+#Kalub: There's something about his blood... it has a familiar smell.
+#Beatrice: How so?
+#Beatrice: I see.. you two... share some blood with me?
+#Carrie: How? Are we related?
+#Beatrice: My name is Beatrice Margareen, which is one of the few things I remember from my past life.
+#Beatrice: During that life, I might've had a family that went on by generations without me.
+#Carrie: Margareen is my grandma's surname. But she never told that much about past family members.
+#Beatrice: Did my family forget about me? And if so... was it unintentionally?
+#Carrie: Maybe I could talk with my grandma about it. And that is if we return home.
+#Melvin: We will, Carrie. That's why we must go. Whether we see anyone here again comes later.
+#Carrie: Okay. Well, we must go. Good bye.
+#Beatrice: Farewell, children. Live well, for as we undead had our living memories taken from us.
+#Marcus: Who knows... maybe there's good reasons why we forgot everything except our names.
+#Taaf: Some day... we shall all know our lost truths... it'll come at a price.
+#Nort part 9
+#Angela: What's going on? Are we coming back to those places?
+#Carrie: What if they were right? Reality is falling apart.
+#??????: But these effects are temporary. Normalcy can be achieved once again.
+#Katrin: Who are you.
+#AB-YZ: A simple enough name for me is AB-YZ. My real name can't be translated by your translation device of Hirdrih.
+#AB-YZ: I've been watching you ever since you got lost. Oscar even saw me under the from of a red crystal.
+#AB-YZ: The device you've used to come across worlds is indeed causing issues, as entities and elements from different worlds are being dragged here.
+#AB-YZ: However, what the group of 6 from universe 5353 said about "close universes hurting each other" is false.
+#AB-YZ: It is a fabrication of one named Knoe. Entities from similar universes can coexist.
+#Carrie: So those others will get us killed based on a lie? And what do you mean by universe 53.. whatever that number is?
+#AB-YZ: In my language, numbers are more complicated but I used familiar ones to simplify things. Your universe is 5356.
+#AB-YZ: I category universes with specific numbers during my travels. But a majority of them are disappearing due to an unknown threat.
+#AB-YZ: Meanwhile, the current effects we are witnessing can be stopped by your actions. You need to find one more piece to gain full control of that device.
+#Carrie: I have another question. What exactly is this world that looks like Nortubel?
+#AB-YZ: Unfortunately, many answers could be truth: It could be built from dreams of the people of Nortubel as it could be a copycat dimension, either build by some entity or out of nowhere, with no true creator or rules.
+#AB-YZ: Some parts could be created, others could be directly borrowed from your world. This phenomenon applies to other worlds, even those you've visited.
+
+
+#Pete: Who is that guy? He looks alien... is he from...
+#Tfoorie: ???
+#Pete: Uh... you're not gonna hurt us are you?
+#Tfoorie: No. None of you are worthy. I seek true fighters.
+#Lahiurn soldier: What's this weapon? Is it from the future? Perhaps we can study its technolo-
+#Grek Multigun: WARNING. SECURITY SYTEM ACTIVE!
+#Lahiurn soldier: AAAARRGH!
+#Joolietta on the phone: Marlou? Are you there? I told you it'd happen...
+#Joolietta on the phone: Uh? What do you mean the artifact isn't doing anything? Then how come?
+#Matysha: Rico, you see this?
+#Ricotto: Yes. You think the world is ending?
+#Matysha: I always had moments I felt that. Whatever it is, we should still fight for our survival.
+#Avietta: I think Leon and Otto might want to know what's goin on.
+
+
+
+
+
 
 
 
