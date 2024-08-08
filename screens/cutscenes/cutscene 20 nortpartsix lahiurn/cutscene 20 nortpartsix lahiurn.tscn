@@ -1,10 +1,37 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 1.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 war sky.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 2.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 horatio shows up.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 4.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 5.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 3.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 8.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 6.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 7.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 animated plane.png" type="Texture" id=16]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 520, 437 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 16 )
+region = Rect2( 520, 0, 520, 437 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -39,6 +66,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
+[node name="Cutscene20WarSky" type="Sprite" parent="."]
+position = Vector2( 512, 1189 )
+scale = Vector2( 1.02708, 1.02708 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene20AnimatedPlane" type="AnimatedSprite" parent="."]
+position = Vector2( 256, 1193 )
+frames = SubResource( 5 )
+playing = true
+
+[node name="Cutscene20AnimatedPlane2" type="AnimatedSprite" parent="."]
+position = Vector2( 708, 1255 )
+rotation = 0.483065
+scale = Vector2( 0.710526, 0.710526 )
+frames = SubResource( 5 )
+playing = true
+
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -71,9 +115,52 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene20HoratioShowsUp" type="Sprite" parent="."]
+position = Vector2( 259, 230.569 )
+scale = Vector2( 1.13747, 1.13747 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel1" type="Sprite" parent="."]
+position = Vector2( 1246, 227 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel2" type="Sprite" parent="."]
+position = Vector2( -302, 235.5 )
+scale = Vector2( 1.20857, 1.20857 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel3" type="Sprite" parent="."]
+position = Vector2( 1670, 239 )
+scale = Vector2( 0.759, 0.759 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel4" type="Sprite" parent="."]
+position = Vector2( -865, 227.911 )
+scale = Vector2( 0.631762, 0.631762 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel5" type="Sprite" parent="."]
+position = Vector2( 2165, 235.168 )
+scale = Vector2( 0.696929, 0.696929 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel6" type="Sprite" parent="."]
+position = Vector2( 523, -291 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel7" type="Sprite" parent="."]
+position = Vector2( -242, -270 )
+scale = Vector2( 1.07736, 1.07736 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene20NortpartsixLahiurnPanel8" type="Sprite" parent="."]
+position = Vector2( 1349, -269 )
+texture = ExtResource( 13 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false

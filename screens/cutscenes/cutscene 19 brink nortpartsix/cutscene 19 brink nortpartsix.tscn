@@ -1,10 +1,35 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 13.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 18.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 24.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 12.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 17.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 4.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 10.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 14.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel thankyou.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 8.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 3.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 9.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 6.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 11.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 15.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 2.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 21.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 22.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 16.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 19.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 20.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 7.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 23.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 1.png" type="Texture" id=29]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 5.png" type="Texture" id=30]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,6 +96,7 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -92,3 +118,123 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="Cutscene19BrinkNortpartsixPanel1" type="Sprite" parent="."]
+position = Vector2( 271.191, 234.453 )
+scale = Vector2( 0.744912, 0.744912 )
+texture = ExtResource( 29 )
+
+[node name="Cutscene19BrinkNortpartsixPanel2" type="Sprite" parent="."]
+position = Vector2( 1233, 228.404 )
+scale = Vector2( 0.610724, 0.610724 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene19BrinkNortpartsixPanel3" type="Sprite" parent="."]
+position = Vector2( -200, 229 )
+scale = Vector2( 0.739583, 0.739583 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene19BrinkNortpartsixPanel4" type="Sprite" parent="."]
+position = Vector2( 1669, 229.659 )
+scale = Vector2( 0.65386, 0.65386 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene19BrinkNortpartsixPanelThankyou" type="Sprite" parent="."]
+position = Vector2( -730, 227 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene19BrinkNortpartsixPanel5" type="Sprite" parent="."]
+position = Vector2( 2220, 221 )
+texture = ExtResource( 30 )
+
+[node name="Cutscene19BrinkNortpartsixPanel6" type="Sprite" parent="."]
+position = Vector2( -1287, 235.5 )
+scale = Vector2( 0.856401, 0.856401 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene19BrinkNortpartsixPanel7" type="Sprite" parent="."]
+position = Vector2( 2721, 232 )
+texture = ExtResource( 27 )
+
+[node name="Cutscene19BrinkNortpartsixPanel8" type="Sprite" parent="."]
+position = Vector2( -1695, 230 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene19BrinkNortpartsixPanel9" type="Sprite" parent="."]
+position = Vector2( 523, -191 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene19BrinkNortpartsixPanel10" type="Sprite" parent="."]
+position = Vector2( -2107, 226.426 )
+scale = Vector2( 0.680971, 0.680971 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene19BrinkNortpartsixPanel11" type="Sprite" parent="."]
+position = Vector2( 3111, 228 )
+scale = Vector2( 1.28674, 1.28674 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene19BrinkNortpartsixPanel12" type="Sprite" parent="."]
+position = Vector2( 513, -620 )
+scale = Vector2( 0.819355, 0.819355 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene19BrinkNortpartsixPanel13" type="Sprite" parent="."]
+position = Vector2( 539, -1116 )
+scale = Vector2( 0.70178, 0.70178 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene19BrinkNortpartsixPanel14" type="Sprite" parent="."]
+position = Vector2( 1216, -318.669 )
+scale = Vector2( 0.661088, 0.661088 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene19BrinkNortpartsixPanel15" type="Sprite" parent="."]
+position = Vector2( 1739, -314.5 )
+scale = Vector2( 0.668079, 0.668079 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene19BrinkNortpartsixPanel16" type="Sprite" parent="."]
+position = Vector2( 538, -1598 )
+scale = Vector2( 0.97166, 0.97166 )
+texture = ExtResource( 24 )
+
+[node name="Cutscene19BrinkNortpartsixPanel17" type="Sprite" parent="."]
+position = Vector2( -282, -288 )
+scale = Vector2( 1.40333, 1.40333 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene19BrinkNortpartsixPanel18" type="Sprite" parent="."]
+position = Vector2( -882, -313 )
+scale = Vector2( 0.670977, 0.670977 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene19BrinkNortpartsixPanel19" type="Sprite" parent="."]
+position = Vector2( -1281, -311 )
+scale = Vector2( 0.513616, 0.513616 )
+texture = ExtResource( 25 )
+
+[node name="Cutscene19BrinkNortpartsixPanel20" type="Sprite" parent="."]
+position = Vector2( -1678, -315 )
+scale = Vector2( 0.580247, 0.580247 )
+texture = ExtResource( 26 )
+
+[node name="Cutscene19BrinkNortpartsixPanel21" type="Sprite" parent="."]
+position = Vector2( -2134, -321 )
+scale = Vector2( 0.891791, 0.891791 )
+texture = ExtResource( 22 )
+
+[node name="Cutscene19BrinkNortpartsixPanel22" type="Sprite" parent="."]
+position = Vector2( 524, -2106 )
+scale = Vector2( 0.939216, 0.939216 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene19BrinkNortpartsixPanel23" type="Sprite" parent="."]
+position = Vector2( -2554, 230.5 )
+scale = Vector2( 0.60533, 0.60533 )
+texture = ExtResource( 28 )
+
+[node name="Cutscene19BrinkNortpartsixPanel24" type="Sprite" parent="."]
+position = Vector2( 3611, 230.864 )
+scale = Vector2( 0.727685, 0.727685 )
+texture = ExtResource( 8 )
