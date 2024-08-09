@@ -2239,3 +2239,94 @@ Por agora, incluímos dois tipos de armamento.
 Ainda não testámos este trono porque falta um componente importante: Uma bateria."
 LAHIURN_TEXT_MOUNTED_GUN_INFO,Press S to activate the weapon.,Prime S para ativar a arma.
 LAHIURN_TEXT_ROPE_KNIFE_LEVEL_THREE,Cut the ropes with your knife.,Corta as cordas com a tua faca.
+CUTSCENE_19_TALK_1,"Help, somebody!","Socorro, ajudem-nos!"
+CUTSCENE_19_TALK_2,WHY IS THIS HAPPENING?,PORQUE É QUE ISTO ESTÁ A ACONTECER?
+CUTSCENE_19_TALK_3,"Now, for a special trick...","Agora, um truque especial..."
+CUTSCENE_19_TALK_4,There's a way out!,Ai está uma saída!
+CUTSCENE_19_TALK_5,"Thank you, sir!
+How did you do that?","Obrigado, senhor!
+Como é que fez aquilo?"
+CUTSCENE_19_TALK_6,"Well, a magician doesn't usually reveal his secrets.","Bem, um mágico normalmente não revela os seus segredos."
+CUTSCENE_19_TALK_7,"Bonka, what happened? I thought you wouldn't reach this low!","Bonka, o que aconteceu? Eu nunca achei que tu ias descer para este nível!"
+CUTSCENE_19_TALK_8,"Odin, I can explain. This wasn't part of my plan.","Odin, eu posso explicar. Isto não era parte do meu plano."
+CUTSCENE_19_TALK_9,"BONKY, WHERE HAVE YOU BEEN, YOU IDIOT?
+DON'T TELL ME YOU SLEPT WHEN I TOLD YOU TO LOOK AFTER THINGS WHILE I WAS GONE!","BONKY, ONDE É QUE FOSTE, SEU IDIOTA?
+NÃO ME DIGAS QUE ADORMECESTE DEPOIS DE TE DIZER PARA VIGIAR AS COISAS, QUANDO EU SAÍ!"
+CUTSCENE_19_TALK_10,"... uuhh... oi, ya know how easy it is for me to get sleepy and-","... uuhh... oi, tu sabes como eu fico com sono tão facilmente e-"
+CUTSCENE_19_TALK_11,Puff? You're still working for her? Don't you have anything better to do?,Puff? Ainda estás a trabalhar com ela? Não tens coisas mais interessantes para fazer?
+CUTSCENE_19_TALK_12,"Listen, all I wanted to do was humiliate you. I didn't mean to actually hurt you-","Ouvem, eu só queria gozar convosco. Eu não queria magoar ninguém-"
+CUTSCENE_19_TALK_13,"THAT'S IT! WE'RE DONE HERE!
+EVERYONE, LET'S GO!","JÁ CHEGA! ACABOU!
+PESSOAL, VAMOS EMBORA!"
+CUTSCENE_19_TALK_14,"WAIT, I almost forgot! I did see someone show up in the construction.
+Thought it was Bonka but she was.. bald and looked a bit scary...","ESPEREM, quase esquecia! Eu VI alguém que apareceu na construção.
+Pensava que era a Bonka mas... careca e um bocado assustadora..."
+CUTSCENE_19_TALK_15,"And I saw 2 kids with her, they looked like Monica and illou...
+But Monica had a pointy tooth and illou was dressed like a scientist.","E vi 2 crianças com ela, que pareciam a Monica e o illou...
+Mas a Monica tinha um dente pontiagudo e o illou estava vestido como um cientista."
+CUTSCENE_19_TALK_16,"You mean, like versions of Bonka and those 2 kids from a different universe?
+Because we also stumbled upon our own doubles.
+Carrie, do you think-","Estás a falar de versões da Bonka e essas 2 crianças de um universo diferente?
+Porque nós também nos encontramos os nossos duplos.
+Carrie, será que-"
+CUTSCENE_19_TALK_17,"I don't care, I just wanna leave this place.","Estou me nas tintas, eu só quero é sair deste lugar."
+CUTSCENE_19_TALK_18,You gotta believe me... ,Têm que acreditar em mim...
+CUTSCENE_19_TALK_19,Bonka... we have to go....,Bonka... temos que ir embora...
+CUTSCENE_19_TALK_20,"Don't worry Bonka, I believe you.","Não te preocupes, Bonka.
+Eu acredito em ti."
+CUTSCENE_19_TALK_21,"Honestly, I believe you too.
+After all, I believe that beneath a trouble maker like you, there's someone that could need some help.
+But duty is calling me, so I gotta go.","Sinceramente, eu também acredito em ti.
+Acredito que, por trás de uma rapariga marota como tu, existe alguém que pode precisar de ajuda.
+Mas o dever está a chamar-me, por isso tenho que ir."
+CUTSCENE_19_TALK_22,"Grrr Odin, you cheesy, pretentious, annoying...","Grrr Odin, seu foleiro, pretensioso, irritante..."
+CUTSCENE_19_TALK_23,"Big, strong, charming...","Grande, forte, charmoso..."
+CUTSCENE_19_TALK_24,"Bonka, you alright?","Bonka, estás bem?"
+CUTSCENE_19_TALK_25,"Well, there goes our plan. Nobody died and we were noticed.",Lá se vai o nosso plano. Ninguém morreu e fomos vistos.
+CUTSCENE_19_TALK_26,Well at least we were only seen by that stupid bunny.,Pelo menos foi só aquele coelho estúpido que nos viu.
+CUTSCENE_19_TALK_27,"But even the magician superhero believes her and if he believes it, more people will be aware.
+We better do something about it.","Mas até o super mágico acredita nela e por isso, mais pessoas podem acreditar.
+Temos que fazer algo."
+CUTSCENE_19_TALK_28,"I'm tired of being in the shadows.
+Maybe I should face Bonka face to face and turn her world upside down.","Estou farta de estar nas sombras.
+Talvez vou confrontar a Bonka cara a cara e virar o mundo dela ao contrário."
+CUTSCENE_19_TALK_29,Yeah. More fun that way.,Yeah. Tem mais piada assim.
+CUTSCENE_19_TALK_30,"Um, what are you guys talking about? I didn't see anything.","Um, do que é que vocês estão a falar? Eu não vi nada."
+CUTSCENE_19_TALK_31,"Look at that old lady, is she lost?
+Excuse me, but who are you, miss?","Será que aquela senhora está perdida?
+Desculpe mas quem é você?"
+CUTSCENE_19_TALK_32,My name is Claudia Santamara. I deliver presents to those who are well behaved.,O meu nome é Claudia Santamara. Eu trago presentes para aqueles que se portem bem.
+CUTSCENE_19_TALK_33,"I've been travelling through different worlds ever since I've left Brinkaedea, which unfortunately was destroyed.","Viajem por mundos diferentes desde que vim do mundo de Brinkaedea, que infelizmente foi destruído."
+CUTSCENE_19_TALK_34,"But we've left Brinkaedea a short while ago.
+And we've had to put up with an annoying clown girl named Bonka.","Mas nós acabamos de sair de Brinkaedea a pouco tempo.
+E tivemos que aturar uma rapariga palhaço irritante chamada Bonka."
+CUTSCENE_19_TALK_35,"I don't know who ""Bonka"" is, but I've met a girl named Bonkette and she is so much trouble.
+Perhaps, there is another Brinkaedea I've never heard of.","Eu nunca ouvi falar dessa ""Bonka"", mas conheci uma rapariga chamada Bonkette e ela é muito perigosa.
+Talvez existe outra Brinkaedea que nunca ouvi falar."
+CUTSCENE_19_TALK_36,Maybe Bonka is right...,Talvez a Bonka tem razão...
+CUTSCENE_19_TALK_37,"Either way, I'm curious about this world.
+Are you from here?","De qualquer modo, estou curiosa por este mundo.
+Vocês serão daqui?"
+CUTSCENE_19_TALK_38,"It reminds us of our home but not really.
+We're trying to find a way home, actually.","Faz-nos lembrar a nossa casa mas não exatamente.
+Estamos a tentar encontrar uma saída."
+CUTSCENE_20_TALK_1,"Hey look, it's that fish guy from that place with the talking animals.","Olhem, é aquele homem peixe daquele sitio com os animais que falam."
+CUTSCENE_20_TALK_2,"Is he lost?
+Should we help him?","Será que ele está perdido?
+Não devíamos ajuda-lo?"
+CUTSCENE_20_TALK_3,"You all behaved nicely, I believe I owe you some presents.","Vocês portaram-se todos bem, por isso acho que vos devo alguns presentes."
+CUTSCENE_20_TALK_4,"Thank you mam, but the only thing we need is a way back home.","Obrigado minha senhora, mas a única coisa que nós precisamos é um caminho para casa."
+CUTSCENE_20_TALK_5,"I see. In fact, I am correct that I owe you all something.","Estou a ver. Ainda assim, tinha razão que vos devo algo."
+CUTSCENE_20_TALK_6,Now I must go. Perhaps we may meet again.,Agora tenho que ir. Talvez nos voltamos a ver.
+CUTSCENE_20_TALK_7,This piece fits one of these holes.,Esta peça cabe num dos buracos.
+CUTSCENE_20_TALK_8,"Everyone, hide!
+Those planes could drop something.","Pessoal, escondem!
+Aqueles aviões podem largar algo."
+CUTSCENE_20_TALK_9,What are these men talking about?,Do que é que estes homens estão a falar?
+CUTSCENE_20_TALK_10,You know the way out?,Conheces uma saída?
+CUTSCENE_20_TALK_11,We can just keep going North and we'll find the sub base. There has to be some submarines left.,Podemos continuar para norte e encontraremos a base dos submarinos. Ainda pode haver alguns.
+CUTSCENE_20_TALK_12,But we must be carefull. I heard they're using a recent prototype of a weapon in this war.,Mas temos que ter cuidado. Ouvi falar que eles estão a usar um protótipo recente duma arma nesta guerra.
+CUTSCENE_20_TALK_13,What kind of weapon?,Que tipo de arma?
+CUTSCENE_20_TALK_14,"They were experimenting with bodies of prisoners and turning them into machines.
+As if they were creating blind followers out of corpses.","Eles experimentaram com corpos de prisioneiros e transforma-los em maquinas.
+Como se eles estivessem a criar seguidores com pedaços de mortos."
