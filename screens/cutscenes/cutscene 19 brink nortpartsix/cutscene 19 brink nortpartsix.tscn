@@ -1024,235 +1024,235 @@ tracks/29/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/30/type = "value"
-tracks/30/path = NodePath("Cutscene19BrinkNortpartsixPanel14:modulate")
+tracks/30/path = NodePath("Cutscene19BrinkNortpartsixPanel15:modulate")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/imported = false
 tracks/30/enabled = true
 tracks/30/keys = {
-"times": PoolRealArray( 0, 105.2, 105.4, 113.6, 113.9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
-}
-tracks/31/type = "value"
-tracks/31/path = NodePath("Cutscene19BrinkNortpartsixPanel15:modulate")
-tracks/31/interp = 1
-tracks/31/loop_wrap = true
-tracks/31/imported = false
-tracks/31/enabled = true
-tracks/31/keys = {
 "times": PoolRealArray( 0, 109.9, 110 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
-tracks/32/type = "value"
-tracks/32/path = NodePath("Cutscene19BrinkNortpartsixPanel15:visible")
-tracks/32/interp = 1
-tracks/32/loop_wrap = true
-tracks/32/imported = false
-tracks/32/enabled = true
-tracks/32/keys = {
+tracks/31/type = "value"
+tracks/31/path = NodePath("Cutscene19BrinkNortpartsixPanel15:visible")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
 "times": PoolRealArray( 0, 104.7, 114.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
 }
-tracks/33/type = "value"
-tracks/33/path = NodePath("Cutscene19BrinkNortpartsixPanel16:position")
-tracks/33/interp = 1
-tracks/33/loop_wrap = true
-tracks/33/imported = false
-tracks/33/enabled = true
-tracks/33/keys = {
+tracks/32/type = "value"
+tracks/32/path = NodePath("Cutscene19BrinkNortpartsixPanel16:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
 "times": PoolRealArray( 0, 114.1, 114.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 538, -248 ), Vector2( 538, -248 ), Vector2( 538, 228 ) ]
 }
-tracks/34/type = "value"
-tracks/34/path = NodePath("Cutscene19BrinkNortpartsixPanel16:modulate")
-tracks/34/interp = 1
-tracks/34/loop_wrap = true
-tracks/34/imported = false
-tracks/34/enabled = true
-tracks/34/keys = {
+tracks/33/type = "value"
+tracks/33/path = NodePath("Cutscene19BrinkNortpartsixPanel16:modulate")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
 "times": PoolRealArray( 0, 114.1, 114.3, 121.1, 121.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/35/type = "value"
-tracks/35/path = NodePath("Cutscene19BrinkNortpartsixPanel17:position")
-tracks/35/interp = 1
-tracks/35/loop_wrap = true
-tracks/35/imported = false
-tracks/35/enabled = true
-tracks/35/keys = {
+tracks/34/type = "value"
+tracks/34/path = NodePath("Cutscene19BrinkNortpartsixPanel17:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
 "times": PoolRealArray( 0, 121.1, 121.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 511, -219 ), Vector2( 511, -219 ), Vector2( 511, 233 ) ]
 }
-tracks/36/type = "value"
-tracks/36/path = NodePath("Cutscene19BrinkNortpartsixPanel17:modulate")
-tracks/36/interp = 1
-tracks/36/loop_wrap = true
-tracks/36/imported = false
-tracks/36/enabled = true
-tracks/36/keys = {
+tracks/35/type = "value"
+tracks/35/path = NodePath("Cutscene19BrinkNortpartsixPanel17:modulate")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
 "times": PoolRealArray( 0, 121.1, 121.3, 123.2, 123.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/37/type = "value"
-tracks/37/path = NodePath("Cutscene19BrinkNortpartsixPanel18:position")
-tracks/37/interp = 1
-tracks/37/loop_wrap = true
-tracks/37/imported = false
-tracks/37/enabled = true
-tracks/37/keys = {
+tracks/36/type = "value"
+tracks/36/path = NodePath("Cutscene19BrinkNortpartsixPanel18:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
 "times": PoolRealArray( 0, 123.2, 123.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -222, 238 ), Vector2( -222, 238 ), Vector2( 211, 238 ) ]
 }
-tracks/38/type = "value"
-tracks/38/path = NodePath("Cutscene19BrinkNortpartsixPanel18:modulate")
-tracks/38/interp = 1
-tracks/38/loop_wrap = true
-tracks/38/imported = false
-tracks/38/enabled = true
-tracks/38/keys = {
+tracks/37/type = "value"
+tracks/37/path = NodePath("Cutscene19BrinkNortpartsixPanel18:modulate")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
 "times": PoolRealArray( 0, 123.2, 123.3, 147.5, 147.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/39/type = "value"
-tracks/39/path = NodePath("Cutscene19BrinkNortpartsixPanel19:position")
-tracks/39/interp = 1
-tracks/39/loop_wrap = true
-tracks/39/imported = false
-tracks/39/enabled = true
-tracks/39/keys = {
+tracks/38/type = "value"
+tracks/38/path = NodePath("Cutscene19BrinkNortpartsixPanel19:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
 "times": PoolRealArray( 0, 127.8, 127.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -174, 234 ), Vector2( -174, 234 ), Vector2( 569, 234 ) ]
 }
-tracks/40/type = "value"
-tracks/40/path = NodePath("Cutscene19BrinkNortpartsixPanel19:modulate")
-tracks/40/interp = 1
-tracks/40/loop_wrap = true
-tracks/40/imported = false
-tracks/40/enabled = true
-tracks/40/keys = {
+tracks/39/type = "value"
+tracks/39/path = NodePath("Cutscene19BrinkNortpartsixPanel19:modulate")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
 "times": PoolRealArray( 0, 127.8, 127.9, 147.5, 147.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/41/type = "value"
-tracks/41/path = NodePath("Cutscene19BrinkNortpartsixPanel20:position")
-tracks/41/interp = 1
-tracks/41/loop_wrap = true
-tracks/41/imported = false
-tracks/41/enabled = true
-tracks/41/keys = {
+tracks/40/type = "value"
+tracks/40/path = NodePath("Cutscene19BrinkNortpartsixPanel20:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
 "times": PoolRealArray( 0, 132.2, 132.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -211, 230 ), Vector2( -211, 230 ), Vector2( 199, 230 ) ]
 }
-tracks/42/type = "value"
-tracks/42/path = NodePath("Cutscene19BrinkNortpartsixPanel20:modulate")
-tracks/42/interp = 1
-tracks/42/loop_wrap = true
-tracks/42/imported = false
-tracks/42/enabled = true
-tracks/42/keys = {
+tracks/41/type = "value"
+tracks/41/path = NodePath("Cutscene19BrinkNortpartsixPanel20:modulate")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/keys = {
 "times": PoolRealArray( 0, 132.2, 132.4, 137.6, 137.7 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/43/type = "value"
-tracks/43/path = NodePath("Cutscene19BrinkNortpartsixPanel21:position")
-tracks/43/interp = 1
-tracks/43/loop_wrap = true
-tracks/43/imported = false
-tracks/43/enabled = true
-tracks/43/keys = {
+tracks/42/type = "value"
+tracks/42/path = NodePath("Cutscene19BrinkNortpartsixPanel21:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/keys = {
 "times": PoolRealArray( 0, 147.4, 147.6, 151.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -237, 231 ), Vector2( -237, 231 ), Vector2( 439, 231 ), Vector2( 439, 231 ) ]
 }
-tracks/44/type = "value"
-tracks/44/path = NodePath("Cutscene19BrinkNortpartsixPanel21:modulate")
-tracks/44/interp = 1
-tracks/44/loop_wrap = true
-tracks/44/imported = false
-tracks/44/enabled = true
-tracks/44/keys = {
+tracks/43/type = "value"
+tracks/43/path = NodePath("Cutscene19BrinkNortpartsixPanel21:modulate")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/keys = {
 "times": PoolRealArray( 0, 147.4, 147.6, 151.2, 151.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/45/type = "value"
-tracks/45/path = NodePath("Cutscene19BrinkNortpartsixPanel22:position")
-tracks/45/interp = 1
-tracks/45/loop_wrap = true
-tracks/45/imported = false
-tracks/45/enabled = true
-tracks/45/keys = {
+tracks/44/type = "value"
+tracks/44/path = NodePath("Cutscene19BrinkNortpartsixPanel22:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/keys = {
 "times": PoolRealArray( 0, 151.3, 151.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 524, -245 ), Vector2( 524, -245 ), Vector2( 524, 226 ) ]
 }
-tracks/46/type = "value"
-tracks/46/path = NodePath("Cutscene19BrinkNortpartsixPanel22:modulate")
-tracks/46/interp = 1
-tracks/46/loop_wrap = true
-tracks/46/imported = false
-tracks/46/enabled = true
-tracks/46/keys = {
+tracks/45/type = "value"
+tracks/45/path = NodePath("Cutscene19BrinkNortpartsixPanel22:modulate")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/keys = {
 "times": PoolRealArray( 0, 151.3, 151.5, 156.3, 156.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/47/type = "value"
-tracks/47/path = NodePath("Cutscene19BrinkNortpartsixPanel23:position")
-tracks/47/interp = 1
-tracks/47/loop_wrap = true
-tracks/47/imported = false
-tracks/47/enabled = true
-tracks/47/keys = {
+tracks/46/type = "value"
+tracks/46/path = NodePath("Cutscene19BrinkNortpartsixPanel23:position")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/keys = {
 "times": PoolRealArray( 156.4, 156.6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -196, 230.75 ), Vector2( 200, 230.75 ) ]
 }
-tracks/48/type = "value"
-tracks/48/path = NodePath("Cutscene19BrinkNortpartsixPanel23:modulate")
-tracks/48/interp = 1
-tracks/48/loop_wrap = true
-tracks/48/imported = false
-tracks/48/enabled = true
-tracks/48/keys = {
+tracks/47/type = "value"
+tracks/47/path = NodePath("Cutscene19BrinkNortpartsixPanel23:modulate")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/keys = {
 "times": PoolRealArray( 156.4, 156.6, 171, 171.1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/48/type = "value"
+tracks/48/path = NodePath("Cutscene19BrinkNortpartsixPanel24:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/keys = {
+"times": PoolRealArray( 0, 170.9, 171.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1282, 230.864 ), Vector2( 1282, 230.864 ), Vector2( 715, 230.864 ) ]
+}
 tracks/49/type = "value"
-tracks/49/path = NodePath("Cutscene19BrinkNortpartsixPanel24:position")
+tracks/49/path = NodePath("Cutscene19BrinkNortpartsixPanel24:modulate")
 tracks/49/interp = 1
 tracks/49/loop_wrap = true
 tracks/49/imported = false
@@ -1261,19 +1261,19 @@ tracks/49/keys = {
 "times": PoolRealArray( 0, 170.9, 171.1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1282, 230.864 ), Vector2( 1282, 230.864 ), Vector2( 715, 230.864 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/50/type = "value"
-tracks/50/path = NodePath("Cutscene19BrinkNortpartsixPanel24:modulate")
+tracks/50/path = NodePath("Cutscene19BrinkNortpartsixPanel14:modulate")
 tracks/50/interp = 1
 tracks/50/loop_wrap = true
 tracks/50/imported = false
 tracks/50/enabled = true
 tracks/50/keys = {
-"times": PoolRealArray( 0, 170.9, 171.1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 105.2, 105.4, 110.6, 112.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
