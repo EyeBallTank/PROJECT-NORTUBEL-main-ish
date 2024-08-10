@@ -14,10 +14,10 @@
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=14]
-[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
-[ext_resource path="res://src/enemies/lahiurn/LahiurnNightRider.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -82,15 +82,20 @@ position = Vector2( 2256, -1029 )
 position = Vector2( 4341, -564 )
 
 [node name="UulgaComp" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2046, -732 )
+position = Vector2( 2374, -1999 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "test"
 anims/RESET = SubResource( 1 )
 anims/test = SubResource( 2 )
 
-[node name="Pushable" parent="." instance=ExtResource( 15 )]
-position = Vector2( 2294, -1852 )
+[node name="HerrkoRedHorg" parent="." instance=ExtResource( 15 )]
+position = Vector2( 3554, -2165 )
 
-[node name="LahiurnNightRider" parent="." instance=ExtResource( 18 )]
-position = Vector2( 2641, -2066 )
+[node name="ArtBook" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1482, -1844 )
+boardname = "herrko art uulga reference"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1833, -1844 )
+boardname = "herrko art uulga weapon reference  "
