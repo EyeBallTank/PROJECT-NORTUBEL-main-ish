@@ -290,7 +290,7 @@ tracks/20/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 88.0
+length = 87.3
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -579,6 +579,7 @@ texture = ExtResource( 7 )
 [node name="Cutscene20AnimatedPlane" type="AnimatedSprite" parent="."]
 position = Vector2( 340, 853 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="Cutscene20AnimatedPlane2" type="AnimatedSprite" parent="."]
@@ -586,6 +587,7 @@ position = Vector2( -78, 1068 )
 rotation = 0.483065
 scale = Vector2( 0.710526, 0.710526 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]

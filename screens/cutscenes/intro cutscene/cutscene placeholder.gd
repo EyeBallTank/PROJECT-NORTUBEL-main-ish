@@ -33,69 +33,6 @@ func cutscene_over():
 
 #POSSIBLE DIALOGUE FOR THE FOLLOWING CUTSCENES
 
-#Carrie: Help, somebody!
-#Bonka: WHY IS THIS HAPPENING?
-#Odin shows up
-#Odin: Now, for a special trick...
-#Something happens
-#Oscar: We're safe!
-#Odin: Bonka, what happened? I thought you wouldn't reach this low!
-#Bonka: Odin, I can explained. This wasn't part of the plan? BONKY, WHERE ARE YOU?
-#Bonky: Uh, what's going on? I was taking a nap.
-#Bonka: You idiot! Don't tell me you slept when I told you to take care of things while I was gone.
-#Bonky: ... uuhh... oi, ya know how easy it is for me to get sleepy and-
-#Linda: Puff? You're still working for her? Don't you have anything better to do?
-#Bonky: Sister, I uh... well, I had that new carrot cake recipy I wanted to try.
-#Bonka: Listen, all I wanted to do was humiliate you. I didn't meant to actually hurt you-
-#Carrie: THAT'S IT! WE'RE DONE HERE! EVERYONE, LET'S GO!
-#Bonky: WAIT, I almost forgot! I did see someone show up in the construction.
-#Bonky: I thought it was Bonka but she looked different: She was kinda bald and looked a bit scary.
-#Bonky: And I saw 2 kids with her, they looked like Monica and illou but Monica had a pointy tooth and illou was dressed like a scientist.
-#Melvin: You mean, like versions of Bonka and those 2 kids from a different universe? Because we also stumbled upon our own doubles.
-#Bonka: Maybe that's what happened. Maybe someone that looked like me infiltrated my plan and did this.
-#Carrie: I don't care ("Estou me nas tintas"), I wanna leave this place.
-#The 6 leave
-#Bonka: You gotta believe me... 
-#Bonky: Don't worry Bonka, I believe you.
-#Odin: Honestly, I believe you too. After all, I believe that beneath a trouble maker clown like you, there's someone that just needs help.
-#Odin: But duty is calling me, so I gotta go.
-#Odin leave
-#Bonka: Grrr Odin, you cheesy, pretentious, annoying...
-#Bonka: Big, strong, charming... GAAAHH! ewww
-#3 characters were watching all along, behind the bushes
-#Bonkette: Well, there goes our plan. Nobody died and we were noticed.
-#Monika: Well at least we were only seen by that stupid bunny.
-#Dr Ill-Ow: But even the magician superhero believes it and if he believes it, more people will be aware.
-#Dr Ill-ow: We better do something about it.
-#Bonkette: I'm tired of being in the shadows. Maybe I should face Bonka face to face and turn her world upside down.
-#Monika: Yeah. More fun that way.
-#Bonkoid: Um, what are you guys talking about? I didn't see anything.
-#Back at Nortubel
-#Angela: Look at that old lady, is she lost?
-#Katrin: Excuse me, but who are you, miss?
-#Claudia: My name is Claudia Santamara. I deliver presents to those who are well behaved.
-#Claudia: I've been travelling through different worlds ever since I've left Brinkaedea, which unfortunately was destroyed.
-#Carrie: But we've left Brinkaedea a short while ago. And we've had to put up with an annoying clown named Bonka.
-#Cladia: I don't know who "Bonka" is, but I've met a girl named Bonkette and she is so much trouble. Perhaps, there is another Brinkaedea I've never heard of.
-#Carrie: Maybe Bonka is right...
-#don't know what else to add
-
-#Claudia: You all behaved nicely, I believe I owe you some presents.
-#Melvin: Thank you mam, but the only thing we need is a way back home.
-#Melvin shows the box
-#Claudia: I see. In fact, I am correct that I owe you all something.
-#She gives them a white piece.
-#Claudia, now I must go. Perhaps we may meet again.
-#She leaves
-#Melvin: This piece fits one of these wholes.
-#And then a portal to Lahiurn shows up
-#The 6 watch planes and explosions, then they overheard a conversation
-#Gustav: You know the way out?
-#Jerold: We can just keep going North and we'll find the sub base. There has to be some submarines left.
-#Jerold: But we must be carefull. I heard they're using a recent prototype of a weapon in this fight.
-#Gustav: What kind of weapon?
-#Jerold: I heard they were experimenting with bodies of prisoners and turning them into machines. As if they were creating blind followers out of carcasses.
-
 #Carrie: Are we getting somewhere?
 #Melvin: We gotta keep going. This whole has some light at the other end. Uh?
 #Buellarock soldier: Hold it there? Who do you work for?
