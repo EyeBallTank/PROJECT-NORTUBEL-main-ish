@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 
 [node name="NortPartSevenLevel3" type="Node2D"]
 
@@ -54,3 +55,8 @@ boardname = "nort art how 3 older ones met"
 [node name="ArtBook2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 707, 1049 )
 boardname = "nort art how 3 older arm heart"
+
+[node name="Door" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1113, 1117 )
+new_scene = "res://screens/cutscenes/cutscene 22 nortpartseven voodoo/cutscene 22 nortpartseven voodoo.tscn"
+customtext = "n1vl3m"

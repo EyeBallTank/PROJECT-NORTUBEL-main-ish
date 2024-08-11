@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=16]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -98,3 +99,9 @@ spritename = "herrko yeldoor"
 [node name="LevelProp" parent="." instance=ExtResource( 15 )]
 position = Vector2( 830, 1215 )
 propname = "herrprop barrelwood weapons"
+
+[node name="Door" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1568, 1704 )
+new_scene = "res://src/levels/herrko/HerrkoLevel3.tscn"
+spritename = "herrko greendoor"
+customtext = "iv4nnn"

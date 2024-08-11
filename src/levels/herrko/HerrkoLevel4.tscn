@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/enemies/herrko/TsoovukotKnight.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=16]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -100,3 +101,9 @@ position = Vector2( 1864, 1551 )
 [node name="ArtBook" parent="." instance=ExtResource( 14 )]
 position = Vector2( -492, 1653 )
 boardname = "herrko art tsoovukot knight reference"
+
+[node name="Door" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2184, 1608 )
+new_scene = "res://src/levels/LevelTemplate7.tscn"
+spritename = "herrko greendoor"
+customtext = "uulg44"
