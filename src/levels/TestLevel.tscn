@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=2]
@@ -14,10 +14,8 @@
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=14]
-[ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
-[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -43,7 +41,7 @@ tile_data = PoolIntArray( -2621442, 2, 0, -2555906, 2, 0, -2621421, 2, 0, -24903
 position = Vector2( 2295, -502 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1547, -1787 )
+position = Vector2( 2534, -575 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1671, -564 )
@@ -82,20 +80,9 @@ position = Vector2( 2256, -1029 )
 position = Vector2( 4341, -564 )
 
 [node name="UulgaComp" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2374, -1999 )
+position = Vector2( 1616, -770 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "test"
 anims/RESET = SubResource( 1 )
 anims/test = SubResource( 2 )
-
-[node name="HerrkoRedHorg" parent="." instance=ExtResource( 15 )]
-position = Vector2( 3554, -2165 )
-
-[node name="ArtBook" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1482, -1844 )
-boardname = "herrko art uulga reference"
-
-[node name="ArtBook2" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1833, -1844 )
-boardname = "herrko art uulga weapon reference  "
