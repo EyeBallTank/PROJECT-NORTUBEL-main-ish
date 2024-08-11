@@ -335,3 +335,7 @@ position = Vector2( 1225, -634 )
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 30 )]
 position = Vector2( 15404, -351 )
 spritename = "krimbstone movplatvert"
+
+[node name="LoreBook2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 7392, -2096 )
+customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"

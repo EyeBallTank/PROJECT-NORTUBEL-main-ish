@@ -1,4 +1,4 @@
-[gd_scene load_steps=264 format=2]
+[gd_scene load_steps=266 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart ricotto reference v2.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker backstory.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker reference 2.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 3.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 4.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart reptile reference.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art stella reference v2.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art zarina reference.png" type="Texture" id=14]
@@ -133,6 +133,7 @@
 [ext_resource path="res://assets/sprites/art gallery/hhtrintina/hhtrintina art reference.png" type="Texture" id=131]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art awkward dream two.png" type="Texture" id=132]
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art lahiurn main building.png" type="Texture" id=133]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 4 part 2.png" type="Texture" id=134]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -413,8 +414,12 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 749, 449 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=153]
 atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=154]
+atlas = ExtResource( 134 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=15]
@@ -934,10 +939,10 @@ animations = [ {
 "name": "krimbart dojd crossover",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 14 ) ],
-"loop": false,
+"frames": [ SubResource( 153 ), SubResource( 154 ) ],
+"loop": true,
 "name": "krimbart matysha reference",
-"speed": 0.0
+"speed": 1.0
 }, {
 "frames": [ SubResource( 15 ) ],
 "loop": false,

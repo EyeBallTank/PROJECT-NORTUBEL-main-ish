@@ -153,10 +153,6 @@ position = Vector2( 7648, 993 )
 customtext = "GREK_MERC_FORCE_LORE"
 spritename = "greklovick lorebook"
 
-[node name="LoreBook2" parent="." instance=ExtResource( 16 )]
-position = Vector2( -217, 916 )
-customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
-
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 17 )]
 position = Vector2( 19007, 260 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/greklovick/Green switch One Greklovick.tres"
@@ -241,6 +237,13 @@ position = Vector2( 13993, 1493 )
 
 [node name="GrekYellowBasePlat" parent="." instance=ExtResource( 34 )]
 position = Vector2( 6978, 673 )
+
+[node name="Platform" parent="GrekYellowBasePlat" index="0"]
+position = Vector2( -2, 384 )
+
+[node name="PathFollow2D" parent="GrekYellowBasePlat/Path2D" index="0"]
+position = Vector2( -2, 384 )
+offset = 0.000244141
 
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
 position = Vector2( 11202, 1603 )
