@@ -25,7 +25,11 @@ var codes := ["gallery",
 				"m0nic4", "ill0uu", "b0nkyy",
 				"b0nk44",
 				"cl4ud1", "b0nk3t", "dr1l0u",
-				"j3r0ld", "chrl3s", "lmshtn"]
+				"j3r0ld", "chrl3s", "lmshtn",
+				"e1rr4c", "n1rt4k", "n1vl3m",
+				"n4myl3", "p3bble", "iv4nnn",
+				"eul0r1", "uulg44"
+				]
 
 #SOME PASSWORDS TAKE YOU TO CUTSCENES THAT YOU CAN EASILY SKIP
 #THIS IS BECAUSE THEY HAPPEN BEFORE CERTAIN LEVELS
@@ -266,3 +270,28 @@ func chrl3s():
 
 func lmshtn():
 	SceneManager.change_scene("level_transition_effect", "res://src/levels/lahiurn/LahiurnLevel3.tscn")
+
+
+func e1rr4c():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven.tscn")
+
+func n1rt4k():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartseven/NortPartSevenLevel2.tscn")
+
+func n1vl3m():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartseven/NortPartSevenLevel3.tscn")
+
+func n4myl3():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 22 nortpartseven voodoo/cutscene 22 nortpartseven voodoo.tscn")
+
+func p3bble():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 23 nortpartseven herrko/cutscene 23 nortpartseven herrko.tscn")
+
+func iv4nnn():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/herrko/HerrkoLevel2.tscn")
+
+func eul0r1():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/herrko/HerrkoLevel3.tscn")
+
+func uulg44():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga.tscn")
