@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=18]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -105,3 +107,11 @@ position = Vector2( 1568, 1704 )
 new_scene = "res://src/levels/herrko/HerrkoLevel3.tscn"
 spritename = "herrko greendoor"
 customtext = "iv4nnn"
+
+[node name="Health Pickup" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1048, 1197 )
+spritename = "herrko health"
+
+[node name="Coin" parent="." instance=ExtResource( 18 )]
+position = Vector2( 599, 1391 )
+spritename = "herrko coin"
