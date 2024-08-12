@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -19,6 +19,8 @@
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=21]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -100,7 +102,7 @@ position = Vector2( 1243, 1574 )
 spritename = "herrko yeldoor"
 
 [node name="LevelProp" parent="." instance=ExtResource( 15 )]
-position = Vector2( 830, 1215 )
+position = Vector2( 738, 1215 )
 propname = "herrprop barrelwood weapons"
 
 [node name="Door" parent="." instance=ExtResource( 16 )]
@@ -110,7 +112,7 @@ spritename = "herrko greendoor"
 customtext = "iv4nnn"
 
 [node name="Health Pickup" parent="." instance=ExtResource( 17 )]
-position = Vector2( 1048, 1197 )
+position = Vector2( 826, 1010 )
 spritename = "herrko health"
 
 [node name="Coin" parent="." instance=ExtResource( 18 )]
@@ -120,3 +122,11 @@ spritename = "herrko coin"
 [node name="Pushable" parent="." instance=ExtResource( 19 )]
 position = Vector2( -533, 1404 )
 spritename = "herrko pushable"
+
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 21 )]
+position = Vector2( 1006, 1323 )
+gre1switchskin = "res://assets/sprites/level_object_sprites/herrko/Green switch One Herrko.tres"
+
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1177, 1323 )
+gre2switchskin = "res://assets/sprites/level_object_sprites/herrko/Green switch Two Herrko.tres"
