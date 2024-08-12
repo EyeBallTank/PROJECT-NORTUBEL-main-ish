@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=17]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -52,7 +53,7 @@ position = Vector2( -337, 1420 )
 position = Vector2( -157, 1380 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( -157, 1380 )
+position = Vector2( -231, 1386 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="UulgaComp" parent="." instance=ExtResource( 15 )]
@@ -107,3 +108,7 @@ position = Vector2( 2184, 1608 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
 spritename = "herrko greendoor"
 customtext = "uulg44"
+
+[node name="BlueSwitch" parent="." instance=ExtResource( 17 )]
+position = Vector2( -112, 1588 )
+bluswitchskin = "res://assets/sprites/level_object_sprites/herrko/Blue switch Herrko.tres"
