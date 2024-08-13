@@ -1,50 +1,50 @@
 [gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeen.gd" type="Script" id=1]
-[ext_resource path="res://assets/sprites/enemy_sprites/herrko/HERRKO RED GHALBEEN SPRITES.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/enemy_sprites/herrko/HERRKO RED GHALBEEN SPRITES FLIPPED.png" type="Texture" id=3]
 
-[sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 384, 384, 384 )
-
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 2 )
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 3 )
 region = Rect2( 384, 384, 384, 384 )
 
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 768, 384, 384 )
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 384, 384, 384 )
 
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 2 )
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
 region = Rect2( 384, 768, 384, 384 )
 
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 2 )
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 768, 384, 384 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 384, 384 )
 
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 2 )
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
 region = Rect2( 384, 0, 384, 384 )
 
 [sub_resource type="SpriteFrames" id=8]
 animations = [ {
-"frames": [ SubResource( 15 ) ],
+"frames": [ SubResource( 26 ) ],
 "loop": false,
 "name": "abouttoshoot",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 14 ) ],
+"frames": [ SubResource( 25 ) ],
 "loop": false,
 "name": "didtheshot",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 10 ), SubResource( 11 ) ],
+"frames": [ SubResource( 23 ), SubResource( 24 ) ],
 "loop": false,
 "name": "dying1",
 "speed": 1.0
 }, {
-"frames": [ SubResource( 12 ), SubResource( 13 ) ],
+"frames": [ SubResource( 21 ), SubResource( 22 ) ],
 "loop": true,
 "name": "moving",
 "speed": 3.0
@@ -312,7 +312,6 @@ position = Vector2( 4, -100 )
 frames = SubResource( 8 )
 animation = "abouttoshoot"
 playing = true
-flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 9 )

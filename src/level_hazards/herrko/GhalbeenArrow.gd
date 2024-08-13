@@ -24,6 +24,15 @@ func _physics_process(delta):
 		move_and_slide(target_position * speed)
 		look_at(player_position)
 
+	if is_on_wall():
+		animation.play("Dying")
+
+	if is_on_floor():
+		animation.play("Dying")
+
+	if is_on_ceiling():
+		animation.play("Dying")
+
 func die():
 	queue_free()
 
