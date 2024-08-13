@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+#USED IN ANY LEVEL WITH THE GHALBEEN
+#THERE COULD BE BETTER METHODS BUT WHATEVER
 
 onready var player = get_parent().get_node("Player/EatableHead")
 
