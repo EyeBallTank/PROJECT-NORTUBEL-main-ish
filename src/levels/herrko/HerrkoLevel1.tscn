@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/herrko/herrkolevel1 bg forest 2.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/level_backgrounds/herrko/herrkolevel1 bg forest 3.png" type="Texture" id=13]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeenThird.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=16]
 
 [node name="HerrkoLevel1" type="Node2D"]
 
@@ -106,3 +108,9 @@ position = Vector2( 1225, 1958 )
 new_scene = "res://src/levels/herrko/HerrkoLevel2.tscn"
 spritename = "herrko greendoor"
 customtext = "p3bble"
+
+[node name="HerrkoRedGhalbeenThird" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1416, 1079 )
+
+[node name="chasingtargettest" parent="." instance=ExtResource( 16 )]
+position = Vector2( -197, 756 )

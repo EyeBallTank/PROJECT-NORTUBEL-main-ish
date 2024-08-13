@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -22,6 +22,9 @@
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/GreenBarrier.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeenThird.tscn" type="PackedScene" id=25]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -141,3 +144,12 @@ position = Vector2( 1531, 1596 )
 animation1 = "CLOSED"
 animation2 = "OPEN"
 greenbarrierskin = "res://assets/sprites/level_object_sprites/herrko/GreenBarrier Herrko.tres"
+
+[node name="HerrkoRedHorg" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1576, 692 )
+
+[node name="chasingtargettest" parent="." instance=ExtResource( 24 )]
+position = Vector2( -376, 904 )
+
+[node name="HerrkoRedGhalbeenThird" parent="." instance=ExtResource( 25 )]
+position = Vector2( 1320, 968 )

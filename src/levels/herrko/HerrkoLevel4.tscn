@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,9 @@
 [ext_resource path="res://src/play_actors/UulgaComp.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeenThird.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=20]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -112,3 +115,12 @@ customtext = "uulg44"
 [node name="BlueSwitch" parent="." instance=ExtResource( 17 )]
 position = Vector2( -112, 1588 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/herrko/Blue switch Herrko.tres"
+
+[node name="HerrkoRedGhalbeenThird" parent="." instance=ExtResource( 19 )]
+position = Vector2( 1904, 1212 )
+
+[node name="chasingtargettest" parent="." instance=ExtResource( 18 )]
+position = Vector2( -376, 988 )
+
+[node name="HerrkoRedHorg" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1868, 656 )
