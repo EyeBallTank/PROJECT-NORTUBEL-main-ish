@@ -13,12 +13,9 @@ onready var arrowsource = $ArrowSource
 onready var walldetect = $wall_detect
 
 const Bullet = preload("res://src/level_hazards/herrko/GhalbeenArrow.tscn")
-#NOTE: THIS GUY IS BROKEN AND SO IS HIS ARROW
+#NOTE: THIS GUY IS BROKEN
 #His movement is a mess
 #Still can't turn when touching walls
-#"res://src/level_hazards/herrko/GhalbeenArrow.tscn"
-#res://src/enemies/hirdrih/HirdServProjectile.tscn
-#CHANCES ARE I GOTTA MAKE GHALBEEN'S SCRIPT CONTROL THE ARROW AND HAVE DATA LIKE TARGET AND HOMING LOGIC
 
 var player_position
 var target_position
@@ -83,12 +80,13 @@ func see_to_attack():
 func attack():
 	var projectile = Bullet.instance()
 	projectile.global_position = arrowsource.global_position
+	projectile.player = player
 	get_tree().get_root().add_child(projectile)
 
 	if projectile.position.distance_to(player_position) > 3:
 		projectile.move_and_slide(target_position * projectile.speed)
 		projectile.look_at(player_position)
-#		projectile.player_position = projectile.player_reference
+#		projectile.player_position = projectile.player
 
 
 func detect_turn_around():

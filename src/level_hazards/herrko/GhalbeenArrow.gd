@@ -1,14 +1,13 @@
 extends KinematicBody2D
 
-export var speed = 140
+export var speed = 160
 
 var player_position
 var target_position
 var player
-#onready var player_reference = get_parent().get_node("Player")
+#onready var player = get_parent().get_node("Player")
 onready var animation = $AnimationPlayer
-#THIS SCENE IS BROKEN AND SO IS ITS ENEMY
-#Seems it breaks the game, as if a spawned scene can't reference the player in the script
+#Fixed thanks to a kind anon on /vg/
 
 func _ready():
 	animation.play("RESET")
