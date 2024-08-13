@@ -459,7 +459,7 @@ scale = Vector2( 64, 8 )
 collision_newsize = Vector2( 64, 8 )
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 38 )]
-position = Vector2( 16543, -624 )
+position = Vector2( 16543, -644 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/massagcoav/Yellow switch massagcoav.tres"
 
 [editable path="MassagSlotMachine"]

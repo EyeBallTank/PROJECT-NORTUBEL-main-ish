@@ -198,10 +198,10 @@ position = Vector2( 10592, 2144 )
 position = Vector2( 8296, 2232 )
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 31 )]
-position = Vector2( 9984, 1704 )
+position = Vector2( 9984, 1455 )
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 30 )]
-position = Vector2( 9664, 1696 )
+position = Vector2( 9664, 1447 )
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 29 )]
 position = Vector2( 10464, 2112 )

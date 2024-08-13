@@ -1,4 +1,5 @@
 extends Area2D
+tool
 
 var is_pressed = false
 

@@ -173,15 +173,15 @@ position = Vector2( 12277, 1983 )
 spritename = "brinkaedea yeldoor"
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 18 )]
-position = Vector2( 3423, 1457 )
+position = Vector2( 3423, 1450 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Blue switch brinkaedea.tres"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
-position = Vector2( 8342, 2510 )
+position = Vector2( 8342, 2457 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch One brinkaedea.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 19 )]
-position = Vector2( 8737, 2510 )
+position = Vector2( 8737, 2457 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch Two brinkaedea.tres"
 
 [node name="SlowFloor" parent="." instance=ExtResource( 21 )]
@@ -341,11 +341,11 @@ scale = Vector2( 72, 8 )
 collision_newsize = Vector2( 72, 8 )
 
 [node name="GreenSwitchOne2" parent="." instance=ExtResource( 20 )]
-position = Vector2( 14290, 2521 )
+position = Vector2( 14290, 2451 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch One brinkaedea.tres"
 
 [node name="GreenSwitchTwo2" parent="." instance=ExtResource( 19 )]
-position = Vector2( 14706, 2524 )
+position = Vector2( 14706, 2454 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Green switch Two brinkaedea.tres"
 
 [node name="Ladder4" parent="." instance=ExtResource( 29 )]

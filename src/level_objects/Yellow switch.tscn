@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 64 )
+extents = Vector2( 40, 70 )
 
 [sub_resource type="Animation" id=4]
 resource_name = "PRESSED"
@@ -60,7 +60,6 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -4.76837e-07, -9.53674e-07 )
-scale = Vector2( 0.8, 0.914286 )
 frames = ExtResource( 1 )
 animation = "switchon"
 

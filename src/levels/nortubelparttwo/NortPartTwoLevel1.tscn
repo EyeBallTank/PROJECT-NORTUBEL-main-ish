@@ -171,7 +171,7 @@ position = Vector2( 6719, 428 )
 position = Vector2( 7875, 908 )
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 21 )]
-position = Vector2( 6241, 213 )
+position = Vector2( 6241, 193 )
 
 [node name="YellowPlatVerti" parent="." instance=ExtResource( 22 )]
 position = Vector2( 7022, 818 )

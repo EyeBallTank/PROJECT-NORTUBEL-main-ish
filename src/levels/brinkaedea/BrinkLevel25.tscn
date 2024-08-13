@@ -135,7 +135,7 @@ position = Vector2( 3032, -1030 )
 spritename = "brinkaedea fallplat"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 17 )]
-position = Vector2( 6522, -1420 )
+position = Vector2( 6553, -1435 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/brinkaedea/Yellow switch brinkaedea.tres"
 
 [node name="BrinkYellowSwitchFlower" parent="." instance=ExtResource( 18 )]

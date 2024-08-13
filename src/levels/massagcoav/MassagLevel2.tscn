@@ -342,11 +342,11 @@ anchorspritename = "atlantis anchor"
 hookspritename = "atlantis hook"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 21 )]
-position = Vector2( 9889, 351 )
+position = Vector2( 9889, 354 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/massagcoav/Green switch One atlantis.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 20 )]
-position = Vector2( 9606, -618 )
+position = Vector2( 9606, -604 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/massagcoav/Green switch Two atlantis.tres"
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 22 )]

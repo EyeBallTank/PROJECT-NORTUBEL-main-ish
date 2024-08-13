@@ -193,7 +193,7 @@ scale = Vector2( 34, 12 )
 collision_newsize = Vector2( 34, 12 )
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 21 )]
-position = Vector2( 6682, -995 )
+position = Vector2( 6682, -1030 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/hirdrih/Yellow switch hirdrih.tres"
 
 [node name="Hird Yellow Rotating Plat" parent="." instance=ExtResource( 22 )]
@@ -215,15 +215,15 @@ animation2 = "OPEN"
 greenbarrierskin = "res://assets/sprites/level_object_sprites/hirdrih/GreenBarrier Hirdrih.tres"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 25 )]
-position = Vector2( 9708, -2237 )
+position = Vector2( 9708, -2238 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch One hirdrih.tres"
 
 [node name="GreenSwitchOne2" parent="." instance=ExtResource( 25 )]
-position = Vector2( 10670, -2099 )
+position = Vector2( 10772, -2118 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch One hirdrih.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 26 )]
-position = Vector2( 9710, -1913 )
+position = Vector2( 9710, -1916 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch Two hirdrih.tres"
 
 [node name="HirdServant" parent="." instance=ExtResource( 27 )]

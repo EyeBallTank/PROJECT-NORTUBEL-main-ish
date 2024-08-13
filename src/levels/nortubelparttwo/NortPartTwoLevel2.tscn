@@ -219,10 +219,10 @@ animation1 = "CLOSED"
 animation2 = "OPEN"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 23 )]
-position = Vector2( 4686, 1608 )
+position = Vector2( 4705, 1602 )
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 22 )]
-position = Vector2( 4953, 906 )
+position = Vector2( 4953, 862 )
 
 [node name="Teleportal" parent="." instance=ExtResource( 25 )]
 position = Vector2( 7302, 1851 )
