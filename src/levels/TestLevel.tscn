@@ -18,7 +18,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=18]
-[ext_resource path="res://src/enemies/greklovick/GrekScalper.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=20]
 
 [sub_resource type="Animation" id=1]
@@ -94,9 +94,6 @@ anims/test = SubResource( 2 )
 [node name="GhalbeenArrow" parent="." instance=ExtResource( 15 )]
 position = Vector2( 3503, -903 )
 
-[node name="GrekScalper" parent="." instance=ExtResource( 19 )]
-position = Vector2( 3328, -584 )
-
 [node name="Water" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4152, -741 )
 scale = Vector2( 48, 48 )
@@ -104,3 +101,6 @@ collision_newsize = Vector2( 48, 48 )
 
 [node name="Ladder" parent="." instance=ExtResource( 20 )]
 position = Vector2( 4744, -838 )
+
+[node name="chasingtargettest" parent="." instance=ExtResource( 19 )]
+position = Vector2( 4557, -690 )

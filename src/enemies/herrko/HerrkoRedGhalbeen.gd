@@ -19,7 +19,7 @@ const Bullet = preload("res://src/level_hazards/herrko/GhalbeenArrow.tscn")
 
 var player_position
 var target_position
-onready var player = get_parent().get_node("Player")
+onready var player = get_parent().get_node("chasingtargettest")
 
 enum {
 	MOVING,
