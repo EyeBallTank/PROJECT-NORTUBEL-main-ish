@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_objects/GreenBarrier.tscn" type="PackedScene" id=22]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -106,7 +107,7 @@ position = Vector2( 738, 1215 )
 propname = "herrprop barrelwood weapons"
 
 [node name="Door" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1568, 1704 )
+position = Vector2( 1743, 1498 )
 new_scene = "res://src/levels/herrko/HerrkoLevel3.tscn"
 spritename = "herrko greendoor"
 customtext = "iv4nnn"
@@ -130,3 +131,13 @@ gre1switchskin = "res://assets/sprites/level_object_sprites/herrko/Green switch 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 20 )]
 position = Vector2( 1177, 1323 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/herrko/Green switch Two Herrko.tres"
+
+[node name="GreenBarrier" parent="." instance=ExtResource( 22 )]
+position = Vector2( 1398, 1596 )
+greenbarrierskin = "res://assets/sprites/level_object_sprites/herrko/GreenBarrier Herrko.tres"
+
+[node name="GreenBarrier2" parent="." instance=ExtResource( 22 )]
+position = Vector2( 1531, 1596 )
+animation1 = "CLOSED"
+animation2 = "OPEN"
+greenbarrierskin = "res://assets/sprites/level_object_sprites/herrko/GreenBarrier Herrko.tres"
