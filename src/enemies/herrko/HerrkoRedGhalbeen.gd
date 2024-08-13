@@ -88,6 +88,7 @@ func attack():
 	if projectile.position.distance_to(player_position) > 3:
 		projectile.move_and_slide(target_position * projectile.speed)
 		projectile.look_at(player_position)
+		projectile.player_position = projectile.player_reference
 
 
 func detect_turn_around():
