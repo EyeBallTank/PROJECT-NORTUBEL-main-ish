@@ -1,4 +1,5 @@
 extends StaticBody2D
+tool
 
 onready var animatedsprite = $AnimatedSprite
 onready var animatedplayer = $AnimationPlayer
