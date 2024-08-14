@@ -223,6 +223,8 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Hemoglobinworld (Crossover with DreadHunter)
 * MarkerSlayer/PraiseAltman111 (Xemarokk cameo)
 * Chillygamedev (Punch Monkey crossover)
+* Madness-inside/Madness2044 (Dirk the Adventurer crossover)
+* Frenchfriesguy (Batty Vamps crossover)
 * MakeHuman/MPFB2 and Posemaniacs (References/resources for art)
 * Krita (Main art software i use)
 * LibreOffice Calc (Used for localization file)

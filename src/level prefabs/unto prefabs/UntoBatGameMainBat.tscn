@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/unto prefab sprites/unto bat game controllable bat.png" type="Texture" id=1]
+[ext_resource path="res://src/level prefabs/unto prefabs/UntoBatGameMainBat.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 134, 129 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 129, 134, 129 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 134, 129 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "flying",
+"speed": 4.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": false,
+"name": "stop",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 6, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 7, 11 )
+
+[node name="UntoBatGameMainBat" type="KinematicBody2D"]
+collision_layer = 64
+collision_mask = 8192
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 4 )
+animation = "stop"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1 )
+shape = SubResource( 5 )
+
+[node name="BatTouches" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 18432
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BatTouches"]
+position = Vector2( 0, -1 )
+shape = SubResource( 6 )

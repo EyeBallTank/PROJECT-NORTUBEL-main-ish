@@ -1,4 +1,4 @@
-[gd_scene load_steps=266 format=2]
+[gd_scene load_steps=268 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -134,6 +134,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art awkward dream two.png" type="Texture" id=132]
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art lahiurn main building.png" type="Texture" id=133]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 4 part 2.png" type="Texture" id=134]
+[ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirk the adventurer crossover.png" type="Texture" id=135]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -328,6 +329,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=95]
 atlas = ExtResource( 80 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=155]
+atlas = ExtResource( 135 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=100]
@@ -834,6 +839,11 @@ animations = [ {
 "name": "grek art zharkovil reference",
 "speed": 1.0
 }, {
+"frames": [ SubResource( 155 ) ],
+"loop": false,
+"name": "herrko art dirk the adventurer crossover",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 100 ) ],
 "loop": false,
 "name": "herrko art dirlindu reference",
@@ -1258,7 +1268,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "lahiurn art lahiurn main building"
+animation = "herrko art dirk the adventurer crossover"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

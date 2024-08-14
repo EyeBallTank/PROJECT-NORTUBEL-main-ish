@@ -1,0 +1,352 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/herrko/DIRK ADVENTURER NPC SPRITES.png" type="Texture" id=3]
+[ext_resource path="res://src/npc_actors/herrk npc/DirkAdventurerNPC.gd" type="Script" id=4]
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 184, 323 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 3 )
+region = Rect2( 184, 0, 184, 323 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 3 )
+region = Rect2( 368, 0, 184, 323 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "runsaway",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 60.4722, 149.5 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 144.5, 150.5 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 184, 323 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 10 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=6]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 128.5, 147.5 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 121, 145.5 )
+
+[sub_resource type="Animation" id=16]
+resource_name = "DirkCaught2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("DirkCaught:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1217, -342 ), Vector2( 1217, -500 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DirkCaught/CaughtArea/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DirkCaught/TalktoArea/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "DirkRuns"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("DirkRunsAway/IsSeen/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DirkRunsAway:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 529, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DirkRunsAway/AnimatedSprite:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "runsaway", "default" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("DirkCaught:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1217, -209 ), Vector2( 1217, -209 ), Vector2( 1217, -342 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("DirkCaught/TalktoArea/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("DirkCaught/CaughtArea/CollisionShape2D:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("DirkRunsAway:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DirkRunsAway/AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "default" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DirkRunsAway/IsSeen/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("DirkCaught/TalktoArea/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("DirkCaught:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1217, -209 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("DirkCaught/CaughtArea/CollisionShape2D:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[node name="DirkAdventurerNPC" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="DirkRunsAway" type="KinematicBody2D" parent="."]
+collision_layer = 64
+collision_mask = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="DirkRunsAway"]
+position = Vector2( -9, 75 )
+frames = SubResource( 2 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DirkRunsAway"]
+position = Vector2( -3.52777, 81.4999 )
+shape = SubResource( 3 )
+disabled = true
+
+[node name="IsSeen" type="Area2D" parent="DirkRunsAway"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DirkRunsAway/IsSeen"]
+position = Vector2( 1.5, 80.5 )
+shape = SubResource( 12 )
+
+[node name="DirkCaught" type="KinematicBody2D" parent="."]
+position = Vector2( 1217, -209 )
+collision_layer = 64
+collision_mask = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="DirkCaught"]
+frames = SubResource( 11 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DirkCaught"]
+shape = SubResource( 6 )
+disabled = true
+
+[node name="TalktoArea" type="Area2D" parent="DirkCaught"]
+position = Vector2( -5, -75 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DirkCaught/TalktoArea"]
+position = Vector2( -4.5, 83.5 )
+shape = SubResource( 4 )
+disabled = true
+
+[node name="CaughtArea" type="Area2D" parent="DirkCaught"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DirkCaught/CaughtArea"]
+position = Vector2( -12, 8.5 )
+shape = SubResource( 15 )
+disabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 480.0
+margin_right = 1018.0
+margin_bottom = 593.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 1007.0
+margin_bottom = 109.0
+custom_fonts/font = ExtResource( 1 )
+text = "DIRK_ADVENTURER_NPC_TALK"
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 452.0
+margin_right = 147.0
+margin_bottom = 476.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 4
+patch_margin_bottom = 7
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 23.0
+custom_fonts/font = ExtResource( 1 )
+text = "Dirk"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/DirkCaught2 = SubResource( 16 )
+anims/DirkRuns = SubResource( 14 )
+anims/RESET = SubResource( 13 )
+
+[connection signal="body_entered" from="DirkRunsAway/IsSeen" to="." method="_on_IsSeen_body_entered"]
+[connection signal="body_entered" from="DirkCaught/TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="DirkCaught/TalktoArea" to="." method="_on_TalktoArea_body_exited"]
+[connection signal="body_entered" from="DirkCaught/CaughtArea" to="." method="_on_CaughtArea_body_entered"]
