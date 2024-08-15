@@ -35,14 +35,14 @@ func _physics_process(delta):
 
 		FLYING:
 			sprites.play("flying")
-			velocity = direction * 160
+			velocity = direction * 140
 			velocity.y += gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 
 		FALLING:
 			
 			sprites.play("flying")
-			velocity = direction * 160
+			velocity = direction * 140
 			velocity.y -= gravity * delta
 			move_and_slide(velocity, Vector2.UP)
 #			timer.start()
@@ -60,23 +60,16 @@ func _the_bat_will_jump():
 	if state == STARTPLACE:
 		state = FLYING
 
-	if state == FLYING:
-		pass
-
-
+	if state == FALLING:
+		state = FLYING
 
 	if state == VICTORY:
 		pass
 
 func _the_bat_will_really_jump():
-	if state == STARTPLACE:
-		pass
-
-	if state == VICTORY:
-		pass
-
 	if state == FLYING:
-		state == FALLING
+		state = FALLING
+
 
 func _on_BatTouches_area_entered(area):
 	if area.is_in_group("THEBATWON"):
