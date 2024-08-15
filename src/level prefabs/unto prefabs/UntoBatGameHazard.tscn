@@ -7,14 +7,14 @@
 [node name="UntoBatGameHazard" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["THEBATLOST"]]
 collision_layer = 16384
 collision_mask = 64
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( -288, 152, -262, 152, -216, 48, -190, 150, -140, 150, -115, 87, -97, 153, 25, 153, 92, -36, 127, 143, 288, 143, 288, 185, -288, 185 )
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=["THEBATLOST"]]
 collision_layer = 16384
 collision_mask = 64
 

@@ -27,7 +27,6 @@ texture = ExtResource( 2 )
 [node name="Button" type="Area2D" parent="."]
 position = Vector2( 0, 348 )
 collision_layer = 64
-collision_mask = 0
 
 [node name="UntoBatGameButton" type="Sprite" parent="Button"]
 texture = ExtResource( 1 )
@@ -64,5 +63,8 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="mainwalls"]
 position = Vector2( 350, -16 )
 shape = SubResource( 4 )
+
+[connection signal="body_entered" from="Button" to="." method="_on_Button_body_entered"]
+[connection signal="body_exited" from="Button" to="." method="_on_Button_body_exited"]
 
 [editable path="UntoBatGameFinishLine"]

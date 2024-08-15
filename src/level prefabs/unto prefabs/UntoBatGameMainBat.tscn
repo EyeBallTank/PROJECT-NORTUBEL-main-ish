@@ -55,3 +55,10 @@ collision_mask = 18432
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BatTouches"]
 position = Vector2( 0, -1 )
 shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="area_entered" from="BatTouches" to="." method="_on_BatTouches_area_entered"]
+[connection signal="body_entered" from="BatTouches" to="." method="_on_BatTouches_body_entered"]

@@ -52,6 +52,9 @@ signal hand_was_destroyed
 
 signal katrin_was_seen
 
+signal bat_must_jump
+signal bat_must_really_jump
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case
