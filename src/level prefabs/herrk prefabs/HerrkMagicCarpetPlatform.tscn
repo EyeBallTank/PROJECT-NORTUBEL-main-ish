@@ -1,21 +1,25 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink moving plat verti balloon pencil.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/herrk prefab sprites/Herrk Magic Carpet Platform sprite.png" type="Texture" id=1]
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 294, 388 )
+region = Rect2( 0, 0, 694, 210 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 210, 694, 210 )
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ SubResource( 8 ) ],
-"loop": false,
+"frames": [ SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
 "name": "brink",
-"speed": 0.0
+"speed": 4.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 139, 23 )
+extents = Vector2( 225.5, 23 )
 
 [sub_resource type="Curve2D" id=2]
 _data = {
@@ -78,7 +82,7 @@ tracks/1/keys = {
 "values": [ 0.0, 2979.29, 0.0 ]
 }
 
-[node name="BrinkBalloonPlatVerti" type="Node2D"]
+[node name="HerrkMagicCarpetPlatform" type="Node2D"]
 
 [node name="Platform" type="KinematicBody2D" parent="."]
 position = Vector2( -2, -1 )
@@ -87,13 +91,14 @@ collision_mask = 3
 motion/sync_to_physics = true
 
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
-position = Vector2( -21.6879, -171.23 )
+position = Vector2( -21.6879, 1 )
 frames = SubResource( 7 )
 animation = "brink"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
-position = Vector2( -14.6879, -1.22974 )
+position = Vector2( -13.5, -1.22974 )
 shape = SubResource( 1 )
 one_way_collision = true
 
