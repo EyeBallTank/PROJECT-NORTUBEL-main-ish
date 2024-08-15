@@ -1,4 +1,4 @@
-[gd_scene load_steps=268 format=2]
+[gd_scene load_steps=270 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -135,6 +135,7 @@
 [ext_resource path="res://assets/sprites/art gallery/lahiurn/lahiurn art lahiurn main building.png" type="Texture" id=133]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 4 part 2.png" type="Texture" id=134]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirk the adventurer crossover.png" type="Texture" id=135]
+[ext_resource path="res://assets/sprites/art gallery/untotern/unto art batty vamps crossover.png" type="Texture" id=136]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -629,6 +630,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=156]
+atlas = ExtResource( 136 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=111]
@@ -1204,6 +1209,11 @@ animations = [ {
 "name": "nortubel world map",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 156 ) ],
+"loop": false,
+"name": "unto art batty vamps crossover",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 111 ) ],
 "loop": false,
 "name": "unto art beatrice reference",
@@ -1268,7 +1278,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "herrko art dirk the adventurer crossover"
+animation = "unto art batty vamps crossover"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

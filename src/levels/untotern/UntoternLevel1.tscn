@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://src/level prefabs/unto prefabs/UntoBatGameMainBat.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level prefabs/unto prefabs/UntoBatGameScene.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level prefabs/unto prefabs/UntoBatGameBatStart.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/npc_actors/unto npc/BattyVampsNPC.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/level prefabs/unto prefabs/UntoBatGameVictoryDoor.tscn" type="PackedScene" id=15]
 
 [node name="UntoternLevel1" type="Node2D"]
 
@@ -31,7 +33,7 @@ tile_set = ExtResource( 8 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -262118, 0, 0, -262117, 0, 0, -262116, 0, 0, -262115, 0, 0, -262114, 0, 0, -262113, 0, 0, -262112, 0, 0, -262111, 0, 0, -262110, 0, 0, -262109, 0, 0, -262108, 0, 0, -262107, 0, 0, -262106, 0, 0, -262105, 0, 0, -262104, 0, 0, -262103, 0, 0, -262102, 0, 0, -262101, 0, 0, -262100, 0, 0, -262099, 0, 0, -262098, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851974, 0, 0, 983027, 0, 0, 983029, 56, 0, 1048563, 0, 0, 1048565, 56, 0, 1114099, 0, 0, 1114101, 56, 0, 1179635, 0, 0, 1179637, 56, 0, 1114122, 0, 0, 1245171, 0, 0, 1245173, 56, 0, 1179661, 0, 0, 1310707, 0, 0, 1310708, 1, 0, 1310709, 2, 0, 1245196, 0, 0, 1245197, 0, 0, 1376243, 0, 0, 1376244, 1, 0, 1376245, 2, 0, 1310732, 0, 0, 1441779, 0, 0, 1441780, 1, 0, 1441781, 2, 0, 1376264, 0, 0, 1376266, 0, 0, 1376267, 0, 0, 1507315, 0, 0, 1507316, 1, 0, 1507317, 2, 0, 1507318, 56, 0, 1507319, 56, 0, 1507320, 56, 0, 1507321, 56, 0, 1507322, 56, 0, 1507323, 56, 0, 1507324, 56, 0, 1507325, 56, 0, 1507326, 56, 0, 1507327, 56, 0, 1441792, 56, 0, 1441793, 56, 0, 1441794, 56, 0, 1441795, 56, 0, 1441796, 56, 0, 1441797, 56, 0, 1441798, 56, 0, 1441799, 56, 0, 1441800, 56, 0, 1441801, 0, 0, 1441802, 0, 0, 1441803, 56, 0, 1572851, 0, 0, 1572852, 0, 0, 1572853, 0, 0, 1572854, 0, 0, 1572855, 0, 0, 1572856, 0, 0, 1572857, 0, 0, 1572858, 0, 0, 1572859, 0, 0, 1572860, 0, 0, 1572861, 0, 0, 1572862, 0, 0, 1572863, 0, 0, 1507328, 0, 0, 1507329, 0, 0, 1507330, 0, 0, 1507331, 0, 0, 1507332, 0, 0, 1507333, 0, 0, 1507334, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507337, 0, 0 )
+tile_data = PoolIntArray( -1114065, 0, 0, -1048529, 0, 0, -982993, 0, 0, -917457, 0, 0, -851921, 0, 0, -786385, 0, 0, -720849, 0, 0, -655313, 0, 0, -262118, 0, 0, -262117, 0, 0, -262116, 0, 0, -262115, 0, 0, -262114, 0, 0, -262113, 0, 0, -262112, 0, 0, -262111, 0, 0, -262110, 0, 0, -262109, 0, 0, -262108, 0, 0, -262107, 0, 0, -262106, 0, 0, -262105, 0, 0, -262104, 0, 0, -262103, 0, 0, -262102, 0, 0, -262101, 0, 0, -262100, 0, 0, -262099, 0, 0, -262098, 0, 0, -262097, 0, 0, -262096, 0, 0, -262095, 0, 0, -262094, 0, 0, -262093, 0, 0, -262092, 0, 0, -262091, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851974, 0, 0, 983027, 0, 0, 983029, 56, 0, 1048563, 0, 0, 1048565, 56, 0, 1114099, 0, 0, 1114101, 56, 0, 1179635, 0, 0, 1179637, 56, 0, 1114122, 0, 0, 1245171, 0, 0, 1245173, 56, 0, 1179661, 0, 0, 1310707, 0, 0, 1310708, 1, 0, 1310709, 2, 0, 1245196, 0, 0, 1245197, 0, 0, 1376243, 0, 0, 1376244, 1, 0, 1376245, 2, 0, 1310732, 0, 0, 1441779, 0, 0, 1441780, 1, 0, 1441781, 2, 0, 1376264, 0, 0, 1376266, 0, 0, 1376267, 0, 0, 1507315, 0, 0, 1507316, 1, 0, 1507317, 2, 0, 1507318, 56, 0, 1507319, 56, 0, 1507320, 56, 0, 1507321, 56, 0, 1507322, 56, 0, 1507323, 56, 0, 1507324, 56, 0, 1507325, 56, 0, 1507326, 56, 0, 1507327, 56, 0, 1441792, 56, 0, 1441793, 56, 0, 1441794, 56, 0, 1441795, 56, 0, 1441796, 56, 0, 1441797, 56, 0, 1441798, 56, 0, 1441799, 56, 0, 1441800, 56, 0, 1441801, 0, 0, 1441802, 0, 0, 1441803, 56, 0, 1572851, 0, 0, 1572852, 0, 0, 1572853, 0, 0, 1572854, 0, 0, 1572855, 0, 0, 1572856, 0, 0, 1572857, 0, 0, 1572858, 0, 0, 1572859, 0, 0, 1572860, 0, 0, 1572861, 0, 0, 1572862, 0, 0, 1572863, 0, 0, 1507328, 0, 0, 1507329, 0, 0, 1507330, 0, 0, 1507331, 0, 0, 1507332, 0, 0, 1507333, 0, 0, 1507334, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507337, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -62,16 +64,31 @@ worldname = "untotern2"
 position = Vector2( -64, 1452 )
 boardname = "unto art stoker twins reference"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3375, -304 )
+boardname = "unto art batty vamps crossover"
+
 [node name="LoreBook" parent="." instance=ExtResource( 10 )]
 position = Vector2( -593, 1417 )
 customtext = "UNTOTERN_LORE_WORLD_TEXT"
 spritename = "untotern lorebook"
 
+[node name="LoreBook2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1698, -263 )
+customtext = "UNTOTERN_TEXT_BAT_GAME"
+spritename = "untotern lorebook"
+
 [node name="UntoBatGameMainBat" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2076, -618 )
+position = Vector2( 2108, -618 )
 
 [node name="UntoBatGameScene" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2363, -732 )
+position = Vector2( 2395, -732 )
 
 [node name="UntoBatGameBatStart" parent="." instance=ExtResource( 13 )]
-position = Vector2( 2076, -618 )
+position = Vector2( 2108, -618 )
+
+[node name="BattyVampsNPC" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2900, -353 )
+
+[node name="UntoBatGameVictoryDoor" parent="." instance=ExtResource( 15 )]
+position = Vector2( 3040, -416 )

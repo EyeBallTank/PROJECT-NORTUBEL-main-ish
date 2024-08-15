@@ -74,6 +74,7 @@ func _the_bat_will_really_jump():
 func _on_BatTouches_area_entered(area):
 	if area.is_in_group("THEBATWON"):
 		state = VICTORY
+		Signals.emit_signal("the_bat_has_won")
 
 
 func _on_BatTouches_body_entered(body):
