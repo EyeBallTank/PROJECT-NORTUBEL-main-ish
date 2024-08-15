@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeenThird.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/herrk npc/DirkAdventurerNPC.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=18]
 
 [node name="HerrkoLevel1" type="Node2D"]
 
@@ -123,5 +124,9 @@ position = Vector2( -197, 756 )
 [node name="DirkAdventurerNPC" parent="." instance=ExtResource( 17 )]
 position = Vector2( 2103, 1117 )
 customtext = "DIRK_ADVENTURER_NPC_TALK"
+
+[node name="Jumppad" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2302, 761 )
+spritename = "herrko jumppad"
 
 [editable path="DirkAdventurerNPC"]
