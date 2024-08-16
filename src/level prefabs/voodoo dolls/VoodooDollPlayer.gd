@@ -22,7 +22,6 @@ func _on_PainReceiveEnemy_area_entered(area):
 		animation.play("doll_hurt")
 
 
-
 func _on_PainReceiveYou_area_entered(area):
 	if area.name == "PlayerMelee":
 		animation.play("doll_hurt")
