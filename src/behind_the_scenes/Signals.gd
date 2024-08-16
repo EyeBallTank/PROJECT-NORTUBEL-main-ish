@@ -56,6 +56,9 @@ signal bat_must_jump
 signal bat_must_really_jump
 signal the_bat_has_won
 
+signal voodoo_hurts_player
+signal voodoo_hurts_companion
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case

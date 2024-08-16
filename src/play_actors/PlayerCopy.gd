@@ -110,6 +110,7 @@ func _ready():
 	oxygenbar.max_value = oxygen
 	var playerspawn = get_parent().get_node("playerspawn")
 	last_checkpoint = playerspawn
+	Signals.connect("voodoo_hurts_player", self, "_player_hurt_by_voodoo")
 
 func _i_am_invincible():
 	is_invul()
@@ -1312,6 +1313,14 @@ func _on_Hurtbox_area_entered(area):
 		pass
 	if area.name == "DeathHitbox" and immortal == false:
 		health = 0
+
+func _player_hurt_by_voodoo():
+	ouch = true
+	$AnimationPlayer.play("playerhurt") 
+	health -= 10
+	velocity.y -= 700
+	yield(get_tree().create_timer(0.5), "timeout")
+	ouch = false
 
 func pushcheck():
 	for index in get_slide_count():
