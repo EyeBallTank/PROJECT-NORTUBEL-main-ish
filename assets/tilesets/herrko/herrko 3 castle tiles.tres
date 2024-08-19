@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=44 format=2]
+[gd_resource type="TileSet" load_steps=47 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 3 CASTLE TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 3 CASTLE TILE PASSABLE.png" type="Texture" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE EULORIA STAINED GLASS.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE EULORIA THRONE.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE CASTLE DOOR.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE WOOD CART.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STRUCTURE.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STONE ARC.png" type="Texture" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -1382,3 +1385,45 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 72/shape_one_way_margin = 0.0
 72/shapes = [  ]
 72/z_index = 0
+73/name = "HERRKO TILE WOOD CART.png 73"
+73/texture = ExtResource( 9 )
+73/tex_offset = Vector2( 0, 0 )
+73/modulate = Color( 1, 1, 1, 1 )
+73/region = Rect2( 0, 0, 640, 320 )
+73/tile_mode = 0
+73/occluder_offset = Vector2( 0, 0 )
+73/navigation_offset = Vector2( 0, 0 )
+73/shape_offset = Vector2( 0, 0 )
+73/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+73/shape_one_way = false
+73/shape_one_way_margin = 0.0
+73/shapes = [  ]
+73/z_index = 0
+74/name = "HERRKO TILE STRUCTURE.png 74"
+74/texture = ExtResource( 10 )
+74/tex_offset = Vector2( 0, 0 )
+74/modulate = Color( 1, 1, 1, 1 )
+74/region = Rect2( 0, 0, 576, 640 )
+74/tile_mode = 0
+74/occluder_offset = Vector2( 0, 0 )
+74/navigation_offset = Vector2( 0, 0 )
+74/shape_offset = Vector2( 0, 0 )
+74/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+74/shape_one_way = false
+74/shape_one_way_margin = 0.0
+74/shapes = [  ]
+74/z_index = 0
+75/name = "HERRKO TILE STONE ARC.png 75"
+75/texture = ExtResource( 11 )
+75/tex_offset = Vector2( 0, 0 )
+75/modulate = Color( 1, 1, 1, 1 )
+75/region = Rect2( 0, 0, 448, 576 )
+75/tile_mode = 0
+75/occluder_offset = Vector2( 0, 0 )
+75/navigation_offset = Vector2( 0, 0 )
+75/shape_offset = Vector2( 0, 0 )
+75/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+75/shape_one_way = false
+75/shape_one_way_margin = 0.0
+75/shapes = [  ]
+75/z_index = 0
