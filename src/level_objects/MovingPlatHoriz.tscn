@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/MovingPlatHoriz.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_object_sprites/MovingPlatHoriz mirror.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/MovingPlatHoriz Greklovick.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/MovingPlatHoriz Brinkaedea.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/level_object_sprites/herrko/MovingPlatHoriz Herrko.png" type="Texture" id=6]
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 5 )
@@ -12,6 +13,10 @@ region = Rect2( 0, 0, 240, 132 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 240, 132 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 240, 132 )
 
 [sub_resource type="AtlasTexture" id=6]
@@ -33,6 +38,11 @@ animations = [ {
 "frames": [ SubResource( 9 ) ],
 "loop": false,
 "name": "greklovick movplathoriz",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 11 ) ],
+"loop": false,
+"name": "herrko movplathoriz",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 6 ) ],
@@ -114,7 +124,7 @@ motion/sync_to_physics = true
 
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
 frames = SubResource( 7 )
-animation = "brinkaedea movplathoriz"
+animation = "herrko movplathoriz"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
 position = Vector2( 0.5, 1 )
@@ -125,8 +135,7 @@ one_way_collision = true
 curve = SubResource( 2 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -537.061, -1 )
-offset = 534.622
+position = Vector2( -2, -1 )
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]

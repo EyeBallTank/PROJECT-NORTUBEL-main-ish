@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeenThird.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=26]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -153,3 +154,7 @@ position = Vector2( -376, 904 )
 
 [node name="HerrkoRedGhalbeenThird" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1320, 968 )
+
+[node name="MovingPlatHoriz" parent="." instance=ExtResource( 26 )]
+position = Vector2( -471, 1123 )
+spritename = "herrko movplathoriz"
