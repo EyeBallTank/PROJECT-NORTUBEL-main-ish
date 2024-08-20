@@ -143,7 +143,7 @@ func cutscene_over():
 #Dirlindu: Indeed, but you're still at risk. Even if these kids are not as strong as you here, there will be a good reason why they won't suffer that safe.
 #Pebble: Uulga, please be safe!
 #Uulga: Don't worry, Pebble. I'll come back safely. Now, you 6 come with me.
-
+#MAKE MOON FROM HERRKOLEVEL4 SKY SHOW UP IN CUTSCENE AND SHOW THE ISLAND
 
 #Katrin: Here is is, another piece. Thank you miss Uulga.
 #Katrin: I guess we can go now, though it's a bit soon.

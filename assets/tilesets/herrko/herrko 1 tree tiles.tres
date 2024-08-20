@@ -1,9 +1,11 @@
-[gd_resource type="TileSet" load_steps=18 format=2]
+[gd_resource type="TileSet" load_steps=20 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 1 TREE TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 1 TREE TILE PASSABLE.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE GHALBEEN KING STATUE.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE FEMALE GHALBEEN STATUE.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE TREE HOUSE 1.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE TREE HOUSE 2.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -738,3 +740,31 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 42/z_index = 0
+43/name = "HERRKO TILE TREE HOUSE 1.png 43"
+43/texture = ExtResource( 5 )
+43/tex_offset = Vector2( 0, 0 )
+43/modulate = Color( 1, 1, 1, 1 )
+43/region = Rect2( 0, 0, 896, 512 )
+43/tile_mode = 0
+43/occluder_offset = Vector2( 0, 0 )
+43/navigation_offset = Vector2( 0, 0 )
+43/shape_offset = Vector2( 0, 0 )
+43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+43/shape_one_way = false
+43/shape_one_way_margin = 0.0
+43/shapes = [  ]
+43/z_index = 0
+44/name = "HERRKO TILE TREE HOUSE 2.png 44"
+44/texture = ExtResource( 6 )
+44/tex_offset = Vector2( 0, 0 )
+44/modulate = Color( 1, 1, 1, 1 )
+44/region = Rect2( 0, 0, 832, 640 )
+44/tile_mode = 0
+44/occluder_offset = Vector2( 0, 0 )
+44/navigation_offset = Vector2( 0, 0 )
+44/shape_offset = Vector2( 0, 0 )
+44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+44/shape_one_way = false
+44/shape_one_way_margin = 0.0
+44/shapes = [  ]
+44/z_index = 0
