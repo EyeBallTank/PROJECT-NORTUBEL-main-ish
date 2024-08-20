@@ -119,7 +119,7 @@ boardname = "herrko art tsoovukot knight reference"
 [node name="Door" parent="." instance=ExtResource( 16 )]
 position = Vector2( 2184, 1608 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
-spritename = "herrko greendoor"
+spritename = "altherrko greendoor"
 customtext = "uulg44"
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 17 )]
