@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -26,8 +26,19 @@
 [ext_resource path="res://src/behind_the_scenes/chasingtargettest.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/enemies/herrko/HerrkoRedGhalbeenThird.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/sprites/level_backgrounds/herrko/herrkolevel23 bg.png" type="Texture" id=27]
 
 [node name="HerrkoLevel2" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.2, 0 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Herrkolevel23Bg" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 27 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
