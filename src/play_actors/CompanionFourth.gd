@@ -102,6 +102,7 @@ func _ready():
 	oxygenbar.max_value = oxygen
 	var companionspawn = get_parent().get_node("companionspawn")
 	last_checkpoint = companionspawn
+	Signals.connect("voodoo_hurts_companion", self, "_companion_hurt_by_voodoo")
 
 func _i_am_invincible():
 	is_invul()
@@ -2259,6 +2260,13 @@ func _on_CompanionHurtbox_area_entered(Area2D):
 		ouch = false
 	if Area2D.name == "DeathHitbox":
 		health = 0
+
+func _companion_hurt_by_voodoo():
+	ouch = true
+	$AnimationPlayer.play("CompHurt") 
+	vel.y -= 500
+	yield(get_tree().create_timer(0.5), "timeout")
+	ouch = false
 
 func is_invul():
 	immortal = true
