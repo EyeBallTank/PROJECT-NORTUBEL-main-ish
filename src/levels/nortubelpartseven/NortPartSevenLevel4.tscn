@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -11,6 +11,11 @@
 [ext_resource path="res://src/level prefabs/voodoo dolls/VoodooDollCompanion.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/menusandui/VoodooPlayerHealthBar.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/menusandui/VoodooCompanionHealthBar.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/level_objects/GreenBarrier.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=16]
 
 [node name="NortPartSevenLevel4" type="Node2D"]
 
@@ -59,9 +64,40 @@ customtext = "n4myl3"
 [node name="VoodooDollPlayer" parent="." instance=ExtResource( 8 )]
 position = Vector2( 282, 1022 )
 
+[node name="VoodooDollPlayer2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 750, 644 )
+charactername = "voodoo carrie"
+
+[node name="VoodooDollPlayer3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1064, 675 )
+charactername = "voodoo katrin"
+
 [node name="VoodooDollCompanion" parent="." instance=ExtResource( 9 )]
 position = Vector2( 573, 1013 )
+
+[node name="VoodooDollCompanion2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1517, 681 )
+charactername = "voodoo oscar"
+
+[node name="VoodooDollCompanion3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2019, 673 )
+charactername = "voodoo pete"
 
 [node name="VoodooPlayerHealthBar" parent="." instance=ExtResource( 10 )]
 
 [node name="VoodooCompanionHealthBar" parent="." instance=ExtResource( 11 )]
+
+[node name="GreenBarrier" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2476, 247 )
+
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2149, 247 )
+
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1952, 247 )
+
+[node name="Gecko enemy" parent="." instance=ExtResource( 15 )]
+position = Vector2( 51, 890 )
+
+[node name="SpitterFish" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2686, 635 )
