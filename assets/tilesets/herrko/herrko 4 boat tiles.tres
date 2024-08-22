@@ -1,9 +1,10 @@
-[gd_resource type="TileSet" load_steps=31 format=2]
+[gd_resource type="TileSet" load_steps=32 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 4 BOAT TILE PASSABLE.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 4 BOAT TILE SOLID.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILES STRANGE CAVE TILES.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILES STRANGE CAVE WINDOW STUFF.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STRANGE CAVE DOOR.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -1246,3 +1247,17 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 69/shape_one_way_margin = 0.0
 69/shapes = [  ]
 69/z_index = 0
+70/name = "HERRKO TILE STRANGE CAVE DOOR.png 70"
+70/texture = ExtResource( 5 )
+70/tex_offset = Vector2( 0, 0 )
+70/modulate = Color( 1, 1, 1, 1 )
+70/region = Rect2( 0, 0, 320, 512 )
+70/tile_mode = 0
+70/occluder_offset = Vector2( 0, 0 )
+70/navigation_offset = Vector2( 0, 0 )
+70/shape_offset = Vector2( 0, 0 )
+70/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+70/shape_one_way = false
+70/shape_one_way_margin = 0.0
+70/shapes = [  ]
+70/z_index = 0
