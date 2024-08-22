@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=33 format=2]
+[gd_resource type="TileSet" load_steps=35 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 4 BOAT TILE PASSABLE.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 4 BOAT TILE SOLID.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILES STRANGE CAVE WINDOW STUFF.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STRANGE CAVE DOOR.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STRANGE PILLAR.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STRANGE ARC.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE STRANGE PILLAR AND STRUCTURE.png" type="Texture" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -1318,3 +1320,31 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 74/shape_one_way_margin = 0.0
 74/shapes = [  ]
 74/z_index = 0
+75/name = "HERRKO TILE STRANGE ARC.png 75"
+75/texture = ExtResource( 7 )
+75/tex_offset = Vector2( 0, 0 )
+75/modulate = Color( 1, 1, 1, 1 )
+75/region = Rect2( 0, 0, 448, 384 )
+75/tile_mode = 0
+75/occluder_offset = Vector2( 0, 0 )
+75/navigation_offset = Vector2( 0, 0 )
+75/shape_offset = Vector2( 0, 0 )
+75/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+75/shape_one_way = false
+75/shape_one_way_margin = 0.0
+75/shapes = [  ]
+75/z_index = 0
+76/name = "HERRKO TILE STRANGE PILLAR AND STRUCTURE.png 76"
+76/texture = ExtResource( 8 )
+76/tex_offset = Vector2( 0, 0 )
+76/modulate = Color( 1, 1, 1, 1 )
+76/region = Rect2( 0, 0, 320, 384 )
+76/tile_mode = 0
+76/occluder_offset = Vector2( 0, 0 )
+76/navigation_offset = Vector2( 0, 0 )
+76/shape_offset = Vector2( 0, 0 )
+76/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+76/shape_one_way = false
+76/shape_one_way_margin = 0.0
+76/shapes = [  ]
+76/z_index = 0
