@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/herrko/herrkolevel4 bg.png" type="Texture" id=21]
 [ext_resource path="res://src/level prefabs/herrk prefabs/HerrkUulgaBreakableWall.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level prefabs/herrk prefabs/HerrkStrangeStairs.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/level prefabs/herrk prefabs/HerrkPortionOfUulgaShip.tscn" type="PackedScene" id=24]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -142,3 +143,6 @@ position = Vector2( 1274, 1533 )
 
 [node name="HerrkStrangeStairs" parent="." instance=ExtResource( 23 )]
 position = Vector2( 2887, 195 )
+
+[node name="HerrkPortionOfUulgaShip" parent="." instance=ExtResource( 24 )]
+position = Vector2( -1142, 914 )
