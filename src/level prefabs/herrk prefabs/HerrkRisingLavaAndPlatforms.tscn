@@ -44,7 +44,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 409, 1291 ) ]
+"values": [ Vector2( 385, 1291 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath(".:script")
@@ -57,6 +57,102 @@ tracks/3/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ ExtResource( 4 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("platform1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1344, 403 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("platform2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -320, 211 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("platform3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1344, 19 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("platform4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -320, -173 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("platform5:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1344, -365 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("platform6:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -320, -557 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("platform7:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1344, -749 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("platform8:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -320, -941 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -96,7 +192,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 9 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 409, 1291 ), Vector2( 409, -77 ) ]
+"values": [ Vector2( 385, 1291 ), Vector2( 385, -77 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath(".:script")
@@ -109,6 +205,102 @@ tracks/3/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ ExtResource( 4 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("platform1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1344, 403 ), Vector2( 384, 403 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("platform2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -320, 211 ), Vector2( 384, 211 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("platform3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1344, 19 ), Vector2( 384, 19 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("platform4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -320, -173 ), Vector2( 384, -173 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("platform5:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1344, -365 ), Vector2( 384, -365 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("platform6:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -320, -557 ), Vector2( 384, -557 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("platform7:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1344, -749 ), Vector2( 384, -749 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("platform8:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -320, -941 ), Vector2( 384, -941 ) ]
 }
 
 [sub_resource type="AtlasTexture" id=14]
@@ -135,6 +327,9 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 41.5, 57 )
 
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 320, 12.5 )
+
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 178.5, 59.5 )
 
@@ -157,9 +352,6 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=20]
 extents = Vector2( 320.25, 704.25 )
 
-[sub_resource type="RectangleShape2D" id=21]
-extents = Vector2( 320, 12.5 )
-
 [node name="HerrkRisingLavaAndPlatforms" type="Node2D"]
 script = ExtResource( 4 )
 
@@ -180,31 +372,12 @@ animation = "on"
 position = Vector2( -0.5, 3 )
 shape = SubResource( 13 )
 
-[node name="LavaItself" type="KinematicBody2D" parent="."]
-position = Vector2( 409, 1291 )
-collision_layer = 32
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LavaItself"]
-shape = SubResource( 16 )
-disabled = true
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="LavaItself"]
-frames = SubResource( 19 )
-playing = true
-
-[node name="DeathHitbox" parent="LavaItself" instance=ExtResource( 2 )]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LavaItself/DeathHitbox"]
-position = Vector2( -0.25, 31.75 )
-shape = SubResource( 20 )
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 bus = "Sound"
 
 [node name="platform1" type="KinematicBody2D" parent="."]
-position = Vector2( 1344, 467 )
+position = Vector2( 1344, 403 )
 collision_layer = 4
 collision_mask = 3
 
@@ -215,5 +388,116 @@ texture = ExtResource( 3 )
 position = Vector2( 0, -2.5 )
 shape = SubResource( 21 )
 one_way_collision = true
+
+[node name="platform5" type="KinematicBody2D" parent="."]
+position = Vector2( 1344, -365 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform5"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform5"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="platform6" type="KinematicBody2D" parent="."]
+position = Vector2( -320, -557 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform6"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform6"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="platform2" type="KinematicBody2D" parent="."]
+position = Vector2( -320, 211 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform2"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform2"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="platform7" type="KinematicBody2D" parent="."]
+position = Vector2( 1344, -749 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform7"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform7"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="platform8" type="KinematicBody2D" parent="."]
+position = Vector2( -320, -941 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform8"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform8"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="platform3" type="KinematicBody2D" parent="."]
+position = Vector2( 1344, 19 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform3"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform3"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="platform4" type="KinematicBody2D" parent="."]
+position = Vector2( -320, -173 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="HerrkRisingLavaPlatforms" type="Sprite" parent="platform4"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform4"]
+position = Vector2( 0, -2.5 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="LavaItself" type="KinematicBody2D" parent="."]
+position = Vector2( 385, 1291 )
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LavaItself"]
+shape = SubResource( 16 )
+disabled = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="LavaItself"]
+frames = SubResource( 19 )
+frame = 1
+playing = true
+
+[node name="DeathHitbox" parent="LavaItself" instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LavaItself/DeathHitbox"]
+position = Vector2( -0.25, 31.75 )
+shape = SubResource( 20 )
 
 [connection signal="body_entered" from="Flowerswitch" to="." method="_on_Flowerswitch_body_entered"]
