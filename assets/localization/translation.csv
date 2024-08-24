@@ -2370,7 +2370,7 @@ HERRKO_LORE_TEXT_GHALBEEN,"Ghalbeens use their long arms to swing from trees and
 and also to climb on trees.
 They managed to build their own cities on large trees while 
 using their acrobatic skills.
-Even female Ghalbeens are known for their acrobacies despite their, 
+Even female Ghalbeens are known for their acrobatics despite their, 
 occasionally described as ""stacked"" proportions.","Os Ghalbeens usam os seus longos braços para 
 se balançarem em árvores e vinhas,
 e também para subir às árvores.
@@ -2378,3 +2378,51 @@ Conseguiram construir as suas próprias cidades em grandes árvores enquanto
 usando as suas habilidades acrobáticas.
 Até as mulheres Ghalbeens são conhecidas pelas suas acrobacias, apesar
 das suas proporções, as vezes descritas como ""carregadas""."
+HERRKO_LORE_TEXT_HORG,"Is it said an Horg's skin can resist sharp blades.
+Because of this, they can climb these swords on the cliff with no trouble.
+Though despite this, their skin is not as hard as it sounds.
+A female Horg's skin can be very smooth.","Diz-se que a pele de um Horg pode resistir lâminas afiadas.
+Por causa disso, podem escalar estas espadas no penhasco sem problemas.
+Apesar disso, a sua pele não é tão dura como parece.
+A pele de uma mulher Horg pode ser bastante macia."
+HERRKO_LORE_TEXT_EULORIA,"Euloria's birth is declared to be a miracle.
+During a war, her parents and some guards escaped from a burning ship, through a small boat.
+At midnight, her mother successfully gave birth to the princess of Herrko.","O nascimento de Euloria é considerado um milagre.
+Durante uma guerra, os seus pais e alguns guardas escaparam de um navio em chamas, 
+através de um barco pequeno.
+À meia-noite, a sua mãe deu à luz a princesa de Herrko, com sucesso."
+HERRKO_LORE_TEXT_TURRET_RING,"These rings are part of Herrko's defense system.
+During conflicts, wizards use these rings to create projectiles of energy 
+which are then shot at indavers.
+Whoever, the most sophisticated and impressive example 
+of Herrko's defense system is the use of lava.
+In which cities and establishments are closed and protected 
+with great iron walls, to allow the lava to flow easily
+and only hurting ideal targets and invaders.","Estes anéis fazem parte do sistema de defesa de Herrko.
+Durante alguns conflitos, feiticeiros usam estes anéis 
+para criar projéteis de energia
+que são depois disparados contra invasores.
+Mesmo assim, o exemplo mais sofisticado e impressionante
+do sistema de defesa de Herrko é a utilização de lava.
+Em que as cidades e estabelecimentos serão fechados e protegidos
+com grandes paredes de ferro, para permitir que a lava flua facilmente, 
+apenas ferindo alvos e invasores ideais."
+HERRKO_LORE_TEXT_UULGA_TUTORIAL,"A + Right: Uulga follows you.
+A + Left: Uulga runs away from you.
+A + Down: Uulga stops.
+X: Uulga jumps.
+
+If Uulga gets near an enemy, she will attack.
+Uulga can also break some walls that get in the way.
+Uulga is strong enough that she doesn't need to heal.
+Unfortunately, Uulga is a bit tall meaning you two
+have to help her on that regard.","A + Direita: Uulga segue-te.
+A + Esquerda: Uulga foge de ti.
+A + Baixo: Uulga para.
+X: Uulga salta.
+
+A Uulga ataca inimigos se estiver perto suficiente.
+Uulga também pode quebrar algumas paredes em frente.
+Uulga é forte o suficiente para não precisar de ser curada.
+Infelizmente, Uulga é um pouco alta, o que significa que vocês
+os dois têm que ajudá-la nesse aspeto."

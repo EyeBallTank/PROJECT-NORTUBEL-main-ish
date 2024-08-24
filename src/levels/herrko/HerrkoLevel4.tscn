@@ -94,8 +94,13 @@ position = Vector2( 1317, 1478 )
 propname = "herrprop yevlen statue 4"
 
 [node name="LoreBook" parent="." instance=ExtResource( 8 )]
-position = Vector2( 168, 1722 )
+position = Vector2( 1124, 857 )
 customtext = "HERRKO_LORE_ANCESTOR_T"
+spritename = "herrko lorebook"
+
+[node name="LoreBook2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 489, 1658 )
+customtext = "HERRKO_LORE_TEXT_UULGA_TUTORIAL"
 spritename = "herrko lorebook"
 
 [node name="RedButton" parent="." instance=ExtResource( 10 )]
