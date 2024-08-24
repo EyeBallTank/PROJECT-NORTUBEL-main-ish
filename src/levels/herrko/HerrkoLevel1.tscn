@@ -94,6 +94,12 @@ hookspritename = "herrko hook"
 
 [node name="LoreBook" parent="." instance=ExtResource( 7 )]
 position = Vector2( 475, 1438 )
+customtext = "HERRKO_LORE_TEXT_REGAHUUKA"
+spritename = "herrko lorebook"
+
+[node name="LoreBook2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -1308, 1624 )
+customtext = "HERRKO_LORE_TEXT_GHALBEEN"
 spritename = "herrko lorebook"
 
 [node name="ArtBook" parent="." instance=ExtResource( 10 )]
