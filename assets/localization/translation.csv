@@ -2460,3 +2460,11 @@ A nossa espécie pode ser bastante resistente à gravidade."
 PEBBLE_NPC_HURT,"Hey, what's wrong with you?
 Got any strange voices in your head or something?","Hey, o que é que se passa contigo?
 Tens algumas vozes estranhas na tua cabeça ou quê?"
+IVAN_NPC_TALK,"I still want to know.
+Are both of you princess from a realm I haven't heard of?","Ainda gostava de saber.
+Vocês as duas são princesas de um reino, que eu ainda não ouvi falar?"
+IVAN_NPC_HURT,"You're not fit to fight, I can tell.","Não és apta para combate, isso sei dizer."
+IVAN_NPC_HUG,"I appreciate the gesture but...
+Does that friend of yours mind?","Agradeço o gesto, mas...
+Aquele amigo teu, será que ele importa?"
+IVAN_NPC_HONK,Doesn't seem quite a honorous guesture from someone like you.,Não parece um gesto honroso vindo de alguém como você.
