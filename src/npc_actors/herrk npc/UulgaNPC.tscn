@@ -1,0 +1,352 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/herrk prefab sprites/Herrk Uulga NPC Large Rock.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/herrko/HERRKO ON WATER NPC SPRITES.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/herrko/HERRKO OFF WATER NPC SPRITES V2.png" type="Texture" id=5]
+[ext_resource path="res://src/npc_actors/herrk npc/UulgaNPC.gd" type="Script" id=6]
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 13 ) ],
+"loop": false,
+"name": "default",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 14 ) ],
+"loop": false,
+"name": "swim away",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 78.6458, 119.903 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 152.083, 191.5 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 152.083, 190.861 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("UULGA ON WATER:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("UULGA ON WATER/AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "default" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("UULGA ON WATER/TalktoArea/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("UULGA ON WATER/AnimationArea/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("UULGA OFF WATER:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 425, -131 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("UULGA OFF WATER/AnotherTalkArea/CollisionShape2D:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("UULGA OFF WATER/AnimatedSprite:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "idle" ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "gotbananas"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("UULGA ON WATER:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 192, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("UULGA ON WATER/AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "swim away" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("UULGA ON WATER/TalktoArea/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("UULGA ON WATER/AnimationArea/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("UULGA OFF WATER:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 425, -131 ), Vector2( 425, -131 ), Vector2( 964, -131 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("UULGA OFF WATER/AnimatedSprite:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ "idle", "walking", "idle" ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("UULGA OFF WATER/AnotherTalkArea/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 383, 607 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 383, 607 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 5 )
+region = Rect2( 383, 0, 383, 607 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 5 )
+region = Rect2( 766, 0, 383, 607 )
+
+[sub_resource type="SpriteFrames" id=19]
+animations = [ {
+"frames": [ SubResource( 22 ) ],
+"loop": false,
+"name": "idle",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 23 ), SubResource( 25 ) ],
+"loop": true,
+"name": "walking",
+"speed": 3.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=20]
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 119.5, 170 )
+
+[node name="UulgaNPC" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="UULGA ON WATER" type="KinematicBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="UULGA ON WATER"]
+position = Vector2( -2.77778, 8.33333 )
+frames = SubResource( 2 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UULGA ON WATER"]
+shape = SubResource( 3 )
+disabled = true
+
+[node name="TalktoArea" type="Area2D" parent="UULGA ON WATER"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UULGA ON WATER/TalktoArea"]
+position = Vector2( -9.02778, -55.5 )
+shape = SubResource( 4 )
+
+[node name="AnimationArea" type="Area2D" parent="UULGA ON WATER"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UULGA ON WATER/AnimationArea"]
+position = Vector2( -9.02777, -56.139 )
+shape = SubResource( 12 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 480.0
+margin_right = 1018.0
+margin_bottom = 593.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 1007.0
+margin_bottom = 109.0
+custom_fonts/font = ExtResource( 1 )
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 452.0
+margin_right = 147.0
+margin_bottom = 476.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 4
+patch_margin_bottom = 7
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 23.0
+custom_fonts/font = ExtResource( 1 )
+text = "Uulga Pronk"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 8 )
+anims/gotbananas = SubResource( 10 )
+
+[node name="UULGA OFF WATER" type="KinematicBody2D" parent="."]
+position = Vector2( 425, -131 )
+collision_layer = 64
+collision_mask = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="UULGA OFF WATER"]
+position = Vector2( -38, -20 )
+frames = SubResource( 19 )
+animation = "idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UULGA OFF WATER"]
+shape = SubResource( 20 )
+disabled = true
+
+[node name="AnotherTalkArea" type="Area2D" parent="UULGA OFF WATER"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UULGA OFF WATER/AnotherTalkArea"]
+position = Vector2( -13.5, -26 )
+shape = SubResource( 21 )
+disabled = true
+
+[node name="HerrkUulgaNpcLargeRock" type="Sprite" parent="."]
+position = Vector2( 349, -208 )
+texture = ExtResource( 3 )
+
+[connection signal="body_entered" from="UULGA ON WATER/TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="UULGA ON WATER/TalktoArea" to="." method="_on_TalktoArea_body_exited"]
+[connection signal="body_entered" from="UULGA ON WATER/AnimationArea" to="." method="_on_AnimationArea_body_entered"]
+[connection signal="body_entered" from="UULGA OFF WATER/AnotherTalkArea" to="." method="_on_AnotherTalkArea_body_entered"]
+[connection signal="body_exited" from="UULGA OFF WATER/AnotherTalkArea" to="." method="_on_AnotherTalkArea_body_exited"]

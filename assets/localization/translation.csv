@@ -2426,3 +2426,22 @@ Uulga também pode quebrar algumas paredes em frente.
 Uulga é forte o suficiente para não precisar de ser curada.
 Infelizmente, Uulga é um pouco alta, o que significa que vocês
 os dois têm que ajudá-la nesse aspeto."
+UULGA_NPC_TALK_NO_ITEM,"Can't believe this happened! Hey, can you help me?
+I forgot my towel. Would you mind searching it for me?
+It's a simple white towel. I might've left somewhere close.","Não acredito que isto aconteceu! Hey, podes ajudar-me?
+Esqueci da minha toalha. Importas-te de a procurar?
+É uma toalha branca simples. Talvez estará por ai, algures perto."
+UULGA_NPC_TALK_YES_ITEM,"Thank you.
+This place's getting colder.
+Wonder how Pebble is going.","Obrigada.
+Este sitio está a ficar frio.
+Como está a Pebble?"
+UULGA_NPC_HUG,"You seem very polite.
+Perhaps you're full of admiration.
+You may never reach a figure like mine but I can train you.","És muito bem educada.
+Talvez estejas cheia de admiração.
+Nunca chegarás ao mesmo nível duma figura como a minha, mas eu posso te treinar."
+UULGA_NPC_HURT,What a useless blade you got there.,Que lamina inútil que tens ai.
+UULGA_NPC_HONK,"Your should restrain your passion.
+And besides, I don't even know you.","Devias restringir a tua paixão.
+E além disso, nem sequer te conheço."
