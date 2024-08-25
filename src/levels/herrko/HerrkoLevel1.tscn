@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://src/level_objects/JumppadBigger.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/npc_actors/herrk npc/PebbleNPC.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/npc_actors/herrk npc/IvanNPC.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/npc_actors/herrk npc/PintoNPC.tscn" type="PackedScene" id=21]
 
 [node name="HerrkoLevel1" type="Node2D"]
 
@@ -148,5 +149,10 @@ customtext = "IVAN_NPC_TALK"
 customtext2 = "IVAN_NPC_HONK"
 customtext3 = "IVAN_NPC_HUG"
 customtext4 = "IVAN_NPC_HURT"
+
+[node name="PintoNPC" parent="." instance=ExtResource( 21 )]
+position = Vector2( -1046, 2159 )
+customtext = "PINTO_NPC_TALK"
+customname = "Pinto"
 
 [editable path="DirkAdventurerNPC"]
