@@ -2393,7 +2393,7 @@ através de um barco pequeno.
 À meia-noite, a sua mãe deu à luz a princesa de Herrko, com sucesso."
 HERRKO_LORE_TEXT_TURRET_RING,"These rings are part of Herrko's defense system.
 During conflicts, wizards use these rings to create projectiles of energy 
-which are then shot at indavers.
+which are then shot at invaders.
 Whoever, the most sophisticated and impressive example 
 of Herrko's defense system is the use of lava.
 In which cities and establishments are closed and protected 
@@ -2442,7 +2442,7 @@ You may never reach a figure like mine but I can train you.","És muito bem educ
 Talvez estejas cheia de admiração.
 Nunca chegarás ao mesmo nível duma figura como a minha, mas eu posso te treinar."
 UULGA_NPC_HURT,What a useless blade you got there.,Que lamina inútil que tens ai.
-UULGA_NPC_HONK,"Your should restrain your passion.
+UULGA_NPC_HONK,"You should restrain your passion.
 And besides, I don't even know you.","Devias restringir a tua paixão.
 E além disso, nem sequer te conheço."
 PEBBLE_NPC_TALK,"Welcome to our village.
@@ -2461,10 +2461,21 @@ PEBBLE_NPC_HURT,"Hey, what's wrong with you?
 Got any strange voices in your head or something?","Hey, o que é que se passa contigo?
 Tens algumas vozes estranhas na tua cabeça ou quê?"
 IVAN_NPC_TALK,"I still want to know.
-Are both of you princess from a realm I haven't heard of?","Ainda gostava de saber.
+Are both of you princesses from a realm I haven't heard of?","Ainda gostava de saber.
 Vocês as duas são princesas de um reino, que eu ainda não ouvi falar?"
 IVAN_NPC_HURT,"You're not fit to fight, I can tell.","Não és apta para combate, isso sei dizer."
 IVAN_NPC_HUG,"I appreciate the gesture but...
 Does that friend of yours mind?","Agradeço o gesto, mas...
 Aquele amigo teu, será que ele importa?"
-IVAN_NPC_HONK,Doesn't seem quite a honorous guesture from someone like you.,Não parece um gesto honroso vindo de alguém como você.
+IVAN_NPC_HONK,Doesn't seem quite a generous gesture from someone like you.,Não parece um gesto honroso vindo de alguém como você.
+LARGE_TARRAK_NPC_NAME,Large Tarrak,Tarrak enorme
+EULORIA_NPC_TALK,"Who are you?
+How did you get there and why?","Quem é você?
+Como é que entrou e porquê?"
+EULORIA_NPC_HURT,Do not dare to start a war you cannot win.,Não se atreva começar uma guerra que não poderá vencer.
+EULORIA_NPC_HUG,"If you're a prince proposing your hand in marriage, I decline.
+I don't even know what species you are from.","Se é um príncipe a propor a mão em casamento, recuso.
+Nem sei de que espécie é."
+EULORIA_NPC_HONK,"How could you?
+I'm the princess of Herrko, you swine.","Como se atreve?
+Eu sou a princesa de Herrko, seu suíno."
