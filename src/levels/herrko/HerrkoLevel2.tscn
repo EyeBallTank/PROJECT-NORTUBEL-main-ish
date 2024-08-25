@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/level prefabs/herrk prefabs/HerrkUulgaWaterPlatform.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/npc_actors/herrk npc/GalagharNPC.tscn" type="PackedScene" id=35]
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -205,3 +206,8 @@ collision_newsize = Vector2( 32, 8 )
 
 [node name="HerrkUulgaWaterPlatform" parent="." instance=ExtResource( 34 )]
 position = Vector2( 1728, 3536 )
+
+[node name="GalagharNPC" parent="." instance=ExtResource( 35 )]
+position = Vector2( 2344, 3107 )
+customtext = "GALAGHAR_NPC_TALK"
+customname = "Galaghar"

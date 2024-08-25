@@ -2495,3 +2495,14 @@ PRESCILLIA_NPC_TALK,I'd like to marry an Horg man... and I wouldn't mind an Horg
 PINTO_NPC_TALK,"Oh no, it seems some Ghalbeens have been corrupted by Lakk.
 Be careful, their arrows can follow you even if you run.","Oh, não, parece que alguns Ghalbeens foram corrompidos por Lakk.
 Tem cuidado, as flechas deles podem seguir-te mesmo que corres."
+GALAGHAR_NPC_TALK,"Some Horgs were not spared by the curse of Lakk.
+Their hammers can summon shockwaves, which can paralyze you with such vibrations.
+Even if these don't hurt you on their own, you'll still be left vulnerable to other dangers.","Alguns Horgs não foram poupados pela maldição de Lakk.
+Os seus martelos podem invocar ondas de choque, que podem paralisar-vos com tais vibrações.
+Mesmo se as ondas próprias não sejam dolorosas, continuaram vulneráveis a outros perigos."
+HERRKO_GUARD_NPC_TALK,"I still have nightmares about Lakk.
+One great warrior had his soul taken over by Lakk and the first thing
+he did was slaughter his own family.","Ainda tenho pesadelos com o Lakk.
+Houve um grande guerreiro que teve a sua alma dominada por Lakk 
+e a primeira coisa que fez foi massacrar a sua própria família."
+HERRKO_GUARD_NPC_NAME,Herrko guard,Guarda de Herrko
