@@ -10,7 +10,6 @@
 [ext_resource path="res://src/npc_actors/herrk npc/Tarrak NPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
-[ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level prefabs/herrk prefabs/HerrkMagicCarpetPlatform.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=13]
 [ext_resource path="res://assets/sprites/level_backgrounds/herrko/herrkolevel23 bg.png" type="Texture" id=14]
@@ -18,6 +17,7 @@
 [ext_resource path="res://src/level prefabs/herrk prefabs/HerrkRisingLavaAndPlatforms.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/npc_actors/herrk npc/EuloriaNPC.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=19]
 
 [node name="HerrkoLevel3" type="Node2D"]
 
@@ -103,10 +103,6 @@ new_scene = "res://screens/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko
 spritename = "herrko greendoor"
 customtext = "eul0r1"
 
-[node name="YellowSwitch" parent="." instance=ExtResource( 11 )]
-position = Vector2( -104, 1512 )
-yelswitchskin = "res://assets/sprites/level_object_sprites/herrko/Yellow switch Herrko.tres"
-
 [node name="HerrkMagicCarpetPlatform" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1648, 1616 )
 
@@ -136,3 +132,13 @@ customtext = "EULORIA_NPC_TALK"
 customtext2 = "EULORIA_NPC_HONK"
 customtext3 = "EULORIA_NPC_HUG"
 customtext4 = "EULORIA_NPC_HURT"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 19 )]
+position = Vector2( 3224, 3016 )
+customtext1 = "CONVO_PEBBLE_UULGA_1"
+customtext2 = "CONVO_PEBBLE_UULGA_2"
+customtext3 = "CONVO_PEBBLE_UULGA_3"
+customtext4 = "CONVO_PEBBLE_UULGA_4"
+customname1 = "Pebble Narhel"
+customname2 = "Uulga Pronk"
+spritename = "pebble uulga"
