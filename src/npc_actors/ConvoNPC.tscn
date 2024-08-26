@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/Convo Carrie Katrin 5.png" type="Texture" id=2]
@@ -40,6 +40,8 @@
 [ext_resource path="res://assets/sprites/npc_actor_sprites/Brinkaedea/Convo Claudia Katrin.png" type="Texture" id=38]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/lahiurn/Convo Gustav Jerold.png" type="Texture" id=39]
 [ext_resource path="res://assets/sprites/npc_actor_sprites/herrko/Convo Pebble Uulga.png" type="Texture" id=40]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/lahiurn/Convo Katrin Namylea.png" type="Texture" id=41]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/lahiurn/Convo Carrie Namylea.png" type="Texture" id=42]
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
@@ -93,6 +95,10 @@ region = Rect2( 0, 0, 420, 583 )
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 420, 583 )
 
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 42 )
+region = Rect2( 0, 0, 420, 583 )
+
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 18 )
 region = Rect2( 0, 0, 420, 583 )
@@ -143,6 +149,10 @@ region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 420, 583 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 41 )
 region = Rect2( 0, 0, 420, 583 )
 
 [sub_resource type="AtlasTexture" id=20]
@@ -256,6 +266,11 @@ animations = [ {
 "name": "carrie melvin",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 51 ) ],
+"loop": false,
+"name": "carrie namylea",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 25 ) ],
 "loop": false,
 "name": "carrie oscar",
@@ -319,6 +334,11 @@ animations = [ {
 "frames": [ SubResource( 16 ) ],
 "loop": false,
 "name": "katrin melvin",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 50 ) ],
+"loop": false,
+"name": "katrin namylea",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 20 ) ],
@@ -567,7 +587,7 @@ script = ExtResource( 4 )
 position = Vector2( -7, -22 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 2 )
-animation = "pebble uulga"
+animation = "carrie namylea"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6, 38.5 )

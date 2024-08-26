@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=9]
 
 [node name="NortPartSevenLevel3" type="Node2D"]
 
@@ -31,7 +32,6 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 917505, 91, 0, 983041, 91, 0, 1048577, 91, 0, 1114113, 91, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -316, 1127 )
@@ -60,3 +60,13 @@ boardname = "nort art how 3 older arm heart"
 position = Vector2( 1113, 1117 )
 new_scene = "res://screens/cutscenes/cutscene 22 nortpartseven voodoo/cutscene 22 nortpartseven voodoo.tscn"
 customtext = "n1vl3m"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 9 )]
+position = Vector2( 44, 901 )
+customtext1 = "CONVO_NAMYLEA_CARRIE_1"
+customtext2 = "CONVO_NAMYLEA_CARRIE_2"
+customtext3 = "CONVO_NAMYLEA_CARRIE_3"
+customtext4 = "CONVO_NAMYLEA_CARRIE_4"
+customname1 = "Carrie Decarde"
+customname2 = "Namylea Matdur"
+spritename = "carrie namylea"
