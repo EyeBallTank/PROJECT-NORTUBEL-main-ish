@@ -1,50 +1,40 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
-[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/npc_actor_sprites/Nortubel/NORT CAST NPC.png" type="Texture" id=3]
-[ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.gd" type="Script" id=4]
+[ext_resource path="res://src/npc_actors/nort npc/CarrieNPC.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/lahiurn/NAMYLEA NPC SPRITE.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 420, 420 )
-
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 3 )
-region = Rect2( 420, 0, 420, 420 )
-
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 3 )
-region = Rect2( 840, 0, 420, 420 )
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 136, 315 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
-"loop": true,
+"frames": [ SubResource( 5 ) ],
+"loop": false,
 "name": "default",
-"speed": 1.0
+"speed": 0.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 40.5, 175 )
+extents = Vector2( 40.5, 150.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 111, 174 )
 
-[node name="CarrieNPC" type="KinematicBody2D"]
-scale = Vector2( 0.72, 0.72 )
+[node name="NamyleaNPC" type="KinematicBody2D"]
 collision_layer = 64
 collision_mask = 4
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 20.8333 )
+position = Vector2( 0, 82 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.5, 56 )
+position = Vector2( 0.5, 80.5 )
 shape = SubResource( 3 )
 
 [node name="TalktoArea" type="Area2D" parent="."]
@@ -60,7 +50,7 @@ margin_left = 5.0
 margin_top = 480.0
 margin_right = 1018.0
 margin_bottom = 593.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
 patch_margin_left = 4
 patch_margin_top = 4
@@ -79,7 +69,7 @@ margin_left = 5.0
 margin_top = 452.0
 margin_right = 113.0
 margin_bottom = 476.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
 patch_margin_left = 5
 patch_margin_top = 5
@@ -92,7 +82,7 @@ margin_top = 5.0
 margin_right = 107.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
-text = "Carrie Decarde"
+text = "Namylea Matdur"
 
 [connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
 [connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]

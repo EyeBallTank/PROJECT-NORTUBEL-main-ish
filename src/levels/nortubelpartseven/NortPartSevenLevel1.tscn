@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/npc_actors/lahiurn/NamyleaNPC.tscn" type="PackedScene" id=13]
 
 [node name="NortPartSevenLevel1" type="Node2D"]
 
@@ -107,3 +108,10 @@ boardname = "lahiurn art namylea reference"
 position = Vector2( 1493, 1407 )
 new_scene = "res://src/levels/nortubelpartseven/NortPartSevenLevel2.tscn"
 customtext = "e1rr4c"
+
+[node name="NamyleaNPC" parent="." instance=ExtResource( 13 )]
+position = Vector2( 642, 1154 )
+customtext = "NAMYLEA_NPC_TALK"
+customtext2 = "NAMYLEA_NPC_HONK"
+customtext3 = "NAMYLEA_NPC_HUG"
+customtext4 = "NAMYLEA_NPC_HURT"
