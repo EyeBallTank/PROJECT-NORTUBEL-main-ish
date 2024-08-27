@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -9,22 +9,27 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
 
 [node name="NortPartSevenLevel2" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 10 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 6.png"
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1245197, 95, 0, 1310733, 95, 0, 1376269, 95, 0, 1441805, 95, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 786427, 56, 0, 851963, 56, 0, 917499, 56, 0, 983035, 56, 0, 1048571, 56, 0, 1114107, 56, 0, 1179643, 56, 0, 1245179, 56, 0, 1310715, 56, 0, 1376251, 56, 0, 1441787, 56, 0, 1507323, 56, 0, 1572859, 56, 0, 1572860, 56, 0, 1572861, 56, 0, 1572862, 56, 0, 1572863, 56, 0, 1507328, 56, 0, 1507329, 56, 0, 1507330, 56, 0, 1507331, 56, 0, 1507332, 56, 0, 1507333, 56, 0, 1507334, 56, 0, 1507335, 56, 0, 1507336, 56, 0, 1507337, 56, 0, 1507338, 56, 0, 1507339, 56, 0, 1507340, 56, 0, 1507341, 56, 0, 1507342, 56, 0, 1507343, 56, 0, 1507344, 56, 0, 1507345, 56, 0, 1507346, 56, 0, 1507347, 56, 0, 1507348, 56, 0, 1507349, 56, 0, 1507350, 56, 0, 1507351, 56, 0 )
+tile_data = PoolIntArray( 1769468, 56, 0, 1835004, 56, 0, 1900540, 56, 0, 1966076, 56, 0, 2031612, 56, 0, 2031613, 56, 0, 2031614, 56, 0, 2031615, 56, 0, 1966080, 56, 0, 1966081, 56, 0, 2490362, 56, 0, 2490363, 56, 0, 2490364, 56, 0, 2490365, 56, 0, 2490366, 56, 0, 2490367, 56, 0, 2424832, 56, 0, 2424833, 56, 0, 2424834, 56, 0, 2424835, 56, 0, 2424836, 56, 0, 2424837, 56, 0, 2424838, 56, 0, 2424839, 56, 0, 2424840, 56, 0, 2424841, 56, 0, 2424842, 56, 0, 2424843, 56, 0, 2424844, 56, 0, 2424845, 56, 0, 2424846, 56, 0, 2424847, 56, 0, 2424848, 56, 0, 2424849, 56, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -34,86 +39,86 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 547, 1359 )
+position = Vector2( -94, 2311 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 547, 1359 )
+position = Vector2( -94, 2311 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( 713, 1309 )
+position = Vector2( -93, 1861 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( 713, 1309 )
+position = Vector2( -93, 1861 )
 companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1660, 1088 )
+position = Vector2( 3542, -374 )
 propname = "nortprop balcony 1"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2073, 1113 )
+position = Vector2( 2954, -194 )
 propname = "nortprop bench pillow"
 
 [node name="LevelProp3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2079, 930 )
+position = Vector2( 2181, -125 )
 propname = "nortprop big croissant"
 
 [node name="LevelProp4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1224, 855 )
+position = Vector2( 1961, -553 )
 
 [node name="LevelProp5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 969, 1029 )
+position = Vector2( 2222, -559 )
 propname = "nortprop bluegray rock structure"
 
 [node name="LevelProp6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1127, 866 )
+position = Vector2( 3872, -195 )
 propname = "nortprop large twisted lamp"
 
 [node name="LevelProp7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1317, 887 )
+position = Vector2( 4020, -192 )
 propname = "nortprop largegreen streetlamp"
 
 [node name="LevelProp8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1100, 1106 )
+position = Vector2( 1780, -347 )
 propname = "nortprop metal fish"
 
 [node name="LevelProp9" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1634, 722 )
+position = Vector2( 2012, -237 )
 propname = "nortprop small house 6"
 
 [node name="LevelProp10" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2154, 1521 )
+position = Vector2( 1243, -373 )
 propname = "nortprop small house 7"
 
 [node name="LevelProp11" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2416, 1211 )
+position = Vector2( 2668, -275 )
 propname = "nortprop small house 8"
 
 [node name="LevelProp12" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2144, 1421 )
+position = Vector2( 2492, -89 )
 propname = "nortprop small nortubel banner"
 
 [node name="LevelProp13" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2386, 971 )
+position = Vector2( 2482, -216 )
 propname = "nortprop small pink tree"
 
 [node name="LevelProp14" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2538, 805 )
+position = Vector2( 2376, -346 )
 propname = "nortprop stairs streetlights"
 
 [node name="LevelProp15" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1872, 1433 )
+position = Vector2( 3226, -185 )
 propname = "nortprop weird basket"
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
-position = Vector2( 100, 1404 )
+position = Vector2( 1537, 2219 )
 new_scene = "res://src/levels/nortubelpartseven/NortPartSevenLevel3.tscn"
 customtext = "n1rt4k"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1044, 1270 )
+position = Vector2( 945, 2139 )
 customtext1 = "CONVO_NAMYLEA_KATRIN_1"
 customtext2 = "CONVO_NAMYLEA_KATRIN_2"
 customtext3 = "CONVO_NAMYLEA_KATRIN_3"

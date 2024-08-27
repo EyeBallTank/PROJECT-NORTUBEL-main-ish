@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -9,8 +9,14 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=10]
 
 [node name="NortPartSevenLevel3" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 10 )]
+background = "res://assets/sprites/level_backgrounds/level bg test.png"
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -23,7 +29,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 720888, 56, 0, 786424, 56, 0, 851960, 56, 0, 917496, 56, 0, 983032, 56, 0, 1048568, 56, 0, 1114104, 56, 0, 1179640, 56, 0, 1245176, 56, 0, 1245177, 56, 0, 1245178, 56, 0, 1245179, 56, 0, 1245180, 56, 0, 1245181, 56, 0, 1245182, 56, 0, 1245183, 56, 0, 1179648, 56, 0, 1179649, 56, 0, 1179650, 56, 0, 1179651, 56, 0, 1179652, 56, 0, 1179653, 56, 0, 1179654, 56, 0, 1179655, 56, 0, 1179656, 56, 0, 1179657, 56, 0, 1179658, 56, 0, 1179659, 56, 0, 1179660, 56, 0, 1179661, 56, 0, 1179662, 56, 0, 1179663, 56, 0, 1179664, 56, 0, 1179665, 56, 0, 1179666, 56, 0, 1179667, 56, 0, 1179668, 56, 0 )
+tile_data = PoolIntArray( 1245184, 56, 0, 1310720, 56, 0, 1376256, 56, 0, 1441792, 56, 0, 1507328, 56, 0, 1572864, 56, 0, 1638400, 56, 0, 1769468, 56, 0, 1769469, 56, 0, 1769470, 56, 0, 1769471, 56, 0, 1703936, 56, 0, 1769472, 56, 0, 1769473, 56, 0, 1769474, 56, 0, 1769480, 56, 0, 1835015, 56, 0, 1900550, 56, 0, 1966085, 56, 0, 2031620, 56, 0, 2097155, 56, 0, 2228219, 56, 0, 2228220, 56, 0, 2228221, 56, 0, 2228222, 56, 0, 2228223, 56, 0, 2162688, 56, 0, 2162689, 56, 0, 2162690, 56, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -33,17 +39,17 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -316, 1127 )
+position = Vector2( -116, 1595 )
 playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -316, 1127 )
+position = Vector2( -112, 1588 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( -150, 1077 )
+position = Vector2( 83, 2014 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( -150, 1077 )
+position = Vector2( 79, 2025 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 

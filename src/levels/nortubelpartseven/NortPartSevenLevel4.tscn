@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -17,8 +17,14 @@
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/lahiurn/WoundedNamyleaNPC.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=18]
 
 [node name="NortPartSevenLevel4" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 18 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 5.png"
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -101,7 +107,7 @@ position = Vector2( 2149, 247 )
 position = Vector2( 1952, 247 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 15 )]
-position = Vector2( 51, 890 )
+position = Vector2( 3205, 501 )
 
 [node name="SpitterFish" parent="." instance=ExtResource( 16 )]
 position = Vector2( 2686, 635 )
