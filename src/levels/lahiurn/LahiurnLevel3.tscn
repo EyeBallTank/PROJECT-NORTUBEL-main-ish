@@ -389,7 +389,7 @@ boardname = "lahiurn art lahiurn main building"
 
 [node name="Door" parent="." instance=ExtResource( 11 )]
 position = Vector2( 21965, 1986 )
-new_scene = "res://src/levels/LevelTemplate7.tscn"
+new_scene = "res://screens/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven.tscn"
 spritename = "lahiurn greendoor"
 customtext = "lmshtn"
 
