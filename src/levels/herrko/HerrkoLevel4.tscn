@@ -41,7 +41,6 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114114, 1, 0, 1179650, 1, 0, 1245186, 1, 0, 1310722, 1, 0, 1376258, 1, 0, 1441794, 1, 0, 1507330, 1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -56,7 +55,6 @@ tile_set = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114115, 1, 0, 1179651, 1, 0, 1245187, 1, 0, 1310723, 1, 0, 1376259, 1, 0, 1441795, 1, 0, 1507331, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -337, 1420 )

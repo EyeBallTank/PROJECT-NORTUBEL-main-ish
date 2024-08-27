@@ -17,7 +17,6 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 917504, 91, 0, 983040, 91, 0, 1048576, 91, 0, 1114112, 91, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
