@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -18,6 +18,11 @@
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/lahiurn/WoundedNamyleaNPC.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_objects/Jumppad.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=23]
 
 [node name="NortPartSevenLevel4" type="Node2D"]
 
@@ -37,7 +42,7 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 720888, 56, 0, 786424, 56, 0, 851960, 56, 0, 917496, 56, 0, 983032, 56, 0, 917515, 370, 0, 917518, 371, 0, 917521, 372, 0, 917524, 373, 0, 917527, 374, 0, 917530, 375, 0, 917533, 376, 0, 917536, 377, 0, 917539, 378, 0, 917542, 379, 0, 917545, 380, 0, 917548, 381, 0, 917551, 382, 0, 917554, 383, 0, 917557, 384, 0, 1048568, 56, 0, 1114104, 56, 0, 1179640, 56, 0, 1245176, 56, 0, 1245177, 56, 0, 1245178, 56, 0, 1245179, 56, 0, 1245180, 56, 0, 1245181, 56, 0, 1245182, 56, 0, 1245183, 56, 0, 1179648, 56, 0, 1179649, 56, 0, 1179650, 56, 0, 1179651, 56, 0, 1179652, 56, 0, 1179653, 56, 0, 1179654, 56, 0, 1179655, 56, 0, 1179656, 56, 0, 1179657, 56, 0, 1179658, 56, 0, 1179659, 56, 0, 1179660, 56, 0, 1179661, 56, 0, 1179662, 56, 0, 1179663, 56, 0, 1179664, 56, 0, 1179665, 56, 0, 1179666, 56, 0, 1179667, 56, 0, 1179668, 56, 0, 1179669, 56, 0, 1179670, 56, 0, 1179671, 56, 0, 1179672, 56, 0, 1179673, 56, 0, 1179674, 56, 0, 1179675, 56, 0, 1179676, 56, 0, 1179677, 56, 0, 1179678, 56, 0, 1179679, 56, 0, 1179680, 56, 0, 1179681, 56, 0, 1179682, 56, 0, 1179683, 56, 0, 1179684, 56, 0, 1179685, 56, 0, 1179686, 56, 0, 1179687, 56, 0, 1179688, 56, 0, 1179689, 56, 0, 1179690, 56, 0, 1179691, 56, 0, 1179692, 56, 0, 1179693, 56, 0, 1179694, 56, 0, 1179695, 56, 0, 1179696, 56, 0, 1179697, 56, 0, 1179698, 56, 0, 1179699, 56, 0, 1179700, 56, 0, 1179701, 56, 0, 1179702, 56, 0, 2097149, 56, 0, 2162685, 56, 0, 2228221, 56, 0, 2293757, 56, 0, 2359293, 56, 0, 2424829, 56, 0, 2490365, 56, 0, 2490366, 56, 0, 2490367, 56, 0, 2424832, 56, 0, 2424833, 56, 0, 2424834, 56, 0, 2424835, 56, 0, 2424836, 56, 0, 2424837, 56, 0, 2424838, 56, 0, 2424839, 56, 0, 2424840, 56, 0, 2424841, 56, 0 )
+tile_data = PoolIntArray( 1048646, 56, 0, 1048647, 56, 0, 1048648, 56, 0, 1048649, 56, 0, 1048650, 56, 0, 1048651, 56, 0, 1048652, 56, 0, 1048653, 56, 0, 1048654, 56, 0, 1048655, 56, 0, 1048656, 56, 0, 1048657, 56, 0, 1048658, 56, 0, 1048659, 56, 0, 1048660, 56, 0, 1048661, 56, 0, 1048662, 56, 0, 1114181, 56, 0, 1114182, 56, 0, 1114198, 56, 0, 1179704, 56, 0, 1179705, 56, 0, 1179706, 56, 0, 1179707, 56, 0, 1179708, 56, 0, 1179709, 56, 0, 1179710, 56, 0, 1179711, 56, 0, 1179712, 56, 0, 1179716, 56, 0, 1179717, 56, 0, 1179734, 56, 0, 1245248, 56, 0, 1245249, 56, 0, 1245250, 56, 0, 1245251, 56, 0, 1245252, 56, 0, 1245270, 56, 0, 1310759, 56, 0, 1310760, 56, 0, 1310761, 56, 0, 1310762, 56, 0, 1310763, 56, 0, 1310764, 56, 0, 1310765, 56, 0, 1310766, 56, 0, 1310767, 56, 0, 1310806, 56, 0, 1376342, 56, 0, 1441878, 56, 0, 1507414, 56, 0, 1572950, 56, 0, 1638429, 56, 0, 1638430, 56, 0, 1638431, 56, 0, 1638432, 56, 0, 1638433, 56, 0, 1638434, 56, 0, 1638435, 56, 0, 1638436, 56, 0, 1638437, 56, 0, 1638438, 56, 0, 1638439, 56, 0, 1638447, 56, 0, 1638448, 56, 0, 1638449, 56, 0, 1638450, 56, 0, 1638451, 56, 0, 1638452, 56, 0, 1638453, 56, 0, 1638454, 56, 0, 1638455, 56, 0, 1638456, 56, 0, 1638474, 56, 0, 1638475, 56, 0, 1638476, 56, 0, 1638477, 56, 0, 1638486, 56, 0, 1703992, 56, 0, 1704022, 56, 0, 1769528, 56, 0, 1769558, 56, 0, 1835048, 56, 0, 1835064, 56, 0, 1835094, 56, 0, 1900584, 56, 0, 1900585, 56, 0, 1900586, 56, 0, 1900600, 56, 0, 1900630, 56, 0, 1966136, 56, 0, 1966166, 56, 0, 2031672, 56, 0, 2031702, 56, 0, 2097208, 56, 0, 2097230, 56, 0, 2097238, 56, 0, 2162765, 56, 0, 2162766, 56, 0, 2162767, 56, 0, 2162768, 56, 0, 2162769, 56, 0, 2162770, 56, 0, 2162771, 56, 0, 2162772, 56, 0, 2162773, 56, 0, 2162774, 56, 0, 2228300, 56, 0, 2228301, 56, 0, 2293835, 56, 0, 2293836, 56, 0, 2359370, 56, 0, 2359371, 56, 0, 2424833, 56, 0, 2424834, 56, 0, 2424835, 56, 0, 2424836, 56, 0, 2424837, 56, 0, 2424838, 56, 0, 2424839, 56, 0, 2424840, 56, 0, 2424841, 56, 0, 2424842, 56, 0, 2424843, 56, 0, 2424844, 56, 0, 2424845, 56, 0, 2424846, 56, 0, 2424847, 56, 0, 2424848, 56, 0, 2424849, 56, 0, 2424850, 56, 0, 2424851, 56, 0, 2424852, 56, 0, 2424853, 56, 0, 2424854, 56, 0, 2424855, 56, 0, 2424856, 56, 0, 2424857, 56, 0, 2424858, 56, 0, 2424859, 56, 0, 2424860, 56, 0, 2424861, 56, 0, 2424862, 56, 0, 2424863, 56, 0, 2424864, 56, 0, 2424865, 56, 0, 2424866, 56, 0, 2424867, 56, 0, 2424868, 56, 0, 2424869, 56, 0, 2424870, 56, 0, 2424871, 56, 0, 2424872, 56, 0, 2424873, 56, 0, 2424874, 56, 0, 2424875, 56, 0, 2424876, 56, 0, 2424877, 56, 0, 2424878, 56, 0, 2424879, 56, 0, 2424880, 56, 0, 2424881, 56, 0, 2424887, 56, 0, 2424888, 56, 0, 2424889, 56, 0, 2424890, 56, 0, 2424891, 56, 0, 2424892, 56, 0, 2424893, 56, 0, 2424894, 56, 0, 2424895, 56, 0, 2424896, 56, 0, 2424897, 56, 0, 2424898, 56, 0, 2424899, 56, 0, 2424900, 56, 0, 2424901, 56, 0, 2424902, 56, 0, 2424903, 56, 0, 2424904, 56, 0, 2424905, 56, 0, 2424906, 56, 0, 2490417, 56, 0, 2490418, 56, 0, 2490419, 56, 0, 2490420, 56, 0, 2490421, 56, 0, 2490422, 56, 0, 2490423, 56, 0, 2490424, 56, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -47,45 +52,45 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -316, 1127 )
+position = Vector2( 577, 2301 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( -316, 1127 )
+position = Vector2( 585, 2289 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( -150, 1077 )
+position = Vector2( 751, 2239 )
 
 [node name="Companion" parent="." instance=ExtResource( 5 )]
-position = Vector2( -150, 1077 )
+position = Vector2( 751, 2239 )
 companionskin = "res://assets/sprites/play_actor_sprites/AngelaSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 6 )]
 
 [node name="Door" parent="." instance=ExtResource( 1 )]
-position = Vector2( 406, 1041 )
+position = Vector2( 1187, 1405 )
 new_scene = "res://screens/cutscenes/cutscene 23 nortpartseven herrko/cutscene 23 nortpartseven herrko.tscn"
 customtext = "n4myl3"
 
 [node name="VoodooDollPlayer" parent="." instance=ExtResource( 8 )]
-position = Vector2( 282, 1022 )
+position = Vector2( 1202, 2260 )
 
 [node name="VoodooDollPlayer2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 750, 644 )
+position = Vector2( 2368, 1494 )
 charactername = "voodoo carrie"
 
 [node name="VoodooDollPlayer3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1064, 675 )
+position = Vector2( 2686, 1077 )
 charactername = "voodoo katrin"
 
 [node name="VoodooDollCompanion" parent="." instance=ExtResource( 9 )]
-position = Vector2( 573, 1013 )
+position = Vector2( 2210, 2257 )
 
 [node name="VoodooDollCompanion2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1517, 681 )
+position = Vector2( 3182, 1490 )
 charactername = "voodoo oscar"
 
 [node name="VoodooDollCompanion3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2019, 673 )
+position = Vector2( 2894, 1089 )
 charactername = "voodoo pete"
 
 [node name="VoodooPlayerHealthBar" parent="." instance=ExtResource( 10 )]
@@ -93,26 +98,51 @@ charactername = "voodoo pete"
 [node name="VoodooCompanionHealthBar" parent="." instance=ExtResource( 11 )]
 
 [node name="GreenBarrier" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2476, 247 )
+position = Vector2( 1313, 2240 )
 
-[node name="GreenBarrier2" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2711, 263 )
-animation1 = "CLOSED"
-animation2 = "OPEN"
+[node name="GreenBarrier3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2078, 2240 )
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 13 )]
-position = Vector2( 2149, 247 )
+position = Vector2( 1020, 2216 )
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1952, 247 )
+position = Vector2( 1676, 1885 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 15 )]
-position = Vector2( 3205, 501 )
+position = Vector2( 1687, 2387 )
 
 [node name="SpitterFish" parent="." instance=ExtResource( 16 )]
-position = Vector2( 2686, 635 )
+position = Vector2( 2911, 1525 )
+
+[node name="SpitterFish2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 4023, 1478 )
 
 [node name="WoundedNamyleaNPC" parent="." instance=ExtResource( 17 )]
-position = Vector2( 3230, 996 )
+position = Vector2( 246, 2202 )
 customtext = "NAMYLEA_WITHOUT_ARMOR_NPC_TALK"
 customname = "Namylea Matdur"
+
+[node name="Pushable" parent="." instance=ExtResource( 19 )]
+position = Vector2( 3062, 2203 )
+
+[node name="FloorSwitch" parent="." instance=ExtResource( 20 )]
+position = Vector2( 3306, 2417 )
+
+[node name="Barrier" parent="." instance=ExtResource( 21 )]
+position = Vector2( 2528, 1472 )
+
+[node name="Barrier2" parent="." instance=ExtResource( 21 )]
+position = Vector2( 3041, 1472 )
+
+[node name="Barrier3" parent="." instance=ExtResource( 21 )]
+position = Vector2( 3617, 2240 )
+
+[node name="Barrier4" parent="." instance=ExtResource( 21 )]
+position = Vector2( 3617, 1472 )
+
+[node name="MovingPlatHoriz" parent="." instance=ExtResource( 23 )]
+position = Vector2( 4589, 1667 )
+
+[node name="Jumppad" parent="." instance=ExtResource( 22 )]
+position = Vector2( 5270, 2018 )
