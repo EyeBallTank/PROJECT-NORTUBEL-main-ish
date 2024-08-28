@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/MovingPlatVerti.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/sprites/level_object_sprites/greklovick/MovingPlatVerti Greklovick.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/MovingPlatVerti Brinkaedea.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/MovingPlatVerti Lahiurn.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/level_object_sprites/herrko/MovingPlatVerti Herrko.png" type="Texture" id=9]
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 5 )
@@ -27,6 +28,10 @@ region = Rect2( 0, 0, 214, 140 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 214, 140 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 9 )
 region = Rect2( 0, 0, 214, 140 )
 
 [sub_resource type="AtlasTexture" id=8]
@@ -66,6 +71,11 @@ animations = [ {
 "frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "greklovick movplatvert",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 16 ) ],
+"loop": false,
+"name": "herrko movplatvert",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 8 ) ],
@@ -135,7 +145,7 @@ motion/sync_to_physics = true
 
 [node name="Sprite" type="AnimatedSprite" parent="Platform"]
 frames = SubResource( 7 )
-animation = "lahiurn movplatvert"
+animation = "herrko movplatvert"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
