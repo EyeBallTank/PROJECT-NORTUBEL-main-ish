@@ -89,47 +89,47 @@ position = Vector2( 111, 1118 )
 boardname = "herrko art red ghalbeen horg reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 57, 1397 )
+position = Vector2( 2135, 3166 )
 boardname = "herrko art uulga reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 132, 1727 )
+position = Vector2( 2713, 3167 )
 boardname = "herrko art uulga weapon reference  "
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 8 )]
-position = Vector2( 407, 1403 )
+position = Vector2( 6262, 2048 )
 spritename = "herrko floater"
 
 [node name="Blue key" parent="." instance=ExtResource( 12 )]
-position = Vector2( 383, 1574 )
+position = Vector2( 4727, 1360 )
 spritename = "herrko blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 14 )]
-position = Vector2( 503, 1573 )
+position = Vector2( 4847, 1359 )
 spritename = "herrko redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 9 )]
-position = Vector2( 641, 1568 )
+position = Vector2( 4985, 1354 )
 spritename = "herrko yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 783, 1579 )
+position = Vector2( 5127, 1365 )
 spritename = "herrko bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 10 )]
-position = Vector2( 993, 1575 )
+position = Vector2( 5337, 1361 )
 spritename = "herrko reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1243, 1574 )
+position = Vector2( 5587, 1360 )
 spritename = "herrko yeldoor"
 
 [node name="LevelProp" parent="." instance=ExtResource( 15 )]
-position = Vector2( 738, 1215 )
+position = Vector2( 4144, 2091 )
 propname = "herrprop barrelwood weapons"
 
 [node name="Door" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1743, 1498 )
+position = Vector2( 8029, 2045 )
 new_scene = "res://src/levels/herrko/HerrkoLevel3.tscn"
 spritename = "herrko greendoor"
 customtext = "iv4nnn"
@@ -143,7 +143,7 @@ position = Vector2( 599, 1391 )
 spritename = "herrko coin"
 
 [node name="Pushable" parent="." instance=ExtResource( 19 )]
-position = Vector2( -533, 1404 )
+position = Vector2( 3279, 2157 )
 spritename = "herrko pushable"
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 21 )]
@@ -165,20 +165,20 @@ animation2 = "OPEN"
 greenbarrierskin = "res://assets/sprites/level_object_sprites/herrko/GreenBarrier Herrko.tres"
 
 [node name="HerrkoRedHorg" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1576, 692 )
+position = Vector2( 4507, 1989 )
 
 [node name="chasingtargettest" parent="." instance=ExtResource( 24 )]
-position = Vector2( -376, 904 )
+position = Vector2( 519, 3164 )
 
 [node name="HerrkoRedGhalbeenThird" parent="." instance=ExtResource( 25 )]
-position = Vector2( 1320, 968 )
+position = Vector2( 4996, 2378 )
 
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 26 )]
 position = Vector2( -471, 1123 )
 spritename = "herrko movplathoriz"
 
 [node name="LoreBook" parent="." instance=ExtResource( 28 )]
-position = Vector2( -232, 1658 )
+position = Vector2( 6057, 2057 )
 customtext = "HERRKO_LORE_TEXT_HORG"
 spritename = "herrko lorebook"
 
@@ -190,7 +190,7 @@ spritename = "herrko movplatvert"
 position = Vector2( 1350, 3251 )
 
 [node name="TradeItem" parent="." instance=ExtResource( 31 )]
-position = Vector2( 240, 2727 )
+position = Vector2( 911, 2080 )
 spritename = "tradeitem herrko uulga towel"
 
 [node name="Water" parent="." instance=ExtResource( 32 )]
@@ -207,6 +207,6 @@ collision_newsize = Vector2( 32, 8 )
 position = Vector2( 1728, 3536 )
 
 [node name="GalagharNPC" parent="." instance=ExtResource( 35 )]
-position = Vector2( 2344, 3107 )
+position = Vector2( 3697, 1969 )
 customtext = "GALAGHAR_NPC_TALK"
 customname = "Galaghar"

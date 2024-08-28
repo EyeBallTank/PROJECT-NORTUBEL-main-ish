@@ -99,23 +99,23 @@ scale = Vector2( 24, 80 )
 collision_newsize = Vector2( 24, 80 )
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1000, 1696 )
+position = Vector2( 13088, 1077 )
 new_scene = "res://screens/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga.tscn"
 spritename = "herrko greendoor"
 customtext = "eul0r1"
 
 [node name="HerrkMagicCarpetPlatform" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1648, 1616 )
+position = Vector2( 2388, 1820 )
 
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 13 )]
 position = Vector2( -825, 1563 )
 spritename = "herrko movplatvert"
 
 [node name="HerrkMagicDrawer" parent="." instance=ExtResource( 15 )]
-position = Vector2( 335, 1712 )
+position = Vector2( 11920, 951 )
 
 [node name="HerrkRisingLavaAndPlatforms" parent="." instance=ExtResource( 16 )]
-position = Vector2( 3899, 2666 )
+position = Vector2( 7480, 2755 )
 
 [node name="LoreBook" parent="." instance=ExtResource( 17 )]
 position = Vector2( 1368, 2008 )
@@ -123,19 +123,19 @@ customtext = "HERRKO_LORE_TEXT_EULORIA"
 spritename = "herrko lorebook"
 
 [node name="LoreBook2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2456, 3136 )
+position = Vector2( 4508, 2965 )
 customtext = "HERRKO_LORE_TEXT_TURRET_RING"
 spritename = "herrko lorebook"
 
 [node name="EuloriaNPC" parent="." instance=ExtResource( 18 )]
-position = Vector2( 2904, 2880 )
+position = Vector2( 11225, 658 )
 customtext = "EULORIA_NPC_TALK"
 customtext2 = "EULORIA_NPC_HONK"
 customtext3 = "EULORIA_NPC_HUG"
 customtext4 = "EULORIA_NPC_HURT"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 19 )]
-position = Vector2( 3224, 3016 )
+position = Vector2( 3002, 3016 )
 customtext1 = "CONVO_PEBBLE_UULGA_1"
 customtext2 = "CONVO_PEBBLE_UULGA_2"
 customtext3 = "CONVO_PEBBLE_UULGA_3"
@@ -155,7 +155,7 @@ customtext = "HERRKO_GUARD_NPC_TALK"
 customname = "HERRKO_GUARD_NPC_NAME"
 
 [node name="DirlinduNPC" parent="." instance=ExtResource( 21 )]
-position = Vector2( 4728, 3088 )
+position = Vector2( 11249, 1194 )
 customtext = "DIRLINDU_NPC_TALK"
 customtext3 = "DIRLINDU_NPC_HUG"
 customtext4 = "DIRLINDU_NPC_HURT"
