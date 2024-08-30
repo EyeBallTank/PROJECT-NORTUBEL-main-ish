@@ -129,9 +129,6 @@ customtext = "eul0r1"
 [node name="HerrkMagicCarpetPlatform" parent="." instance=ExtResource( 12 )]
 position = Vector2( 7791, 3132 )
 
-[node name="Sprite" parent="HerrkMagicCarpetPlatform/Platform" index="0"]
-frame = 0
-
 [node name="MovingPlatVerti" parent="." instance=ExtResource( 13 )]
 position = Vector2( 6335, 4140 )
 spritename = "herrko movplatvert"
