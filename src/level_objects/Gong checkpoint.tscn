@@ -5,22 +5,18 @@
 [ext_resource path="res://assets/sounds/level objects/662825__strangehorizon__delay_bell.wav" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=5]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 131, 174, 131 )
 
 [sub_resource type="AtlasTexture" id=6]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 262, 174, 131 )
 
 [sub_resource type="AtlasTexture" id=7]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 174, 131 )
 
 [sub_resource type="AtlasTexture" id=8]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 174, 131 )
 

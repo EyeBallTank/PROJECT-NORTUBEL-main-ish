@@ -126,7 +126,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50, 162 )
+extents = Vector2( 32, 157 )
 
 [sub_resource type="AtlasTexture" id=52]
 atlas = ExtResource( 5 )
@@ -345,6 +345,7 @@ animation = "Attack1"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 5 )
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
