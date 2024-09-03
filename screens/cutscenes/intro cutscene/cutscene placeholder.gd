@@ -79,7 +79,7 @@ func cutscene_over():
 
 #Namylea: Who are those kids there? Do you know them? They look like you.
 #Carrie: They're like us but different... things didn't work out between our group and theirs.
-#Katrin: They look like they're talking about something.
+#Angela: Am I the only one hearing them? What are they talking about?
 #Melvin: Does it really matter? We don't have much do to with them anyway.
 #Namylea: And what about those dolls?
 #Carrie: What dolls? Huh? They look like us.. but how?
