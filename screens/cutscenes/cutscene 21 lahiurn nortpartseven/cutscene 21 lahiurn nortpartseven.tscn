@@ -1,10 +1,26 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 14.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 13.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 3.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 9.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 1.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 7.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 6.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 10.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 4.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 5.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 11.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 15.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 8.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven military base.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 12.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 2.png" type="Texture" id=21]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +87,89 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel1" type="Sprite" parent="."]
+position = Vector2( 169, 232 )
+scale = Vector2( 1.06338, 1.06338 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel2" type="Sprite" parent="."]
+position = Vector2( 1353, 238 )
+scale = Vector2( 1.19098, 1.19098 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene21LahiurnNortpartsevenMilitaryBase" type="Sprite" parent="."]
+position = Vector2( 514.5, -193 )
+scale = Vector2( 1.07922, 1.07922 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel3" type="Sprite" parent="."]
+position = Vector2( 509, -636 )
+scale = Vector2( 1.05507, 1.05507 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel4" type="Sprite" parent="."]
+position = Vector2( -191, 234 )
+scale = Vector2( 1.66346, 1.66346 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel5" type="Sprite" parent="."]
+position = Vector2( 1893, 232 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel6" type="Sprite" parent="."]
+position = Vector2( -578, 231.5 )
+scale = Vector2( 1.09491, 1.09491 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel7" type="Sprite" parent="."]
+position = Vector2( 2426, 232 )
+scale = Vector2( 0.87218, 0.87218 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel8" type="Sprite" parent="."]
+position = Vector2( -972, 233 )
+scale = Vector2( 1.04545, 1.04545 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel9" type="Sprite" parent="."]
+position = Vector2( 3028, 229 )
+scale = Vector2( 0.979633, 0.979633 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel10" type="Sprite" parent="."]
+position = Vector2( -1626, 226.998 )
+scale = Vector2( 0.995807, 0.995807 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel11" type="Sprite" parent="."]
+position = Vector2( 1542, -315 )
+scale = Vector2( 0.906883, 0.906883 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel12" type="Sprite" parent="."]
+position = Vector2( -354, -317 )
+scale = Vector2( 1.05577, 1.05577 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel13" type="Sprite" parent="."]
+position = Vector2( 512, -1201 )
+scale = Vector2( 1.06061, 1.06061 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel14" type="Sprite" parent="."]
+position = Vector2( 3552, 238 )
+scale = Vector2( 1.20219, 1.20219 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene21LahiurnNortpartsevenPanel15" type="Sprite" parent="."]
+position = Vector2( -2451, 236.615 )
+scale = Vector2( 1.23035, 1.23035 )
+texture = ExtResource( 17 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false

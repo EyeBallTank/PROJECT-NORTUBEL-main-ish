@@ -1,10 +1,19 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 8.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 9.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 1.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 2.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 4.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 5.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 6.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 3.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 7.png" type="Texture" id=14]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -39,6 +48,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
+[node name="Cutscene24HerrkoUulgaPanel6" type="Sprite" parent="."]
+position = Vector2( -1930, 235.5 )
+scale = Vector2( 0.878092, 0.878092 )
+texture = ExtResource( 12 )
+
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -71,9 +85,47 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene24HerrkoUulgaPanel1" type="Sprite" parent="."]
+position = Vector2( 769, 231 )
+scale = Vector2( 0.807167, 0.807167 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene24HerrkoUulgaPanel2" type="Sprite" parent="."]
+position = Vector2( -282, 230 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene24HerrkoUulgaPanel4" type="Sprite" parent="."]
+position = Vector2( 1254, 257 )
+scale = Vector2( 2.06471, 2.06471 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene24HerrkoUulgaPanel3" type="Sprite" parent="."]
+position = Vector2( -798, 258 )
+scale = Vector2( 1.12311, 1.12311 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene24HerrkoUulgaPanel5" type="Sprite" parent="."]
+position = Vector2( -1348, 223.536 )
+scale = Vector2( 1.07221, 1.07221 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene24HerrkoUulgaPanel8" type="Sprite" parent="."]
+position = Vector2( -7.99997, -231 )
+scale = Vector2( 1.4, 1.4 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene24HerrkoUulgaPanel7" type="Sprite" parent="."]
+position = Vector2( 682, -289 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene24HerrkoUulgaPanel9" type="Sprite" parent="."]
+position = Vector2( 1942, 238 )
+texture = ExtResource( 7 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
