@@ -954,7 +954,7 @@ texture = ExtResource( 19 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
-nextlevel = "res://src/levels/LevelTutorial1.tscn"
+nextlevel = "res://src/levels/nortubelpartfour/NortPartFourLevel1.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )
