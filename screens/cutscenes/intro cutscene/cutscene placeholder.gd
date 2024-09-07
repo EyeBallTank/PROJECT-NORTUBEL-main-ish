@@ -332,6 +332,7 @@ func cutscene_over():
 #the portal closes, the characters fall to some place and seperate from the other 6
 #Melvin: Unf, is everyone okay?
 #Carrie: Yes, but... we failed!
+#Melvin: THE BOX! IT'S BROKEN!
 #Bonka: *start crying* NOOOO, THIS CAN'T BE HAPPENING!
 #Bonka: I'm sorry! I wanted to help but... why didn't it work?
 #Bonka: I finally did something good for once but in the end, it didn't work out.
@@ -412,6 +413,8 @@ func cutscene_over():
 #Carrie: Kat... come on...
 #Melvin: After all of those places we've been, I wonder if we could see them again. Yiegour, Uulga, Booker, Kalub, Holmes... how are they doing?
 #Melvin: In fact, what about those 6?
+#Pamela: Mel? I just wanted to tell you that we've fixed the box. But we're keeping it in a safe place for now.
+#Melvin: Alright. I get why. Now that I'm home again, I should take a break from going to all these places.... maybe next time.
 #meanwhile in a strange place, the alt 6 are in a boat
 #Alt Melvin with a telescope: Look there, I see something.
 #Alt Angela: That's a ship, we need to get close.
