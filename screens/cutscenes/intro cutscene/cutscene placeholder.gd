@@ -277,6 +277,7 @@ func cutscene_over():
 #AB-YZ: A simple enough name for me is AB-YZ. My real name can't be translated by your translation device of Hirdrih.
 #AB-YZ: I've been watching you ever since you got lost. Oscar even saw me under the from of a red crystal.
 #AB-YZ: The device you've used to come across worlds is indeed causing issues, as entities and elements from different worlds are being dragged here.
+#AB-YZ: If you recall what Zarina Liefdei said, your device is part of a bigger object: One that can do more than just allow travelling through realities.
 #AB-YZ: However, what the group of 6 from universe 5353 said about "close universes hurting each other" is false.
 #AB-YZ: It is a fabrication of one named Knoe. Entities from similar universes can coexist.
 #Carrie: So those others will get us killed based on a lie? And what do you mean by universe 53.. whatever that number is?
@@ -301,11 +302,129 @@ func cutscene_over():
 #Ricotto: Yes. You think the world is ending?
 #Matysha: I always had moments I felt that. Whatever it is, we should still fight for our survival.
 #Avietta: I think Leon and Otto might want to know what's goin on.
+#Hangelica: Not yet... the end of times will not arrive soon...
+#Leon: Um? Somethings going on with those 2. Seems their world has strange color related anomalies.
+#Leon: Wait, that clown... 
 
+#Carrie: So... you still believe that nonsense?
+#Alt Angela: I don't want to... but if it means our lives are at risk, then we have no choice.
+#AB-YZ: You must be from the other group. I must inform you tha-a-a-a-a-a-a-a-
+#Katrin: ABYZ!!!!
+#Knoe: Cease!
+#Alt Oscar: Knoe warned us about these oddities. He says their mere existence causes holes in reality.
+#Angela: Look... what is that?
+#Melvin: It looks like a portal... but it's different from the others.
+#Alt Pete: That's because it's coming from a more stable device. Unlike the broken one that you guys carry.
+#Alt Katrin: And it's closing.
+#Alt Angela: We better run... how about one last race, "brother"?
+#Melvin: Everyone, stay close. We gotta make sure all of us get there!
+#Mevlin: We've been through a lot and I promise this time.. we'll also go through this.
+#Melvin: Maybe we can see our families again.
+#Pete: But we're not sure what's in that portal... is it really home?
+#Melvin: We don't know for sure... but we might as well try.
 
-
-
-
+#Melvin: Come on, everyone, we're getting close.
+#Melvin: Angela, grab my hand!
+#Carrie: Oscar, grab mine.
+#Katrin: Pete!
+#Bonka: Everybody, grab these! (Bonka shows up with some rope ladders)
+#Carrie: Bonka? HOLD ON!
+#the portal closes, the characters fall to some place and seperate from the other 6
+#Melvin: Unf, is everyone okay?
+#Carrie: Yes, but... we failed!
+#Bonka: *start crying* NOOOO, THIS CAN'T BE HAPPENING!
+#Bonka: I'm sorry! I wanted to help but... why didn't it work?
+#Bonka: I finally did something good for once but in the end, it didn't work out.
+#Katrin: Bonka...
+#Bonka: I just wanted to make fun of people, you know... I never meant to hurt anybody... 
+#Carrie: You know what? I actually believe you know. It wasn't you who tried getting us killed. According to a lady named Claudia, it could be someone named Bonkette.
+#Bonka: Claudia? I think I heard of that name... 
+#Carrie: But she might be from a different version of your world... like how those other kids are from a universe similar to ours...
+#Bonka: And they will outlive you because of me... I'm sorry.
+#Carrie: Bonka, it's alright... I forgive you... and I'm also sorry.
+#Carrie: Guys? I love you all.
+#Katrin: I love you too Carrie. And as much as I love Mel.
+#Melvin: I love you both too... I really can't choose.
+#Carrie: Oscar, you know you're the most precious thing in my life. Even if we never see our parents again, we have each other.
+#Katrin: And Pete, you know I'd say the same about you. 
+#Melvin: It's why we ran from home, Angela. We always had the feeling we'd be away from our parents sooner than expected. But we got each other.
+#Pete: You know what? I may never know who my real dad is... but maybe I don't need to. I'm glad I live, so I could be with you all. Specially you Kat.
+#Angela: I never got to see mom... but I at least have you, Mel.
+#Oscar: Carrie, you're the best. Even if we also never see Grandma again... I hope I still have you.
+#the group hugs
+#something breaks, the group notices something... a silhouette of a familiar figure
+#Yiegour: B-Man to Grek base... found the "Nortubese" kids... and the girl Leon talked about.
+#Carrie: MISTER YIEGOUR! LEON?
+#Leon: HELLO WORLD! Sadly, my brother isn't here with me but he's also helping with this situation.
+#Katrin: How did you found us?
+#Leon: It's that box of yours! Portals kept showing up and we got access to some places that you've visited.
+#Leon: But believe it or not, Bonka once stepped into our world for a short period of time... and she didn't notice but I put in a translation device in her pocket, just in case she'd stumble to someone with different languages.
+#Bonka: Is that why I got to understand what these guys were saying? 
+#Melvin: How didn't you notice you had a strange object in your pocket?
+#Bonka: I sometimes don't take off my clothes. *sniff* Now I smell worse than Bonky.
+#Leon: Though another piece of information worth bringing up: I got in contact with Carrie and Oscar's Grandmother. This time, there's a chance for all of you to return.
+#Yiegour: Not only that, this little guy says even other universes can be fixed and we've already helped some people.
+#Yiegour: But in other cases, we also faced challenges... and you all might know how I fixed some.
+#Leon: Though you still haven't killed or found that alien you kept talking about. In any case, we better get going.
+#the 9 go to a journey and find a portal to Nortubel
+#Carrie: This looks like home... you guys wanna come?
+#Leon: I wouldn't mind... what about you 2?
+#Bonka: Sure, maybe Nortubel can't be that bad of a place as I said it was.
+#Yiegour: Maybe next time. I have work to do. Besides, I've met an amazing woman.
+#Katrin: That's nice, mister Sarvotsky. What's her name?
+#Yiegour: She's a tall, gorgeous powerfull warrior. Doesn't seem to be human but she's close enough.
+#Katrin: ...is her name Uulga?
+#Yiegour: She talked about you. Even hopes to see you again... and so do I.
+#he lives.
+#Oscar: Grandma!
+#Pamela: Oscar! Carrie! (they hug)
+#Stella: Kat! Pete!
+#Bernard: Melvin! Angela! Welcome back!
+#Shelly: It's so good to see you.
+#Zarina: We're glad you're all safe.
+#Shihiro: We never lost hope.
+#Bao Bao: Arf Arf!
+#Carrie: Oh and by the way. This is Bonka and Leon.
+#Leon: Hello world! I'm from Hirdrih, a world of robots.
+#Bonka: And I'm from Brinkaedea. I'm a clown... an actual clown...
+#Stella: How about we introduce our place to you? There's a lot of nice stuff here.
+#Leon: That'd be nice, because we hope to show you stuff from our worlds too.
+#Pamela: Carrie, you know we're going to have to talk about your parents. Even your friends' parents.
+#Carrie: I know, there's stuff to take care of, right?
+#Pamela: But I know you kids went through a lot. So we could leave that for another occasion.
+#Pamela: First, we should celebrate your return home.
+#at a small party
+#Bonka: Not bad, this Nortubel place. Though someone already got to that cake before I did.
+#Leon: If you want, I could bring you to your world so you can bring some candy there and take it here. In fact, I could even invite more people.
+#Bonka: Why didn't you say that before? 
+#Leon: I was busy enjoying the party. It's not like it'll end soon.
+#Bonka: Yeah, you're right.
+#Pete: Oscar, feels good to be home, doesn't it.
+#Oscar: Yes! Hey Angela, wanna play hide and seek?
+#Angela: Sure, but can Pete be the one looking? He always picks the weirdest hiding places.
+#Melvin: So, how you girls feel abo-
+#the 2 both kill Mel's face
+#Melvin: I... uh.. Thanks
+#Carrie: Mel, like you said: Nobody wants to choose. Ain't that right Ka-
+#Katrin kisses Carrie
+#Carrie: Kat! Your mouth is full!
+#Katrin: NOM oops, sorry... did some bits of food got into your mouth... I wanna see
+#Carrie: Kat... come on...
+#Melvin: After all of those places we've been, I wonder if we could see them again. Yiegour, Uulga, Booker, Kalub, Holmes... how are they doing?
+#Melvin: In fact, what about those 6?
+#meanwhile in a strange place, the alt 6 are in a boat
+#Alt Melvin with a telescope: Look there, I see something.
+#Alt Angela: That's a ship, we need to get close.
+#the ship opens up and with its advanced tech, picks up the group
+#Alt Carrie: We're inside. Wow, it looks huge...
+#Alt Oscar: Look at this stuff... is it from the future?
+#Someone: Welcome aboard. 
+#Said someone is using his hands on holographic screens
+#Alt Pete: Thanks, sir but... why did you save us?
+#Someone: Because we have important thigns to do... I know who you are...
+#Alt Angela: Who are you, mister?
+#Someone: You can call me Yiegour Sarvotsky.
+#one of his holographic screens shows our main Yiegour listed as a potential target for this Yiegour
 
 
 
