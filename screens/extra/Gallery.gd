@@ -8,3 +8,7 @@ func _ready():
 
 func _on_TextureButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/MainMenu.tscn")
+
+
+func _on_NORTUBEL_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Nortubel.tscn")

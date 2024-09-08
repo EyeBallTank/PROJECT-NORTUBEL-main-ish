@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/extra/Gallery.gd" type="Script" id=2]
@@ -6,6 +6,36 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton nortubel pressed.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton nortubel normal.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton hirdrih pressed.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton nortubel hover.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton hirdrih normal.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton hirdrih hover.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton untotern pressed.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton untotern normal.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton untotern hover.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton krimbstone pressed.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton krimbstone hover.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton krimbstone normal.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton brinkaedea hover.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton brinkaedea pressed.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton brinkaedea normal.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton lahiurn2 pressed.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton lahiurn2 hover.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton herrko normal.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton herrko hover.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton lahiurn2 normal.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton herrko pressed.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton greklovick pressed.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton greklovick hover.png" type="Texture" id=29]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton greklovick normal.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton massagcoav pressed.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton massagcoav hover.png" type="Texture" id=32]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton massagcoav normal.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton other normal.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton other pressed.png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/art gallery buttons/gallerybutton other hover.png" type="Texture" id=36]
 
 [node name="Gallery" type="Control"]
 anchor_right = 1.0
@@ -27,9 +57,9 @@ custom_fonts/font = ExtResource( 1 )
 text = "GALLERY_B"
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 52.0
+margin_left = 49.0
 margin_top = 530.0
-margin_right = 119.0
+margin_right = 116.0
 margin_bottom = 585.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 5 )
@@ -43,4 +73,95 @@ margin_bottom = 36.0
 custom_fonts/font = ExtResource( 1 )
 text = "QUIT_B"
 
+[node name="NORTUBEL" type="TextureButton" parent="."]
+margin_left = 389.0
+margin_top = 213.0
+margin_right = 661.0
+margin_bottom = 410.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 10 )
+
+[node name="HIRDRIH" type="TextureButton" parent="."]
+margin_left = 120.0
+margin_top = 230.0
+margin_right = 330.0
+margin_bottom = 390.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 12 )
+
+[node name="UNTOTERN" type="TextureButton" parent="."]
+margin_left = 713.0
+margin_top = 229.0
+margin_right = 923.0
+margin_bottom = 389.0
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 13 )
+texture_hover = ExtResource( 15 )
+
+[node name="KRIMBSTONE" type="TextureButton" parent="."]
+margin_left = 157.0
+margin_top = 52.0
+margin_right = 316.0
+margin_bottom = 193.0
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 17 )
+
+[node name="BRINKAEDEA" type="TextureButton" parent="."]
+margin_left = 442.0
+margin_top = 52.0
+margin_right = 601.0
+margin_bottom = 193.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 20 )
+texture_hover = ExtResource( 19 )
+
+[node name="LAHIURN" type="TextureButton" parent="."]
+margin_left = 752.0
+margin_top = 52.0
+margin_right = 911.0
+margin_bottom = 193.0
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 22 )
+texture_hover = ExtResource( 23 )
+
+[node name="HERRKO" type="TextureButton" parent="."]
+margin_left = 146.0
+margin_top = 435.0
+margin_right = 305.0
+margin_bottom = 576.0
+texture_normal = ExtResource( 24 )
+texture_pressed = ExtResource( 27 )
+texture_hover = ExtResource( 25 )
+
+[node name="GREKLOVICK" type="TextureButton" parent="."]
+margin_left = 353.0
+margin_top = 435.0
+margin_right = 512.0
+margin_bottom = 576.0
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 28 )
+texture_hover = ExtResource( 29 )
+
+[node name="MASSAGCOAV" type="TextureButton" parent="."]
+margin_left = 560.0
+margin_top = 435.0
+margin_right = 719.0
+margin_bottom = 576.0
+texture_normal = ExtResource( 33 )
+texture_pressed = ExtResource( 31 )
+texture_hover = ExtResource( 32 )
+
+[node name="OTHER" type="TextureButton" parent="."]
+margin_left = 761.0
+margin_top = 435.0
+margin_right = 920.0
+margin_bottom = 576.0
+texture_normal = ExtResource( 34 )
+texture_pressed = ExtResource( 35 )
+texture_hover = ExtResource( 36 )
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="NORTUBEL" to="." method="_on_NORTUBEL_pressed"]
