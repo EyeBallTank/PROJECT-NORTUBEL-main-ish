@@ -6,5 +6,5 @@ extends Control
 func _ready():
 	pass
 
-func _on_QuitButton_pressed():
+func _on_TextureButton_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/MainMenu.tscn")

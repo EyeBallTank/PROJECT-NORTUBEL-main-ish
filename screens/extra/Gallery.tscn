@@ -1,12 +1,20 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/extra/Gallery.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=6]
 
 [node name="Gallery" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
+
+[node name="MenuBg" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+texture = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
@@ -18,96 +26,21 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 1 )
 text = "GALLERY_B"
 
-[node name="NortubelButton" type="Button" parent="."]
-margin_left = 160.0
-margin_top = 144.0
-margin_right = 256.0
-margin_bottom = 184.0
-custom_fonts/font = ExtResource( 1 )
-text = "Nortubel"
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 52.0
+margin_top = 530.0
+margin_right = 119.0
+margin_bottom = 585.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
 
-[node name="BrinkaedeaButton" type="Button" parent="."]
-margin_left = 368.0
-margin_top = 144.0
-margin_right = 464.0
-margin_bottom = 184.0
-custom_fonts/font = ExtResource( 1 )
-text = "Brinkaedea"
-
-[node name="HirdrihButton" type="Button" parent="."]
-margin_left = 576.0
-margin_top = 144.0
-margin_right = 672.0
-margin_bottom = 184.0
-custom_fonts/font = ExtResource( 1 )
-text = "Hirdrih"
-
-[node name="MassagCoavButton" type="Button" parent="."]
-margin_left = 776.0
-margin_top = 144.0
-margin_right = 879.0
-margin_bottom = 184.0
-custom_fonts/font = ExtResource( 1 )
-text = "Massag-Coav"
-
-[node name="UntoternButton" type="Button" parent="."]
-margin_left = 160.0
-margin_top = 296.0
-margin_right = 256.0
-margin_bottom = 336.0
-custom_fonts/font = ExtResource( 1 )
-text = "Untotern"
-
-[node name="GreklovickButton" type="Button" parent="."]
-margin_left = 368.0
-margin_top = 296.0
-margin_right = 464.0
-margin_bottom = 336.0
-custom_fonts/font = ExtResource( 1 )
-text = "Greklovick"
-
-[node name="HerrkoButton" type="Button" parent="."]
-margin_left = 576.0
-margin_top = 296.0
-margin_right = 672.0
-margin_bottom = 336.0
-custom_fonts/font = ExtResource( 1 )
-text = "Herrko"
-
-[node name="KrimbStoneButton" type="Button" parent="."]
-margin_left = 776.0
-margin_top = 296.0
-margin_right = 879.0
-margin_bottom = 336.0
-custom_fonts/font = ExtResource( 1 )
-text = "Krimb-Stone"
-
-[node name="LahiurnButton" type="Button" parent="."]
-margin_left = 272.0
-margin_top = 424.0
-margin_right = 375.0
-margin_bottom = 464.0
-custom_fonts/font = ExtResource( 1 )
-text = "Lahiurn"
-
-[node name="OtherButton" type="Button" parent="."]
-margin_left = 656.0
-margin_top = 424.0
-margin_right = 759.0
-margin_bottom = 464.0
-custom_fonts/font = ExtResource( 1 )
-text = "OTHER_B"
-
-[node name="QuitButton" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -51.5
-margin_top = -88.0
-margin_right = 51.5
-margin_bottom = -48.0
+[node name="Label2" type="Label" parent="TextureButton"]
+margin_left = 14.0
+margin_top = 19.0
+margin_right = 58.0
+margin_bottom = 36.0
 custom_fonts/font = ExtResource( 1 )
 text = "QUIT_B"
 
-[connection signal="pressed" from="QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
