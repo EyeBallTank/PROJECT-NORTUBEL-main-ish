@@ -35,3 +35,16 @@ func _on_KRIMBSTONE_pressed():
 
 func _on_LAHIURN_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Lahiurn.tscn")
+
+
+func _on_UNTOTERN_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Untotern.tscn")
+
+func _on_HERRKO_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Herrko.tscn")
+
+func _on_GREKLOVICK_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Greklovick.tscn")
+
+
+
