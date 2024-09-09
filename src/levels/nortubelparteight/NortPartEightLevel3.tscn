@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=2]
@@ -7,11 +7,9 @@
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
-[ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
 
-[node name="NortPartEightLevel1" type="Node2D"]
+[node name="NortPartEightLevel3" type="Node2D"]
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -52,35 +50,7 @@ position = Vector2( -390, 1007 )
 [node name="WorldTitleName" parent="." instance=ExtResource( 3 )]
 worldname = "nortubel2"
 
-[node name="LevelProp" parent="." instance=ExtResource( 8 )]
-position = Vector2( -123, 955 )
-propname = "nortprop bathroom public"
-
-[node name="LevelProp2" parent="." instance=ExtResource( 8 )]
-position = Vector2( -187, 971 )
-propname = "nortprop black chest"
-
-[node name="LevelProp3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 87, 712 )
-propname = "nortprop blue symbol green leaves"
-
-[node name="LevelProp4" parent="." instance=ExtResource( 8 )]
-position = Vector2( -71, 723 )
-propname = "nortprop chair 1"
-
-[node name="LevelProp5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 339, 738 )
-propname = "nortprop flag nortubel"
-
-[node name="LevelProp6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 382, 493 )
-propname = "nortprop globe"
-
-[node name="ArtBook" parent="." instance=ExtResource( 9 )]
-position = Vector2( 219, 1103 )
-boardname = "nort art weird alien 2 reference"
-
-[node name="Door" parent="." instance=ExtResource( 10 )]
-position = Vector2( 671, 1146 )
-new_scene = "res://src/levels/nortubelparteight/NortPartEightLevel2.tscn"
-customtext = "r4cs00"
+[node name="Door" parent="." instance=ExtResource( 8 )]
+position = Vector2( 547, 1175 )
+new_scene = "res://screens/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern.tscn"
+customtext = "al3gn4"

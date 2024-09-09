@@ -1,0 +1,94 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
+[ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+
+[sub_resource type="Animation" id=2]
+resource_name = "intro cutscene"
+length = 6.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "cutscene_over"
+} ]
+}
+
+[node name="TestCutscene" type="Node"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+nextscene = "res://src/levels/nortubelparteight/NortPartEightLevel3.tscn"
+
+[node name="Behind dialogue" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -131.0
+texture = ExtResource( 3 )
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 7
+
+[node name="CHARNAME" type="Label" parent="NinePatchRect"]
+margin_left = 12.0
+margin_top = 6.0
+margin_right = 199.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 5 )
+text = "someone"
+
+[node name="CHARCHAT" type="Label" parent="NinePatchRect"]
+margin_left = 13.0
+margin_top = 38.0
+margin_right = 1003.0
+margin_bottom = 131.0
+custom_fonts/font = ExtResource( 5 )
+text = "1
+2
+3
+4
+"
+
+[node name="In front of dialogue" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
+visible = false
+nextlevel = "res://src/levels/nortubelparteight/NortPartEightLevel3.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+"anims/intro cutscene" = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 973.0
+margin_top = 578.0
+margin_right = 1062.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 5 )
+text = "ESC: | |"
+
+[node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
