@@ -165,3 +165,9 @@ texture_hover = ExtResource( 36 )
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="NORTUBEL" to="." method="_on_NORTUBEL_pressed"]
+[connection signal="pressed" from="HIRDRIH" to="." method="_on_HIRDRIH_pressed"]
+[connection signal="pressed" from="KRIMBSTONE" to="." method="_on_KRIMBSTONE_pressed"]
+[connection signal="pressed" from="BRINKAEDEA" to="." method="_on_BRINKAEDEA_pressed"]
+[connection signal="pressed" from="LAHIURN" to="." method="_on_LAHIURN_pressed"]
+[connection signal="pressed" from="MASSAGCOAV" to="." method="_on_MASSAGCOAV_pressed"]
+[connection signal="pressed" from="OTHER" to="." method="_on_OTHER_pressed"]

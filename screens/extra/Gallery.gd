@@ -12,3 +12,26 @@ func _on_TextureButton_pressed():
 
 func _on_NORTUBEL_pressed():
 	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Nortubel.tscn")
+
+
+func _on_HIRDRIH_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Hirdrih.tscn")
+
+
+func _on_MASSAGCOAV_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu MassagCoav.tscn")
+
+
+func _on_BRINKAEDEA_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Brinkaedea.tscn")
+
+
+func _on_OTHER_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Other.tscn")
+
+func _on_KRIMBSTONE_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Krimbstone.tscn")
+
+
+func _on_LAHIURN_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/GalleryMenu Lahiurn.tscn")
