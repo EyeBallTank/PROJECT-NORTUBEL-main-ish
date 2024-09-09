@@ -1,4 +1,4 @@
-[gd_scene load_steps=270 format=2]
+[gd_scene load_steps=272 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -136,6 +136,7 @@
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 4 part 2.png" type="Texture" id=134]
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirk the adventurer crossover.png" type="Texture" id=135]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art batty vamps crossover.png" type="Texture" id=136]
+[ext_resource path="res://assets/sprites/art gallery/untotern/unto art hangelica reference.png" type="Texture" id=137]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -642,6 +643,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=112]
 atlas = ExtResource( 98 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=157]
+atlas = ExtResource( 137 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=116]
@@ -1224,6 +1229,11 @@ animations = [ {
 "name": "unto art cornelius reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 157 ) ],
+"loop": false,
+"name": "unto art hangelica reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 116 ), SubResource( 117 ) ],
 "loop": true,
 "name": "unto art maikouto reference",
@@ -1278,7 +1288,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "unto art batty vamps crossover"
+animation = "unto art hangelica reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

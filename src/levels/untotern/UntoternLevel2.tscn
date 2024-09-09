@@ -56,6 +56,10 @@ position = Vector2( 965, 880 )
 position = Vector2( 325, 1544 )
 boardname = "unto art vimana reference"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -375, 1571 )
+boardname = "unto art hangelica reference"
+
 [node name="UntoDesolate" parent="." instance=ExtResource( 9 )]
 position = Vector2( 900, 1397 )
 
