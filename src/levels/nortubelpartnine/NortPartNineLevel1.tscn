@@ -61,3 +61,5 @@ boardname = "nort art 6 char height"
 
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1995, 1154 )
+new_scene = "res://src/levels/nortubelpartnine/NortPartNineLevel2.tscn"
+customtext = "h1rdr1"

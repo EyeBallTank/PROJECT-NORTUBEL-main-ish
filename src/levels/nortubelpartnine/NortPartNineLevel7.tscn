@@ -48,3 +48,5 @@ position = Vector2( 522, 1302 )
 
 [node name="Door" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1964, 1110 )
+new_scene = "res://src/levels/nortubelpartnine/NortPartNineLevel8.tscn"
+customtext = "h3rrk0"

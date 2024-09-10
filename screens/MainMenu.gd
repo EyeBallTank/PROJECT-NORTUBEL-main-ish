@@ -29,7 +29,8 @@ var codes := [ "galeria",
 				"n4myl3", "p3bble", "iv4nnn",
 				"eul0r1", "uulg44",
 				"r4cs00", "eet33p", "al3gn4",
-				"k4luub", "al1sss", "b34trc"
+				"k4luub", "al1sss", "b34trc",
+				"h1rdr1", "kr1mbs", "msgc0v", "gr3klv", "br1nk4", "l4h1rn", "h3rrk0", "unt0tr", "n0rtbl"
 				]
 
 #SOME PASSWORDS TAKE YOU TO CUTSCENES THAT YOU CAN EASILY SKIP
@@ -298,4 +299,35 @@ func al1sss():
 
 func b34trc():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 28 untotern undead/cutscene 28 untotern undead.tscn")
+
+func h1rdr1():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 29 untotern nortpartnine/cutscene 29 untotern nortpartnine.tscn")
+
+func kr1mbs():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartnine/NortPartNineLevel2.tscn")
+
+func msgc0v():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartnine/NortPartNineLevel3.tscn")
+
+func gr3klv():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartnine/NortPartNineLevel4.tscn")
+
+func br1nk4():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 30 nortpartnine tfoorie/cutscene 30 nortpartnine tfoorie.tscn")
+
+func l4h1rn():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartnine/NortPartNineLevel6.tscn")
+
+func h3rrk0():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartnine/NortPartNineLevel7.tscn")
+
+func unt0tr():
+	SceneManager.change_scene("level_transition_effect", "res://src/levels/nortubelpartnine/NortPartNineLevel8.tscn")
+
+func n0rtbl():
+	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals.tscn")
+
+
+
+
 

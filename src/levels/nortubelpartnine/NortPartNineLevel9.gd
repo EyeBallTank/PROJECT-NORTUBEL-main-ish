@@ -1,11 +1,9 @@
 extends Node2D
 
-onready var animationplayer = $AnimationPlayer
 
-# Declare member va$AnimationPlayerriables here. Examples:
-# var a = 2
-# var b = "text"
-
+# NOTE TO SELF: THIS LEVEL NEEDS A FINISH LINE WHERE YOU EITHER WIN AND GO TO CUTSCENE 32
+#OR A GAME OVER THING AND MAYBE A PASSWORD OF n0rtbl SHOWING 
+#SAID ENDLEVEL THING IS A STRANGE PORTAL
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,4 +12,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
-
+#	pass

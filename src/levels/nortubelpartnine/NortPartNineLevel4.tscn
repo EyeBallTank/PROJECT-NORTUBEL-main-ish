@@ -48,3 +48,5 @@ position = Vector2( 522, 1302 )
 
 [node name="Door" parent="." instance=ExtResource( 1 )]
 position = Vector2( 2001, 1123 )
+new_scene = "res://screens/cutscenes/cutscene 30 nortpartnine tfoorie/cutscene 30 nortpartnine tfoorie.tscn"
+customtext = "gr3klv"
