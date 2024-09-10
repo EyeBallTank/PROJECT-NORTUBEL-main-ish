@@ -120,4 +120,5 @@ boardname = "unto art maikouto reference"
 [node name="Door" parent="." instance=ExtResource( 18 )]
 position = Vector2( 3592, 1554 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
+spritename = "untotern greendoor"
 customtext = "b34trc"

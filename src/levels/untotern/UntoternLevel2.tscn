@@ -72,4 +72,5 @@ propname = "untoprop coffin skull chains"
 [node name="Door" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1441, 1387 )
 new_scene = "res://screens/cutscenes/cutscene 28 untotern undead/cutscene 28 untotern undead.tscn"
+spritename = "untotern greendoor"
 customtext = "al1sss"

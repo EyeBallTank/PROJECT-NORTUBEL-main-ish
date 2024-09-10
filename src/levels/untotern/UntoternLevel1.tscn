@@ -99,4 +99,5 @@ position = Vector2( 3040, -416 )
 [node name="Door" parent="." instance=ExtResource( 16 )]
 position = Vector2( 962, 1070 )
 new_scene = "res://src/levels/untotern/UntoternLevel2.tscn"
+spritename = "untotern greendoor"
 customtext = "k4luub"
