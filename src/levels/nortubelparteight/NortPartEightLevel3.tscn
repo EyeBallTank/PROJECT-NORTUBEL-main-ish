@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
@@ -35,6 +34,7 @@ tile_data = PoolIntArray( 983040, 95, 0, 1048576, 95, 0, 1114112, 95, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -484, 1079 )
+playerskin = "res://assets/sprites/play_actor_sprites/KatrinSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 5 )]
 position = Vector2( -484, 1079 )
@@ -44,11 +44,9 @@ position = Vector2( -390, 1007 )
 
 [node name="Companion" parent="." instance=ExtResource( 1 )]
 position = Vector2( -390, 1007 )
+companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 
 [node name="CurrentUI" parent="." instance=ExtResource( 2 )]
-
-[node name="WorldTitleName" parent="." instance=ExtResource( 3 )]
-worldname = "nortubel2"
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 547, 1175 )
