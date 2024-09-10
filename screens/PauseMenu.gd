@@ -8,7 +8,7 @@ onready var manualtext = $ManualText
 
 #1ST LETTERS IN codes NAMES SHOULD BE LOWER CASE AND LETTERS, NOT NUMBERS
 #BECAUSE FUNC NAMES CANT START WITH NUMBERS
-var codes := ["gallery",
+var codes := ["galeria",
 				"tutor1", "tutor2", "tutor3",
 				"c4rr13", "k4tr1n", "m3lv1n",
 				"osc4r0", "p33tt3", "ang3l4",
@@ -123,7 +123,7 @@ func _on_LineEdit_text_entered(keyword):
 	$PasswordMenu/LineEdit.clear()
 	call(keyword)
 
-func gallery():
+func galeria():
 	SceneManager.change_scene("level_transition_effect", "res://screens/extra/Gallery.tscn")
 
 func tutor1():
