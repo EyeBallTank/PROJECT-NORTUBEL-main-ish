@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Convo Matysha Ricotto.png-f9d4f72e39e1c1feaf3be5269b8d6d8a.stex"
+path="res://.import/Convo Matysha Ricotto v3.png-128efe12da19c5956f29fbe7f8944a55.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/Krimbstone/Convo Matysha Ricotto.png"
-dest_files=[ "res://.import/Convo Matysha Ricotto.png-f9d4f72e39e1c1feaf3be5269b8d6d8a.stex" ]
+source_file="res://assets/sprites/npc_actor_sprites/Krimbstone/Convo Matysha Ricotto v3.png"
+dest_files=[ "res://.import/Convo Matysha Ricotto v3.png-128efe12da19c5956f29fbe7f8944a55.stex" ]
 
 [params]
 

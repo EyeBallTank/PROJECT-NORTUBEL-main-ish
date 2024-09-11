@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
+[ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=8]
 
 [node name="NortPartNineLevel5" type="Node2D"]
 
@@ -51,3 +52,13 @@ position = Vector2( 522, 1302 )
 position = Vector2( 2015, 1137 )
 new_scene = "res://src/levels/nortubelpartnine/NortPartNineLevel6.tscn"
 customtext = "br1nk4"
+
+[node name="ConvoNPC" parent="." instance=ExtResource( 8 )]
+position = Vector2( 967, 1129 )
+customtext1 = "CONVO_MATYSHA_RICOTTO_1"
+customtext2 = "CONVO_MATYSHA_RICOTTO_2"
+customtext3 = "CONVO_MATYSHA_RICOTTO_3"
+customtext4 = "CONVO_MATYSHA_RICOTTO_4"
+customname1 = "Matysha Natashka"
+customname2 = "Ricotto Bruniolli:"
+spritename = "matysha ricotto"
