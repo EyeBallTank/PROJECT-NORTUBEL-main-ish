@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -11,8 +11,60 @@
 [ext_resource path="res://src/enemies/untotern/UntoDesolate.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 2 bg basic blue.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 2 bg whirl effect.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 2 bg souls effect.png" type="Texture" id=14]
+[ext_resource path="res://src/levels/untotern/UntoternLevel2.gd" type="Script" id=15]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 12.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer2/UntoLevel2BgWhirlEffect:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 6, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -360.0, 0.0, 360.0 ]
+}
 
 [node name="UntoternLevel2" type="Node2D"]
+script = ExtResource( 15 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="UntoLevel2BgBasicBlue" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="UntoLevel2BgWhirlEffect" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+rotation = 1.5708
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 0, 1 )
+motion_mirroring = Vector2( 0, 2400 )
+
+[node name="UntoLevel2BgSoulsEffect" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+modulate = Color( 1, 1, 1, 0.509804 )
+position = Vector2( 121, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+region_rect = Rect2( 0, 0, 1024, 1200 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 8 )
@@ -74,3 +126,7 @@ position = Vector2( 1441, 1387 )
 new_scene = "res://screens/cutscenes/cutscene 28 untotern undead/cutscene 28 untotern undead.tscn"
 spritename = "untotern greendoor"
 customtext = "al1sss"
+
+[node name="spinning bg" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
