@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
@@ -52,3 +53,7 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 position = Vector2( 547, 1175 )
 new_scene = "res://screens/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern.tscn"
 customtext = "al3gn4"
+
+[node name="ArtBook" parent="." instance=ExtResource( 3 )]
+position = Vector2( -57, 1061 )
+boardname = "nort art hhghh reference"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=272 format=2]
+[gd_scene load_steps=274 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -137,6 +137,7 @@
 [ext_resource path="res://assets/sprites/art gallery/herrko/herrko art dirk the adventurer crossover.png" type="Texture" id=135]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art batty vamps crossover.png" type="Texture" id=136]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art hangelica reference.png" type="Texture" id=137]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art hhghh reference.png" type="Texture" id=138]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -563,6 +564,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=133]
 atlas = ExtResource( 118 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=158]
+atlas = ExtResource( 138 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=87]
@@ -1144,6 +1149,11 @@ animations = [ {
 "name": "nort art ganyah and zarina",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 158 ) ],
+"loop": false,
+"name": "nort art hhghh reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 87 ) ],
 "loop": false,
 "name": "nort art how 3 older arm heart",
@@ -1288,7 +1298,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "unto art hangelica reference"
+animation = "nort art hhghh reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
