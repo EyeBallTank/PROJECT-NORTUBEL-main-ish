@@ -132,7 +132,7 @@ position = Vector2( 1047, 46 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch One hirdrih.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 12 )]
-position = Vector2( -115, 47 )
+position = Vector2( -197, 47 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/hirdrih/Green switch Two hirdrih.tres"
 
 [node name="LevelProp2" parent="." instance=ExtResource( 14 )]
