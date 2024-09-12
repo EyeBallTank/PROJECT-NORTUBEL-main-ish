@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/levels/untotern/UntoternLevel2.gd" type="Script" id=15]
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -73,7 +74,7 @@ tile_set = ExtResource( 8 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114116, 1, 0, 1179652, 1, 0, 1245188, 1, 0, 1310724, 1, 0, 1376260, 1, 0 )
+tile_data = PoolIntArray( 720929, 2, 0, 786465, 2, 0, 852001, 2, 0, 917537, 2, 0, 983073, 2, 0, 1048609, 2, 0, 1114116, 1, 0, 1114145, 2, 0, 1179652, 1, 0, 1179681, 2, 0, 1245188, 1, 0, 1245217, 2, 0, 1310724, 1, 0, 1310753, 2, 0, 1376260, 1, 0, 1376289, 2, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 8 )
@@ -88,7 +89,7 @@ tile_set = ExtResource( 8 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114117, 1, 0, 1179653, 1, 0, 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0 )
+tile_data = PoolIntArray( 720929, 3, 0, 786465, 4, 0, 852001, 4, 0, 917537, 5, 0, 1114117, 1, 0, 1179653, 1, 0, 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( -180, 1316 )
@@ -140,3 +141,8 @@ bluswitchskin = "res://assets/sprites/level_object_sprites/untotern/Blue switch 
 [node name="YellowSwitch" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1909, 1208 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/untotern/Yellow switch Untotern.tres"
+
+[node name="Ladder" parent="." instance=ExtResource( 18 )]
+position = Vector2( 2303, 1406 )
+scale = Vector2( 24, 88 )
+collision_newsize = Vector2( 24, 88 )
