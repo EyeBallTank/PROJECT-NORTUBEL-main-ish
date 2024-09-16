@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=160 format=2]
+[gd_resource type="TileSet" load_steps=161 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILE PASSABLE.png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://assets/sprites/tile sets/nortubel/NORT TILES SPIDER WEB LADDER.png" type="Texture" id=17]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/voodoo dolls others.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE FLOWERSTORE.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE RESTAURANT 2.png" type="Texture" id=20]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -6755,3 +6756,17 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 385/shape_one_way_margin = 0.0
 385/shapes = [  ]
 385/z_index = 0
+386/name = "SINGLE NORT TILE RESTAURANT 2.png 386"
+386/texture = ExtResource( 20 )
+386/tex_offset = Vector2( 0, 0 )
+386/modulate = Color( 1, 1, 1, 1 )
+386/region = Rect2( 0, 0, 704, 768 )
+386/tile_mode = 0
+386/occluder_offset = Vector2( 0, 0 )
+386/navigation_offset = Vector2( 0, 0 )
+386/shape_offset = Vector2( 0, 0 )
+386/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+386/shape_one_way = false
+386/shape_one_way_margin = 0.0
+386/shapes = [  ]
+386/z_index = 0

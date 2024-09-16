@@ -191,6 +191,10 @@ func cutscene_over():
 #Matysha: Rico, you see this?
 #Ricotto: Yes. You think the world is ending?
 #Matysha: I always had moments I felt that. Whatever it is, we should still fight for our survival.
+#Ivan and Lahrn surrounded by Scorbrions
+#Ivan: There's more to come. How many did you got so far?
+#Lahrn: We're almost on the same score. But I'm getting sick of these creatures. There has to be some other pest woth exterminating.
+#Maikouto: You boys were obviously distracted. I got the highest score.
 #Avietta: I think Leon and Otto might want to know what's goin on.
 #Hangelica: Not yet... the end of times will not arrive soon...
 #Leon: Um? Somethings going on with those 2. Seems their world has strange color related anomalies.
