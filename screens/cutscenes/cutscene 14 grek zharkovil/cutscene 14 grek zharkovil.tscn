@@ -975,6 +975,7 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 207.425, 239.202 )
 scale = Vector2( 0.828284, 0.828284 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 flip_h = true
 
@@ -1049,6 +1050,7 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 467, 335 )
 scale = Vector2( 0.625331, 0.625331 )
 frames = SubResource( 8 )
+frame = 1
 playing = true
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]

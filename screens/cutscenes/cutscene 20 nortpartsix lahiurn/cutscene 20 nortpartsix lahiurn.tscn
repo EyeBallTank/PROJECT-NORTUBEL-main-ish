@@ -579,7 +579,6 @@ texture = ExtResource( 7 )
 [node name="Cutscene20AnimatedPlane" type="AnimatedSprite" parent="."]
 position = Vector2( 340, 853 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="Cutscene20AnimatedPlane2" type="AnimatedSprite" parent="."]
@@ -587,7 +586,6 @@ position = Vector2( -78, 1068 )
 rotation = 0.483065
 scale = Vector2( 0.710526, 0.710526 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]

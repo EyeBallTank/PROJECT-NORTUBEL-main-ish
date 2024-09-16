@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/yellow key.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Yellow key.gd" type="Script" id=2]
@@ -11,6 +11,11 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/hirdrih/yellow key hirdrih.PNG" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/level_item_sprites/untotern/yellow key untotern.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/level_item_sprites/lahiurn/yellow key lahiurn.PNG" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/level_item_sprites/untotern/yellow key alt untotern.png" type="Texture" id=12]
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 69, 175 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 4 )
@@ -51,6 +56,11 @@ region = Rect2( 0, 0, 94, 162 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
+"frames": [ SubResource( 14 ) ],
+"loop": false,
+"name": "altuntotern yelkey",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 6 ) ],
 "loop": false,
 "name": "brinkaedea yelkey",
@@ -201,7 +211,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, 0 )
 frames = SubResource( 5 )
-animation = "nortubel yelkey"
+animation = "altuntotern yelkey"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 0 )
