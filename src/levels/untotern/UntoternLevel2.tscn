@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -19,6 +19,8 @@
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level prefabs/unto prefabs/UntoLargeDemon.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level_objects/Green switch One.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/Green switch Two.tscn" type="PackedScene" id=21]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -93,7 +95,7 @@ format = 1
 tile_data = PoolIntArray( 720929, 3, 0, 786465, 4, 0, 852001, 4, 0, 917537, 5, 0, 1114117, 1, 0, 1179653, 1, 0, 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -180, 1316 )
+position = Vector2( -183, 1373 )
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
 position = Vector2( -18, 1316 )
@@ -150,3 +152,11 @@ collision_newsize = Vector2( 24, 88 )
 
 [node name="UntoLargeDemon" parent="." instance=ExtResource( 19 )]
 position = Vector2( 2761, 2232 )
+
+[node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1467, 2236 )
+gre1switchskin = "res://assets/sprites/level_object_sprites/untotern/Green switch One Untotern.tres"
+
+[node name="GreenSwitchTwo" parent="." instance=ExtResource( 21 )]
+position = Vector2( 1711, 2236 )
+gre2switchskin = "res://assets/sprites/level_object_sprites/untotern/Green switch Two Untotern.tres"

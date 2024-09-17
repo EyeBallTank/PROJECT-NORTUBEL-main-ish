@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/herrko/Green switch Two Herrko.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/untotern/Green switch Two Untotern.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/level_objects/Green switch Two.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=3]
 
@@ -60,7 +60,7 @@ script = ExtResource( 2 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 9.53674e-07, 2.86102e-06 )
 frames = ExtResource( 1 )
-animation = "switchon"
+animation = "switchoff"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.5, -0.5 )
