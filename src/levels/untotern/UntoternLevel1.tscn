@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=23]
 
 [node name="UntoternLevel1" type="Node2D"]
 
@@ -131,3 +133,11 @@ spritename = "altuntotern redkey"
 [node name="Yellow key" parent="." instance=ExtResource( 21 )]
 position = Vector2( 1466, 933 )
 spritename = "altuntotern yelkey"
+
+[node name="MovingPlatHoriz" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2029, 1675 )
+spritename = "untotern movplathoriz"
+
+[node name="MovingPlatVerti" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1024, 1683 )
+spritename = "untotern movplatvert"
