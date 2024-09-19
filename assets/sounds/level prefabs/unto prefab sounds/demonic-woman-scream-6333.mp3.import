@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/demonic-woman-scream-6333.mp3-190eb916ca793ef803dc4fd27a72de17.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/unto prefab sounds/demonic-woman-scream-6333.mp3"
+dest_files=[ "res://.import/demonic-woman-scream-6333.mp3-190eb916ca793ef803dc4fd27a72de17.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
