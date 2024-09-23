@@ -2820,3 +2820,17 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 165/z_index = 0
+166/name = "UNTO TILES SCARYY EXTRA v2.png 166"
+166/texture = ExtResource( 6 )
+166/tex_offset = Vector2( 0, 0 )
+166/modulate = Color( 1, 1, 1, 1 )
+166/region = Rect2( 1728, 64, 320, 320 )
+166/tile_mode = 0
+166/occluder_offset = Vector2( 0, 0 )
+166/navigation_offset = Vector2( 0, 0 )
+166/shape_offset = Vector2( 0, 0 )
+166/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+166/shape_one_way = false
+166/shape_one_way_margin = 0.0
+166/shapes = [  ]
+166/z_index = 0
