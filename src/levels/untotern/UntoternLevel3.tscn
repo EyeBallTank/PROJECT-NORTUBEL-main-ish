@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -24,6 +24,8 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3 bg basic red.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3 bg priest body.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3  bg whirl effect.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3 bg priest face.png" type="Texture" id=25]
+[ext_resource path="res://src/levels/untotern/UntoternLevel3.gd" type="Script" id=26]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -55,6 +57,7 @@ tracks/1/keys = {
 }
 
 [node name="UntoternLevel3" type="Node2D"]
+script = ExtResource( 26 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -81,6 +84,17 @@ position = Vector2( 0, 27 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 23 )
 
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 1, 0 )
+motion_mirroring = Vector2( 2400, 0 )
+
+[node name="UntoLevel3BgPriestFace" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+modulate = Color( 1, 1, 1, 0.584314 )
+scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 25 )
+
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
@@ -104,11 +118,11 @@ format = 1
 tile_data = PoolIntArray( 1114117, 1, 0, 1179653, 1, 0, 1245189, 1, 0, 1310725, 1, 0, 1376261, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( -169, 1342 )
+position = Vector2( -134, 1343 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="Companion" parent="." instance=ExtResource( 2 )]
-position = Vector2( -18, 1316 )
+position = Vector2( 17, 1317 )
 
 [node name="playerspawn" parent="." instance=ExtResource( 3 )]
 position = Vector2( -180, 1316 )
