@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -20,8 +20,66 @@
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3 bg basic red.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3 bg priest body.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/level_backgrounds/untotern/unto level 3  bg whirl effect.png" type="Texture" id=24]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 12.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer3/UntoLevel3BgWhirlEffect:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 6, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -360.0, 0.0, 360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ParallaxBackground/ParallaxLayer2/UntoLevel3BgPriestBody:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.4 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.4 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="UntoternLevel3" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="UntoLevel3BgBasicRed" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 22 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="UntoLevel3BgWhirlEffect" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+rotation = 6.28319
+scale = Vector2( 2, 2 )
+texture = ExtResource( 24 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="UntoLevel3BgPriestBody" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 0, 27 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 23 )
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -132,3 +190,11 @@ floorswitchskin = "res://assets/sprites/level_object_sprites/untotern/FloorSwitc
 [node name="Barrier" parent="." instance=ExtResource( 20 )]
 position = Vector2( 2037, 2136 )
 barrierskin = "res://assets/sprites/level_object_sprites/untotern/Barrier Untotern.tres"
+
+[node name="NumberBasedDoor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 748, 1319 )
+spritename = "undeadfive"
+
+[node name="SpinningBG" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
