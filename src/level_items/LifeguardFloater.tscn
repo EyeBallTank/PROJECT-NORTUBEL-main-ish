@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/sprites/level_item_sprites/Lifeguard Floater.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/LifeguardFloater.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/sprites/level_item_sprites/herrko/Lifeguard Floater herrko 2.PNG" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/level_item_sprites/brinkaedea/Lifeguard Floater brinkaedea.PNG" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/level_item_sprites/hirdrih/Lifeguard Floater hirdrih.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/level_item_sprites/untotern/Lifeguard Floater untotern.png" type="Texture" id=10]
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 8 )
@@ -38,6 +39,10 @@ region = Rect2( 0, 0, 148, 138 )
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 148, 138 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 337, 314 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
@@ -74,6 +79,11 @@ animations = [ {
 "frames": [ SubResource( 4 ) ],
 "loop": false,
 "name": "nortubel floater",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 13 ) ],
+"loop": false,
+"name": "untotern floater",
 "speed": 0.0
 } ]
 
@@ -179,7 +189,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
-animation = "nortubel floater"
+animation = "untotern floater"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -4, -6 )
