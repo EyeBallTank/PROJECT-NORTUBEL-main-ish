@@ -72,7 +72,7 @@ texture = ExtResource( 22 )
 motion_scale = Vector2( 0, 0 )
 
 [node name="UntoLevel3BgWhirlEffect" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
-rotation = 6.28319
+rotation = -6.28319
 scale = Vector2( 2, 2 )
 texture = ExtResource( 24 )
 
