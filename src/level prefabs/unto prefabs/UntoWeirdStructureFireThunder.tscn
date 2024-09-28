@@ -1,0 +1,159 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://src/level_objects/BluePlatHoriz.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/unto prefab sprites/Unto Weird Structure Fire and Thunder body.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/unto prefab sprites/Unto Weird Structure Fire and Thunder symbol.png" type="Texture" id=3]
+[ext_resource path="res://src/behind_the_scenes/DeathHitbox.tscn" type="PackedScene" id=4]
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 596, 540 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 596, 0, 596, 540 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 1192, 0, 596, 540 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "alive",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": false,
+"name": "notsomuch",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 290.5, 120.5 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 267.5, 206.5 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "HorizontalPlat"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Platform/Sprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "notsomuch" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DeathHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "IdlePlat"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Platform/Sprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "alive" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DeathHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Platform/Sprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "alive" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DeathHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[node name="UntoWeirdStructureFireThunder" type="Node2D" groups=["actionables"]]
+script = ExtResource( 1 )
+
+[node name="Platform" type="KinematicBody2D" parent="."]
+position = Vector2( -2, -1 )
+collision_layer = 4
+collision_mask = 3
+motion/sync_to_physics = true
+
+[node name="symbol" type="Sprite" parent="Platform"]
+position = Vector2( 0, -229 )
+z_index = 17
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Platform"]
+frames = SubResource( 9 )
+animation = "alive"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2( 0.5, 18.5 )
+shape = SubResource( 1 )
+
+[node name="DeathHitbox" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0, 175 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathHitbox"]
+position = Vector2( -3.5, -156.5 )
+shape = SubResource( 10 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "IdlePlat"
+playback_process_mode = 0
+anims/HorizontalPlat = SubResource( 3 )
+anims/IdlePlat = SubResource( 5 )
+anims/RESET = SubResource( 4 )
