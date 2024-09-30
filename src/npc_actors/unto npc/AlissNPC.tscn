@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=2]
+[ext_resource path="res://src/npc_actors/unto npc/KalubNPC.gd" type="Script" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/untotern/ALISS SPRITE NPC.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 73, 202 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 30.5, 89.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 76.5, 189.5 )
+
+[node name="AlissNPC" type="KinematicBody2D"]
+collision_layer = 64
+collision_mask = 4
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -6, 55 )
+frames = SubResource( 2 )
+playing = true
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -7.5, 58.5 )
+shape = SubResource( 3 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( -9.5, 158.5 )
+shape = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 480.0
+margin_right = 1018.0
+margin_bottom = 593.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 1007.0
+margin_bottom = 109.0
+custom_fonts/font = ExtResource( 1 )
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 452.0
+margin_right = 119.0
+margin_bottom = 476.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.331, 0.003, 413.334, 409.998 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="Name" type="Label" parent="CanvasLayer/NinePatchRect2"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 23.0
+custom_fonts/font = ExtResource( 1 )
+text = "Aliss Stoker"
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
