@@ -220,7 +220,7 @@ position = Vector2( 2037, 2136 )
 barrierskin = "res://assets/sprites/level_object_sprites/untotern/Barrier Untotern.tres"
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 748, 1319 )
+position = Vector2( 7903, 2558 )
 spritename = "undeadfive"
 
 [node name="SpinningBG" type="AnimationPlayer" parent="."]

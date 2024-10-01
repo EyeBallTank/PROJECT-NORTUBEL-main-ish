@@ -25,6 +25,8 @@ func _physics_process(delta):
 		if Input.is_action_pressed("kickball") and Input.is_action_just_pressed("standstill"):
 			maintext.text = str (customtext4)
 
+func send_a_signal():
+	Signals.emit_signal("collectible_picked")
 
 func _on_TalkToArea_body_entered(body):
 	if body.name == "Player":
