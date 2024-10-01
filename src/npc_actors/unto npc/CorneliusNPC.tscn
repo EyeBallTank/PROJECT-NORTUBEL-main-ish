@@ -9,22 +9,22 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="AtlasTexture" id=2]
+[sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 315, 410 )
+region = Rect2( 630, 0, 315, 410 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 410, 315, 410 )
+region = Rect2( 630, 410, 315, 410 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ SubResource( 2 ) ],
+"frames": [ SubResource( 9 ) ],
 "loop": false,
 "name": "captured",
 "speed": 0.0
 }, {
-"frames": [ SubResource( 3 ) ],
+"frames": [ SubResource( 10 ) ],
 "loop": false,
 "name": "free",
 "speed": 0.0
@@ -164,7 +164,7 @@ tracks/4/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 373 ) ]
 }
 
-[node name="BeatriceNPC" type="Node2D"]
+[node name="CorneliusNPC" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
@@ -241,7 +241,7 @@ margin_top = 5.0
 margin_right = 187.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 5 )
-text = "Beatrice Margareen"
+text = "Cornelius Arvaxis"
 
 [node name="UntoYellowTeethPlatSprite" type="Sprite" parent="."]
 position = Vector2( 18, 605 )

@@ -2787,3 +2787,47 @@ ALISS_NPC_HUG,"Can you reach me?
 Even if you could, you wouldn't stand on ceilings like we do.","Consegue me alcançar?
 Mesmo se pudesse, não poderia ficar no teto como nós."
 ALISS_NPC_HURT,I do wonder how me and my brother got these scars.,Gostava de saber como é que eu e o meu irmão recebemos estas cicatrizes.
+BEATRICE_NPC_TALK,"I'm free.
+Was it you who saved me?","Eu estou livre.
+Foi você que me salvou?"
+BEATRICE_NPC_HUG,You seem like a lovely girl.,Você parece uma rapariga adorável.
+BEATRICE_NPC_HURT,Your knife goes through me like I wasn't here...,A sua faca atravessa-me como se eu não estivesse aqui...
+BEATRICE_NPC_HONK,"Normally, I expect fear from you.
+But this... hmmmm...","Normalmente, eu pensava que você teria medo.
+Mas isto... hmmmm..."
+CORNELIUS_NPC_TALK,"The nightmare is over.
+Thank you!","O pesadelo acabou.
+Obrigado."
+CORNELIUS_NPC_HUG,I can't even remember where I got this physique.,Nem me lembro de como fiquei com esta forma física.
+CORNELIUS_NPC_HURT,"Don't worry, I'm not a threat.","Não se preocupe, eu não a vou ameaçar."
+CORNELIUS_NPC_HONK,At least you won't hurt me unlike that priest.,"Pelo menos você não me vai magoar, ao contrario daquele padre."
+TAAF_NPC_TALK,Enough of this torture!,"Já chega, esta tortura!"
+TAAF_NPC_HUG,"What do you want, forgiveness?
+Are you that priest's daughter?
+Is that why you're doing this?","O que é que você quer? Ser perdoada?
+É filha daquele padre?
+É essa a razão de fazer isso?"
+TAAF_NPC_HURT,Don't you dare make things worse!,Nem se atreve a piorar as coisas!
+TAAF_NPC_HONK,"I should remind you I don't really care for women as much as you'd like...
+Now where is Cornelius?","Devo-lhe lembrar que eu não estou interessado em mulheres, apesar dos seus desejos...
+Onde está o Cornelius?"
+MARCUS_NPC_TALK,"Pfffhahahahaha, idiots!
+They never learn!","Pfffhahahahaha, idiotas!
+Nunca aprendam!"
+MARCUS_NPC_HUG,"Oh darling...
+Who are you running from, that you'd rather be with me?","Oh queridazinha...
+De quem é que estás a fugir, que preferes estar comigo?..."
+MARCUS_NPC_HURT,"I can see your every move, kid!
+Your combat skills make me laugh.","Consigo ver todos os teus movimentos, miúda!
+A tua maneira de lutar faz me rir."
+MARCUS_NPC_HONK,"Girl, you're cute.
+But I'm not looking for fresh hearts.","Miúda, és querida.
+Mas não estou á procura de corações frescos."
+MAIKOUTO_NPC_TALK,It's over... I hope the others are safe too.,Acabou... espero que os outros também estão bem.
+MAIKOUTO_NPC_HUG,"Seems you need someone to protect you, no?
+Hope you don't mind my arms.","Parece que precisas de proteção, não é?
+Espero que não te importas com os meus braços."
+MAIKOUTO_NPC_HURT,"Do you want to try one of my swords?
+At least this once.","Queres experimentas uma das minhas espadas?
+Pelo menos esta vez."
+MAIKOUTO_NPC_HONK,Stop that! What's wrong with you?,Para com isso. O que se passa contigo?
