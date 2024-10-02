@@ -159,6 +159,8 @@ func cutscene_over():
 #Beatrice: Farewell, children. Live well, for as we undead had our living memories taken from us.
 #Marcus: Who knows... maybe there's good reasons why we forgot everything except our names.
 #Taaf: Some day... we shall all know our lost truths... it'll come at a price.
+#Maikouto: If so... I hope it doesn't shatter our group.
+#Cornelius: There's the Vimana! We still got a long journey along the way.
 #Nort part 9
 #Angela: What's going on? Are we coming back to those places?
 #Carrie: What if they were right? Reality is falling apart.
@@ -217,6 +219,7 @@ func cutscene_over():
 #Pete: But we're not sure what's in that portal... is it really home?
 #Melvin: We don't know for sure... but we might as well try.
 
+#NOTE: ENDING CUTSCENE MAY BE SPLIT IN 2
 #Melvin: Come on, everyone, we're getting close.
 #Melvin: Angela, grab my hand!
 #Carrie: Oscar, grab mine.

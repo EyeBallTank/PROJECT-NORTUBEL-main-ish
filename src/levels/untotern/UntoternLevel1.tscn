@@ -99,6 +99,11 @@ position = Vector2( -593, 1417 )
 customtext = "UNTOTERN_LORE_WORLD_TEXT"
 spritename = "untotern lorebook"
 
+[node name="LoreBook3" parent="." instance=ExtResource( 10 )]
+position = Vector2( -1391, 1484 )
+customtext = "KALUB_ALISS_BACKSTORY_TEXT"
+spritename = "untotern lorebook"
+
 [node name="LoreBook2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1698, -263 )
 customtext = "UNTOTERN_TEXT_BAT_GAME"
@@ -179,6 +184,6 @@ customtext3 = "ALISS_NPC_HUG"
 customtext4 = "ALISS_NPC_HURT"
 
 [node name="InvisiblePlaceholderNPC" parent="." instance=ExtResource( 32 )]
-position = Vector2( -602, 1810 )
+position = Vector2( -1547, 1062 )
 customtext = "ANGEL_STATUE_NPC_TALK"
 customname = "..."

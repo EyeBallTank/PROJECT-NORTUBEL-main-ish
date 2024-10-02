@@ -1,8 +1,22 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/npc_actors/grek npc/SamathaNPC.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/npc_actor_sprites/npc placeholder sprite.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 53, 246 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "MAINSTATE",
+"speed": 0.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 72.5, 98.5 )
@@ -14,6 +28,14 @@ extents = Vector2( 103, 192 )
 collision_layer = 64
 collision_mask = 4
 script = ExtResource( 2 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -15, 16 )
+frames = SubResource( 6 )
+animation = "MAINSTATE"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -14.5, 49.5 )

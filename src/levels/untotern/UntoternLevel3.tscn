@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://src/npc_actors/unto npc/MarcusNPC.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/npc_actors/unto npc/MaikoutoNPC.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/npc_actors/unto npc/InvisiblePlaceholderNPC.tscn" type="PackedScene" id=35]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -213,11 +214,11 @@ spritename = "untotern greendoor"
 customtext = "b34trc"
 
 [node name="FloorSwitch" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1740, 2219 )
+position = Vector2( 1270, 2219 )
 floorswitchskin = "res://assets/sprites/level_object_sprites/untotern/FloorSwitchUntotern.tres"
 
 [node name="Barrier" parent="." instance=ExtResource( 20 )]
-position = Vector2( 2037, 2136 )
+position = Vector2( 1460, 2136 )
 barrierskin = "res://assets/sprites/level_object_sprites/untotern/Barrier Untotern.tres"
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 21 )]
@@ -267,3 +268,28 @@ customtext4 = "MAIKOUTO_NPC_HONK"
 position = Vector2( 757, 1514 )
 scale = Vector2( 8, 8 )
 collision_newsize = Vector2( 8, 8 )
+
+[node name="InvisiblePlaceholderNPC" parent="." instance=ExtResource( 35 )]
+position = Vector2( 1755, 2167 )
+customtext = "BEATRICE_BACKSTORY_TEXT"
+customname = "HANGELICA_NAME_TEXT"
+
+[node name="InvisiblePlaceholderNPC2" parent="." instance=ExtResource( 35 )]
+position = Vector2( 2091, 2156 )
+customtext = "MAIKOUTO_BACKSTORY_TEXT"
+customname = "XERO_NAME_TEXT"
+
+[node name="InvisiblePlaceholderNPC3" parent="." instance=ExtResource( 35 )]
+position = Vector2( 2439, 2209 )
+customtext = "MARCUS_BACKSTORY_TEXT"
+customname = "KEO_NAME_TEXT"
+
+[node name="InvisiblePlaceholderNPC4" parent="." instance=ExtResource( 35 )]
+position = Vector2( 2801, 2206 )
+customtext = "TAAF_BACKSTORY_TEXT"
+customname = "BASTUPATRA_NAME_TEXT"
+
+[node name="InvisiblePlaceholderNPC5" parent="." instance=ExtResource( 35 )]
+position = Vector2( 3114, 2213 )
+customtext = "CORNELIUS_BACKSTORY_TEXT"
+customname = "MINUSA_NAME_TEXT"

@@ -2828,7 +2828,7 @@ MAIKOUTO_NPC_HUG,"Seems you need someone to protect you, no?
 Hope you don't mind my arms.","Parece que precisas de proteção, não é?
 Espero que não te importas com os meus braços."
 MAIKOUTO_NPC_HURT,"Do you want to try one of my swords?
-At least this once.","Queres experimentas uma das minhas espadas?
+At least this once.","Queres experimentar uma das minhas espadas?
 Pelo menos esta vez."
 MAIKOUTO_NPC_HONK,Stop that! What's wrong with you?,Para com isso. O que se passa contigo?
 CONVO_ALISS_KALUB_TALK_1,I still don't know if this is Hell... or not...,Ainda não sei se este lugar é ou não é o Inferno.
@@ -2840,3 +2840,43 @@ CONVO_ALISS_KALUB_TALK_4,"Were our past lives that painful, that we forgot?
 Because even our friends don't remember their lives too.","Será que as nossas vidas passadas foram tão dolorosas que nos esquecemos?
 Porque nem os nossos amigos se lembram também das suas vidas."
 ANGEL_STATUE_NPC_TALK,Do not step on the pentagram!,Não pise o pentagrama!
+BAPHOMET_NPC_TALK,"You cannot sustain his flames and thunder.
+But you can make them stop... if you look around.","Não vai poder sustentar as chamas e os trovões dele.
+Mas pode fazê-los parar... se olhar à sua volta."
+BASTUPATRA_NAME_TEXT,Goddess Bastupatra,Deusa Bastupatra
+XERO_NAME_TEXT,God Xero,Deus Xero
+KEO_NAME_TEXT,God Keo,Deus Keo
+MINUSA_NAME_TEXT,Goddess Minusa,Deusa Minusa
+BEATRICE_BACKSTORY_TEXT,"Lost memories from the country of Perrauld.
+After a broken friendship, an argument in a dark night resulted in an accidental drowning.
+Her friend did not try to save her.","Memórias perdidas do país de Perrauld.
+Depois de uma amizade quebrada, uma discussão numa noite escura resultou num afogamento acidental.
+A sua amiga não tentou salvá-la."
+MAIKOUTO_BACKSTORY_TEXT,"Lost memories from the country of Rikioi.
+Her village was attacked, her family was boiled alive.
+But before her death, the invaders took advantage of her for their own pleasures.","Memórias perdidas do país de Rikioi.
+A sua aldeia foi atacada, a sua família foi cozida viva.
+Mas antes da sua morte, os invasores aproveitaram-se dela para os seus próprios prazeres."
+MARCUS_BACKSTORY_TEXT,"Lost memories from the country of Arleticka.
+He ended up with the wrong company, they took his eyes out and hanged him.
+He never got to know his mother.","Memórias perdidas do país de Arleticka.
+Acabou com o grupo errado, arrancaram-lhe os olhos e enforcaram-no.
+Nunca conheceu a sua mãe."
+TAAF_BACKSTORY_TEXT,"Lost memories from the country of Nerjeept.
+He did his best to honor the king, only to fall victim for his betrayal and be left to die in the desert.
+Some of the guards were laughing as the quicksand kept dragging him in.","Memórias perdidas do país de Nerjeept.
+Fez o possível para honrar o rei, mas acabou de ser vítima da sua traição e ser deixado para morrer no deserto.
+Alguns dos guardas riam-se enquanto a areia movediça o arrastava para dentro."
+CORNELIUS_BACKSTORY_TEXT,"Lost memories from the country of Dyenamir.
+He protested against Silbannacus, leading to punishment and death.
+He screamed for hours, while being boiled alive inside the brazen bull.","Memórias perdidas do país de Dyenamir.
+Protestou contra Silbannacus, levando à punição e à morte.
+Gritou durante horas, enquanto foi cozido vivo dentro do touro de bronze."
+KALUB_ALISS_BACKSTORY_TEXT,"Lost memories from the country of Dranzium.
+Accusations of cult associations lead to a rich father becoming paranoid.
+Believing his two children were cursed, he stabbed them in their chests.","Memórias perdidas do país de Dranzium.
+Acusações de participar num culto levaram um pai rico a ficar paranóico.
+Acreditando que os seus dois filhos eram amaldiçoados, esfaqueou-os no peito."
+VIMANA_LORE_TEXT,"The Vimana is a vehicle used to travel through dimensions.
+Wasan has given it as a gift to a group of 7 undead travellers.","O Vimana é um veículo utilizado para viajar através de dimensões.
+Wasan ofereceu-o a um grupo de 7 viajantes mortos-vivos."
