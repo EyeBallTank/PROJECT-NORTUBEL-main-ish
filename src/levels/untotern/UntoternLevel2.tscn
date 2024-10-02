@@ -217,4 +217,10 @@ customname = "HANGELICA_NAME_TEXT"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 33 )]
 position = Vector2( 291, 1364 )
+customtext1 = "CONVO_ALISS_KALUB_TALK_1"
+customtext2 = "CONVO_ALISS_KALUB_TALK_2"
+customtext3 = "CONVO_ALISS_KALUB_TALK_3"
+customtext4 = "CONVO_ALISS_KALUB_TALK_4"
+customname1 = "Aliss Stoker"
+customname2 = "Kalub Stoker"
 spritename = "aliss kalub"

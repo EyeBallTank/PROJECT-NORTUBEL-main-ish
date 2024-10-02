@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://src/npc_actors/unto npc/TaafNPC.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/npc_actors/unto npc/MarcusNPC.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/npc_actors/unto npc/MaikoutoNPC.tscn" type="PackedScene" id=33]
+[ext_resource path="res://src/level_objects/SlowFloor.tscn" type="PackedScene" id=34]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -261,3 +262,8 @@ customtext = "MAIKOUTO_NPC_TALK"
 customtext2 = "MAIKOUTO_NPC_HUG"
 customtext3 = "MAIKOUTO_NPC_HURT"
 customtext4 = "MAIKOUTO_NPC_HONK"
+
+[node name="SlowFloor" parent="." instance=ExtResource( 34 )]
+position = Vector2( 757, 1514 )
+scale = Vector2( 8, 8 )
+collision_newsize = Vector2( 8, 8 )
