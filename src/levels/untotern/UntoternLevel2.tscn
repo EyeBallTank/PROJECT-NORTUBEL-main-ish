@@ -228,8 +228,13 @@ customname2 = "Kalub Stoker"
 spritename = "aliss kalub"
 
 [node name="InvisiblePlaceholderNPC" parent="." instance=ExtResource( 34 )]
-position = Vector2( 34, 1372 )
+position = Vector2( -815, 1372 )
 customtext = "BAPHOMET_NPC_TALK"
+customname = "..."
+
+[node name="InvisiblePlaceholderNPC2" parent="." instance=ExtResource( 34 )]
+position = Vector2( 58, 1419 )
+customtext = "BOSCH_TEXT_NPC"
 customname = "..."
 
 [node name="LoreBook" parent="." instance=ExtResource( 35 )]
