@@ -1,0 +1,119 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/sprites/level_hazard_sprites/untotern/Unto Giant Zombie Hand sprites.png" type="Texture" id=1]
+[ext_resource path="res://src/level_hazards/untotern/UntoGiantZombieHand.gd" type="Script" id=2]
+[ext_resource path="res://src/behind_the_scenes/EnemyHitbox.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/unto prefab sprites/UntoYellowTeethPlat sprite.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 1108, 0, 554, 689 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 554, 689 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 554, 0, 554, 689 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "closed",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "collision test",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": false,
+"name": "open",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 124, 5.5 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 142, 5.00031 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 142, 4.5 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 47.5, 19 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 104.5, 147 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 140.5, 257 )
+
+[sub_resource type="Animation" id=11]
+resource_name = "RESET"
+
+[node name="UntoGiantZombieHand" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="UntoYellowTeethPlatSprite" type="Sprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+position = Vector2( -54, 312 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 4 )
+animation = "open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -25, -27.5 )
+shape = SubResource( 5 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -142, 120 )
+rotation = -1.57079
+shape = SubResource( 6 )
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 89.5003, 120 )
+rotation = 1.57079
+shape = SubResource( 7 )
+one_way_collision = true
+
+[node name="EnterHand" type="Area2D" parent="KinematicBody2D"]
+position = Vector2( -33, 254 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/EnterHand"]
+position = Vector2( 8.5, 5 )
+shape = SubResource( 8 )
+
+[node name="EnemyHitbox" parent="KinematicBody2D" instance=ExtResource( 3 )]
+position = Vector2( -27, 116 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/EnemyHitbox"]
+position = Vector2( 0.5, 15 )
+shape = SubResource( 9 )
+
+[node name="HURTBOX" type="Area2D" parent="KinematicBody2D"]
+collision_layer = 32
+collision_mask = 1025
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/HURTBOX"]
+position = Vector2( -29.5, 16 )
+shape = SubResource( 10 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 11 )
