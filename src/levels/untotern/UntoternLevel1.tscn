@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://src/npc_actors/unto npc/KalubNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/unto npc/AlissNPC.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/npc_actors/unto npc/InvisiblePlaceholderNPC.tscn" type="PackedScene" id=32]
+[ext_resource path="res://src/level_hazards/untotern/UntoGiantZombieHand.tscn" type="PackedScene" id=33]
 
 [node name="UntoternLevel1" type="Node2D"]
 
@@ -187,3 +188,6 @@ customtext4 = "ALISS_NPC_HURT"
 position = Vector2( -1547, 1062 )
 customtext = "ANGEL_STATUE_NPC_TALK"
 customname = "..."
+
+[node name="UntoGiantZombieHand" parent="." instance=ExtResource( 33 )]
+position = Vector2( -666, 1327 )
