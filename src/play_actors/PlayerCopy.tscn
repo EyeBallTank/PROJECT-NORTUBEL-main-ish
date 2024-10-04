@@ -208,7 +208,6 @@ shape = SubResource( 1 )
 position = Vector2( -1.5, -123.5 )
 current = true
 zoom = Vector2( 2, 2 )
-smoothing_enabled = true
 smoothing_speed = 10.0
 drag_margin_left = 1.0
 drag_margin_top = 1.0
