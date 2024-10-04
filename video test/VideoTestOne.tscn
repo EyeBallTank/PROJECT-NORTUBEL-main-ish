@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/videos/basic oscar controls test.webm" type="VideoStream" id=1]
+[ext_resource path="res://video test/VideoTestOne.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/video stuff/video television sprite.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/video stuff/video television button sprite.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 39, 38.5 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "PRESSED"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Area2D/VideoTelevisionButtonSprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 14.7, 14.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.184314 ), Color( 1, 1, 1, 0.184314 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 14.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Area2D/VideoTelevisionButtonSprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="VideoTestOne" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = 219.0
+margin_top = 92.0
+margin_right = 770.0
+margin_bottom = 402.0
+stream = ExtResource( 1 )
+
+[node name="VideoTelevisionSprite" type="Sprite" parent="."]
+position = Vector2( 494, 255 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 490, 525 )
+collision_layer = 4
+
+[node name="VideoTelevisionButtonSprite" type="Sprite" parent="Area2D"]
+position = Vector2( 0, -16 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, -16.5 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/PRESSED = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
