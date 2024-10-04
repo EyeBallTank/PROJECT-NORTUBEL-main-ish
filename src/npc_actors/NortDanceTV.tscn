@@ -68,6 +68,7 @@ layer = 14
 
 [node name="DanceEasterEgg" parent="CanvasLayer" instance=ExtResource( 2 )]
 position = Vector2( 502, 249 )
+frame = 1
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
 
