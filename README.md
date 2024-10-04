@@ -218,6 +218,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * clecioespindolagamedev (Used tutorial video on how i could export my game)
 * GlitchedCode (Used tutorial video on Password system)
 * HE360 (Used tutorial video for the art galleries)
+* Daviesdev (Used tutorial video for the 2 videos in LevelTutorial1)
 * horbror (Feedback, also for adding a Nortubel reference to his game Dreams of Joy Departed which in turn lead to this game referencing DOJD)
 * Slapson/Slapsoff (Faygo cameo)
 * FairyGodBomber (Ganyah cameo)
