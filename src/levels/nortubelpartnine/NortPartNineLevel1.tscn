@@ -61,6 +61,10 @@ position = Vector2( 1561, 1195 )
 position = Vector2( 1523, 1182 )
 boardname = "nort art 6 char height"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 9 )]
+position = Vector2( -89, 1273 )
+boardname = "nort art ab yz reference"
+
 [node name="Door" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1995, 1154 )
 new_scene = "res://src/levels/nortubelpartnine/NortPartNineLevel2.tscn"

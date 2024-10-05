@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 6 char height 2.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art ganyah and zarina.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art black chicken phineas.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/art gallery/hhtrintina/hhtrintina art reference.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art hhghh reference.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art ab yz reference.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=23]
@@ -69,7 +70,7 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="SpriteFrames" id=27]
 animations = [ {
-"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ) ],
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), ExtResource( 13 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
@@ -79,7 +80,7 @@ animations = [ {
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 32 )
-number = 11
+number = 12
 
 [node name="MenuBg" type="Sprite" parent="."]
 position = Vector2( 512, 300 )
@@ -99,7 +100,7 @@ margin_top = 558.0
 margin_right = 665.0
 margin_bottom = 575.0
 custom_fonts/font = ExtResource( 31 )
-text = "12 Image(n)s"
+text = "13 Image(n)s"
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_left = 76.0
