@@ -57,6 +57,10 @@ boardname = "nort art older main six"
 position = Vector2( 1012, 1319 )
 boardname = "nort art younger main six"
 
+[node name="ArtBook3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1322, 1319 )
+boardname = "grek art alt yiegour reference"
+
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1969, 1124 )
 new_scene = "res://screens/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals.tscn"

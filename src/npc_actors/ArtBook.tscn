@@ -1,4 +1,4 @@
-[gd_scene load_steps=274 format=2]
+[gd_scene load_steps=276 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -138,6 +138,7 @@
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art batty vamps crossover.png" type="Texture" id=136]
 [ext_resource path="res://assets/sprites/art gallery/untotern/unto art hangelica reference.png" type="Texture" id=137]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art hhghh reference.png" type="Texture" id=138]
+[ext_resource path="res://assets/sprites/art gallery/greklovick/grek art alt yiegour reference.png" type="Texture" id=139]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -220,6 +221,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=141]
 atlas = ExtResource( 123 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=159]
+atlas = ExtResource( 139 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=55]
@@ -752,6 +757,11 @@ animations = [ {
 "frames": [ SubResource( 141 ) ],
 "loop": false,
 "name": "brink art punch monkey crossover",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 159 ) ],
+"loop": false,
+"name": "grek art alt yiegour reference",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 55 ) ],
@@ -1298,7 +1308,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art hhghh reference"
+animation = "grek art alt yiegour reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
