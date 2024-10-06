@@ -98,7 +98,7 @@ tile_set = ExtResource( 8 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 1114103, 0, 0, 1179639, 0, 0, 1245175, 0, 0, 1310711, 0, 0, 1376247, 0, 0, 1441783, 0, 0, 1441784, 1, 0, 1507319, 0, 0, 1507320, 1, 0, 1441814, 0, 0, 1441817, 0, 0, 1441818, 0, 0, 1441819, 0, 0, 1441820, 0, 0, 1441821, 0, 0, 1441822, 0, 0, 1441823, 0, 0, 1441824, 0, 0, 1441825, 0, 0, 1441826, 0, 0, 1441827, 0, 0, 1572855, 0, 0, 1572856, 1, 0, 1507336, 0, 0, 1507350, 0, 0, 1507351, 0, 0, 1507352, 0, 0, 1507353, 0, 0, 1638391, 0, 0, 1638392, 1, 0, 1638393, 1, 0, 1638394, 1, 0, 1638395, 1, 0, 1572872, 0, 0, 1572886, 0, 0, 1703927, 0, 0, 1703928, 0, 0, 1703929, 0, 0, 1703930, 0, 0, 1703931, 0, 0, 1703932, 0, 0, 1703933, 0, 0, 1703934, 0, 0, 1703935, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638402, 0, 0, 1638403, 0, 0, 1638404, 0, 0, 1638405, 0, 0, 1638406, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638409, 0, 0, 1638410, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638414, 0, 0, 1638415, 0, 0, 1638416, 0, 0, 1638417, 0, 0, 1638418, 0, 0, 1638419, 0, 0, 1638420, 0, 0, 1638421, 0, 0, 1638422, 0, 0, 1769466, 6, 0, 1769471, 7, 0, 1703940, 8, 0, 1703945, 9, 0 )
+tile_data = PoolIntArray( 851955, 0, 0, 917491, 0, 0, 983027, 0, 0, 1048563, 0, 0, 1114099, 0, 0, 1179635, 0, 0, 1245171, 0, 0, 1310707, 0, 0, 1376243, 0, 0, 1441779, 0, 0, 1441780, 0, 0, 1441781, 0, 0, 1441782, 0, 0, 1441783, 0, 0, 1441784, 0, 0, 1441785, 0, 0, 1376264, 0, 0, 1376265, 0, 0, 1376266, 0, 0, 1376267, 0, 0, 1376268, 0, 0, 1376269, 0, 0, 1376270, 0, 0, 1376271, 0, 0, 1376272, 0, 0, 1376273, 0, 0, 1507319, 0, 0, 1507321, 0, 0, 1441798, 0, 0, 1441799, 0, 0, 1441800, 0, 0, 1441809, 0, 0, 1441822, 0, 0, 1441823, 0, 0, 1441824, 0, 0, 1441825, 0, 0, 1441826, 0, 0, 1441827, 0, 0, 1572855, 0, 0, 1572858, 0, 0, 1507334, 0, 0, 1507345, 0, 0, 1507358, 0, 0, 1638391, 0, 0, 1638394, 0, 0, 1572870, 0, 0, 1572881, 0, 0, 1572882, 0, 0, 1572894, 0, 0, 1703927, 0, 0, 1703928, 0, 0, 1703929, 0, 0, 1703930, 0, 0, 1703931, 0, 0, 1703932, 0, 0, 1703933, 0, 0, 1703934, 0, 0, 1703935, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638402, 0, 0, 1638403, 0, 0, 1638404, 0, 0, 1638405, 0, 0, 1638406, 0, 0, 1638407, 0, 0, 1638418, 0, 0, 1638419, 0, 0, 1638420, 0, 0, 1638421, 0, 0, 1638422, 0, 0, 1638430, 0, 0, 1703958, 0, 0, 1703966, 0, 0, 1769494, 0, 0, 1769502, 0, 0, 1835013, 0, 0, 1835014, 0, 0, 1835015, 0, 0, 1835016, 0, 0, 1835017, 0, 0, 1835018, 0, 0, 1835019, 0, 0, 1835020, 0, 0, 1835021, 0, 0, 1835022, 0, 0, 1835023, 0, 0, 1835024, 0, 0, 1835025, 0, 0, 1835026, 0, 0, 1835027, 0, 0, 1835028, 0, 0, 1835029, 0, 0, 1835030, 0, 0, 1835038, 0, 0, 1900549, 0, 0, 1900574, 0, 0, 1966085, 0, 0, 1966110, 0, 0, 2031621, 0, 0, 2031646, 0, 0, 2097157, 0, 0, 2097182, 0, 0, 2162693, 0, 0, 2162694, 0, 0, 2162695, 0, 0, 2162718, 0, 0, 2228231, 0, 0, 2228232, 0, 0, 2228233, 0, 0, 2228234, 0, 0, 2228235, 0, 0, 2228236, 0, 0, 2228237, 0, 0, 2228238, 0, 0, 2228239, 0, 0, 2228240, 0, 0, 2228241, 0, 0, 2228242, 0, 0, 2228243, 0, 0, 2228244, 0, 0, 2228245, 0, 0, 2228246, 0, 0, 2228247, 0, 0, 2228248, 0, 0, 2228249, 0, 0, 2228250, 0, 0, 2228251, 0, 0, 2228252, 0, 0, 2228253, 0, 0, 2228254, 0, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -124,25 +124,25 @@ position = Vector2( -18, 1316 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="PossessedLantern" parent="." instance=ExtResource( 1 )]
-position = Vector2( 965, 880 )
+position = Vector2( 6414, 4752 )
 
 [node name="ArtBook" parent="." instance=ExtResource( 7 )]
-position = Vector2( -515, 1936 )
+position = Vector2( 535, 4270 )
 boardname = "unto art vimana reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 7 )]
-position = Vector2( -375, 1571 )
+position = Vector2( 1092, 5580 )
 boardname = "unto art hangelica reference"
 
 [node name="UntoDesolate" parent="." instance=ExtResource( 9 )]
-position = Vector2( 900, 1397 )
+position = Vector2( 6045, 3858 )
 
 [node name="LevelProp" parent="." instance=ExtResource( 10 )]
-position = Vector2( 555, 1233 )
+position = Vector2( 3078, 4232 )
 propname = "untoprop coffin skull chains"
 
 [node name="Door" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1441, 1387 )
+position = Vector2( 5752, 2958 )
 new_scene = "res://screens/cutscenes/cutscene 28 untotern undead/cutscene 28 untotern undead.tscn"
 spritename = "untotern greendoor"
 customtext = "al1sss"
@@ -152,11 +152,11 @@ autoplay = "RESET"
 anims/RESET = SubResource( 1 )
 
 [node name="BlueSwitch" parent="." instance=ExtResource( 17 )]
-position = Vector2( 1745, 1220 )
+position = Vector2( 3424, 4569 )
 bluswitchskin = "res://assets/sprites/level_object_sprites/untotern/Blue switch Untotern.tres"
 
 [node name="YellowSwitch" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1909, 1208 )
+position = Vector2( 3588, 4557 )
 yelswitchskin = "res://assets/sprites/level_object_sprites/untotern/Yellow switch Untotern.tres"
 
 [node name="Ladder" parent="." instance=ExtResource( 18 )]
@@ -165,60 +165,60 @@ scale = Vector2( 24, 88 )
 collision_newsize = Vector2( 24, 88 )
 
 [node name="UntoLargeDemon" parent="." instance=ExtResource( 19 )]
-position = Vector2( 2761, 2232 )
+position = Vector2( -1073, 4845 )
 
 [node name="GreenSwitchOne" parent="." instance=ExtResource( 20 )]
-position = Vector2( 1467, 2236 )
+position = Vector2( 1772, 4867 )
 gre1switchskin = "res://assets/sprites/level_object_sprites/untotern/Green switch One Untotern.tres"
 
 [node name="GreenSwitchTwo" parent="." instance=ExtResource( 21 )]
-position = Vector2( 1711, 2236 )
+position = Vector2( 2016, 4867 )
 gre2switchskin = "res://assets/sprites/level_object_sprites/untotern/Green switch Two Untotern.tres"
 
 [node name="FallingPlatNew" parent="." instance=ExtResource( 22 )]
-position = Vector2( 3667, 1243 )
+position = Vector2( 4134, 4386 )
 spritename = "untotern fallplat"
 
 [node name="UntoWeirdStructureFireThunder" parent="." instance=ExtResource( 23 )]
-position = Vector2( 3048, 1280 )
+position = Vector2( 4961, 3749 )
 
 [node name="UntoWeirdHeadPlatform" parent="." instance=ExtResource( 24 )]
-position = Vector2( 1952, 3120 )
+position = Vector2( 2491, 5167 )
 
 [node name="Blue key" parent="." instance=ExtResource( 25 )]
-position = Vector2( 2146, 3095 )
+position = Vector2( 2837, 4873 )
 spritename = "untotern blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2543, 3021 )
+position = Vector2( 3234, 4799 )
 spritename = "altuntotern redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2340, 3026 )
+position = Vector2( 3031, 4804 )
 spritename = "altuntotern yelkey"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 29 )]
-position = Vector2( 2151, 3351 )
+position = Vector2( 2842, 5129 )
 spritename = "untotern bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 28 )]
-position = Vector2( 2626, 3336 )
+position = Vector2( 3317, 5114 )
 spritename = "altuntotern reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 30 )]
-position = Vector2( 2347, 3347 )
+position = Vector2( 3038, 5125 )
 spritename = "altuntotern yeldoor"
 
 [node name="UntoYellowTeethPlat" parent="." instance=ExtResource( 31 )]
-position = Vector2( 3130, 3200 )
+position = Vector2( 3821, 4978 )
 
 [node name="HangelicaHeadNPC" parent="." instance=ExtResource( 32 )]
-position = Vector2( 1075, 994 )
+position = Vector2( 393, 4937 )
 customtext = "HANGELICA_HEAD_NPC_TALK"
 customname = "HANGELICA_NAME_TEXT"
 
 [node name="ConvoNPC" parent="." instance=ExtResource( 33 )]
-position = Vector2( 291, 1364 )
+position = Vector2( 1845, 4324 )
 customtext1 = "CONVO_ALISS_KALUB_TALK_1"
 customtext2 = "CONVO_ALISS_KALUB_TALK_2"
 customtext3 = "CONVO_ALISS_KALUB_TALK_3"
@@ -228,16 +228,16 @@ customname2 = "Kalub Stoker"
 spritename = "aliss kalub"
 
 [node name="InvisiblePlaceholderNPC" parent="." instance=ExtResource( 34 )]
-position = Vector2( -815, 1372 )
+position = Vector2( -472, 4224 )
 customtext = "BAPHOMET_NPC_TALK"
 customname = "..."
 
 [node name="InvisiblePlaceholderNPC2" parent="." instance=ExtResource( 34 )]
-position = Vector2( 58, 1419 )
+position = Vector2( -837, 4271 )
 customtext = "BOSCH_TEXT_NPC"
 customname = "..."
 
 [node name="LoreBook" parent="." instance=ExtResource( 35 )]
-position = Vector2( -233, 2324 )
+position = Vector2( 285, 4369 )
 customtext = "VIMANA_LORE_TEXT"
 spritename = "untotern lorebook"
