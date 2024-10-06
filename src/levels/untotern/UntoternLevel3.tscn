@@ -109,21 +109,21 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 1114116, 1, 0, 1179652, 1, 0, 1245188, 1, 0, 1310724, 1, 0, 1376260, 1, 0 )
+tile_data = PoolIntArray( 1114116, 1, 0, 1179652, 1, 0, 1245188, 1, 0, 1310724, 1, 0, 1376260, 1, 0, 1704045, 536870977, 0, 1704046, 65, 0, 1769581, 536870977, 0, 1769582, 65, 0, 1835112, 0, 0, 1835113, 0, 0, 1835114, 0, 0, 1835115, 0, 0, 1835117, 536870977, 0, 1835118, 65, 0, 1835120, 0, 0, 1835121, 0, 0, 1835122, 0, 0, 1835123, 0, 0, 1835124, 0, 0, 1900653, 536870977, 0, 1900654, 65, 0, 1966189, 536870977, 0, 1966190, 65, 0, 2031725, 536870977, 0, 2031726, 65, 0, 2097261, 536870977, 0, 2097262, 65, 0, 2162797, 536870977, 0, 2162798, 65, 0, 2228333, 536870977, 0, 2228334, 65, 0, 2293869, 536870977, 0, 2293870, 65, 0, 2359405, 536870977, 0, 2359406, 65, 0, 2424941, 536870977, 0, 2424942, 65, 0, 2490459, 0, 0, 2490460, 0, 0, 2490461, 0, 0, 2490462, 0, 0, 2490463, 0, 0, 2490464, 0, 0, 2490465, 0, 0, 2490466, 0, 0, 2490477, 536870977, 0, 2490478, 65, 0, 2490490, 0, 0, 2490491, 0, 0, 2490492, 0, 0, 2490493, 0, 0, 2490494, 0, 0, 2490495, 0, 0, 2556013, 536870977, 0, 2556014, 65, 0, 2621549, 536870977, 0, 2621550, 65, 0, 2687085, 536870977, 0, 2687086, 65, 0, 2752621, 536870977, 0, 2752622, 65, 0, 2818157, 536870977, 0, 2818158, 65, 0, 2883693, 536870977, 0, 2883694, 65, 0, 2949229, 536870977, 0, 2949230, 65, 0, 3014765, 536870977, 0, 3014766, 65, 0, 3080301, 536870977, 0, 3080302, 65, 0, 3145837, 536870977, 0, 3145838, 65, 0, 3211373, 536870977, 0, 3211374, 65, 0, 3276909, 536870977, 0, 3276910, 65, 0, 3342445, 536870977, 0, 3342446, 65, 0, 3407981, 536870977, 0, 3407982, 65, 0, 3473517, 536870977, 0, 3473518, 65, 0, 3539053, 536870977, 0, 3539054, 65, 0, 3539071, 0, 0, 3539072, 0, 0, 3539073, 0, 0, 3539074, 0, 0, 3539075, 0, 0, 3539076, 0, 0, 3539077, 0, 0, 3539078, 0, 0, 3539079, 0, 0, 3539080, 0, 0, 3539081, 0, 0, 3539082, 0, 0, 3604589, 536870977, 0, 3604590, 65, 0, 3670125, 536870977, 0, 3670126, 65, 0, 3735661, 536870977, 0, 3735662, 65, 0, 3801197, 536870977, 0, 3801198, 65, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 1114103, 0, 0, 1179639, 0, 0, 1245175, 0, 0, 1310711, 0, 0, 1376247, 0, 0, 1441783, 0, 0, 1507319, 0, 0, 1572855, 0, 0, 1638391, 0, 0, 1703927, 0, 0, 1703928, 0, 0, 1703929, 0, 0, 1703930, 0, 0, 1703931, 0, 0, 1703932, 0, 0, 1703933, 0, 0, 1703934, 0, 0, 1703935, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638402, 0, 0, 1638403, 0, 0, 1638404, 0, 0, 1638405, 0, 0, 1638406, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638409, 0, 0, 1638410, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638414, 0, 0, 1638415, 0, 0, 1638416, 0, 0, 1638417, 0, 0, 1638418, 0, 0, 1638419, 0, 0, 1638420, 0, 0, 1638421, 0, 0, 1638422, 0, 0, 1638423, 0, 0, 1638424, 0, 0, 1638425, 0, 0, 1638426, 0, 0, 1638427, 0, 0, 1638428, 0, 0, 1638429, 0, 0, 1638430, 0, 0, 1638431, 0, 0, 1638432, 0, 0, 1638433, 0, 0, 1638434, 0, 0, 1638435, 0, 0, 1638436, 0, 0, 1638437, 0, 0, 1638438, 0, 0, 1638439, 0, 0, 1638440, 0, 0, 1638441, 0, 0, 1638442, 0, 0, 1638443, 0, 0, 1638444, 0, 0, 1638445, 0, 0, 1638446, 0, 0, 1638447, 0, 0, 1638448, 0, 0, 1638449, 0, 0, 1638450, 0, 0, 1638451, 0, 0, 1638452, 0, 0, 1638453, 0, 0, 1638454, 0, 0, 1638455, 0, 0, 1638456, 0, 0, 2359312, 0, 0, 2359313, 0, 0, 2359314, 0, 0, 2359315, 0, 0, 2359316, 0, 0, 2359317, 0, 0, 2359318, 0, 0, 2359319, 0, 0, 2359320, 0, 0, 2359321, 0, 0, 2359322, 0, 0, 2359323, 0, 0, 2359324, 0, 0, 2359325, 0, 0, 2359326, 0, 0, 2359327, 0, 0, 2359328, 0, 0, 2359329, 0, 0, 2359330, 0, 0, 2359331, 0, 0, 2424868, 0, 0, 2424869, 0, 0, 2424870, 0, 0, 2424871, 0, 0, 2424872, 0, 0, 2424873, 0, 0, 2424874, 0, 0, 2424875, 0, 0, 2424876, 0, 0, 2424877, 0, 0, 2424878, 0, 0, 2424879, 0, 0, 2424880, 0, 0, 2424881, 0, 0, 2424882, 0, 0, 2424883, 0, 0, 2424884, 0, 0, 2424885, 0, 0, 2424886, 0, 0, 2752570, 0, 0, 2752571, 0, 0, 2752572, 0, 0, 2752573, 0, 0, 2752574, 0, 0, 2752575, 0, 0, 2752576, 0, 0, 2818112, 0, 0, 2818113, 0, 0, 2818114, 0, 0, 2818115, 0, 0, 2818116, 0, 0, 2818117, 0, 0, 2818118, 0, 0, 2818119, 0, 0, 2818120, 0, 0, 2818121, 0, 0, 2818122, 0, 0, 2818123, 0, 0, 2818124, 0, 0, 2818125, 0, 0, 2818126, 0, 0, 2818127, 0, 0, 2818128, 0, 0, 2818129, 0, 0, 2818130, 0, 0, 2818131, 0, 0, 2818132, 0, 0, 2818133, 0, 0, 2818134, 0, 0, 2818135, 0, 0, 2818136, 0, 0, 2818137, 0, 0, 2818138, 0, 0, 2818139, 0, 0, 2818140, 0, 0, 2818141, 0, 0, 2818142, 0, 0, 2818143, 0, 0, 2818144, 0, 0, 2818145, 0, 0, 2818146, 0, 0, 2818147, 0, 0, 2818148, 0, 0, 2818149, 0, 0, 2818150, 0, 0, 2818151, 0, 0, 2818152, 0, 0, 2818153, 0, 0, 2818154, 0, 0, 2818155, 0, 0, 2818156, 0, 0, 2818157, 0, 0, 2818158, 0, 0, 2818159, 0, 0, 2818160, 0, 0, 2818161, 0, 0, 2818162, 0, 0, 2818163, 0, 0, 2818164, 0, 0, 2818165, 0, 0, 2818166, 0, 0, 2818167, 0, 0, 2818168, 0, 0, 2818169, 0, 0, 2818170, 0, 0, 2818171, 0, 0, 2818172, 0, 0, 2818173, 0, 0, 2818174, 0, 0, 2818175, 0, 0, 2818176, 0, 0, 2818177, 0, 0, 2818178, 0, 0, 2818179, 0, 0, 2818180, 0, 0, 2818181, 0, 0, 2818182, 0, 0, 2818183, 0, 0, 2818184, 0, 0, 2818185, 0, 0, 2818186, 0, 0, 2883651, 0, 0, 2949187, 0, 0, 3014723, 0, 0, 3080259, 0, 0, 3145795, 0, 0, 3211331, 0, 0, 3276867, 0, 0, 3342403, 0, 0, 3407939, 0, 0, 3473475, 0, 0, 3473476, 0, 0, 3473477, 0, 0, 3473478, 0, 0, 3473479, 0, 0, 3473480, 0, 0, 3473481, 0, 0, 3473482, 0, 0, 3473483, 0, 0 )
+tile_data = PoolIntArray( 1114103, 0, 0, 1179639, 0, 0, 1245175, 0, 0, 1310711, 0, 0, 1376247, 0, 0, 1441783, 0, 0, 1507319, 0, 0, 1572855, 0, 0, 1638391, 0, 0, 1703927, 0, 0, 1703928, 0, 0, 1703929, 0, 0, 1703930, 0, 0, 1703931, 0, 0, 1703932, 0, 0, 1703933, 0, 0, 1703934, 0, 0, 1703935, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638402, 0, 0, 1638403, 0, 0, 1638404, 0, 0, 1638405, 0, 0, 1638406, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638409, 0, 0, 1638410, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638414, 0, 0, 1638415, 0, 0, 1638416, 0, 0, 1638417, 0, 0, 1638418, 0, 0, 1638419, 0, 0, 1638420, 0, 0, 1638421, 0, 0, 1638422, 0, 0, 1638423, 0, 0, 1638424, 0, 0, 1638425, 0, 0, 1638426, 0, 0, 1638427, 0, 0, 1638428, 0, 0, 1638429, 0, 0, 1638430, 0, 0, 1638431, 0, 0, 1638432, 0, 0, 1638433, 0, 0, 1638434, 0, 0, 1638435, 0, 0, 1638436, 0, 0, 1638437, 0, 0, 1638438, 0, 0, 1638439, 0, 0, 1638440, 0, 0, 1638441, 0, 0, 1638442, 0, 0, 1638443, 0, 0, 1638444, 0, 0, 1638445, 0, 0, 1638446, 0, 0, 1638447, 0, 0, 1638448, 0, 0, 1638449, 0, 0, 1638450, 0, 0, 1638451, 0, 0, 1638452, 0, 0, 1638453, 0, 0, 1638454, 0, 0, 1638455, 0, 0, 1638456, 0, 0, 2359312, 0, 0, 2359313, 0, 0, 2359314, 0, 0, 2359315, 0, 0, 2359316, 0, 0, 2359317, 0, 0, 2359318, 0, 0, 2359319, 0, 0, 2359320, 0, 0, 2359321, 0, 0, 2359322, 0, 0, 2359323, 0, 0, 2359324, 0, 0, 2359325, 0, 0, 2359326, 0, 0, 2359327, 0, 0, 2359328, 0, 0, 2359329, 0, 0, 2359330, 0, 0, 2359331, 0, 0, 2424868, 0, 0, 2424869, 0, 0, 2424870, 0, 0, 2424871, 0, 0, 2424872, 0, 0, 2424873, 0, 0, 2424874, 0, 0, 2424875, 0, 0, 2424876, 0, 0, 2424877, 0, 0, 2424878, 0, 0, 2424879, 0, 0, 2424880, 0, 0, 2424881, 0, 0, 2424882, 0, 0, 2424883, 0, 0, 2424884, 0, 0, 2424885, 0, 0, 2424886, 0, 0, 2490465, 0, 0, 2490466, 0, 0, 2490467, 0, 0, 2490468, 0, 0, 2490469, 0, 0, 2490470, 0, 0, 2490471, 0, 0, 2490472, 0, 0, 2490473, 0, 0, 2490474, 0, 0, 2490480, 0, 0, 2490481, 0, 0, 2490482, 0, 0, 2490483, 0, 0, 2490484, 0, 0, 2490485, 0, 0, 2490486, 0, 0, 2490487, 0, 0, 2490488, 0, 0, 2490489, 0, 0, 2490490, 0, 0, 3539017, 0, 0, 3539018, 0, 0, 3539019, 0, 0, 3539020, 0, 0, 3539021, 0, 0, 3539022, 0, 0, 3539023, 0, 0, 3539024, 0, 0, 3539025, 0, 0, 3539026, 0, 0, 3539027, 0, 0, 3539028, 0, 0, 3539029, 0, 0, 3539030, 0, 0, 3539031, 0, 0, 3539032, 0, 0, 3539033, 0, 0, 3539034, 0, 0, 3539035, 0, 0, 3539036, 0, 0, 3539037, 0, 0, 3539038, 0, 0, 3539039, 0, 0, 3539040, 0, 0, 3539041, 0, 0, 3539042, 0, 0, 3539043, 0, 0, 3539044, 0, 0, 3539045, 0, 0, 3539046, 0, 0, 3539047, 0, 0, 3539048, 0, 0, 3539049, 0, 0, 3539050, 0, 0, 3539062, 0, 0, 3539063, 0, 0, 3539064, 0, 0, 3539065, 0, 0, 3539066, 0, 0, 3539067, 0, 0, 3539068, 0, 0, 3539069, 0, 0, 3539070, 0, 0, 3539071, 0, 0, 3866727, 0, 0, 3866728, 0, 0, 3866729, 0, 0, 3866730, 0, 0, 3866731, 0, 0, 3866732, 0, 0, 3866733, 0, 0, 3866734, 0, 0, 3866735, 0, 0, 3866736, 0, 0, 3866737, 0, 0, 3866738, 0, 0, 3866739, 0, 0, 3866740, 0, 0, 3866741, 0, 0, 3866742, 0, 0, 3866743, 0, 0, 3866744, 0, 0, 3866745, 0, 0 )
 
 [node name="carry over from level2" type="TileMap" parent="."]
 tile_set = ExtResource( 28 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 1441806, 56, 0 )
+tile_data = PoolIntArray( 1441806, 56, 0, 3539056, 34, 0, 3539057, 35, 0, 3539058, 35, 0, 3539059, 35, 0, 3539060, 35, 0, 3539061, 35, 0 )
 
 [node name="front" type="TileMap" parent="."]
 z_index = 17
@@ -149,80 +149,80 @@ position = Vector2( -18, 1316 )
 [node name="CurrentUI" parent="." instance=ExtResource( 4 )]
 
 [node name="PossessedLantern" parent="." instance=ExtResource( 1 )]
-position = Vector2( 965, 880 )
+position = Vector2( 8685, 3912 )
 
 [node name="RedButton" parent="." instance=ExtResource( 9 )]
-position = Vector2( 439, 1509 )
+position = Vector2( 6844, 1116 )
 redbuttonskin = "res://assets/sprites/level_object_sprites/untotern/RedButton untotern.tres"
 
 [node name="RedButtonGate" parent="." instance=ExtResource( 8 )]
-position = Vector2( 592, 1425 )
+position = Vector2( 6997, 1032 )
 spritename = "untotern"
 
 [node name="BlueDoor" parent="." instance=ExtResource( 10 )]
-position = Vector2( 928, 1475 )
+position = Vector2( 7294, 939 )
 spritename = "untotern bludoor"
 
 [node name="RedDoor" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1132, 1484 )
+position = Vector2( 7681, 3648 )
 spritename = "untotern reddoor"
 
 [node name="YellowDoor" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1341, 1477 )
+position = Vector2( 6720, 3650 )
 spritename = "untotern yeldoor"
 
 [node name="Blue key" parent="." instance=ExtResource( 14 )]
-position = Vector2( 5, 1465 )
+position = Vector2( 8723, 4570 )
 spritename = "untotern blukey"
 
 [node name="Red key" parent="." instance=ExtResource( 13 )]
-position = Vector2( 189, 1472 )
+position = Vector2( 9978, 1099 )
 spritename = "untotern redkey"
 
 [node name="Yellow key" parent="." instance=ExtResource( 15 )]
-position = Vector2( 90, 1461 )
+position = Vector2( 4857, 1182 )
 spritename = "untotern yelkey"
 
 [node name="Pushable" parent="." instance=ExtResource( 16 )]
-position = Vector2( -393, 1413 )
+position = Vector2( 5680, 1924 )
 spritename = "untotern pushable"
 
 [node name="ArtBook" parent="." instance=ExtResource( 17 )]
-position = Vector2( 1668, 1502 )
+position = Vector2( 7494, -1256 )
 boardname = "unto art beatrice reference"
 
 [node name="ArtBook2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2069, 1512 )
+position = Vector2( 4585, 1983 )
 boardname = "unto art cornelius reference"
 
 [node name="ArtBook3" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2500, 1489 )
+position = Vector2( 4814, 5216 )
 boardname = "unto art taaf reference"
 
 [node name="ArtBook4" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2899, 1508 )
+position = Vector2( 9693, 1508 )
 boardname = "unto art marcus reference"
 
 [node name="ArtBook5" parent="." instance=ExtResource( 17 )]
-position = Vector2( 3294, 1508 )
+position = Vector2( 9392, 4431 )
 boardname = "unto art maikouto reference"
 
 [node name="Door" parent="." instance=ExtResource( 18 )]
-position = Vector2( 3592, 1554 )
+position = Vector2( 9438, 3377 )
 new_scene = "res://src/levels/LevelTemplate7.tscn"
 spritename = "untotern greendoor"
 customtext = "b34trc"
 
 [node name="FloorSwitch" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1270, 2219 )
+position = Vector2( 5769, 2179 )
 floorswitchskin = "res://assets/sprites/level_object_sprites/untotern/FloorSwitchUntotern.tres"
 
 [node name="Barrier" parent="." instance=ExtResource( 20 )]
-position = Vector2( 1460, 2136 )
+position = Vector2( 5959, 2096 )
 barrierskin = "res://assets/sprites/level_object_sprites/untotern/Barrier Untotern.tres"
 
 [node name="NumberBasedDoor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 7903, 2558 )
+position = Vector2( 8934, 3114 )
 spritename = "undeadfive"
 
 [node name="SpinningBG" type="AnimationPlayer" parent="."]
@@ -230,66 +230,66 @@ autoplay = "RESET"
 anims/RESET = SubResource( 1 )
 
 [node name="LifeguardFloater" parent="." instance=ExtResource( 27 )]
-position = Vector2( 463, 1259 )
+position = Vector2( 6658, 857 )
 spritename = "untotern floater"
 
 [node name="BeatriceNPC" parent="." instance=ExtResource( 29 )]
-position = Vector2( 4289, 2119 )
+position = Vector2( 7317, -270 )
 
 [node name="CorneliusNPC" parent="." instance=ExtResource( 30 )]
-position = Vector2( 5029, 2179 )
+position = Vector2( 5117, 1533 )
 customtext = "CORNELIUS_NPC_TALK"
 customtext2 = "CORNELIUS_NPC_HUG"
 customtext3 = "CORNELIUS_NPC_HURT"
 customtext4 = "CORNELIUS_NPC_HONK"
 
 [node name="TaafNPC" parent="." instance=ExtResource( 31 )]
-position = Vector2( 5772, 2179 )
+position = Vector2( 5748, 4193 )
 customtext = "TAAF_NPC_TALK"
 customtext2 = "TAAF_NPC_HUG"
 customtext3 = "TAAF_NPC_HURT"
 customtext4 = "TAAF_NPC_HONK"
 
 [node name="MarcusNPC" parent="." instance=ExtResource( 32 )]
-position = Vector2( 6566, 2179 )
+position = Vector2( 8582, 1640 )
 customtext = "MARCUS_NPC_TALK"
 customtext2 = "MARCUS_NPC_HUG"
 customtext3 = "MARCUS_NPC_HURT"
 customtext4 = "MARCUS_NPC_HONK"
 
 [node name="MaikoutoNPC" parent="." instance=ExtResource( 33 )]
-position = Vector2( 7357, 2179 )
+position = Vector2( 8311, 4167 )
 customtext = "MAIKOUTO_NPC_TALK"
 customtext2 = "MAIKOUTO_NPC_HUG"
 customtext3 = "MAIKOUTO_NPC_HURT"
 customtext4 = "MAIKOUTO_NPC_HONK"
 
 [node name="SlowFloor" parent="." instance=ExtResource( 34 )]
-position = Vector2( 757, 1514 )
+position = Vector2( 6261, 3740 )
 scale = Vector2( 8, 8 )
 collision_newsize = Vector2( 8, 8 )
 
 [node name="InvisiblePlaceholderNPC" parent="." instance=ExtResource( 35 )]
-position = Vector2( 1755, 2167 )
+position = Vector2( 7309, -766 )
 customtext = "BEATRICE_BACKSTORY_TEXT"
 customname = "HANGELICA_NAME_TEXT"
 
 [node name="InvisiblePlaceholderNPC2" parent="." instance=ExtResource( 35 )]
-position = Vector2( 2091, 2156 )
+position = Vector2( 9066, 4605 )
 customtext = "MAIKOUTO_BACKSTORY_TEXT"
 customname = "XERO_NAME_TEXT"
 
 [node name="InvisiblePlaceholderNPC3" parent="." instance=ExtResource( 35 )]
-position = Vector2( 2439, 2209 )
+position = Vector2( 9192, 1483 )
 customtext = "MARCUS_BACKSTORY_TEXT"
 customname = "KEO_NAME_TEXT"
 
 [node name="InvisiblePlaceholderNPC4" parent="." instance=ExtResource( 35 )]
-position = Vector2( 2801, 2206 )
+position = Vector2( 5160, 4575 )
 customtext = "TAAF_BACKSTORY_TEXT"
 customname = "BASTUPATRA_NAME_TEXT"
 
 [node name="InvisiblePlaceholderNPC5" parent="." instance=ExtResource( 35 )]
-position = Vector2( 3114, 2213 )
+position = Vector2( 4666, 1276 )
 customtext = "CORNELIUS_BACKSTORY_TEXT"
 customname = "MINUSA_NAME_TEXT"

@@ -197,7 +197,8 @@ func cutscene_over():
 #Ivan: There's more to come. How many did you got so far?
 #Lahrn: We're almost on the same score. But I'm getting sick of these creatures. There has to be some other pest woth exterminating.
 #Maikouto: You boys were obviously distracted. I got the highest score.
-#Galaghar: Hm. Whatever it is, I don't think Lakk could pull this off. 
+#Galaghar: Hm. Whatever it is, I don't think Lakk could pull this off.
+#Reptile: I wonder if this has anything to do with that guy cut in half from the other day.
 #Avietta: I think Leon and Otto might want to know what's goin on.
 #Hangelica: Not yet... the end of times will not arrive soon...
 #Leon: Um? Somethings going on with those 2. Seems their world has strange color related anomalies.
