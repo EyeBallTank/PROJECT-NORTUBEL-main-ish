@@ -24,7 +24,7 @@ extents = Vector2( 133.5, 66 )
 
 [sub_resource type="Curve2D" id=2]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -1137, -42, -114.897, 385.244, 114.897, -385.244, -1254, -880, -319.91, -99.1272, 319.91, 99.1272, 111, -1119, 0, 0, 0, 0, -2, -1 )
+"points": PoolVector2Array( 0, 0, 0, 0, -1137, -42, 0, 0, 0, 0, -1131, -530, 0, 0, 0, 0, -971, -1188, 0, 0, 0, 0, -389, -1451, -319.91, -99.1272, 319.91, 99.1272, 469, -1292, 0, 0, 0, 0, 866, -563, 0, 0, 0, 0, 952, -99 )
 }
 
 [sub_resource type="Animation" id=5]
@@ -83,6 +83,7 @@ motion/sync_to_physics = true
 position = Vector2( 1.5, 37 )
 scale = Vector2( 1.43636, 1.42708 )
 frames = SubResource( 8 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
