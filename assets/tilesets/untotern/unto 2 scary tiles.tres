@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=60 format=2]
+[gd_resource type="TileSet" load_steps=61 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/untotern/UNTO 2 SCARY TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/untotern/UNTO 2 SCARY TILE PASSABLE.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/sprites/tile sets/untotern/UNTO TILES SCARYY EXTRA v2.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/tile sets/untotern/BASIC SOLID OUTLINES.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/tile sets/untotern/UNTO SINGLE TILE WEIRD HEAD.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/tile sets/untotern/UNTO SINGLE TILE HOLY TRINITY.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -2939,3 +2940,31 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 172/shape_one_way_margin = 0.0
 172/shapes = [  ]
 172/z_index = 0
+173/name = "UNTO 2 SCARY TILE PASSABLE.png 173"
+173/texture = ExtResource( 2 )
+173/tex_offset = Vector2( 0, 0 )
+173/modulate = Color( 1, 1, 1, 1 )
+173/region = Rect2( 448, 0, 64, 64 )
+173/tile_mode = 0
+173/occluder_offset = Vector2( 0, 0 )
+173/navigation_offset = Vector2( 0, 0 )
+173/shape_offset = Vector2( 0, 0 )
+173/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+173/shape_one_way = false
+173/shape_one_way_margin = 0.0
+173/shapes = [  ]
+173/z_index = 0
+174/name = "UNTO SINGLE TILE HOLY TRINITY.png 174"
+174/texture = ExtResource( 9 )
+174/tex_offset = Vector2( 0, 0 )
+174/modulate = Color( 1, 1, 1, 1 )
+174/region = Rect2( 0, 0, 448, 512 )
+174/tile_mode = 0
+174/occluder_offset = Vector2( 0, 0 )
+174/navigation_offset = Vector2( 0, 0 )
+174/shape_offset = Vector2( 0, 0 )
+174/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+174/shape_one_way = false
+174/shape_one_way_margin = 0.0
+174/shapes = [  ]
+174/z_index = 0
