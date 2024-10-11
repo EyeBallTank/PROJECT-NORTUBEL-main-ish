@@ -117,7 +117,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )
-animation = "untotern jumppad"
+animation = "nortubel jumppad"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 7.5, -29.5 )
