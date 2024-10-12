@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=9]
 
 [node name="NortPartEightLevel2" type="Node2D"]
 
@@ -56,3 +57,7 @@ customtext = "eet33p"
 
 [node name="Water" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1816, 1047 )
+
+[node name="LoreBook" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1977, 1136 )
+customtext = "NORT_TEXT_SARAMANDO_QUOTE"
