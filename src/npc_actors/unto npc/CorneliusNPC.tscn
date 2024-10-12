@@ -258,6 +258,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "Cornelius Arvaxis"
 
 [node name="UntoYellowTeethPlatSprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 18, 605 )
 texture = ExtResource( 6 )
 
