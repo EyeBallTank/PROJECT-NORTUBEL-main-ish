@@ -157,7 +157,7 @@ boardname = "herrko art tsoovukot knight reference"
 
 [node name="Door" parent="." instance=ExtResource( 16 )]
 position = Vector2( 20798, 129 )
-new_scene = "res://src/levels/LevelTemplate7.tscn"
+new_scene = "res://screens/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight.tscn"
 spritename = "altherrko greendoor"
 customtext = "uulg44"
 
