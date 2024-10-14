@@ -201,6 +201,8 @@ func cutscene_over():
 #Reptile: I wonder if this has anything to do with that guy cut in half from the other day.
 #Avietta: I think Leon and Otto might want to know what's goin on.
 #Hangelica: Not yet... the end of times will not arrive soon...
+#Bonky: Hello lady. You look pretty cute. Are you a goblin?
+#Pebble: Goblin? What's that? It's pronounced "Ghalbeen". Where did you get "Goblin" from?
 #Leon: Um? Somethings going on with those 2. Seems their world has strange color related anomalies.
 #Leon: Wait, that clown... 
 
@@ -221,6 +223,7 @@ func cutscene_over():
 #Pete: But we're not sure what's in that portal... is it really home?
 #Melvin: We don't know for sure... but we might as well try.
 
+#NOTE: Part where Leon uses his powers and there's an arrow and computer UI related stuff
 #NOTE: ENDING CUTSCENE MAY BE SPLIT IN 2
 #Melvin: Come on, everyone, we're getting close.
 #Melvin: Angela, grab my hand!
