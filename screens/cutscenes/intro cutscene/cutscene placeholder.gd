@@ -74,19 +74,19 @@ func cutscene_over():
 #Alt Angela: This world is becoming less stable, though it was bound to happen.
 #Alt Angela: We've been here for longer yet even we don't know what it is.
 #Alt Angela: But someone told us that only some could ever return home. Because if 2 universes are too close to each other, one must go.
-#Katrin: What are you guys talking about?
+#Carrie: What are you guys talking about?
 #Alt Oscar: It's either your group or ours. At least according to Knoe.
 #Alt Oscar: I wish we all got along, we could've forgive you for what happened to Amalia.
 #Alt Oscar: But now we got a chance to return home and we're getting desperate.
 #Melvin: But we're the ones who have this box.
-#Alt Angela: We've also had ours and it's more advanced. In truth, these objects do more than transdimensional travel.
+#Alt Oscar: We've also had ours and it's more advanced. In truth, these objects do more than transdimensional travel.
 #Alt Angela: They can affect reality too and yours, being an inferior object, might as well be causing issues around you.
 #Alt Angela: It could erase you 6 without even knowing. But in our case, we can decide whether or not you get to return home.
-#Carrie: You're insane! There's no way any of that is true. Can't you at least wait until my grandma saves my group?
+#Katrin: You're insane! There's no way any of that is true. Can't you at least wait until my grandma saves my group?
 #Alt Angela: The clock is ticking. You're all far behind, as you always were. Goodbye.
 #Alt 6 vanish
 #Oscar: I don't wanna die, sis! I don't wanna die.
-#Katrin: We must figure something quick! Mel!
+#Carrie: We must figure something quick! Mel!
 #Melvin: Hold on, the box is shaking, it seems to be moving towards somewhere.
 #Melvin: Whatever it is, we should follow it.
 
