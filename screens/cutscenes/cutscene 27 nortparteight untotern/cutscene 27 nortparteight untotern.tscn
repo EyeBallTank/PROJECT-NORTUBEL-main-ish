@@ -1,10 +1,18 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 1.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 2.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 3.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 5.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 7.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 8.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 6.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 4.png" type="Texture" id=13]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +79,43 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene27NortparteightUntoternPanel1" type="Sprite" parent="."]
+position = Vector2( 327, 239 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene27NortparteightUntoternPanel2" type="Sprite" parent="."]
+position = Vector2( 520, -222 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene27NortparteightUntoternPanel3" type="Sprite" parent="."]
+position = Vector2( 510, -641 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene27NortparteightUntoternPanel4" type="Sprite" parent="."]
+position = Vector2( -222, 225.5 )
+scale = Vector2( 1.0692, 1.0692 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene27NortparteightUntoternPanel5" type="Sprite" parent="."]
+position = Vector2( 522, 234 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene27NortparteightUntoternPanel8" type="Sprite" parent="."]
+position = Vector2( 522, -1100 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene27NortparteightUntoternPanel6" type="Sprite" parent="."]
+position = Vector2( -584, 234 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene27NortparteightUntoternPanel7" type="Sprite" parent="."]
+position = Vector2( 1167, 241 )
+texture = ExtResource( 10 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
