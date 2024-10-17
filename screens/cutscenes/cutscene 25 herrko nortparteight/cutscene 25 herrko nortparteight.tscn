@@ -1,10 +1,28 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=2]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 3.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 11.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 16.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 10.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 13.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 7.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 15.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 2.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 4.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 18.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 17.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 14.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 1.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 9.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 8.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 12.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 6.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 5.png" type="Texture" id=23]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +89,86 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene25HerrkoNortparteightPanel1" type="Sprite" parent="."]
+position = Vector2( 505, 237 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene25HerrkoNortparteightPanel2" type="Sprite" parent="."]
+position = Vector2( -356, 234 )
+scale = Vector2( 0.967677, 0.967677 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene25HerrkoNortparteightPanel3" type="Sprite" parent="."]
+position = Vector2( 1306, 238 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene25HerrkoNortparteightPanel4" type="Sprite" parent="."]
+position = Vector2( -887, 228.5 )
+scale = Vector2( 0.981855, 0.981855 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene25HerrkoNortparteightPanel5" type="Sprite" parent="."]
+position = Vector2( 1838, 222 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene25HerrkoNortparteightPanel6" type="Sprite" parent="."]
+position = Vector2( -1313, 229 )
+texture = ExtResource( 22 )
+
+[node name="Cutscene25HerrkoNortparteightPanel7" type="Sprite" parent="."]
+position = Vector2( 2347, 238 )
+scale = Vector2( 0.952479, 0.952479 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene25HerrkoNortparteightPanel8" type="Sprite" parent="."]
+position = Vector2( -1733, 242 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene25HerrkoNortparteightPanel9" type="Sprite" parent="."]
+position = Vector2( 525, -794 )
+scale = Vector2( 1.28165, 1.28165 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene25HerrkoNortparteightPanel10" type="Sprite" parent="."]
+position = Vector2( -442, -332 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene25HerrkoNortparteightPanel11" type="Sprite" parent="."]
+position = Vector2( 1432, -312 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene25HerrkoNortparteightPanel12" type="Sprite" parent="."]
+position = Vector2( -1155, -315 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene25HerrkoNortparteightPanel13" type="Sprite" parent="."]
+position = Vector2( 497, -1234 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene25HerrkoNortparteightPanel14" type="Sprite" parent="."]
+position = Vector2( -2279, 245 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene25HerrkoNortparteightPanel15" type="Sprite" parent="."]
+position = Vector2( 2966, 224 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene25HerrkoNortparteightPanel16" type="Sprite" parent="."]
+position = Vector2( -2763, 238 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene25HerrkoNortparteightPanel17" type="Sprite" parent="."]
+position = Vector2( 3532, 235 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene25HerrkoNortparteightPanel18" type="Sprite" parent="."]
+position = Vector2( -290, -769 )
+texture = ExtResource( 15 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 3 )]
 visible = false
