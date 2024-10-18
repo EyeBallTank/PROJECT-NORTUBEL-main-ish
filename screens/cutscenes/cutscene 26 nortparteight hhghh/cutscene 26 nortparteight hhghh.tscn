@@ -225,6 +225,7 @@ texture = ExtResource( 7 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 509, 230 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]

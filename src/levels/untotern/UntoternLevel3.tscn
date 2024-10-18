@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -45,6 +45,7 @@
 [ext_resource path="res://src/enemies/untotern/UntoDesolate.tscn" type="PackedScene" id=43]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=44]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=45]
+[ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=46]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -437,3 +438,8 @@ spritename = "untotern coin"
 
 [node name="UntoDesolate3" parent="." instance=ExtResource( 43 )]
 position = Vector2( 8533, 644 )
+
+[node name="LoreBook" parent="." instance=ExtResource( 46 )]
+position = Vector2( 5579, 3369 )
+customtext = "UNTO_TEXT_ABOUT_KNIFE_UNDEAD"
+spritename = "untotern lorebook"
