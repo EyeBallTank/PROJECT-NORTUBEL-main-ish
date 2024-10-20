@@ -198,7 +198,7 @@ scale = Vector2( 1.12844, 1.12844 )
 texture = ExtResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="MenuMain"]
-position = Vector2( -79, 361 )
+position = Vector2( -161, 397 )
 texture = ExtResource( 12 )
 
 [node name="Currentupdate" type="Label" parent="MenuMain"]
