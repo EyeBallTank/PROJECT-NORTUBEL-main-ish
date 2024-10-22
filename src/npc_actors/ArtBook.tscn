@@ -1,4 +1,4 @@
-[gd_scene load_steps=280 format=2]
+[gd_scene load_steps=282 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -141,6 +141,7 @@
 [ext_resource path="res://assets/sprites/art gallery/greklovick/grek art alt yiegour reference.png" type="Texture" id=139]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art ab yz reference.png" type="Texture" id=140]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art unto and jack enemies.png" type="Texture" id=141]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 3 boys 1 girl summer.png" type="Texture" id=142]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -531,6 +532,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=31]
 atlas = ExtResource( 29 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=162]
+atlas = ExtResource( 142 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=25]
@@ -1114,6 +1119,11 @@ animations = [ {
 "name": "massag art touni reference",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 162 ) ],
+"loop": false,
+"name": "nort art 3 boys 1 girl summer",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 25 ) ],
 "loop": false,
 "name": "nort art 3 girls summer",
@@ -1328,7 +1338,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art unto and jack enemies"
+animation = "nort art 3 boys 1 girl summer"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

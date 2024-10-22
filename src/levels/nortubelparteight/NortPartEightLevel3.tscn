@@ -75,6 +75,10 @@ customtext = "al3gn4"
 position = Vector2( 567, 1213 )
 boardname = "nort art hhghh reference"
 
+[node name="ArtBook2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 5099, 445 )
+boardname = "nort art 3 boys 1 girl summer"
+
 [node name="HHGHH NPC" parent="." instance=ExtResource( 9 )]
 position = Vector2( 138, 981 )
 customtext = "HHGHHH GHHGHHGGH HGHGHGH"
@@ -108,10 +112,10 @@ position = Vector2( 5627, -923 )
 position = Vector2( 3264, -2048 )
 
 [node name="Coin" parent="." instance=ExtResource( 18 )]
-position = Vector2( 5113, 214 )
+position = Vector2( 5099, 133 )
 
 [node name="Coin2" parent="." instance=ExtResource( 18 )]
-position = Vector2( 5390, 214 )
+position = Vector2( 5390, 131 )
 
 [node name="Coin3" parent="." instance=ExtResource( 18 )]
 position = Vector2( 5271, 370 )
