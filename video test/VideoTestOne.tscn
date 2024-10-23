@@ -18,7 +18,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 14.7, 14.8 ),
+"times": PoolRealArray( 0, 14.9, 15 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0.184314 ), Color( 1, 1, 1, 0.184314 ), Color( 1, 1, 1, 1 ) ]
@@ -30,7 +30,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 14.8 ),
+"times": PoolRealArray( 0, 15 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
@@ -67,8 +67,8 @@ tracks/1/keys = {
 script = ExtResource( 2 )
 
 [node name="VideoPlayer" type="VideoPlayer" parent="."]
-margin_left = 219.0
-margin_top = 92.0
+margin_left = 215.0
+margin_top = 89.0
 margin_right = 770.0
 margin_bottom = 402.0
 stream = ExtResource( 1 )
