@@ -8,10 +8,10 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=6]
 [ext_resource path="res://assets/tilesets/massagcoav/MassagCoavTiles.tres" type="TileSet" id=7]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=8]
-[ext_resource path="res://video test/VideoTestOne.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/rival signs/RivalRunSign.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=10]
-[ext_resource path="res://video test/VideoTestTwo.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/npc_actors/RevampedTVVideoOne.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/rival signs/RivalClimbSign.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/play_actors/Rival.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=14]
 
@@ -72,20 +72,15 @@ anims/RESET = SubResource( 1 )
 anims/test = SubResource( 2 )
 
 [node name="Ladder" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4352, -448 )
+position = Vector2( 3295, -448 )
 scale = Vector2( 48, 120 )
 collision_newsize = Vector2( 48, 120 )
 
-[node name="Ladder2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3840, -384 )
-scale = Vector2( 48, 120 )
-collision_newsize = Vector2( 48, 120 )
+[node name="RivalRunSign" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4153, -1015 )
 
-[node name="VideoTestOne" parent="." instance=ExtResource( 9 )]
-position = Vector2( 4278, -2035 )
+[node name="RivalClimbSign" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3656, -1015 )
 
-[node name="VideoTestTwo" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2630, -2028 )
-
-[node name="RevampedTVVideoOne" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2926, -500 )
+[node name="Rival" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2758, -471 )
