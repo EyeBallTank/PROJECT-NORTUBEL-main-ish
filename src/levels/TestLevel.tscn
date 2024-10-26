@@ -84,3 +84,4 @@ position = Vector2( 3656, -1015 )
 
 [node name="Rival" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2758, -471 )
+rivalskin = "res://assets/sprites/rival sprites/AltAngela.tres"

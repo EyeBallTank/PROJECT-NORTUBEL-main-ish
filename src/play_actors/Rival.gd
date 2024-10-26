@@ -38,6 +38,8 @@ onready var floordetect = $Floordetect
 onready var signdetect = $Signdetect
 onready var signdetectclimb = $Signdetectclimb
 onready var rundetect = $Rundetect
+onready var swimrightdetect = $Swimrightdetect
+onready var swimupdetect = $Swimupdetect
 
 
 func _ready():
@@ -128,6 +130,18 @@ func _physics_process(delta):
 			if is_on_floor() and not was_on_floor:
 				audioplayer.play()
 			was_on_floor = is_on_floor()
+
+			if detect_run():
+				state = RUN
+
+		SWIMRIGHT:
+			pass
+
+			if detect_run():
+				state = RUN
+
+		SWIMUP:
+			pass
 
 			if detect_run():
 				state = RUN
