@@ -16,7 +16,9 @@ enum {
 	RUN,
 	CLIMB,
 	PUSH,
-	IDLE
+	IDLE,
+	SWIMRIGHT,
+	SWIMUP
 }
 
 var state = RUN
