@@ -106,6 +106,12 @@ func cutscene_over():
 #Leon: Um? Somethings going on with those 2. Seems their world has strange color related anomalies.
 #Leon: Wait, that clown... 
 
+
+#Alt Angela: Oh... it's you... what do you want?
+#Carrie: Same thing as you... and what happened to your box?
+#Alt Angela: It seemingly stopped working. Perhaps its power ran out like any machine would.
+#Carrie: You sure it's not because it could have flaws... like ours has?
+#Alt Angela: It's not our box that's causing what's happening around us. And like I said... we were here first.
 #Carrie: So... you still believe that nonsense?
 #Alt Angela: I don't want to... but if it means our lives are at risk, then we have no choice.
 #AB-YZ: You must be from the other group. I must inform you tha-a-a-a-a-a-a-a-
@@ -124,7 +130,6 @@ func cutscene_over():
 #Melvin: We don't know for sure... but we might as well try.
 
 #NOTE: Part where Leon uses his powers and there's an arrow and computer UI related stuff
-#NOTE: ENDING CUTSCENE MAY BE SPLIT IN 2
 #Melvin: Come on, everyone, we're getting close.
 #Melvin: Angela, grab my hand!
 #Carrie: Oscar, grab mine.
@@ -154,6 +159,8 @@ func cutscene_over():
 #Pete: You know what? I may never know who my real dad is... but maybe I don't need to. I'm glad I live, so I could be with you all. Specially you Kat.
 #Angela: I never got to see mom... but I at least have you, Mel.
 #Oscar: Carrie, you're the best. Even if we also never see Grandma again... I hope I still have you.
+#Pete: Oscar, Angela... I'm glad we got to meet even if any of our dreams for the future are gone now...
+#Angela: Me too... I don't think I've appreciated our friendship enough...
 #the group hugs
 #something breaks, the group notices something... a silhouette of a familiar figure
 #Yiegour: B-Man to Grek base... found the "Nortubese" kids... and the girl Leon talked about.
@@ -169,6 +176,8 @@ func cutscene_over():
 #Yiegour: Not only that, this little guy says even other universes can be fixed and we've already helped some people.
 #Yiegour: But in other cases, we also faced challenges... and you all might know how I fixed some.
 #Leon: Though you still haven't killed or found that alien you kept talking about. In any case, we better get going.
+
+#HERE'S THE OTHER CUTSCENE
 #the 9 go to a journey and find a portal to Nortubel
 #Carrie: This looks like home... you guys wanna come?
 #Leon: I wouldn't mind... what about you 2?
@@ -178,7 +187,7 @@ func cutscene_over():
 #Yiegour: She's a tall, gorgeous powerfull warrior. Doesn't seem to be human but she's close enough.
 #Katrin: ...is her name Uulga?
 #Yiegour: She talked about you. Even hopes to see you again... and so do I.
-#he lives.
+#he leaves.
 #Oscar: Grandma!
 #Pamela: Oscar! Carrie! (they hug)
 #Stella: Kat! Pete!
@@ -197,8 +206,15 @@ func cutscene_over():
 #Pamela: But I know you kids went through a lot. So we could leave that for another occasion.
 #Pamela: First, we should celebrate your return home.
 #at a small party
+#Katrin: The food here is nice.
+#Oscar: Yeah, I'm glad I get to eat something cool.
+#Katrin: Well, it's not like Nortubese food itself is bad...
+#Carrie: That reminds me. Stella, did you have any issues with Booker's language?
+#Stella: Kinda but his country was a bit similar to one in our world. Even my language reminded him of a country from his world.
+#Stella: He told me this story about that place being affected by a horrible plague where people were covered in gold and went crazy.
+#Carrie: Really? Guess there's more to Krimb-stone than I thought.
 #Bonka: Not bad, this Nortubel place. Though someone already got to that cake before I did.
-#Leon: If you want, I could bring you to your world so you can bring some candy there and take it here. In fact, I could even invite more people.
+#Leon: If you want, I could bring you to your world so you can take some candy there and bring it here. In fact, I could even invite more people.
 #Bonka: Why didn't you say that before? 
 #Leon: I was busy enjoying the party. It's not like it'll end soon.
 #Bonka: Yeah, you're right.
@@ -206,7 +222,7 @@ func cutscene_over():
 #Oscar: Yes! Hey Angela, wanna play hide and seek?
 #Angela: Sure, but can Pete be the one looking? He always picks the weirdest hiding places.
 #Melvin: So, how you girls feel abo-
-#the 2 both kill Mel's face
+#the 2 both kiss Mel's face
 #Melvin: I... uh.. Thanks
 #Carrie: Mel, like you said: Nobody wants to choose. Ain't that right Ka-
 #Katrin kisses Carrie
