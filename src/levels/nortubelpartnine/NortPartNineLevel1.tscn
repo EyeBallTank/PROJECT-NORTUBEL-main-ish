@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://assets/tilesets/untotern/unto 1 mansion tiles.tres" type="TileSet" id=17]
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 1 war tiles.tres" type="TileSet" id=18]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=20]
 
 [node name="NortPartNineLevel1" type="Node2D"]
 
@@ -127,3 +128,8 @@ customtext = "h1rdr1"
 
 [node name="LevelProp" parent="." instance=ExtResource( 19 )]
 position = Vector2( 691, 1151 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 20 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 8.png"
