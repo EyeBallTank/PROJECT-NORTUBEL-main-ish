@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/levels/nortubelpartnine/NortPartNineLevel9.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/play_actors/RivalCompanion.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level prefabs/nort prefabs/NortEndgamePortal.tscn" type="PackedScene" id=26]
 
 [node name="NortPartNineLevel9" type="Node2D"]
 script = ExtResource( 1 )
@@ -39,13 +40,14 @@ tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 0
 format = 1
+tile_data = PoolIntArray( 720898, 258, 0, 720899, 258, 0, 720900, 258, 0, 720901, 258, 0, 720902, 258, 0, 720903, 258, 0, 720904, 258, 0, 720905, 258, 0, 720906, 258, 0, 720907, 258, 0, 720908, 258, 0, 720909, 258, 0, 720910, 258, 0, 720911, 258, 0, 720912, 258, 0, 720913, 258, 0, 720914, 258, 0, 720915, 258, 0, 720916, 258, 0, 786434, 255, 0, 786435, 255, 0, 786436, 255, 0, 786437, 255, 0, 786438, 255, 0, 786439, 255, 0, 786440, 255, 0, 786441, 255, 0, 786442, 255, 0, 786443, 255, 0, 786444, 255, 0, 786445, 255, 0, 786446, 255, 0, 786447, 255, 0, 786448, 255, 0, 786449, 255, 0, 786450, 255, 0, 786451, 255, 0, 786452, 255, 0, 851970, 253, 0, 851971, 253, 0, 851972, 253, 0, 851973, 253, 0, 851974, 253, 0, 851975, 253, 0, 851976, 253, 0, 851977, 253, 0, 851978, 253, 0, 851979, 253, 0, 851980, 253, 0, 851981, 253, 0, 851982, 253, 0, 851983, 253, 0, 851984, 253, 0, 851985, 253, 0, 851986, 253, 0, 851987, 253, 0, 851988, 253, 0, 917506, 265, 0, 917507, 265, 0, 917508, 265, 0, 917509, 265, 0, 917510, 265, 0, 917511, 265, 0, 917512, 265, 0, 917513, 265, 0, 917514, 265, 0, 917515, 265, 0, 917516, 265, 0, 917517, 265, 0, 917518, 265, 0, 917519, 265, 0, 917520, 265, 0, 917521, 265, 0, 917522, 265, 0, 917523, 265, 0, 917524, 265, 0, 983042, 258, 0, 983043, 258, 0, 983044, 258, 0, 983045, 258, 0, 983046, 258, 0, 983047, 258, 0, 983048, 258, 0, 983049, 258, 0, 983050, 258, 0, 983051, 258, 0, 983052, 258, 0, 983053, 258, 0, 983054, 258, 0, 983055, 258, 0, 983056, 258, 0, 983057, 258, 0, 983058, 258, 0, 983059, 258, 0, 983060, 258, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( 851959, 63, 0, 917495, 63, 0, 983031, 63, 0, 1048567, 63, 0, 1114103, 63, 0, 1179639, 63, 0, 1245175, 63, 0, 1310711, 63, 0, 1376247, 63, 0, 1441783, 63, 0, 1507319, 63, 0, 1507320, 63, 0, 1507321, 63, 0, 1507322, 63, 0, 1507323, 63, 0, 1507324, 63, 0, 1507325, 63, 0, 1507326, 63, 0, 1507327, 63, 0, 1441792, 63, 0, 1441793, 63, 0, 1441794, 63, 0, 1441795, 63, 0, 1441796, 63, 0, 1441797, 63, 0, 1441798, 63, 0, 1441799, 63, 0, 1441800, 63, 0, 1441801, 63, 0, 1441802, 63, 0, 1441803, 63, 0, 1441804, 63, 0, 1441805, 63, 0, 1441806, 63, 0, 1441807, 63, 0, 1441808, 63, 0, 1441809, 63, 0, 1441810, 63, 0, 1441811, 63, 0, 1441812, 63, 0, 1441813, 63, 0, 1441814, 63, 0, 1441815, 63, 0, 1441816, 63, 0, 1441817, 63, 0, 1441818, 63, 0, 1441819, 63, 0, 1441820, 63, 0, 1441821, 63, 0, 1441822, 63, 0 )
+tile_data = PoolIntArray( 851959, 63, 0, 917495, 63, 0, 983031, 63, 0, 1048567, 63, 0, 1114103, 63, 0, 1179639, 63, 0, 1245175, 63, 0, 1310711, 63, 0, 1376247, 63, 0, 1441783, 63, 0, 1507319, 63, 0, 1507320, 63, 0, 1507321, 63, 0, 1507322, 63, 0, 1507323, 63, 0, 1507324, 63, 0, 1507325, 63, 0, 1507326, 63, 0, 1507327, 63, 0, 1441792, 63, 0, 1441793, 63, 0, 1441794, 63, 0, 1441795, 63, 0, 1441796, 63, 0, 1441797, 63, 0, 1441798, 63, 0, 1441799, 63, 0, 1441800, 63, 0, 1441801, 63, 0, 1441802, 63, 0, 1441803, 63, 0, 1441804, 63, 0, 1441805, 63, 0, 1441806, 63, 0, 1441807, 63, 0, 1441808, 63, 0, 1441809, 63, 0, 1441810, 63, 0, 1441811, 63, 0, 1441812, 63, 0, 1441813, 63, 0, 1441814, 63, 0, 1441815, 63, 0, 1441816, 63, 0, 1441817, 63, 0, 1441818, 63, 0, 1441819, 63, 0, 1441820, 63, 0, 1441821, 63, 0, 1441822, 63, 0, 1507358, 63, 0, 1572894, 63, 0, 1638430, 63, 0, 1638431, 63, 0, 1638432, 63, 0, 1638433, 63, 0, 1638434, 63, 0, 1638435, 63, 0, 1638436, 63, 0, 1638437, 63, 0, 1638438, 63, 0, 1638439, 63, 0, 1638440, 63, 0, 1638441, 63, 0, 1638442, 63, 0, 1638443, 63, 0, 1638444, 63, 0, 1638445, 63, 0, 1638446, 63, 0, 1638447, 63, 0, 1638448, 63, 0, 1638449, 63, 0, 1638450, 63, 0, 1638451, 63, 0, 1638452, 63, 0, 1638453, 63, 0, 1638454, 63, 0, 1638455, 63, 0, 1638456, 63, 0, 1638457, 63, 0, 1638458, 63, 0, 1638459, 63, 0, 1638460, 63, 0, 1638461, 63, 0, 1638462, 63, 0, 1638463, 63, 0, 1638464, 63, 0, 1638465, 63, 0, 1638466, 63, 0 )
 
 [node name="MASSAG" type="TileMap" parent="."]
 tile_set = ExtResource( 8 )
@@ -103,7 +105,7 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 322, 1338 )
+position = Vector2( -51, 1319 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 4 )]
@@ -113,33 +115,37 @@ position = Vector2( 322, 1338 )
 position = Vector2( 522, 1302 )
 
 [node name="Companion" parent="." instance=ExtResource( 6 )]
-position = Vector2( 522, 1302 )
+position = Vector2( -258, 1308 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
 
 [node name="Rival" parent="." instance=ExtResource( 17 )]
-position = Vector2( -281, 1322 )
+position = Vector2( -261, 959 )
 rivalskin = "res://assets/sprites/rival sprites/AltAngela.tres"
+somespeedvalue = 590
 
 [node name="RivalCrawlSign" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1594, 1940 )
+position = Vector2( 390, 1266 )
 
 [node name="RivalSwimRightSign" parent="." instance=ExtResource( 19 )]
-position = Vector2( 669, 1249 )
+position = Vector2( 337, 1834 )
 
 [node name="RivalSwimUpSign" parent="." instance=ExtResource( 21 )]
-position = Vector2( 1363, 1257 )
+position = Vector2( 1125, 2106 )
 
 [node name="RivalRunSign" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1331, 613 )
+position = Vector2( 1718, 1271 )
 
 [node name="RivalClimbSign" parent="." instance=ExtResource( 20 )]
-position = Vector2( 956, 1836 )
+position = Vector2( 1902, 1708 )
 
 [node name="Water" parent="." instance=ExtResource( 24 )]
-position = Vector2( 657, 1835 )
+position = Vector2( 1009, 1698 )
 
 [node name="RivalCompanion" parent="." instance=ExtResource( 25 )]
-position = Vector2( -119, 1327 )
+position = Vector2( -422, 931 )
+
+[node name="NortEndgamePortal" parent="." instance=ExtResource( 26 )]
+position = Vector2( 3870, 1311 )

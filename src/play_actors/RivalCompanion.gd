@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 
-
+onready var animatedsprite = $AnimatedSprite
 onready var ladderCheck = $LadderCheck
 onready var pushdetector = $PushDetector
 onready var audioplayer = $AudioStreamPlayer
@@ -19,10 +19,11 @@ var WALK_FORCE = 1600
 var WALK_MAX_SPEED = 70
 var PUSH_SPEED = 25
 var STOP_FORCE = 450
-var JUMP_SPEED = 1450
+var JUMP_SPEED = 650
 
 export var speed: = Vector2(300.0, 1000.0)
 export var gravity: = 1450.0
+export var somespeedvalue = 530
 
 var vel: = Vector2.ZERO
 var direction: = Vector2.ZERO
@@ -47,17 +48,125 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		RUN:
-			pass
+			pushcheck()
+			detect_jump()
+			vel.x = WALK_MAX_SPEED
+			direction.x = 1
+			WALK_MAX_SPEED = somespeedvalue
+			animatedsprite.animation = "Running"
+			animatedsprite.flip_h = false
+
+			vel.y += gravity * delta
+			gravity = 650
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+			if detect_signs():
+				state = IDLE
+
+			if detect_climb():
+				state = CLIMB
+
+			if detect_swim_up():
+				state = SWIMUP
+				Signals.emit_signal("touch_water")
+
+			if detect_swim_right():
+				state = SWIMRIGHT
+				Signals.emit_signal("touch_water")
+
+			if detect_crawl():
+				state = CRAWL
+
 		CLIMB:
-			pass
+			vel.y = -350
+			vel.x = 0
+			animatedsprite.animation = "Climbing"
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if detect_signs():
+				state = IDLE
+
+			if detect_run():
+				state = RUN
+
 		PUSH:
-			pass
+			pushcheck()
+			detect_jump()
+
+			vel.x = WALK_MAX_SPEED
+			direction.x = 1
+			WALK_MAX_SPEED = somespeedvalue
+			animatedsprite.animation = "Pushing"
+			animatedsprite.flip_h = false
+
+			vel.y += gravity * delta
+			gravity = 650
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
+			if vel.y < 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesup"
+			elif vel.y > 0 and not is_on_floor():
+				animatedsprite.animation = "Jumpgoesdown"
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+
+
+			if detect_signs():
+				state = IDLE
+
+			if detect_climb():
+				state = CLIMB
+
 		SWIMRIGHT:
-			pass
+			vel.x = 350
+			vel.y = 0
+			animatedsprite.animation = "Swimming"
+			animatedsprite.flip_h = false
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+			if detect_run():
+				state = RUN
+
+			if detect_swim_up():
+				state = SWIMUP
 		SWIMUP:
-			pass
+
+			vel.y = -350
+			vel.x = 0
+			animatedsprite.animation = "Swimup"
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+			if detect_run():
+				state = RUN
+
+			if detect_swim_right():
+				state = SWIMRIGHT
 		CRAWL:
-			pass
+			vel.x = WALK_MAX_SPEED
+			direction.x = 1
+			animatedsprite.animation = "Crawlling"
+			animatedsprite.flip_h = false
+
+			if detect_run():
+				state = RUN
+			vel.x = direction.x * 350
+
+			if is_on_floor() and not was_on_floor:
+				audioplayer.play()
+			was_on_floor = is_on_floor()
+			vel.y += gravity * delta
+			gravity = 1450.0
+			vel = move_and_slide_with_snap(vel, Vector2.DOWN, Vector2.UP)
+
 		IDLE:
 			pass
 

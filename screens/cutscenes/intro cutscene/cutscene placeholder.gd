@@ -120,7 +120,7 @@ func cutscene_over():
 #Alt Oscar: Knoe warned us about these oddities. He says their mere existence causes holes in reality.
 #Angela: Look... what is that?
 #Melvin: It looks like a portal... but it's different from the others.
-#Alt Pete: That's because it's coming from a more stable device. Unlike the broken one that you guys carry.
+#Alt Pete: It could be coming from a more stable device. Better than either of ours.
 #Alt Katrin: And it's closing.
 #Alt Angela: We better run... how about one last race, "brother"?
 #Melvin: Everyone, stay close. We gotta make sure all of us get there!
