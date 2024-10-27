@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/levels/nortubelpartnine/NortPartNineLevel9.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -23,6 +23,8 @@
 [ext_resource path="res://src/rival signs/RivalSwimUpSign.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/rival signs/RivalRunSign.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/play_actors/RivalCompanion.tscn" type="PackedScene" id=25]
 
 [node name="NortPartNineLevel9" type="Node2D"]
 script = ExtResource( 1 )
@@ -135,3 +137,9 @@ position = Vector2( 1331, 613 )
 
 [node name="RivalClimbSign" parent="." instance=ExtResource( 20 )]
 position = Vector2( 956, 1836 )
+
+[node name="Water" parent="." instance=ExtResource( 24 )]
+position = Vector2( 657, 1835 )
+
+[node name="RivalCompanion" parent="." instance=ExtResource( 25 )]
+position = Vector2( -119, 1327 )

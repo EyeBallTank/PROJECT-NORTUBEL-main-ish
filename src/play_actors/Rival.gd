@@ -78,9 +78,11 @@ func _physics_process(delta):
 
 			if detect_swim_up():
 				state = SWIMUP
+				Signals.emit_signal("touch_water")
 
 			if detect_swim_right():
 				state = SWIMRIGHT
+				Signals.emit_signal("touch_water")
 
 		CLIMB:
 			PUSH_SPEED = 350

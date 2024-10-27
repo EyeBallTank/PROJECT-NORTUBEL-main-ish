@@ -251,3 +251,7 @@ cast_to = Vector2( 83, 0 )
 collision_mask = 16
 collide_with_areas = true
 collide_with_bodies = false
+
+[connection signal="area_entered" from="PortalCheck" to="." method="_on_PortalCheck_area_entered"]
+[connection signal="area_entered" from="PushDetector" to="." method="_on_PushDetector_area_entered"]
+[connection signal="area_exited" from="PushDetector" to="." method="_on_PushDetector_area_exited"]
