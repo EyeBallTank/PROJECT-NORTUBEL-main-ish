@@ -76,6 +76,12 @@ func _physics_process(delta):
 			if detect_climb():
 				state = CLIMB
 
+			if detect_swim_up():
+				state = SWIMUP
+
+			if detect_swim_right():
+				state = SWIMRIGHT
+
 		CLIMB:
 			PUSH_SPEED = 350
 			velocity.y = -PUSH_SPEED
@@ -135,16 +141,32 @@ func _physics_process(delta):
 				state = RUN
 
 		SWIMRIGHT:
-			pass
+			PUSH_SPEED = 350
+			velocity.x = PUSH_SPEED
+			velocity.y = 0
+			animatedsprite.animation = "Swimming"
+			animatedsprite.flip_h = false
+			pushdetector.position = Vector2(63, 0)
 
 			if detect_run():
 				state = RUN
+
+			if detect_swim_up():
+				state = SWIMUP
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 		SWIMUP:
-			pass
+			PUSH_SPEED = 350
+			velocity.y = -PUSH_SPEED
+			velocity.x = 0
+			animatedsprite.animation = "Swimup"
 
 			if detect_run():
 				state = RUN
+
+			if detect_swim_right():
+				state = SWIMRIGHT
+			velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
 
 func pushcheck():
 	for index in get_slide_count():
@@ -175,6 +197,18 @@ func detect_run():
 	if not rundetect.is_colliding(): return false
 	var collider = rundetect.get_collider()
 	if not collider is RivalRunSign: return false
+	return true
+
+func detect_swim_right():
+	if not swimrightdetect.is_colliding(): return false
+	var collider = swimrightdetect.get_collider()
+	if not collider is RivalSwimRightSign: return false
+	return true
+
+func detect_swim_up():
+	if not swimupdetect.is_colliding(): return false
+	var collider = swimupdetect.get_collider()
+	if not collider is RivalSwimUpSign: return false
 	return true
 
 

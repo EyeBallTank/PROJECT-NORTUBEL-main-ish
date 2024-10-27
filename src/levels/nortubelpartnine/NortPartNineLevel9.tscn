@@ -118,20 +118,20 @@ position = Vector2( 522, 1302 )
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
 
 [node name="Rival" parent="." instance=ExtResource( 17 )]
-position = Vector2( -14, 1322 )
+position = Vector2( -281, 1322 )
 rivalskin = "res://assets/sprites/rival sprites/AltAngela.tres"
 
 [node name="RivalCrawlSign" parent="." instance=ExtResource( 18 )]
-position = Vector2( 57, 1836 )
+position = Vector2( 1594, 1940 )
 
 [node name="RivalSwimRightSign" parent="." instance=ExtResource( 19 )]
-position = Vector2( 371, 1836 )
+position = Vector2( 669, 1249 )
 
 [node name="RivalSwimUpSign" parent="." instance=ExtResource( 21 )]
-position = Vector2( 666, 1836 )
+position = Vector2( 1363, 1257 )
 
 [node name="RivalRunSign" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1251, 1836 )
+position = Vector2( 1331, 613 )
 
 [node name="RivalClimbSign" parent="." instance=ExtResource( 20 )]
 position = Vector2( 956, 1836 )
