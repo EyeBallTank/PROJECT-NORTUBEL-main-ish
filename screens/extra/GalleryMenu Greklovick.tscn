@@ -166,12 +166,12 @@ position = Vector2( 512, 300 )
 texture = ExtResource( 18 )
 
 [node name="DESCRIPTION" type="Label" parent="."]
-margin_left = 437.0
+margin_left = 387.0
 margin_top = 525.0
-margin_right = 624.0
+margin_right = 698.0
 margin_bottom = 542.0
 custom_fonts/font = ExtResource( 31 )
-text = "ARTGALLERY_SPACEBAR_TEXT"
+text = "Space/Espaço: Change image/Mudar imagem."
 
 [node name="NumberArt" type="Label" parent="."]
 margin_left = 478.0

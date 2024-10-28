@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=24 format=2]
+[gd_resource type="TileSet" load_steps=25 format=2]
 
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 1 TREE TILE SOLID.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO 1 TREE TILE PASSABLE.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE TREE HOUSE 2.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE TREE HOUSE 3.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/tile sets/herrko/HERRKO TILE TREE HOUSE 4.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/tile sets/herrko/ZZZ HERRKO MOVING PLAT VERTI SIGN.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -846,3 +847,17 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 48/z_index = 0
+49/name = "ZZZ HERRKO MOVING PLAT VERTI SIGN.png 49"
+49/texture = ExtResource( 9 )
+49/tex_offset = Vector2( 0, 0 )
+49/modulate = Color( 1, 1, 1, 1 )
+49/region = Rect2( 0, 0, 192, 192 )
+49/tile_mode = 0
+49/occluder_offset = Vector2( 0, 0 )
+49/navigation_offset = Vector2( 0, 0 )
+49/shape_offset = Vector2( 0, 0 )
+49/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+49/shape_one_way = false
+49/shape_one_way_margin = 0.0
+49/shapes = [  ]
+49/z_index = 0

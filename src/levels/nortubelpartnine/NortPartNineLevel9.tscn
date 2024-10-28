@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/levels/nortubelpartnine/NortPartNineLevel9.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -26,6 +26,10 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/play_actors/RivalCompanion.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level prefabs/nort prefabs/NortEndgamePortal.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=30]
 
 [node name="NortPartNineLevel9" type="Node2D"]
 script = ExtResource( 1 )
@@ -149,3 +153,21 @@ position = Vector2( -422, 931 )
 
 [node name="NortEndgamePortal" parent="." instance=ExtResource( 26 )]
 position = Vector2( 3870, 1311 )
+
+[node name="Pushable" parent="." instance=ExtResource( 30 )]
+position = Vector2( 2679, 875 )
+
+[node name="Pushable2" parent="." instance=ExtResource( 30 )]
+position = Vector2( 2625, 1247 )
+
+[node name="FloorSwitch" parent="." instance=ExtResource( 29 )]
+position = Vector2( 3177, 839 )
+
+[node name="FloorSwitch2" parent="." instance=ExtResource( 29 )]
+position = Vector2( 3165, 1121 )
+
+[node name="CrawlzoneExit" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2193, 162 )
+
+[node name="CrawlzoneEnter" parent="." instance=ExtResource( 28 )]
+position = Vector2( 2409, 162 )
