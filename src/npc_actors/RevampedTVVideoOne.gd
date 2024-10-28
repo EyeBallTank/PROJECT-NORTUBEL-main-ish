@@ -31,10 +31,13 @@ func _physics_process(_delta):
 		video.stop()
 #		tv_unpauses_the_game()
 #		get_tree().paused == false
-	if Input.is_action_just_pressed("runaway"):
+	if Input.is_action_just_pressed("runaway") and dialoguebox.visible == true:
 		test = false
 #		video.stop()
 		tv_unpauses_the_game()
+	elif Input.is_action_just_pressed("runaway") and dialoguebox.visible == false:
+		pass
+
 
 	if Input.is_action_just_pressed("ui_cancel") and dialoguebox.visible == true:
 		test = false
