@@ -35,6 +35,9 @@ background = "res://assets/sprites/level_backgrounds/level bg test 5.png"
 [node name="NortRaceFlag" parent="." instance=ExtResource( 20 )]
 position = Vector2( 8508, 253 )
 
+[node name="AnimatedSprite" parent="NortRaceFlag" index="0"]
+frame = 0
+
 [node name="Wood" parent="NortRaceFlag" index="2"]
 scale = Vector2( 2.03998, 2.36 )
 

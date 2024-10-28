@@ -97,8 +97,7 @@ one_way_collision = true
 curve = SubResource( 2 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2( -0.0922301, -427.387 )
-offset = 426.646
+position = Vector2( -2, -1 )
 rotate = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
