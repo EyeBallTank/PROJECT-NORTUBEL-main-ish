@@ -48,3 +48,5 @@ func _on_GREKLOVICK_pressed():
 
 
 
+func _on_OTHER_TWO_pressed():
+	SceneManager.change_scene("level_transition_effect", "res://screens/extra/ItemsAndThemeGallery.tscn")

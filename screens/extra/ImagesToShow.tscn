@@ -1,0 +1,67 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://screens/extra/ImagesToShow.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites nortubel.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites krimbstone.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites hirdrih.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites greklovick.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites brinkaedea.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites untotern.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites massagcoav.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites herrko.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites lahiurn.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 4091, 1735 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 3750, 1526 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 3510, 1320 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 4325, 1763 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 3776, 1744 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 3683, 1842 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 2764, 1757 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 4228, 1781 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 3943, 2033 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
+
+[node name="ImagesToShow" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )

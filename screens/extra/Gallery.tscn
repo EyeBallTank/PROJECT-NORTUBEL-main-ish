@@ -102,27 +102,27 @@ texture_pressed = ExtResource( 13 )
 texture_hover = ExtResource( 15 )
 
 [node name="KRIMBSTONE" type="TextureButton" parent="."]
-margin_left = 157.0
+margin_left = 121.0
 margin_top = 52.0
-margin_right = 316.0
+margin_right = 280.0
 margin_bottom = 193.0
 texture_normal = ExtResource( 18 )
 texture_pressed = ExtResource( 16 )
 texture_hover = ExtResource( 17 )
 
 [node name="BRINKAEDEA" type="TextureButton" parent="."]
-margin_left = 442.0
+margin_left = 329.0
 margin_top = 52.0
-margin_right = 601.0
+margin_right = 488.0
 margin_bottom = 193.0
 texture_normal = ExtResource( 21 )
 texture_pressed = ExtResource( 20 )
 texture_hover = ExtResource( 19 )
 
 [node name="LAHIURN" type="TextureButton" parent="."]
-margin_left = 752.0
+margin_left = 542.0
 margin_top = 52.0
-margin_right = 911.0
+margin_right = 701.0
 margin_bottom = 193.0
 texture_normal = ExtResource( 26 )
 texture_pressed = ExtResource( 22 )
@@ -164,6 +164,15 @@ texture_normal = ExtResource( 34 )
 texture_pressed = ExtResource( 35 )
 texture_hover = ExtResource( 36 )
 
+[node name="OTHER TWO" type="TextureButton" parent="."]
+margin_left = 759.0
+margin_top = 53.0
+margin_right = 918.0
+margin_bottom = 194.0
+texture_normal = ExtResource( 34 )
+texture_pressed = ExtResource( 35 )
+texture_hover = ExtResource( 36 )
+
 [node name="GalleryDanceAnimation" parent="." instance=ExtResource( 37 )]
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
@@ -177,3 +186,4 @@ texture_hover = ExtResource( 36 )
 [connection signal="pressed" from="GREKLOVICK" to="." method="_on_GREKLOVICK_pressed"]
 [connection signal="pressed" from="MASSAGCOAV" to="." method="_on_MASSAGCOAV_pressed"]
 [connection signal="pressed" from="OTHER" to="." method="_on_OTHER_pressed"]
+[connection signal="pressed" from="OTHER TWO" to="." method="_on_OTHER_TWO_pressed"]
