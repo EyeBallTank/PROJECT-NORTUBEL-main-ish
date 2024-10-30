@@ -46,6 +46,10 @@ func _process(delta):
 		scale -= scale_speed * delta * Vector2(1, 1)
 	elif Input.is_action_pressed("stellajump"):
 		scale += scale_speed * delta * Vector2(1, 1)
+		print(scale)
+
+	if scale > Vector2(6, 6):
+		scale = Vector2(6, 6)
 
 	move_and_slide(velocity)
 #	velocity = move_and_slide_with_snap(velocity, Vector2.DOWN, Vector2.UP)
