@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -18,6 +18,12 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkPresentBox.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/enemies/masagcoav/BlackChicken.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/enemies/hirdrih/HirdrioEnemy.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/enemies/greklovick/GrekScorbrion.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=24]
 
 [node name="NortPartNineLevel7" type="Node2D"]
 
@@ -119,3 +125,20 @@ position = Vector2( 706, 1184 )
 
 [node name="BrinkPresentBox" parent="." instance=ExtResource( 18 )]
 position = Vector2( 2378, 1356 )
+
+[node name="BlackChicken" parent="." instance=ExtResource( 19 )]
+
+[node name="HirdrioEnemy" parent="." instance=ExtResource( 20 )]
+position = Vector2( 3251, 1105 )
+
+[node name="GrekScorbrion" parent="." instance=ExtResource( 21 )]
+position = Vector2( 3236, 1682 )
+
+[node name="Pushable" parent="." instance=ExtResource( 22 )]
+position = Vector2( 3944, 1584 )
+
+[node name="FloorSwitch" parent="." instance=ExtResource( 23 )]
+position = Vector2( 4168, 1832 )
+
+[node name="Barrier" parent="." instance=ExtResource( 24 )]
+position = Vector2( 4383, 1376 )
