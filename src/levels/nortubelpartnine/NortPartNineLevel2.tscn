@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -22,6 +22,10 @@
 [ext_resource path="res://src/enemies/herrko/HerrkoRedHorg.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/enemies/hirdrih/HirdServant.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/enemies/greklovick/GrekAmmoDispenser.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/enemies/brinkaedea/BrinkRedJesterThree.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite Middle.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level prefabs/brink prefabs/Brink Big Straw Redwhite Bottom.tscn" type="PackedScene" id=26]
 
 [node name="NortPartNineLevel2" type="Node2D"]
 
@@ -137,3 +141,15 @@ position = Vector2( 1559, 468 )
 
 [node name="HirdServant" parent="." instance=ExtResource( 21 )]
 position = Vector2( 1699, 1046 )
+
+[node name="BrinkRedJesterThree" parent="." instance=ExtResource( 23 )]
+position = Vector2( 2297, 763 )
+
+[node name="Brink Big Straw Redwhite" parent="." instance=ExtResource( 25 )]
+position = Vector2( 2903, 85 )
+
+[node name="Brink Big Straw Redwhite Bottom" parent="." instance=ExtResource( 26 )]
+position = Vector2( 2212, 85 )
+
+[node name="Brink Big Straw Redwhite Middle" parent="." instance=ExtResource( 24 )]
+position = Vector2( 2496, 85 )

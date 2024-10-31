@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -20,8 +20,18 @@
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 1 war tiles.tres" type="TileSet" id=18]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/level prefabs/brink prefabs/BrinkJumpPad.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level prefabs/grek prefabs/GrekPoliceCar.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPoliceCar.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/level prefabs/massag prefab/MassagBigWheel.tscn" type="PackedScene" id=25]
 
 [node name="NortPartNineLevel1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 20 )]
+background = "res://assets/sprites/level_backgrounds/level bg test 8.png"
 
 [node name="back" type="TileMap" parent="."]
 tile_set = ExtResource( 7 )
@@ -129,7 +139,18 @@ customtext = "h1rdr1"
 [node name="LevelProp" parent="." instance=ExtResource( 19 )]
 position = Vector2( 691, 1151 )
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="BrinkJumpPad" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2568, 571 )
 
-[node name="ParallaxLayer" parent="ParallaxBackground" instance=ExtResource( 20 )]
-background = "res://assets/sprites/level_backgrounds/level bg test 8.png"
+[node name="GrekPoliceCar" parent="." instance=ExtResource( 23 )]
+position = Vector2( 3593, 465 )
+
+[node name="MovingPlatVerti" parent="." instance=ExtResource( 21 )]
+position = Vector2( 951, 1270 )
+spritename = "hirdrih movplatvert"
+
+[node name="KrimbPoliceCar" parent="." instance=ExtResource( 24 )]
+position = Vector2( 3707, 879 )
+
+[node name="MassagBigWheel" parent="." instance=ExtResource( 25 )]
+position = Vector2( 3188, -348 )

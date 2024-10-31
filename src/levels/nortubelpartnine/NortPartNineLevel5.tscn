@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -19,6 +19,10 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/npc_actors/grek npc/TfoorieNPC.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/level prefabs/grek prefabs/GrekTrainFront.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/level prefabs/hird prefab/Hird Tech Cloud.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnWarPlatformSandbagsStairs.tscn" type="PackedScene" id=23]
 
 [node name="NortPartNineLevel5" type="Node2D"]
 
@@ -134,3 +138,15 @@ customtext = "TFOORIE_NPC_TALK"
 customtext2 = "TFOORIE_NPC_HONK"
 customtext3 = "TFOORIE_NPC_HUG"
 customtext4 = "TFOORIE_NPC_HURT"
+
+[node name="GrekTrainFront" parent="." instance=ExtResource( 20 )]
+position = Vector2( 4897, 2214 )
+
+[node name="Hird Tech Cloud" parent="." instance=ExtResource( 21 )]
+position = Vector2( 3074, 1361 )
+
+[node name="Water" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2894, 1543 )
+
+[node name="LahiurnWarPlatformSandbagsStairs" parent="." instance=ExtResource( 23 )]
+position = Vector2( 5190, 737 )
