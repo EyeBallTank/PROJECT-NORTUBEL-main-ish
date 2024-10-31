@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/level prefabs/massag prefab/Massag PhotoBooth.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth back.png" type="Texture" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth melvin angela.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth katrin pete.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/massag photobooth carrie oscar.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/zz massag photobooth extra 1.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/zz massag photobooth extra 2.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/zz massag photobooth extra 3.png" type="Texture" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 68.75, 113.25 )
@@ -47,7 +50,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 176, -138 ) ]
+"values": [ Vector2( 176, -139 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("AudioStreamPlayer:playing")
@@ -60,6 +63,94 @@ tracks/3/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CanvasLayer/Uulga and Pebble:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 519, -139 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CanvasLayer/Yiegour and Clarity:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 176, -139 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CanvasLayer/Marcus:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 854, -141 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "morephotos"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5, 0.9, 1, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/Uulga and Pebble:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 519, -139 ), Vector2( 519, 169 ), Vector2( 519, 169 ), Vector2( 519, 169 ), Vector2( 519, 169 ), Vector2( 519, 779 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Yiegour and Clarity:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 176, -139 ), Vector2( 176, -139 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 784 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CanvasLayer/Marcus:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 854, -141 ), Vector2( 854, -141 ), Vector2( 854, -141 ), Vector2( 854, 182 ), Vector2( 854, 182 ), Vector2( 854, 792 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -99,7 +190,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.5, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 176, -138 ), Vector2( 176, -138 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 784 ) ]
+"values": [ Vector2( 176, -139 ), Vector2( 176, -138 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 174 ), Vector2( 176, 784 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("AudioStreamPlayer:playing")
@@ -141,15 +232,28 @@ position = Vector2( 518, -139 )
 texture = ExtResource( 7 )
 
 [node name="Flenn" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 176, -138 )
+position = Vector2( 176, -139 )
 texture = ExtResource( 6 )
 
 [node name="Brokston" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 854, -141 )
 texture = ExtResource( 5 )
 
+[node name="Uulga and Pebble" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 519, -139 )
+texture = ExtResource( 8 )
+
+[node name="Yiegour and Clarity" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 176, -139 )
+texture = ExtResource( 10 )
+
+[node name="Marcus" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 854, -141 )
+texture = ExtResource( 9 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 4 )
+anims/morephotos = SubResource( 5 )
 anims/phototaken = SubResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
