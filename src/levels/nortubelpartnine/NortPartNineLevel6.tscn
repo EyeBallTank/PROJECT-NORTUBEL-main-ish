@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/level_hazards/hirdrih/SpiderChips.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=25]
 
 [node name="NortPartNineLevel6" type="Node2D"]
 
@@ -145,3 +146,6 @@ position = Vector2( 2469, 3071 )
 
 [node name="Gecko enemy" parent="." instance=ExtResource( 24 )]
 position = Vector2( 1480, 1822 )
+
+[node name="PossessedLantern" parent="." instance=ExtResource( 25 )]
+position = Vector2( 2090, 2069 )
