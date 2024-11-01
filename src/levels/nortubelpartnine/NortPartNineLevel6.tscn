@@ -122,6 +122,8 @@ new_scene = "res://src/levels/nortubelpartnine/NortPartNineLevel7.tscn"
 customtext = "l4h1rn"
 
 [node name="LevelProp" parent="." instance=ExtResource( 16 )]
+position = Vector2( -530, 265 )
+propname = "nortprop balcony 2"
 
 [node name="TsoovukotKnight" parent="." instance=ExtResource( 18 )]
 position = Vector2( 831, 1098 )
