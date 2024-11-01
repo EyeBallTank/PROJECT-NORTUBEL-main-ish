@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -25,6 +25,12 @@
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnWarPlatformSandbagsStairs.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/level_items/Red key.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=29]
+[ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=30]
+[ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=31]
 
 [node name="NortPartNineLevel5" type="Node2D"]
 
@@ -159,3 +165,27 @@ position = Vector2( 2281, 2011 )
 
 [node name="CrawlzoneEnter" parent="." instance=ExtResource( 24 )]
 position = Vector2( 2012, 2011 )
+
+[node name="Blue key" parent="." instance=ExtResource( 29 )]
+position = Vector2( -322, 2775 )
+spritename = "lahiurn blukey"
+
+[node name="Red key" parent="." instance=ExtResource( 27 )]
+position = Vector2( -305, 2415 )
+spritename = "greklovick redkey"
+
+[node name="Yellow key" parent="." instance=ExtResource( 26 )]
+position = Vector2( -305, 2127 )
+spritename = "untotern yelkey"
+
+[node name="BlueDoor" parent="." instance=ExtResource( 28 )]
+position = Vector2( -478, 2771 )
+spritename = "lahiurn bludoor"
+
+[node name="RedDoor" parent="." instance=ExtResource( 30 )]
+position = Vector2( -479, 2467 )
+spritename = "greklovick reddoor"
+
+[node name="YellowDoor" parent="." instance=ExtResource( 31 )]
+position = Vector2( -461, 2123 )
+spritename = "untotern yeldoor"

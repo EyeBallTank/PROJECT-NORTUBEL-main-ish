@@ -204,7 +204,7 @@ script = ExtResource( 2 )
 position = Vector2( -7.62939e-06, -3.52764e-06 )
 scale = Vector2( 0.883, 0.856 )
 frames = SubResource( 6 )
-animation = "altuntotern reddoor"
+animation = "nortubel reddoor"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
