@@ -801,8 +801,10 @@ Ele ficou famoso por vários trabalhos em diferentes categorias.
 Poesia, literatura, filosofia, tradução e comentário político.
 O único filho de Saramando Legoa morreu aos 3 anos, quando caiu de uma janela do 2º andar.
 Os últimos anos de Saramando Legoa terminaram com depressão e abuso de álcool."
-MASSAG_LORE_CHICKEN_T,"A recent zoo incident lead to various Gallus roam around various cities.
-Authorities and politicians advise citizens to stay at home during the time being.","Um recente incidente num jardim zoológico fez com que vários Gallus espalhacem
+MASSAG_LORE_CHICKEN_T,"BREAKING NEWS!
+A recent zoo incident lead to various Gallus roam around various cities.
+Authorities and politicians advise citizens to stay at home during the time being.","NOTÍCIAS DE ULTIMA HORA!
+Um recente incidente num jardim zoológico fez com que vários Gallus espalhassem
 por várias cidades.
 Autoridades e políticos aconselham cidadãos a ficarem em casa durante este período."
 BARNEY_NPC_TALK,"This is my latest invention.
@@ -1063,7 +1065,7 @@ CUTSCENE_7_TALK_9,It looks like Nortubel but it's a weird place.,Parece Nortubel
 CUTSCENE_7_TALK_10,"Yeah, there's flying buildings and giant geckos.
 But my grandma could be getting close to take us back.","Sim, há casas a voar e lagartos gigantes.
 Mas a minha avó pode estar perto de nos trazer de volta."
-CUTSCENE_7_TALK_11,"If i were you, i’d leave.","Se eu fosse a ti, voltava para casa."
+CUTSCENE_7_TALK_11,"If I were you, I’d leave.","Se eu fosse a ti, voltava para casa."
 CUTSCENE_7_TALK_12,"Booker, but why?","Mas porquê, Booker?"
 CUTSCENE_7_TALK_13,"Girl, I can tell you're still not used to this Hellscape and maybe it's for the best.","Miuda, ainda vejo que não estás habituada a este inferno e talvez é melhor assim."
 CUTSCENE_7_TALK_14,"If you get used to things here, you might lose it and stumble upon a worse fate than death.","Se te habituares, podes perder a cabeça e chegar a um destino pior que a morte."
@@ -1141,7 +1143,7 @@ But so far, we're still lost.","Nós estivemos a viajar por mundos diferentes ao
 Mas por agora, ainda estamos perdidos."
 CUTSCENE_9_TALK_19,"Well, the good news is that Massag-Coav is a wonderfull place, I'm sure you guys can find a lot of fun to be had here.",As boas noticias é que Massag-Coav é um sitio maravilhoso. Tenho a certeza que vão ter muita diversão.
 CUTSCENE_9_TALK_20,"Holmes, didn't you see the news lately?
-There was a crysis at the zoo and some animals escaped.","Holmes, não viste as noticias?
+There was a crisis at the zoo and some animals escaped.","Holmes, não viste as noticias?
 Houve uma crise no jardim zoológico e alguns animais escaparam."
 CUTSCENE_9_TALK_21,"C'mon, Fern. There can't be that many.","Vá lá, Fern. Não pode haver assim tantos."
 CUTSCENE_9_TALK_22,"Mom, can I play with these kids?","Mãe, posso brincar com estes meninos?"

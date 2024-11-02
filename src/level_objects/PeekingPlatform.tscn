@@ -37,7 +37,7 @@ extents = Vector2( 55, 24.5 )
 
 [sub_resource type="Animation" id=6]
 resource_name = "Out and In"
-length = 3.0
+length = 4.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("KinematicBody2D/CollisionShape2D:disabled")
@@ -46,7 +46,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1.5, 2.6 ),
+"times": PoolRealArray( 0, 1.8, 2.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
@@ -58,7 +58,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.2, 1.5, 2.6, 3 ),
+"times": PoolRealArray( 0, 1.5, 1.8, 2.9, 3.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "NORMAL", "HALFWAY", "GONE", "HALFWAY", "NORMAL" ]
