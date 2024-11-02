@@ -101,6 +101,10 @@ func cutscene_over():
 #Reptile: I wonder if this has anything to do with that guy cut in half from the other day.
 #Avietta: I think Leon and Otto might want to know what's goin on.
 #Hangelica: Not yet... the end of times will not arrive soon...
+#Odin: Hope you learned your lesson. This better theaches you to-
+#Shotgun and reload sound
+#Odin: AH- WHAT THE-
+#Booker: These guys never learn, kid! Just make sure other punks watched and they get the idea.
 #Bonky: Hello lady. You look pretty cute. Are you a goblin?
 #Pebble: Goblin? What's that? It's pronounced "Ghalbeen". Where did you get "Goblin" from?
 #Leon: Um? Somethings going on with those 2. Seems their world has strange color related anomalies.
