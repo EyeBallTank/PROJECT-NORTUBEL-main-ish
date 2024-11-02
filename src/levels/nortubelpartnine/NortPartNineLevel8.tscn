@@ -138,6 +138,7 @@ boardname = "grek art alt yiegour reference"
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 551, 2704 )
 new_scene = "res://screens/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals.tscn"
+spritename = "untotern greendoor"
 customtext = "unt0tr"
 
 [node name="LevelProp" parent="." instance=ExtResource( 17 )]
