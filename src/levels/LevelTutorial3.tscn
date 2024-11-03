@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 29.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 32.png" type="Texture" id=39]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 33.png" type="Texture" id=40]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 34.png" type="Texture" id=41]
+[ext_resource path="res://src/npc_actors/BookInfoRevised.tscn" type="PackedScene" id=42]
 
 [node name="LevelTutorial3" type="Node2D"]
 light_mask = 4
@@ -266,3 +267,8 @@ texture = ExtResource( 41 )
 position = Vector2( 13234, 844.397 )
 scale = Vector2( 0.675917, 0.675917 )
 texture = ExtResource( 9 )
+
+[node name="BookInfoRevised" parent="." instance=ExtResource( 42 )]
+position = Vector2( 1865, 476 )
+customtext = "BOOK_HINT_SOCCER_CONTROLS_REVISED"
+boardname = "tutorial soccer revised"

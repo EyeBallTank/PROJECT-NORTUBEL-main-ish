@@ -3056,3 +3056,18 @@ TFOORIE_NPC_HUG,It seems these creatures aren't inherently violent.,Parece que e
 TFOORIE_NPC_HONK,Is this how those of your species greet each other?,É assim que os da sua espécie se cumprimentam uns aos outros
 ARTGALLERY_SPACEBAR_TEXT,Press space to change image.,Prime espaço para mudar de imagem.
 IMAGES_TO_SHOW_CONTROLS_TEXT,ARROWS: MOVE    Z/X: ZOOM          SPACE: RESET   C:CHANGE IMAGE,SETAS: MOVER    Z/X: ZOOM      ESPAÇO: REPOR   C: ALTERAR IMAGEM
+BOOK_HINT_SOCCER_CONTROLS_REVISED,"That bag gives you one soccer ball if you got none.
+Touch the bag again if you want another ball.
+Ball kick attack: Down
+Direction for the ball: Left/Right
+Cancelling ball attack: Up
+
+Soccer ball can defeat enemies.
+Soccer net disappears when receiving the ball.","Aquela mala dá-te uma bola de futebol se não tens nenhuma.
+Toca nela outra vez se queres outra bola.
+Ataque com bola e pontapé: Baixo
+Direção para a bola: Esquerda/Direita
+Cancelar ataque de bola: Cima
+
+A bola de futebol consegue derrotar inimigos.
+A rede de futebol desaparece quando recebe a bola."
