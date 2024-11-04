@@ -1,0 +1,110 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/sprites/level_prefab_sprites/unto prefab sprites/Unto Scary Mirror in the world.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/level_prefab_sprites/unto prefab sprites/Unto Scary Mirror Katrin Frames.png" type="Texture" id=2]
+[ext_resource path="res://src/npc_actors/ArtBook.gd" type="Script" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=4]
+[ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=40]
+
+[sub_resource type="AtlasTexture" id=163]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 146, 189 )
+
+[sub_resource type="SpriteFrames" id=43]
+animations = [ {
+"frames": [ SubResource( 163 ) ],
+"loop": false,
+"name": "artbookmain",
+"speed": 0.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 53, 69.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 52, 68.5 )
+
+[sub_resource type="AtlasTexture" id=164]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 1044, 594 )
+
+[sub_resource type="AtlasTexture" id=165]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 594, 1044, 594 )
+
+[sub_resource type="AtlasTexture" id=166]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1188, 1044, 594 )
+
+[sub_resource type="AtlasTexture" id=167]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1782, 1044, 594 )
+
+[sub_resource type="AtlasTexture" id=168]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 2376, 1044, 594 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 164 ), SubResource( 164 ), SubResource( 164 ), SubResource( 164 ), SubResource( 165 ), SubResource( 166 ), SubResource( 164 ), SubResource( 167 ), SubResource( 164 ), SubResource( 164 ), SubResource( 165 ), SubResource( 166 ), SubResource( 164 ), SubResource( 168 ) ],
+"loop": true,
+"name": "nortubel world map",
+"speed": 3.0
+} ]
+
+[node name="UntoScaryMirror" type="KinematicBody2D"]
+z_index = 1
+collision_layer = 64
+collision_mask = 4
+script = ExtResource( 3 )
+
+[node name="MainSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2, -134 )
+scale = Vector2( 0.72, 0.72 )
+frames = SubResource( 43 )
+animation = "artbookmain"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2, -133.5 )
+shape = SubResource( 1 )
+
+[node name="TalktoArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalktoArea"]
+position = Vector2( 2, -133.5 )
+shape = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 14
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 531, 306 )
+frames = SubResource( 6 )
+animation = "nortubel world map"
+frame = 5
+playing = true
+
+[node name="Basicmessage" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Basicmessage"]
+margin_left = 267.0
+margin_top = 501.0
+margin_right = 773.0
+margin_bottom = 583.0
+texture = ExtResource( 4 )
+region_rect = Rect2( -8.50003, -6, 432, 423 )
+patch_margin_left = 31
+patch_margin_top = 23
+patch_margin_right = 19
+patch_margin_bottom = 19
+
+[node name="Label" type="Label" parent="Basicmessage/NinePatchRect"]
+margin_left = 7.0
+margin_top = 6.0
+margin_right = 265.0
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 40 )
+text = "PRESS_Q_TO_READ_MIRROR"
+
+[connection signal="body_entered" from="TalktoArea" to="." method="_on_TalktoArea_body_entered"]
+[connection signal="body_exited" from="TalktoArea" to="." method="_on_TalktoArea_body_exited"]
