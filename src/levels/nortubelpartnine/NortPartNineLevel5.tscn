@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://src/enemies/untotern/UntoDesolate.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/enemies/lahiurn/LahiurnNightRider.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=41]
+[ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=42]
 
 [node name="NortPartNineLevel5" type="Node2D"]
 
@@ -381,3 +382,7 @@ spritename = "krimbstone health"
 [node name="Health Pickup2" parent="." instance=ExtResource( 41 )]
 position = Vector2( 9669, 946 )
 spritename = "lahiurn health"
+
+[node name="ArtBook" parent="." instance=ExtResource( 42 )]
+position = Vector2( 12960, 952 )
+boardname = "brink art donka dancing"

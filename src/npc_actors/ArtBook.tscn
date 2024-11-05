@@ -1,4 +1,4 @@
-[gd_scene load_steps=282 format=2]
+[gd_scene load_steps=284 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -142,6 +142,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art ab yz reference.png" type="Texture" id=140]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art unto and jack enemies.png" type="Texture" id=141]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 3 boys 1 girl summer.png" type="Texture" id=142]
+[ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art bonka dancing.png" type="Texture" id=143]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -188,6 +189,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=78]
 atlas = ExtResource( 64 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=163]
+atlas = ExtResource( 143 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=82]
@@ -727,6 +732,11 @@ animations = [ {
 "frames": [ SubResource( 78 ) ],
 "loop": false,
 "name": "brink art claudia reference",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 163 ) ],
+"loop": false,
+"name": "brink art donka dancing",
 "speed": 0.0
 }, {
 "frames": [ SubResource( 82 ) ],
@@ -1338,7 +1348,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "nort art 3 boys 1 girl summer"
+animation = "brink art donka dancing"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
