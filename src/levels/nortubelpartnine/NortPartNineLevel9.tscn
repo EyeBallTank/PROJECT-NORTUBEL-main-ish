@@ -111,17 +111,17 @@ collision_mask = 0
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 453, 1223 )
+position = Vector2( 661, 1223 )
 playerskin = "res://assets/sprites/play_actor_sprites/CarrieSprites.tres"
 
 [node name="playerspawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( 442, 1274 )
+position = Vector2( 650, 1274 )
 
 [node name="companionspawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 258, 1278 )
+position = Vector2( 466, 1278 )
 
 [node name="Companion" parent="." instance=ExtResource( 6 )]
-position = Vector2( 246, 1220 )
+position = Vector2( 454, 1220 )
 
 [node name="CurrentUI" parent="." instance=ExtResource( 5 )]
 
@@ -129,7 +129,7 @@ position = Vector2( 246, 1220 )
 position = Vector2( 296, 2360 )
 
 [node name="Rival" parent="." instance=ExtResource( 17 )]
-position = Vector2( 83, 1247 )
+position = Vector2( 107, 1247 )
 rivalskin = "res://assets/sprites/rival sprites/AltAngela.tres"
 somespeedvalue = 590
 
@@ -155,7 +155,8 @@ position = Vector2( 2478, 1316 )
 position = Vector2( 985, 1802 )
 
 [node name="RivalCompanion" parent="." instance=ExtResource( 25 )]
-position = Vector2( -86, 1259 )
+position = Vector2( -182, 1259 )
+somespeedvalue = 575
 
 [node name="NortEndgamePortal" parent="." instance=ExtResource( 26 )]
 position = Vector2( 3142, 2111 )

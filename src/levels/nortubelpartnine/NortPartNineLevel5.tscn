@@ -377,3 +377,7 @@ position = Vector2( -151, -415 )
 [node name="Health Pickup" parent="." instance=ExtResource( 41 )]
 position = Vector2( 3317, 818 )
 spritename = "krimbstone health"
+
+[node name="Health Pickup2" parent="." instance=ExtResource( 41 )]
+position = Vector2( 9669, 946 )
+spritename = "lahiurn health"

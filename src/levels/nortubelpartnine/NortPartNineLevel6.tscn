@@ -44,7 +44,6 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=42]
 
 [node name="NortPartNineLevel6" type="Node2D"]
-position = Vector2( -8899, -2432 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

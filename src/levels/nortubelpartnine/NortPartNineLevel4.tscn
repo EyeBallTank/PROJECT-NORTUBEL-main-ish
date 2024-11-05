@@ -309,6 +309,11 @@ position = Vector2( -3904, 1344 )
 scale = Vector2( 24, 368 )
 collision_newsize = Vector2( 24, 368 )
 
+[node name="Ladder4" parent="." instance=ExtResource( 38 )]
+position = Vector2( -3139, -600 )
+scale = Vector2( 16, 48 )
+collision_newsize = Vector2( 16, 48 )
+
 [node name="Ladder3" parent="." instance=ExtResource( 38 )]
 position = Vector2( 928, 1536 )
 scale = Vector2( 8, 56 )
