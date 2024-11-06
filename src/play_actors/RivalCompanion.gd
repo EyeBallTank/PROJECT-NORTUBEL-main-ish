@@ -12,6 +12,7 @@ onready var rundetect = $Rundetect
 onready var swimrightdetect = $Swimrightdetect
 onready var swimupdetect = $Swimupdetect
 onready var crawldetect = $Crawldetect
+onready var maincollision = $CollisionShape2D
 
 var climbspeed = 360
 
@@ -158,6 +159,8 @@ func _physics_process(delta):
 
 			if detect_run():
 				state = RUN
+#				maincollision.shape.extents = 
+#				maincollision.position = 
 			vel.x = direction.x * 350
 
 			if is_on_floor() and not was_on_floor:
