@@ -44,7 +44,7 @@ extents = Vector2( 26.5, 123.5 )
 [sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 5.5, 121 )
 
-[node name="Rival" type="KinematicBody2D" groups=["rival"]]
+[node name="Rival" type="KinematicBody2D" groups=["rival", "rivalmain"]]
 z_index = 10
 collision_layer = 16384
 collision_mask = 276

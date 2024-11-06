@@ -147,7 +147,7 @@ extents = Vector2( 25.5, 82.5 )
 [sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 5.5, 82.5 )
 
-[node name="RivalCompanion" type="KinematicBody2D" groups=["rival"]]
+[node name="RivalCompanion" type="KinematicBody2D" groups=["rival", "rivalcompanion"]]
 z_index = 10
 collision_layer = 16384
 collision_mask = 276
@@ -158,6 +158,7 @@ position = Vector2( 0, -133 )
 scale = Vector2( 0.64, 0.64 )
 frames = SubResource( 38 )
 animation = "Crawlling"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
