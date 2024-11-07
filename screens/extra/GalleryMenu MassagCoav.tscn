@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art holmes reference 2.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art fernaanda reference.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art touni reference.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art karla reference.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art elegantissia map 2.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art alt fernaanda reference.png" type="Texture" id=16]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=23]
@@ -82,9 +83,13 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 15 )
 region = Rect2( 0, 0, 613, 449 )
 
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 749, 449 )
+
 [sub_resource type="SpriteFrames" id=27]
 animations = [ {
-"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 33 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 33 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
@@ -94,7 +99,7 @@ animations = [ {
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 32 )
-number = 14
+number = 15
 
 [node name="MenuBg" type="Sprite" parent="."]
 position = Vector2( 512, 300 )
@@ -114,7 +119,7 @@ margin_top = 558.0
 margin_right = 665.0
 margin_bottom = 575.0
 custom_fonts/font = ExtResource( 31 )
-text = "15 Image(n)s"
+text = "16 Image(n)s"
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_left = 76.0

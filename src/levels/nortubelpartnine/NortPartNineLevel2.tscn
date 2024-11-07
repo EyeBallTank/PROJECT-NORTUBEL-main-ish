@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -42,6 +42,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=42]
+[ext_resource path="res://src/npc_actors/massag npc/AltFernaandaNPC.tscn" type="PackedScene" id=43]
 
 [node name="NortPartNineLevel2" type="Node2D"]
 
@@ -375,3 +376,12 @@ collision_newsize = Vector2( 64, 8 )
 
 [node name="MovingPlatHoriz" parent="." instance=ExtResource( 42 )]
 position = Vector2( 4833, 963 )
+
+[node name="ArtBook2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 6622, 230 )
+boardname = "massag art alt fernaanda reference"
+
+[node name="AltFernaandaNPC" parent="." instance=ExtResource( 43 )]
+position = Vector2( 7625, 105 )
+customtext = "ALT_FERNAANDA_NPC_TEXT"
+customname = "Nosnhoj Adnaanref"
