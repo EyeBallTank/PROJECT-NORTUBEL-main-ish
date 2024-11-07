@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -42,6 +42,7 @@
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=42]
+[ext_resource path="res://src/npc_actors/nort npc/HateMachineNPC.tscn" type="PackedScene" id=43]
 
 [node name="NortPartNineLevel6" type="Node2D"]
 
@@ -332,7 +333,7 @@ scale = Vector2( 48, 8 )
 collision_newsize = Vector2( 48, 8 )
 
 [node name="Health Pickup" parent="." instance=ExtResource( 40 )]
-position = Vector2( 3944, 2272 )
+position = Vector2( 4176, 2272 )
 spritename = "massagcoav health"
 
 [node name="Health Pickup2" parent="." instance=ExtResource( 40 )]
@@ -361,3 +362,8 @@ spritename = "lahiurn coin"
 [node name="Coin5" parent="." instance=ExtResource( 42 )]
 position = Vector2( 4561, 185 )
 spritename = "krimbstone coin"
+
+[node name="HateMachineNPC" parent="." instance=ExtResource( 43 )]
+position = Vector2( 3824, 2248 )
+customtext = "HATE_MACHINE_NPC_TALK"
+customname = "HATE_MACHINE_NAME_TEXT"
