@@ -26,6 +26,7 @@ texture = ExtResource( 5 )
 
 [node name="ImagesToShow" parent="." instance=ExtResource( 8 )]
 collision_mask = 4
+number = 9
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_left = 74.0
