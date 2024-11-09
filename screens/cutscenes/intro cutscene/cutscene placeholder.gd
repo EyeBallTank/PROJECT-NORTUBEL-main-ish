@@ -97,6 +97,11 @@ func cutscene_over():
 #Ivan: There's more to come. How many did you got so far?
 #Lahrn: We're almost on the same score. But I'm getting sick of these creatures. There has to be some other pest woth exterminating.
 #Maikouto: You boys were obviously distracted. I got the highest score.
+#Krahq: Hey boss.. see the look of those freaks? Even I wanna get dirty on them.
+#Bullet: Oohhh, Krahq, I'm feeling it... but I have a suspicion these might be a little difficult to handle. i don't wanna take any chances this time.
+#Lomeshtin: My beautiful city... this can't be happening!!!
+#Grek soldier: Sir, we're being attacked by unidentified beings. Should be fight back?
+#Simo: Don't worry... I believe one of our best is already taking good care of this... 
 #Galaghar: Hm. Whatever it is, I don't think Lakk could pull this off.
 #Reptile: I wonder if this has anything to do with that guy cut in half from the other day.
 #Avietta: I think Leon and Otto might want to know what's goin on.
@@ -170,6 +175,7 @@ func cutscene_over():
 #Yiegour: B-Man to Grek base... found the "Nortubese" kids... and the girl Leon talked about.
 #Carrie: MISTER YIEGOUR! LEON?
 #Leon: HELLO WORLD! Sadly, my brother isn't here with me but he's also helping with this situation.
+#Leon: He even kept giving people translation devices without them even knowing. At least people could have a chance to understand each other in a rather confusing situation.
 #Katrin: How did you found us?
 #Leon: It's that box of yours! Portals kept showing up and we got access to some places that you've visited.
 #Leon: But believe it or not, Bonka once stepped into our world for a short period of time... and she didn't notice but I put in a translation device in her pocket, just in case she'd stumble to someone with different languages.
@@ -180,6 +186,7 @@ func cutscene_over():
 #Yiegour: Not only that, this little guy says even other universes can be fixed and we've already helped some people.
 #Yiegour: But in other cases, we also faced challenges... and you all might know how I fixed some.
 #Leon: Though you still haven't killed or found that alien you kept talking about. In any case, we better get going.
+
 
 #HERE'S THE OTHER CUTSCENE
 #the 9 go to a journey and find a portal to Nortubel

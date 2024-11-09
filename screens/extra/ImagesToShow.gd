@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 #NOTE: I WISH THERE WAS A WAT TO LIMIT THE SCALE
 
-export var number = 8
+export var number = 9
 var currentFrame: int = 0
 
 onready var sprite = $AnimatedSprite
@@ -46,7 +46,7 @@ func _process(delta):
 		scale -= scale_speed * delta * Vector2(1, 1)
 	elif Input.is_action_pressed("stellajump"):
 		scale += scale_speed * delta * Vector2(1, 1)
-		print(scale)
+#		print(scale)
 
 	if scale > Vector2(6, 6):
 		scale = Vector2(6, 6)
