@@ -19,6 +19,7 @@
 [ext_resource path="res://assets/CreditsScreeen.tres" type="Theme" id=17]
 [ext_resource path="res://screens/LevelPasswordList.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/PASSWORD EMPTY BAR FOR TEXT TEST.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/Another password bar test.tres" type="Theme" id=20]
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3
@@ -34,11 +35,6 @@ font_data = ExtResource( 2 )
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
-
-[sub_resource type="Theme" id=8]
-LineEdit/colors/font_color_selected = Color( 0.0705882, 0.556863, 0.345098, 1 )
-LineEdit/fonts/font = ExtResource( 5 )
-LineEdit/icons/clear = null
 
 [node name="MainMenu" type="Control"]
 pause_mode = 2
@@ -363,6 +359,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "PT"
 
 [node name="PasswordMenu" type="Control" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -379,8 +376,8 @@ position = Vector2( 260, 135.5 )
 texture = ExtResource( 15 )
 
 [node name="PasswordEmptyBarForTextTest" type="Sprite" parent="PasswordMenu/Sprite"]
-position = Vector2( 243.017, 137.537 )
-scale = Vector2( 1.03433, 1.07407 )
+position = Vector2( 243.021, 143.648 )
+scale = Vector2( 1.04292, 1.2963 )
 texture = ExtResource( 19 )
 
 [node name="LineEdit" type="LineEdit" parent="PasswordMenu"]
@@ -389,10 +386,10 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -116.5
-margin_top = -12.0
+margin_top = -6.00003
 margin_right = 116.5
-margin_bottom = 12.0
-theme = SubResource( 8 )
+margin_bottom = 18.0
+theme = ExtResource( 20 )
 
 [node name="BackFromOptions3" type="TextureButton" parent="PasswordMenu"]
 anchor_left = 0.5

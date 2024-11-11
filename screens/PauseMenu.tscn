@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://screens/PauseMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/pause visibility toggle.png" type="Texture" id=11]
 [ext_resource path="res://assets/CreditsScreeen.tres" type="Theme" id=12]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/Another password bar test.tres" type="Theme" id=13]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/PASSWORD EMPTY BAR FOR TEXT TEST.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=3]
 outline_size = 3
@@ -320,6 +322,11 @@ margin_top = 201.0
 margin_right = 817.0
 margin_bottom = 477.0
 
+[node name="PasswordEmptyBarForTextTest" type="Sprite" parent="PasswordMenu"]
+position = Vector2( 305.579, 138.667 )
+scale = Vector2( 1.1588, 1.33333 )
+texture = ExtResource( 14 )
+
 [node name="LineEdit" type="LineEdit" parent="PasswordMenu"]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -329,6 +336,7 @@ margin_left = -130.5
 margin_top = -12.0
 margin_right = 129.5
 margin_bottom = 12.0
+theme = ExtResource( 13 )
 
 [node name="BackFromOptions3" type="TextureButton" parent="PasswordMenu"]
 anchor_left = 0.5
