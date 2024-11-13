@@ -1,10 +1,29 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 7.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 8.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 9.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 2.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 3.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 5.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 4.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 6.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 15.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 14.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 16.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 10.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 13.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 19.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 17.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 12.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 11.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 18.png" type="Texture" id=24]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +90,90 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="Cutscene32NortpartnineHomePanel1" type="Sprite" parent="."]
+position = Vector2( 506, 243 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene32NortpartnineHomePanel2" type="Sprite" parent="."]
+position = Vector2( 1252, 236 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene32NortpartnineHomePanel3" type="Sprite" parent="."]
+position = Vector2( -82, 235 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene32NortpartnineHomePanel4" type="Sprite" parent="."]
+position = Vector2( -357, 229 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene32NortpartnineHomePanel5" type="Sprite" parent="."]
+position = Vector2( 1672, 234 )
+scale = Vector2( 1.68812, 1.68812 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene32NortpartnineHomePanel6" type="Sprite" parent="."]
+position = Vector2( -737, 226 )
+scale = Vector2( 1.53778, 1.53778 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene32NortpartnineHomePanel7" type="Sprite" parent="."]
+position = Vector2( 450, -243 )
+texture = ExtResource( 6 )
+
+[node name="Cutscene32NortpartnineHomePanel8" type="Sprite" parent="."]
+position = Vector2( -1248, 237.618 )
+scale = Vector2( 1.23677, 1.23677 )
+texture = ExtResource( 7 )
+
+[node name="Cutscene32NortpartnineHomePanel9" type="Sprite" parent="."]
+position = Vector2( 215, -698 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene32NortpartnineHomePanel10" type="Sprite" parent="."]
+position = Vector2( 527, -697 )
+texture = ExtResource( 18 )
+
+[node name="Cutscene32NortpartnineHomePanel11" type="Sprite" parent="."]
+position = Vector2( 837, -698 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene32NortpartnineHomePanel12" type="Sprite" parent="."]
+position = Vector2( -1894, 229 )
+texture = ExtResource( 22 )
+
+[node name="Cutscene32NortpartnineHomePanel13" type="Sprite" parent="."]
+position = Vector2( 2245, 230 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene32NortpartnineHomePanel14" type="Sprite" parent="."]
+position = Vector2( -2543, 230 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene32NortpartnineHomePanel15" type="Sprite" parent="."]
+position = Vector2( 2902, 244 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene32NortpartnineHomePanel16" type="Sprite" parent="."]
+position = Vector2( 497, -1134 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene32NortpartnineHomePanel17" type="Sprite" parent="."]
+position = Vector2( 478, -1598 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene32NortpartnineHomePanel18" type="Sprite" parent="."]
+position = Vector2( 3496, 234 )
+texture = ExtResource( 24 )
+
+[node name="Cutscene32NortpartnineHomePanel19" type="Sprite" parent="."]
+position = Vector2( -3104, 238.129 )
+scale = Vector2( 1.25806, 1.25806 )
+texture = ExtResource( 20 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
