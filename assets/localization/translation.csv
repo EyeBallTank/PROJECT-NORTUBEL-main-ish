@@ -1171,6 +1171,14 @@ Se é verdade, não podem ser assim tão estranhos."
 CUTSCENE_10_TALK_7,"Either way, I wanna see if this guy is that good.","De qualquer maneira, eu quero ver se este tipo é assim tão bom."
 MANUAL_B,Instructions,Instruções
 MANUAL_MAIN_TEXT,"
+   Note: The first levels have tutorials with some of this info.
+
+   This text is just another way to learn about the game.
+
+   Otherwise, you may want to learn the game in a more interactive way.
+
+
+
    ESC: Pause menu
 
    , when paused: ""Screenshot friendly"" setting
@@ -1305,6 +1313,14 @@ MANUAL_MAIN_TEXT,"
 
 
 ","
+   Nota: Os primeiros níveis têm tutoriais com alguma informação desta secção.
+
+   Este texto é só uma outra forma de aprender o jogo.
+
+   Caso contrário, pode querer aprender o jogo de uma forma mais interativa.
+
+
+
    ESC: Menu de pausa
 
    , na pausa: Modo ""bom para screenshots""

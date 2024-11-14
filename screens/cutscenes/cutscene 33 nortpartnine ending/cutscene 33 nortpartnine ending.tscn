@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/oscar katrin lunch.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/carrie katrin kiss.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -71,9 +73,19 @@ text = "1
 "
 
 [node name="In front of dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="OscarKatrinLunch" type="Sprite" parent="."]
+position = Vector2( 518, 1283 )
+texture = ExtResource( 6 )
+
+[node name="CarrieKatrinKiss" type="Sprite" parent="."]
+position = Vector2( 504, 1321 )
+scale = Vector2( 1.2973, 1.2973 )
+texture = ExtResource( 7 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
