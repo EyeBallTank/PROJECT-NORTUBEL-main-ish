@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -7,6 +7,32 @@
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/oscar katrin lunch.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/carrie katrin kiss.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 17.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 9.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 20.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 3.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 11.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 14.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 10.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 22.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 7.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 19.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 23.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 4.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 5.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 13.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 21.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 8.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 16.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 18.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 24.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 25.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 12.png" type="Texture" id=29]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 15.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 6.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 2.png" type="Texture" id=32]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 26.png" type="Texture" id=33]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -78,14 +104,137 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
+[node name="Cutscene33NortpartnineEndingPanel1" type="Sprite" parent="."]
+position = Vector2( 515, 233 )
+scale = Vector2( 1.26531, 1.26531 )
+texture = ExtResource( 9 )
+
+[node name="Cutscene33NortpartnineEndingPanel2" type="Sprite" parent="."]
+position = Vector2( 237.579, -250 )
+scale = Vector2( 1.53947, 1.53947 )
+texture = ExtResource( 32 )
+
+[node name="Cutscene33NortpartnineEndingPanel3" type="Sprite" parent="."]
+position = Vector2( -210, 227.514 )
+scale = Vector2( 1.02772, 1.02772 )
+texture = ExtResource( 12 )
+
+[node name="Cutscene33NortpartnineEndingPanel4" type="Sprite" parent="."]
+position = Vector2( 1313, 224 )
+scale = Vector2( 1.05804, 1.05804 )
+texture = ExtResource( 20 )
+
+[node name="Cutscene33NortpartnineEndingPanel5" type="Sprite" parent="."]
+position = Vector2( -722, 226 )
+scale = Vector2( 1.03509, 1.03509 )
+texture = ExtResource( 21 )
+
+[node name="Cutscene33NortpartnineEndingPanel6" type="Sprite" parent="."]
+position = Vector2( 1927, 234.5 )
+scale = Vector2( 1.04299, 1.04299 )
+texture = ExtResource( 31 )
+
+[node name="Cutscene33NortpartnineEndingPanel7" type="Sprite" parent="."]
+position = Vector2( 179, -709.701 )
+scale = Vector2( 1.29134, 1.29134 )
+texture = ExtResource( 17 )
+
+[node name="Cutscene33NortpartnineEndingPanel8" type="Sprite" parent="."]
+position = Vector2( 562, -709.364 )
+scale = Vector2( 1.27213, 1.27213 )
+texture = ExtResource( 24 )
+
+[node name="Cutscene33NortpartnineEndingPanel9" type="Sprite" parent="."]
+position = Vector2( 873, -711 )
+texture = ExtResource( 10 )
+
+[node name="Cutscene33NortpartnineEndingPanel10" type="Sprite" parent="."]
+position = Vector2( -1352, 235 )
+texture = ExtResource( 15 )
+
+[node name="Cutscene33NortpartnineEndingPanel11" type="Sprite" parent="."]
+position = Vector2( 2582, 222 )
+texture = ExtResource( 13 )
+
+[node name="Cutscene33NortpartnineEndingPanel12" type="Sprite" parent="."]
+position = Vector2( -1907, 237 )
+texture = ExtResource( 29 )
+
+[node name="Cutscene33NortpartnineEndingPanel13" type="Sprite" parent="."]
+position = Vector2( 493, -1092 )
+scale = Vector2( 1.80383, 1.80383 )
+texture = ExtResource( 22 )
+
 [node name="OscarKatrinLunch" type="Sprite" parent="."]
-position = Vector2( 518, 1283 )
+position = Vector2( 491, -1553 )
 texture = ExtResource( 6 )
 
+[node name="Cutscene33NortpartnineEndingPanel14" type="Sprite" parent="."]
+position = Vector2( 3200, 234.76 )
+scale = Vector2( 1.5203, 1.5203 )
+texture = ExtResource( 14 )
+
+[node name="Cutscene33NortpartnineEndingPanel15" type="Sprite" parent="."]
+position = Vector2( -2438, 234 )
+scale = Vector2( 1.04245, 1.04245 )
+texture = ExtResource( 30 )
+
+[node name="Cutscene33NortpartnineEndingPanel16" type="Sprite" parent="."]
+position = Vector2( 3914, 236.5 )
+scale = Vector2( 1.05324, 1.05324 )
+texture = ExtResource( 25 )
+
+[node name="Cutscene33NortpartnineEndingPanel17" type="Sprite" parent="."]
+position = Vector2( -2999, 242 )
+scale = Vector2( 1.81169, 1.81169 )
+texture = ExtResource( 8 )
+
+[node name="Cutscene33NortpartnineEndingPanel18" type="Sprite" parent="."]
+position = Vector2( 501, -2067 )
+scale = Vector2( 1.51324, 1.51324 )
+texture = ExtResource( 26 )
+
+[node name="Cutscene33NortpartnineEndingPanel19" type="Sprite" parent="."]
+position = Vector2( 4610, 249 )
+scale = Vector2( 2.35065, 2.35065 )
+texture = ExtResource( 18 )
+
 [node name="CarrieKatrinKiss" type="Sprite" parent="."]
-position = Vector2( 504, 1321 )
+position = Vector2( 509, -2545 )
 scale = Vector2( 1.2973, 1.2973 )
 texture = ExtResource( 7 )
+
+[node name="Cutscene33NortpartnineEndingPanel20" type="Sprite" parent="."]
+position = Vector2( -3579, 229 )
+scale = Vector2( 1.33798, 1.33798 )
+texture = ExtResource( 11 )
+
+[node name="Cutscene33NortpartnineEndingPanel21" type="Sprite" parent="."]
+position = Vector2( 5156, 236 )
+texture = ExtResource( 23 )
+
+[node name="Cutscene33NortpartnineEndingPanel22" type="Sprite" parent="."]
+position = Vector2( -4175, 239.046 )
+scale = Vector2( 1.09113, 1.09113 )
+texture = ExtResource( 16 )
+
+[node name="Cutscene33NortpartnineEndingPanel23" type="Sprite" parent="."]
+position = Vector2( 515, -3004 )
+scale = Vector2( 1.20588, 1.20588 )
+texture = ExtResource( 19 )
+
+[node name="Cutscene33NortpartnineEndingPanel24" type="Sprite" parent="."]
+position = Vector2( -4730, 234 )
+texture = ExtResource( 27 )
+
+[node name="Cutscene33NortpartnineEndingPanel25" type="Sprite" parent="."]
+position = Vector2( 5630, 234 )
+texture = ExtResource( 28 )
+
+[node name="Cutscene33NortpartnineEndingPanel26" type="Sprite" parent="."]
+position = Vector2( 666, -3440 )
+scale = Vector2( 2.2465, 2.2465 )
+texture = ExtResource( 33 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
