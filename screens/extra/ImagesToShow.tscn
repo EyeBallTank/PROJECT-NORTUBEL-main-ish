@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://screens/extra/ImagesToShow.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites nortubel.png" type="Texture" id=2]
@@ -11,6 +11,19 @@
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites herrko.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites lahiurn.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/full sprites of rivals.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/full sprites of player characters.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/full sprites of uulga and stella.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase brinkaedea.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase untotern.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase other.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase nortubel.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase massagcoav.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase lahiurn.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase guests.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase hirdrih.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase herrko.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase krimbstone.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase greklovick.png" type="Texture" id=24]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -50,13 +63,65 @@ region = Rect2( 0, 0, 4228, 1781 )
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 3943, 2033 )
 
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 7444, 4999 )
+
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 2423, 3436 )
 
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 4094, 2218 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 2042, 3142 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 0, 2263, 973 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 23 )
+region = Rect2( 0, 0, 2226, 1136 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 2131, 3633 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 24 )
+region = Rect2( 0, 0, 2151, 1801 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 1757, 1157 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 19 )
+region = Rect2( 0, 0, 931, 1196 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 1972, 2135 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 15 )
+region = Rect2( 0, 0, 2714, 3098 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 814, 741 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 0, 3608, 1937 )
+
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 13 ), SubResource( 12 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
