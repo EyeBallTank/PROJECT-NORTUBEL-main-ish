@@ -28,3 +28,11 @@ func disappear():
 
 func therefore_I_Go():
 	disappear()
+
+
+func _on_PlayerPickMe_body_entered(body):
+	if body.name == "Player" and body.hasball == false:
+		body.hasball = true
+		animationplayer.play("PlayerPickedBall")
+	else:
+		pass

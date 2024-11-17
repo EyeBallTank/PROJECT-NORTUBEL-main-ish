@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=2]
@@ -8,6 +8,51 @@
 [ext_resource path="res://screens/extra/ItemsAndThemeGallery.gd" type="Script" id=6]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=7]
 [ext_resource path="res://screens/extra/ImagesToShow.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/backgrounds for alternate gallery.png" type="Texture" id=9]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 600, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 9 )
+region = Rect2( 1024, 0, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 1800, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 9 )
+region = Rect2( 1024, 1200, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 9 )
+region = Rect2( 1024, 600, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 1200, 1024, 600 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 9 )
+region = Rect2( 1024, 1800, 1024, 600 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4306, 10 )
@@ -20,9 +65,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 6 )
 
-[node name="MenuBg" type="Sprite" parent="."]
+[node name="MenuBg" type="AnimatedSprite" parent="."]
 position = Vector2( 512, 300 )
-texture = ExtResource( 5 )
+scale = Vector2( 1, 1 )
+frames = SubResource( 4 )
 
 [node name="ImagesToShow" parent="." instance=ExtResource( 8 )]
 collision_mask = 4
@@ -57,9 +103,9 @@ patch_margin_bottom = 5
 
 [node name="Label" type="Label" parent="NinePatchRect"]
 margin_left = 98.0
-margin_top = 21.0
+margin_top = 7.0
 margin_right = 539.0
-margin_bottom = 38.0
+margin_bottom = 24.0
 custom_fonts/font = ExtResource( 4 )
 text = "IMAGES_TO_SHOW_CONTROLS_TEXT"
 

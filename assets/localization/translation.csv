@@ -3071,7 +3071,9 @@ Mas sei que a sua espécie nojenta pode fazer melhor."
 TFOORIE_NPC_HUG,It seems these creatures aren't inherently violent.,Parece que estas criaturas não são inerentemente violentas.
 TFOORIE_NPC_HONK,Is this how those of your species greet each other?,É assim que os da sua espécie se cumprimentam uns aos outros
 ARTGALLERY_SPACEBAR_TEXT,Press space to change image.,Prime espaço para mudar de imagem.
-IMAGES_TO_SHOW_CONTROLS_TEXT,ARROWS: MOVE    Z/X: ZOOM          SPACE: RESET   C:CHANGE IMAGE,SETAS: MOVER    Z/X: ZOOM      ESPAÇO: REPOR   C: ALTERAR IMAGEM
+IMAGES_TO_SHOW_CONTROLS_TEXT,"ARROWS: MOVE    Z/X: ZOOM          SPACE: RESET   C:CHANGE IMAGE
+Q: CHANGE BACKGROUND","SETAS: MOVER    Z/X: ZOOM      ESPAÇO: REPOR   C: ALTERAR IMAGEM
+Q: MUDAR DE FUNDO"
 BOOK_HINT_SOCCER_CONTROLS_REVISED,"That bag gives you one soccer ball if you got none.
 Touch the bag again if you want another ball.
 Ball kick attack: Down
@@ -3439,3 +3441,4 @@ CUTSCENE_33_TALK_54,"Thanks, sir but... why did you save us?","Obrigado, senhor 
 CUTSCENE_33_TALK_55,Because we have important things to do... and I know who you are...,Porque temos assuntos importantes para tratar... e sei quem são vocês...
 CUTSCENE_33_TALK_56,"Who are you, mister?","Quem é você, senhor?"
 CUTSCENE_33_TALK_57,You can call me Yiegour Sarvotsky.,Podem me chamar Yiegour Sarvotsky.
+BULLET_NAME_TEXT,"""Bullet""","""Bala"""
