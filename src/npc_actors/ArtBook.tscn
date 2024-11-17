@@ -1,4 +1,4 @@
-[gd_scene load_steps=286 format=2]
+[gd_scene load_steps=288 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -144,6 +144,7 @@
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nort art 3 boys 1 girl summer.png" type="Texture" id=142]
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art bonka dancing.png" type="Texture" id=143]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art alt fernaanda reference.png" type="Texture" id=144]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art bullet reference.png" type="Texture" id=145]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -422,6 +423,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=165]
+atlas = ExtResource( 145 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=12]
@@ -989,6 +994,11 @@ animations = [ {
 "name": "hirdrih leon head",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 165 ) ],
+"loop": false,
+"name": "krimb art bullet reference",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 12 ) ],
 "loop": false,
 "name": "krimbart booker backstory",
@@ -1358,7 +1368,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "massag art alt fernaanda reference"
+animation = "krimb art bullet reference"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

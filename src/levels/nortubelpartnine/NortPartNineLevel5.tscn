@@ -386,3 +386,7 @@ spritename = "lahiurn health"
 [node name="ArtBook" parent="." instance=ExtResource( 42 )]
 position = Vector2( 12960, 952 )
 boardname = "brink art donka dancing"
+
+[node name="ArtBook2" parent="." instance=ExtResource( 42 )]
+position = Vector2( 4184, -1304 )
+boardname = "krimb art bullet reference"
