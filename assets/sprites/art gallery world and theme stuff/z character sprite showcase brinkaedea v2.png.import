@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/z character sprite showcase greklovick.png-aaff7905d11b88f78414ffa5668df042.stex"
+path="res://.import/z character sprite showcase brinkaedea v2.png-bef9d81d3cd03b15c553d529a75120b0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase greklovick.png"
-dest_files=[ "res://.import/z character sprite showcase greklovick.png-aaff7905d11b88f78414ffa5668df042.stex" ]
+source_file="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase brinkaedea v2.png"
+dest_files=[ "res://.import/z character sprite showcase brinkaedea v2.png-bef9d81d3cd03b15c553d529a75120b0.stex" ]
 
 [params]
 
