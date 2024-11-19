@@ -12,18 +12,18 @@ func ready():
 	$Sprite.animation = "silent"
 
 func _on_Gong_body_entered(body):
-#	if body.is_in_group("protagonists"):
-	if not active:
-		if body.last_checkpoint != null:
-			body.last_checkpoint.desactivate()
-		Player.last_checkpoint = self
-		Companion.last_checkpoint = self
-		audioPlayer.play()
-		animationplayer.play("TOUCHED")
-		active = true
-		$Sprite.animation = "active"
-		yield(animationplayer, "animation_finished")
-		$Sprite.animation = "silent"
+	if body.is_in_group("nortubese"):
+		if not active:
+			if body.last_checkpoint != null:
+				body.last_checkpoint.desactivate()
+			Player.last_checkpoint = self
+			Companion.last_checkpoint = self
+			audioPlayer.play()
+			animationplayer.play("TOUCHED")
+			active = true
+			$Sprite.animation = "active"
+			yield(animationplayer, "animation_finished")
+			$Sprite.animation = "silent"
 #		Signals.emit_signal("hit_checkpoint", position)
 #		if body.health == 0:
 #			body.global_position = global_position
