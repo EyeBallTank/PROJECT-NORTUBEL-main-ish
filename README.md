@@ -66,28 +66,28 @@ Done (Even if it could be better):
 * SPACE/GRAVITY ELEMENTS: At least one level is planned to have this.
 * NPC'S AND SIDE CHARACTERS: They're basic but I figured out some good enough stuff.
 * INGAME TEXTS: Yellow and brown objects you interact to read stuff.
-* INGAME GALLERY: Similar to above.
+* INGAME GALLERY: Similar to above. Now you have an actual gallery.
 
 
-Not yet:
-* SAVE/LOAD: Need to understand clearly how it can work and avoid the least amount of problems.
-* LEVEL SELECT/HUB: Not sure exactly how level selection would work.
-* "SADNESS" STATE: The idea is that when a character dies, the other is in a "sad state"; This is just a way to "lock" one character when the other is dead, so both respawn when a life is lost.
-* HUD/UI DESIGN: Is barely there/needs to be developed and with a proper style.
-* SPRITES: Every art here is placehoder art so "real sprites" aren't used yet; The game has 6 main characters being 3 older siblings and 3 younger siblings, so their current sprites reflect that even if they could've been better (They also have the same gameplay); Each level has 2 characters and i use an export var to change the characters on each level.
-* BOSS FIGHTS: Will probably be a very complex inclusion.
-* DIALOGUE SYSTEM: Will i use the Dialogic addon? Not sure.
-* COLLECTABLES: Special objects to be collected for fun is something i'd like to try, like "lore texts" or art gallery stuff.
-* NICE VISUALS: It's not just about pretty visuals for the sake of it, things like feedback could be important.
-* BACKGROUNDS AND DECORATIONS: Oh yeah, i guess i could add this to the list.
-* UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: One of those nice little touches like getting the siblings to play a game or read a book etc.
-* SOUND/MUSIC: Nothing except for basic sounds for some objects; I do not want voice acting at all, at least.
-* BETTER ORGANIZATION BEHIND THE SCENES: Like methods to make the game's inner workings more flexible or supportive of some stuff; It depends if certain stuff is that mandatory and if i can get away with some other methods.
-* ALTERNATE/SECRET LEVELS: Ideally, these levels could be an excuse for me to show characters and settings from different worlds.
-* SECRETS IN LEVELS: Maybe some could be easy stuff like things hidden behind walls but more interesting secrets need work and thinking.
-* BONUS STAGES: I'd also make them timed/optional; An idea i had was top down minigame levels inspired by Binary Land and Chip's Challenge where the player controls 2 characters (With opposite horizontal movement) and face some level design challenges/features but the implementation shouldn't be overly complex; Maybe some fishing minigame could work.
-* RIVAL CHARACTERS: Most ambitious idea, because "rivals" in videogames are special ideas that need to be done well and in what is essentially a 2D puzzle game based around escort missions, it might be something really hard; In terms of story, these characters are "alternate dimension" versions of the protagonists.
-* VEHICLES: Maybe doesn't have to happen; It'd be a gimmicky, simple thing but i thought of things like Madeira's Toboggan couch/basket/sled hybrids, Paddle boats or even on-rail handcars; I see it as something mechanically simple that it could work for a minigame.
+Not yet (Some of these might as well be for another game, possibly in another version of Godot):
+* SAVE/LOAD: Nevermind that, the password system stays.
+* LEVEL SELECT/HUB: Ditched too, there's a board in the main menu with all passwords written.
+* "SADNESS" STATE: Also ditched, for another game maybe.
+* HUD/UI DESIGN: Maybe next game I could make something better.
+* SPRITES: Too late to change the style, expect a better one next game.
+* BOSS FIGHTS: 2 of them at least.
+* DIALOGUE SYSTEM: No, not the RPG kind. Either way, there's boxes with texts already.
+* COLLECTABLES: Not really, but that's ok.
+* NICE VISUALS: Not this game.
+* BACKGROUNDS AND DECORATIONS: Added plenty of them.
+* UNIMPORTANT INTERACTIONS BETWEEN MAIN CHARACTERS: Honestly, next game maybe.
+* SOUND/MUSIC: May have a chance in this game.
+* BETTER ORGANIZATION BEHIND THE SCENES: Too late unless it's something really important.
+* ALTERNATE/SECRET LEVELS: No need to, the game has lots of levels already.
+* SECRETS IN LEVELS: There are some, sort of.
+* BONUS STAGES: Again, in another game.
+* RIVAL CHARACTERS: Sort of but maybe another game could do it better.
+* VEHICLES: Not really but that's ok.
 
 I may end up changing this goal list as well.
 Meanwhile, here's some plans for the main story of the game:
@@ -235,7 +235,14 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Any help I can get from r/Godot, Discord and /agdg/.
 * Various media and stuff i took inspiration from and copied.
 * Blender and related addons, 3D software and certain models i used even in 2D art.
+* LMMS and various sound assets/samples from their site (Not yet).
 
 # ALSO: Feel free to give me Github and Godot related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
 Let's hope 2023 will be a more productive year.
+
+# EDITING AS OF NOVEMBER 2024
+I want to finish the game as soon as possible.
+So at some point, the game is complete and I moved on to something else UNLESS there's something severe like a game breaking bug or a softlock.
+I also put effort into making tutorials explain enough of the controls.
+With a new game, I could consider stuff that was discarded here.
