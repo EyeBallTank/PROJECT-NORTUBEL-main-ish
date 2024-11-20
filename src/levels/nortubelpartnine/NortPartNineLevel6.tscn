@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -43,6 +43,10 @@
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=42]
 [ext_resource path="res://src/npc_actors/nort npc/HateMachineNPC.tscn" type="PackedScene" id=43]
+[ext_resource path="res://src/enemies/hirdrih/HirdServant.tscn" type="PackedScene" id=44]
+[ext_resource path="res://src/enemies/lahiurn/EygzouhlSoldier.tscn" type="PackedScene" id=45]
+[ext_resource path="res://src/level_hazards/lahiurn/LahiurnFloorMine.tscn" type="PackedScene" id=46]
+[ext_resource path="res://src/level_hazards/untotern/UntoGiantZombieHand.tscn" type="PackedScene" id=47]
 
 [node name="NortPartNineLevel6" type="Node2D"]
 
@@ -191,6 +195,14 @@ collision_layer = 4
 collision_mask = 3
 format = 1
 tile_data = PoolIntArray( 3211331, 28, 0, 3211333, 27, 0, 3211335, 536870939, 0, 3211337, 536870940, 0, 3604563, 536870925, 0, 3604564, 536870925, 0, 3604565, 536870925, 0, 3604566, 536870925, 0, 3604567, 536870925, 0 )
+
+[node name="GREK RAD FRONT" type="TileMap" parent="."]
+z_index = 19
+tile_set = ExtResource( 8 )
+collision_layer = 4
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 3014679, 63, 0, 3014680, 64, 0, 3014681, 536870976, 0, 3014682, 64, 0, 3014683, 536870976, 0, 3014684, 64, 0, 3014685, -1610612673, 0, 3080215, -1073741760, 0, 3080216, -1610612735, 0, 3080217, -2147483577, 0, 3080218, -1610612735, 0, 3080219, -1610612735, 0, 3080220, -1610612735, 0, 3080221, -1610612672, 0, 3145751, -1073741760, 0, 3145752, 536870983, 0, 3145753, -1610612735, 0, 3145754, -1610612735, 0, 3145755, 71, 0, 3145756, -1610612735, 0, 3145757, -1610612672, 0, 3211287, -1073741760, 0, 3211288, -1610612735, 0, 3211289, 1610612807, 0, 3211290, -1610612735, 0, 3211291, -1610612735, 0, 3211292, -1610612735, 0, 3211293, -536870848, 0, 3211294, -1610612673, 0, 3276823, -1073741760, 0, 3276824, -1610612735, 0, 3276825, -1610612735, 0, 3276826, 1073741895, 0, 3276827, -1610612735, 0, 3276828, -1610612735, 0, 3276829, 536870977, 0, 3342359, -1073741760, 0, 3342360, -2147483577, 0, 3342361, -1610612735, 0, 3342362, -1610612735, 0, 3342363, -536870841, 0, 3342364, -1610612735, 0, 3342365, -1610612735, 0, 3407895, -1073741760, 0, 3407896, -1610612735, 0, 3407897, -1610612665, 0, 3407898, -1610612735, 0, 3407899, -1610612735, 0, 3407900, -1610612735, 0, 3407901, -1610612735, 0, 3473431, -1073741761, 0, 3473432, 1610612800, 0, 3473433, 1073741888, 0, 3473434, 1610612800, 0, 3473435, 1073741888, 0, 3473436, 1073741888, 0, 3473437, 1610612800, 0, 3473438, 1073741888, 0, 3538967, -1073741727, 0, 3538968, -1073741727, 0, 3538969, -1073741727, 0, 3538970, -1073741727, 0, 3538971, -1073741727, 0, 3538972, -1073741727, 0, 3538973, -1073741727, 0, 3538974, -1073741727, 0, 3604503, -1073741727, 0, 3604504, -1073741727, 0, 3604505, -1073741727, 0, 3604506, -1073741727, 0, 3604507, -1073741727, 0, 3604508, -1073741727, 0, 3604509, -1073741727, 0, 3604510, -1073741727, 0, 3670039, -1073741727, 0, 3670040, -1073741727, 0, 3670041, -1073741727, 0, 3670042, -1073741727, 0, 3670043, -1073741727, 0, 3670044, -1073741727, 0, 3670045, -1073741727, 0, 3670046, -1073741727, 0, 3735575, -1073741727, 0, 3735576, -1073741727, 0, 3735577, -1073741727, 0, 3735578, -1073741727, 0, 3735579, -1073741727, 0, 3735580, -1073741727, 0, 3735581, -1073741727, 0, 3735582, -1073741727, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 461, 2836 )
@@ -367,3 +379,24 @@ spritename = "krimbstone coin"
 position = Vector2( 3824, 2248 )
 customtext = "HATE_MACHINE_NPC_TALK"
 customname = "HATE_MACHINE_NAME_TEXT"
+
+[node name="HirdServant" parent="." instance=ExtResource( 44 )]
+position = Vector2( 3584, 1344 )
+
+[node name="EygzouhlSoldier" parent="." instance=ExtResource( 45 )]
+position = Vector2( 1096, 984 )
+
+[node name="LahiurnFloorMine" parent="." instance=ExtResource( 46 )]
+position = Vector2( 4272, 1328 )
+
+[node name="LahiurnFloorMine2" parent="." instance=ExtResource( 46 )]
+position = Vector2( 8176, 2800 )
+
+[node name="LahiurnFloorMine3" parent="." instance=ExtResource( 46 )]
+position = Vector2( 6469, 2800 )
+
+[node name="UntoGiantZombieHand" parent="." instance=ExtResource( 47 )]
+position = Vector2( 1728, 2600 )
+
+[node name="SpiderChips2" parent="." instance=ExtResource( 22 )]
+position = Vector2( -433, 3206 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=29]
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -296,3 +297,6 @@ spritename = "herrko health"
 [node name="Health Pickup4" parent="." instance=ExtResource( 28 )]
 position = Vector2( 11687, -92 )
 spritename = "herrko health"
+
+[node name="Gong" parent="." instance=ExtResource( 29 )]
+position = Vector2( 16562, 1417 )
