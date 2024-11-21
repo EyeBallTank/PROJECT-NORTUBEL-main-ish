@@ -1,10 +1,68 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=3]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits template.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits guest character names and titles.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 6 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 7 )
+region = Rect2( 611, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 7 )
+region = Rect2( 1222, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 7 )
+region = Rect2( 1833, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 7 )
+region = Rect2( 2444, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 7 )
+region = Rect2( 611, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 7 )
+region = Rect2( 1222, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 7 )
+region = Rect2( 1833, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 7 )
+region = Rect2( 2444, 529, 611, 529 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -35,6 +93,7 @@ __meta__ = {
 nextscene = "res://screens/MainMenu.tscn"
 
 [node name="Behind dialogue" type="ColorRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -76,6 +135,167 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="FIRST TEXT" type="Label" parent="."]
+margin_left = 342.0
+margin_top = 171.0
+margin_right = 819.0
+margin_bottom = 372.0
+custom_fonts/font = SubResource( 3 )
+text = "DIRECTION/REALIZAÇÃO
+  VISUALS/VISUAIS
+     GAMEPLAY
+   STORY/ESTÓRIA
+
+    EyeBallTank"
+
+[node name="FEEDBACK AND HELP" type="Label" parent="."]
+margin_left = 1070.0
+margin_top = 35.0
+margin_right = 1547.0
+margin_bottom = 576.0
+custom_fonts/font = SubResource( 3 )
+text = "FEEDBACK & HELP/AJUDA
+TebyTheCat
+TheDex
+Nkzar
+BrastenXBL
+According-Code-4772
+soxxoxsmox 
+NancokALT
+SimonKazehaya
+Armanlex
+horbror
+frenchfriesguy
+r/Godot
+Official Godot Discord server
+/agdg/
+"
+
+[node name="TUTORIALS" type="Label" parent="."]
+margin_left = -823.0
+margin_top = 35.0
+margin_right = -43.0
+margin_bottom = 576.0
+custom_fonts/font = SubResource( 3 )
+text = "            TUTORIALS/TUTORIAIS
+   GDQuest                  mjbolt
+   HeartBeast               luke_rs
+   GameDev With Drew        jeanmakesgames
+   Samsface                 matinator9185/MateuSai
+   Jon Topielski            arithmetic1938
+   Gonkee                   kidscancode
+   Israel Ruiz              piratechipgames
+   TutsByKai                GameEndeavor
+   16BitDev                 FinePointCGI
+   hellofellowjell-0186     clecioespindolagamedev
+   Dicode1q                 useyourillusion_
+   decipher8996             GlitchedCode
+   DevWorm                  HE360
+   Pigdev                   Daviesdev"
+
+[node name="RESOURCES" type="Label" parent="."]
+margin_left = 1533.0
+margin_top = 27.0
+margin_right = 2597.0
+margin_bottom = 568.0
+custom_fonts/font = SubResource( 3 )
+text = "                       RESOURCES/RECURSOS
+   Godot                                nickkarvounis (Unsplash)
+   Krita                                Pixabay
+   LibreOffice (Calc)                   floraphonic-38928062 (Pixabay)
+   2D Platformer Demo (KinematicBody)      LMMS
+   Cubio (Godot Demo)
+   Kenney.nl
+   FreeSound
+   fesliyanstudios
+   irinairinafomicheva/pixabay
+   MakeHuman/MPFB2
+   Posemaniacs
+   Blender
+   ChipTone (SFBGames)
+   Gluk (FontSpace)"
+
+[node name="FREESOUND" type="Label" parent="."]
+margin_left = 284.0
+margin_top = 626.0
+margin_right = 1348.0
+margin_bottom = 1779.0
+custom_fonts/font = SubResource( 3 )
+text = "         FREESOUND
+      strangehorizon
+         uEffects
+        egolessdub
+       VKProduktion
+        SeanSecret
+         robbeman
+        frosthardr
+        amiga-mark
+        magnuswaker
+         gt.torre
+         sunflora
+          nilbul
+          Wdomino
+   deleted_user_10023915
+          Tissman
+          00bpp00
+       JuhaniSankari
+       Jaz_the_MAN_2
+         passllooll
+       sunfiredragon
+          szpury
+         imagery2
+        LeMudCrab
+        lluiset7
+        Aegersum
+       AbuNijmeh
+         Xiko__
+          pgi
+  Soundscape_Leuphana 
+ tony-knievel-588593355
+     vacuumfan7072
+     Maikkihapsis
+      iwanPlays"
+
+[node name="CROSSOVER" type="Label" parent="."]
+margin_left = 412.0
+margin_top = -68.0
+margin_right = 634.0
+margin_bottom = -12.0
+custom_fonts/font = SubResource( 3 )
+text = "CROSSOVERS"
+
+[node name="OTHER SHOUT OUTS" type="Label" parent="."]
+margin_left = 174.0
+margin_top = 1806.0
+margin_right = 1238.0
+margin_bottom = 2347.0
+custom_fonts/font = SubResource( 3 )
+text = "Other shout outs/Outras saudações 
+              Betz
+            Freedoom
+           OTEX/ukiro
+
+"
+
+[node name="CAST CHARACTER NAMES" type="Label" parent="."]
+margin_left = 328.0
+margin_top = -442.5
+margin_right = 1392.0
+margin_bottom = 98.5
+custom_fonts/font = SubResource( 3 )
+text = "111111111111111111111
+222222222222222222
+3333333333333333333333"
+
+[node name="CharacterPortraits" type="AnimatedSprite" parent="."]
+position = Vector2( 515, -659.5 )
+frames = SubResource( 14 )
+frame = 2
+
+[node name="CreditsGuestCharacterNamesAndTitles" type="Sprite" parent="."]
+position = Vector2( 479, 3043 )
+texture = ExtResource( 8 )
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
