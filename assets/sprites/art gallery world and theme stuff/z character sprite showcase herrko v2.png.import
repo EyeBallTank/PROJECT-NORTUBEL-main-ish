@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/z character sprite showcase herrko.png-e85bd6f76d690034cc12590d628d3085.stex"
+path="res://.import/z character sprite showcase herrko v2.png-8448f35083d3b83e1df79369b226461f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase herrko.png"
-dest_files=[ "res://.import/z character sprite showcase herrko.png-e85bd6f76d690034cc12590d628d3085.stex" ]
+source_file="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase herrko v2.png"
+dest_files=[ "res://.import/z character sprite showcase herrko v2.png-8448f35083d3b83e1df79369b226461f.stex" ]
 
 [params]
 

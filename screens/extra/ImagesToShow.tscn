@@ -21,7 +21,7 @@
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase lahiurn.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase guests.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase hirdrih.png" type="Texture" id=21]
-[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase herrko.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase herrko v2.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase krimbstone.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase greklovick v3.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/zz enemy showcase.png" type="Texture" id=25]
@@ -104,7 +104,7 @@ region = Rect2( 0, 0, 1757, 1157 )
 atlas = ExtResource( 19 )
 region = Rect2( 0, 0, 931, 1196 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=31]
 atlas = ExtResource( 22 )
 region = Rect2( 0, 0, 1972, 2135 )
 
@@ -126,7 +126,7 @@ region = Rect2( 0, 0, 5778, 2369 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 13 ), SubResource( 12 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 30 ), SubResource( 28 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 26 ), SubResource( 25 ), SubResource( 29 ) ],
+"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 13 ), SubResource( 12 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 30 ), SubResource( 28 ), SubResource( 21 ), SubResource( 31 ), SubResource( 23 ), SubResource( 26 ), SubResource( 25 ), SubResource( 29 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
