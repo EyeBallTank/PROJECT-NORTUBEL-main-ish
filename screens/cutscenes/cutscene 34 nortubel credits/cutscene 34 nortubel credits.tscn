@@ -257,6 +257,20 @@ text = "         FREESOUND
      Maikkihapsis
       iwanPlays"
 
+[node name="MUSIC ASSETS" type="Label" parent="."]
+margin_left = 171.0
+margin_top = 4175.0
+margin_right = 1235.0
+margin_bottom = 5328.0
+custom_fonts/font = SubResource( 3 )
+text = "MUSIC ASSETS/RECURSOS DE MUSICA
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT"
+
 [node name="CROSSOVER" type="Label" parent="."]
 margin_left = 412.0
 margin_top = -68.0
