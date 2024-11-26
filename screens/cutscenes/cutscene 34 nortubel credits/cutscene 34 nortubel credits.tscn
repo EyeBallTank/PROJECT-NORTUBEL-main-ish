@@ -1593,10 +1593,58 @@ tracks/12/keys = {
 "update": 0,
 "values": [ "Leon & Otto" ]
 }
+tracks/13/type = "value"
+tracks/13/path = NodePath("CharacterPortraits:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("CAST CHARACTER NAMES:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("PASSWORD TEXT:rect_position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 233, 4895 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("THANK YOU TEXT:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 400.0
+length = 385.6
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -1604,7 +1652,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 196.2 ),
+"times": PoolRealArray( 382.5 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -1827,6 +1875,54 @@ Aranha Vaca Estranha", "The geckos
 Os lagartos", "Spitter Fish
 Peixo Cuspidor" ]
 }
+tracks/14/type = "value"
+tracks/14/path = NodePath("CharacterPortraits:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 365.5, 366.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("CAST CHARACTER NAMES:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 365.5, 366.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("PASSWORD TEXT:rect_position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 366.5, 374.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 233, 627 ), Vector2( 233, 627 ), Vector2( 233, -935 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("THANK YOU TEXT:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 375, 375.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -2038,6 +2134,7 @@ margin_bottom = 5199.0
 custom_fonts/font = SubResource( 3 )
 text = "Other shout outs/Outras saudações 
               Betz
+              /v/3
             Freedoom
            OTEX/ukiro
 
@@ -2055,6 +2152,52 @@ margin_right = 1392.0
 margin_bottom = 98.5
 custom_fonts/font = SubResource( 3 )
 text = "Leon & Otto"
+
+[node name="PASSWORD TEXT" type="Label" parent="."]
+margin_left = 233.0
+margin_top = 4895.0
+margin_right = 1297.0
+margin_bottom = 5810.0
+custom_fonts/font = SubResource( 3 )
+text = "   PASSWORDS/PALAVRAS-PASSE
+          \"galeria\",
+\"tutor1\", \"tutor2\", \"tutor3\",
+\"c4rr13\", \"k4tr1n\", \"m3lv1n\",
+\"osc4r0\", \"p33tt3\", \"ang3l4\",
+\"l3300n\", \"oott00\", \"b0rhrr\",
+\"p4m3l4\", \"sh3lly\", \"b3rn4d\",
+\"b00k3r\", \"r1c0t0\", \"phn34s\",
+\"st3ll4\", \"z4r1n4\", \"sh1hr0\",
+\"h0lm3s\", \"mcshry\", \"jol1t4\",
+\"b4rn3y\", \"k4rl44\",
+\"l13fd1\", \"x444ng\", \"am4l14\",
+\"y13g0r\", \"clr1ty\", \"kl3rrr\",
+\"tf00r1\", \"zrkv1l\",
+\"d3c4rd\", \"fl3nnn\", \"brkstn\",
+\"m0nic4\", \"ill0uu\", \"b0nkyy\",
+           \"b0nk44\",
+\"cl4ud1\", \"b0nk3t\", \"dr1l0u\",
+\"j3r0ld\", \"chrl3s\", \"lmshtn\",
+\"e1rr4c\", \"n1rt4k\", \"n1vl3m\",
+\"n4myl3\", \"p3bble\", \"iv4nnn\",
+\"eul0r1\", \"uulg44\",
+\"r4cs00\", \"eet33p\", \"al3gn4\",
+\"k4luub\", \"al1sss\", \"b34trc\",
+\"h1rdr1\", \"kr1mbs\", \"msgc0v\", 
+\"gr3klv\", \"br1nk4\", \"l4h1rn\", 
+\"h3rrk0\", \"unt0tr\", \"n0rtbl\""
+
+[node name="THANK YOU TEXT" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 252.0
+margin_top = 198.0
+margin_right = 863.0
+margin_bottom = 399.0
+custom_fonts/font = SubResource( 3 )
+text = "Thank you all for playing.
+Let's hope this isn't the end.
+Agradeço-vos a todos por jogar.
+Vamos esperar que isto não seja o fim."
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
