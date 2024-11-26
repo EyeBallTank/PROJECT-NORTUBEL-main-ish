@@ -1596,7 +1596,7 @@ tracks/12/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 200.0
+length = 400.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -1750,10 +1750,10 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 63.5, 65.5, 67.5, 69.5, 71.5, 73.5, 75.5, 77.5, 79.5, 81.5, 83.5, 85.5, 87.5, 89.5, 91.5, 93.5, 95.5, 97.5, 99.5, 101.5, 103.5, 105.5, 107.5, 109.5, 111.5, 113.5, 115.5, 117.5, 119.5, 121.5, 123.5, 125.5, 127.5, 129.5, 131.5, 133.5, 135.5, 137.5, 139.5, 141.5, 143.5, 145.5, 147.5, 149.5, 151.5, 153.5, 155.5, 157.5, 159.5, 161.5, 163.5, 165.5, 167.5, 169.5, 171.5, 173.5, 175.5, 177.5, 179.5, 181.5, 183.5, 185.5, 187.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 63.5, 65.5, 67.5, 69.5, 71.5, 73.5, 75.5, 77.5, 79.5, 81.5, 83.5, 85.5, 87.5, 89.5, 91.5, 93.5, 95.5, 97.5, 99.5, 101.5, 103.5, 105.5, 107.5, 109.5, 111.5, 113.5, 115.5, 117.5, 119.5, 121.5, 123.5, 125.5, 127.5, 129.5, 131.5, 133.5, 135.5, 137.5, 139.5, 141.5, 143.5, 145.5, 147.5, 149.5, 151.5, 153.5, 155.5, 157.5, 159.5, 161.5, 163.5, 165.5, 167.5, 169.5, 171.5, 173.5, 175.5, 177.5, 179.5, 181.5, 183.5, 185.5, 187.5, 189.5, 191.5, 193.5, 195.5, 197.5, 199.5, 201.5, 203.5, 205.5, 207.5, 209.5, 211.5, 213.5, 215.5, 217.5, 219.5, 221.5, 223.5, 225.5, 227.5, 229.5, 231.5, 233.5, 235.5, 237.5, 239.5, 241.5, 243.5, 245.5, 247.5, 249.5, 251.5, 253.5, 255.5, 257.5, 259.5, 261.5, 263.5, 265.5, 267.5, 269.5, 271.5, 273.5, 275.5, 277.5, 279.5, 281.5, 283.5, 285.5, 287.5, 289.5, 291.5, 293.5, 295.5, 297.5, 299.5, 301.5, 303.5, 305.5, 307.5, 309.5, 311.5, 313.5, 315.5, 317.5, 319.5, 321.5, 323.5, 325.5, 327.5, 329.5, 331.5, 333.5, 335.5, 337.5, 339.5, 341.5, 343.5, 345.5, 347.5, 349.5, 351.5, 353.5, 355.5, 357.5, 359.5, 361.5, 363.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "phase 00 char 01", "phase 00 char 02", "phase 00 char 03", "phase 00 char 04", "phase 00 char 05", "phase 00 char 06", "phase 00 char 07", "phase 00 char 08", "phase 00 char 09", "phase 00 char 10", "phase 01 char 01", "phase 01 char 02", "phase 01 char 03", "phase 01 char 04", "phase 01 char 05", "phase 01 char 06", "phase 01 char 07", "phase 01 char 08", "phase 01 char 09", "phase 01 char 10", "phase 01 char 11", "phase 01 char 12", "phase 01 char 13", "phase 01 char 14", "phase 02 char 01", "phase 02 char 02", "phase 02 char 03", "phase 02 char 04", "phase 02 char 05", "phase 02 char 06", "phase 02 char 07", "phase 02 char 08", "phase 02 char 09", "phase 02 char 10", "phase 02 char 11", "phase 02 char 12", "phase 02 char 13", "phase 02 char 14", "phase 02 char 15", "phase 02 char 16", "phase 02 char 17", "phase 03 char 01", "phase 03 char 02", "phase 03 char 03", "phase 03 char 04", "phase 03 char 05", "phase 03 char 06", "phase 03 char 07", "phase 03 char 08", "phase 03 char 09", "phase 03 char 10", "phase 03 char 11", "phase 03 char 12", "phase 03 char 13", "phase 03 char 14", "phase 03 char 15", "phase 03 char 16", "phase 03 char 17", "phase 03 char 18", "phase 03 char 19", "phase 03 char 20", "phase 03 char 21", "phase 03 char 22", "phase 04 char 01" ]
+"values": [ "phase 00 char 01", "phase 00 char 02", "phase 00 char 03", "phase 00 char 04", "phase 00 char 05", "phase 00 char 06", "phase 00 char 07", "phase 00 char 08", "phase 00 char 09", "phase 00 char 10", "phase 01 char 01", "phase 01 char 02", "phase 01 char 03", "phase 01 char 04", "phase 01 char 05", "phase 01 char 06", "phase 01 char 07", "phase 01 char 08", "phase 01 char 09", "phase 01 char 10", "phase 01 char 11", "phase 01 char 12", "phase 01 char 13", "phase 01 char 14", "phase 02 char 01", "phase 02 char 02", "phase 02 char 03", "phase 02 char 04", "phase 02 char 05", "phase 02 char 06", "phase 02 char 07", "phase 02 char 08", "phase 02 char 09", "phase 02 char 10", "phase 02 char 11", "phase 02 char 12", "phase 02 char 13", "phase 02 char 14", "phase 02 char 15", "phase 02 char 16", "phase 02 char 17", "phase 03 char 01", "phase 03 char 02", "phase 03 char 03", "phase 03 char 04", "phase 03 char 05", "phase 03 char 06", "phase 03 char 07", "phase 03 char 08", "phase 03 char 09", "phase 03 char 10", "phase 03 char 11", "phase 03 char 12", "phase 03 char 13", "phase 03 char 14", "phase 03 char 15", "phase 03 char 16", "phase 03 char 17", "phase 03 char 18", "phase 03 char 19", "phase 03 char 20", "phase 03 char 21", "phase 03 char 22", "phase 04 char 01", "phase 04 char 02", "phase 04 char 03", "phase 04 char 04", "phase 04 char 05", "phase 04 char 06", "phase 04 char 07", "phase 04 char 08", "phase 04 char 09", "phase 04 char 10", "phase 04 char 11", "phase 04 char 12", "phase 04 char 13", "phase 04 char 14", "phase 04 char 15", "phase 04 char 16", "phase 04 char 17", "phase 04 char 18", "phase 05 char 01", "phase 05 char 02", "phase 05 char 03", "phase 05 char 04", "phase 05 char 05", "phase 05 char 06", "phase 05 char 07", "phase 05 char 08", "phase 05 char 09", "phase 05 char 10", "phase 06 char 01", "phase 06 char 02", "phase 06 char 03", "phase 06 char 04", "phase 06 char 05", "phase 06 char 06", "phase 06 char 07", "phase 06 char 08", "phase 06 char 09", "phase 06 char 10", "phase 06 char 11", "phase 06 char 12", "phase 06 char 13", "phase 06 char 14", "phase 07 char 01", "phase 07 char 02", "phase 07 char 03", "phase 07 char 04", "phase 07 char 05", "phase 07 char 06", "phase 07 char 07", "phase 07 char 08", "phase 07 char 09", "phase 07 char 10", "phase 07 char 11", "phase 07 char 12", "phase 07 char 13", "phase 07 char 14", "phase 07 char 15", "phase 07 char 16", "phase 07 char 17", "phase 07 char 18", "phase 07 char 19", "phase 07 char 20", "phase 08 char 01", "phase 08 char 02", "phase 08 char 03", "phase 08 char 04", "phase 09 char 01", "phase 09 char 02", "phase 09 char 03", "phase 09 char 04", "phase 09 char 05", "phase 09 char 06", "phase 09 char 07", "phase 09 char 08", "phase 09 char 09", "phase 09 char 10", "phase 09 char 11", "phase 09 char 12", "phase 09 char 13", "phase 09 char 14", "phase 09 char 15", "phase 09 char 16", "phase 09 char 17", "phase 09 char 18", "phase 09 char 19", "phase 09 char 20", "phase 09 char 21", "phase 09 char 22", "phase 09 char 23" ]
 }
 tracks/13/type = "value"
 tracks/13/path = NodePath("CAST CHARACTER NAMES:text")
@@ -1762,8 +1762,8 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0, 63.5, 65.5, 67.5, 69.5, 71.5, 73.5, 75.5, 77.5, 79.5, 81.5, 83.5, 85.5, 87.5, 89.5, 91.5, 93.5, 95.5, 97.5, 99.5, 101.5, 103.5, 105.5, 107.5, 109.5, 111.5, 113.5, 115.5, 117.5, 119.5, 121.5, 123.5, 125.5, 127.5, 129.5, 131.5, 133.5, 135.5, 137.5, 139.5, 141.5, 143.5, 145.5, 147.5, 149.5, 151.5, 153.5, 155.5, 157.5, 159.5, 161.5, 163.5, 165.5, 167.5, 169.5, 171.5, 173.5, 175.5, 177.5, 179.5, 181.5, 183.5, 185.5, 187.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 63.5, 65.5, 67.5, 69.5, 71.5, 73.5, 75.5, 77.5, 79.5, 81.5, 83.5, 85.5, 87.5, 89.5, 91.5, 93.5, 95.5, 97.5, 99.5, 101.5, 103.5, 105.5, 107.5, 109.5, 111.5, 113.5, 115.5, 117.5, 119.5, 121.5, 123.5, 125.5, 127.5, 129.5, 131.5, 133.5, 135.5, 137.5, 139.5, 141.5, 143.5, 145.5, 147.5, 149.5, 151.5, 153.5, 155.5, 157.5, 159.5, 161.5, 163.5, 165.5, 167.5, 169.5, 171.5, 173.5, 175.5, 177.5, 179.5, 181.5, 183.5, 185.5, 187.5, 189.5, 191.5, 193.5, 195.5, 197.5, 199.5, 201.5, 203.5, 205.5, 207.5, 209.5, 211.5, 213.5, 215.5, 217.5, 219.5, 221.5, 223.5, 225.5, 227.5, 229.5, 231.5, 233.5, 235.5, 237.5, 239.5, 241.5, 243.5, 245.5, 247.5, 249.5, 251.5, 253.5, 255.5, 257.5, 259.5, 261.5, 263.5, 265.5, 267.5, 269.5, 271.5, 273.5, 275.5, 277.5, 279.5, 281.5, 283.5, 285.5, 287.5, 289.5, 291.5, 293.5, 295.5, 297.5, 299.5, 301.5, 303.5, 305.5, 307.5, 309.5, 311.5, 313.5, 315.5, 317.5, 319.5, 321.5, 323.5, 325.5, 327.5, 329.5, 331.5, 333.5, 335.5, 337.5, 339.5, 341.5, 343.5, 345.5, 347.5, 349.5, 351.5, 353.5, 355.5, 357.5, 359.5, 361.5, 363.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "Leon & Otto", "Borhr", "Avietta", "Hirdrih Taxi
 Táxi de Hirdrih", "Time Controller
@@ -1799,7 +1799,33 @@ Dispensas Robô de Munição
 Escalpeladores
 ", "Zharkovil's soldiers
 Soldados de Zharkovil", "Scorbrion
-Cérebrião", "Bonka Millette" ]
+Cérebrião", "Bonka Millette", "Bonky (Puff) & Linda Donkuph", "Monica Strawa", "illou Dallee", "Odin", "Claudia Santamara", "Bonkette", "Dr ill-ow", "Monika Stabbah", "Bonkoid", "King Jester
+Rei Bobo", "Braaaaaaaadwiiiiiin", "Serif", "Mack", "Cenourio", "Mecanita", "Red & Green Jesters
+Bobos Vermelhos e Verdes", "Jack-In-The-Box
+Jack-Na-Caixa", "Jerold Hollenstud", "Gustav Northerk", "Charles Kendery", "Namylea Matdur", "Staphen Lomeshtin", "Buellarock Army
+Exercito Buellarock", "Wounded Lahiurn soldier
+Soldado Lahiurn ferido", "Lahiurn soldiers
+Soldados Lahiurn", "Eygzouhl soldiers
+Soldados Eygzouhl", "Night Rider
+Cavaleiro da Noite", "Uulga Pronk", "Pebble Narhel", "Ivan Ros", "Dirlindu", "Euloria Lizab", "Pinto", "Galaghar Mork", "Prescillia", "Herrko Guard
+Guarda de Herrko", "Large Tarrak
+Tarrak Enorme", "Drawer
+Mesa de Cabeceira", "Red Ghalbeens
+Ghalbeens Vermelhos", "Red Horgs
+Horgs Vermelhos", "Corrupted Tsoovukot Knights
+Cavaleiros Tsoovukot Corruptos", "Kalub & Aliss Stoker", "Beatrice Margareen", "Cornelius Arvaxis", "Taaf Kahl", "Marcus Conorly", "Maikouto Shoraka", "Hangelica", "Minusa", "Keo", "Bastupatra", "Xero", "Haunted Painting Lady
+Senhora do Quadro Possuído", "Dancing Ghosts
+Fantasmas Dançantes", "Angel Statue
+Estátua de Anjo", "AAHHHH!!!!", "The 2 faced goat
+A cabra de duas caras", "The large beast of sinful delights
+A grande besta dos prazeres pecaminosos", "Mad Priest
+Padre Enlouquecido", "The Desolate
+Os Desolados", "Possessed Lanterns
+Lanternas Possuídas", "Hhtrintina", "HHGHH", "AB-YZ", "\"Hate machine\"
+Maquina de Ódio", "Carrie Decarde", "Oscar Decarde", "Katrin Flenn", "Pete Flenn", "Melvin Brokston", "Angela Brokston", "Pamela Margareen", "Bernard Brokston", "Shelly Frinkenmar", "Stella Flenn", "Zarina Liefdei", "Shihiro Xang", "Bao Bao", "Notskorb Alegna", "Notskorb Nivlem", "Nnelf Etep", "Nnelf Nirtak", "Edraced Racso", "Edraced Eirrac", "Amalia", "Weird Cow Spider
+Aranha Vaca Estranha", "The geckos
+Os lagartos", "Spitter Fish
+Peixo Cuspidor" ]
 }
 
 [node name="TestCutscene" type="Node"]
