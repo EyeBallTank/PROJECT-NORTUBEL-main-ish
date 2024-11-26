@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=178 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits template.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits guest character names and titles.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits part 1.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits part 2.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=3]
 size = 30
@@ -56,20 +59,1544 @@ region = Rect2( 1833, 529, 611, 529 )
 atlas = ExtResource( 7 )
 region = Rect2( 2444, 529, 611, 529 )
 
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=69]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 3174, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=70]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=71]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=72]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=73]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=74]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=75]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=76]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=77]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 3703, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=78]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=79]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=80]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=81]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=82]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=83]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=84]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=85]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 4232, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=86]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=87]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=88]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=89]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=90]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=91]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=92]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=93]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 4761, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=94]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=95]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=96]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=97]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=98]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=99]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=100]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=101]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 5290, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=102]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=103]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=104]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=105]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=106]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=107]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=108]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=109]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 5819, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=110]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=111]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=112]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=113]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=114]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=115]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=116]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=117]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=118]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 6348, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=119]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=120]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=121]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=122]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=123]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=124]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=125]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=126]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 6877, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=127]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=128]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=129]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=130]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=131]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=132]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=133]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=134]
+atlas = ExtResource( 10 )
+region = Rect2( 4277, 7406, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=135]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=136]
+atlas = ExtResource( 10 )
+region = Rect2( 611, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=137]
+atlas = ExtResource( 10 )
+region = Rect2( 2444, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=138]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=139]
+atlas = ExtResource( 10 )
+region = Rect2( 1833, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=140]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=141]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=142]
+atlas = ExtResource( 11 )
+region = Rect2( 611, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=143]
+atlas = ExtResource( 10 )
+region = Rect2( 1222, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=144]
+atlas = ExtResource( 11 )
+region = Rect2( 1222, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=145]
+atlas = ExtResource( 11 )
+region = Rect2( 1833, 0, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=146]
+atlas = ExtResource( 11 )
+region = Rect2( 611, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=147]
+atlas = ExtResource( 11 )
+region = Rect2( 1222, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=148]
+atlas = ExtResource( 11 )
+region = Rect2( 1833, 529, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=149]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=150]
+atlas = ExtResource( 11 )
+region = Rect2( 1222, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=151]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=152]
+atlas = ExtResource( 11 )
+region = Rect2( 1833, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=153]
+atlas = ExtResource( 11 )
+region = Rect2( 611, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=154]
+atlas = ExtResource( 11 )
+region = Rect2( 1222, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=155]
+atlas = ExtResource( 11 )
+region = Rect2( 1833, 1587, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=156]
+atlas = ExtResource( 11 )
+region = Rect2( 611, 1058, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=157]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=158]
+atlas = ExtResource( 11 )
+region = Rect2( 611, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=159]
+atlas = ExtResource( 11 )
+region = Rect2( 1222, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=160]
+atlas = ExtResource( 11 )
+region = Rect2( 1833, 2116, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=161]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=162]
+atlas = ExtResource( 11 )
+region = Rect2( 611, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=163]
+atlas = ExtResource( 10 )
+region = Rect2( 3055, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=164]
+atlas = ExtResource( 10 )
+region = Rect2( 3666, 7935, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=165]
+atlas = ExtResource( 11 )
+region = Rect2( 1222, 2645, 611, 529 )
+
+[sub_resource type="AtlasTexture" id=166]
+atlas = ExtResource( 11 )
+region = Rect2( 1833, 2645, 611, 529 )
+
 [sub_resource type="SpriteFrames" id=14]
 animations = [ {
 "frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": false,
+"name": "phase 00 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 16 ) ],
+"loop": false,
+"name": "phase 00 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 17 ) ],
+"loop": false,
+"name": "phase 00 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 18 ) ],
+"loop": false,
+"name": "phase 00 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 19 ) ],
+"loop": false,
+"name": "phase 00 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": false,
+"name": "phase 00 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": false,
+"name": "phase 00 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 22 ) ],
+"loop": false,
+"name": "phase 00 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": false,
+"name": "phase 00 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 24 ) ],
+"loop": false,
+"name": "phase 00 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 25 ) ],
+"loop": false,
+"name": "phase 01 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 26 ) ],
+"loop": false,
+"name": "phase 01 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 27 ) ],
+"loop": false,
+"name": "phase 01 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 28 ) ],
+"loop": false,
+"name": "phase 01 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 29 ) ],
+"loop": false,
+"name": "phase 01 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 30 ) ],
+"loop": false,
+"name": "phase 01 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 31 ) ],
+"loop": false,
+"name": "phase 01 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 32 ) ],
+"loop": false,
+"name": "phase 01 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 33 ) ],
+"loop": false,
+"name": "phase 01 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 34 ) ],
+"loop": false,
+"name": "phase 01 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 35 ) ],
+"loop": false,
+"name": "phase 01 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 36 ) ],
+"loop": false,
+"name": "phase 01 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 37 ) ],
+"loop": false,
+"name": "phase 01 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 38 ) ],
+"loop": false,
+"name": "phase 01 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 39 ) ],
+"loop": false,
+"name": "phase 02 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 40 ) ],
+"loop": false,
+"name": "phase 02 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 41 ) ],
+"loop": false,
+"name": "phase 02 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 42 ) ],
+"loop": false,
+"name": "phase 02 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 43 ) ],
+"loop": false,
+"name": "phase 02 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 44 ) ],
+"loop": false,
+"name": "phase 02 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 45 ) ],
+"loop": false,
+"name": "phase 02 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 46 ) ],
+"loop": false,
+"name": "phase 02 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 47 ) ],
+"loop": false,
+"name": "phase 02 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 48 ) ],
+"loop": false,
+"name": "phase 02 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 49 ) ],
+"loop": false,
+"name": "phase 02 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 50 ) ],
+"loop": false,
+"name": "phase 02 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 51 ) ],
+"loop": false,
+"name": "phase 02 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 52 ) ],
+"loop": false,
+"name": "phase 02 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 53 ) ],
+"loop": false,
+"name": "phase 02 char 15",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 54 ) ],
+"loop": false,
+"name": "phase 02 char 16",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 55 ) ],
+"loop": false,
+"name": "phase 02 char 17",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 56 ) ],
+"loop": false,
+"name": "phase 03 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 57 ) ],
+"loop": false,
+"name": "phase 03 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 58 ) ],
+"loop": false,
+"name": "phase 03 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 59 ) ],
+"loop": false,
+"name": "phase 03 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 60 ) ],
+"loop": false,
+"name": "phase 03 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 61 ) ],
+"loop": false,
+"name": "phase 03 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 62 ) ],
+"loop": false,
+"name": "phase 03 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 63 ) ],
+"loop": false,
+"name": "phase 03 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 64 ) ],
+"loop": false,
+"name": "phase 03 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 65 ) ],
+"loop": false,
+"name": "phase 03 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 66 ) ],
+"loop": false,
+"name": "phase 03 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 67 ) ],
+"loop": false,
+"name": "phase 03 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 68 ) ],
+"loop": false,
+"name": "phase 03 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 69 ) ],
+"loop": false,
+"name": "phase 03 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 70 ) ],
+"loop": false,
+"name": "phase 03 char 15",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 71 ) ],
+"loop": false,
+"name": "phase 03 char 16",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 72 ) ],
+"loop": false,
+"name": "phase 03 char 17",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 73 ) ],
+"loop": false,
+"name": "phase 03 char 18",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 74 ) ],
+"loop": false,
+"name": "phase 03 char 19",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 75 ) ],
+"loop": false,
+"name": "phase 03 char 20",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 76 ) ],
+"loop": false,
+"name": "phase 03 char 21",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 77 ) ],
+"loop": false,
+"name": "phase 03 char 22",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 78 ) ],
+"loop": false,
+"name": "phase 04 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 79 ) ],
+"loop": false,
+"name": "phase 04 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 80 ) ],
+"loop": false,
+"name": "phase 04 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 81 ) ],
+"loop": false,
+"name": "phase 04 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 82 ) ],
+"loop": false,
+"name": "phase 04 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 83 ) ],
+"loop": false,
+"name": "phase 04 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 84 ) ],
+"loop": false,
+"name": "phase 04 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 85 ) ],
+"loop": false,
+"name": "phase 04 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 86 ) ],
+"loop": false,
+"name": "phase 04 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 87 ) ],
+"loop": false,
+"name": "phase 04 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 88 ) ],
+"loop": false,
+"name": "phase 04 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 89 ) ],
+"loop": false,
+"name": "phase 04 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 90 ) ],
+"loop": false,
+"name": "phase 04 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 91 ) ],
+"loop": false,
+"name": "phase 04 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 92 ) ],
+"loop": false,
+"name": "phase 04 char 15",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 93 ) ],
+"loop": false,
+"name": "phase 04 char 16",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 94 ) ],
+"loop": false,
+"name": "phase 04 char 17",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 95 ) ],
+"loop": false,
+"name": "phase 04 char 18",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 96 ) ],
+"loop": false,
+"name": "phase 05 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 97 ) ],
+"loop": false,
+"name": "phase 05 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 98 ) ],
+"loop": false,
+"name": "phase 05 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 99 ) ],
+"loop": false,
+"name": "phase 05 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 100 ) ],
+"loop": false,
+"name": "phase 05 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 101 ) ],
+"loop": false,
+"name": "phase 05 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 102 ) ],
+"loop": false,
+"name": "phase 05 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 103 ) ],
+"loop": false,
+"name": "phase 05 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 104 ) ],
+"loop": false,
+"name": "phase 05 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 105 ) ],
+"loop": false,
+"name": "phase 05 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 106 ) ],
+"loop": false,
+"name": "phase 06 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 107 ) ],
+"loop": false,
+"name": "phase 06 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 108 ) ],
+"loop": false,
+"name": "phase 06 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 109 ) ],
+"loop": false,
+"name": "phase 06 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 110 ) ],
+"loop": false,
+"name": "phase 06 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 111 ) ],
+"loop": false,
+"name": "phase 06 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 112 ) ],
+"loop": false,
+"name": "phase 06 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 113 ) ],
+"loop": false,
+"name": "phase 06 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 114 ) ],
+"loop": false,
+"name": "phase 06 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 115 ) ],
+"loop": false,
+"name": "phase 06 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 116 ) ],
+"loop": false,
+"name": "phase 06 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 117 ) ],
+"loop": false,
+"name": "phase 06 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 118 ) ],
+"loop": false,
+"name": "phase 06 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 119 ) ],
+"loop": false,
+"name": "phase 06 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 120 ) ],
+"loop": false,
+"name": "phase 07 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 121 ) ],
+"loop": false,
+"name": "phase 07 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 122 ) ],
+"loop": false,
+"name": "phase 07 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 123 ) ],
+"loop": false,
+"name": "phase 07 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 124 ) ],
+"loop": false,
+"name": "phase 07 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 125 ) ],
+"loop": false,
+"name": "phase 07 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 126 ) ],
+"loop": false,
+"name": "phase 07 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 127 ) ],
+"loop": false,
+"name": "phase 07 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 128 ) ],
+"loop": false,
+"name": "phase 07 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 129 ) ],
+"loop": false,
+"name": "phase 07 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 130 ) ],
+"loop": false,
+"name": "phase 07 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 131 ) ],
+"loop": false,
+"name": "phase 07 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 132 ) ],
+"loop": false,
+"name": "phase 07 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 133 ) ],
+"loop": false,
+"name": "phase 07 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 134 ) ],
+"loop": false,
+"name": "phase 07 char 15",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 135 ) ],
+"loop": false,
+"name": "phase 07 char 16",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 136 ) ],
+"loop": false,
+"name": "phase 07 char 17",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 137 ) ],
+"loop": false,
+"name": "phase 07 char 18",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 138 ) ],
+"loop": false,
+"name": "phase 07 char 19",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 139 ) ],
+"loop": false,
+"name": "phase 07 char 20",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 140 ) ],
+"loop": false,
+"name": "phase 08 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 141 ) ],
+"loop": false,
+"name": "phase 08 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 142 ) ],
+"loop": false,
+"name": "phase 08 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 143 ) ],
+"loop": false,
+"name": "phase 08 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 144 ) ],
+"loop": false,
+"name": "phase 09 char 01",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 145 ) ],
+"loop": false,
+"name": "phase 09 char 02",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 146 ) ],
+"loop": false,
+"name": "phase 09 char 03",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 147 ) ],
+"loop": false,
+"name": "phase 09 char 04",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 148 ) ],
+"loop": false,
+"name": "phase 09 char 05",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 149 ) ],
+"loop": false,
+"name": "phase 09 char 06",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 150 ) ],
+"loop": false,
+"name": "phase 09 char 07",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 151 ) ],
+"loop": false,
+"name": "phase 09 char 08",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 152 ) ],
+"loop": false,
+"name": "phase 09 char 09",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 153 ) ],
+"loop": false,
+"name": "phase 09 char 10",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 154 ) ],
+"loop": false,
+"name": "phase 09 char 11",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 155 ) ],
+"loop": false,
+"name": "phase 09 char 12",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 156 ) ],
+"loop": false,
+"name": "phase 09 char 13",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 157 ) ],
+"loop": false,
+"name": "phase 09 char 14",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 158 ) ],
+"loop": false,
+"name": "phase 09 char 15",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 159 ) ],
+"loop": false,
+"name": "phase 09 char 16",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 160 ) ],
+"loop": false,
+"name": "phase 09 char 17",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 161 ) ],
+"loop": false,
+"name": "phase 09 char 18",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 162 ) ],
+"loop": false,
+"name": "phase 09 char 19",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 163 ) ],
+"loop": false,
+"name": "phase 09 char 20",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 164 ) ],
+"loop": false,
+"name": "phase 09 char 21",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 165 ) ],
+"loop": false,
+"name": "phase 09 char 22",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 166 ) ],
+"loop": false,
+"name": "phase 09 char 23",
+"speed": 0.0
 } ]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("FIRST TEXT:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 342, 171 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("FEEDBACK AND HELP:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1070, 35 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TUTORIALS:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -823, 35 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("RESOURCES:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1533, 27 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("FREESOUND:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 284, 626 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("MUSIC ASSETS:rect_position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 171, 2029 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CROSSOVER:rect_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 412, 2354 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("CreditsGuestCharacterNamesAndTitles:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 479, 3446 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("OTHER SHOUT OUTS:rect_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 174, 4658 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("CharacterPortraits:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 515, -659.5 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("CAST CHARACTER NAMES:rect_position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 328, -442.5 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("CharacterPortraits:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "phase 00 char 01" ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("CAST CHARACTER NAMES:text")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Leon & Otto" ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 6.0
+length = 200.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -77,12 +1604,168 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 4 ),
+"times": PoolRealArray( 196.2 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "cutscene_over"
 } ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("FIRST TEXT:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 6, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 342, 171 ), Vector2( 342, 171 ), Vector2( 342, -228 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("FEEDBACK AND HELP:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 6, 7, 14, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1070, 35 ), Vector2( 1070, 35 ), Vector2( 354, 35 ), Vector2( 354, 35 ), Vector2( 1060, 35 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TUTORIALS:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 14, 15, 23, 24 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -823, 35 ), Vector2( -823, 35 ), Vector2( 175, 35 ), Vector2( 175, 35 ), Vector2( -833, 35 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("RESOURCES:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 23, 24, 32, 33 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1533, 27 ), Vector2( 1533, 27 ), Vector2( -28, 27 ), Vector2( -28, 27 ), Vector2( 1052, 27 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("FREESOUND:rect_position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 32, 40 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 284, 626 ), Vector2( 284, 626 ), Vector2( 284, -1188 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("MUSIC ASSETS:rect_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 39, 40, 46, 47 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 171, 2029 ), Vector2( 171, 634 ), Vector2( 171, 26 ), Vector2( 171, 26 ), Vector2( 171, -722 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("CROSSOVER:rect_position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 46, 46.8, 56 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 412, 2354 ), Vector2( 412, 634 ), Vector2( 412, 634 ), Vector2( 412, -2266 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("CreditsGuestCharacterNamesAndTitles:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 46, 46.8, 56 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 479, 3446 ), Vector2( 479, 1728 ), Vector2( 479, 1728 ), Vector2( 479, -1137 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("OTHER SHOUT OUTS:rect_position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 55.1, 56, 60.5, 61.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 174, 4658 ), Vector2( 174, 621 ), Vector2( 174, 183 ), Vector2( 174, 183 ), Vector2( 174, 637 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("CharacterPortraits:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 60.5, 61.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 515, -659.5 ), Vector2( 515, -659.5 ), Vector2( 515, 266.5 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("CAST CHARACTER NAMES:rect_position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 60.5, 61.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 328, -442.5 ), Vector2( 328, -442.5 ), Vector2( 328, 483.5 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("CharacterPortraits:animation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "phase 00 char 01" ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("CAST CHARACTER NAMES:text")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Leon & Otto" ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -97,6 +1780,10 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+
+[node name="MenuBg" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+texture = ExtResource( 9 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 visible = false
@@ -259,9 +1946,9 @@ text = "         FREESOUND
 
 [node name="MUSIC ASSETS" type="Label" parent="."]
 margin_left = 171.0
-margin_top = 4175.0
+margin_top = 2029.0
 margin_right = 1235.0
-margin_bottom = 5328.0
+margin_bottom = 3182.0
 custom_fonts/font = SubResource( 3 )
 text = "MUSIC ASSETS/RECURSOS DE MUSICA
 TEXT
@@ -273,17 +1960,21 @@ TEXT"
 
 [node name="CROSSOVER" type="Label" parent="."]
 margin_left = 412.0
-margin_top = -68.0
+margin_top = 2354.0
 margin_right = 634.0
-margin_bottom = -12.0
+margin_bottom = 2410.0
 custom_fonts/font = SubResource( 3 )
 text = "CROSSOVERS"
 
+[node name="CreditsGuestCharacterNamesAndTitles" type="Sprite" parent="."]
+position = Vector2( 479, 3446 )
+texture = ExtResource( 8 )
+
 [node name="OTHER SHOUT OUTS" type="Label" parent="."]
 margin_left = 174.0
-margin_top = 1806.0
+margin_top = 4658.0
 margin_right = 1238.0
-margin_bottom = 2347.0
+margin_bottom = 5199.0
 custom_fonts/font = SubResource( 3 )
 text = "Other shout outs/Outras saudações 
               Betz
@@ -292,24 +1983,18 @@ text = "Other shout outs/Outras saudações
 
 "
 
+[node name="CharacterPortraits" type="AnimatedSprite" parent="."]
+position = Vector2( 515, -659.5 )
+frames = SubResource( 14 )
+animation = "phase 00 char 01"
+
 [node name="CAST CHARACTER NAMES" type="Label" parent="."]
 margin_left = 328.0
 margin_top = -442.5
 margin_right = 1392.0
 margin_bottom = 98.5
 custom_fonts/font = SubResource( 3 )
-text = "111111111111111111111
-222222222222222222
-3333333333333333333333"
-
-[node name="CharacterPortraits" type="AnimatedSprite" parent="."]
-position = Vector2( 515, -659.5 )
-frames = SubResource( 14 )
-frame = 2
-
-[node name="CreditsGuestCharacterNamesAndTitles" type="Sprite" parent="."]
-position = Vector2( 479, 3043 )
-texture = ExtResource( 8 )
+text = "Leon & Otto"
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
 visible = false
