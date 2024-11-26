@@ -1750,10 +1750,10 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 63.5, 65.5, 67.5, 69.5, 71.5, 73.5, 75.5, 77.5, 79.5, 81.5, 83.5, 85.5, 87.5, 89.5, 91.5, 93.5, 95.5, 97.5, 99.5, 101.5, 103.5, 105.5, 107.5, 109.5, 111.5, 113.5, 115.5, 117.5, 119.5, 121.5, 123.5, 125.5, 127.5, 129.5, 131.5, 133.5, 135.5, 137.5, 139.5, 141.5, 143.5, 145.5, 147.5, 149.5, 151.5, 153.5, 155.5, 157.5, 159.5, 161.5, 163.5, 165.5, 167.5, 169.5, 171.5, 173.5, 175.5, 177.5, 179.5, 181.5, 183.5, 185.5, 187.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "phase 00 char 01" ]
+"values": [ "phase 00 char 01", "phase 00 char 02", "phase 00 char 03", "phase 00 char 04", "phase 00 char 05", "phase 00 char 06", "phase 00 char 07", "phase 00 char 08", "phase 00 char 09", "phase 00 char 10", "phase 01 char 01", "phase 01 char 02", "phase 01 char 03", "phase 01 char 04", "phase 01 char 05", "phase 01 char 06", "phase 01 char 07", "phase 01 char 08", "phase 01 char 09", "phase 01 char 10", "phase 01 char 11", "phase 01 char 12", "phase 01 char 13", "phase 01 char 14", "phase 02 char 01", "phase 02 char 02", "phase 02 char 03", "phase 02 char 04", "phase 02 char 05", "phase 02 char 06", "phase 02 char 07", "phase 02 char 08", "phase 02 char 09", "phase 02 char 10", "phase 02 char 11", "phase 02 char 12", "phase 02 char 13", "phase 02 char 14", "phase 02 char 15", "phase 02 char 16", "phase 02 char 17", "phase 03 char 01", "phase 03 char 02", "phase 03 char 03", "phase 03 char 04", "phase 03 char 05", "phase 03 char 06", "phase 03 char 07", "phase 03 char 08", "phase 03 char 09", "phase 03 char 10", "phase 03 char 11", "phase 03 char 12", "phase 03 char 13", "phase 03 char 14", "phase 03 char 15", "phase 03 char 16", "phase 03 char 17", "phase 03 char 18", "phase 03 char 19", "phase 03 char 20", "phase 03 char 21", "phase 03 char 22", "phase 04 char 01" ]
 }
 tracks/13/type = "value"
 tracks/13/path = NodePath("CAST CHARACTER NAMES:text")
@@ -1762,10 +1762,44 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 63.5, 65.5, 67.5, 69.5, 71.5, 73.5, 75.5, 77.5, 79.5, 81.5, 83.5, 85.5, 87.5, 89.5, 91.5, 93.5, 95.5, 97.5, 99.5, 101.5, 103.5, 105.5, 107.5, 109.5, 111.5, 113.5, 115.5, 117.5, 119.5, 121.5, 123.5, 125.5, 127.5, 129.5, 131.5, 133.5, 135.5, 137.5, 139.5, 141.5, 143.5, 145.5, 147.5, 149.5, 151.5, 153.5, 155.5, 157.5, 159.5, 161.5, 163.5, 165.5, 167.5, 169.5, 171.5, 173.5, 175.5, 177.5, 179.5, 181.5, 183.5, 185.5, 187.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "Leon & Otto" ]
+"values": [ "Leon & Otto", "Borhr", "Avietta", "Hirdrih Taxi
+Táxi de Hirdrih", "Time Controller
+Controlador do Tempo", "Electric Sheep
+Ovelha Elétrica", "Robbio", "Hirdrio", "Borhr's Servants
+Servidores de Borhr", "Spider chips
+Arenhas de Chip", "Booker Arron Vincent", "Reptile", "Ricotto Bruniolli", "Matysha Natashka", "Phineas Abe", "\"Bullet\"
+\"Bala\"", "Krahq", "(In memory of/Em memória de)
+Velma & Veronica Vincent", "Various Prisoners
+Vários Prisioneiros", "The Prison Warden
+O Guarda de Prisão", "Poor Homeless Man
+O Coitado Sem-Abrigo", "The Fool Tied To The Street Lights
+O Triste Amarrado Ao Semáforo", "Benjamin McCormen", "Phineas' men
+Os Homens do Phineas", "Holmes Dekarro", "Barney Mackenstein", "Fernaanda Johnson", "Feelix Johnson", "Karla Henson", "Karoline Henson", "Touni Henson", "McSherry Triffelo", "Horatio", "Marie Joolietta", "Half-Dalmatian Police Officer
+Policia Meio Dálmata", "Starfish Street Sweeper
+Varredor, Estrela do Mar", "Kangaroo Zack", "Katy, Stacy & Millie", "Marlon Valentinou", "Nosnhoj Adnaanref", "Black Gallus
+Gallus Pretos", "Yiegour Sarvotsky", "Clarity", "Bolt", "Isaac", "Sergei
+Grek Force Mercenary
+Mercenário da força Grek", "Multigun", "Raymond (Nº 26)", "Lahrn Hasegawa", "Fragile", "General Simo", "Samatha Strycker", "Soromovikz
+Grek Police
+Policia de Grek", "Kler Zidun", "Grek Radiation Specialist
+Especialista de Radiação Grek", "Grek Medic
+Médico Grek", "Tfoorie Scahdlee
+Tharrr alien from planet Setuhr
+Alien Tharrr do planeta Setuhr", "Zharkovil
+
+", "Ykstovras Ruogeiy
+
+", "Ammo Dispenser Bots
+Dispensas Robô de Munição
+
+", "Scalpers
+Escalpeladores
+", "Zharkovil's soldiers
+Soldados de Zharkovil", "Scorbrion
+Cérebrião", "Bonka Millette" ]
 }
 
 [node name="TestCutscene" type="Node"]
