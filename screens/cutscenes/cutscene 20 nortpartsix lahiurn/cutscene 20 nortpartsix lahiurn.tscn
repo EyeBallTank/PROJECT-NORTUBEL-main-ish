@@ -552,10 +552,10 @@ tracks/21/loop_wrap = true
 tracks/21/imported = false
 tracks/21/enabled = true
 tracks/21/keys = {
-"times": PoolRealArray( 74.9, 75.5, 76.3 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 74.9, 75.5, 76.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [node name="TestCutscene" type="Node"]
@@ -579,6 +579,7 @@ texture = ExtResource( 7 )
 [node name="Cutscene20AnimatedPlane" type="AnimatedSprite" parent="."]
 position = Vector2( 340, 853 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="Cutscene20AnimatedPlane2" type="AnimatedSprite" parent="."]
@@ -586,6 +587,7 @@ position = Vector2( -78, 1068 )
 rotation = 0.483065
 scale = Vector2( 0.710526, 0.710526 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
