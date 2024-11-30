@@ -1669,7 +1669,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 6, 7 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 342, 171 ), Vector2( 342, 171 ), Vector2( 342, -228 ) ]
+"values": [ Vector2( 342, 171 ), Vector2( 342, 171 ), Vector2( 342, -349 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("FEEDBACK AND HELP:rect_position")
@@ -1983,14 +1983,18 @@ color = Color( 0, 0, 0, 1 )
 margin_left = 342.0
 margin_top = 171.0
 margin_right = 819.0
-margin_bottom = 372.0
+margin_bottom = 508.0
 custom_fonts/font = SubResource( 3 )
 text = "DIRECTION/REALIZAÇÃO
   VISUALS/VISUAIS
      GAMEPLAY
    STORY/ESTÓRIA
 
-    EyeBallTank"
+    EyeBallTank
+
+     MUSIC(A)
+	    EyeBallTank
+	    Horbror"
 
 [node name="FEEDBACK AND HELP" type="Label" parent="."]
 margin_left = 1070.0
@@ -2107,8 +2111,8 @@ margin_right = 1235.0
 margin_bottom = 3182.0
 custom_fonts/font = SubResource( 3 )
 text = "MUSIC ASSETS/RECURSOS DE MUSICA
-TEXT
-TEXT
+LMMS Sharing Platform / Samples
+SampleRadar/The MusicRadar team
 TEXT
 TEXT
 TEXT

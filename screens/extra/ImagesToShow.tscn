@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://screens/extra/ImagesToShow.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/level objects and items sprites nortubel.png" type="Texture" id=2]
@@ -25,6 +25,8 @@
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase krimbstone.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase greklovick v3.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/art gallery world and theme stuff/zz enemy showcase.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/zzz beach melvin angela.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/art gallery world and theme stuff/zzz nortubel bosses.png" type="Texture" id=27]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -67,6 +69,10 @@ region = Rect2( 0, 0, 3943, 2033 )
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 12 )
 region = Rect2( 0, 0, 7444, 4999 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 26 )
+region = Rect2( 0, 0, 3503, 1706 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 11 )
@@ -124,9 +130,13 @@ region = Rect2( 0, 0, 3608, 1937 )
 atlas = ExtResource( 25 )
 region = Rect2( 0, 0, 5778, 2369 )
 
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 2625, 2562 )
+
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 13 ), SubResource( 12 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 30 ), SubResource( 28 ), SubResource( 21 ), SubResource( 31 ), SubResource( 23 ), SubResource( 26 ), SubResource( 25 ), SubResource( 29 ) ],
+"frames": [ SubResource( 2 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 13 ), SubResource( 32 ), SubResource( 12 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 30 ), SubResource( 28 ), SubResource( 21 ), SubResource( 31 ), SubResource( 23 ), SubResource( 26 ), SubResource( 25 ), SubResource( 29 ), SubResource( 33 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0

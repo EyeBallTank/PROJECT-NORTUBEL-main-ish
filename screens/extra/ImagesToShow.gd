@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 #NOTE: I WISH THERE WAS A WAT TO LIMIT THE SCALE
 
-export var number = 23
+export var number = 25
 var currentFrame: int = 0
 
 onready var sprite = $AnimatedSprite
