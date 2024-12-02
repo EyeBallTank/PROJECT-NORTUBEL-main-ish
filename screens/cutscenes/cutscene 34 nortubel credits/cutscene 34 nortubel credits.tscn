@@ -2113,10 +2113,12 @@ custom_fonts/font = SubResource( 3 )
 text = "MUSIC ASSETS/RECURSOS DE MUSICA
 LMMS Sharing Platform / Samples
 SampleRadar/The MusicRadar team
-TEXT
-TEXT
-TEXT
-TEXT"
+DSK Music 
+freevstplugins . net
+Johannes Roussel's free soundfonts library. 
+FreeSound (Saltbearer)
+BigSoundBank (Joseph SARDIN)
+plugins4free"
 
 [node name="CROSSOVER" type="Label" parent="."]
 margin_left = 412.0
