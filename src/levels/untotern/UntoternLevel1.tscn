@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -40,6 +40,24 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/npc_actors/UntoScaryMirror.tscn" type="PackedScene" id=40]
+[ext_resource path="res://assets/sounds/music/levels/untotern/UNTO HOUSE SONG.wav" type="AudioStream" id=41]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 39.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="UntoternLevel1" type="Node2D"]
 
@@ -297,3 +315,12 @@ collision_newsize = Vector2( 104, 8 )
 
 [node name="UntoScaryMirror" parent="." instance=ExtResource( 40 )]
 position = Vector2( 4667, 2611 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 41 )
+volume_db = -1.276
+bus = "Music"
