@@ -59,6 +59,8 @@ signal the_bat_has_won
 signal voodoo_hurts_player
 signal voodoo_hurts_companion
 
+signal bonkette_song_must_play
+
 #signal blue_switch_pressed(blueswitchresponse)
 #signal blue_plat_horiz_active(blueactivation)
 #Just in case

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BRINK BONKA SONG BASIC.wav-5c6ab24ef8dc478ef0e0d21407e57c3e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/brinkaedea/BRINK BONKA SONG BASIC.wav"
+dest_files=[ "res://.import/BRINK BONKA SONG BASIC.wav-5c6ab24ef8dc478ef0e0d21407e57c3e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

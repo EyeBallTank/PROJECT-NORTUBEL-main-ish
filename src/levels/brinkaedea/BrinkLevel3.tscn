@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -25,6 +25,8 @@
 [ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/levels/brinkaedea/BrinkLevel3.gd" type="Script" id=26]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKA SONG BASIC.wav" type="AudioStream" id=27]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -82,7 +84,25 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 570, 0 ), Vector2( 0, 0 ) ]
 }
 
+[sub_resource type="Animation" id=3]
+resource_name = "RESET"
+length = 25.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
 [node name="BrinkLevel3" type="Node2D"]
+script = ExtResource( 26 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -290,6 +310,15 @@ position = Vector2( 8637, 1790 )
 [node name="CrawlzoneEnter2" parent="." instance=ExtResource( 24 )]
 visible = false
 position = Vector2( 8887, 1790 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
+volume_db = -5.81
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 3 )
 
 [editable path="BrinkEvilCircularSaw"]
 [editable path="BrinkEvilCircularSaw2"]
