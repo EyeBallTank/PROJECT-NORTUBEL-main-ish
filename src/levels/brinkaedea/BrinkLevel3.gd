@@ -10,7 +10,7 @@ func _ready():
 	animationplayer.play("RESET")
 
 func _oh_no_bonkette_is_here():
-	pass
+	animationplayer.play("BonketteArrives")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

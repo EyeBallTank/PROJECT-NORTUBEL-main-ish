@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/levels/brinkaedea/BrinkLevel3.gd" type="Script" id=26]
 [ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKA SONG BASIC.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKETTE SONG BASIC.wav" type="AudioStream" id=28]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -84,6 +85,59 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 570, 0 ), Vector2( 0, 0 ) ]
 }
 
+[sub_resource type="Animation" id=4]
+resource_name = "BonketteArrives"
+length = 35.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -7.553 ]
+}
+
 [sub_resource type="Animation" id=3]
 resource_name = "RESET"
 length = 25.0
@@ -99,6 +153,42 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -7.553 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
 }
 
 [node name="BrinkLevel3" type="Node2D"]
@@ -313,11 +403,17 @@ position = Vector2( 8887, 1790 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 27 )
-volume_db = -5.81
+volume_db = -7.553
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 28 )
+volume_db = -80.0
 autoplay = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "RESET"
+anims/BonketteArrives = SubResource( 4 )
 anims/RESET = SubResource( 3 )
 
 [editable path="BrinkEvilCircularSaw"]
