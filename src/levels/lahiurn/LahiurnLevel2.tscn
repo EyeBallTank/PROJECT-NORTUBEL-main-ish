@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=25]
 [ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SUB CALM SONG.wav" type="AudioStream" id=26]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SONG SUB WATER.wav" type="AudioStream" id=27]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -193,6 +194,30 @@ tracks/1/keys = {
 "update": 0,
 "values": [ -5.104 ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("SongPlayer2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("SongPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [sub_resource type="Animation" id=7]
 length = 0.001
@@ -215,6 +240,83 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -5.104 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("SongPlayer2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("SongPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "WaterMusic"
+length = 43.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("SongPlayer1:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SongPlayer1:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("SongPlayer2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("SongPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -298,7 +400,7 @@ bluswitchskin = "res://assets/sprites/level_object_sprites/lahiurn/Blue switch l
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
-volume_db = -16.7
+volume_db = -24.834
 pitch_scale = 1.19
 bus = "Sound"
 
@@ -411,10 +513,15 @@ spritename = "lahiurn movplatvert"
 autoplay = "CalmMusic"
 anims/CalmMusic = SubResource( 6 )
 anims/RESET = SubResource( 7 )
+anims/WaterMusic = SubResource( 8 )
 
 [node name="SongPlayer1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 26 )
 volume_db = -5.104
+bus = "Music"
+
+[node name="SongPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
 bus = "Music"
 
 [editable path="LahiurnMovingPlatCog"]

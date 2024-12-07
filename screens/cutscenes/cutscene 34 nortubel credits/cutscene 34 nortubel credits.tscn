@@ -2119,7 +2119,8 @@ Johannes Roussel's free soundfonts library.
 FreeSound (Saltbearer, nicovize)
 BigSoundBank (Joseph SARDIN)
 plugins4free
-GeneralUser GS"
+GeneralUser GS
+samplefocus . com"
 
 [node name="CROSSOVER" type="Label" parent="."]
 margin_left = 412.0
