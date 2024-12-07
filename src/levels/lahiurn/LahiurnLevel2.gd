@@ -2,7 +2,7 @@ extends Node2D
 
 onready var animation = $AnimationPlayer
 onready var otheranimation = $AnimationPlayer2
-
+onready var musicplayer = $MusicPlayer
 
 func _ready():
 	animation.play("RESET")

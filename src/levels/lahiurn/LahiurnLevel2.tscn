@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/levels/lahiurn/LahiurnLevel2.gd" type="Script" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SUB CALM SONG.wav" type="AudioStream" id=26]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -164,6 +165,62 @@ tracks/1/keys = {
 "values": [ Vector2( 6527, 4032 ), Vector2( 6527, 2624 ) ]
 }
 
+[sub_resource type="Animation" id=6]
+resource_name = "CalmMusic"
+length = 43.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("SongPlayer1:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SongPlayer1:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -5.104 ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("SongPlayer1:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SongPlayer1:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -5.104 ]
+}
+
 [node name="LahiurnLevel2" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -294,9 +351,6 @@ spritename = "lahiurn coin"
 [node name="LahiurnMovingPlatCog" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1585, 2360 )
 
-[node name="Sprite" parent="LahiurnMovingPlatCog/Platform" index="0"]
-frame = 1
-
 [node name="Blue key" parent="." instance=ExtResource( 15 )]
 position = Vector2( 3677, 1497 )
 spritename = "lahiurn blukey"
@@ -352,5 +406,15 @@ spritename = "lahiurn movplatvert"
 [node name="MovingPlatVerti3" parent="." instance=ExtResource( 23 )]
 position = Vector2( 176, 1576 )
 spritename = "lahiurn movplatvert"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "CalmMusic"
+anims/CalmMusic = SubResource( 6 )
+anims/RESET = SubResource( 7 )
+
+[node name="SongPlayer1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )
+volume_db = -5.104
+bus = "Music"
 
 [editable path="LahiurnMovingPlatCog"]
