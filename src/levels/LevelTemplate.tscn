@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -31,6 +31,24 @@
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=30]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=31]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 4.wav" type="AudioStream" id=32]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 48.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="LevelTemplate" type="Node2D"]
 light_mask = 4
@@ -257,3 +275,12 @@ collision_layer = 4
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( -1179498, -2147483294, 0, -1179497, 352, 0, -1179496, 352, 0, -1179495, 352, 0, -1179494, 352, 0, -1179493, 352, 0, -1179492, 352, 0, -1179491, -1610612382, 0, -1113962, -1610612384, 0, -1113955, -1610612384, 0, -1048426, -1610612384, 0, -1048419, -1610612384, 0, -982890, -1610612384, 0, -982883, -1610612384, 0, -917354, -1610612384, 0, -917347, -1610612384, 0, -851818, -1610612384, 0, -851811, -1610612384, 0, -786282, -536870555, 0, -786275, -536870555, 0, 589879, 352, 0, 589880, 352, 0, 589881, 352, 0, 589882, 352, 0, 589883, 352, 0, 589884, 352, 0, 589885, 352, 0, 589886, 352, 0, 589887, 352, 0, 589888, 352, 0, 589889, 352, 0, 589890, 352, 0, 589891, 352, 0, 589892, 352, 0, 589893, 352, 0, 589894, 352, 0, 589895, 352, 0, 589896, 352, 0, 589897, 352, 0, 589898, 352, 0, 589899, 352, 0, 589900, 352, 0, 589901, 352, 0, 589902, 352, 0, 589903, 352, 0, 589904, 352, 0, 589905, 352, 0, 589906, 352, 0, 589951, -2147483294, 0, 589952, 1073742176, 0, 589953, 1073742176, 0, 589954, 1073742176, 0, 589955, 1073742176, 0, 589956, 1073742176, 0, 589957, 1073742176, 0, 589958, 1073742176, 0, 589959, 1073742176, 0, 589960, 1073742176, 0, 655487, -536870560, 0, 721023, -536870560, 0, 786559, -536870560, 0, 852095, -536870560, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 32 )
+volume_db = -1.914
+bus = "Music"
