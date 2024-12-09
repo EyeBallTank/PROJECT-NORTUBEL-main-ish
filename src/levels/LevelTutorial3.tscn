@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 29.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -42,6 +42,24 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 33.png" type="Texture" id=40]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 34.png" type="Texture" id=41]
 [ext_resource path="res://src/npc_actors/BookInfoRevised.tscn" type="PackedScene" id=42]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3.wav" type="AudioStream" id=43]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 62.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="LevelTutorial3" type="Node2D"]
 light_mask = 4
@@ -272,3 +290,12 @@ texture = ExtResource( 9 )
 position = Vector2( 1865, 476 )
 customtext = "BOOK_HINT_SOCCER_CONTROLS_REVISED"
 boardname = "tutorial soccer revised"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 43 )
+volume_db = -9.524
+bus = "Music"

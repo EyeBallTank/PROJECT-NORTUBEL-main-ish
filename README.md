@@ -219,7 +219,7 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * GlitchedCode (Used tutorial video on Password system)
 * HE360 (Used tutorial video for the art galleries)
 * Daviesdev (Used tutorial video for the 2 videos in LevelTutorial1)
-* horbror (Feedback, also for adding a Nortubel reference to his game Dreams of Joy Departed which in turn lead to this game referencing DOJD)
+* horbror (Feedback, music, also for adding a Nortubel reference to his game Dreams of Joy Departed which in turn lead to this game referencing DOJD)
 * Slapson/Slapsoff (Faygo cameo)
 * FairyGodBomber (Ganyah cameo)
 * Hemoglobinworld (Crossover with DreadHunter)
@@ -235,7 +235,17 @@ From tutorials and assets or software related to Godot, to stuff around other pr
 * Any help I can get from r/Godot, Discord and /agdg/.
 * Various media and stuff i took inspiration from and copied.
 * Blender and related addons, 3D software and certain models i used even in 2D art.
-* LMMS and various sound assets/samples from their site (Not yet).
+* LMMS (Used for music).
+* LMMS Sharing Platform / Samples (Music assets)
+* SampleRadar/The MusicRadar team (Music assets)
+* DSK Music  (Music assets)
+* freevstplugins . net  (Music assets)
+* Johannes Roussel's free soundfonts library.  (Music assets)
+* FreeSound (Saltbearer, nicovize) (Music assets)
+* BigSoundBank (Joseph SARDIN) (Music assets)
+* plugins4free (Music assets)
+* GeneralUser GS (Music assets)
+* samplefocus . com (Music assets)
 
 # ALSO: Feel free to give me Github and Godot related tips in general.
 I'm still a newcomer at this because of my complicated schedule, so i'm a bit behind.
