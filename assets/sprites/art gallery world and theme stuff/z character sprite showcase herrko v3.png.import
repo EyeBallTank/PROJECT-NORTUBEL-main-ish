@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Convo Pebble Uulga.png-8f42dad3884d969b4891c50fecb681d6.stex"
+path="res://.import/z character sprite showcase herrko v3.png-85897d3c866eacaa23319b76bf09897c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc_actor_sprites/herrko/Convo Pebble Uulga.png"
-dest_files=[ "res://.import/Convo Pebble Uulga.png-8f42dad3884d969b4891c50fecb681d6.stex" ]
+source_file="res://assets/sprites/art gallery world and theme stuff/z character sprite showcase herrko v3.png"
+dest_files=[ "res://.import/z character sprite showcase herrko v3.png-85897d3c866eacaa23319b76bf09897c.stex" ]
 
 [params]
 
