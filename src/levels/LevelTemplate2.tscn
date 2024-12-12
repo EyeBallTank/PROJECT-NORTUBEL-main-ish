@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -33,6 +33,24 @@
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=31]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=32]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 5.wav" type="AudioStream" id=34]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 68.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="LevelTemplate2" type="Node2D"]
 light_mask = 4
@@ -225,3 +243,12 @@ collision_layer = 4
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( 65575, -2147483299, 0, 65576, 536871262, 0, 65577, 536871262, 0, 65578, 536871262, 0, 65579, 536871262, 0, 65580, 536871262, 0, 65581, 536871261, 0, 131111, -2147483298, 0, 131117, 536871263, 0, 131118, 536871261, 0, 196647, -2147483298, 0, 196654, 536871263, 0, 196655, 536871261, 0, 262183, -2147483298, 0, 262191, 536871263, 0, 262192, 536871262, 0, 262193, 536871261, 0, 327719, -2147483298, 0, 327729, 536871263, 0, 327730, 536871261, 0, 393255, -2147483298, 0, 393266, 536871263, 0, 393267, 536871261, 0, 458791, -2147483298, 0, 458803, 536871263, 0, 458804, 536871261, 0, 524327, 1073742173, 0, 524328, 1073742174, 0, 524329, 1073742174, 0, 524330, 1073742174, 0, 524331, 1073742174, 0, 524332, 1073742174, 0, 524333, 1073742174, 0, 524334, 1073742174, 0, 524335, 1073742174, 0, 524336, 1073742174, 0, 524337, 1073742174, 0, 524338, 1073742174, 0, 524339, 1073742174, 0, 524340, 1073742174, 0, 524341, 1073742176, 0, 524342, 1073742176, 0, 524343, 1073742176, 0 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 34 )
+volume_db = -10.888
+bus = "Music"
