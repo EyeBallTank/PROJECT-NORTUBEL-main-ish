@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -47,6 +47,24 @@
 [ext_resource path="res://src/enemies/herrko/TsoovukotKnight.tscn" type="PackedScene" id=45]
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=46]
 [ext_resource path="res://src/level_hazards/lahiurn/LahiurnFloorMine.tscn" type="PackedScene" id=47]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 7.wav" type="AudioStream" id=48]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 83.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartNineLevel1" type="Node2D"]
 
@@ -360,3 +378,12 @@ position = Vector2( 10937, -630 )
 
 [node name="LahiurnFloorMine" parent="." instance=ExtResource( 47 )]
 position = Vector2( 12638, 368 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 48 )
+volume_db = -5.104
+bus = "Music"
