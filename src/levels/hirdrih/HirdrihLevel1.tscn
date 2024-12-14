@@ -36,7 +36,7 @@
 [ext_resource path="res://src/level_objects/FloorSwitch.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/npc_actors/hird npc/HirdTaxi NPC.tscn" type="PackedScene" id=35]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=36]
-[ext_resource path="res://assets/sounds/music/levels/hirdrih/HIRDRIH SONG 1.wav" type="AudioStream" id=37]
+[ext_resource path="res://assets/sounds/music/levels/hirdrih/HIRDRIH SONG 1 v2.wav" type="AudioStream" id=37]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -359,3 +359,4 @@ anims/RESET = SubResource( 1 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 37 )
 volume_db = -2.552
+bus = "Music"
