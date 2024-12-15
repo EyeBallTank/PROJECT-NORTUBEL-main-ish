@@ -379,5 +379,6 @@ anims/RESET = SubResource( 3 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 33 )
 volume_db = -5.742
+bus = "Music"
 
 [editable path="Hird Sphere Vehicle"]
