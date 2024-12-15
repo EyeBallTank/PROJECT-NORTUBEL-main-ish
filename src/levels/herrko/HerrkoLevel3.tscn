@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -31,6 +31,24 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=31]
+[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 3.wav" type="AudioStream" id=32]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 41.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="HerrkoLevel3" type="Node2D"]
 
@@ -264,5 +282,14 @@ collision_newsize = Vector2( 216, 8 )
 position = Vector2( 12927, 3392 )
 scale = Vector2( 48, 8 )
 collision_newsize = Vector2( 48, 8 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 32 )
+volume_db = -6.38
+bus = "Music"
 
 [editable path="HerrkMagicCarpetPlatform"]
