@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 2 village tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -38,6 +38,24 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/level_objects/JumppadBigger.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=38]
+[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 2.wav" type="AudioStream" id=39]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 51.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="HerrkoLevel2" type="Node2D"]
 
@@ -346,3 +364,12 @@ collision_newsize = Vector2( 24, 8 )
 position = Vector2( 7954, 1852 )
 scale = Vector2( 5, 36 )
 collision_newsize = Vector2( 5, 36 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 39 )
+volume_db = -3.19
+bus = "Music"
