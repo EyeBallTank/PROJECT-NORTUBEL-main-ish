@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://assets/tilesets/herrko/herrko 4 boat tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -29,6 +29,24 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 4.wav" type="AudioStream" id=30]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 73.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="HerrkoLevel4" type="Node2D"]
 
@@ -300,3 +318,12 @@ spritename = "herrko health"
 
 [node name="Gong" parent="." instance=ExtResource( 29 )]
 position = Vector2( 16562, 1417 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 30 )
+volume_db = -3.828
+bus = "Music"
