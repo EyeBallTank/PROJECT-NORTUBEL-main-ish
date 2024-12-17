@@ -546,6 +546,7 @@ position = Vector2( 8881, 1656 )
 
 [node name="Sprite" parent="AnnaFresserNPC" index="0"]
 animation = "swimming"
+frame = 1
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 autoplay = "RESET"
