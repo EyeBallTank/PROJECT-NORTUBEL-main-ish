@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/npc_actors/lahiurn/Lahiurn wounded soldier NPC.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=41]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SONG 1.wav" type="AudioStream" id=42]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 33 )
@@ -159,6 +160,23 @@ tracks/7/keys = {
 "values": [ Vector2( -1224, -934 ), Vector2( -1224, -934 ), Vector2( 1180, 30 ), Vector2( 1208, -154 ), Vector2( 1204, -485 ), Vector2( 1173, -725 ) ]
 }
 
+[sub_resource type="Animation" id=5]
+resource_name = "RESET"
+length = 71.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
 [node name="LahiurnLevel1" type="Node2D"]
 script = ExtResource( 29 )
 
@@ -181,6 +199,7 @@ position = Vector2( -1737, 111 )
 rotation = -0.19036
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="Plane2" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -188,6 +207,7 @@ position = Vector2( 1685, 440 )
 rotation = 0.16806
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 flip_h = true
 
@@ -196,7 +216,6 @@ position = Vector2( -1224, -934 )
 rotation = 0.40362
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Bullets1" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -534,6 +553,15 @@ customname = "LAHIURN_SOLDIER_WOUNDED_NPC_NAME"
 
 [node name="Gong" parent="." instance=ExtResource( 41 )]
 position = Vector2( 14997, 1290 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 5 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 42 )
+volume_db = -6.391
+bus = "Music"
 
 [editable path="LahiurnEletricCageTrap"]
 [editable path="LahiurnRotatingPlatTrap"]
