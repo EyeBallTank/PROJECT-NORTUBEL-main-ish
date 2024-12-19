@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://assets/tilesets/lahiurn/lahiurn 3 city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=35]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=36]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SONG 3.wav" type="AudioStream" id=37]
 
 [sub_resource type="Animation" id=2]
 resource_name = "AndSoWasLeft"
@@ -299,6 +300,23 @@ tracks/6/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 22.7 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "RESET"
+length = 54.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [node name="LahiurnLevel3" type="Node2D"]
@@ -621,6 +639,15 @@ spritename = "lahiurn movplatvert"
 [node name="MovingPlatVerti2" parent="." instance=ExtResource( 36 )]
 position = Vector2( 15236, 1315 )
 spritename = "lahiurn movplatvert"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 5 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 37 )
+volume_db = -3.828
+bus = "Music"
 
 [editable path="LahiurnWoodenPlatFall"]
 [editable path="LahiurnCityCamera"]
