@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://src/npc_actors/krimb npc/Sarah Sevanko NPC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -30,6 +30,24 @@
 [ext_resource path="res://src/npc_actors/krimb npc/ManTiedStreetLight NPC.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPoliceCar.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/sounds/music/levels/krimbstone/KRIMBSTONE SONG 2.wav" type="AudioStream" id=31]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 126.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="KrimbLevel1" type="Node2D"]
 
@@ -339,3 +357,12 @@ spritename = "krimbstone movplatvert"
 [node name="LoreBook2" parent="." instance=ExtResource( 16 )]
 position = Vector2( 7392, -2096 )
 customtext = "TUTORIAL_ANIMATED_ARTBOOK_TEXT"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 31 )
+volume_db = -2.324
+bus = "Music"
