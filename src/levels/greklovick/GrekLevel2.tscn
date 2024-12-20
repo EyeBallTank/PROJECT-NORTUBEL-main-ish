@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/tilesets/greklovick/grek city tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatHorizLonger.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/GREKLOVICK SONG 2.wav" type="AudioStream" id=24]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/npc_actors/grek npc/FragileNPC.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/npc_actors/grek npc/RaymondNPC.tscn" type="PackedScene" id=27]
@@ -32,6 +33,23 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek cars bg test.png" type="Texture" id=31]
 [ext_resource path="res://src/levels/greklovick/GrekLevel2.gd" type="Script" id=32]
 [ext_resource path="res://src/level_objects/JumppadBigger.tscn" type="PackedScene" id=33]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 80.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="GrekLevel2" type="Node2D"]
 script = ExtResource( 32 )
@@ -351,3 +369,12 @@ spritename = "greklovick lorebook"
 [node name="JumppadBigger" parent="." instance=ExtResource( 33 )]
 position = Vector2( 36944, 1866 )
 spritename = "greklovick jumppad"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 24 )
+volume_db = -3.828
+bus = "Music"
