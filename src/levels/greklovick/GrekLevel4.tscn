@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,11 +32,24 @@
 [ext_resource path="res://src/npc_actors/grek npc/GrekMedicCrewNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=32]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/GREKLOVICK SONG 4.wav" type="AudioStream" id=33]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 80.0
+length = 62.0
 loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="GrekLevel4" type="Node2D"]
 
@@ -311,6 +324,8 @@ autoplay = "RESET"
 anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 33 )
+volume_db = -3.648
 bus = "Music"
 
 [editable path="GrekAsteroidHazard"]

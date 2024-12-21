@@ -4,6 +4,7 @@ onready var pausemenu = $MenuMain
 onready var optionsmenu = $OptionsMenu
 onready var password = $PasswordMenu
 onready var manualtext = $ManualText
+
 #onready var save_file = SaveFile.g_data
 
 #1ST LETTERS IN codes NAMES SHOULD BE LOWER CASE AND LETTERS, NOT NUMBERS
@@ -343,8 +344,3 @@ func unt0tr():
 
 func n0rtbl():
 	SceneManager.change_scene("level_transition_effect", "res://screens/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals.tscn")
-
-
-
-
-
