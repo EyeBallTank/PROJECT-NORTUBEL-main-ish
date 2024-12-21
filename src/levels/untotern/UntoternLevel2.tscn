@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://src/enemies/untotern/PossessedLantern.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=41]
+[ext_resource path="res://assets/sounds/music/levels/untotern/UNTOTERN SONG 2.wav" type="AudioStream" id=42]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -61,8 +62,20 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "RESET"
-length = 80.0
+length = 100.4
 loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="UntoternLevel2" type="Node2D"]
 script = ExtResource( 15 )
@@ -215,9 +228,6 @@ position = Vector2( 10347, 1719 )
 [node name="UntoWeirdHeadPlatform" parent="." instance=ExtResource( 24 )]
 position = Vector2( 12393, 1960 )
 
-[node name="Sprite" parent="UntoWeirdHeadPlatform/Platform" index="0"]
-frame = 0
-
 [node name="Blue key" parent="." instance=ExtResource( 25 )]
 position = Vector2( 12091, 958 )
 spritename = "untotern blukey"
@@ -363,6 +373,8 @@ autoplay = "RESET"
 anims/RESET = SubResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 42 )
+volume_db = -3.786
 bus = "Music"
 
 [editable path="UntoWeirdHeadPlatform"]

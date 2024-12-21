@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -32,6 +32,11 @@
 [ext_resource path="res://src/npc_actors/grek npc/GrekMedicCrewNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=32]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 80.0
+loop = true
 
 [node name="GrekLevel4" type="Node2D"]
 
@@ -300,5 +305,12 @@ spritename = "greklovick lorebook"
 [node name="LifeguardFloater" parent="." instance=ExtResource( 32 )]
 position = Vector2( 12280, -1267 )
 spritename = "greklovick floater"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = "Music"
 
 [editable path="GrekAsteroidHazard"]
