@@ -3,6 +3,7 @@ extends Node
 onready var animationplayer = $AnimationPlayer
 export var nextscene = "res://src/levels/LevelTutorial1.tscn"
 
+onready var audio = $AudioStreamPlayer
 
 #maybe i should work on this later because i need to consider:
 #* HOW MODULAR WILL THESE TYPE OF SCENE BE IN OTHER INSTANCES/USES
@@ -22,10 +23,13 @@ func _process(_delta):
 		SceneManager.change_scene("level_transition_effect", nextscene)
 	if Input.get_action_strength("interactcomp"):
 		animationplayer.set_speed_scale(2.5)
+		audio.set_pitch_scale(2.5)
 	elif Input.get_action_strength("stellajump"):
 		animationplayer.set_speed_scale(0.4)
+		audio.set_pitch_scale(0.4)
 	else:
 		animationplayer.set_speed_scale(1.0)
+		audio.set_pitch_scale(1.0)
 
 
 func cutscene_over():

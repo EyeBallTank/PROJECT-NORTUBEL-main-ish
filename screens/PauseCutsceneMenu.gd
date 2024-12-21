@@ -36,3 +36,17 @@ func _on_EN_Setting_pressed():
 
 func _on_PT_Setting_pressed():
 	TranslationServer.set_locale("pt")
+
+
+func _on_Music_value_changed(value):
+	volume(1,value)
+
+func volume(bus_index, value):
+	AudioServer.set_bus_volume_db(bus_index, linear2db(value)-30)
+
+func _on_Sound_value_changed(value):
+	volume(2,value)
+
+
+func _on_CheckBox_toggled(button_pressed):
+	OS.window_fullscreen = button_pressed

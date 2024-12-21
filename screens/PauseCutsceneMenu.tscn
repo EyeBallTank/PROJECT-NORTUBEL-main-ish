@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/menusandui/DialogueBoxTest.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/pause visibility toggle.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/dialogue box test.PNG" type="Texture" id=11]
 
 [node name="PauseCutsceneMenu" type="Control"]
 pause_mode = 2
@@ -108,7 +109,97 @@ margin_bottom = 38.0
 custom_fonts/font = ExtResource( 7 )
 text = "PT"
 
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 241.0
+margin_top = 200.0
+margin_right = 777.0
+margin_bottom = 256.0
+texture = ExtResource( 11 )
+patch_margin_left = 4
+patch_margin_right = 4
+
+[node name="SoundSettings" type="HBoxContainer" parent="."]
+margin_left = 283.0
+margin_top = 210.0
+margin_right = 525.0
+margin_bottom = 250.0
+size_flags_vertical = 3
+
+[node name="Labels" type="VBoxContainer" parent="SoundSettings"]
+margin_right = 72.0
+margin_bottom = 40.0
+size_flags_vertical = 3
+
+[node name="Music" type="Label" parent="SoundSettings/Labels"]
+margin_right = 72.0
+margin_bottom = 17.0
+custom_fonts/font = ExtResource( 7 )
+text = "MUSIC_SET"
+
+[node name="Sound" type="Label" parent="SoundSettings/Labels"]
+margin_top = 21.0
+margin_right = 72.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 7 )
+text = "SOUND_SET"
+
+[node name="Sliders" type="VBoxContainer" parent="SoundSettings"]
+margin_left = 76.0
+margin_right = 242.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Music" type="HSlider" parent="SoundSettings/Sliders"]
+margin_right = 166.0
+margin_bottom = 16.0
+value = 50.0
+
+[node name="Sound" type="HSlider" parent="SoundSettings/Sliders"]
+margin_top = 20.0
+margin_right = 166.0
+margin_bottom = 36.0
+value = 50.0
+
+[node name="VideoSettings" type="HBoxContainer" parent="."]
+margin_left = 581.0
+margin_top = 208.0
+margin_right = 621.0
+margin_bottom = 248.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="VBoxContainer" parent="VideoSettings"]
+margin_right = 91.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Fullscreeen" type="Label" parent="VideoSettings/Label"]
+margin_right = 91.0
+margin_bottom = 17.0
+custom_fonts/font = ExtResource( 7 )
+text = "FULLSCREEN_B"
+
+[node name="Check" type="VBoxContainer" parent="VideoSettings"]
+margin_left = 95.0
+margin_right = 119.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CheckBox" type="CheckBox" parent="VideoSettings/Check"]
+margin_right = 24.0
+margin_bottom = 24.0
+
 [connection signal="pressed" from="UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
 [connection signal="pressed" from="SkipCutscene" to="." method="_on_SkipCutscene_pressed"]
 [connection signal="pressed" from="EN Setting" to="." method="_on_EN_Setting_pressed"]
 [connection signal="pressed" from="PT Setting" to="." method="_on_PT_Setting_pressed"]
+[connection signal="value_changed" from="SoundSettings/Sliders/Music" to="." method="_on_Music_value_changed"]
+[connection signal="value_changed" from="SoundSettings/Sliders/Sound" to="." method="_on_Sound_value_changed"]
+[connection signal="toggled" from="VideoSettings/Check/CheckBox" to="." method="_on_CheckBox_toggled"]
