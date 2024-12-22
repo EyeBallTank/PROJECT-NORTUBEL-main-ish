@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -38,6 +38,11 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkRedJesterThree.tscn" type="PackedScene" id=38]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 80.0
+loop = true
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -252,3 +257,10 @@ position = Vector2( 4562, -255 )
 
 [node name="BrinkRedJesterThree2" parent="." instance=ExtResource( 38 )]
 position = Vector2( -2094, -415 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = "Music"
