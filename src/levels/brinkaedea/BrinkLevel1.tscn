@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -41,6 +41,11 @@
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=41]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 80.0
+loop = true
 
 [node name="BrinkLevel1" type="Node2D"]
 
@@ -331,3 +336,10 @@ spritename = "brinkaedea movplathoriz"
 position = Vector2( 1961, 1982 )
 customtext = "BRINK_LORE_TEXT_PRESENTBOXES"
 spritename = "brinkaedea lorebook"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = "Music"
