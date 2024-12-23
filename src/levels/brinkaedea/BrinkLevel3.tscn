@@ -26,8 +26,8 @@
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/levels/brinkaedea/BrinkLevel3.gd" type="Script" id=26]
-[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKA SONG BASIC.wav" type="AudioStream" id=27]
-[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKETTE SONG BASIC.wav" type="AudioStream" id=28]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKA SONG BASIC V2.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKETTE SONG BASIC V2.wav" type="AudioStream" id=28]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -87,7 +87,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "BonketteArrives"
-length = 35.0
+length = 46.6
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -135,12 +135,12 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -7.553 ]
+"values": [ -6.915 ]
 }
 
 [sub_resource type="Animation" id=3]
 resource_name = "RESET"
-length = 25.0
+length = 24.6
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -164,7 +164,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -7.553 ]
+"values": [ -3.087 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("AudioStreamPlayer2:playing")
@@ -403,14 +403,12 @@ position = Vector2( 8887, 1790 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 27 )
-volume_db = -7.553
-autoplay = true
+volume_db = -3.087
 bus = "Music"
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 28 )
 volume_db = -80.0
-autoplay = true
 bus = "Music"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
