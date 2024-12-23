@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://assets/tilesets/brinkaedea/brink tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=2]
@@ -38,11 +38,24 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkRedJesterThree.tscn" type="PackedScene" id=38]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINKAEDEA SONG 3.wav" type="AudioStream" id=39]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 80.0
+length = 134.0
 loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="BrinkLevel25" type="Node2D"]
 
@@ -263,4 +276,6 @@ autoplay = "RESET"
 anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 39 )
+volume_db = -2.905
 bus = "Music"
