@@ -37,11 +37,11 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 37.png" type="Texture" id=35]
 [ext_resource path="res://src/npc_actors/RevampedTVVideoTwo.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/npc_actors/RevampedTVVideoOne.tscn" type="PackedScene" id=37]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 1 v2.wav" type="AudioStream" id=38]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 1 V3.wav" type="AudioStream" id=38]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 57.0
+length = 112.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -325,7 +325,7 @@ position = Vector2( 5530, -1406 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 38 )
-volume_db = -6.676
+volume_db = -2.609
 bus = "Music"
 
 [node name="LevelSong" type="AnimationPlayer" parent="."]
