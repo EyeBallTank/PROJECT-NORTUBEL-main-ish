@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/rival signs/RivalIdleSign.tscn" type="PackedScene" id=2]
@@ -24,6 +24,24 @@
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level prefabs/nort prefabs/BlueRaceWallBarrier.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/right through platform.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/SHIHIRO AND ALT RIVALS RACE SONG.wav" type="AudioStream" id=25]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 42.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartTwoLevel3" type="Node2D"]
 
@@ -200,6 +218,14 @@ position = Vector2( 3256, 489 )
 position = Vector2( 3328, 0 )
 scale = Vector2( 8, 16 )
 collision_newsize = Vector2( 8, 16 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
+volume_db = 2.552
 
 [editable path="NortRaceFlag"]
 [editable path="BlueRaceWallBarrier"]
