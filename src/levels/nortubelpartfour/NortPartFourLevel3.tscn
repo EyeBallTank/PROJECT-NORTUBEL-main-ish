@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://assets/sprites/level_backgrounds/level bg test 6.png" type="Texture" id=18]
 [ext_resource path="res://assets/sounds/bosses/amalia/209517__soundscape_leuphana__20131202_slamming-door_zoomh2nxy.wav" type="AudioStream" id=19]
 [ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL BOSS SONG.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL BOSS DEFEAT SONG.wav" type="AudioStream" id=21]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -400,6 +401,59 @@ tracks/1/keys = {
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 487, 338 )
 
+[sub_resource type="Animation" id=15]
+resource_name = "AmaliaIsGone"
+length = 22.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer2:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer2:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer3:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -2.552 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer3:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
 [sub_resource type="Animation" id=14]
 resource_name = "RESET"
 length = 84.6
@@ -415,6 +469,42 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer3:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer3:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioStreamPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -3.34 ]
 }
 
 [node name="NortPartFourLevel3" type="Node2D"]
@@ -575,11 +665,17 @@ bus = "Sound"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 autoplay = "RESET"
+anims/AmaliaIsGone = SubResource( 15 )
 anims/RESET = SubResource( 14 )
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 20 )
 volume_db = -3.34
+bus = "Music"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+volume_db = -80.0
 bus = "Music"
 
 [editable path="AmaliaHand"]

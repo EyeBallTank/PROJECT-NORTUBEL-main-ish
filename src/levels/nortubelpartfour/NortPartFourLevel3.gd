@@ -3,6 +3,7 @@ extends Node2D
 onready var animation = $AnimationPlayer 
 onready var lefthandspawn = $LeftHandSpawn
 onready var righthandspawn = $RightHandSpawn
+onready var musicplayer = $MusicPlayer
 
 
 var phase = 1
@@ -25,6 +26,7 @@ var state = PHASEONE
 
 func _ready():
 	animation.play("RESET")
+	musicplayer.play("RESET")
 	Signals.connect("hand_was_destroyed", self, "amalia_is_hurt")
 
 func send_a_signal():
@@ -46,8 +48,10 @@ func _physics_process(delta):
 				state = DEAD
 		DEAD:
 			animation.play("deadhouse")
+			musicplayer.play("AmaliaIsGone")
 		VERYDEAD:
 			animation.play("staydead")
+			
 
 
 func go_to_phase_two():
