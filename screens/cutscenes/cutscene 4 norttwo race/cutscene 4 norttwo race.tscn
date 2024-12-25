@@ -539,3 +539,6 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 14 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = "Music"

@@ -31,11 +31,11 @@
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=30]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=31]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 4 v2.wav" type="AudioStream" id=32]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 4 NEW.wav" type="AudioStream" id=32]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 41.3
+length = 30.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -282,5 +282,5 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 32 )
-volume_db = -1.914
+volume_db = -3.771
 bus = "Music"

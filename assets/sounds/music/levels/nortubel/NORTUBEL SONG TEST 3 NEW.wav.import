@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/NORTUBEL SONG TEST 3 NEW.wav-c4c62b28add94b19169193b88e0d372e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav"
+dest_files=[ "res://.import/NORTUBEL SONG TEST 3 NEW.wav-c4c62b28add94b19169193b88e0d372e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

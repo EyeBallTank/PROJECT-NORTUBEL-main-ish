@@ -42,11 +42,11 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 33.png" type="Texture" id=40]
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 34.png" type="Texture" id=41]
 [ext_resource path="res://src/npc_actors/BookInfoRevised.tscn" type="PackedScene" id=42]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3.wav" type="AudioStream" id=43]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav" type="AudioStream" id=43]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 62.0
+length = 72.6
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -297,5 +297,5 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 43 )
-volume_db = -9.524
+volume_db = 3.258
 bus = "Music"

@@ -38,11 +38,11 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/level_objects/JumppadBigger.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=38]
-[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 2.wav" type="AudioStream" id=39]
+[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 2 NEW.wav" type="AudioStream" id=39]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 51.6
+length = 48.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")

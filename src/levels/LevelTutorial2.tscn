@@ -42,11 +42,11 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 26.png" type="Texture" id=40]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=42]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2.wav" type="AudioStream" id=43]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=43]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 41.5
+length = 37.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -189,6 +189,11 @@ companionskin = "res://assets/sprites/play_actor_sprites/PeteSprites.tres"
 [node name="companionspawn" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1216, 384 )
 
+[node name="TutorialBoard19" type="Sprite" parent="."]
+position = Vector2( 2587, 239 )
+scale = Vector2( 0.539, 0.539 )
+texture = ExtResource( 35 )
+
 [node name="Coin" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1800, 448 )
 
@@ -291,11 +296,6 @@ position = Vector2( 1969, 239 )
 scale = Vector2( 0.539, 0.539 )
 texture = ExtResource( 34 )
 
-[node name="TutorialBoard19" type="Sprite" parent="."]
-position = Vector2( 2587, 239 )
-scale = Vector2( 0.539, 0.539 )
-texture = ExtResource( 35 )
-
 [node name="TutorialBoard21" type="Sprite" parent="."]
 position = Vector2( 5818, 596 )
 scale = Vector2( 0.539, 0.539 )
@@ -347,5 +347,5 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 43 )
-volume_db = -6.38
+volume_db = 2.734
 bus = "Music"
