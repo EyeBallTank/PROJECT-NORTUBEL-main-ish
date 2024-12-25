@@ -401,7 +401,7 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
-volume_db = -3.505
+volume_db = -2.343
 bus = "Music"
 
 [editable path="GrekMovingCrateTrackBased"]

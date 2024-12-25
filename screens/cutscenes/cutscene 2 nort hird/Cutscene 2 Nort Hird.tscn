@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 12.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 2 nort hird/cutscene 2 nort hird panel 14.png" type="Texture" id=22]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 02.wav" type="AudioStream" id=24]
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -337,6 +338,18 @@ tracks/25/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("AudioStreamPlayer:playing")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=1]
@@ -668,6 +681,18 @@ tracks/26/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/27/type = "value"
+tracks/27/path = NodePath("AudioStreamPlayer:playing")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="Cutscene 2 Nort Hird" type="Node"]
 script = ExtResource( 3 )
@@ -821,3 +846,8 @@ anims/RESET = SubResource( 2 )
 "anims/intro cutscene" = SubResource( 1 )
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 23 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 24 )
+volume_db = -2.905
+bus = "Music"

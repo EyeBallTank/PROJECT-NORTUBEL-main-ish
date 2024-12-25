@@ -250,5 +250,5 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 34 )
-volume_db = -3.916
+volume_db = 0.732
 bus = "Music"
