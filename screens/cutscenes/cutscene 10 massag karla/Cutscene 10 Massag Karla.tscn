@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 3.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 4.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 5.png" type="Texture" id=10]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 10.wav" type="AudioStream" id=11]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -108,6 +109,18 @@ tracks/7/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 485, -281 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("AudioStreamPlayer:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -223,6 +236,18 @@ tracks/8/keys = {
 "update": 0,
 "values": [ Vector2( 485, -281 ), Vector2( 485, -281 ), Vector2( 485, 229 ) ]
 }
+tracks/9/type = "value"
+tracks/9/path = NodePath("AudioStreamPlayer:playing")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -311,3 +336,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = 2.905
+bus = "Music"
