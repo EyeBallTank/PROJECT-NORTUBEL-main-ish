@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/playerspawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/WorldTitleName.tscn" type="PackedScene" id=2]
@@ -26,6 +26,24 @@
 [ext_resource path="res://src/level_objects/WaterWheel.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav" type="AudioStream" id=27]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 72.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartThreeLevel1" type="Node2D"]
 
@@ -193,3 +211,12 @@ collision_layer = 4
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( 1376365, 352, 0, 1376366, 352, 0, 1376367, 352, 0, 1376368, 352, 0, 1376369, 352, 0, 1376370, 352, 0, 1376371, 352, 0, 1376372, 352, 0, 1376373, 352, 0, 1376374, 352, 0, 1376375, 352, 0, 1376376, 352, 0, 1376377, 352, 0, 1376378, 352, 0, 1376379, 352, 0, 1376380, 352, 0, 1376381, 352, 0, 1376382, 352, 0, 1376383, 352, 0, 1376384, 352, 0 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
+volume_db = 3.258
+bus = "Music"
