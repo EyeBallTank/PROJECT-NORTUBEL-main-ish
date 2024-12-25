@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -19,6 +19,24 @@
 [ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=20]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 37.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartSevenLevel3" type="Node2D"]
 
@@ -115,3 +133,12 @@ position = Vector2( 107, 1713 )
 position = Vector2( -640, 2112 )
 scale = Vector2( 24, 200 )
 collision_newsize = Vector2( 24, 200 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
+volume_db = 2.734
+bus = "Music"

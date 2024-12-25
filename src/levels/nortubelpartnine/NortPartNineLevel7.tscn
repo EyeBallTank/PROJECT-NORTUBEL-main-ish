@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=2]
@@ -40,6 +40,24 @@
 [ext_resource path="res://src/enemies/lahiurn/LahiurnSoldier.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/level_hazards/krimbstone/BurningTire.tscn" type="PackedScene" id=40]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 7.wav" type="AudioStream" id=41]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 83.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartNineLevel7" type="Node2D"]
 
@@ -328,3 +346,12 @@ position = Vector2( 4828, 3225 )
 
 [node name="BurningTire" parent="." instance=ExtResource( 40 )]
 position = Vector2( 1912, 3391 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 41 )
+volume_db = -5.104
+bus = "Music"

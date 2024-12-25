@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/menusandui/CurrentUI.tscn" type="PackedScene" id=2]
@@ -18,6 +18,24 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/left through platform.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav" type="AudioStream" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 72.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartEightLevel2" type="Node2D"]
 
@@ -172,3 +190,12 @@ position = Vector2( 3433, 521 )
 position = Vector2( 2944, 2054 )
 scale = Vector2( 8, 96 )
 collision_newsize = Vector2( 8, 96 )
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 19 )
+volume_db = 3.258
+bus = "Music"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/play_actors/CompanionFourth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=2]
@@ -23,6 +23,24 @@
 [ext_resource path="res://src/npc_actors/nort npc/AltAngelaNPC.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/npc_actors/nort npc/AltKatrinNPC.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_hazards/NortFallingStalactite.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=24]
+
+[sub_resource type="Animation" id=1]
+resource_name = "RESET"
+length = 37.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="NortPartFourLevel2" type="Node2D"]
 
@@ -184,5 +202,14 @@ position = Vector2( 371, -858 )
 customtext = "MELVIN_B_NPC_TALK"
 customtext3 = "MELVIN_B_NPC_HUG"
 customtext4 = "MELVIN_B_NPC_HURT"
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+autoplay = "RESET"
+anims/RESET = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 24 )
+volume_db = 2.734
+bus = "Music"
 
 [editable path="NortSeesawTrain"]
