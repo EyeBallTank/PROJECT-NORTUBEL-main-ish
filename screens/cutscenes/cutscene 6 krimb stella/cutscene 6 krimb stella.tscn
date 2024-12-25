@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 4.png" type="Texture" id=26]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 6 krimb stella/cutscene 6 krimb stella panel 1.png" type="Texture" id=27]
 [ext_resource path="res://src/menusandui/CutsceneSpeedButtons.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE TEST 06.wav" type="AudioStream" id=29]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -582,6 +583,18 @@ tracks/45/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 123, -344 ) ]
+}
+tracks/46/type = "value"
+tracks/46/path = NodePath("AudioStreamPlayer:playing")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -1141,6 +1154,18 @@ tracks/45/keys = {
 "update": 0,
 "values": [ Vector2( 123, -344 ), Vector2( 123, -344 ), Vector2( 123, 89 ) ]
 }
+tracks/46/type = "value"
+tracks/46/path = NodePath("AudioStreamPlayer:playing")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -1340,3 +1365,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 28 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 29 )
+volume_db = -5.275
+bus = "Music"
