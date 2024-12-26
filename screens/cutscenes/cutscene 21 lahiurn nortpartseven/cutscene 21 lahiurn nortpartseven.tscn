@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven military base.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 12.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 2.png" type="Texture" id=21]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 21.wav" type="AudioStream" id=22]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -395,6 +396,18 @@ tracks/30/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( -328, 236.615 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("AudioStreamPlayer:playing")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -786,6 +799,18 @@ tracks/31/keys = {
 "update": 0,
 "values": [ Vector2( -328, 236.615 ), Vector2( -328, 236.615 ), Vector2( 302, 236.615 ) ]
 }
+tracks/32/type = "value"
+tracks/32/path = NodePath("AudioStreamPlayer:playing")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -928,3 +953,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+bus = "Music"

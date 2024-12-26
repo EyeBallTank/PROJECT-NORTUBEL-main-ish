@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 23 nortpartseven herrko/cutscene 23 nortpartseven herrko panel 13.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 23 nortpartseven herrko/cutscene 23 nortpartseven herrko panel 16.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 23 nortpartseven herrko/cutscene 23 nortpartseven herrko panel 14.png" type="Texture" id=22]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 23.wav" type="AudioStream" id=23]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -420,6 +421,18 @@ tracks/32/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("AudioStreamPlayer:playing")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -835,6 +848,18 @@ tracks/33/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/34/type = "value"
+tracks/34/path = NodePath("AudioStreamPlayer:playing")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -985,3 +1010,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+bus = "Music"

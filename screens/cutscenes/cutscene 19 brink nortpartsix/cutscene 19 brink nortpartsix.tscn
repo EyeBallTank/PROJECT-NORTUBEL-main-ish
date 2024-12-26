@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 23.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 1.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 5.png" type="Texture" id=30]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 19.wav" type="AudioStream" id=31]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -632,6 +633,18 @@ tracks/49/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/50/type = "value"
+tracks/50/path = NodePath("AudioStreamPlayer:playing")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -1251,6 +1264,18 @@ tracks/50/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/51/type = "value"
+tracks/51/path = NodePath("AudioStreamPlayer:playing")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -1437,3 +1462,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 31 )
+volume_db = -0.581
+bus = "Music"
