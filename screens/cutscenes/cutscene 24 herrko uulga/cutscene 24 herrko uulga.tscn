@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 6.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 3.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 7.png" type="Texture" id=14]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 24.wav" type="AudioStream" id=15]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -232,6 +233,18 @@ tracks/17/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 502, -258 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("AudioStreamPlayer:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -467,6 +480,18 @@ tracks/18/keys = {
 "update": 0,
 "values": [ Vector2( 502, -258 ), Vector2( 502, -258 ), Vector2( 502, 228 ) ]
 }
+tracks/19/type = "value"
+tracks/19/path = NodePath("AudioStreamPlayer:playing")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -572,3 +597,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+volume_db = -1.914
+bus = "Music"
