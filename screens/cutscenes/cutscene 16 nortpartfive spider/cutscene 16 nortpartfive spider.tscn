@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider stella jump.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 4.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 16 nortpartfive spider/cutscene 16 nortpartfive spider panel 7.png" type="Texture" id=16]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 16.wav" type="AudioStream" id=17]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 14 )
@@ -304,6 +305,18 @@ tracks/21/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/22/type = "value"
+tracks/22/path = NodePath("AudioStreamPlayer:playing")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -588,6 +601,18 @@ tracks/22/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/23/type = "value"
+tracks/23/path = NodePath("AudioStreamPlayer:playing")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 2 )
@@ -707,3 +732,7 @@ custom_fonts/font = ExtResource( 1 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+bus = "Music"

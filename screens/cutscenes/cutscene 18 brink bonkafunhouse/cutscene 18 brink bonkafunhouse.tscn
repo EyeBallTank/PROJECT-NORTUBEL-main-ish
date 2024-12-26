@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse dance 2.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 6.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse tv static effect.png" type="Texture" id=16]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 18.wav" type="AudioStream" id=17]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 16 )
@@ -260,6 +261,18 @@ tracks/16/keys = {
 "update": 0,
 "values": [ Vector2( -148, 228.919 ) ]
 }
+tracks/17/type = "value"
+tracks/17/path = NodePath("AudioStreamPlayer:playing")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -482,6 +495,18 @@ tracks/17/keys = {
 "update": 0,
 "values": [ Vector2( -148, 228.919 ), Vector2( -148, 228.919 ), Vector2( 215, 228.919 ) ]
 }
+tracks/18/type = "value"
+tracks/18/path = NodePath("AudioStreamPlayer:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 2 )
@@ -566,7 +591,6 @@ texture = ExtResource( 13 )
 [node name="static" type="AnimatedSprite" parent="."]
 position = Vector2( 532, 237 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="TV FRAME" type="Sprite" parent="."]
@@ -606,3 +630,8 @@ custom_fonts/font = ExtResource( 1 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = -4.648
+bus = "Music"
