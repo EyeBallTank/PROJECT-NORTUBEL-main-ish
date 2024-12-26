@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CUTSCENE SONG 15.wav-7d6a55294b81559fd65a5921241ec9eb.sample"
+
+[deps]
+
+source_file="res://assets/sounds/music/cutscenes/CUTSCENE SONG 15.wav"
+dest_files=[ "res://.import/CUTSCENE SONG 15.wav-7d6a55294b81559fd65a5921241ec9eb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

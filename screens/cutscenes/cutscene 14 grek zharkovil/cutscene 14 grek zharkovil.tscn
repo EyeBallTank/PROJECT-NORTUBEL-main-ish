@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 13.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 1.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/venus base red alarm effect.png" type="Texture" id=25]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 14.wav" type="AudioStream" id=26]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 7 )
@@ -468,6 +469,18 @@ tracks/33/keys = {
 "update": 0,
 "values": [ Vector2( 452, -257 ) ]
 }
+tracks/34/type = "value"
+tracks/34/path = NodePath("AudioStreamPlayer:playing")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -894,6 +907,18 @@ tracks/34/keys = {
 "update": 0,
 "values": [ Vector2( 452, -257 ), Vector2( 452, -257 ), Vector2( 452, 237 ) ]
 }
+tracks/35/type = "value"
+tracks/35/path = NodePath("AudioStreamPlayer:playing")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -975,7 +1000,6 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 207.425, 239.202 )
 scale = Vector2( 0.828284, 0.828284 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 flip_h = true
 
@@ -1050,7 +1074,6 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 467, 335 )
 scale = Vector2( 0.625331, 0.625331 )
 frames = SubResource( 8 )
-frame = 1
 playing = true
 
 [node name="PauseCutsceneMenu" parent="." instance=ExtResource( 2 )]
@@ -1070,3 +1093,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )
+volume_db = -1.276
+bus = "Music"

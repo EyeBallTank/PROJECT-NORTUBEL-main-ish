@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 13.png" type="Texture" id=17]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 11.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 12.png" type="Texture" id=19]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 15.wav" type="AudioStream" id=20]
 
 [sub_resource type="Animation" id=1]
 length = 150.0
@@ -334,10 +335,22 @@ tracks/25/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
+tracks/26/type = "value"
+tracks/26/path = NodePath("AudioStreamPlayer:playing")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
-length = 122.0
+length = 126.0
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
 tracks/0/interp = 1
@@ -345,7 +358,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 116.8 ),
+"times": PoolRealArray( 123 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -664,6 +677,18 @@ tracks/26/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/27/type = "value"
+tracks/27/path = NodePath("AudioStreamPlayer:playing")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -800,3 +825,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
+volume_db = -1.914
+bus = "Music"
