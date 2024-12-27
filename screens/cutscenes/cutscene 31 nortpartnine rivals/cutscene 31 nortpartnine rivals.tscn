@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals panel 5.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals panel 8.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 31 nortpartnine rivals/cutscene 31 nortpartnine rivals panel 7.png" type="Texture" id=13]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 31.wav" type="AudioStream" id=14]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -195,6 +196,18 @@ tracks/14/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 503, -222 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("AudioStreamPlayer:playing")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -394,6 +407,18 @@ tracks/15/keys = {
 "update": 0,
 "values": [ Vector2( 503, -222 ), Vector2( 503, -222 ), Vector2( 503, 236 ) ]
 }
+tracks/16/type = "value"
+tracks/16/path = NodePath("AudioStreamPlayer:playing")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -496,3 +521,8 @@ custom_fonts/font = ExtResource( 5 )
 text = "ESC: | |"
 
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -2.552
+bus = "Music"
