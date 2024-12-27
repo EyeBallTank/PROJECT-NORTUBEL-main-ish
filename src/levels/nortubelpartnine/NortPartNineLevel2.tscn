@@ -44,11 +44,11 @@
 [ext_resource path="res://src/level_objects/MovingPlatHoriz.tscn" type="PackedScene" id=42]
 [ext_resource path="res://src/npc_actors/massag npc/AltFernaandaNPC.tscn" type="PackedScene" id=43]
 [ext_resource path="res://src/level_hazards/lahiurn/LahiurnFloorMine.tscn" type="PackedScene" id=44]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 7.wav" type="AudioStream" id=45]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 7 NEW.wav" type="AudioStream" id=45]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
-length = 83.0
+length = 113.4
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -417,5 +417,5 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 45 )
-volume_db = 5.104
+volume_db = -0.171
 bus = "Music"
