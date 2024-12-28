@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/ReadScreeen.gd" type="Script" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/scroll grabber highlight.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/scroll base highlight.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/scroll base normal.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=10]
 
 [sub_resource type="StyleBoxTexture" id=3]
 texture = ExtResource( 3 )
@@ -57,12 +60,21 @@ margin_bottom = 17.0
 custom_fonts/font = ExtResource( 1 )
 text = "READ_T"
 
-[node name="Button" type="Button" parent="."]
-margin_left = 448.0
-margin_top = 554.0
-margin_right = 504.0
-margin_bottom = 577.0
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = 541.0
+margin_right = 507.0
+margin_bottom = 596.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = 10.0
+margin_top = 20.0
+margin_right = 54.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 1 )
 text = "QUIT_B"
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/font_test.tres" type="DynamicFont" id=1]
 [ext_resource path="res://screens/ReadScreeen.gd" type="Script" id=2]
 [ext_resource path="res://assets/CreditsScreeen.tres" type="Theme" id=3]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when normal.png" type="Texture" id=6]
 
 [node name="ReadScreeen" type="Control"]
 anchor_right = 1.0
@@ -18,11 +21,11 @@ theme = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 407.0
-margin_bottom = 2817.0
+margin_bottom = 3237.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 407.0
-margin_bottom = 2817.0
+margin_bottom = 3237.0
 custom_fonts/font = ExtResource( 1 )
 text = " 
 
@@ -31,6 +34,10 @@ text = "
                   GAMEPLAY
                   STORY/ESTÓRIA
    EyeBallTank
+
+                  MUSIC/MÚSICA
+   EyeBallTank
+   Horbror
 
                   FEEDBACK & HELP/AJUDA
    TebyTheCat
@@ -109,6 +116,7 @@ text = "
    nickkarvounis (Unsplash)
    Pixabay
    floraphonic-38928062 (Pixabay)
+   LMMS
 
                   FREESOUND
    strangehorizon
@@ -145,6 +153,19 @@ text = "
    Maikkihapsis
    iwanPlays
 
+                  MUSIC ASSETS/RECURSOS DE MUSICA
+   LMMS Sharing Platform / Samples
+   SampleRadar/The MusicRadar team
+   DSK Music 
+   freevstplugins . net
+   Johannes Roussel's free soundfonts library. 
+   FreeSound (Saltbearer, nicovize)
+   BigSoundBank (Joseph SARDIN)
+   plugins4free
+   GeneralUser GS
+   samplefocus . com
+
+
                   CROSSOVERS
    Sarah Sevanko Krim (Dreams of Joy Departed/Horbror)
    Faygo (Slapson/Slapsoff)
@@ -160,18 +181,48 @@ text = "
    Freedoom
    OTEX/ukiro
 
+                  Other shout outs/Outras saudações 
+   Betz
+   /v/3
 
 
 
 
 "
 
-[node name="Button" type="Button" parent="."]
-margin_left = 448.0
-margin_top = 554.0
-margin_right = 504.0
-margin_bottom = 577.0
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 480.0
+margin_top = 539.0
+margin_right = 547.0
+margin_bottom = 594.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = 11.0
+margin_top = 20.0
+margin_right = 55.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 1 )
 text = "QUIT_B"
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[node name="TextureButton2" type="TextureButton" parent="."]
+margin_left = 621.0
+margin_top = 539.0
+margin_right = 688.0
+margin_bottom = 594.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="TextureButton2"]
+margin_left = 28.0
+margin_top = 22.0
+margin_right = 72.0
+margin_bottom = 39.0
+custom_fonts/font = ExtResource( 1 )
+text = "+"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
