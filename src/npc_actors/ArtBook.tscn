@@ -1,4 +1,4 @@
-[gd_scene load_steps=288 format=2]
+[gd_scene load_steps=290 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -145,6 +145,7 @@
 [ext_resource path="res://assets/sprites/art gallery/brinkaedea/brink art bonka dancing.png" type="Texture" id=143]
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art alt fernaanda reference.png" type="Texture" id=144]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art bullet reference.png" type="Texture" id=145]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art another delusional dream v2.png" type="Texture" id=146]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -423,6 +424,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=166]
+atlas = ExtResource( 146 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=165]
@@ -994,6 +999,11 @@ animations = [ {
 "name": "hirdrih leon head",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 166 ) ],
+"loop": false,
+"name": "krimb art another delusional dream",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 165 ) ],
 "loop": false,
 "name": "krimb art bullet reference",
@@ -1368,7 +1378,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "krimb art bullet reference"
+animation = "krimb art another delusional dream"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]

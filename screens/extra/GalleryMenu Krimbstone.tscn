@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart booker reference 2.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart matysha reference 4.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart reptile reference.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimbart ricotto reference v2.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art bullet reference.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art another delusional dream v2.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when hover.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/small button when pressed.png" type="Texture" id=23]
@@ -42,9 +43,13 @@ region = Rect2( 0, 0, 749, 449 )
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 749, 449 )
 
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 749, 449 )
+
 [sub_resource type="SpriteFrames" id=27]
 animations = [ {
-"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ) ],
 "loop": false,
 "name": "default",
 "speed": 0.0
@@ -54,7 +59,7 @@ animations = [ {
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 32 )
-number = 6
+number = 7
 
 [node name="MenuBg" type="Sprite" parent="."]
 position = Vector2( 512, 300 )
@@ -74,7 +79,7 @@ margin_top = 558.0
 margin_right = 665.0
 margin_bottom = 575.0
 custom_fonts/font = ExtResource( 31 )
-text = "7 Image(n)s"
+text = "8 Image(n)s"
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_left = 76.0

@@ -413,6 +413,10 @@ boardname = "brink art donka dancing"
 position = Vector2( 4184, -1304 )
 boardname = "krimb art bullet reference"
 
+[node name="ArtBook3" parent="." instance=ExtResource( 42 )]
+position = Vector2( 9099, -194 )
+boardname = "krimb art another delusional dream"
+
 [node name="BrinkJackInBox" parent="." instance=ExtResource( 43 )]
 position = Vector2( 12720, -104 )
 
