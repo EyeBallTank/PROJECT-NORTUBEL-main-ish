@@ -21,11 +21,11 @@ theme = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 407.0
-margin_bottom = 3237.0
+margin_bottom = 3257.0
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 margin_right = 407.0
-margin_bottom = 3237.0
+margin_bottom = 3257.0
 custom_fonts/font = ExtResource( 1 )
 text = " 
 
@@ -184,6 +184,7 @@ text = "
                   Other shout outs/Outras saudações 
    Betz
    /v/3
+   Family and friends/Familia e amigos
 
 
 

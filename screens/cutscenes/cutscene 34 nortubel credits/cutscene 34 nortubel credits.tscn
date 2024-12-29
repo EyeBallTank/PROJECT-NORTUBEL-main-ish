@@ -1,4 +1,4 @@
-[gd_scene load_steps=178 format=2]
+[gd_scene load_steps=179 format=2]
 
 [ext_resource path="res://screens/cutscenes/intro cutscene/cutscene placeholder.gd" type="Script" id=1]
 [ext_resource path="res://screens/PauseCutsceneMenu.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits part 1.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits part 2.png" type="Texture" id=11]
+[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 34.wav" type="AudioStream" id=12]
 
 [sub_resource type="DynamicFont" id=3]
 size = 30
@@ -1641,6 +1642,18 @@ tracks/16/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
+tracks/17/type = "value"
+tracks/17/path = NodePath("AudioStreamPlayer:playing")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "intro cutscene"
@@ -1924,6 +1937,18 @@ tracks/17/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/18/type = "value"
+tracks/18/path = NodePath("AudioStreamPlayer:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="TestCutscene" type="Node"]
 script = ExtResource( 1 )
@@ -2146,6 +2171,7 @@ text = "Other shout outs/Outras saudações
               /v/3
             Freedoom
            OTEX/ukiro
+		 Family and friends/Familia e amigos
 
 "
 
@@ -2227,4 +2253,5 @@ text = "ESC: | |"
 [node name="CutsceneSpeedButtons" parent="." instance=ExtResource( 4 )]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
 bus = "Music"

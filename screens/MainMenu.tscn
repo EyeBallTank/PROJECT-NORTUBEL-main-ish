@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://screens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/mikodacs-font/Mikodacs-vp2L.otf" type="DynamicFontData" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://screens/LevelPasswordList.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/PASSWORD EMPTY BAR FOR TEXT TEST.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/Another password bar test.tres" type="Theme" id=20]
+[ext_resource path="res://assets/sounds/music/main menu/Projecto_Nortubel_Trailer_Song.wav" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3
@@ -202,16 +203,6 @@ texture = ExtResource( 3 )
 [node name="Sprite2" type="Sprite" parent="MenuMain"]
 position = Vector2( -161, 397 )
 texture = ExtResource( 12 )
-
-[node name="Currentupdate" type="Label" parent="MenuMain"]
-margin_top = 186.0
-margin_right = 304.0
-margin_bottom = 263.0
-custom_fonts/font = ExtResource( 5 )
-text = "CURRENT VERSION: NORTUBEL 8 & UNTOTERN
-PASSSWORD: r4cs00
-But if you're a first time player,
-Press \"Start\" to play this from the beginning"
 
 [node name="OptionsMenu" type="Control" parent="."]
 visible = false
@@ -461,6 +452,20 @@ custom_fonts/font = ExtResource( 5 )
 text = "QUIT_B"
 
 [node name="LevelPasswordList" parent="." instance=ExtResource( 18 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+volume_db = -5.229
+autoplay = true
+bus = "Music"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 42.0
+margin_top = 579.0
+margin_right = 236.0
+margin_bottom = 596.0
+custom_fonts/font = ExtResource( 5 )
+text = "Song by/Música por Horbror"
 
 [connection signal="pressed" from="MenuMain/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="MenuMain/OptionsButton" to="." method="_on_OptionsButton_pressed"]
