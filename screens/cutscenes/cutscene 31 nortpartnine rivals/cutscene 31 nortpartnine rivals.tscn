@@ -524,5 +524,5 @@ text = "ESC: | |"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
-volume_db = -2.552
+volume_db = -6.619
 bus = "Music"
