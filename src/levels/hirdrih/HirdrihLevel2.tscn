@@ -32,7 +32,7 @@
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=32]
-[ext_resource path="res://assets/sounds/music/levels/hirdrih/HIRDRIH SONG 2 wav.wav" type="AudioStream" id=33]
+[ext_resource path="res://assets/sounds/music/levels/hirdrih/HIRDRIH SONG 2 NEW.wav" type="AudioStream" id=33]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -67,7 +67,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "RESET"
-length = 99.7
+length = 126.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AudioStreamPlayer:playing")
@@ -378,7 +378,7 @@ anims/RESET = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 33 )
-volume_db = -5.742
+volume_db = -3.005
 bus = "Music"
 
 [editable path="Hird Sphere Vehicle"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=290 format=2]
+[gd_scene load_steps=292 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/ArtBook.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/art gallery/nortubel/nortubel world map.png" type="Texture" id=2]
@@ -146,6 +146,7 @@
 [ext_resource path="res://assets/sprites/art gallery/massagcoav/massag art alt fernaanda reference.png" type="Texture" id=144]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art bullet reference.png" type="Texture" id=145]
 [ext_resource path="res://assets/sprites/art gallery/krimbstone/krimb art another delusional dream v2.png" type="Texture" id=146]
+[ext_resource path="res://assets/sprites/art gallery/nortubel/nort art yet another weird dream.png" type="Texture" id=147]
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
@@ -656,6 +657,10 @@ region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=139]
 atlas = ExtResource( 55 )
+region = Rect2( 0, 0, 749, 449 )
+
+[sub_resource type="AtlasTexture" id=167]
+atlas = ExtResource( 147 )
 region = Rect2( 0, 0, 749, 449 )
 
 [sub_resource type="AtlasTexture" id=145]
@@ -1289,6 +1294,11 @@ animations = [ {
 "name": "nort art weird spider",
 "speed": 0.0
 }, {
+"frames": [ SubResource( 167 ) ],
+"loop": false,
+"name": "nort art yet another weird dream",
+"speed": 0.0
+}, {
 "frames": [ SubResource( 145 ), SubResource( 146 ), SubResource( 147 ) ],
 "loop": true,
 "name": "nort art younger main six",
@@ -1378,7 +1388,7 @@ layer = 14
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 531, 269 )
 frames = SubResource( 6 )
-animation = "krimb art another delusional dream"
+animation = "nort art yet another weird dream"
 playing = true
 
 [node name="Basicmessage" type="CanvasLayer" parent="."]
