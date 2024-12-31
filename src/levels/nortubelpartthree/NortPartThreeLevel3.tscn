@@ -28,7 +28,7 @@
 [ext_resource path="res://src/npc_actors/nort npc/GanyahNPC.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=28]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/SHIHIRO AND ALT RIVALS RACE SONG.wav" type="AudioStream" id=29]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A SHIHIRO AND ALT RIVALS RACE SONG.mp3" type="AudioStream" id=29]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 128, 32 )

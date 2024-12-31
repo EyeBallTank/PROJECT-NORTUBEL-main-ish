@@ -19,7 +19,7 @@
 [ext_resource path="res://src/level_objects/Barrier.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=19]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 2.mp3" type="AudioStream" id=20]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

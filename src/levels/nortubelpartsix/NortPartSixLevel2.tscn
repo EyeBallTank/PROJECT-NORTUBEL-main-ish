@@ -14,7 +14,7 @@
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/enemies/gecko enemy.tscn" type="PackedScene" id=14]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 2.mp3" type="AudioStream" id=15]
 [ext_resource path="res://src/level_items/Yellow key.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=21]

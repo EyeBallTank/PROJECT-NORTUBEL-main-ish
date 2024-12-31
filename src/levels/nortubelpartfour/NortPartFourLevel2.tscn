@@ -23,7 +23,7 @@
 [ext_resource path="res://src/npc_actors/nort npc/AltAngelaNPC.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/npc_actors/nort npc/AltKatrinNPC.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_hazards/NortFallingStalactite.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=24]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 2.mp3" type="AudioStream" id=24]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

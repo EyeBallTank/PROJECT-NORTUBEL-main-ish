@@ -18,8 +18,8 @@
 [ext_resource path="res://src/bosses/cow spider/NortCowSpiderHoriz.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/bosses/cow spider/NortCowSpiderVertiBetter.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=18]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL BOSS SONG.wav" type="AudioStream" id=19]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL BOSS DEFEAT SONG.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A NORTUBEL BOSS SONG.mp3" type="AudioStream" id=19]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A NORTUBEL BOSS DEFEAT SONG.mp3" type="AudioStream" id=20]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -251,6 +251,7 @@ rotation = 1.52367
 scale = Vector2( 0.728707, 0.728707 )
 frames = SubResource( 4 )
 animation = "crawl"
+frame = 1
 playing = true
 
 [node name="Path2D" type="Path2D" parent="ParallaxBackground3 spider/ParallaxLayer"]

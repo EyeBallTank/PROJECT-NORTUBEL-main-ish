@@ -27,7 +27,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=27]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 1 V3.wav" type="AudioStream" id=28]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 1.mp3" type="AudioStream" id=28]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

@@ -40,7 +40,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/behind_the_scenes/right through platform.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/level_objects/WaterWheel.tscn" type="PackedScene" id=40]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL ALT ANGELA SONG.wav" type="AudioStream" id=41]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A ALT ANGELA SONG.mp3" type="AudioStream" id=41]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -460,5 +460,5 @@ anims/RESET = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 41 )
-volume_db = -2.552
+volume_db = -6.657
 bus = "Music"

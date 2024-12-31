@@ -47,7 +47,7 @@
 [ext_resource path="res://src/enemies/herrko/TsoovukotKnight.tscn" type="PackedScene" id=45]
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=46]
 [ext_resource path="res://src/level_hazards/lahiurn/LahiurnFloorMine.tscn" type="PackedScene" id=47]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 7 NEW.wav" type="AudioStream" id=48]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A NORTUBEL SONG TEST 7 NEW.mp3" type="AudioStream" id=48]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

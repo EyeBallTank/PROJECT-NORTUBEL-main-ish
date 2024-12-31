@@ -29,7 +29,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_hazards/CrusherBell.tscn" type="PackedScene" id=29]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 4 NEW.wav" type="AudioStream" id=30]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 4.mp3" type="AudioStream" id=30]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

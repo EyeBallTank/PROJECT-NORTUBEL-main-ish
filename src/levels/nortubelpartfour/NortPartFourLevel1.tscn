@@ -26,7 +26,7 @@
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 3.mp3" type="AudioStream" id=27]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

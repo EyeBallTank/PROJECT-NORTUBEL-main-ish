@@ -31,7 +31,7 @@
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=31]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 1 V3.wav" type="AudioStream" id=32]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 1.mp3" type="AudioStream" id=32]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

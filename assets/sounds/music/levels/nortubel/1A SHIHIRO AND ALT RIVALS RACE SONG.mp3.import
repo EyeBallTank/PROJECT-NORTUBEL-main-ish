@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A SHIHIRO AND ALT RIVALS RACE SONG.mp3-15fb3582c847627d43a83f38042f548e.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/nortubel/1A SHIHIRO AND ALT RIVALS RACE SONG.mp3"
+dest_files=[ "res://.import/1A SHIHIRO AND ALT RIVALS RACE SONG.mp3-15fb3582c847627d43a83f38042f548e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

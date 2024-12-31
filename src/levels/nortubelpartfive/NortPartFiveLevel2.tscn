@@ -22,7 +22,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=22]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 5 V2.wav" type="AudioStream" id=23]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 5.mp3" type="AudioStream" id=23]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

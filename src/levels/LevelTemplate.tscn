@@ -31,7 +31,7 @@
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=30]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=31]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 4 NEW.wav" type="AudioStream" id=32]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 4.mp3" type="AudioStream" id=32]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

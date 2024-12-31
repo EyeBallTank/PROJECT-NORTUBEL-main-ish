@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ZZZ NORTUBEL SONG 1.mp3-5aba93fa1514768aa21e7b6eee9a96c5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 1.mp3"
+dest_files=[ "res://.import/ZZZ NORTUBEL SONG 1.mp3-5aba93fa1514768aa21e7b6eee9a96c5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

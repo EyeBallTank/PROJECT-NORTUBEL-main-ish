@@ -40,7 +40,7 @@
 [ext_resource path="res://src/enemies/lahiurn/LahiurnSoldier.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/level_hazards/krimbstone/BurningTire.tscn" type="PackedScene" id=40]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 7 NEW.wav" type="AudioStream" id=41]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A NORTUBEL SONG TEST 7 NEW.mp3" type="AudioStream" id=41]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

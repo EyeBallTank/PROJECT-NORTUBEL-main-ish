@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A NORTUBEL BOSS SONG.mp3-1e6753c81c0cfb4626dfd5a87208cc04.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/nortubel/1A NORTUBEL BOSS SONG.mp3"
+dest_files=[ "res://.import/1A NORTUBEL BOSS SONG.mp3-1e6753c81c0cfb4626dfd5a87208cc04.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

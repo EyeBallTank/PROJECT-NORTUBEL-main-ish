@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A ALT ANGELA SONG.mp3-438de2fd81209c06b882bc6fae60a323.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/nortubel/1A ALT ANGELA SONG.mp3"
+dest_files=[ "res://.import/1A ALT ANGELA SONG.mp3-438de2fd81209c06b882bc6fae60a323.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

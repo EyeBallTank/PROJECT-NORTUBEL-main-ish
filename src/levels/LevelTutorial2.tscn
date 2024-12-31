@@ -42,7 +42,7 @@
 [ext_resource path="res://assets/sprites/tutorial board sprites/tutorial board 26.png" type="Texture" id=40]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=42]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 2 NEW.wav" type="AudioStream" id=43]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 2.mp3" type="AudioStream" id=43]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

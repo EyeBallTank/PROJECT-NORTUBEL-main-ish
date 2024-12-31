@@ -27,7 +27,7 @@
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=27]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav" type="AudioStream" id=28]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 3.mp3" type="AudioStream" id=28]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

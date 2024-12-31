@@ -25,7 +25,7 @@
 [ext_resource path="res://src/level_objects/WaterWheel.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_props/LevelProp.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=25]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 6.wav" type="AudioStream" id=26]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 6.mp3" type="AudioStream" id=26]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

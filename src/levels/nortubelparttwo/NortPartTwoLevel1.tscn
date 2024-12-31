@@ -24,7 +24,7 @@
 [ext_resource path="res://src/level_objects/YellowPlatVerti.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/Teleportal.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 1 V3.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 1.mp3" type="AudioStream" id=25]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

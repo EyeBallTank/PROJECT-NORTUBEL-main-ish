@@ -24,7 +24,7 @@
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level prefabs/nort prefabs/BlueRaceWallBarrier.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/right through platform.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/SHIHIRO AND ALT RIVALS RACE SONG.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/1A SHIHIRO AND ALT RIVALS RACE SONG.mp3" type="AudioStream" id=25]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -52,9 +52,6 @@ background = "res://assets/sprites/level_backgrounds/level bg test 5.png"
 
 [node name="NortRaceFlag" parent="." instance=ExtResource( 20 )]
 position = Vector2( 8508, 253 )
-
-[node name="AnimatedSprite" parent="NortRaceFlag" index="0"]
-frame = 0
 
 [node name="Wood" parent="NortRaceFlag" index="2"]
 scale = Vector2( 2.03998, 2.36 )

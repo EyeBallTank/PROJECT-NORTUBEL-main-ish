@@ -18,7 +18,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/enemies/SpitterFish.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/behind_the_scenes/left through platform.tscn" type="PackedScene" id=18]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 3 NEW.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 3.mp3" type="AudioStream" id=19]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

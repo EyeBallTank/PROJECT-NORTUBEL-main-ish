@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A NORTUBEL SONG TEST 7 NEW.mp3-20ff1ba5a823e0c4b25bae93b25b0ea1.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/nortubel/1A NORTUBEL SONG TEST 7 NEW.mp3"
+dest_files=[ "res://.import/1A NORTUBEL SONG TEST 7 NEW.mp3-20ff1ba5a823e0c4b25bae93b25b0ea1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

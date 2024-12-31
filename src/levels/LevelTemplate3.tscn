@@ -26,7 +26,7 @@
 [ext_resource path="res://assets/tilesets/nortubel/Nortubel Tiles.tres" type="TileSet" id=24]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/sounds/music/levels/nortubel/NORTUBEL SONG TEST 6.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/levels/nortubel/ZZZ NORTUBEL SONG 6.mp3" type="AudioStream" id=27]
 [ext_resource path="res://src/level_objects/Door.tscn" type="PackedScene" id=28]
 
 [sub_resource type="Animation" id=1]
