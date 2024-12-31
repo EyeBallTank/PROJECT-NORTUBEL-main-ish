@@ -19,7 +19,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 13.png" type="Texture" id=17]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 11.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 15 grek nortpartfive/cutscene 15 grek nortpartfive panel 12.png" type="Texture" id=19]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 15.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 15.mp3" type="AudioStream" id=20]
 
 [sub_resource type="Animation" id=1]
 length = 150.0

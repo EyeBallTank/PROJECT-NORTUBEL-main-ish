@@ -13,7 +13,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 8.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 6.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 27 nortparteight untotern/cutscene 27 nortparteight untotern panel 4.png" type="Texture" id=13]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 27.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 27.mp3" type="AudioStream" id=14]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

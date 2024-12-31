@@ -20,7 +20,7 @@
 [ext_resource path="res://screens/LevelPasswordList.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/PASSWORD EMPTY BAR FOR TEXT TEST.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/Another password bar test.tres" type="Theme" id=20]
-[ext_resource path="res://assets/sounds/music/main menu/Projecto_Nortubel_Trailer_Song.wav" type="AudioStream" id=21]
+[ext_resource path="res://assets/sounds/music/main menu/Projecto_Nortubel_Trailer_Song new.mp3" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=5]
 outline_size = 3

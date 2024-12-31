@@ -13,7 +13,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 6.png" type="Texture" id=11]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/shihiro power.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 8 nortpartthree shihiro/cutscene 8 nortpartthree shihiro panel 7.png" type="Texture" id=13]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 08.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 08.mp3" type="AudioStream" id=14]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 12 )

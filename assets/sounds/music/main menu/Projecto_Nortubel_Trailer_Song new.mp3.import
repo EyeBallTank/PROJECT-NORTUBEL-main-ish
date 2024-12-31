@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Projecto_Nortubel_Trailer_Song new.mp3-a8ffff0f42cac009e0749a07bf16b8c7.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/main menu/Projecto_Nortubel_Trailer_Song new.mp3"
+dest_files=[ "res://.import/Projecto_Nortubel_Trailer_Song new.mp3-a8ffff0f42cac009e0749a07bf16b8c7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

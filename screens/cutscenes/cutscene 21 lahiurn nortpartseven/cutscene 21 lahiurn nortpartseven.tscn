@@ -21,7 +21,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven military base.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 12.png" type="Texture" id=20]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 21 lahiurn nortpartseven/cutscene 21 lahiurn nortpartseven panel 2.png" type="Texture" id=21]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 21.wav" type="AudioStream" id=22]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 21.mp3" type="AudioStream" id=22]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

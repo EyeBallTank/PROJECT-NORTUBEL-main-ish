@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 3.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 4.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 10 massag karla/cutscene 10 massag karla panel 5.png" type="Texture" id=10]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 10.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 10.mp3" type="AudioStream" id=11]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

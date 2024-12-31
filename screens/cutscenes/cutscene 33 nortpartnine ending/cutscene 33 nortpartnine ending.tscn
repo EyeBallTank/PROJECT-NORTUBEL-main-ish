@@ -33,7 +33,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 6.png" type="Texture" id=31]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 2.png" type="Texture" id=32]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 33 nortpartnine ending/cutscene 33 nortpartnine ending panel 26.png" type="Texture" id=33]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 33.wav" type="AudioStream" id=34]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 33.mp3" type="AudioStream" id=34]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

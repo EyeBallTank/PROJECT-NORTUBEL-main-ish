@@ -18,7 +18,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 11.png" type="Texture" id=16]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 12.png" type="Texture" id=17]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 9 nortpartthree massag/cutscene 9 nortpartthree massag panel 13.png" type="Texture" id=18]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 09 V2.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 09.mp3" type="AudioStream" id=19]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

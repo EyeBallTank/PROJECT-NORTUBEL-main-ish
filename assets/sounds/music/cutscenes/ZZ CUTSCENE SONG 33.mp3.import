@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ZZ CUTSCENE SONG 33.mp3-ead95db5e4074a131787e6c39657af05.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 33.mp3"
+dest_files=[ "res://.import/ZZ CUTSCENE SONG 33.mp3-ead95db5e4074a131787e6c39657af05.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

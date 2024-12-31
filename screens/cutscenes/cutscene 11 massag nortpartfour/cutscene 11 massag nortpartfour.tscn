@@ -20,7 +20,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 9.png" type="Texture" id=18]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour panel 10.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 11 massag nortpartfour/cutscene 11 massag nortpartfour score effect.png" type="Texture" id=20]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 11.wav" type="AudioStream" id=21]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 11.mp3" type="AudioStream" id=21]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

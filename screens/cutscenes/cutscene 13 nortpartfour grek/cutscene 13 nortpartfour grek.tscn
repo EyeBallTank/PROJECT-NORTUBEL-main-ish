@@ -26,7 +26,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 13 nortpartfour grek/cutscene 13 nortpartfour grek panel 15.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 13 nortpartfour grek/cutscene 13 nortpartfour grek panel 13.png" type="Texture" id=25]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 13 nortpartfour grek/cutscene 13 nortpartfour grek panel 18.png" type="Texture" id=26]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 13.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 13.mp3" type="AudioStream" id=27]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 18 )
@@ -1040,6 +1040,7 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 749.323, 311.75 )
 scale = Vector2( 0.81087, 0.81087 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="Cutscene13NortpartfourGrekPanel14" type="Sprite" parent="."]

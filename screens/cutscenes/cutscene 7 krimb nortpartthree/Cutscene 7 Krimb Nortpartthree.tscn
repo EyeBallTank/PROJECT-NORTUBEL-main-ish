@@ -24,7 +24,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 7.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 6.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 7 krimb nortpartthree/cutscene 7 krimb nortpartthree panel 14.png" type="Texture" id=24]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 07.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 07.mp3" type="AudioStream" id=25]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 6 )

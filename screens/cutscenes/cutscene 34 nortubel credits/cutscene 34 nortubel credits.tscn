@@ -11,7 +11,7 @@
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/menu bg.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits part 1.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 34 credits/credits character portraits part 2.png" type="Texture" id=11]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 34.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 34.mp3" type="AudioStream" id=12]
 
 [sub_resource type="DynamicFont" id=3]
 size = 30

@@ -25,7 +25,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 13.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/cutscene 14 grek zharkovil panel 1.png" type="Texture" id=24]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 14 grek zharkovil/venus base red alarm effect.png" type="Texture" id=25]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 14.wav" type="AudioStream" id=26]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 14.mp3" type="AudioStream" id=26]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 7 )

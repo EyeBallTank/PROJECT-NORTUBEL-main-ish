@@ -29,7 +29,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 30 nortpartnine tfoorie/cutscene 30 nortpartnine tfoorie panel 5.png" type="Texture" id=27]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 30 nortpartnine tfoorie/cutscene 30 nortpartnine tfoorie panel 11.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 30 nortpartnine tfoorie/cutscene 30 nortpartnine tfoorie panel 14.png" type="Texture" id=29]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 30.wav" type="AudioStream" id=30]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 30.mp3" type="AudioStream" id=30]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

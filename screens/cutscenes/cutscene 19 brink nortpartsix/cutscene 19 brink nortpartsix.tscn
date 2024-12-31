@@ -30,7 +30,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 23.png" type="Texture" id=28]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 1.png" type="Texture" id=29]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 19 brink nortpartsix/cutscene 19 brink nortpartsix panel 5.png" type="Texture" id=30]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 19.wav" type="AudioStream" id=31]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 19.mp3" type="AudioStream" id=31]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

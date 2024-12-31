@@ -24,7 +24,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 12.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 11.png" type="Texture" id=23]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 32 nortpartnine home/cutscene 32 nortpartnine home panel 18.png" type="Texture" id=24]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 32 V3.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 32.mp3" type="AudioStream" id=25]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

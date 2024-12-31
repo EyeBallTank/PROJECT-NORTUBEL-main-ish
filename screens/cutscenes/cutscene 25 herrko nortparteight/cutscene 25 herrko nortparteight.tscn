@@ -23,7 +23,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 12.png" type="Texture" id=21]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 6.png" type="Texture" id=22]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 25 herrko nortparteight/cutscene 25 herrko nortparteight panel 5.png" type="Texture" id=23]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 25.wav" type="AudioStream" id=24]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 25.mp3" type="AudioStream" id=24]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

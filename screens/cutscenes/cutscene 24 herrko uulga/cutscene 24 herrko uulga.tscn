@@ -14,7 +14,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 6.png" type="Texture" id=12]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 3.png" type="Texture" id=13]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 24 herrko uulga/cutscene 24 herrko uulga panel 7.png" type="Texture" id=14]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 24.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 24.mp3" type="AudioStream" id=15]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

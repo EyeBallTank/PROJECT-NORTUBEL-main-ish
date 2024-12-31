@@ -16,7 +16,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse dance 2.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse panel 6.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 18 brink bonkafunhouse/cutscene 18 brink bonkafunhouse tv static effect.png" type="Texture" id=16]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 18.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 18.mp3" type="AudioStream" id=17]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 16 )
@@ -591,6 +591,7 @@ texture = ExtResource( 13 )
 [node name="static" type="AnimatedSprite" parent="."]
 position = Vector2( 532, 237 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="TV FRAME" type="Sprite" parent="."]

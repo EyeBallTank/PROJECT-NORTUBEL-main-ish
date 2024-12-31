@@ -16,7 +16,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 6.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 nortpartsix lahiurn panel 7.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 20 nortpartsix lahiurn/cutscene 20 animated plane.png" type="Texture" id=16]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 20.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 20.mp3" type="AudioStream" id=17]
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 16 )

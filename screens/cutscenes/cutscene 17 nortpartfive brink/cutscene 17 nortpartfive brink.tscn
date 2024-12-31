@@ -16,7 +16,7 @@
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 17 nortpartfive brink/cutscene 17 nortpartfive brink panel 8.png" type="Texture" id=14]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 17 nortpartfive brink/cutscene 17 nortpartfive brink panel 11.png" type="Texture" id=15]
 [ext_resource path="res://assets/sprites/cutscenes/cutscene 17 nortpartfive brink/cutscene 17 nortpartfive brink panel 9.png" type="Texture" id=16]
-[ext_resource path="res://assets/sounds/music/cutscenes/CUTSCENE SONG 17.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sounds/music/cutscenes/ZZ CUTSCENE SONG 17.mp3" type="AudioStream" id=17]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
