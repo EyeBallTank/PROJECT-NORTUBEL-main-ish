@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/163458__lemudcrab__grenade-launcher v2.mp3-a82f6d97329f77c3bb2460bc1b752797.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/enemies/greklovick/163458__lemudcrab__grenade-launcher v2.mp3"
+dest_files=[ "res://.import/163458__lemudcrab__grenade-launcher v2.mp3-a82f6d97329f77c3bb2460bc1b752797.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

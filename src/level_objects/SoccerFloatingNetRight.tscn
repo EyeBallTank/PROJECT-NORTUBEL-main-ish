@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Soccer Floating Net.png" type="Texture" id=1]
-[ext_resource path="res://assets/sounds/level objects/470927__gttorre__wistle.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/level objects/soccer net sound redo.ogg" type="AudioStream" id=2]
 [ext_resource path="res://src/level_objects/SoccerFloatingNet.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]

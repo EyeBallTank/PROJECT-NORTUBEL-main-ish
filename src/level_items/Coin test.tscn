@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_item_sprites/shield coin 2.png" type="Texture" id=1]
 [ext_resource path="res://src/level_items/Coin test.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level items/495643__robbeman__coin-1.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level items/coin sound redo.mp3" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/level_item_sprites/hirdrih/shield coin hirdrih.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_item_sprites/massagcoav/shield coin massagcoav.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_item_sprites/krimbstone/shield coin krimbstone.png" type="Texture" id=6]

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Soccer Ball bag.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/SoccerBallBag.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level objects/324659__ueffects__zipper-zip.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level objects/ball bag redo sound.ogg" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 256, 128 )

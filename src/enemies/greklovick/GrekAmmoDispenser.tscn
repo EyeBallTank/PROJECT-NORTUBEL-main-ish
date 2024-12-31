@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Grek Ammo Dispenser sprites 3.png" type="Texture" id=1]
 [ext_resource path="res://src/enemies/greklovick/GrekAmmoDispenser.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/enemies/greklovick/163458__lemudcrab__grenade-launcher.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/enemies/greklovick/163458__lemudcrab__grenade-launcher v2.mp3" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 1 )
@@ -285,7 +285,6 @@ script = ExtResource( 2 )
 position = Vector2( 0, 26 )
 frames = SubResource( 4 )
 animation = "Running"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

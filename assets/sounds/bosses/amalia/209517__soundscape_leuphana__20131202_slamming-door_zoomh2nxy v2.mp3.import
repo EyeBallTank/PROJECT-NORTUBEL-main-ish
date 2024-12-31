@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/209517__soundscape_leuphana__20131202_slamming-door_zoomh2nxy v2.mp3-fc05c481a83f9068ddd81c3ea98802c5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/bosses/amalia/209517__soundscape_leuphana__20131202_slamming-door_zoomh2nxy v2.mp3"
+dest_files=[ "res://.import/209517__soundscape_leuphana__20131202_slamming-door_zoomh2nxy v2.mp3-fc05c481a83f9068ddd81c3ea98802c5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

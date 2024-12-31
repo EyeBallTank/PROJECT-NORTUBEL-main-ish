@@ -18,7 +18,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/sprites/bosses/amalia/house shadow.png" type="Texture" id=17]
 [ext_resource path="res://assets/sprites/level_backgrounds/level bg test 6.png" type="Texture" id=18]
-[ext_resource path="res://assets/sounds/bosses/amalia/209517__soundscape_leuphana__20131202_slamming-door_zoomh2nxy.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/sounds/bosses/amalia/209517__soundscape_leuphana__20131202_slamming-door_zoomh2nxy v2.mp3" type="AudioStream" id=19]
 [ext_resource path="res://assets/sounds/music/levels/nortubel/1A NORTUBEL BOSS DEFEAT SONG.mp3" type="AudioStream" id=20]
 [ext_resource path="res://assets/sounds/music/levels/nortubel/1A NORTUBEL BOSS SONG.mp3" type="AudioStream" id=21]
 
@@ -596,6 +596,7 @@ position = Vector2( -649, 917 )
 
 [node name="AnimatedSprite" parent="AmaliaHand" index="1"]
 modulate = Color( 1, 1, 1, 0 )
+frame = 1
 
 [node name="RayCast2D" parent="AmaliaHand" index="5"]
 enabled = false

@@ -18,7 +18,7 @@ func _on_Gong_body_entered(body):
 				body.last_checkpoint.desactivate()
 			Player.last_checkpoint = self
 			Companion.last_checkpoint = self
-			audioPlayer.play()
+#			audioPlayer.play()
 			animationplayer.play("TOUCHED")
 			active = true
 			$Sprite.animation = "active"

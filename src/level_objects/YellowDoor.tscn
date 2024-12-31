@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Yellow door.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/YellowDoor.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level objects/440645__seansecret__opening-door-1.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level objects/key based door sound redo.ogg" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/hirdrih/Yellow door hirdrih.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_object_sprites/untotern/Yellow door untotern.PNG" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_object_sprites/massagcoav/Yellow door massagcoav.PNG" type="Texture" id=6]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nort driving truck sound redo.mp3-fc62881fc457fc2883b4adf3ee6317df.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/nort driving truck sound redo.mp3"
+dest_files=[ "res://.import/nort driving truck sound redo.mp3-fc62881fc457fc2883b4adf3ee6317df.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

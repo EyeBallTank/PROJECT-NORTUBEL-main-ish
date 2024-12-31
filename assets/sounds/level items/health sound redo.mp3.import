@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/health sound redo.mp3-9429822b674e67eb169fa1516d9c46f3.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level items/health sound redo.mp3"
+dest_files=[ "res://.import/health sound redo.mp3-9429822b674e67eb169fa1516d9c46f3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/bosses/ZharkBulletSpreadTest.gd" type="Script" id=1]
-[ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun v2.mp3" type="AudioStream" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 

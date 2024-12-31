@@ -2,9 +2,9 @@
 
 [ext_resource path="res://assets/sounds/enemies/greklovick/medium-explosion-40472.mp3" type="AudioStream" id=1]
 [ext_resource path="res://src/enemies/greklovick/ZharkSoldier.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/enemies/greklovick/318973__abunijmeh__shotgun-fire.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/enemies/greklovick/318973__abunijmeh__shotgun-fire v2.mp3" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Zhark soldier sprites v2.png" type="Texture" id=4]
-[ext_resource path="res://assets/sounds/enemies/greklovick/710511__xiko__simple_buzztone1.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sounds/enemies/greklovick/710511__xiko__simple_buzztone1 v2.mp3" type="AudioStream" id=5]
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 4 )

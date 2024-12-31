@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/coin sound redo.mp3-7c5c4919593705845071a0a318fce836.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level items/coin sound redo.mp3"
+dest_files=[ "res://.import/coin sound redo.mp3-7c5c4919593705845071a0a318fce836.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

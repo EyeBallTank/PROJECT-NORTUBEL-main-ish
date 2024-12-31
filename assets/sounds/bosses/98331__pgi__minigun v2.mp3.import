@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/98331__pgi__minigun v2.mp3-de406c676c13d5c701af14d7a96b9444.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/bosses/98331__pgi__minigun v2.mp3"
+dest_files=[ "res://.import/98331__pgi__minigun v2.mp3-de406c676c13d5c701af14d7a96b9444.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

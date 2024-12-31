@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://src/enemies/lahiurn/EygzouhlSoldier.gd" type="Script" id=1]
-[ext_resource path="res://assets/sounds/enemies/lahiurn/387924__aegersum__fire-massive-no-cracking.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/enemies/lahiurn/387924__aegersum__fire-massive-no-cracking v2.mp3" type="AudioStream" id=2]
 [ext_resource path="res://assets/sprites/enemy_sprites/lahiurn/Eygzouhl Soldier sprites.png" type="Texture" id=4]
 
 [sub_resource type="AtlasTexture" id=25]

@@ -23,7 +23,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/behind_the_scenes/ParallaxLayer.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/NumberBasedDoor.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/sounds/level objects/404829__nilbul__water-splash.wav" type="AudioStream" id=24]
+[ext_resource path="res://assets/sounds/level objects/water splash sound redo.ogg" type="AudioStream" id=24]
 [ext_resource path="res://src/levels/nortubelpartthree/NortPartThreeLevel3.gd" type="Script" id=25]
 [ext_resource path="res://src/npc_actors/nort npc/GanyahNPC.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=27]

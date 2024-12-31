@@ -15,7 +15,7 @@
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/sprites/bosses/Zarkovill/yiegour multigun fps view.png" type="Texture" id=15]
-[ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun.wav" type="AudioStream" id=16]
+[ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun v2.mp3" type="AudioStream" id=16]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=19]
@@ -665,7 +665,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator1"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1"]
@@ -689,6 +688,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator2"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2"]
@@ -713,6 +713,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator3"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator3"]
@@ -737,7 +738,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator4"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator4"]
@@ -761,6 +761,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator5"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator5"]
@@ -785,6 +786,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator6"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator6"]
@@ -894,6 +896,7 @@ disabled = true
 position = Vector2( 66, -98 )
 frames = SubResource( 8 )
 animation = "spin"
+frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

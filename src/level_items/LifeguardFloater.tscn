@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_item_sprites/Lifeguard Floater.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_items/LifeguardFloater.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level items/129799__frosthardr__balloon.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level items/floater sound redo.mp3" type="AudioStream" id=3]
 [ext_resource path="res://assets/sprites/level_item_sprites/greklovick/Lifeguard Floater greklovick.PNG" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/level_item_sprites/massagcoav/Lifeguard Floater massagcoav.PNG" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_item_sprites/krimbstone/Lifeguard Floater krimbstone.PNG" type="Texture" id=6]
@@ -189,7 +189,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 5 )
-animation = "untotern floater"
+animation = "nortubel floater"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -4, -6 )

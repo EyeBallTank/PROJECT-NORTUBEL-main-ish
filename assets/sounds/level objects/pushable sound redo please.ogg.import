@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pushable sound redo please.ogg-b9068feb1641d0e64e50a87abf2c0d65.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level objects/pushable sound redo please.ogg"
+dest_files=[ "res://.import/pushable sound redo please.ogg-b9068feb1641d0e64e50a87abf2c0d65.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

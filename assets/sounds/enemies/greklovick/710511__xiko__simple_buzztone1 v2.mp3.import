@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/710511__xiko__simple_buzztone1 v2.mp3-685e7416442db5526a73baca832b26b4.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/enemies/greklovick/710511__xiko__simple_buzztone1 v2.mp3"
+dest_files=[ "res://.import/710511__xiko__simple_buzztone1 v2.mp3-685e7416442db5526a73baca832b26b4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

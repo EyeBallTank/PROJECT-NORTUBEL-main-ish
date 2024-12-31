@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/behind_the_scenes/Water.gd" type="Script" id=1]
-[ext_resource path="res://assets/sounds/level objects/404829__nilbul__water-splash.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/level objects/water splash sound redo.ogg" type="AudioStream" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 resource_local_to_scene = true

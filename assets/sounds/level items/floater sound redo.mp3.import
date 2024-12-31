@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/floater sound redo.mp3-42f282a4aa3074fcd1708cade5fe17ed.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level items/floater sound redo.mp3"
+dest_files=[ "res://.import/floater sound redo.mp3-42f282a4aa3074fcd1708cade5fe17ed.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/water splash sound redo.ogg-d00b75bee3d91cf213acd1457b2b3ac6.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level objects/water splash sound redo.ogg"
+dest_files=[ "res://.import/water splash sound redo.ogg-d00b75bee3d91cf213acd1457b2b3ac6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
