@@ -29,7 +29,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=29]
-[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 4.wav" type="AudioStream" id=30]
+[ext_resource path="res://assets/sounds/music/levels/herrko/1A HERRKO SONG 4.mp3" type="AudioStream" id=30]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

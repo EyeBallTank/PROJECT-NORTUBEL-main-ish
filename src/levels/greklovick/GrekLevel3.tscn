@@ -16,7 +16,7 @@
 [ext_resource path="res://src/npc_actors/grek npc/Xemarokk.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek rad bg.png" type="Texture" id=15]
 [ext_resource path="res://src/behind_the_scenes/PoisonHitbox.tscn" type="PackedScene" id=16]
-[ext_resource path="res://assets/sounds/music/levels/greklovick/GREKLOVICK SONG 3.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/1A GREKLOVICK SONG 3.mp3" type="AudioStream" id=17]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=20]

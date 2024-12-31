@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A GREKLOVICK SONG 2.mp3-b27c22b6793e4aefe4bed0e31d32aaec.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/greklovick/1A GREKLOVICK SONG 2.mp3"
+dest_files=[ "res://.import/1A GREKLOVICK SONG 2.mp3-b27c22b6793e4aefe4bed0e31d32aaec.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

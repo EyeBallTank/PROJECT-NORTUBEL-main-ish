@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A LAHIURN SUB CALM.mp3-58c82e2d6721e02f5db2e66ff49e5002.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/lahiurn/1A LAHIURN SUB CALM.mp3"
+dest_files=[ "res://.import/1A LAHIURN SUB CALM.mp3-58c82e2d6721e02f5db2e66ff49e5002.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

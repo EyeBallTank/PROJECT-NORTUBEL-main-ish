@@ -25,7 +25,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/enemies/masagcoav/BlackChicken.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level prefabs/massag prefab/ElegMovingPlatSpecial.tscn" type="PackedScene" id=25]
-[ext_resource path="res://assets/sounds/music/levels/massagcoav/MASSAG COAV SONG 3.wav" type="AudioStream" id=26]
+[ext_resource path="res://assets/sounds/music/levels/massagcoav/1A MASSAG COAV SONG 3.mp3" type="AudioStream" id=26]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

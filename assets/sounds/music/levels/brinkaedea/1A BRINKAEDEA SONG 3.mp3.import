@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A BRINKAEDEA SONG 3.mp3-2b841013d3352ce626f0b6b397c82f9d.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/brinkaedea/1A BRINKAEDEA SONG 3.mp3"
+dest_files=[ "res://.import/1A BRINKAEDEA SONG 3.mp3-2b841013d3352ce626f0b6b397c82f9d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

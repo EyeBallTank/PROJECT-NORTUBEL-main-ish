@@ -40,7 +40,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/npc_actors/UntoScaryMirror.tscn" type="PackedScene" id=40]
-[ext_resource path="res://assets/sounds/music/levels/untotern/UNTO HOUSE SONG.wav" type="AudioStream" id=41]
+[ext_resource path="res://assets/sounds/music/levels/untotern/1A UNTOTERN SONG 1.mp3" type="AudioStream" id=41]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

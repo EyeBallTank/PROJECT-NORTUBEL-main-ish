@@ -41,7 +41,7 @@
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/npc_actors/lahiurn/Lahiurn wounded soldier NPC.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/level_objects/Gong checkpoint.tscn" type="PackedScene" id=41]
-[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SONG 1.wav" type="AudioStream" id=42]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/1A LAHIURN SONG 1.mp3" type="AudioStream" id=42]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 33 )
@@ -199,7 +199,6 @@ position = Vector2( -1737, 111 )
 rotation = -0.19036
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Plane2" type="AnimatedSprite" parent="ParallaxBackgroundWar/ParallaxLayer"]
@@ -207,7 +206,6 @@ position = Vector2( 1685, 440 )
 rotation = 0.16806
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 flip_h = true
 
@@ -216,6 +214,7 @@ position = Vector2( -1224, -934 )
 rotation = 0.40362
 scale = Vector2( 2, 2 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="Bullets1" type="Sprite" parent="ParallaxBackgroundWar/ParallaxLayer"]

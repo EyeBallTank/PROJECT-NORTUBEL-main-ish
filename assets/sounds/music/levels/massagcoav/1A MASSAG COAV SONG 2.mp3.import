@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A MASSAG COAV SONG 2.mp3-75c85fd10c4be1c77cb23793afd42f98.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/massagcoav/1A MASSAG COAV SONG 2.mp3"
+dest_files=[ "res://.import/1A MASSAG COAV SONG 2.mp3-75c85fd10c4be1c77cb23793afd42f98.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

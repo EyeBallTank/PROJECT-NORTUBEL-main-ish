@@ -38,7 +38,7 @@
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/level prefabs/massag prefab/MassagYellowPlatVerti.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/level_objects/Yellow switch.tscn" type="PackedScene" id=38]
-[ext_resource path="res://assets/sounds/music/levels/massagcoav/MASSAG COAV SONG 1.wav" type="AudioStream" id=39]
+[ext_resource path="res://assets/sounds/music/levels/massagcoav/1A MASSAG COAV SONG 1.mp3" type="AudioStream" id=39]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

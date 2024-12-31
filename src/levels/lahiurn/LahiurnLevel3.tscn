@@ -36,7 +36,7 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=35]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=36]
-[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SONG 3.wav" type="AudioStream" id=37]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/1A LAHIURN SONG 2.mp3" type="AudioStream" id=37]
 
 [sub_resource type="Animation" id=2]
 resource_name = "AndSoWasLeft"

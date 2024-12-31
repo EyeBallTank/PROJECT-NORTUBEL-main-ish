@@ -7,7 +7,7 @@
 [ext_resource path="res://src/behind_the_scenes/companionspawn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/play_actors/PlayerCopy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/level_items/Blue key.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/sounds/music/levels/greklovick/GREKLOVICK SONG 1.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/1A GREKLOVICK SONG 1.mp3" type="AudioStream" id=8]
 [ext_resource path="res://assets/tilesets/greklovick/grek base tiles.tres" type="TileSet" id=9]
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/level_objects/YellowDoor.tscn" type="PackedScene" id=11]
@@ -251,9 +251,6 @@ position = Vector2( 13993, 1493 )
 
 [node name="GrekYellowBasePlat" parent="." instance=ExtResource( 34 )]
 position = Vector2( 6978, 673 )
-
-[node name="Platform" parent="GrekYellowBasePlat" index="0"]
-position = Vector2( -2, 384 )
 
 [node name="GrekBlueBaseLift" parent="." instance=ExtResource( 35 )]
 position = Vector2( 11202, 1603 )

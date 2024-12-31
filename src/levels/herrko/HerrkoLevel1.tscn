@@ -35,7 +35,7 @@
 [ext_resource path="res://src/level_objects/PushableCopy.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=35]
-[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 1 V2.wav" type="AudioStream" id=36]
+[ext_resource path="res://assets/sounds/music/levels/herrko/1A HERRKO SONG 1.mp3" type="AudioStream" id=36]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

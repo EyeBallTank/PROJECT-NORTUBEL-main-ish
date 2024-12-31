@@ -17,7 +17,7 @@
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/behind_the_scenes/fall through platform.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=17]
-[ext_resource path="res://assets/sounds/music/levels/massagcoav/MASSAG COAV SONG 5.wav" type="AudioStream" id=18]
+[ext_resource path="res://assets/sounds/music/levels/massagcoav/1A MASSAG COAV SONG 5.mp3" type="AudioStream" id=18]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

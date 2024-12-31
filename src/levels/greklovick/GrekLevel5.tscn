@@ -22,7 +22,7 @@
 [ext_resource path="res://src/enemies/greklovick/ZharkSoldier.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek boss bg.png" type="Texture" id=22]
-[ext_resource path="res://assets/sounds/music/levels/greklovick/ZHARKOVIL SONG.wav" type="AudioStream" id=23]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/1A GREK ZHARK SONG.mp3" type="AudioStream" id=23]
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 12 )

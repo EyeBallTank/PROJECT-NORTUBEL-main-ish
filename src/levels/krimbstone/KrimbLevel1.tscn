@@ -24,7 +24,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/level_objects/Blue switch.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPrisonDoor.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/sounds/music/levels/krimbstone/KRIMBSTONE SONG 1.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/sounds/music/levels/krimbstone/1A KRIMBSTONE SONG 1.mp3" type="AudioStream" id=25]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

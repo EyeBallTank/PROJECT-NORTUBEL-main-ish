@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A HERRKO SONG 3.mp3-4a373e29e17ceb8b6bd89ad3e7e1ecbf.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/herrko/1A HERRKO SONG 3.mp3"
+dest_files=[ "res://.import/1A HERRKO SONG 3.mp3-4a373e29e17ceb8b6bd89ad3e7e1ecbf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

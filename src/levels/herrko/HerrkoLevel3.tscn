@@ -31,7 +31,7 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_objects/BlueDoor.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=31]
-[ext_resource path="res://assets/sounds/music/levels/herrko/HERRKO SONG 3.wav" type="AudioStream" id=32]
+[ext_resource path="res://assets/sounds/music/levels/herrko/1A HERRKO SONG 3.mp3" type="AudioStream" id=32]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

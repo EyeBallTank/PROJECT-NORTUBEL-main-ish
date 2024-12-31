@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A LAHIURN SONG 1.mp3-4aa13f216569c400adab382ddba15868.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/lahiurn/1A LAHIURN SONG 1.mp3"
+dest_files=[ "res://.import/1A LAHIURN SONG 1.mp3-4aa13f216569c400adab382ddba15868.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

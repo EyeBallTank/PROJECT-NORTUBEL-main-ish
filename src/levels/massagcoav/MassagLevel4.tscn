@@ -31,7 +31,7 @@
 [ext_resource path="res://src/npc_actors/massag npc/DalmatianNPC.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level prefabs/massag prefab/MassagTrainHorn.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=31]
-[ext_resource path="res://assets/sounds/music/levels/massagcoav/MASSAG COAV SONG 4.wav" type="AudioStream" id=32]
+[ext_resource path="res://assets/sounds/music/levels/massagcoav/1A MASSAG COAV SONG 4.mp3" type="AudioStream" id=32]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -237,11 +237,7 @@ yelswitchskin = "res://assets/sprites/level_object_sprites/massagcoav/Yellow swi
 position = Vector2( 6786, 481 )
 
 [node name="Platform" parent="MassagYellowTrainPlat" index="0"]
-position = Vector2( -2, 384 )
-
-[node name="PathFollow2D" parent="MassagYellowTrainPlat/Path2D" index="0"]
 position = Vector2( -2, -1 )
-offset = 385.164
 
 [node name="DalmatianNPC" parent="." instance=ExtResource( 29 )]
 position = Vector2( 4882, 277 )

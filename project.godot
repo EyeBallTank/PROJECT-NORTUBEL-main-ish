@@ -164,7 +164,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Project Nortubel 2"
+config/name="Project Nortubel"
 run/main_scene="res://screens/cutscenes/eyeballtank presents/StartUp.tscn"
 config/icon="res://nortubel icon.png"
 

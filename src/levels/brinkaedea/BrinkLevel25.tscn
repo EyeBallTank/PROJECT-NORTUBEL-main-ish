@@ -38,7 +38,7 @@
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=36]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkJackInBox.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/enemies/brinkaedea/BrinkRedJesterThree.tscn" type="PackedScene" id=38]
-[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINKAEDEA SONG 3.wav" type="AudioStream" id=39]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/1A BRINKAEDEA SONG 3.mp3" type="AudioStream" id=39]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

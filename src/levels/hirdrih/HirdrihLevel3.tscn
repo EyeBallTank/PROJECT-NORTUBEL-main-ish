@@ -35,7 +35,7 @@
 [ext_resource path="res://src/level_objects/RedDoor.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/npc_actors/hird npc/Borhr NPC.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/npc_actors/ArtBook.tscn" type="PackedScene" id=35]
-[ext_resource path="res://assets/sounds/music/levels/hirdrih/HIRDRIH SONG 3.wav" type="AudioStream" id=36]
+[ext_resource path="res://assets/sounds/music/levels/hirdrih/1A HIRDRIH SONG 3.mp3" type="AudioStream" id=36]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

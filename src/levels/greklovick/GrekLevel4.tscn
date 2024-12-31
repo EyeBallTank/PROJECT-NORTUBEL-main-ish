@@ -32,7 +32,7 @@
 [ext_resource path="res://src/npc_actors/grek npc/GrekMedicCrewNPC.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/level_items/LifeguardFloater.tscn" type="PackedScene" id=32]
-[ext_resource path="res://assets/sounds/music/levels/greklovick/GREKLOVICK SONG 4.wav" type="AudioStream" id=33]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/1A GREKLOVICK SONG 4.mp3" type="AudioStream" id=33]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

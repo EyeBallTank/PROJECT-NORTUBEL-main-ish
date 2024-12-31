@@ -41,7 +41,7 @@
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkJumpPad.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=41]
-[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINKAEDEA SONG 2.wav" type="AudioStream" id=42]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/1A BRINKAEDEA SONG 2.mp3" type="AudioStream" id=42]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

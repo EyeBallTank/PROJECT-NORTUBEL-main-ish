@@ -26,8 +26,8 @@
 [ext_resource path="res://src/level_objects/CrawlzoneEnter.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/CrawlzoneExit.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/levels/brinkaedea/BrinkLevel3.gd" type="Script" id=26]
-[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKA SONG BASIC V2.wav" type="AudioStream" id=27]
-[ext_resource path="res://assets/sounds/music/levels/brinkaedea/BRINK BONKETTE SONG BASIC V2.wav" type="AudioStream" id=28]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/1A BRINK BONKA SONG BASIC.mp3" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/levels/brinkaedea/1A BRINK BONKETTE SONG BASIC.mp3" type="AudioStream" id=28]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

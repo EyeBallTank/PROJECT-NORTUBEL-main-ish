@@ -30,7 +30,7 @@
 [ext_resource path="res://src/npc_actors/krimb npc/ManTiedStreetLight NPC.tscn" type="PackedScene" id=28]
 [ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPoliceCar.tscn" type="PackedScene" id=29]
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=30]
-[ext_resource path="res://assets/sounds/music/levels/krimbstone/KRIMBSTONE SONG 2.wav" type="AudioStream" id=31]
+[ext_resource path="res://assets/sounds/music/levels/krimbstone/1A KRIMBSTONE SONG 2.mp3" type="AudioStream" id=31]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

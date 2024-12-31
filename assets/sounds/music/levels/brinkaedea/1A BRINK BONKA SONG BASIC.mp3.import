@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A BRINK BONKA SONG BASIC.mp3-8f55d99d07d65ddbaee7638a9dcab17f.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/brinkaedea/1A BRINK BONKA SONG BASIC.mp3"
+dest_files=[ "res://.import/1A BRINK BONKA SONG BASIC.mp3-8f55d99d07d65ddbaee7638a9dcab17f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

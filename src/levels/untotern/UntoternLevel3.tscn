@@ -46,7 +46,7 @@
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=44]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=45]
 [ext_resource path="res://src/npc_actors/LoreBook.tscn" type="PackedScene" id=46]
-[ext_resource path="res://assets/sounds/music/levels/untotern/UNTOTERN SONG 3.wav" type="AudioStream" id=47]
+[ext_resource path="res://assets/sounds/music/levels/untotern/1A UNTOTERN SONG 3.mp3" type="AudioStream" id=47]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"

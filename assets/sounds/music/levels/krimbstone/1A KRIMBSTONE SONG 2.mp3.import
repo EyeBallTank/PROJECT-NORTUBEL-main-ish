@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1A KRIMBSTONE SONG 2.mp3-a8c41c8bd31582c8ac3513e50fa49ef5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/levels/krimbstone/1A KRIMBSTONE SONG 2.mp3"
+dest_files=[ "res://.import/1A KRIMBSTONE SONG 2.mp3-a8c41c8bd31582c8ac3513e50fa49ef5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

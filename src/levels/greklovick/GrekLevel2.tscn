@@ -23,7 +23,7 @@
 [ext_resource path="res://src/level_objects/MovingPlatHorizLonger.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/level_objects/Ladder.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/sounds/music/levels/greklovick/GREKLOVICK SONG 2.wav" type="AudioStream" id=24]
+[ext_resource path="res://assets/sounds/music/levels/greklovick/1A GREKLOVICK SONG 2.mp3" type="AudioStream" id=24]
 [ext_resource path="res://src/npc_actors/ConvoNPC.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/npc_actors/grek npc/FragileNPC.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/npc_actors/grek npc/RaymondNPC.tscn" type="PackedScene" id=27]

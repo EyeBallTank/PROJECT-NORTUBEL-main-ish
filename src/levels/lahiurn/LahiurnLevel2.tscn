@@ -25,8 +25,8 @@
 [ext_resource path="res://src/level_objects/MovingPlatVerti.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/behind_the_scenes/Water.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/level_objects/MovingPlatVertiLonger.tscn" type="PackedScene" id=25]
-[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SUB CALM SONG.wav" type="AudioStream" id=26]
-[ext_resource path="res://assets/sounds/music/levels/lahiurn/LAHIURN SONG SUB WATER.wav" type="AudioStream" id=27]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/1A LAHIURN SUB CALM.mp3" type="AudioStream" id=26]
+[ext_resource path="res://assets/sounds/music/levels/lahiurn/1A LAHIURN SUB WATER.mp3" type="AudioStream" id=27]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
