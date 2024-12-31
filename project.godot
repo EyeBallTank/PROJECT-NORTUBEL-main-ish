@@ -54,11 +54,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/behind_the_scenes/PoisonHitbox.gd"
 }, {
-"base": "RigidBody2D",
-"class": "Pushable",
-"language": "GDScript",
-"path": "res://src/level_objects/pushable.gd"
-}, {
 "base": "KinematicBody2D",
 "class": "PushableCopy",
 "language": "GDScript",
@@ -144,7 +139,6 @@ _global_script_class_icons={
 "Ladder": "",
 "PlayerMain": "",
 "Poison": "",
-"Pushable": "",
 "PushableCopy": "",
 "RivalClimbSign": "",
 "RivalCrawlSign": "",

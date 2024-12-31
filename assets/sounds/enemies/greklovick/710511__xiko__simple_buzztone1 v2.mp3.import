@@ -11,5 +11,5 @@ dest_files=[ "res://.import/710511__xiko__simple_buzztone1 v2.mp3-685e7416442db5
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

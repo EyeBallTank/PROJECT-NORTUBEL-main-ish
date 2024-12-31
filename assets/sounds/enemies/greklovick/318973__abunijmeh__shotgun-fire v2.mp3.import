@@ -11,5 +11,5 @@ dest_files=[ "res://.import/318973__abunijmeh__shotgun-fire v2.mp3-07f30c703f646
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

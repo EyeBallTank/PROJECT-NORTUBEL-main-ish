@@ -11,5 +11,5 @@ dest_files=[ "res://.import/camera-13695.mp3-70f532a25512b4bd830f5162730650ed.mp
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

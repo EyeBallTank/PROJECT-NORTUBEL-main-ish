@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/play characters foot stomp.mp3-13bb18ca64d427fa6a85a4395c27d30f.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/play actors/play characters foot stomp.mp3"
+dest_files=[ "res://.import/play characters foot stomp.mp3-13bb18ca64d427fa6a85a4395c27d30f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

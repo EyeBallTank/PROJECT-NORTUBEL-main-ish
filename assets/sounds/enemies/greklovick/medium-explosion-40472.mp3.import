@@ -11,5 +11,5 @@ dest_files=[ "res://.import/medium-explosion-40472.mp3-85d1da83b9f1b94a148d59dda
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

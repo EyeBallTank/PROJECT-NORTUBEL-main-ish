@@ -11,5 +11,5 @@ dest_files=[ "res://.import/gong sound redo.mp3-b0a1b4fecabd8e8fe7ec487f763ce7b7
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

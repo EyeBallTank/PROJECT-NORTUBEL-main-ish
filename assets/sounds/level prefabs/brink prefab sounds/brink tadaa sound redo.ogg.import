@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/brink tadaa sound redo.ogg-04b85d1213c3ed3f497b2f716b3a7ab8.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/brink prefab sounds/brink tadaa sound redo.ogg"
+dest_files=[ "res://.import/brink tadaa sound redo.ogg-04b85d1213c3ed3f497b2f716b3a7ab8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

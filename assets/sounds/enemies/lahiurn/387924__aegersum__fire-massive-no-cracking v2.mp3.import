@@ -11,5 +11,5 @@ dest_files=[ "res://.import/387924__aegersum__fire-massive-no-cracking v2.mp3-46
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

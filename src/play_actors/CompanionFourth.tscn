@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=2]
 
-[ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/play actors/play characters foot stomp.mp3" type="AudioStream" id=1]
 [ext_resource path="res://src/play_actors/CompanionFourth.gd" type="Script" id=2]
 [ext_resource path="res://src/menusandui/healthbarCompanion.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/sprites/play_actor_sprites/OscarSprites.tres" type="SpriteFrames" id=4]
@@ -183,7 +183,6 @@ rect_rotation = 0.0
 position = Vector2( 0, -208 )
 scale = Vector2( 0.111381, 0.111381 )
 frames = SubResource( 35 )
-frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

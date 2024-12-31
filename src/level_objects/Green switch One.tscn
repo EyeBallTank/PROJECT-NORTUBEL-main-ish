@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/sprites/level_object_sprites/untotern/Green switch One Untotern.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/sprites/level_object_sprites/Green switch One.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/level_objects/Green switch One.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level objects/switch button sound redo.ogg" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 89.5, 157 )

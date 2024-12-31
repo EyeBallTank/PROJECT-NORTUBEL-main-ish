@@ -11,5 +11,5 @@ dest_files=[ "res://.import/209517__soundscape_leuphana__20131202_slamming-door_
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

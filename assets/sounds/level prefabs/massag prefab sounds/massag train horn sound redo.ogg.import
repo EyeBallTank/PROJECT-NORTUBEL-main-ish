@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/massag train horn sound redo.ogg-721bda71b839b30b54824cf632db1959.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/massag prefab sounds/massag train horn sound redo.ogg"
+dest_files=[ "res://.import/massag train horn sound redo.ogg-721bda71b839b30b54824cf632db1959.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

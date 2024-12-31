@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink jumppad.png" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Jumppad.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level prefabs/brink prefab sounds/81623__tony-knievel-588593355__middle-tom-of-god-wet-016.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level prefabs/brink prefab sounds/brink jumppad drum sound redo.ogg" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )

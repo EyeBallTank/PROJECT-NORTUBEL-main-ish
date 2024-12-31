@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/sounds/level prefabs/massag prefab sounds/367437__lluiset7__bocin-tren.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/level prefabs/massag prefab sounds/massag train horn sound redo.ogg" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/massag prefab sprites/MassagTrainHorn.png" type="Texture" id=2]
 [ext_resource path="res://src/level prefabs/massag prefab/MassagTrainHorn.gd" type="Script" id=3]
 

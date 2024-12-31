@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=2]
 
-[ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/play actors/play characters foot stomp.mp3" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/UULGA COMP SPRITES.png" type="Texture" id=2]
 [ext_resource path="res://src/play_actors/UulgaComp.gd" type="Script" id=3]
 [ext_resource path="res://assets/sprites/menus_and_ui_sprites/compstateteller.png" type="Texture" id=5]

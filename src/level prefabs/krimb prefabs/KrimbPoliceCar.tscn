@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/krimb prefab sprites/Krimb police car 3.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/krimb prefabs/KrimbPoliceCar.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level prefabs/krimb prefab sounds/268221__szpury__police-siren-one-loop-loop-able.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level prefabs/krimb prefab sounds/krimb police car siren sound redo.ogg" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )

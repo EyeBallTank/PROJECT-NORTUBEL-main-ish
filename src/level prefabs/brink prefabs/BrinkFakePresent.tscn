@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/BRINK FAKE PRESENT BOX FUNNY FACE.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/BRINK FAKE PRESENT BOX SPRING.png" type="Texture" id=3]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkFakePresent.gd" type="Script" id=4]
-[ext_resource path="res://assets/sounds/level prefabs/brink prefab sounds/626950__maikkihapsis__tadaa.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sounds/level prefabs/brink prefab sounds/brink tadaa sound redo.ogg" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 72, 140 )

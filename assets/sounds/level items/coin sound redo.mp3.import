@@ -11,5 +11,5 @@ dest_files=[ "res://.import/coin sound redo.mp3-7c5c4919593705845071a0a318fce836
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

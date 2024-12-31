@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/krimb police car siren sound redo.ogg-176f1be8effe00e87c689ac5eb758f76.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/krimb prefab sounds/krimb police car siren sound redo.ogg"
+dest_files=[ "res://.import/krimb police car siren sound redo.ogg-176f1be8effe00e87c689ac5eb758f76.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

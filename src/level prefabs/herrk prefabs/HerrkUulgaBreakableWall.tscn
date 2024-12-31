@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_prefab_sprites/herrk prefab sprites/Herrk Uulga Breakable Wall sprite.png" type="Texture" id=1]
 [ext_resource path="res://src/level prefabs/herrk prefabs/HerrkUulgaBreakableWall.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/567250__iwanplays__dropping-rocks.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/lahiurn wall crumble sound redo.mp3" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 192 )

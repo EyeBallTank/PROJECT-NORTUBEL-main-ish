@@ -11,5 +11,5 @@ dest_files=[ "res://.import/health sound redo.mp3-9429822b674e67eb169fa1516d9c46
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/rival sprites/rival sprites ANGELA MELVIN ALT.png" type="Texture" id=1]
 [ext_resource path="res://src/play_actors/RivalCompanion.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/sounds/play actors/play characters foot stomp.mp3" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=36]
 atlas = ExtResource( 1 )
@@ -195,7 +195,7 @@ position = Vector2( -1, -83.5 )
 shape = SubResource( 35 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 3 )
 volume_db = -4.095
 pitch_scale = 2.98
 bus = "Sound"

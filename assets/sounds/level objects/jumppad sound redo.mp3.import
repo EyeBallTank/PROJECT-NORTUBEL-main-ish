@@ -11,5 +11,5 @@ dest_files=[ "res://.import/jumppad sound redo.mp3-5f34efd30453584621acecc6837ed
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

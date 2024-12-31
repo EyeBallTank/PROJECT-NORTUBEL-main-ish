@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/brink jumppad drum sound redo.ogg-c02b0375c592dc2e00e001bc3741e48a.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/brink prefab sounds/brink jumppad drum sound redo.ogg"
+dest_files=[ "res://.import/brink jumppad drum sound redo.ogg-c02b0375c592dc2e00e001bc3741e48a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Beefy-Desert-Eagle-.50-AE-Close-Single-Gunshot-B-www
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

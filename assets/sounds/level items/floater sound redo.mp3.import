@@ -11,5 +11,5 @@ dest_files=[ "res://.import/floater sound redo.mp3-42f282a4aa3074fcd1708cade5fe1
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

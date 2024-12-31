@@ -18,7 +18,7 @@
 [ext_resource path="res://assets/sounds/bosses/98331__pgi__minigun v2.mp3" type="AudioStream" id=16]
 [ext_resource path="res://src/level_items/Health Pickup.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/level_items/Coin test.tscn" type="PackedScene" id=18]
-[ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/sounds/level objects/switch button sound redo.ogg" type="AudioStream" id=19]
 [ext_resource path="res://src/enemies/greklovick/ZharkSoldier.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/behind_the_scenes/Jump through platform.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/sprites/level_backgrounds/greklovick/grek boss bg.png" type="Texture" id=22]
@@ -665,6 +665,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator1"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator1"]
@@ -688,7 +689,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator2"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator2"]
@@ -713,7 +713,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator3"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator3"]
@@ -738,6 +737,7 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator4"]
 frames = SubResource( 3 )
 animation = "on"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator4"]
@@ -761,7 +761,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator5"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator5"]
@@ -786,7 +785,6 @@ collision_mask = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ShieldGenerator6"]
 frames = SubResource( 3 )
 animation = "on"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShieldGenerator6"]

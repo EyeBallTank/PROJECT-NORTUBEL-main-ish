@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://assets/sounds/level prefabs/krimb prefab sounds/683637__sunfiredragon__combo-electricity.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/level prefabs/krimb prefab sounds/krimb electricity sound redo.mp3" type="AudioStream" id=1]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnEletricCageTrap.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/Lahiurn Electricity Hazard objects.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/level_object_sprites/lahiurn/Yellow Switch Lahiurn.png" type="Texture" id=4]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/brink piano key sound redo.ogg-dc9dd3a76de63323dcda5cdd874a2f17.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/brink prefab sounds/brink piano key sound redo.ogg"
+dest_files=[ "res://.import/brink piano key sound redo.ogg-dc9dd3a76de63323dcda5cdd874a2f17.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

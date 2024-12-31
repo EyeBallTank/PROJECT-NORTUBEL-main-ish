@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/sprites/level_prefab_sprites/brink prefab sprites/brink yelswitch flower leaf.png" type="Texture" id=3]
 [ext_resource path="res://src/level prefabs/brink prefabs/BrinkYellowSwitchFlower.gd" type="Script" id=4]
 [ext_resource path="res://assets/sprites/level_object_sprites/brinkaedea/Yellow Switch Brinkaedea.png" type="Texture" id=5]
-[ext_resource path="res://assets/sounds/level objects/217497__vkproduktion__switch-05.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/sounds/level objects/switch button sound redo.ogg" type="AudioStream" id=6]
 
 [sub_resource type="Animation" id=2]
 resource_name = "RESET"

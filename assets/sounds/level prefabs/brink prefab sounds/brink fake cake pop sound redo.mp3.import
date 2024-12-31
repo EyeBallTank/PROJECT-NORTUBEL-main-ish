@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/brink fake cake pop sound redo.mp3-c29f996778f8b9a9d4344f5a7d501f6c.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/level prefabs/brink prefab sounds/brink fake cake pop sound redo.mp3"
+dest_files=[ "res://.import/brink fake cake pop sound redo.mp3-c29f996778f8b9a9d4344f5a7d501f6c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

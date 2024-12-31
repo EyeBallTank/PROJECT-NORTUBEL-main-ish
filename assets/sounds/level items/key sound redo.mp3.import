@@ -11,5 +11,5 @@ dest_files=[ "res://.import/key sound redo.mp3-634a123359af0738210c671f04087e30.
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

@@ -11,5 +11,5 @@ dest_files=[ "res://.import/458570__imagery2__red-alert_nuclear_buzzer.mp3-9b22e
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

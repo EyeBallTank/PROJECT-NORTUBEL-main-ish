@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChairBase.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Breakable Wall.png" type="Texture" id=2]
 [ext_resource path="res://src/level prefabs/lahiurn prefabs/LahiurnThroneChairAndWall.gd" type="Script" id=3]
-[ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/567250__iwanplays__dropping-rocks.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sounds/level prefabs/lahiurn prefab sounds/lahiurn wall crumble sound redo.mp3" type="AudioStream" id=4]
 [ext_resource path="res://assets/sprites/enemy_sprites/krimbstone/Mobster Bullet projectile.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/level_prefab_sprites/lahiurn prefab sprites/LahiurnThroneChair Rocket.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/enemy_sprites/greklovick/Explosion test.png" type="Texture" id=7]

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/sprites/level_object_sprites/Teleportal.PNG" type="Texture" id=1]
 [ext_resource path="res://src/level_objects/Teleportal.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds/magic sounds.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/teleportal sound effect redo.mp3" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4

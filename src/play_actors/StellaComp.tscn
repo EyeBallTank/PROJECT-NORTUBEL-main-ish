@@ -1,6 +1,6 @@
 [gd_scene load_steps=35 format=2]
 
-[ext_resource path="res://assets/sounds/play actors/478051__deleted_user_10023915__land1.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/play actors/play characters foot stomp.mp3" type="AudioStream" id=1]
 [ext_resource path="res://assets/sprites/play_actor_sprites/STELLA COMP SPRITES.png" type="Texture" id=2]
 [ext_resource path="res://src/menusandui/healthbarStella.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/play_actors/StellaComp.gd" type="Script" id=4]
@@ -238,7 +238,6 @@ position = Vector2( 0, -151 )
 scale = Vector2( 0.72, 0.72 )
 frames = SubResource( 36 )
 animation = "Idle"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

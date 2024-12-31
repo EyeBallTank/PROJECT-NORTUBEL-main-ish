@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/teleportal sound effect redo.mp3-c25e8404798da198cd8d2d1e0fa35feb.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/teleportal sound effect redo.mp3"
+dest_files=[ "res://.import/teleportal sound effect redo.mp3-c25e8404798da198cd8d2d1e0fa35feb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
