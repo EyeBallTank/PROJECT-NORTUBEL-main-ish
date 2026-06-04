@@ -174,6 +174,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "CREDITS_B"
 
 [node name="QuitButton" type="TextureButton" parent="MenuMain"]
+visible = false
 margin_top = 186.0
 margin_right = 304.0
 margin_bottom = 213.0
